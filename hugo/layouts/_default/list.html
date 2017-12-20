@@ -1,0 +1,23 @@
+{{- define "main" -}}
+<div class="blog-list-wrapper">
+  <div class="container">
+    <section class="blog-header">
+    {{- if or (gt (len .Summary) 0) (isset .Params "textline") -}}
+      <h1 class="blog-header--title">{{ .Params.headline | default .Title }}</h1>
+      <p class="blog-header--description">
+        {{- if .Summary -}}
+          {{ .Summary }}
+        {{- else -}}
+          {{ .Params.textline }}
+        {{- end -}}
+      </p>
+    {{- end -}}
+    </section>
+    <section class="section section-blog-list">
+      {{- range .Data.Pages -}}
+        {{ .Render "summary" }}
+      {{- end -}}
+    </section>
+  </div>
+</div>
+{{- end -}}

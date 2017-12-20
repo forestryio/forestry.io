@@ -1,0 +1,16 @@
+<section class="section section-cta center">
+  <div class="container">
+    <h2 class="section--title">{{ .headline | default "Want to hear it first?" }}</h2>
+    <p class="section--sub is-center">{{ .textline | default "Subscribe to our newsletter to get the posts directly in your inbox as they get posted." }}</p>
+    <br><br>
+    {{- if isset . "ctas" -}}
+      {{- range .ctas -}}
+      <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+      {{- end -}}
+    {{- else -}}
+      <div class="form--large form--joined form--center">
+        <input type="email" placeholder="your.name@example.com"><button class="button primary small">Subscribe</button>
+      </div>
+    {{- end -}}
+  </div>
+</section>

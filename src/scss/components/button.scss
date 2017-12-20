@@ -1,0 +1,63 @@
+/* Base button styling */
+
+.button {
+  background-color: $color-grey;
+  border: 1px solid transparent;
+  border-radius: 0.15em;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  /* Style */
+  &.primary {
+    background-color: $color-brand;
+    color: $color-white;
+    &:hover { opacity: 0.8; }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid $color-brand;
+    color: $color-dark;
+
+    &:hover {
+      background-color: $color-brand;
+      color: $color-white;
+    }
+  }
+
+  /* Button sizes */
+  &.small {
+    font-size: 14px;
+    padding: 0.5rem 1.25rem;
+    &.rounded { border-radius: 1.5rem; }
+  }
+
+  &.big {
+    padding: 1.25rem 2rem;
+    &.rounded { border-radius: 1.5rem; }
+  }
+
+}
+
+.text-cta {
+  margin-top: 30px;
+}
+
+.text-button {
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  font-size: 16px;
+  padding: 0 0 0.25em;
+  text-decoration: none;
+  transition: border 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

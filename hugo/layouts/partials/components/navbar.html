@@ -1,0 +1,41 @@
+{{- $isHome := .IsHome -}}
+{{- $isDocs := (eq .Section "docs") -}}
+{{- $isPricing := (eq .Section "pricing") -}}
+<header class="header container{{ if $isDocs }} docs{{ end }}{{ if $isPricing }} dark{{ end }}">
+  <div class="left-block">
+    <a href="{{ .Site.BaseURL | relURL }}" title="Go to homepage" class="logo"></a>
+  </div>
+  <div class="right-block">
+    <div class="search">
+      <input type="search" name="search" placeholder="Search...">
+    </div>
+    <nav class="nav">
+      <div class="nav-content">
+        <a href="{{ .Site.BaseURL | relURL }}" class="mini-nav--logo"></a>
+        <ul class="main-nav-items">
+          {{- range .Site.Menus.main -}}
+            {{- if eq .Identifier "signup" -}}
+            <li>
+              <a class="signup-button button small{{ if $isHome }} main secondary{{ else }} primary{{ end }}" href="{{ .URL | absURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            </li>
+            {{- else -}}
+            {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}
+            {{- $hasMenuCurrent := $.IsMenuCurrent .Menu . -}}
+            <li>
+              <a class="nav-item" href="{{ .URL | absURL }}"{{ if $isMenuCurrent }} class="active"{{ end }}>{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            </li>
+            {{- end -}}
+          {{- end -}}
+        </ul>
+      </div>
+    </nav>
+    <div class="mini-nav--toggle">
+      {{- if $isPricing -}}
+        <img class="toggle-open" src="img/navtoggle-light-open.svg" alt="Open nav">
+      {{- else -}}
+        <img class="toggle-open" src="img/navtoggle-open.svg" alt="Open nav">
+      {{- end -}}
+      <img class="toggle-close" src="img/navtoggle-close.svg" alt="Close nav">
+    </div>
+  </div>
+</header>

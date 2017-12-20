@@ -1,0 +1,86 @@
+.shortcode-tip,
+.shortcode-warning,
+.shortcode-error,
+.shortcode-disclaimer {
+  background: $color-grey;
+  padding: 1rem 1rem 1rem 2rem;
+  position: relative;
+  margin-top: 1rem;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0 0 2rem !important;
+    padding: 0 !important;
+  }
+
+  p:first-of-type {
+    margin: 0 !important;
+  }
+
+  &:before {
+    /* Set the circle size here */
+    $circle-size: 1.5rem;
+
+    background: $color-brand;
+    border-radius: calc($circle-size / 2);
+    color: $color-white;
+    content: "ℹ︎";
+    font-weight: 600;
+    height: $circle-size;
+    left: -calc($circle-size / 2);
+    line-height: $circle-size;
+    position: absolute;
+    text-align: center;
+    top: 1rem;
+    width: $circle-size;
+    z-index: 5;
+  }
+
+  &:after {
+    background: $color-brand;
+    content: "";
+    height: 100%;
+    left: -0.1rem;
+    position: absolute;
+    top: 0;
+    width: 0.2rem;
+    z-index: 0;
+  }
+
+}
+
+.shortcode-warning {
+  &:before {
+    background: color($color-merino saturation(+ 50%) w(- 50%));
+    content: "!";
+  }
+
+  &:after {
+    background: color($color-merino saturation(+ 50%) w(- 50%));
+  }
+}
+
+.shortcode-error {
+  &:before {
+    background: $color-error;
+    content: "!";
+  }
+
+  &:after {
+    background: $color-error;
+  }
+}
+
+.shortcode-disclaimer {
+  &:before {
+    background: $color-sinbad;
+    content: "?";
+  }
+
+  &:after {
+    background: $color-sinbad;
+  }
+}

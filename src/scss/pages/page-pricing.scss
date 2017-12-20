@@ -1,0 +1,151 @@
+.pricing {
+  background: $color-white;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+
+  @media screen and (min-width: 870px) {
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2rem;
+}
+
+.plan {
+  flex: 0 0 100%;
+  padding: 2rem;
+  position: relative;
+
+  @media screen and (min-width: 520px) {
+    flex: 0 0 50%;
+  }
+
+  @media screen and (min-width: 870px) {
+    flex: 0 0 25%;
+  }
+
+}
+
+.plan--top-bar {
+  display: none;
+  background: $color-dark;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+
+  @media screen and (min-width: 870px) {
+    display: block;
+  }
+
+}
+
+.plan--include-top {
+  display: block;
+
+  .plan--title { color: $color-dark; }
+  .plan--cost { color: $color-dark; }
+
+  @media screen and (min-width: 870px) {
+    display: none;
+  }
+
+}
+
+.plan--title {
+  color: $color-white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.plan--cost {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: $color-white;
+
+  .plan--amount { display: flex; }
+
+  .currency {
+    display: block;
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    font-size: 1.4rem;
+  }
+
+  .price {
+    display: block;
+    font-size: 5rem;
+  }
+
+  .price-note {
+    display: block;
+    margin: 0;
+    opacity: .6;
+    font-size: .8rem;
+    line-height: 1.35;
+    max-width: 120px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    flex-direction: row;
+    .price-note { margin: 1.5rem 0 0 1rem; }
+  }
+
+}
+
+.plan--description {
+  display: block;
+  margin-top: 2rem;
+  min-height: 3.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-dark;
+
+  @media screen and (min-width: 870px) {
+    margin-top: 3.5rem;
+    min-height: 3.5rem;
+  }
+
+}
+
+.plan--cta {
+  position: relative;
+  margin-top: 2rem;
+
+  @media screen and (min-width: 870px) {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    margin: 0;
+  }
+
+}
+
+.plan--item {
+  border-bottom: 1px solid $color-grey;
+  padding: .5rem 0;
+  font-size: .8rem;
+  &:last-of-type { border-bottom: 0; }
+}
+
+.faq {
+  background: $color-white;
+  border-top: 1px solid $color-grey;
+  padding: 1.5rem 0;
+  font-size: .85rem;
+
+  h3 { font-size: .85rem; }
+
+  .column {
+    flex: 0 0 100%;
+    @media screen and (min-width: 500px) { flex: 0 0 50%; }
+    @media screen and (min-width: 1000px) { flex: 0 0 33.33%; }
+  }
+
+}

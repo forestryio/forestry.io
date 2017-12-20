@@ -1,0 +1,44 @@
+{{- $currentPage := . -}}
+{{- with index $.Site.Menus .Section -}}
+<div class="sidebar">
+  {{- range . -}}
+  <h3>{{ .Name }}</h3>
+  <ul>
+  {{- range .Children -}}
+    {{- if not (eq .Weight -9999) -}}
+      <li><a href="{{ .URL | absURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a></li>
+      {{- if $.IsMenuCurrent .Menu . -}}
+        {{- template "toc" $currentPage -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  </ul>
+  {{- end -}}
+</div>
+{{- end -}}
+{{- define "toc" -}}
+  {{- $page := . -}}
+  {{/* ignore empty links with + */}}
+  {{- $headers := findRE "<h[2-6].*?[id].*?>(.|\n])+?</h[2-6]>" .Content -}}
+  {{/* At least one header to link to */}}
+  {{- $has_headers := ge (len $headers) 1 -}}
+  {{/* A post can explicitly disable Table of Contents with toc: false */}}
+  {{- $show_toc := (eq $.Params.toc false) -}}
+  {{- if $has_headers -}}
+    <ul class="sidebar--table-of-contents">
+    {{- range $headers -}}
+      {{- $header := . -}}
+      {{- range first 1 (findRE "<h[2-5]" $header 1) -}}
+        {{- range findRE "[2-5]" . 1 -}}
+          {{- $level := (int .) -}}
+          {{- $anchorId := (replace ($header | plainify | htmlEscape | urlize | safeURL) "." "-") -}}
+          {{- $href := printf "%s%s%s" $page.Permalink "#" $anchorId | string -}}
+            <li class="level-{{ $level }}">
+              <a href="{{ $href | relURL }}">{{ $header | plainify | htmlEscape }}</a>
+            </li>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    </ul>
+  {{- end -}}
+{{- end -}}

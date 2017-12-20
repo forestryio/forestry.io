@@ -1,0 +1,10 @@
+{{- if .Inner -}}
+  {{- template "warning" . -}}
+{{- end -}}
+{{- define "warning" -}}
+{{- $title := cond (.IsNamedParams) (.Get "name") (.Get 0) -}}
+<div class="shortcode-warning">
+  <h4>{{ $title | default "Warning" }}</h4>
+  {{ markdownify .Inner }}
+</div>
+{{- end -}}

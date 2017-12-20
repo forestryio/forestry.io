@@ -1,0 +1,12 @@
+---
+hide_body: false
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: datetime
+  label: Publish Date
+  name: date
+  description: Pages with a future publish date will not be published

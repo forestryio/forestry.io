@@ -1,0 +1,35 @@
+{{/* Specific schema definition for product pricing results in Google */}}
+{{/* https://developers.google.com/search/docs/data-types/product */}}
+<script type="application/ld+json">
+  {{- range .Site.Data.pricing.plans -}}
+  {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "{{ .title }}",
+    {{- with $.Params.images -}}
+    "image": [
+    {{- range first 6 . -}}
+     "{{- .url | absURL -}}",
+    {{- end -}}
+    ],
+    {{- end -}}
+    "brand": {
+      "@type": "Thing",
+      "name": "{{ $.Site.Title }}"
+    },
+    {{- with $.Params.rating -}}
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{ .value }}",
+      "ratingCount": "{{ .total }}"
+    },
+    {{- end -}}
+    "offers": {
+      "@type": "Offer",
+      "price": {{ .priceMonthly }},
+      "priceCurrency": "USD",
+
+    }
+  }
+  {{- end -}}
+  </script>

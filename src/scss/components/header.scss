@@ -1,0 +1,304 @@
+$header-height: 5rem;
+
+.header {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid $color-grey;
+  display: flex;
+  font-size: 14px;
+  height: $header-height;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+
+  .left-block {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: all 0.15s linear;
+    width: 120px;
+
+    .logo {
+      backface-visibility: hidden;
+      background-image: url(../img/forestry-full.svg);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 1.5rem;
+      line-height: 0;
+      overflow: hidden;
+      transition: width 0.15s linear, opacity 0.15s ease;
+      width: 100%;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 1.5rem;
+      .logo { background-image: url(../img/forestry-symbol.svg); }
+    }
+
+  }
+
+  .right-block {
+    align-items: center;
+    display: flex;
+  }
+
+  .search {
+    margin-right: 2rem;
+    position: relative;
+
+    &::after {
+      background-image: url("/img/search.svg");
+      background-repeat: no-repeat;
+      background-size: 0.9rem;
+      content: "";
+      height: 100%;
+      left: 0.7rem;
+      opacity: 0.25;
+      position: absolute;
+      top: 0.65rem;
+      width: 2rem;
+      z-index: 10;
+    }
+
+    input { padding-left: 2rem; }
+  }
+}
+
+.header.dark {
+  background-color: $color-dark;
+  border-bottom: 1px solid $color-dark;
+  color: $color-white;
+
+  .logo { background-image: url("../img/forestry-neg-full.svg"); }
+
+  .nav {
+    color: $color-white;
+    &.expanded { color: $color-dark; }
+  }
+
+  .button { color: $color-white; }
+
+  @media screen and (max-width: 700px) {
+    .logo { background-image: url(../img/forestry-neg-symbol.svg); }
+  }
+
+}
+
+.header.docs {
+  height: $header-height;
+
+  .nav {
+    &.expanded {
+      display: block;
+      height: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 1.24rem 2rem 2rem;
+
+      @media screen and (min-width: 780px) { padding: 1.21rem 4rem 2rem; }
+
+      ul.main-nav-items {
+        border-bottom: 1px solid $color-grey;
+        padding-bottom: 2rem;
+        width: 100%;
+      }
+
+      li { font-size: 1rem; }
+
+      .docs-nav-items {
+        border-top: 1px solid $color-grey;
+        font-size: 1rem;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        width: 100%;
+
+        h2 { margin-bottom: 2rem; }
+
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+
+        ul {
+          color: $color-copy-dark;
+          margin-bottom: 2rem;
+        }
+
+        li {
+          line-height: 1.4;
+          margin-bottom: 0.5rem;
+
+          a {
+            color: $color-copy-dark;
+            font-weight: 400;
+            text-decoration: none;
+
+            &.active {
+              color: $color-brand;
+              font-weight: 600;
+            }
+
+          }
+        }
+
+      }
+
+      .signup-button {
+        margin: 2rem 0 0;
+      }
+
+      .mini-nav--logo {
+        display: block;
+      }
+
+    }
+
+    @media screen and (min-width: 780px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 860px) {
+      .docs-nav-items { display: none; }
+    }
+
+    @media screen and (min-width: 1100px) {
+      display: block;
+    }
+
+  }
+
+  .mini-nav--toggle {
+    @media screen and (min-width: 780px) { display: block; }
+
+    @media screen and (min-width: 1100px) { display: none; }
+  }
+
+}
+
+.header.docs.container {
+  padding: 0 2rem;
+
+  @media screen and (min-width: 780px) { padding: 0 4rem; }
+}
+
+.nav {
+  color: $color-dark;
+  display: none;
+  position: relative;
+  transition: all 0.15s linear;
+  white-space: nowrap;
+
+  &.expanded {
+    background: $color-white;
+    border-bottom: 1px solid $color-grey;
+    display: block;
+    height: auto;
+    left: 0;
+    padding: 1.72rem 8vw 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+
+    .nav-content {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    li {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .signup-button {
+      margin: 2rem 0 0;
+    }
+
+    .mini-nav--logo {
+      display: block;
+    }
+
+    @media screen and (min-width: 780px) {
+      display: none;
+    }
+
+  }
+
+  .nav-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 780px) {
+    display: block;
+  }
+
+}
+
+.nav li {
+  display: inline;
+  list-style: none;
+  margin-right: 1.5rem;
+  &:last-child { margin: 0; }
+
+  .nav-item {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s ease;
+
+    &:hover { color: $color-brand; }
+    &.active { color: $color-brand; }
+  }
+
+}
+
+.mini-nav--toggle {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 40;
+
+  img {
+    display: block;
+    width: 1.2rem;
+  }
+
+  .toggle-open { display: block; }
+  .toggle-close { display: none; }
+
+  @media screen and (min-width: 780px) { display: none; }
+
+}
+
+.nav.expanded + .mini-nav--toggle {
+  .toggle-open { display: none; }
+  .toggle-close { display: block; }
+}
+
+.mini-nav--logo {
+  backface-visibility: hidden;
+  background-image: url(../img/forestry-full.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  height: 1.5rem;
+  line-height: 0;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 0.15s linear;
+  width: 110px;
+}

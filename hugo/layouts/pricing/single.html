@@ -1,0 +1,42 @@
+{{- define "json-ld" -}}
+  {{- partial "seo/json-ld/organization" . -}}
+  {{- partial "seo/json-ld/pricing" . -}}
+{{- end -}}
+{{- define "main" -}}
+  <section class="section pricing">
+    <div class="plan--top-bar">
+      <div class="container">
+        <div class="plans">
+        {{- range .Site.Data.pricing.plans -}}
+          {{- partial "components/pricing/plan-summary" . -}}
+        {{- end -}}
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="plans">
+      {{- range .Site.Data.pricing.plans -}}
+        {{- partial "components/pricing/plan" . -}}
+      {{- end -}}
+      </div>
+    </div>
+  </section>
+
+  {{- with .Params.faqs -}}
+  <section class="section faq">
+    <div class="container">
+    {{- range . -}}
+      {{- if and .headline .textline -}}
+        <div class="column">
+          <h3>Your site, your workflow</h3>
+          <p>Write front-end code with Jekyll or Hugo and push to your Git repo. Forestry will pull in your commits and update the CMS.</p>
+          <p>Invite your team to create content in a rich UI. Their updates get committed back without merge conflicts.</p>
+        </div>
+      {{- end -}}
+    {{- end -}}
+    </div>
+  </section>
+  {{- end -}}
+
+  {{- partial "components/cta/basic" -}}
+{{- end -}}

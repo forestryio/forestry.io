@@ -1,0 +1,10 @@
+{{- if .Inner -}}
+  {{- template "error" . -}}
+{{- end -}}
+{{- define "error" -}}
+{{- $title := cond (.IsNamedParams) (.Get "name") (.Get 0) -}}
+<div class="shortcode-error">
+  <h4>{{ $title | default "Error" }}</h4>
+  {{ markdownify .Inner }}
+</div>
+{{- end -}}

@@ -1,0 +1,33 @@
+{{/* Specific schema definition for product pricing results in Google */}}
+{{/* https://developers.google.com/search/docs/data-types/logo */}}
+{{/* https://developers.google.com/search/docs/data-types/social-profile */}}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "{{ $.Site.BaseURL }}",
+    "logo": "{{ "img/forestry-full.svg" | absURL }}",
+    "sameAs": [
+      {{- with $.Site.Social.twitter -}}
+      "https://www.twitter.com/{{ $.Site.Social.twitter }}"
+      {{- end -}}
+      {{- with $.Site.Social.facebook -}}
+      "http://www.facebook.com/{{ $.Site.Social.facebook }}",
+      {{- end -}}
+      {{- with $.Site.Social.instagram -}}
+      "http://www.facebook.com/{{ $.Site.Social.instagram }}",
+      {{- end -}}
+      {{- with $.Site.Social.linkedin -}}
+      "http://www.facebook.com/{{ $.Site.Social.linkedin }}",
+      {{- end -}}
+      {{- with $.Site.Social.googleplus -}}
+      "http://www.facebook.com/{{ $.Site.Social.googleplus }}",
+      {{- end -}}
+    ]{{/*,
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+1-401-555-1212",
+      "contactType": "customer service"
+    }]*/}}
+  }
+  </script>

@@ -1,0 +1,38 @@
+{{- if and (isset . "image") (isset . "page") }}
+  {{- $page := .page -}}
+  {{/* Prefix with baseURL if a relative link */}}
+  {{- $image := cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL) -}}
+  {{/* Only return cloudinary URL in production */}}
+  {{- if eq (getenv "HUGO_ENV") "production" }}
+    {{- $mode_config := cond (and (in $image "http") (not (in $image $page.Site.Params.BaseURL))) "fetch" "upload" -}}
+    {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" }}
+    {{- $cloudinary_url := (delimit (slice "https://res.cloudinary.com/" $page.Site.Params.cloudinary.cloud_name "/image" (.social_network | default "") "/" $mode "/") "") -}}
+    {{- $path := cond (eq (getenv "HUGO_ENV") "production") $cloudinary_url $page.Site.BaseURL -}}
+    {{- $availableTransforms := getJSON "/layouts/partials/cloudinary/params.json" -}}
+    {{- $page.Scratch.SetInMap "transforms" "width" "w_auto" -}}
+    {{/* Use provided width variable if being used by breakpoints partial */}}
+    {{- if .isbreakpoints -}}
+      {{- $page.Scratch.SetInMap "transforms" "width" (delimit (slice "w_" .width) "") -}}
+    {{- end -}}
+    {{/* Set up transform params for regular usage */}}
+    {{- if not .isbreakpoints -}}
+      {{- range $key, $param := $availableTransforms -}}
+        {{- $value := (index $ $key) | default $param.default -}}
+        {{- if isset $ "value" -}}
+          {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" $value) "") -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $transforms := $page.Scratch.Get "transforms" -}}
+    {{/* Transform params to URL format */}}
+    {{- $transforms := delimit $transforms "," -}}
+    {{/* Removing leading slash */}}
+    {{- $image := replaceRE "(^/)" "" $image -}}
+    {{/* Build cloudinary image URL */}}
+    {{- $image := delimit (slice $path ($transforms) "/" $image) "" -}}
+    {{/* Return cloudinary image URL */}}
+    {{- $image -}}
+  {{ else }}
+    {{- .image -}}
+  {{ end -}}
+{{ end -}}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
+  <head>
+    {{- block "head" . -}}
+      <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+      {{- partial "head" . -}}
+      {{- block "json-ld" . -}}
+        {{/* This is where schema.org schemas get rendered for Google structured data */}}
+        {{- partial "seo/json-ld/organization" . -}}
+      {{- end -}}
+    {{- end -}}
+  </head>
+  <body class="{{ .Section }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5HP9Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{- block "navbar" . -}}
+      {{/* Use this block to override the navigation for any layout */}}
+      {{- partial "components/navbar" . -}}
+    {{- end -}}
+
+    {{- block "main" . -}}
+      {{/* Use this block to render the main content for any layout */}}
+    {{- end -}}
+
+    {{- block "footer" . -}}
+      {{/* Use this block to override the footer for any layout */}}
+      {{- partial "components/footer" . -}}
+    {{- end -}}
+
+    {{- block "scripts" . -}}
+      {{/* Use this block to override the scripts for any layout */}}
+      {{- partial "scripts" . -}}
+    {{- end -}}
+
+    {{- block "search" . -}}
+      {{/* Use this block to override the search for any layout */}}
+      {{- partial "components/search" . -}}
+    {{- end -}}
+  </body>
+</html>

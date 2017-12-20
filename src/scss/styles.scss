@@ -1,0 +1,35 @@
+/* Base */
+@import "base/palette.scss";
+@import "base/typography.scss";
+@import "base/base.scss";
+@import "base/layout.scss";
+
+/* Components */
+@import "components/button.scss";
+@import "components/input.scss";
+@import "components/forms.scss";
+@import "components/header.scss";
+@import "components/logotype.scss";
+@import "components/hero.scss";
+@import "components/search.scss";
+@import "components/shortcodes.scss";
+@import "components/hlinks.scss";
+@import "components/code-syntax.scss";
+@import "components/section-how-it-works.scss";
+@import "components/section-trusted.scss";
+@import "components/section-roots.scss";
+@import "components/section-sync.scss";
+@import "components/section-automated.scss";
+@import "components/section-commits.scss";
+@import "components/section-deploy.scss";
+@import "components/section-sss.scss";
+@import "components/section-testmonials.scss";
+@import "components/section-cta.scss";
+@import "components/footer.scss";
+
+/* Pages */
+@import "pages/page-features.scss";
+@import "pages/page-pricing.scss";
+@import "pages/page-docs.scss";
+@import "pages/page-blog.scss";
+@import "pages/page-post.scss";

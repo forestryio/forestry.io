@@ -1,0 +1,19 @@
+{{- define "main" -}}
+  <main class="single-post">
+    {{- if isset .Params "featureImage" -}}
+    <div class="post--feature-image">
+      <img src="{{ .Params.featureImage }}" alt="{{ .Title }}">
+    </div>
+    {{- end -}}
+    <div class="container">
+      <h1 class="post--title">{{ .Params.headline | default .Title }}</h1>
+      <div class="post--meta">
+        <div class="post--info">
+          <span class="post--meta-label">Last updated</span>
+          <span class="post--date">{{ .Lastmod.Format .Site.Params.dateFormat }}</span>
+        </div>
+      </div>
+      {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
+    </div>
+  </main>
+{{- end -}}

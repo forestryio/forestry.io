@@ -1,0 +1,78 @@
+{
+  "plans": [
+    {
+      "title": "personal",
+      "priceAnnually": "0",
+      "priceMonthly": "0",
+      "description": "I want a website",
+      "buttonText": "Get started",
+      "buttonUrl": "#0",
+      "planItems": [
+        { "text": "1 User" },
+        { "text": "Community support" },
+        { "text": "Git sync" },
+        { "text": "Automatic build & deploy" },
+        { "text": "Host anywhere" },
+        { "text": "Jekyll plugin support" },
+        { "text": "Preview in staging environment" }
+      ]
+    },
+    {
+      "title": "small team",
+      "priceAnnually": "9",
+      "priceMonthly": "12",
+      "description": "I'm a freelance developer",
+      "buttonText": "Get started",
+      "buttonUrl": "#0",
+      "planItems": [
+        { "text": "3 Users" },
+        { "text": "Community support" },
+        { "text": "Git sync" },
+        { "text": "Automatic build & deploy" },
+        { "text": "Host anywhere" },
+        { "text": "Jekyll plugin support" },
+        { "text": "Preview in staging environment" },
+        { "text": "Forestry Remote" }
+      ]
+    },
+    {
+      "title": "large team",
+      "priceAnnually": "16",
+      "priceMonthly": "22",
+      "description": "We're a large agency",
+      "buttonText": "Get started",
+      "buttonUrl": "#0",
+      "planItems": [
+        { "text": "7 Users" },
+        { "text": "Business hour support" },
+        { "text": "Git sync" },
+        { "text": "Automatic build & deploy" },
+        { "text": "Host anywhere" },
+        { "text": "Jekyll plugin support" },
+        { "text": "Preview in staging environment" },
+        { "text": "Forestry Remote" }
+      ]
+    },
+    {
+      "title": "enterprise",
+      "priceAnnually": "_",
+      "priceMonthly": "_",
+      "description": "We have special needs",
+      "buttonText": "Get a quote",
+      "buttonUrl": "#0",
+      "planItems": [
+        { "text": "_ Users" },
+        { "text": "Enterprise support" },
+        { "text": "Git sync" },
+        { "text": "Automatic build & deploy" },
+        { "text": "Host anywhere" },
+        { "text": "Jekyll plugin support" },
+        { "text": "Preview in staging environment" },
+        { "text": "Forestry Remote" },
+        { "text": "Enterprise User Management" },
+        { "text": "Manage multiple sites" },
+        { "text": "On-premise Installation" }
+      ]
+    }
+  ]
+}

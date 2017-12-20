@@ -1,0 +1,93 @@
+.blog-list-wrapper > .container {
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8rem;
+
+  @media screen and (min-width: 800px) { flex-direction: row; }
+}
+
+.blog-header {
+  flex: 0 0 40%;
+  padding: 0 0 4rem;
+  > * { max-width: 400px; }
+
+  @media screen and (min-width: 700px) {
+    padding: 0 0 4rem;
+
+    .blog-header--sticky {
+      position: sticky;
+      top: calc($header-height + 3rem)
+    }
+  }
+
+  .blog-header--description {
+    color: $color-copy;
+    font-size: 0.95rem;
+    line-height: normal;
+    margin-top: 0.5rem;
+  }
+
+  .newsletter-signup {
+    display: none;
+    margin-top: 4rem;
+
+    @media screen and (min-width: 800px) { display: block; }
+  }
+
+  .newsletter-signup--text {
+    font-size: 0.95rem;
+  }
+
+  .newsletter-signup--field {
+    margin-top: 1rem;
+
+    input {
+      width: 80%;
+    }
+
+    .button {
+      border: 1px solid $color-brand;
+      border-radius: 0 1.5em 1.5em 0;
+    }
+
+  }
+
+}
+
+.section-blog-list {
+  flex: 0 0 60%;
+  padding: 0;
+
+  @media screen and (min-width: 800px) { padding: 0 0 0 4rem; }
+
+  .blog-post {
+    margin-bottom: 6rem;
+    max-width: 600px;
+  }
+
+  .post-title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-meta {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .post-date {
+    color: $color-medium-dark;
+    font-weight: 600;
+  }
+
+  .post-category {
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+
+}

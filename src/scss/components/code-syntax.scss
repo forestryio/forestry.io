@@ -1,0 +1,108 @@
+pre {
+  background: $color-light-grey;
+  padding: 0.5rem 1rem;
+  overflow-x: scroll;
+  position: relative;
+
+  .code--copy {
+    opacity: 0;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  &:hover .code--copy {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .code--copy.button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+.hljs {
+  background: $color-light-grey;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.hljs,
+.hljs-subst {
+  color: $color-dark;
+}
+
+.hljs-comment {
+  color: $color-medium-dark;
+}
+
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta-keyword,
+.hljs-doctag,
+.hljs-name {
+  color: $color-copy;
+}
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  color: $color-brand;
+}
+
+.hljs-title,
+.hljs-section {
+  color: $color-dark;
+  font-weight: 600;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: $color-dark;
+}
+
+.hljs-literal {
+  color: $color-brand;
+}
+
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  color: $color-brand;
+}
+
+.hljs-meta {
+  color: $color-sinbad;
+}
+
+.hljs-meta-string {
+  color: $color-sinbad;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 600;
+}

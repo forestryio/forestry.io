@@ -1,0 +1,44 @@
+{{- if and .headline .textline -}}
+<section class="hero">
+  <div class="hero--content">
+
+    <div class="container">
+      <div class="hero--text-block">
+        <h1 class="hero--title">{{ markdownify .headline }}</h1>
+        <div class="hero--sub">{{ markdownify .textline }}</div>
+        <div class="hero-cta">
+        {{- range .ctas -}}
+          <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+        {{- end -}}
+        </div>
+      </div>
+    </div>
+
+    {{- if .visual -}}
+      {{/* TODO: hero visual */}}
+    {{- else if .video -}}
+    <video playsinline autoplay muted loop poster="/video/forestry_factory.jpg" class="factory-video">
+        {{- range .sources -}}
+        <source src="/video/forestry_factory.webm" type="video/webm">
+        <source src="/video/forestry_factory.mp4" type="video/mp4">
+        <source src="/video/forestry_factory.ogv" type="video/ogg">
+        {{- end -}}
+    </video>
+    {{- end -}}
+
+  </div>
+  
+  {{- with .logos -}}
+  <div class="built-for">
+    <span>{{ .textline }}</span>
+    <div class="built-for--logos">
+      {{- range .sources -}}
+      <img src="{{ .permalink }}" class="built-for--logo" width="auto" height="24" alt="{{ .alt | default .permalink }}" />
+      <img src="{{ .permalink }}" class="built-for--logo" width="auto "height="34" alt="{{ .alt | default .permalink }}" />
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+  
+</section>
+{{- end -}}

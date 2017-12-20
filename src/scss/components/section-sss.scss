@@ -1,0 +1,16 @@
+.section-sss {
+  background: $color-white;
+
+  .sss-icon {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .column {
+    flex: 0 0 100%;
+    overflow: hidden;
+    text-align: left;
+
+    @media screen and (min-width: 700px) { flex: 0 0 33.33%; }
+  }
+}

@@ -1,0 +1,52 @@
+html, body {
+  font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a { font-weight: 500; }
+
+p { color: $color-copy; }
+
+.section--title { margin-bottom: 2rem; }
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  margin: 1rem auto 0;
+  max-width: 500px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section--title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.section--sub p {
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.section--sub.is-center {
+  margin: 0;
+
+  @media screen and (min-width: 700px) { margin: 0 auto; }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $color-grey;
+  margin: 2rem 0;
+}

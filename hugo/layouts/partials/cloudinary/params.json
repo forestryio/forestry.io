@@ -1,0 +1,80 @@
+{
+  "width": {
+    "key": "w"
+  },
+  "height": {
+    "key": "h"
+  },
+  "aspect_ratio": {
+    "key": "ar"
+  },
+  "gravity": {
+    "key": "g"
+  },
+  "zoom": {
+    "key": "z"
+  },
+  "x": {
+    "key": "x"
+  },
+  "y": {
+    "key": "y"
+  },
+  "fetch_format": {
+    "key": "f"
+  },
+  "quality": {
+    "key": "q"
+  },
+  "radius": {
+    "key": "r"
+  },
+  "angle": {
+    "key": "a"
+  },
+  "effect": {
+    "key": "e"
+  },
+  "opacity": {
+    "key": "o"
+  },
+  "border": {
+    "key": "bo"
+  },
+  "background": {
+    "key": "b"
+  },
+  "overlay": {
+    "key": "l"
+  },
+  "underlay": {
+    "key": "u"
+  },
+  "default_image": {
+    "key": "d"
+  },
+  "delay": {
+    "key": "dl"
+  },
+  "color": {
+    "key": "co"
+  },
+  "color_space": {
+    "key": "cs"
+  },
+  "dpr": {
+    "key": "dpr"
+  },
+  "page": {
+    "key": "pg"
+  },
+  "density": {
+    "key": "dn"
+  },
+  "flags": {
+    "key": "fl"
+  },
+  "transformation": {
+    "key": "t"
+  }
+}

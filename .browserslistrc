@@ -1,0 +1,8 @@
+# Configures browser support for
+# Webpack and PostCSS
+# https://github.com/ai/browserslist
+
+> 3%
+last 2 major versions
+ie >= 10
+android >= 4.3.3

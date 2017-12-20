@@ -1,0 +1,9 @@
+
+<div class="column">
+  <h3>{{ .Title }}</h3>
+  {{- if .Summary -}}
+    {{ markdownify .Summary }}
+  {{ else  }}
+    {{ .Content | safeHTML | truncate 140 }}
+  {{- end -}}
+</div>

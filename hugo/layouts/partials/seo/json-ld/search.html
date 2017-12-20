@@ -1,0 +1,14 @@
+{{/* Specific schema definition for in-page search on Google */}}
+{{/* https://developers.google.com/search/docs/data-types/sitelinks-searchbox */}}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "{{ "/" | absURL }},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http://www.google.com/search?q=site:{{ "/" | absURL }} {search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>

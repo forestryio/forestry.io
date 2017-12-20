@@ -1,0 +1,24 @@
+# Configures CSS Linting
+# https://stylelint.io/
+
+extends: ["stylelint-config-standard", "stylelint-config-sass-guidelines"]
+plugins: ["stylelint-scss", "stylelint-no-unsupported-browser-features"]
+rules:
+    string-quotes: double
+    no-duplicate-selectors: true
+    color-hex-case: lower
+    color-hex-length: long
+    selector-attribute-quotes: always
+    declaration-colon-space-before: never
+    property-no-vendor-prefix: true
+    value-no-vendor-prefix: true
+    number-leading-zero: always
+    function-url-quotes: always
+    at-rule-no-vendor-prefix: true
+    selector-no-vendor-prefix: true
+    media-feature-name-no-vendor-prefix: true
+    plugin/no-unsupported-browser-features:
+        - true
+        - ignore: []
+          severity: warning
+    scss/at-extend-no-missing-placeholder: true

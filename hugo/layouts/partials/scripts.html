@@ -1,0 +1,7 @@
+{{/* Adblock checker */}}
+<script async src="{{ "/js/ads.min.js" | absURL }}?{{ readFile "static/js/ads.min.js" | md5 }}" type="text/javascript"></script>
+{{/* Algolia search scripts */}}
+<script async src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+{{/* Main app bundle */}}
+<script async src="{{ "/js/scripts.min.js" | relURL }}?{{ readFile "static/js/scripts.min.js" | md5 }}" type="text/javascript"></script>

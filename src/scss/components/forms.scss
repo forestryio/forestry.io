@@ -1,0 +1,26 @@
+.form--joined {
+  display: flex;
+  flex-wrap: nowrap;
+
+  input:first-child,
+  .button:first-child {
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+
+  input:last-child,
+  .button:last-child {
+    border-radius: 0 1.5em 1.5em 0;
+  }
+}
+
+.form--large {
+  input {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+.form--center {
+  margin: 0 auto;
+  justify-content: center;
+}

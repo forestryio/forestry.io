@@ -1,0 +1,12 @@
+{{- if .Inner -}}
+  {{- template "disclaimer" . -}}
+{{- end -}}
+{{- define "disclaimer" -}}
+{{- $title := cond (.IsNamedParams) (.Get "name") (.Get 0) -}}
+<div class="shortcode-disclaimer">
+  {{- if not (eq $title "") -}}
+  <h4>{{ $title | default "Disclaimer" }}</h4>
+  {{- end -}}
+  {{ .Inner }}
+</div>
+{{- end -}}

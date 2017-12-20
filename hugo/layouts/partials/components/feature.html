@@ -1,0 +1,47 @@
+{{/* Renders feature blocks. E.g, homepage */}}
+{{- with .feature -}}
+  {{- if and .headline .textline -}}
+  <section class="section{{ with .class }} {{ . }}{{- end -}}{{ if eq .direction "vertical" }} center{{ end }}">
+    <div class="container">
+      <div class="feature-block {{ .direction | default "ltr" }}">
+        {{- if eq .direction "rtl" -}}{{- with .visual -}}
+          {{- template "visual" (dict "page" $.page "permalink" .permalink "alt" .alt "direction" "left") -}}
+        {{- end -}}{{- end -}}
+        <div class="feature-block--copy">
+          <h2 class="section--title">{{ markdownify .headline }}</h2>
+          <div class="section--sub{{ if eq .direction "vertical" }} is-center{{ end }}">
+            {{ markdownify .textline }}
+          </div>
+        </div>
+        {{- if not (eq .direction "rtl") -}}{{- with .visual -}}
+          {{- template "visual" (dict "page" $.page "permalink" .permalink "alt" .alt "direction" "right") -}}
+        {{- end -}}{{- end -}}
+      </div>
+    </div>
+    {{- if eq .class "section-deploy" -}}
+      <div class="hosting-logos">
+        <div class="container">
+          <div class="hosting-logo">
+            {{- partial "svg" (dict "id" "logos--aws" "height" "30") -}}
+          </div>
+          <div class="hosting-logo">
+            {{- partial "svg" (dict "id" "logos--github-pages" "height" "24") -}}
+          </div>
+          <div class="hosting-logo">
+            {{- partial "svg" (dict "id" "logos--netlify" "height" "34") -}}
+          </div>
+          <div class="hosting-logo">
+            {{- partial "svg" (dict "id" "logos--ftp" "height" "18") -}}
+          </div>
+        </div>
+        <div class="deploying-animation"></div>
+      </div>
+      {{- end -}}
+  </section>
+  {{- end -}}
+{{- end -}}
+{{- define "visual" -}}
+<div class="feature-block--illu illu-shadow--{{ .direction }}">
+  {{- partial "cloudinary/image" (dict "page" .page "image" .permalink "alt" (.alt | default .permalink)) }}
+</div>
+{{- end -}}

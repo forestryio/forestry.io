@@ -1,0 +1,39 @@
+{{- if and (isset . "page") (isset . "image") -}}
+  {{- $page := .page -}}
+  {{- $params := .params -}}
+  {{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
+  {{- $presetName := .preset | default "default" -}}
+  {{- $presets := $page.Site.Params.cloudinary.presets | default "" -}}
+  {{- $preset := cond (eq $presets "") "" (index $presets $presetName) -}}
+  {{/* Build the dict for the url partial */}}
+  {{- $page.Scratch.SetInMap "url" "page" $page -}}
+  {{- $page.Scratch.SetInMap "url" "image" .image -}}
+  {{- $page.Scratch.SetInMap "url" "width" ($preset.fallback_width | default "800") -}}
+  {{/* Add presets params to the map */}}
+  {{- range $key, $value := $preset.params -}}
+    {{- $page.Scratch.SetInMap "url" $key $value -}}
+  {{- end -}}
+  {{/* Add passed in params to map, overwriting preset */}}
+  {{- range $key, $value := $params -}}
+    {{- $page.Scratch.SetInMap "url" $key $value -}}
+  {{- end -}}
+  {{/* Generate the cloudinary URL */}}
+  {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+  {{- $breakpoints := partial "cloudinary/breakpoints.html" (dict "page" $page "image" .image "preset" $presetName) -}}
+  {{- template "srcset" (dict "page" $page "src" $src "alt" .alt "title" .title "breakpoints" $breakpoints "sizes" $preset.sizes "lazysizes" $lazySizes) -}}
+{{- end -}}
+{{- define "srcset" -}}
+  {{/* placeholder image for lazyloaded images */}}
+  {{- $placeholder := .page.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" -}}
+  <p>
+    <img{{ if $.lazysizes }} src="{{ $placeholder | safeURL }}"{{ end }}{{ if $.lazysizes }} data-src{{ else }} src{{ end }}="{{ .src }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ .src }}{{ end }}"{{ with .title }} title="{{ . }}"{{- end -}}{{ if $.lazysizes }} class="lazyload"{{ end }}
+    {{- with .breakpoints -}}
+      {{- $breakpoints := split . "," }}
+      {{ if $.lazysizes }}data-srcset{{ else }}srcset{{ end }}="{{- range $breakpoints -}}
+        {{- $output := partial "cloudinary/url.html" (dict "page" $.page "image" $.src "width" .) -}}
+        {{ $output }} {{ . }}w,
+      {{- end -}}"
+      {{ if $.lazysizes }}data-sizes{{ else }}sizes{{ end }}="{{ $.sizes | default "100vw" }}"
+    {{- end -}}/>
+  </p>
+{{- end -}}

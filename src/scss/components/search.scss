@@ -1,0 +1,66 @@
+.search-results > div {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $color-white;
+  z-index: -99;
+}
+
+body.searching {
+  .search-results {
+    visibility: visible;
+    z-index: 19;
+  }
+}
+
+.search-results > .container {
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8rem;
+
+  @media screen and (min-width: 800px) { flex-direction: row; }
+}
+
+.section-search-results {
+  flex: 0 0 30%;
+  padding: 0;
+
+  @media screen and (min-width: 800px) { padding: 0 0 0 4rem; }
+
+  .search-result {
+    margin-bottom: 6rem;
+    max-width: 600px;
+  }
+
+  .search-result--title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+  }
+
+  .search-result--meta {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .search-result--date {
+    color: $color-medium-dark;
+    font-weight: 600;
+  }
+
+  .search-result--category {
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+
+}
+
+[data-category="Forestry"] { color: $color-brand; }
+[data-category="Jekyll"] { color: #ffcf55; }
+[data-category="Hugo"] { color: #54defd; }

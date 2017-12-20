@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2" y="1" width="25" height="8" rx="2"></rect>
+        <rect id="path-2" x="2" y="10" width="25" height="8" rx="2"></rect>
+        <rect id="path-3" x="2" y="20" width="25" height="8" rx="2"></rect>
+        <polygon id="path-4" points="0.502091406 29 29 0.502091406 28.4979086 0 0 28.4979086"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landingpage" transform="translate(-39.000000, -1640.000000)">
+            <g id="Group-6" transform="translate(42.000000, 1643.000000)">
+                <path d="M15,4.3544649 L15,23.2419067" id="Line" stroke="#979797" stroke-linecap="round"></path>
+                <g id="Rectangle-8">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#979797" stroke-width="1" x="2.5" y="1.5" width="24" height="7" rx="2"></rect>
+                </g>
+                <g id="Rectangle-8-Copy">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#979797" stroke-width="1" x="2.5" y="10.5" width="24" height="7" rx="2"></rect>
+                </g>
+                <g id="Rectangle-8-Copy-2">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#979797" stroke-width="1" x="2.5" y="20.5" width="24" height="7" rx="2"></rect>
+                </g>
+                <g id="Line-2" fill-rule="nonzero">
+                    <use fill="#58D471" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <path stroke="#FFFFFF" stroke-width="2" d="M0.502091406,30.4142136 L-1.41421356,28.4979086 L28.4979086,-1.41421356 L30.4142136,0.502091406 L0.502091406,30.4142136 Z"></path>
+                </g>
+                <rect id="Rectangle-9" fill="#DEDEDE" x="23" y="22" width="2" height="1"></rect>
+                <rect id="Rectangle-9-Copy" fill="#DEDEDE" x="23" y="12" width="2" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

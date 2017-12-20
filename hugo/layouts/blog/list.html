@@ -1,0 +1,35 @@
+{{- define "main" -}}
+  <main class="blog-list-wrapper">
+    <div class="container">
+      <section class="blog-header">
+        <div class="blog-header--sticky">
+          <h1 class="blog-header--title">{{ .Params.headline | default .Title }}</h1>
+          <p class="blog-header--description">
+            {{- if .Summary -}}
+              {{ .Summary }}
+            {{- else -}}
+              {{ .Params.textline }}
+            {{- end -}}
+          </p>
+          <div class="newsletter-signup">
+            <h3 class="newsletter-signup--title">Want to hear it first?</h3>
+            <p class="newsletter-signup--text">
+              Subscribe to our newsletter to get the posts directly in your inbox as they get posted.
+            </p>
+            <div class="newsletter-signup--field form--joined form--large">
+              <input type="email" placeholder="your.name@example.com"><button class="button primary small">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-blog-list">
+        {{- range .Data.Pages -}}
+          {{ .Render "summary" }}
+        {{- end -}}
+      </section>
+    </div>
+  </main>
+
+  {{- partial "components/cta/basic" -}}
+
+{{- end -}}

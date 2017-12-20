@@ -1,0 +1,18 @@
+{{- define "json-ld" -}}
+  {{- partial "seo/json-ld/organization" . -}}
+  {{- partial "seo/json-ld/search" . -}}
+  {{- partial "seo/json-ld/index" . -}}
+{{- end -}}
+{{- define "main" -}}
+  {{- partial "components/hero" .Params.hero }}
+
+  {{- range .Params.features -}}
+    {{- partial "components/feature" (dict "page" $ "feature" .) -}}
+  {{- end -}}
+
+  {{- partial "components/tweets" (dict "page" $ "tweets" $.Site.Data.tweets) -}}
+
+  {{- with .Params.cta -}}
+    {{- partial "components/cta/basic" . -}}
+  {{- end -}}
+{{- end -}}

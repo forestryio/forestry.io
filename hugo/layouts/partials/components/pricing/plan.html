@@ -1,0 +1,26 @@
+<div class="plan">
+  <div class="plan--include-top">
+    <span class="plan--title">{{ .title }}</span>
+    <div class="plan--cost">
+      <div class="plan--amount">
+        <span class="currency">$</span>
+        <span class="price">{{ .priceAnnually | default "_" }}</span>
+      </div>
+      <span class="price-note">
+        Per month billed annually or ${{ .priceMonthly | default "_" }} month to month.
+      </span>
+    </div>
+  </div>
+  <a href="{{ .buttonUrl | absURL }}" class="plan--cta button primary small">{{ .buttonText }}</a>
+  <p class="plan--description">{{ .description }}</p>
+  <div class="plan--includes">
+    <ul>
+      {{- range .planItems -}}
+        <li class="plan--item">
+          <div class="checkmark"></div>
+          {{ .text }}
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

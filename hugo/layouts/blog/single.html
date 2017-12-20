@@ -1,0 +1,84 @@
+{{- define "main" -}}
+  <main class="single-post">
+    {{- with .Params.images -}}
+      {{- range first 1 . -}}
+        <div class="post--feature-image">
+          <img src="{{ . | relURL }}" alt="{{ $.Params.headline | default $.Title }}">
+        </div>
+      {{- end -}}
+    {{- end -}}
+    <div class="container">
+      <h1 class="post--title">{{ .Params.headline | default .Title }}</h1>
+      <div class="post--meta">
+        {{- with .Params.authors -}}
+        <div class="author">
+          <span class="post--meta-label">Written by</span>
+          {{- range . -}}
+            {{- $authorName := . -}}
+            {{- range $.Site.Params.authors -}}
+              {{- if eq $authorName .fullName -}}
+              <div class="author--wrapper">
+                <div class="author--avatar">
+                  <img src="{{ .avatar }}" alt="{{ .fullName | default .avatar }}">
+                </div>
+                <div class="author--info">
+                  <span class="author--name">{{ .fullname }}</span>
+                  <span class="author--title">{{ .shortBio }}</span>
+                </div>
+              </div>
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        </div>
+        {{- end -}}
+        <div class="post--info">
+          <span class="post--meta-label">Posted on</span>
+          <span class="post--date">
+            {{- with .GitInfo -}}
+              <a href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}">
+            {{- end -}}
+            {{ .Date.Format $.Site.Params.dateformat }}
+            {{- with .GitInfo -}}
+              </a>
+            {{- end -}}
+          </span>
+          {{- with .Params.categories -}}
+          <span>in {{ range . }}<a href="{{/* todo permalink  */}}" class="post--category" data-category="{{ . }}">{{ . }}</a>{{- end -}}</span>
+          {{- end -}}
+        </div>
+      </div>
+
+      {{- partial "cloudinary/content" (dict "page" $ "srcset" true) -}}
+
+      <hr />
+
+      {{- if not .Params.hideAbout -}}
+      <div class="post--about">
+        <h2>About {{ .Site.Title }}</h2>
+        {{ markdownify .Site.Params.blog_description | default .Site.Params.description }}
+      </div>
+      {{- end -}}
+      {{- if not .Params.hideFeedback -}}
+      <div class="post--feedback">
+        <p>Caught a mistake or want to contribute to the {{ .Section | humanize | lower }}? Edit this page on Github!</p>
+        {{- end -}}
+      </div>
+      {{- if or (not .Params.hideAbout) (not .Params.hideFeedback) -}}
+      <hr />
+      {{- end -}}
+
+      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ with $related }}
+      <aside class="post--related">
+        <h2 class="post--related-title">Other Articles You Might Like</h2>
+        {{- range . -}}
+          {{ .Render "summary" }}
+        {{- end -}}
+      </aside>
+      {{- end -}}
+
+    </div>
+  </main>
+
+  {{- partial "components/cta/newsletter" -}}
+{{- end -}}

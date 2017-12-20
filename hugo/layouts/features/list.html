@@ -1,0 +1,23 @@
+{{- define "main" -}}
+  {{- partial "components/hero" .Params.hero }}
+
+  <section class="section features">
+    <div class="container">
+      {{- if not .Params.hero -}}
+      <h1 class="page-title center">{{ .Params.headline }}</h1>
+      <p class="page-subtitle center">{{ .Params.textline }}</p>
+      {{- end -}}
+      {{- range .Data.Pages -}}
+        <div class="column">
+          {{- with .Params.icon -}}
+            {{- partial "svg" (dict "id" .type "class" .class) -}}
+          {{- end -}}
+          <h3>{{ .Params.title }}</h3>
+          {{ .Params.description | markdownify }}
+        </div>
+      {{- end -}}
+    </div>
+  </section>
+
+  {{- partial "components/cta/basic" .Params.cta }}
+{{- end -}}

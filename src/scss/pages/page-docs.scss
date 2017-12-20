@@ -1,0 +1,190 @@
+/* Config */
+$sidebar-width: 320px;
+
+.sidebar {
+  background: $color-white;
+  font-size: 0.86rem;
+  height: calc(100% - 4rem);
+  left: 0;
+  overflow: auto;
+  padding: 2rem 2rem 2rem 4rem;
+  position: fixed;
+  top: 4rem;
+  transform: translateX(-$sidebar-width);
+  transition: transform 0.15s linear;
+  width: $sidebar-width;
+  z-index: 10;
+
+  h2 { margin-bottom: 2rem; }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    color: $color-copy-dark;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar--table-of-contents {
+    border-left: 2px solid $color-grey;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  li {
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $color-copy-dark;
+      font-weight: 400;
+      text-decoration: none;
+
+      &.active {
+        color: $color-brand;
+        font-weight: 600;
+      }
+
+    }
+  }
+
+  @media screen and (min-width: 860px) {
+    transform: translateX(0);
+  }
+
+}
+
+.docs-content {
+  background: $color-white;
+  color: $color-dark;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+  padding-top: 5.5rem;
+  position: relative;
+  word-spacing: 0.05em;
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .pagination {
+    align-items: center;
+    color: $color-brand;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: 600;
+    justify-content: space-between;
+    line-height: 1em;
+    margin: 4rem 0 2rem;
+
+    span {
+      display: block;
+      position: relative;
+    }
+
+    span:before {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      height: 1em;
+      position:absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1em;
+    }
+
+    a:first-of-type { margin-right: 4rem; }
+
+    .prev-doc { padding-left: 1.5rem; }
+
+    .prev-doc:before {
+      background-image: url("/img/chevron-left.svg");
+      left: 0;
+    }
+
+    .next-doc { padding-right: 1.5rem; }
+
+    .next-doc:before {
+      background-image: url("/img/chevron-right.svg");
+      right: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 860px) {
+    margin-left: $sidebar-width;
+  }
+
+  @media screen and (min-width: 1240px) {
+    margin: 0 auto;
+  }
+
+}
+
+/* Content styling */
+.docs-content {
+  padding-bottom: 4rem;
+
+  h1 { font-size: 2rem; }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  strong { font-weight: 600; }
+
+  p {
+    color: $color-copy-dark;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: $color-brand;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  blockquote::before {
+    background: $color-brand;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+  }
+
+  img { max-width: 100%; }
+
+  /* Inline code */
+  code {
+    background: $color-light-grey;
+    color: $color-brand;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.15em 0.5em;
+  }
+
+  pre code { color: $color-dark; }
+}

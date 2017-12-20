@@ -1,0 +1,176 @@
+# Site settings
+
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ .Site.Params.myvariable }}.
+baseurl = "https://forestry.io" # The subpath of your site, e.g. / or /blog
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Forestry.io"
+enableEmoji = true
+copyright = ""
+
+# Build settings
+enableRobotsTXT = true
+
+# Default to new files being YAML
+metaDataFormat = "yaml"
+
+# Default pagination number
+paginate = 100
+
+pluralizeListTitles = false
+
+# Set the destination the same as the Gulpfile for consistency
+destination = "../dist/"
+
+# Enable this to have links relativized by Hugo
+# E.g,  if your /post/first/ page contains a link 
+# to /about/, Hugo will rewrite the URL to ../../about/
+relativeURLs = false
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+# Built-in related posts config
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 10
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = true
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = true
+
+[[related.indices]]
+  name = "Section"
+  weight = 200
+[[related.indices]]
+  name = "keywords"
+  weight = 150
+[[related.indices]]
+  name  = "categories"
+  weight = 150
+[[related.indices]]
+  name  = "tags"
+  weight = 100
+[[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2006"
+
+# Custom Output Formats
+[outputFormats.OpenSearch]
+  mediaType = "application/xml"
+  path = "/"
+  baseName = "opensearch"
+  isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "OpenSearch"]
+
+# MARKDOWN
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+[blackfriday]
+	plainIDAnchors = true
+	hrefTargetBlank = false
+  angledQuotes = false
+  latexDashes = true
+
+# Site Params
+[params]
+  description = '''
+  Write an awesome description for your new site here. You can edit this\
+  line in config.yml. It will appear in your document head meta (for\
+  Google search results) and in your RSS feed description.\
+  '''
+  # Gh repo for site footer (include trailing slash)
+  ghrepo = "https://github.com/forestryio/www"
+  # GH Repo for filing a new issue
+  github_repo = "https://github.com/forestryio/www/issues/new"
+  # Edit content link for docs (set to automatically enter "edit" mode; this is good for "improve this page" links)
+  ghdocsrepo = "https://github.com/forestryio/www/tree/master/hugo/content/docs"
+  # Edit content link for blog (set to automatically enter "edit" mode; this is good for "improve this page" links)
+  ghblogrepo = "https://github.com/forestryio/www/tree/master/hugo/content/blog"
+  # Google Tag Manager
+  gtmid = "GTM-KL5HP9Q"
+  # MixPanel
+  mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
+
+  # First one is picked as the Twitter card image if not set on page.
+  images = ["images/gohugoio-card.png"]
+
+  # Used to format dates throughout site
+  dateFormat = "January 2, 2006"
+
+# Authors for use in blog/docs
+[[params.authors]]
+  name = "Forestry.io"
+  twitter = "forestryio"
+
+[[params.authors]]
+  name = "Chris Macrae"
+  twitter = "chrisdmacrae"
+
+[[params.authors]]
+  name = "Scott Gallant"
+  twitter = "scottgallant"
+
+[params.cloudinary]
+  cloud_name = "forestry-demo"
+  use_upload = false
+
+[params.cloudinary.lazysizes]
+  enabled = true
+
+[params.cloudinary.presets.default]
+  min_width = 320
+  max_width = 1200
+  fallback_width = 960
+  steps = 5
+  sizes = "100vw"
+
+[social]
+  twitter = "forestryio"
+  email = "support@forestry.io"
+  slack = "https://t.co/OANAJYol8Y"
+
+# Site Menus
+# See the Hugo docs for usage in layouts
+# https://gohugo.io/content-management/menus/
+[[menu.main]]
+  name = "Login"
+  weight = 99
+  identifier = "login"
+  url = "https://app.forestry.io/login"
+[[menu.main]]
+  name = "Sign up"
+  weight = 100
+  identifier = "signup"
+  url = "https://app.forestry.io/signup"
+
+[[menu.docs]]
+  name = "Welcome"
+  weight = 1
+  identifier = "welcome"
+  url = "/docs/welcome"
+[[menu.docs]]
+  name = "Git Sync"
+  weight = 2
+  identifier = "git-sync"
+  url = "/docs/git-sync"
+
+[[menu.footer]]
+  name = "Product"
+  weight = 1
+  identifier = "product"
+[[menu.footer]]
+  name = "Company"
+  weight = 2
+  identifier = "company"
+
+
+

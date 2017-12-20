@@ -1,0 +1,82 @@
+.footer {
+  background: $color-white;
+  color: $color-dark;
+  font-size: 0.8rem;
+  letter-spacing: 0.025em;
+  padding: 4rem 0 0;
+
+  a {
+    line-height: 1.8;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+    vertical-align: top;
+    will-change: opacity;
+
+    &:hover { opacity: 0.6; }
+
+  }
+
+  .footer-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .slack-logo {
+    margin-top: 1rem;
+  }
+
+  .column { overflow: hidden; }
+
+  .column:nth-child(1) {
+    flex: 0 0 100%;
+
+    @media screen and (min-width: 700px) { flex: 0 0 100%; }
+
+    @media screen and (min-width: 1000px) { flex: 0 0 20%; }
+  }
+
+  .column:nth-child(2) {
+    flex: 0 0 50%;
+
+    @media screen and (min-width: 700px) { flex: 0 0 25%; }
+
+    @media screen and (min-width: 1000px) { flex: 0 0 20%; }
+  }
+
+  .column:nth-child(3) {
+    flex: 0 0 50%;
+
+    @media screen and (min-width: 700px) { flex: 0 0 25%; }
+
+    @media screen and (min-width: 1000px) { flex: 0 0 20%; }
+  }
+
+  .column:nth-child(4) {
+    flex: 0 0 100%;
+
+    @media screen and (min-width: 700px) { flex: 0 0 50%; }
+
+    @media screen and (min-width: 1000px) { flex: 0 0 40%; }
+  }
+
+}
+
+.lower-footer {
+  border-top: 1px solid $color-grey;
+  padding: 2rem 0;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+  }
+
+  li {
+    margin-left: 1rem;
+  }
+}

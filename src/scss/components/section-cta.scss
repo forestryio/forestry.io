@@ -1,0 +1,22 @@
+.section-cta {
+  background: $color-white;
+
+  a:not(.button) {
+    color: $color-medium-dark;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2rem;
+    position: relative;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.section-cta.center {
+  justify-content: center;
+  text-align: center;
+}

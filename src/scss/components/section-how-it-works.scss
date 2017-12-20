@@ -1,0 +1,39 @@
+.section-how-it-works {
+  background: linear-gradient(180deg, $color-white 50%, $color-dark 50%);
+  position: relative;
+  z-index: 10;
+
+  .block {
+    background: $color-white;
+    border: 1px solid $color-grey;
+    border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 24px 20px -20px rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .step {
+    flex: 0 0 100%;
+    padding: 1rem;
+
+    .step-title {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-text {
+      display: inline-block;
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+
+    @media screen and (min-width: 800px) { flex: 0 0 33%; }
+
+  }
+
+}

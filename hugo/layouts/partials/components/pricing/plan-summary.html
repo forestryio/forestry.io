@@ -1,0 +1,12 @@
+<div class="plan">
+  <span class="plan--title">{{ .title }}</span>
+  <div class="plan--cost">
+    <div class="plan--amount">
+      <span class="currency">$</span>
+      <span class="price">{{ .priceAnnually | default "_" }}</span>
+    </div>
+    <span class="price-note">
+      Per month billed annually or ${{ .priceMonthly | default "_" }} month to month.
+    </span>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{{- if .Inner -}}
+  {{- template "tip" . -}}
+{{- end -}}
+{{- define "tip" -}}
+{{- $title := cond (.IsNamedParams) (.Get "name") (.Get 0) -}}
+<div class="shortcode-tip">
+  <h4>{{ $title | default "Tip" }}</h4>
+  {{ markdownify .Inner }}
+</div>
+{{- end -}}

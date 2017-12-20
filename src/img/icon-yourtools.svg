@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="26px" viewBox="0 0 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Landingpage" transform="translate(-224.000000, -1644.000000)">
+            <g id="Group-11" transform="translate(224.000000, 1645.000000)">
+                <g id="Group-10">
+                    <g id="Group-7" transform="translate(23.000000, 0.000000)" stroke="#979797">
+                        <path d="M9,12.008086 C5.29253272,11.8841186 3.43879908,13.1855737 3.43879908,15.9124513 C3.43879908,18.6393289 3.43879908,20.1049617 3.43879908,20.3093496 C3.49173908,22.7751739 2.34547272,24.008086 0,24.008086" id="Path-5-Copy-2" transform="translate(4.500000, 18.004043) scale(-1, -1) translate(-4.500000, -18.004043) "></path>
+                        <path d="M9,0.00808597948 C5.29253272,-0.11588142 3.43879908,1.18557368 3.43879908,3.91245129 C3.43879908,6.63932889 3.43879908,8.10496167 3.43879908,8.30934962 C3.49173908,10.7751739 2.34547272,12.008086 0,12.008086" id="Path-5-Copy-3" transform="translate(4.500000, 6.004043) scale(-1, 1) translate(-4.500000, -6.004043) "></path>
+                    </g>
+                    <g id="Group-7-Copy" transform="translate(4.500000, 12.500000) scale(-1, 1) translate(-4.500000, -12.500000) " stroke="#979797">
+                        <path d="M9,12.008086 C5.29253272,11.8841186 3.43879908,13.1855737 3.43879908,15.9124513 C3.43879908,18.6393289 3.43879908,20.1049617 3.43879908,20.3093496 C3.49173908,22.7751739 2.34547272,24.008086 0,24.008086" id="Path-5-Copy-2" transform="translate(4.500000, 18.004043) scale(-1, -1) translate(-4.500000, -18.004043) "></path>
+                        <path d="M9,0.00808597948 C5.29253272,-0.11588142 3.43879908,1.18557368 3.43879908,3.91245129 C3.43879908,6.63932889 3.43879908,8.10496167 3.43879908,8.30934962 C3.49173908,10.7751739 2.34547272,12.008086 0,12.008086" id="Path-5-Copy-3" transform="translate(4.500000, 6.004043) scale(-1, 1) translate(-4.500000, -6.004043) "></path>
+                    </g>
+                    <path d="M11,18 C12.0089341,19 13.2385763,20 16,20 C18.7614237,20 20.042574,19 21,18" id="Oval-4" stroke="#979797"></path>
+                    <path d="M10,7 C10.3026802,7.5 10.6715729,8 11.5,8 C12.3284271,8 12.7127722,7.5 13,7" id="Oval-4-Copy" stroke="#979797" transform="translate(11.500000, 7.500000) scale(1, -1) translate(-11.500000, -7.500000) "></path>
+                    <path d="M19,7 C19.3026802,7.5 19.6715729,8 20.5,8 C21.3284271,8 21.7127722,7.5 22,7" id="Oval-4-Copy-2" stroke="#979797" transform="translate(20.500000, 7.500000) scale(1, -1) translate(-20.500000, -7.500000) "></path>
+                    <polyline id="Rectangle-13" stroke="#58D471" points="16 10.6862915 18.5 13.1862915 16 15.6862915"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

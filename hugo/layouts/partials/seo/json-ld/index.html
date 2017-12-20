@@ -1,0 +1,34 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{- .Site.BaseURL -}}",
+  {{- if .Site.Author.name -}}
+  "author": {
+    "@type": "Person",
+    "name": "{{- .Site.Author.name -}}"
+  },
+  {{- end -}}
+  {{- if .Site.Params.description -}}
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}",
+  {{- end -}}
+  {{- with .Params.images -}}
+  {{- range first 6 . -}}
+  "image": "{{- .url | absURL -}}",
+  {{- end -}}
+  {{- end -}}
+  "thumbnailUrl": "{{- "img/forestry-full.svg" | absURL -}}",
+  {{- with .Site.Copyright -}}
+  "license": "{{- . -}}",
+  {{- end -}}
+  "name": "{{- .Site.Title -}}"
+  {{/*
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http://example.com/search?&q={query}",
+      "query-input": "required"
+    } */}}
+}
+</script>
+{{- end -}}

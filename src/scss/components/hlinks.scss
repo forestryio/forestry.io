@@ -1,0 +1,23 @@
+[data-hlink] {
+  &:before {
+    content: "";
+    display: block;
+    height: calc($header-height + 1rem);
+    margin-top: calc(-$header-height - 1rem);
+    visibility: hidden;
+  }
+
+  a {
+    color: inherit !important;
+  }
+
+  svg {
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  &:hover svg {
+    opacity: 1;
+  }
+}

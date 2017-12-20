@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="34px" viewBox="0 0 28 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landingpage" transform="translate(-174.000000, -1642.000000)">
+            <g id="Group-8" transform="translate(174.000000, 1642.000000)">
+                <path d="M0.502277279,6.67735499 C0.617624616,19.1796029 5.11487576,28.0709815 14,33.4181308 C22.8851242,28.0709815 27.3823754,19.1796029 27.4977227,6.67735499 C21.6303138,6.57239811 17.1174326,4.6163066 14,0.808844791 C10.8825674,4.6163066 6.36968616,6.57239811 0.502277278,6.67735499 Z" id="Rectangle-14" stroke="#979797"></path>
+                <path d="M2.51595519,8.45775119 C2.91135193,18.3872124 6.73722641,25.850786 14.0040795,30.8964533 C21.2198986,26.0260485 25.0433906,18.5660116 25.4819622,8.46596318 C20.6989293,8.09798536 16.8653885,6.51504623 14.0026672,3.71381591 C11.2681009,6.42041777 7.43255826,7.99901968 2.51595519,8.45775119 Z" id="Rectangle-14-Copy" stroke="#DEDEDE"></path>
+                <polyline id="Path-3" stroke="#58D471" stroke-linecap="round" stroke-linejoin="round" points="9.92036306 16.4876469 13.1341283 19.988179 20 13"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

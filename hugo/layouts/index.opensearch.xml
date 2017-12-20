@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>{{ .Site.Title }}</ShortName>
+ <Description>Use Google to search {{ .Site.Title }}</Description>
+ {{- with .Site.Params.tags -}}
+ <Tags>{{ delimit . " " }}</Tags>
+ {{- end -}}
+ <Url type="text/html" 
+      template="http://www.google.com/search?q=site:{{ "/" | absURL }} {searchTerms}"/>
+</OpenSearchDescription>

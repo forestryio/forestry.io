@@ -1,0 +1,257 @@
+.single-post {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background: $color-white;
+  min-height: 100vh;
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .post--feature-image {
+    text-align: center;
+    margin-top: 0;
+
+    img {
+      width: 760px;
+      max-width: 100%;
+    }
+
+  }
+
+  > .container:first-child .post--title {
+    margin-top: 3rem;
+  }
+
+  .post--feature-image + .container > .post--title {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 760px) {
+    > .post--feature-image:first-child {
+      margin-top: 4rem;
+    }
+  }
+
+  .post--title {
+    font-size: 3.5rem;
+    line-height: 1.3;
+  }
+
+  .post--meta {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .post--meta-label {
+    display: block;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: $color-copy;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .post--info {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    font-size: 0.8rem;
+  }
+
+  .post--date {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .post--category {
+    letter-spacing: 0.02em;
+    a { font-weight: 600; }
+
+    &[data-category="Forestry"] { color: $color-brand; }
+    &[data-category="Jekyll"] { color: #ffcf55; }
+    &[data-category="Hugo"] { color: #54DEFD; }
+
+  }
+
+  .author {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .author--wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .author--avatar {
+    $avatar-size: 2.25rem;
+
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: calc($avatar-size / 2);
+    overflow: hidden;
+  }
+
+  .author--info {
+    margin-left: 1rem;
+  }
+
+  .author--info span { display: block; }
+
+  .author--name {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .author--title {
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    a { font-weight: 600; }
+  }
+
+  /* Content styling */
+
+  h1 { font-size: 2rem; }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  strong { font-weight: 600; }
+
+  p {
+    color: $color-copy-dark;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    font-weight: 600;
+    color: $color-brand;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  blockquote {
+    position: relative;
+    padding-left: 1rem;
+    font-style: italic;
+    margin: 1rem 0;
+  }
+
+  blockquote::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: $color-brand;
+  }
+
+  img { max-width: 100%; }
+
+  /* Inline code */
+  code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75rem;
+    background: $color-light-grey;
+    color: $color-brand;
+    font-weight: 500;
+    padding: 0.15em 0.5em;
+  }
+
+  pre code { color: $color-dark; }
+
+  p.tip {
+    background: $color-grey;
+    padding: 1rem 1rem 1rem 2rem;
+    position: relative;
+
+    &:before {
+      /* Set the circle size here */
+      $circle-size: 1.5rem;
+
+      position: absolute;
+      text-align: center;
+      line-height: $circle-size;
+      color: $color-white;
+      font-weight: 600;
+      content: '!';
+      left: -calc($circle-size / 2);
+      top: 1rem;
+      background: $color-brand;
+      width: $circle-size;
+      height: $circle-size;
+      border-radius: calc($circle-size / 2);
+      z-index: 5;
+    }
+
+    &:after {
+      position: absolute;
+      left: -0.1rem;
+      top: 0;
+      height: 100%;
+      width: 0.2rem;
+      background: $color-brand;
+      content: '';
+      z-index: 0;
+    }
+
+  }
+
+  /* Related Posts */
+  .post--related {
+    padding: 0;
+  
+    .post--related-title {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .blog-post {
+      margin-bottom: 6rem;
+      max-width: 600px;
+    }
+  
+    .post-title {
+      font-size: 2.5rem;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: $color-copy-dark;
+    }
+  
+    .post-meta {
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+  
+    .post-date {
+      color: $color-medium-dark;
+      font-weight: 600;
+    }
+
+    .post-category {
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+  }
+
+}

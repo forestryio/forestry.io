@@ -1,0 +1,49 @@
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <a href="{{ .Site.BaseURL }}" title="Go to homepage">
+          <img src="/img/forestry-symbol.svg" width="auto" height="24" alt="Forestry Logo">
+        </a>
+      </div>
+      {{- range .Site.Menus.footer -}}
+      <div class="column">
+        <span class="footer-title">{{ .Name }}</span>
+        {{- if .HasChildren -}}
+        <ul>
+          {{- range .Children -}}
+          <li><a href="/features">Features</a></li>
+          {{- end -}}
+        </ul>
+        {{- end -}}
+      </div>
+      {{- end -}}
+      {{- with .Site.Social.slack -}}
+      <div class="column">
+        <p>Join our slack community and get daily
+        updates on product updates.</p>
+        <a href="{{ . }}" target="_blank">
+          <img class="slack-logo" src="/img/logos/Slack.svg" width="auto" height="24" alt="Slack">
+        </a>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+  <div class="lower-footer">
+    <div class="container">
+      <div>&copy; 2015-{{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</div>
+      <div class="contact">
+        <ul>
+          {{- if .Site.Social.twitter -}}
+          <li><a href="https://twitter.com/{{ .Site.Social.twitter }}" target="_blank"><img src="/img/logos/twitter.svg" height="16" alt="Twitter"></a></li>
+          {{- end -}}
+          {{- if .Site.Social.slack -}}
+          <li><a href="{{ .Site.Social.slack }}" target="_blank"><img src="/img/logos/slack-symbol.svg" height="16" alt="Slack"></a></li>
+          {{- end -}}
+          {{- if .Site.Social.email -}}
+          <li><a href="mailto:{{ .Site.Social.email }}"><img src="/img/email.svg" height="12" alt="Email"></a></li>
+          {{- end -}}
+      </div>
+    </div>
+  </div>
+</footer>
