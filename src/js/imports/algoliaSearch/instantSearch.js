@@ -52,7 +52,7 @@ export default class InstantSearch {
       stats: instantsearch.widgets.stats({
         container: "#stats",
         autoHideContainer: false,
-        transformData: data => {
+        transformData: (data) => {
           data.page = ++data.page
           return data
         },
@@ -84,7 +84,7 @@ export default class InstantSearch {
   addWidgets(widgets) {
     if (!widgets) return
 
-    Object.keys(widgets).forEach(k => {
+    Object.keys(widgets).forEach((k) => {
       this.search.addWidget(widgets[k])
     })
   }
@@ -105,7 +105,7 @@ export default class InstantSearch {
     const shouldNotRender = options.results === undefined || query === ""
     const renderHits = () => {
       if (options.hits.length < 1) return Mustache.render(empty, {query: query})
-      return options.hits.map(h => {
+      return options.hits.map((h) => {
         h["FormatDate"] = function() {
           return function(date, render) {
             const calcTime = function(d, offset) {
@@ -141,15 +141,7 @@ export default class InstantSearch {
       })
     }
 
-    if (options.isLastPage) {
-      loadMoreElement.classList.add("disabled")
-    } else {
-      loadMoreElement.classList.remove("disabled")
-    }
-
-    if (options.hits.length < 1) {
-      loadMoreElement.classList.add("hidden")
-    } else if (shouldNotRender) {
+    if (options.hits.length < 1 || options.isLastPage || shouldNotRender) {
       loadMoreElement.classList.add("hidden")
     } else {
       loadMoreElement.classList.remove("hidden")
@@ -161,7 +153,7 @@ export default class InstantSearch {
       document.body.classList.add("searching")
     }
 
-    loadMoreElement.addEventListener("click", event => {
+    loadMoreElement.addEventListener("click", (event) => {
       const initialState = loadMore.textContent
       event.preventDefault()
       if (!shouldNotRender) {
