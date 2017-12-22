@@ -91,14 +91,24 @@ Images found in `src/img/` will be optimized and compressed and sent to `jekyll/
 # Inline SVG
 Any SVGs found in `src/img/` will be combined into a single SVG Sprite at `jekyll/partials/sprite.symbol.svg`
 
-This can then be used in content or layouts as a Jekyll partial:
+This can then be used in layouts as a Hugo partial:
 
 ```
-// todo
+{{ partial "svg" (dict "id" "logos--github" "class" "example-class" "width" "64" "height" "64") }}
 ```
 
-# Testing
-This boilerplate comes with standard [ESLint](https://eslint.org/) and [StyleLint](https://github.com/stylelint/stylelint) configurations that will lint your CSS and JS for errors or common style issues, which work with most popular IDEs.
+# Testing & Code Quality
+This boilerplate comes with standard [ESLint](https://eslint.org/), [StyleLint](https://github.com/stylelint/stylelint), and [Prettier](https://prettier.io/) configurations that will lint and clean your CSS and JS for errors or common style issues, which work with most popular IDEs.
+
+Popular IDE plugins:
+- **Visual Studio Code**
+  - [`prettier-vscode`](https://github.com/prettier/prettier-vscode/)
+  - [`vscode-eslint`](https://github.com/Microsoft/vscode-eslint/)
+  - [`vscode-stylelint`](https://github.com/shinnn/vscode-stylelint)
+- **Atom**
+  - [`prettier-atom`](https://atom.io/packages/prettier-atom)
+  - [`linter-eslint`](https://atom.io/packages/linter-eslint)
+  - [`linter-stylelint`](https://atom.io/packages/linter-stylelint)
 
 The tests can also be run from the command line:
 
@@ -127,11 +137,12 @@ All build tasks are handled by Gulp and are located in `gulpfile.babel.js`. All 
 All build source and destination paths can be configured from `gulp.config.js`.
 
 ## Hugo
-The build commands for Hugp can be configured from `gulp.config.js`. Build commands are set based on the `NODE_ENV` environment variable.
+The build commands for Hugp can be configured from `gulp.config.js`. Build commands are set based on the `HUGO_ARGS` environment variable, and will fallback to `NODE_ENV` if not provided.
 
 Four options are available:
 - `default`: the default build commands that are always run
 - `development`: additional build commands for the development server
+- `preview`: the additional build commands for the development server when serving production build
 - `production`: additional build commands for production builds and preview server
 
 ## BrowserSync Development Server
