@@ -17,6 +17,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
+
+    .section-cta {
+      flex: 0 0 100%;
+    }
   }
 
   .showcase-item {
@@ -27,16 +31,17 @@
     @media screen and (min-width: 48em) {
       flex: 0 0 50%;
 
-      &.featured {
-        flex: 0 0 100%;
-      }
-
       &:nth-child(odd) {
         padding-right: 5%;
       }
 
       &:nth-child(even) {
         padding-left: 5%;
+      }
+
+      &.featured {
+        flex: 0 0 100%;
+        padding: 0;
       }
     }
   }

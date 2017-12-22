@@ -96,13 +96,11 @@ enableGitInfo = true
   Google search results) and in your RSS feed description.\
   '''
   # Gh repo for site footer (include trailing slash)
-  ghrepo = "https://github.com/forestryio/www"
+  ghrepo = "https://github.com/forestryio/forestry.io"
   # GH Repo for filing a new issue
-  github_repo = "https://github.com/forestryio/www/issues/new"
+  ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
   # Edit content link for docs (set to automatically enter "edit" mode; this is good for "improve this page" links)
-  ghdocsrepo = "https://github.com/forestryio/www/tree/master/hugo/content/docs/edit/master/content/"
-  # Edit content link for blog (set to automatically enter "edit" mode; this is good for "improve this page" links)
-  ghblogrepo = "https://github.com/forestryio/www/tree/master/hugo/content/blog/edit/master/content/"
+  ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
   # Google Tag Manager
   gtmid = "GTM-KL5HP9Q"
   # MixPanel

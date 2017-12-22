@@ -9,10 +9,16 @@
       {{- end -}}
       </div>
       <div class="showcase-items">
-      {{- range where .Data.Pages "Params.featured" "eq" false -}}
+      {{- $len := len (where .Data.Pages "Params.featured" "eq" false) -}}
+      {{- range $key, $value := where .Data.Pages "Params.featured" "eq" false -}}
+        {{- if and (eq $key 5) (gt $len 10) -}}
+          {{- partial "components/cta/basic" .Params.cta -}}
+        {{- end -}}
         {{- .Render "summary" -}}
       {{- end -}}
       </div>
+      <hr />
+      <small>Want to see your site here? Submit a request on <a href="{{ $.Site.Params.ghrepo_new }}" title="Submit a new site" target="_blank">GitHub</a>!</small>
     </div>
   </main>
 
