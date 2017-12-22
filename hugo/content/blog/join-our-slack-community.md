@@ -1,0 +1,40 @@
+---
+aliases:
+- /blog/post/join-our-slack-community
+title: Join our Slack community
+date: 2017-10-21 00:41:00 +1400
+authors:
+- chris-macrae
+excerpt: "Chat with the Forestry.io community about static sites, best-practices, features, and more"
+images:
+- /uploads/2017/12/31/slack.png
+categories:
+- company
+---
+Want to chat with the Forestry.io community about static sites, best-practices, features, and more? Join the slack community here (we'll get back to you ASAP).
+
+Sign up here:
+<span style="text-decoration-style: initial; text-decoration-color: initial;"><u><a href="https://join.slack.com/t/forestry-community/shared_invite/enQtMjc1MTM1MjkzMTY5LWQzNzIzMjQ4YTc5ZmRjNTA1NTRiMjQxNDJiYmI3NzNkNzFiMzg4MThkYTlkNGExZjAwNjk0NjQ3MmFlMDM1MWU">Forestry.io Community</a></u></span>
+<!--
+<form action="https://formspree.io/scott@forestry.io" method="POST" style="position:relative;">
+<label for="_replyto" style="position: relative;
+top: 0;
+left: 0;
+padding: 10px;
+display: inline-block;">Email</label>
+<input type="email" name="_replyto" style="border: 1px solid rgba(0, 0, 0, 0.09);
+margin-bottom: 1em;">
+<input type="submit" value="Join the Community" style="font-size: .54rem;
+text-align: center;
+font-weight: 700;
+padding: 1.4em 1.8em;
+border-radius: .15rem;
+border: 1px solid transparent;
+letter-spacing: .08em;
+text-transform: uppercase;
+transition: background-color .15s ease,border-color .15s ease;
+outline: none;
+color: #fff;
+background-color: #21e09e;">
+<input type="hidden" name="_next" value="https://forestry.io/blog/thanks-for-signing-up/" />
+</form> -->
