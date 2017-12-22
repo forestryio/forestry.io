@@ -14,16 +14,16 @@
     "eslint": "./node_modules/eslint/bin/eslint.js src/js/ --ext .js",
     "eslint:fix": "./node_modules/eslint/bin/eslint.js src/js/ --ext .js --fix",
     "stylelint": "npm run stylelint:css && npm run stylelint:scss",
-    "stylelint:fix":
-      "npm run stylelint:css --fix && npm run stylelint:scss --fix",
-    "stylelint:css":
-      "./node_modules/stylelint/bin/stylelint.js src/css/**/*.css",
-    "stylelint:scss":
-      "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
+    "stylelint:fix": "npm run stylelint:css --fix && npm run stylelint:scss --fix",
+    "stylelint:css": "./node_modules/stylelint/bin/stylelint.js src/css/**/*.css",
+    "stylelint:scss": "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,json,css,md}": ["prettier --write", "git add"]
+    "src/**/*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "algoliasearch": "^3.24.8",
