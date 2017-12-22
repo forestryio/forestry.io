@@ -114,19 +114,6 @@ enableGitInfo = true
   # Used to format dates throughout site
   dateFormat = "January 2, 2006"
 
-# Authors for use in blog/docs
-[[params.authors]]
-  name = "Forestry.io"
-  twitter = "forestryio"
-
-[[params.authors]]
-  name = "Chris Macrae"
-  twitter = "chrisdmacrae"
-
-[[params.authors]]
-  name = "Scott Gallant"
-  twitter = "scottgallant"
-
 [params.cloudinary]
   cloud_name = "forestry-demo"
   use_upload = false
@@ -159,6 +146,16 @@ enableGitInfo = true
   weight = 100
   identifier = "signup"
   url = "https://app.forestry.io/signup"
+[[menu.main]]
+  name = "My Account"
+  weight = 99
+  identifier = "useraccount"
+  url = "https://app.forestry.io/settings"
+[[menu.main]]
+  name = "Dashboard"
+  weight = 100
+  identifier = "userdashboard"
+  url = "https://app.forestry.io/dashboard"
 
 [[menu.docs]]
   name = "Welcome"

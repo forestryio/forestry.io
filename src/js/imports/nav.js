@@ -1,4 +1,5 @@
 import {isUndefined} from "util"
+import readCookie from "../utils/cookies"
 
 /**
  * Handles all logic for the fixed navbar
@@ -13,15 +14,20 @@ export default class NavBar {
     this.html = document.querySelector("html")
     this.body = document.querySelector("body")
 
+    this.init()
+  }
+
+  init() {
     this.handleScroll()
     this.handleToggle()
+    this.signedInState()
   }
 
   /**
    * Handles toggling the navbar state on scroll
    */
   handleScroll() {
-    window.addEventListener("scroll", e => {
+    window.addEventListener("scroll", (e) => {
       const scroll = window.pageYOffset
 
       if (scroll >= 300) {
@@ -47,7 +53,7 @@ export default class NavBar {
    * Handles toggling the mobile navigation
    */
   handleToggle() {
-    this.toggle.addEventListener("click", e => {
+    this.toggle.addEventListener("click", (e) => {
       this.nav.classList.toggle("expanded")
 
       if (
@@ -58,5 +64,29 @@ export default class NavBar {
         this.body.classList.toggle("no-overflow")
       }
     })
+  }
+
+  signedInState() {
+    const user = readCookie("signed_in_user")
+    const container = document.querySelector("li[data-user]")
+    const toHide = document.querySelectorAll("li[data-signed-out]")
+    const toShow = document.querySelectorAll("li[data-signed-in]")
+
+    if (user) {
+      const name = decodeURIComponent(user)
+      const target = container.querySelector("a")
+
+      toHide.forEach((e) => {
+        e.setAttribute("data-signed-out", "false")
+      })
+
+      toShow.forEach((e) => {
+        e.setAttribute("data-signed-in", "true")
+      })
+
+      if (target) {
+        target.textContent = name
+      }
+    }
   }
 }

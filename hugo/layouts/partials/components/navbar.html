@@ -18,14 +18,18 @@
         <ul class="main-nav-items">
           {{- range .Site.Menus.main -}}
             {{- if eq .Identifier "signup" -}}
-            <li>
+            <li data-signed-out="true">
               <a class="signup-button button small{{ if $isHome }} main secondary{{ else }} primary{{ end }}" href="{{ .URL | absURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
             </li>
+            {{- else if eq .Identifier "userdashboard" -}}
+              <li class="nav-item" data-signed-in="false">
+                <a class="signup-button button small{{ if $isHome }} main secondary{{ else }} primary{{ end }}" href="{{ .URL | absURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+              </li>
             {{- else -}}
             {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}
             {{- $hasMenuCurrent := $.IsMenuCurrent .Menu . -}}
-            <li>
-              <a class="nav-item" href="{{ .URL | absURL }}"{{ if $isMenuCurrent }} class="active"{{ end }}>{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            <li{{ if eq .Identifier "login" }} data-signed-out="true"{{ end }}{{ if eq .Identifier "useraccount" }} data-signed-in="false" data-user{{ end }}>
+              <a href="{{ .URL | absURL }}" class="nav-item{{ if or $isMenuCurrent $hasMenuCurrent }} active{{ end }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
             </li>
             {{- end -}}
           {{- end -}}

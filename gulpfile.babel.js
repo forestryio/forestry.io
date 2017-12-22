@@ -67,7 +67,7 @@ gulp.task("server", ["build"], () => {
  * compiles the static site with Hugo
  */
 gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", cb)
+  runsequence(["styles", "scripts", "images", "svg"], "hugo", cb)
 })
 
 /**
@@ -249,6 +249,11 @@ gulp.task("images", () => {
     .pipe(browserSync.stream())
 })
 
+/**
+ * @task svg
+ * Generates an SVG symbol for use in
+ * theme and layouts
+ */
 gulp.task("svg", () => {
   return gulp
     .src(gulpConfig.svg.src)
@@ -262,6 +267,10 @@ gulp.task("svg", () => {
     .pipe(browserSync.stream())
 })
 
+/**
+ * @task clean
+ * Cleans the build and temp directories
+ */
 gulp.task("clean", () => {
   return del([gulpConfig.tmp, gulpConfig.build], {dot: true})
 })

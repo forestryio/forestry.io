@@ -1,5 +1,6 @@
 semi: false
 bracketSpacing: false
+arrowParens: always
 overrides:
   - files: .prettierrc
     options:
