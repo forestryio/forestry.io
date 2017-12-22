@@ -21,7 +21,9 @@
   top: 50%;
   width: 100%;
 
-  @media screen and (max-width: 760px) { display: none; }
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 .deploying-animation:after {
@@ -35,7 +37,9 @@
   transform: translateX(-50%);
   width: 20px;
 
-  @media screen and (max-width: 760px) { display: none; }
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 .hosting-logos {
@@ -50,7 +54,7 @@
   z-index: 1;
 
   .hosting-logo {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid $color-grey;
     flex: 0 0 50%;
     height: 8rem;
@@ -58,8 +62,9 @@
     padding: 1rem;
     position: relative;
 
-    @media screen and (min-width: 790px) { flex: 0 0 25%; }
-
+    @media screen and (min-width: 790px) {
+      flex: 0 0 25%;
+    }
   }
 
   .hosting-logo img,
@@ -69,7 +74,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
 
 @keyframes deploying-motion {

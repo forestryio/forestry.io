@@ -1,6 +1,6 @@
 import "./imports/sidebarActiveState"
 import "./imports/lazyload"
-import CodeBlocks from "./imports/codeBlocks";
+import CodeBlocks from "./imports/codeBlocks"
 import contentLoaded from "content-loaded"
 import HeadingLinks from "./imports/headingLinks"
 import Nav from "./imports/nav"
@@ -33,18 +33,19 @@ contentLoaded().then(() => {
    */
   if (isHome) {
     new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "dist")
-  }
-  else if (isDocs) {
+  } else if (isDocs) {
     new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "docs")
-  }
-  else if (isBlog) {
+  } else if (isBlog) {
     new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "blog")
   }
 
   /**
    * Enable heading links
    */
-  const headingLinks = new HeadingLinks([".single-post", ".docs-content .container"])
+  const headingLinks = new HeadingLinks([
+    ".single-post",
+    ".docs-content .container"
+  ])
 
   /**
    * Actvate smooth scrolling for the entire

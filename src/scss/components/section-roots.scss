@@ -40,9 +40,7 @@
     &.big {
       height: 1.5rem;
     }
-
   }
-
 }
 
 .content-illustration {
@@ -53,7 +51,8 @@
   width: 700px;
 }
 
-.content-illustration-one, .content-illustration-two {
+.content-illustration-one,
+.content-illustration-two {
   border-radius: 6px;
   max-height: 100%;
   position: absolute;
@@ -72,10 +71,10 @@
   top: 2rem;
 }
 
-.content-illustration[data-emergence=hidden] {
+.content-illustration[data-emergence="hidden"] {
   transform: translateY(-5rem);
 }
 
-.content-illustration[data-emergence=visible] {
+.content-illustration[data-emergence="visible"] {
   transform: translateY(0);
 }

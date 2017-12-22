@@ -8,4 +8,3 @@ const isProduction = process.env.NODE_ENV === "production"
  * handle animations
  * https://www.npmjs.com/package/lazysizes
  */
-

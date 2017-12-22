@@ -20,14 +20,13 @@
     @media screen and (min-width: 1000px) {
       padding: 80px 0 100px;
     }
-
   }
 
   .hero--title {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1;
-    
+
     @media screen and (min-width: 520px) {
       font-size: 3rem;
     }
@@ -47,7 +46,9 @@
     flex-direction: row;
     margin-top: 2.5rem;
 
-    @media screen and (min-width: 520px) { margin-top: 3rem; }
+    @media screen and (min-width: 520px) {
+      margin-top: 3rem;
+    }
 
     a:not(.button) {
       color: $color-medium-dark;
@@ -72,8 +73,9 @@
       margin-left: 2rem;
       position: relative;
 
-      @media screen and (min-width: 520px) { display: block; }
-
+      @media screen and (min-width: 520px) {
+        display: block;
+      }
     }
 
     .launch-demo::before {
@@ -86,13 +88,11 @@
       transform: translateY(-50%);
       width: 1px;
     }
-
   }
 
   @media screen and (min-width: 1000px) {
     flex-direction: row;
   }
-
 }
 
 .hero--content {
@@ -140,7 +140,6 @@
     transform: translate(0, -45%);
     width: 70%;
   }
-
 }
 
 .built-for {

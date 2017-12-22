@@ -1,17 +1,17 @@
 pre {
   background: $color-light-grey;
-  padding: 0.5rem 1rem;
   overflow-x: scroll;
+  padding: 0.5rem 1rem;
   position: relative;
 
   .code--copy {
-    opacity: 0;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
     cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    transition: opacity 0.5s ease;
   }
 
   &:hover .code--copy {
@@ -20,8 +20,8 @@ pre {
   }
 
   .code--copy.button {
-    padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 

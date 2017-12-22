@@ -5,13 +5,17 @@
   justify-content: space-between;
   padding-top: 8rem;
 
-  @media screen and (min-width: 800px) { flex-direction: row; }
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
 }
 
 .blog-header {
   flex: 0 0 40%;
   padding: 0 0 4rem;
-  > * { max-width: 400px; }
+  > * {
+    max-width: 400px;
+  }
 
   @media screen and (min-width: 700px) {
     padding: 0 0 4rem;
@@ -33,7 +37,9 @@
     display: none;
     margin-top: 4rem;
 
-    @media screen and (min-width: 800px) { display: block; }
+    @media screen and (min-width: 800px) {
+      display: block;
+    }
   }
 
   .newsletter-signup--text {
@@ -51,16 +57,16 @@
       border: 1px solid $color-brand;
       border-radius: 0 1.5em 1.5em 0;
     }
-
   }
-
 }
 
 .section-blog-list {
   flex: 0 0 60%;
   padding: 0;
 
-  @media screen and (min-width: 800px) { padding: 0 0 0 4rem; }
+  @media screen and (min-width: 800px) {
+    padding: 0 0 0 4rem;
+  }
 
   .blog-post {
     margin-bottom: 6rem;
@@ -70,8 +76,8 @@
   .post-title {
     font-size: 2.5rem;
     line-height: 1.25;
-    margin-top: 0;
     margin-bottom: 0.5rem;
+    margin-top: 0;
   }
 
   .post-meta {
@@ -89,5 +95,4 @@
     font-weight: 600;
     margin-left: 0.5rem;
   }
-
 }

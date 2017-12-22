@@ -9,14 +9,15 @@
       display: none;
     }
   }
+
   .a2a_kit {
     display: flex;
 
     @media screen and (min-width: 48em) {
       flex-direction: column;
+      left: 1rem;
       position: fixed;
       top: 8rem;
-      left: 1rem;
     }
   }
 

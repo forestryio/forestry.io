@@ -17,7 +17,9 @@
   &.primary {
     background-color: $color-brand;
     color: $color-white;
-    &:hover { opacity: 0.8; }
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &.secondary {
@@ -35,14 +37,17 @@
   &.small {
     font-size: 14px;
     padding: 0.5rem 1.25rem;
-    &.rounded { border-radius: 1.5rem; }
+    &.rounded {
+      border-radius: 1.5rem;
+    }
   }
 
   &.big {
     padding: 1.25rem 2rem;
-    &.rounded { border-radius: 1.5rem; }
+    &.rounded {
+      border-radius: 1.5rem;
+    }
   }
-
 }
 
 .text-cta {

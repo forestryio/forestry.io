@@ -9,7 +9,9 @@
     h3 {
       flex: 0 0 25%;
 
-      @media screen and (min-width: 800px) { flex: 0 0 40%; }
+      @media screen and (min-width: 800px) {
+        flex: 0 0 40%;
+      }
     }
 
     span {
@@ -29,7 +31,6 @@
     @media screen and (min-width: 700px) {
       display: flex;
     }
-
   }
 
   .trusted--row-2 {
@@ -50,7 +51,5 @@
     @media screen and (min-width: 700px) {
       margin-top: 60px;
     }
-
   }
-
 }

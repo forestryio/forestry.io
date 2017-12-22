@@ -21,13 +21,13 @@ import util from "gulp-util"
 import webpack from "webpack-stream"
 import webpackConfig from "./webpack.config"
 
-const env = process.env.HUGO_ENV = process.env.NODE_ENV || "development"
+const env = (process.env.HUGO_ENV = process.env.NODE_ENV || "development")
 const argsType = process.env.HUGO_ARGS || env
-const isProduction = (env === "production")
+const isProduction = env === "production"
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
 
-let ENV_VARS = process.env;
+let ENV_VARS = process.env
 if (argsType !== "production" && fs.existsSync("./.env.js")) {
   ENV_VARS = require("./.env.js").default
 }
@@ -37,7 +37,7 @@ if (argsType !== "production" && fs.existsSync("./.env.js")) {
  * Runs hugo with environment-based
  * build arguments
  */
-gulp.task("hugo", (cb) => build(cb))
+gulp.task("hugo", cb => build(cb))
 
 /**
  * @task server
@@ -57,7 +57,8 @@ gulp.task("server", ["build"], () => {
       `!${gulpConfig.scripts.dest}/**/*`,
       `!${gulpConfig.images.dest}/**/*`
     ],
-  ["hugo"])
+    ["hugo"]
+  )
 })
 
 /**
@@ -65,8 +66,8 @@ gulp.task("server", ["build"], () => {
  * Builds all static assets, and then
  * compiles the static site with Hugo
  */
-gulp.task("build", ["clean"], (cb) => {
-  runsequence(["styles", "scripts", "images", "svg"], "hugo", cb)
+gulp.task("build", ["clean"], cb => {
+  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", cb)
 })
 
 /**
@@ -75,12 +76,15 @@ gulp.task("build", ["clean"], (cb) => {
  * Works by finding all algolia.json files in build dir,
  * and pushes to an index matching the parent directory name
  */
-gulp.task("algolia", (cb) => {
+gulp.task("algolia", cb => {
   if (isProduction) {
-    const algolia = algoliasearch(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_ADMIN_KEY)
+    const algolia = algoliasearch(
+      ENV_VARS.ALGOLIA_APP_ID,
+      ENV_VARS.ALGOLIA_ADMIN_KEY
+    )
 
-    return gulp.src(gulpConfig.algolia.src)
-      .pipe(through.obj({objectMode: true}, (file, enc, done) => {
+    return gulp.src(gulpConfig.algolia.src).pipe(
+      through.obj({objectMode: true}, (file, enc, done) => {
         const index = basename(dirname(file.path))
         const algoliaIndex = algolia.initIndex(index)
         const indexData = JSON.parse(file._contents.toString())
@@ -94,7 +98,8 @@ gulp.task("algolia", (cb) => {
         })
 
         done()
-      }))
+      })
+    )
   }
 })
 
@@ -102,7 +107,7 @@ gulp.task("algolia", (cb) => {
  * @task styles
  * Compiles all css
  */
-gulp.task("styles", (cb) => {
+gulp.task("styles", cb => {
   runsequence("styles:production", "styles:development", cb)
 })
 
@@ -111,20 +116,25 @@ gulp.task("styles", (cb) => {
  * Compiles the production-ready CSS to project folder
  * and streams it if its a production server environment
  */
-gulp.task("styles:production", (cb) => {
-  const task = gulp.src(gulpConfig.styles.src)
+gulp.task("styles:production", cb => {
+  const task = gulp
+    .src(gulpConfig.styles.src)
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(postcss({env: "production"})
-     .on("error", (err) => log(err, err.toString(), "PostCSS")))
+    .pipe(
+      postcss({env: "production"}).on("error", err =>
+        log(err, err.toString(), "PostCSS")
+      )
+    )
     .pipe(sourcemaps.write("."))
-    .pipe(rename((path) => {
-      path.dirname = "/"
+    .pipe(
+      rename(path => {
+        path.dirname = "/"
 
-      if (path.extname.indexOf(".map") < 0)
-        path.extname = ".min.css"
+        if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
 
-      return path
-    }))
+        return path
+      })
+    )
     .pipe(gulp.dest(gulpConfig.styles.dest))
 
   if (isProduction) {
@@ -139,20 +149,21 @@ gulp.task("styles:production", (cb) => {
  * Generates the non-production styles to temp folder
  * and streams it if its a development server environment
  */
-gulp.task("styles:development", (cb) => {
+gulp.task("styles:development", cb => {
   if (isProduction) return cb()
 
-  return gulp.src(gulpConfig.styles.src)
-    .pipe(postcss()
-      .on("error", (err) => log(err, err.toString(), "PostCSS")))
-    .pipe(rename((path) => {
-      path.dirname = "/"
+  return gulp
+    .src(gulpConfig.styles.src)
+    .pipe(postcss().on("error", err => log(err, err.toString(), "PostCSS")))
+    .pipe(
+      rename(path => {
+        path.dirname = "/"
 
-      if (path.extname.indexOf(".map") < 0)
-        path.extname = ".min.css"
+        if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
 
-      return path
-    }))
+        return path
+      })
+    )
     .pipe(gulp.dest(gulpConfig.styles.tmp))
     .pipe(browserSync.stream())
 })
@@ -161,7 +172,7 @@ gulp.task("styles:development", (cb) => {
  * @task styles
  * Compiles all js
  */
-gulp.task("scripts", (cb) => {
+gulp.task("scripts", cb => {
   runsequence("scripts:production", "scripts:development", cb)
 })
 
@@ -170,21 +181,23 @@ gulp.task("scripts", (cb) => {
  * Compiles the production-ready JS to project folder
  * and streams it if its a production server environment
  */
-gulp.task("scripts:production", (cb) => {
-  const task = gulp.src(gulpConfig.scripts.src)
+gulp.task("scripts:production", cb => {
+  const task = gulp
+    .src(gulpConfig.scripts.src)
     .pipe(named())
-    .pipe(webpack(webpackConfig("production"))
-      .on("error", function(err) {
+    .pipe(
+      webpack(webpackConfig("production")).on("error", function(err) {
         log(err, err.toString(), "Webpack")
         this.emit("end")
       })
     )
-    .pipe(rename((path) => {
-      if (path.extname === ".js")
-        path.extname = ".min.js"
+    .pipe(
+      rename(path => {
+        if (path.extname === ".js") path.extname = ".min.js"
 
-      return path
-    }))
+        return path
+      })
+    )
     .pipe(gulp.dest(gulpConfig.scripts.dest))
 
   if (isProduction) {
@@ -199,23 +212,25 @@ gulp.task("scripts:production", (cb) => {
  * Generates the non-production styles to temp folder
  * and streams it if its a development server environment
  */
-gulp.task("scripts:development", (cb) => {
+gulp.task("scripts:development", cb => {
   if (isProduction) return cb()
 
-  return gulp.src(gulpConfig.scripts.src)
+  return gulp
+    .src(gulpConfig.scripts.src)
     .pipe(named())
-    .pipe(webpack(webpackConfig())
-      .on("error", function(err) {
+    .pipe(
+      webpack(webpackConfig()).on("error", function(err) {
         log(err, err.toString(), "Webpack")
         this.emit("end")
       })
     )
-    .pipe(rename((path) => {
-      if (path.extname === ".js")
-        path.extname = ".min.js"
+    .pipe(
+      rename(path => {
+        if (path.extname === ".js") path.extname = ".min.js"
 
-      return path
-    }))
+        return path
+      })
+    )
     .pipe(gulp.dest(gulpConfig.scripts.tmp))
     .pipe(browserSync.stream())
 })
@@ -226,24 +241,29 @@ gulp.task("scripts:development", (cb) => {
  * and streams it if its a development server environment
  */
 gulp.task("images", () => {
-  return gulp.src(gulpConfig.images.src)
-      .pipe(newer(gulpConfig.images.dest))
-      .pipe(imagemin([], {verbose: (isProduction) ? true : false}))
-      .pipe(gulp.dest(gulpConfig.images.dest))
-      .pipe(browserSync.stream())
+  return gulp
+    .src(gulpConfig.images.src)
+    .pipe(newer(gulpConfig.images.dest))
+    .pipe(imagemin([], {verbose: isProduction ? true : false}))
+    .pipe(gulp.dest(gulpConfig.images.dest))
+    .pipe(browserSync.stream())
 })
 
 gulp.task("svg", () => {
-  return gulp.src(gulpConfig.svg.src)
+  return gulp
+    .src(gulpConfig.svg.src)
     .pipe(newer(gulpConfig.svg.dest))
-    .pipe(sprite(gulpConfig.svg.config)
-      .on("error", (err) => log(err, err.toString(), "SVG Sprite")))
+    .pipe(
+      sprite(gulpConfig.svg.config).on("error", err =>
+        log(err, err.toString(), "SVG Sprite")
+      )
+    )
     .pipe(gulp.dest(gulpConfig.svg.dest))
     .pipe(browserSync.stream())
 })
 
 gulp.task("clean", () => {
-  return del([gulpConfig.tmp, gulpConfig.build], {dot: true});
+  return del([gulpConfig.tmp, gulpConfig.build], {dot: true})
 })
 
 /**
@@ -252,23 +272,25 @@ gulp.task("clean", () => {
  * @param {Function} cb
  */
 function build(cb) {
-  const args = gulpConfig.hugoArgs.default.concat(gulpConfig.hugoArgs[argsType] || [])
+  const args = gulpConfig.hugoArgs.default.concat(
+    gulpConfig.hugoArgs[argsType] || []
+  )
   const generator = spawn(hugo, args, {stdio: "pipe", encoding: "utf-8"})
 
-  generator.stdout.on("data", (data) => {
+  generator.stdout.on("data", data => {
     log(null, data.toString(), "Hugo")
   })
 
-  generator.stderr.on("data", (data) => {
+  generator.stderr.on("data", data => {
     log(null, data.toString(), "Hugo")
   })
 
-  generator.on("error", (err) => {
+  generator.on("error", err => {
     log(err, err.toString(), "Hugo")
     cb("Build failed")
   })
 
-  generator.on("close", (code) => {
+  generator.on("close", code => {
     browserSync.reload()
     cb()
   })

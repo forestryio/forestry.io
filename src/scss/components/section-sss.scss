@@ -11,6 +11,8 @@
     overflow: hidden;
     text-align: left;
 
-    @media screen and (min-width: 700px) { flex: 0 0 33.33%; }
+    @media screen and (min-width: 700px) {
+      flex: 0 0 33.33%;
+    }
   }
 }

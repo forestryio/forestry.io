@@ -1,0 +1,6 @@
+semi: false
+bracketSpacing: false
+overrides:
+  - files: .prettierrc
+    options:
+      parser: json

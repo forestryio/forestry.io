@@ -29,7 +29,9 @@ export default class InstantSearch {
       }
     }
 
-    const customInfiniteHits = instantsearch.connectors.connectInfiniteHits(this.infiniteHits)
+    const customInfiniteHits = instantsearch.connectors.connectInfiniteHits(
+      this.infiniteHits
+    )
     const hasSearch = document.querySelector(".search--input")
 
     this.options = Object.assign(defaultOptions, options)
@@ -50,7 +52,7 @@ export default class InstantSearch {
       stats: instantsearch.widgets.stats({
         container: "#stats",
         autoHideContainer: false,
-        transformData: (data) => {
+        transformData: data => {
           data.page = ++data.page
           return data
         },
@@ -82,31 +84,33 @@ export default class InstantSearch {
   addWidgets(widgets) {
     if (!widgets) return
 
-    Object.keys(widgets).forEach((k) => {
+    Object.keys(widgets).forEach(k => {
       this.search.addWidget(widgets[k])
     })
   }
-
 
   infiniteHits(options, isFirst) {
     const container = document.querySelector(options.widgetParams.container)
 
     if (isFirst) {
-      container.innerHTML = Mustache.render(hitWrapper, {}, {loadMore: loadMore})
+      container.innerHTML = Mustache.render(
+        hitWrapper,
+        {},
+        {loadMore: loadMore}
+      )
     }
 
-    const query = (options.results) ? options.results.query : null
+    const query = options.results ? options.results.query : null
     const loadMoreElement = container.querySelector("[data-load-more]")
     const shouldNotRender = options.results === undefined || query === ""
     const renderHits = () => {
       if (options.hits.length < 1) return Mustache.render(empty, {query: query})
-      return options.hits.map((h) => {
+      return options.hits.map(h => {
         h["FormatDate"] = function() {
           return function(date, render) {
-
-            let calcTime = function(d, offset) {
-              var utc = d.getTime() + (d.getTimezoneOffset() * 60000)
-              return new Date(utc + (3600000*offset))
+            const calcTime = function(d, offset) {
+              var utc = d.getTime() + d.getTimezoneOffset() * 60000
+              return new Date(utc + 3600000 * offset)
             }
 
             date = parseInt(render(date))
@@ -114,7 +118,20 @@ export default class InstantSearch {
             const dt = calcTime(d, 0)
             const year = dt.getFullYear()
             const day = dt.getDate()
-            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+            const months = [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December"
+            ]
             const month = months[dt.getMonth()]
             return `${month} ${day}, ${year}`
           }
@@ -132,8 +149,7 @@ export default class InstantSearch {
 
     if (options.hits.length < 1) {
       loadMoreElement.classList.add("hidden")
-    }
-    else if (shouldNotRender) {
+    } else if (shouldNotRender) {
       loadMoreElement.classList.add("hidden")
     } else {
       loadMoreElement.classList.remove("hidden")
@@ -145,7 +161,7 @@ export default class InstantSearch {
       document.body.classList.add("searching")
     }
 
-    loadMoreElement.addEventListener("click", (event) => {
+    loadMoreElement.addEventListener("click", event => {
       const initialState = loadMore.textContent
       event.preventDefault()
       if (!shouldNotRender) {

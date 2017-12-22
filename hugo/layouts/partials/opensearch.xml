@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>{{ .Site.Title }}{{ with .Section }}'s {{ . }}{{- end -}}</ShortName>
+<Description>Search {{ .Site.Title }}{{ with .Section }}'s {{ . }}{{- end -}}</Description>
+{{- with .Site.Params.tags -}}
+<Tags>{{ delimit . " " }}</Tags>
+{{- end -}}
+<Url type="text/html" template="{{ "/" | absURL }}{{ with .Section }}{{ . }}{{ end }}?q={searchTerms}"/>
+</OpenSearchDescription>

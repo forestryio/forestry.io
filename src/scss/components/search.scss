@@ -1,16 +1,16 @@
 .search-results {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background: $color-white;
+  bottom: 0;
+  left: 0;
   overflow: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
   z-index: -99;
 }
 
-body.searching {
+.searching {
   overflow: hidden;
 
   .search-results {
@@ -26,13 +26,18 @@ body.searching {
   justify-content: space-between;
   padding-top: 8rem;
 
-  @media screen and (min-width: 800px) { flex-direction: row; }
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
 }
 
 .search-header {
   flex: 0 0 40%;
   padding: 0 0 4rem;
-  > * { max-width: 400px; }
+
+  > * {
+    max-width: 400px;
+  }
 
   .search-header--description {
     color: $color-copy;
@@ -55,7 +60,9 @@ body.searching {
   flex: 0 0 60%;
   padding: 0;
 
-  @media screen and (min-width: 800px) { padding: 0 0 0 4rem; }
+  @media screen and (min-width: 800px) {
+    padding: 0 0 0 4rem;
+  }
 
   .search-result {
     margin-bottom: 6rem;
@@ -90,16 +97,23 @@ body.searching {
   }
 
   .button.hidden {
-    visibility: hidden;
     pointer-events: none;
+    visibility: hidden;
   }
-
 }
 
 .ais-infinite-hits--showmore {
   margin-bottom: 2rem;
 }
 
-[data-category="Forestry"] { color: $color-brand; }
-[data-category="Jekyll"] { color: #ffcf55; }
-[data-category="Hugo"] { color: #54defd; }
+[data-category="Forestry"] {
+  color: $color-brand;
+}
+
+[data-category="Jekyll"] {
+  color: #ffcf55;
+}
+
+[data-category="Hugo"] {
+  color: #54defd;
+}

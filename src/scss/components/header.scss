@@ -40,9 +40,10 @@ $header-height: 5rem;
 
     @media screen and (max-width: 700px) {
       width: 1.5rem;
-      .logo { background-image: url(../img/forestry-symbol.svg); }
+      .logo {
+        background-image: url(../img/forestry-symbol.svg);
+      }
     }
-
   }
 
   .right-block {
@@ -68,7 +69,9 @@ $header-height: 5rem;
       z-index: 10;
     }
 
-    input { padding-left: 2rem; }
+    input {
+      padding-left: 2rem;
+    }
   }
 }
 
@@ -77,19 +80,26 @@ $header-height: 5rem;
   border-bottom: 1px solid $color-dark;
   color: $color-white;
 
-  .logo { background-image: url("../img/forestry-neg-full.svg"); }
+  .logo {
+    background-image: url("../img/forestry-neg-full.svg");
+  }
 
   .nav {
     color: $color-white;
-    &.expanded { color: $color-dark; }
+    &.expanded {
+      color: $color-dark;
+    }
   }
 
-  .button { color: $color-white; }
+  .button {
+    color: $color-white;
+  }
 
   @media screen and (max-width: 700px) {
-    .logo { background-image: url(../img/forestry-neg-symbol.svg); }
+    .logo {
+      background-image: url(../img/forestry-neg-symbol.svg);
+    }
   }
-
 }
 
 .header.docs {
@@ -103,7 +113,9 @@ $header-height: 5rem;
       -webkit-overflow-scrolling: touch;
       padding: 1.24rem 2rem 2rem;
 
-      @media screen and (min-width: 960px) { padding: 1.21rem 4rem 2rem; }
+      @media screen and (min-width: 960px) {
+        padding: 1.21rem 4rem 2rem;
+      }
 
       ul.main-nav-items {
         border-bottom: 1px solid $color-grey;
@@ -111,7 +123,9 @@ $header-height: 5rem;
         width: 100%;
       }
 
-      li { font-size: 1rem; }
+      li {
+        font-size: 1rem;
+      }
 
       .docs-nav-items {
         border-top: 1px solid $color-grey;
@@ -120,7 +134,9 @@ $header-height: 5rem;
         padding-top: 2rem;
         width: 100%;
 
-        h2 { margin-bottom: 2rem; }
+        h2 {
+          margin-bottom: 2rem;
+        }
 
         h3 {
           font-size: 1rem;
@@ -145,10 +161,8 @@ $header-height: 5rem;
               color: $color-brand;
               font-weight: 600;
             }
-
           }
         }
-
       }
 
       .signup-button {
@@ -158,7 +172,6 @@ $header-height: 5rem;
       .mini-nav--logo {
         display: block;
       }
-
     }
 
     @media screen and (min-width: 960px) {
@@ -166,27 +179,33 @@ $header-height: 5rem;
     }
 
     @media screen and (min-width: 860px) {
-      .docs-nav-items { display: none; }
+      .docs-nav-items {
+        display: none;
+      }
     }
 
     @media screen and (min-width: 1100px) {
       display: block;
     }
-
   }
 
   .mini-nav--toggle {
-    @media screen and (min-width: 960px) { display: block; }
+    @media screen and (min-width: 960px) {
+      display: block;
+    }
 
-    @media screen and (min-width: 1100px) { display: none; }
+    @media screen and (min-width: 1100px) {
+      display: none;
+    }
   }
-
 }
 
 .header.docs.container {
   padding: 0 2rem;
 
-  @media screen and (min-width: 960px) { padding: 0 4rem; }
+  @media screen and (min-width: 960px) {
+    padding: 0 4rem;
+  }
 }
 
 .nav {
@@ -232,7 +251,6 @@ $header-height: 5rem;
     @media screen and (min-width: 960px) {
       display: none;
     }
-
   }
 
   .nav-content {
@@ -244,14 +262,15 @@ $header-height: 5rem;
   @media screen and (min-width: 960px) {
     display: block;
   }
-
 }
 
 .nav li {
   display: inline;
   list-style: none;
   margin-right: 1.5rem;
-  &:last-child { margin: 0; }
+  &:last-child {
+    margin: 0;
+  }
 
   .nav-item {
     color: inherit;
@@ -259,10 +278,13 @@ $header-height: 5rem;
     text-decoration: none;
     transition: color 0.15s ease;
 
-    &:hover { color: $color-brand; }
-    &.active { color: $color-brand; }
+    &:hover {
+      color: $color-brand;
+    }
+    &.active {
+      color: $color-brand;
+    }
   }
-
 }
 
 .mini-nav--toggle {
@@ -276,16 +298,25 @@ $header-height: 5rem;
     width: 1.2rem;
   }
 
-  .toggle-open { display: block; }
-  .toggle-close { display: none; }
+  .toggle-open {
+    display: block;
+  }
+  .toggle-close {
+    display: none;
+  }
 
-  @media screen and (min-width: 960px) { display: none; }
-
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
 }
 
 .nav.expanded + .mini-nav--toggle {
-  .toggle-open { display: none; }
-  .toggle-close { display: block; }
+  .toggle-open {
+    display: none;
+  }
+  .toggle-close {
+    display: block;
+  }
 }
 
 .mini-nav--logo {

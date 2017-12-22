@@ -1,0 +1,34 @@
+{{- define "main" -}}
+  <main class="blog-list-wrapper">
+    <div class="container">
+      <section class="blog-header">
+        <div class="blog-header--sticky">
+          <h1 class="blog-header--title">Articles by {{ .Title }}</h1>
+          {{- range .Site.Data.authors.authors -}}
+            {{- if eq (urlize .fullName) (urlize $.Title) -}}
+            <div class="author--wrapper">
+              <div class="author--avatar">
+                <img src="{{ .avatar }}" alt="{{ .fullName | default .avatar }}">
+              </div>
+              <div class="author--info">
+                <span class="author--name">{{ .fullName }}</span>
+                <span class="author--title">{{ .title }}</span>
+              </div>
+            </div>
+            <br />
+            <p class="author--bio">{{ .shortBio }}</p>
+            {{- end -}}
+          {{- end -}}
+        </div>
+      </section>
+      <section class="section section-blog-list">
+        {{- range .Paginator.Pages -}}
+          {{ .Render "summary" }}
+        {{- end -}}
+        {{- partial "components/pagination/paginator" . -}}
+      </section>
+    </div>
+  </main>
+
+  {{- partial "components/cta/basic" .Params.cta -}}
+{{- end -}}

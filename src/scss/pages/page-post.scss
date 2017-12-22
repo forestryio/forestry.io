@@ -1,24 +1,23 @@
 .single-post {
-  padding-top: 5rem;
-  padding-bottom: 4rem;
   background: $color-white;
   min-height: 100vh;
+  padding-bottom: 4rem;
+  padding-top: 5rem;
 
   .container {
-    max-width: 700px;
     margin: 0 auto;
+    max-width: 700px;
     padding: 0 2rem;
   }
 
   .post--feature-image {
-    text-align: center;
     margin-top: 0;
+    text-align: center;
 
     img {
-      width: 760px;
       max-width: 100%;
+      width: 760px;
     }
-
   }
 
   > .container:first-child .post--title {
@@ -41,28 +40,28 @@
   }
 
   .post--meta {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
   }
 
   .post--meta-label {
+    color: $color-copy;
     display: block;
     font-size: 0.6rem;
-    letter-spacing: 0.1em;
     font-weight: 500;
-    color: $color-copy;
-    text-transform: uppercase;
+    letter-spacing: 0.1em;
     margin-bottom: 1rem;
+    text-transform: uppercase;
   }
 
   .post--info {
     display: flex;
     flex-direction: column;
-    line-height: normal;
     font-size: 0.8rem;
+    line-height: normal;
   }
 
   .post--date {
@@ -73,17 +72,26 @@
 
   .post--category {
     letter-spacing: 0.02em;
-    a { font-weight: 600; }
+    a {
+      font-weight: 600;
+    }
 
-    &[data-category="Forestry"] { color: $color-brand; }
-    &[data-category="Jekyll"] { color: #ffcf55; }
-    &[data-category="Hugo"] { color: #54DEFD; }
-
+    &[data-category="Forestry"] {
+      color: $color-brand;
+    }
+    &[data-category="Jekyll"] {
+      color: #ffcf55;
+    }
+    &[data-category="Hugo"] {
+      color: #54defd;
+    }
   }
 
   /* Content styling */
 
-  h1 { font-size: 2rem; }
+  h1 {
+    font-size: 2rem;
+  }
 
   h2 {
     font-size: 1.5rem;
@@ -95,7 +103,9 @@
     margin-top: 2rem;
   }
 
-  strong { font-weight: 600; }
+  strong {
+    font-weight: 600;
+  }
 
   p {
     color: $color-copy-dark;
@@ -104,42 +114,46 @@
   }
 
   a {
-    font-weight: 600;
     color: $color-brand;
-    text-decoration: none;
     cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
   }
 
   blockquote {
-    position: relative;
-    padding-left: 1rem;
     font-style: italic;
     margin: 1rem 0;
+    padding-left: 1rem;
+    position: relative;
   }
 
   blockquote::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
     background: $color-brand;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
   }
 
-  img { max-width: 100%; }
+  img {
+    max-width: 100%;
+  }
 
   /* Inline code */
   code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.75rem;
     background: $color-light-grey;
     color: $color-brand;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75rem;
     font-weight: 500;
     padding: 0.15em 0.5em;
   }
 
-  pre code { color: $color-dark; }
+  pre code {
+    color: $color-dark;
+  }
 
   p.tip {
     background: $color-grey;
@@ -150,62 +164,61 @@
       /* Set the circle size here */
       $circle-size: 1.5rem;
 
+      background: $color-brand;
+      border-radius: calc($circle-size / 2);
+      color: $color-white;
+      content: "!";
+      font-weight: 600;
+      height: $circle-size;
+      left: -calc($circle-size / 2);
+      line-height: $circle-size;
       position: absolute;
       text-align: center;
-      line-height: $circle-size;
-      color: $color-white;
-      font-weight: 600;
-      content: '!';
-      left: -calc($circle-size / 2);
       top: 1rem;
-      background: $color-brand;
       width: $circle-size;
-      height: $circle-size;
-      border-radius: calc($circle-size / 2);
       z-index: 5;
     }
 
     &:after {
-      position: absolute;
-      left: -0.1rem;
-      top: 0;
-      height: 100%;
-      width: 0.2rem;
       background: $color-brand;
-      content: '';
+      content: "";
+      height: 100%;
+      left: -0.1rem;
+      position: absolute;
+      top: 0;
+      width: 0.2rem;
       z-index: 0;
     }
-
   }
 
   /* Related Posts */
   .post--related {
     padding: 0;
-  
+
     .post--related-title {
-      margin-top: 0;
       margin-bottom: 2rem;
+      margin-top: 0;
     }
 
     .blog-post {
       margin-bottom: 6rem;
       max-width: 600px;
     }
-  
+
     .post-title {
+      color: $color-copy-dark;
       font-size: 2.5rem;
       line-height: 1.25;
-      margin-top: 0;
       margin-bottom: 0.5rem;
-      color: $color-copy-dark;
+      margin-top: 0;
     }
-  
+
     .post-meta {
       font-size: 0.8rem;
       margin-bottom: 0.5rem;
       text-transform: uppercase;
     }
-  
+
     .post-date {
       color: $color-medium-dark;
       font-weight: 600;
@@ -216,7 +229,6 @@
       margin-left: 0.5rem;
     }
   }
-
 }
 
 .author {
@@ -225,24 +237,26 @@
 }
 
 .author--wrapper {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .author--avatar {
   $avatar-size: 2.25rem;
 
-  width: $avatar-size;
-  height: $avatar-size;
   border-radius: calc($avatar-size / 2);
+  height: $avatar-size;
   overflow: hidden;
+  width: $avatar-size;
 }
 
 .author--info {
   margin-left: 1rem;
 }
 
-.author--info span { display: block; }
+.author--info span {
+  display: block;
+}
 
 .author--name {
   font-size: 1rem;
@@ -253,5 +267,7 @@
 .author--title {
   font-size: 0.8rem;
   letter-spacing: 0.02em;
-  a { font-weight: 600; }
+  a {
+    font-weight: 600;
+  }
 }

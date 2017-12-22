@@ -1,4 +1,4 @@
-import {isUndefined} from "util";
+import {isUndefined} from "util"
 
 /**
  * Handles all logic for the fixed navbar
@@ -21,23 +21,23 @@ export default class NavBar {
    * Handles toggling the navbar state on scroll
    */
   handleScroll() {
-    window.addEventListener("scroll", (e) => {
+    window.addEventListener("scroll", e => {
       const scroll = window.pageYOffset
 
       if (scroll >= 300) {
-        this.header.classList.add("scrolled");
+        this.header.classList.add("scrolled")
       } else {
-        this.header.classList.remove("scrolled");
+        this.header.classList.remove("scrolled")
       }
 
       if (this.mainSignup != null && !isUndefined(this.mainSignUp)) {
         console.log(this.mainSignUp, scroll)
         if (scroll >= 600) {
-          this.mainSignUp.classList.remove("secondary");
-          this.mainSignUp.classList.add("primary");
+          this.mainSignUp.classList.remove("secondary")
+          this.mainSignUp.classList.add("primary")
         } else {
-          this.mainSignUp.classList.remove("primary");
-          this.mainSignUp.classList.add("secondary");
+          this.mainSignUp.classList.remove("primary")
+          this.mainSignUp.classList.add("secondary")
         }
       }
     })
@@ -47,10 +47,13 @@ export default class NavBar {
    * Handles toggling the mobile navigation
    */
   handleToggle() {
-    this.toggle.addEventListener("click", (e) => {
+    this.toggle.addEventListener("click", e => {
       this.nav.classList.toggle("expanded")
 
-      if (this.html.classList.contains("docs") || this.body.classList.contains("docs")) {
+      if (
+        this.html.classList.contains("docs") ||
+        this.body.classList.contains("docs")
+      ) {
         this.html.classList.toggle("no-overflow")
         this.body.classList.toggle("no-overflow")
       }

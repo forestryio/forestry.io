@@ -1,0 +1,27 @@
+[
+  {{- $len := len .Data.Pages -}}
+  {{- range $i, $value := .Data.Pages -}}
+  {{- if not $value.Params.private -}}
+  {
+    "title": {{ jsonify $value.Title }},
+    "permalink": {{ jsonify $value.Permalink }},
+    "lang": {{ jsonify $value.Lang }},
+    "lastmod": {{ jsonify ($value.Lastmod.UTC.Unix) }},
+    "date": {{ jsonify ($value.Date.UTC.Unix) }},
+    "publishDate": {{ jsonify ($value.PublishDate.UTC.Unix) }},
+    "expiryDate": {{ jsonify ($value.ExpiryDate.UTC.Unix) }},
+    "summary": {{ jsonify $value.Summary}},
+    "readingTime": {{ jsonify $value.ReadingTime }},
+    "wordCount": {{ jsonify $value.WordCount }},
+    "weight": {{ jsonify $value.Weight }},
+    "section": {{ jsonify $value.Section }},
+    {{- range $key, $value := $value.Params -}}
+    {{- if (eq $key "tags") | or (eq $key "authors") | or (eq $key "categories") -}}
+    "{{ $key }}": [{{ jsonify (delimit $value ",") }}],
+    {{- end -}}
+    {{- end -}}
+    "objectID": {{ jsonify $value.UniqueID }}
+  }{{- if not (eq $len ($i | add 1)) -}},{{- end -}}
+  {{- end -}}
+  {{- end -}}
+]

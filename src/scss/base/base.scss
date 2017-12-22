@@ -14,14 +14,18 @@ body {
 }
 
 html.docs,
-body.docs { background: $color-white; }
+body.docs {
+  background: $color-white;
+}
 
 ul,
 li {
   list-style: none;
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}
 
 a.button {
   text-decoration: none;
@@ -38,20 +42,22 @@ img {
   }
 }
 
-.no-overflow { overflow: hidden; }
+.no-overflow {
+  overflow: hidden;
+}
 
-[data-emergence=hidden] {
+[data-emergence="hidden"] {
   opacity: 0;
 }
 
-[data-emergence=visible] {
+[data-emergence="visible"] {
   animation: pop 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
 @keyframes pop {
   0% {
     opacity: 0;
-    transform: scale(0.5)
+    transform: scale(0.5);
   }
 
   50% {
@@ -59,10 +65,10 @@ img {
   }
 
   75% {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 
   100% {
-    transform: scale(1)
+    transform: scale(1);
   }
 }

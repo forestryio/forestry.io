@@ -1,13 +1,12 @@
 .pricing {
   background: $color-white;
-  padding-top: 8rem;
   padding-bottom: 4rem;
+  padding-top: 8rem;
 
   @media screen and (min-width: 870px) {
-    padding-top: 0;
     padding-bottom: 4rem;
+    padding-top: 0;
   }
-
 }
 
 .plans {
@@ -28,54 +27,57 @@
   @media screen and (min-width: 870px) {
     flex: 0 0 25%;
   }
-
 }
 
 .plan--top-bar {
-  display: none;
   background: $color-dark;
-  padding-top: 10rem;
+  display: none;
   padding-bottom: 4rem;
+  padding-top: 10rem;
 
   @media screen and (min-width: 870px) {
     display: block;
   }
-
 }
 
 .plan--include-top {
   display: block;
 
-  .plan--title { color: $color-dark; }
-  .plan--cost { color: $color-dark; }
+  .plan--title {
+    color: $color-dark;
+  }
+  .plan--cost {
+    color: $color-dark;
+  }
 
   @media screen and (min-width: 870px) {
     display: none;
   }
-
 }
 
 .plan--title {
   color: $color-white;
   font-size: 1rem;
   font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: .08em;
 }
 
 .plan--cost {
-  display: flex;
   align-items: flex-start;
-  flex-direction: column;
   color: $color-white;
+  display: flex;
+  flex-direction: column;
 
-  .plan--amount { display: flex; }
+  .plan--amount {
+    display: flex;
+  }
 
   .currency {
     display: block;
-    margin-top: 1.5rem;
-    margin-right: .5rem;
     font-size: 1.4rem;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
   }
 
   .price {
@@ -85,67 +87,75 @@
 
   .price-note {
     display: block;
-    margin: 0;
-    opacity: .6;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1.35;
+    margin: 0;
     max-width: 120px;
+    opacity: 0.6;
   }
 
   @media screen and (min-width: 1300px) {
     flex-direction: row;
-    .price-note { margin: 1.5rem 0 0 1rem; }
+    .price-note {
+      margin: 1.5rem 0 0 1rem;
+    }
   }
-
 }
 
 .plan--description {
+  color: $color-dark;
   display: block;
-  margin-top: 2rem;
-  min-height: 3.5rem;
   font-size: 1rem;
   font-weight: 500;
-  color: $color-dark;
+  margin-top: 2rem;
+  min-height: 3.5rem;
 
   @media screen and (min-width: 870px) {
     margin-top: 3.5rem;
     min-height: 3.5rem;
   }
-
 }
 
 .plan--cta {
-  position: relative;
   margin-top: 2rem;
+  position: relative;
 
   @media screen and (min-width: 870px) {
-    position: absolute;
     left: 2rem;
-    top: 1rem;
     margin: 0;
+    position: absolute;
+    top: 1rem;
   }
-
 }
 
 .plan--item {
   border-bottom: 1px solid $color-grey;
-  padding: .5rem 0;
-  font-size: .8rem;
-  &:last-of-type { border-bottom: 0; }
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  &:last-of-type {
+    border-bottom: 0;
+  }
 }
 
 .faq {
   background: $color-white;
   border-top: 1px solid $color-grey;
+  font-size: 0.85rem;
   padding: 1.5rem 0;
-  font-size: .85rem;
 
-  h3 { font-size: .85rem; }
+  h3 {
+    font-size: 0.85rem;
+  }
 
   .column {
     flex: 0 0 100%;
-    @media screen and (min-width: 500px) { flex: 0 0 50%; }
-    @media screen and (min-width: 1000px) { flex: 0 0 33.33%; }
-  }
 
+    @media screen and (min-width: 500px) {
+      flex: 0 0 50%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      flex: 0 0 33.33%;
+    }
+  }
 }

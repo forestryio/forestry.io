@@ -1,9 +1,16 @@
 # Configures CSS Linting
 # https://stylelint.io/
 
-extends: ["stylelint-config-standard", "stylelint-config-sass-guidelines"]
-plugins: ["stylelint-scss", "stylelint-no-unsupported-browser-features", "stylelint-order"]
+extends:
+    - stylelint-config-standard
+    - stylelint-config-sass-guidelines
+plugins:
+    - stylelint-scss
+    - stylelint-no-unsupported-browser-features
+    - stylelint-order
+defaultSeverity: warning
 rules:
+    max-nesting-depth: 3
     string-quotes: double
     no-duplicate-selectors: true
     color-hex-case: lower

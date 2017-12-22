@@ -12,8 +12,9 @@
     vertical-align: top;
     will-change: opacity;
 
-    &:hover { opacity: 0.6; }
-
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .footer-title {
@@ -26,40 +27,57 @@
     margin-top: 1rem;
   }
 
-  .column { overflow: hidden; }
+  .column {
+    overflow: hidden;
+  }
 
   .column:nth-child(1) {
     flex: 0 0 100%;
 
-    @media screen and (min-width: 700px) { flex: 0 0 100%; }
+    @media screen and (min-width: 700px) {
+      flex: 0 0 100%;
+    }
 
-    @media screen and (min-width: 1000px) { flex: 0 0 20%; }
+    @media screen and (min-width: 1000px) {
+      flex: 0 0 20%;
+    }
   }
 
   .column:nth-child(2) {
     flex: 0 0 50%;
 
-    @media screen and (min-width: 700px) { flex: 0 0 25%; }
+    @media screen and (min-width: 700px) {
+      flex: 0 0 25%;
+    }
 
-    @media screen and (min-width: 1000px) { flex: 0 0 20%; }
+    @media screen and (min-width: 1000px) {
+      flex: 0 0 20%;
+    }
   }
 
   .column:nth-child(3) {
     flex: 0 0 50%;
 
-    @media screen and (min-width: 700px) { flex: 0 0 25%; }
+    @media screen and (min-width: 700px) {
+      flex: 0 0 25%;
+    }
 
-    @media screen and (min-width: 1000px) { flex: 0 0 20%; }
+    @media screen and (min-width: 1000px) {
+      flex: 0 0 20%;
+    }
   }
 
   .column:nth-child(4) {
     flex: 0 0 100%;
 
-    @media screen and (min-width: 700px) { flex: 0 0 50%; }
+    @media screen and (min-width: 700px) {
+      flex: 0 0 50%;
+    }
 
-    @media screen and (min-width: 1000px) { flex: 0 0 40%; }
+    @media screen and (min-width: 1000px) {
+      flex: 0 0 40%;
+    }
   }
-
 }
 
 .lower-footer {

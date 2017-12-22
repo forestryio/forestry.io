@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A Hugo boilerplate for building modern websites",
   "repository": "https://github.com/forestryio/jekyll-boilerplate",
+  "author": "forestryio",
+  "license": "MIT",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp server",
@@ -12,12 +14,17 @@
     "eslint": "./node_modules/eslint/bin/eslint.js src/js/ --ext .js",
     "eslint:fix": "./node_modules/eslint/bin/eslint.js src/js/ --ext .js --fix",
     "stylelint": "npm run stylelint:css && npm run stylelint:scss",
-    "stylelint:fix": "npm run stylelint:css --fix && npm run stylelint:scss --fix",
-    "stylelint:css": "./node_modules/stylelint/bin/stylelint.js src/css/**/*.css",
-    "stylelint:scss": "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss"
+    "stylelint:fix":
+      "npm run stylelint:css --fix && npm run stylelint:scss --fix",
+    "stylelint:css":
+      "./node_modules/stylelint/bin/stylelint.js src/css/**/*.css",
+    "stylelint:scss":
+      "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
+    "precommit": "lint-staged"
   },
-  "author": "forestryio",
-  "license": "MIT",
+  "lint-staged": {
+    "src/**/*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
   "devDependencies": {
     "algoliasearch": "^3.24.8",
     "babel-eslint": "^6.1.2",
@@ -36,7 +43,7 @@
     "css-loader": "^0.28.2",
     "eslint": "^3.1.1",
     "eslint-plugin-compat": "^2.1.0",
-    "eslint-plugin-import": "^1.11.1",
+    "eslint-plugin-import": "^2.8.0",
     "exports-loader": "^0.6.3",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
@@ -51,15 +58,18 @@
     "highlight.js": "^9.12.0",
     "html-loader": "^0.5.1",
     "hugo-bin": "^0.18.0",
+    "husky": "^0.14.3",
     "jquery": "^3.2.1",
     "laggard": "^2.0.1",
     "lazysizes": "^4.0.1",
+    "lint-staged": "^6.0.0",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-cachebuster": "^0.1.5",
     "postcss-cssnext": "^2.7.0",
     "postcss-reporter": "^5.0.0",
     "postcss-scss": "^1.0.2",
     "precss": "^2.0.0",
+    "prettier": "1.9.2",
     "run-sequence": "^2.2.0",
     "smoothscroll-polyfill": "^0.4.0",
     "stickyfilljs": "^2.0.3",

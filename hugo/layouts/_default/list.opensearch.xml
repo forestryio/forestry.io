@@ -1,0 +1,2 @@
+{{/* Generates a opensearch xml for the homepage */}}
+{{- partial "opensearch.xml" . -}}
