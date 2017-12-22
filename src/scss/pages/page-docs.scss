@@ -56,7 +56,8 @@ $sidebar-width: 320px;
   }
 }
 
-.docs-content {
+.docs-content,
+.section-docs-list {
   background: $color-white;
   color: $color-dark;
   font-size: 0.86rem;
@@ -128,6 +129,38 @@ $sidebar-width: 320px;
 
   @media screen and (min-width: 1240px) {
     margin: 0 auto;
+  }
+}
+
+.section-docs-list {
+  padding-top: 7rem;
+
+  .doc {
+    margin-bottom: 6rem;
+    max-width: 600px;
+  }
+
+  .doc-title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .doc-meta {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .doc-date {
+    color: $color-medium-dark;
+    font-weight: 600;
+  }
+
+  .doc-category {
+    font-weight: 600;
+    margin-left: 0.5rem;
   }
 }
 

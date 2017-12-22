@@ -1,0 +1,47 @@
+.contact-wrapper > .container {
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8rem;
+
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
+}
+
+.contact-header {
+  flex: 0 0 40%;
+  order: 2;
+
+  > * {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: 700px) {
+    padding: 0 0 4rem 0;
+
+    .contact-header--sticky {
+      position: sticky;
+      top: calc($header-height + 3rem);
+    }
+  }
+}
+
+.section-contact {
+  flex: 0 0 60%;
+  order: 1;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
+  &.single-post {
+    min-height: auto;
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    padding: 0 4rem 0 0;
+  }
+}

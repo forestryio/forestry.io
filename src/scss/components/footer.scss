@@ -5,6 +5,12 @@
   letter-spacing: 0.025em;
   padding: 4rem 0 0;
 
+
+  /* Ensure intercom doesn't cover anything... */
+  @media screen and (max-width: 48em) {
+    padding-bottom: 3rem;
+  }
+
   a {
     line-height: 1.8;
     text-decoration: none;

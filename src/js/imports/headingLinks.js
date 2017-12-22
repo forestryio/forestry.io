@@ -8,7 +8,9 @@ export default class HeadingLinks {
 
     this.targets = this.getTargets(targets)
     this.icon =
-      '<svg height="16px" viewBox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>'
+      '<svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M960 256q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm832 928v352q0 22-20 30-8 2-12 2-12 0-23-9l-93-93q-119 143-318.5 226.5t-429.5 83.5-429.5-83.5-318.5-226.5l-93 93q-9 9-23 9-4 0-12-2-20-8-20-30v-352q0-14 9-23t23-9h352q22 0 30 20 8 19-7 35l-100 100q67 91 189.5 153.5t271.5 82.5v-647h-192q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h192v-163q-58-34-93-92.5t-35-128.5q0-106 75-181t181-75 181 75 75 181q0 70-35 128.5t-93 92.5v163h192q26 0 45 19t19 45v128q0 26-19 45t-45 19h-192v647q149-20 271.5-82.5t189.5-153.5l-100-100q-15-16-7-35 8-20 30-20h352q14 0 23 9t9 23z"' +
+      'transform="scale(0.00875)"></path></svg>'
     this.minLevel = 2
     this.maxLevel = 6
 
@@ -25,7 +27,7 @@ export default class HeadingLinks {
       targets = [targets]
     }
 
-    return targets.map(t => {
+    return targets.map((t) => {
       return document.querySelector(t)
     })
   }
@@ -84,7 +86,7 @@ export default class HeadingLinks {
    * and linkifys their headings
    */
   linkifyTargets() {
-    this.targets.forEach(t => {
+    this.targets.forEach((t) => {
       if (t !== null) {
         for (var level = this.minLevel; level <= this.maxLevel; level++) {
           this.linkifyHeadings(level, t)

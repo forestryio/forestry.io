@@ -1,8 +1,10 @@
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="search"] {
-  -webkit-appearance: none;
+input[type="search"],
+textarea,
+select {
+  appearance: none;
   background: none;
   border: 1px solid #dedede;
   border-radius: 1rem;
@@ -14,4 +16,19 @@ input[type="search"] {
   outline: none;
   padding: 1rem;
   width: 240px;
+}
+
+select {
+  padding: 0 1rem !important;
+  height: 2.626rem;
+  overflow: visible;
+
+  option {
+    color: $color-dark;
+  }
+}
+
+textarea {
+  min-height: 1rem;
+  height: auto;
 }

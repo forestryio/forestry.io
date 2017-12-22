@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /remote/
 title: "Homepage"
 authors:
   - forestryio

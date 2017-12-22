@@ -2,19 +2,40 @@
   display: flex;
   flex-wrap: nowrap;
 
-  input:first-child,
-  .button:first-child {
+  * {
+    border-radius: 0;
+  }
+
+  *:first-child {
     border-radius: 1.5rem 0 0 1.5rem;
   }
 
-  input:last-child,
-  .button:last-child {
+  *:last-child,
+  *:last-child {
     border-radius: 0 1.5em 1.5em 0;
   }
 }
 
+.form--stacked {
+  input,
+  button,
+  .button,
+  select,
+  textarea {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+
+    @media screen and (min-width: 48em) {
+      width: 80%;
+    }
+  }
+}
+
 .form--large {
-  input {
+  input,
+  select,
+  textarea {
     font-size: 1rem;
     padding: 1.25rem;
   }

@@ -1,9 +1,14 @@
-
-<div class="column">
-  <h3>{{ .Title }}</h3>
-  {{- if .Summary -}}
-    {{ markdownify .Summary }}
-  {{ else  }}
-    {{ .Content | safeHTML | truncate 140 }}
-  {{- end -}}
-</div>
+<article class="doc">
+  <div class="doc-meta">
+    <span class="doc-date">{{ dateFormat .Site.Params.dateFormat .Date.UTC }}</span>
+    <span class="doc-category" data-category="{{ .Section }}">{{ .Section }}</span>
+  </div>
+  <a href="{{ .Permalink | relURL }}"><h2 class="doc-title">{{ .Params.headline | default .Title }}</h2></a>
+  <p class="doc-excerpt">
+    {{- if .Summary -}}
+      {{ markdownify .Summary }}
+    {{ else  }}
+      {{ .Content | safeHTML | truncate 140 }}
+    {{- end -}}
+  </p>
+</article>

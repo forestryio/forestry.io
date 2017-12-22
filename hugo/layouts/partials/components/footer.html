@@ -12,7 +12,7 @@
         {{- if .HasChildren -}}
         <ul>
           {{- range .Children -}}
-          <li><a href="/features">Features</a></li>
+          <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
           {{- end -}}
         </ul>
         {{- end -}}
