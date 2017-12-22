@@ -1,0 +1,102 @@
+.single-showcase {
+  background: $color-white;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  padding-top: 8rem;
+
+  .container {
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 0 2rem;
+  }
+
+
+  .showcase-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .showcase-item {
+    flex: 0 0 100%;
+    margin-top: 2rem;
+    position: relative;
+
+    @media screen and (min-width: 48em) {
+      flex: 0 0 50%;
+
+      &.featured {
+        flex: 0 0 100%;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 5%;
+      }
+
+      &:nth-child(even) {
+        padding-left: 5%;
+      }
+    }
+  }
+
+  .showcase-item--media {
+    background: $color-grey;
+    border: 1px solid $color-grey;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    img,
+    .showcase-item--hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .showcase-item--hover {
+      background: rgba(0,0,0,0.35);
+      opacity: 0;
+      padding: 2rem;
+      pointer-events: none;
+      text-align: center;
+      transition: opacity .5s ease;
+    }
+  
+    &:hover .showcase-item--hover {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .showcase-item--hover:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      margin-right: -0.25em;
+      vertical-align: middle;
+    }
+
+    .showcase-item--hover a {
+      color: $color-white;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+      vertical-align: middle;
+    }
+  }
+
+  .showcase-item--title {
+
+  }
+}

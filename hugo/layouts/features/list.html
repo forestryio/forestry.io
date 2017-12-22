@@ -4,7 +4,7 @@
   <section class="section features">
     <div class="container">
       {{- if not .Params.hero -}}
-      <h1 class="page-title center">{{ .Params.headline }}</h1>
+      <h1 class="page-title center">{{ .Params.headline | default .Title }}</h1>
       <p class="page-subtitle center">{{ .Params.textline }}</p>
       {{- end -}}
       {{- range .Data.Pages -}}

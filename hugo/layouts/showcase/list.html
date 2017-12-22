@@ -1,0 +1,20 @@
+{{- define "main" -}}
+  <main class="single-showcase">
+    <div class="container">
+      <h1 class="page-title center">{{ .Params.headline | default .Title }}</h1>
+      <p class="page-subtitle center">{{ .Params.textline }}</p>
+      <div class="showcase-items">
+      {{- range where .Data.Pages "Params.featured" "eq" true -}}
+        {{- .Render "summary" -}}
+      {{- end -}}
+      </div>
+      <div class="showcase-items">
+      {{- range where .Data.Pages "Params.featured" "eq" false -}}
+        {{- .Render "summary" -}}
+      {{- end -}}
+      </div>
+    </div>
+  </main>
+
+  {{- partial "components/cta/basic" .Params.cta -}}
+{{- end -}}

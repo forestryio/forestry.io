@@ -1,0 +1,16 @@
+<div class="showcase-item{{ with .Params.featured }} featured{{ end }}">
+  <div class="showcase-item--media">
+    {{- with .Params.images -}}
+      {{- range first 1 . -}}
+        {{- partial "cloudinary/srcset" (dict "page" $ "image" . "alt" .) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- with .Params.permalink -}}
+    <div class="showcase-item--hover">
+      <a href="{{ . }}" title="Visit {{ $.Title }}" target="_blank">Visit Site</a>
+    </div>
+    {{- end -}}
+  </div>
+  <h2 class="showcase-item--title">{{ .Title }}</h2>
+  <a href="{{ .Params.permalink }}" class="showcase-item--permalink">{{ .Params.permalink }}</a>
+</div>
