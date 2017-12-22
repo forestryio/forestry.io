@@ -1,7 +1,6 @@
 [
-  {{- $len := len .Data.Pages -}}
-  {{- range $i, $value := .Data.Pages -}}
-  {{- if not $value.Params.private -}}
+  {{- $len := len (where .Data.Pages "Params.private" "ne" "true") -}}
+  {{- range $i, $value := where .Data.Pages "Params.private" "ne" "true" -}}
   {
     "title": {{ jsonify $value.Title }},
     "permalink": {{ jsonify $value.Permalink }},
@@ -22,6 +21,5 @@
     {{- end -}}
     "objectID": {{ jsonify $value.UniqueID }}
   }{{- if not (eq $len ($i | add 1)) -}},{{- end -}}
-  {{- end -}}
   {{- end -}}
 ]
