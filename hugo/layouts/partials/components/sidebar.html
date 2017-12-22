@@ -1,6 +1,10 @@
 {{- $currentPage := . -}}
-{{- with index $.Site.Menus .Section -}}
-<div class="sidebar">
+{{- $sectionMenu := index $.Site.Menus .Section -}}
+{{- $currentSection := (replace (index (findRE "([\\w]+)\\/\\z" (.CurrentSection.File.Dir) 1) 0) "/" "") -}}
+{{- $currentSectionMenu := index $.Site.Menus $currentSection -}}
+{{- $menu := cond (not (eq $currentSectionMenu "nil")) $currentSectionMenu $sectionMenu -}}
+{{- with $menu -}}
+<div class="docs-nav-items">
   {{- range . -}}
   <h3>{{ .Name }}</h3>
   <ul>

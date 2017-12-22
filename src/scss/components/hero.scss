@@ -9,6 +9,10 @@
   position: relative;
   z-index: 1;
 
+  @media screen and (min-width: 48em) {
+    min-height: 100%;
+  }
+
   .hero--text-block {
     padding: 9rem 0 0;
     text-align: left;
@@ -104,7 +108,7 @@
   pointer-events: none;
   position: absolute;
   right: auto;
-  top: 50%;
+  top: 90%;
   transform: translate(-50%, 0);
   width: 110%;
   z-index: -10;

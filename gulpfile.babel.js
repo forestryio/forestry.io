@@ -1,18 +1,22 @@
+import algoliasearch from "algoliasearch"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./browsersync.config"
 import del from "del"
+import fs from "fs"
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
 import hugo from "hugo-bin"
 import imagemin from "gulp-imagemin"
 import named from "vinyl-named"
 import newer from "gulp-newer"
+import {dirname, basename} from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
 import runsequence from "run-sequence"
 import {spawn} from "child_process"
 import sprite from "gulp-svg-sprite"
 import sourcemaps from "gulp-sourcemaps"
+import through from "through2"
 import util from "gulp-util"
 import webpack from "webpack-stream"
 import webpackConfig from "./webpack.config"
@@ -22,6 +26,11 @@ const argsType = process.env.HUGO_ARGS || env
 const isProduction = (env === "production")
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
+
+let ENV_VARS = process.env;
+if (argsType !== "production" && fs.existsSync("./.env.js")) {
+  ENV_VARS = require("./.env.js").default
+}
 
 /**
  * @task hugo
@@ -58,6 +67,35 @@ gulp.task("server", ["build"], () => {
  */
 gulp.task("build", ["clean"], (cb) => {
   runsequence(["styles", "scripts", "images", "svg"], "hugo", cb)
+})
+
+/**
+ * @task algolia
+ * Updates the algolia indexes during production builds
+ * Works by finding all algolia.json files in build dir,
+ * and pushes to an index matching the parent directory name
+ */
+gulp.task("algolia", (cb) => {
+  if (isProduction) {
+    const algolia = algoliasearch(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_ADMIN_KEY)
+
+    return gulp.src(gulpConfig.algolia.src)
+      .pipe(through.obj({objectMode: true}, (file, enc, done) => {
+        const index = basename(dirname(file.path))
+        const algoliaIndex = algolia.initIndex(index)
+        const indexData = JSON.parse(file._contents.toString())
+
+        algoliaIndex.addObjects(indexData, (err, content) => {
+          if (err) {
+            log(err, err.toString(), "Algolia")
+          } else {
+            log(null, `Sending index ${index} to Algolia`, "Algolia")
+          }
+        })
+
+        done()
+      }))
+  }
 })
 
 /**

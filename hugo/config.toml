@@ -16,7 +16,7 @@ enableRobotsTXT = true
 metaDataFormat = "yaml"
 
 # Default pagination number
-paginate = 100
+paginate = 10
 
 pluralizeListTitles = false
 
@@ -71,8 +71,14 @@ enableGitInfo = true
   baseName = "opensearch"
   isPlainText = true
 
+[outputFormats.Algolia]
+  mediaType = "application/json"
+  path = "/"
+  baseName = "algolia"
+  isPlainText = true
+
 [outputs]
-  home = ["HTML", "RSS", "OpenSearch"]
+  home = ["HTML", "RSS", "OpenSearch", "Algolia"]
 
 # MARKDOWN
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
@@ -94,9 +100,9 @@ enableGitInfo = true
   # GH Repo for filing a new issue
   github_repo = "https://github.com/forestryio/www/issues/new"
   # Edit content link for docs (set to automatically enter "edit" mode; this is good for "improve this page" links)
-  ghdocsrepo = "https://github.com/forestryio/www/tree/master/hugo/content/docs"
+  ghdocsrepo = "https://github.com/forestryio/www/tree/master/hugo/content/docs/edit/master/content/"
   # Edit content link for blog (set to automatically enter "edit" mode; this is good for "improve this page" links)
-  ghblogrepo = "https://github.com/forestryio/www/tree/master/hugo/content/blog"
+  ghblogrepo = "https://github.com/forestryio/www/tree/master/hugo/content/blog/edit/master/content/"
   # Google Tag Manager
   gtmid = "GTM-KL5HP9Q"
   # MixPanel

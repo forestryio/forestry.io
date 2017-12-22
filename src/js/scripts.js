@@ -1,18 +1,27 @@
-import contentLoaded from "content-loaded"
 import "./imports/sidebarActiveState"
 import "./imports/lazyload"
-import Nav from "./imports/nav"
-//import Search from "./imports/algoliaSearch"
+import CodeBlocks from "./imports/codeBlocks";
+import contentLoaded from "content-loaded"
 import HeadingLinks from "./imports/headingLinks"
+import Nav from "./imports/nav"
+import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
 import Sticky from "./imports/sticky"
-import CodeBlocks from "./imports/codeBlocks";
+
+let ENV_VARS = process.env
+
+if (ENV_VARS.NODE_ENV !== "production" || ENV_VARS.HUGO_ARGS === "staging") {
+  ENV_VARS = require("../../.env.js").default
+}
 
 /**
  * Don't fire application logic
  * until the DOM is ready
  */
 contentLoaded().then(() => {
+  const isHome = document.body.classList.contains("home")
+  const isDocs = document.body.classList.contains("docs")
+  const isBlog = document.body.classList.contains("blog")
 
   /**
    * Enable navbar logic
@@ -22,7 +31,15 @@ contentLoaded().then(() => {
   /**
    * Enable search
    */
-  //const search = new Search("80HKRA52OJ", "f13c10ad814c92b85f380deadc2db2dc", "www")
+  if (isHome) {
+    new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "dist")
+  }
+  else if (isDocs) {
+    new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "docs")
+  }
+  else if (isBlog) {
+    new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "blog")
+  }
 
   /**
    * Enable heading links
@@ -38,7 +55,7 @@ contentLoaded().then(() => {
   /**
    * Enable position sticky for certain elements
    */
-  const sticky = new Sticky([".blog-header--sticky"])
+  const sticky = new Sticky([".blog-header--sticky", ".search-header--sticky"])
 
   /**
    * Enable code highlighting and copying

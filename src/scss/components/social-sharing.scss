@@ -1,0 +1,26 @@
+.social-sharing {
+  .social-sharing--title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+
+    @media screen and (min-width: 48em) {
+      display: none;
+    }
+  }
+  .a2a_kit {
+    display: flex;
+
+    @media screen and (min-width: 48em) {
+      flex-direction: column;
+      position: fixed;
+      top: 8rem;
+      left: 1rem;
+    }
+  }
+
+  a {
+    margin: 0.25rem 0;
+  }
+}

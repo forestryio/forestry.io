@@ -1,7 +1,10 @@
-import instantsearch from "instantsearch.js"
-import mustache from "mustache"
-import loadMore from "./templates/instantsearch/loadMore.html"
+import empty from "./templates/instantsearch/empty.html"
 import hit from "./templates/instantsearch/hit.html"
+import hitWrapper from "./templates/instantsearch/hitWrapper.html"
+import instantsearch from "instantsearch.js"
+import loadMore from "./templates/instantsearch/loadMore.html"
+import Mustache from "mustache"
+import stats from "./templates/instantsearch/stats.html"
 
 export default class InstantSearch {
   /**
@@ -26,17 +29,44 @@ export default class InstantSearch {
       }
     }
 
+    const customInfiniteHits = instantsearch.connectors.connectInfiniteHits(this.infiniteHits)
+    const hasSearch = document.querySelector(".search--input")
+
     this.options = Object.assign(defaultOptions, options)
     this.defaultWidgets = {
-      searchBox: instantsearch.widgets.searchBox({
-        container: ".search input",
-        queryHook: this.handleQuery
+      hits: customInfiniteHits({
+        container: ".section-search-results",
+        escapeHits: true
       }),
-      hits: instantsearch.widgets.hits({
-        container: ".section-search-results"
+      sections: instantsearch.widgets.refinementList({
+        container: ".search-results--filters",
+        attributeName: "section",
+        operator: "or",
+        limit: 10,
+        templates: {
+          header: "Sections"
+        }
       }),
       stats: instantsearch.widgets.stats({
-        container: "#stats"
+        container: "#stats",
+        autoHideContainer: false,
+        transformData: (data) => {
+          data.page = ++data.page
+          return data
+        },
+        templates: {
+          body: stats
+        }
+      })
+    }
+
+    if (hasSearch) {
+      this.defaultWidgets.searchBox = instantsearch.widgets.searchBox({
+        container: ".search--input",
+        wrapInput: false,
+        magnifier: false,
+        reset: false,
+        poweredBy: false
       })
     }
 
@@ -52,35 +82,82 @@ export default class InstantSearch {
   addWidgets(widgets) {
     if (!widgets) return
 
-    widgets.forEach((w) => {
-      this.search.addWidget(w)
+    Object.keys(widgets).forEach((k) => {
+      this.search.addWidget(widgets[k])
     })
   }
 
-  /**
-   * Binds keyboard actions to the
-   * search interface
-   * @param {String} searchElement
-   * @param {String} resultsContainer
-   */
-  bindKeyboard(searchElement, resultsContainer) {
-    if (!searchElement || resultsContainer) return
 
-    // TODO: setup bindings
+  infiniteHits(options, isFirst) {
+    const container = document.querySelector(options.widgetParams.container)
 
-    const ctrlDown = 17
-    const ctrlKey = 17
-    const cmdKey = 91
-    const vKey = 86
-    const escKey = 28
-    const arrowDownKey = 40
-    const arrowUpKey = 39
-    const enterKey = 13
-    const search = document.querySelector(searchElement)
-    const results = document.querySelector(results)
-  }
+    if (isFirst) {
+      container.innerHTML = Mustache.render(hitWrapper, {}, {loadMore: loadMore})
+    }
 
-  handleQuery(query) {
-    
+    const query = (options.results) ? options.results.query : null
+    const loadMoreElement = container.querySelector("[data-load-more]")
+    const shouldNotRender = options.results === undefined || query === ""
+    const renderHits = () => {
+      if (options.hits.length < 1) return Mustache.render(empty, {query: query})
+      return options.hits.map((h) => {
+        h["FormatDate"] = function() {
+          return function(date, render) {
+
+            let calcTime = function(d, offset) {
+              var utc = d.getTime() + (d.getTimezoneOffset() * 60000)
+              return new Date(utc + (3600000*offset))
+            }
+
+            date = parseInt(render(date))
+            const d = new Date(date * 1000)
+            const dt = calcTime(d, 0)
+            const year = dt.getFullYear()
+            const day = dt.getDate()
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+            const month = months[dt.getMonth()]
+            return `${month} ${day}, ${year}`
+          }
+        }
+
+        return Mustache.render(hit, h)
+      })
+    }
+
+    if (options.isLastPage) {
+      loadMoreElement.classList.add("disabled")
+    } else {
+      loadMoreElement.classList.remove("disabled")
+    }
+
+    if (options.hits.length < 1) {
+      loadMoreElement.classList.add("hidden")
+    }
+    else if (shouldNotRender) {
+      loadMoreElement.classList.add("hidden")
+    } else {
+      loadMoreElement.classList.remove("hidden")
+    }
+
+    if (shouldNotRender) {
+      document.body.classList.remove("searching")
+    } else {
+      document.body.classList.add("searching")
+    }
+
+    loadMoreElement.addEventListener("click", (event) => {
+      const initialState = loadMore.textContent
+      event.preventDefault()
+      if (!shouldNotRender) {
+        loadMore.textContent = "Loading..."
+        options.showMore()
+
+        setTimeout(() => {
+          loadMore.textContent = initialState
+        }, 1000)
+      }
+    })
+
+    container.querySelector(".ais-infinite-hits").innerHTML = renderHits()
   }
 }

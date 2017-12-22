@@ -1,4 +1,4 @@
-.search-results > div {
+.search-results {
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -6,10 +6,13 @@
   bottom: 0;
   right: 0;
   background: $color-white;
+  overflow: scroll;
   z-index: -99;
 }
 
 body.searching {
+  overflow: hidden;
+
   .search-results {
     visibility: visible;
     z-index: 19;
@@ -26,8 +29,30 @@ body.searching {
   @media screen and (min-width: 800px) { flex-direction: row; }
 }
 
+.search-header {
+  flex: 0 0 40%;
+  padding: 0 0 4rem;
+  > * { max-width: 400px; }
+
+  .search-header--description {
+    color: $color-copy;
+    font-size: 0.95rem;
+    line-height: normal;
+    margin-top: 0.5rem;
+  }
+
+  @media screen and (min-width: 700px) {
+    padding: 0 0 4rem;
+
+    .search-header--sticky {
+      position: sticky;
+      top: calc($header-height + 3rem);
+    }
+  }
+}
+
 .section-search-results {
-  flex: 0 0 30%;
+  flex: 0 0 60%;
   padding: 0;
 
   @media screen and (min-width: 800px) { padding: 0 0 0 4rem; }
@@ -59,6 +84,20 @@ body.searching {
     margin-left: 0.5rem;
   }
 
+  .button.disabled {
+    background-color: $color-medium-dark;
+    cursor: initial;
+  }
+
+  .button.hidden {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+}
+
+.ais-infinite-hits--showmore {
+  margin-bottom: 2rem;
 }
 
 [data-category="Forestry"] { color: $color-brand; }

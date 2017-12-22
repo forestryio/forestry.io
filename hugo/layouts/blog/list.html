@@ -11,25 +11,28 @@
               {{ .Params.textline }}
             {{- end -}}
           </p>
-          <div class="newsletter-signup">
+          {{- if not .Params.hideSignup -}}
+          <form action="https://www.getrevue.co/profile/chrisdmacrae/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank" class="newsletter-signup">
             <h3 class="newsletter-signup--title">Want to hear it first?</h3>
             <p class="newsletter-signup--text">
               Subscribe to our newsletter to get the posts directly in your inbox as they get posted.
             </p>
             <div class="newsletter-signup--field form--joined form--large">
-              <input type="email" placeholder="your.name@example.com"><button class="button primary small">Subscribe</button>
+              <input class="revue-form-field" placeholder="scott@forestry.io" type="email" name="member[email]" id="member_email">
+              <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class="button primary small">Subscribe</button>
             </div>
-          </div>
+          </form>
+          {{- end -}}
         </div>
       </section>
       <section class="section section-blog-list">
-        {{- range .Data.Pages -}}
+        {{- range .Paginator.Pages -}}
           {{ .Render "summary" }}
         {{- end -}}
+        {{- partial "components/pagination/paginator" . -}}
       </section>
     </div>
   </main>
 
-  {{- partial "components/cta/basic" -}}
-
+  {{- partial "components/cta/basic" .Params.cta -}}
 {{- end -}}

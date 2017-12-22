@@ -69,6 +69,7 @@
     "stylelint-no-unsupported-browser-features": "^1.0.1",
     "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.2.0",
+    "through2": "^2.0.3",
     "vinyl-named": "^1.1.0",
     "webpack": "3.6.0",
     "webpack-stream": "^4.0.0",

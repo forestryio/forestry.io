@@ -20,35 +20,38 @@ export default function(env) {
       preview: ["-b", "http://localhost:3000"],
       production: []
     },
+    algolia: {
+      src: build + "**/algolia.json"
+    },
     styles: {
       src:
       [
-        src + "/css/*.+(css|scss|sass)",
-        src + "/scss/*.+(css|scss|sass)"
+        src + "css/*.+(css|scss|sass)",
+        src + "scss/*.+(css|scss|sass)"
       ],
       watch:
       [
-        src + "/css/**/*.+(css|scss|sass)",
-        src + "/scss/**/*.+(css|scss|sass)"
+        src + "css/**/*.+(css|scss|sass)",
+        src + "scss/**/*.+(css|scss|sass)"
       ],
-      dest: dest + "/static/css",
-      tmp: tmp + "/css"
+      dest: dest + "static/css",
+      tmp: tmp + "css"
     },
     scripts: {
-      src: src + "/js/*+(js|jsx)",
-      watch: src + "/js/**/*+(js|jsx)",
-      dest: dest + "/static/js",
-      tmp: tmp + "/js"
+      src: src + "js/*+(js|jsx)",
+      watch: src + "js/**/*+(js|jsx)",
+      dest: dest + "static/js/",
+      tmp: tmp + "js/"
     },
     images: {
-      src: src + "/img/**/*.+(png|jpg|jpeg|gif|svg|webp)",
-      watch: src + "/img/**/*.+(png|jpg|jpeg|gif|svg|webp)",
-      dest: dest + "/static/img"
+      src: src + "img/**/*.+(png|jpg|jpeg|gif|svg|webp)",
+      watch: src + "img/**/*.+(png|jpg|jpeg|gif|svg|webp)",
+      dest: dest + "static/img/"
     },
     svg: {
-      src: src + "/img/**/*.svg",
-      watch: src + "/img/**/*.svg",
-      dest: dest + "/static/svg",
+      src: src + "img/**/*.svg",
+      watch: src + "img/**/*.svg",
+      dest: dest + "static/svg/",
       config: {
         dest: ".",
         mode: {

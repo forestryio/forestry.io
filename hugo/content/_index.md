@@ -12,14 +12,26 @@ hero:
     - permalink: https://app.forestry.io/signup
       textline: Log in
   video:
-    fallback_visual: /video/forestry_factory.jpg
+    fallbackVisual: /video/forestry_factory.jpg
     sources:
-      - permalink: /video/forestry_factory.webm
+      -
+        permalink: /video/forestry_factory.webm
         type: video/webm
-      - permalink: /video/forestry_factory.mp4
+      - 
+        permalink: /video/forestry_factory.mp4
         type: video/mp4
-      - permalink: /video/forestry_factory.ogv
+      - 
+        permalink: /video/forestry_factory.ogv
         type: video/ogg
+    logos:
+      textline: Built for static site generators
+      sources:
+        - 
+          permalink: img/logos/hugo.svg
+          alt: Hugo
+        - 
+          permalink: img/logos/jekyll.svg
+          alt: Jekyll
 features:
   - headline: Your site, your workflow
     textline: |

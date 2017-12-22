@@ -16,15 +16,13 @@
 
     {{- if .visual -}}
       {{/* TODO: hero visual */}}
-    {{- else if .video -}}
-    <video playsinline autoplay muted loop poster="/video/forestry_factory.jpg" class="factory-video">
+    {{- else if .video -}}{{- with .video -}}
+    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video">
         {{- range .sources -}}
-        <source src="/video/forestry_factory.webm" type="video/webm">
-        <source src="/video/forestry_factory.mp4" type="video/mp4">
-        <source src="/video/forestry_factory.ogv" type="video/ogg">
+        <source src="{{ .permalink }}" type="{{ .type }}">
         {{- end -}}
     </video>
-    {{- end -}}
+    {{- end -}}{{- end -}}
 
   </div>
   

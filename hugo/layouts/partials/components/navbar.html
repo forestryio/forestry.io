@@ -1,14 +1,17 @@
 {{- $isHome := .IsHome -}}
 {{- $isDocs := (eq .Section "docs") -}}
+{{- $isBlog := (eq .Section "blog") -}}
 {{- $isPricing := (eq .Section "pricing") -}}
 <header class="header container{{ if $isDocs }} docs{{ end }}{{ if $isPricing }} dark{{ end }}">
   <div class="left-block">
     <a href="{{ .Site.BaseURL | relURL }}" title="Go to homepage" class="logo"></a>
   </div>
   <div class="right-block">
+    {{- if or $isDocs $isBlog -}}
     <div class="search">
-      <input type="search" name="search" placeholder="Search...">
+      <input type="search" name="search" placeholder="Search the {{ .Section }}..." class="search--input">
     </div>
+    {{- end -}}
     <nav class="nav">
       <div class="nav-content">
         <a href="{{ .Site.BaseURL | relURL }}" class="mini-nav--logo"></a>

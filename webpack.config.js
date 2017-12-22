@@ -14,8 +14,8 @@ export default function(env) {
       // Any third-party deps added via a <script> tag
       // can be defined here so that they can be required
       // in your application's JS files
-      "algoliasearch/lite": "algoliasearch",
-      "autocomplete.js": "autocomplete"
+      "instantsearch.js": "instantsearch",
+      "moment": "moment"
     },
     resolve: {
       // Can be used to create aliases for imports

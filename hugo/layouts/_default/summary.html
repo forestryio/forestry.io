@@ -1,6 +1,6 @@
 <div class="blog-post">
   <div class="post-meta">
-    <span class="post-date">{{ .Date.Format .Site.Params.dateFormat }}</span>
+    <span class="post-date">{{ .Date.UTC.Format .Site.Params.dateFormat }}</span>
     <span class="post-category" data-category="{{ .Section }}">{{ .Section }}</span>
   </div>
   <a href="{{ .Permalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>

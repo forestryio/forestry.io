@@ -2,7 +2,7 @@
 # https://stylelint.io/
 
 extends: ["stylelint-config-standard", "stylelint-config-sass-guidelines"]
-plugins: ["stylelint-scss", "stylelint-no-unsupported-browser-features"]
+plugins: ["stylelint-scss", "stylelint-no-unsupported-browser-features", "stylelint-order"]
 rules:
     string-quotes: double
     no-duplicate-selectors: true
@@ -22,3 +22,7 @@ rules:
         - ignore: []
           severity: warning
     scss/at-extend-no-missing-placeholder: true
+    order/order:
+        - custom-properties
+        - declarations
+    order/properties-alphabetical-order: true

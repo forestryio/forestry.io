@@ -1,4 +1,9 @@
 html,
+body.home {
+  height: 100%;
+}
+
+html,
 body {
   width: 100%;
 }
@@ -88,6 +93,7 @@ body.in-transition {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
   &.ltr {
     align-items: flex-start;

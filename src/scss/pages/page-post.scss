@@ -81,43 +81,6 @@
 
   }
 
-  .author {
-    display: block;
-    margin-right: 1rem;
-  }
-
-  .author--wrapper {
-    display: flex;
-    align-items: center;
-  }
-
-  .author--avatar {
-    $avatar-size: 2.25rem;
-
-    width: $avatar-size;
-    height: $avatar-size;
-    border-radius: calc($avatar-size / 2);
-    overflow: hidden;
-  }
-
-  .author--info {
-    margin-left: 1rem;
-  }
-
-  .author--info span { display: block; }
-
-  .author--name {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .author--title {
-    font-size: 0.8rem;
-    letter-spacing: 0.02em;
-    a { font-weight: 600; }
-  }
-
   /* Content styling */
 
   h1 { font-size: 2rem; }
@@ -254,4 +217,41 @@
     }
   }
 
+}
+
+.author {
+  display: block;
+  margin-right: 1rem;
+}
+
+.author--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.author--avatar {
+  $avatar-size: 2.25rem;
+
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: calc($avatar-size / 2);
+  overflow: hidden;
+}
+
+.author--info {
+  margin-left: 1rem;
+}
+
+.author--info span { display: block; }
+
+.author--name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.author--title {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  a { font-weight: 600; }
 }

@@ -103,7 +103,7 @@ $header-height: 5rem;
       -webkit-overflow-scrolling: touch;
       padding: 1.24rem 2rem 2rem;
 
-      @media screen and (min-width: 780px) { padding: 1.21rem 4rem 2rem; }
+      @media screen and (min-width: 960px) { padding: 1.21rem 4rem 2rem; }
 
       ul.main-nav-items {
         border-bottom: 1px solid $color-grey;
@@ -161,7 +161,7 @@ $header-height: 5rem;
 
     }
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 960px) {
       display: none;
     }
 
@@ -176,7 +176,7 @@ $header-height: 5rem;
   }
 
   .mini-nav--toggle {
-    @media screen and (min-width: 780px) { display: block; }
+    @media screen and (min-width: 960px) { display: block; }
 
     @media screen and (min-width: 1100px) { display: none; }
   }
@@ -186,7 +186,7 @@ $header-height: 5rem;
 .header.docs.container {
   padding: 0 2rem;
 
-  @media screen and (min-width: 780px) { padding: 0 4rem; }
+  @media screen and (min-width: 960px) { padding: 0 4rem; }
 }
 
 .nav {
@@ -229,7 +229,7 @@ $header-height: 5rem;
       display: block;
     }
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 960px) {
       display: none;
     }
 
@@ -241,7 +241,7 @@ $header-height: 5rem;
     justify-content: center;
   }
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 960px) {
     display: block;
   }
 
@@ -279,7 +279,7 @@ $header-height: 5rem;
   .toggle-open { display: block; }
   .toggle-close { display: none; }
 
-  @media screen and (min-width: 780px) { display: none; }
+  @media screen and (min-width: 960px) { display: none; }
 
 }
 

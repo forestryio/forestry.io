@@ -10,10 +10,12 @@
       <div class="post--meta">
         <div class="post--info">
           <span class="post--meta-label">Last updated</span>
-          <span class="post--date">{{ .Lastmod.Format .Site.Params.dateFormat }}</span>
+          <span class="post--date">{{ .Lastmod.UTC.Format .Site.Params.dateFormat }}</span>
         </div>
       </div>
       {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
     </div>
   </main>
+
+  {{- partial "components/cta/basic" .Params.cta -}}
 {{- end -}}

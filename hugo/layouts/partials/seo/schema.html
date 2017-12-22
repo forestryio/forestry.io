@@ -10,11 +10,11 @@
     <meta itemprop="dateModified" content="{{ .Date.Format $ISO8601 | safeHTML }}" />
   {{- end -}}
   <meta itemprop="wordCount" content="{{ .WordCount }}">
-  {{- with .Params.images -}}
+  {{- with $.Param "images" -}}
     {{- range first 6 . -}}
     <meta itemprop="image" content="{{ . | absURL }}">
     {{- end -}}
   {{- end -}}
   {{/* Output all taxonomies as schema.org keywords */}}
-  <meta itemprop="keywords" content="{{ if and .IsPage (isset .Params "tag") }}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
+  <meta itemprop="keywords" content="{{ if and .IsPage ($.Param "tags") }}{{ range $index, $tag := $.Param "tags" }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
 {{- end -}}

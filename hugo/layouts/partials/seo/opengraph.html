@@ -3,7 +3,7 @@
 <meta property="og:description" content="{{- with .Description }}{{ . }}{{ else }}{{- if .IsPage }}{{ .Summary }}{{ else }}{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end }}" />
 <meta property="og:type" content="{{- if .IsPage }}article{{ else }}website{{- end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-{{- with .Params.images -}}
+{{- with $.Param "images" -}}
   {{- range first 6 . -}}
     <meta property="og:image" content="{{ . | absURL }}" />
     {{- if in $.Site.BaseURL "https://" -}}
@@ -24,7 +24,7 @@
 {{ else -}}
   {{- if not .Date.IsZero -}}<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>{{- end -}}
 {{- end -}}
-{{- with .Params.audio -}}
+{{- with $.Param "audio" -}}
   <meta property="og:audio" content="{{ . }}" />
   {{- if in $.Site.BaseURL "https://" -}}
   <meta property="og:audio:secure" content="{{ (. | replace "http://" "https://") | absURL }}" />
@@ -41,7 +41,7 @@
 {{- with .Site.Params.title -}}
   <meta property="og:site_name" content="{{ . }}" />
 {{- end -}}
-{{- with .Params.videos -}}
+{{- with $.Param "videos" -}}
   {{ range . -}}
     <meta property="og:video" content="{{ . | absURL }}" />
     {{- if in .Site.BaseURL "https://" -}}
@@ -52,7 +52,7 @@
 {{/* If it is part of a series, link to related articles */}}
 {{ $permalink := .Permalink -}}
 {{ $siteSeries := .Site.Taxonomies.series -}}
-{{- with .Params.series -}}
+{{- with $.Param "series" -}}
   {{ range $name := . -}}
     {{ $series := index $siteSeries $name -}}
     {{- with $series.Pages -}}
@@ -66,15 +66,15 @@
 {{- end -}}
 {{- if .IsPage -}}
   <meta property="article:section" content="{{ .Section }}" />
-  {{ range .Site.Authors -}}
-    {{- with .Social.facebook -}}
+  {{ range .Site.Data.authors.authors -}}
+    {{- with .facebook -}}
       <meta property="article:author" content="https://www.facebook.com/{{ . }}" />
     {{- end -}}
   {{- end -}}
   {{- with .Site.Social.facebook -}}
     <meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />
   {{- end -}}    
-  {{- with .Params.tags -}}
+  {{- with $.Param "tags" -}}
     {{ range first 6 . -}}
       <meta property="article:tag" content="{{ . }}" />
     {{- end -}}

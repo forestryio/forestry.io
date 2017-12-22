@@ -15,17 +15,17 @@
           <span class="post--meta-label">Written by</span>
           {{- range . -}}
             {{- $authorName := . -}}
-            {{- range $.Site.Params.authors -}}
-              {{- if eq $authorName .fullName -}}
-              <div class="author--wrapper">
+            {{- range $.Site.Data.authors.authors -}}
+              {{- if eq (urlize .fullName) (urlize $authorName) -}}
+              <a href="{{ "/authors/" | relURL }}{{ .fullName | urlize }}" class="author--wrapper">
                 <div class="author--avatar">
                   <img src="{{ .avatar }}" alt="{{ .fullName | default .avatar }}">
                 </div>
                 <div class="author--info">
-                  <span class="author--name">{{ .fullname }}</span>
-                  <span class="author--title">{{ .shortBio }}</span>
+                  <span class="author--name">{{ .fullName }}</span>
+                  <span class="author--title">{{ .title }}</span>
                 </div>
-              </div>
+              </a>
               {{- end -}}
             {{- end -}}
           {{- end -}}
@@ -35,9 +35,9 @@
           <span class="post--meta-label">Posted on</span>
           <span class="post--date">
             {{- with .GitInfo -}}
-              <a href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}">
+              <a href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}" target="_blank">
             {{- end -}}
-            {{ .Date.Format $.Site.Params.dateformat }}
+            {{ .Date.UTC.Format $.Site.Params.dateformat }}
             {{- with .GitInfo -}}
               </a>
             {{- end -}}
@@ -54,21 +54,24 @@
 
       {{- if not .Params.hideAbout -}}
       <div class="post--about">
-        <h2>About {{ .Site.Title }}</h2>
-        {{ markdownify .Site.Params.blog_description | default .Site.Params.description }}
+        {{- range $.Site.Data.authors.authors -}}{{- if eq "forestry.io" (lower .fullName) -}}
+        <h2>About {{ .fullName }}</h2>
+        {{ markdownify .bio }}
+        {{- end -}}{{- end -}}
       </div>
       {{- end -}}
+      {{- partial "components/social-sharing" . -}}
       {{- if not .Params.hideFeedback -}}
       <div class="post--feedback">
-        <p>Caught a mistake or want to contribute to the {{ .Section | humanize | lower }}? Edit this page on Github!</p>
-        {{- end -}}
+        <p><small>Caught a mistake or want to contribute to the {{ .Section | humanize | lower }}? Edit this page on <a href="{{.Site.Params.ghblogrepo}}{{.File.Path}}" target="_blank">Github</a>!</small></p>
       </div>
-      {{- if or (not .Params.hideAbout) (not .Params.hideFeedback) -}}
-      <hr />
       {{- end -}}
 
-      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ $related := $.Site.RegularPages.Related . | first 5 }}
       {{ with $related }}
+      {{- if or (not $.Params.hideAbout) (not $.Params.hideFeedback) -}}
+      <hr />
+      {{- end -}}
       <aside class="post--related">
         <h2 class="post--related-title">Other Articles You Might Like</h2>
         {{- range . -}}
@@ -80,5 +83,5 @@
     </div>
   </main>
 
-  {{- partial "components/cta/newsletter" -}}
+  {{- partial "components/cta/newsletter" .Params.cta -}}
 {{- end -}}
