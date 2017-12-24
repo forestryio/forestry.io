@@ -28,7 +28,7 @@ fields:
 - type: boolean
   name: button
   label: Featured?
-  description: Moves sites to the top of the list 
+  description: Moves sites to the top of the list
 - type: list
   name: authors
   label: Authors
@@ -63,7 +63,7 @@ fields:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
     required: true
-  default: 2017-12-07 00:00:00 -0400
+  default: 2017-12-07 04:00:00 +0000
 - type: datetime
   name: expirydate
   label: Expiry Date
