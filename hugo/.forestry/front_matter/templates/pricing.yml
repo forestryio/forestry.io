@@ -1,5 +1,7 @@
 ---
 hide_body: false
+pages:
+  - pricing.md
 fields:
 - type: text
   label: Title

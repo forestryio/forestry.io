@@ -9,7 +9,7 @@ menu:
   docs:
     parent: welcome
 weight: 1
-date: 2017-02-01
+layout: single
 publishdate: 2017-02-01
 ---
 {{% tip %}}

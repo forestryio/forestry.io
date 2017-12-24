@@ -1,5 +1,10 @@
 ---
 hide_body: false
+pages:
+  - /docs/_index.md
+  - /docs/git-sync/_index.md
+  - /docs/troubleshooting/_index.md
+  - /docs/welcome/_index.md
 fields:
 - type: text
   label: Title
