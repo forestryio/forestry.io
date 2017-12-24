@@ -9,8 +9,6 @@ menu:
   docs:
     parent: welcome
 weight: 1
-date: 2017-02-01
-publishdate: 2017-02-01
 ---
 {{% tip %}}
 **dsfgfagdhjsfghdjdsaf**

@@ -1,9 +1,7 @@
 ---
-date: 2017-05-17 11:13:48 -0300
+publishDate: 2017-05-17 11:13:48 -0300
 description: Forestry.io is looking for a Charlottetown-based Administrative Assistant
   (part-time) to join the team.
-headline: ADMINISTRATIVE ASSISTANT
-hideNav: false
 title: Administrative Assistant
 draft: true
 ---

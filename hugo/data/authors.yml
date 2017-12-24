@@ -1,4 +1,11 @@
 ---
+map:
+  Forestry Team: forestry-team
+  Chris Macrae: chris-macrae
+  Scott Gallant: scott-gallant
+  Jordan Patterson: jordan-patterson
+  Colin Garvey: colin-garvey
+  Michael Soolee: michael-soolee
 authors: 
   - 
     avatar: img/forestry-symbol.svg
@@ -7,10 +14,10 @@ authors:
 
       Forestry powers static sites generated using [Jekyll](https://jekyllrb.org) and [Hugo](https://gohugo.io) and manages them using Git.
     firstName: Forestry.io
-    fullName: Forestry.io
+    fullName: Forestry Team
     shortBio: ""
     twitter: forestryio
-    title: Forestry Team 🌲
+    title: Static Site Ethusiasts 🌲
   - 
     avatar: /uploads/2017/12/31/Scott_Gallant_square.png
     bio: ""

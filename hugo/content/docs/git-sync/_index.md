@@ -4,6 +4,7 @@ weight: 2
 menu:
   docs:
     parent: "git-sync"
+type: single
 ---
 ## Introduction
 

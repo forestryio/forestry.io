@@ -6,7 +6,7 @@ authors:
 images:
 - /uploads/2017/12/31/bigger-better-editor-1.png
 excerpt:  "Find out why this is the best editor for Hugo & Jekyll sites we've ever built."
-date: 2017-05-30T14:01:35Z
+publishDate: 2017-05-30T14:01:35Z
 title: "3 Reasons Why Our New Editor Is Our Best Static Site Editor Yet"
 categories:
 - CMS

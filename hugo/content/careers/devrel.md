@@ -1,10 +1,9 @@
 ---
-date: 2017-05-17 11:13:48 -0300
+publishDate: 2017-05-17 11:13:48 -0300
 description: Forestry.io is looking for a Maritime-based person for developer relations
   and to foster growth of the Forestry community.
-headline: DEVELOPER RELATIONS
-hideNav: false
-title: Hiring a Developer Relations Manager
+headline: Hiring a Developer Relations Manager
+title: Developer Relations
 draft: true
 ---
 
