@@ -43,7 +43,12 @@
             {{- end -}}
           </span>
           {{- with .Params.categories -}}
-          <span>in {{ range . }}<a href="{{/* todo permalink  */}}" class="post--category" data-category="{{ . }}">{{ . }}</a>{{- end -}}</span>
+          {{- $len := len . -}}
+          <span>in {{ range $index, $value := . }}
+            <a href="{{ relURL "/categories/"}}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
+              {{ $value | humanize }}
+            </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
+            {{- end -}}</span>
           {{- end -}}
         </div>
       </div>
@@ -67,7 +72,7 @@
       </div>
       {{- end -}}
 
-      {{ $related := $.Site.RegularPages.Related . | first 5 }}
+      {{ $related := $.Site.RegularPages.Related . | first 3 }}
       {{ with $related }}
       {{- if or (not $.Params.hideAbout) (not $.Params.hideFeedback) -}}
       <hr />

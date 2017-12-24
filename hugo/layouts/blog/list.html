@@ -26,7 +26,10 @@
         </div>
       </section>
       <section class="section section-blog-list">
-        {{- range .Paginator.Pages -}}
+        {{- range where .Paginator.Pages "Params.featured" "eq" true -}}
+          {{ .Render "summary" }}
+        {{- end -}}
+        {{- range where .Paginator.Pages "Params.featured" "ne" true -}}
           {{ .Render "summary" }}
         {{- end -}}
         {{- partial "components/pagination/paginator" . -}}

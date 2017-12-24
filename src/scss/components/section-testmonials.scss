@@ -20,25 +20,33 @@
 
 .section-testimonials {
   background: $color-white;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .testimonials-row {
   display: inline-flex;
   flex-direction: row;
   transform: translateX(-50%);
+
+  @media screen and (min-width: 48em) {
+    transform: translateX(-29%);
+  }
 }
 
 .testimonials-row--items {
-  animation: carouselInverted 30s linear infinite;
   display: inline-block;
   position: relative;
-  transform: translate3d(0, 0, 0);
   will-change: transform;
+
+  @media screen and (max-width: 48em) {
+    animation: carouselInverted 30s linear infinite;
+  }
 }
 
-.testimonials-row:nth-child(even) .testimonials-row--items {
-  animation: carousel 30s linear infinite;
+@media screen and (max-width: 48em) {
+  .testimonials-row:nth-child(even) .testimonials-row--items {
+    animation: carousel 30s linear infinite;
+  }
 }
 
 .section-testimonials:hover,
@@ -116,89 +124,3 @@
     margin-top: 0.25rem;
   }
 }
-
-/*
-.section-testimonials {
-  background: $color-white;
-  overflow: scroll;
-}
-
-.testimonials-row {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: row;
-  position: relative;
-  left: -100%;
-  transform: translateX(50%);
-}
-
-.row-1 { align-items: flex-end; }
-
-.testimonials-row--items {
-  display: flex;
-  margin: 0 -5rem;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  will-change: transform;
-  animation: carouselInverted 40s linear infinite;
-}
-
-.testimonials-row:nth-child(odd) .testimonials-row--items {
-  animation: carousel 40s linear infinite;
-}
-
-.testimonial-card {
-  flex: 0 0 16.25rem;
-  background: $color-light-grey;
-  padding: 1rem;
-  border-radius: 3px;
-  margin: 1rem;
-  text-decoration: none;
-  transition: transform .35s ease;
-
-  &:hover { transform: scale(1.06); }
-
-  .meta {
-    display: flex;
-    font-size: .9rem;
-
-    .avatar {
-      width: 2rem;
-      height: 2rem;
-      background: $color-grey;
-      border-radius: 3px;
-      margin-right: 1rem;
-    }
-
-    .user-info {
-      margin-right: 1rem;
-
-      span {
-        display: block;
-        line-height: 1.35;
-      }
-
-      .name { font-weight: 600; }
-
-    }
-
-    .platform {
-      margin-left: auto;
-
-      img {
-        height: 1rem;
-        filter: grayscale(.8) contrast(1);
-      }
-
-    }
-  }
-
-  .content {
-    margin-top: .25rem;
-    font-size: .9rem;
-  }
-
-}
-*/

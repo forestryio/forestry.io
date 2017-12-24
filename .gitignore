@@ -2,6 +2,7 @@
 *.DS_Store
 node_modules/
 .env.js
+yarn.lock
 
 # Ensure Hugo builds aren't committed to Git
 public/

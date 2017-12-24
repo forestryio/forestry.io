@@ -4,7 +4,17 @@ frontmatter_file_url_template: "/uploads/:year:/:month:/:day:"
 body_file_url_template: "/uploads/:year:/:month:/:day:"
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: "/admin"
 webhook_url: 
-sections: 
+sections:
+  showcase:
+    default_front_matter_template: showcase-item
+  docs:
+    default_front_matter_template: default
+  careers:
+    default_front_matter_template: default
+  blog:
+    default_front_matter_template: default
+  pages:
+    default_front_matter_template: default
 version: 0.31.1
