@@ -26,14 +26,6 @@ fields:
   label: Images
   description: Used for SEO & Featured Images
 - type: list
-  name: aliases
-  label: Aliases
-  description: Create page redirects. Put in relative path
-  config:
-    use_select: false
-    source:
-      type: datafiles
-- type: list
   name: authors
   label: Authors
   config:
@@ -42,13 +34,23 @@ fields:
       type: datafiles
       file: authors-yml
   default: []
-- type: boolean
-  name: private
-  label: Exclude from sitemap?
-- type: number
-  name: weight
-  label: Weight
-  description: Used to handle sorting order, menu order, etc.
+- type: list
+  name: categories
+  label: Categories
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - CMS
+    - Jekyll
+    - Hugo
+    - Static Sites
+    - Static Site Generators
+    - Company
+- type: tag_list
+  name: tags
+  label: Tags
 - type: datetime
   name: publishdate
   label: Publish Date
@@ -65,23 +67,6 @@ fields:
   config:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
-- type: tag_list
-  name: tags
-  label: Tags
-- type: list
-  name: categories
-  label: Categories
-  config:
-    use_select: true
-    source:
-      type: simple
-    options:
-    - CMS
-    - Jekyll
-    - Hugo
-    - Static Sites
-    - Static Site Generators
-    - Company
 - type: field_group
   label: Footer Call To Action
   name: cta
@@ -116,3 +101,18 @@ fields:
       label: Is button?
     config:
       labelField: textline
+- type: boolean
+  name: private
+  label: Exclude from sitemap?
+- type: number
+  name: weight
+  label: Weight
+  description: Used to handle sorting order, menu order, etc.
+- type: list
+  name: aliases
+  label: Aliases
+  description: Create page redirects. Put in relative path
+  config:
+    use_select: false
+    source:
+      type: datafiles
