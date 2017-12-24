@@ -48,38 +48,38 @@ fields:
       name: button
       label: Is Button?
   - type: field_group
-  name: videos
-  label: Videos
-  description: ''
-  fields:
-  - type: text
-    name: fallbackVisual
-    label: Fallback Image
-    description: Image to be shown while videos are being downloaded
-    config:
-      required: true
-  - type: field_group_list
-    name: sources
-    label: Sources
+    name: videos
+    label: Videos
+    description: ''
     fields:
-    - type: file
-      label: Video
-      name: permalink
+    - type: text
+      name: fallbackVisual
+      label: Fallback Image
+      description: Image to be shown while videos are being downloaded
       config:
-        maxSize: '5'
-    - type: select
-      config:
-        source:
-          type: simple
         required: true
-        options:
-        - video/ogg
-        - video/mp4
-        - video/webm
-        - video/wav
-        - video/mpeg
-      label: MIME Type
-      name: type
+    - type: field_group_list
+      name: sources
+      label: Sources
+      fields:
+      - type: file
+        label: Video
+        name: permalink
+        config:
+          maxSize: '5'
+      - type: select
+        config:
+          source:
+            type: simple
+          required: true
+          options:
+          - video/ogg
+          - video/mp4
+          - video/webm
+          - video/wav
+          - video/mpeg
+        label: MIME Type
+        name: type
 - type: image_gallery
   name: images
   label: Images
