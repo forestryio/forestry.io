@@ -49,7 +49,7 @@ fields:
       label: Is Button?
   - type: field_group
     name: videos
-    label: Videos
+    label: Visual
     description: ''
     fields:
     - type: text
@@ -80,6 +80,7 @@ fields:
           - video/mpeg
         label: MIME Type
         name: type
+        default: video/ogg
 - type: image_gallery
   name: images
   label: Images
