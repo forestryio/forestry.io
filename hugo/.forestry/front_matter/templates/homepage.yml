@@ -9,20 +9,44 @@ fields:
   description: Used for SEO. Fallback for Headline.
   config:
     required: true
-- type: text
-  name: headline
-  label: Page Headline
-  description: Optional override for title
 - type: textarea
   name: description
   label: Description
   description: Used for SEO
   config:
     required: true
-- type: textarea
-  name: textline
-  label: Page Textline
-  description: Optional override for description
+- type: field_group
+  name: hero
+  label: Hero
+  fields:
+  - type: text
+    name: headline
+    label: Headline
+    config:
+      required: true
+  - type: textarea
+    name: textline
+    label: Textline
+    config:
+      required: true
+  - type: field_group_list
+    label: Calls To Action
+    name: ctas
+    description: Configure buttons/links in the Hero
+    fields:
+    - type: text
+      name: permalink
+      label: Permalink
+      config:
+        required: true
+    - type: text
+      name: textline
+      label: Textline
+      config:
+        required: true
+    - type: boolean
+      name: button
+      label: Is Button?
 - type: image_gallery
   name: images
   label: Images
@@ -101,3 +125,36 @@ fields:
     use_select: false
     source:
       type: datafiles
+- type: field_group
+  name: videos
+  label: Videos
+  description: ''
+  fields:
+  - type: text
+    name: fallbackVisual
+    label: Fallback Image
+    description: Image to be shown while videos are being downloaded
+    config:
+      required: true
+  - type: field_group_list
+    name: sources
+    label: Sources
+    fields:
+    - type: file
+      label: Video
+      name: permalink
+      config:
+        maxSize: '5'
+    - type: select
+      config:
+        source:
+          type: simple
+        required: true
+        options:
+        - video/ogg
+        - video/mp4
+        - video/webm
+        - video/wav
+        - video/mpeg
+      label: MIME Type
+      name: type
