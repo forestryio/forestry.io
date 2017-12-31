@@ -20,6 +20,7 @@ export default class NavBar {
   init() {
     this.handleScroll()
     this.handleToggle()
+    this.handleTOC()
     this.signedInState()
   }
 
@@ -50,22 +51,51 @@ export default class NavBar {
   }
 
   /**
-   * Handles toggling the mobile navigation
+   * Binds toggle events for the mobile navigation
    */
   handleToggle() {
     this.toggle.addEventListener("click", (e) => {
-      this.nav.classList.toggle("expanded")
-
-      if (
-        this.html.classList.contains("docs") ||
-        this.body.classList.contains("docs")
-      ) {
-        this.html.classList.toggle("no-overflow")
-        this.body.classList.toggle("no-overflow")
-      }
+      this.doToggle()
     })
   }
 
+  /**
+   * Executes toggle events for the mobile navigation
+   */
+  doToggle() {
+    this.nav.classList.toggle("expanded")
+
+    if (
+      this.html.classList.contains("docs") ||
+      this.body.classList.contains("docs")
+    ) {
+      this.html.classList.toggle("no-overflow")
+      this.body.classList.toggle("no-overflow")
+    }
+  }
+
+  /**
+   * Dismisses the nav when a table of contents
+   * link is clicked
+   */
+  handleTOC() {
+    const links = Array.from(this.nav.getElementsByTagName("a")).filter(
+      (link) => {
+        return link.getAttribute("href").indexOf("#") >= 0
+      }
+    )
+
+    links.forEach((link) =>
+      link.addEventListener("click", (e) => {
+        this.doToggle()
+      })
+    )
+  }
+
+  /**
+   * Conditionally shows the logged out/logged in
+   * nav items, and injects data from the cookie
+   */
   signedInState() {
     const user = readCookie("signed_in_user")
     const container = document.querySelector("li[data-user]")

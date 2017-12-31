@@ -34,6 +34,9 @@
             {{- end -}}
           {{- end -}}
         </ul>
+        {{- if $isDocs -}}
+          {{- partial "components/sidebar" . -}}
+        {{- end -}}
       </div>
     </nav>
     <div class="mini-nav--toggle">

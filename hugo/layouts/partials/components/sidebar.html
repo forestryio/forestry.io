@@ -29,7 +29,7 @@
   {{/* A post can explicitly disable Table of Contents with toc: false */}}
   {{- $show_toc := (eq $.Params.toc false) -}}
   {{- if $has_headers -}}
-    <ul class="sidebar--table-of-contents">
+    <ul class="table-of-contents">
     {{- range $headers -}}
       {{- $header := . -}}
       {{- range first 1 (findRE "<h[2-5]" $header 1) -}}

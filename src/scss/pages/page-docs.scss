@@ -29,12 +29,6 @@ $sidebar-width: 320px;
     margin-bottom: 2rem;
   }
 
-  .sidebar--table-of-contents {
-    border-left: 2px solid $color-grey;
-    margin-left: 0;
-    padding-left: 1rem;
-  }
-
   li {
     line-height: 1.4;
     margin-bottom: 0.5rem;
@@ -54,6 +48,12 @@ $sidebar-width: 320px;
   @media screen and (min-width: 860px) {
     transform: translateX(0);
   }
+}
+
+.docs-nav-items .table-of-contents {
+  border-left: 2px solid $color-grey;
+  margin-left: 0;
+  padding-left: 1rem;
 }
 
 .docs-content,
