@@ -15,6 +15,4 @@ sections:
     default_front_matter_template: default
   blog:
     default_front_matter_template: default
-  pages:
-    default_front_matter_template: default
 version: 0.31.1
