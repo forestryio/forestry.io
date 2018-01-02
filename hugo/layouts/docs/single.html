@@ -12,6 +12,7 @@
     </div>
     <section class="docs-content">
       <div class="container">
+        <h1>{{ .Params.headline | default .Title }}</h1>
         {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
 
         <nav class="pagination">
