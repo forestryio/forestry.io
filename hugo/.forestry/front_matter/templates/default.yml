@@ -1,7 +1,7 @@
 ---
 pages:
-- privacy.md
 - support.md
+- privacy.md
 - terms.md
 hide_body: false
 fields:
