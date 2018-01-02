@@ -3,6 +3,12 @@ $sidebar-width: 320px;
 
 .docs-container {
   display: block;
+
+  @media screen and (min-width: 860px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .sidebar {
@@ -15,7 +21,7 @@ $sidebar-width: 320px;
   will-change: scroll-position;
 
   @media screen and (min-width: 860px) {
-    display: inline-block;
+    flex: 0 0 $sidebar-width;
     height: calc(100vh - 4rem);
     transform: translateX(0);
     vertical-align: top;
@@ -138,14 +144,9 @@ $sidebar-width: 320px;
     }
   }
 
-  @media screen and (min-width: 860px) {
-    display: inline-block;
-    margin-left: $sidebar-width;
-    vertical-align: top;
-  }
-
-  @media screen and (min-width: 1240px) {
+  @media screen and (min-width: 1100px) {
     margin: 0 auto;
+    left: calc($sidebar-width / 4 * -1);
   }
 }
 
