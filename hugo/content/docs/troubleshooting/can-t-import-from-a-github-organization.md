@@ -18,6 +18,8 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
+menu:
+- troubleshooting
 draft: true
 
 ---
