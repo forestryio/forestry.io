@@ -1,18 +1,37 @@
 /* Config */
 $sidebar-width: 320px;
 
+.docs-container {
+  display: block;
+}
+
 .sidebar {
-  background: $color-white;
-  font-size: 0.86rem;
-  height: calc(100% - 4rem);
-  left: 0;
-  overflow: auto;
-  padding: 2rem 2rem 2rem 4rem;
-  position: fixed;
+  height: 0;
+  position: sticky;
   top: 4rem;
   transform: translateX(-$sidebar-width);
   transition: transform 0.15s linear;
-  width: $sidebar-width;
+  width: 0;
+  will-change: scroll-position;
+
+  @media screen and (min-width: 860px) {
+    display: inline-block;
+    height: calc(100vh - 4rem);
+    transform: translateX(0);
+    vertical-align: top;
+    width: $sidebar-width;
+  }
+}
+
+.sidebar-inner {
+  background: $color-white;
+  font-size: 0.86rem;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  padding: 2rem 2rem 2rem 4rem;
+  position: relative;
+  width: 100%;
   z-index: 10;
 
   h2 {
@@ -43,10 +62,6 @@ $sidebar-width: 320px;
         font-weight: 600;
       }
     }
-  }
-
-  @media screen and (min-width: 860px) {
-    transform: translateX(0);
   }
 }
 
@@ -124,7 +139,9 @@ $sidebar-width: 320px;
   }
 
   @media screen and (min-width: 860px) {
+    display: inline-block;
     margin-left: $sidebar-width;
+    vertical-align: top;
   }
 
   @media screen and (min-width: 1240px) {

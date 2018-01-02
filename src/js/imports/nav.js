@@ -37,12 +37,11 @@ export default class NavBar {
         this.header.classList.remove("scrolled")
       }
 
-      if (this.mainSignup != null && !isUndefined(this.mainSignUp)) {
-        console.log(this.mainSignUp, scroll)
+      if (!isUndefined(this.mainSignUp) && this.mainSignUp !== null) {
         if (scroll >= 600) {
           this.mainSignUp.classList.remove("secondary")
           this.mainSignUp.classList.add("primary")
-        } else {
+        } else if (scroll < 600) {
           this.mainSignUp.classList.remove("primary")
           this.mainSignUp.classList.add("secondary")
         }

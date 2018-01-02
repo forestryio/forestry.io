@@ -1,17 +1,20 @@
 {{- define "main" -}}
-  <aside class="sidebar">
-    <h2>{{ .Section | humanize }}</h2>
-    {{- partial "components/sidebar" . -}}
-  </aside>
-  <section class="section section-docs-list">
-    <div class="container">
-      {{- range .Paginator.Pages -}}
-        {{- .Render "summary" }}
-      {{- end -}}
-      
-      {{- partial "components/pagination/paginator" . -}}
+  <main class="docs-container">
+    <div class="sidebar">
+      <aside class="sidebar-inner">
+        <h2>{{ .Section | humanize }}</h2>
+        {{- partial "components/sidebar" . -}}
+      </aside>
     </div>
-  </section>
-
+    <section class="section section-docs-list">
+      <div class="container">
+        {{- range .Paginator.Pages -}}
+          {{- .Render "summary" }}
+        {{- end -}}
+        
+        {{- partial "components/pagination/paginator" . -}}
+      </div>
+    </section>
+  </main>
   {{- partial "components/cta/basic" .Params.cta -}}
 {{- end -}}
