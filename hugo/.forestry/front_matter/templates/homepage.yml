@@ -14,7 +14,7 @@ fields:
   label: Description
   description: Used for SEO
   config:
-    required: true
+    required: false
 - type: field_group
   name: hero
   label: Hero
