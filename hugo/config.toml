@@ -16,20 +16,20 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-identifier = "Git Sync"
-name = "Git Sync"
-url = "/docs/git-sync"
-weight = 6
+identifier = "Other"
+name = "Other"
+url = ""
+weight = 99
 [[menu.docs]]
 identifier = "Welcome"
 name = "Welcome"
 url = "/docs/welcome"
 weight = 6
 [[menu.docs]]
-identifier = "Other"
-name = "Other"
-url = ""
-weight = 99
+identifier = "Git Sync"
+name = "Git Sync"
+url = "/docs/git-sync"
+weight = 6
 [[menu.footer]]
 identifier = "company"
 name = "Company"
@@ -77,7 +77,7 @@ ghrepo = "https://github.com/forestryio/forestry.io"
 ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
 gtmid = "GTM-KL5HP9Q"
-images = ["images/gohugoio-card.png"]
+images = []
 mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
 [params.cloudinary]
 cloud_name = "forestry-demo"
