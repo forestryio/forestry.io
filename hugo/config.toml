@@ -25,6 +25,10 @@ identifier = "welcome"
 name = "Welcome"
 url = "/docs/welcome"
 weight = 6
+[[menu.docs]]
+identifier = "other"
+name = "Other"
+url = ""
 [[menu.footer]]
 identifier = "company"
 name = "Company"
