@@ -5,7 +5,8 @@ authors:
 - scott-gallant
 images:
 - /uploads/2017/12/31/forestry-io-media-images.jpg
-date: 2017-04-17T11:46:07Z
+publishdate: 2017-04-17T11:46:07Z
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: A WordPress-like media manager for your Jekyll and Hugo sites"
 title: "Introducing Media Management"
 categories:

@@ -5,7 +5,8 @@ authors:
 - colin-garvey
 images:
 - /uploads/2017/12/31/jekyll-3.4.0-1.png
-date: 2017-02-20T10:06:00-04:00
+publishdate: 2017-02-20T10:06:00-04:00
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: "Jekyll 3.4.0 was released last month with some noteworthy enhancements that I’d like to share with you."
 title: "What's new in Jekyll 3.4.0"
 categories:

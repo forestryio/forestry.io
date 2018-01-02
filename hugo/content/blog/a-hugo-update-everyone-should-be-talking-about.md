@@ -6,7 +6,8 @@ authors:
 - chris-macrae
 images:
 - /uploads/a-hugo-update-everyone-should-be-talking-about.png
-publishpublishDate: 2017-06-26 12:00:00 -0300
+publishDate: 2017-06-26 12:00:00 -0300
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: 'For Hugo users a few great updates came out recently with a long-awaited
   feature: nested sections.'
 categories:

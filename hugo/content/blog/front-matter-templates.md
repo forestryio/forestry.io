@@ -6,7 +6,8 @@ authors:
 images:
 - /uploads/2017/12/31/code-bg-image-1-3.jpg
 - /uploads/2017/12/31/help-text-1.png
-date: 2017-02-13T10:47:46-05:00
+publishdate: 2017-02-13T10:47:46-05:00
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: "The foundation for a hackable CMS"
 title: "Customize the UI with Front Matter Templates"
 categories:

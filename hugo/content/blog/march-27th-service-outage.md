@@ -5,7 +5,8 @@ authors:
 - scott-gallant
 images:
 - /uploads/2017/12/31/forestry-outage-2.png
-date: 2017-03-27T21:25:39Z
+publishdate: 2017-03-27T21:25:39Z
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: "A post mortem on the Forestry service outage"
 title: "March 27th Service Outage"
 categories:

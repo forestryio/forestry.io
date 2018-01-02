@@ -2,7 +2,8 @@
 aliases:
 - /blog/post/wysiwyg-formatting-in-front-matter
 title: WYSIWYG Formatting in Front Matter
-date: 2017-07-26 11:26:03 +0000
+publishdate: 2017-07-26 11:26:03 +0000
+expirydate: 2030-01-01 00:00:00 -0400
 authors:
 - chris-macrae
 images:

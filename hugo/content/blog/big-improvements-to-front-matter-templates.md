@@ -5,7 +5,8 @@ authors:
 - chris-macrae
 images:
 - /uploads/2017/12/31/big-improvements-to-front-matter-templates.png
-publishpublishDate: 2017-07-10 10:00:00 -0300
+publishDate: 2017-07-10 10:00:00 -0300
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: Create the perfect CMS for your needs using Front Matter Templates
 title: Big Improvements to Front Matter Templates
 categories:

@@ -6,7 +6,8 @@ authors:
 images:
 - /uploads/2017/12/31/new-forestry-io-cms.png
 - /uploads/2017/12/31/og.jpg
-date: 2016-11-01T19:36:26-04:00
+publishdate: 2016-11-01T19:36:26-04:00
+expirydate: 2030-01-01 00:00:00 -0400
 description: "V2 of Forestry.io is live. We redesigned the UI, built a new editor and now you can deploy Forestry to your domain with your custom branding."
 excerpt: "V2 of Forestry.io is live. We redesigned the UI, built a new editor and now you can deploy Forestry to your domain with your custom branding."
 title: "The New Forestry.io"

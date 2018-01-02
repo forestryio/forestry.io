@@ -3,7 +3,8 @@ authors:
 - chris-macrae
 images:
 - /uploads/2017/12/31/hugo-jekyll-compared-1.png
-date: 2017-07-21 08:19:09 +0000
+publishdate: 2017-07-21 08:19:09 +0000
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: When it comes to building static sites, the two leading solutions right now
   are Hugo and Jekyll. So the question is, which is right for you?
 title: Hugo or Jekyll? 6 Factors You Should Know

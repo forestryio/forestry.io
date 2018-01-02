@@ -1,5 +1,6 @@
 ---
 publishDate: 2017-05-17 11:12:57 -0300
+expirydate: 2030-01-01 00:00:00 -0400
 description: Forestry.io is looking for a Full-Stack Developer who will be responsible
   for designing, building and improving features for our CMS.
 headline: Hiring a Full Stack Developer

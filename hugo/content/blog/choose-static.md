@@ -5,7 +5,8 @@ authors:
 - michael-soolee
 images:
 - /uploads/2017/12/31/code-bg-image-1.jpg
-date: 2016-08-02T01:06:00Z
+publishdate: 2016-08-02T01:06:00Z
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: | 
     "When it comes to the Internet, content is king. And it is king for a reason. A site that has well written content concisely tells the story behind a brand, helps to inform customers about a business's products or services and helps guide a user navigate to their desired destination on your site."
 title: "I can finally choose static"

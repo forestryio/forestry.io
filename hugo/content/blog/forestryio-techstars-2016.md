@@ -5,7 +5,8 @@ authors:
 - scott-gallant
 images:
 - /uploads/2017/12/31/techstars.jpg
-date: 2016-07-06T19:03:00Z
+publishdate: 2016-07-06T19:03:00Z
+expirydate: 2030-01-01 00:00:00 -0400
 description: "We're super excited to take part in Techstars NYC summer 2016!"
 title: "Forestry.io + Techstars 2016"
 categories:

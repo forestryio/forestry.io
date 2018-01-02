@@ -3,7 +3,8 @@ aliases:
 - "/blog/post/why-we-built-forestry"
 authors:
 - scott-gallant
-date: 2016-06-27 11:49:00 +0000
+publishdate: 2016-06-27 11:49:00 +0000
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: 'The winding road that led us to building a decentralized UI for the web. '
 title: Why we built Forestry
 categories:

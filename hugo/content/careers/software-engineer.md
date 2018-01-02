@@ -1,5 +1,6 @@
 ---
 publishDate: 2017-08-09 10:20:51 +0000
+expirydate: 2030-01-01 00:00:00 -0400
 description: We are hiring a software engineer to help us build a Content Management
   System for the next generation of websites.
 headline: Software Engineer

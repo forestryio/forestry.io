@@ -4,7 +4,8 @@ aliases:
 authors:
 - chris-macrae
 title: Improved Collaboration & More
-date: 2017-06-20 16:30:00 -0300
+publishdate: 2017-06-20 16:30:00 -0300
+expirydate: 2030-01-01 00:00:00 -0400
 images:
 - /uploads/2017/12/31/better-collaboration-and-more.png
 excerpt: Introducing two new features that make collaboration easier!

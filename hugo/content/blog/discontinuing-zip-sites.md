@@ -3,7 +3,8 @@ aliases:
 - /blog/post/discontinuing-zip-sites
 author:
 - forestryio
-date: 2017-10-12 14:54:52 +0000
+publishdate: 2017-10-12 14:54:52 +0000
+expirydate: 2030-01-01 00:00:00 -0400
 excerpt: Zip-imported sites are being discontinued on November 13
 title: Discontinuing Zip-imported Sites
 categories:
