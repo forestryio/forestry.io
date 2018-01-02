@@ -1,10 +1,28 @@
 ---
 title: Terms of Use
 date: 2016-04-20 00:00:00 +0000
+weight: 2
+type: default
+publishdate: 2017-12-31 00:00:00 -0400
+expirydate: 2030-01-01 00:00:00 -0400
+headline: ''
+description: ''
+textline: ''
+images: []
+authors: []
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+aliases: []
 menu:
   footer:
     parent: company
-weight: 2
+    weight: 2
+
 ---
 FORESTRY.IO INC. (**"FORESTRY.IO"** / **"WE"** / **"US"**) OWNS AND OPERATES THE WEBSITE LOCATED AT [HTTPS://FORESTRY.IO](http://forestry.io) (**"WEBSITE"**). THESE TERMS OF USE APPLY TO ALL USERS OF THE WEBSITE, INCLUDING USERS WHO UPLOAD ANY MATERIALS TO THE WEBSITE, USERS SUBSCRIBE FOR AN ACCOUNT AND WHO USE SERVICES PROVIDED THROUGH THIS WEBSITE, AND USERS WHO SIMPLY VIEW THE CONTENT ON OR AVAILABLE THROUGH THIS WEBSITE (**"YOU"** / **"USERS"**).
 
