@@ -27,11 +27,7 @@
     <div class="container">
     {{- range . -}}
       {{- if and .headline .textline -}}
-        <div class="column">
-          <h3>Your site, your workflow</h3>
-          <p>Write front-end code with Jekyll or Hugo and push to your Git repo. Forestry will pull in your commits and update the CMS.</p>
-          <p>Invite your team to create content in a rich UI. Their updates get committed back without merge conflicts.</p>
-        </div>
+        {{- partial "components/faq" (dict "headline" .headline "textline" .textline) -}}
       {{- end -}}
     {{- end -}}
     </div>

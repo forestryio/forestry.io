@@ -196,6 +196,9 @@
 
   /* Related Posts */
   .post--related {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
 
     .post--related-title {
@@ -204,13 +207,13 @@
     }
 
     .blog-post {
-      margin-bottom: 6rem;
+      margin-bottom: 2rem;
       max-width: 600px;
     }
 
     .post-title {
       color: $color-copy-dark;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       line-height: 1.25;
       margin-bottom: 0.5rem;
       margin-top: 0;
@@ -230,6 +233,19 @@
     .post-category {
       font-weight: 600;
       margin-left: 0.5rem;
+    }
+
+    .column {
+      flex: 0 0 100%;
+      padding: 0 0 0 2vw;
+      
+      &:nth-child(2n) {
+        padding: 0 2vw 0 0;
+      }
+
+      @media screen and (min-width: 500px) {
+        flex: 0 0 50%;
+      }
     }
   }
 }

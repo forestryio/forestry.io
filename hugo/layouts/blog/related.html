@@ -1,0 +1,23 @@
+<article class="blog-post column">
+    <div class="post-meta">
+        <span class="post-date">{{ dateFormat .Site.Params.dateFormat .Date.UTC }}</span>
+        <span class="post-category" data-category="{{ .Section }}">
+            {{- with .Params.categories -}}
+            {{- $len := len . -}}
+            <span>in {{ range $index, $value := . }}
+                <a href="{{ relURL "/categories/"}}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
+                {{ $value | humanize }}
+                </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
+                {{- end -}}</span>
+            {{- end -}}
+        </span>
+    </div>
+    <a href="{{ .Permalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
+    <p class="post-excerpt">
+        {{- if .Summary -}}
+        {{ markdownify .Summary | truncate 140  }}
+        {{ else  }}
+        {{ .Content | safeHTML | truncate 140 }}
+        {{- end -}}
+    </p>
+</article>

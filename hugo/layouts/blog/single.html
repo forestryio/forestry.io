@@ -72,7 +72,7 @@
       </div>
       {{- end -}}
 
-      {{ $related := $.Site.RegularPages.Related . | first 3 }}
+      {{ $related := $.Site.RegularPages.Related . | first 4 }}
       {{ with $related }}
       {{- if or (not $.Params.hideAbout) (not $.Params.hideFeedback) -}}
       <hr />
@@ -80,7 +80,7 @@
       <aside class="post--related">
         <h2 class="post--related-title">Other Articles You Might Like</h2>
         {{- range . -}}
-          {{ .Render "summary" }}
+          {{ .Render "related" }}
         {{- end -}}
       </aside>
       {{- end -}}

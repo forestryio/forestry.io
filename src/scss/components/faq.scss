@@ -1,0 +1,22 @@
+.faq {
+    background: $color-white;
+    border-top: 1px solid $color-grey;
+    font-size: 0.85rem;
+    padding: 1.5rem 0;
+
+    h3 {
+        font-size: 0.85rem;
+    }
+
+    .column {
+        flex: 0 0 100%;
+
+        @media screen and (min-width: 500px) {
+        flex: 0 0 50%;
+        }
+
+        @media screen and (min-width: 1000px) {
+        flex: 0 0 33.33%;
+        }
+    }
+}
