@@ -86,8 +86,10 @@ $sidebar-width: 320px;
   margin: 0 auto;
   max-width: 600px;
   min-height: 100vh;
+  padding: unset;
   padding-top: 5.5rem;
   position: relative;
+  width: 100%;
   word-spacing: 0.05em;
 
   .container {

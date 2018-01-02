@@ -2,7 +2,11 @@
   <main class="docs-container">
     <div class="sidebar">
       <aside class="sidebar-inner">
-        <h2>{{ .Section | humanize }}</h2>
+        <h2>
+          <a href="{{ .Section | urlize | absURL }}">
+            {{ .Section | humanize }}
+          </a>
+        </h2>
         {{- partial "components/sidebar" . -}}
       </aside>
     </div>
