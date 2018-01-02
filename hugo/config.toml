@@ -72,7 +72,7 @@ path = "/"
 home = ["HTML", "RSS", "OpenSearch", "Algolia"]
 [params]
 dateformat = "January 2, 2006"
-description = "  Write an awesome description for your new site here. You can edit this\\\n  line in config.yml. It will appear in your document head meta (for\\\n  Google search results) and in your RSS feed description.\\\n  "
+description = "A content management system for static sites built with Hugo and Jekyll. Get the speed, security, and reliability of static and the power of a Headless CMS."
 ghrepo = "https://github.com/forestryio/forestry.io"
 ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
