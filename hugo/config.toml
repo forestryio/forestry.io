@@ -16,19 +16,20 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-identifier = "git-sync"
+identifier = "Git Sync"
 name = "Git Sync"
 url = "/docs/git-sync"
-weight = 7
+weight = 6
 [[menu.docs]]
-identifier = "welcome"
+identifier = "Welcome"
 name = "Welcome"
 url = "/docs/welcome"
 weight = 6
 [[menu.docs]]
-identifier = "other"
+identifier = "Other"
 name = "Other"
 url = ""
+weight = 99
 [[menu.footer]]
 identifier = "company"
 name = "Company"

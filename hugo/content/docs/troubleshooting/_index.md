@@ -8,7 +8,7 @@ date: 2017-12-31 00:00:00 -0400
 menu:
   docs:
     parent: Other
-    weight: 1
+    weight: 3
   troubleshooting:
     identifier: troubleshooting
     weight: 1

@@ -84,6 +84,7 @@ $sidebar-width: 320px;
 .docs-nav-items .table-of-contents {
   border-left: 2px solid $color-grey;
   margin-left: 0;
+  margin-bottom: 1rem;
   padding-left: 1rem;
 }
 
@@ -163,7 +164,7 @@ $sidebar-width: 320px;
 }
 
 .section-docs-list {
-  padding-top: 5rem;
+  padding-top: 8rem;
 
   .doc {
     margin-bottom: 6rem;
