@@ -11,7 +11,7 @@ textline: ''
 images: []
 categories: []
 tags: []
-expirydate: ''
+expirydate: 2030-01-01 00:00:00 -0400
 cta:
   headline: ''
   textline: ''
