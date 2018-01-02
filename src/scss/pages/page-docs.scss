@@ -20,6 +20,16 @@ $sidebar-width: 320px;
   width: 0;
   will-change: scroll-position;
 
+  a {
+    text-decoration: none;
+    font-weight: inherit;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
   @media screen and (min-width: 860px) {
     flex: 0 0 $sidebar-width;
     height: calc(100vh - 6rem);

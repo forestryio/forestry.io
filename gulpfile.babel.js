@@ -1,6 +1,6 @@
 import algoliasearch from "algoliasearch"
 import BrowserSync from "browser-sync"
-import browserSyncConfig from "./browsersync.config"
+import browserSyncConfig from "./.browsersyncrc.js"
 import del from "del"
 import fs from "fs"
 import gulp from "gulp"
@@ -19,7 +19,7 @@ import sourcemaps from "gulp-sourcemaps"
 import through from "through2"
 import util from "gulp-util"
 import webpack from "webpack-stream"
-import webpackConfig from "./webpack.config"
+import webpackConfig from "./.webpackrc.js"
 
 const env = (process.env.HUGO_ENV = process.env.NODE_ENV || "development")
 const argsType = process.env.HUGO_ARGS || env
