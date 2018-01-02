@@ -48,7 +48,7 @@ fields:
       name: button
       label: Is Button?
   - type: field_group
-    name: videos
+    name: video
     label: Visual
     description: ''
     fields:
