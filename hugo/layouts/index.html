@@ -10,7 +10,8 @@
     {{- partial "components/feature" (dict "page" $ "feature" .) -}}
   {{- end -}}
 
-  {{- partial "components/tweets" (dict "page" $ "tweets" $.Site.Data.tweets) -}}
+  {{- $tweets := first 2 $.Site.Data.testimonials.tweets -}}
+  {{- partial "components/tweets" (dict "page" $ "tweets" $tweets) -}}
 
   {{- with .Params.cta -}}
     {{- partial "components/cta/basic" . -}}

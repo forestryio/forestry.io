@@ -1,8 +1,10 @@
-{{- $tweets := cond (isset . "tweets") .tweets $.Site.Data.tweets -}}
+{{- $tweets := cond (isset . "tweets") .tweets $.Site.Data.testimonials.tweets -}}
 {{- $page := cond (isset . "page") .page . -}}
 <section class="section-testimonials" onclick="void(0)">
   {{- range $index, $row := $tweets -}}
-    {{- template "row" (dict "page" $page "index" $index "row" $row) -}}
+    {{- range $row -}}
+      {{- template "row" (dict "page" $page "index" $index "row" .) -}}
+    {{- end -}}
   {{- end -}}
 </section>
 {{- define "row" -}}
