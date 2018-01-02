@@ -6,7 +6,7 @@ authors:
 - chris-macrae
 images:
 - /uploads/a-hugo-update-everyone-should-be-talking-about.png
-date: 2017-06-26 12:00:00 -0300
+publishpublishDate: 2017-06-26 12:00:00 -0300
 excerpt: 'For Hugo users a few great updates came out recently with a long-awaited
   feature: nested sections.'
 categories:
@@ -46,7 +46,7 @@ For example:
 ```
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
+publishDate: {{ .Date }}
 draft: true
 ---
 

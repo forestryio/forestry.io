@@ -1,15 +1,7 @@
 ---
-Categories: []
-banner: ''
-description: ''
-excerpt: ''
-hideNav: false
-headline: WORK AT FORESTRY.IO
-tags: []
+headline: Work at Forestry.io
 title: Careers
-listTitle: OPEN POSITIONS
-twitter_card: = ""
-date: '2017-05-17T11:13:48-03:00'
+publishDate: 2017-05-17T11:13:48-03:00
 ---
 
 We’re a Charlottetown-based startup building the world’s best Content Management System. We're looking for exceptional people who want to help build a world-class product.

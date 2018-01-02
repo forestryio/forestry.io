@@ -1,12 +1,9 @@
 ---
-date: 2017-08-09 10:20:51 +0000
+publishDate: 2017-08-09 10:20:51 +0000
 description: We are hiring a software engineer to help us build a Content Management
   System for the next generation of websites.
 headline: Software Engineer
-hideNav: false
-textline: ''
 title: Software Engineer
-twitter_card: ''
 draft: true
 ---
 
