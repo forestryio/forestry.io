@@ -37,6 +37,7 @@ fields:
     source:
       type: datafiles
       file: authors-yml
+      path: map
   default: []
 - type: list
   name: categories
