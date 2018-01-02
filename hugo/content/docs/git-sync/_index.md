@@ -8,7 +8,7 @@ date: 2017-12-31 00:00:00 -0400
 menu:
   docs:
     parent: git-sync
-    weight: 3
+    weight: 2
 
 ---
 ## Introduction

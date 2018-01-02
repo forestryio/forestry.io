@@ -19,12 +19,12 @@ plainIDAnchors = true
 identifier = "git-sync"
 name = "Git Sync"
 url = "/docs/git-sync"
-weight = 7
+weight = 6
 [[menu.docs]]
 identifier = "welcome"
 name = "Welcome"
 url = "/docs/welcome"
-weight = 6
+weight = 1
 [[menu.footer]]
 identifier = "company"
 name = "Company"
