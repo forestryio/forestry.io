@@ -1,7 +1,7 @@
 ---
 pages:
-- support.md
 - privacy.md
+- support.md
 - terms.md
 hide_body: false
 fields:
@@ -121,3 +121,6 @@ fields:
     use_select: false
     source:
       type: datafiles
+- type: list
+  name: menu
+  label: menu
