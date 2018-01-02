@@ -1,18 +1,21 @@
 ---
 aliases:
-- /blog/post/forestry-gitlab
+- "/blog/post/forestry-gitlab"
 authors:
 - jordan-patterson
 images:
-- /uploads/2017/12/31/gitlab-and-forestryio.png
-- /uploads/2017/12/31/twitter-card-gitlab-forestry.png
-publishdate: 2016-09-06T23:45:00Z
-expirydate: 2030-01-01 00:00:00 -0400
-description: "We're happy to announce our support for GitLab hosted sites"
-excerpt: "GitLab support is here! Fire up a CMS for your GitLab-hosted Jekyll and Hugo sites! "
-title: "Forestry + GitLab"
+- "/uploads/2017/12/31/gitlab-and-forestryio.png"
+- "/uploads/2017/12/31/twitter-card-gitlab-forestry.png"
+publishdate: 2016-09-06 23:45:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+description: We're happy to announce our support for GitLab hosted sites
+excerpt: 'GitLab support is here! Fire up a CMS for your GitLab-hosted Jekyll and
+  Hugo sites! '
+title: Forestry + GitLab
 categories:
 - CMS
+date: 2016-09-06 23:45:00 +0000
+
 ---
 Now you can add a [Forestry.io CMS](https://forestry.io) to your [GitLab.com](https://gitlab.com) static site (Jekyll or Hugo).
 

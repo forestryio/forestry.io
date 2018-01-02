@@ -1,16 +1,18 @@
 ---
 aliases:
-- /blog/post/improved-collaboration-and-more
+- "/blog/post/improved-collaboration-and-more"
 authors:
 - chris-macrae
 title: Improved Collaboration & More
-publishdate: 2017-06-20 16:30:00 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2017-06-20 19:30:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 images:
-- /uploads/2017/12/31/better-collaboration-and-more.png
+- "/uploads/2017/12/31/better-collaboration-and-more.png"
 excerpt: Introducing two new features that make collaboration easier!
 categories:
 - CMS
+date: 2017-06-20 16:30:00 -0300
+
 ---
 ## Document Locking & Collaboration
 

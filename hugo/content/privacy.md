@@ -1,12 +1,15 @@
 ---
 title: Privacy Policy
-date: '2016-04-20T00:00:00Z'
+date: 2016-04-20 00:00:00 +0000
+weight: 3
+publishdate: 2017-12-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+type: page
 menu:
   footer:
     parent: company
-weight: 3
-publishdate: 2017-12-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
+    weight: 2
+
 ---
 Forestry.io Inc. (**"we"/"us"**) is committed to protecting your privacy. We make the website www.forestry.io (the **"Website"**) available together with our services as further described in our [Terms of Use][1] (the **"Services"**). This Privacy Policy describes how we collect, store, use and distribute information about our users through the Website and Services.
 

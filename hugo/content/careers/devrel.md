@@ -1,13 +1,14 @@
 ---
-publishDate: 2017-05-17 11:13:48 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+publishDate: 2017-05-17 14:13:48 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 description: Forestry.io is looking for a Maritime-based person for developer relations
   and to foster growth of the Forestry community.
 headline: Hiring a Developer Relations Manager
 title: Developer Relations
+date: 2017-05-17 11:13:48 -0300
 draft: true
----
 
+---
 ### About Forestry.io
 
 Forestry.io is a content management system (CMS) built for the next generation of the web. We're taking a new approach by supporting modern web-development tools like Git, Hugo and Jekyll. Forestry.io is a small team, led by engineers, and based in Charlottetown, Prince Edward Island. We're looking for a Full-stack Developer who wants to collaborate to build a truly world-class CMS, and we invite interested candidates to find out more about us at [Forestry.io](https://forestry.io).

@@ -3,14 +3,12 @@ aliases:
 - "/blog/post/why-we-built-forestry"
 authors:
 - scott-gallant
-publishdate: 2016-06-27 11:49:00 +0000
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2018-01-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 excerpt: 'The winding road that led us to building a decentralized UI for the web. '
 title: Why we built Forestry
 categories:
 - company
-publishdate: 2018-01-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
 headline: ''
 description: ''
 textline: ''
@@ -22,6 +20,7 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
+date: 2018-01-31 00:00:00 -0400
 
 ---
 My friend, Emily, needed a simple website for her restaurant.  She's a chef and didn't want to deal with the hassle of DNS, hosting, design, etc.  As a recovering freelancer, I offered to help.

@@ -1,17 +1,19 @@
 ---
 aliases:
-- /blog/post/march-27th-service-outage
+- "/blog/post/march-27th-service-outage"
 authors:
 - scott-gallant
 images:
-- /uploads/2017/12/31/forestry-outage-2.png
-publishdate: 2017-03-27T21:25:39Z
-expirydate: 2030-01-01 00:00:00 -0400
-excerpt: "A post mortem on the Forestry service outage"
-title: "March 27th Service Outage"
+- "/uploads/2017/12/31/forestry-outage-2.png"
+publishdate: 2017-03-27 21:25:39 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+excerpt: A post mortem on the Forestry service outage
+title: March 27th Service Outage
 categories:
 - company
 - CMS
+date: 2017-03-27 21:25:39 +0000
+
 ---
 As some of you may have noticed, Forestry was down for about 2.5 hours between 23:00 UTC March 27 until 01:30 UTC March 28. In the spirit of full disclosure I'd like to explain what happened and why.
 

@@ -1,16 +1,18 @@
 ---
 aliases:
-- /blog/post/bigger-better-editor
+- "/blog/post/bigger-better-editor"
 authors:
 - chris-macrae
 images:
-- /uploads/2017/12/31/bigger-better-editor-1.png
-excerpt:  "Find out why this is the best editor for Hugo & Jekyll sites we've ever built."
-publishDate: 2017-05-30T14:01:35Z
-expirydate: 2030-01-01 00:00:00 -0400
-title: "3 Reasons Why Our New Editor Is Our Best Static Site Editor Yet"
+- "/uploads/2017/12/31/bigger-better-editor-1.png"
+excerpt: Find out why this is the best editor for Hugo & Jekyll sites we've ever built.
+publishDate: 2017-05-30 14:01:35 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+title: 3 Reasons Why Our New Editor Is Our Best Static Site Editor Yet
 categories:
 - CMS
+date: 2017-05-30 14:01:35 +0000
+
 ---
 For the past few weeks, Nichlas and Nolan have been hard at work on the Forestry content editor. We wanted to make the easiest-to-use, most configurable static site content editor ever built. With their hard work, we now have some big improvements to share that get us that much closer. We’ve built a new and improved editor that makes managing your site easier and more effective than ever before. Both on the desktop and on mobile devices.
 

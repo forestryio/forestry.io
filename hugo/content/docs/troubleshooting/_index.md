@@ -1,13 +1,16 @@
 ---
 title: Troubleshooting
 weight: 1
-type: docs
 layout: single
-menu: 
+publishdate: 2017-12-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+date: 2017-12-31 00:00:00 -0400
+menu:
   docs:
     parent: Other
+    weight: 1
   troubleshooting:
     identifier: troubleshooting
-publishdate: 2017-12-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
+    weight: 1
+
 ---

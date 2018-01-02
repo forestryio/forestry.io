@@ -2,15 +2,17 @@
 authors:
 - chris-macrae
 images:
-- /uploads/2017/12/31/hugovsjekyll.png
+- "/uploads/2017/12/31/hugovsjekyll.png"
 publishdate: 2017-07-21 09:22:55 +0000
-expirydate: 2030-01-01 00:00:00 -0400
+expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
-title: "Hugo vs Jekyll: Benchmarked"
-draft: true
+title: 'Hugo vs Jekyll: Benchmarked'
 categories:
 - hugo
 - jekyll
+date: 2017-07-21 09:22:55 +0000
+draft: true
+
 ---
 In order to help you decide which static site generator is best for your development team, we put Hugo and Jekyll toe-to-toe to see which is faster and more efficient.
 

@@ -1,16 +1,18 @@
 ---
 aliases:
-- /blog/post/introducing-forestry-config-files
+- "/blog/post/introducing-forestry-config-files"
 authors:
 - chris-macrae
 title: Introducing Forestry Config Files
 publishdate: 2017-08-30 16:09:44 +0000
-expirydate: 2030-01-01 00:00:00 -0400
+expirydate: 2030-01-01 04:00:00 +0000
 images:
-- /uploads/2017/12/31/introducing-config-files.jpg
+- "/uploads/2017/12/31/introducing-config-files.jpg"
 excerpt: "Configure Settings and Front Matter Templates from your repo \U0001F389"
 categories:
 - CMS
+date: 2017-08-30 16:09:44 +0000
+
 ---
 ## Introducing Forestry Config Files
 

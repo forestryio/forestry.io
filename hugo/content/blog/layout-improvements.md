@@ -1,18 +1,20 @@
 ---
 aliases:
-- /blog/post/layout-improvements
+- "/blog/post/layout-improvements"
 authors:
 - chris-macrae
 title: Announcing Layout Improvements
-publishdate: 2017-06-14 09:00:00 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2017-06-14 12:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 images:
-- /uploads/2017/12/31/layout-improvements.png
+- "/uploads/2017/12/31/layout-improvements.png"
 excerpt: We’ve got 3 updates to share with you that will make using Forestry much
   more enjoyable.
 categories:
 - CMS
 featured: true
+date: 2017-06-14 09:00:00 -0300
+
 ---
 We’ve been hard at work this month at [Forestry.io,](https://forestry.io) focusing on improving the editing experience and overall usability of the application and we’re excited to announce that it’s already here! We’ve got 3 updates to share with you that will make using Forestry much more enjoyable.
 

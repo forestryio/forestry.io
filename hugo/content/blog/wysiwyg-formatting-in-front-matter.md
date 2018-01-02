@@ -1,16 +1,18 @@
 ---
 aliases:
-- /blog/post/wysiwyg-formatting-in-front-matter
+- "/blog/post/wysiwyg-formatting-in-front-matter"
 title: WYSIWYG Formatting in Front Matter
 publishdate: 2017-07-26 11:26:03 +0000
-expirydate: 2030-01-01 00:00:00 -0400
+expirydate: 2030-01-01 04:00:00 +0000
 authors:
 - chris-macrae
 images:
-- /uploads/2017/12/31/WYSIWYG-formatting-in-front-matter.png
+- "/uploads/2017/12/31/WYSIWYG-formatting-in-front-matter.png"
 excerpt: We've added the ability to add inline formatting to textarea fields
 categories:
 - CMS
+date: 2017-07-26 11:26:03 +0000
+
 ---
 This week we’ve got a small, but very useful update we're excited to share with you.
 

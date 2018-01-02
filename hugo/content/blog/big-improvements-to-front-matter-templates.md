@@ -1,16 +1,18 @@
 ---
 aliases:
-- /blog/post/big-improvements-to-front-matter-templates
+- "/blog/post/big-improvements-to-front-matter-templates"
 authors:
 - chris-macrae
 images:
-- /uploads/2017/12/31/big-improvements-to-front-matter-templates.png
-publishDate: 2017-07-10 10:00:00 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+- "/uploads/2017/12/31/big-improvements-to-front-matter-templates.png"
+publishDate: 2017-07-10 13:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 excerpt: Create the perfect CMS for your needs using Front Matter Templates
 title: Big Improvements to Front Matter Templates
 categories:
 - CMS
+date: 2017-07-10 10:00:00 -0300
+
 ---
 We've got great improvements to share with you from Forestry.io, involving Forestry’s *Front Matter Templates*.
 

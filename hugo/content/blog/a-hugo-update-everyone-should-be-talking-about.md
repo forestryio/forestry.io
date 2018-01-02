@@ -1,17 +1,19 @@
 ---
 aliases:
-- /blog/post/a-hugo-update-everyone-should-be-talking-about
+- "/blog/post/a-hugo-update-everyone-should-be-talking-about"
 title: A Hugo Update Everyone Should Be Talking About
 authors:
 - chris-macrae
 images:
-- /uploads/a-hugo-update-everyone-should-be-talking-about.png
-publishDate: 2017-06-26 12:00:00 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+- "/uploads/a-hugo-update-everyone-should-be-talking-about.png"
+publishDate: 2017-06-26 15:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 excerpt: 'For Hugo users a few great updates came out recently with a long-awaited
   feature: nested sections.'
 categories:
 - hugo
+date: 2017-06-26 12:00:00 -0300
+
 ---
 For Hugo users a few great updates came out recently with a long-awaited feature: *nested sections*. Along with nested sections, Hugo 0.22-0.24 added a series of improvements that make building websites even easier.
 

@@ -1,16 +1,19 @@
 ---
 aliases:
-- /blog/post/what-s-new-in-jekyll-3-4-0
+- "/blog/post/what-s-new-in-jekyll-3-4-0"
 authors:
 - colin-garvey
 images:
-- /uploads/2017/12/31/jekyll-3.4.0-1.png
-publishdate: 2017-02-20T10:06:00-04:00
-expirydate: 2030-01-01 00:00:00 -0400
-excerpt: "Jekyll 3.4.0 was released last month with some noteworthy enhancements that I’d like to share with you."
-title: "What's new in Jekyll 3.4.0"
+- "/uploads/2017/12/31/jekyll-3.4.0-1.png"
+publishdate: 2017-02-20 14:06:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+excerpt: Jekyll 3.4.0 was released last month with some noteworthy enhancements that
+  I’d like to share with you.
+title: What's new in Jekyll 3.4.0
 categories:
 - jekyll
+date: 2017-02-20 10:06:00 -0400
+
 ---
 Jekyll 3.4.0 was release on the 27th of January 2017 with some noteworthy enhancements that I'd like to share with you.  
 

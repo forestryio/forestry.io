@@ -1,18 +1,22 @@
 ---
 aliases:
-- /blog/post/the-new-forestry-io
+- "/blog/post/the-new-forestry-io"
 authors:
 - scott-gallant
 images:
-- /uploads/2017/12/31/new-forestry-io-cms.png
-- /uploads/2017/12/31/og.jpg
-publishdate: 2016-11-01T19:36:26-04:00
-expirydate: 2030-01-01 00:00:00 -0400
-description: "V2 of Forestry.io is live. We redesigned the UI, built a new editor and now you can deploy Forestry to your domain with your custom branding."
-excerpt: "V2 of Forestry.io is live. We redesigned the UI, built a new editor and now you can deploy Forestry to your domain with your custom branding."
-title: "The New Forestry.io"
+- "/uploads/2017/12/31/new-forestry-io-cms.png"
+- "/uploads/2017/12/31/og.jpg"
+publishdate: 2016-11-01 23:36:26 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+description: V2 of Forestry.io is live. We redesigned the UI, built a new editor and
+  now you can deploy Forestry to your domain with your custom branding.
+excerpt: V2 of Forestry.io is live. We redesigned the UI, built a new editor and now
+  you can deploy Forestry to your domain with your custom branding.
+title: The New Forestry.io
 categories:
 - CMS
+date: 2016-11-01 19:36:26 -0400
+
 ---
 We're happy to announce some huge improvements to [Forestry.io](http://Forestry.io), our CMS for Jekyll and Hugo sites.
 

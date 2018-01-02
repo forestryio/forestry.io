@@ -1,10 +1,11 @@
 ---
 headline: Work at Forestry.io
 title: Careers
-publishdate: 2017-12-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
----
+publishdate: 2017-12-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+date: 2017-12-31 00:00:00 -0400
 
+---
 We’re a Charlottetown-based startup building the world’s best Content Management System. We're looking for exceptional people who want to help build a world-class product.
 
 <div class="cf">

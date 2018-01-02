@@ -1,14 +1,16 @@
 ---
 aliases:
-- /blog/post/discontinuing-zip-sites
+- "/blog/post/discontinuing-zip-sites"
 author:
 - forestryio
 publishdate: 2017-10-12 14:54:52 +0000
-expirydate: 2030-01-01 00:00:00 -0400
+expirydate: 2030-01-01 04:00:00 +0000
 excerpt: Zip-imported sites are being discontinued on November 13
 title: Discontinuing Zip-imported Sites
 categories:
 - cms
+date: 2017-10-12 14:54:52 +0000
+
 ---
 Letting developers import a site from a zip archive is a feature that a lot of our users have made use of. However, with our strong focus on Git-backed workflows, we feel that that sites imported with zips have been providing a unsatisfactory experience.
 

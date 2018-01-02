@@ -1,17 +1,19 @@
 ---
 aliases:
-- /blog/post/choose-static
+- "/blog/post/choose-static"
 authors:
 - michael-soolee
 images:
-- /uploads/2017/12/31/code-bg-image-1.jpg
-publishdate: 2016-08-02T01:06:00Z
-expirydate: 2030-01-01 00:00:00 -0400
-excerpt: | 
-    "When it comes to the Internet, content is king. And it is king for a reason. A site that has well written content concisely tells the story behind a brand, helps to inform customers about a business's products or services and helps guide a user navigate to their desired destination on your site."
-title: "I can finally choose static"
+- "/uploads/2017/12/31/code-bg-image-1.jpg"
+publishdate: 2016-08-02 01:06:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+excerpt: |
+  "When it comes to the Internet, content is king. And it is king for a reason. A site that has well written content concisely tells the story behind a brand, helps to inform customers about a business's products or services and helps guide a user navigate to their desired destination on your site."
+title: I can finally choose static
 categories:
 - jekyll
+date: 2016-08-02 01:06:00 +0000
+
 ---
 When it comes to the Internet, content is king. A site that has well written content concisely tells the story behind a brand, helps to inform customers about a business' products or services and helps guide a user navigate to the information that they seek.
 

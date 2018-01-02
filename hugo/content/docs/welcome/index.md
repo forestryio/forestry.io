@@ -1,17 +1,20 @@
 ---
-title: "Introduction"
+title: Introduction
 aliases:
-  - /docs/
-menu: 
-  main:
-      name: "Docs"
-      weight: 3
-  docs:
-    parent: welcome
+- "/docs/"
 weight: 1
 layout: single
-publishdate: 2017-12-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2017-12-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+date: 2017-12-31 00:00:00 -0400
+menu:
+  docs:
+    parent: welcome
+    weight: 2
+  main:
+    name: Docs
+    weight: 4
+
 ---
 {{% tip %}}
 **dsfgfagdhjsfghdjdsaf**

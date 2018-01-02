@@ -1,16 +1,19 @@
 ---
 aliases:
-- /blog/post/join-our-slack-community
+- "/blog/post/join-our-slack-community"
 title: Join our Slack community
-publishdate: 2017-10-21 00:41:00 +1400
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2017-10-20 10:41:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 authors:
 - chris-macrae
-excerpt: "Chat with the Forestry.io community about static sites, best-practices, features, and more"
+excerpt: Chat with the Forestry.io community about static sites, best-practices, features,
+  and more
 images:
-- /uploads/2017/12/31/slack.png
+- "/uploads/2017/12/31/slack.png"
 categories:
 - company
+date: 2017-10-21 00:41:00 +1400
+
 ---
 Want to chat with the Forestry.io community about static sites, best-practices, features, and more? Join the slack community here (we'll get back to you ASAP).
 

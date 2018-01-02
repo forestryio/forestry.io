@@ -6,66 +6,58 @@ map:
   Jordan Patterson: jordan-patterson
   Colin Garvey: colin-garvey
   Michael Soolee: michael-soolee
-authors: 
-  - 
-    avatar: img/forestry-symbol.svg
-    bio: |
-      Forestry.io is a Git-based CMS (content management system) for websites and web products built using static site generators. Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
+authors:
+- avatar: img/forestry-symbol.svg
+  bio: |
+    Forestry.io is a Git-based CMS (content management system) for websites and web products built using static site generators. Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
 
-      Forestry powers static sites generated using [Jekyll](https://jekyllrb.org) and [Hugo](https://gohugo.io) and manages them using Git.
-    firstName: Forestry.io
-    fullName: Forestry Team
-    shortBio: ""
-    twitter: forestryio
-    title: Static Site Ethusiasts 🌲
-  - 
-    avatar: /uploads/2017/12/31/Scott_Gallant_square.png
-    bio: ""
-    firstName: Scott
-    fullName: "Scott Gallant"
-    lastName: Gallant
-    shortBio: ""
-    twitter: scottgallant
-    title: CEO & co-founder
-  -
-    avatar: 
-    bio: ""
-    firstName: Jordan
-    lastName: Patterson
-    fullName: Jordan Patterson
-    shortBio: |
-      CTO and Co-founder of <a href='https://forestry.io' title='Forestry.io CMS'>Forestry.io</a>. Backend developer, systems guy, father, builder of houses
-    twitter: jpatterson
-    title: CTO and co-founder
-  - 
-    avatar: /uploads/2017/12/31/AAEAAQAAAAAAAAaSAAAAJGJjNjM0NjAzLTVmZjMtNGNlZC1iZmNhLThhNGZmMWE4ODEwNQ-1-1.jpg
-    bio: ""
-    firstName: Chris
-    fullName: "Chris Macrae"
-    lastName: Macrae
-    shortBio: |
-      Developer Relations @forestryio. Unprofessional, unfunny comedian. 🤖
-    twitter: chrisdmacrae
-    title: Head of Developer Relations
-  -
-    avatar: /uploads/2017/12/31/michaellee.jpg
-    bio: ""
-    firstName: Michael
-    lastName: Soolee
-    fullName: Michael Soolee
-    shortBio: |
-      Michael is the author of the upcoming book, [Field Guide to Jekyll](https://michaelsoolee.com/jekyll-field-guide/),
-      a step by step guide to building websites with Jekyll. 
-      You can find him on Twitter as [@michaelsoolee](https://twitter.com/michaelsoolee).
-    twitter: michaelsoolee
-    title: Author, Jekyll Developer
-  -
-    avatar: /uploads/2017/12/31/colin-garvey.jpg
-    bio: ""
-    firstName: Colin
-    lastName: Garvey
-    fullName: Colin Garvey
-    shortBio: |
-      Marketer. Developer. Founder of <a href='https://desiredpersona.com/' target='_blank'>Desired Persona</a>
-    twitter: desiredpersona
-    title: Marketing & Developer
+    Forestry powers static sites generated using [Jekyll](https://jekyllrb.org) and [Hugo](https://gohugo.io) and manages them using Git.
+  firstName: Forestry.io
+  fullName: Forestry Team
+  shortBio: ''
+  twitter: forestryio
+  title: "Static Site Ethusiasts \U0001F332"
+- avatar: "/uploads/2017/12/31/Scott_Gallant_square.png"
+  bio: ''
+  firstName: Scott
+  fullName: Scott Gallant
+  lastName: Gallant
+  shortBio: ''
+  twitter: scottgallant
+  title: CEO & co-founder
+- avatar: 
+  bio: ''
+  firstName: Jordan
+  lastName: Patterson
+  fullName: Jordan Patterson
+  shortBio: |
+    CTO and Co-founder of <a href='https://forestry.io' title='Forestry.io CMS'>Forestry.io</a>. Backend developer, systems guy, father, builder of houses
+  twitter: jpatterson
+  title: CTO and co-founder
+- avatar: "/uploads/2017/12/31/AAEAAQAAAAAAAAaSAAAAJGJjNjM0NjAzLTVmZjMtNGNlZC1iZmNhLThhNGZmMWE4ODEwNQ-1-1.jpg"
+  bio: ''
+  firstName: Chris
+  fullName: Chris Macrae
+  lastName: Macrae
+  shortBio: "Developer Relations @forestryio. Unprofessional, unfunny comedian. \U0001F916\n"
+  twitter: chrisdmacrae
+  title: Head of Developer Relations
+- avatar: "/uploads/2017/12/31/michaellee.jpg"
+  bio: ''
+  firstName: Michael
+  lastName: Soolee
+  fullName: Michael Soolee
+  shortBio: "Michael is the author of the upcoming book, [Field Guide to Jekyll](https://michaelsoolee.com/jekyll-field-guide/),\na
+    step by step guide to building websites with Jekyll. \nYou can find him on Twitter
+    as [@michaelsoolee](https://twitter.com/michaelsoolee).\n"
+  twitter: michaelsoolee
+  title: Author, Jekyll Developer
+- avatar: "/uploads/2017/12/31/colin-garvey.jpg"
+  bio: ''
+  firstName: Colin
+  lastName: Garvey
+  fullName: Colin Garvey
+  shortBio: |
+    Marketer. Developer. Founder of <a href='https://desiredpersona.com/' target='_blank'>Desired Persona</a>
+  twitter: desiredpersona
+  title: Marketing & Developer
