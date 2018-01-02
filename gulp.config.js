@@ -15,7 +15,7 @@ export default function(env) {
     tmp: tmp,
     build: build,
     hugoArgs: {
-      default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
+      default: ["-v", "--source", resolve(dest), "--destination", resolve(build), "--enableGitInfo"],
       development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
       preview: ["-b", "http://localhost:3000"],
       production: []

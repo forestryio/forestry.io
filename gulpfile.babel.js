@@ -171,7 +171,7 @@ gulp.task("styles:development", cb => {
 })
 
 /**
- * @task styles
+ * @task scripts
  * Compiles all js
  */
 gulp.task("scripts", cb => {

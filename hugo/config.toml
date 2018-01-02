@@ -28,8 +28,6 @@ destination = "../dist/"
 # to /about/, Hugo will rewrite the URL to ../../about/
 relativeURLs = false
 
-enableGitInfo = true
-
 # Taxonomies
 [taxonomies]
   category = "categories"
