@@ -16,7 +16,7 @@ fields:
   label: Description
   description: Used for SEO
   config:
-    required: true
+    required: false
 - type: textarea
   name: textline
   label: Page Textline
