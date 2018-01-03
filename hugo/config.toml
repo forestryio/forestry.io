@@ -16,20 +16,20 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-identifier = "Git Sync"
-name = "Git Sync"
-url = "/docs/git-sync"
-weight = 6
+identifier = "Other"
+name = "Other"
+url = ""
+weight = 99
 [[menu.docs]]
 identifier = "Welcome"
 name = "Welcome"
 url = "/docs/welcome"
 weight = 6
 [[menu.docs]]
-identifier = "Other"
-name = "Other"
-url = ""
-weight = 99
+identifier = "Git Sync"
+name = "Git Sync"
+url = "/docs/git-sync"
+weight = 6
 [[menu.footer]]
 identifier = "company"
 name = "Company"
@@ -72,12 +72,12 @@ path = "/"
 home = ["HTML", "RSS", "OpenSearch", "Algolia"]
 [params]
 dateformat = "January 2, 2006"
-description = "  Write an awesome description for your new site here. You can edit this\\\n  line in config.yml. It will appear in your document head meta (for\\\n  Google search results) and in your RSS feed description.\\\n  "
+description = "A content management system for static sites built with Hugo and Jekyll. Get the speed, security, and reliability of static and the power of a Headless CMS."
 ghrepo = "https://github.com/forestryio/forestry.io"
 ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
 gtmid = "GTM-KL5HP9Q"
-images = ["images/gohugoio-card.png"]
+images = []
 mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
 [params.cloudinary]
 cloud_name = "forestry-demo"

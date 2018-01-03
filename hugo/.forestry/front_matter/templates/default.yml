@@ -1,7 +1,7 @@
 ---
 pages:
-- privacy.md
 - support.md
+- privacy.md
 - terms.md
 hide_body: false
 fields:
@@ -37,6 +37,7 @@ fields:
     source:
       type: datafiles
       file: authors-yml
+      path: map
   default: []
 - type: list
   name: categories
