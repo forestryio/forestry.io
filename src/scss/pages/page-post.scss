@@ -4,7 +4,8 @@
   padding-bottom: 4rem;
   padding-top: 5rem;
 
-  .container {
+  & .container,
+  .post--related .container {
     margin: 0 auto;
     max-width: 700px;
     padding: 0 2rem;
@@ -196,12 +197,22 @@
 
   /* Related Posts */
   .post--related {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
+    background: $color-white;
+    border: 1px solid $color-light-grey;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin-top: 4rem;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 4rem 2rem 1rem 2rem;
+    }
 
     .post--related-title {
+      display: block;
+      flex: 0 0 100%;
       margin-bottom: 2rem;
       margin-top: 0;
     }

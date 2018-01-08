@@ -71,21 +71,18 @@
         <p><small>Caught a mistake or want to contribute to the {{ .Section | humanize | lower }}? Edit this page on <a href="{{.Site.Params.ghrepo_edit}}{{.File.Path}}" target="_blank">Github</a>!</small></p>
       </div>
       {{- end -}}
-
-      {{ $related := $.Site.RegularPages.Related . | first 4 }}
-      {{ with $related }}
-      {{- if or (not $.Params.hideAbout) (not $.Params.hideFeedback) -}}
-      <hr />
-      {{- end -}}
-      <aside class="post--related">
+    </div>
+    {{- $related := $.Site.RegularPages.Related . | first 4 -}}
+    {{- with $related -}}
+    <aside class="post--related">
+      <div class="container">
         <h2 class="post--related-title">Other Articles You Might Like</h2>
         {{- range . -}}
           {{ .Render "related" }}
         {{- end -}}
-      </aside>
-      {{- end -}}
-
-    </div>
+      </div>
+    </aside>
+    {{- end -}}
   </main>
 
   {{- partial "components/cta/newsletter" .Params.cta -}}
