@@ -51,9 +51,9 @@ jobs:
           background: true
         
       # run tests!
-      - run:
-          name: "Test Website HTML"
-          command: htmlproofer ~/repo/dist --allow-hash-href --check-html
+      #- run:
+      #    name: "Test Website HTML"
+      #    command: htmlproofer ~/repo/dist --allow-hash-href --check-html
 
       - add_ssh_keys
 
