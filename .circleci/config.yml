@@ -18,15 +18,24 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - node-dependencies-
 
+      - run:
+          name: Install Python Dependencies
+          command: |
+            apt-get update
+            apt-get upgrade -y
+            apt-get install -y --no-install-recommends build-essential g++ python2.7 python2.7-dev unzip curl
+            rm -rf /var/lib/apt/lists/*
+            mkdir -p /tmp
+            cd /tmp
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            python get-pip.py
+            pip install awscli
+            rm -f /tmp/get-pip.py
+
       - run: 
-          name: Install dependencies
+          name: Install Node Dependencies
           command: |
             yarn install
-            sudo apt-get -y -qq update
-            sudo apt-get install python-setuptools
-            sudo easy_install pip
-            sudo pip install -U setuptools
-            sudo pip install awscli --upgrade --user
 
       - save_cache:
           paths:
