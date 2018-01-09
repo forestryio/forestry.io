@@ -38,14 +38,16 @@ jobs:
     
     - run:
         name: Run build
-        command: npm run build
+        command: |
+          touch .env.js
+          npm run build
 
     - run:
         command: |
           tar -zcvf dist.tar.gz ./dist
     
     - store_artifacts:
-        path: ./dist.tar.gz
+        path: dist.tar.gz
 
   deploy:
     docker:
