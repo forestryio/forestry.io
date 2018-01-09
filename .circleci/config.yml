@@ -80,8 +80,9 @@ jobs:
 
           curl https://circleci.com/api/v1.1/project/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BUILD_NUM}/artifacts?circle-token=${CIRCLE_TOKEN} | grep -o 'https://[^"]*' > artifacts.txt
 
-          <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
-          tar -xvzf dist.tar.gz
+          printf '%b\n' "$(cat artifacts.txt)"
+
+          <artifacts.txt xargs -0 -P4 -I % wget %?circle-token=${CIRCLE_TOKEN}
 
     - deploy:
         name: "Deploy website to AWS S3"
