@@ -20,18 +20,18 @@ jobs:
 
       - run: 
           name: Install dependencies
-          command: 
-            - npm install
-            - sudo apt-get install python-dev
-            - pip install awscli --upgrade --user
+          command: |
+            npm install
+            sudo apt-get install python-dev
+            pip install awscli --upgrade --user
 
       - run:
           name: Log Versions
-          command:
-            - node -v
-            - npm -v
-            - python -v
-            - aws -v
+          command: |
+            node -v
+            npm -v
+            python -v
+            aws -v
       
       - run:
           name: Run build
