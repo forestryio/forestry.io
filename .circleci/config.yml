@@ -22,10 +22,11 @@ jobs:
           name: Install dependencies
           command: |
             npm install
-            sudo apt-get install python-pip python-dev build-essential 
-            sudo pip install --upgrade pip 
-            sudo pip install --upgrade virtualenv 
-            sudo pip install awscli --upgrade --user
+            apt-get -y -qq update
+            apt-get -y -qq install python3.4-dev
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            python3.4 get-pip.py --user
+            pip install awscli --upgrade --user
 
       - save_cache:
           paths:
