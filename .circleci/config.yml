@@ -42,7 +42,7 @@ jobs:
 
     - run:
         command: |
-          tar -zcvf dist-${CIRCLE-BRANCH}.tar.gz
+          tar -zcvf dist-${CIRCLE-BRANCH}.tar.gz ./dist
     
     - store_artifacts:
         path: dist-${CIRCLE-BRANCH}.tar.gz
