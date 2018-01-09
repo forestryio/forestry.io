@@ -71,7 +71,7 @@ jobs:
         command: |
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying branch master to S3"
-            aws s3 sync ./dist s3://$AWS_S3_BRANCH
+            aws s3 sync ./dist s3://${AWS_S3_BUCKET}
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
