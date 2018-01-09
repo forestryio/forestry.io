@@ -11,7 +11,6 @@ jobs:
     steps:
     - checkout
 
-    # Download and cache dependencies
     - restore_cache:
         keys:
         - node-dependencies-{{ checksum "package.json" }}
@@ -69,6 +68,7 @@ jobs:
           sudo pip install awscli
           sudo rm -f /tmp/get-pip.py
 
+    # Add any SSH keys from CircleCI
     - add_ssh_keys
 
     - run:
@@ -76,7 +76,7 @@ jobs:
         command: |
           export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
 
-          curl https://circleci.com/api/v1.1/project/github/$CIRCLE_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
+          curl https://circleci.com/api/v1.1/project/gh/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
 
           <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
           tar -xvzf dist-$CIRCLE_BRANCH.tar.gz
