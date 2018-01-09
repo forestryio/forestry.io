@@ -44,6 +44,7 @@ jobs:
     - run:
         command: |
           tar -zcvf dist.tar.gz ~/repo/dist
+          sudo mv dist.tar.gz dist-${CIRCLE_BRANCH}-{{checkum "dist.tar.gz" }}
 
     - store_artifacts:
         path: ~/repo/dist
