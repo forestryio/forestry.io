@@ -23,14 +23,14 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get upgrade -y
-            sudo apt-get install -y --no-install-recommends build-essential g++ python2.7 python2.7-dev unzip curl
-            rm -rf /var/lib/apt/lists/*
-            mkdir -p /tmp
+            sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
+            sudo rm -rf /var/lib/apt/lists/*
+            sudo mkdir -p /tmp
             cd /tmp
             curl -O https://bootstrap.pypa.io/get-pip.py
-            python get-pip.py
+            sudo python get-pip.py
             sudo pip install awscli
-            rm -f /tmp/get-pip.py
+            sudo rm -f /tmp/get-pip.py
 
       - run: 
           name: Install Node Dependencies
