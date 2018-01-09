@@ -58,18 +58,23 @@ identifier = "useraccount"
 name = "My Account"
 url = "https://app.forestry.io/settings"
 weight = 5
+[outputFormats.Redirects]
+mediatype = "application/json"
+baseName = "redirects"
+isPlainText = true
+notAlternative = true
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
+notAlternative = true
 mediaType = "application/json"
-path = "/"
 [outputFormats.OpenSearch]
 baseName = "opensearch"
 isPlainText = true
 mediaType = "application/xml"
-path = "/"
+notAlternative = true
 [outputs]
-home = ["HTML", "RSS", "OpenSearch", "Algolia"]
+home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
 [params]
 dateformat = "January 2, 2006"
 description = "A content management system for static sites built with Hugo and Jekyll. Get the speed, security, and reliability of static and the power of a Headless CMS."

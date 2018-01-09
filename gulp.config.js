@@ -23,6 +23,9 @@ export default function(env) {
     algolia: {
       src: build + "**/algolia.json"
     },
+    redirects: {
+      src: build + "redirects.json"
+    },
     styles: {
       src:
       [

@@ -85,5 +85,8 @@
     "webpack-stream": "^4.0.0",
     "whatwg-fetch": "^1.0.0",
     "worker-loader": "^1.1.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.178.0"
   }
 }
