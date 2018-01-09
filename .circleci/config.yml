@@ -21,9 +21,9 @@ jobs:
       - run: 
           name: Install dependencies
           command: |
-            npm install
+            yarn install
             sudo apt-get -y -qq update
-            sudo sudo apt-get install python-setuptools
+            sudo apt-get install python-setuptools
             sudo easy_install pip
             pip install awscli --upgrade --user
 
