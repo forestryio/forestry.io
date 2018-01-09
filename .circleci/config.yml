@@ -50,7 +50,6 @@ jobs:
     
     - store_artifacts:
         path: ~/repo/dist.tar.gz
-        destination: dist-$CIRCLE_BRANCH--{{ checksum "/tmp/dist.tar.gz" }}
 
   test:
     docker:
@@ -60,8 +59,8 @@ jobs:
 
     steps:
     - run:
-      name: Restore build artifacts
-      command: "dsfafdsfsda"
+        name: Restore build artifacts
+        command: "dsfafdsfsda"
 
     - run:
         name: HTMLProofer
@@ -76,18 +75,18 @@ jobs:
 
     steps:
     - run:
-      name: Install Python Dependencies
-      command: |
-        sudo apt-get update
-        sudo apt-get upgrade -y
-        sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
-        sudo rm -rf /var/lib/apt/lists/*
-        sudo mkdir -p /tmp
-        cd /tmp
-        curl -O https://bootstrap.pypa.io/get-pip.py
-        sudo python get-pip.py
-        sudo pip install awscli
-        sudo rm -f /tmp/get-pip.py
+        ame: Install Python Dependencies
+        command: |
+          sudo apt-get update
+          sudo apt-get upgrade -y
+          sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
+          sudo rm -rf /var/lib/apt/lists/*
+          sudo mkdir -p /tmp
+          cd /tmp
+          curl -O https://bootstrap.pypa.io/get-pip.py
+          sudo python get-pip.py
+          sudo pip install awscli
+          sudo rm -f /tmp/get-pip.py
 
     - add_ssh_keys
 
