@@ -99,7 +99,7 @@ jobs:
       - run:
           name: Restore build artifacts
           command: |
-            export CIRCLE_TOKEN=':your_token'
+            export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
 
             curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
 
