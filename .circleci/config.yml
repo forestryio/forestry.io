@@ -4,53 +4,53 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:7.10
+    - image: circleci/node:7.10
 
     working_directory: ~/repo
 
     steps:
-      - checkout
+    - checkout
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - node-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - node-dependencies-
+    # Download and cache dependencies
+    - restore_cache:
+        keys:
+        - node-dependencies-{{ checksum "package.json" }}
+        # fallback to using the latest cache if no exact match is found
+        - node-dependencies-
 
-      - run: 
-          name: Install Node Dependencies
-          command: |
-            yarn install
+    - run: 
+        name: Install Node Dependencies
+        command: |
+          yarn install
 
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+    - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run:
-          name: Log Versions
-          command: |
-            node -v
-            npm -v
-            python -v
-            aws -v
-          background: true
-      
-      - run:
-          name: Run build
-          command: npm run build
+    - run:
+        name: Log Versions
+        command: |
+          node -v
+          npm -v
+          python -v
+          aws -v
+        background: true
+    
+    - run:
+        name: Run build
+        command: npm run build
 
-      - run:
-          command: |
+    - run:
+        command: |
           tar -zcvf dist.tar.gz ~/repo/dist
 
-      - store_artifacts:
-          path: ~/repo/dist
-      
-      - store_artifacts:
-          path: ~/repo/dist.tar.gz
-          destination: dist-$CIRCLE_BRANCH--{{ checksum "/tmp/dist.tar.gz" }}
+    - store_artifacts:
+        path: ~/repo/dist
+    
+    - store_artifacts:
+        path: ~/repo/dist.tar.gz
+        destination: dist-$CIRCLE_BRANCH--{{ checksum "/tmp/dist.tar.gz" }}
 
   test:
     docker:
@@ -59,19 +59,14 @@ jobs:
     working_directory: ~/repo
 
     steps:
-       - run:
-          name: Restore build artifacts
-          command: |
-            export CIRCLE_TOKEN=':your_token'
+    - run:
+      name: Restore build artifacts
+      command: "dsfafdsfsda"
 
-            curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
-
-            <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN   
-
-      - run:
-          name: HTMLProofer
-          command: |
-            htmlproofer --extension .html ~/repo/dist --empty-alt-ignore --check_favicon --check_opengraph --check_img_http --log_level:info
+    - run:
+        name: HTMLProofer
+        command: |
+          htmlproofer --extension .html ~/repo/dist --empty-alt-ignore --check_favicon --check_opengraph --check_img_http --log_level:info
 
   deploy:
     docker:
@@ -80,48 +75,48 @@ jobs:
     working_directory: ~/repo
 
     steps:
-        - run:
-          name: Install Python Dependencies
-          command: |
-            sudo apt-get update
-            sudo apt-get upgrade -y
-            sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
-            sudo rm -rf /var/lib/apt/lists/*
-            sudo mkdir -p /tmp
-            cd /tmp
-            curl -O https://bootstrap.pypa.io/get-pip.py
-            sudo python get-pip.py
-            sudo pip install awscli
-            sudo rm -f /tmp/get-pip.py
+    - run:
+      name: Install Python Dependencies
+      command: |
+        sudo apt-get update
+        sudo apt-get upgrade -y
+        sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
+        sudo rm -rf /var/lib/apt/lists/*
+        sudo mkdir -p /tmp
+        cd /tmp
+        curl -O https://bootstrap.pypa.io/get-pip.py
+        sudo python get-pip.py
+        sudo pip install awscli
+        sudo rm -f /tmp/get-pip.py
 
-      - add_ssh_keys
+    - add_ssh_keys
 
-      - run:
-          name: Restore build artifacts
-          command: |
-            export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
+    - run:
+        name: Restore build artifacts
+        command: |
+          export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
 
-            curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
+          curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
 
-            <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
+          <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
 
-      - deploy:
-          name: "Deploy website to AWS S3"
-          command: |
-            if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
-              echo "Deploying branch master to S3"
-              aws s3 sync ~/repo/dist s3://$AWS_S3_BRANCH
-            else
-              echo "Successfully built ${CIRCLE_BRANCH}"
-            fi
+    - deploy:
+        name: "Deploy website to AWS S3"
+        command: |
+          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+            echo "Deploying branch master to S3"
+            aws s3 sync ~/repo/dist s3://$AWS_S3_BRANCH
+          else
+            echo "Successfully built ${CIRCLE_BRANCH}"
+          fi
       
 workflows:
   build-and-deploy:
     jobs:
       - build
-      - test
-        requires: 
-        - build
-      - deploy
+      - test:
+          requires: 
+          - build
+      - deploy:
         requires:
           - build
