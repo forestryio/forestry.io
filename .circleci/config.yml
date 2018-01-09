@@ -49,13 +49,6 @@ jobs:
     - store_artifacts:
         path: dist.tar.gz
 
-  deploy:
-    docker:
-    - image: circleci/python:2.7.13
-
-    working_directory: ~/repo
-
-    steps:
     - run:
         ame: Install Python Dependencies
         command: |
@@ -72,18 +65,7 @@ jobs:
 
     # Add any SSH keys from CircleCI
     - add_ssh_keys
-
-    - run:
-        name: Restore build artifacts
-        command: |
-          export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
-
-          curl https://circleci.com/api/v1.1/project/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BUILD_NUM}/artifacts?circle-token=${CIRCLE_TOKEN} | grep -o 'https://[^"]*' > artifacts.txt
-
-          printf '%b\n' "$(cat artifacts.txt)"
-
-          <artifacts.txt xargs -0 -P4 -I % wget %?circle-token=${CIRCLE_TOKEN}
-
+    
     - deploy:
         name: "Deploy website to AWS S3"
         command: |
@@ -93,12 +75,3 @@ jobs:
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
-      
-workflows:
-  version: 2
-  build-and-deploy:
-    jobs:
-    - build
-    - deploy:
-        requires:
-          - build
