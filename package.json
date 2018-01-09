@@ -87,6 +87,7 @@
     "worker-loader": "^1.1.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.178.0"
+    "aws-sdk": "^2.178.0",
+    "html-proofer": "0.0.1"
   }
 }

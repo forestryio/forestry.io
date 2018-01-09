@@ -1,0 +1,30 @@
+{{/* Generates Amazon S3 Compliant Redirects */}}
+{{- range $i, $p := .Site.Pages -}}
+{{- range .Aliases -}}
+{{- $.Scratch.SetInMap "aliases" (printf "%s" $i) (dict "to" $p.RelPermalink "from" .) -}}
+{{- end -}}
+{{- end -}}
+{{- $aliases := $.Scratch.Get "aliases" -}}
+{{- $len := sub (len $aliases) 1 -}}
+{{ $.Scratch.Set "count" 0 -}}
+[
+    {{- range $a := $aliases -}}
+    {{- $count := $.Scratch.Get "count" -}}
+    {{- template "redirect" $a -}}{{- if not (eq $len $count) -}},{{- end -}}
+    {{- $.Scratch.Set "count" (add 1 ($.Scratch.Get "count")) -}}
+    {{- end -}}
+]
+{{- define "redirect" -}}
+{{- if and .from .to -}}
+{
+    "Condition": {
+        "KeyPrefixEquals": {{ jsonify .from }}
+    },
+    "Redirect": {
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": {{- jsonify .to -}}    	
+    }
+}
+{{- end -}}
+{{- end -}}
