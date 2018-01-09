@@ -6,7 +6,7 @@ jobs:
     docker:
     - image: circleci/node:7.10
 
-    working_directory: ~/repo
+    working_directory: /home/circleci
 
     steps:
     - checkout
@@ -25,7 +25,7 @@ jobs:
     - save_cache:
         paths:
           - node_modules
-        key: v1-dependencies-{{ checksum "package.json" }}
+        key: node-dependencies-{{ checksum "package.json" }}
 
     - run:
         name: Log Versions
@@ -42,16 +42,16 @@ jobs:
 
     - run:
         command: |
-          tar -zcvf dist-$CIRCLE-BRANCH.tar.gz ~/repo/dist
+          tar -zcvf dist-${CIRCLE-BRANCH}.tar.gz
     
     - store_artifacts:
-        path: ~/repo/dist-$CIRCLE-BRANCH.tar.gz
+        path: dist-${CIRCLE-BRANCH}.tar.gz
 
   deploy:
     docker:
     - image: circleci/python:2.7.13
 
-    working_directory: ~/repo
+    working_directory: /home/circleci
 
     steps:
     - run:
@@ -79,14 +79,14 @@ jobs:
           curl https://circleci.com/api/v1.1/project/gh/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
 
           <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
-          tar -xvzf dist-$CIRCLE_BRANCH.tar.gz
+          tar -xvzf dist-${CIRCLE_BRANCH}.tar.gz
 
     - deploy:
         name: "Deploy website to AWS S3"
         command: |
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying branch master to S3"
-            aws s3 sync ~/repo/dist s3://$AWS_S3_BRANCH
+            aws s3 sync ./dist s3://$AWS_S3_BRANCH
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
