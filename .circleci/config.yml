@@ -25,7 +25,8 @@ jobs:
             sudo apt-get -y -qq update
             sudo apt-get install python-setuptools
             sudo easy_install pip
-            pip install awscli --upgrade --user
+            sudo pip install -U setuptools
+            sudo pip install awscli --upgrade --user
 
       - save_cache:
           paths:
