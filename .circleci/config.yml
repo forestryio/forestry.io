@@ -42,10 +42,10 @@ jobs:
 
     - run:
         command: |
-          tar -zcvf dist-$CIRCLE_BRANCH.tar.gz ./dist
+          tar -zcvf dist-${CIRCLE_BRANCH}.tar.gz ./dist
     
     - store_artifacts:
-        path: dist-$CIRCLE_BRANCH.tar.gz
+        path: ~/dist-${CIRCLE_BRANCH}.tar.gz
 
   deploy:
     docker:
@@ -76,7 +76,7 @@ jobs:
         command: |
           export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
 
-          curl https://circleci.com/api/v1.1/project/gh/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
+          curl https://circleci.com/api/v1.1/project/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BUILD_NUM}/artifacts?circle-token=${CIRCLE_TOKEN} | grep -o 'https://[^"]*' > artifacts.txt
 
           <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
           tar -xvzf dist-$CIRCLE_BRANCH.tar.gz
@@ -86,7 +86,7 @@ jobs:
         command: |
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying branch master to S3"
-            aws s3 sync ./dist s3://$AWS_S3_BRANCH
+            aws s3 sync ./dist s3://${AWS_S3_BRANCH}
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
