@@ -23,7 +23,13 @@ jobs:
           command: |
             npm install
             sudo apt-get install python-dev
+            sudo apt-get install pip
             pip install awscli --upgrade --user
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
           name: Log Versions
@@ -36,11 +42,6 @@ jobs:
       - run:
           name: Run build
           command: npm run build
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
 
       - store_artifacts:
           path: ~/repo/dist
