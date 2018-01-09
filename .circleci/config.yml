@@ -21,15 +21,15 @@ jobs:
       - run:
           name: Install Python Dependencies
           command: |
-            apt-get update
-            apt-get upgrade -y
-            apt-get install -y --no-install-recommends build-essential g++ python2.7 python2.7-dev unzip curl
+            sudo apt-get update
+            sudo apt-get upgrade -y
+            sudo apt-get install -y --no-install-recommends build-essential g++ python2.7 python2.7-dev unzip curl
             rm -rf /var/lib/apt/lists/*
             mkdir -p /tmp
             cd /tmp
             curl -O https://bootstrap.pypa.io/get-pip.py
             python get-pip.py
-            pip install awscli
+            sudo pip install awscli
             rm -f /tmp/get-pip.py
 
       - run: 
