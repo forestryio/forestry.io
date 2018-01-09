@@ -18,20 +18,6 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - node-dependencies-
 
-      - run:
-          name: Install Python Dependencies
-          command: |
-            sudo apt-get update
-            sudo apt-get upgrade -y
-            sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
-            sudo rm -rf /var/lib/apt/lists/*
-            sudo mkdir -p /tmp
-            cd /tmp
-            curl -O https://bootstrap.pypa.io/get-pip.py
-            sudo python get-pip.py
-            sudo pip install awscli
-            sudo rm -f /tmp/get-pip.py
-
       - run: 
           name: Install Node Dependencies
           command: |
@@ -41,7 +27,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-          background: true
 
       - run:
           name: Log Versions
@@ -56,24 +41,87 @@ jobs:
           name: Run build
           command: npm run build
 
+      - run:
+          command: |
+          tar -zcvf dist.tar.gz ~/repo/dist
+
       - store_artifacts:
           path: ~/repo/dist
-          background: true
-        
-      # run tests!
-      #- run:
-      #    name: "Test Website HTML"
-      #    command: htmlproofer ~/repo/dist --allow-hash-href --check-html
+      
+      - store_artifacts:
+          path: ~/repo/dist.tar.gz
+          destination: dist-$CIRCLE_BRANCH--{{ checksum "/tmp/dist.tar.gz" }}
+
+  test:
+    docker:
+    - image: 18fgsa/html-proofer:gitlab-ci
+
+    working_directory: ~/repo
+
+    steps:
+       - run:
+          name: Restore build artifacts
+          command: |
+            export CIRCLE_TOKEN=':your_token'
+
+            curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
+
+            <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN   
+
+      - run:
+          name: HTMLProofer
+          command: |
+            htmlproofer --extension .html ~/repo/dist --empty-alt-ignore --check_favicon --check_opengraph --check_img_http --log_level:info
+
+  deploy:
+    docker:
+    - image: circleci/python:2.7.13
+
+    working_directory: ~/repo
+
+    steps:
+        - run:
+          name: Install Python Dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get upgrade -y
+            sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
+            sudo rm -rf /var/lib/apt/lists/*
+            sudo mkdir -p /tmp
+            cd /tmp
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            sudo python get-pip.py
+            sudo pip install awscli
+            sudo rm -f /tmp/get-pip.py
 
       - add_ssh_keys
+
+      - run:
+          name: Restore build artifacts
+          command: |
+            export CIRCLE_TOKEN=':your_token'
+
+            curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
+
+            <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
 
       - deploy:
           name: "Deploy website to AWS S3"
           command: |
             if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
               echo "Deploying branch master to S3"
-              aws s3 sync ~/repo/dist s3://${AWS_S3_BRANCH}
+              aws s3 sync ~/repo/dist s3://$AWS_S3_BRANCH
             else
               echo "Successfully built ${CIRCLE_BRANCH}"
             fi
       
+workflows:
+  build-and-deploy:
+    jobs:
+      - build
+      - test
+        requires: 
+        - build
+      - deploy
+        requires:
+          - build
