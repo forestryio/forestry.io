@@ -42,10 +42,10 @@ jobs:
 
     - run:
         command: |
-          tar -zcvf dist-${CIRCLE-BRANCH}.tar.gz ./dist
+          tar -zcvf dist-$CIRCLE_BRANCH.tar.gz ./dist
     
     - store_artifacts:
-        path: dist-${CIRCLE-BRANCH}.tar.gz
+        path: dist-$CIRCLE_BRANCH.tar.gz
 
   deploy:
     docker:
@@ -79,7 +79,7 @@ jobs:
           curl https://circleci.com/api/v1.1/project/gh/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
 
           <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
-          tar -xvzf dist-${CIRCLE_BRANCH}.tar.gz
+          tar -xvzf dist-$CIRCLE_BRANCH.tar.gz
 
     - deploy:
         name: "Deploy website to AWS S3"
