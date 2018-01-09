@@ -6,7 +6,7 @@ jobs:
     docker:
     - image: circleci/node:7.10
 
-    working_directory: /home/circleci
+    working_directory: /home/circleci/$CIRCLE_PROJECT_REPONAME
 
     steps:
     - checkout
@@ -51,7 +51,7 @@ jobs:
     docker:
     - image: circleci/python:2.7.13
 
-    working_directory: /home/circleci
+    working_directory: /home/circleci/$CIRCLE_PROJECT_REPONAME
 
     steps:
     - run:
