@@ -48,28 +48,6 @@ jobs:
     - store_artifacts:
         path: ~/repo/dist-${CIRCLE-BRANCH}.tar.gz
 
-  test:
-    docker:
-    - image: 18fgsa/html-proofer:gitlab-ci
-
-    working_directory: ~/repo
-
-    steps:
-    - run:
-        name: Restore build artifacts
-        command: |
-          export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
-
-          curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
-
-          <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
-          tar -xvzf dist-${CIRCLE_BRANCH}.tar.gz
-
-    - run:
-        name: HTMLProofer
-        command: |
-          htmlproofer --extension .html ~/repo/dist --empty-alt-ignore --check_favicon --check_opengraph --check_img_http --log_level:info
-
   deploy:
     docker:
     - image: circleci/python:2.7.13
@@ -98,10 +76,10 @@ jobs:
         command: |
           export CIRCLE_TOKEN='d3bc8231bbed1598320818e74b990351f4e1e600'
 
-          curl https://circleci.com/api/v1.1/project/:vcs-type/:username/:project/:build_num/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
+          curl https://circleci.com/api/v1.1/project/github/$CIRCLE_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts?circle-token=$CIRCLE_TOKEN | grep -o 'https://[^"]*' > artifacts.txt
 
           <artifacts.txt xargs -P4 -I % wget %?circle-token=$CIRCLE_TOKEN
-          tar -xvzf dist-${CIRCLE_BRANCH}.tar.gz
+          tar -xvzf dist-$CIRCLE_BRANCH.tar.gz
 
     - deploy:
         name: "Deploy website to AWS S3"
@@ -118,9 +96,6 @@ workflows:
   build-and-deploy:
     jobs:
     - build
-    - test:
-        requires:
-          - build
     - deploy:
         requires:
           - build
