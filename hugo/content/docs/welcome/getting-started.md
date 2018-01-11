@@ -39,5 +39,3 @@ If you already have an existing Hugo or Jekyll site, [start here]().
 {{% /warning %}}
 
 dsafdsds
-
-sdafdssddfsfdafsdfdsf
