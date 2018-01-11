@@ -7,6 +7,19 @@ layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
+authors:
+- Forestry Team
+headline: ''
+description: ''
+textline: ''
+images: []
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
 menu:
   docs:
     parent: Welcome
@@ -16,56 +29,36 @@ menu:
     weight: 4
 
 ---
-{{% tip %}}
-**dsfgfagdhjsfghdjdsaf**
-fds
-dsaf
-dfa
-dsdf
+Forestry.io is a Git-backed CMS (content management system) for websites and web products built using _static site generators_. Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
+
+Forestry powers static sites generated using [Jekyll](https://jekyllrb.com/ "Jekyll website") and [Hugo](https://gohugo.io/ "Hugo website") and manages them using [Git](https://git-scm.com/ "Git Website").
+
+{{% tip " " %}}
+
+[Sign up](https://app.forestry.io/signup "Forestry CMS Sign Up") for free today, or learn more about our [pricing](https://forestry.io/pricing "Forestry.io's Pricing") for teams.
+
 {{% /tip %}}
-{{% disclaimer "" %}}
-**dsfgfagdhjsfghdjdsaf**
-fds
-dsaf
-dfa
-dsdf
-{{% /disclaimer %}}
-{{% warning %}}
-**dsfgfagdhjsfghdjdsaf**
-fds
-dsaf
-dfa
-dsdf
-{{% /warning %}}
-{{% error %}}
-**dsfgfagdhjsfghdjdsaf**
-fds
-dsaf
-dfa
-dsdf
-{{% /error %}}
 
 ## What is Forestry?
 
-Forestry.io is a Git-based CMS (content management system) for websites and web products built using static site generators. Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
+The main thing to understand is that Forestry -- unlike other content management systems -- is entirely backed by Git.
 
-Forestry powers static sites generated using Jekyll and Hugo and manages them using Git.
+To put it simply, Forestry is an editor-friendly interface over Git. This means that developers and editors can now use the same workflow and toolset.
 
-### How Forestry Works
-Forestry allows you to bring your existing Jekyll or Hugo site and builds a custom CMS around it based on your content files and configuration.
+This also means that all of your content and code always belongs to you, and is not stored in a database in the cloud out of your reach.
 
-## THE CMS FOR YOUR TEAM
-Once your site is imported and your CMS is generated, you can invite your whole team and customize the way the CMS looks, feels, and functions to suit their editing and management requirements. You can even provide remote access with your own branding so they never have to leave the site.
+## Advantages
 
-## YOUR CONTENT, IN GIT
-More importantly, Forestry allows you to create a continuous development lifecycle using Git. As a developer, you can build your site the way you want, with the tools you love, in your own local environment and push changes to Git. Forestry imports these changes automatically and reflects them in the CMS. When content managers make change in Forestry, we commit these back to the repository as well. Both sides work in tandem, in the way that feels natural.
+Choosing to build a static site and use a Git-backed CMS comes with a multitude of advantages over the traditional Monolithic CMS:
 
-MANAGED DEPLOYMENT & BACKUPS
-Due to the Git-backed nature of Forestry, you get automatic backups and version-control for free, and we can automatically handle deployments for you as changes are pushed to your repository.
+### Speed, reliability, and security
 
-It’s a better way to build websites.
+Static sites don't require a complicated server setup to allow for the dynamic rendering of pages. This mean your site's download faster for visitors, can handle insane volumes of traffic, and have much fewer touch points that are vulnerable to hacking.
 
-Jekyll or Hugo?
-Hugo and Jekyll are both great choices for a Static Site. Depending on your needs however, one may suit you better.
+### Continuous Deployment
 
-Check out the introductions for Jekyll and Hugo.
+Unlike traditional content management systems, your codebase _is_ your website. That means developers can work on changes to the website locally, and then push to Git and automatically have them deployed to production.
+
+### Unified Workflow
+
+Gone are the days of developers and editors having completely separate workflows. Developers and editors now work in sync with Git, providing unparalleled ability to deliver quickly and easily.
