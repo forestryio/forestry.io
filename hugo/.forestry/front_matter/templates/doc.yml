@@ -1,4 +1,6 @@
 ---
+pages:
+- docs/welcome/getting-started.md
 hide_body: false
 fields:
 - type: text
