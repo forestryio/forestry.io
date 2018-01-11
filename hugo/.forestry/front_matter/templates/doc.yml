@@ -126,8 +126,3 @@ fields:
   description: Sets the Hugo's Layout (https://gohugo.io/themes/creating/#layouts)
   default: single
   hidden: true
-- type: text
-  name: menu
-  label: menu
-  default: docs
-  hidden: true
