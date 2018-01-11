@@ -1,6 +1,6 @@
 ---
 pages:
-- docs/changelog/2018/1/9-changelog.md
+- docs/welcome/getting-started.md
 hide_body: false
 fields:
 - type: text
