@@ -1,3 +1,12 @@
+/* Fix for Hugo <p> tag bug */
+p:empty + [class~=shortcode] {
+  margin-top: -2rem;
+}
+
+[class~=shortcode] + p:empty {
+  margin-top: -2rem;
+}
+
 .shortcode-tip,
 .shortcode-warning,
 .shortcode-error,

@@ -34,6 +34,14 @@
   }
 
   /* Button sizes */
+  &.extra-small {
+    font-size: 11px;
+    padding: 0.5rem;
+    &.rounded {
+      border-radius: 1rem;
+    }
+  }
+
   &.small {
     font-size: 14px;
     padding: 0.5rem 1.25rem;
