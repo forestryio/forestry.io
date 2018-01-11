@@ -24,8 +24,20 @@ menu:
 draft: true
 
 ---
-{{% tip disclaimer %}}
-
-This 
-
+{{% tip disclaimer %}}  
+Forestry powers static sites generated using static site generators and manages them using [Git](https://git-scm.com/ "Git Website"). If you're not familiar with these topics, this is a great opportunity to learn!  
 {{% /tip %}}
+
+## Quick start
+
+The following quick start guide will walk you through setting up your first static site in Forestry.
+
+{{% warning %}}
+
+If you already have an existing Hugo or Jekyll site, [start here]().
+
+{{% /warning %}}
+
+dsafdsds
+
+sdafdssddfsfdafsdfdsf
