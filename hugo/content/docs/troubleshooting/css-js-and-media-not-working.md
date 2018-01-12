@@ -17,9 +17,10 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
+menu:
+  troubleshooting:
+    parent: troubleshooting
 weight: ''
-draft: true
-
 ---
 Sometimes you’ll find your assets aren’t loading when you preview or publish your site. This is almost always due to *path issues*.
 

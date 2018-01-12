@@ -19,10 +19,8 @@ private: false
 weight: ''
 aliases: []
 menu:
-  docs:
-    weight: 100
-draft: true
-
+  troubleshooting:
+    parent: troubleshooting
 ---
 When publishing, previewing, or saving a draft, there are a multitude of reasons why your site may fail to import. Generally, they boil down to 3 reasons:
 

@@ -24,12 +24,12 @@ weight = 99
 identifier = "Welcome"
 name = "Welcome"
 url = "/docs/welcome"
-weight = 6
+weight = 1
 [[menu.docs]]
 identifier = "Git Sync"
 name = "Git Sync"
 url = "/docs/git-sync"
-weight = 6
+weight = 2
 [[menu.footer]]
 identifier = "company"
 name = "Company"

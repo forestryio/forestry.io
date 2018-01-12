@@ -19,7 +19,8 @@ cta:
 private: false
 weight: ''
 menu:
-- troubleshooting
+  troubleshooting:
+    parent: troubleshooting
 draft: true
 
 ---

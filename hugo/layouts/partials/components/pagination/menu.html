@@ -1,0 +1,38 @@
+{{/* Only displays pagination for matching menu items */}}
+{{- $currentPage := . -}}
+{{- $sectionMenu := index $.Site.Menus .Section -}}
+{{- $currentSection := (replace (index (findRE "([\\w]+)\\/\\z" (.CurrentSection.File.Dir) 1) 0) "/" "") -}}
+{{- $currentSectionMenu := index $.Site.Menus $currentSection -}}
+{{- $menu := cond (not (eq $currentSectionMenu "nil")) $currentSectionMenu $sectionMenu -}}
+{{- with $menu -}}
+<nav class="pagination"> 
+{{- range . -}}
+    {{- range $i, $item := .Children -}}
+        {{- $last := $.Scratch.Get "last" -}}
+        {{- if eq .URL $currentPage.URL -}}
+            {{- $.Scratch.Set "prev" ($.Scratch.Get "last") -}}
+            {{- $.Scratch.Set "isNext" true -}}
+        {{- else if eq $currentPage.URL $last.URL -}}
+            {{ $.Scratch.Set "next" $item -}}
+        {{- end -}}
+        {{- $.Scratch.Set "last" $item -}}
+    {{- end -}}
+{{- end -}}
+{{- with $.Scratch.Get "prev" -}}
+    {{- template "prev" (dict "item" .) -}}
+{{- end -}}
+{{- with $.Scratch.Get "next" -}}
+    {{- template "next" (dict "item" .) -}}
+{{- end -}}
+</nav>
+{{- end -}}
+{{- define "prev" -}}
+    {{- with .item -}}
+    <a href="{{ .URL }}" rel="prev"><span class="prev-doc">{{ .Name }}</span></a>
+    {{- end -}}
+{{- end -}}
+{{- define "next" -}}
+    {{- with .item -}}
+    <a href="{{ .URL }}" rel="next"><span class="next-doc">{{ .Name }}</span></a>
+    {{- end -}}
+{{- end -}}
