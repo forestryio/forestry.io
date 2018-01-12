@@ -6,13 +6,4 @@ new_page_extension: md
 auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
-sections:
-  blog:
-    default_front_matter_template: default
-  showcase:
-    default_front_matter_template: showcase-item
-  docs:
-    default_front_matter_template: default
-  careers:
-    default_front_matter_template: default
-version: 0.31.1
+collections: 
