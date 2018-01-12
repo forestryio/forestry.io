@@ -6,14 +6,12 @@
 {{- with $menu -}}
 <div class="docs-nav-items">
   {{- range . -}}
-  <h3>{{ .Name }}</h3>
+  <h3>{{ .Pre }}{{ .Name }}{{ .Post }}</h3>
   <ul>
   {{- range .Children -}}
-    {{- if not (eq .Weight -9999) -}}
-      <li><a href="{{ .URL | absURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a></li>
-      {{- if $.IsMenuCurrent .Menu . -}}
-        {{- template "toc" $currentPage -}}
-      {{- end -}}
+    <li>{{ .Pre }}<a href="{{ .URL | absURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a>{{ .Post }}</li>
+    {{- if $.IsMenuCurrent .Menu . -}}
+      {{- template "toc" $currentPage -}}
     {{- end -}}
   {{- end -}}
   </ul>

@@ -20,6 +20,11 @@ $sidebar-width: 320px;
   width: 0;
   will-change: scroll-position;
 
+  h3 .button,
+  li a + .button {
+    margin-left: 0.5rem;
+  }
+
   a {
     text-decoration: none;
     font-weight: inherit;

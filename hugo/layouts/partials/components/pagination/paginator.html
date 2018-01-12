@@ -2,17 +2,20 @@
   {{- $paginator := . -}}
   {{ if gt .TotalPages 1 }}
   <nav class="pagination" role="pagination">
-      {{ with .First }}
-        <a href="{{ .URL }}" class="pagination--first" aria-label="First"><span aria-hidden="true">&laquo;</span></a>
+      {{ if and .First .HasPrev }}
+        <a href="{{ .First.URL }}" class="pagination--first button extra-small secondary" aria-label="First"><span aria-hidden="true">&laquo;</span></a>
       {{ end }}
       
-      <a {{ if .HasPrev }}href="{{ .Prev.URL }}"{{ end }} class="pagination--prev{{ if not .HasPrev }} disabled{{ end }}" aria-label="Previous"><span aria-hidden="true">Previous</span></a>
+      {{ if .HasPrev }}
+      <a href="{{ .Prev.URL }}" class="pagination--prev button extra-small secondary" aria-label="Previous"><span aria-hidden="true">Previous</span></a>
+      {{ end }}
       
       {{ $.Scratch.Set "__paginator.ellipsed" false }}
       {{- range .Pagers -}}
-        {{- $right := sub .TotalPages .PageNumber -}}
-        {{- $showNumber := or (le .PageNumber 3) (eq $right 0) -}}
-        {{- $showNumber := or $showNumber (and (gt .PageNumber (sub .PageNumber 2)) (lt .PageNumber (add .PageNumber 2))) -}}
+      {{ $remaining := sub .TotalPages .PageNumber }}
+      {{ $left := gt .PageNumber (sub $paginator.PageNumber 2) }}
+      {{ $right := lt .PageNumber (add $paginator.PageNumber 2) }}
+      {{ $showNumber := and $left $right }}
         {{- if $showNumber -}}
           {{- $.Scratch.Set "__paginator.ellipsed" false -}}
           {{- $.Scratch.Set "__paginator.shouldEllipse" false -}}
@@ -21,16 +24,18 @@
           {{- $.Scratch.Set "__paginator.ellipsed" true -}}
         {{- end -}}
         {{ if $showNumber }}
-          <a href="{{ .URL }}" class="pagination--item {{ if eq . $paginator }} active{{ end }}">{{ .PageNumber }}</a>
+          <a href="{{ .URL }}" class="pagination--item button extra-small {{ if eq . $paginator }} primary{{ else }} secondary{{ end }}">{{ .PageNumber }}</a>
         {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
           <span class="pagination--ellipses" aria-hidden="true">&hellip;</span>
         {{ end }}
       {{ end }}
 
-      <a {{ if .HasNext }}href="{{ .Next.URL }}"{{ end }} class="pagination--next{{ if not .HasNext }} disabled{{ end }}" aria-label="Next"><span aria-hidden="true">Next</span></a>
+      {{ if .HasNext }}
+      <a href="{{ .Next.URL }}" class="pagination--next button extra-small secondary" aria-label="Next"><span aria-hidden="true">Next</span></a>
+      {{ end }}
 
-      {{- with .Last -}}
-        <a href="{{ .URL }}" class="pagination--last" aria-label="Last"><span aria-hidden="true">&raquo;</span></a>
+      {{- if and .Last .HasNext -}}
+        <a href="{{ .Last.URL }}" class="pagination--last button extra-small secondary" aria-label="Last"><span aria-hidden="true">&raquo;</span></a>
       {{- end -}}
   </nav>
   {{- end -}}

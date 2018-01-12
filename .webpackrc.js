@@ -50,8 +50,6 @@ export default function(env) {
       new webpack.ProvidePlugin({
         // Automatically make packages available
         // without having to require them
-        // $: "jquery",
-        // jQuery: "jquery",
         fetch: "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
       }),
       new webpack.optimize.UglifyJsPlugin({
