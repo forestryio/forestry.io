@@ -8,7 +8,6 @@ title: Asset Pipeline
 menu:
   guides:
     parent: jekyll
-    identifier: _
 weight: 5
 
 ---

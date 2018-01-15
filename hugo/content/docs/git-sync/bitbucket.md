@@ -15,6 +15,8 @@ This guide assumes you already have an existing [BitBucket account](https://bitb
 
 Forestry's allows you to import your static site through BitBucket repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to BitBucket. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
 
+## Importing from BitBucket
+
 To import a site with BitBucket, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
 From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal the opens, choose "Import existing site".

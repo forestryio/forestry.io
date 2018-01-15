@@ -91,6 +91,14 @@ $sidebar-width: 320px;
   margin-left: 0;
   margin-bottom: 1rem;
   padding-left: 1rem;
+
+  .level-3 {
+    padding-left: 0.5rem;
+  }
+
+  .level-4 {
+    padding-left: 1rem;
+  }
 }
 
 .docs-content,

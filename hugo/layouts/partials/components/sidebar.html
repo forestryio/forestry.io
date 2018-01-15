@@ -30,8 +30,8 @@
     <ul class="table-of-contents">
     {{- range $headers -}}
       {{- $header := . -}}
-      {{- range first 1 (findRE "<h[2-5]" $header 1) -}}
-        {{- range findRE "[2-5]" . 1 -}}
+      {{- range first 1 (findRE "<h[2]" $header 1) -}}
+        {{- range findRE "[2]" . 1 -}}
           {{- $level := (int .) -}}
           {{- $anchorId := (replace ($header | plainify | htmlEscape | urlize | safeURL) "." "-") -}}
           {{- $href := printf "%s%s%s" $page.Permalink "#" $anchorId | string -}}
