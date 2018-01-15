@@ -6,4 +6,5 @@ new_page_extension: md
 auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
-collections: 
+sections: 
+version: 0.31.1

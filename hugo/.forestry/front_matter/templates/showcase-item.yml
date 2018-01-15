@@ -1,4 +1,10 @@
 ---
+pages:
+- showcase/borisfx.md
+- showcase/developerecosystem.md
+- showcase/_index.md
+- showcase/smallmultiples.md
+- showcase/yieldmo.md
 hide_body: false
 fields:
 - type: text
