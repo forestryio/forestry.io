@@ -13,7 +13,9 @@
           <span class="post--date">{{ .Lastmod.UTC.Format .Site.Params.dateFormat }}</span>
         </div>
       </div>
-      {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
+      <div class="md-content">
+        {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
+      </div>
     </div>
   </main>
 

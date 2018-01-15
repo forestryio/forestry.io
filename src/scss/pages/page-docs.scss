@@ -97,7 +97,7 @@ $sidebar-width: 320px;
 .section-docs-list {
   background: $color-white;
   color: $color-dark;
-  font-size: 0.86rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin: 0 auto;
   max-width: 600px;
@@ -197,75 +197,5 @@ $sidebar-width: 320px;
   .doc-category {
     font-weight: 600;
     margin-left: 0.5rem;
-  }
-}
-
-/* Content styling */
-.docs-content {
-  padding-bottom: 4rem;
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    margin-top: 2rem;
-  }
-
-  strong {
-    font-weight: 600;
-  }
-
-  p {
-    color: $color-copy-dark;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  a {
-    color: $color-brand;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  blockquote {
-    font-style: italic;
-    margin: 1rem 0;
-    padding-left: 1rem;
-    position: relative;
-  }
-
-  blockquote::before {
-    background: $color-brand;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 2px;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  /* Inline code */
-  code {
-    background: $color-light-grey;
-    color: $color-brand;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.15em 0.5em;
-  }
-
-  pre code {
-    color: $color-dark;
   }
 }

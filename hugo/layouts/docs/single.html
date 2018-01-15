@@ -11,7 +11,7 @@
       </aside>
     </div>
     <section class="docs-content">
-      <div class="container">
+      <div class="container md-content">
         <h1>{{ .Params.headline | default .Title }}</h1>
         {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
 
@@ -39,6 +39,4 @@
       </div>
     </section>
   </main>
-
-  {{- partial "components/cta/basic" .Params.cta -}}
 {{- end -}}

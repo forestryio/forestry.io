@@ -2,6 +2,7 @@ import AWS from "aws-sdk"
 import algoliasearch from "algoliasearch"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
+import debounce from "gulp-debounce"
 import del from "del"
 import fs from "fs"
 import gulp from "gulp"
@@ -162,6 +163,7 @@ gulp.task("styles", cb => {
 gulp.task("styles:production", cb => {
   const task = gulp
     .src(gulpConfig.styles.src)
+    .pipe(debounce({ wait: 1000 }))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(
       postcss({env: "production"}).on("error", err =>
@@ -197,6 +199,7 @@ gulp.task("styles:development", cb => {
 
   return gulp
     .src(gulpConfig.styles.src)
+    .pipe(debounce({ wait: 1000 }))
     .pipe(postcss().on("error", err => log(err, err.toString(), "PostCSS")))
     .pipe(
       rename(path => {
@@ -227,6 +230,7 @@ gulp.task("scripts", cb => {
 gulp.task("scripts:production", cb => {
   const task = gulp
     .src(gulpConfig.scripts.src)
+    .pipe(debounce({ wait: 1000 }))
     .pipe(named())
     .pipe(
       webpack(webpackConfig("production")).on("error", function(err) {
@@ -260,6 +264,7 @@ gulp.task("scripts:development", cb => {
 
   return gulp
     .src(gulpConfig.scripts.src)
+    .pipe(debounce({ wait: 1000 }))
     .pipe(named())
     .pipe(
       webpack(webpackConfig()).on("error", function(err) {
@@ -286,6 +291,7 @@ gulp.task("scripts:development", cb => {
 gulp.task("images", () => {
   return gulp
     .src(gulpConfig.images.src)
+    .pipe(debounce({ wait: 1000 }))
     .pipe(newer(gulpConfig.images.dest))
     .pipe(imagemin([], {verbose: isProduction ? true : false}))
     .pipe(gulp.dest(gulpConfig.images.dest))
@@ -300,6 +306,7 @@ gulp.task("images", () => {
 gulp.task("svg", () => {
   return gulp
     .src(gulpConfig.svg.src)
+    .pipe(debounce({ wait: 1000 }))
     .pipe(newer(gulpConfig.svg.dest))
     .pipe(
       sprite(gulpConfig.svg.config).on("error", err =>

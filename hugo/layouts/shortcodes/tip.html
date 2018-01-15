@@ -4,7 +4,9 @@
 {{- define "tip" -}}
 {{- $title := cond (.IsNamedParams) (.Get "name") (.Get 0) -}}
 <div class="shortcode-tip">
-  <h4>{{ $title | default "Tip" }}</h4>
-  {{ markdownify .Inner }}
+  {{- with $title -}}
+  <h4>{{ . }}</h4>
+  {{- end -}}
+  {{ safeHTML .Inner }}
 </div>
 {{- end -}}

@@ -20,12 +20,12 @@ weight: ''
 aliases: []
 menu:
   docs:
-    parent: Welcome
+    parent: welcome
 draft: true
 weight: 2
 ---
 {{% tip disclaimer %}}  
-Forestry powers static sites generated using static site generators and manages them using [Git](https://git-scm.com/ "Git Website"). If you're not familiar with these topics, this is a great opportunity to learn!  
+Forestry powers [static sites](/docs/faqs/glossary/static-sites/) generated using [static site generators](/docs/faqs/glossary/static-site-generators/) and manages them using [Git](https://git-scm.com/ "Git Website"). If you're not familiar with these topics, this is a great opportunity to learn!  
 {{% /tip %}}
 
 ## Quick start

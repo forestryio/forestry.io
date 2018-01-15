@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/faqs/glossary
 title: Content Files
 weight: 1
 layout: single

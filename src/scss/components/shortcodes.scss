@@ -1,18 +1,9 @@
-/* Fix for Hugo <p> tag bug */
-p:empty + [class~=shortcode] {
-  margin-top: -2rem;
-}
-
-[class~=shortcode] + p:empty {
-  margin-bottom: -2rem;
-}
-
 .shortcode-tip,
 .shortcode-warning,
 .shortcode-error,
 .shortcode-disclaimer {
   background: $color-grey;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 1rem 1rem 1rem 2rem;
   position: relative;
 
@@ -27,6 +18,19 @@ p:empty + [class~=shortcode] {
 
   p:first-of-type {
     margin: 0 !important;
+  }
+
+  & p:last-of-type {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Fix for Hugo <p> tag bug */
+  p:empty + & {
+    margin-top: -2rem;
+  }
+  & + p:empty {
+    margin-bottom: -2rem;
   }
 
   &:before {

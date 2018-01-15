@@ -18,7 +18,7 @@
     background-color: $color-brand;
     color: $color-white;
     &:hover {
-      opacity: 0.8;
+      background-color: color($color-brand w(+25%) s(+10%));
     }
   }
 

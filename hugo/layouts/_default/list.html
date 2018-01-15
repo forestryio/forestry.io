@@ -5,13 +5,13 @@
         <div class="blog-header--sticky">
         {{- if or (gt (len .Summary) 0) (isset .Params "textline") -}}
           <h1 class="blog-header--title">{{ .Params.headline | default .Title }}</h1>
-          <p class="blog-header--description">
+          <div class="blog-header--description">
             {{- if .Summary -}}
-              {{ .Summary }}
+              {{ .Summary | markdownify }}
             {{- else -}}
-              {{ .Params.textline }}
+              {{ .Params.textline | markdownify }}
             {{- end -}}
-          </p>
+          </div>
         {{- end -}}
         </div>
       </section>

@@ -6,7 +6,7 @@ enableEmoji = true
 enableRobotsTXT = true
 languageCode = "en"
 metaDataFormat = "yaml"
-paginate = 2
+paginate = 10
 pluralizeListTitles = false
 relativeURLs = false
 title = "Forestry.io"
@@ -16,25 +16,35 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-identifier = "Other"
-name = "Other"
-url = ""
-weight = 99
-[[menu.docs]]
-identifier = "Welcome"
+identifier = "welcome"
 name = "Welcome"
 url = "/docs/welcome"
 weight = 1
 [[menu.docs]]
-identifier = "Git Sync"
+identifier = "git-sync"
 name = "Git Sync"
 url = "/docs/git-sync"
 weight = 2
 [[menu.docs]]
-identifier = "example"
-name = "Example"
-post = "<div class=\"button extra-small primary\">BETA</div>"
-weight = 98
+identifier = "editing"
+name = "Editing"
+url = "/docs/git-sync"
+weight = 3
+[[menu.docs]]
+identifier = "Other"
+name = "Other"
+url = ""
+weight = 99
+[[menu.guides]]
+identifier = "hugo"
+name = "Developing with Hugo"
+url = ""
+weight = 1
+[[menu.guides]]
+identifier = "jekyll"
+name = "Developing with Jekyll"
+url = ""
+weight = 1
 [[menu.footer]]
 identifier = "company"
 name = "Company"

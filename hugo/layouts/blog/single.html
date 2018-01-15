@@ -53,7 +53,9 @@
         </div>
       </div>
 
-      {{- partial "cloudinary/content" (dict "page" $ "srcset" true) -}}
+      <div class="md-content">
+        {{- partial "cloudinary/content" (dict "page" $ "srcset" true) -}}
+      </div>
 
       <hr />
 
