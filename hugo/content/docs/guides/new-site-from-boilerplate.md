@@ -1,5 +1,5 @@
 ---
-title: Import Existing Site
+title: New Site From Boilerplate
 authors: []
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -16,13 +16,12 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
+menu:
+  guides:
+    parent: hugo
+draft: true
 weight: 2
 aliases: []
-menu:
-  docs:
-    parent: welcome
-    weight: 2
-draft: true
 
 ---
 ![](/uploads/2018/01/import-site.png)
