@@ -1,13 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-hugo/templating/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: "“Hugo GoTemplates Reference”"
-  url: https://gohugo.io/templates/go-templates/
-- title: "“Hugo Ace Templates Reference”"
-  url: https://gohugo.io/templates/ace/
-- title: "“Hugo Amber Templates Reference”"
-  url: https://gohugo.io/templates/amber/
 tags: ''
 title: Templating
 menu:
@@ -79,5 +74,10 @@ An example of Amber:
 ```
 
 See the [Front Matter Fields documentation][1] for examples of how to use Forestry in your templates.
+
+## Further Reading
+- [Hugo GoTemplates Reference](https://gohugo.io/templates/go-templates/)
+- [Hugo Ace Templates Reference](https://gohugo.io/templates/ace/)
+- [Hugo Amber Templates Reference](https://gohugo.io/templates/amber/)
 
 [1]: /docs/site-configuration/front-matter-templates#field-types

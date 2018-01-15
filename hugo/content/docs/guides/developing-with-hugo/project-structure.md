@@ -1,17 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-hugo/project-structure/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: "“Hugo Structure Reference”"
-  url: https://gohugo.io/overview/source-directory/
-- title: "“Hugo Support File Formats”"
-  url: https://gohugo.io/content/supported-formats/
-- title: "“Hugo Sections Reference”"
-  url: https://gohugo.io/content/sections/
-- title: "“Hugo Content Types Reference”"
-  url: https://gohugo.io/content/types/
-- title: "“Hugo Archetypes Reference”"
-  url: https://gohugo.io/content/archetypes/
 tags: ''
 title: Project Structure
 menu:
@@ -72,5 +63,11 @@ Upon initial import, we will parse your site to generate [Front Matter Templates
 ## Themes
 
 We will also parse the Archetypes of your theme folder when importing your site.
+
+## Further Reading
+- [Hugo Structure Reference](https://gohugo.io/overview/source-directory/)
+- [Hugo Sections Reference](https://gohugo.io/content/sections/)
+- [Hugo Content Types Reference](https://gohugo.io/content/types/)
+- [Hugo Archetypes Reference](https://gohugo.io/content/archetypes/)
 
 [1]: /docs/site-configuration/front-matter-templates

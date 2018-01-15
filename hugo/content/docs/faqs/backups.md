@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/faq/how-do-i-download-a-backup-of-my-site/
 title: How do I backup my site?
 weight: 1
 layout: single
@@ -13,7 +15,7 @@ For developers, backups are inherent due to the Git-backed nature of Forestry. E
 
 However, a zip backup of your site can be downloaded from the [dashboard](https://app.forestry.io/dashboard) if necessary.
 
-TK: image
+![dashboard backup](/uploads/2017/12/31/download-backup-forestry.png)
 
 ## Steps
 1. Navigate to the [dashboard](https://app.forestry.io/dashboard)

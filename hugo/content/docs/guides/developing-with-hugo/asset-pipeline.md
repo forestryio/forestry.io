@@ -1,11 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-hugo/asset-pipeline/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: "“Gulp.js”"
-  url: http://gulpjs.com/
-- title: "“Grunt.js”"
-  url: https://gruntjs.com/
 tags: ''
 title: Asset Pipeline
 menu:

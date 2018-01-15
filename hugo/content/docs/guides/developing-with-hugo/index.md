@@ -1,4 +1,7 @@
 ---
+aliases:
+- /docs/developing-with-hugo/
+- /docs/developing-with-hugo/intro/
 date: 2013-07-24 00:00:00 +0000
 description: ''
 related: []

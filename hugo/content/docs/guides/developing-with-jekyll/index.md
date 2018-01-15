@@ -1,11 +1,9 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/
+- /docs/developing-with-jekyll/intro/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: "“Jekyll Documentation”"
-  url: http://jekyllrb.com/docs
-- title: "“Jekyll Quickstart Guide”"
-  url: http://jekyllrb.com/docs/quickstart/
 tags: ''
 title: Introduction
 menu:
@@ -33,7 +31,9 @@ To get started developing for Jekyll, you’ll need a basic understanding of HTM
 
 We also recommend that you set up a Git repository to manage development of your site. Doing so offers you [free backups][4], enables [content sync][5] with the CMS, and enables you to turn on [automatic deployments][6].
 
-<!-- Once you’re ready, feel free to use our [Jekyll starter site](), which walks you through Forestry’s core features and provides a great starting point for your own website. -->
+## Further Reading
+- [Jekyll Documentation](http://jekyllrb.com/docs)
+- [Jekyll Quickstart Guide](http://jekyllrb.com/docs/quickstart/)
 
 [1]: https://github.com
 [2]: https://shopify.github.io/liquid/

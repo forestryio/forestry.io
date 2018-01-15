@@ -31,6 +31,16 @@ name = "Editing"
 url = "/docs/git-sync"
 weight = 3
 [[menu.docs]]
+identifier = "hosting"
+name = "Hosting"
+url = ""
+weight = 4
+[[menu.docs]]
+identifier = "settings"
+name = "Settings & Configuration"
+url = ""
+weight = 5
+[[menu.docs]]
 identifier = "Other"
 name = "Other"
 url = ""

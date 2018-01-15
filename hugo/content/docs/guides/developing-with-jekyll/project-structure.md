@@ -1,11 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/project-structure/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: Jekyll Directory Structure Reference
-  url: https://jekyllrb.com/docs/structure/
-- title: Installing Gem-based Themes
-  url: https://jekyllrb.com/docs/themes/#installing-a-theme
 tags: ''
 title: Project Structure
 menu:
@@ -73,5 +70,9 @@ Upon initial import, we will parse your site to generate [Front Matter Templates
 ## Themes
 
 Jekyll also supports Gem based themes. See the references below for more information.
+
+## Further Reading
+- [Jekyll Directory Structure Reference](https://jekyllrb.com/docs/structure/)
+- [Installing Gem-based Themes](https://jekyllrb.com/docs/themes/#installing-a-theme)
 
 [1]: /docs/site-configuration/front-matter-templates

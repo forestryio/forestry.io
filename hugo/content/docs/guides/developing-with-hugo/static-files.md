@@ -1,9 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-hugo/static-files/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: "“Hugo Static Files Reference”"
-  url: https://gohugo.io/themes/creation#static
 tags: ''
 title: Static Files
 menu:
@@ -37,5 +36,8 @@ Will be built as:
 ```
 
 If you use any build tools like Gulp or Grunt with Jekyll, please read our [Asset Pipeline Doc][1].
+
+## Further Reading
+- [Hugo Static Files Reference](https://gohugo.io/themes/creation#static)
 
 [1]:	/docs/developing-with-hugo/asset-pipeline

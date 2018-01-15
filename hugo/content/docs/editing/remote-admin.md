@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/site-configuration/project-paths/
 title: Remote Admin
 weight: 8
 publishdate: 2017-12-31 04:00:00 +0000

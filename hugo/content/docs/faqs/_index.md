@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/faq/
 title: Frequently Asked Questions
 weight: 1
 layout: single

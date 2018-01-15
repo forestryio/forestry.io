@@ -1,18 +1,14 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/asset-pipeline/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: Jekyll Assets Reference
-  url: http://jekyllrb.com/docs/assets/
-- title: Gulp.js
-  url: http://gulpjs.com/
-- title: Grunt.js
-  url: https://gruntjs.com/
 tags: ''
 title: Asset Pipeline
 menu:
   guides:
     parent: jekyll
+    identifier: _
 weight: 5
 
 ---
@@ -34,3 +30,6 @@ When publishing, previewing, or saving drafts, Forestry will *only* run:
 `jekyll build`
 
 If you use Gulp, Grunt or another build tool to process your assets, you *must* commit your final working assets to your repository, otherwise [previewing](/docs/deployment-and-management/previewing) and [deployment](/docs/deployment-and-management/setting-up-deployment) will **not** work.
+
+## Further Reading
+- [Jekyll Assets Reference](http://jekyllrb.com/docs/assets/)

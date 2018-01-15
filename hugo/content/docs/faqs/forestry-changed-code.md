@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/faq/what-changes-will-forestry-make-to-my-repository/
 title: Why did Forestry edit my files?
 weight: 1
 layout: single

@@ -1,9 +1,8 @@
 ---
-Categories: []
+aliases:
+- /docs/developing-with-hugo/environments/
 date: 2017-06-20 20:03:09 +0000
 description: ''
-related: []
-tags: []
 title: Environments
 menu:
   guides:
@@ -29,9 +28,10 @@ This variable is accessible in your templates with the `getenv` function:
 
 The values are:
 
-    Local environment: undefined
-    Staging environment: "staging"
-    Production environment: "production"
-    
+```
+Local environment: undefined
+Staging environment: "staging"
+Production environment: "production"
+``` 
 
 **Note:** in Hugo the local environment variable is undefined because Hugo does not set this environment variable by default.

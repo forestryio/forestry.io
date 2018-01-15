@@ -1,9 +1,9 @@
 ---
+
+aliases:
+- /docs/developing-with-jekyll/environments/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: Jekyll Build Command Options
-  url: https://jekyllrb.com/docs/configuration/#build-command-options
 tags: ''
 title: Environments
 menu:
@@ -34,3 +34,6 @@ Staging environment: "staging"
 Production environment: "production"
 
 ```
+
+## Further Reading
+- [Jekyll Build Command Options](https://jekyllrb.com/docs/configuration/#build-command-options)

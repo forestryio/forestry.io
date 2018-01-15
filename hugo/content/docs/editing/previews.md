@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/site-configuration/previewing
 title: Previews
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000

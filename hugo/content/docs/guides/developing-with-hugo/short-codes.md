@@ -1,11 +1,10 @@
 ---
+aliases:
+- /docs/developing-with-hugo/short-codes/
 date: 2013-07-24 00:00:00 +0000
 description: What Hugo short codes are and how they work
-related:
-- title: "“Hugo Short Code Reference”"
-  url: https://gohugo.io/extras/shortcodes/
 tags: ''
-title: Hugo Short Codes
+title: Hugo Shortcodes
 menu:
   guides:
     parent: hugo
@@ -34,3 +33,6 @@ For a full list of these short codes and how to use them, see the references bel
 
 ## Custom Short Codes
 Hugo also allows you to build your own short codes. See the Hugo short code documentation in the references below.
+
+## Further Reading
+- [Hugo Short Code Reference](https://gohugo.io/extras/shortcodes/)

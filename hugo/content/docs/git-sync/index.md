@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/faq/github-organization-access/
 title: GitHub
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000

@@ -1,7 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/templating/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related: []
 tags: ''
 title: Templating
 menu:

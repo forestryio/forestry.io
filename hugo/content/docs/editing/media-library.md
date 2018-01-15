@@ -1,6 +1,8 @@
 ---
 aliases:
 - /docs/managing-content/media-management/
+- /docs/site-configuration/media-uploads/
+- /docs/faq/where-do-uploaded-images-get-saved/
 title: Media Library
 weight: 6
 publishdate: 2017-12-31 04:00:00 +0000

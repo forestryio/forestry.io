@@ -1,11 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/misc/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: Jekyll Plugins Reference
-  url: https://jekyllrb.com/docs/plugins/
-- title: Forestry’s Jekyll Menu Plugin
-  url: https://github.com/forestryio/jekyll-menus
 tags: ''
 title: Misc
 menu:
@@ -19,5 +16,8 @@ Jekyll has no built-in support for Sitemaps or Feeds, but there are a multitude 
 
 ## Menus
 Jekyll does not have built-in support for menus. Forestry has built a [Jekyll menus][1] plugin that integrates with the Menu Manager of the CMS.
+
+## Further Reading
+- [Jekyll Plugins Reference](https://jekyllrb.com/docs/plugins/)
 
 [1]:	https://github.com/forestryio/jekyll-menus

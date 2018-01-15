@@ -1,11 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/plugins
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: Jekyll Plugins Reference
-  url: https://jekyllrb.com/docs/plugins/
-- title: Bundler Gemfile Reference
-  url: http://bundler.io/v1.13/gemfile.html
 tags: ''
 title: Jekyll Plugins
 menu:
@@ -40,3 +37,7 @@ Installation generally has three steps:
 		$ bundle exec jekyll serve
 
 **Note:** depending on the plugin, additional configuration may be required. Please read each plugin’s documentation carefully.
+
+## Further Reading
+- [Jekyll Plugins Reference](https://jekyllrb.com/docs/plugins/)
+- [Bundler Gemfile Reference](http://bundler.io/v1.13/gemfile.html)

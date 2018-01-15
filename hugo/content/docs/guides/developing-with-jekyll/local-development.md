@@ -1,11 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-jekyll/local-development/
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
-- title: "“Jekyll Usage Guide”"
-  url: https://jekyllrb.com/docs/usage/
-- title: "“Using Jekyll with GitHub Pages”"
-  url: https://help.github.com/articles/using-jekyll-with-pages/
 tags: ''
 title: Local Development
 menu:
@@ -57,6 +54,9 @@ This will spin up a local development server with live reload at the port `4000`
 
 ## Deployment
 For information on how to handle deployment of your site to your production or staging environment, see our [Deployment doc][3]
+
+## Further Reading
+- [Jekyll Usage Guide](https://jekyllrb.com/docs/usage/)
 
 [1]:	https://www.ruby-lang.org/en/documentation/installation/
 [2]:	https://app.forestry.io/dashboard

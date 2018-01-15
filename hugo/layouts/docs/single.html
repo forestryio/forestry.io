@@ -1,4 +1,5 @@
 {{- define "main" -}}
+{{- $currentSection := (replace (index (findRE "([\\w]+)\\/\\z" (.CurrentSection.File.Dir) 1) 0) "/" "") -}}
   <main class="docs-container">
     <div class="sidebar">
       <aside class="sidebar-inner">

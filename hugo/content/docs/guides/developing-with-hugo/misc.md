@@ -1,13 +1,8 @@
 ---
+aliases:
+- /docs/developing-with-hugo/misc/
 date: 2013-07-24 00:00:00 +0000
 description: Other things you can do with Hugo
-related:
-- title: "“Hugo Sitemap Reference”"
-  url: https://gohugo.io/templates/sitemap/
-- title: "“Hugo RSS Reference”"
-  url: https://gohugo.io/templates/rss/
-- title: "“Hugo Output Format Reference”"
-  url: https://gohugo.io/extras/output-formats/
 tags: ''
 title: Misc
 menu:
@@ -51,5 +46,10 @@ In order to include RSS feeds, you must include it in the `<head>` of your pages
 	{{ end }}
 
 If you wish to create Atom Feeds or other types of documents, please see the Hugo documentation on [Output Formats][1].
+
+## Further Reading
+- [Hugo Sitemap Reference](https://gohugo.io/templates/sitemap/)
+- [Hugo RSS Reference](https://gohugo.io/templates/rss/)
+- [Hugo Output Format Reference](https://gohugo.io/extras/output-formats/)
 
 [1]:	https://gohugo.io/extras/output-formats/
