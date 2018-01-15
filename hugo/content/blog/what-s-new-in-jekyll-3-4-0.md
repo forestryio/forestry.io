@@ -4,7 +4,7 @@ aliases:
 authors:
 - colin-garvey
 images:
-- "/uploads/2017/12/31/jekyll-3.4.0-1.png"
+- "/uploads/2017/12/jekyll-3.4.0-1.png"
 publishdate: 2017-02-20 14:06:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: Jekyll 3.4.0 was released last month with some noteworthy enhancements that

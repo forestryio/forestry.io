@@ -52,7 +52,7 @@ Backups of sites imported with a zip archive are available by request, and will 
 You can request a backup of your site from the Forestry Dashboard.
 
 1. Head over to the [Forestry Dashboard](https://app.forestry.io/dashboard)  
-   ![](/uploads/2017/12/31/s_8C4CED3D75504D28509A2D9F1536E2FD4FD296FEF40B8A1D45994577317FAA20_1507829464198_Screen+Shot+2017-10-12+at+1.12.42+PM.png)
+   ![](/uploads/2017/12/s_8C4CED3D75504D28509A2D9F1536E2FD4FD296FEF40B8A1D45994577317FAA20_1507829464198_Screen+Shot+2017-10-12+at+1.12.42+PM.png)
 2. Click the … icon to the right of the site
 3. From the menu, choose “Download”
 4. The backup of your site will then begin downloading.  

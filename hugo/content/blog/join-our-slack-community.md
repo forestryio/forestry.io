@@ -9,7 +9,7 @@ authors:
 excerpt: Chat with the Forestry.io community about static sites, best-practices, features,
   and more
 images:
-- "/uploads/2017/12/31/slack.png"
+- "/uploads/2017/12/slack.png"
 categories:
 - company
 date: 2017-10-21 00:41:00 +1400

@@ -7,7 +7,7 @@ title: Introducing Forestry Config Files
 publishdate: 2017-08-30 16:09:44 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 images:
-- "/uploads/2017/12/31/introducing-config-files.jpg"
+- "/uploads/2017/12/introducing-config-files.jpg"
 excerpt: "Configure Settings and Front Matter Templates from your repo \U0001F389"
 categories:
 - CMS
@@ -28,7 +28,7 @@ Config Files will be available to ***all users*** starting immediately!
 
 <span style="font-size: 1rem;">It works as a bi-directional sync between Forestry’s CMS, and your projects Git repository. Changes you push to Git are imported and updated in Forestry, and changes you make in Forestry are committed back to Git.</span>
 
-<img src="/uploads/2017/12/31/2017-08-31%2012_31_44.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/2017-08-31%2012_31_44.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 This empowers developers to bundle themes, starter sites, and production-ready projects with ready-to-use site configuration and user interface customization.
 

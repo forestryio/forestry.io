@@ -4,8 +4,8 @@ aliases:
 authors:
 - scott-gallant
 images:
-- "/uploads/2017/12/31/code-bg-image-1-3.jpg"
-- "/uploads/2017/12/31/help-text-1.png"
+- "/uploads/2017/12/code-bg-image-1-3.jpg"
+- "/uploads/2017/12/help-text-1.png"
 publishdate: 2017-02-13 15:47:46 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: The foundation for a hackable CMS
@@ -43,7 +43,7 @@ The following page makes use of a variety of front matter:
 
 <span class="image-wrapper media-wrapper" contenteditable="false"></span>
 
-<img src="/uploads/2017/12/31/front-matter-templates-1.jpg" alt="Forestry front matter demo" class="wider-than-text">
+<img src="/uploads/2017/12/front-matter-templates-1.jpg" alt="Forestry front matter demo" class="wider-than-text">
 
 ```
 ---
@@ -53,14 +53,14 @@ order: 5
 banner: /images/mars.jpg
 bio: Astronomy compels the soul to look upward...
 images:
-- "/uploads/2017/12/31/rover2.png"
-- "/uploads/2017/12/31/earth.jpg"
-- "/uploads/2017/12/31/rocket.jpg"
-- "/uploads/2017/12/31/aurora.jpg"
-- "/uploads/2017/12/31/nebula.jpg"
-- "/uploads/2017/12/31/rover.jpg"
-- "/uploads/2017/12/31/galaxy.jpg"
-- "/uploads/2017/12/31/rover3.png"
+- "/uploads/2017/12/rover2.png"
+- "/uploads/2017/12/earth.jpg"
+- "/uploads/2017/12/rocket.jpg"
+- "/uploads/2017/12/aurora.jpg"
+- "/uploads/2017/12/nebula.jpg"
+- "/uploads/2017/12/rover.jpg"
+- "/uploads/2017/12/galaxy.jpg"
+- "/uploads/2017/12/rover3.png"
 email: astronomy@gmail.com
 phone: (555) 555-5555
 permalink: /astronomy/
@@ -75,29 +75,29 @@ With Front Matter Templates, you can do things like:
 
 ### Hide fields from your editors
 
-![/blog/images/hidden-field-3.gif](/uploads/2017/12/31/hidden-field-3.gif)
+![/blog/images/hidden-field-3.gif](/uploads/2017/12/hidden-field-3.gif)
 
 ### Change the field type in the UI
 
 For example, change type from a list of tags to an image gallery. [See full list of available fields](https://forestry.io/docs/setting-up-a-site/front-matter-templates/#field-types).
 
-![change field type](/uploads/2017/12/31/field-type-1.gif)
+![change field type](/uploads/2017/12/field-type-1.gif)
 
 ### Required fields
 
-![set field as required](/uploads/2017/12/31/required.gif)
+![set field as required](/uploads/2017/12/required.gif)
 
 ### Reorder the fields in the UI
 
-![reorder front matter fields](/uploads/2017/12/31/reorder-fields-1.gif)
+![reorder front matter fields](/uploads/2017/12/reorder-fields-1.gif)
 
 ### Add help text
 
-![add help text to front matter fields](/uploads/2017/12/31/help-text.png)
+![add help text to front matter fields](/uploads/2017/12/help-text.png)
 
 ### Set default values and much more.
 
-![set a default value](/uploads/2017/12/31/default-values.png)
+![set a default value](/uploads/2017/12/default-values.png)
 
 ## What's Next?
 
@@ -105,13 +105,13 @@ This is just the beginning. Soon we'll be adding more field types and more custo
 
 ### Coming soon: image resizing and cropping
 
-![/blog/images/image-upload-4.gif](/uploads/2017/12/31/image-upload-4.gif)
+![/blog/images/image-upload-4.gif](/uploads/2017/12/image-upload-4.gif)
 
 ### Coming soon: advanced UI fields
 
 Like color pickers, google map location picker, etc.
 
-![/blog/images/color-picker-forestry.png](/uploads/2017/12/31/color-picker-forestry.png)
+![/blog/images/color-picker-forestry.png](/uploads/2017/12/color-picker-forestry.png)
 
 ### Coming soon: related fields
 

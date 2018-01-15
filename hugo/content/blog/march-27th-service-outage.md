@@ -4,7 +4,7 @@ aliases:
 authors:
 - scott-gallant
 images:
-- "/uploads/2017/12/31/forestry-outage-2.png"
+- "/uploads/2017/12/forestry-outage-2.png"
 publishdate: 2017-03-27 21:25:39 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: A post mortem on the Forestry service outage

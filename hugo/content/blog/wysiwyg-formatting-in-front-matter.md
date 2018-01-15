@@ -7,7 +7,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/31/WYSIWYG-formatting-in-front-matter.png"
+- "/uploads/2017/12/WYSIWYG-formatting-in-front-matter.png"
 excerpt: We've added the ability to add inline formatting to textarea fields
 categories:
 - CMS
@@ -18,13 +18,13 @@ This week we’ve got a small, but very useful update we're excited to share wit
 
 ## WYSIWYG Formatting in Textareas
 
-<img src="/uploads/2017/12/31/WYSIWYG-preview.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/WYSIWYG-preview.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 Our textarea Front Matter field has been upgraded to allow for WYSIWYG input. Enjoy being able to add bold, italic, underline, and code formatting.
 
 ## Enable WYSIWYG for Textareas
 
-<img src="/uploads/2017/12/31/WYSIWYG-config.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/WYSIWYG-config.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 You can enable the WYSIWYG features by enabling the “WYSIWYG” toggle on any textarea Front Matter field.
 

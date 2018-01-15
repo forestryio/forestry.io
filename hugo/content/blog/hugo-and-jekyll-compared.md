@@ -2,7 +2,7 @@
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/31/hugo-jekyll-compared-1.png"
+- "/uploads/2017/12/hugo-jekyll-compared-1.png"
 publishdate: 2017-07-21 08:19:09 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: When it comes to building static sites, the two leading solutions right now

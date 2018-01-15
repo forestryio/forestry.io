@@ -4,7 +4,7 @@ aliases:
 authors:
 - scott-gallant
 images:
-- "/uploads/2017/12/31/techstars.jpg"
+- "/uploads/2017/12/techstars.jpg"
 publishdate: 2016-07-06 19:03:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 description: We're super excited to take part in Techstars NYC summer 2016!
@@ -24,5 +24,5 @@ What this means for Forestry and our users:
 
 We'll we're off to New York.
 
-![](/uploads/2017/12/31/Forestry.io-in-NY.jpg)
+![](/uploads/2017/12/Forestry.io-in-NY.jpg)
 (The flight attendand gave us his selfie stick for this photo)

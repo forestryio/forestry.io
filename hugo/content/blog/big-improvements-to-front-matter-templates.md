@@ -4,7 +4,7 @@ aliases:
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/31/big-improvements-to-front-matter-templates.png"
+- "/uploads/2017/12/big-improvements-to-front-matter-templates.png"
 publishDate: 2017-07-10 13:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: Create the perfect CMS for your needs using Front Matter Templates
@@ -20,7 +20,7 @@ Front Matter Templates allow you to customize the UI of your front matter fields
 
 ## Improved Editing Experience
 
-<img src="/uploads/2017/12/31/fmt-preview.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/fmt-preview.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 Forestry's Front Matter Template editor is now two-paned. A preview of your fields is on the left, giving you a realistic preview of how they will appear when editing content.
 
@@ -28,7 +28,7 @@ Your field types are on the right. They’re now iconized, making them much easi
 
 ## Live Template Preview
 
-<img src="/uploads/2017/12/31/fmt-updates-preview.gif" draggable="true" data-bukket-ext-bukket-draggable="true" class=" forestry--none" style="float: none;">
+<img src="/uploads/2017/12/fmt-updates-preview.gif" draggable="true" data-bukket-ext-bukket-draggable="true" class=" forestry--none" style="float: none;">
 
 When editing a field, the preview of the field will update live as you make changes. This means you’ll never question your set up again. You’ll see exactly what your final template will look like as you set it up.
 

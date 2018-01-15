@@ -7,7 +7,7 @@ title: Announcing Layout Improvements
 publishdate: 2017-06-14 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 images:
-- "/uploads/2017/12/31/layout-improvements.png"
+- "/uploads/2017/12/layout-improvements.png"
 excerpt: We’ve got 3 updates to share with you that will make using Forestry much
   more enjoyable.
 categories:
@@ -24,13 +24,13 @@ We've built a new editor that makes editing your content much easier and so much
 
 ## Improved Front Matter & Front Matter Group Fields
 
-<img src="/uploads/2017/12/31/field-groups.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/field-groups.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 We've drastically improved the field group and field group list Front Matter Fields with improved UI and editing flow as well as better form validation. This allows you to create complex front matter configurations and have an editing experience that is second-to-none.
 
 ## Toggle the WYSIWYG/Markdown Editor On Or Off
 
-<img src="/uploads/2017/12/31/hide-body.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/hide-body.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 Do you have a page template that only utilizes markdown fields? We did! That’s why we've added the option to toggle the WYSIWYG/Markdown editor on or off in Front Matter Templates.
 

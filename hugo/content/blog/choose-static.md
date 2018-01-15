@@ -4,7 +4,7 @@ aliases:
 authors:
 - michael-soolee
 images:
-- "/uploads/2017/12/31/code-bg-image-1.jpg"
+- "/uploads/2017/12/code-bg-image-1.jpg"
 publishdate: 2016-08-02 01:06:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: |
@@ -43,7 +43,7 @@ Let me list a few of the benefits that has me hooked on static-site generators:
 Are you saying, hey that sounds awesome! Sign me up? Well before you jump the gun and hail static-site generators as your go-to content management solution, let me share some of the roadblocks for static-site generators and afterwards share how these roadblocks are quickly fading with a happy ending.
 
 
-<img src="/uploads/2017/12/31/s_014709C68DCDF8BD80F107957FB4E50CA386A18CEB650506B2E665212EA1F89F_1471055146622_save-draft-publish.gif" class="right small">- **Friction to produce content.** As awesome as static-site generators are, there is friction to creating content. On a traditional publishing platform, you log in, click a few buttons and you're presented with a text box to write your content and publish.
+<img src="/uploads/2017/12/s_014709C68DCDF8BD80F107957FB4E50CA386A18CEB650506B2E665212EA1F89F_1471055146622_save-draft-publish.gif" class="right small">- **Friction to produce content.** As awesome as static-site generators are, there is friction to creating content. On a traditional publishing platform, you log in, click a few buttons and you're presented with a text box to write your content and publish.
 
   With static-site generators, you have to create a file that will be used for your page or blog post, after writing your content, you'll have to build the entire website, then push up your site to your host. If you're versioning your site — you are versioning your site right? — that adds a few more steps; you have to commit your post, push it to the repo and then have your host server build your site.
 
@@ -72,7 +72,7 @@ First you gain the benefits I listed above (here's the link to the list if you n
 
 - **Oh so sexy.** Let the screenshot below do the talking here. Just eye-candy. Want more? Take [Forestry](https://forestry.io) for a test drive.
 
-![](/uploads/2017/12/31/screenshot-white-matt.jpg)
+![](/uploads/2017/12/screenshot-white-matt.jpg)
 
 
 So the next time you're faced with setting up a website or a blog and you don't want to go with the traditional CMS options. You can finally choose the much better technology choice of going with a static-site generator for you, but choose a user-friendly **and** sexy CMS for your content producers with [Forestry.io](https://forestry.io).

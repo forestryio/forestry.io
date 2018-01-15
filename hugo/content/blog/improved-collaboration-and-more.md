@@ -7,7 +7,7 @@ title: Improved Collaboration & More
 publishdate: 2017-06-20 19:30:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 images:
-- "/uploads/2017/12/31/better-collaboration-and-more.png"
+- "/uploads/2017/12/better-collaboration-and-more.png"
 excerpt: Introducing two new features that make collaboration easier!
 categories:
 - CMS
@@ -16,7 +16,7 @@ date: 2017-06-20 16:30:00 -0300
 ---
 ## Document Locking & Collaboration
 
-<img src="/uploads/2017/12/31/forestry_locked-1.png" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/forestry_locked-1.png" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 To prevent accidental overwrites and the tango of content editing, we’ve added in a locking feature to your content and data files. If you attempt to edit a page another user is editing, you’ll get a notification.
 
@@ -26,7 +26,7 @@ This way your whole team can actively work to make a document the best it can be
 
 ## Deploy Remote Admin
 
-<img src="/uploads/2017/12/31/deploy-admin.png" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/deploy-admin.png" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 We found that deploying the remote admin wasn’t as straightforward as it should be, so we’ve added the ability to deploy the remote admin with a single-click.
 

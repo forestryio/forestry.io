@@ -4,7 +4,7 @@ aliases:
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/31/bigger-better-editor-1.png"
+- "/uploads/2017/12/bigger-better-editor-1.png"
 excerpt: Find out why this is the best editor for Hugo & Jekyll sites we've ever built.
 publishDate: 2017-05-30 14:01:35 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -18,7 +18,7 @@ For the past few weeks, Nichlas and Nolan have been hard at work on the Forestry
 
 ### 1. Improved Two-Pane Interface
 
-<img src="/uploads/2017/12/31/Kapture-2017-05-30-at-16.48.48_800.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/Kapture-2017-05-30-at-16.48.48_800.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 Most content management systems have a single column editor with all of your page management tools beside it. Inside of an extremely long column are all of your page fields and your page content. We don’t feel that this does the job well, especially for static sites that can have tons of front matter fields.
 
@@ -28,7 +28,7 @@ This lets you keep all of your content top of mind. This allows you to complete 
 
 ### 2. Fully-Featured & Focused Mobile Editor
 
-<img src="/uploads/2017/12/31/Kapture%202017-05-30%20at%2017.54.09.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/Kapture%202017-05-30%20at%2017.54.09.gif" draggable="true" data-bukket-ext-bukket-draggable="true">
 
 Editing content on-the-go is something we always say we want to do, but we never do it because editing content on mobile usually sucks. We wanted to change that.
 
@@ -46,8 +46,8 @@ This means you have to think less about how to manage your content and can focus
 
 ## Improved Navigation Everywhere
 <div class="cf">
-<img src="/uploads/2017/12/31/Kapture%202017-05-30%20at%2017.03.02.gif" class="fl w-50-ns" draggable="true" data-bukket-ext-bukket-draggable="true">
-<img src="/uploads/2017/12/31/Kapture%202017-05-30%20at%2017.17.11.gif" class="fl w-50-ns" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/Kapture%202017-05-30%20at%2017.03.02.gif" class="fl w-50-ns" draggable="true" data-bukket-ext-bukket-draggable="true">
+<img src="/uploads/2017/12/Kapture%202017-05-30%20at%2017.17.11.gif" class="fl w-50-ns" draggable="true" data-bukket-ext-bukket-draggable="true">
 </div>
 
 We took what we learned from building our bigger, better editor and applied it to the rest of Forestry CMS.
