@@ -1,6 +1,4 @@
 ---
-pages:
-- _index.md
 hide_body: true
 fields:
 - type: text
