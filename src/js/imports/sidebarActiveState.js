@@ -17,7 +17,9 @@ gumshoe.init({
 var scrollPane = document.querySelector(".sidebar-inner")
 var activeSidebar = document.querySelector(".sidebar a.active")
 
-scrollToElement(scrollPane, activeSidebar)
+if (activeSidebar) {
+  scrollToElement(scrollPane, activeSidebar)
+}
 
 /**
  * Scrolls to the child node inside of an overflow parent
