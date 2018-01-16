@@ -35,15 +35,16 @@ If you don't have an existing Hugo or Jekyll project, check out our [product tou
 
 ![](/uploads/2018/01/import-site.png)
 
-Choose your static site generator ([Jekyll](http://jekyllrb.com/) or [Hugo](http://gohugo.io/)) then choose your Git Provider 
+Choose your static site generator ([Jekyll](http://jekyllrb.com/) or [Hugo](http://gohugo.io/)), your Git Provider (GitHub,  GitLab or Bitbucket) and whether or not you want to access public or private repositories.
 
 ![](/uploads/2018/01/public-private-repositories.png)
 
-
-{{% warning " " %}}
+{{% warning "GitHub Permissions" %}}  
 In order to import a site from GitHub, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
 {{% /warning %}}
 
-{{% tip "Hugo Version" %}}
-For Hugo users, if you don't know what version you're running locally just run `hugo version` from your command line.
-{{% /tip %}}
+Choose the repository and branch that you wish to sync. Forestry will commit back to this branch when your editors update content in the CMS. 
+
+![](/uploads/2018/01/forestry-io-choose-repository.png){{% warning "Project in Sub Folder" %}}  
+If your Jekyll or Hugo config file cannot be found in the root of your project, Forestry will ask you to provide the path to it.   
+{{% /warning %}}
