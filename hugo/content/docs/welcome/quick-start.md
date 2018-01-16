@@ -16,13 +16,14 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 2
 aliases: []
 menu:
   docs:
     parent: welcome
+    weight: 2
 draft: true
-weight: 2
+
 ---
 This guide will walk you through importing your Hugo or Jekyll project into Forestry and getting setup in 15 minutes!
 
@@ -30,11 +31,13 @@ If you don't have an existing Hugo or Jekyll project, check out our [product tou
 
 ## Getting Started
 
-[Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).  
+[Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
 ![](/uploads/2018/01/import-site.png)
 
 Choose your static site generator,
+
+![](/uploads/2018/01/public-private-repositories.png)
 
 {{% tip "Hugo Version" %}}
 For Hugo users, if you don't know what version you're running locally just run `hugo version` from your command line.

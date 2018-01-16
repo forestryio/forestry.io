@@ -1,6 +1,7 @@
 ---
 pages:
 - terms.md
+- blog/wysiwyg-formatting-in-front-matter.md
 - blog/introducing-media-management.md
 - blog/big-improvements-to-front-matter-templates.md
 - blog/forestryio-techstars-2016.md
@@ -9,7 +10,6 @@ pages:
 - blog/layout-improvements.md
 - blog/introducing-forestry-config-files.md
 - blog/join-our-slack-community.md
-- blog/wysiwyg-formatting-in-front-matter.md
 - blog/hugo-vs-jekyll-benchmark.md
 - blog/a-hugo-update-everyone-should-be-talking-about.md
 - blog/bigger-better-editor.md
@@ -23,7 +23,6 @@ pages:
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/why-we-built-forestry.md
 - docs/welcome/index.md
-- docs/welcome/getting-started.md
 - docs/troubleshooting/css-js-and-media-not-working.md
 - docs/git-sync/index.md
 - docs/troubleshooting/cant-publish-preview-or-save.md
