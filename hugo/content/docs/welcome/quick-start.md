@@ -35,9 +35,14 @@ If you don't have an existing Hugo or Jekyll project, check out our [product tou
 
 ![](/uploads/2018/01/import-site.png)
 
-Choose your static site generator,
+Choose your static site generator ([Jekyll](http://jekyllrb.com/) or [Hugo](http://gohugo.io/)) then choose your Git Provider 
 
 ![](/uploads/2018/01/public-private-repositories.png)
+
+
+{{% warning " " %}}
+In order to import a site from GitHub, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
+{{% /warning %}}
 
 {{% tip "Hugo Version" %}}
 For Hugo users, if you don't know what version you're running locally just run `hugo version` from your command line.
