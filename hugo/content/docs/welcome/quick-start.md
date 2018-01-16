@@ -45,5 +45,7 @@ Choose your repository and branch. Forestry will automatically build a CMS from 
 ![](/uploads/2018/01/forestry-io-choose-repository.png)
 
 {{% warning "Config file in sub Folder" %}}  
-If your Jekyll or Hugo config file cannot be found in your project root, Forestry will ask you to provide the path to it.   
+If your Jekyll or Hugo config file cannot be found in your project root, Forestry will ask you to provide the path to it.  
 {{% /warning %}}
+
+![](/uploads/2018/01/forestry-io-deployment-setup.png)
