@@ -24,12 +24,18 @@ menu:
 draft: true
 weight: 2
 ---
-{{% tip disclaimer %}}  
-Forestry is a CMS for sites using [static site generators](/docs/faqs/glossary/static-site-generators/) and [Git](https://git-scm.com/ "Git Website"). If you're not familiar with these topics, take our [product tour](/docs/welcome/tour/) to learn more!  
-{{% /tip %}}
+This guide will walk you through importing your Hugo or Jekyll project into Forestry and getting setup in 15 minutes!
 
-This guide will walk you through importing your Hugo or Jekyll project into Forestry and getting setup in 30 minutes or less! If you don't have an existing Hugo or Jekyll project, check out our [Static From Scratch guide](/docs/guides/static-from-scratch).
+If you don't have an existing Hugo or Jekyll project, check out our [product tour](/docs/welcome/tour/) to see a demo project or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch).
 
 ## Getting Started
 
-import etcetctect
+[Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).  
+
+![](/uploads/2018/01/import-site.png)
+
+Choose your static site generator,
+
+{{% tip "Hugo Version" %}}
+For Hugo users, if you don't know what version you're running locally just run `hugo version` from your command line.
+{{% /tip %}}

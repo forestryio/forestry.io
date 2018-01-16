@@ -24,7 +24,6 @@ weight: 2
 aliases: []
 
 ---
-![](/uploads/2018/01/import-site.png)
 
 {{% error disclaimer %}}  
 Forestry powers [static sites](/docs/faqs/glossary/static-sites/) generated using [static site generators](/docs/faqs/glossary/static-site-generators/) and manages them using [Git](https://git-scm.com/ "Git Website"). If you're not familiar with these topics, this is a great opportunity to learn!  
