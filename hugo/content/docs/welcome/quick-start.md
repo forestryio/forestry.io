@@ -14,7 +14,7 @@ This guide will walk you through importing your Hugo or Jekyll project into Fore
 
 If you don't have an existing Hugo or Jekyll project, check out our [product tour](/docs/welcome/tour/) to see a demo project or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch).
 
-## Getting Started
+## Import Site from Repo
 
 [Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
@@ -33,4 +33,33 @@ Choose your repository and branch. Forestry will automatically build a CMS from 
 If your Jekyll or Hugo config file cannot be found in your project root, Forestry will ask you to provide the path to it.  
 {{% /warning %}}
 
+
+### Setup Deployment (optional)
+The final step is to tell Forestry where to deploy your site when your editors save changes. For now, we'll just configure Forestry to commit all changes back to our repo.
+
+
 ![](/uploads/2018/01/forestry-io-deployment-setup.png)
+
+Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
+
+Now your CMS is sync'd with your project repo and your editing team can start making commits.
+
+## CMS Overview
+
+## Editing content
+
+### Save changes
+
+## Configure the CMS
+
+### Images
+
+### FMTs
+
+### Hide body
+
+## Remote Admin
+
+## Invite Collaborators
+
+## Configure Deployment
