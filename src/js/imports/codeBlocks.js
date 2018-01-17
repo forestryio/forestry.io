@@ -1,4 +1,3 @@
-import hljs from "highlight.js"
 import Clipboard from "clipboard"
 
 export default class CodeBlock {
@@ -32,33 +31,17 @@ export default class CodeBlock {
 
   setupHighlighting(cb) {
     const elements = document.querySelectorAll(this.options.highlightTargets)
-    const workerFunction = new Blob(
-      ["(" + highlight_worker_function.toString() + ")()"],
-      {type: "text/javascript"}
-    )
-    const localWorkerURL = URL.createObjectURL(workerFunction)
 
-    function highlight_worker_function() {
-      onmessage = function(event) {
-        importScripts(
-          "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"
-        )
-        self.hljs.configure(this.hljsOptions)
-        var result = self.hljs.highlightAuto(event.data)
-        postMessage(result.value)
-        close()
-      }
-    }
-
-    elements.forEach(element => {
-      const worker = new Worker(localWorkerURL)
+    elements.forEach((element) => {
+      const worker = new Worker("/js/hljs.worker.min.js")
       const contents = element.textContent || element.innerText
 
-      worker.onmessage = event => {
+      worker.onmessage = (event) => {
         element.innerHTML = event.data
         element.classList.add("hljs")
       }
-      worker.postMessage(contents)
+
+      worker.postMessage(element.textContent || element.innerText)
     })
 
     cb()
@@ -67,7 +50,7 @@ export default class CodeBlock {
   setupCopy() {
     const elements = document.querySelectorAll(this.options.copyTargets)
 
-    elements.forEach(element => {
+    elements.forEach((element) => {
       const contents = element.textContent || element.innerText
       const copyButton = document.createElement("span")
       copyButton.classList.add(...this.options.copyClass)
@@ -76,7 +59,7 @@ export default class CodeBlock {
       const clipboard = new Clipboard(copyButton)
       const newElement = this.addElement(element, copyButton)
 
-      clipboard.on("success", e => {
+      clipboard.on("success", (e) => {
         e.trigger.innerHTML = this.options.copySuccessText
         e.clearSelection()
 

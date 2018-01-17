@@ -1,6 +1,6 @@
 ---
 title: Config Files
-weight: 2
+weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
@@ -11,7 +11,7 @@ layout: single
 ---
 Forestry stores the settings and configuration of the CMS for each site in a `.forestrio/` folder in your site’s source code. This allows developers to create default configurations that can be shared between multiple sites, and to deliver source code with Forestry CMS pre-configured.
 
-When importing a new site, a `.forestry/` folder will be added to your site’s source. Any changes made to your CMS’ configuration will be committed to your site’s sourcein this folder.
+When importing a new site, a `.forestry/` folder will be added to your site’s source. Any changes made to your CMS’ configuration will be committed to your site’s source in this folder.
 
 ## Site Settings
 Your site settings are configured from `.forestry/settings.yml`.
@@ -74,7 +74,7 @@ Allows you to configure if publishing should be trigged when a commit is made to
 
 ---
 
-**Webhook URL** `webhook_url` `string`
+**Web Hook URL** `webhook_url` `string`
 
 Allows you to provide a [web hook](/site-configuration/web-hooks/) to be trigged when events occur in Forestry.
 

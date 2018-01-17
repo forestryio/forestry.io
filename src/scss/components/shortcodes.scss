@@ -3,7 +3,7 @@
 .shortcode-error,
 .shortcode-disclaimer {
   background: $color-grey;
-  margin-top: 1.5rem;
+  margin: 1rem 0;
   padding: 1rem 1rem 1rem 2rem;
   position: relative;
 
@@ -32,6 +32,16 @@
   }
   & + p:empty {
     margin-bottom: -2rem;
+  }
+
+  /* Fix for heading spacer */
+  + h1,
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6 {
+    padding-top: 1rem;
   }
 
   &:before {
