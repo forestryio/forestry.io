@@ -11,7 +11,7 @@ menu:
 ## Text
 TK: image
 
-Single line text input. Displayed for *Front Matter value*s that are short strings. For example, a page title.
+Single line text input. Displayed for *Front Matter values* that are short strings. For example, a page title.
 
 ```yaml
 ---
@@ -26,7 +26,7 @@ title: "My New Page Title!"
 ## Textarea
 TK: image
 
-Multi-line text input. Displayed for *Front Matter value*s that are long strings. For example, a page description.
+Multi-line text input. Displayed for *Front Matter values* that are long strings. For example, a page description.
 
 ```
 ---
@@ -41,7 +41,7 @@ description: "Write an awesome description for your new site here. It will appea
 ## Number
 TK: image
 
-A stepped number input. Displayed for *Front Matter value*s that are integers. For example, page weight.
+A stepped number input. Displayed for *Front Matter values* that are integers. For example, page weight.
 
 ```yaml
 ---
@@ -56,7 +56,7 @@ weight: 1
 ## Toggle
 TK: image
 
-True or false toggle. Displayed for *Front Matter value*s that are booleans. For example, a feature toggle.
+True or false toggle. Displayed for *Front Matter values* that are booleans. For example, a feature toggle.
 
 ```yaml
 ---
@@ -71,7 +71,7 @@ show_feature: true
 ## Select
 TK: image
 
-Multiple options displayed in a dropdown. Can be used for *Front Matter value*s that are strings, but should be restricted to a set of options. Options can be sourced from existing content, data files, or manually provided. For example, a page's author.
+Multiple options displayed in a dropdown. Can be used for *Front Matter values* that are strings, but should be restricted to a set of options. Options can be sourced from existing content, data files, or manually provided. For example, a page's author.
 
 ```yaml
 ---
@@ -86,7 +86,7 @@ author: "scott-gallant"
 ## Datetime
 TK: image
 
-Date and time picker. Used for *Front Matter value*s that are valid date strings. Can be restricted to only date or time values. For example, page created date or page publish date.
+Date and time picker. Used for *Front Matter values* that are valid date strings. Can be restricted to only date or time values. For example, page created date or page publish date.
 
 ```yaml
 ---
@@ -102,7 +102,7 @@ publish_date: 2018-01-07T12:00:00+00:00
 ## Tags Field
 TK: image
 
-A list of options displayed as tags. Used for *Front Matter value*s that are an array of strings. For example, page tags.
+A list of options displayed as tags. Used for *Front Matter values* that are an array of strings. For example, page tags.
 
 ```yaml
 ---
@@ -120,7 +120,7 @@ tags:
 ## Sortable List Field
 TK: image
 
-A list of options displayed in a list. Used for *Front Matter value*s that are an array of strings. Can be configured to restrict options in a dropdown. For example, page authors or related pages.
+A list of options displayed in a list. Used for *Front Matter values* that are an array of strings. Can be configured to restrict options in a dropdown. For example, page authors or related pages.
 
 ```yaml
 ---
@@ -137,7 +137,7 @@ authors:
 ## File Upload
 TK: image
 
-File upload input that adds uploads to the *[Media Library](/docs/editing/media-library/)*. Used for *Front Matter value*s that are a string ending with a file extension. For example, a featured image.
+File upload input that adds uploads to the *[Media Library](/docs/editing/media-library/)*. Used for *Front Matter values* that are a string ending with a file extension. For example, a featured image.
 
 ```yaml
 ---
@@ -154,7 +154,7 @@ extra_script: "/js/extra_script.js"
 ## Multi-File Upload
 TK: image
 
-Gallery of media files. Used for *Front Matter value*s that are an array of strings ending with a file extension. For example, an image carousel.
+Gallery of media files. Used for *Front Matter values* that are an array of strings ending with a file extension. For example, an image carousel.
 
 ```yaml
 ---
@@ -178,7 +178,7 @@ extra_scripts:
 ## Field Group
 TK: image
 
-Group of *Front Matter Fields*. Used for *Front Matter value*s that are an object. For example, your site's footer information.
+Group of *Front Matter Fields*. Used for *Front Matter values* that are an object. For example, your site's footer information.
 
 ```yaml
 ---
@@ -196,7 +196,7 @@ footer:
 ## Repeatable Field Group
 TK: image
 
-List of Field Groups. Used for *Front Matter value*s that are an array of like-objects. For example, a list of authors.
+List of Field Groups. Used for *Front Matter values* that are an array of like-objects. For example, a list of authors.
 
 ```yaml
 ---

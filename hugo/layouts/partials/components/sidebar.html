@@ -33,10 +33,10 @@
       {{- range first 1 (findRE "<h[2]" $header 1) -}}
         {{- range findRE "[2]" . 1 -}}
           {{- $level := (int .) -}}
-          {{- $anchorId := (replace ($header | plainify | htmlEscape | urlize | safeURL) "." "-") -}}
+          {{- $anchorId := (replace (replace (replace ($header | htmlUnescape | plainify | urlize | safeURL) "." "-") "--" "-") "/" "-") -}}
           {{- $href := printf "%s%s%s" $page.Permalink "#" $anchorId | string -}}
             <li class="level-{{ $level }}">
-              <a href="{{ $href | relURL }}">{{ $header | plainify | htmlEscape }}</a>
+              <a href="{{ $href }}">{{ $header | plainify | htmlUnescape | safeHTML }}</a>
             </li>
         {{- end -}}
       {{- end -}}

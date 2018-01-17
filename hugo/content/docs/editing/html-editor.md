@@ -33,5 +33,8 @@ The HTML editor fully supports creating draft content -- content that is not yet
 
 This can be changed by clicking the more options icon (`...`), and clicking "Set as draft"/"Set as published".
 
+## New File Format
+Forestry can be [configured to create all new content](/docs/settings/#new-file-format) using the HTML editor.
+
 ## Front Matter Templates
 The left-hand side of the HTML editor is your document's front matter. Forestry provides a powerful templating system for front matter, called [Front Matter Templates](/docs/front-matter-templates/).

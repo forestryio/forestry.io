@@ -52,7 +52,7 @@ TK: image
 
 If Forestry can't locate your site's config file inside of the root of your project, you'll be prompted to provide the directory it is located in.
 
-Lastly, tell us what your site should be named inside of Forestry, as well as an optionally provide a URL to the *public location* of your website.
+Lastly, tell us what your site should be named inside of Forestry, as well as an optionally provide a URL to the *public location* of your website, and then click *Next*.
 
 TK: image
 

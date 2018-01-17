@@ -38,8 +38,8 @@ The markdown editor fully supports creating draft content -- content that is not
 
 This can be changed by clicking the more options icon (`...`), and clicking "Set as draft"/"Set as published".
 
-## New Document Format
-Forestry can be configured to create all new documents using the markdown editor.
+## New File Format
+By default, Forestry is [configured to create all new content](/docs/settings/#new-file-format) using the markdown editor.
 
 ## Front Matter Templates
 The left-hand side of the markdown editor is your document's front matter. Forestry provides a powerful templating system for front matter, called [Front Matter Templates](/docs/front-matter-templates/).
