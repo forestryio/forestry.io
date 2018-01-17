@@ -55,7 +55,7 @@ The final step is to tell Forestry where to deploy your site when your editors s
 
 ![](/uploads/2018/01/forestry-io-deployment-setup.png)
 
-Depending on the site of your site, Forestry might take a few minutes to import and parse your project.
+Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
 
 Now your CMS is sync'd with your project repo and your editing team can start making commits.
 
