@@ -46,11 +46,12 @@ pre {
 
 .hljs-keyword,
 .hljs-attribute,
+.hljs-attr,
 .hljs-selector-tag,
 .hljs-meta-keyword,
 .hljs-doctag,
 .hljs-name {
-  color: $color-copy;
+  color: $color-copy-dark;
 }
 
 .hljs-type,
@@ -88,15 +89,15 @@ pre {
 .hljs-bullet,
 .hljs-code,
 .hljs-addition {
-  color: $color-brand;
+  color: $color-copy;
 }
 
 .hljs-meta {
-  color: $color-sinbad;
+  color: $color-medium-dark;
 }
 
 .hljs-meta-string {
-  color: $color-sinbad;
+  color: $color-medium-dark;
 }
 
 .hljs-emphasis {
