@@ -1,7 +1,8 @@
 ---
 aliases:
 - "/remote/"
-title: Homepage
+title: Static CMS for Hugo & Jekyll
+description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to build sites.
 authors:
 - forestryio
 hero:

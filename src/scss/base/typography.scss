@@ -164,9 +164,20 @@ tr:nth-child(odd) td {
     }
   }
 
-  ul, li {
-    list-style: initial;
-    margin-left: 0.6rem;
+  ul {
+    list-style-type: initial;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul, ol {
+    margin-left: 1rem;
+  }
+
+  li {
+    list-style: inherit;
   }
 
   blockquote {

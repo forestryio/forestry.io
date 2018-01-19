@@ -48,10 +48,11 @@ They can:
 4. Can manage the site settings
 5. Can delete the site (this is irreversible)
 
-### Developers
+### Developer
 The developer role gives a team member the ability to manage all aspects of a site.
 
 They can:
+
 1. Edit and publish content
 2. Manage other users
 3. Manage billing/plan for the site
@@ -59,6 +60,8 @@ They can:
 
 ### Site Manager
 The manager role gives a team member the ability to manage a site's team and billing.
+
+They can:
 
 1. Edit and publish content
 2. Manage other users
@@ -68,6 +71,7 @@ The manager role gives a team member the ability to manage a site's team and bil
 The content editor role gives a team member the ability to manage content.
 
 They can:
+
 1. Edit and publish content
 
 [1]:	https://app.forestry.io/dashboard

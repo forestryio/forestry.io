@@ -120,59 +120,59 @@ $sidebar-width: 320px;
     padding: 0 2rem;
   }
 
-  .pagination {
-    align-items: center;
-    color: $color-brand;
-    display: flex;
-    flex-wrap: nowrap;
-    font-weight: 600;
-    justify-content: space-between;
-    line-height: 1em;
-    margin: 4rem 0 2rem;
-
-    span {
-      display: block;
-      position: relative;
-    }
-
-    span:before {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      content: "";
-      height: 1em;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1em;
-    }
-
-    a:first-of-type {
-      margin-right: 4rem;
-    }
-
-    .prev-doc {
-      padding-left: 1.5rem;
-    }
-
-    .prev-doc:before {
-      background-image: url("/img/chevron-left.svg");
-      left: 0;
-    }
-
-    .next-doc {
-      padding-right: 1.5rem;
-    }
-
-    .next-doc:before {
-      background-image: url("/img/chevron-right.svg");
-      right: 0;
-    }
-  }
-
   @media screen and (min-width: 1100px) {
     margin: 0 auto;
     left: calc($sidebar-width / 4 * -1);
+  }
+}
+
+.docs-content .pagination {
+  align-items: center;
+  color: $color-brand;
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 600;
+  justify-content: space-between;
+  line-height: 1em;
+  margin: 4rem 0 2rem;
+
+  span {
+    display: block;
+    position: relative;
+  }
+
+  span:before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1em;
+  }
+
+  a:first-of-type {
+    margin-right: 4rem;
+  }
+
+  .prev-doc {
+    padding-left: 1.5rem;
+  }
+
+  .prev-doc:before {
+    background-image: url("/img/chevron-left.svg");
+    left: 0;
+  }
+
+  .next-doc {
+    padding-right: 1.5rem;
+  }
+
+  .next-doc:before {
+    background-image: url("/img/chevron-right.svg");
+    right: 0;
   }
 }
 
