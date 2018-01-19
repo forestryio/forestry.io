@@ -13,10 +13,10 @@ menu:
 layout: single
 ---
 {{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [GitHub account](https://github.com/signup) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/welcome/quick-start), which contains guides and resouces for building your first static site.
+This guide assumes you already have an existing [GitHub account](https://github.com/signup) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/welcome/quick-start), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
-Forestry's allows you to import your static site through public and private GitHub repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to GitHub. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
+Forestry's allows you to import your static site through public and private GitHub repositories. This allows Forestry to sync any changes made by editors in Forestry to be committed back to GitHub. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
 
 ## Importing from GitHub
 
@@ -40,7 +40,7 @@ This will redirect you to GitHub, and prompt you to enter your login credentials
 
 TK: image
 
-Give Forestry access to your GitHub repositories by clicking "Authorize application". You can also request access to any [GitHub organisations](#importing-from-a-github-organisation) you are a member of.
+Give Forestry access to your GitHub repositories by clicking "Authorize application". You can also request access to any [GitHub organizations](#importing-from-a-github-organization) you are a member of.
 
 {{% warning " " %}}
 In order to import a site from GitHub, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
@@ -57,13 +57,13 @@ Lastly, tell us what your site should be named inside of Forestry, as well as an
 TK: image
 
 ## Importing from a GitHub organization
-GitHub organisations may be set up to restrict access to third-party applications like Forestry without permission from an organisations administrator. In this scenario, if you are not an administrator of your organisation, you will need to request access on behalf of Forestry.
+GitHub organizations may be set up to restrict access to third-party applications like Forestry without permission from an organizations administrator. In this scenario, if you are not an administrator of your organization, you will need to request access on behalf of Forestry.
 
 TK: image
 
-If you are an administrator of your application and have enabled third-party application restrictions, you will need to authorize Forestry to have access to your organisations repositories.
+If you are an administrator of your application and have enabled third-party application restrictions, you will need to authorize Forestry to have access to your organizations repositories.
 
-To do so, go to the *Settings page* of your organisation, and then navigate to the *Third-party access* tab. 
+To do so, go to the *Settings page* of your organization, and then navigate to the *Third-party access* tab. 
 
 TK: image
 
@@ -71,4 +71,4 @@ To the right of "Forestry", click the "Edit" button.
 
 TK: image
 
-Then, click "Grant access" to allow your organisations members to import your sites in Forestry.
+Then, click "Grant access" to allow your organizations members to import your sites in Forestry.
