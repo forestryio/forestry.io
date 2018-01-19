@@ -99,9 +99,9 @@ Previewing data files and menus will always redirect you to the homepage of your
 
 Return to the data file and click the *Unsaved changes* indicator at the top of the page. Click "Discard changes" to remove the changes you just made from the page.
 
-{% tip %}
+{{% tip %}}
 Forestry stores *unsaved changes* in the cloud. This enables collaboration between multiple editors, and prevents editors from losing their changes.
-{% /tip %}
+{{% /tip %}}
 
 ---
 
@@ -113,9 +113,9 @@ TK: media library
 
 Under *Site* in the sidebar, select *Media Library*. You'll see all of the already uploaded images in the demo site.
 
-{% tip %}
+{{% tip %}}
 By default, the Media Library uploads media to `uploads/:year:/:month:/:day:/`. This can be changed in your site's *Settings*.
-{% /tip %}
+{{% /tip %}}
 
 You can upload media by clicking the placeholder in top right, or by dragging images into the Media Library from your desktop.
 
