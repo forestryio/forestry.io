@@ -10,13 +10,14 @@ menu:
     parent: welcome
     weight: 2
 ---
-This guide will walk you through importing your Hugo or Jekyll project into Forestry and getting setup in 15 minutes!
-
-If you don't have an existing Hugo or Jekyll project, check out our [product tour](/docs/welcome/tour/) to see a demo project or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch).
+This guide will walk you through importing your Hugo or Jekyll project and customizing your CMS in under 15 minutes!
 
 ## Import Site from Repo
 
 [Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
+
+If you don't have an existing Hugo or Jekyll project, check out our [product tour](/docs/welcome/tour/) where you can fork a demo project.
+<!-- or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch). -->
 
 ![](/uploads/2018/01/import-site.png)
 
@@ -48,11 +49,13 @@ Now your CMS is sync'd with your project repo and your editing team can start ma
 
 ## Editing content
 
+### Preview
+
 ### Save changes
 
 ## Configure the CMS
 
-### Images
+### Set up Images
 
 ### FMTs
 
