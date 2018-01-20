@@ -5,10 +5,12 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 weight: 2
+date: 2017-12-07 04:00:00 +0000
 menu:
   docs:
     parent: welcome
     weight: 2
+
 ---
 This guide will walk you through importing your Hugo or Jekyll project and customizing your CMS in under 15 minutes!
 
@@ -35,31 +37,41 @@ Choose your repository and branch. Forestry will automatically build a CMS from 
 If your Jekyll or Hugo config file cannot be found in your project root, Forestry will ask you to provide the path to it.  
 {{% /warning %}}
 
-
 ### Setup Deployment (optional)
-When editors publish changes to content, Forestry can (optionally) build and deploy your site.  
 
-By default, Forestry will commit changes back to your source repo but also supports deployment to AWS, FTP, GitHub pages, etc.   
+When editors publish changes to content, Forestry can (optionally) build and deploy your site.
+
+By default, Forestry will commit changes back to your source repo but also supports deployment to AWS, FTP, GitHub pages, etc.
 
 For now, just configure Forestry to **commit back to our repo**.  You can always go back and update these settings in the future.
-
 
 ![](/uploads/2018/01/forestry-io-deployment-setup.png)
 
 Congratulations! Now your CMS is sync'd with your source code and your editing team can start making commits.  Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
 
-
 ## Document State
 
-Go into a post or page and edit any text.
+Go into a post or page, edit some text and see "Unsaved Changes" at the top of your document.
 
-You will see "Unsaved Changes" at the top of your document.  
+![](/uploads/2018/01/unsaved changes.png)
 
-> IMAGE 
+### Preview these changes
+
+Click the preview button to spin up a new preview of your Jekyll or Hugo site.
+
+![](/uploads/2018/01/preview.png)
 
 ### Make your first commit
 
-Now
+Click the publish button to save changes and make a Git commit. 
+
+![](/uploads/2018/01/publish-button.png)
+
+Now you should notice that the page is up-to-date with your repository
+
+![](/uploads/2018/01/up-to-date.png)
+
+Look at your commit history and you should see your changes. 
 
 ## Configure the CMS
 
