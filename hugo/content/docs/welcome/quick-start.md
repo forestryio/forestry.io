@@ -73,7 +73,7 @@ The page should become **up-to-date** with your repository again.
 
 Go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
 
-![](/uploads/2018/01/commits.png)
+![](/uploads/2018/01/commits-1.png)
 
 ## Configure the CMS
 
