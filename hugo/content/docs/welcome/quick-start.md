@@ -57,7 +57,7 @@ Go into a post or page, **edit some text** and you will see "Unsaved Changes" at
 
 ## Preview Changes
 
-Click the preview button to spin up a new preview of your Jekyll or Hugo site.
+Click the preview button ![](/uploads/2018/01/preview-small.png) to spin up a new preview of your Jekyll or Hugo site.
 
 ![](/uploads/2018/01/preview.png)
 
@@ -67,11 +67,11 @@ Click the publish button to save changes and make a Git commit.
 
 ![](/uploads/2018/01/publish-button.png)
 
-The page should become up-to-date with your repository again
+Now you should notice that the page is up-to-date with your repository
 
 ![](/uploads/2018/01/up-to-date.png)
 
-Go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
+Now go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
 
 ![](/uploads/2018/01/commits.png)
 
