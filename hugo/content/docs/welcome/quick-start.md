@@ -71,7 +71,7 @@ Now you should notice that the page is up-to-date with your repository
 
 ![](/uploads/2018/01/up-to-date.png)
 
-Look at your commit history and you should see your changes. 
+Now go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier! 
 
 ![](/uploads/2018/01/commits.png)
 
