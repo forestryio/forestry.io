@@ -27,17 +27,13 @@ When your team uploads images you want to ensure they're going to the right dire
 
 Go to **Settings > File Paths**
 
-TK: image Settings
+![](/uploads/2018/01/settings.png)
 
-TK: image file-paths
+![](/uploads/2018/01/file-paths.png)
 
 Often, the upload directory will be different from the public path used to access your media file. For this reason, for this reason, we have multiple options here.
 
 In the case of Hugo, your static files must be located in the `/static` directory, but when your site is compiled, those images are publicly viewable from the root of your project.  So `/static/images/file.jpg` becomes `/images/file.jpg`.
-
-
-
-
 
 <!--
 
