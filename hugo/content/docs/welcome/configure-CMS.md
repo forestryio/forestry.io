@@ -29,9 +29,23 @@ Go to **Settings > File Paths**
 
 ![](/uploads/2018/01/settings.png)
 
+Often, the upload directory will be different from the public path used to access your media file. For this reason, there are multiple options.
+
 ![](/uploads/2018/01/file-paths.png)
 
-Often, the upload directory will be different from the public path used to access your media file. For this reason, for this reason, we have multiple options here.
+**Upload Folder**
+The folder within your repo to store the uploaded media
+
+**Font Matter File URL**
+The path to prepend images with when saving them to your Front Matter fields. Eg.
+
+```
+title: My new post
+publishdate: 2017-12-07 04:00:00 +0000
+image: /uploads/image.jpg
+```
+
+**Content Body URL**
 
 In the case of Hugo, your static files must be located in the `/static` directory, but when your site is compiled, those images are publicly viewable from the root of your project.  So `/static/images/file.jpg` becomes `/images/file.jpg`.
 
