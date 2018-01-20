@@ -16,8 +16,9 @@ This guide will walk you through importing your Hugo or Jekyll project and custo
 
 [Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you don't have an existing Hugo or Jekyll project, check out our [product tour](/docs/welcome/tour/) where you can fork a demo project.
-<!-- or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch). -->
+If you don't have an existing Hugo or Jekyll project, fork our [Jekyll demo site](https://github.com/forestryio/belkirk-jekyll-demo).
+
+<!-- check out our [product tour](/docs/welcome/tour/) where you can fork a demo project. or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch). -->
 
 ![](/uploads/2018/01/import-site.png)
 
@@ -36,22 +37,29 @@ If your Jekyll or Hugo config file cannot be found in your project root, Forestr
 
 
 ### Setup Deployment (optional)
-The final step is to tell Forestry where to deploy your site when your editors save changes. For now, we'll just configure Forestry to commit all changes back to our repo.
+When editors publish changes to content, Forestry can (optionally) build and deploy your site.  
+
+By default, Forestry will commit changes back to your source repo but also supports deployment to AWS, FTP, GitHub pages, etc.   
+
+For now, just configure Forestry to **commit back to our repo**.  You can always go back and update these settings in the future.
 
 
 ![](/uploads/2018/01/forestry-io-deployment-setup.png)
 
-Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
+Congratulations! Now your CMS is sync'd with your source code and your editing team can start making commits.  Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
 
-Now your CMS is sync'd with your project repo and your editing team can start making commits.
 
-## CMS Overview
+## Document State
 
-## Editing content
+Go into a post or page and edit any text.
 
-### Preview
+You will see "Unsaved Changes" at the top of your document.  
 
-### Save changes
+> IMAGE 
+
+### Make your first commit
+
+Now
 
 ## Configure the CMS
 
