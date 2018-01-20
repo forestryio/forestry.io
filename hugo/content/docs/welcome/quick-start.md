@@ -51,19 +51,19 @@ Congratulations! Now your CMS is sync'd with your source code and your editing t
 
 ## Document State
 
-Go into a post or page, edit some text and see "Unsaved Changes" at the top of your document.
+Go into a post or page, **edit some text** and you will see "Unsaved Changes" at the top of your document.
 
 ![](/uploads/2018/01/unsaved changes.png)
 
-### Preview these changes
+## Preview Changes
 
 Click the preview button to spin up a new preview of your Jekyll or Hugo site.
 
 ![](/uploads/2018/01/preview.png)
 
-### Make your first commit
+## Make your first commit
 
-Click the publish button to save changes and make a Git commit. 
+Click the publish button to save changes and make a Git commit.
 
 ![](/uploads/2018/01/publish-button.png)
 
@@ -71,7 +71,7 @@ Now you should notice that the page is up-to-date with your repository
 
 ![](/uploads/2018/01/up-to-date.png)
 
-Now go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier! 
+Now go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
 
 ![](/uploads/2018/01/commits.png)
 
