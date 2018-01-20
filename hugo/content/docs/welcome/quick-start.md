@@ -73,6 +73,8 @@ Now you should notice that the page is up-to-date with your repository
 
 Look at your commit history and you should see your changes. 
 
+![](/uploads/2018/01/commits.png)
+
 ## Configure the CMS
 
 ### Set up Images
