@@ -67,11 +67,11 @@ Click the publish button to save changes and make a Git commit.
 
 ![](/uploads/2018/01/publish-button.png)
 
-Now you should notice that the page is up-to-date with your repository
+The page should become **up-to-date** with your repository again.
 
 ![](/uploads/2018/01/up-to-date.png)
 
-Now go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
+Go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
 
 ![](/uploads/2018/01/commits.png)
 
