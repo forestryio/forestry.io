@@ -12,19 +12,26 @@ menu:
     weight: 2
 
 ---
-This guide will walk you through importing your Hugo or Jekyll project and customizing your CMS in under 15 minutes!
+This doc will walk you through:
+
+1. Setting up your site repository with Forestry
+2. Making your first commit by publishing some changes
+
+---
 
 ## Import Site from Repo
 
-[Sign up](https://app.forestry.io/signup/) to Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
+[Sign up](https://app.forestry.io/signup/) for a free account with Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you don't have an existing Hugo or Jekyll project, fork our [Jekyll demo site](https://github.com/forestryio/belkirk-jekyll-demo).
+If you **Don't** have a Jekyll or Hugo site, fork the [Jekyll demo site](https://github.com/forestryio/belkirk-jekyll-demo) and follow along.
 
-<!-- check out our [product tour](/docs/welcome/tour/) where you can fork a demo project. or start a new project with our [Static From Scratch guide](/docs/guides/static-from-scratch). -->
+ <!-- <a href="" class="button small primary">Jekyll demo site</a> -->
+
+<!--[product tour](/docs/welcome/tour/).-->
 
 ![](/uploads/2018/01/import-site.png)
 
-Choose your static site generator ([Jekyll](http://jekyllrb.com/) or [Hugo](http://gohugo.io/)), your Git Provider (GitHub,  GitLab or Bitbucket) and whether or not you want to access public or private repositories.
+Choose your static site generator ([Jekyll](http://jekyllrb.com/) or [Hugo](http://gohugo.io/)), your Git Provider (GitHub,  GitLab or Bitbucket) and your repository type (public or private).
 
 {{% warning "GitHub Permissions" %}}  
 In order to import a site from GitHub, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
@@ -74,17 +81,3 @@ The page should become **up-to-date** with your repository again.
 Go to your Git repo and look at your commit history.  You should see your updates from Forestry there. Committing has never been easier!
 
 ![](/uploads/2018/01/commits-1.png)
-
-## Configure the CMS
-
-### Set up Images
-
-### FMTs
-
-### Hide body
-
-## Remote Admin
-
-## Invite Collaborators
-
-## Configure Deployment

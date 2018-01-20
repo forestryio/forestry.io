@@ -25,7 +25,7 @@ menu:
     parent: welcome
   main:
     name: Docs
-    weight: 2
+    weight: 1
   footer:
     name: Docs
     parent: product
