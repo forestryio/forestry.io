@@ -86,7 +86,7 @@ This is where we'll create a UI that's tailored to our Front Matter data.
 
 
 {{% tip "Create template from an existing page" %}}
-If you just want to add fields that match an existing piece of content, navigate to that page and click the settings drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data.
+If you just want to add fields that match an existing piece of content, navigate to that page and click the settings drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data. Click [here](/docs/guides/fmt-from-existing-page/) for more info.
 {{% /tip %}}
 
 
@@ -108,6 +108,31 @@ You'll want to create a template called **Posts** and add the following fields:
 This will generate the following UI for your posts content:
 ![](/uploads/2018/01/front-matter-fields-ex1.png)
 
+### Click the settings icon to configure each field
+
+![](/uploads/2018/01/field-settings.png)
+
+Some of the options available are:
+
+* Adding help text
+* Making some fields hidden from editors
+* Setting a human-readable label
+* Setting the name of the `key` to be written out to your Front Matter
+* Many more options depending on the field type
+
+{{% tip "Default Values" %}}
+To set default values for your fields, just edit the field value right in the Template editing interface and save your changes.
+{{% /tip %}}
+
+
+### Applying Template to a Page
+To apply an FMT to an individual page, navigate to the page you want to apply the FMT to and click **Settings > Change Template**
+
+![](/uploads/2018/01/change-template.png)
+
+Select your newly created template and save your changes.
+
+Congrats! Now you should have fields set up for your different content types. For more information on Front Matter Templates, read the full doc [here](/docs/settings/front-matter-templates/)
 
 <!--
 

@@ -20,9 +20,20 @@ menu:
   guides:
     parent: hugo
 draft: true
-weight: 2
+weight: 9
 aliases: []
 
 ---
 
+
+To save time when creating your Content Model, you can base new Front Matter Templates off the data found in an existing page.
+
+To do so, navigate to that page and click the _settings_ drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data.
+
 ![](/uploads/2018/01/FMT-from-existing-page.png)
+
+Naviage to the Front Matter Templates section of your website to find that template there. Ensure the name is appropriate and begin to edit the fields.
+
+![](/uploads/2018/01/front-matter-templates.png)
+
+Finally, go back to the original page and from the same settings menu, select **Change Template** and select your newly created Front Matter Template.
