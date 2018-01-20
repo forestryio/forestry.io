@@ -45,7 +45,7 @@ The path that will be **prepended** to all media files uploaded from Front Matte
 ```yaml
 ---
 title: My new post
-publishdate: 2017-12-07 04:00:00 +0000
+date: 2017-12-31 12:00:00 -0400
 image: /uploads/image.jpg
 ---
 ```
