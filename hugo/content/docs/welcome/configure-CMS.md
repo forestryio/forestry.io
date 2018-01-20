@@ -40,7 +40,7 @@ The folder within your repo to store the uploaded media
 **Font Matter File URL**  
 The path that will be **prepended** to all media files uploaded from Front Matter fields. For example:
 
-![](/uploads/2018/01/image-field-upload.png)
+![](/uploads/2018/01/image-field-upload-1.png)
 
 ```yaml
 ---
