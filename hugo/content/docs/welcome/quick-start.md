@@ -57,7 +57,7 @@ Go into a post or page, **edit some text** and you will see "Unsaved Changes" at
 
 ## Preview Changes
 
-Click the preview button ![](/uploads/2018/01/preview-small.png) to spin up a new preview of your Jekyll or Hugo site.
+Click preview to view your changes in a new tab.
 
 ![](/uploads/2018/01/preview.png)
 
