@@ -40,7 +40,7 @@ The folder within your repo to store the uploaded media
 **Font Matter File URL**  
 The path that will be **prepended** to all media files uploaded from Front Matter fields. For example:
 
-
+![](/uploads/2018/01/image-field-upload.png)
 
 ```yaml
 ---
@@ -53,13 +53,11 @@ image: /uploads/image.jpg
 **Content Body URL**
 The path that will be **prepended** to all media files uploaded from the body editor.
 
-This usually has the same value as your *Front Matter File URL*, but in some cases you may want to prepend a different path to images and media uploaded via the body editor.
-
+This usually has the same value as your _Front Matter File URL_, but in some cases you may want to prepend a different path to images and media uploaded via the body editor.
 
 {{% tip %}}
 asdf
 {{% /tip %}}
-
 
 <!--
 
