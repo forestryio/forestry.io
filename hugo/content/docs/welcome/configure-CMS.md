@@ -33,7 +33,7 @@ TK: image file-paths
 
 Often, the upload directory will be different from the public path used to access your media file. For this reason, for this reason, we have multiple options here.
 
-In the case of Hugo, your static files must be located in the `/static` directory, but when your site is compiled, those images are publicly viewable from the root of your directory.  So `/static/images/file.jpg` becomes `/images/file.jpg`.
+In the case of Hugo, your static files must be located in the `/static` directory, but when your site is compiled, those images are publicly viewable from the root of your project.  So `/static/images/file.jpg` becomes `/images/file.jpg`.
 
 
 
