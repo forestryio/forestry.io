@@ -51,10 +51,13 @@ image: /uploads/image.jpg
 ```
 
 **Content Body URL**
-Because some you may want
+The path that will be **prepended** to all media files uploaded from the body editor.
+
+This usually has the same value as your *Front Matter File URL*, but in some cases you may want to prepend a different path to images and media uploaded via the body editor.
+
 
 {{% tip %}}
-
+asdf
 {{% /tip %}}
 
 
