@@ -51,7 +51,13 @@ image: /uploads/image.jpg
 ```
 
 **Content Body URL**
-The path that will be **prepended** to all media files uploaded from the body editor.
+The path that will be **prepended** to all media files uploaded from the body editor. 
+
+    ## My new post
+    
+    The content body URL path is prepended to images uploaded in the document body, like so: 
+    
+    ![](/uploads/image.jpg)
 
 This usually has the same value as your _Front Matter File URL_, but in some cases you may want to prepend a different path to images and media uploaded via the body editor.
 
