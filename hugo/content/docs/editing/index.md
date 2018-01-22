@@ -13,7 +13,7 @@ menu:
     weight: 1
 
 ---
-Forestry allows editors to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over the content.
+Forestry allows editors to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over their content.
 
 ![](/uploads/2018/01/10.png)
 
