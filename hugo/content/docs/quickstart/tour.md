@@ -32,7 +32,7 @@ For the purposes of this product tour, we'll assume you have a [GitHub account](
 3. Select _GitHub_ from the list of options.
 4. You'll be prompted to choose "Public Repos" or "Private Repos". Your fork is a public fork, so click "Public Repos".
 5. Give Forestry access to your GitHub repositories by clicking "Authorize application". _If you are not already logged in, GitHub will prompt you for login credentials first._
-6. Once authorized, you will be redirected back to Forestry. In the first dropdown, select `username/belkirk-college-demo`, and in the second dropdown select the `master` branch.
+6. Once authorized, you will be redirected back to Forestry. In the first dropdown, select \[`username\\\]/belkirk-college-demo`, and in the second dropdown select the `master` branch.
 7. Enter _Belkirk Product Tour_ into the name field and then click _Next_.
 8. In the final step, you'll be asked to configure Hosting. Choose _Commit to source repo only_ and then click _Save Changes_
 
@@ -68,7 +68,7 @@ Select the _Posts_ collection in the sidebar, then open up the editor by selecti
 
 ![](/uploads/2018/01/59.png)
 
-On the left is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
+On the left is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the right is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
 
 ![](/uploads/2018/01/59-preview.png)
 Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
