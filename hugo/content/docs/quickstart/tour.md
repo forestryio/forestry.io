@@ -69,7 +69,7 @@ Select the _Posts_ collection in the sidebar, then open up the editor by selecti
 
 ![](/uploads/2018/01/59.png)
 
-On the right is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
+On the left is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
 
 ![](/uploads/2018/01/59-preview.png)
 Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
