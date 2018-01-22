@@ -1,6 +1,18 @@
 ---
 pages:
 - terms.md
+- docs/troubleshooting
+- docs/changelog
+- docs/_index.md
+- docs/faqs
+- docs/welcome
+- docs/git-sync
+- careers/_index.md
+- careers/devrel.md
+- careers/admin.md
+- careers/full-stack.md
+- careers/marketing.md
+- careers/software-engineer.md
 - blog/wysiwyg-formatting-in-front-matter.md
 - blog/introducing-media-management.md
 - blog/big-improvements-to-front-matter-templates.md
@@ -22,26 +34,6 @@ pages:
 - blog/the-new-forestry-io.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/why-we-built-forestry.md
-- docs/welcome/index.md
-- docs/troubleshooting/css-js-and-media-not-working.md
-- docs/git-sync/index.md
-- docs/troubleshooting/cant-publish-preview-or-save.md
-- docs/troubleshooting
-- docs/troubleshooting/can-t-import-from-a-github-organization.md
-- docs/changelog
-- docs/changelog/_index.md
-- docs/_index.md
-- docs/faqs
-- docs/faqs/_index.md
-- docs/welcome
-- docs/git-sync
-- docs/troubleshooting/_index.md
-- careers/_index.md
-- careers/devrel.md
-- careers/admin.md
-- careers/full-stack.md
-- careers/marketing.md
-- careers/software-engineer.md
 hide_body: false
 fields:
 - type: text

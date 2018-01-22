@@ -33,7 +33,7 @@ FMTs can only be accessed in the CMS by team members with the *Developer* or *Si
 FMTs can be created from scratch, or can be created using the fields from an existing page that doesn't have an FMT applied to it.
 
 ### Creating an FMT from Existing Pages
-To create an FMT from an an existing page, navigate to the page you wish to use as the basis for your FMT. 
+To create an FMT from an an existing page, navigate to the page you wish to use as the basis for your FMT.
 
 TK: editor UI
 
@@ -91,7 +91,7 @@ Field defaults are only applied when *creating new pages* and aren't intended to
 {{% /tip %}}
 
 ### Hidden Fields
-Any field in an FMT can be hidden. This hides the field in the editors, but allows developers to set default values or maintain the field for legacy purposes. 
+Any field in an FMT can be hidden. This hides the field in the editors, but allows developers to set default values or maintain the field for legacy purposes.
 
 {{% tip %}}
 This can be used to set default values when creating new pages for fields that shouldn't be modified by an editor.
@@ -105,11 +105,9 @@ FMTs follow a "no-modification" rule. When applying an FMT to content, Forestry 
 {{% /tip %}}
 
 ### Applying to Pages
-To apply an FMT to an individual page, navigate to the page you want to apply the FMT to. 
+To apply an FMT to an individual page, navigate to the page you want to apply the FMT to and click **Settings > Change Template**
 
-TK: preview of editor dropdown
-
-Next, click the ... button in the page’s toolbar. In options dropdown, click *Change Template*.
+![](/uploads/2018/01/change-template.png)
 
 TK: image of template modal
 

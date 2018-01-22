@@ -5,8 +5,8 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 menu:
   docs:
-    parent: welcome
-weight: 3
+    parent: quickstart
+weight: 4
 ---
 ## Overview
 This tour will walk you through setting up your first site in Forestry. It demonstrates the primary features and editing functionality of the CMS.
@@ -32,7 +32,7 @@ TK: image of dashboard
 8. Enter *Belkirk Product Tour* into the name field and then click *Next*.
 9. In the final step, you'll be asked to configure Hosting. Choose *Commit to source repo only* and then click *Save Changes*
 
-Congrats, your first site is being imported! This will take a few seconds, so sit back and relax while it imports. 
+Congrats, your first site is being imported! This will take a few seconds, so sit back and relax while it imports.
 
 When it has finished importing, the *Processing* label will disappear. Click your site from the list to open up the CMS.
 
@@ -73,7 +73,7 @@ Make you first edit by updating the post's title, and then click the preview but
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the *preview button* the preview will updated with any new content changes you've made.
 {{% /tip %}}
 
-Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click *Set as Published*. You'll see the *Save Draft* button now says *Published*. 
+Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click *Set as Published*. You'll see the *Save Draft* button now says *Published*.
 
 Click the *Publish* button to save your changes to back to your repository.
 
@@ -148,7 +148,7 @@ Forestry has many more features for content editors:
 - Access the CMS from your own domain with the [Remote Admin](/docs/editing/remote-admin)
 
 ### Hosting
-Forestry can handle building and deploying your static site for you, or can integrate with third-party services that handle deployment. 
+Forestry can handle building and deploying your static site for you, or can integrate with third-party services that handle deployment.
 
 You have many [options](/docs/hosting/)!
 
