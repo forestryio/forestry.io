@@ -30,7 +30,7 @@ Forestry has an _optional_ WYSIWYG HTML editor that allows you to edit content f
 
 The HTML editor fully supports creating draft content -- content that is not yet ready to be published to your production website -- as well as live, published content.
 
-This can be changed by clicking the more options icon (`...`), and clicking "Set as draft"/"Set as published".
+![](/uploads/2018/01/56-settings.png)This can be changed by clicking the more options icon (`...`), and clicking "Set as draft"/"Set as published".
 
 ## New File Format
 
