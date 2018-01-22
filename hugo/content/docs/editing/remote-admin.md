@@ -1,23 +1,26 @@
 ---
 aliases:
-- /docs/site-configuration/project-paths/
+- "/docs/site-configuration/project-paths/"
 title: Remote Admin
 weight: 8
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
+layout: single
 menu:
   docs:
     parent: editing
-layout: single
+    weight: 8
+
 ---
 The Remote Admin allows editors to access and manage your site without leaving your domain.
 
 This is great for large businesses or white-label solutions where you don’t want your users accessing the CMS through the Forestry website.
 
-TK: image of remote admin login
+![](/uploads/2018/01/28.png)
 
 ## Setting up the Remote Admin
+
 To set up the Remote Admin, go to the Settings page for your site, found under “Site” in the sidebar of your CMS.
 
 Select the General tab, and find the Project Paths option. From here you provide the path you want users to go to in order to access the CMS under "Admin Path".
@@ -32,6 +35,7 @@ The Remote Admin is deployed as a static HTML page, so be sure you deploy it to 
 * In Jekyll, this is `/admin/`
 
 ## Deploying the Remote Admin
+
 If [hosting](/docs/hosting) is configured, you can deploy the Remote Admin to your site by clicking the Deploy Admin​ button.
 
 TK: image of remote admin settings
