@@ -125,7 +125,7 @@ Feel free to hit _Publish_ to save your changes.
 
 ## Menus
 
-Menus allow you content editors to manage your site's navigation and other types of menus easily.
+Menus allow your content editors to manage your site's navigation and other types of menus easily.
 
 ![](/uploads/2018/01/22.png)
 
