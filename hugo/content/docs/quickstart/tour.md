@@ -32,7 +32,7 @@ For the purposes of this product tour, we'll assume you have a [GitHub account](
 3. Select _GitHub_ from the list of options.
 4. You'll be prompted to choose "Public Repos" or "Private Repos". Your fork is a public fork, so click "Public Repos".
 5. Give Forestry access to your GitHub repositories by clicking "Authorize application". _If you are not already logged in, GitHub will prompt you for login credentials first._
-6. Once authorized, you will be redirected back to Forestry. In the first dropdown, select \[`username\\\]/belkirk-college-demo`, and in the second dropdown select the `master` branch.
+6. Once authorized, you will be redirected back to Forestry. In the first dropdown, select `username/belkirk-college-demo`, and in the second dropdown select the `master` branch.
 7. Enter _Belkirk Product Tour_ into the name field and then click _Next_.
 8. In the final step, you'll be asked to configure Hosting. Choose _Commit to source repo only_ and then click _Save Changes_
 
