@@ -1,5 +1,5 @@
 {{/* Generates Amazon S3 Compliant Redirects */}}
-{{- range $i, $p := .Site.Pages -}}
+{{- range $i, $p := .Data.Pages -}}
 {{- range .Aliases -}}
 {{- $.Scratch.SetInMap "aliases" (printf "%s" $i) (dict "to" $p.RelPermalink "from" .) -}}
 {{- end -}}

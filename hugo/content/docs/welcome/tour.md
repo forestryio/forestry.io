@@ -39,17 +39,17 @@ When it has finished importing, the *Processing* label will disappear. Click you
 ---
 
 ## Managing Content
-In Forestry, all of your content is sorted into [*Content Types*](/docs/editing#content-types). You can see these in the sidebar under *Content*. In the demo, these are:
+In Forestry, all of your content is sorted into *Collections* under *Content* in the sidebar. In the demo, these are:
 
 TK: image of Belkirk in Forestry
 
-- **Pages:** all content that is not part of a content type
+- **Pages:** any content this is not part of a collection
 - **People:** a Jekyll collection of "staff members"
 - **Posts:** a Jekyll collection of blog posts
 - **Projects:** a Jekyll collection of projects
 - **Publications:** a non-output Jekyll collection of publications
 
-When you first enter the CMS, you will be dropped into the *Pages Content Type*. Take a look at the different collections by selecting them from the sidebar.
+When you first enter the CMS, you will be dropped into the *Pages* collection. Take a look at the different collections by selecting them from the sidebar.
 
 {{% tip %}}
 The Belkirk Demo Site is [hosted by GitHub pages](https://forestryio.github.io/belkirk-jekyll-demo). Feel free to open it up and navigate around to get an understanding of how the built site looks and feels.
@@ -67,7 +67,7 @@ On the right is the post's front matter (custom metadata for the post, like its 
 
 TK: loading preview
 
-Make you first edit by updating the post's title, and then click the preview button in the top right. TK: preview button This will open new tab and begin generating a preview with your content changes.
+Make you first edit by updating the post's title, and then click the preview button TK: preview button in the top right. This will open new tab and begin generating a preview with your content changes.
 
 {{% tip %}}
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the *preview button* the preview will updated with any new content changes you've made.
@@ -125,6 +125,16 @@ Feel free to hit *Publish* to save your changes.
 
 ---
 
+## Menus
+
+Menus allow you content editors to manage your site's navigation and other types of menus easily.
+
+TK: menus
+
+Under *Site* in the sidebar, select *Menus*. Try re-arranging the menu with drag-and-drop, and then preview your changes by clicking the preview button (TK: preview button) in the top right.
+
+---
+
 ## Next Steps
 This tour only covers the basics of what Forestry offers. Now that you've set up your first site in Forestry, you can begin exploring all of Forestry's features at your own pace through this documentation:
 
@@ -132,8 +142,8 @@ This tour only covers the basics of what Forestry offers. Now that you've set up
 Forestry has many more features for content editors:
 
 - Create great content with the powerful [Markdown Editor](/docs/editing/markdown-editor) and with [Data Files](/docs/editing/data-files)
-- Manage your site's media with the [Media Library](/docs/editing/media-library)
-- Create and manage [menus](/docs/editing/menus) for navigation and site links
+- Learn more about the [Media Library](/docs/editing/media-library)
+- Learn how to create [menus](/docs/editing/menus) for navigation and site links
 - Add structured metadata with [Front Matter](/docs/editing/front-matter)
 - Access the CMS from your own domain with the [Remote Admin](/docs/editing/remote-admin)
 
@@ -143,4 +153,4 @@ Forestry can handle building and deploying your static site for you, or can inte
 You have many [options](/docs/hosting/)!
 
 ### Team Management
-[Invite your clients or team members](/docs/settings/team-management) to update your site for you. [User roles](/docs/settings/team-management#user-roles) make inviting your whole team easy.
+[Invite your clients or team members](/docs/settings/team-management) to update your site for you. [User roles](/docs/settings/team-management#user-roles) make managing your whole team simple.

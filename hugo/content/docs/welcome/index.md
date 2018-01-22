@@ -35,7 +35,7 @@ Forestry.io is a Git-backed CMS (content management system) for websites and web
 
 Forestry powers static sites generated using [Jekyll](https://jekyllrb.com/ "Jekyll website") and [Hugo](https://gohugo.io/ "Hugo website") and manages them using [Git](https://git-scm.com/ "Git Website").
 
-{{% tip " " %}}
+{{% tip %}}
 
 [Sign up](https://app.forestry.io/signup "Forestry CMS Sign Up") for free today, or learn more about our [pricing](/pricing "Forestry.io's Pricing") for teams.
 
@@ -45,7 +45,7 @@ Forestry powers static sites generated using [Jekyll](https://jekyllrb.com/ "Je
 
 The main thing to understand is that Forestry -- unlike other content management systems -- is entirely backed by Git.
 
-To put it simply, Forestry is an editor-friendly interface over Git. This means that developers and editors can now use the same workflow and toolset.
+To put it simply, Forestry is an editor-friendly interface over Git. This means that developers and editors can now use the same workflow and tool set.
 
 This also means that all of your content and code always belongs to you, and is not stored in a database in the cloud out of your reach.
 

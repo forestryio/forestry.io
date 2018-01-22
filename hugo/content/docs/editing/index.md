@@ -24,11 +24,11 @@ In **Hugo**, pages are any [content files](/docs/faqs/glossary/content-files/) s
 In **Jekyll**, these are any [content files](/docs/faqs/glossary/content-files/) that are not part of a [Jekyll collection](https://jekyllrb.com/docs/collections/).
 {{% /tip %}}
 
-## Content Types
-Content types are grouped content in your static site. These are feeds or hierarchies of content, such as blog posts or landing pages.
+## Collections
+Collections are grouped content in your static site. These are feeds or hierarchies of content, such as blog posts or landing pages.
 
 {{% tip %}}
-In **Hugo**, these are any folders inside of the `content/` folder, called sections.
+In **Hugo**, these are any folders inside of the `content/` folder, called [sections](https://gohugo.io/content-management/sections/).
 In **Jekyll**, these are [content files](/docs/faqs/glossary/content-files/) that are part of a [Jekyll collection](https://jekyllrb.com/docs/collections/).
 {{% /tip %}}
 
@@ -40,7 +40,7 @@ Learn more about using data files with [Hugo](http://gohugo.io/templates/data-te
 {{% /tip %}}
 
 ## Searching Content
-Pages, content types, and data files can all be searched by the `title` field and by filename.
+Pages, collections, and data files can all be searched by the `title` field and by filename.
 
 TK: image of search
 

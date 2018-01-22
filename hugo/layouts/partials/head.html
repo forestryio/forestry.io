@@ -28,7 +28,7 @@
 {{- if .IsHome -}}
 {{- range .Site.AllPages -}}
 {{- $section := .Section -}}
-{{- with  .OutputFormats.Get "opensearch" -}}
+{{- with .OutputFormats.Get "opensearch" -}}
 <link rel="search" type="application/opensearchdescription+xml" title="{{ $title }}{{ with $section }} {{ . }}{{ end }} search" href="{{ .Permalink | safeURL }}" />
 {{- end -}}
 {{- end -}}
