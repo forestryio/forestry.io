@@ -15,7 +15,7 @@ menu:
     weight: 6
 
 ---
-The Media Library allows content editors to easily manage media uploads for your site. This allows content editors to easily add images, videos, PDFs, and other media formats to their content without having to use Git.
+The Media Library allows content editors to easily manage the media for your site. This allows content editors to easily add images, videos, PDFs, and other media formats to their content without having to use Git.
 
 ![](/uploads/2018/01/19.png)
 
