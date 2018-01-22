@@ -1,5 +1,17 @@
 import Clipboard from "clipboard"
 
+/**
+ * Adds hljs highlighting and a copy button
+ * to codeblocks
+ * @param {Object} options
+ * @param {String|Array[String]} options.copyClass
+ * @param {String} options.copyText
+ * @param {String} options.copySuccessText
+ * @param {Number} options.copyTimeout
+ * @param {Array[String]} options.copyTargets
+ * @param {Array[String]} options.highlightTargets
+ * @param {Object} options.hljsOptions
+ */
 export default class CodeBlock {
   constructor(options) {
     if (typeof options !== Object) options = {}

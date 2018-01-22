@@ -8,7 +8,7 @@ date: 2017-12-07 04:00:00 +0000
 menu:
   docs:
     parent: quickstart
-    weight: 4
+    weight: 1
 
 ---
 ## Overview
@@ -23,7 +23,7 @@ Follow along by forking the [Belkirk Demo Site](https://github.com/forestryio/be
 
 For the purposes of this product tour, we'll assume you have a [GitHub account](https://github.com/signup) and have forked the [Belkirk College demo site](https://github.com/forestryio/belkirk-demo-site).
 
-![](/uploads/2018/01/12-1.png)
+![](/uploads/2018/01/12.png)
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 

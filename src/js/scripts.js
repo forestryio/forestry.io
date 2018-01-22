@@ -2,7 +2,9 @@ import "./imports/sidebarActiveState"
 import "./imports/lazyload"
 import CodeBlocks from "./imports/codeBlocks"
 import contentLoaded from "content-loaded"
+import EQCSS from "eqcss"
 import HeadingLinks from "./imports/headingLinks"
+import LightBox from "./imports/lightbox"
 import Nav from "./imports/nav"
 import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
@@ -62,4 +64,9 @@ contentLoaded().then(() => {
    * Enable code highlighting and copying
    */
   const codeBlocks = new CodeBlocks()
+
+  /**
+   * Enable lightboxes for images
+   */
+  const lightBoxes = new LightBox([".md-content img"])
 })
