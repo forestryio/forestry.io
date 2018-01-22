@@ -77,7 +77,7 @@ Make you first edit by updating the post's title, and then click the preview but
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the _preview button_ the preview will updated with any new content changes you've made.
 {{% /tip %}}
 
-Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click _Set as Published_. You'll see the _Save Draft_ button now says _Published_.
+Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click _Set as Published_. You'll see the _Save Draft_ button now says _Publish_.
 
 Click the _Publish_ button to save your changes to back to your repository.
 
