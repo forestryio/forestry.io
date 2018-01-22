@@ -35,6 +35,13 @@ menu:
 
 * _Deploy on Git Push_: when enabled, Forestry will automatically publish your site when changes are pushed to your Git repository.
 
+## Project Paths
+![](/uploads/2018/01/settings-projectpaths.png)Project paths allow you to configure features of Forestry related to your repository. 
+
+### Options
+
+* _Admin Path_: the path from the root of your repository to where the [Remote Admin](/docs/editing/remote-admin/) should be deployed.
+
 ## File Paths
 
 ![](/uploads/2018/01/settings-filepaths.png)

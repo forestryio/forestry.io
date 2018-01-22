@@ -9,7 +9,7 @@ menu:
     parent: settings
 ---
 ## Text
-TK: image
+![](/uploads/2018/01/text-preview.png)
 
 Single line text input. Displayed for *Front Matter values* that are short strings. For example, a page title.
 
@@ -24,7 +24,7 @@ title: "My New Page Title!"
 ---
 
 ## Textarea
-TK: image
+![](/uploads/2018/01/textarea-preview.png)
 
 Multi-line text input. Displayed for *Front Matter values* that are long strings. For example, a page description.
 
@@ -39,7 +39,7 @@ description: "Write an awesome description for your new site here. It will appea
 ---
 
 ## Number
-TK: image
+![](/uploads/2018/01/number-preview.png)
 
 A stepped number input. Displayed for *Front Matter values* that are integers. For example, page weight.
 
@@ -54,7 +54,7 @@ weight: 1
 ---
 
 ## Toggle
-TK: image
+![](/uploads/2018/01/toggle-preview.png)
 
 True or false toggle. Displayed for *Front Matter values* that are booleans. For example, a feature toggle.
 
@@ -69,7 +69,7 @@ show_feature: true
 ---
 
 ## Select
-TK: image
+![](/uploads/2018/01/select-preview.png)
 
 Multiple options displayed in a dropdown. Can be used for *Front Matter values* that are strings, but should be restricted to a set of options. Options can be sourced from existing content, data files, or manually provided. For example, a page's author.
 
@@ -84,7 +84,7 @@ author: "scott-gallant"
 ---
 
 ## Datetime
-TK: image
+![](/uploads/2018/01/datetime-preview.png)
 
 Date and time picker. Used for *Front Matter values* that are valid date strings. Can be restricted to only date or time values. For example, page created date or page publish date.
 
@@ -100,7 +100,7 @@ publish_date: 2018-01-07T12:00:00+00:00
 ---
 
 ## Tags Field
-TK: image
+![](/uploads/2018/01/tags-preview.png)
 
 A list of options displayed as tags. Used for *Front Matter values* that are an array of strings. For example, page tags.
 
@@ -118,7 +118,7 @@ tags:
 ---
 
 ## Sortable List Field
-TK: image
+![](/uploads/2018/01/sortable-list-preview.png)
 
 A list of options displayed in a list. Used for *Front Matter values* that are an array of strings. Can be configured to restrict options in a dropdown. For example, page authors or related pages.
 
@@ -135,7 +135,7 @@ authors:
 ---
 
 ## File Upload
-TK: image
+![](/uploads/2018/01/file-preview.png)
 
 File upload input that adds uploads to the *[Media Library](/docs/editing/media-library/)*. Used for *Front Matter values* that are a string ending with a file extension. For example, a featured image.
 
@@ -152,7 +152,7 @@ extra_script: "/js/extra_script.js"
 ---
 
 ## Multi-File Upload
-TK: image
+![](/uploads/2018/01/multi-file-preview.png)
 
 Gallery of media files. Used for *Front Matter values* that are an array of strings ending with a file extension. For example, an image carousel.
 
@@ -176,7 +176,7 @@ extra_scripts:
 ---
 
 ## Field Group
-TK: image
+![](/uploads/2018/01/field-group-preview.png)
 
 Group of *Front Matter Fields*. Used for *Front Matter values* that are an object. For example, your site's footer information.
 
@@ -194,7 +194,7 @@ footer:
 ---
 
 ## Repeatable Field Group
-TK: image
+![](/uploads/2018/01/repeatable-field-group-preview.png)
 
 List of Field Groups. Used for *Front Matter values* that are an array of like-objects. For example, a list of authors.
 

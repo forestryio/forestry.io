@@ -13,12 +13,8 @@ layout: single
 ---
 Previews allow content editors to see changes in Forestry before saving or publishing those changes, as well as share the drafted changes before publishing them. You can think of Forestry's previews as your site's staging environment.
 
-TK: image of preview environment
-
 ## How Previews Work
 Previews are generated when an editor clicks the preview button in the top right corner of the [editor](/docs/editing/markdown-editor/). Any unsaved changes on the page being previewed will be included in the preview.
-
-TK: image of preview button
 
 While the preview is generating, editors will be presented with a loading screen, and will be redirected to the page being previewed when the preview has finished generating.
 
@@ -36,6 +32,8 @@ If your local development environment uses external build tools like Gulp to gen
 {{% /warning %}}
 
 ## How long do previews last?
-Previews are guaranteed to persist for up to 12 hours, but may persist longer. 
+Previews are guaranteed to persist for up to 24 hours, but may persist longer. 
 
 All changes that have not been saved or published will be discarded each time a new preview is generated, or when a preview expires.
+
+Previews immediately expire when your site is published.

@@ -38,7 +38,7 @@ The Remote Admin is deployed as a static HTML page, so be sure you deploy it to 
 
 If [hosting](/docs/hosting) is configured, you can deploy the Remote Admin to your site by clicking the Deploy Admin​ button.
 
-TK: image of remote admin settings
+![](/uploads/2018/01/settings-projectpaths.png)
 
 Then you can access the admin from your hosted site at the path your specified. E.g, `https://example.com/admin`
 
