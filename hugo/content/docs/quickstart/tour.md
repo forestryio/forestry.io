@@ -27,7 +27,7 @@ For the purposes of this product tour, we'll assume you have a [GitHub account](
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
-1. Click "Add Site". In the modal the opens, choose "Import existing site".
+1. Click "Add Site". In the modal, choose "Import existing site".
 2. You'll be prompted to choose a static site generator. From the dropdown list, choose _Jekyll_.
 3. Select _GitHub_ from the list of options.
 4. You'll be prompted to choose "Public Repos" or "Private Repos". Your fork is a public fork, so click "Public Repos".
