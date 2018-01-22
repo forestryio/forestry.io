@@ -67,13 +67,12 @@ The Belkirk Demo Site is [hosted by GitHub pages](https://forestryio.github.io/b
 
 Select the _Posts_ collection in the sidebar, then open up the editor by selecting the post _First Draft Post_.
 
-TK: image of editor
+![](/uploads/2018/01/59.png)
 
 On the right is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
 
-TK: loading preview
-
-Make you first edit by updating the post's title, and then click the preview button TK: preview button in the top right. This will open new tab and begin generating a preview with your content changes.
+![](/uploads/2018/01/59-preview.png)
+Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
 
 {{% tip %}}
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the _preview button_ the preview will updated with any new content changes you've made.
@@ -87,15 +86,11 @@ Click the _Publish_ button to save your changes to back to your repository.
 
 ## Data Files
 
-_Data files_ allow you to set up metadata that isn't associated with a specific page, like your company's contact information.
+_Data files_ allow you to set up metadata that isn't associated with a specific page, like your company's contact information.![](/uploads/2018/01/11.png)Under _Data_ in the sidebar, select _Information_ to pull up the demo site's company information.
 
-![](/uploads/2018/01/11.png)
+![](/uploads/2018/01/11-preview.png)
 
-Under _Data_ in the sidebar, select _Information_ to pull up the demo site's company information.
-
-Update the _Twitter_ option from "forestryio" to "twitter", and then click the preview button (TK: preview button image) in the top right.
-
-TK: image of twitter feed
+Update the _Twitter_ option from "forestryio" to "twitter", and then click the preview button in the top right.
 
 Once the preview has loaded, you'll see that the Twitter feed on the homepage has updated.
 
@@ -123,9 +118,7 @@ Under _Site_ in the sidebar, select _Media Library_. You'll see all of the alrea
 By default, the Media Library uploads media to `uploads/:year:/:month:/:day:/`. This can be changed in your site's _Settings_.
 {{% /tip %}}
 
-You can upload media by clicking the placeholder in top right, or by dragging images into the Media Library from your desktop.
-
-Next, select the _Projects_ collection, and open up _Modern Engineering Textbook_. In this project's front matter, try updating the _Banner Image_ by clicking _Replace_, and choosing another image from the Media Library.
+You can upload media by clicking the placeholder in top right, or by dragging images into the Media Library from your desktop.![](/uploads/2018/01/58-replace.png)Next, select the _Projects_ collection, and open up _Portable EEG Monitoring Device_. In this project's front matter, try updating the _Banner Image_ by clicking _Replace_, and choosing another image from the Media Library.
 
 Feel free to hit _Publish_ to save your changes.
 
@@ -137,7 +130,7 @@ Menus allow you content editors to manage your site's navigation and other types
 
 ![](/uploads/2018/01/22.png)
 
-Under _Site_ in the sidebar, select _Menus_. Try re-arranging the menu with drag-and-drop, and then preview your changes by clicking the preview button (TK: preview button) in the top right.
+Under _Site_ in the sidebar, select _Menus_. Try re-arranging the menu with drag-and-drop, and then preview your changes by clicking the preview button in the top right.
 
 ---
 
