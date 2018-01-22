@@ -19,7 +19,7 @@ This guide assumes you already have an existing [Forestry Account](https://app.f
 
 To deploy a static site to GitHub pages using Forestry, you must first set up a new branch named `gh-pages` on your repo, which you can do by going to your repository in GitHub and using the branch management dropdown.
 
-![](/images/2017/12/github-gh-pages-settings.png)
+![](/uploads/2018/01/github-gh-pages-settings.png)
 
 ## Configuring Forestry
 
