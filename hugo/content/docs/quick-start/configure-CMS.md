@@ -16,8 +16,6 @@ You sync'd your repo with Forestry and now you're ready to configure your CMS.  
 
 1. Setting up correct paths for images and other media
 2. Configuring your content model (the fields used on each page, post, etc)
-3. Inviting others collaborators
-4. Setting up deployment to your host
 
 ---
 
@@ -29,7 +27,7 @@ When your team uploads images and other media, you want to ensure they're going 
 
 You should see the following settings which are described below.
 
-![](/uploads/2018/01/file-paths.png)
+![](/uploads/2018/01/file-paths2.png)
 
 ### Upload Folder
 The folder within your repo to store the uploaded media. If this is set to a directory that doesn't exist, Forestry will create that directory.
@@ -61,6 +59,34 @@ uploaded in the document body, like so:
 
 ---
 
+### Example Media Settings
+
+With Hugo, all static assets belong in your `/static` directory which then get outputted in the root of your built site.
+
+However, Jekyll supports static assets in your project root.  For this reason, we often see the following File Path settings in Forestry:
+
+<table>
+  <tr>
+    <th></th>
+    <th>Upload Directory</th>
+    <th>Front Matter File Path</th>
+    <th>Body File Path</th>
+  </tr>
+  <tr>
+    <td>Hugo</td>
+    <td><code>/static/uploads</code></td>
+    <td><code>/uploads</code></td>
+    <td><code>/uploads</code></td>
+  </tr>
+  <tr>
+    <td>Jekyll</td>
+    <td><code>/uploads</code></td>
+    <td><code>/uploads</code></td>
+    <td><code>/uploads</code></td>
+  </tr>
+</table>
+
+
 
 ### Variables
 Each of these settings supports the following variables at upload time:
@@ -69,12 +95,22 @@ Each of these settings supports the following variables at upload time:
 * `:month:`: the current month, formatted `MM`
 * `:day:`: the current day, formatted `DD`
 
- When these variables are used in the _Uploads Folder_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.
+ When these variables are used in the _Uploads Folder_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.  
+
+For this (Hugo) site, we organize media by month, like so:
+```
+upload_path: /hugo/static/uploads/:year:/:month:
+frontmatter_file_url_template: /uploads/:year:/:month:
+body_file_url_template: /uploads/:year:/:month:
+```
 
 For more information on media settings visit the [Media Library doc](/docs/editing/media-library/#configuring-the-media-library).
 
+
 ---
 ## Your Content Model &amp; Front Matter Templates
+
+### In this section we will configure your content model. This determines which fields are displayed your pages, posts, etc. 
 
 When you sync a new site with Forestry, all data found in the Front Matter for your pages will be displayed as UI fields.
 
@@ -141,7 +177,8 @@ Congrats! Now you should have fields set up for your different content types. Fo
 
 
 {{% tip "Configuration Files" %}}
-You probably noticed Forestry committed a .forestry folder to your repository. This stores all of your sites configuration (FMTs, image settings, etc). If you prefer working in a text file, you can set all of your site's configuration by editing these files. More info [here](/docs/settings/config-files/).
+You probably noticed Forestry committed a .forestry folder to your repository. This stores all of your sites configuration (FMTs, image settings, etc). If you prefer working in a text file, you can set all of your site's configuration by editing these files. More info [here](/docs/settings/config-files/).  
+
 ![](/uploads/2018/01/configuration-files.png)
 {{% /tip %}}
 
