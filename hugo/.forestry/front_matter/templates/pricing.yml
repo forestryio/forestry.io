@@ -135,5 +135,7 @@ fields:
   - type: textarea
     name: textline
     label: textline
+    config:
+      wysiwyg: true
   config:
     labelField: headline
