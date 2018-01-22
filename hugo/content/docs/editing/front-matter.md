@@ -1,18 +1,21 @@
 ---
 aliases:
-- /docs/faq/how-ui-elements-are-determined-from-front-matter/
-- /docs/site-configuration/front-matter-templates/
+- "/docs/faq/how-ui-elements-are-determined-from-front-matter/"
+- "/docs/site-configuration/front-matter-templates/"
 title: Front Matter
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
+layout: single
 menu:
   docs:
     parent: editing
-layout: single
+    weight: 4
+
 ---
 ## What is Front Matter?
+
 Front Matter is structured metadata that lives at the top of your [content files](/docs/faqs/glossary/content-files/) that allows you to add custom variables to your pages. Depending on your static site generator, Front Matter can be defined in a variety of formats including [YAML](/docs/faqs/glossary/front-matter#yaml), [TOML](/docs/faqs/glossary/front-matter#toml), and [JSON](/docs/faqs/glossary/front-matter#json).
 
 For example, YAML Front Matter may look like this:
@@ -27,10 +30,10 @@ Thanks for visiting our site!
 
 Forestry provides a simple and intuitive editor for Front Matter, for both [Markdown](/docs/editing/markdown-editor/) and [HTML documents](/docs/editing/html-editor/).
 
-TK: image of the editor
+![](/uploads/2018/01/14.png)
 
-Forestry offers a variety of UI elements called [*Front Matter Fields*](/docs/settings/fields/) that allow editors to easily update Front Matter. When importing your site, Forestry will try to choose the best *Front Matter Field* for each *Front Matter value*.
+Forestry offers a variety of UI elements called [_Front Matter Fields_](/docs/settings/fields/) that allow editors to easily update Front Matter. When importing your site, Forestry will try to choose the best _Front Matter Field_ for each _Front Matter value_.
 
 {{% tip %}}
-You can customize your *Front Matter Fields* easily using Forestry's *[Front Matter Templates](/docs/settings/front-matter-templates/)*, allowing you to make certain fields required, set up restrictions or default values, add descriptions, and much more!
+You can customize your _Front Matter Fields_ easily using Forestry's [_Front Matter Templates_](/docs/settings/front-matter-templates/), allowing you to make certain fields required, set up restrictions or default values, add descriptions, and much more!
 {{% /tip %}}
