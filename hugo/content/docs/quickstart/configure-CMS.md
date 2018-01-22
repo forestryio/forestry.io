@@ -16,7 +16,7 @@ You [setup your site](/docs/quickstart/setup-site/ "Setup Your Site") with Fores
 
 1. Setting up correct paths for images and other media
 2. Configuring your content model (the fields used on each page, post, etc)
-3. Inviting others collaborators
+3. Inviting other collaborators
 4. Setting up deployment to your host
 
 ---
