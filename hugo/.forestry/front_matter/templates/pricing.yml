@@ -1,4 +1,6 @@
 ---
+pages:
+- pricing.md
 hide_body: false
 fields:
 - type: text
@@ -123,3 +125,15 @@ fields:
   description: Sets the Hugo's Content Type (https://gohugo.io/content-management/types/)
   default: pricing
   hidden: true
+- type: field_group_list
+  name: faqs
+  label: FAQs
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: textarea
+    name: textline
+    label: textline
+  config:
+    labelField: headline
