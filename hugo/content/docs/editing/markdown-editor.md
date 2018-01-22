@@ -13,7 +13,7 @@ menu:
     weight: 2
 
 ---
-The markdown editor is the main way of editing content in Forestry. Your content's [front matter](/docs/front-matter-templates/) is shown on the right, and your content's markdown body is shown on the left.
+The markdown editor is the main way of editing content in Forestry. Your content's [front matter](/docs/front-matter-templates/) is shown on the left, and your content's markdown body is shown on the right.
 
 ![](/uploads/2018/01/14.png)
 
