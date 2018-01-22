@@ -27,9 +27,9 @@ The markdown editor works just like any other online WYSIWYG editor. A full tool
 The markdown editor is fully [commonmark compatible](http://commonmark.org/help/)! Give markdown a try by typing `## My New Heading!` into the editor to get a level 2 heading!
 {{% /tip %}}
 
-To find all available keyboard and markdown shortcuts, click the keyboard icon in the bottom right corner.
+![](/uploads/2018/01/14-markdown-formatting.png)
 
-TK: image
+To find all available keyboard and markdown shortcuts, click the keyboard icon in the bottom right corner.
 
 ### Source editor![](/uploads/2018/01/18.png)
 
@@ -38,6 +38,8 @@ For advanced users, the full markdown source of your content body can be edited 
 ## Drafting and Publishing Content
 
 The markdown editor fully supports creating draft content -- content that is not yet ready to be published to your production website -- as well as live, published content.
+
+![](/uploads/2018/01/14-settings-button.png)
 
 This can be changed by clicking the more options icon (`...`), and clicking "Set as draft"/"Set as published".
 
