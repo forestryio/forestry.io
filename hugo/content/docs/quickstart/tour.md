@@ -67,9 +67,12 @@ The Belkirk Demo Site is [hosted by GitHub pages](https://forestryio.github.io/b
 
 Select the _Posts_ collection in the sidebar, then open up the editor by selecting the post _First Draft Post_.
 
-![](/uploads/2018/01/59.png)On the right is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
+![](/uploads/2018/01/59.png)
 
-![](/uploads/2018/01/59-preview.png)Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
+On the right is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
+
+![](/uploads/2018/01/59-preview.png)
+Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
 
 {{% tip %}}
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the _preview button_ the preview will updated with any new content changes you've made.
@@ -83,7 +86,11 @@ Click the _Publish_ button to save your changes to back to your repository.
 
 ## Data Files
 
-_Data files_ allow you to set up metadata that isn't associated with a specific page, like your company's contact information.![](/uploads/2018/01/11.png)Under _Data_ in the sidebar, select _Information_ to pull up the demo site's company information.![](/uploads/2018/01/11-preview.png)Update the _Twitter_ option from "forestryio" to "twitter", and then click the preview button in the top right.
+_Data files_ allow you to set up metadata that isn't associated with a specific page, like your company's contact information.![](/uploads/2018/01/11.png)Under _Data_ in the sidebar, select _Information_ to pull up the demo site's company information.
+
+![](/uploads/2018/01/11-preview.png)
+
+Update the _Twitter_ option from "forestryio" to "twitter", and then click the preview button in the top right.
 
 Once the preview has loaded, you'll see that the Twitter feed on the homepage has updated.
 

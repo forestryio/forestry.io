@@ -125,6 +125,12 @@ max_width = 1200
 min_width = 320
 sizes = "100vw"
 steps = 5
+[params.cloudinary.presets.content]
+fallback_width = 540
+max_width = 540
+min_width = 320
+sizes = "(min-width: 600px) 540px, 100vw"
+steps = 5
 [related]
 includeNewer = true
 threshold = 10
