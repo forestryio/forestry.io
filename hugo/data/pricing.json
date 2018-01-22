@@ -6,7 +6,7 @@
       "priceMonthly": 0,
       "description": "I want a website",
       "buttonText": "Get started",
-      "buttonUrl": "#0",
+      "buttonUrl": "https://forestry.io/signup/",
       "planItems": [
         {
           "text": "1 User"
