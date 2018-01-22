@@ -4,9 +4,9 @@
       "title": "personal",
       "priceAnnually": 0,
       "priceMonthly": 0,
-      "description": "I want a website",
+      "description": "",
       "buttonText": "Get started",
-      "buttonUrl": "#0",
+      "buttonUrl": "https://forestry.io/signup/",
       "planItems": [
         {
           "text": "1 User"
@@ -33,11 +33,11 @@
     },
     {
       "title": "small team",
-      "priceAnnually": 9,
-      "priceMonthly": 12,
-      "description": "I'm a freelance developer",
+      "priceAnnually": 0,
+      "priceMonthly": 9,
+      "description": "",
       "buttonText": "Get started",
-      "buttonUrl": "#0",
+      "buttonUrl": "https://forestry.io/signup/",
       "planItems": [
         {
           "text": "3 Users"
@@ -67,11 +67,11 @@
     },
     {
       "title": "large team",
-      "priceAnnually": 16,
-      "priceMonthly": 22,
-      "description": "We're a large agency",
+      "priceAnnually": 0,
+      "priceMonthly": 29,
+      "description": "",
       "buttonText": "Get started",
-      "buttonUrl": "#0",
+      "buttonUrl": "https://forestry.io/signup/",
       "planItems": [
         {
           "text": "7 Users"
@@ -103,12 +103,12 @@
       "title": "enterprise",
       "priceAnnually": "_",
       "priceMonthly": "_",
-      "description": "We have special needs",
+      "description": "",
       "buttonText": "Get a quote",
-      "buttonUrl": "#0",
+      "buttonUrl": "mailto:enterprise@forestry.io",
       "planItems": [
         {
-          "text": "_ Users"
+          "text": "Flexible user limits"
         },
         {
           "text": "Enterprise support"
@@ -138,7 +138,7 @@
           "text": "Manage multiple sites"
         },
         {
-          "text": "On-premise Installation"
+          "text": "* On-premise Installation"
         }
       ]
     }

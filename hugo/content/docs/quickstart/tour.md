@@ -27,12 +27,11 @@ For the purposes of this product tour, we'll assume you have a [GitHub account](
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
-1. Click "Add Site". In the modal the opens, choose "Import existing site".
+1. Click "Add Site". In the modal, choose "Import existing site".
 2. You'll be prompted to choose a static site generator. From the dropdown list, choose _Jekyll_.
 3. Select _GitHub_ from the list of options.
 4. You'll be prompted to choose "Public Repos" or "Private Repos". Your fork is a public fork, so click "Public Repos".
-5. Give Forestry access to your GitHub repositories by clicking "Authorize application".
-   _If you are not already logged in, GitHub will prompt you for login credentials first."_
+5. Give Forestry access to your GitHub repositories by clicking "Authorize application". _If you are not already logged in, GitHub will prompt you for login credentials first._
 6. Once authorized, you will be redirected back to Forestry. In the first dropdown, select `username/belkirk-college-demo`, and in the second dropdown select the `master` branch.
 7. Enter _Belkirk Product Tour_ into the name field and then click _Next_.
 8. In the final step, you'll be asked to configure Hosting. Choose _Commit to source repo only_ and then click _Save Changes_
@@ -69,7 +68,7 @@ Select the _Posts_ collection in the sidebar, then open up the editor by selecti
 
 ![](/uploads/2018/01/59.png)
 
-On the right is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the left is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
+On the left is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the right is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
 
 ![](/uploads/2018/01/59-preview.png)
 Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
@@ -78,7 +77,7 @@ Make you first edit by updating the post's title, and then click the preview but
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the _preview button_ the preview will updated with any new content changes you've made.
 {{% /tip %}}
 
-Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click _Set as Published_. You'll see the _Save Draft_ button now says _Published_.
+Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click _Set as Published_. You'll see the _Save Draft_ button now says _Publish_.
 
 Click the _Publish_ button to save your changes to back to your repository.
 
@@ -126,7 +125,7 @@ Feel free to hit _Publish_ to save your changes.
 
 ## Menus
 
-Menus allow you content editors to manage your site's navigation and other types of menus easily.
+Menus allow your content editors to manage your site's navigation and other types of menus easily.
 
 ![](/uploads/2018/01/22.png)
 
@@ -144,7 +143,7 @@ Forestry has many more features for content editors:
 
 * Create great content with the powerful [Markdown Editor](/docs/editing/markdown-editor) and with [Data Files](/docs/editing/data-files)
 * Learn more about the [Media Library](/docs/editing/media-library)
-* Learn how to create [menus](/docs/editing/menus) for navigation and site links
+* Learn how to create [Menus](/docs/editing/menus) for navigation and site links
 * Add structured metadata with [Front Matter](/docs/editing/front-matter)
 * Access the CMS from your own domain with the [Remote Admin](/docs/editing/remote-admin)
 
@@ -152,7 +151,7 @@ Forestry has many more features for content editors:
 
 Forestry can handle building and deploying your static site for you, or can integrate with third-party services that handle deployment.
 
-You have many [options](/docs/hosting/)!
+You have many [hosting options](/docs/hosting/)!
 
 ### Team Management
 

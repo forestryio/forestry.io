@@ -25,7 +25,7 @@ This doc will walk you through:
 
 If you **Don't** have a Jekyll or Hugo site, fork the [Jekyll demo site](https://github.com/forestryio/belkirk-jekyll-demo) and follow along.
 
- <!-- <a href="" class="button small primary">Jekyll demo site</a> -->
+<!-- <a href="" class="button small primary">Jekyll demo site</a> -->
 
 <!--[product tour](/docs/welcome/tour/).-->
 
@@ -54,7 +54,7 @@ For now, just configure Forestry to **commit back to our repo**.  You can always
 
 ![](/uploads/2018/01/forestry-io-deployment-setup.png)
 
-Congratulations! Now your CMS is sync'd with your source code and your editing team can start making commits.  Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
+Congratulations! Now your CMS is synced with your source code and your editing team can start making commits.  Depending on the size of your site, Forestry might take a few minutes to import and parse your project.
 
 ## Document State
 

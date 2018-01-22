@@ -137,3 +137,15 @@
   }
 }
 
+
+.fine-print {
+  background: $color-white;
+  padding-bottom: 4rem;
+  padding-top: 8rem;
+  font-size: .8rem;
+
+  @media screen and (min-width: 870px) {
+    padding-bottom: 4rem;
+    padding-top: 0;
+  }
+}

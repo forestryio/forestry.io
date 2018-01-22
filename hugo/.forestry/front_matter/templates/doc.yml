@@ -1,4 +1,7 @@
 ---
+pages:
+- docs/changelog/2018/1/22-changelog.md
+- docs/quickstart/test.md
 hide_body: false
 fields:
 - type: text
