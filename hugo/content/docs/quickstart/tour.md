@@ -151,7 +151,7 @@ Forestry has many more features for content editors:
 
 Forestry can handle building and deploying your static site for you, or can integrate with third-party services that handle deployment.
 
-You have many [options](/docs/hosting/)!
+You have many [hosting options](/docs/hosting/)!
 
 ### Team Management
 
