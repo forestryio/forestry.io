@@ -34,6 +34,4 @@ Forestry provides a simple and intuitive editor for Front Matter, for both [Mark
 
 Forestry offers a variety of UI elements called [_Front Matter Fields_](/docs/settings/fields/) that allow editors to easily update Front Matter. When importing your site, Forestry will try to choose the best _Front Matter Field_ for each _Front Matter value_.
 
-{{% tip %}}
-You can customize your _Front Matter Fields_ easily using Forestry's [_Front Matter Templates_](/docs/settings/front-matter-templates/), allowing you to make certain fields required, set up restrictions or default values, add descriptions, and much more!
-{{% /tip %}}
+{{% tip %}} You can customize the _Front Matter Fields_ of a page using Forestry's [_Front Matter Templates_](/docs/settings/front-matter-templates/). These templates allow fields to be ordered and configured in a variety of ways such as making them required, setting default values, adding descriptions, and much more! {{% /tip %}}
