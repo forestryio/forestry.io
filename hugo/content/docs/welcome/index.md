@@ -21,19 +21,19 @@ cta:
   calls_to_action: []
 private: false
 menu:
-  docs:
-    parent: welcome
-  main:
-    name: Docs
-    weight: 1
   footer:
     name: Docs
     parent: product
     weight: 2
----
-Forestry.io is a Git-backed CMS (content management system) for websites and web products built using _static site generators_. Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
+  main:
+    name: Docs
+    weight: 1
+  docs:
+    parent: welcome
+    weight: 1
 
-Forestry powers static sites generated using [Jekyll](https://jekyllrb.com/ "Jekyll website") and [Hugo](https://gohugo.io/ "Hugo website") and manages them using [Git](https://git-scm.com/ "Git Website").
+---
+Forestry.io is a Git-backed CMS (content management system) for websites and web products built using [_static site generators_](/docs/faqs/glossary/static-site-generators/ "Static Site Generators"). Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
 
 {{% tip %}}
 

@@ -12,7 +12,7 @@ menu:
     weight: 3
 
 ---
-You sync'd your repo with Forestry and now you're ready to configure your CMS.  This doc will go over:
+You [setup your site](/docs/quickstart/setup-site/ "Setup Your Site") with Forestry and now you're ready to configure your CMS.  This doc will go over:
 
 1. Setting up correct paths for images and other media
 2. Configuring your content model (the fields used on each page, post, etc)
@@ -32,9 +32,11 @@ You should see the following settings which are described below.
 ![](/uploads/2018/01/file-paths.png)
 
 ### Upload Folder
+
 The folder within your repo to store the uploaded media. If this is set to a directory that doesn't exist, Forestry will create that directory.
 
 ### Font Matter File URL
+
 The path that will **prepend** media files uploaded from Front Matter fields. For example, if this value were set to `/uploads` Forestry would write out the following image value.
 
 ```yaml
@@ -46,35 +48,35 @@ image: /uploads/image.jpg
 ```
 
 ### Content Body URL
+
 The path that will **prepend** media files uploaded in the body editor.
 
 This usually has the same value as the `Front Matter File URL`, but in some cases you may need these paths to be different. If this value were set to `/uploads` Forestry would write out the following in your Markdown body:
 
-```
-## My new post
-
-The content body URL path is prepended to images
-uploaded in the document body, like so:
-
-![](/uploads/image.jpg)
-```
+    ## My new post
+    
+    The content body URL path is prepended to images
+    uploaded in the document body, like so:
+    
+    ![](/uploads/image.jpg)
 
 ---
 
-
 ### Variables
+
 Each of these settings supports the following variables at upload time:
 
 * `:year:`: the current year, formatted `YYYY`
 * `:month:`: the current month, formatted `MM`
 * `:day:`: the current day, formatted `DD`
 
- When these variables are used in the _Uploads Folder_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.
+When these variables are used in the _Uploads Folder_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.
 
 For more information on media settings visit the [Media Library doc](/docs/editing/media-library/#configuring-the-media-library).
 
 ---
-## Your Content Model &amp; Front Matter Templates
+
+## Your Content Model & Front Matter Templates
 
 When you sync a new site with Forestry, all data found in the Front Matter for your pages will be displayed as UI fields.
 
@@ -84,14 +86,11 @@ However, if you want to configure how these fields are displayed for your editor
 
 This is where we'll create a UI that's tailored to our Front Matter data.
 
-
 {{% tip "Create template from an existing page" %}}
 If you just want to add fields that match an existing piece of content, navigate to that page and click the settings drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data. Click [here](/docs/guides/fmt-from-existing-page/) for more info.
 {{% /tip %}}
 
-
 If the Front Matter for your blog posts looks like this:
-
 
 ```yaml
 ---
@@ -124,8 +123,8 @@ Some of the options available are:
 To set default values for your fields, just edit the field value right in the Template editing interface and save your changes.
 {{% /tip %}}
 
-
 ### Applying Template to a Page
+
 To apply an FMT to an individual page, navigate to the page you want to apply the FMT to and click **Settings > Change Template**
 
 ![](/uploads/2018/01/change-template.png)
