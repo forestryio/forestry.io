@@ -30,7 +30,6 @@ jobs:
     - run:
         name: Run build
         command: |
-          touch .env.js
           npm run build
 
     - run:
