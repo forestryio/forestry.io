@@ -49,7 +49,7 @@ If you deleted a media upload by accident, worry not! All media uploads are stor
 
 ## Configuring the Media Library
 
-The Media Library displayed media files found inside a single uploads folder. This can be configured from your site's settings.
+The Media Library displays media files found inside a single uploads folder. This can be configured from your site's settings.
 
 ![](/uploads/2018/01/settings-filepaths.png)
 
