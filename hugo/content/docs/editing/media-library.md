@@ -27,7 +27,7 @@ The Media Library allows you to upload and delete media files. It also allows ed
 
 To upload media files to the Media Library, navigate to the _Media Library_ page in Forestry, and follow these instructions:
 
-1. Click "+" placeholder thumbnail
+1. Click the "+" thumbnail
 2. Select a media file to upload from your local machine
 3. A loading spinner will be displayed while the media file uploads
 
