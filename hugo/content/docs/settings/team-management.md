@@ -50,8 +50,8 @@ They can:
 1. Edit and publish content
 2. Manage other users
 3. Manage billing/plan for the site
-4. Can manage the site settings
-5. Can delete the site (this is irreversible)
+4. Manage the site settings
+5. Delete the site (this is irreversible)
 
 ### Developer
 
