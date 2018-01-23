@@ -69,7 +69,7 @@ gulp.task("server", ["build"], () => {
  * compiles the static site with Hugo
  */
 gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", cb)
+  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", "s3redirects", cb)
 })
 
 /**
@@ -111,7 +111,7 @@ gulp.task("algolia", cb => {
  * @task s3redirects
  * Updates a target s3 bucket's objects with redirect
  * rules generated with Hugo's alias feature
- * 
+ *
  * Requires the following env vars:
  *  - AWS_ACCESS_KEY_ID
  *  - AWS_SECRET_ACCESS_KEY

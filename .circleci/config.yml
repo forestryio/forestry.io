@@ -17,7 +17,7 @@ jobs:
         # fallback to using the latest cache if no exact match is found
         - node-dependencies-
 
-    - run: 
+    - run:
         name: Install Node Dependencies
         command: |
           yarn install
@@ -32,10 +32,10 @@ jobs:
         command: |
           node -v
           npm -v
-          python -v
+          python --version
           aws -v
         background: true
-    
+
     - run:
         name: Run build
         command: |
@@ -45,7 +45,7 @@ jobs:
     - run:
         command: |
           tar -zcvf dist.tar.gz ./dist
-    
+
     - store_artifacts:
         path: dist.tar.gz
 
@@ -65,7 +65,7 @@ jobs:
 
     # Add any SSH keys from CircleCI
     - add_ssh_keys
-    
+
     - deploy:
         name: "Deploy website to AWS S3"
         command: |
