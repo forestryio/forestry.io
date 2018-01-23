@@ -28,18 +28,18 @@ jobs:
         key: node-dependencies-{{ checksum "package.json" }}
 
     - run:
-      name: Install Python Dependencies
-      command: |
-        sudo apt-get update
-        sudo apt-get upgrade -y
-        sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl jq
-        sudo rm -rf /var/lib/apt/lists/*
-        sudo mkdir -p /tmp
-        cd /tmp
-        curl -O https://bootstrap.pypa.io/get-pip.py
-        sudo python get-pip.py
-        sudo pip install awscli
-        sudo rm -f /tmp/get-pip.py
+        name: Install Python Dependencies
+        command: |
+          sudo apt-get update
+          sudo apt-get upgrade -y
+          sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl jq
+          sudo rm -rf /var/lib/apt/lists/*
+          sudo mkdir -p /tmp
+          cd /tmp
+          curl -O https://bootstrap.pypa.io/get-pip.py
+          sudo python get-pip.py
+          sudo pip install awscli
+          sudo rm -f /tmp/get-pip.py
 
     - run:
         name: "Upload images"
