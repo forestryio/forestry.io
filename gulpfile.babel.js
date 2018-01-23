@@ -69,7 +69,7 @@ gulp.task("server", ["build"], () => {
  * compiles the static site with Hugo
  */
 gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", "s3redirects", cb)
+  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", cb)
 })
 
 /**

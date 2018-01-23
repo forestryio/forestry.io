@@ -28,15 +28,6 @@ jobs:
         key: node-dependencies-{{ checksum "package.json" }}
 
     - run:
-        name: Log Versions
-        command: |
-          node -v
-          npm -v
-          python --version
-          aws -v
-        background: true
-
-    - run:
         name: Run build
         command: |
           touch .env.js
@@ -54,7 +45,7 @@ jobs:
         command: |
           sudo apt-get update
           sudo apt-get upgrade -y
-          sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl
+          sudo apt-get install -y --no-install-recommends build-essential g++ sudo python2.7 python2.7-dev unzip curl jq
           sudo rm -rf /var/lib/apt/lists/*
           sudo mkdir -p /tmp
           cd /tmp
@@ -72,6 +63,27 @@ jobs:
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying branch master to S3"
             aws s3 sync ./dist s3://${AWS_S3_BUCKET}
+
+            path_join() {
+              part1=$1
+              part2=$2
+              if [ "${part1: -1}" == "/" ]; then
+                  part1=${part1}${part2}
+              else
+                  part1=${part1}/${part2}
+              fi
+              echo $part1
+            }
+
+            for redirect in $(cat redirects.json | jq -c '.[]'); do
+              from=$(echo $redirect | jq '. | .Condition.KeyPrefixEquals' | cut -d "\"" -f 2)
+              to=$(echo $redirect | jq '. | .Redirect.ReplaceKeyPrefixWith' | cut -d "\"" -f 2)
+
+              from=$(path_join $from "index.html")
+              to=$(path_join $to "index.html")
+
+              aws s3 cp s3://${AWS_BUCKET}${from} s3://${AWS_BUCKET}${from} --website-redirect ${to}--metadata-directive REPLACE
+            done
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
