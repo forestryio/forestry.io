@@ -23,7 +23,7 @@ In order for Forestry to deploy your site via FTP/SFTP, you will need:
 * A valid FTP username and password
 * The port your FTP server uses
 
-If you are hosting your static site on an FTP server, you should be aware that Forestry will delete all files from your destination directory before  writing the new, updated files.
+If you are hosting your static site on an FTP server, you should be aware that Forestry will delete all files from your destination directory before writing the new, updated files.
 
 This could be problematic if you keep non-website related files in your FTP account. If you don't want Forestry to empty all of your files, consider setting up your site in an empty subdirectory.
 
@@ -67,7 +67,7 @@ Once you have your FTP credentials and have chosen the correct FTP method for yo
 
 Under _Advanced Options_, ensure that the _Port_ is the correct port.
 
-If you created a new directory to deploy your site to, provide the relative path from your FTP users home folder to the new directory in the _Directory_ field.
+If you created a new directory to deploy your site to, provide the relative path from your FTP user's home folder to the new directory in the _Directory_ field.
 
 Finally, click _Save Settings_.
 

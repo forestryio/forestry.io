@@ -3,13 +3,15 @@ title: Textarea Field
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
----
 
+---
 ## Types
-- [Default](#default)
-- [WYSIWYG](#wysiwyg)
+
+* [Default](#default)
+* [WYSIWYG](#wysiwyg)
 
 ## Default
+
 Multi-line text input.
 
 ## Options
@@ -64,8 +66,10 @@ config:
 ```
 
 ## WYSIWYG
+
 Enable HTML rich-text input with inline formatting only.
 
+<<<<<<< HEAD
 ## Field UI
 ![](/uploads/2018/01/textarea-wysiwyg-preview.png)
 
@@ -108,3 +112,22 @@ hidden: false
 config:
   wysiwyg: true
 ```
+=======
+### Field UI
+
+![](/uploads/2018/01/textarea-wysiwyg-preview.png)
+
+### Templating
+
+If you have a text field in your template, you can access it in your templates using the field’s `name`:
+
+#### Hugo
+
+    <h1>{{ .Params.description | markdownify }}</h1> 
+
+#### Jekyll
+
+    <h1>{{ page.description | markdownify }}</h1> 
+
+{{% tip %}} Use the `markdownify` filters to automatically format your HTML {{% /tip %}}
+>>>>>>> 3f9c60d72b2fcdd66b92a15c968ae60afdc15fe9

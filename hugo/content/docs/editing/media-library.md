@@ -27,7 +27,7 @@ The Media Library allows you to upload and delete media files. It also allows ed
 
 To upload media files to the Media Library, navigate to the _Media Library_ page in Forestry, and follow these instructions:
 
-1. Click "+" placeholder thumbnail
+1. Click the "+" thumbnail
 2. Select a media file to upload from your local machine
 3. A loading spinner will be displayed while the media file uploads
 
@@ -49,19 +49,19 @@ If you deleted a media upload by accident, worry not! All media uploads are stor
 
 ## Configuring the Media Library
 
-The Media Library displayed media files found inside a single uploads folder. This can be configured from your site's settings.
+The Media Library displays media files found inside a single uploads folder. This can be configured from your site's settings.
 
 ![](/uploads/2018/01/settings-filepaths.png)
 
 #### Upload Folder
 
-Upload path where media uploads should be saved, relative to the root of your repository.
+The upload path where media uploads should be saved, relative to the root of your repository.
 
 * _Default:_ `/uploads/:year:/:month:/:day:/`
 
 #### Front Matter File URL
 
-The relative path from the root of your site to append to media uploads inserted into front matter fields.
+The relative path from the root of your site for media uploads inserted into front matter fields.
 
 * _Default:_ `/uploads/:year:/:month:/:day:/`
 
@@ -71,7 +71,7 @@ The _Front Matter File URL_ may need to be different than the _Content Body File
 
 #### Content Body File URL
 
-The relative path from the root of your site to append to media uploads inserted into the Markdown or HTML content body.
+The relative path from the site's root for media uploads in the content body.
 
 * _Default:_ `/uploads/:year:/:month:/:day:/`
 
@@ -81,7 +81,7 @@ The _Content Body File URL_ should always be the relative path to your media upl
 
 #### Variables
 
-Each of these settings supports the following variables at upload time:
+Each of these settings support the following variables at upload time:
 
 * `:year:`: the current year, formatted `YYYY`
 * `:month:`: the current month, formatted `MM`

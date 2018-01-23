@@ -70,7 +70,7 @@ To add a field, click the _Add_ button under the field type you'd like to add. T
 The field editor will open for the new field, and prompt you to configure the field. All fields share some common options:
 
 * _Label:_ the human-friendly label shown above the input field in the editor.
-* _Name:_ the key stored in your content's front matter, used to access it in your templates.
+* _Name:_ the key stored in your content's front matter. It is used to access this field in your templates.
 * _Description:_ (Optional) a human friendly description of what the field does and/or instructions for your editors.
 
 See the [field documentation](/docs/settings/fields/) for a list of all options available for each field.

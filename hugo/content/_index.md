@@ -13,8 +13,8 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Start building now
     button: true
-  - permalink: https://app.forestry.io/signup
-    textline: Log in
+  #- permalink: /docs/quickstart/tour/
+  #  textline: Launch Demo
   video:
     fallbackVisual: "/video/forestry_factory.jpg"
     sources:

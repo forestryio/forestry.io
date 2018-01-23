@@ -36,7 +36,8 @@ menu:
 * _Deploy on Git Push_: when enabled, Forestry will automatically publish your site when changes are pushed to your Git repository.
 
 ## Project Paths
-![](/uploads/2018/01/settings-projectpaths.png)Project paths allow you to configure features of Forestry related to your repository. 
+
+![](/uploads/2018/01/settings-projectpaths.png)Project paths allow you to configure features of Forestry related to your repository.
 
 ### Options
 
@@ -65,8 +66,7 @@ Hugo Version allows you to configure which Hugo version Forestry uses to build y
 * _Markdown:_ will create all new content as `.md` files. The default and recommended setting.
 * _HTML_: will create all new content as `.html` files. This is a beta feature.
 
-{{% tip %}}
-This setting effects whether the [Markdown Editor](/docs/editing/markdown-editor/) or [HTML editor](/docs/editing/html-editor/) will be used when creating new content through Forestry.
+{{% tip %}} This setting affects whether the [Markdown Editor](/docs/editing/markdown-editor/) or [HTML editor](/docs/editing/html-editor/) will be used when creating new content through Forestry.
 {{% /tip %}}
 
 ## Webhook URL
