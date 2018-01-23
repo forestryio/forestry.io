@@ -75,7 +75,7 @@ jobs:
               echo $part1
             }
 
-            for redirect in $(cat redirects.json | jq -c '.[]'); do
+            for redirect in $(cat ./dist/redirects.json | jq -c '.[]'); do
               from=$(echo $redirect | jq '. | .Condition.KeyPrefixEquals' | cut -d "\"" -f 2)
               to=$(echo $redirect | jq '. | .Redirect.ReplaceKeyPrefixWith' | cut -d "\"" -f 2)
 
