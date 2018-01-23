@@ -27,7 +27,7 @@ _Be sure to replace_ `_{{accountname}}_` _with your BitBucket username._
 
 ## Configuring Forestry
 
-Once your new repository is created, navigate to the _Settings_ page of your site in Forestry, click the _Hosting_ tab, and set the _Connection_ option to _BitBucket_.![](/uploads/2018/01/52.png)If you haven't authenticated with GitHub before, you'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option the applies to your repository.
+Once your new repository is created, navigate to the _Settings_ page of your site in Forestry, click the _Hosting_ tab, and set the _Connection_ option to _BitBucket_.![](/uploads/2018/01/52.png)If you haven't authenticated with BitBucket before, you'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option the applies to your repository.
 
 ![](/uploads/2018/01/7.png)This will redirect you to BitBucket and prompt you to enter your login credentials if you are not already logged in.
 
