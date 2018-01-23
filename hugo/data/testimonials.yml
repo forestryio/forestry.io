@@ -2,12 +2,6 @@
 tweets:
 - row:
   -
-    name: 'Saul Cullen'
-    username: '@saulgcullen'
-    avatar: /img/helloworld_400x400.jpg
-    permalink: 'https://twitter.com/saulgcullen/status/929747493319073797'
-    textline: 'Really enjoying using @forestryio - superb product that integrates brilliantly with git resulting in a hugely robust, version controlled, content store for "static sites". Paired with @Netlify, it becomes even more awesome. Great work.'
-  -
     name: 'Michael Lee 🍕'
     username: '@michaelsoolee'
     avatar: /img/nInv8bTI_bigger.jpg
@@ -32,36 +26,24 @@ tweets:
     permalink: 'https://twitter.com/lucperkins/status/885663935994634240'
     textline: '‏Gotta say, @forestryio is awesome. Seems to 100% solve a very, very thorny set of problems.'
   -
-    name: 'D. Ho‏‏'
-    username: '@ComethTheNerd'
-    avatar: /img/CHFQnumj_bigger.jpg
-    permalink: 'https://twitter.com/ComethTheNerd/status/926148556527894530'
-    textline: 'The whole @Github pages @jekyllrb workflow is a pure joy to work with. Will post the fruits of my tinkering soon!'
+    name: 'eliza sj'
+    username: '@iamelizasj'
+    avatar: /img/eliza.png
+    permalink: 'https://twitter.com/iamelizasj/status/932575857302036480'
+    textline: 'wow @forestryio u guys really make it simple ❤️'
 - row:
   -
-    name: 'Scott Jenkins'
-    username: '@scottjenkins'
-    avatar: /img/n507937887_888188_3657_bigger.jpg
-    permalink: 'https://twitter.com/scottjenkins/status/903013469863202816'
-    textline: 'It''s officially over between me and you #wordpress I''m all in on #gohugo'
-  -
-    name: 'Lisandro Crespo'
-    username: '@lisandroCT'
-    avatar: /img/GcOgJSKw_bigger.jpg
-    permalink: 'https://twitter.com/lisandroCT/status/930626886849396736'
-    textline: 'Oh, it was love at first try with @jekyllrb and @github Pages. 😍'
+    name: 'Ryan Underwood‏'
+    username: '@takenot_es'
+    avatar: /img/Xv8LFxjY.jpg
+    permalink: 'https://twitter.com/takenot_es/status/946258078533672960'
+    textline: '@forestryio I love you. That's all.'
   -
     name: 'Saul Cullen'
     username: '@saulgcullen'
     avatar: /img/helloworld_400x400.jpg
     permalink: 'https://twitter.com/saulgcullen/status/929747493319073797'
     textline: 'Really enjoying using @forestryio - superb product that integrates brilliantly with git resulting in a hugely robust, version controlled, content store for "static sites". Paired with @Netlify, it becomes even more awesome. Great work.'
-  -
-    name: 'eliza sj'
-    username: '@iamelizasj'
-    avatar: /img/eliza.png
-    permalink: 'https://twitter.com/iamelizasj/status/932575857302036480'
-    textline: 'wow @forestryio u guys really make it simple ❤️'
   -
     name: 'Christian Nolte'
     username: '@drlogout'
