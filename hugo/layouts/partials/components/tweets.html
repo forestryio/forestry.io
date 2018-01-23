@@ -27,7 +27,7 @@
 {{- end -}}
 {{- define "tweet" }}
   {{- with .tweet -}}
-  <a href="{{ .permalink }}" target="_blank" class="testimonial-card">
+  <a href="{{ .RelPermalink }}" target="_blank" class="testimonial-card">
     <div class="meta">
       <div class="avatar">
         {{ partial "cloudinary/image" (dict "page" $.page "image" .avatar "alt" (printf "%s%s" "Photo of " .name)) }}
@@ -37,7 +37,7 @@
         <span class="username">{{ .username }}</span>
       </div>
       <div class="platform">
-        <img src="{{ /img/logos/twitter.svg | relURL }}" alt="Twitter">
+        <img src="{{ "/img/logos/twitter.svg" | relURL }}" alt="Twitter">
       </div>
     </div>
     <div class="content">

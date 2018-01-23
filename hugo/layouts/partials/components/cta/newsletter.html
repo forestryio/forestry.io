@@ -5,7 +5,7 @@
     <br><br>
     {{- if isset . "ctas" -}}
       {{- range .ctas -}}
-      <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+      <a href="{{ .RelPermalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
       {{- end -}}
     {{- else -}}
     <form action="https://www.getrevue.co/profile/chrisdmacrae/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">

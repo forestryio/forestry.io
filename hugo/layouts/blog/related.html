@@ -12,7 +12,7 @@
             {{- end -}}
         </span>
     </div>
-    <a href="{{ .Permalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
+    <a href="{{ .RelPermalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
     <p class="post-excerpt">
         {{- if .Summary -}}
         {{ markdownify .Summary | truncate 140  }}

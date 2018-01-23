@@ -10,8 +10,6 @@ import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
 import Sticky from "./imports/sticky"
 
-let ENV_VARS = process.env
-
 /**
  * Don't fire application logic
  * until the DOM is ready
@@ -30,11 +28,23 @@ contentLoaded().then(() => {
    * Enable search
    */
   if (isHome) {
-    new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "dist")
+    new Search(
+      process.env.ALGOLIA_APP_ID,
+      process.env.ALGOLIA_SEARCH_KEY,
+      "dist"
+    )
   } else if (isDocs) {
-    new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "docs")
+    new Search(
+      process.env.ALGOLIA_APP_ID,
+      process.env.ALGOLIA_SEARCH_KEY,
+      "docs"
+    )
   } else if (isBlog) {
-    new Search(ENV_VARS.ALGOLIA_APP_ID, ENV_VARS.ALGOLIA_SEARCH_KEY, "blog")
+    new Search(
+      process.env.ALGOLIA_APP_ID,
+      process.env.ALGOLIA_SEARCH_KEY,
+      "blog"
+    )
   }
 
   /**

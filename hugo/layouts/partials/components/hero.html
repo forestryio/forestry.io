@@ -8,7 +8,7 @@
         <div class="hero--sub">{{ markdownify .textline }}</div>
         <div class="hero-cta">
         {{- range .ctas -}}
-          <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+          <a href="{{ .RelPermalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
         {{- end -}}
         </div>
       </div>
@@ -19,7 +19,7 @@
     {{- else if .video -}}{{- with .video -}}
     <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video">
         {{- range .sources -}}
-        <source src="{{ .permalink }}" type="{{ .type }}">
+        <source src="{{ .RelPermalink }}" type="{{ .type }}">
         {{- end -}}
     </video>
     {{- end -}}{{- end -}}
@@ -31,8 +31,8 @@
     <span>{{ .textline }}</span>
     <div class="built-for--logos">
       {{- range .sources -}}
-      <img src="{{ .permalink }}" class="built-for--logo" width="auto" height="24" alt="{{ .alt | default .permalink }}" />
-      <img src="{{ .permalink }}" class="built-for--logo" width="auto "height="34" alt="{{ .alt | default .permalink }}" />
+      <img src="{{ .RelPermalink }}" class="built-for--logo" width="auto" height="24" alt="{{ .alt | default .RelPermalink }}" />
+      <img src="{{ .RelPermalink }}" class="built-for--logo" width="auto "height="34" alt="{{ .alt | default .RelPermalink }}" />
       {{- end -}}
     </div>
   </div>

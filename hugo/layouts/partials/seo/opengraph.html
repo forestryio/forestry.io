@@ -2,7 +2,7 @@
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{- with .Description }}{{ . }}{{ else }}{{- if .IsPage }}{{ .Summary }}{{ else }}{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end }}" />
 <meta property="og:type" content="{{- if .IsPage }}article{{ else }}website{{- end }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .RelPermalink }}" />
 {{- with $.Param "images" -}}
   {{- range first 6 . -}}
     <meta property="og:image" content="{{ . | relURL }}" />
@@ -50,7 +50,7 @@
   {{- end -}}
 {{- end -}}
 {{/* If it is part of a series, link to related articles */}}
-{{ $permalink := .Permalink -}}
+{{ $permalink := .RelPermalink -}}
 {{ $siteSeries := .Site.Taxonomies.series -}}
 {{- with $.Param "series" -}}
   {{ range $name := . -}}

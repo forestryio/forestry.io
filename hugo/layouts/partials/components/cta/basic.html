@@ -5,7 +5,7 @@
     <br><br>
     {{- if isset . "ctas" -}}
       {{- range .ctas -}}
-      <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+      <a href="{{ .RelPermalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
       {{- end -}}
     {{- else -}}
       <a href="https://app.forestry.io/signup" class="button primary">Get Started</a>

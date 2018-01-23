@@ -3,7 +3,7 @@
     <span class="doc-date">{{ dateFormat .Site.Params.dateFormat .Date.UTC }}</span>
     <span class="doc-category" data-category="{{ .Section }}">{{ .Section }}</span>
   </div>
-  <a href="{{ .Permalink | relURL }}"><h2 class="doc-title">{{ .Params.headline | default .Title }}</h2></a>
+  <a href="{{ .RelPermalink | relURL }}"><h2 class="doc-title">{{ .Params.headline | default .Title }}</h2></a>
   <p class="doc-excerpt">
     {{- if .Summary -}}
       {{ markdownify .Summary }}

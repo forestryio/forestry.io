@@ -14,7 +14,7 @@
   {{- $page.Scratch.Set "step_bytes" ($preset.step_bytes | default 20) -}}
   {{- $width_query := delimit (slice "auto:breakpoints_" ($page.Scratch.Get "min_width") "_" ($page.Scratch.Get "max_width") "_" ($page.Scratch.Get "step_bytes") "_" ($page.Scratch.Get "steps") ":json") "" -}}
   {{- $endpoint := (partial "cloudinary/url.html" (dict "page" $page "image" ($page.Scratch.Get "image") "width" $width_query "isbreakpoints" true)) -}}
-  {{- if and (eq (getenv "HUGO_ENV") "butts") (eq (len (findRE "http://localhost" $endpoint)) 0) }}
+  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "http://localhost" $endpoint)) 0) }}
     {{- $response := getJSON (printf "%s" $endpoint) -}}
     {{- delimit $response.breakpoints "," -}}
   {{ end -}}

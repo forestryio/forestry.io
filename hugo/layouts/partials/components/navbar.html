@@ -41,11 +41,11 @@
     </nav>
     <div class="mini-nav--toggle">
       {{- if $isPricing -}}
-        <img class="toggle-open" src="img/navtoggle-light-open.svg" alt="Open nav">
+        <img class="toggle-open" src="{{ "/img/navtoggle-light-open.svg" | relURL }}" alt="Open nav">
       {{- else -}}
-        <img class="toggle-open" src="img/navtoggle-open.svg" alt="Open nav">
+        <img class="toggle-open" src="{{ "img/navtoggle-open.svg" | relURL }}" alt="Open nav">
       {{- end -}}
-      <img class="toggle-close" src="img/navtoggle-close.svg" alt="Close nav">
+      <img class="toggle-close" src="{{ "img/navtoggle-close.svg" | relURL }}" alt="Close nav">
     </div>
   </div>
 </header>

@@ -1,9 +1,9 @@
 {{- if and (isset . "image") (isset . "page") }}
   {{- $page := .page -}}
   {{/* Prefix with baseURL if a relative link */}}
-  {{- $image := cond (or (in .image "http://") (in .image "https://")) .image (.image | relURL) -}}
+  {{- $image := cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL) -}}
   {{/* Only return cloudinary URL in production and not localhost */}}
-  {{- if and (eq (getenv "HUGO_ENV") "butts") (eq (len (findRE "http://localhost" $image)) 0) }}
+  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "http://localhost" $image)) 0) }}
     {{- $mode_config := cond (and (in $image "http") (not (in $image $page.Site.Params.BaseURL))) "fetch" "upload" -}}
     {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" }}
     {{- $cloudinary_url := (delimit (slice "https://res.cloudinary.com/" $page.Site.Params.cloudinary.cloud_name "/image" (.social_network | default "") "/" $mode "/") "") -}}

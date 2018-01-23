@@ -28,7 +28,7 @@
 {{- range .Site.AllPages -}}
 {{- $section := .Section -}}
 {{- with .OutputFormats.Get "opensearch" -}}
-<link rel="search" type="application/opensearchdescription+xml" title="{{ $title }}{{ with $section }} {{ . }}{{ end }} search" href="{{ .Permalink | safeURL }}" />
+<link rel="search" type="application/opensearchdescription+xml" title="{{ $title }}{{ with $section }} {{ . }}{{ end }} search" href="{{ .RelPermalink | safeURL }}" />
 {{- end -}}
 {{- end -}}
 {{- end -}}
@@ -44,10 +44,10 @@
 {{/* TODO: canonical + multilingual meta */}}
 {{- if (eq .Section "docs") -}}
   {{- with .NextInSection -}}
-    <link rel="prev" href="{{ .Permalink }}" />
+    <link rel="prev" href="{{ .RelPermalink }}" />
   {{- end -}}
   {{- with .PrevInSection }}
-    <link rel="next" href="{{ .Permalink }}" />
+    <link rel="next" href="{{ .RelPermalink }}" />
   {{- end -}}
 {{- else if and (not .IsPage) (eq $.Section "blog") -}}
   {{- if .Paginator.HasPrev -}}
