@@ -33,7 +33,7 @@ This will redirect you to GitHub, and prompt you to enter your login credentials
 
 ![](/uploads/2018/01/45.png)
 
-Give Forestry access to your GitHub repositories by clicking "Authorize application". You can also request access to any [GitHub organizations](#importing-from-a-github-organiation) you are a member of.
+Give Forestry access to your GitHub repositories by clicking "Authorize application". You can also request access to any [GitHub organizations](/docs/git-sync/#importing-from-a-github-organization) you are a member of.
 
 {{% warning %}}
 In order to host a site with GitHub Pages, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a web hook to your repository in order to watch for changes.
