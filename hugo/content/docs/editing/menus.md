@@ -27,7 +27,7 @@ The Menu Manager integrates directly with Hugo's menu system. See [Hugo's docume
 
 Menu entries linking to existing content on your site will be added to the front matter of that content.
 
-Menu entries to external links will be added to your Hugo site config file.
+Menu entries with external links will be added to your Hugo site config file.
 
 ### Using with Jekyll
 
