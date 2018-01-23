@@ -1,6 +1,7 @@
 // Learn more about configuring Webpack
 // https://webpack.js.org/concepts/
 import webpack from "webpack"
+import ENV from "./env.js"
 
 export default function(env) {
   const isProduction = (env === "production") || (process.env.NODE_ENV === "production")
@@ -54,6 +55,12 @@ export default function(env) {
       }),
       new webpack.optimize.UglifyJsPlugin({
         sourceMap: true
+      }),
+      new webpack.EnvironmentPlugin({
+        // Provide enviroment variable defaults
+        // from .env.js
+        ALGOLIA_APP_ID: ENV.ALGOLIA_APP_ID,
+        ALGOLIA_SEARCH_KEY: ENV.ALGOLIA_SEARCH_KEY
       })
     ]
   }

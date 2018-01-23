@@ -12,10 +12,6 @@ import Sticky from "./imports/sticky"
 
 let ENV_VARS = process.env
 
-if (ENV_VARS.NODE_ENV !== "production" || ENV_VARS.HUGO_ARGS === "staging") {
-  ENV_VARS = require("../../.env.js").default
-}
-
 /**
  * Don't fire application logic
  * until the DOM is ready

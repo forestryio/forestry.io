@@ -30,6 +30,7 @@ const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
 
 let ENV_VARS = process.env
+
 if (argsType !== "production" && fs.existsSync("./.env.js")) {
   ENV_VARS = require("./.env.js").default
 }
