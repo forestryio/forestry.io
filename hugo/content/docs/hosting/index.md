@@ -41,7 +41,7 @@ Forestry can build your site and deploy the generated static files to a branch o
 
 ### BitBucket Pages
 
-Forestry can build your site and deploy the generated static files to a repository on BitBucket configured to use GitHub pages.
+Forestry can build your site and deploy the generated static files to a repository on BitBucket configured to use BitBucket pages.
 
 [Read the guide](/docs/hosting/bitbucket-pages)
 
