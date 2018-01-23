@@ -8,6 +8,7 @@ title: Static Files
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-static-files
 weight: 4
 
 ---

@@ -8,6 +8,7 @@ title: Project Structure
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-project-structure
 weight: 2
 
 ---

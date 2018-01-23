@@ -8,6 +8,7 @@ title: Jekyll Plugins
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-plugins
 weight: 8
 
 ---

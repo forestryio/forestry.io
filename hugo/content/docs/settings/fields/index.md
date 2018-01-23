@@ -46,6 +46,7 @@ A stepped number input. Displayed for *Front Matter values* that are integers. F
 ```yaml
 ---
 weight: 1
+number: 3.14
 ---
 ```
 

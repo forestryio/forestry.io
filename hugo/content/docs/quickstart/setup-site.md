@@ -25,10 +25,6 @@ This doc will walk you through:
 
 If you **Don't** have a Jekyll or Hugo site, fork the [Jekyll demo site](https://github.com/forestryio/belkirk-jekyll-demo) and follow along.
 
-<!-- <a href="" class="button small primary">Jekyll demo site</a> -->
-
-<!--[product tour](/docs/welcome/tour/).-->
-
 ![](/uploads/2018/01/import-site.png)
 
 Choose your static site generator ([Jekyll](http://jekyllrb.com/) or [Hugo](http://gohugo.io/)), your Git Provider (GitHub,  GitLab or Bitbucket) and your repository type (public or private).

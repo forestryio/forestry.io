@@ -86,7 +86,7 @@ Allows you to configure the default Front Matter Template for content in each se
 
 Sections are mapped by their directory structure inside the `/content` folder.
 
-The options available for each section is:
+### Options
 
 **Default Front Matter Template** `default_front_matter_template` `string`
 
@@ -107,7 +107,7 @@ Allows you to configure the default Front Matter Template for content in each co
 
 Collections are mapped by their directory structure inside the root of your Jekyll site.
 
-The options available for each collection is:
+### Options
 
 **Default Front Matter Template** `default_front_matter_template` `string`
 

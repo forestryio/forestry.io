@@ -16,7 +16,7 @@ menu:
 The HTML editor is currently a _beta_ feature. For the best experience possible, please use the [markdown editor](/docs/editing/markdown-editor/).
 {{% /tip %}}
 
-Forestry has an _optional_ WYSIWYG HTML editor that allows you to edit content files with the `.HTML` extension. Your content's [front matter](/docs/front-matter-templates/) is shown on the left, and your content's HTML body is shown on the right.
+Forestry has an _optional_ WYSIWYG HTML editor that allows you to edit content files with the `.HTML` extension. Your content's [front matter](/docs/settings/front-matter-templates/) is shown on the left, and your content's HTML body is shown on the right.
 
 ## HTML formatting
 

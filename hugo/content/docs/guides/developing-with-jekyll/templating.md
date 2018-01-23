@@ -8,6 +8,7 @@ title: Templating
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-templating
 weight: 3
 
 ---

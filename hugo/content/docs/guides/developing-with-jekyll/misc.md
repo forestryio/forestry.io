@@ -8,6 +8,7 @@ title: Misc
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-misc
 weight: 9
 
 ---

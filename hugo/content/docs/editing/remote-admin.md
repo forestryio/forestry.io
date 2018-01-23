@@ -25,7 +25,7 @@ To set up the Remote Admin, go to the Settings page for your site, found under â
 
 Select the General tab, and find the Project Paths option. From here you provide the path you want users to go to in order to access the CMS under "Admin Path".
 
-TK: image of remote admin settings
+![](/uploads/2018/01/settings-projectpaths.png)
 
 The Remote Admin is deployed as a static HTML page, so be sure you deploy it to a path that will be treated as a [static file](http://localhost:3000/docs/faqs/glossary/static-files/) by your static site generator.
 

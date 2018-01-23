@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/quickstart/
 title: Product Tour
 authors: []
 publishdate: 2017-12-07 04:00:00 +0000
@@ -9,7 +11,6 @@ menu:
   docs:
     parent: quickstart
     weight: 1
-
 ---
 ## Overview
 

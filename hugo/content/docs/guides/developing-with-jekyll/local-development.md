@@ -8,6 +8,7 @@ title: Local Development
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-local-development
 weight: 7
 
 ---

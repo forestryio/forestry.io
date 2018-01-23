@@ -9,6 +9,7 @@ title: Introduction
 menu:
   guides:
     parent: jekyll
+    identifier: _jekyll-intro
 weight: 1
 
 ---

@@ -1,6 +1,5 @@
 ---
 title: Text Field
-weight: 2
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
@@ -12,7 +11,7 @@ Single line text input.
 
 * _Label_ – the human-friendly label shown above the input field in the editor.
 * _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – (Optional) a human friendly description of what the field does and/or instructions for your editors.
+* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
 * _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 * _Required_ – prevent changes from being saved if this field is empty.
 

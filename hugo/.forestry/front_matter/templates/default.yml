@@ -5,7 +5,6 @@ pages:
 - docs/changelog
 - docs/_index.md
 - docs/faqs
-- docs/welcome
 - docs/git-sync
 - careers/_index.md
 - careers/devrel.md
