@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/front-matter-fields/repeatable-field-group-field/
 title: Repeatable Field Group
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -19,7 +21,7 @@ A repeatable array of fields.
 ![](/uploads/2018/01/repeatable-field-group-preview.png)
 
 ## Templating
-If you have a text field in your template, you can access it in your templates using the field’s `name`:
+You can access this field in your templates using the field’s `name`:
 
 #### Hugo
 ```
@@ -77,5 +79,5 @@ fields:
     config:
     required: true
 config:
-  labelField: [String]
+  labelField: name
 ```

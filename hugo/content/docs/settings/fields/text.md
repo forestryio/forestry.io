@@ -1,14 +1,13 @@
 ---
+aliases:
+- /docs/front-matter-fields/text-field/
 title: Text Field
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 
 ---
-Single line text input.
-
 ## Options
-
 ![](/uploads/2018/01/text-options.png)
 
 * _Label_ – the human-friendly label shown above the input field in the editor.
@@ -18,12 +17,11 @@ Single line text input.
 * _Required_ – prevent changes from being saved if this field is empty.
 
 ## Field UI
-
 ![](/uploads/2018/01/text-preview.png)
 
-## Templating
 
-If you have a text field in your template, you can access it in your templates using the field’s `name`:
+## Templating
+You can access this field in your templates using the field’s `name`:
 
 ### Hugo
 

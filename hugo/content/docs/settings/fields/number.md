@@ -22,7 +22,7 @@ Text input that only accepts numeric values.
 ![](/uploads/2018/01/number-preview.png)
 
 ## Templating
-If you have a text field in your template, you can access it in your templates using the field’s `name`:
+You can access this field in your templates using the field’s `name`:
 
 #### Hugo
 ```

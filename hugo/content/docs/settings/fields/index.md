@@ -148,7 +148,7 @@ extra_script: "/js/extra_script.js"
 ---
 ```
 
-[See detailed documentation](/docs/settings/fields/file)
+[See detailed documentation](/docs/settings/fields/file-upload/)
 
 ---
 
@@ -172,7 +172,7 @@ extra_scripts:
 ---
 ```
 
-[See detailed documentation](/docs/settings/fields/multi-file)
+[See detailed documentation](/docs/settings/fields/multi-file-upload/)
 
 ---
 
