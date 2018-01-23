@@ -55,7 +55,7 @@ The Media Library displays media files found inside a single uploads folder. Thi
 
 #### Upload Folder
 
-Upload path defines where media uploads should be saved, relative to the root of your repository.
+The upload path defines where media uploads should be saved, relative to the root of your repository.
 
 * _Default:_ `/uploads/:year:/:month:/:day:/`
 
