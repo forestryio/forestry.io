@@ -1,10 +1,19 @@
 // Learn more about configuring Webpack
 // https://webpack.js.org/concepts/
 import webpack from "webpack"
-import ENV from "./env.js"
+import fs from "fs"
 
 export default function(env) {
   const isProduction = (env === "production") || (process.env.NODE_ENV === "production")
+
+  let ENV_VARS = {
+    ALGOLIA_APP_ID: null,
+    ALGOLIA_SEARCH_KEY: null
+  }
+
+  if (fs.existsSync("./.env.js")) {
+    ENV_VARS = Object.assign(ENV_VARS, require("./.env").default)
+  }
 
   return {
     output: {
@@ -59,8 +68,8 @@ export default function(env) {
       new webpack.EnvironmentPlugin({
         // Provide enviroment variable defaults
         // from .env.js
-        ALGOLIA_APP_ID: ENV.ALGOLIA_APP_ID,
-        ALGOLIA_SEARCH_KEY: ENV.ALGOLIA_SEARCH_KEY
+        ALGOLIA_APP_ID: ENV_VARS.ALGOLIA_APP_ID,
+        ALGOLIA_SEARCH_KEY: ENV_VARS.ALGOLIA_SEARCH_KEY
       })
     ]
   }
