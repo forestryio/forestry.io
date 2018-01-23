@@ -25,7 +25,7 @@ Forestry will automatically display menus found in your site, and allow content 
 
 The Menu Manager integrates directly with Hugo's menu system. See [Hugo's documentation](https://gohugo.io/content-management/menus/) on setting up your first menu.
 
-Menu entries to existing content on your site will be added to the front matter of that content.
+Menu entries linking to existing content on your site will be added to the front matter of that content.
 
 Menu entries to external links will be added to your Hugo site config file.
 
@@ -33,9 +33,9 @@ Menu entries to external links will be added to your Hugo site config file.
 
 The Menu Manager integrates directly with the [Jekyll Menus plugin](https://github.com/forestryio/jekyll-menus).
 
-Menu entries to existing content on your site will be added to the front matter of that content.
+Menu entries linking to existing content on your site will be added to the front matter of that content.
 
-Menu entries to external links will be added to your menus data file located at `/data/menus.yml`.
+Menu entries with external links will be added to your menus data file located at `/data/menus.yml`.
 
 ## Managing Menus
 
