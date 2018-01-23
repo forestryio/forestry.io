@@ -46,8 +46,8 @@ jobs:
         command: |
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying images to S3"
-            cp hugo/static/img/ dist/img/
-            cp hugo/static/uploads/ dist/uploads/
+            cp ./hugo/static/img/ ./dist/img/
+            cp ./hugo/static/uploads/ ./dist/uploads/
             aws s3 sync ./dist s3://${AWS_S3_BUCKET}
           fi
 
