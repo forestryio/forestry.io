@@ -33,17 +33,23 @@ tweets:
     textline: 'wow @forestryio u guys really make it simple ❤️'
 - row:
   -
-    name: 'Ryan Underwood‏'
-    username: '@takenot_es'
-    avatar: /img/Xv8LFxjY.jpg
-    permalink: 'https://twitter.com/takenot_es/status/946258078533672960'
-    textline: '@forestryio I love you. That's all.'
-  -
     name: 'Saul Cullen'
     username: '@saulgcullen'
     avatar: /img/helloworld_400x400.jpg
     permalink: 'https://twitter.com/saulgcullen/status/929747493319073797'
     textline: 'Really enjoying using @forestryio - superb product that integrates brilliantly with git resulting in a hugely robust, version controlled, content store for "static sites". Paired with @Netlify, it becomes even more awesome. Great work.'
+  -
+    name: 'Ryan Underwood‏'
+    username: '@takenot_es'
+    avatar: /img/Xv8LFxjY.jpg
+    permalink: 'https://twitter.com/takenot_es/status/946258078533672960'
+    textline: 'forestryio I love you. That''s all.'
+  -
+    name: 'GoHugo.io'
+    username: '@GoHugoIO'
+    avatar: /img/hugo-twitter.jpg
+    permalink: 'https://twitter.com/GoHugoIO/status/954743024260648968'
+    textline: 'In the end, we chose Hugo on @Netlify, with @forestryio as our CMS... '
   -
     name: 'Christian Nolte'
     username: '@drlogout'
@@ -62,3 +68,15 @@ tweets:
     avatar: /img/TuX70IqU_bigger.jpg
     permalink: 'https://twitter.com/hughdurkin/status/864861547511906305'
     textline: 'No native mobile app required 📵 So impressed with the speed and ease of use of @forestryio on mobile web 💨 #jamstack'
+  # -
+  #   name: 'Ollie'
+  #   username: '@TheOllieJT'
+  #   avatar: /img/FOvXwoMQ_bigger.jpg
+  #   permalink: 'https://twitter.com/TheOllieJT/status/898048355191869440'
+  #   textline: 'Great, I just re launched my portfolio on Jekyll using @forestryio'
+  # -
+  #   name: 'Jared White'
+  #   username: '@jaredcwhite'
+  #   avatar: /img/3aD9E8HL_bigger.jpg
+  #   permalink: 'https://twitter.com/hughdurkin/status/864861547511906305'
+  #   textline: '@forestryio It''s been well over a year since I last tried out Forestry...now researching it again for a client and wow! It''s looking awesome! Great job. 👍'
