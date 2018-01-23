@@ -61,7 +61,7 @@ The upload path where media uploads should be saved, relative to the root of you
 
 #### Front Matter File URL
 
-The relative path from the root of your site to append to media uploads inserted into front matter fields.
+The relative path from the root of your site for media uploads inserted into front matter fields.
 
 * _Default:_ `/uploads/:year:/:month:/:day:/`
 
@@ -71,7 +71,7 @@ The _Front Matter File URL_ may need to be different than the _Content Body File
 
 #### Content Body File URL
 
-The relative path from the root of your site to append to media uploads inserted into the Markdown or HTML content body.
+The relative path from the site's root for media uploads in the content body.
 
 * _Default:_ `/uploads/:year:/:month:/:day:/`
 
@@ -81,7 +81,7 @@ The _Content Body File URL_ should always be the relative path to your media upl
 
 #### Variables
 
-Each of these settings supports the following variables at upload time:
+Each of these settings support the following variables at upload time:
 
 * `:year:`: the current year, formatted `YYYY`
 * `:month:`: the current month, formatted `MM`
