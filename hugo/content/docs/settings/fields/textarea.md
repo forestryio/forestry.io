@@ -76,6 +76,4 @@ If you have a text field in your template, you can access it in your templates u
 
     <h1>{{ page.description | markdownify }}</h1> 
 
-{% tip %}
-Use the `markdownify` filters to automatically format your HTML
-{% /tip %}
+{{% tip %}} Use the `markdownify` filters to automatically format your HTML {{% /tip %}}
