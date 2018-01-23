@@ -80,9 +80,8 @@ jobs:
               to=$(echo $redirect | jq '. | .Redirect.ReplaceKeyPrefixWith' | cut -d "\"" -f 2)
 
               from=$(path_join $from "index.html")
-              to=$(path_join $to "index.html")
 
-              aws s3 cp s3://${AWS_S3_BUCKET}${from} s3://${AWS_BUCKET}${from} --website-redirect ${to} --metadata-directive REPLACE
+              aws s3 cp s3://${AWS_S3_BUCKET}${from} s3://${AWS_S3_BUCKET}${from} --website-redirect ${to} --metadata-directive REPLACE
             done
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
