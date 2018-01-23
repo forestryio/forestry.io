@@ -67,7 +67,7 @@ Once you have your FTP credentials and have chosen the correct FTP method for yo
 
 Under _Advanced Options_, ensure that the _Port_ is the correct port.
 
-If you created a new directory to deploy your site to, provide the relative path from your FTP users home folder to the new directory in the _Directory_ field.
+If you created a new directory to deploy your site to, provide the relative path from your FTP user's home folder to the new directory in the _Directory_ field.
 
 Finally, click _Save Settings_.
 
