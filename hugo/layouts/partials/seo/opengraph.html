@@ -5,9 +5,9 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{- with $.Param "images" -}}
   {{- range first 6 . -}}
-    <meta property="og:image" content="{{ . | absURL }}" />
+    <meta property="og:image" content="{{ . | relURL }}" />
     {{- if in $.Site.BaseURL "https://" -}}
-    <meta property="og:image:secure" content="{{ (. | replace "http://" "https://") | absURL }}" />
+    <meta property="og:image:secure" content="{{ (. | replace "http://" "https://") | relURL }}" />
     {{- end -}}
     <meta property="og:image:alt" content="{{- with $.Description }}{{ . }}{{ else }}{{- if $.IsPage }}{{ $.Summary }}{{ else }}{{- with $.Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end }}" />
   {{- end -}}
@@ -27,7 +27,7 @@
 {{- with $.Param "audio" -}}
   <meta property="og:audio" content="{{ . }}" />
   {{- if in $.Site.BaseURL "https://" -}}
-  <meta property="og:audio:secure" content="{{ (. | replace "http://" "https://") | absURL }}" />
+  <meta property="og:audio:secure" content="{{ (. | replace "http://" "https://") | relURL }}" />
   {{- end -}}
 {{- end -}}
 {{- with .Site.Language -}}
@@ -43,9 +43,9 @@
 {{- end -}}
 {{- with $.Param "videos" -}}
   {{ range . -}}
-    <meta property="og:video" content="{{ . | absURL }}" />
+    <meta property="og:video" content="{{ . | relURL }}" />
     {{- if in .Site.BaseURL "https://" -}}
-    <meta property="og:video:secure" content="{{ (. | replace "http://" "https://") | absURL }}" />
+    <meta property="og:video:secure" content="{{ (. | replace "http://" "https://") | relURL }}" />
     {{- end -}}
   {{- end -}}
 {{- end -}}

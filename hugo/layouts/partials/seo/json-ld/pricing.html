@@ -9,7 +9,7 @@
     {{- with $.Params.images -}}
     "image": [
     {{- range first 6 . -}}
-     "{{- .url | absURL -}}",
+     "{{- .url | relURL -}}",
     {{- end -}}
     ],
     {{- end -}}

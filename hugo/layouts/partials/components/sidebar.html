@@ -9,7 +9,7 @@
   <h3>{{ .Pre }}{{ .Name }}{{ .Post }}</h3>
   <ul>
   {{- range .Children -}}
-    <li>{{ .Pre }}<a href="{{ .URL | absURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a>{{ .Post }}</li>
+    <li>{{ .Pre }}<a href="{{ .URL | relURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a>{{ .Post }}</li>
     {{- if $.IsMenuCurrent .Menu . -}}
       {{- template "toc" $currentPage -}}
     {{- end -}}

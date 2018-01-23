@@ -4,10 +4,10 @@
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "url": "{{ "/" | absURL }},
+    "url": "{{ "/" | relURL }},
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "http://www.google.com/search?q=site:{{ "/" | absURL }} {search_term_string}",
+      "target": "http://www.google.com/search?q=site:{{ "/" | relURL }} {search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

@@ -15,10 +15,10 @@
   {{- end -}}
   {{- with .Params.images -}}
   {{- range first 6 . -}}
-  "image": "{{- .url | absURL -}}",
+  "image": "{{- .url | relURL -}}",
   {{- end -}}
   {{- end -}}
-  "thumbnailUrl": "{{- "img/forestry-full.svg" | absURL -}}",
+  "thumbnailUrl": "{{- "img/forestry-full.svg" | relURL -}}",
   {{- with .Site.Copyright -}}
   "license": "{{- . -}}",
   {{- end -}}

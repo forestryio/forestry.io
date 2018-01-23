@@ -32,11 +32,11 @@
 {{- end -}}
 {{- end -}}
 {{- end -}}
-<link rel="manifest" href="{{ "/favicons/manifest.json" | absURL }}" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicons/apple-touch-icon.png" | absURL }}" />
-<link rel="icon" type="image/png" href="{{ "/favicons/favicon-32x32.png" | absURL }}" sizes="32x32" />
-<link rel="icon" type="image/png" href="{{ "/favicons/favicon-16x16.png" | absURL }}" sizes="16x16" />
-<link rel="mask-icon" href="{{ "/favicons/safari-pinned-tab.svg" | absURL }}" color="#00c7b7" />
+<link rel="manifest" href="{{ "/favicons/manifest.json" | relURL }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicons/apple-touch-icon.png" | relURL }}" />
+<link rel="icon" type="image/png" href="{{ "/favicons/favicon-32x32.png" | relURL }}" sizes="32x32" />
+<link rel="icon" type="image/png" href="{{ "/favicons/favicon-16x16.png" | relURL }}" sizes="16x16" />
+<link rel="mask-icon" href="{{ "/favicons/safari-pinned-tab.svg" | relURL }}" color="#00c7b7" />
 {{- if .RSSLink -}}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />

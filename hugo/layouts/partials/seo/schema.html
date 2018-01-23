@@ -12,7 +12,7 @@
   <meta itemprop="wordCount" content="{{ .WordCount }}">
   {{- with $.Param "images" -}}
     {{- range first 6 . -}}
-    <meta itemprop="image" content="{{ . | absURL }}">
+    <meta itemprop="image" content="{{ . | relURL }}">
     {{- end -}}
   {{- end -}}
   {{/* Output all taxonomies as schema.org keywords */}}

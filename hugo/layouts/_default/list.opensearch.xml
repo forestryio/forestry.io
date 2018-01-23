@@ -6,5 +6,5 @@
 {{- with .Site.Params.tags -}}
 <Tags>{{ delimit . " " }}</Tags>
 {{- end -}}
-<Url type="text/html" template="{{ "/" | absURL }}{{ with .Section }}{{ . }}{{ end }}?q={searchTerms}"/>
+<Url type="text/html" template="{{ "/" | relURL }}{{ with .Section }}{{ . }}{{ end }}?q={searchTerms}"/>
 </OpenSearchDescription>
