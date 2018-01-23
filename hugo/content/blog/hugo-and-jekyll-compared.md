@@ -327,7 +327,7 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 
 We’ve covered the basics of Hugo and Jekyll, outlining ease of set up, content management, templating, development workflow, features, and performance.
 
-Both generators are leaders in the space, and there are great examples of both being used in the wild for big projects, like [healthcare.gov](https://github.com/springmeyer/healthcare.gov), using Jekyll, and the new [SmashingMagazine](%20https://next.smashingmagazine.com/) built using Hugo.
+Both generators are leaders in the space, and there are great examples of both being used in the wild for big projects, like [healthcare.gov](https://github.com/springmeyer/healthcare.gov), using Jekyll, and the new [SmashingMagazine](https://next.smashingmagazine.com/) built using Hugo.
 
 Now it’s time to make a choice! Here’s a quick summary for you:
 
