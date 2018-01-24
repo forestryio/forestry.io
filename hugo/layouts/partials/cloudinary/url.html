@@ -7,7 +7,7 @@
     {{- $mode_config := cond (in $image "://") "fetch" "upload" -}}
     {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" }}
     {{- $cloudinary_url := (delimit (slice "https://res.cloudinary.com/" $page.Site.Params.cloudinary.cloud_name "/image" (.social_network | default "") "/" $mode "/") "") -}}
-    {{- $path := cond (eq (getenv "HUGO_ENV") "production") $cloudinary_url $page.Site.BaseURL -}}
+    {{- $path := cond (eq (getenv "HUGO_ENV") "production") $cloudinary_url "" -}}
     {{- $availableTransforms := getJSON "/layouts/partials/cloudinary/params.json" -}}
     {{- $page.Scratch.SetInMap "transforms" "width" "w_auto" -}}
     {{/* Set up transform params for regular usage */}}
@@ -25,7 +25,7 @@
     {{/* Build cloudinary image URL */}}
     {{- $image := delimit (slice $path ($transforms) "/" $image) "" -}}
     {{/* Return cloudinary image URL */}}
-    {{- $image -}}
+    {{- $image | absURL -}}
   {{- else -}}
     {{- .image -}}
   {{ end -}}
