@@ -42,6 +42,6 @@
 {{- end -}}
 {{- define "visual" -}}
 <div class="feature-block--illu illu-shadow--{{ .direction }}">
-  {{- partial "cloudinary/image" (dict "pg" .pg "image" .permalink "alt" (.alt | default .RelPermalink)) }}
+  {{- partial "cloudinary/image" (dict "pg" .pg "image" .permalink "alt" (.alt | default .permalink)) }}
 </div>
 {{- end -}}

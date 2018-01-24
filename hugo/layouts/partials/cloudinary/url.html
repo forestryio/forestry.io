@@ -11,11 +11,9 @@
     {{- $page.Scratch.SetInMap "transforms" "width" "w_auto" -}}
     {{/* Set up transform params for regular usage */}}
     {{- range $key, $param := $availableTransforms -}}
-      {{ if index $ $key }}
-        {{- $value := (index $ $key) | default $param.default -}}
-        {{- if $value -}}
-          {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" $value) "") -}}
-        {{- end -}}
+      {{- $value := (index $ $key) | default $param.default -}}
+      {{- with $value -}}
+        {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" .) "") -}}
       {{- end -}}
     {{- end -}}
     {{- $transforms := $page.Scratch.Get "transforms" -}}
