@@ -106,7 +106,7 @@ export default class InstantSearch {
     const renderHits = () => {
       if (options.hits.length < 1) return Mustache.render(empty, {query: query})
 
-      return options.hits.map((h) => {
+      const hits = options.hits.map((h) => {
         h["FormatDate"] = function() {
           return function(date, render) {
             const calcTime = function(d, offset) {
@@ -140,6 +140,8 @@ export default class InstantSearch {
 
         return Mustache.render(hit, h)
       })
+
+      return hits.join("")
     }
 
     if (options.hits.length < 1 || options.isLastPage || shouldNotRender) {
