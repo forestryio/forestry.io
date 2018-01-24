@@ -11,7 +11,7 @@ import hugo from "hugo-bin"
 import imagemin from "gulp-imagemin"
 import named from "vinyl-named"
 import newer from "gulp-newer"
-import {dirname, basename} from "path"
+import {basename, dirname, relative, resolve} from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
 import runsequence from "run-sequence"
@@ -106,46 +106,6 @@ gulp.task("algolia", cb => {
   }
 
   cb()
-})
-
-/**
- * @task s3redirects
- * Updates a target s3 bucket's objects with redirect
- * rules generated with Hugo's alias feature
- *
- * Requires the following env vars:
- *  - AWS_ACCESS_KEY_ID
- *  - AWS_SECRET_ACCESS_KEY
- */
-gulp.task("s3redirects", cb => {
-  const hasProfile = ENV_VARS.AWS_PROFILE
-  const hasKeys = ENV_VARS.AWS_ACCESS_KEY_ID && ENV_VARS.AWS_SECRET_ACCESS_KEY
-  const bucket = ENV_VARS.AWS_S3_BUCKET
-  if (hasProfile && bucket || hasKeys && bucket) {
-    const s3 = new AWS.S3()
-
-    return gulp.src(gulpConfig.redirects.src)
-      .pipe(through.obj({objectMode: true}, (file, enc, done) => {
-        const redirects = JSON.parse(file._contents.toString())
-        const config = {
-          Bucket: bucket,
-          WebsiteConfiguration: {
-            IndexDocument: {
-              Suffix: "index.html"
-            },
-            ErrorDocument: {
-              Key: "404.html"
-            },
-            RoutingRules: redirects
-          }
-        }
-
-        s3.putBucketWebsite(config, function(err, data) {
-          if (err) log(err, err.toString(), "AWS S3")
-          else log(null, JSON.stringify(data), "AWS S3")
-        })
-      }))
-  }
 })
 
 /**

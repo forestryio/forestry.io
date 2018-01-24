@@ -5,7 +5,7 @@
     <div class="container">
       <div class="feature-block {{ .direction | default "ltr" }}">
         {{- if eq .direction "rtl" -}}{{- with .visual -}}
-          {{- template "visual" (dict "page" $.page "permalink" .RelPermalink "alt" .alt "direction" "left") -}}
+          {{- template "visual" (dict "page" $.page "permalink" .permalink "alt" .alt "direction" "left") -}}
         {{- end -}}{{- end -}}
         <div class="feature-block--copy">
           <h2 class="section--title">{{ markdownify .headline }}</h2>
@@ -14,7 +14,7 @@
           </div>
         </div>
         {{- if not (eq .direction "rtl") -}}{{- with .visual -}}
-          {{- template "visual" (dict "page" $.page "permalink" .RelPermalink "alt" .alt "direction" "right") -}}
+          {{- template "visual" (dict "page" $.page "permalink" .permalink "alt" .alt "direction" "right") -}}
         {{- end -}}{{- end -}}
       </div>
     </div>
@@ -42,6 +42,6 @@
 {{- end -}}
 {{- define "visual" -}}
 <div class="feature-block--illu illu-shadow--{{ .direction }}">
-  {{- partial "cloudinary/image" (dict "page" .page "image" .RelPermalink "alt" (.alt | default .RelPermalink)) }}
+  {{- partial "cloudinary/image" (dict "page" .page "image" .permalink "alt" (.alt | default .RelPermalink)) }}
 </div>
 {{- end -}}

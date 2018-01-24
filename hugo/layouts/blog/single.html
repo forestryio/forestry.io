@@ -3,7 +3,7 @@
     {{- with .Params.images -}}
       {{- range first 1 . -}}
         <div class="post--feature-image">
-          <img src="{{ . | relURL }}" alt="{{ $.Params.headline | default $.Title }}">
+            {{ partial "cloudinary/image" (dict "page" $ "image" . "alt" ($.Params.headline | default $.Title) "width" "auto:100:760" "dpr" "auto" "quality" "70") }}
         </div>
       {{- end -}}
     {{- end -}}
@@ -54,7 +54,7 @@
       </div>
 
       <div class="md-content">
-        {{- partial "cloudinary/content" (dict "page" $ "srcset" true "preset" "content") -}}
+          {{ partial "cloudinary/content" (dict "page" $ "width" "auto:100:640" "dpr" "auto" "quality" "70") }}
       </div>
 
       <hr />

@@ -1,26 +1,20 @@
 {{- if and (isset . "image") (isset . "page") }}
   {{- $page := .page -}}
   {{/* Prefix with baseURL if a relative link */}}
-  {{- $image := cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL) -}}
+  {{- $image := (cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL)) -}}
   {{/* Only return cloudinary URL in production and not localhost */}}
-  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "http://localhost" $image)) 0) }}
-    {{- $mode_config := cond (and (in $image "http") (not (in $image $page.Site.Params.BaseURL))) "fetch" "upload" -}}
+  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "://localhost" $image)) 0) }}
+    {{- $mode_config := cond (in $image "://") "fetch" "upload" -}}
     {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" }}
     {{- $cloudinary_url := (delimit (slice "https://res.cloudinary.com/" $page.Site.Params.cloudinary.cloud_name "/image" (.social_network | default "") "/" $mode "/") "") -}}
     {{- $path := cond (eq (getenv "HUGO_ENV") "production") $cloudinary_url $page.Site.BaseURL -}}
     {{- $availableTransforms := getJSON "/layouts/partials/cloudinary/params.json" -}}
     {{- $page.Scratch.SetInMap "transforms" "width" "w_auto" -}}
-    {{/* Use provided width variable if being used by breakpoints partial */}}
-    {{- if .isbreakpoints -}}
-      {{- $page.Scratch.SetInMap "transforms" "width" (delimit (slice "w_" .width) "") -}}
-    {{- end -}}
     {{/* Set up transform params for regular usage */}}
-    {{- if not .isbreakpoints -}}
-      {{- range $key, $param := $availableTransforms -}}
-        {{- $value := (index $ $key) | default $param.default -}}
-        {{- if isset $ "value" -}}
-          {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" $value) "") -}}
-        {{- end -}}
+    {{- range $key, $param := $availableTransforms -}}
+      {{- $value := (index $ $key) | default $param.default -}}
+      {{- if isset $ "value" -}}
+        {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" $value) "") -}}
       {{- end -}}
     {{- end -}}
     {{- $transforms := $page.Scratch.Get "transforms" -}}
@@ -32,7 +26,7 @@
     {{- $image := delimit (slice $path ($transforms) "/" $image) "" -}}
     {{/* Return cloudinary image URL */}}
     {{- $image -}}
-  {{ else }}
-    {{- $image -}}
+  {{- else -}}
+    {{- .image -}}
   {{ end -}}
 {{ end -}}

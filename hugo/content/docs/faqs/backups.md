@@ -15,8 +15,6 @@ For developers, backups are inherent due to the Git-backed nature of Forestry. E
 
 However, a zip backup of your site can be downloaded from the [dashboard](https://app.forestry.io/dashboard) if necessary.
 
-![dashboard backup](/uploads/2017/12/31/download-backup-forestry.png)
-
 ## Steps
 1. Navigate to the [dashboard](https://app.forestry.io/dashboard)
 2. Click the `...` button beside the site you wish to download a backup of

@@ -1,9 +1,11 @@
 {{- define "main" -}}
   <main class="single-post">
-    {{- if isset .Params "featureImage" -}}
-    <div class="post--feature-image">
-      <img src="{{ .Params.featureImage }}" alt="{{ .Title }}">
-    </div>
+    {{- with .Params.images -}}
+      {{- range first 1 . -}}
+        <div class="post--feature-image">
+            {{ partial "cloudinary/image" (dict "page" $ "image" . "alt" ($.Params.headline | default $.Title) "width" "auto:100:760" "dpr" "auto" "quality" "70") }}
+        </div>
+      {{- end -}}
     {{- end -}}
     <div class="container">
       <h1 class="post--title">{{ .Params.headline | default .Title }}</h1>
@@ -14,7 +16,7 @@
         </div>
       </div>
       <div class="md-content">
-        {{ partial "cloudinary/content" (dict "page" $ "srcset" true) }}
+          {{ partial "cloudinary/content" (dict "page" $ "width" "auto:100:640" "dpr" "auto" "quality" "70") }}
       </div>
     </div>
   </main>
