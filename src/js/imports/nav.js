@@ -102,7 +102,7 @@ export default class NavBar {
     const toShow = document.querySelectorAll("li[data-signed-in]")
 
     if (user) {
-      const name = decodeURIComponent(user)
+      const name = decodeURIComponent(user).replace("+", " ")
       const target = container.querySelector("a")
 
       toHide.forEach((e) => {
