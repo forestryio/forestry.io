@@ -4,10 +4,14 @@
   padding: 0;
 }
 
+html {
+  background: $color-brand;
+}
+
 html,
 body {
   -webkit-appearance: none;
-  background: $color-brand;
+  background: $color-white;
   color: $color-dark;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
