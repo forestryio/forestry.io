@@ -18,8 +18,6 @@
 {{- end -}}
 {{- define "img" -}}
   {{/* placeholder image for lazyloaded images */}}
-  {{- $placeholder := .pg.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" -}}
-  <p class="img-container">
-    <img{{ if $.lazysizes }} src="{{ $placeholder | safeURL }}"{{ end }}{{ if $.lazysizes }} data-src{{ else }} src{{ end }}="{{ .src | safeURL }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ .src }}{{ end }}"{{ with .title }} title="{{ . }}"{{- end -}}{{ if $.lazysizes }} class="lazyload"{{ end }} />
-  </p>
+  {{- $placeholder := .pg.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" -}}
+  <img{{ if $.lazysizes }} src="{{ $placeholder | safeURL }}"{{ end }}{{ if $.lazysizes }} data-src{{ else }} src{{ end }}="{{ .src | safeURL }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ .src }}{{ end }}"{{ with .title }} title="{{ . }}"{{- end -}}{{ if $.lazysizes }} class="lazyload"{{ end }} />
 {{- end -}}
