@@ -61,6 +61,7 @@
     margin: -1px;
     padding: 1rem;
     position: relative;
+    overflow: hidden;
 
     @media screen and (min-width: 790px) {
       flex: 0 0 25%;

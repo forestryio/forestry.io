@@ -12,14 +12,14 @@
   <div class="testimonials-row--items">
     <div class="testimonials-row--wrapper">
       {{- range .row -}}
-        {{- template "tweet" (dict "pg" $.page "tweet" .) -}}
+        {{- template "tweet" (dict "pg" $.pg "tweet" .) -}}
       {{- end -}}
     </div>
   </div>
   <div class="testimonials-row--items">
     <div class="testimonials-row--wrapper">
       {{- range .row -}}
-        {{- template "tweet" (dict "pg" $.page "tweet" .) -}}
+        {{- template "tweet" (dict "pg" $.pg "tweet" .) -}}
       {{- end -}}
     </div>
   </div>
@@ -27,10 +27,10 @@
 {{- end -}}
 {{- define "tweet" }}
   {{- with .tweet -}}
-  <a href="{{ .RelPermalink }}" target="_blank" class="testimonial-card">
+  <a href="{{ .permalink }}" target="_blank" class="testimonial-card">
     <div class="meta">
       <div class="avatar">
-        {{ partial "cloudinary/image" (dict "pg" $.page "image" .avatar "alt" (printf "%s%s" "Photo of " .name)) }}
+        {{ partial "cloudinary/image" (dict "pg" $.pg "image" .avatar "alt" (printf "%s%s" "Photo of " .name) "width" "auto:100:32" "dpr" "auto" "quality" "70") }}
       </div>
       <div class="user-info">
         <span class="name">{{ .name }}</span>

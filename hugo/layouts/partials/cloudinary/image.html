@@ -5,7 +5,6 @@
   {{- $presets := $page.Site.Params.cloudinary.presets | default (dict) -}}
   {{- $preset := cond (not (eq $presets "")) (index $presets $presetName) "" -}}
   {{- $page.Scratch.SetInMap "url" "image" .image -}}
-  {{- $page.Scratch.SetInMap "url" "width" ($preset.fallback_width | default "800") -}}
   {{/* Add presets params to the map */}}
   {{- range $key, $value := $preset.params -}}
     {{- $page.Scratch.SetInMap "url" $key $value -}}

@@ -2,7 +2,7 @@
   <div class="showcase-item--media">
     {{- with .Params.images -}}
       {{- range first 1 . -}}
-        {{- partial "cloudinary/image" (dict "pg" $ "image" . "alt" .) -}}
+        {{- partial "cloudinary/image" (dict "pg" $ "image" . "alt" . "width" "auto:100" "dpr" "auto" "quality" "70") -}}
       {{- end -}}
     {{- end -}}
     {{- with .Params.permalink -}}
