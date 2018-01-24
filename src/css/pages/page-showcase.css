@@ -10,7 +10,6 @@
     padding: 0 2rem;
   }
 
-
   .showcase-items {
     display: flex;
     flex-direction: row;
@@ -70,21 +69,21 @@
     }
 
     .showcase-item--hover {
-      background: rgba(0,0,0,0.35);
+      background: rgba(0, 0, 0, 0.35);
       opacity: 0;
       padding: 2rem;
       pointer-events: none;
       text-align: center;
-      transition: opacity .5s ease;
+      transition: opacity 0.5s ease;
     }
-  
+
     &:hover .showcase-item--hover {
       opacity: 1;
       pointer-events: all;
     }
 
     .showcase-item--hover:before {
-      content: '';
+      content: "";
       display: inline-block;
       height: 100%;
       margin-right: -0.25em;
@@ -96,12 +95,11 @@
       display: inline-block;
       font-size: 2rem;
       font-weight: 600;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
       vertical-align: middle;
     }
   }
 
   .showcase-item--title {
-
   }
 }

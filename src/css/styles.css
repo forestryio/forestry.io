@@ -1,0 +1,40 @@
+/* Base */
+@import "base/palette.css";
+@import "base/typography.css";
+@import "base/base.css";
+@import "base/layout.css";
+
+/* Components */
+@import "components/button.css";
+@import "components/input.css";
+@import "components/faq.css";
+@import "components/forms.css";
+@import "components/header.css";
+@import "components/logotype.css";
+@import "components/hero.css";
+@import "components/search.css";
+@import "components/shortcodes.css";
+@import "components/social-sharing.css";
+@import "components/hlinks.css";
+@import "components/code-syntax.css";
+@import "components/section-how-it-works.css";
+@import "components/section-trusted.css";
+@import "components/section-roots.css";
+@import "components/section-sync.css";
+@import "components/section-automated.css";
+@import "components/section-commits.css";
+@import "components/section-deploy.css";
+@import "components/section-sss.css";
+@import "components/section-testmonials.css";
+@import "components/section-cta.css";
+@import "components/footer.css";
+@import "components/lightbox.css";
+
+/* Pages */
+@import "pages/page-features.css";
+@import "pages/page-pricing.css";
+@import "pages/page-docs.css";
+@import "pages/page-blog.css";
+@import "pages/page-post.css";
+@import "pages/page-contact.css";
+@import "pages/page-showcase.css";

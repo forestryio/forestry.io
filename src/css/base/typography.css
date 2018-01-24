@@ -104,11 +104,12 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
 
-th, td{
+th,
+td {
   padding: 8px 20px;
 }
 
-th{
+th {
   background: $color-white;
   color: $color-copy-dark;
 }
@@ -139,7 +140,9 @@ tr:nth-child(odd) td {
     margin-top: 2rem;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     margin-top: 1.5rem;
   }
 
@@ -156,7 +159,7 @@ tr:nth-child(odd) td {
     color: $color-brand;
     font-weight: 600;
     text-decoration: none;
-    transition: color .25s ease;
+    transition: color 0.25s ease;
 
     &:hover {
       color: color($color-brand b(+20%) s(-5%));
@@ -171,7 +174,8 @@ tr:nth-child(odd) td {
     list-style-type: decimal;
   }
 
-  ul, ol {
+  ul,
+  ol {
     margin-left: 1rem;
   }
 
