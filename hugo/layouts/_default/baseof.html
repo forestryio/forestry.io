@@ -10,7 +10,7 @@
       {{- end -}}
     {{- end -}}
   </head>
-  <body class="{{ .Section }}{{ if .IsHome }} home{{ end }}">
+  <body class="{{ with .Section }}section-{{ . | urlize }} {{ end }}{{ with .Kind }}kind-{{ . | urlize }} {{ end }}{{ with .Type }}type-{{ . | urlize }} {{ end }}{{ if .IsHome }}home{{ end }}">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5HP9Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->

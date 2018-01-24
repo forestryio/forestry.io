@@ -1,5 +1,6 @@
 html,
-body.home {
+body.home,
+body.kind-404 {
   height: 100%;
 }
 

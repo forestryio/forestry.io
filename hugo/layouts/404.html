@@ -1,4 +1,20 @@
 {{- define "main" -}}
-<h1>Page not found</h1>
-<a href="{{ "/" | relURL }}" title="Back to homepage">Go to the homepage</a>
+<section class="hero">
+    <div class="hero--content">
+        <div class="container">
+            <div class="hero--text-block">
+                <h1 class="hero--title">Page not found</h1>
+                <div class="hero--sub">What you're looking for isn't here, sorry!</div>
+                <div class="hero-cta">
+                    <a href="/" class="button primary big">Back to home</a>
+                </div>
+            </div>
+        </div>
+        <video playsinline="" autoplay="" muted="" loop="" poster="/video/forestry_factory.jpg" class="factory-video">
+            <source src="/video/forestry_factory.webm" type="video/webm">
+            <source src="/video/forestry_factory.mp4" type="video/mp4">
+                <source src="/video/forestry_factory.ogv" type="video/ogg">
+        </video>
+    </div>
+</section>
 {{- end -}}
