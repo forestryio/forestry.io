@@ -18,7 +18,7 @@ contentLoaded().then(() => {
   const isHome = document.body.classList.contains("home")
   const isDocs = document.body.classList.contains("section-docs")
   const isBlog = document.body.classList.contains("section-blog")
-  console.log("dafsjghafsghjfghjsdjh")
+
   /**
    * Enable navbar logic
    */
