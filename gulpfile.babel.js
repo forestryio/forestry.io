@@ -1,4 +1,3 @@
-import AWS from "aws-sdk"
 import algoliasearch from "algoliasearch"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
