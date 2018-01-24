@@ -1,6 +1,6 @@
 ---
 aliases:
-- /docs/quickstart/
+- "/docs/quickstart/"
 title: Product Tour
 authors: []
 publishdate: 2017-12-07 04:00:00 +0000
@@ -11,6 +11,7 @@ menu:
   docs:
     parent: quickstart
     weight: 1
+
 ---
 ## Overview
 
@@ -53,7 +54,6 @@ In Forestry, all of your content is sorted into _Collections_ under _Content_ in
 * **People:** a Jekyll collection of "staff members"
 * **Posts:** a Jekyll collection of blog posts
 * **Projects:** a Jekyll collection of projects
-* **Publications:** a non-output Jekyll collection of publications
 
 When you first enter the CMS, you will be dropped into the _Pages_ collection. Take a look at the different collections by selecting them from the sidebar.
 

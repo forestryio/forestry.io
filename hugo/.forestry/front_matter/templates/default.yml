@@ -5,6 +5,7 @@ pages:
 - docs/changelog
 - docs/_index.md
 - docs/faqs
+- docs/welcome
 - docs/git-sync
 - careers/_index.md
 - careers/devrel.md
@@ -12,13 +13,13 @@ pages:
 - careers/full-stack.md
 - careers/marketing.md
 - careers/software-engineer.md
+- blog/layout-improvements.md
 - blog/wysiwyg-formatting-in-front-matter.md
 - blog/introducing-media-management.md
 - blog/big-improvements-to-front-matter-templates.md
 - blog/forestryio-techstars-2016.md
 - blog/forestry-gitlab.md
 - blog/improved-collaboration-and-more.md
-- blog/layout-improvements.md
 - blog/introducing-forestry-config-files.md
 - blog/join-our-slack-community.md
 - blog/hugo-vs-jekyll-benchmark.md
