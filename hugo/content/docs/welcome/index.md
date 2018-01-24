@@ -27,7 +27,7 @@ menu:
     weight: 2
   main:
     name: Docs
-    weight: 1
+    weight: 2
   docs:
     parent: welcome
     weight: 1
