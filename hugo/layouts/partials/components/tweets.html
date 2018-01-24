@@ -1,5 +1,5 @@
 {{- $tweets := cond (isset . "tweets") .tweets $.Site.Data.testimonials.tweets -}}
-{{- $page := cond (isset . "page") .page . -}}
+{{- $page := .page | default . -}}
 <section class="section-testimonials" onclick="void(0)">
   {{- range $index, $row := $tweets -}}
     {{- range $row -}}

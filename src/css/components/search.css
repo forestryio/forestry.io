@@ -117,3 +117,7 @@
 [data-category="Hugo"] {
   color: #54defd;
 }
+
+.search-results--stats #stats {
+  margin-bottom: 1rem;
+}

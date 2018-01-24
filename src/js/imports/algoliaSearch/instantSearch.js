@@ -105,7 +105,7 @@ export default class InstantSearch {
     const shouldNotRender = options.results === undefined || query === ""
     const renderHits = () => {
       if (options.hits.length < 1) return Mustache.render(empty, {query: query})
-      return options.hits.map((h) => {
+      const hits = options.hits.map((h) => {
         h["FormatDate"] = function() {
           return function(date, render) {
             const calcTime = function(d, offset) {
@@ -139,6 +139,8 @@ export default class InstantSearch {
 
         return Mustache.render(hit, h)
       })
+
+      return hits.join("")
     }
 
     if (options.hits.length < 1 || options.isLastPage || shouldNotRender) {
@@ -154,14 +156,16 @@ export default class InstantSearch {
     }
 
     loadMoreElement.addEventListener("click", (event) => {
-      const initialState = loadMore.textContent
       event.preventDefault()
+
+      const initialState = loadMoreElement.innerHTML
+
       if (!shouldNotRender) {
-        loadMore.textContent = "Loading..."
+        loadMoreElement.innerHTML = "Loading..."
         options.showMore()
 
         setTimeout(() => {
-          loadMore.textContent = initialState
+          loadMoreElement.innerHTML = initialState
         }, 1000)
       }
     })

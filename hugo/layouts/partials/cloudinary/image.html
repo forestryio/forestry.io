@@ -1,4 +1,4 @@
-{{- if and (isset . "page") (isset . "image") -}}
+{{- if and .page (isset . "image") -}}
   {{- $page := .page -}}
   {{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
   {{- $presetName := .preset | default "default" -}}

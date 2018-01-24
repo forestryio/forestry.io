@@ -3,8 +3,8 @@
     <h2 class="section--title">{{ .headline | default "Want to hear it first?" }}</h2>
     <p class="section--sub is-center">{{ .textline | default "Subscribe to our newsletter to get the posts directly in your inbox as they get posted." }}</p>
     <br><br>
-    {{- if isset . "ctas" -}}
-      {{- range .ctas -}}
+    {{- with .ctas -}}
+      {{- range . -}}
       <a href="{{ .RelPermalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
       {{- end -}}
     {{- else -}}

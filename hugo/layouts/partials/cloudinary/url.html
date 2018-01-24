@@ -1,4 +1,4 @@
-{{- if and (isset . "image") (isset . "page") }}
+{{- if and .page (isset . "image") }}
   {{- $page := .page -}}
   {{/* Prefix with baseURL if a relative link */}}
   {{- $image := (cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL)) -}}
@@ -13,8 +13,8 @@
     {{/* Set up transform params for regular usage */}}
     {{- range $key, $param := $availableTransforms -}}
       {{- $value := (index $ $key) | default $param.default -}}
-      {{- if isset $ "value" -}}
-        {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" $value) "") -}}
+      {{- with $value -}}
+        {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" .) "") -}}
       {{- end -}}
     {{- end -}}
     {{- $transforms := $page.Scratch.Get "transforms" -}}
