@@ -16,9 +16,9 @@ import Sticky from "./imports/sticky"
  */
 contentLoaded().then(() => {
   const isHome = document.body.classList.contains("home")
-  const isDocs = document.body.classList.contains("docs")
-  const isBlog = document.body.classList.contains("blog")
-
+  const isDocs = document.body.classList.contains("section-docs")
+  const isBlog = document.body.classList.contains("section-blog")
+  console.log("dafsjghafsghjfghjsdjh")
   /**
    * Enable navbar logic
    */
@@ -40,6 +40,7 @@ contentLoaded().then(() => {
       "docs"
     )
   } else if (isBlog) {
+    console.log(isBlog)
     new Search(
       process.env.ALGOLIA_APP_ID,
       process.env.ALGOLIA_SEARCH_KEY,

@@ -14,7 +14,7 @@
     <section class="docs-content">
       <div class="container md-content">
         <h1>{{ .Params.headline | default .Title }}</h1>
-        {{ partial "cloudinary/content" (dict "page" $ "width" "auto:100:640" "dpr" "auto" "quality" "70") }}
+        {{ partial "cloudinary/content" (dict "pg" $ "width" "auto:100:640" "dpr" "auto" "quality" "70") }}
 
         {{ partial "components/pagination/menu" . }}
 

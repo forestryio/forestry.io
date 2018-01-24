@@ -12,7 +12,6 @@ excerpt: We’ve got 3 updates to share with you that will make using Forestry m
   more enjoyable.
 categories:
 - CMS
-featured: true
 date: 2017-06-14 09:00:00 -0300
 
 ---

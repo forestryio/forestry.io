@@ -1,9 +1,9 @@
 {{- $tweets := cond (isset . "tweets") .tweets $.Site.Data.testimonials.tweets -}}
-{{- $page := .page | default . -}}
+{{- $page := .pg | default . -}}
 <section class="section-testimonials" onclick="void(0)">
   {{- range $index, $row := $tweets -}}
     {{- range $row -}}
-      {{- template "row" (dict "page" $page "index" $index "row" .) -}}
+      {{- template "row" (dict "pg" $page "index" $index "row" .) -}}
     {{- end -}}
   {{- end -}}
 </section>
@@ -12,14 +12,14 @@
   <div class="testimonials-row--items">
     <div class="testimonials-row--wrapper">
       {{- range .row -}}
-        {{- template "tweet" (dict "page" $.page "tweet" .) -}}
+        {{- template "tweet" (dict "pg" $.page "tweet" .) -}}
       {{- end -}}
     </div>
   </div>
   <div class="testimonials-row--items">
     <div class="testimonials-row--wrapper">
       {{- range .row -}}
-        {{- template "tweet" (dict "page" $.page "tweet" .) -}}
+        {{- template "tweet" (dict "pg" $.page "tweet" .) -}}
       {{- end -}}
     </div>
   </div>
@@ -30,7 +30,7 @@
   <a href="{{ .RelPermalink }}" target="_blank" class="testimonial-card">
     <div class="meta">
       <div class="avatar">
-        {{ partial "cloudinary/image" (dict "page" $.page "image" .avatar "alt" (printf "%s%s" "Photo of " .name)) }}
+        {{ partial "cloudinary/image" (dict "pg" $.page "image" .avatar "alt" (printf "%s%s" "Photo of " .name)) }}
       </div>
       <div class="user-info">
         <span class="name">{{ .name }}</span>

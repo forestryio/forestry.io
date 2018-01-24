@@ -1,4 +1,4 @@
-{{- $page := .page }}
+{{- $page := .pg }}
 {{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
 {{- $find_images_regex := "(?:<img[^>]*)>*" -}}
 {{- $find_src_regex := "(?:(?:src=)(?:\"?)([^\"]*)(?:\"?))" -}}
@@ -20,7 +20,7 @@
   {{- $title := replaceRE $clean_regex "$1" $titleRaw -}}
   {{- $image := cond (and $lazySizes (not (eq $dataSrc ""))) $dataSrc $src -}}
   {{- if not (in $image "https://res.cloudinary.com/") -}}
-    {{- $replacement := (partial "cloudinary/image" (dict "page" $page "image" $image "alt" $alt "title" $title)) -}}
+    {{- $replacement := (partial "cloudinary/image" (dict "pg" $page "image" $image "alt" $alt "title" $title)) -}}
     {{- $page.Scratch.Set "content" (replace $content $value $replacement) -}}
   {{- end -}}
 {{- end -}}

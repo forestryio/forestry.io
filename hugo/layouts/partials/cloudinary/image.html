@@ -1,5 +1,5 @@
-{{- if and .page (isset . "image") -}}
-  {{- $page := .page -}}
+{{- if and .pg (isset . "image") -}}
+  {{- $page := .pg -}}
   {{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
   {{- $presetName := .preset | default "default" -}}
   {{- $presets := $page.Site.Params.cloudinary.presets | default (dict) -}}
@@ -15,11 +15,11 @@
     {{- $page.Scratch.SetInMap "url" $key $value -}}
   {{- end -}}
   {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
-  {{- template "img" (dict "page" $page "src" $src "alt" .alt "title" .title "lazysizes" $lazySizes) }}
+  {{- template "img" (dict "pg" $page "src" $src "alt" .alt "title" .title "lazysizes" $lazySizes) }}
 {{- end -}}
 {{- define "img" -}}
   {{/* placeholder image for lazyloaded images */}}
-  {{- $placeholder := .page.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" -}}
+  {{- $placeholder := .pg.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" -}}
   <p class="img-container">
     <img{{ if $.lazysizes }} src="{{ $placeholder | safeURL }}"{{ end }}{{ if $.lazysizes }} data-src{{ else }} src{{ end }}="{{ .src | safeURL }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ .src }}{{ end }}"{{ with .title }} title="{{ . }}"{{- end -}}{{ if $.lazysizes }} class="lazyload"{{ end }} />
   </p>
