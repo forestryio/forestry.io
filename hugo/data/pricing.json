@@ -105,7 +105,7 @@
       "priceMonthly": "_",
       "description": "",
       "buttonText": "Get a quote",
-      "buttonUrl": "mailto:enterprise@forestry.io",
+      "buttonUrl": "/support",
       "planItems": [
         {
           "text": "Flexible user limits"
