@@ -10,7 +10,7 @@ images:
 weight: 2
 menu:
   guides:
-    parent: Developing with Jekyll
+    parent: Developing with Hugo
     weight: 2
 
 ---

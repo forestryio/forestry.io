@@ -16,56 +16,28 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-identifier = "Other"
 name = "Other"
 weight = 7
 [[menu.docs]]
-identifier = "settings"
 name = "Settings & Configuration"
 weight = 6
 [[menu.docs]]
-identifier = "hosting"
 name = "Hosting"
 weight = 5
 [[menu.docs]]
-identifier = "editing"
 name = "Editing"
 weight = 4
 [[menu.docs]]
-identifier = "git-sync"
 name = "Git Sync"
 weight = 3
 [[menu.docs]]
-identifier = "quickstart"
 name = "Quick Start"
 weight = 2
 [[menu.docs]]
-identifier = "welcome"
 name = "Welcome"
 weight = 1
 [[menu.faqs]]
 name = "Glossary"
-url = "/"
-weight = 2
-[[menu.footer]]
-identifier = "product"
-name = "Product"
-weight = 1
-[[menu.footer]]
-identifier = "company"
-name = "Company"
-weight = 2
-[[menu.guides]]
-name = "Hosting"
-url = "/"
-weight = 3
-[[menu.guides]]
-identifier = "jekyll"
-name = "Developing with Jekyll"
-weight = 1
-[[menu.guides]]
-identifier = "hugo"
-name = "Developing with Hugo"
 weight = 2
 [[menu.main]]
 identifier = "useraccount"
@@ -87,6 +59,12 @@ identifier = "signup"
 name = "Sign up"
 url = "https://app.forestry.io/signup"
 weight = 8
+[[menu.footer]]
+name = "Product"
+weight = 1
+[[menu.footer]]
+name = "Company"
+weight = 2
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true

@@ -11,7 +11,7 @@ images:
 weight: 1
 menu:
   guides:
-    parent: Developing with Hugo
+    parent: Developing with Jekyll
     identifier: _jekyll-intro
     weight: 1
 

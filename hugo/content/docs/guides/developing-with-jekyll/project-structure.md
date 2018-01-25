@@ -10,7 +10,7 @@ images:
 weight: 2
 menu:
   guides:
-    parent: Developing with Hugo
+    parent: Developing with Jekyll
     identifier: _jekyll-project-structure
     weight: 2
 

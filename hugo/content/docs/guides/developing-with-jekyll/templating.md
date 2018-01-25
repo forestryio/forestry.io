@@ -10,7 +10,7 @@ images:
 weight: 3
 menu:
   guides:
-    parent: Developing with Hugo
+    parent: Developing with Jekyll
     identifier: _jekyll-templating
     weight: 3
 
