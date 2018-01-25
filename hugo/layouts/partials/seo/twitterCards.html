@@ -1,7 +1,7 @@
 {{- with $.Param "images" -}}
   {{- range first 1 . -}}
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image:src" content="{{ . | relURL }}"/>
+    <meta name="twitter:image:src" content="{{ . | absURL }}"/>
   {{- end -}}
 {{- else -}}
   <meta name="twitter:card" content="summary"/>
