@@ -1,16 +1,18 @@
 ---
 aliases:
-- /docs/developing-with-jekyll/local-development/
+- "/docs/developing-with-jekyll/local-development/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Local Development
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 7
 menu:
   guides:
-    parent: jekyll
+    parent: Developing with Hugo
     identifier: _jekyll-local-development
-weight: 7
+    weight: 5
 
 ---
 Jekyll allows you to work on your site in a local environment on your computer. It requires you to have `Ruby`, `RubyGems` and `Bundler` installed.

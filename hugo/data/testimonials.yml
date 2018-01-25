@@ -1,82 +1,67 @@
 ---
 tweets:
 - row:
-  -
-    name: 'Michael Lee 🍕'
-    username: '@michaelsoolee'
-    avatar: /img/nInv8bTI_bigger.jpg
-    permalink: 'https://twitter.com/michaelsoolee/status/915960076745265152'
-    textline: '@scottgallant & his team over @forestryio are doing really thoughtful work for static sites. Balancing for both tech/non-tech folks'
-  -
-    name: 'Richard Gazdik'
-    username: '@richardgazdik'
-    avatar: /img/jQzQqqjp_bigger.jpg
-    permalink: 'https://twitter.com/richardgazdik/status/877074505377644545'
-    textline: '‏Jekyll + Github + Forestryio (@forestryio) is a killer combo. It lightspeeds and makes CMS developement "baby easy".'
-  -
-    name: 'John Puddephatt‏‏'
-    username: '@johnpuddephatt'
-    avatar: /img/FHM-Q8qU_bigger.jpg
-    permalink: 'https://twitter.com/johnpuddephatt/status/915970505949237248'
-    textline: '‏Current fave is @forestryio – UI components like repeatable fields work well, clients like it, great team behind it.'
-  -
-    name: 'Luc Perkins‏‏'
-    username: '@lucperkins'
-    avatar: /img/60aWm3Ef_bigger.jpg
-    permalink: 'https://twitter.com/lucperkins/status/885663935994634240'
-    textline: '‏Gotta say, @forestryio is awesome. Seems to 100% solve a very, very thorny set of problems.'
-  -
-    name: 'eliza sj'
-    username: '@iamelizasj'
-    avatar: /img/eliza.png
-    permalink: 'https://twitter.com/iamelizasj/status/932575857302036480'
-    textline: 'wow @forestryio u guys really make it simple ❤️'
+  - name: "Michael Lee \U0001F355"
+    username: "@michaelsoolee"
+    avatar: "/img/nInv8bTI_bigger.jpg"
+    permalink: https://twitter.com/michaelsoolee/status/915960076745265152
+    textline: "@scottgallant & his team over @forestryio are doing really thoughtful
+      work for static sites. Balancing for both tech/non-tech folks"
+  - name: Richard Gazdik
+    username: "@richardgazdik"
+    avatar: "/img/jQzQqqjp_bigger.jpg"
+    permalink: https://twitter.com/richardgazdik/status/877074505377644545
+    textline: ‏Jekyll + Github + Forestryio (@forestryio) is a killer combo. It lightspeeds
+      and makes CMS developement "baby easy".
+  - name: John Puddephatt‏‏
+    username: "@johnpuddephatt"
+    avatar: "/img/FHM-Q8qU_bigger.jpg"
+    permalink: https://twitter.com/johnpuddephatt/status/915970505949237248
+    textline: "‏Current fave is @forestryio – UI components like repeatable fields
+      work well, clients like it, great team behind it."
+  - name: Luc Perkins‏‏
+    username: "@lucperkins"
+    avatar: "/img/60aWm3Ef_bigger.jpg"
+    permalink: https://twitter.com/lucperkins/status/885663935994634240
+    textline: "‏Gotta say, @forestryio is awesome. Seems to 100% solve a very, very
+      thorny set of problems."
+  - name: eliza sj
+    username: "@iamelizasj"
+    avatar: "/img/eliza.png"
+    permalink: https://twitter.com/iamelizasj/status/932575857302036480
+    textline: wow @forestryio u guys really make it simple ❤️
 - row:
-  -
-    name: 'Saul Cullen'
-    username: '@saulgcullen'
-    avatar: /img/helloworld_400x400.jpg
-    permalink: 'https://twitter.com/saulgcullen/status/929747493319073797'
-    textline: 'Really enjoying using @forestryio - superb product that integrates brilliantly with git resulting in a hugely robust, version controlled, content store for "static sites". Paired with @Netlify, it becomes even more awesome. Great work.'
-  -
-    name: 'Ryan Underwood‏'
-    username: '@takenot_es'
-    avatar: /img/Xv8LFxjY.jpg
-    permalink: 'https://twitter.com/takenot_es/status/946258078533672960'
-    textline: 'forestryio I love you. That''s all.'
-  -
-    name: 'GoHugo.io'
-    username: '@GoHugoIO'
-    avatar: /img/hugo-twitter.jpg
-    permalink: 'https://twitter.com/GoHugoIO/status/954743024260648968'
+  - name: Saul Cullen
+    username: "@saulgcullen"
+    avatar: "/img/helloworld_400x400.jpg"
+    permalink: https://twitter.com/saulgcullen/status/929747493319073797
+    textline: Really enjoying using @forestryio - superb product that integrates brilliantly
+      with git resulting in a hugely robust, version controlled, content store for
+      "static sites". Paired with @Netlify, it becomes even more awesome. Great work.
+  - name: Ryan Underwood‏
+    username: "@takenot_es"
+    avatar: "/img/Xv8LFxjY.jpg"
+    permalink: https://twitter.com/takenot_es/status/946258078533672960
+    textline: forestryio I love you. That's all.
+  - name: GoHugo.io
+    username: "@GoHugoIO"
+    avatar: "/img/hugo-twitter.jpg"
+    permalink: https://twitter.com/GoHugoIO/status/954743024260648968
     textline: 'In the end, we chose Hugo on @Netlify, with @forestryio as our CMS... '
-  -
-    name: 'Christian Nolte'
-    username: '@drlogout'
-    avatar: /img/dQuwRPh1_bigger.jpg
-    permalink: 'https://twitter.com/drlogout/status/907167669639577600'
-    textline: 'Built my first site with @GoHugoIO and @forestryio. What a pleasure!'
-  -
-    name: 'Matt Cowger'
-    username: '@mcowger'
-    avatar: /img/Ofnnx5p9_bigger.jpg
-    permalink: 'https://twitter.com/mcowger/status/926241515491520513'
-    textline: 'Managing my blog is massively easier with @forestryio - much better than my previous workflow (which is still compatible!)'
-  -
-    name: 'Hugh Durkin'
-    username: '@hughdurkin'
-    avatar: /img/TuX70IqU_bigger.jpg
-    permalink: 'https://twitter.com/hughdurkin/status/864861547511906305'
-    textline: 'No native mobile app required 📵 So impressed with the speed and ease of use of @forestryio on mobile web 💨 #jamstack'
-  # -
-  #   name: 'Ollie'
-  #   username: '@TheOllieJT'
-  #   avatar: /img/FOvXwoMQ_bigger.jpg
-  #   permalink: 'https://twitter.com/TheOllieJT/status/898048355191869440'
-  #   textline: 'Great, I just re launched my portfolio on Jekyll using @forestryio'
-  # -
-  #   name: 'Jared White'
-  #   username: '@jaredcwhite'
-  #   avatar: /img/3aD9E8HL_bigger.jpg
-  #   permalink: 'https://twitter.com/hughdurkin/status/864861547511906305'
-  #   textline: '@forestryio It''s been well over a year since I last tried out Forestry...now researching it again for a client and wow! It''s looking awesome! Great job. 👍'
+  - name: Christian Nolte
+    username: "@drlogout"
+    avatar: "/img/dQuwRPh1_bigger.jpg"
+    permalink: https://twitter.com/drlogout/status/907167669639577600
+    textline: Built my first site with @GoHugoIO and @forestryio. What a pleasure!
+  - name: Matt Cowger
+    username: "@mcowger"
+    avatar: "/img/Ofnnx5p9_bigger.jpg"
+    permalink: https://twitter.com/mcowger/status/926241515491520513
+    textline: Managing my blog is massively easier with @forestryio - much better
+      than my previous workflow (which is still compatible!)
+  - name: Hugh Durkin
+    username: "@hughdurkin"
+    avatar: "/img/TuX70IqU_bigger.jpg"
+    permalink: https://twitter.com/hughdurkin/status/864861547511906305
+    textline: "No native mobile app required \U0001F4F5 So impressed with the speed
+      and ease of use of @forestryio on mobile web \U0001F4A8 #jamstack"

@@ -38,7 +38,7 @@ cta:
 private: false
 menu:
   footer:
-    parent: product
+    parent: Product
     weight: 1
   main:
     weight: 1

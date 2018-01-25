@@ -1,12 +1,13 @@
 ---
 aliases:
-- /docs/front-matter-fields/select-field/
-- /docs/front-matter-fields/select-field/pages/
-- /docs/front-matter-fields/select-field/data/
+- "/docs/front-matter-fields/select-field/"
+- "/docs/front-matter-fields/select-field/pages/"
+- "/docs/front-matter-fields/select-field/data/"
 title: Select Field
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
+
 ---
 ## Options
 ![](/uploads/2018/01/select-custom-options.png)

@@ -1,17 +1,19 @@
 ---
 aliases:
-- /docs/developing-with-jekyll/
-- /docs/developing-with-jekyll/intro/
+- "/docs/developing-with-jekyll/"
+- "/docs/developing-with-jekyll/intro/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Introduction
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 1
 menu:
   guides:
-    parent: jekyll
+    parent: Developing with Hugo
     identifier: _jekyll-intro
-weight: 1
+    weight: 1
 
 ---
 Jekyll is one of the oldest static site generators available. Built by [GitHub][1], it has tons of community support and is very stable. Additional features can be added onto Jekyll through the use of plugins. It also uses the templating language [Liquid][2], which feels very familiar to developers and is also used by Shopify and other large-scale applications. 

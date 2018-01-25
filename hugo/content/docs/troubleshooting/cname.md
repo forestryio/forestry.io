@@ -1,14 +1,13 @@
 ---
 title: How do I add a CNAME to my site?
 authors: []
-publishdate: 2017-12-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2017-12-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 date: 2018-01-02 15:23:56 +0000
 headline: ''
 description: ''
 textline: ''
-
 categories: []
 tags: []
 cta:
@@ -18,11 +17,14 @@ cta:
 private: false
 weight: ''
 aliases:
-- /faq/use-a-cname-for-you-hugo-and-github-pages-site/
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+- "/faq/use-a-cname-for-you-hugo-and-github-pages-site/"
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   troubleshooting:
-    parent: troubleshooting
+    parent: Troubleshooting
+    weight: 1
+
 ---
 For some hosting providers (such as GitHub pages) you will need to place a `CNAME` file in the root of your site.
 

@@ -1,17 +1,18 @@
 ---
-
 aliases:
-- /docs/developing-with-jekyll/environments/
+- "/docs/developing-with-jekyll/environments/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Environments
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 6
 menu:
   guides:
-    parent: jekyll
+    parent: Developing with Jekyll
     identifier: _jekyll-environments
-weight: 6
+    weight: 6
 
 ---
 There are three unique developer environments when working with a Jekyll site in Forestry:

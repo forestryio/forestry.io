@@ -1,16 +1,18 @@
 ---
 aliases:
-- /docs/developing-with-hugo/local-development/
+- "/docs/developing-with-hugo/local-development/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
-related:
+related: ''
 tags: ''
 title: Local Development
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 7
 menu:
   guides:
-    parent: hugo
-weight: 7
+    parent: Developing with Jekyll
+    weight: 5
 
 ---
 Hugo allows you to work on your site in a local environment on your computer. It requires you to install the Hugo binary on your local machine.

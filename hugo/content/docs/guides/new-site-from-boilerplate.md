@@ -8,7 +8,6 @@ date: 2018-01-11 12:20:01 +0000
 headline: ''
 description: ''
 textline: ''
-
 categories: []
 tags: []
 cta:
@@ -16,16 +15,13 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
-menu:
-  guides:
-    parent: hugo
-draft: true
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 weight: 2
 aliases: []
+draft: true
 
 ---
-
 {{% error disclaimer %}}  
 Forestry powers [static sites](/docs/faqs/glossary/static-sites/) generated using [static site generators](/docs/faqs/glossary/static-site-generators/) and manages them using [Git](https://git-scm.com/ "Git Website"). If you're not familiar with these topics, this is a great opportunity to learn!  
 {{% /error %}}

@@ -1,15 +1,17 @@
 ---
 aliases:
-- /docs/developing-with-hugo/misc/
+- "/docs/developing-with-hugo/misc/"
 date: 2013-07-24 00:00:00 +0000
 description: Other things you can do with Hugo
 tags: ''
 title: Misc
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 9
 menu:
   guides:
-    parent: hugo
-weight: 9
+    parent: Developing with Hugo
+    weight: 9
 
 ---
 ## Sitemap

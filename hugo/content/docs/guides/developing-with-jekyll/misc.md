@@ -1,16 +1,18 @@
 ---
 aliases:
-- /docs/developing-with-jekyll/misc/
+- "/docs/developing-with-jekyll/misc/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Misc
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 9
 menu:
   guides:
-    parent: jekyll
+    parent: Developing with Jekyll
     identifier: _jekyll-misc
-weight: 9
+    weight: 9
 
 ---
 ## Sitemaps/Feeds

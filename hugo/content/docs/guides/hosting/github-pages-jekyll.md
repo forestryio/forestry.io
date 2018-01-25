@@ -4,10 +4,13 @@ weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   guides:
     parent: Hosting
+    weight: 1
+
 ---
 ## Using Jekyll with GitHub Pages
 GitHub can handle building your Jekyll site without the need of Forestry or a CI tool. GitHub will build your Jekyll site each time a new commit is pushed to GitHub and serve it automatically.

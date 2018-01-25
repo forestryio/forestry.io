@@ -5,7 +5,7 @@ description: Forestry.io is looking for a Maritime-based Growth Marketer to join
   team.
 title: Growth Marketer
 date: 2017-05-17 11:13:32 -0300
-publishdate: 2018-01-01 00:00:00 -0400
+publishdate: 2018-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
@@ -19,7 +19,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 ### About Forestry.io

@@ -5,12 +5,14 @@ authors:
 - chris-macrae
 images:
 - "/uploads/2018/01/forestry-io-media-images-2.jpg"
-publishDate: 2018-01-11 04:00:00 +1400
+publishDate: 2018-01-10 14:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 title: Changes & Improvements to the Media Library
-description: Have more control over what media is available in Forestry + Search & Performance Improvements!
+description: Have more control over what media is available in Forestry + Search &
+  Performance Improvements!
 categories:
 - CMS
+date: 2018-01-11 04:00:00 +1400
 
 ---
 We've got great improvements to share with you from Forestry.io, involving Forestry’s _Media Library_.

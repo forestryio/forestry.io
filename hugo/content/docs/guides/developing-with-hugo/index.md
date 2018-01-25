@@ -1,17 +1,19 @@
 ---
 aliases:
-- /docs/developing-with-hugo/
-- /docs/developing-with-hugo/intro/
+- "/docs/developing-with-hugo/"
+- "/docs/developing-with-hugo/intro/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 related: []
 tags: ''
 title: Introduction
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 1
 menu:
   guides:
-    parent: hugo
-weight: 1
+    parent: Developing with Jekyll
+    weight: 1
 
 ---
 Hugo is a *fast* static site generator, with a *lot* of enterprise features. If you’re building a large business, publication, or community website Hugo is likely the right choice due to features likes localization, RSS Feed & Sitemap generation, and much more.

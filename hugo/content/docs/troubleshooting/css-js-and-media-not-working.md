@@ -8,7 +8,6 @@ aliases:
 - "/docs/troubleshooting/assets-not-loading"
 headline: ''
 textline: ''
-
 categories: []
 tags: []
 expirydate: 2030-01-01 04:00:00 +0000
@@ -17,11 +16,14 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: ''
 menu:
   troubleshooting:
-    parent: troubleshooting
-weight: ''
+    parent: Troubleshooting
+    weight: 4
+
 ---
 Sometimes you’ll find your assets aren’t loading when you preview or publish your site. This is almost always due to *path issues*.
 

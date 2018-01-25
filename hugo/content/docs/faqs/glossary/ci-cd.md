@@ -5,10 +5,13 @@ layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   faqs:
     parent: Glossary
+    weight: 5
+
 ---
 ## Continuous Integration (CI)
 Continuous Integration (CI) is a development practice where developers check-in code to a version control tool multiple times per day. Each time code is checked-in, an automated build is performed, allowing developers to identify problems with code quickly.

@@ -4,10 +4,13 @@ weight: 3
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    parent: settings
+    parent: Settings & Configuration
+    weight: 3
+
 ---
 ## Text
 ![](/uploads/2018/01/text-preview.png)

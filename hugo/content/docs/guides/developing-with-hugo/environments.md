@@ -1,14 +1,16 @@
 ---
 aliases:
-- /docs/developing-with-hugo/environments/
+- "/docs/developing-with-hugo/environments/"
 date: 2017-06-20 20:03:09 +0000
 description: ''
 title: Environments
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 6
 menu:
   guides:
-    parent: hugo
-weight: 6
+    parent: Developing with Hugo
+    weight: 6
 
 ---
 They are three unique developer environments when working with a Hugo site in Forestry:

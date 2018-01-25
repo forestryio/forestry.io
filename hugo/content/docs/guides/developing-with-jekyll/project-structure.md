@@ -1,16 +1,18 @@
 ---
 aliases:
-- /docs/developing-with-jekyll/project-structure/
+- "/docs/developing-with-jekyll/project-structure/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Project Structure
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 2
 menu:
   guides:
-    parent: jekyll
+    parent: Developing with Hugo
     identifier: _jekyll-project-structure
-weight: 2
+    weight: 2
 
 ---
 In Jekyll, project structure and naming is very important. The way you structure and name your project directly effects the organization of your built static site.

@@ -1,15 +1,17 @@
 ---
 aliases:
-- /docs/developing-with-hugo/asset-pipeline/
+- "/docs/developing-with-hugo/asset-pipeline/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Asset Pipeline
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 5
 menu:
   guides:
-    parent: hugo
-weight: 5
+    parent: Developing with Jekyll
+    weight: 7
 
 ---
 If you’re planning on using any preprocessing on your assets (images, CSS, or JS) you’ll need to be careful how you implement this as it effects how Forestry builds your sites.

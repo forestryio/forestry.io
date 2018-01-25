@@ -20,6 +20,7 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
+date: 2016-01-06 04:00:00 +0000
 
 ---
 My friend, Emily, needed a simple website for her restaurant.  She's a chef and didn't want to deal with the hassle of DNS, hosting, design, etc.  As a recovering freelancer, I offered to help.

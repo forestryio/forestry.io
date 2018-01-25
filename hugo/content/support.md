@@ -1,6 +1,6 @@
 ---
 aliases:
-- /contact/
+- "/contact/"
 title: Support
 headline: Got a question about using Forestry.io?
 type: contact
@@ -10,7 +10,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 menu:
   footer:
-    parent: company
+    parent: Company
     weight: 1
 
 ---

@@ -1,15 +1,17 @@
 ---
 aliases:
-- /docs/developing-with-hugo/templating/
+- "/docs/developing-with-hugo/templating/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Templating
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 3
 menu:
   guides:
-    parent: hugo
-weight: 3
+    parent: Developing with Jekyll
+    weight: 3
 
 ---
 Hugo allows users to build layouts and themes using one of multiple templating languages. By default, Hugo uses GoLang’s GoTemplates.

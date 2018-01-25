@@ -1,15 +1,17 @@
 ---
 aliases:
-- /docs/developing-with-hugo/project-structure/
+- "/docs/developing-with-hugo/project-structure/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Project Structure
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 2
 menu:
   guides:
-    parent: hugo
-weight: 2
+    parent: Developing with Jekyll
+    weight: 2
 
 ---
 In Hugo, project structure and naming is fairly rigid other than content structure. You must follow the Hugo guidelines for where content, layouts, data, and static assets must be stored.

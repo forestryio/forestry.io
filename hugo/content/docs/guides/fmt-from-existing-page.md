@@ -8,7 +8,6 @@ date: 2018-01-11 12:20:01 +0000
 headline: ''
 description: ''
 textline: ''
-
 categories: []
 tags: []
 cta:
@@ -16,17 +15,13 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
-menu:
-  guides:
-    parent: hugo
-draft: true
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 weight: 9
 aliases: []
+draft: true
 
 ---
-
-
 To save time when creating your Content Model, you can base new Front Matter Templates off the data found in an existing page.
 
 To do so, navigate to that page and click the _settings_ drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data.

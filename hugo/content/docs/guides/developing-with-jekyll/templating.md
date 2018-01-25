@@ -1,16 +1,18 @@
 ---
 aliases:
-- /docs/developing-with-jekyll/templating/
+- "/docs/developing-with-jekyll/templating/"
 date: 2013-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Templating
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+weight: 3
 menu:
   guides:
-    parent: jekyll
+    parent: Developing with Hugo
     identifier: _jekyll-templating
-weight: 3
+    weight: 3
 
 ---
 Jekyll allows users to build their HTML templates using the template language *Liquid* built and used by the popular eCommerce application [Shopify][1].

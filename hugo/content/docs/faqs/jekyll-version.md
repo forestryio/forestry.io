@@ -1,17 +1,20 @@
 ---
 aliases:
-- /docs/faq/what-versions-of-jekyll-do-you-support/
-- /docs/faq/what-versions-of-jekyll-and-plugins-does-forestry-support/
+- "/docs/faq/what-versions-of-jekyll-do-you-support/"
+- "/docs/faq/what-versions-of-jekyll-and-plugins-does-forestry-support/"
 title: What versions of Jekyll do you support?
 weight: 1
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   faqs:
-    parent: faqs
+    parent: FAQs
+    weight: 2
+
 ---
 Forestry will use whatever version of Jekyll is specified in your `Gemfile`.
 

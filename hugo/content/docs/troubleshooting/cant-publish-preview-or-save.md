@@ -1,14 +1,13 @@
 ---
 title: Can't publish, preview, or save
 authors: []
-publishdate: 2017-12-31 00:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2017-12-31 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 date: 2018-01-02 15:23:56 +0000
 headline: ''
 description: ''
 textline: ''
-
 categories: []
 tags: []
 cta:
@@ -18,10 +17,13 @@ cta:
 private: false
 weight: ''
 aliases: []
-images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   troubleshooting:
-    parent: troubleshooting
+    parent: Troubleshooting
+    weight: 2
+
 ---
 When publishing, previewing, or saving a draft, there are a multitude of reasons why your site may fail to import. Generally, they boil down to 3 reasons:
 

@@ -18,7 +18,7 @@ plainIDAnchors = true
 [[menu.docs]]
 identifier = "Other"
 name = "Other"
-weight = 99
+weight = 7
 [[menu.docs]]
 identifier = "settings"
 name = "Settings & Configuration"
@@ -43,14 +43,22 @@ weight = 2
 identifier = "welcome"
 name = "Welcome"
 weight = 1
+[[menu.faqs]]
+name = "Glossary"
+url = "/"
+weight = 2
 [[menu.footer]]
 identifier = "product"
 name = "Product"
-weight = 3
+weight = 1
 [[menu.footer]]
 identifier = "company"
 name = "Company"
-weight = 5
+weight = 2
+[[menu.guides]]
+name = "Hosting"
+url = "/"
+weight = 3
 [[menu.guides]]
 identifier = "jekyll"
 name = "Developing with Jekyll"
@@ -58,7 +66,7 @@ weight = 1
 [[menu.guides]]
 identifier = "hugo"
 name = "Developing with Hugo"
-weight = 1
+weight = 2
 [[menu.main]]
 identifier = "useraccount"
 name = "My Account"

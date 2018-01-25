@@ -2,7 +2,8 @@
 aliases:
 - "/remote/"
 title: Static CMS for Hugo & Jekyll
-description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to build sites.
+description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to build
+  sites.
 authors:
 - forestryio
 hero:
@@ -13,8 +14,6 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Start building now
     button: true
-  #- permalink: /docs/quickstart/tour/
-  #  textline: Launch Demo
   video:
     fallbackVisual: "/video/forestry_factory.jpg"
     sources:
