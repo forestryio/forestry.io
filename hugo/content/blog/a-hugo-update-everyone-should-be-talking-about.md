@@ -5,7 +5,7 @@ title: A Hugo Update Everyone Should Be Talking About
 authors:
 - chris-macrae
 images:
-- "/uploads/a-hugo-update-everyone-should-be-talking-about.png"
+- "/uploads/2018/01/a-hugo-update-everyone-should-be-talking-about.png"
 publishDate: 2017-06-26 15:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: 'For Hugo users a few great updates came out recently with a long-awaited
