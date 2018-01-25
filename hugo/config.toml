@@ -16,83 +16,83 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-identifier = "welcome"
-name = "Welcome"
-weight = 1
-[[menu.docs]]
-identifier = "quickstart"
-name = "Quick Start"
-weight = 2
-[[menu.docs]]
-identifier = "git-sync"
-name = "Git Sync"
-weight = 3
-[[menu.docs]]
-identifier = "editing"
-name = "Editing"
-weight = 4
-[[menu.docs]]
-identifier = "hosting"
-name = "Hosting"
-weight = 5
+identifier = "Other"
+name = "Other"
+weight = 99
 [[menu.docs]]
 identifier = "settings"
 name = "Settings & Configuration"
 weight = 6
 [[menu.docs]]
-identifier = "Other"
-name = "Other"
-weight = 99
-[[menu.guides]]
-identifier = "hugo"
-name = "Developing with Hugo"
-weight = 1
-[[menu.guides]]
-identifier = "jekyll"
-name = "Developing with Jekyll"
-weight = 1
-[[menu.footer]]
-identifier = "company"
-name = "Company"
+identifier = "hosting"
+name = "Hosting"
 weight = 5
+[[menu.docs]]
+identifier = "editing"
+name = "Editing"
+weight = 4
+[[menu.docs]]
+identifier = "git-sync"
+name = "Git Sync"
+weight = 3
+[[menu.docs]]
+identifier = "quickstart"
+name = "Quick Start"
+weight = 2
+[[menu.docs]]
+identifier = "welcome"
+name = "Welcome"
+weight = 1
 [[menu.footer]]
 identifier = "product"
 name = "Product"
 weight = 3
+[[menu.footer]]
+identifier = "company"
+name = "Company"
+weight = 5
+[[menu.guides]]
+identifier = "jekyll"
+name = "Developing with Jekyll"
+weight = 1
+[[menu.guides]]
+identifier = "hugo"
+name = "Developing with Hugo"
+weight = 1
 [[menu.main]]
-identifier = "signup"
-name = "Sign up"
-url = "https://app.forestry.io/signup"
-weight = 8
-[[menu.main]]
-identifier = "userdashboard"
-name = "Dashboard"
-url = "https://app.forestry.io/dashboard"
-weight = 7
+identifier = "useraccount"
+name = "My Account"
+url = "https://app.forestry.io/settings"
+weight = 5
 [[menu.main]]
 identifier = "login"
 name = "Login"
 url = "https://app.forestry.io/login"
 weight = 6
 [[menu.main]]
-identifier = "useraccount"
-name = "My Account"
-url = "https://app.forestry.io/settings"
-weight = 5
-[outputFormats.Redirects]
-mediatype = "application/json"
-baseName = "redirects"
-isPlainText = true
-notAlternative = true
+identifier = "userdashboard"
+name = "Dashboard"
+url = "https://app.forestry.io/dashboard"
+weight = 7
+[[menu.main]]
+identifier = "signup"
+name = "Sign up"
+url = "https://app.forestry.io/signup"
+weight = 8
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
-notAlternative = true
 mediaType = "application/json"
+notAlternative = true
 [outputFormats.OpenSearch]
 baseName = "opensearch"
 isPlainText = true
 mediaType = "application/xml"
+notAlternative = true
+[outputFormats.Redirects]
+baseName = "redirects"
+isPlainText = true
+mediatype = "application/json"
 notAlternative = true
 [outputs]
 home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
@@ -103,7 +103,7 @@ ghrepo = "https://github.com/forestryio/forestry.io"
 ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
 gtmid = "GTM-KL5HP9Q"
-images = []
+images = ["/uploads/2018/01/OGimage-01-3x.jpg"]
 mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
 [params.cloudinary]
 cloud_name = "forestry-demo"
