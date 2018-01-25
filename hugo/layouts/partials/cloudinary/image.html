@@ -14,10 +14,13 @@
     {{- $page.Scratch.SetInMap "url" $key $value -}}
   {{- end -}}
   {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
-  {{- template "img" (dict "pg" $page "src" $src "alt" .alt "title" .title "lazysizes" $lazySizes) }}
+  {{- $page.Scratch.SetInMap "url" "quality" "10" -}}
+  {{- $placeholder := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+  {{- template "img" (dict "pg" $page "src" $src "placeholder" $placeholder "alt" .alt "title" .title "lazysizes" $lazySizes) }}
 {{- end -}}
 {{- define "img" -}}
   {{/* placeholder image for lazyloaded images */}}
+  {{- $lowResPlaceholder := }}
   {{- $placeholder := .pg.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" -}}
   <img{{ if $.lazysizes }} src="{{ $placeholder | safeURL }}"{{ end }}{{ if $.lazysizes }} data-src{{ else }} src{{ end }}="{{ .src | safeURL }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ .src }}{{ end }}"{{ with .title }} title="{{ . }}"{{- end -}}{{ if $.lazysizes }} class="lazyload"{{ end }} />
 {{- end -}}
