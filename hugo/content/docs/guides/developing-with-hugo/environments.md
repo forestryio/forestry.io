@@ -4,6 +4,7 @@ aliases:
 date: 2017-06-20 20:03:09 +0000
 description: ''
 title: Environments
+images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
 menu:
   guides:
     parent: hugo

@@ -5,6 +5,7 @@ date: 2013-07-24 00:00:00 +0000
 description: Other things you can do with Hugo
 tags: ''
 title: Misc
+images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
 menu:
   guides:
     parent: hugo

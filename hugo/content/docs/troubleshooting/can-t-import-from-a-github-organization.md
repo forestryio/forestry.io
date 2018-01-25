@@ -9,7 +9,7 @@ aliases:
 - "/troubleshooting/authorizing-github-organizations"
 headline: ''
 textline: ''
-images: []
+
 categories: []
 tags: []
 cta:
@@ -18,6 +18,7 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
+images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
 menu:
   troubleshooting:
     parent: troubleshooting

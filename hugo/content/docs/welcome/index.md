@@ -12,7 +12,7 @@ authors:
 headline: ''
 description: ''
 textline: ''
-images: []
+
 categories: []
 tags: []
 cta:
@@ -20,6 +20,7 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
+images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
 menu:
   footer:
     name: Docs

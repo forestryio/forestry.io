@@ -8,7 +8,7 @@ date: 2018-01-02 15:23:56 +0000
 headline: ''
 description: ''
 textline: ''
-images: []
+
 categories: []
 tags: []
 cta:
@@ -18,6 +18,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+images: ["/uploads/2018/01/OGimage-01-docs-3x.jpg"]
 menu:
   troubleshooting:
     parent: troubleshooting
