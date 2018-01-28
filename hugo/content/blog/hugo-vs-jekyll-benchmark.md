@@ -59,6 +59,8 @@ Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a 
 
 We ran the benchmarks using a simple bash script. Each benchmark runs the build process 13 times recording the `real` time output from the Unix `time` command. We took the average of these 13 builds to get our final result.
 
+<!--
+
 **Hugo**
 
     #!/bin/bash
@@ -82,6 +84,8 @@ We ran the benchmarks using a simple bash script. Each benchmark runs the build 
     done
     
     echo Benchmark Complete
+
+-->
 
 ## The Basic Benchmark
 
