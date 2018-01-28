@@ -26,17 +26,13 @@ menu: []
 draft: true
 
 ---
-In order to help you decide which static site generator is best for your development team, we put Hugo and Jekyll toe-to-toe to see which is faster and more efficient.
+We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  There are many factors when choosing a static site generator, but in this article, we're doing a deep dive into build time efficiency. 
 
 ## Why Did We Do This?
 
-[StackOverflow](https://insights.stackoverflow.com/survey/2016#developers-who-code-are-happy-developers) reported that developers who can check-in code more often, more rapidly are the happiest. As developers at Forestry.io, we're in total agreement and recognize that need for developers to work more efficiently.
+Hugo and Jekyll are the leading static site generators right now according to [StaticGen.com](staticgen.com), and are both supported by our CMS at [Forestry.io](https://forestry.io).  We're often asked which tool performs better so we decided to get some qualitative data to see how they measured.
 
-This need for a more efficient workflow is what has brought about the [static site](https://forestry.io/docs/getting-started/what-is-a-static-site/) movement. Managing the upgrades, performance, and security of traditional server-dependant software like Wordpress and Drupal is just too much overhead.
-
-Static sites eliminate the need for a server, have blazing fast performance, and tight security.
-
-Hugo and Jekyll are the leading static site generators in the world right now according to [StaticGen.com](staticgen.com), and are supported by Forestry.io, so we wanted to find out how they measured up in performance.
+The need for a more efficient workflow is what has brought about the [static site](/docs/faqs/glossary/static-sites/) movement. Managing the upgrades, performance, and security of traditional server-dependant software like Wordpress and Drupal is just too much overhead.
 
 ## Preparing The Test
 
