@@ -28,13 +28,13 @@ draft: true
 ---
 ## TL;DR
 
-We did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The [basic test](#the-basic-benchmark) used the default installation of Jekyll and Hugo to build a sites with 10 posts,100 posts, 1,000 posts and 10,000 posts.  The [advanced test](#the-advanced-benchmark) built those same sites but included common plugins and template code in order to create a similar features between the two [Static Site Generators](/docs/faqs/glossary/static-site-generators/). 
+We did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The [basic test](#the-basic-benchmark) used the default installation of Jekyll and Hugo to build a sites with 10 posts,100 posts, 1,000 posts and 10,000 posts.  The [advanced test](#the-advanced-benchmark) built those same sites but included common plugins and template code in order to create a similar features between the two [Static Site Generators](/docs/faqs/glossary/static-site-generators/).
 
 For each build, Hugo proved to be between 23 and 63 times faster than Jekyll.  There are many factors one must consider when choosing a static site generator, but if you're just looking at build times, Hugo wins hands down!
 
 ## Why Did We Do This?
 
-Hugo and Jekyll are the leading static site generators right now according to [StaticGen.com](staticgen.com), and are both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to dig up some data on the subject. 
+Hugo and Jekyll are the leading static site generators right now according to [StaticGen.com](staticgen.com), and are both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to dig up some data on the subject.
 
 The need for a more efficient workflow is what has brought about the resurgence in [static sites](/docs/faqs/glossary/static-sites/).  Ensuring your static site doesn't take minutes to build is a necessary part of improving your workflow.
 
@@ -234,5 +234,11 @@ So as we can see, when it comes to speed and build performance, Hugo is a _clear
 Don't just take our word for it. Hugo user @darinpope managed to get Hugo to generate 600k pages in under 5 minutes, and Dan Hersam illustrates the speed of Hugo on video.
 
 Depending on the size and scale of your website, the performance gains offered by Hugo may offer a serious advantage.
+
+## What's your experience?
+
+Do you run a Jekyll or Hugo site? Share your build-times on our Hacker News Post.
+
+---
 
 **Next week,** we’ll compare the usability and features of Hugo and Jekyll to help you decide which static site generator is right for you.
