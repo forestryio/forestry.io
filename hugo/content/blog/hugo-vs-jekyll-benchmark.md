@@ -2,7 +2,7 @@
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/hugovsjekyll.png"
+- "/uploads/2018/01/social-image-2.png"
 publishdate: 2018-01-26 06:22:55 -0400
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
@@ -78,7 +78,6 @@ We ran the benchmarks using a simple bash script. Each benchmark runs the build 
     done
     
     echo Benchmark Complete
-    
 
 **Jekyll**
 
@@ -91,7 +90,6 @@ We ran the benchmarks using a simple bash script. Each benchmark runs the build 
     done
     
     echo Benchmark Complete
-    
 
 ## The Basic Benchmark
 
@@ -106,7 +104,6 @@ For the first benchmark, we generated content with a title, a body, and a date i
     # Page Headline
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
-    
 
 **Jekyll**
 
@@ -117,7 +114,6 @@ For the first benchmark, we generated content with a title, a body, and a date i
     # Page Headline
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
-    
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
 
@@ -125,9 +121,11 @@ As you can see below, Hugo is a clear winner here. The results for Hugo are so s
 
 ![](/uploads/2018/01/hugo-vs-jekyll-basic-test.png)
 
-When we ran the test up to 10,000 pages the difference between the two are amplified. See below:
+If we take this above graph and plot it next to a 10,000 page site, the difference is much greater. See below:
 
-<img src="/uploads/2017/12/basic-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
+![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages.png)
+
+<!-- <img src="/uploads/2017/12/basic-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true"> -->
 
 <table>
 <thead>
@@ -190,7 +188,6 @@ In this case, our content looked like this:
     # Page Headline
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
-    
 
 **Jekyll**
 
@@ -203,11 +200,16 @@ In this case, our content looked like this:
     # Page Headline
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
-    
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
 
-<img src="/uploads/2017/12/advanced-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
+![](/uploads/2018/01/hugo-vs-jekyll-advanced-test.png)
+
+Again, running the test up to a 10,000 page site shows a much greater difference. The data dwarfs the previous graph.
+
+![](/uploads/2018/01/Hugo-vs-jekyll-advanced-test-10k-pages.png)
+
+<!-- <img src="/uploads/2017/12/advanced-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true"> -->
 
 <table>
 <thead>
