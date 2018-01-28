@@ -28,11 +28,11 @@ draft: true
 ---
 ## TL;DR
 
-We ran two tests to measured build times with [Hugo](https://gohugo.io) and [Jekyll](https://jekyllrb.com). The [basic test](#the-basic-benchmark) used the default installation of Jekyll and Hugo to build sites with 10 posts,100 posts, 1,000 posts and 10,000 posts.  The [advanced test](#the-advanced-benchmark) built those same sites but included common plugins and template code in order to create a similar features between the two [Static Site Generators](/docs/faqs/glossary/static-site-generators/). For each build, Hugo proved to be between 23 and 63 times faster than Jekyll.  
+We ran two tests to measure build times with [Hugo](https://gohugo.io) and [Jekyll](https://jekyllrb.com). The [basic test](#the-basic-benchmark) used the default installation of Jekyll and Hugo to build sites with 10 posts,100 posts, 1,000 posts and 10,000 posts.  The [advanced test](#the-advanced-benchmark) built those same sites but included common plugins and template code in order to create a similar features between the two [Static Site Generators](/docs/faqs/glossary/static-site-generators/). For each build, Hugo proved to be between 23 and 63 times faster than Jekyll.
 
 There are many factors one must consider when choosing a static site generator, but if you're just looking at build times, Hugo wins hands down!
 
-**See the data below**, and let us know what your build times are in the conversation on Hacker News. 
+**See the data below**, and let us know what your build times are in the conversation on Hacker News.
 
 ## Why Did We Do This?
 
@@ -40,7 +40,7 @@ Hugo (Go, zero dependencies)  and Jekyll (Ruby) are the leading static site gene
 
 ## Preparing The Test
 
-In order to fairly compare Hugo and Jekyll, we needed to ensure they were on an equal playing field. 
+In order to fairly compare Hugo and Jekyll, we needed to ensure they were on an equal playing field.
 
 To do this, we came up with a list of requirements for the test:
 
@@ -56,7 +56,7 @@ We didn't want theme template structure to affect build times so we put together
 
 Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a different set of features. For instance, Hugo builds your sitemap, whereas Jekyll requires a plugin to do so.  For this reason, we created two tests.
 
-* **Basic Test -** Without any plugins 
+* **Basic Test -** Without any plugins
 * **Advanced Test -** Using common plugins and code to achieve a similar set of features (i.e. sitemaps and feed generation).
 
 #### Running the Benchmark
@@ -91,11 +91,15 @@ This was the most basic benchmark possible, testing only how fast Hugo and Jekyl
 
 As you can see below, Hugo is a clear winner building each site in under 1 second.
 
-![](/uploads/2018/01/hugo-vs-jekyll-basic-test.png)
+![](/uploads/2018/01/hugo-vs-jekyll-basic-test-1.png)
 
-Plotting a 10,000-page site next to these shows the difference in build-times grows exponential as page-size increases. See below:
+_Basic Test with 10, 100, 1000 posts._
 
-![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages.png)
+Plotting a 10,000-page site next to these shows how significant the difference in build-times can become. See below:
+
+![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages-1.png)
+
+The results from this test are as follows:
 
 <table>
 <thead>
@@ -173,13 +177,13 @@ In this case, our content looked like this:
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
 
-![](/uploads/2018/01/hugo-vs-jekyll-advanced-test.png)
+![](/uploads/2018/01/hugo-vs-jekyll-advanced-test-1.png)
 
-Again, running the test up to a 10,000 page site shows a much greater difference. The data from the previous graph gets dwarfed when plotted beside the 10,000 page test.
+Adding a 10,000 page test dwarfs the data from the previous graph.
 
-![](/uploads/2018/01/Hugo-vs-jekyll-advanced-test-10k-pages.png)
+![](/uploads/2018/01/hugo-vs-jekyll-advanced2.png)
 
-<!-- <img src="/uploads/2017/12/advanced-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true"> -->
+The results from the second test are as follows:
 
 <table>
 <thead>
@@ -225,17 +229,17 @@ This greatly speeds up build time in a development environment for both generato
 
 Given that most sites aren’t going to be anywhere close to 10,000 posts, we’ll make the final verdict based on average build time over 10, 100, and 1,000 posts…
 
-<img src="/uploads/2017/12/hugo-vs-jekyll-totals.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
+![](/uploads/2017/12/hugo-vs-jekyll-totals.jpg)
 
 So as we can see, when it comes to speed and build performance, Hugo is a _clear_ winner.
 
-Don't just take our word for it. Hugo user @darinpope managed to get Hugo to generate 600k pages in under 5 minutes, and Dan Hersam illustrates the speed of Hugo on video.
-
-Depending on the size and scale of your website, the performance gains offered by Hugo may offer a serious advantage.
+Don't just take our word for it. Hugo user [@darinpope](https://twitter.com/darinpope) managed to get Hugo to [generate 600,000 pages in under 5 minutes](https://discourse.gohugo.io/t/page-generation-performance-expectations/1335/6), and [Dan Hersam](https://twitter.com/jadn) builds a 5,000 page Hugo site in < 6 seconds in [this video](https://www.youtube.com/watch?v=CdiDYZ51a2o).
 
 ## What's your experience?
 
 Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker News.
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Comment on Hacker News</a>
 
 ---
 
