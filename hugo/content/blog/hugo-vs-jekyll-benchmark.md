@@ -32,7 +32,7 @@ We put Hugo and Jekyll toe-to-toe to see how they compare when building static s
 
 Hugo and Jekyll are the leading static site generators right now according to [StaticGen.com](staticgen.com), and are both supported by our CMS at [Forestry.io](https://forestry.io).  We're often asked which tool performs better so we decided to get some qualitative data to see how they measured.
 
-The need for a more efficient workflow is what has brought about the [static site](/docs/faqs/glossary/static-sites/) movement. Managing the upgrades, performance, and security of traditional server-dependant software like Wordpress and Drupal is just too much overhead.
+The need for a more efficient workflow is what has brought about the [static site](/docs/faqs/glossary/static-sites/) movement. Managing the upgrades, performance, and security of legacy systems like Wordpress and Drupal is just too much overhead.  Ensuring your static site doesn't take minutes to build is a necessary part of improving your workflow. 
 
 ## Preparing The Test
 
