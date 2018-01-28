@@ -89,15 +89,13 @@ For the first benchmark, we generated content with a title, a body, and a date i
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of posts.
 
-As you can see below, Hugo is a clear winner here.  Building in under 1 second for sites for each test up to 1,000 posts.
+As you can see below, Hugo is a clear winner building each site in under 1 second.
 
 ![](/uploads/2018/01/hugo-vs-jekyll-basic-test.png)
 
-If we take this above graph and plot it next to a 10,000 page site, the difference is much greater. See below:
+Plotting a 10,000-page site next to these shows the difference in build-times grows exponential as page-size increases. See below:
 
 ![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages.png)
-
-<!-- <img src="/uploads/2017/12/basic-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true"> -->
 
 <table>
 <thead>
