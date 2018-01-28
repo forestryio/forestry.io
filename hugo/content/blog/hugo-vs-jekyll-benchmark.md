@@ -99,6 +99,8 @@ Plotting a 10,000-page site next to these shows how significant the difference i
 
 ![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages-1.png)
 
+The results from this test are as follows:
+
 <table>
 <thead>
 <tr>
