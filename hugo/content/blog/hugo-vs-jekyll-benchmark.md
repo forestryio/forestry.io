@@ -3,7 +3,7 @@ authors:
 - chris-macrae
 images:
 - "/uploads/2018/01/social-image-2.png"
-publishdate: 2018-01-26 06:22:55 -0400
+publishdate: 2018-01-26 10:22:55 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
 title: 'Hugo vs Jekyll: Benchmarked'
@@ -27,7 +27,10 @@ draft: true
 
 ---
 ## TL;DR
-There are many factors when choosing a static site generator, but in this article we’re doing a deep dive into build time efficiency. [Hugo](https://gohugo.io) (written in Go with no dependencies) proved to be much faster than [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests, one with no plugins or additional code, just generator Vs generator. The second was with plugins and template code to achieve feature parity. Both tests we run on sites composed of 10, 100, 1,000, and 10,000 pages.
+
+There are many factors when choosing a static site generator, but in this article we did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The first test was just the default static site generator on a 10-page site, then a 100-page site, then 1,000 pages and finally 10,000 pages. In the second test we built those same sites but included additional plugins and template code to achieve the same set of features. Both tests we run on sites composed of 10, 100, 1,000, and 10,000 pages.  
+
+For each site, Hugo's build times proved to be between 23 and 63 times faster than Jekyll. 
 
 We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  There are many factors when choosing a static site generator, but in this article, we're doing a deep dive into build time efficiency.
 
@@ -66,25 +69,26 @@ We ran the benchmarks using a simple bash script. Each benchmark runs the build 
 
     #!/bin/bash
     # Runs Unix Time Benchmark
-
+    
     for ((i=1;i&amp;amp;amp;lt;=13;i++));
     do
       { time hugo --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real
     done
-
+    
     echo Benchmark Complete
 
 **Jekyll**
 
     #!/bin/bash
     # Runs Unix Time Benchmark
-
+    
     for ((i=1;i&amp;amp;amp;lt;=13;i++));
     do
       { time bundle exec jekyll build --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real
     done
-
+    
     echo Benchmark Complete
+
 -->
 
 ## The Basic Benchmark
@@ -98,7 +102,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     date: 2017-07-17T13:48:56-03:00
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -108,7 +112,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     layout: post
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
@@ -182,7 +186,7 @@ In this case, our content looked like this:
     date: 2017-07-17T14:07:58-03:00
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -194,7 +198,7 @@ In this case, our content looked like this:
     layout: post
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
