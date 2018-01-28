@@ -60,8 +60,8 @@ So we put together _archive, single, and taxonomy_ templates for each test with
 
 We didn’t want to benchmark against features that the two static site generators didn’t share, as this wouldn’t be a fair comparison. So we created two tests:
 
-* Raw build performance, without any plugins or similar features.
-* Build performance using common plugins/features, like sitemap and feed generation.
+* **Basic Test -** Raw build performance, without any plugins or similar features.
+* **Advanced Test -** Build performance using common plugins/features, like sitemap and feed generation.
 
 #### Running the Benchmark
 
@@ -117,7 +117,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
 
-As you can see below, Hugo is a clear winner here.  Building in under 1 second for sites for each test up to 1,000 pages. 
+As you can see below, Hugo is a clear winner here.  Building in under 1 second for sites for each test up to 1,000 pages.
 
 ![](/uploads/2018/01/hugo-vs-jekyll-basic-test.png)
 
@@ -155,7 +155,7 @@ If we take this above graph and plot it next to a 10,000 page site, the differen
 </tbody>
 </table>
 
-## The Second Benchmark
+## The Advanced Benchmark
 
 For the next benchmark, we generated content with a title, body, date, categories, and tags. We enabled the generation of category and tag archives, and also generated an XML sitemap and RSS/Atom Feed.
 
