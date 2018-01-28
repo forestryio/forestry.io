@@ -175,7 +175,7 @@ Looking at the results below, you can see that Hugo is again the winner. It’s 
 
 ![](/uploads/2018/01/hugo-vs-jekyll-advanced-test.png)
 
-Again, running the test up to a 10,000 page site shows a much greater difference. The data dwarfs the previous graph.
+Again, running the test up to a 10,000 page site shows a much greater difference. The data from the previous graph gets dwarfed when plotted beside the 10,000 page test.
 
 ![](/uploads/2018/01/Hugo-vs-jekyll-advanced-test-10k-pages.png)
 
