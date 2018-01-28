@@ -56,8 +56,8 @@ We didn't want theme template structure to affect build times so we put together
 
 Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a different set of features. For instance, Hugo builds your sitemap, whereas Jekyll requires a plugin to do so.  For this reason, we created two tests.
 
-* **Basic Test -** Without any plugins or similar features
-* **Advanced Test -** Using common plugins and code to achieve a similar set of features (like sitemap and feed generation).
+* **Basic Test -** Without any plugins 
+* **Advanced Test -** Using common plugins and code to achieve a similar set of features (i.e. sitemaps and feed generation).
 
 #### Running the Benchmark
 
