@@ -117,7 +117,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
 
-As you can see below, Hugo is a clear winner here. The results for Hugo are so small, they can’t even be seen on the graph!
+As you can see below, Hugo is a clear winner here.  Building in under 1 second for sites for each test up to 1,000 pages. 
 
 ![](/uploads/2018/01/hugo-vs-jekyll-basic-test.png)
 
