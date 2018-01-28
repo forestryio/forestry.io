@@ -28,7 +28,7 @@ draft: true
 ---
 ## TL;DR
 
-We did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The [basic test](the-basic-benchmark) used the default installation of Jekyll and Hugo to build a 10,100, 1,000 and finally a 10,000 page site.  The [advanced test](the-advanced-benchmark) built those same sites but included additional plugins and template code to achieve feature parity (since each Static Site Generator comes with a variety of features).
+We did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The [basic test](the-basic-benchmark) used the default installation of Jekyll and Hugo to build a site with 10 pages,100 pages, 1,000 pages and finally a 10,000 pages.  The [advanced test](the-advanced-benchmark) built those same sites but included additional plugins and template code to achieve feature parity (since each Static Site Generator comes with a variety of features).
 
 For each build, Hugo proved to be between 23 and 63 times faster than Jekyll!  There are many factors to take into account when choosing a static site generator, but if you're looking purely at build times, Hugo wins hands down.
 
@@ -74,7 +74,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     date: 2017-07-17T13:48:56-03:00
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -84,7 +84,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     layout: post
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
@@ -158,7 +158,7 @@ In this case, our content looked like this:
     date: 2017-07-17T14:07:58-03:00
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -170,7 +170,7 @@ In this case, our content looked like this:
     layout: post
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
