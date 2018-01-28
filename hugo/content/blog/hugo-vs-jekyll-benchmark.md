@@ -28,9 +28,9 @@ draft: true
 ---
 ## TL;DR
 
-We did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The [basic test](the-basic-benchmark) used the default installation of Jekyll and Hugo to build a 10,100, 1,000 and finally a 10,000 page site.  The [advanced test](the-advanced-benchmark) built those same sites but included additional plugins and template code to achieve feature parity (since each Static Site Generator comes with a variety of features). 
+We did a deep dive into build time efficiency for [Hugo](https://gohugo.io) (written in Go, no dependencies) and [Jekyll](https://jekyllrb.com) (written in Ruby). We ran two tests on 4 different sites. The [basic test](the-basic-benchmark) used the default installation of Jekyll and Hugo to build a 10,100, 1,000 and finally a 10,000 page site.  The [advanced test](the-advanced-benchmark) built those same sites but included additional plugins and template code to achieve feature parity (since each Static Site Generator comes with a variety of features).
 
-For each build, Hugo proved to be between 23 and 63 times faster than Jekyll!  There are many factors to take into account when choosing a static site generator, but if you're looking purely at build times, Hugo wins hands down. 
+For each build, Hugo proved to be between 23 and 63 times faster than Jekyll!  There are many factors to take into account when choosing a static site generator, but if you're looking purely at build times, Hugo wins hands down.
 
 ## Why Did We Do This?
 
@@ -62,32 +62,6 @@ Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a 
 #### Running the Benchmark
 
 We ran the benchmarks using a simple bash script. Each benchmark runs the build process 13 times recording the `real` time output from the Unix `time` command. We took the average of these 13 builds to get our final result.
-<!--
-**Hugo**
-
-    #!/bin/bash
-    # Runs Unix Time Benchmark
-    
-    for ((i=1;i&amp;amp;amp;lt;=13;i++));
-    do
-      { time hugo --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real
-    done
-    
-    echo Benchmark Complete
-
-**Jekyll**
-
-    #!/bin/bash
-    # Runs Unix Time Benchmark
-    
-    for ((i=1;i&amp;amp;amp;lt;=13;i++));
-    do
-      { time bundle exec jekyll build --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real
-    done
-    
-    echo Benchmark Complete
-
--->
 
 ## The Basic Benchmark
 
@@ -100,7 +74,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     date: 2017-07-17T13:48:56-03:00
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -110,7 +84,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     layout: post
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
@@ -184,7 +158,7 @@ In this case, our content looked like this:
     date: 2017-07-17T14:07:58-03:00
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -196,7 +170,7 @@ In this case, our content looked like this:
     layout: post
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
