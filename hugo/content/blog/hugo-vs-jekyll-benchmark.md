@@ -239,7 +239,7 @@ Given that most sites aren’t going to be anywhere close to 10,000 posts, we’
 
 So as we can see, when it comes to speed and build performance, Hugo is a _clear_ winner.
 
-Don't just take our word for it. [Smashing Magazine](https://www.smashingmagazine.com/), [reportedly](https://discourse.gohugo.io/t/smashing-magazine-s-redesign-powered-by-hugo-jamstack/5826/9) builds their 7,500-page Hugo site in 13 seconds and Hugo user [@darinpope](https://twitter.com/darinpope) managed to get Hugo to [generate 600,000 pages in under 5 minutes](https://discourse.gohugo.io/t/page-generation-performance-expectations/1335/6).
+Don't just take our word for it. [Smashing Magazine](https://www.smashingmagazine.com/), [reportedly](https://discourse.gohugo.io/t/smashing-magazine-s-redesign-powered-by-hugo-jamstack/5826/9) builds their 7,500-page Hugo site in 13 seconds and Hugo user [@darinpope](https://twitter.com/darinpope) managed to [generate 600,000 pages in under 5 minutes](https://discourse.gohugo.io/t/page-generation-performance-expectations/1335/6).
 
 ## What's your experience?
 
