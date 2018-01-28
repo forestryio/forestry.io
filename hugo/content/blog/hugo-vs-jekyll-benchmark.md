@@ -235,7 +235,7 @@ Depending on the size and scale of your website, the performance gains offered b
 
 ## What's your experience?
 
-Do you run a Jekyll or Hugo site? Share your build-times on our Hacker News Post.
+Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker News.
 
 ---
 
