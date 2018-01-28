@@ -93,7 +93,7 @@ As you can see below, Hugo is a clear winner building each site in under 1 secon
 
 ![](/uploads/2018/01/hugo-vs-jekyll-basic-test-1.png)
 
-_Basic Test with 10, 100, 1000 posts._ 
+_Basic Test with 10, 100, 1000 posts._
 
 Plotting a 10,000-page site next to these shows how significant the difference in build-times can become. See below:
 
@@ -238,6 +238,8 @@ Don't just take our word for it. Hugo user [@darinpope](https://twitter.com/dari
 ## What's your experience?
 
 Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker News.
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Comment on Hacker News</a>
 
 ---
 
