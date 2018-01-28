@@ -10,7 +10,7 @@ title: 'Hugo vs Jekyll: Benchmarked'
 categories:
 - hugo
 - jekyll
-date: 2017-07-21 09:22:55 +0000
+date: 2018-01-26 09:22:55 +0000
 headline: ''
 description: ''
 textline: ''
@@ -26,11 +26,7 @@ menu: []
 draft: true
 
 ---
-## TL;DR
-
-There are many factors when choosing a static site generator, but in this article we're doing a deep dive into build time efficiency. [Hugo](https://gohugo.io) (written in Go with no dependencies) proved to be much faster than [Jekyll](https://jekyllrb.com) (written in Ruby).  We ran two tests, one with no plugins or additional code, just generator Vs generator. The second was with plugins and template code to achieve feature parity.  Both tests we run on sites composed of 10, 100, 1,000, and 10,000 pages.  
-
-We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  We tested 10-page, 100-page, 1,000-page and 10,000-page sites.  We ran 2 tests, the first was without any plugins or template code to match features. The second was with common plugins and code to create a similar set of features beetween the two static site generators. 
+We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  There are many factors when choosing a static site generator, but in this article, we're doing a deep dive into build time efficiency.
 
 ## Why Did We Do This?
 
@@ -54,7 +50,7 @@ We didn't want theme template structure to affect build times so we put together
 
 #### 1:1 feature comparison
 
-Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a different set of features. For instance, Hugo builds your sitemap, whereas Jekyll requires a plugin to do so.  For this reason, we created two tests. 
+Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a different set of features. For instance, Hugo builds your sitemap, whereas Jekyll requires a plugin to do so.  For this reason, we created two tests.
 
 * **Basic Test -** Without any plugins or similar features
 * **Advanced Test -** Using common plugins and code to achieve a similar set of features (like sitemap and feed generation).
@@ -62,33 +58,30 @@ Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a 
 #### Running the Benchmark
 
 We ran the benchmarks using a simple bash script. Each benchmark runs the build process 13 times recording the `real` time output from the Unix `time` command. We took the average of these 13 builds to get our final result.
-
 <!--
-
 **Hugo**
 
     #!/bin/bash
     # Runs Unix Time Benchmark
-    
+
     for ((i=1;i&amp;amp;amp;lt;=13;i++));
     do
-      { time hugo --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real 
+      { time hugo --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real
     done
-    
+
     echo Benchmark Complete
 
 **Jekyll**
 
     #!/bin/bash
     # Runs Unix Time Benchmark
-    
+
     for ((i=1;i&amp;amp;amp;lt;=13;i++));
     do
-      { time bundle exec jekyll build --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real 
+      { time bundle exec jekyll build --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real
     done
-    
-    echo Benchmark Complete
 
+    echo Benchmark Complete
 -->
 
 ## The Basic Benchmark
@@ -102,7 +95,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     date: 2017-07-17T13:48:56-03:00
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -112,7 +105,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     layout: post
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
@@ -133,8 +126,8 @@ If we take this above graph and plot it next to a 10,000 page site, the differen
 <th>Generator</th>
 <th>10</th>
 <th>100</th>
-<th>1000</th>
-<th>10000</th>
+<th>1,000</th>
+<th>10,000</th>
 </tr>
 </thead>
 <tbody>
@@ -186,7 +179,7 @@ In this case, our content looked like this:
     date: 2017-07-17T14:07:58-03:00
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -198,7 +191,7 @@ In this case, our content looked like this:
     layout: post
     ---
     # Page Headline
-    
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
@@ -217,8 +210,8 @@ Again, running the test up to a 10,000 page site shows a much greater difference
 <th>Generator</th>
 <th>10</th>
 <th>100</th>
-<th>1000</th>
-<th>10000</th>
+<th>1,000</th>
+<th>10,000</th>
 </tr>
 </thead>
 <tbody>
@@ -253,7 +246,7 @@ This greatly speeds up build time in a development environment for both generato
 
 ## A Clear Winner
 
-Given that most sites aren’t going to be anywhere close to 10000 pages, we’ll make the final verdict based on average build time over 10, 100, and 1000 pages…
+Given that most sites aren’t going to be anywhere close to 10,000 pages, we’ll make the final verdict based on average build time over 10, 100, and 1,000 pages…
 
 <img src="/uploads/2017/12/hugo-vs-jekyll-totals.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
 
