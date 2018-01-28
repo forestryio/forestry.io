@@ -93,13 +93,13 @@ As you can see below, Hugo is a clear winner building each site in under 1 secon
 
 ![](/uploads/2018/01/hugo-vs-jekyll-basic-test-1.png)
 
-<p style="text-align: center; margin-top: -1rem; font-size: .85rem; font-style: italic;">_Basic Test with 10, 100, and 1,000 posts.</p>_
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Basic Test with 10, 100, and 1,000 posts.</p>
 
 Plotting a 10,000-page site next to these shows how significant the difference in build-times can become. See below:
 
 ![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages-1.png)
 
-<p style="text-align: center; margin-top: -1rem; font-size: .85rem; font-style: italic;">_Basic Test with 10, 100, 1,000 and 10,000 posts.</p>_
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Basic Test with 10, 100, 1,000 and 10,000 posts.</p>
 
 The results from this test are as follows:
 
@@ -181,13 +181,13 @@ Looking at the results below, you can see that Hugo is again the winner. It’s 
 
 ![](/uploads/2018/01/hugo-vs-jekyll-advanced-test-1.png)
 
-<p style="text-align: center; margin-top: -1rem; font-size: .85rem; font-style: italic;">Advanced Test _with 10, 100, and 1,000 posts.</p>_
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Advanced Test with 10, 100, and 1,000 posts.</p>
 
 Adding a 10,000 page test dwarfs the data from the previous graph.
 
 ![](/uploads/2018/01/hugo-vs-jekyll-advanced2.png)
 
-<p style="text-align: center; margin-top: -1rem; font-size: .85rem; font-style: italic;">Advanced _Test with 10, 100, 1,000 and 10,000 posts.</p>_
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Advanced Test with 10, 100, 1,000 and 10,000 posts.</p>
 
 The results from the second test are as follows:
 
