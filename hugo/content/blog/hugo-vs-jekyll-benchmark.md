@@ -233,7 +233,7 @@ Given that most sites aren’t going to be anywhere close to 10,000 posts, we’
 
 So as we can see, when it comes to speed and build performance, Hugo is a _clear_ winner.
 
-Don't just take our word for it. Hugo user @darinpope managed to get Hugo to generate 600k pages in under 5 minutes, and Dan Hersam illustrates the speed of Hugo on video.
+Don't just take our word for it. Hugo user [@darinpope](https://twitter.com/darinpope) managed to get Hugo to [generate 600k pages in under 5 minutes](https://discourse.gohugo.io/t/page-generation-performance-expectations/1335/6), and [Dan Hersam](https://twitter.com/jadn) is builds a 5,000 page Hugo site in < 6 seconds in [this video](https://www.youtube.com/watch?v=CdiDYZ51a2o).
 
 Depending on the size and scale of your website, the performance gains offered by Hugo may offer a serious advantage.
 
