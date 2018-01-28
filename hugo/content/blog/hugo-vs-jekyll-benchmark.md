@@ -26,7 +26,11 @@ menu: []
 draft: true
 
 ---
-We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  There are many factors when choosing a static site generator, but in this article, we're doing a deep dive into build time efficiency.
+## TL;DR
+
+There are many factors when choosing a static site generator, but in this article we're doing a deep dive into build time efficiency. [Hugo](https://gohugo.io) (written in Go with no dependencies) proved to be much faster than [Jekyll](https://jekyllrb.com) (written in Ruby).  We ran two tests, one with no plugins or additional code, just generator Vs generator. The second was with plugins and template code to achieve feature parity.  Both tests we run on sites composed of 10, 100, 1,000, and 10,000 pages.  
+
+We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  We tested 10-page, 100-page, 1,000-page and 10,000-page sites.  We ran 2 tests, the first was without any plugins or template code to match features. The second was with common plugins and code to create a similar set of features beetween the two static site generators. 
 
 ## Why Did We Do This?
 
