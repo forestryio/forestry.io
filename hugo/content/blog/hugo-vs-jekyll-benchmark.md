@@ -42,9 +42,7 @@ To do this, we came up with a list of requirements for the test:
 
 #### Equal Content
 
-We wanted to ensure the content was as similar as possible, to ensure that we’re testing the performance of building the same site.
-
-For each test, we created a basic YAML content model and then generated 10, 100, 1,000, and 10,000 posts using this model for both Jekyll and Hugo.
+For each test, we created a basic YAML content model and then generated sites with `10`, `100`, `1,000`, and `10,000` posts using this model for both Jekyll and Hugo.
 
 #### Equal template structure
 
