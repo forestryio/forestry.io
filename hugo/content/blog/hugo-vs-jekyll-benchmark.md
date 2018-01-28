@@ -177,13 +177,13 @@ In this case, our content looked like this:
 
 Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
 
-![](/uploads/2018/01/hugo-vs-jekyll-advanced-test.png)
+![](/uploads/2018/01/hugo-vs-jekyll-advanced-test-1.png)
 
-Again, running the test up to a 10,000 page site shows a much greater difference. The data from the previous graph gets dwarfed when plotted beside the 10,000 page test.
+Adding a 10,000 page test dwarfs the data from the previous graph.
 
-![](/uploads/2018/01/Hugo-vs-jekyll-advanced-test-10k-pages.png)
+![](/uploads/2018/01/hugo-vs-jekyll-advanced2.png)
 
-<!-- <img src="/uploads/2017/12/advanced-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true"> -->
+The results from the second test are as follows:
 
 <table>
 <thead>
