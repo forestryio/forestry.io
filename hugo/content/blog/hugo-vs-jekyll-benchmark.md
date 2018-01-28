@@ -40,7 +40,7 @@ Hugo (Go, zero dependencies)  and Jekyll (Ruby) are the leading static site gene
 
 ## Preparing The Test
 
-In order to fairly compare Hugo and Jekyll, we needed to ensure they were on an equal playing field.
+In order to fairly compare Hugo and Jekyll, we needed to ensure they were on an equal playing field. 
 
 To do this, we came up with a list of requirements for the test:
 
