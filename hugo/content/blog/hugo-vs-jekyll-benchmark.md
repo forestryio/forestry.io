@@ -26,13 +26,13 @@ menu: []
 draft: true
 
 ---
-We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  There are many factors when choosing a static site generator, but in this article, we're doing a deep dive into build time efficiency. 
+We put Hugo and Jekyll toe-to-toe to see how they compare when building static sites.  There are many factors when choosing a static site generator, but in this article, we're doing a deep dive into build time efficiency.
 
 ## Why Did We Do This?
 
 Hugo and Jekyll are the leading static site generators right now according to [StaticGen.com](staticgen.com), and are both supported by our CMS at [Forestry.io](https://forestry.io).  We're often asked which tool performs better so we decided to get some qualitative data to see how they measured.
 
-The need for a more efficient workflow is what has brought about the [static site](/docs/faqs/glossary/static-sites/) movement. Managing the upgrades, performance, and security of legacy systems like Wordpress and Drupal is just too much overhead.  Ensuring your static site doesn't take minutes to build is a necessary part of improving your workflow. 
+The need for a more efficient workflow is what has brought about the [static site](/docs/faqs/glossary/static-sites/) movement. Managing the upgrades, performance, and security of legacy systems like Wordpress and Drupal is just too much overhead.  Ensuring your static site doesn't take minutes to build is a necessary part of improving your workflow.
 
 ## Preparing The Test
 
@@ -46,16 +46,14 @@ For each test, we created a basic YAML content model and then generated sites wi
 
 #### Equal template structure
 
-In most benchmarks, boilerplate themes are used. This isn’t a fair comparison, as the template structure can affect build time.
-
-So we put together _archive, single, and taxonomy_ templates for each test with the minimum amount of HTML markup needed, no CSS or JS to process or compile, and used the same data for both Hugo and Jekyll.
+We didn't want theme template structure to affect build times so we put together _archive, single, and taxonomy_ templates for each test with the minimum amount of HTML markup needed, no CSS or JS to process or compile, and used the same data for both Hugo and Jekyll.
 
 #### 1:1 feature comparison
 
-We didn’t want to benchmark against features that the two static site generators didn’t share, as this wouldn’t be a fair comparison. So we created two tests:
+Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a different set of features. For instance, Hugo builds your sitemap, whereas Jekyll requires a plugin to do so.  For this reason, we created two tests. 
 
-* **Basic Test -** Raw build performance, without any plugins or similar features.
-* **Advanced Test -** Build performance using common plugins/features, like sitemap and feed generation.
+* **Basic Test -** Without any plugins or similar features
+* **Advanced Test -** Using common plugins and code to achieve a similar set of features (like sitemap and feed generation).
 
 #### Running the Benchmark
 
