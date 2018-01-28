@@ -3,7 +3,7 @@ authors:
 - chris-macrae
 images:
 - "/uploads/2017/12/hugovsjekyll.png"
-publishdate: 2017-07-21 09:22:55 +0000
+publishdate: 2018-01-26 06:22:55 -0400
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
 title: 'Hugo vs Jekyll: Benchmarked'
@@ -11,6 +11,18 @@ categories:
 - hugo
 - jekyll
 date: 2017-07-21 09:22:55 +0000
+headline: ''
+description: ''
+textline: ''
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
+menu: []
 draft: true
 
 ---
