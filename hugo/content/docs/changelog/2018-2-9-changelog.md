@@ -19,6 +19,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+type: ''
 draft: true
 
 ---
