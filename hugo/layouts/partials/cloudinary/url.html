@@ -20,10 +20,10 @@
     {{- range $key, $param := $availableTransforms -}}
       {{- $value := (index $ $key) | default $param.default -}}
       {{- with $value -}}
-        {{- $.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" .) "") -}}
+        {{- $page.Scratch.SetInMap "transforms" $key (delimit (slice $param.key "_" .) "") -}}
       {{- end -}}
     {{- end -}}
-    {{- $transforms := $.Scratch.Get "transforms" -}}
+    {{- $transforms := $page.Scratch.Get "transforms" -}}
 
     {{/* Transform params to URL format */}}
     {{- $transforms := delimit $transforms "," -}}

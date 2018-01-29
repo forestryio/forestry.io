@@ -22,7 +22,7 @@
         {{- end -}}{{- end -}}
         {{- if eq .direction "vertical" -}}{{- with .visual -}}
         <div class="feature-block--illu illu-shadow--right">
-          {{- partial "cloudinary/image" (dict "pg" $.pg "image" .permalink "alt" (.alt | default .permalink) "min_width" "320" "max_width" "4230" "steps" "15" "sizes" "100vw" }}
+          {{- partial "cloudinary/image" (dict "pg" $.pg "image" .permalink "alt" (.alt | default .permalink) "min_width" "320" "max_width" "4230" "steps" "15" "sizes" "100vw") }}
         </div>
         {{- end -}}{{- end -}}
       </div>
