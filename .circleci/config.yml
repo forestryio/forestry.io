@@ -20,7 +20,7 @@ jobs:
     - run:
         name: Install Node Dependencies
         command: |
-          yarn install --pure-lockfile --production
+          npm install --production
 
     - save_cache:
         paths:
@@ -44,7 +44,7 @@ jobs:
     - run:
         name: Run build
         command: |
-          yarn build
+          npm run build
 
     - run:
         name: Create Artifacts
