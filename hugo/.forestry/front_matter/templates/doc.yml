@@ -1,4 +1,6 @@
 ---
+pages:
+- docs/changelog/2018-2-2-changelog.md
 hide_body: false
 fields:
 - type: text
