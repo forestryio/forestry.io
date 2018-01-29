@@ -30,7 +30,7 @@
   <a href="{{ .permalink }}" target="_blank" class="testimonial-card">
     <div class="meta">
       <div class="avatar">
-        {{ partial "cloudinary/image" (dict "pg" $.pg "image" .avatar "alt" (printf "%s%s" "Photo of " .name) "width" "auto:100:32" "dpr" "auto" "quality" "70") }}
+        {{ partial "cloudinary/image" (dict "pg" $.pg "image" .avatar "alt" (printf "%s%s" "Photo of " .name) "min_width" "32" "max_width" "96" "steps" "3") }}
       </div>
       <div class="user-info">
         <span class="name">{{ .name }}</span>

@@ -3,7 +3,7 @@
     {{- with .Params.images -}}
       {{- range first 1 . -}}
         <div class="post--feature-image">
-            {{ partial "cloudinary/image" (dict "pg" $ "image" . "alt" ($.Params.headline | default $.Title) "width" "auto:100:760" "dpr" "auto" "quality" "70") }}
+            {{ partial "cloudinary/image" (dict "pg" $ "image" . "alt" ($.Params.headline | default $.Title) "max_width" "2280") }}
         </div>
       {{- end -}}
     {{- end -}}
@@ -54,7 +54,7 @@
       </div>
 
       <div class="md-content">
-          {{ partial "cloudinary/content" (dict "pg" $ "width" "auto:100:640" "dpr" "auto" "quality" "70") }}
+        {{ partial "cloudinary/content" (dict "pg" $ "preset" "content" "width" "auto:100:640" "dpr" "auto" "quality" "70") }}
       </div>
 
       <hr />

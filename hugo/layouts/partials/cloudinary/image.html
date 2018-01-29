@@ -1,23 +1,73 @@
 {{- if and .pg (isset . "image") -}}
-  {{- $page := .pg -}}
-  {{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
-  {{- $presetName := .preset | default "default" -}}
-  {{- $presets := $page.Site.Params.cloudinary.presets | default (dict) -}}
-  {{- $preset := cond (not (eq $presets "")) (index $presets $presetName) "" -}}
-  {{- $page.Scratch.SetInMap "url" "image" .image -}}
-  {{/* Add presets params to the map */}}
-  {{- range $key, $value := $preset.params -}}
-    {{- $page.Scratch.SetInMap "url" $key $value -}}
-  {{- end -}}
-  {{/* Add passed in params to map, overwriting preset */}}
-  {{- range $key, $value := . -}}
-    {{- $page.Scratch.SetInMap "url" $key $value -}}
-  {{- end -}}
-  {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
-  {{- template "img" (dict "pg" $page "src" $src "alt" .alt "title" .title "lazysizes" $lazySizes) }}
+    {{/* Setup */}}
+    {{- $page := .pg -}}
+    {{- $page.Scratch.SetInMap "url" "image" .image -}}
+    {{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
+
+    {{/* Get preset */}}
+    {{- $presetName := .preset | default "default" -}}
+    {{- $presets := $page.Site.Params.cloudinary.presets | default (dict) -}}
+    {{- $preset := index $presets $presetName -}}
+
+    {{/* Add presets params to the map */}}
+    {{- range $key, $value := $preset -}}
+        {{- $page.Scratch.SetInMap "url" $key $value -}}
+    {{- end -}}
+
+    {{/* Add passed in params to map, overwriting preset */}}
+    {{- range $key, $value := . -}}
+        {{- $page.Scratch.SetInMap "url" $key $value -}}
+    {{- end -}}
+
+    {{/* Generate the img src */}}
+    {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+    
+    {{/* Generate the img placeholder */}}
+    {{- $page.Scratch.SetInMap "url" "quality" "10" -}}
+    {{- $placeholder := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+    
+    {{/* Generate srcset */}}
+    {{- $min_width := (int .min_width) | default (int $preset.min_width) -}}
+    {{- $max_width := (int .max_width) | default (int $preset.max_width) -}}
+    {{- $steps := (int .steps) | default (int $preset.steps) -}}
+    {{- if and (and $min_width $max_width) $steps -}}
+      {{/* Add min and max to srcset */}}
+      {{- $page.Scratch.SetInMap "url" "width" $min_width -}}
+      {{- $min := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+      {{- $page.Scratch.SetInMap "url" "width" $max_width -}}
+      {{- $max := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+      {{- $page.Scratch.SetInMap "breakpoints" (string $min_width) (printf "%s%s%s%s" $min " " (string $min_width) "w") -}}
+      {{- $page.Scratch.SetInMap "breakpoints" (string $max_width) (printf "%s%s%s%s" $max " " (string $max_width) "w") -}}
+
+      {{/* Add between steps to srcset */}}
+      {{- $step_size := div (sub $max_width $min_width) (sub $steps 1) -}}
+      {{- range seq $steps -}}
+          {{- $width := add (mul . $step_size) $min_width -}}
+          {{- $page.Scratch.SetInMap "url" "width" $width -}}
+          {{- $item := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+          {{ if and (lt $width $max_width) (gt $width $min_width) -}}
+            {{- $page.Scratch.SetInMap "breakpoints" (string $width) (printf "%s%s%s%s" $item " " (string $width) "w") -}}
+          {{- end -}}
+      {{- end -}}
+      {{- $breakpoints := $page.Scratch.Get "breakpoints" -}}
+      {{- $page.Scratch.Set "srcset" (delimit $breakpoints ", ") -}}
+    {{- end -}}
+    {{- $srcset := $page.Scratch.Get "srcset" -}}
+
+    {{/* Get sizes */}}
+    {{- $sizes := .sizes | default $preset.sizes -}}
+
+    {{/* Output img */}}
+    {{- template "img" (dict "pg" $page "src" $src "srcset" $srcset "placeholder" $placeholder "sizes" $sizes "alt" .alt "title" .title "useLazySizes" $lazySizes) -}}
 {{- end -}}
+{{/* "pg", "src", "srcset", "placeholder", "original", "alt", "title", "useLazySizes" */}}
 {{- define "img" -}}
-  {{/* placeholder image for lazyloaded images */}}
-  {{- $placeholder := .pg.Site.Params.cloudinary.lazysizes.placeholder | default "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" -}}
-  <img{{ if $.lazysizes }} src="{{ $placeholder | safeURL }}"{{ end }}{{ if $.lazysizes }} data-src{{ else }} src{{ end }}="{{ .src | safeURL }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ .src }}{{ end }}"{{ with .title }} title="{{ . }}"{{- end -}}{{ if $.lazysizes }} class="lazyload"{{ end }} />
+  {{/* Sanitize */}}
+  {{- $src := trim .src " " | safeURL | safeHTMLAttr -}}
+  {{- $srcset := trim .srcset " " -}}
+  {{- $sizes := trim .sizes " " -}}
+  {{- $placeholder := trim (.pg.Site.Params.cloudinary.lazysizes.placeholder | default .placeholder) " " | safeURL | safeHTMLAttr -}}
+  {{- $title := trim (.title | default $src) " " | safeHTMLAttr -}}
+  {{/* Output image */}}
+  <img{{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }} sizes="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.lazysizes }} class="lazyload"{{ end }} />
 {{- end -}}

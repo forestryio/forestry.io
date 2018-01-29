@@ -13,6 +13,7 @@
   left: 0;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .lightbox img {

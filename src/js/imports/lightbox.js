@@ -53,11 +53,11 @@ export default class Lightbox {
   generate(node) {
     if (!node) return false
 
-    const HTML = node.outerHTML
     const lightbox = document.createElement("div")
+    const img = node.outerHTML
 
     lightbox.classList.add("lightbox")
-    lightbox.innerHTML = HTML
+    lightbox.innerHTML = img
 
     return lightbox
   }

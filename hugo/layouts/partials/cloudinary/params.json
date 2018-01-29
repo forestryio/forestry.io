@@ -1,6 +1,7 @@
 {
   "width": {
-    "key": "w"
+    "key": "w",
+    "default": "auto"
   },
   "height": {
     "key": "h"
@@ -21,7 +22,8 @@
     "key": "y"
   },
   "fetch_format": {
-    "key": "f"
+    "key": "f",
+    "default": "auto"
   },
   "quality": {
     "key": "q"
@@ -63,7 +65,8 @@
     "key": "cs"
   },
   "dpr": {
-    "key": "dpr"
+    "key": "dpr",
+    "default": "auto"
   },
   "page": {
     "key": "pg"

@@ -5,7 +5,9 @@
     <div class="container">
       <div class="feature-block {{ .direction | default "ltr" }}">
         {{- if eq .direction "rtl" -}}{{- with .visual -}}
-          {{- template "visual" (dict "pg" $.pg "permalink" .permalink "alt" .alt "direction" "left") -}}
+        <div class="feature-block--illu illu-shadow--left">
+          {{- partial "cloudinary/image" (dict "pg" $.pg "preset" "feature" "image" .permalink "alt" (.alt | default .permalink)) }}
+        </div>
         {{- end -}}{{- end -}}
         <div class="feature-block--copy">
           <h2 class="section--title">{{ markdownify .headline }}</h2>
@@ -13,8 +15,15 @@
             {{ markdownify .textline }}
           </div>
         </div>
-        {{- if not (eq .direction "rtl") -}}{{- with .visual -}}
-          {{- template "visual" (dict "pg" $.pg "permalink" .permalink "alt" .alt "direction" "right") -}}
+        {{- if eq .direction "ltr" -}}{{- with .visual -}}
+        <div class="feature-block--illu illu-shadow--right">
+          {{- partial "cloudinary/image" (dict "pg" $.pg "preset" "feature" "image" .permalink "alt" (.alt | default .permalink)) }}
+        </div>
+        {{- end -}}{{- end -}}
+        {{- if eq .direction "vertical" -}}{{- with .visual -}}
+        <div class="feature-block--illu illu-shadow--right">
+          {{- partial "cloudinary/image" (dict "pg" $.pg "image" .permalink "alt" (.alt | default .permalink) "min_width" "320" "max_width" "4230" "steps" "15") }}
+        </div>
         {{- end -}}{{- end -}}
       </div>
     </div>
@@ -39,9 +48,4 @@
       {{- end -}}
   </section>
   {{- end -}}
-{{- end -}}
-{{- define "visual" -}}
-<div class="feature-block--illu illu-shadow--{{ .direction }}">
-  {{- partial "cloudinary/image" (dict "pg" .pg "image" .permalink "alt" (.alt | default .permalink) "width" "auto:100" "dpr" "auto" "quality" "70") }}
-</div>
 {{- end -}}
