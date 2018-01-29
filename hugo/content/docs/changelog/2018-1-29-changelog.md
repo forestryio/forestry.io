@@ -20,7 +20,6 @@ cta:
   textline: ''
   calls_to_action: []
 weight: ''
-draft: true
 
 ---
 ### Bug Fixes
