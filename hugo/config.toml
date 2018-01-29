@@ -104,14 +104,14 @@ max_width = 1920
 width = 640
 quality = 80
 steps = 10
-sizes = "100vw"
+sizes = "(max-width: 1024px) 100%, 1200px"
 [params.cloudinary.presets.feature]
 min_width = 320
 max_width = 1920
 width = 640
 quality = 80
 steps = 10
-sizes = "100vw"
+sizes = "100%"
 [related]
 includeNewer = true
 threshold = 10

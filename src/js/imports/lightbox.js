@@ -54,10 +54,14 @@ export default class Lightbox {
     if (!node) return false
 
     const lightbox = document.createElement("div")
-    const img = node.outerHTML
 
     lightbox.classList.add("lightbox")
-    lightbox.innerHTML = img
+    lightbox.innerHTML = node.outerHTML
+
+    const img = lightbox.querySelector("img")
+    img.setAttribute("sizes", "100vw")
+    img.classList.remove("lazyloaded")
+    img.classList.add("lazyload")
 
     return lightbox
   }

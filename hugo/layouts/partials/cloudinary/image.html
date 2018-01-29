@@ -69,5 +69,5 @@
   {{- $placeholder := trim (.pg.Site.Params.cloudinary.lazysizes.placeholder | default .placeholder) " " | safeURL | safeHTMLAttr -}}
   {{- $title := trim (.title | default $src) " " | safeHTMLAttr -}}
   {{/* Output image */}}
-  <img{{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }} sizes="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.lazysizes }} class="lazyload"{{ end }} />
+  <img{{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }}{{ if $.useLazySizes }} data-sizes{{ else }} sizes{{ end }}="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.useLazySizes }} class="lazyload"{{ end }} />
 {{- end -}}
