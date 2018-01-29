@@ -27,14 +27,14 @@ draft: true
 
 * **Front matter template:** Fix for hidden fields showing in field groups or repeatable field groups.
 * **Front matter template:** Front matter templates can create a duplicate upon saving.
-* **Pages:** Clarified copy surrounding unsaved changed on a document.
+* **Pages:** Clarified copy surrounding unsaved changes on a document.
 * **Pages:** Linking to a page that a teammate is editing is now handled properly.
 * **Pages:** Deleting a page within the page no longer shows "Connection Lost" modal.
-* **Editor:** fixed issue with single-mark-command.
-* **Media:** fixed issue where you couldn't click "Insert Media" button at certain resolutions.
+* **Editor:** Fixed issue with single-mark-command.
+* **Media:** Fixed issue where you couldn't click "Insert Media" button at certain resolutions.
 * **Search:** Fixed issue where search continued after you left the search bar.
 * **Search:** Fixed issue where you couldn't see the cursor on the media library.
-* **Notifications:** Notification list not receiving updates while open.
+* **Notifications:** Notification list now receives updates while open.
 * **Notifications:** Fixed issue where you would need to click notifications button twice to open modal.
 * **Remote Admin:** Fixed remote admin login issues.
 * **Firefox:** Fixed Firefox layout issues where you couldn't click certain elements.
@@ -43,5 +43,5 @@ draft: true
 
 ### Updates
 
-* **Logo: U**pdated forestry logo.
+* **Logo:** Updated forestry logo.
 * **Hosting:** Set "Commit to source" to be the default option when setting up a site.
