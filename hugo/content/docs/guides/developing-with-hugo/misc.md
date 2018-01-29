@@ -55,4 +55,4 @@ If you wish to create Atom Feeds or other types of documents, please see the Hug
 - [Hugo RSS Reference](https://gohugo.io/templates/rss/)
 - [Hugo Output Format Reference](https://gohugo.io/extras/output-formats/)
 
-[1]:	https://gohugo.io/extras/output-formats/
+[1]: https://gohugo.io/extras/output-formats/

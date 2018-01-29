@@ -11,7 +11,7 @@
       </span>
     </div>
   </div>
-  <a href="{{ .buttonUrl | relURL }}" class="plan--cta button primary small">{{ .buttonText }}</a>
+  <a href="{{ .buttonUrl | absURL }}" class="plan--cta button primary small">{{ .buttonText }}</a>
   <p class="plan--description">{{ .description }}</p>
   <div class="plan--includes">
     <ul>

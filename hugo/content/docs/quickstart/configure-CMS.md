@@ -124,7 +124,7 @@ This is where we'll create a UI that's tailored to our Front Matter data.
 
 
 {{% tip "Create template from an existing page" %}}
-If you just want to add fields that match an existing piece of content, navigate to that page and click the settings drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data. Click [here](/docs/guides/fmt-from-existing-page/) for more info.
+If you just want to add fields that match an existing piece of content, navigate to that page and click the settings drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data.
 {{% /tip %}}
 
 

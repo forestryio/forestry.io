@@ -24,4 +24,4 @@ If you use any build tools like Gulp or Grunt with Jekyll, please read our [Asse
 ## Further Reading
 - [Jekyll Static Files Docs](http://jekyllrb.com/docs/static-files/)
 
-[1]: /docs/developing-with-jekyll/asset-pipeline
+[1]: /docs/guides/developing-with-jekyll/asset-pipeline

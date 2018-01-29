@@ -7,7 +7,7 @@
       {{ end }}
       
       {{ if .HasPrev }}
-      <a href="{{ .Prev.URL }}" class="pagination--prev button extra-small secondary" aria-label="Previous"><span aria-hidden="true">Previous</span></a>
+      <a href="{{ .Prev.URL }}" class="pagination--prev button extra-small secondary" rel="prev" aria-label="Previous"><span aria-hidden="true">Previous</span></a>
       {{ end }}
       
       {{ $.Scratch.Set "__paginator.ellipsed" false }}
@@ -31,7 +31,7 @@
       {{ end }}
 
       {{ if .HasNext }}
-      <a href="{{ .Next.URL }}" class="pagination--next button extra-small secondary" aria-label="Next"><span aria-hidden="true">Next</span></a>
+      <a href="{{ .Next.URL }}" class="pagination--next button extra-small secondary" rel="next" aria-label="Next"><span aria-hidden="true">Next</span></a>
       {{ end }}
 
       {{- if and .Last .HasNext -}}

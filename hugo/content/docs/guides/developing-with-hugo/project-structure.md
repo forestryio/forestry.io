@@ -73,4 +73,4 @@ We will also parse the Archetypes of your theme folder when importing your site.
 - [Hugo Content Types Reference](https://gohugo.io/content/types/)
 - [Hugo Archetypes Reference](https://gohugo.io/content/archetypes/)
 
-[1]: /docs/site-configuration/front-matter-templates
+[1]: /docs/settings/front-matter-templates/

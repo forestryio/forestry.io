@@ -14,7 +14,7 @@ menu:
 
 ---
 {{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [GitLab account](https://gitlab.com/users/sign_in) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
+This guide assumes you already have an existing [GitLab account](https://gitlab.com/users/sign_in) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/tour/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
 Forestry's allows you to import your static site through public and private GitLab repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to GitLab. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
@@ -41,7 +41,7 @@ This will redirect you to GitLab, and prompt you to enter your login credentials
 
 ![](/uploads/2018/01/5.png)
 
-Give Forestry access to your GitLab repositories by clicking "Authorize". You can also request access to any [GitLab organisations](#importing-from-a-gitlab-organisation) you are a member of.
+Give Forestry access to your GitLab repositories by clicking "Authorize". You can also request access to any [GitLab Groups](#importing-from-gitlab-groups) you are a member of.
 
 {{% warning " " %}}
 In order to import a site from GitLab, you will need [master permissions](https://gitlab.com/help/user/permissions) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.

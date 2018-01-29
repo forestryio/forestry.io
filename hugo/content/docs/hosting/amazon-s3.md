@@ -141,7 +141,7 @@ Now that you have an S3 Bucket created with an IAM user that Forestry can use to
 * You can optionally add a subpath to your deployment, in case you want to deploy to a sub-directory* (e.g, forestry.io/blog)*
 * Click `Save Settings`.
 
-Now, when you publish any page, we will deploy your site to the S3 bucket. If any errors occur, we will [output them in your notifications](/docs/troubleshooting/failed-publish-preview-draft).
+Now, when you publish any page, we will deploy your site to the S3 bucket. If any errors occur, we will output them in your Site Activity.
 
 ## Pointing Your Domain to Your New Bucket
 The final step in setting up your site to deploy to Amazon S3 is setting up your domain to serve the contents of your new S3 Bucket. We’ll do this with [Amazon’s Route 53 DNS Service](https://console.aws.amazon.com/route53/).

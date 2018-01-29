@@ -52,6 +52,10 @@ jobs:
     - store_artifacts:
         path: dist.tar.gz
 
+    - run:
+        name: "[Test] HTMLProofer"
+        command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external
+
     - deploy:
         name: "Deploy website to AWS S3"
         command: |

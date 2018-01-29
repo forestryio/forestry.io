@@ -34,10 +34,9 @@ Hugo is a *fast* static site generator, with a *lot* of enterprise features. If 
 ## Getting Started
 To get started developing for Hugo, you’ll need a basic understanding of HTML and GoLang, Hugo’s default templating language. You’ll also likely want to [set up your local development environment][1].
 
-We also recommend that you set up a Git repository to manage development of your site. Doing so offers you [free backups][2], enables content sync with the CMS, and enables you to turn on [automatic deployments][3].
+We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables content sync with the CMS, and enables you to use [continuous deployment][3].
 
 <!-- Once you’re ready, feel free to use our [Hugo starter site](), which walks you through Forestry’s core features and provides a great starting point for your own website. -->
 
-[1]:	/docs/developing-with-hugo/local-development
-[2]:	/docs/deployment-and-management/backups
-[3]:	/docs/deployment-and-management/setting-up-deployment
+[1]:	/docs/guides/developing-with-hugo/local-development
+[3]:	/docs/settings/#deployment

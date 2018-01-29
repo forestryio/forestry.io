@@ -14,7 +14,7 @@ menu:
 
 ---
 {{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [BitBucket account](https://bitbucket.org/account/signup/) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](docs/quickstart/tour/), which contains guides and resources for building your first static site.
+This guide assumes you already have an existing [BitBucket account](https://bitbucket.org/account/signup/) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/tour/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
 Forestry's allows you to import your static site through BitBucket repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to BitBucket. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.

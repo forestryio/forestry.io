@@ -23,7 +23,7 @@ This guide assumes you already have an understanding of Front Matter and how it 
 
 _Front Matter Templates_ (FMTs) enable developers to fully customize the interface of the [Markdown](/docs/editing/markdown-editor) and [HTML](/docs/editing/html-editor) editors. You can think of them as the content model for your [front matter](/docs/editing/front-matter).
 
-FMTs work by allowing developers to define which _Front Matter Fields_ are available to editors when editing [pages](/docs/editing#pages) or [content types](/docs/editing#content-types).
+FMTs work by allowing developers to define which _Front Matter Fields_ are available to editors when editing [pages](/docs/editing#pages) or [content types](/docs/editing#collections).
 
 ## Managing FMTs
 
@@ -111,7 +111,7 @@ This can be used to set default values when creating new pages for fields that s
 
 ## Applying FMTs to Content
 
-FMTs can be applied to individual [pages](/docs/editing#pages), or to [content types](/docs/editing#content-types).
+FMTs can be applied to individual [pages](/docs/editing#pages), or to [content types](/docs/editing#collections).
 
 {{% tip %}}
 FMTs follow a "no-modification" rule. When applying an FMT to content, Forestry will not modify any existing values, and it will not remove values that are not part of the FMT.

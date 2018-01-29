@@ -16,5 +16,6 @@ menu:
 Static files are files that are not processed by your static site generator. Instead, they are just copied over as-is at built time.
 
 ## Examples
+
 - **Jekyll**: in Jekyll, this is any file without front matter.
 - **Hugo**: in Hugo, this is any file in the `staticDir`, which defaults to `static/`

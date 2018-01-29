@@ -43,4 +43,4 @@ If you use any build tools like Gulp or Grunt with Jekyll, please read our [Asse
 ## Further Reading
 - [Hugo Static Files Reference](https://gohugo.io/themes/creation#static)
 
-[1]:	/docs/developing-with-hugo/asset-pipeline
+[1]:	/docs/guides/developing-with-hugo/asset-pipeline

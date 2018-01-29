@@ -79,7 +79,7 @@ Allows you to configure if publishing should be triggered when a commit is made 
 
 **Web Hook URL** `webhook_url` `string`
 
-Allows you to provide a [web hook](/site-configuration/web-hooks/) to be triggered when events occur in Forestry.
+Allows you to provide a [web hook](/docs/hosting/webhooks/) to be triggered when events occur in Forestry.
 
 ---
 
@@ -187,7 +187,7 @@ The array of fields in this front matter template. They follow a standard format
 * `config` `object` Field-specific configuration options
 * `fields` `array` An array of fields. For field groups and repeatable field groups only.
 
-For a comprehensive overview of field configuration, see the [field type documentation](/docs/site-configuration/front-matter-templates#field-types).
+For a comprehensive overview of field configuration, see the [field type documentation](/docs/settings/fields).
 
 ### Removing Files
 

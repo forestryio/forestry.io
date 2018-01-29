@@ -23,7 +23,7 @@ The Media Library allows content editors to easily manage the media for your sit
 
 ## Managing Media
 
-The Media Library allows you to upload and delete media files. It also allows editors to insert media uploads into the [File Upload](/docs/front-matter-templates/fields#file-upload) and [Multi-File Upload](/docs/front-matter-templates/fields#multi-file-upload) front matter fields, and the content body.
+The Media Library allows you to upload and delete media files. It also allows editors to insert media uploads into the [File Upload](/docs/settings/fields#file-upload) and [Multi-File Upload](/docs/settings/fields#multi-file-upload) front matter fields, and the content body.
 
 ### Uploading Media
 

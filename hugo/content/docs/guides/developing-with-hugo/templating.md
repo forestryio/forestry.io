@@ -76,11 +76,11 @@ An example of Amber:
 	                a[href="/"] Go To Main Page
 ```
 
-See the [Front Matter Fields documentation][1] for examples of how to use Forestry in your templates.
+See the [Front Matter Template documentation][1] for examples of how to use Forestry in your templates.
 
 ## Further Reading
 - [Hugo GoTemplates Reference](https://gohugo.io/templates/go-templates/)
 - [Hugo Ace Templates Reference](https://gohugo.io/templates/ace/)
 - [Hugo Amber Templates Reference](https://gohugo.io/templates/amber/)
 
-[1]: /docs/site-configuration/front-matter-templates#field-types
+[1]: /docs/settings/front-matter-templates/

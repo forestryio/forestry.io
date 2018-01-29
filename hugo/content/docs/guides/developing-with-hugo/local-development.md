@@ -60,4 +60,4 @@ For information on how to handle deployment of your site to your production or s
 
 [1]:	https://gohugo.io/overview/installing/
 [2]:	https://app.forestry.io/dashboard
-[3]:	/docs/deployment-and-management/setting-up-deployment
+[3]:	/docs/hosting/

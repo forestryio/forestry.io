@@ -33,7 +33,7 @@ Jekyll is one of the oldest static site generators available. Built by [GitHub][
 ## Getting Started
 To get started developing for Jekyll, you’ll need a basic understanding of HTML and [Liquid][2], Jekyll's templating language. You’ll also likely want to [set up your local development environment][3].
 
-We also recommend that you set up a Git repository to manage development of your site. Doing so offers you [free backups][4], enables [content sync][5] with the CMS, and enables you to turn on [automatic deployments][6].
+We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync][5] with the CMS, and enables you to use [continuous deployment][6].
 
 ## Further Reading
 - [Jekyll Documentation](http://jekyllrb.com/docs)
@@ -41,7 +41,6 @@ We also recommend that you set up a Git repository to manage development of your
 
 [1]: https://github.com
 [2]: https://shopify.github.io/liquid/
-[3]: /docs/developing-with-jekyll/local-development
-[4]: /docs/deployment-and-management/backups
-[5]: /docs/managing-content/file-sync
-[6]: /docs/deployment-and-management/setting-up-deployment#automatic-deployment
+[3]: /docs/guides/developing-with-jekyll/local-development
+[5]: /docs/git-sync/
+[6]: /docs/settings/#deployment

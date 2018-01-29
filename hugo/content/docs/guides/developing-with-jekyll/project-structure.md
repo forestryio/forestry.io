@@ -79,4 +79,4 @@ Jekyll also supports Gem based themes. See the references below for more informa
 - [Jekyll Directory Structure Reference](https://jekyllrb.com/docs/structure/)
 - [Installing Gem-based Themes](https://jekyllrb.com/docs/themes/#installing-a-theme)
 
-[1]: /docs/site-configuration/front-matter-templates
+[1]: /docs/settings/front-matter-templates

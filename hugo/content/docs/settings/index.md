@@ -28,7 +28,7 @@ menu:
 
 ## Timezone
 
-![](/uploads/2018/01/settings-timezone.png)The timezone setting allows you to configure what timezone should be used when saving dates, previewing, and publishing. This setting effects the output of the [date field](/docs/settings/fields/date)
+![](/uploads/2018/01/settings-timezone.png)The timezone setting allows you to configure what timezone should be used when saving dates, previewing, and publishing. This setting effects the output of the [date field](/docs/settings/fields/datetime)
 
 ## Deployment
 

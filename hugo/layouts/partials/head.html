@@ -43,21 +43,6 @@
   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
 {{- end -}}
 {{/* TODO: canonical + multilingual meta */}}
-{{- if (eq .Section "docs") -}}
-  {{- with .NextInSection -}}
-    <link rel="prev" href="{{ .RelPermalink }}" />
-  {{- end -}}
-  {{- with .PrevInSection }}
-    <link rel="next" href="{{ .RelPermalink }}" />
-  {{- end -}}
-{{- else if and (not .IsPage) (eq $.Section "blog") -}}
-  {{- if .Paginator.HasPrev -}}
-  <link rel="prev" href="{{ .Paginator.Prev }}" />
-  {{- end -}}
-  {{- if .Paginator.HasNext -}}
-  <link rel="next" href="{{ .Paginator.Next }}" />
-  {{- end -}}
-{{- end -}}
 {{- with $.Site.Params.gtmid -}}
 <!-- Google Tag Manager -->
 <script>

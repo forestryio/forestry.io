@@ -28,12 +28,12 @@ menu:
 ---
 For some hosting providers (such as GitHub pages) you will need to place a `CNAME` file in the root of your site.
 
-You'll need to ensure that the CNAME file is treated as a [static file](/docs/faqs/static-files), so that it is copied to the root of your site during the build.
+You'll need to ensure that the CNAME file is treated as a [static file](/docs/faqs/glossary/static-files), so that it is copied to the root of your site during the build.
 
 {{% tip %}}
 Make sure you place your `CNAME` file in your source directory, not your build directory. Otherwise it will be deleted during the next build
 {{% /tip %}}
 
 ### Examples
-- **Jekyll:** any file without [front matter](/docs/faqs/front-matter) is treated as a static file, so place your `CNAME` file in the root of your source folder
+- **Jekyll:** any file without [front matter](/docs/editing/front-matter) is treated as a static file, so place your `CNAME` file in the root of your source folder
 - **Hugo**: any file inside of the `static/` directory in your source folder is treated as a static file.

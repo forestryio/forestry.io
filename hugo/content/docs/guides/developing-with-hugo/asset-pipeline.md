@@ -26,6 +26,6 @@ When publishing, previewing, or saving drafts, Forestry will *only* run:
 
 If you use Gulp, Grunt or another build tool to process your assets, you *must* commit your final working assets to your repository, otherwise [previewing][1] and [deployment][2] will **not** work.
 
-[1]: /docs/site-configuration/previewing
-[2]: /docs/deployment-and-management/setting-up-deployment
+[1]: /docs/editing/previews
+[2]: /docs/hosting/
 
