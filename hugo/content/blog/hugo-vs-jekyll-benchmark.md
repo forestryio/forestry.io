@@ -26,7 +26,7 @@ menu: []
 draft: true
 
 ---
-Hugo (Go, zero dependencies)  and Jekyll (Ruby) are the leading static site generators according to [StaticGen.com](staticgen.com), and are both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to dig up some data.
+Hugo and Jekyll are the leading static site generators according to [StaticGen.com](staticgen.com), and both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to do an analysis. 
 
 ## TL;DR
 
