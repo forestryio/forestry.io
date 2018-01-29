@@ -90,8 +90,8 @@ jobs:
           fi
 
     - run:
-      name: Invalidate Cache
-      command: |
-        if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
-          aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
-        fi
+        name: Invalidate Cache
+        command: |
+          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+            aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
+          fi
