@@ -1,6 +1,7 @@
 import algoliasearch from "algoliasearch"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
+import chalk from "chalk"
 import debounce from "gulp-debounce"
 import del from "del"
 import fs from "fs"
@@ -18,7 +19,6 @@ import {spawn} from "child_process"
 import sprite from "gulp-svg-sprite"
 import sourcemaps from "gulp-sourcemaps"
 import through from "through2"
-import util from "gulp-util"
 import webpack from "webpack-stream"
 import webpackConfig from "./.webpackrc.js"
 
@@ -311,7 +311,6 @@ function build(cb) {
 
   generator.on("close", code => {
     browserSync.reload()
-    cb()
   })
 }
 
@@ -328,15 +327,15 @@ function log(err, log, name) {
   const spacer = " ".repeat(name.length + 2) // Indent additional lines
 
   if (err) {
-    util.beep()
+    console.log('\u0007')
     browserSync.notify(err.message)
   }
 
   messages.forEach((message, i) => {
     if (i === 0) {
-      util.log("[" + util.colors.blue(name) + "]", message)
+      console.log(chalk`[{blue ${name}}]`, message)
     } else {
-      util.log(spacer, message)
+      console.log(spacer, message)
     }
   })
 }

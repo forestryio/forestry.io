@@ -1,14 +1,21 @@
-{{- if and .pg (isset . "image") }}
+{{- if and .pg (isset . "image") -}}
   {{- $page := .pg -}}
+
   {{/* Prefix with baseURL if a relative link */}}
   {{- $image := (cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL)) -}}
+
   {{/* Only return cloudinary URL in production and not localhost */}}
-  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "://localhost" $image)) 0) }}
+  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "://localhost" $image)) 0) -}}
+    {{/* Get fetch mode */}}
     {{- $mode_config := cond (in $image "://") "fetch" "upload" -}}
-    {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" }}
+    {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" -}}
+
+    {{/* Build valid URL prefix */}}
     {{- $cloudinary_url := (delimit (slice "https://res.cloudinary.com/" $page.Site.Params.cloudinary.cloud_name "/image" (.social_network | default "") "/" $mode "/") "") -}}
+
+    {{/* Get accepted transforms */}}
     {{- $availableTransforms := getJSON "/layouts/partials/cloudinary/params.json" -}}
-    {{- $page.Scratch.SetInMap "transforms" "width" "w_auto" -}}
+
     {{/* Set up transform params for regular usage */}}
     {{- range $key, $param := $availableTransforms -}}
       {{- $value := (index $ $key) | default $param.default -}}
@@ -17,15 +24,19 @@
       {{- end -}}
     {{- end -}}
     {{- $transforms := $page.Scratch.Get "transforms" -}}
+
     {{/* Transform params to URL format */}}
     {{- $transforms := delimit $transforms "," -}}
+
     {{/* Removing leading slash */}}
     {{- $image := replaceRE "(^/)" "" $image -}}
+
     {{/* Build cloudinary image URL */}}
     {{- $image := delimit (slice $cloudinary_url ($transforms) "/" $image) "" -}}
+
     {{/* Return cloudinary image URL */}}
     {{- $image | absURL -}}
   {{- else -}}
     {{- .image -}}
-  {{ end -}}
-{{ end -}}
+  {{- end -}}
+{{- end -}}

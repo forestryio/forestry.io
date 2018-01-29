@@ -96,6 +96,22 @@ cloud_name = "forestry-demo"
 use_upload = false
 [params.cloudinary.lazysizes]
 enabled = true
+[params.cloudinary.presets.default]
+quality = 80
+[params.cloudinary.presets.content]
+min_width = 320
+max_width = 1920
+width = 640
+quality = 80
+steps = 10
+sizes = "auto"
+[params.cloudinary.presets.feature]
+min_width = 320
+max_width = 1920
+width = 640
+quality = 80
+steps = 10
+sizes = "(max-width: 76px) 100%, 800px"
 [related]
 includeNewer = true
 threshold = 10

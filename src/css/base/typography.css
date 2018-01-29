@@ -202,12 +202,12 @@ tr:nth-child(odd) td {
 
   img {
     max-width: 100%;
-    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   img:hover {
     opacity: 0.8;
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.3rem);
     cursor: pointer;
   }
 

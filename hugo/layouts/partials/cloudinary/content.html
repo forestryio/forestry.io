@@ -1,33 +1,35 @@
-{{- $page := .pg }}
-{{- $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled -}}
-{{- $find_images_regex := "(?:<img[^>]*)>*" -}}
-{{- $find_src_regex := "(?:(?:src=)(?:\"?)([^\"]*)(?:\"?))" -}}
-{{- $find_datasrc_regex := "(?:(?:data-src=)(?:\"?)([^\"]*)(?:\"?))" -}}
-{{- $find_alt_regex := "(?:(?:alt=)(?:\"?)([^\"]*)(?:\"?))"}}
-{{- $find_title_regex := "(?:(?:title=)(?:\"?)([^\"]*)(?:\"?))"}}
-{{- $clean_regex := ".*=\"([^\"]*)\"" -}}
-{{- $page.Scratch.Set "content" $page.Content -}}
-{{- $originals := findRE $find_images_regex $page.Content -}}
-{{- range $key, $value := . -}}
-  {{- $page.Scratch.SetInMap "url" $key $value -}}
+{{ if .pg -}}
+  {{ $page := .pg }}
+  {{ $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled }}
+  {{ $find_images_regex := "(?:<img[^>]*)>*" }}
+  {{ $find_src_regex := "(?:(?:src=)(?:\"?)([^\"]*)(?:\"?))" }}
+  {{ $find_datasrc_regex := "(?:(?:data-src=)(?:\"?)([^\"]*)(?:\"?))" }}
+  {{ $find_alt_regex := "(?:(?:alt=)(?:\"?)([^\"]*)(?:\"?))"}}
+  {{ $find_title_regex := "(?:(?:title=)(?:\"?)([^\"]*)(?:\"?))"}}
+  {{ $clean_regex := ".*=\"([^\"]*)\"" }}
+  {{ $page.Scratch.Set "content" $page.Content }}
+  {{ $originals := findRE $find_images_regex $page.Content }}
+  {{ range $key, $value := . }}
+    {{ $page.Scratch.SetInMap "url" $key $value }}
+  {{ end }}
+  {{ range $key, $value := $originals }}
+    {{ $content := $page.Scratch.Get "content" }}
+    {{ $srcRaw := index (findRE $find_src_regex $value 1) 0 }}
+    {{ $src := replaceRE $clean_regex "$1" $srcRaw }}
+    {{ $dataSrcRaw := index (findRE $find_datasrc_regex $value 1) 0 }}
+    {{ $dataSrc := replaceRE $clean_regex "$1" $dataSrcRaw }}
+    {{ $altRaw := index (findRE $find_alt_regex $value 1) 0 }}
+    {{ $alt := replaceRE $clean_regex "$1" $altRaw }}
+    {{ $titleRaw := index (findRE $find_title_regex $value 1) 0 }}
+    {{ $title := replaceRE $clean_regex "$1" $titleRaw }}
+    {{ $image := cond (and $lazySizes (not (eq $dataSrc ""))) $dataSrc $src }}
+    {{ $page.Scratch.SetInMap "url" "alt" $alt }}
+    {{ $page.Scratch.SetInMap "url" "title" $title }}
+    {{ $page.Scratch.SetInMap "url" "image" $image }}
+    {{ if not (in $image "https://res.cloudinary.com/") }}
+      {{ $replacement := (partial "cloudinary/image" ($page.Scratch.Get "url")) }}
+    {{ $page.Scratch.Set "content" (replace $content $value $replacement) }}
+    {{ end }}
+  {{ end }}
+  {{ markdownify ($page.Scratch.Get "content") }}
 {{- end -}}
-{{- range $key, $value := $originals }}
-  {{- $content := $page.Scratch.Get "content" -}}
-  {{- $srcRaw := index (findRE $find_src_regex $value 1) 0 -}}
-  {{- $src := replaceRE $clean_regex "$1" $srcRaw -}}
-  {{- $dataSrcRaw := index (findRE $find_datasrc_regex $value 1) 0 -}}
-  {{- $dataSrc := replaceRE $clean_regex "$1" $dataSrcRaw -}}
-  {{- $altRaw := index (findRE $find_alt_regex $value 1) 0 -}}
-  {{- $alt := replaceRE $clean_regex "$1" $altRaw -}}
-  {{- $titleRaw := index (findRE $find_title_regex $value 1) 0 -}}
-  {{- $title := replaceRE $clean_regex "$1" $titleRaw -}}
-  {{- $image := cond (and $lazySizes (not (eq $dataSrc ""))) $dataSrc $src -}}
-  {{- $page.Scratch.SetInMap "url" "alt" $alt -}}
-  {{- $page.Scratch.SetInMap "url" "title" $title -}}
-  {{- $page.Scratch.SetInMap "url" "image" $image -}}
-  {{- if not (in $image "https://res.cloudinary.com/") -}}
-    {{- $replacement := (partial "cloudinary/image" ($page.Scratch.Get "url")) -}}
-    {{- $page.Scratch.Set "content" (replace $content $value $replacement) -}}
-  {{- end -}}
-{{- end -}}
-{{ markdownify ($page.Scratch.Get "content") }}

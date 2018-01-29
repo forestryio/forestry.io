@@ -25,7 +25,7 @@ Follow along by forking the [Belkirk Demo Site](https://github.com/forestryio/be
 
 ## Getting Started
 
-For the purposes of this product tour, we'll assume you have a [GitHub account](https://github.com/signup) and have forked the [Belkirk College demo site](https://github.com/forestryio/belkirk-demo-site).
+For the purposes of this product tour, we'll assume you have a [GitHub account](https://github.com/signup) and have forked the [Belkirk College demo site](https://github.com/forestryio/belkirk-jekyll-demo).
 
 ![](/uploads/2018/01/12.png)
 

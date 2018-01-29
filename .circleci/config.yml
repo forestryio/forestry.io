@@ -14,8 +14,6 @@ jobs:
     - restore_cache:
         keys:
         - node-dependencies-{{ checksum "package.json" }}
-        # fallback to using the latest cache if no exact match is found
-        - node-dependencies-
 
     - run:
         name: Install Node Dependencies
@@ -33,14 +31,12 @@ jobs:
           npm run build
 
     - run:
+        name: Create Artifacts
         command: |
           tar -zcvf dist.tar.gz ./dist
 
     - store_artifacts:
         path: dist.tar.gz
-
-    # Add any SSH keys from CircleCI
-    - add_ssh_keys
 
     - deploy:
         name: "Deploy website to AWS S3"
@@ -48,7 +44,14 @@ jobs:
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying branch master to S3"
             aws s3 sync ./dist s3://${AWS_S3_BUCKET}
+          else
+            echo "Successfully built ${CIRCLE_BRANCH}"
+          fi
 
+    - run:
+        name: Update redirects
+        command: |
+          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             path_join() {
               part1=$1
               part2=$2
@@ -68,6 +71,11 @@ jobs:
 
               aws s3 cp s3://${AWS_S3_BUCKET}${from} s3://${AWS_S3_BUCKET}${from} --website-redirect ${to} --metadata-directive REPLACE
             done
-          else
-            echo "Successfully built ${CIRCLE_BRANCH}"
+          fi
+
+    - run:
+        name: Invalidate Cache
+        command: |
+          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+            aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
           fi

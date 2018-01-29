@@ -2,29 +2,38 @@
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/hugovsjekyll.png"
-publishdate: 2017-07-21 09:22:55 +0000
+- "/uploads/2018/01/social-image-2.png"
+publishdate: 2018-01-26 10:22:55 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
 title: 'Hugo vs Jekyll: Benchmarked'
 categories:
 - hugo
 - jekyll
-date: 2017-07-21 09:22:55 +0000
-draft: true
+date: 2018-01-26 09:22:55 +0000
+headline: ''
+description: ''
+textline: ''
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
+menu: []
 
 ---
-In order to help you decide which static site generator is best for your development team, we put Hugo and Jekyll toe-to-toe to see which is faster and more efficient.
+Hugo and Jekyll are the leading static site generators according to [StaticGen.com](staticgen.com), and both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to do an analysis.
 
-## Why Did We Do This?
+## TL;DR
 
-[StackOverflow](https://insights.stackoverflow.com/survey/2016#developers-who-code-are-happy-developers) reported that developers who can check-in code more often, more rapidly are the happiest. As developers at Forestry.io, we're in total agreement and recognize that need for developers to work more efficiently.
+We ran two tests to measure build times with [Hugo](https://gohugo.io) and [Jekyll](https://jekyllrb.com). The [basic test](#the-basic-benchmark) used the default installation of Jekyll and Hugo to build sites with 10 posts,100 posts, 1,000 posts and 10,000 posts.  The [advanced test](#the-advanced-benchmark) built those same sites but included common plugins and template code in order to create a similar set of features between the two [Static Site Generators](/docs/faqs/glossary/static-site-generators/). For each build, Hugo proved to be between 23 and 63 times faster than Jekyll!
 
-This need for a more efficient workflow is what has brought about the [static site](https://forestry.io/docs/getting-started/what-is-a-static-site/) movement. Managing the upgrades, performance, and security of traditional server-dependant software like Wordpress and Drupal is just too much overhead.
+There are many factors one must consider when choosing a static site generator, but if you're just looking at build times, Hugo wins hands down!
 
-Static sites eliminate the need for a server, have blazing fast performance, and tight security. 
-
-Hugo and Jekyll are the leading static site generators in the world right now according to [StaticGen.com](staticgen.com), and are supported by Forestry.io, so we wanted to find out how they measured up in performance.
+**See the data below**, and let us know what your build times are in the conversation on Hacker News.
 
 ## Preparing The Test
 
@@ -34,57 +43,22 @@ To do this, we came up with a list of requirements for the test:
 
 #### Equal Content
 
-We wanted to ensure the content was as similar as possible, to ensure that we’re testing the performance of building the same site.
-
-For each test, we created a basic YAML content model and then generated 10, 100, 1000, and 10000 posts using this model for both Jekyll and Hugo.
+For each test, we created a basic YAML content model and then generated sites with `10`, `100`, `1,000`, and `10,000` posts using this model for both Jekyll and Hugo.
 
 #### Equal template structure
 
-In most benchmarks, boilerplate themes are used. This isn’t a fair comparison, as the template structure can affect build time.
-
-So we put together *archive, single, and taxonomy* templates for each test with the minimum amount of HTML markup needed, no CSS or JS to process or compile, and used the same data for both Hugo and Jekyll.
+We didn't want theme template structure to affect build times so we put together _archive, single, and taxonomy_ templates for each test with the minimum amount of HTML markup needed, no CSS or JS to process or compile, and used the same data for both Hugo and Jekyll.
 
 #### 1:1 feature comparison
 
-We didn’t want to benchmark against features that the two static site generators didn’t share, as this wouldn’t be a fair comparison. So we created two tests:
+Each [static site generator](/docs/faqs/glossary/static-site-generators/) has a different set of features. For instance, Hugo builds your sitemap, whereas Jekyll requires a plugin to do so.  For this reason, we created two tests.
 
-- Raw build performance, without any plugins or similar features.
-
-- Build performance using common plugins/features, like sitemap and feed generation.
+* **Basic Test -** Without any plugins
+* **Advanced Test -** Using common plugins and code to achieve a similar set of features (i.e. sitemaps and feed generation).
 
 #### Running the Benchmark
 
 We ran the benchmarks using a simple bash script. Each benchmark runs the build process 13 times recording the `real` time output from the Unix `time` command. We took the average of these 13 builds to get our final result.
-
-**Hugo**
-
-```
-#!/bin/bash
-# Runs Unix Time Benchmark
-
-for ((i=1;i&amp;amp;amp;lt;=13;i++));
-do
-  { time hugo --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real 
-done
-
-echo Benchmark Complete
-
-```
-
-**Jekyll**
-
-```
-#!/bin/bash
-# Runs Unix Time Benchmark
-
-for ((i=1;i&amp;amp;amp;lt;=13;i++));
-do
-  { time bundle exec jekyll build --quiet &amp;amp;amp;gt;/dev/null; } 2&amp;amp;amp;gt;&amp;amp;amp;amp;1 | grep real 
-done
-
-echo Benchmark Complete
-
-```
 
 ## The Basic Benchmark
 
@@ -92,35 +66,41 @@ For the first benchmark, we generated content with a title, a body, and a date i
 
 **Hugo**
 
-```
----
-title: Test 1
-date: 2017-07-17T13:48:56-03:00
----
-# Page Headline
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
-
-```
+    ---
+    title: Test 1
+    date: 2017-07-17T13:48:56-03:00
+    ---
+    # Page Headline
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
 
-```
+    ---
+    title: Test 1
+    layout: post
+    ---
+    # Page Headline
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
+
 ---
-title: Test 1
-layout: post
----
-# Page Headline
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
+This was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of posts.
 
-```
+As you can see below, Hugo is a clear winner building each site in under 1 second.
 
-The was the most basic benchmark possible, testing only how fast Hugo and Jekyll build the same number of pages.
+![](/uploads/2018/01/hugo-vs-jekyll-basic-test-1.png)
 
-As you can see below, Hugo is a clear winner here. The results for Hugo are so small, they can’t even be seen on the graph!
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Basic Test with 10, 100, and 1,000 posts.</p>
 
-<img src="/uploads/2017/12/basic-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
+Plotting a 10,000-page site next to these shows how significant the difference in build-times can become (notice the change in scale of the Y-axis).
+
+![](/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages-1.png)
+
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Basic Test with 10, 100, 1,000 and 10,000 posts.</p>
+
+The results from this test are as follows:
 
 <table>
 <thead>
@@ -128,8 +108,8 @@ As you can see below, Hugo is a clear winner here. The results for Hugo are so s
 <th>Generator</th>
 <th>10</th>
 <th>100</th>
-<th>1000</th>
-<th>10000</th>
+<th>1,000</th>
+<th>10,000</th>
 </tr>
 </thead>
 <tbody>
@@ -150,7 +130,7 @@ As you can see below, Hugo is a clear winner here. The results for Hugo are so s
 </tbody>
 </table>
 
-## The Second Benchmark
+## The Advanced Benchmark
 
 For the next benchmark, we generated content with a title, body, date, categories, and tags. We enabled the generation of category and tag archives, and also generated an XML sitemap and RSS/Atom Feed.
 
@@ -160,51 +140,57 @@ In this case, our content looked like this:
 
 **Hugo**
 
-```
----
-title: Test 1
-categories:
-  - red
-  - orange
-  - yellow
-  - green
-  - blue
-  - indigo
-  - violet
-tags:
-  - red
-  - orange
-  - yellow
-  - green
-  - blue
-  - indigo
-  - violet
-date: 2017-07-17T14:07:58-03:00
----
-# Page Headline
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
-
-```
+    ---
+    title: Test 1
+    categories:
+      - red
+      - orange
+      - yellow
+      - green
+      - blue
+      - indigo
+      - violet
+    tags:
+      - red
+      - orange
+      - yellow
+      - green
+      - blue
+      - indigo
+      - violet
+    date: 2017-07-17T14:07:58-03:00
+    ---
+    # Page Headline
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
 
-```
+    ---
+    title: test_1
+    tags: red orange yellow green blue indigo violet
+    categories: red orange yellow green blue indigo violet
+    layout: post
+    ---
+    # Page Headline
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
+
 ---
-title: test_1
-tags: red orange yellow green blue indigo violet
-categories: red orange yellow green blue indigo violet
-layout: post
----
-# Page Headline
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
+Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is _much_ more noticeable.
 
-```
+![](/uploads/2018/01/hugo-vs-jekyll-advanced-test-1.png)
 
-Looking at the results below, you can see that Hugo is again the winner. It’s clear that as you add complexity to Jekyll the decrease in performance is *much* more noticeable.
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Advanced Test with 10, 100, and 1,000 posts.</p>
 
-<img src="/uploads/2017/12/advanced-stats.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
+Adding a 10,000 page test dwarfs the data from the previous graph.
+
+![](/uploads/2018/01/hugo-vs-jekyll-advanced2.png)
+
+<p style="text-align:center;margin-top:-1rem;font-size:.85rem;font-style:italic;">Advanced Test with 10, 100, 1,000 and 10,000 posts.</p>
+
+The results from the second test are as follows:
 
 <table>
 <thead>
@@ -212,8 +198,8 @@ Looking at the results below, you can see that Hugo is again the winner. It’s 
 <th>Generator</th>
 <th>10</th>
 <th>100</th>
-<th>1000</th>
-<th>10000</th>
+<th>1,000</th>
+<th>10,000</th>
 </tr>
 </thead>
 <tbody>
@@ -241,20 +227,27 @@ It’s important to note that these tests were run in an environment where all o
 Given that Jekyll has plugins where Hugo doesn’t, in cloud or server environments where Gems need to be downloaded, they will add additional time to builds (e.g, Forestry’s preview feature).
 
 #### Incremental Builds
-Both Hugo and Jekyll have a built-in server that provides *incremental building*. This means that from the moment you spin up the server, they will watch for changes and only rebuild the pages that have changed.
+
+Both Hugo and Jekyll have a built-in server that provides _incremental building_. This means that from the moment you spin up the server, they will watch for changes and only rebuild the pages that have changed.
 
 This greatly speeds up build time in a development environment for both generators.
 
 ## A Clear Winner
 
-Given that most sites aren’t going to be anywhere close to 10000 pages, we’ll make the final verdict based on average build time over 10, 100, and 1000 pages…
+Given that most sites aren’t going to be anywhere close to 10,000 posts, we’ll make the final verdict based on average build time over 10, 100, and 1,000 posts…
 
-<img src="/uploads/2017/12/hugo-vs-jekyll-totals.jpg" draggable="true" data-bukket-ext-bukket-draggable="true">
+![](/uploads/2017/12/hugo-vs-jekyll-totals.jpg)
 
-So as we can see, when it comes to speed and build performance, Hugo is a *clear* winner.
+So as we can see, when it comes to speed and build performance, Hugo is a _clear_ winner.
 
-Don't just take our word for it. Hugo user @darinpope managed to get Hugo to generate 600k pages in under 5 minutes, and Dan Hersam illustrates the speed of Hugo on video.
+Don't just take our word for it. [Smashing Magazine](https://www.smashingmagazine.com/), [reportedly](https://discourse.gohugo.io/t/smashing-magazine-s-redesign-powered-by-hugo-jamstack/5826/9) builds their 7,500-page Hugo site in 13 seconds and Hugo user [@darinpope](https://twitter.com/darinpope) managed to [generate 600,000 pages in under 5 minutes](https://discourse.gohugo.io/t/page-generation-performance-expectations/1335/6).
 
-Depending on the size and scale of your website, the performance gains offered by Hugo may offer a serious advantage.
+## What's your experience?
+
+Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker News.
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Comment on Hacker News</a>
+
+---
 
 **Next week,** we’ll compare the usability and features of Hugo and Jekyll to help you decide which static site generator is right for you.
