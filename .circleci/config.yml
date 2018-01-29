@@ -82,6 +82,8 @@ jobs:
 
               aws s3 cp s3://${AWS_S3_BUCKET}${from} s3://${AWS_S3_BUCKET}${from} --website-redirect ${to} --metadata-directive REPLACE
             done
+
+            aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
