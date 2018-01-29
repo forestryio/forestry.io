@@ -10,7 +10,7 @@ weight: 6
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 6
+    weight: 13
 
 ---
 They are three unique developer environments when working with a Hugo site in Forestry:

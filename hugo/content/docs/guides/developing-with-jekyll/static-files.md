@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-static-files
-    weight: 4
+    weight: 8
 
 ---
 In Jekyll, any file in your project that does not have YAML front matter is treated as a static file, and is included in your built site.

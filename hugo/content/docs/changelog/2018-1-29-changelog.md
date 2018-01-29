@@ -20,6 +20,10 @@ cta:
   textline: ''
   calls_to_action: []
 weight: ''
+menu:
+  changelog:
+    weight: 1
+    parent: Changelog
 
 ---
 ### Bug Fixes

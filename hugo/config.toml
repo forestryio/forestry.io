@@ -16,29 +16,35 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-name = "Other"
-weight = 7
-[[menu.docs]]
 name = "Settings & Configuration"
 weight = 6
 [[menu.docs]]
-name = "Hosting"
-weight = 5
-[[menu.docs]]
-name = "Editing"
-weight = 4
-[[menu.docs]]
-name = "Git Sync"
-weight = 3
+name = "Welcome"
+weight = 1
 [[menu.docs]]
 name = "Quick Start"
 weight = 2
 [[menu.docs]]
-name = "Welcome"
-weight = 1
+name = "Git Sync"
+weight = 3
+[[menu.docs]]
+name = "Editing"
+weight = 4
+[[menu.docs]]
+name = "Hosting"
+weight = 5
+[[menu.docs]]
+name = "Other"
+weight = 7
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
+[[menu.footer]]
+name = "Company"
+weight = 2
+[[menu.footer]]
+name = "Product"
+weight = 1
 [[menu.main]]
 identifier = "useraccount"
 name = "My Account"
@@ -59,12 +65,6 @@ identifier = "signup"
 name = "Sign up"
 url = "https://app.forestry.io/signup"
 weight = 8
-[[menu.footer]]
-name = "Product"
-weight = 1
-[[menu.footer]]
-name = "Company"
-weight = 2
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
@@ -96,22 +96,22 @@ cloud_name = "forestry-demo"
 use_upload = false
 [params.cloudinary.lazysizes]
 enabled = true
+[params.cloudinary.presets.content]
+max_width = 1920
+min_width = 320
+quality = 80
+sizes = "auto"
+steps = 10
+width = 640
 [params.cloudinary.presets.default]
 quality = 80
-[params.cloudinary.presets.content]
-min_width = 320
-max_width = 1920
-width = 640
-quality = 80
-steps = 10
-sizes = "auto"
 [params.cloudinary.presets.feature]
-min_width = 320
 max_width = 1920
-width = 640
+min_width = 320
 quality = 80
-steps = 10
 sizes = "(max-width: 76px) 100%, 800px"
+steps = 10
+width = 640
 [related]
 includeNewer = true
 threshold = 10

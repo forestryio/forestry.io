@@ -11,7 +11,7 @@ weight: 3
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 3
+    weight: 6
 
 ---
 Hugo allows users to build layouts and themes using one of multiple templating languages. By default, Hugo uses GoLang’s GoTemplates.

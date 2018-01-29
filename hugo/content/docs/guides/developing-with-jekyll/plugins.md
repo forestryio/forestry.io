@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-plugins
-    weight: 8
+    weight: 16
 
 ---
 Jekyll allows you to add Gem-based plugins using your `Gemfile`. This allows you to add things like \[CoffeeScript\]\[1\] preprocessing.
