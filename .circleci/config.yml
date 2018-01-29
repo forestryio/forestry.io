@@ -14,8 +14,6 @@ jobs:
     - restore_cache:
         keys:
         - node-dependencies-{{ checksum "package.json" }}
-        # fallback to using the latest cache if no exact match is found
-        - node-dependencies-
 
     - run:
         name: Install Node Dependencies
