@@ -20,7 +20,7 @@ jobs:
     - run:
         name: Install Node Dependencies
         command: |
-          npm install --production
+          npm install
 
     - save_cache:
         paths:

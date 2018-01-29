@@ -311,7 +311,6 @@ function build(cb) {
 
   generator.on("close", code => {
     browserSync.reload()
-    cb()
   })
 }
 
