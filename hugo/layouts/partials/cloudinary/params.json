@@ -6,6 +6,10 @@
   "height": {
     "key": "h"
   },
+  "crop": {
+    "key": "c",
+    "default": "limit"
+  },
   "aspect_ratio": {
     "key": "ar"
   },
