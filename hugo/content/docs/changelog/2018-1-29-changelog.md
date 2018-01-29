@@ -32,8 +32,8 @@ menu:
 * **Front matter template:** Front matter templates can create a duplicate upon saving.
 * **Pages:** Clarified copy surrounding unsaved changes on a document.
 * **Pages:** Linking to a page that a teammate is editing is now handled properly.
-* **Pages:** Deleting a page within the page no longer shows "Connection Lost" modal.
-* **Editor:** Fixed issue with single-mark-command.
+* **Pages:** Deleting a page from the page form no longer shows "Connection Lost" modal.
+* **Editor:** Fixed issue with _emphasis_ and `code` deleting the next character.
 * **Media:** Fixed issue where you couldn't click "Insert Media" button at certain resolutions.
 * **Search:** Fixed issue where search continued after you left the search bar.
 * **Search:** Fixed issue where you couldn't see the cursor on the media library.
