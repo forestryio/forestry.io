@@ -13,6 +13,7 @@ pages:
 - careers/full-stack.md
 - careers/marketing.md
 - careers/software-engineer.md
+- blog/hugo-vs-jekyll-benchmark.md
 - blog/a-hugo-update-everyone-should-be-talking-about.md
 - blog/layout-improvements.md
 - blog/wysiwyg-formatting-in-front-matter.md
@@ -23,7 +24,6 @@ pages:
 - blog/improved-collaboration-and-more.md
 - blog/introducing-forestry-config-files.md
 - blog/join-our-slack-community.md
-- blog/hugo-vs-jekyll-benchmark.md
 - blog/bigger-better-editor.md
 - blog/_index.md
 - blog/front-matter-templates.md

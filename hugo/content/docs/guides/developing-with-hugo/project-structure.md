@@ -11,7 +11,7 @@ weight: 2
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 2
+    weight: 5
 
 ---
 In Hugo, project structure and naming is fairly rigid other than content structure. You must follow the Hugo guidelines for where content, layouts, data, and static assets must be stored.

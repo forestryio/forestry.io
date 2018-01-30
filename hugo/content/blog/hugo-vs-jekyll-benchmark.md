@@ -33,7 +33,7 @@ We ran two tests to measure build times with [Hugo](https://gohugo.io) and [Jeky
 
 There are many factors one must consider when choosing a static site generator, but if you're just looking at build times, Hugo wins hands down!
 
-**See the data below**, and let us know what your build times are in the conversation on Hacker News.
+**See the data below**, and let us know what your build times are in the conversation on [Hacker News](https://news.ycombinator.com/item?id=16265259).
 
 ## Preparing The Test
 
@@ -236,7 +236,7 @@ This greatly speeds up build time in a development environment for both generato
 
 Given that most sites aren’t going to be anywhere close to 10,000 posts, we’ll make the final verdict based on average build time over 10, 100, and 1,000 posts…
 
-![](/uploads/2017/12/hugo-vs-jekyll-totals.jpg)
+![](/uploads/2018/01/hugo-vs-jekyll-totals.jpg)
 
 So as we can see, when it comes to speed and build performance, Hugo is a _clear_ winner.
 
@@ -246,7 +246,7 @@ Don't just take our word for it. [Smashing Magazine](https://www.smashingmagazin
 
 Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker News.
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Comment on Hacker News</a>
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="[https://news.ycombinator.com/item?id=16265259](https://news.ycombinator.com/item?id=16265259 "https://news.ycombinator.com/item?id=16265259")">Comment on Hacker News</a>
 
 ---
 
