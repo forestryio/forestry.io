@@ -63,6 +63,7 @@ name: [String]
 label: [String]
 description: [String] 
 hidden: [true|false]
+default: [Number]
 config:
   min: [Number]
   max: [Number]
@@ -75,6 +76,7 @@ type: number
 name: weight
 label: Weight
 description: Set the page's sort order
+default: -99
 hidden: false
 config:
   min: 0

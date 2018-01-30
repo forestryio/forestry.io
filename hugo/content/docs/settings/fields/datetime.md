@@ -47,7 +47,22 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     name: [String]
     label: [String]
     description: [String] 
+    default: [String]
     hidden: [true|false]
     config:
       date_format: [String]
       time_format: [String] 
+
+### Example
+    type: datetime
+    name: date
+    label: Date
+    description: The creation date for this page 
+    hidden: false
+    config:
+      date_format: "YYYY/MM/DD"
+      time_format: "HH:MM:SS"
+
+{{% tip %}}
+The `date_format` and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
+{{% /tip %}}

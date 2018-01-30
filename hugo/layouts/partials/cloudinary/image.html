@@ -23,8 +23,10 @@
     {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
     
     {{/* Generate the img placeholder */}}
+    {{- $quality := index ($page.Scratch.Get "url") "quality" -}}
     {{- $page.Scratch.SetInMap "url" "quality" "10" -}}
     {{- $placeholder := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
+    {{- $page.Scratch.SetInMap "url" "quality" $quality -}}
     
     {{/* Generate srcset */}}
     {{- $min_width := (int .min_width) | default (int $preset.min_width) -}}

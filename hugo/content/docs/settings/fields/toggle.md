@@ -63,7 +63,8 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
 type: boolean
 name: [String]
 label: [String]
-description: [String] 
+description: [String]
+default: [true|false]
 hidden: [true|false]
 ```
 
@@ -73,5 +74,6 @@ type: boolean
 name: is_featured
 label: Is Featured?
 description: Mark this page as featured
+default: true
 hidden: false
 ```
