@@ -12,76 +12,77 @@ jobs:
     working_directory: ~/repo
 
     steps:
-    - checkout
+      - checkout
 
-    - restore_cache:
-        keys:
-        - node-dependencies-{{ checksum "package.json" }}
+      - restore_cache:
+          keys:
+          - node-dependencies-{{ checksum "package.json" }}
 
-    - run:
-        name: Install Node Dependencies
-        command: |
-          npm install
+      - run:
+          name: Install Node Dependencies
+          command: |
+            npm install
 
-    - save_cache:
-        paths:
-          - node_modules
-        key: node-dependencies-{{ checksum "package.json" }}
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-dependencies-{{ checksum "package.json" }}
 
-    - run:
-        name: Run build
-        command: |
-          npm run build
+      - run:
+          name: Run build
+          command: |
+            npm run build
 
-    - run:
-        name: [CircleCI] Create Artifacts
-        command: |
-          tar -zcvf dist.tar.gz ./dist
+      - run:
+          name: Create Artifacts
+          command: |
+            tar -zcvf dist.tar.gz ./dist
 
-    - store_artifacts:
-        path: dist.tar.gz
+      - store_artifacts:
+          path: dist.tar.gz
 
-    - run:
-        name: "Test HTML"
-        command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --file_ignore=./dist/admin/index.html,./dist/404.html
-    - deploy:
-        name: "Deploy website to AWS S3"
-        command: |
-          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
-            echo "Deploying branch master to S3"
-            aws s3 sync ./dist s3://${AWS_S3_BUCKET} --delete
-          else
-            echo "Successfully built ${CIRCLE_BRANCH}"
-          fi
+      - run:
+          name: "Test HTML"
+          command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --file_ignore=./dist/admin/index.html,./dist/404.html
 
-    - run:
-        name: Update redirects
-        command: |
-          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
-            path_join() {
-              part1=$1
-              part2=$2
-              if [ "${part1: -1}" == "/" ]; then
-                  part1=${part1}${part2}
-              else
-                  part1=${part1}/${part2}
-              fi
-              echo $part1
-            }
+      - deploy:
+          name: "Deploy website to AWS S3"
+          command: |
+            if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+              echo "Deploying branch master to S3"
+              aws s3 sync ./dist s3://${AWS_S3_BUCKET} --delete
+            else
+              echo "Successfully built ${CIRCLE_BRANCH}"
+            fi
 
-            for redirect in $(cat ./dist/redirects.json | jq -c '.[]'); do
-              from=$(echo $redirect | jq '. | .Condition.KeyPrefixEquals' | cut -d "\"" -f 2)
-              to=$(echo $redirect | jq '. | .Redirect.ReplaceKeyPrefixWith' | cut -d "\"" -f 2)
+      - run:
+          name: Update redirects
+          command: |
+            if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+              path_join() {
+                part1=$1
+                part2=$2
+                if [ "${part1: -1}" == "/" ]; then
+                    part1=${part1}${part2}
+                else
+                    part1=${part1}/${part2}
+                fi
+                echo $part1
+              }
 
-              from=$(path_join $from "index.html")
+              for redirect in $(cat ./dist/redirects.json | jq -c '.[]'); do
+                from=$(echo $redirect | jq '. | .Condition.KeyPrefixEquals' | cut -d "\"" -f 2)
+                to=$(echo $redirect | jq '. | .Redirect.ReplaceKeyPrefixWith' | cut -d "\"" -f 2)
 
-              aws s3 cp s3://${AWS_S3_BUCKET}${from} s3://${AWS_S3_BUCKET}${from} --website-redirect ${to} --metadata-directive REPLACE
-            done
-          fi
+                from=$(path_join $from "index.html")
 
-    - run:
-        name: Invalidate Cache
-        command: |
-          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
-            aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
-          fi
+                aws s3 cp s3://${AWS_S3_BUCKET}${from} s3://${AWS_S3_BUCKET}${from} --website-redirect ${to} --metadata-directive REPLACE
+              done
+            fi
+
+      - run:
+          name: Invalidate Cache
+          command: |
+            if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+              aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
+            fi
