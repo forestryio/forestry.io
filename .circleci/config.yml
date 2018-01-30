@@ -5,6 +5,9 @@ jobs:
   build:
     docker:
     - image: forestryio/build-images:forestry-io
+      auth:
+        username: $DOCKER_USER
+        password: $DOCKER_PASS
 
     working_directory: ~/repo
 
@@ -43,7 +46,7 @@ jobs:
         command: |
           if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
             echo "Deploying branch master to S3"
-            aws s3 sync ./dist s3://${AWS_S3_BUCKET}
+            aws s3 sync ./dist s3://${AWS_S3_BUCKET} --delete
           else
             echo "Successfully built ${CIRCLE_BRANCH}"
           fi
