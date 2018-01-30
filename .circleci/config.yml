@@ -4,7 +4,7 @@ version: 2
 jobs:
   build:
     docker:
-    - image: chrisdmacrae/static-deploy:latest
+    - image: forestryio/forestry.io:latest
 
     working_directory: ~/repo
 
