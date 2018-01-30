@@ -31,5 +31,5 @@
     {{ $page.Scratch.Set "content" (replace $content $value $replacement) }}
     {{ end }}
   {{ end }}
-  {{ markdownify ($page.Scratch.Get "content") }}
+  {{- ($page.Scratch.Get "content") | safeHTML -}}
 {{- end -}}

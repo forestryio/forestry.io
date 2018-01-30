@@ -34,7 +34,7 @@ jobs:
           npm run build
 
     - run:
-        name: Create Artifacts
+        name: [CircleCI] Create Artifacts
         command: |
           tar -zcvf dist.tar.gz ./dist
 
@@ -42,9 +42,8 @@ jobs:
         path: dist.tar.gz
 
     - run:
-        name: "[Test] HTMLProofer"
-        command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external
-
+        name: "Test HTML"
+        command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --file_ignore=./dist/admin/index.html,./dist/404.html
     - deploy:
         name: "Deploy website to AWS S3"
         command: |
