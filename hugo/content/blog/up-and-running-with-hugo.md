@@ -177,7 +177,7 @@ We're going to use the [Ananke](https://github.com/budparr/gohugo-theme-ananke.g
 
 In your terminal, run:
 
-    git init && git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/
+    git init && git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/gohugo-theme-ananke
 
 Next, you'll need to update your site's configuration with any of the theme-specific configuration options. The theme has an example site, so we'll use it.
 
