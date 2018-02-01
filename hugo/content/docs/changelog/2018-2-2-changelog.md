@@ -25,4 +25,10 @@ draft: true
 ---
 ### Bug Fixes
 
+* **Front Matter Groups:** Fixed a regression which prevented front matter groups from rendering inside data files.
+* **Import from Gitlab:** Fixed an issue that prevented importing from Gitlab if a legacy ssh key existed.
+* **Import site from subdirectory (Gitlab):** Fixed issue preventing the import of sites in subdirectories from Gitlab repositories.
+
+### Security Update
+
 * **Mixpanel Patch:**  A security vulnerability was discovered in the Mixpanel javascript libraray. They released a patch to handle this vulnerability and we upgraded immediately.
