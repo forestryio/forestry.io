@@ -19,6 +19,11 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu:
+  troubleshooting:
+    name: Using a Git submodule for you theme
+    weight: 1
+    parent: Troubleshooting
 
 ---
 If you have a repository for your Jekyll or Hugo project and you want use a different repository for your theme, you should set up your theme repo as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
