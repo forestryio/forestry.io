@@ -19,9 +19,10 @@ cta:
 private: false
 weight: ''
 aliases: []
+type: ''
 draft: true
 
 ---
 ### Bug Fixes
 
-* 
+* **Mixpanel Patch:**  A security vulnerability was discovered in the Mixpanel javascript libraray. They released a patch to handle this vulnerability and we upgraded immediately.
