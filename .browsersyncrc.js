@@ -1,5 +1,6 @@
 // Full list of options:
 // http://www.browsersync.io/docs/options/
+import dotenv from "dotenv"
 import GulpConfig from "./gulp.config"
 
 /**
