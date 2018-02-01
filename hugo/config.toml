@@ -91,6 +91,11 @@ ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
 gtmid = "GTM-KL5HP9Q"
 images = ["/uploads/2018/01/OGimage-01-3x.jpg"]
 mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
+[params.algolia]
+params = [
+    "tags",
+    "categories"
+]
 [params.cloudinary]
 cloud_name = "forestry-demo"
 use_upload = false

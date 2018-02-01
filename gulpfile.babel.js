@@ -4,6 +4,7 @@ import browserSyncConfig from "./.browsersyncrc.js"
 import chalk from "chalk"
 import debounce from "gulp-debounce"
 import del from "del"
+import dotenv from "dotenv"
 import fs from "fs"
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
@@ -28,11 +29,10 @@ const isProduction = env === "production"
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
 
-let ENV_VARS = process.env
-
-if (fs.existsSync("./.env.js")) {
-  ENV_VARS = require("./.env").default
-}
+/**
+ * Load env vars from .env if available
+ */
+dotenv.config()
 
 /**
  * @task hugo

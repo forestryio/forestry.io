@@ -1,26 +1,24 @@
 {{/* Generates a valid Algolia search index */}}
-[
-    {{- $len := len (where .Data.Pages "Params.private" "ne" "true") -}}
-    {{- range $i, $value := where .Data.Pages "Params.private" "ne" "true" -}}
-    {
-      "title": {{ jsonify $value.Title }},
-      "permalink": {{ jsonify $value.Permalink }},
-      "lang": {{ jsonify $value.Lang }},
-      "lastmod": {{ jsonify ($value.Lastmod.UTC.Unix) }},
-      "date": {{ jsonify ($value.Date.UTC.Unix) }},
-      "publishDate": {{ jsonify ($value.PublishDate.UTC.Unix) }},
-      "expiryDate": {{ jsonify ($value.ExpiryDate.UTC.Unix) }},
-      "summary": {{ jsonify $value.Summary}},
-      "readingTime": {{ jsonify $value.ReadingTime }},
-      "wordCount": {{ jsonify $value.WordCount }},
-      "weight": {{ jsonify $value.Weight }},
-      "section": {{ jsonify $value.Section }},
-      {{- range $key, $value := $value.Params -}}
-      {{- if (eq $key "tags") | or (eq $key "authors") | or (eq $key "categories") -}}
-      "{{ $key }}": [{{ jsonify (delimit $value ",") }}],
-      {{- end -}}
-      {{- end -}}
-      "objectID": {{ jsonify $value.UniqueID }}
-    }{{- if not (eq $len ($i | add 1)) -}},{{- end -}}
+{{- $hits := slice -}}
+{{- $validParams := $.Site.Params.algolia.params | default slice -}}
+{{- range $i, $hit := where .Data.Pages "Params.private" "ne" "true" -}}
+  {{- $dot := . -}}
+  {{- .Scratch.SetInMap $hit.File.Path "title" $hit.Title -}}
+  {{- .Scratch.SetInMap $hit.File.Path "permalink" $hit.Permalink -}}
+  {{- .Scratch.SetInMap $hit.File.Path "lang" $hit.Lang -}}
+  {{- .Scratch.SetInMap $hit.File.Path "lastmod" $hit.Lastmod.UTC.Unix -}}
+  {{- .Scratch.SetInMap $hit.File.Path "date" $hit.Date.UTC.Unix -}}
+  {{- .Scratch.SetInMap $hit.File.Path "publishdate" $hit.PublishDate.UTC.Unix -}}
+  {{- .Scratch.SetInMap $hit.File.Path "expirydate" $hit.ExpiryDate.UTC.Unix -}}
+  {{- .Scratch.SetInMap $hit.File.Path "summary" $hit.Summary -}}
+  {{- .Scratch.SetInMap $hit.File.Path "readingTime" $hit.ReadingTime -}}
+  {{- .Scratch.SetInMap $hit.File.Path "weight" $hit.Weight -}}
+  {{- .Scratch.SetInMap $hit.File.Path "section" $hit.Section -}}
+  {{- range $key, $param := $hit.Params -}}
+    {{- if in $validParams $key -}}
+      {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
     {{- end -}}
-  ]
+  {{- end -}}
+  {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
+{{- end -}}
+{{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}

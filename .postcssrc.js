@@ -1,5 +1,11 @@
 // Learn more about PostCSS:
 // https://github.com/postcss/postcss
+import dotenv from "dotenv"
+
+/**
+ * Load env vars from .env if available
+ */
+dotenv.config()
 
 module.exports = function(ctx = {}) {
   const file = ctx.file

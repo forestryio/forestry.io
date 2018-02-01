@@ -2,6 +2,11 @@
 // http://www.browsersync.io/docs/options/
 import GulpConfig from "./gulp.config"
 
+/**
+ * Load env vars from .env if available
+ */
+dotenv.config()
+
 export default function(env) {
   const gulpConfig = GulpConfig()
   const isProduction = (env === "production") || (process.env.NODE_ENV === "production")

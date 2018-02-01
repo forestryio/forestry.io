@@ -1,19 +1,16 @@
 // Learn more about configuring Webpack
 // https://webpack.js.org/concepts/
-import webpack from "webpack"
+import dotenv from "dotenv"
 import fs from "fs"
+import webpack from "webpack"
+
+/**
+ * Load env vars from .env if available
+ */
+dotenv.config()
 
 export default function(env) {
   const isProduction = (env === "production") || (process.env.NODE_ENV === "production")
-
-  let ENV_VARS = {
-    ALGOLIA_APP_ID: null,
-    ALGOLIA_SEARCH_KEY: null
-  }
-
-  if (fs.existsSync("./.env.js")) {
-    ENV_VARS = Object.assign(ENV_VARS, require("./.env").default)
-  }
 
   return {
     output: {
