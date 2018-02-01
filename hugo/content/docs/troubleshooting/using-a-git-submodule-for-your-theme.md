@@ -30,7 +30,7 @@ If you have a repository for your Jekyll or Hugo project and you want use a diff
 
 To add a theme as a Git Submodule, run the following command from the root of your project:
 
-`git submodule add https://github.com/spf13/hyde.git themes/hyde`
+    git submodule add https://github.com/spf13/hyde.git themes/hyde
 
 Be sure to add the correct **URL** to your theme repo and the correct **path** to where you want this repo to live within your project.
 
