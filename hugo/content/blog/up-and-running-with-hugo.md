@@ -48,11 +48,11 @@ Hugo is the popular static site generator written in GoLang and is incredibly fa
 
 We'll be using [_Hugo Boilerplate_](https://github.com/forestryio/hugo-boilerplate "See Hugo Boilerplate on GitHub")_,_ a continuously maintained boilerplate project for Hugo sites.
 
-To get started, [download the Hugo Boilerplate](https://github.com/forestryio/hugo-boilerplate/archive/master.zip "Download from GitHub"), and unzip the archive somewhere on your computer. You'll also have to have [Node.js]() and [NPM](https://www.npmjs.com/) installed, just follow the instructions on [Node's download page](https://nodejs.org/en/download/).
+To get started, [download the Hugo Boilerplate](https://github.com/forestryio/hugo-boilerplate/archive/master.zip "Download from GitHub"), and unzip the archive somewhere on your computer. You'll also have to have [Node.js](https://nodejs.org) and [NPM](https://www.npmjs.com/) installed, just follow the instructions on [Node's download page](https://nodejs.org/en/download/).
 
 {{% tip %}}
 
-Already have a Hugo site? In that case, feel free to skip ahead to the [_Continuous Deployment with Forestry_](#continuous-deployment-with-forestry) section.
+Already have a Hugo site? In that case, feel free to skip ahead to the [Setting Up A Git Repository for CI & CD](#5-setting-up-a-git-repository-for-CI-CD) section.
 
 {{% /tip %}}
 
@@ -202,7 +202,7 @@ First, we'll customize the homepage. Open up `hugo/content/_index.md` and update
 
 ![](/uploads/2018/02/janko-seboek-17854.jpg)
 
-Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\[params\\\]`. Below, find the parameter `featured_image` and update it to `"/img/janko-seboek-17854.jpg"`, and save your changes.
+Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\\\\\[params\\\\\\\]`. Below, find the parameter `featured_image` and update it to `"/img/janko-seboek-17854.jpg"`, and save your changes.
 
 Also open up `hugo/content/index.md` and `hugo/content/about/_index.md` and remove the `featured_image` param.
 
@@ -345,7 +345,7 @@ Finally, push your local repositories history to the remote repository's `master
 
 Congrats! You now have a working Hugo site, set up with version control so that you can easily set up continuous integration and continuous deployment.
 
-### Next week
+## Next week
 
 Next week we'll be releasing a post on setting up continuous deployment to various hosting providers using [_Forestry_](https://forestry.io)_,_ the CMS for static sites built with Hugo and Jekyll.
 
