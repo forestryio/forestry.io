@@ -38,11 +38,11 @@ Hugo is the popular static site generator written in GoLang, and is incredibly f
 
 ## Table of Contents
 
-1. [Setting up Hugo on your local machine](#setting-up-hugo)
-2. [Adding Content & Installing a Theme](#setting-up-your-site)
-3. [Customizing Your Site](#customizing-your-site)
-4. [Customizing Your Theme](#customizing-your-theme)
-5. [Setting Up A Git Repository for CI & CD](#Setting-Up-A-Git-Repository-for-CI-CD)
+1. [Setting up Hugo on your local machine](#1-setting-up-hugo)
+2. [Adding Content & Installing a Theme](#2-setting-up-your-site)
+3. [Customizing Your Site](#3-customizing-your-site)
+4. [Customizing Your Theme](#4-customizing-your-theme)
+5. [Setting Up A Git Repository for CI & CD](#5-setting-up-a-git-repository-for-CI-CD)
 
 ## 1) Setting Up Hugo
 
