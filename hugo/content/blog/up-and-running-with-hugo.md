@@ -1,6 +1,6 @@
 ---
 title: 'Up & Running With Hugo: A 5 Step Guide'
-description: Get up and running with Hugo in less than 30 minutes
+description: Build a working static site using Hugo in less than 30 minutes
 date: 2018-01-31 13:26:21 +0000
 authors:
 - Chris Macrae
