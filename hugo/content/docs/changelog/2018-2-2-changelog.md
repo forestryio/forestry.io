@@ -20,7 +20,6 @@ private: false
 weight: ''
 aliases: []
 type: ''
-draft: true
 
 ---
 ### Bug Fixes
@@ -31,4 +30,4 @@ draft: true
 
 ### Security Update
 
-* **Mixpanel Patch:**  A security vulnerability was discovered in the Mixpanel javascript libraray. They released a patch to handle this vulnerability and we upgraded immediately.
+* **Mixpanel Patch:**  A security vulnerability was discovered in the Mixpanel javascript libraray. They released a patch to handle this vulnerability and we upgraded immediately. See this [Reddit thread]() and this [Github issue](https://github.com/mixpanel/mixpanel-js/issues/164 "SECURITY CONCERN mixpanel autotracking password field") for more information.
