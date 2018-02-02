@@ -34,7 +34,7 @@ This guide was most recently updated on **February 9, 2018.**
 
 For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on Forestry, including setting up automated continuous deployment from a Git repository.
 
-Hugo is the popular static site generator written in GoLang, and is incredibly fast. In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo.
+Hugo is the popular static site generator written in GoLang and is incredibly fast. In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo.
 
 ## Table of Contents
 
@@ -97,14 +97,14 @@ To get started, we're going to add new content to the site. To do so, we'll need
 
 ## Update A Post
 
-To start, let's update the example post shipped with the _Hugo Boilerplate_. Open up `hugo/content/posts/example.md` in your text editor. You'll see `title` front matter field, and some example markdown content.
+To start, let's update the example post shipped with the _Hugo Boilerplate_. Open up `hugo/content/posts/example.md` in your text editor. You'll see `title` front matter field and some example markdown content.
 
     ---
     title:  "Welcome to Hugo!"
     ---
     You’ll find this post in your `content/posts` directory.
     
-    To add new posts, simply add a file in the `content/posts` directory that follows the convention `name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+    To add new posts, simply add a file in the `content/posts` directory that follows the convention `name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea of how it works.
     
     Hugo also offers powerful support for code snippets:
     
@@ -141,13 +141,13 @@ TK: image
 
 Save your changes and then view the updated post in your browser at [https://localhost:3000/posts/example/](https://localhost:3000/posts/example/).
 
-## Create An New Post
+## Create A New Post
 
-Now let's create a new post. We'll use Hugo's built in commands to generate our new post by running:
+Now let's create a new post. We'll use Hugo's built-in commands to generate our new post by running:
 
     npm run hugo -- new posts/my-first-post.md
 
-This will create your new post at `hugo/content/posts/my-first-post.md` as a markdown file. Open this file in your favourite text editor.
+This will create your new post at `hugo/content/posts/my-first-post.md` as a markdown file. Open this file in your favorite text editor.
 
     ---
     title: "My First Post"
@@ -172,9 +172,9 @@ Right now your new site isn't looking very pretty. Let's fix that by adding a pr
 
 We're going to use the [Ananke](https://github.com/budparr/gohugo-theme-ananke.git) theme by _Bud Parr._ We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/gohugo-theme-ananke/`
 
-[Download the theme](https://github.com/budparr/gohugo-theme-ananke/archive/master.zip), unzip the archive, and then copy the contents to `hugo/themes/gohugo-ananke/theme/`.
+[Download the theme](https://github.com/budparr/gohugo-theme-ananke/archive/master.zip), unzip the archive and then copy the contents to `hugo/themes/gohugo-ananke/theme/`.
 
-Next, you'll need to update your site's configuration with any of the theme-specific configuration. The theme has an example site, so we'll just use it.
+Next, you'll need to update your site's configuration with any of the theme-specific configurations. The theme has an example site, so we'll just use it.
 
 Copy the example site content into your site by running:
 
@@ -185,7 +185,7 @@ The example config comes with a few placeholder values that won't work. Open `hu
 * Remove `themesDir = "../.."`
 * Update `title = "Notre-Dame de Paris"` to `title = "Hugo Boilerplate Site"`
 
-Finally, the boilerplate comes with some example layouts for developers that are building from scratch. Lets remove these for now by running:
+Finally, the boilerplate comes with some example layouts for developers that are building from scratch. Let's remove these for now by running:
 
     rm -r hugo/layouts/
 
@@ -193,9 +193,9 @@ Now head back over to the browser and check out your updated site!
 
 ## 3) Customizing Your Site
 
-Now that we've setup a basic working site with a theme, you'll probably want to personalize it.
+Now that we've set up a basic working site with a theme, you'll probably want to personalize it.
 
-First we'll customize the homepage. Open up `hugo/content/_index.md` and update `title` and `description` to be more personal. E.g,
+First, we'll customize the homepage. Open up `hugo/content/_index.md` and update `title` and `description` to be more personal. E.g,
 
 * `title: "Ananke: a Hugo Theme"` => `title: "My Cool Boilerplate Site"`
 * `description: "The last theme you'll ever need. Maybe."` => `description: "The first theme I've ever used. Maybe."`
@@ -241,7 +241,7 @@ Next, open `hugo/layouts/partials/site-scripts.html` and the following to the bo
 
     <script src="{{ "js/scrips.min.js" | absURL }}" async></script>
 
-Now all of your custom CSS and JS will be used in the site!
+Now all of your custom CSS and JS will be used on the site!
 
 ### Updating the Post Header
 
@@ -327,11 +327,11 @@ Head over to your favorite Git provider and create a new repository. _If prompte
 
 {{% tip %}}
 
-If you're new to Git, we recommend you create a [GitHub account](github.com/signup), and then create a [GitHub repository](https://help.github.com/articles/create-a-repo/).
+If you're new to Git, we recommend you create a [GitHub account](github.com/signup) and then create a [GitHub repository](https://help.github.com/articles/create-a-repo/).
 
 {{% /tip %}}
 
-Next, grab the _Remote URL_ for your repository, and we'll all it to your local repository. _(Instructions for finding this can be found for_ [_GitHub_](https://help.github.com/articles/which-remote-url-should-i-use/)_,_ [_BitBucket_](https://confluence.atlassian.com/bitbucket/change-the-remote-url-to-your-repository-794212774.html)_.)_
+Next, grab the _Remote URL_ for your repository, and we'll add it to your local repository. _(Instructions for finding this can be found for_ [_GitHub_](https://help.github.com/articles/which-remote-url-should-i-use/)_,_ [_BitBucket_](https://confluence.atlassian.com/bitbucket/change-the-remote-url-to-your-repository-794212774.html)_.)_
 
     git remote add origin YOUR_REMOTE_URL && git branch -u origin/master
 
