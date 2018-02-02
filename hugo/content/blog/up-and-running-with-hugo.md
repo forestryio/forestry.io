@@ -245,7 +245,9 @@ Now all of your custom CSS and JS will be used on the site!
 
 ### Updating the Post Header
 
-You'll notice that the homepage, about page, article listing and post listings all use the new `featured_image` we updated in, but not in our individual articles or posts.
+You'll notice that the homepage, about page, and post listing all use the new `featured_image` we updated in `config.toml`, but not in our individual posts.
+
+Let's update the page header to use our fallback image if it isn't defined in the post's front matter.
 
 Run the following command from your terminal to make a copy of the page header layout:
 
@@ -253,7 +255,7 @@ Run the following command from your terminal to make a copy of the page header l
 
 Then open up `hugo/layouts/partials/page-header.html` in your favorite text editor. This partial renders the page header _only_ if a `featured_image` param is provided in the post's front matter.
 
-Let's update the page header to use our fallback image if it isn't defined in the post's front matter. On the first line, we'll update:
+On the first line, we'll update:
 
     {{ $featured_image := .Params.featured_image }}
 
