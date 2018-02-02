@@ -291,7 +291,7 @@ Version control also maintains a complete history of all changes that are checke
 
 Git is our version control system, which will enable CI & CD through tools like [Forestry](https://forestry.io).
 
-{{% tip %}
+{{% tip %}}
 
 If you're new to Git and don't have Git installed, head over to [Git download page](https://git-scm.com/downloads) to download an installer for your OS.
 
