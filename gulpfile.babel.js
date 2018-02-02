@@ -1,4 +1,5 @@
 import algoliasearch from "algoliasearch"
+import atomicalgolia from "atomic-algolia"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
 import chalk from "chalk"
@@ -80,25 +81,18 @@ gulp.task("build", ["clean"], cb => {
  */
 gulp.task("algolia", cb => {
   if (isProduction) {
-    const algolia = algoliasearch(
-      ENV_VARS.ALGOLIA_APP_ID,
-      ENV_VARS.ALGOLIA_ADMIN_KEY
-    )
-
     return gulp.src(gulpConfig.algolia.src).pipe(
       through.obj({objectMode: true}, (file, enc, done) => {
-        const index = basename(dirname(file.path))
-        const algoliaIndex = algolia.initIndex(index)
-        const indexData = JSON.parse(file._contents.toString())
+        const indexName = basename(dirname(file.path))
 
-        algoliaIndex.addObjects(indexData, (err, content) => {
-          if (err) {
-            log(err, err.toString(), "Algolia")
-          } else {
-            log(null, `Sending index ${index} to Algolia`, "Algolia")
-          }
+        atomicalgolia(indexName, file.path, function(err, res) {
+          if (err) throw err
+
+          var count = res.objectIDs.length
+          var message = `Sent ${count} operations to ${indexName}...`
+
+          log(null, message, "Algolia")
         })
-
         done()
       })
     )

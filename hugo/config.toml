@@ -94,7 +94,8 @@ mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
 [params.algolia]
 params = [
     "tags",
-    "categories"
+    "categories",
+    "authors"
 ]
 [params.cloudinary]
 cloud_name = "forestry-demo"

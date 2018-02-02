@@ -1,6 +1,6 @@
 // Learn more about PostCSS:
 // https://github.com/postcss/postcss
-import dotenv from "dotenv"
+var dotenv = require("dotenv")
 
 /**
  * Load env vars from .env if available

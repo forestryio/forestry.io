@@ -4,6 +4,7 @@
 {{- range $i, $hit := where .Data.Pages "Params.private" "ne" "true" -}}
   {{- $dot := . -}}
   {{- .Scratch.SetInMap $hit.File.Path "title" $hit.Title -}}
+  {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
   {{- .Scratch.SetInMap $hit.File.Path "permalink" $hit.Permalink -}}
   {{- .Scratch.SetInMap $hit.File.Path "lang" $hit.Lang -}}
   {{- .Scratch.SetInMap $hit.File.Path "lastmod" $hit.Lastmod.UTC.Unix -}}
@@ -19,6 +20,8 @@
       {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
     {{- end -}}
   {{- end -}}
+  {{- $objectId := md5 (jsonify (.Scratch.Get $hit.File.Path)) -}}
+  {{- .Scratch.SetInMap $hit.File.Path "objectID" $objectId -}}
   {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
 {{- end -}}
 {{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}

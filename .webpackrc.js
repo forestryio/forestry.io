@@ -65,8 +65,8 @@ export default function(env) {
       new webpack.EnvironmentPlugin({
         // Provide enviroment variable defaults
         // from .env.js
-        ALGOLIA_APP_ID: ENV_VARS.ALGOLIA_APP_ID,
-        ALGOLIA_SEARCH_KEY: ENV_VARS.ALGOLIA_SEARCH_KEY
+        ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
+        ALGOLIA_SEARCH_KEY: process.env.ALGOLIA_SEARCH_KEY
       })
     ]
   }
