@@ -13,6 +13,7 @@ pages:
 - careers/full-stack.md
 - careers/marketing.md
 - careers/software-engineer.md
+- blog/hugo-and-jekyll-compared.md
 - blog/building-a-company-component-library.md
 - blog/up-and-running-with-hugo.md
 - blog/hugo-vs-jekyll-benchmark.md
@@ -30,7 +31,6 @@ pages:
 - blog/_index.md
 - blog/front-matter-templates.md
 - blog/discontinuing-zip-sites.md
-- blog/hugo-and-jekyll-compared.md
 - blog/choose-static.md
 - blog/march-27th-service-outage.md
 - blog/the-new-forestry-io.md
