@@ -2,7 +2,7 @@
 authors:
 - chris-macrae
 images:
-- "/uploads/2017/12/hugo-jekyll-compared-1.png"
+- "/uploads/2018/02/hugo-jekyll-compared-1.png"
 publishdate: 2017-07-21 08:19:09 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: When it comes to building static sites, the two leading solutions right now
@@ -12,6 +12,18 @@ categories:
 - hugo
 - jekyll
 date: 2017-07-21 08:19:09 +0000
+headline: ''
+description: ''
+textline: ''
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
+menu: []
 draft: true
 
 ---
@@ -45,18 +57,15 @@ In Jekyll, all of your content is stored in text files instead of a database. Th
 
 The simplest form of content in Jekyll is stored in the root of your project as either **Markdown or HTML**. These content files are processed at build time, and a corresponding HTML file is generated from the layouts in your theme.
 
-*Front matter fields* can be added to these files, allowing you to define data that can then be used inside your templates.
+_Front matter fields_ can be added to these files, allowing you to define data that can then be used inside your templates.
 
-```
----
-title: Homepage
-date: 2017-01-30
-tags: [hello, world]
----
-## Hello world
-This is my page's content!
-
-```
+    ---
+    title: Homepage
+    date: 2017-01-30
+    tags: [hello, world]
+    ---
+    ## Hello world
+    This is my page's content!
 
 Jekyll supports chronological content (like blogs) stored in the `_posts` folder, with a naming convention of `yyyy-mm-dd-title-of-the-post.md`.
 
@@ -68,22 +77,19 @@ Jekyll has a large community of free and paid themes available to use.
 
 Themes can easily be installed either by downloading and adding them to your Jekyll project or by installing them as a plugin using RubyGems.
 
-Jekyll’s themes are built using Shopify’s **Liquid templating engine**. Liquid is a *safe templating engine* which is made to run untrusted code on their servers. This means that it’s built to do mostly everything you need without running custom code.
+Jekyll’s themes are built using Shopify’s **Liquid templating engine**. Liquid is a _safe templating engine_ which is made to run untrusted code on their servers. This means that it’s built to do mostly everything you need without running custom code.
 
-```
-&lt;div class=“container”&gt;
-{% for post in site.posts %}
-    &lt;div class="article"&gt;
-    &lt;h2&gt;{{ post.title }}&lt;/h2&gt;
-    &lt;p&gt;{{ post.content }}&lt;/p&gt;
-    {% for tag in post.tags %}
-        &lt;span&gt;{{ tag }}&lt;/span&gt;
+    <div class=“container”>
+    {% for post in site.posts %}
+        <div class="article">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        {% for tag in post.tags %}
+            <span>{{ tag }}</span>
+        {% endfor %}
+        </div>
     {% endfor %}
-    &lt;/div&gt;
-{% endfor %}
-&lt;/div&gt;
-
-```
+    </div>
 
 This is great for beginners and developers looking to create clean, simple, and functional templates.
 
@@ -105,12 +111,9 @@ Jekyll also comes with a very simple asset pipeline built-in, made for handling 
 
 Any `.scss`, `.sass` or `.coffee` file with YAML front matter will be processed by Jekyll and turned into corresponding `.css` and `.js` files.
 
-```
----
----
-alert "Hello world!
-
-```
+    ---
+    ---
+    alert "Hello world!
 
 Due to the need of adding YAML front matter to each file, a lot of larger production Jekyll sites opt to forgo the built-in asset pipeline for a modern build tool like Gulp or Grunt.
 
@@ -121,29 +124,19 @@ These tools allow you to have direct control over your CSS, JS, images, and HTML
 Jekyll by itself is fairly barebones and doesn’t do a lot of the things you expect a modern website to do, such as:
 
 * Menus
-
 * XML Sitemap Generation
-
 * RSS/Atom Feed Generation
-
 * Analytics
-
 * Comments
-
 * Multilingual/il8n
-
 * And much more…
 
 However, this can all be supplemented by using third-party Jekyll plugins, which come in five flavors:
 
 * **Generators**, allow you to add to or change the Jekyll build process
-
 * **Converters**, allow you to add support for new file formats
-
 * **Commands**, allow you to extend the command line functionality of Jekyll
-
 * **Tags**, allow you to add custom Liquid tags
-
 * **Filters**, allow you to modify the output of Liquid tags and variables
 
 For example, we’ve built a [menu plugin](https://github.com/forestryio/jekyll-menus) for Jekyll that allows you to manage menus inside Forestry.
@@ -154,7 +147,7 @@ Another great feature of Jekyll is that it has a well-supported Wordpress import
 
 Last week, we published a breakdown of how Hugo and Jekyll perform.
 
-In our results, we discovered that Jekyll is *much slower* in comparison to Hugo, about 35x slower. For smaller sites, the difference isn’t a deal breaker, but cumulatively it can make a big difference.
+In our results, we discovered that Jekyll is _much slower_ in comparison to Hugo, about 35x slower. For smaller sites, the difference isn’t a deal breaker, but cumulatively it can make a big difference.
 
 Jekyll built in a bracket of 1.4-6 seconds for the majority of the tests. So imagine you had a content team that made on average 100 edits to your site, blog, or docs per week…
 
@@ -168,17 +161,13 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 **Pros:**
 
 * **Simple templating engine.** Jekyll’s templates will feel very familiar to the syntax found in Wordpress or Craft.
-
 * **Rich theme library.** Jekyll has many ready-to-use themes to get started.
-
 * **Rich plugin library.** Jekyll has dozens of plugins to add the features your site will need.
-
 * **GitHub Pages Integration.** Setting up a site with Jekyll and GitHub pages is a breeze.
 
 **Cons:**
 
 * **Slow performance.** If you’re building a small site, it’s no big deal. But larger sites may suffer from slow build times.
-
 * **Lack of built-in features.** First-party features have better support and integration. Jekyll lacks this.
 
 ## Hugo
@@ -207,16 +196,13 @@ In Hugo’s case, all content intended to be generated is stored inside the `con
 
 Hugo also supports **TOML, YAML, and JSON** for front matter where Jekyll only supports YAML.
 
-```
-+++
-title = "Homepage"
-date = "2017-01-30"
-tags = ["hello", "world"]
-+++
-## Hello world
-This is an example of TOML front matter
-
-```
+    +++
+    title = "Homepage"
+    date = "2017-01-30"
+    tags = ["hello", "world"]
+    +++
+    ## Hello world
+    This is an example of TOML front matter
 
 Hugo also supports external data, which can be stored in the `/data` folder of your project, or pulled from third-party sources like REST APIs. It supports both JSON and CSV sources.
 
@@ -228,20 +214,17 @@ If you’re using the CLI (Command Line Interface), [installing themes from the 
 
 Hugo uses GoLang’s [package template](https://golang.org/pkg/html/template/) out of the box. This is similar to Liquid in that it allows limited logic in your templates.
 
-```
-&lt;div class=“container”&gt;
-{{ range .Site.Pages}
-    &lt;div class="article"&gt;
-    &lt;h2&gt;{{ .Title }}&lt;/h2&gt;
-    &lt;p&gt;{{ .Content }}&lt;/p&gt;
-    {{ range .Tags }}
-        &lt;span&gt;{{ . }}&lt;/span&gt;
+    <div class=“container”>
+    {{ range .Site.Pages}
+        <div class="article">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+        {{ range .Tags }}
+            <span>{{ . }}</span>
+        {{ end }}
+        </div>
     {{ end }}
-    &lt;/div&gt;
-{{ end }}
-&lt;/div&gt;
-
-```
+    </div>
 
 Again, this is great for beginners but will require you to extend the template engine with shortcodes to get additional functionality.
 
@@ -280,17 +263,11 @@ For example, with Hugo’s custom output formats feature, you can generate your 
 Here’s a summary of some of Hugo’s best features:
 
 * Menus
-
 * XML Sitemap Generation
-
 * RSS/Atom Feed Generation
-
 * Analytics (via Google Analytics)
-
 * Comments (via Disqus)
-
 * Multilingual/il8n
-
 * Custom Output Formats
 
 ### Performance
@@ -308,19 +285,14 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 **Pros:**
 
 * **Extremely fast.** Build times under 1s.
-
-* **Extremely versatile. **Plenty of out the box functionality for enterprise-scale web sites.
-
+* \*\*Extremely versatile. \*\*Plenty of out the box functionality for enterprise-scale web sites.
 * **Enterprise ready.** With support for multiple output types and multilingual sites, you’re set!
-
-* **Thriving community.** Getting help with Hugo is easy. Ask a question on their forum and you *will* get an answer.
+* **Thriving community.** Getting help with Hugo is easy. Ask a question on their forum and you _will_ get an answer.
 
 **Cons:**
 
 * **No extensions.** Hugo doesn’t have plugin support, so adding highly custom functionality isn’t possible.
-
 * **Confusing template syntax.** While the template engine for Hugo is versatile, it’s fairly non-standard and confusing for beginners.
-
 * **No asset pipeline.** Hugo doesn’t have any asset processing at all, so you need to use third-party tools.
 
 ## Wrapping Up
@@ -332,5 +304,4 @@ Both generators are leaders in the space, and there are great examples of both b
 Now it’s time to make a choice! Here’s a quick summary for you:
 
 * **Jekyll** is a great choice if you’re familiar with the Ruby environment, or a beginner to the space due to its straightforward templating engine and extensive plugins.
-
 * **Hugo** is great for content-driven websites. What it lacks in extensibility, it makes up for in a plethora of built-in features, and speed unmatched by any other static site generator.
