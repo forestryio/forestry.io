@@ -34,10 +34,10 @@ For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag
 
 ## Table of Contents
 
-1. Introduction
-2. Setting up Git
-3. Setting up Continuous Integration
-4. Setting up Continuous Deployment with Forestry
+1. [Introduction](#introduction)
+2. [Setting up Git](#setting-up-git)
+3. [Setting up Continuous Integration](#setting-up-continuous-integration)
+4. [Setting up Continuous Deployment with Forestry](#setting-up-continuous-deployment-with-forestry)
 5. [Next Steps](#next-steps)
 
 ## 1) Introduction
@@ -135,7 +135,7 @@ Now, we'll set up continuous integration for your site. This will allow your dev
 
 We'll do this using the Node package [_Husky_](https://www.npmjs.com/package/husky)_,_ which allows you to run tests and other commands based on [Git hooks](http://githooks.com/).
 
-In this case, we're going to use the `pre-push` hook, to run tests on our CSS and JS before pushing our changes to the remote repository.
+In this case, we're going to use the `pre-push` hook, to run tests on our CSS and JS, and confirm that our production build checks out before pushing our changes to the remote repository.
 
 To get started, run:
 
@@ -153,7 +153,7 @@ In the _Hugo Boilerplate_, it will look something like this:
 
 At the bottom of the scripts, add the following:
 
-    "prepush": "npm run eslint && npm run stylelint"
+    "prepush": "npm run eslint && npm run stylelint && npm run build"
 
 The final `package.json` should look like:
 
