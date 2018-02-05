@@ -62,7 +62,7 @@ More on CI & CD in our [Frequently Asked Questions](https://forestry.io/docs/faq
 
 CI & CD allows you to automate the tedious parts of building websites -- making sure they are built right, and deploying those changes to production or staging environments for your team to review.
 
-Version control also maintains a complete history of all changes that are checked into version control. 
+Version control also maintains a complete history of all changes that are checked into version control.
 
 This enables developers to quickly roll back changes that don't have the outcome that was desired. _(I.e, when a hasty change breaks your whole site! :P)_
 
@@ -102,7 +102,7 @@ Up to this point you've just been working on your _local repository._ If anythin
 
 That's why we set up a _remote repository_ on services like GitHub, BitBucket, or GitLab. That way, our changes are stored in the Cloud and can be shared with your entire team.
 
-Head over to your favorite Git provider and create a new repository. 
+Head over to your favorite Git provider and create a new repository.
 
 _If prompted, ensure you **don't** initialize the repository with a README, license, or a .gitignore file. That will just make things more complicated._
 
@@ -202,13 +202,11 @@ If you haven't already set up your site in Forestry, follow our comprehensive [_
 
 {{% /tip %}}
 
-TK: image
-
 Head over to the [Dashboard](https://app.forestry.io), and select your site.
 
 Once inside the CMS, select _Settings_ from the sidebar, and then scroll down to _Deployment_.
 
-TK: image
+![](/uploads/2018/01/settings-deployment.png)
 
 In the _Deployment_ section, we're going to enable to _Deploy on Git Push_ feature, which watches for changes to your repository and automatically publishes your site when one occurs.
 
@@ -222,4 +220,4 @@ We recommend you head over to the [Forestry docs](https://forestry.io/docs) to l
 
 ### Up Next
 
---
+TK: todo
