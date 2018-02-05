@@ -133,8 +133,6 @@ _Replace_ `YYYY-MM-DDTHH:MM:SS-00:00` _with a valid date, e.g,_ `2018-01-01T12:4
 
 {{% /tip %}}
 
-TK: image
-
 Save your changes and then view the updated post in your browser at [https://localhost:3000/posts/example/](https://localhost:3000/posts/example/).
 
 ## Create A New Post
@@ -162,15 +160,13 @@ Try adding the following to the file and then save your changes.
     ## Hello world
     Hi, I'm the *Hugo Boilerplate*. I hope you're enjoying this guide!
 
-TK: image
-
 You can view the updated post in your browser at [http://localhost:3000/posts/my-first-post/](https://localhost:3000/posts/my-first-post/).
 
 ## Adding A Theme
 
 Right now your new site isn't looking very pretty. Let's fix that by adding a pre-built Hugo theme from the [Hugo Theme Gallery](https://themes.gohugo.io/), built by one of Hugo's great community contributors.
 
-TK: image
+![](/uploads/2018/02/Screen Shot 2018-02-05 at 5.09.25 PM.png)
 
 We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@_vjeantet](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/`
 
@@ -221,7 +217,7 @@ First, we'll customize the site params. Open up `hugo/config.toml` once more, an
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.39.57 PM.png)
 
-Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\[params\\\]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
+Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\\\\\[params\\\\\\\]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.40.26 PM.png)Now head back to your browser to see your updated site.
 
@@ -231,7 +227,7 @@ Now that you've customized your site to be a little more personalized, we'll foc
 
 Earlier we added the Casper theme to the site, which allows Hugo to use all of the HTML layouts stored at `hugo/themes/hugo-theme-casper/layouts/` to generate your site.
 
-Now, we'll _extend_ the theme by using Hugo's **template inheritance.** 
+Now, we'll _extend_ the theme by using Hugo's **template inheritance.**
 
 Any layouts stored in `hugo/layouts/` will _override_ any layout with the same name in theme's layouts directory, allowing us to customize our site without messing with the theme.
 
@@ -285,7 +281,7 @@ Head back over to your browser to see the final result!
 
 Now you're all set to begin building your static site with Hugo!
 
-Feel free to continue using the Casper theme, or start from scratch using the `hugo/layouts/` directory. 
+Feel free to continue using the Casper theme, or start from scratch using the `hugo/layouts/` directory.
 
 {{% tip %}}
 
