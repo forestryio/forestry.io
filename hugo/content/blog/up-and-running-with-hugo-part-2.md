@@ -62,7 +62,9 @@ More on CI & CD in our [Frequently Asked Questions](https://forestry.io/docs/faq
 
 CI & CD allows you to automate the tedious parts of building websites -- making sure they are built right, and deploying those changes to production or staging environments for your team to review.
 
-Version control also maintains a complete history of all changes that are checked into version control. This enables developers to quickly roll back changes that don't have the outcome that was desired. _(I.e, when a hasty change breaks your whole site! :P)_
+Version control also maintains a complete history of all changes that are checked into version control. 
+
+This enables developers to quickly roll back changes that don't have the outcome that was desired. _(I.e, when a hasty change breaks your whole site! :P)_
 
 ## 2) Setting up Git
 
@@ -184,6 +186,12 @@ Our tests had warnings because our Javascript has `console.logs` in it, but didn
 
 Both Eslint (Javascript) and Stylelint (CSS) can be configured from `.eslintrc.yml` and `.stylelintrc.yml` in the root of the boilerplate.
 
+{{% tip %}}
+
+Testing doesn't end here! The sky is the limit. Write your own tests, or try out other common static hosting test suites like [HTML Proofer](https://github.com/gjtorikian/html-proofer) or [Jest](https://blog.sentry.io/2017/10/23/keep-your-blog-consistent-with-jekyll-and-jest).
+
+{{% /tip %}}
+
 ## 4) Setting up Continuous Deployment with Forestry
 
 Your final step is to set up continuous deployment with Forestry, so that each time a commit is pushed to your remote repository,  your site is automatically rebuilt and deployed to your hosting provider!
@@ -204,7 +212,7 @@ TK: image
 
 In the _Deployment_ section, we're going to enable to _Deploy on Git Push_ feature, which watches for changes to your repository and automatically publishes your site when one occurs.
 
-Then, navigate to the hosting tab 
+**Note:** the _Deploy on Git Push_ feature only works when Forestry is handling deploying of your site. To learn how to set up deployment with Forestry, see our [hosting docs](https://forestry.io/docs/hosting/).
 
 ## Next Steps
 
@@ -213,3 +221,5 @@ Now that you've completed the _Up & Running With Hugo_ guide, you're all set to 
 We recommend you head over to the [Forestry docs](https://forestry.io/docs) to learn how Forestry can help make managing your static site easier.
 
 ### Up Next
+
+--
