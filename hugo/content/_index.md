@@ -23,13 +23,13 @@ hero:
       type: video/mp4
     - permalink: "/video/forestry_factory.ogv"
       type: video/ogg
-    logos:
-      textline: Built for static site generators
-      sources:
-      - permalink: img/logos/hugo.svg
-        alt: Hugo
-      - permalink: img/logos/jekyll.svg
-        alt: Jekyll
+  logos:
+    textline: Built for static site generators
+    sources:
+    - permalink: img/logos/hugo.svg
+      alt: Hugo
+    - permalink: img/logos/jekyll.svg
+      alt: Jekyll
 features:
 - headline: Your site, your workflow
   textline: |
