@@ -19,13 +19,13 @@ menu:
 
 This tour will walk you through setting up your first site in Forestry. It demonstrates the primary features and editing functionality of the CMS.
 
-Follow along by forking the [Belkirk Demo Site](https://github.com/forestryio/belkirk-jekyll-demo) on GitHub, or just read through the steps below.
+Follow along by forking the [Belkirk Demo Site](https://github.com/forestryio-templates/belkirk-jekyll-demo) on GitHub, or just read through the steps below.
 
 ---
 
 ## Getting Started
 
-For the purposes of this product tour, we'll assume you have a [GitHub account](https://github.com/signup) and have forked the [Belkirk College demo site](https://github.com/forestryio/belkirk-jekyll-demo).
+For the purposes of this product tour, we'll assume you have a [GitHub account](https://github.com/signup) and have forked the [Belkirk College demo site](https://github.com/forestryio-templates/belkirk-jekyll-demo).
 
 ![](/uploads/2018/01/12.png)
 
@@ -60,7 +60,7 @@ In Forestry, all of your content is sorted into _Collections_ under _Content_ in
 When you first enter the CMS, you will be dropped into the _Pages_ collection. Take a look at the different collections by selecting them from the sidebar.
 
 {{% tip %}}
-The Belkirk Demo Site is [hosted by GitHub pages](https://forestryio.github.io/belkirk-jekyll-demo). Feel free to open it up and navigate around to get an understanding of how the built site looks and feels.
+The Belkirk Demo Site is [hosted by GitHub pages](https://forestryio-templates.github.io/belkirk-jekyll-demo). Feel free to open it up and navigate around to get an understanding of how the built site looks and feels.
 {{% /tip %}}
 
 ---
