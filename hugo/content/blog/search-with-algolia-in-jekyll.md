@@ -27,11 +27,11 @@ Algolia's self-proclaimed claim-to-fame is that they are _"the most reliable pla
 
 ## Table of Contents
 
-1. Why Algolia?
-2. Generating Your Search Index
-3. Sending Your Search Index to Algolia
-4. Updating Your Search Index with Serverless Functions
-5. Next steps
+1. [Why Algolia?](#why-algolia)
+2. [Generating Your Search Index](#generating-your-search-index)
+3. [Sending Your Search Index to Algolia](#sending-your-search-index-to-algolia)
+4. [Updating Your Search Index with Serverless Functions](#updating-your-search-index-with-severless-functions)
+5. [Next steps](#next-steps)
 
 ## 1) Why Algolia?
 
@@ -63,13 +63,14 @@ To get started, open up the config file (usually `_config.yml`) in your favorite
 Here, we'll add the Jekyll configuration for your Algolia index.
 
     algolia:
-    	vars: ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+    	vars: ["title", "excerpt", "date", "url", "categories", "tags"]
 
 ### Creating the JSON Template
 
 To get started, create a file at the root of your Jekyll site called `algolia.json` with the following contents:
 
     ---
+    layout: none
     ---
     [
     {%- comment -%}
@@ -78,23 +79,22 @@ To get started, create a file at the root of your Jekyll site called `algolia.js
     {%- assign validVars = site.algolia.vars -%}
     {%- assign validParams = site.algolia.params -%}
     {%- comment -%}
-      Loop through all Jekyll posts and add to index
+      Loop through all Jekyll collection documents
+      including posts and add to index
     {%- endcomment -%}
-    {%- for item in site.posts -%}
-      {%- if item.hidden !== true && item.published == true && item.draft !== true -%}
+    {%- assign pages = site.pages | where_exp:"item", "item.hidden != true" | where_exp:"item", "item.published != false"  | where_exp:"item", "item.draft != true" -%}
+    {%- for collection in site.collections -%}
+      {%- assign collectionItems = site[collection.label] | where_exp:"item", "item.hidden != true" | where_exp:"item", "item.published != false"  | where_exp:"item", "item.draft != true" -%}
+      {%- for item in collectionItems -%}
         {%- include algolia-hit.json hit=item -%}{% if forloop.last != true %},{% endif %}
-      {%- endif -%}
+      {%- endfor -%}
+      {%- if forloop.length > 0 and pages.length > 0 -%},{% endif %}
     {%- endfor -%}
     {%- comment -%}
-      Loop through all Jekyll collection documents
-      including pages and add to index
+      Loop through all Jekyll pages
     {%- endcomment -%}
-    {%- for collection in site.collections -%}
-      {%- for item in site[collection.label] -%}
-        {%- if item.hidden !== true && item.published == true && item.draft !== true -%}
-          {%- include algolia-hit.json hit=item -%}{% if forloop.last != true %},{% endif %}
-      	{%- endif -%}
-      {%- endfor -%}
+    {%- for item in pages -%}
+      {%- include algolia-hit.json hit=item -%}{% if forloop.last != true %},{% endif %}
     {%- endfor -%}
     ]
 
@@ -102,16 +102,14 @@ In this layout, we loop through all of the site's post and collections and call 
 
 Next, we'll create the include that generates the JSON. Create `_includes/algolia-hit.json` and add the following:
 
-    ---
-    ---
-    {%- if include.hit -%}
+    {% if include.hit %}
     {
-    {%- for var in page -%}
-      {%- if site.algolia.vars contains var[0] -%}
-      "{{ var[0] }}": "{{ var[1] | escape }}"{% if forloop.last != true %},{% endif %}
+    {%- for var in include.hit -%}
+      {%- if site.algolia.vars contains var -%}
+      "{{ var }}": "{{ include.hit[var] }}"{% if forloop.last != true %},{% endif %}
       {%- endif -%}
       {%- if forloop.last == true -%}
-      "objectID": {{ hit.id | md5 }}"
+      "objectID": "{{ include.hit.path }}"
       {%- endif -%}
     {%- endfor -%}
     }
@@ -248,7 +246,7 @@ Then, open up `config/index.js` in your favorite text editor:
     
     }
 
-Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com `with your site's domain.
+Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com`with your site's domain.
 
 ### Deploying the Function
 
