@@ -16,7 +16,7 @@ menu:
 ---
 ## Logo
 
-![](/uploads/2018/01/settings-logo.png)The logo setting allows you to customize the branding of Forestry CMS by allowing you to replace the Forestry logo in various touchpoints in the CMS!
+![](/uploads/2018/01/settings-logo.png)The logo setting allows you to customize the branding of Forestry CMS by allowing you to replace the Forestry logo in various touchpoints in the CMS.
 
 ## Site Name
 
