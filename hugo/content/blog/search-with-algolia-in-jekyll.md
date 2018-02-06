@@ -128,6 +128,8 @@ The above layout will only add pages that do not have `private = true`, `publish
 
 The next step is sending your search index to Algolia. For this article, we'll be using a great NPM package to do this: [atomic-algolia](https://www.npmjs.com/package/atomic-algolia).
 
+To get started, make sure you have Node installed. If you don't, you can do so by [downloading an installer for your operating system](https://nodejs.org/en/download/).
+
 {{% tip %}}
 
 [atomic-algolia](https://www.npmjs.com/package/atomic-algolia) is an NPM package that does _atomic_ updates to an Algolia index. This means that it only updates changed records, adds new records, or deletes expired records, and does it all at once, so that your index is never out-of-sync with your website's content.
@@ -135,8 +137,6 @@ The next step is sending your search index to Algolia. For this article, we'll b
 This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_
 
 {{% /tip %}}
-
-To get started, make sure you have Node installed. If you don't, you can do so by [downloading an installer for your operating system](https://nodejs.org/en/download/).
 
 ### Create Your Index
 
