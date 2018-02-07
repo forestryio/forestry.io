@@ -11,8 +11,5 @@ menu:
   docs:
     parent: Other
     weight: 1
-  troubleshooting:
-    identifier: troubleshooting
-    weight: 1
 
 ---
