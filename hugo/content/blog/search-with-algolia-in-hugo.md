@@ -46,7 +46,7 @@ When it comes down to it, the answer comes down to two factors:
 
 ### How Algolia Works
 
-Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely simple to use in frontend Javascript.
+Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely easy to use in frontend Javascript.
 
 In order to create, update, and maintain an Algolia search index, you'll need to generate a valid JSON array of all of the content in your Hugo site.
 
