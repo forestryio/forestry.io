@@ -9,7 +9,6 @@ import dotenv from "dotenv"
 import fs from "fs"
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
-import hugo from "hugo-bin"
 import imagemin from "gulp-imagemin"
 import named from "vinyl-named"
 import newer from "gulp-newer"
@@ -24,11 +23,12 @@ import through from "through2"
 import webpack from "webpack-stream"
 import webpackConfig from "./.webpackrc.js"
 
-const env = (process.env.HUGO_ENV = process.env.NODE_ENV || "development")
-const argsType = process.env.HUGO_ARGS || env
-const isProduction = env === "production"
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
+const generatorEnvVar = gulpConfig.generator.label.toUpperCase() + "_ENV"
+const env = (process.env[generatorEnvVar] || process.env.NODE_ENV || "development")
+const argsType = process.env.GENERATOR_ARGS || env
+const isProduction = env === "production"
 
 /**
  * Load env vars from .env if available
@@ -36,11 +36,20 @@ const gulpConfig = GulpConfig()
 dotenv.config()
 
 /**
- * @task hugo
- * Runs hugo with environment-based
+ * @task generator
+ * Runs SSG with environment-based
  * build arguments
  */
-gulp.task("hugo", cb => build(cb))
+gulp.task("generator", cb => build(cb))
+
+/**
+ * @task build
+ * Builds all static assets, and then
+ * compiles the static site with Hugo
+ */
+gulp.task("build", ["clean"], cb => {
+  runsequence(["styles", "scripts", "images", "svg"], "generator", "algolia", cb)
+})
 
 /**
  * @task server
@@ -50,27 +59,32 @@ gulp.task("hugo", cb => build(cb))
 gulp.task("server", ["build"], () => {
   browserSync.init(browserSyncConfig())
   gulp.watch(gulpConfig.styles.watch, ["styles"])
+    .on('error', (err) => {
+      log(err, err.toString(), ["Styles"])
+      this.emit(end)
+    })
   gulp.watch(gulpConfig.scripts.watch, ["scripts"])
-  gulp.watch(gulpConfig.images.watch, ["images"])
+    .on('error', (err) => {
+      log(err, err.toString(), ["Scripts"])
+      this.emit(end)
+    })
   gulp.watch(gulpConfig.svg.watch, ["svg"])
+    .on('error', (err) => { 
+      log(err, err.toString(), ["SVG"])
+      this.emit(end)
+    })
   gulp.watch(
     [
       gulpConfig.dest + "/**/*",
       `!${gulpConfig.styles.dest}/**/*`,
-      `!${gulpConfig.scripts.dest}/**/*`,
-      `!${gulpConfig.images.dest}/**/*`
+      `!${gulpConfig.scripts.dest}/**/*`
     ],
-    ["hugo"]
+    ["generator"]
   )
-})
-
-/**
- * @task build
- * Builds all static assets, and then
- * compiles the static site with Hugo
- */
-gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "hugo", "algolia", cb)
+    .on('error', (err) => {
+      log(err, err.toString(), [gulpConfig.generator.label])
+      this.emit(end)
+    })
 })
 
 /**
@@ -280,26 +294,30 @@ gulp.task("clean", () => {
 })
 
 /**
- * Execute Hugo with Build Arguments based
+ * Execute SSG with Build Arguments based
  * upon environment variables
  * @param {Function} cb
  */
 function build(cb) {
-  const args = gulpConfig.hugoArgs.default.concat(
-    gulpConfig.hugoArgs[argsType] || []
+  const args = gulpConfig.generator.args.default.concat(
+    gulpConfig.generator.args[argsType] || []
   )
-  const generator = spawn(hugo, args, {stdio: "pipe", encoding: "utf-8"})
+
+  process.env.NODE_ENV = env
+  process.env[generatorEnvVar] = env
+
+  const generator = spawn(gulpConfig.generator.command, args, {env: process.env, stdio: "pipe", encoding: "utf-8"})
 
   generator.stdout.on("data", data => {
-    log(null, data.toString(), "Hugo")
+    log(null, data.toString(), gulpConfig.generator.label)
   })
 
   generator.stderr.on("data", data => {
-    log(null, data.toString(), "Hugo")
+    log(null, data.toString(), gulpConfig.generator.label)
   })
 
   generator.on("error", err => {
-    log(err, err.toString(), "Hugo")
+    log(err, err.toString(), gulpConfig.generator.label)
     cb("Build failed")
   })
 

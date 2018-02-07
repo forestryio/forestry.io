@@ -178,7 +178,7 @@ All build tasks are handled by Gulp and are located in `gulpfile.babel.js`. All 
 All build source and destination paths can be configured from `gulp.config.js`.
 
 ## Hugo
-The build commands for Hugp can be configured from `gulp.config.js`. Build commands are set based on the `HUGO_ARGS` environment variable, and will fallback to `NODE_ENV` if not provided.
+The build commands for Hugo can be configured from `gulp.config.js`. Build commands are set based on the `GENERATOR_ARGS` environment variable, and will fallback to `NODE_ENV` if not provided.
 
 Four options are available:
 - `default`: the default build commands that are always run

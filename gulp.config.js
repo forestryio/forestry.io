@@ -1,6 +1,7 @@
 // Configures gulp build
 // See gulpfile.babel.js for build pipeline
 import {resolve} from "path"
+import hugo from "hugo-bin"
 
 export default function(env) {
   const src = "src/"
@@ -14,11 +15,15 @@ export default function(env) {
     dest: dest,
     tmp: tmp,
     build: build,
-    hugoArgs: {
-      default: ["--source", resolve(dest), "--destination", resolve(build), "--enableGitInfo"],
-      development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
-      preview: ["-b", "http://localhost:3000"],
-      production: []
+    generator: {
+      label: "Hugo",
+      command: hugo,
+      args: {
+        default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
+        development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
+        preview: ["-b", "http://localhost:3000"],
+        production: []
+      }
     },
     algolia: {
       src: build + "**/algolia.json"
