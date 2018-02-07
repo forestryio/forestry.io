@@ -178,7 +178,7 @@ Head over to your [Algolia app dashboard](https://www.algolia.com/manage/applica
 
 ![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.38.01 PM.png)
 
-Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦)_
+Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦 )_
 
 ![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.35.45 PM.png)You'll be redirected to the app's dashboard. Select the _Indices_ tab on the left, and then click _Add New Index._ Give it a unique name, (.ie, your site's domain), as this is what we'll use when updating the index.
 
