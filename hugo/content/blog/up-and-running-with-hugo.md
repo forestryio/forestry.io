@@ -32,7 +32,7 @@ This guide was most recently updated on **February 9, 2018.**
 
 ---
 
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on Forestry, including setting up automated continuous deployment from a Git repository.
+For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS.
 
 Hugo is the popular static site generator written in GoLang and is incredibly fast. In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo.
 
@@ -217,7 +217,7 @@ First, we'll customize the site params. Open up `hugo/config.toml` once more, an
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.39.57 PM.png)
 
-Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\\\\\[params\\\\\\\]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
+Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\\\\\\\\\\\\\[params\\\\\\\\\\\\\\\]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.40.26 PM.png)Now head back to your browser to see your updated site.
 
