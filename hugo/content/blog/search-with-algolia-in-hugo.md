@@ -87,8 +87,8 @@ In `\\\[outputFormats.Algolia\\\]`:
 
 In `\\\[params.algolia\\\]`:
 
-* `vars` sets the [page variables](https://gohugo.io/variables/page/) you want included in your index.
-* `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) you want included in your index.
+* `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
+* `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
 
 ### Creating the JSON Template
 
