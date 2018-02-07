@@ -21,9 +21,9 @@ menu: []
 draft: true
 
 ---
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉) provider.
+For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
 
-Algolia's self-proclaimed claim-to-fame is that they are _"the most reliable platform for building search into your business,"_ and honestly, it's hard to disagree. Forestry's search is powered by Algolia _(just try searching for Algolia in the search above!)._
+Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable platform for building search into your business,"_ and honestly, it's hard to disagree. Forestry's search is powered by Algolia _(just try searching for Algolia in the search above!)._
 
 ## Table of Contents
 
@@ -46,7 +46,7 @@ When it comes down to it, the answer comes down to two factors:
 
 ### How Algolia Works
 
-Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely to use in frontend Javascript.
+Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely easy to use in frontend Javascript.
 
 In order to create, update, and maintain an Algolia search index, you'll need to generate a valid JSON array of all of the content in your Hugo site.
 
@@ -78,17 +78,17 @@ Here, we'll add the Hugo configuration for your custom output formats.
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\[outputFormats.Algolia\]`:
+In `\\\[outputFormats.Algolia\\\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\[params.algolia\]`:
+In `\\\[params.algolia\\\]`:
 
-* `vars` sets the [page variables](https://gohugo.io/variables/page/) you want included in your index.
-* `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) you want included in your index.
+* `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
+* `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
 
 ### Creating the JSON Template
 
@@ -178,7 +178,7 @@ Head over to your [Algolia app dashboard](https://www.algolia.com/manage/applica
 
 ![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.38.01 PM.png)
 
-Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦)_
+Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦 )_
 
 ![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.35.45 PM.png)You'll be redirected to the app's dashboard. Select the _Indices_ tab on the left, and then click _Add New Index._ Give it a unique name, (.ie, your site's domain), as this is what we'll use when updating the index.
 
@@ -282,7 +282,7 @@ Then, open up `config/index.js` in your favorite text editor:
     
     }
 
-Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com `with your site's domain.
+Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com`with your site's domain.
 
 ### Deploying the Function
 
