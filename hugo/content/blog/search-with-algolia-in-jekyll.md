@@ -304,3 +304,15 @@ This only applies when using GitHub pages to build your site. If you're using Fo
 {{% /warning %}}
 
 ## 5) Next Steps
+
+Now that you've successfully set up search indexing for your static site, it's time to add the actual search interface to your website!
+
+Algolia has a fantastic library called [InstantSearch.js](https://community.algolia.com/instantsearch.js/) for implementing search on the web, and provides a [full tutorial](https://community.algolia.com/instantsearch.js/v2/getting-started.html) for implementing search from scratch.
+
+### Next Week
+
+TK: todo
+
+### Last Week
+
+TK: todo
