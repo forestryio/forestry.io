@@ -9,7 +9,8 @@ headline: ''
 textline: ''
 images: []
 categories: []
-tags: []
+tags:
+- frontend-friday
 cta:
   headline: ''
   textline: ''
