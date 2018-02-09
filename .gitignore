@@ -1,7 +1,7 @@
 # Don't commit system files or dependencies
 *.DS_Store
 node_modules/
-.env.js
+.env
 yarn.lock
 
 # Ensure Hugo builds aren't committed to Git
