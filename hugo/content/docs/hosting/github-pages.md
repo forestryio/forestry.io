@@ -58,3 +58,7 @@ Then select the branch that contains your built static site and click on the Sav
 ![](/uploads/2018/01/41.png)
 
 Your site should now be served at `http://username.github.io/repository`.
+
+{{% tip "Hugo CNAME file" %}}
+With Hugo, ensure your CNAME file is in your `/static` directory. Otherwise, Hugo will delete your CNAME file when building your site. More details here: [Trouble shooting CNAME files](https://forestry.io/docs/troubleshooting/cname/)
+{{% /tip %}}

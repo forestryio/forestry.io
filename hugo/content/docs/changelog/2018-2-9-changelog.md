@@ -19,7 +19,12 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
 
 ---
-### Bug Fixes
+This week we have a short changelog, but keep an eye out as we prepare to release some improvements from the wood shop! 
+
+### Enhancements
+
+* **New Demo Site**: Our demo site was pretty crufty, so we replaced it with a site that's setup to better show off Forestry.
+  * [Source Code](https://github.com/forestryio-templates/belkirk-jekyll-demo "Belkirk Jekyll Demo")
+  * [Try out the demo!](https://app.forestry.io/dashboard#choose "Forestry Dashboard")

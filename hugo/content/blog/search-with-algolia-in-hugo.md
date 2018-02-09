@@ -78,14 +78,14 @@ Here, we'll add the Hugo configuration for your custom output formats.
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\\\[outputFormats.Algolia\\\]`:
+In `\\\\\\\[outputFormats.Algolia\\\\\\\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\\\[params.algolia\\\]`:
+In `\\\\\\\[params.algolia\\\\\\\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
@@ -316,16 +316,14 @@ This set up only works when Forestry is set up to handle the build and deploymen
 
 ## 5) Next Steps
 
-#### GitHub Pages
+Now that you've successfully set up search indexing for your static site, it's time to add the actual search interface to your website!
 
-Head over to the _Settings_ page of your GitHub repository, and then to the _Webhooks_ tab.
+Algolia has a fantastic library called [InstantSearch.js](https://community.algolia.com/instantsearch.js/) for implementing search on the web, and provides a [full tutorial](https://community.algolia.com/instantsearch.js/v2/getting-started.html) for implementing search from scratch.
 
-Click the _Add Webhook_ button, and then fill out the information as follows:
+### Next Week
 
-1. Set _Payload URL_ to the URL you received when deploying your function
-2. Set the _Content Type_ to application/json
-3. Set _Which events would you like to trigger this webhook?_  to _Let me select individual events._ Then ensure only _Page Build_ is checked.
-4. Ensure _Active_ is checked
-5. Click _Add webhook_
+TK: todo
 
-Now each time your GitHub pages site has finished building, your function will be invoked to update your Algolia index.
+### Last Week
+
+TK: todo
