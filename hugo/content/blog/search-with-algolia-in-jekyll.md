@@ -28,10 +28,10 @@ Algolia's self-proclaimed claim-to-fame is that they are _"the most reliable pla
 
 ## Table of Contents
 
-1. [Why Algolia?](#why-algolia)
+1. [Why Algolia?](#1-why-algolia)
 2. [Generating Your Search Index](#2-generating-your-search-index)
 3. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
-4. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-severless-functions)
+4. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
 5. [Next steps](#5-next-steps)
 
 ## 1) Why Algolia?
