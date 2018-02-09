@@ -13,7 +13,6 @@ pages:
 - careers/full-stack.md
 - careers/marketing.md
 - careers/software-engineer.md
-- blog/test.md
 - blog/search-with-algolia-in-hugo.md
 - blog/search-with-algolia-in-jekyll.md
 - blog/up-and-running-with-hugo-part-2.md
