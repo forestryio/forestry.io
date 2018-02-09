@@ -23,6 +23,8 @@ draft: true
 ---
 For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Jekyll site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
 
+![](/uploads/2018/02/forestryio-algolia-search.gif)
+
 Algolia's self-proclaimed claim-to-fame is that they are _"the most reliable platform for building search into your business,"_ and honestly, it's hard to disagree. Forestry's search is powered by Algolia _(just try searching for Algolia in the search above!)._
 
 ## Table of Contents
@@ -311,8 +313,8 @@ Algolia has a fantastic library called [InstantSearch.js](https://community.algo
 
 ### Next Week
 
-TK: todo
+We'll write about Algolia search for your Hugo site. Stay tuned! 
 
 ### Last Week
 
-TK: todo
+We measured the build performance of Hugo and Jekyll last week in [Hugo vs Jekyll: Benchmarked](https://forestry.io/blog/hugo-vs-jekyll-benchmark/ "Hugo Vs Jekyll").  Check it out!
