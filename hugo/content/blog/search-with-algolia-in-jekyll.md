@@ -29,10 +29,10 @@ Algolia's self-proclaimed claim-to-fame is that they are _"the most reliable pla
 ## Table of Contents
 
 1. [Why Algolia?](#why-algolia)
-2. [Generating Your Search Index](#generating-your-search-index)
-3. [Sending Your Search Index to Algolia](#sending-your-search-index-to-algolia)
-4. [Updating Your Search Index with Serverless Functions](#updating-your-search-index-with-severless-functions)
-5. [Next steps](#next-steps)
+2. [Generating Your Search Index](#2-generating-your-search-index)
+3. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
+4. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-severless-functions)
+5. [Next steps](#5-next-steps)
 
 ## 1) Why Algolia?
 
@@ -198,6 +198,10 @@ Having to run the NPM script manually each time your site changes isn't ideal, e
 
 That's why we've created an [open-source template](https://github.com/forestryio-templates/serverless-atomic-algolia) for creating a Serverless [Webtask Function](https://webtask.io/) that can automatically update your Algolia index each time your site is updated using web hooks.
 
+{{% tip "What is serverless?" %}}
+With Serverless, you can set up functions that run in the cloud and don't require a backend server with PHP, Node, etc. These functions can perform little jobs for you (like updating your Algolia index) and are perfect in conjunction with static sites. If you're new to Serverless, check out [this article](https://auth0.com/blog/what-is-serverless/) by Auth0.
+{{% /tip %}}
+
 ### Setting Up
 
 To get started, clone the [template repository](https://github.com/forestryio-templates/serverless-atomic-algolia) to your local machine by running:
@@ -234,21 +238,21 @@ First, copy `config/secrets.yml.stub` to `config/secrets.yml` and then open it u
 Then, open up `config/index.js` in your favorite text editor:
 
     module.exports = () => {
-
+    
       var indexes = [
-
+    
         {
-
+    
           name: "YOUR_INDEX_NAME",
-
+    
           url: "PUBLIC_URL_OF_INDEX"
-
+    
         }
-
+    
       ]
-
+    
       return JSON.stringify(indexes)
-
+    
     }
 
 Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com`with your site's domain.
