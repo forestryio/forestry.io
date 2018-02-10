@@ -1,27 +1,43 @@
 {{/* Generates a valid Algolia search index */}}
 {{- $hits := slice -}}
-{{- $validParams := $.Site.Params.algolia.params | default slice -}}
-{{- range $i, $hit := where .Data.Pages "Params.private" "ne" "true" -}}
+{{- $section := $.Site.GetPage "section" .Section }}
+{{- $validVars := $.Param "algolia.vars" | default slice -}}
+{{- $validParams := $.Param "algolia.params" | default slice -}}
+{{- range $i, $hit := .Site.AllPages -}}
   {{- $dot := . -}}
-  {{- .Scratch.SetInMap $hit.File.Path "title" $hit.Title -}}
-  {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
-  {{- .Scratch.SetInMap $hit.File.Path "permalink" $hit.Permalink -}}
-  {{- .Scratch.SetInMap $hit.File.Path "lang" $hit.Lang -}}
-  {{- .Scratch.SetInMap $hit.File.Path "lastmod" $hit.Lastmod.UTC.Unix -}}
-  {{- .Scratch.SetInMap $hit.File.Path "date" $hit.Date.UTC.Unix -}}
-  {{- .Scratch.SetInMap $hit.File.Path "publishdate" $hit.PublishDate.UTC.Unix -}}
-  {{- .Scratch.SetInMap $hit.File.Path "expirydate" $hit.ExpiryDate.UTC.Unix -}}
-  {{- .Scratch.SetInMap $hit.File.Path "summary" $hit.Summary -}}
-  {{- .Scratch.SetInMap $hit.File.Path "readingTime" $hit.ReadingTime -}}
-  {{- .Scratch.SetInMap $hit.File.Path "weight" $hit.Weight -}}
-  {{- .Scratch.SetInMap $hit.File.Path "section" $hit.Section -}}
-  {{- range $key, $param := $hit.Params -}}
-    {{- if in $validParams $key -}}
-      {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
+  {{- if or (and ($hit.IsDescendant $section) (and (not $hit.Draft) (not $hit.Params.private))) $section.IsHome -}}
+    {{/* Set the hit's objectID */}}
+    {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
+    {{/* Include built-in page variables */}}
+    {{- .Scratch.SetInMap $hit.File.Path "date" $hit.Date.UTC.Unix -}}
+    {{- .Scratch.SetInMap $hit.File.Path "description" $hit.Description -}}
+    {{- .Scratch.SetInMap $hit.File.Path "dir" $hit.Dir -}}
+    {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
+    {{- .Scratch.SetInMap $hit.File.Path "expirydate" $hit.ExpiryDate.UTC.Unix -}}
+    {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
+    {{- .Scratch.SetInMap $hit.File.Path "fuzzywordcount" $hit.FuzzyWordCount -}}
+    {{- .Scratch.SetInMap $hit.File.Path "keywords" $hit.Keywords -}}
+    {{- .Scratch.SetInMap $hit.File.Path "kind" $hit.Kind -}}
+    {{- .Scratch.SetInMap $hit.File.Path "lang" $hit.Lang -}}
+    {{- .Scratch.SetInMap $hit.File.Path "lastmod" $hit.Lastmod.UTC.Unix -}}
+    {{- .Scratch.SetInMap $hit.File.Path "permalink" $hit.Permalink -}}
+    {{- .Scratch.SetInMap $hit.File.Path "publishdate" $hit.PublishDate -}}
+    {{- .Scratch.SetInMap $hit.File.Path "readingtime" $hit.ReadingTime -}}
+    {{- .Scratch.SetInMap $hit.File.Path "relpermalink" $hit.RelPermalink -}}
+    {{- .Scratch.SetInMap $hit.File.Path "summary" $hit.Summary -}}
+    {{- .Scratch.SetInMap $hit.File.Path "title" $hit.Title -}}
+    {{- .Scratch.SetInMap $hit.File.Path "type" $hit.Type -}}
+    {{- .Scratch.SetInMap $hit.File.Path "url" $hit.URL -}}
+    {{- .Scratch.SetInMap $hit.File.Path "weight" $hit.Weight -}}
+    {{- .Scratch.SetInMap $hit.File.Path "wordcount" $hit.WordCount -}}
+    {{- .Scratch.SetInMap $hit.File.Path "section" $hit.Section -}}
+    {{/* Include custom page params */}}
+    {{- range $key, $param := $hit.Params -}}
+      {{- if in $validParams $key -}}
+        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
+      {{- end -}}
     {{- end -}}
+    {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
   {{- end -}}
-  {{- $objectId := md5 (jsonify (.Scratch.Get $hit.File.Path)) -}}
-  {{- .Scratch.SetInMap $hit.File.Path "objectID" $objectId -}}
-  {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
 {{- end -}}
 {{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
