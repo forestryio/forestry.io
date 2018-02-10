@@ -1,5 +1,5 @@
 ---
-title: Bulletproof Static Site Search with Algolia and Jekyll
+title: Bulletproof Jekyll Search with Algolia and Webtasks
 description: ''
 date: 2018-02-06 14:08:22 +0000
 authors:
@@ -9,7 +9,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
-- "/uploads/2018/02/algolia-jekyll.gif"
+- "/uploads/2018/02/algolia-jekyll-webtasks.png"
 categories:
 - Frontend-Friday
 - Jekyll
