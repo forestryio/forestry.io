@@ -8,9 +8,10 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
-tags:
+categories:
+- Jekyll
 - frontend-friday
+tags: []
 cta:
   headline: ''
   textline: ''
@@ -21,7 +22,7 @@ aliases: []
 menu: []
 
 ---
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Jekyll site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
+For this week on [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Jekyll site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
 
 ![](/uploads/2018/02/forestryio-algolia-search.gif)
 
