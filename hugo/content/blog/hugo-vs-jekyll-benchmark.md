@@ -8,6 +8,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
 title: 'Hugo vs Jekyll: Benchmarked'
 categories:
+- Frontend-Friday
 - hugo
 - jekyll
 date: 2018-01-26 09:22:55 +0000
@@ -22,6 +23,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 
 ---
 Hugo and Jekyll are the leading static site generators according to [StaticGen.com](https://staticgen.com), and both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to do an analysis.

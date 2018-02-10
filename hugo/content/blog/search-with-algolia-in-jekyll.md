@@ -1,5 +1,5 @@
 ---
-title: Search with Algolia in Jekyll
+title: Bulletproof Static Site Search with Algolia and Jekyll
 description: ''
 date: 2018-02-06 14:08:22 +0000
 authors: []
@@ -7,8 +7,11 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
-categories: []
+images:
+- "/uploads/2018/02/algolia-jekyll.gif"
+categories:
+- Frontend-Friday
+- Jekyll
 tags: []
 cta:
   headline: ''
@@ -18,20 +21,21 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Jekyll site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
+For this week on [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Jekyll site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
+
+![](/uploads/2018/02/forestryio-algolia-search.gif)
 
 Algolia's self-proclaimed claim-to-fame is that they are _"the most reliable platform for building search into your business,"_ and honestly, it's hard to disagree. Forestry's search is powered by Algolia _(just try searching for Algolia in the search above!)._
 
 ## Table of Contents
 
-1. [Why Algolia?](#why-algolia)
-2. [Generating Your Search Index](#generating-your-search-index)
-3. [Sending Your Search Index to Algolia](#sending-your-search-index-to-algolia)
-4. [Updating Your Search Index with Serverless Functions](#updating-your-search-index-with-severless-functions)
-5. [Next steps](#next-steps)
+1. [Why Algolia?](#1-why-algolia)
+2. [Generating Your Search Index](#2-generating-your-search-index)
+3. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
+4. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
+5. [Next steps](#5-next-steps)
 
 ## 1) Why Algolia?
 
@@ -142,15 +146,15 @@ This is important, because Algolia's plans are based on _operations_ on your ind
 
 Head over to your [Algolia app dashboard](https://www.algolia.com/manage/applications), and click _New Application._
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.33.12 PM.png)Set the application name to something memorable (i.e, your company name), and choose _Community_ as your plan.
+![](/uploads/2018/02/algolia-screen-1.png)Set the application name to something memorable (i.e, your company name), and choose _Community_ as your plan.
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.38.01 PM.png)
+![](/uploads/2018/02/algolia-screen-2-region.png)
 
 Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦 )_
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.35.45 PM.png)You'll be redirected to the app's dashboard. Select the _Indices_ tab on the left, and then click _Add New Index._ Give it a unique name, (.ie, your site's domain), as this is what we'll use when updating the index.
+![](/uploads/2018/02/algolia-screen-3-indicies.png)You'll be redirected to the app's dashboard. Select the _Indices_ tab on the left, and then click _Add New Index._ Give it a unique name, (.ie, your site's domain), as this is what we'll use when updating the index.
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.36.18 PM.png)
+![](/uploads/2018/02/algolia-screen-4-api-keys.png)
 
 Finally, select the _API Keys_ tab on the left, and copy the _Application ID_ and _Admin API Key,_ as we'll need these to update the index.
 
@@ -196,6 +200,10 @@ Now you can update your index more simply by running:
 Having to run the NPM script manually each time your site changes isn't ideal, especially when using services like Forestry.
 
 That's why we've created an [open-source template](https://github.com/forestryio-templates/serverless-atomic-algolia) for creating a Serverless [Webtask Function](https://webtask.io/) that can automatically update your Algolia index each time your site is updated using web hooks.
+
+{{% tip "What is serverless?" %}}
+With Serverless, you can set up functions that run in the cloud and don't require a backend server with PHP, Node, etc. These functions can perform little jobs for you (like updating your Algolia index) and are perfect in conjunction with static sites. If you're new to Serverless, check out [this article](https://auth0.com/blog/what-is-serverless/) by Auth0.
+{{% /tip %}}
 
 ### Setting Up
 
@@ -311,8 +319,8 @@ Algolia has a fantastic library called [InstantSearch.js](https://community.algo
 
 ### Next Week
 
-TK: todo
+We'll write about Algolia search for your Hugo site. Stay tuned!
 
 ### Last Week
 
-TK: todo
+We measured the build performance of Hugo and Jekyll last week in [Hugo vs Jekyll: Benchmarked](https://forestry.io/blog/hugo-vs-jekyll-benchmark/ "Hugo Vs Jekyll").  Check it out!

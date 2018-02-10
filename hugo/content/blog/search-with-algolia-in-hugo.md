@@ -75,7 +75,6 @@ Here, we'll add the Hugo configuration for your custom output formats.
     notAlternative = true
     
     [params.algolia]
-    vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
 In `\\\\\\\[outputFormats.Algolia\\\\\\\]`:
@@ -102,29 +101,51 @@ In the example above, we set `baseName` to `algolia`, which tells Hugo to look f
 
 Copy the contents below into `layouts/_default/list.algolia.json`
 
-    {{/* Generates a valid Algolia search index */}}
-    {{- $hits := slice -}}
-    {{- $validVars := $.Site.Params.algolia.vars | default slice -}}
-    {{- $validParams := $.Site.Params.algolia.params | default slice -}}
-    {{- range $i, $hit := where (where .Data.Pages "Params.private" "ne" "true") "Draft" "ne" "true" -}}
-      {{- $dot := . -}}
-      {{/* Set the hit's objectID */}}
-      {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
-      {{/* Include built-in page variables */}}
-      {{- range $key, $var := $hit -}}
-      	{{- if and not (eq $key "Params") (in $validVars (lower $key)) -}}
-        	{{- .Scratch.SetInMap $hit.File.Path $key $var -}}
-        {{- end -}}
+```
+{{/* Generates a valid Algolia search index */}}
+{{- $hits := slice -}}
+{{- $section := $.Site.GetPage "section" .Section }}
+{{- $validVars := $.Param "algolia.vars" | default slice -}}
+{{- $validParams := $.Param "algolia.params" | default slice -}}
+{{- range $i, $hit := .Site.AllPages -}}
+  {{- $dot := . -}}
+  {{- if or (and ($hit.IsDescendant $section) (and (not $hit.Draft) (not $hit.Params.private))) $section.IsHome -}}
+    {{/* Set the hit's objectID */}}
+    {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
+    {{/* Include built-in page variables */}}
+    {{- .Scratch.SetInMap $hit.File.Path "date" $hit.Date.UTC.Unix -}}
+    {{- .Scratch.SetInMap $hit.File.Path "description" $hit.Description -}}
+    {{- .Scratch.SetInMap $hit.File.Path "dir" $hit.Dir -}}
+    {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
+    {{- .Scratch.SetInMap $hit.File.Path "expirydate" $hit.ExpiryDate.UTC.Unix -}}
+    {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
+    {{- .Scratch.SetInMap $hit.File.Path "fuzzywordcount" $hit.FuzzyWordCount -}}
+    {{- .Scratch.SetInMap $hit.File.Path "keywords" $hit.Keywords -}}
+    {{- .Scratch.SetInMap $hit.File.Path "kind" $hit.Kind -}}
+    {{- .Scratch.SetInMap $hit.File.Path "lang" $hit.Lang -}}
+    {{- .Scratch.SetInMap $hit.File.Path "lastmod" $hit.Lastmod.UTC.Unix -}}
+    {{- .Scratch.SetInMap $hit.File.Path "permalink" $hit.Permalink -}}
+    {{- .Scratch.SetInMap $hit.File.Path "publishdate" $hit.PublishDate -}}
+    {{- .Scratch.SetInMap $hit.File.Path "readingtime" $hit.ReadingTime -}}
+    {{- .Scratch.SetInMap $hit.File.Path "relpermalink" $hit.RelPermalink -}}
+    {{- .Scratch.SetInMap $hit.File.Path "summary" $hit.Summary -}}
+    {{- .Scratch.SetInMap $hit.File.Path "title" $hit.Title -}}
+    {{- .Scratch.SetInMap $hit.File.Path "type" $hit.Type -}}
+    {{- .Scratch.SetInMap $hit.File.Path "url" $hit.URL -}}
+    {{- .Scratch.SetInMap $hit.File.Path "weight" $hit.Weight -}}
+    {{- .Scratch.SetInMap $hit.File.Path "wordcount" $hit.WordCount -}}
+    {{- .Scratch.SetInMap $hit.File.Path "section" $hit.Section -}}
+    {{/* Include custom page params */}}
+    {{- range $key, $param := $hit.Params -}}
+      {{- if in $validParams $key -}}
+        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
       {{- end -}}
-      {{/* Include custom page params */}}
-      {{- range $key, $param := $hit.Params -}}
-        {{- if in $validParams (lower $key) -}}
-          {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
-        {{- end -}}
-      {{- end -}}
-      {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
     {{- end -}}
-    {{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
+    {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
+  {{- end -}}
+{{- end -}}
+{{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
+```
 
 In this layout, we loop through all of the current page's children and do the following:
 
