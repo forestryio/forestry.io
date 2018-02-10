@@ -105,7 +105,6 @@ Copy the contents below into `layouts/_default/list.algolia.json`
 {{/* Generates a valid Algolia search index */}}
 {{- $hits := slice -}}
 {{- $section := $.Site.GetPage "section" .Section }}
-{{- $validVars := $.Param "algolia.vars" | default slice -}}
 {{- $validParams := $.Param "algolia.params" | default slice -}}
 {{- range $i, $hit := .Site.AllPages -}}
   {{- $dot := . -}}
