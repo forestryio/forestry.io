@@ -8,14 +8,14 @@ expirydate: 2030-01-01 04:00:00 +0000
 excerpt: We put Hugo and Jekyll to the test, find out which won.
 title: 'Hugo vs Jekyll: Benchmarked'
 categories:
+- frontend-friday
 - hugo
 - jekyll
 date: 2018-01-26 09:22:55 +0000
 headline: ''
 description: ''
 textline: ''
-tags:
-- frontend-friday
+tags: []
 cta:
   headline: ''
   textline: ''
