@@ -1,5 +1,5 @@
 ---
-title: Search with Algolia in Jekyll
+title: Bulletproof Jekyll Search with Algolia
 description: ''
 date: 2018-02-06 14:08:22 +0000
 authors: []
