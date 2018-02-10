@@ -173,7 +173,7 @@ Next, open up the newly created `package.json`, where we'll add an NPM script to
 
 Now, you can update your index by running the following command:
 
-    ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX={{ YOUR_INDEX NAME }} ALGOLIA_FILE_PATH={{ PATH/TO/algolia.json }} npm run algolia
+    ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX_NAME={{ YOUR_INDEX NAME }} ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }} npm run algolia
 
 {{% tip %}}
 
@@ -189,8 +189,8 @@ Create a new file in the root of your Jekyll project called `.env`, and add the 
 
     ALGOLIA_APP_ID={{ YOUR_APP_ID }}
     ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }}
-    ALGOLIA_INDEX={{ YOUR_INDEX NAME }}
-    ALGOLIA_FILE_PATH={{ PATH/TO/algolia.json }}
+    ALGOLIA_INDEX_NAME={{ YOUR_INDEX NAME }}
+    ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }}
 
 Now you can update your index more simply by running:
 
