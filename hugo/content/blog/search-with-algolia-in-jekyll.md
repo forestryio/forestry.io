@@ -1,5 +1,5 @@
 ---
-title: Bulletproof Jekyll Search with Algolia
+title: Bulletproof Static Site Search with Algolia and Jekyll
 description: ''
 date: 2018-02-06 14:08:22 +0000
 authors: []
