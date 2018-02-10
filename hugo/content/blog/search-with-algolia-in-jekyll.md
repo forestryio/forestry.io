@@ -8,7 +8,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
-- "/uploads/2018/02/banner.png"
+- "/uploads/2018/02/algolia-jekyll.png"
 categories:
 - Frontend-Friday
 - Jekyll
@@ -241,21 +241,21 @@ First, copy `config/secrets.yml.stub` to `config/secrets.yml` and then open it u
 Then, open up `config/index.js` in your favorite text editor:
 
     module.exports = () => {
-    
+
       var indexes = [
-    
+
         {
-    
+
           name: "YOUR_INDEX_NAME",
-    
+
           url: "PUBLIC_URL_OF_INDEX"
-    
+
         }
-    
+
       ]
-    
+
       return JSON.stringify(indexes)
-    
+
     }
 
 Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com`with your site's domain.
