@@ -89,7 +89,7 @@ fields:
     - Static Sites
     - Static Site Generators
     - Company
-    - frontend-friday
+    - Frontend-Friday
 - type: tag_list
   name: tags
   label: Tags
