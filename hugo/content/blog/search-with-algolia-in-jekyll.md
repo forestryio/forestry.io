@@ -318,6 +318,8 @@ Now that you've successfully set up search indexing for your static site, it's t
 
 Algolia has a fantastic library called [InstantSearch.js](https://community.algolia.com/instantsearch.js/) for implementing search on the web, and provides a [full tutorial](https://community.algolia.com/instantsearch.js/v2/getting-started.html) for implementing search from scratch.
 
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="[https://news.ycombinator.com/item?id=16347171](https://news.ycombinator.com/item?id=16347171 "https://news.ycombinator.com/item?id=16347171")">Discuss on Hacker News</a>
+
 ### Next Week
 
 We'll write about Algolia search for your Hugo site. Stay tuned!
