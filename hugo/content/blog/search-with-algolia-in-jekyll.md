@@ -10,8 +10,8 @@ textline: ''
 images:
 - "/uploads/2018/02/banner.png"
 categories:
+- Frontend-Friday
 - Jekyll
-- frontend-friday
 tags: []
 cta:
   headline: ''
