@@ -322,9 +322,9 @@ Algolia has a fantastic library called [InstantSearch.js](https://community.algo
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Front end Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
 <p><strong>Next week:</strong> We'll write about Algolia search for your Hugo site. Stay tuned!</p>  
-<p><strong>Last week:</strong> We measured the build performance of Hugo and Jekyll in <a href="[https://forestry.io/blog/hugo-vs-jekyll-benchmark/](https://forestry.io/blog/hugo-vs-jekyll-benchmark/ "https://forestry.io/blog/hugo-vs-jekyll-benchmark/")">Hugo vs Jekyll: Benchmarked</a>.</p>  
+<p><strong>Last week:</strong> We measured the build performance of Hugo and Jekyll in <a href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">Hugo vs Jekyll: Benchmarked</a>.</p>  
 </div>
 
 ## Have something to add? 
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="[https://news.ycombinator.com/item?id=16347171](https://news.ycombinator.com/item?id=16347171 "https://news.ycombinator.com/item?id=16347171")">Discuss on Hacker News</a>
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16347171">Discuss on Hacker News</a>
