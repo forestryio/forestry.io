@@ -75,16 +75,17 @@ Here, we'll add the Hugo configuration for your custom output formats.
     notAlternative = true
     
     [params.algolia]
+    vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\\\\\\\[outputFormats.Algolia\\\\\\\]`:
+In `\\\\\\\\\\\\\\\[outputFormats.Algolia\\\\\\\\\\\\\\\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\\\\\\\[params.algolia\\\\\\\]`:
+In `\\\\\\\\\\\\\\\[params.algolia\\\\\\\\\\\\\\\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
@@ -101,50 +102,29 @@ In the example above, we set `baseName` to `algolia`, which tells Hugo to look f
 
 Copy the contents below into `layouts/_default/list.algolia.json`
 
-```
-{{/* Generates a valid Algolia search index */}}
-{{- $hits := slice -}}
-{{- $section := $.Site.GetPage "section" .Section }}
-{{- $validParams := $.Param "algolia.params" | default slice -}}
-{{- range $i, $hit := .Site.AllPages -}}
-  {{- $dot := . -}}
-  {{- if or (and ($hit.IsDescendant $section) (and (not $hit.Draft) (not $hit.Params.private))) $section.IsHome -}}
-    {{/* Set the hit's objectID */}}
-    {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
-    {{/* Include built-in page variables */}}
-    {{- .Scratch.SetInMap $hit.File.Path "date" $hit.Date.UTC.Unix -}}
-    {{- .Scratch.SetInMap $hit.File.Path "description" $hit.Description -}}
-    {{- .Scratch.SetInMap $hit.File.Path "dir" $hit.Dir -}}
-    {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
-    {{- .Scratch.SetInMap $hit.File.Path "expirydate" $hit.ExpiryDate.UTC.Unix -}}
-    {{- .Scratch.SetInMap $hit.File.Path "path" $hit.File.Path -}}
-    {{- .Scratch.SetInMap $hit.File.Path "fuzzywordcount" $hit.FuzzyWordCount -}}
-    {{- .Scratch.SetInMap $hit.File.Path "keywords" $hit.Keywords -}}
-    {{- .Scratch.SetInMap $hit.File.Path "kind" $hit.Kind -}}
-    {{- .Scratch.SetInMap $hit.File.Path "lang" $hit.Lang -}}
-    {{- .Scratch.SetInMap $hit.File.Path "lastmod" $hit.Lastmod.UTC.Unix -}}
-    {{- .Scratch.SetInMap $hit.File.Path "permalink" $hit.Permalink -}}
-    {{- .Scratch.SetInMap $hit.File.Path "publishdate" $hit.PublishDate -}}
-    {{- .Scratch.SetInMap $hit.File.Path "readingtime" $hit.ReadingTime -}}
-    {{- .Scratch.SetInMap $hit.File.Path "relpermalink" $hit.RelPermalink -}}
-    {{- .Scratch.SetInMap $hit.File.Path "summary" $hit.Summary -}}
-    {{- .Scratch.SetInMap $hit.File.Path "title" $hit.Title -}}
-    {{- .Scratch.SetInMap $hit.File.Path "type" $hit.Type -}}
-    {{- .Scratch.SetInMap $hit.File.Path "url" $hit.URL -}}
-    {{- .Scratch.SetInMap $hit.File.Path "weight" $hit.Weight -}}
-    {{- .Scratch.SetInMap $hit.File.Path "wordcount" $hit.WordCount -}}
-    {{- .Scratch.SetInMap $hit.File.Path "section" $hit.Section -}}
-    {{/* Include custom page params */}}
-    {{- range $key, $param := $hit.Params -}}
-      {{- if in $validParams $key -}}
-        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
+    {{/* Generates a valid Algolia search index */}}
+    {{- $hits := slice -}}
+    {{- $validVars := $.Site.Params.algolia.vars | default slice -}}
+    {{- $validParams := $.Site.Params.algolia.params | default slice -}}
+    {{- range $i, $hit := where (where .Data.Pages "Params.private" "ne" "true") "Draft" "ne" "true" -}}
+      {{- $dot := . -}}
+      {{/* Set the hit's objectID */}}
+      {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
+      {{/* Include built-in page variables */}}
+      {{- range $key, $var := $hit -}}
+      	{{- if and not (eq $key "Params") (in $validVars (lower $key)) -}}
+        	{{- .Scratch.SetInMap $hit.File.Path $key $var -}}
+        {{- end -}}
       {{- end -}}
+      {{/* Include custom page params */}}
+      {{- range $key, $param := $hit.Params -}}
+        {{- if in $validParams (lower $key) -}}
+          {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
     {{- end -}}
-    {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
-  {{- end -}}
-{{- end -}}
-{{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
-```
+    {{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
 
 In this layout, we loop through all of the current page's children and do the following:
 
@@ -220,7 +200,7 @@ Next, open up the newly created `package.json`, where we'll add an NPM script to
 
 Now, you can update your index by running the following command:
 
-    ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX={{ YOUR_INDEX NAME }} ALGOLIA_FILE_PATH={{ PATH/TO/algolia.json }} npm run algolia
+    ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX_NAME={{ YOUR_INDEX NAME }} ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }} npm run algolia
 
 {{% tip %}}
 
@@ -236,8 +216,8 @@ Create a new file in the root of your Hugo project called `.env`, and add the fo
 
     ALGOLIA_APP_ID={{ YOUR_APP_ID }}
     ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }}
-    ALGOLIA_INDEX={{ YOUR_INDEX NAME }}
-    ALGOLIA_FILE_PATH={{ PATH/TO/algolia.json }}
+    ALGOLIA_INDEX_NAME={{ YOUR_INDEX_NAME }}
+    ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }}
 
 Now you can update your index more simply by running:
 
