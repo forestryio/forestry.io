@@ -1,14 +1,15 @@
 ---
-title: Search with Algolia in Jekyll
+title: Bulletproof Jekyll Search with Algolia and Webtasks
 description: ''
 date: 2018-02-06 14:08:22 +0000
-authors: []
+authors:
+- Chris Macrae
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
-- "/uploads/2018/02/algolia-jekyll.png"
+- "/uploads/2018/02/algolia-jekyll-webtasks.png"
 categories:
 - Frontend-Friday
 - Jekyll
@@ -52,7 +53,7 @@ When it comes down to it, the answer comes down to two factors:
 
 Algolia provides a REST API to query and update your search indices. All input and output is provided in JSON, making it extremely easy to use in frontend Javascript.
 
-In order to create, update, and maintain an Algolia search index, you'll need to generate a valid JSON array of all of the content in your Hugo site.
+In order to create, update, and maintain an Algolia search index, you'll need to generate a valid JSON array of all of the content in your Jekyll site.
 
 We'll do that in the next step!
 
@@ -160,11 +161,11 @@ Finally, select the _API Keys_ tab on the left, and copy the _Application ID_ an
 
 ### Update Your Index
 
-Now that you have an index, open up your terminal, navigate to your Hugo project, and run the following command:
+Now that you have an index, open up your terminal, navigate to your Jekyll project, and run the following command:
 
     npm install atomic-algolia --save
 
-This will install the atomic-algolia package to a local `node_modules` folder and make it available for use in your Hugo project.
+This will install the atomic-algolia package to a local `node_modules` folder and make it available for use in your Jekyll project.
 
 Next, open up the newly created `package.json`, where we'll add an NPM script to update your index. Find `"scripts"`, and add the following:
 
@@ -172,7 +173,7 @@ Next, open up the newly created `package.json`, where we'll add an NPM script to
 
 Now, you can update your index by running the following command:
 
-    ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX={{ YOUR_INDEX NAME }} ALGOLIA_FILE_PATH={{ PATH/TO/algolia.json }} npm run algolia
+    ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX_NAME={{ YOUR_INDEX NAME }} ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }} npm run algolia
 
 {{% tip %}}
 
@@ -184,12 +185,12 @@ The path to the index file in a default Jekyll site is `_site/algolia.json`.
 
 Passing in the environment variables to the NPM script each time you call it isn't ideal. That's why atomic-algolia supports a .env file.
 
-Create a new file in the root of your Hugo project called `.env`, and add the following contents:
+Create a new file in the root of your Jekyll project called `.env`, and add the following contents:
 
     ALGOLIA_APP_ID={{ YOUR_APP_ID }}
     ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }}
-    ALGOLIA_INDEX={{ YOUR_INDEX NAME }}
-    ALGOLIA_FILE_PATH={{ PATH/TO/algolia.json }}
+    ALGOLIA_INDEX_NAME={{ YOUR_INDEX NAME }}
+    ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }}
 
 Now you can update your index more simply by running:
 
@@ -317,10 +318,13 @@ Now that you've successfully set up search indexing for your static site, it's t
 
 Algolia has a fantastic library called [InstantSearch.js](https://community.algolia.com/instantsearch.js/) for implementing search on the web, and provides a [full tutorial](https://community.algolia.com/instantsearch.js/v2/getting-started.html) for implementing search from scratch.
 
-### Next Week
+<div style="padding: 20px 40px;background: #f7f7f7;">  
+<h2>Join us every Friday 📅</h2>  
+<p><a href="/categories/frontend-friday/">Front end Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
+<p><strong>Next week:</strong> We'll write about Algolia search for your Hugo site. Stay tuned!</p>  
+<p><strong>Last week:</strong> We measured the build performance of Hugo and Jekyll in <a href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">Hugo vs Jekyll: Benchmarked</a>.</p>  
+</div>
 
-We'll write about Algolia search for your Hugo site. Stay tuned!
+## Have something to add?
 
-### Last Week
-
-We measured the build performance of Hugo and Jekyll last week in [Hugo vs Jekyll: Benchmarked](https://forestry.io/blog/hugo-vs-jekyll-benchmark/ "Hugo Vs Jekyll").  Check it out!
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16347171">Discuss on Hacker News</a>
