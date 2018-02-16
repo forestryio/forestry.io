@@ -1,5 +1,5 @@
 ---
-title: Lightning ⚡️ fast search for your Hugo site with Algolia
+title: 'Lightning ⚡️ fast search: Hugo + Algolia'
 description: ''
 date: 2018-02-06 09:40:26 +0000
 authors:
@@ -9,7 +9,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 textline: ''
 headline: ''
 images:
-- "/uploads/2018/02/hugo-algolia-webtasks.png"
+- "/uploads/2018/02/hugo-algolia.png"
 categories:
 - Frontend-Friday
 - Hugo
