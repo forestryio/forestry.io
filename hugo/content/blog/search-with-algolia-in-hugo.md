@@ -1,5 +1,5 @@
 ---
-title: 'Lightning ⚡️ fast search: Hugo + Algolia'
+title: 'Lightning ⚡️ fast, static search: Hugo + Algolia'
 description: ''
 date: 2018-02-06 09:40:26 +0000
 authors:
@@ -144,7 +144,7 @@ The above layout will only add pages that do not have `private = true` or `draft
 
 ### Outputting the Index
 
-Now that we've created our custom output format, the layout for it, and configured the variables and page-level params we want included in the index, we now have to set up the site to actually create the JSON index!
+Now that we've created our [custom output format](https://gohugo.io/templates/output-formats/), the layout for it, and configured the variables and page-level params we want included in the index, we now have to set up the site to actually create the JSON index!
 
 We can do this in two ways, using the `outputs` [param](https://gohugo.io/templates/output-formats/#output-formats-for-pages):
 
