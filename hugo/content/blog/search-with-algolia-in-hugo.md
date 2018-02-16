@@ -70,7 +70,7 @@ To get started, open up `config.toml`. Here, we'll add the Hugo configuration fo
 
 Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-and-running-with-hugo/) series to get started with the static site generator Hugo in less than 30 minutes!
 
-{{% /tip %}} --> 
+{{% /tip %}} -->
 
     [outputFormats.Algolia]
     baseName = "algolia"
@@ -328,10 +328,15 @@ Now that you've successfully set up search indexing for your static site, it's t
 
 Algolia has a fantastic library called [InstantSearch.js](https://community.algolia.com/instantsearch.js/) for implementing search on the web, and provides a [full tutorial](https://community.algolia.com/instantsearch.js/v2/getting-started.html) for implementing search from scratch.
 
-### Next Week
+<div style="padding: 20px 40px;background: #f7f7f7;">  
+<h2>Join us every Friday 📅</h2>  
+<p><a href="/categories/frontend-friday/">Front end Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
+<p><strong>Next week:</strong> Hugo Vs Jekyll, a comparisson</p>  
+<p><strong>Last week:</strong> We wrote a Jekyll-focused version of this article: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Jekyll Search with Algolia and Webtasks </a>.</p>  
+</div>
+<!--
 
-TK: todo
+## Have something to add?
 
-### Last Week
-
-TK: todo
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a>
+-->
