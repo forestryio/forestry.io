@@ -44,7 +44,7 @@ There are many search solutions for static sites out there. You can roll your ow
 
 So the question is, _what makes Algolia so great?_
 
-When it comes down to it, the answer comes down to two factors:
+The answer comes down to two factors:
 
 * The goal of the JAMStack is to _eliminate_ server dependencies. Why add one just for search?
 * Algolia offers a very generous [_free plan_](https://www.algolia.com/pricing) and performs up to [200x faster than open-source solutions like ElasticSearch](https://www.algolia.com/doc/faq/why/what-makes-algolia-different-than-elasticsearch-or-solr/).
