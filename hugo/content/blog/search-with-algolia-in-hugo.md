@@ -81,14 +81,14 @@ Here, we'll add the Hugo configuration for your custom output formats.
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\[outputFormats.Algolia\]`:
+In `[outputFormats.Algolia]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\[params.algolia\]`:
+In `[params.algolia]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
