@@ -233,8 +233,7 @@ Having to run the NPM script manually each time your site changes isn't ideal, e
 
 That's why we've created an [open-source template](https://github.com/forestryio-templates/serverless-atomic-algolia) for creating a Serverless [Webtask Function](https://webtask.io/) that can automatically update your Algolia index each time your site is updated using web hooks.
 
-{{% tip "What is serverless?" %}}
-With Serverless, you can set up functions that run in the cloud and don't require a backend server with PHP, Node, etc. These functions can perform little jobs for you (like updating your Algolia index) and are perfect in conjunction with static sites. If you're new to Serverless, check out [this article](https://auth0.com/blog/what-is-serverless/) by Auth0.
+{{% tip "What is serverless?" %}} With Serverless, you can set up functions that run in the cloud and don't require a full-blown backend server running PHP, Node, etc. These functions are perfect for performing tasks like updating your Algolia index.  Serverless infrastructure is a great combination with static sites. For more background, check out [this article](https://auth0.com/blog/what-is-serverless/) by Auth0.
 {{% /tip %}}
 
 ### Setting Up
