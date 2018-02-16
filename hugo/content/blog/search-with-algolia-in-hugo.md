@@ -229,7 +229,7 @@ Now you can update your index more simply by running:
 
 ## 4) Updating Your Search Index with Serverless Functions
 
-Having to run the NPM script manually each time your site changes isn't ideal, especially when using services like Forestry.
+Having to run the NPM script manually each time your site changes isn't ideal, especially when using services like the [Forestry.io CMS](https://forestry.io).
 
 That's why we've created an [open-source template](https://github.com/forestryio-templates/serverless-atomic-algolia) for creating a Serverless [Webtask Function](https://webtask.io/) that can automatically update your Algolia index each time your site is updated using web hooks.
 
