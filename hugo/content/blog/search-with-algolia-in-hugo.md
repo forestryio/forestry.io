@@ -45,7 +45,7 @@ There are many search solutions for static sites out there. You can roll your ow
 
 So the question is, _what makes Algolia so great?_
 
-When it comes down to it, the answer comes down to two factors:
+The answer comes down to two factors:
 
 * The goal of the JAMStack is to _eliminate_ server dependencies. Why add one just for search?
 * Algolia offers a very generous [_free plan_](https://www.algolia.com/pricing) and performs up to [200x faster than open-source solutions like ElasticSearch](https://www.algolia.com/doc/faq/why/what-makes-algolia-different-than-elasticsearch-or-solr/).
@@ -82,14 +82,14 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\[outputFormats.Algolia\]`:
+In `\\\[outputFormats.Algolia\\\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\[params.algolia\]`:
+In `\\\[params.algolia\\\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
