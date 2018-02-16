@@ -65,12 +65,13 @@ To get started with Algolia, the very first thing you'll need to do is [sign up]
 With Hugo, we'll do this using the [custom output formats](https://gohugo.io/templates/output-formats/) feature, which allows us to output an existing document in a different format (in this case, JSON).
 
 To get started, open up the config file (usually `config.toml`) in your favorite text editor.
-
+<!--
 {{% tip %}}
 
 Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-and-running-with-hugo/) series to get started with the static site generator Hugo in less than 30 minutes!
 
 {{% /tip %}}
+-->
 
 Here, we'll add the Hugo configuration for your custom output formats.
 
