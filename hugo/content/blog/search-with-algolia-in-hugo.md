@@ -64,16 +64,13 @@ To get started with Algolia, the very first thing you'll need to do is [sign up]
 
 With Hugo, we'll do this using the [custom output formats](https://gohugo.io/templates/output-formats/) feature, which allows us to output an existing document in a different format (in this case, JSON).
 
-To get started, open up the config file (usually `config.toml`) in your favorite text editor.
-<!--
-{{% tip %}}
+To get started, open up `config.toml`. Here, we'll add the Hugo configuration for your custom output formats.
+
+<!-- {{% tip %}}
 
 Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-and-running-with-hugo/) series to get started with the static site generator Hugo in less than 30 minutes!
 
-{{% /tip %}}
--->
-
-Here, we'll add the Hugo configuration for your custom output formats.
+{{% /tip %}} --> 
 
     [outputFormats.Algolia]
     baseName = "algolia"
@@ -103,7 +100,7 @@ The next step is to provide Hugo with the JSON template for your custom output f
 
 {{% tip %}}
 
-In the example above, we set `baseName` to `algolia`, which tells Hugo to look for list templates with the algolia in the filename. For example, `list.agolia.json`, `taxonomy.algolia.json`.
+In the example above, we set `baseName` to `algolia`, which tells Hugo to look for list templates with "algolia" in the filename. For example, `list.agolia.json`, `taxonomy.algolia.json`.
 
 {{% /tip %}}
 
