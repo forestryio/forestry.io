@@ -229,7 +229,7 @@ Now you can update your index more simply by running:
 
     npm run algolia
 
-## 4) Updating Your Search Index with Serverless Functions
+## 5) Updating Your Search Index with Serverless Functions
 
 Having to run the NPM script manually each time your site changes isn't ideal, especially when using services like the [Forestry.io CMS](https://forestry.io).
 
@@ -323,7 +323,7 @@ This set up only works when Forestry is set up to handle the build and deploymen
 
 {{% /tip %}}
 
-## 5) Next Steps
+## 6) Next Steps
 
 Now that you've successfully set up search indexing for your static site, it's time to add the actual search interface to your website!
 
