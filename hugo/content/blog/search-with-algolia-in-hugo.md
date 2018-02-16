@@ -334,9 +334,8 @@ Algolia has a fantastic library called [InstantSearch.js](https://community.algo
 <p><strong>Next week:</strong> Hugo Vs Jekyll, a comparisson</p>  
 <p><strong>Last week:</strong> We wrote a Jekyll-focused version of this article: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Jekyll Search with Algolia and Webtasks </a>.</p>  
 </div>
+
 <!--
-
-## Have something to add?
-
+Have something to add?
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a>
 -->
