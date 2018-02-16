@@ -2,14 +2,17 @@
 title: Lightning ⚡️ fast search for your Hugo site with Algolia
 description: ''
 date: 2018-02-06 09:40:26 +0000
-authors: []
+authors:
+- Chris Macrae
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-textline: dfgsadfgfdgsgdhsfjgsjhhfdsafsd
+textline: ''
 headline: ''
 images:
 - "/uploads/2018/02/hugo-algolia-webtasks.png"
-categories: []
+categories:
+- Frontend-Friday
+- Hugo
 tags: []
 cta:
   headline: ''
