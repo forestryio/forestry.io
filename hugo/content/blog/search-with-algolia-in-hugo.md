@@ -1,5 +1,5 @@
 ---
-title: Search with Algolia in Hugo
+title: Lightning ⚡️ fast search for your Hugo site with Algolia
 description: ''
 date: 2018-02-06 09:40:26 +0000
 authors: []
@@ -22,7 +22,7 @@ menu: []
 draft: true
 
 ---
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
+For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider. We published a Jekyll-focused version of this guide [last week](https://forestry.io/blog/search-with-algolia-in-jekyll).
 
 Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable platform for building search into your business,"_ and honestly, it's hard to disagree. Forestry's search is powered by Algolia _(just try searching for Algolia in the search above!)._
 
