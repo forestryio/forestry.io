@@ -33,6 +33,8 @@ Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable plat
 
 ## Table of Contents
 
+We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll 
+
 1. [Why Algolia?](#1-why-algolia)
 2. [Generating Your Search Index](#2-generating-your-search-index)
 3. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
@@ -160,21 +162,7 @@ This configuration tells Hugo to output the HTML document, the RSS Feed, and an 
 
 In your built site, you'll now find a file called `algolia.json` in the root, which we can use to update your index in Algolia.
 
-## 3) Sending Your Search Index to Algolia
-
-The next step is sending your search index to Algolia. For this article, we'll be using a great NPM package to do this: [atomic-algolia](https://www.npmjs.com/package/atomic-algolia).
-
-{{% tip %}}
-
-[atomic-algolia](https://www.npmjs.com/package/atomic-algolia) is an NPM package that does _atomic_ updates to an Algolia index. This means that it only updates changed records, adds new records, or deletes expired records, and does it all at once, so that your index is never out-of-sync with your website's content.
-
-This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_
-
-{{% /tip %}}
-
-To get started, make sure you have Node installed. If you don't, you can do so by [downloading an installer for your operating system](https://nodejs.org/en/download/).
-
-### Create Your Index
+## 3) Create Your Index in Algolia
 
 Head over to your [Algolia app dashboard](https://www.algolia.com/manage/applications), and click _New Application._
 
@@ -190,9 +178,23 @@ Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦 )
 
 Finally, select the _API Keys_ tab on the left, and copy the _Application ID_ and _Admin API Key,_ as we'll need these to update the index.
 
+## 4) Sending Your Search Index to Algolia
+
+The next step is sending your search index to Algolia. For this article, we'll be using a great NPM package to do this: [atomic-algolia](https://www.npmjs.com/package/atomic-algolia).
+
+{{% tip %}}
+
+[atomic-algolia](https://www.npmjs.com/package/atomic-algolia) is an NPM package that does _atomic_ updates to an Algolia index. This means that it only updates changed records, adds new records, or deletes expired records, and does it all at once, so that your index is never out-of-sync with your website's content.
+
+This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_
+
+{{% /tip %}}
+
+To get started, make sure you have Node installed. If you don't, you can do so by [downloading an installer for your operating system](https://nodejs.org/en/download/).
+
 ### Update Your Index
 
-Now that you have an index, open up your terminal, navigate to your Hugo project, and run the following command:
+Now that you have an Algolia index, open up your terminal, navigate to your Hugo project, and run the following command:
 
     npm install atomic-algolia --save
 
@@ -208,7 +210,7 @@ Now, you can update your index by running the following command:
 
 {{% tip %}}
 
-The path to the index file in the _Hugo Boilerplate_ is `dist/algolia.json`, whereas the path in a default hugo site is `public/algolia.json`
+The path to the index file in the [_Hugo Boilerplate_](https://github.com/forestryio-templates/hugo-boilerplate) is `dist/algolia.json`, whereas the path in a default hugo site is `public/algolia.json`
 
 {{% /tip %}}
 
