@@ -176,15 +176,15 @@ To get started, make sure you have Node installed. If you don't, you can do so b
 
 Head over to your [Algolia app dashboard](https://www.algolia.com/manage/applications), and click _New Application._
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.33.12 PM.png)Set the application name to something memorable (i.e, your company name), and choose _Community_ as your plan.
+![](/uploads/2018/02/algolia-screen-1.png)Set the application name to something memorable (i.e, your company name), and choose _Community_ as your plan.
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.38.01 PM.png)
+![](/uploads/2018/02/algolia-screen-2-region.png)
 
 Then, choose the region closest to you. _(In our case, that's Canada. 🇨🇦 )_
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.35.45 PM.png)You'll be redirected to the app's dashboard. Select the _Indices_ tab on the left, and then click _Add New Index._ Give it a unique name, (.ie, your site's domain), as this is what we'll use when updating the index.
+![](/uploads/2018/02/algolia-screen-3-indicies.png)You'll be redirected to the app's dashboard. Select the _Indices_ tab on the left, and then click _Add New Index._ Give it a unique name, (.ie, your site's domain), as this is what we'll use when updating the index.
 
-![](/uploads/2018/02/Screen Shot 2018-02-06 at 3.36.18 PM.png)
+![](/uploads/2018/02/algolia-screen-4-api-keys.png)
 
 Finally, select the _API Keys_ tab on the left, and copy the _Application ID_ and _Admin API Key,_ as we'll need these to update the index.
 
