@@ -30,10 +30,10 @@ Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable plat
 
 ## Table of Contents
 
-1. [Why Algolia?](#why-algolia)
-2. [Generating Your Search Index](#generating-your-search-index)
-3. [Sending Your Search Index to Algolia](#sending-your-search-index-to-algolia)
-4. [Updating Your Search Index with Serverless Functions](#updating-your-search-index-with-severless-functions)
+1. [Why Algolia?](#1-why-algolia)
+2. [Generating Your Search Index](#2-generating-your-search-index)
+3. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
+4. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
 5. [Next steps](#next-steps)
 
 ## 1) Why Algolia?
@@ -81,14 +81,14 @@ Here, we'll add the Hugo configuration for your custom output formats.
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `[outputFormats.Algolia]`:
+In `\[outputFormats.Algolia\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `[params.algolia]`:
+In `\[params.algolia\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
