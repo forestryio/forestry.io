@@ -13,6 +13,7 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/search-with-algolia-in-hugo.md
 - blog/why-we-built-forestry.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/the-new-forestry-io.md
@@ -38,7 +39,6 @@ pages:
 - blog/building-a-company-component-library.md
 - blog/up-and-running-with-hugo-part-2.md
 - blog/search-with-algolia-in-jekyll.md
-- blog/search-with-algolia-in-hugo.md
 hide_body: false
 fields:
 - type: text

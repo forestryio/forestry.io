@@ -1,5 +1,5 @@
 ---
-title: 'Lightning ⚡️ fast, static search: Hugo + Algolia'
+title: 'Static search: Hugo + Algolia'
 description: ''
 date: 2018-02-06 09:40:26 +0000
 authors:
@@ -37,9 +37,10 @@ We're going to generate a JSON search index for our static site using Hugo's cus
 
 1. [Why Algolia?](#1-why-algolia)
 2. [Generating Your Search Index](#2-generating-your-search-index)
-3. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
-4. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
-5. [Next steps](#5-next-steps)
+3. Create Your Index in Algolia
+4. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
+5. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
+6. [Next steps](#5-next-steps)
 
 ## 1) Why Algolia?
 
