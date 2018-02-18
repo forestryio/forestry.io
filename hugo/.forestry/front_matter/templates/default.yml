@@ -13,8 +13,8 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
-- blog/join-our-slack-community.md
 - blog/search-with-algolia-in-hugo.md
+- blog/join-our-slack-community.md
 - blog/why-we-built-forestry.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/the-new-forestry-io.md

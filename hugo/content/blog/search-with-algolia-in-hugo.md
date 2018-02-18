@@ -1,5 +1,5 @@
 ---
-title: 'Static search: Hugo + Algolia'
+title: Static site search with Hugo + Algolia
 description: ''
 date: 2018-02-06 09:40:26 +0000
 authors:
