@@ -13,6 +13,7 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/join-our-slack-community.md
 - blog/search-with-algolia-in-hugo.md
 - blog/why-we-built-forestry.md
 - blog/what-s-new-in-jekyll-3-4-0.md
@@ -23,7 +24,6 @@ pages:
 - blog/front-matter-templates.md
 - blog/_index.md
 - blog/bigger-better-editor.md
-- blog/join-our-slack-community.md
 - blog/introducing-forestry-config-files.md
 - blog/improved-collaboration-and-more.md
 - blog/forestry-gitlab.md
