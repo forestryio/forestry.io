@@ -49,7 +49,7 @@ If  your site builds and you don't see any errors, your project should also buil
 
 ### Adding a Gemfile to an existing project
 
-There are several ways to do  that but I think the easiest, especially for someone who is not a ruby developer, is to have jekyll generate a Gemfile for you, then commit  that file to your project repo and push it to your source provider.
+There are several ways to do  that but I think the easiest, especially for someone who is not a ruby developer, is to have jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.
 
 I'm a developer, so the way I would do this is to:
   - open a command line,  
@@ -77,5 +77,3 @@ git push # if you did stash any work above, reapply it now with "git stash pop"
 From now on I would recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way the behaviour you see locally when you test commands and the way Forestry previews and publishes on your behalf should match.
 
 If there are any questions or if you run into any issues please don't hesitate to contact our support team.
-Matt
-Developer
