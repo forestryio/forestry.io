@@ -31,7 +31,7 @@ Gemfiles include a list of project dependencies and where to find them.  Bundler
 
 That error message typically means that your jekyll project doesn't have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
 
-Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugins.
+Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugin dependencies.
 
 [read more about jekyll and Gemfiles here](https://jekyllrb.com/docs/quickstart/#about-bundler)
 [read more about Bundler and Gemfiles here](http://bundler.io/)
