@@ -74,7 +74,7 @@ jekyll new . --force # this command will generate a template Gemfile,  calculate
 bundle exec jekyll serve # this command will test that the gemfile works and serve your project to localhost on port 4000  
 # open a web browser and got the the url localhost:4000 to make sure your website looks the way you expect it to  
 git add Gemfile Gemfile.lock  
-git commit -m "Dependency management with bundler"  
+git commit -m "Dependency management handling via bundler"  
 git push # if you did stash any work above, reapply it now with "git stash pop"
 ```
 
