@@ -11,7 +11,8 @@ date: 2018-02-22 11:56:06 +0000
 description: jekyll bundler error forestry.io
 headline: ''
 textline: ''
-categories: []
+categories:
+- Jekyll
 tags: []
 cta:
   headline: ''
