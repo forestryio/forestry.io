@@ -74,12 +74,19 @@ There easiest way to add a gemfile to a project is to have jekyll generate a Gem
 
   In bash this would correspond to the following set of commands:
 
+{{% tip %}}
+
+Note that the "#" and everything after are comments to describe what each specific command should do
+
+{{% /tip %}}
+
 ```  
 cd my-jekyll-project  
+ 
+git status 
 
 # you can use "git stash" to set aside any work 
-# in progress you might have  
-git status 
+# in progress you might have
 
 # this command will generate a template Gemfile,
 # calculate the dependency graph and install the 
@@ -97,20 +104,15 @@ jekyll new . --force
 bundle exec jekyll serve 
 
 # Open a web browser and got the the url localhost:4000 
-# to make sure your website looks as expected 
-git add Gemfile Gemfile.lock  
-git commit -m "Dependency management handling via bundler"  
+# to make sure your website looks as expected
+
+git add Gemfile Gemfile.lock
+git commit -m "Dependency management handling via bundler"
+git push
 
 # If you did stash any work above, reapply it 
 # now with "git stash pop"
-git push 
 ```
-
-{{% tip %}}
-
-Note that the "#" and everything after are comments to describe what each specific command should do
-
-{{% /tip %}}
 
 Going forward, I recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way Forestry previews and publishes should match your local state.
 
