@@ -48,7 +48,7 @@ Read more about:
 
 ### But my project works fine when I build it on my machine
 
-Yes, this can happen when you can have gems installed globally on your machine.  Since Forestry's architecture builds your sites in the cloud we need a way to specify to the cloud computer what code it needs to successfully build your site.  The Gemfile serves this purpose.
+This can happen when you can have gems installed globally on your machine.  Since Forestry's architecture builds your sites in the cloud we need a way to specify to the cloud computer what code it needs to successfully build your site.  The Gemfile serves this purpose.
 
 ## Fixing the issue
 
