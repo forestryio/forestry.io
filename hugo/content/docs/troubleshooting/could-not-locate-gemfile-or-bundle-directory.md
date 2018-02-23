@@ -114,6 +114,6 @@ git push
 # now with "git stash pop"
 ```
 
-Going forward, I recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way Forestry previews and publishes should match your local state.
+Going forward, I recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way Forestry previews and publishes should match the experience you have on your computer.
 
 If there are any questions or if you run into any issues please don't hesitate to contact our support team.
