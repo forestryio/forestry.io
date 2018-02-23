@@ -88,7 +88,7 @@ git push # if you did stash any work above, reapply it now with "git stash pop"
 
 {{% tip %}}
 
-note that the "#" and everything after are comments to describe what each specific command should do
+Note that the "#" and everything after are comments to describe what each specific command should do
 
 {{% /tip %}}
 
