@@ -62,7 +62,7 @@ If  your site builds and you don't see any errors, your project should also buil
 
 ### Adding a Gemfile to an existing project
 
-There are several ways to do  that but I think the easiest, especially for someone who is not a ruby developer, is to have jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.
+There easiest way to add a gemfile to a project is to have jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.
 
 I'm a developer, so the way I would do this is to:
   - open a command line,  
