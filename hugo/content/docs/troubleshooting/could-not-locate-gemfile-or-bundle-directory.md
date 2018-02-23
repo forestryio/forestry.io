@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
 
 ---
 #### When I view an error log from Forestry I see: `Could not locate Gemfile or .bundle/ directory`
