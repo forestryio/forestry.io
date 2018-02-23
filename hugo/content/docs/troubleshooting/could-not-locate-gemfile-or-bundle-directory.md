@@ -34,9 +34,17 @@ That error message typically means that your jekyll project doesn't have an Gemf
 
 Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugin dependencies.
 
-[read more about jekyll and Gemfiles here](https://jekyllrb.com/docs/quickstart/#about-bundler)
-[read more about Bundler and Gemfiles here](http://bundler.io/)
-[read more about jekyll plugins](https://jekyllrb.com/docs/plugins/)
+{{% tip %}}
+
+Read more about:
+
+[Jekyll and Gemfiles](https://jekyllrb.com/docs/quickstart/#about-bundler)
+
+[Bundler and Gemfiles](http://bundler.io/)
+
+[Jekyll-plugins](https://jekyllrb.com/docs/plugins/)
+
+{{% /tip %}}
 
 ### But my project works fine when I build it on my machine
 
