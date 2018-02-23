@@ -8,7 +8,9 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 date: 2018-02-22 11:56:06 +0000
-description: jekyll bundler error forestry.io
+description: Describes a common error for Jekyll users of Forestry.io and includes
+  step-by-step instructions for solving the underlying error and testing that the
+  issue is resolved locally.
 headline: ''
 textline: ''
 categories:
