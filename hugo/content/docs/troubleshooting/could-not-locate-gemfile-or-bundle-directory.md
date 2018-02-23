@@ -64,15 +64,15 @@ If  your site builds and you don't see any errors, your project should also buil
 
 There easiest way to add a gemfile to a project is to have jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.
 
-
-  - open a command line,  
-  - navigate to the project directory,  
-  - make sure you have a clean working tree,  
-  - execute the `jekyll new` command with the appropriate options,  
-  - install the dependencies with bundler,  
-  - test that the project works the way that you expect it to with bundler, and finally;   - commit and push those changes with git.    
-In bash this would correspond to the following set of commands:
-note that the "#" and everything after are comments to describe what that specific command should do:
+* open a command line
+* navigate to the project directory
+* make sure you have a clean working tree
+* execute the `jekyll new` command with the appropriate options
+* install the dependencies with bundler
+* test that the project works the way that you expect it to with bundler
+* commit and push those changes with git
+    
+  In bash this would correspond to the following set of commands:
 
 ```  
 cd my-jekyll-project  
@@ -85,6 +85,12 @@ git add Gemfile Gemfile.lock
 git commit -m "Dependency management handling via bundler"  
 git push # if you did stash any work above, reapply it now with "git stash pop"
 ```
+
+{{% tip %}}
+
+note that the "#" and everything after are comments to describe what each specific command should do
+
+{{% /tip %}}
 
 From now on I would recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way the behaviour you see locally when you test commands and the way Forestry previews and publishes on your behalf should match.
 
