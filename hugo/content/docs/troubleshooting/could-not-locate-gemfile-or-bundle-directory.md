@@ -67,11 +67,10 @@ There easiest way to add a gemfile to a project is to have jekyll generate a Gem
 
   - open a command line,  
   - navigate to the project directory,  
-  - make sure I have a clean working tree,  
+  - make sure you have a clean working tree,  
   - execute the `jekyll new` command with the appropriate options,  
   - install the dependencies with bundler,  
-  - test that the project works the way I expect it to with bundler, and finally;
-  - commit and push those changes with git.    
+  - test that the project works the way that you expect it to with bundler, and finally;   - commit and push those changes with git.    
 In bash this would correspond to the following set of commands:
 note that the "#" and everything after are comments to describe what that specific command should do:
 
