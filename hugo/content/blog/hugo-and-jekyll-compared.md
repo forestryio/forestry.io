@@ -23,7 +23,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 draft: true
 
 ---

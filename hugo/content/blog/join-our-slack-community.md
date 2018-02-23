@@ -23,7 +23,6 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
-menu: []
 
 ---
 Want to chat with the Forestry.io community about static sites, best-practices, features, and more? Join the slack community here (we'll get back to you ASAP).

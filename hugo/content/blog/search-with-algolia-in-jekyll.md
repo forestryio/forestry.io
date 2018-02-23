@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 For this week on [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Jekyll site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider.
