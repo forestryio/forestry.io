@@ -92,6 +92,6 @@ note that the "#" and everything after are comments to describe what each specif
 
 {{% /tip %}}
 
-From now on I would recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way the behaviour you see locally when you test commands and the way Forestry previews and publishes on your behalf should match.
+Going forward, I recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way Forestry previews and publishes should match your local state.
 
 If there are any questions or if you run into any issues please don't hesitate to contact our support team.
