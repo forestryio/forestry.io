@@ -38,11 +38,11 @@ Jekyll also allows several methods to specify plugins, including using your proj
 
 Read more about:
 
-[Jekyll and Gemfiles](https://jekyllrb.com/docs/quickstart/#about-bundler)
+##### [Jekyll and Gemfiles](https://jekyllrb.com/docs/quickstart/#about-bundler)
 
-[Bundler and Gemfiles](http://bundler.io/)
+##### [Bundler and Gemfiles](http://bundler.io/)
 
-[Jekyll-plugins](https://jekyllrb.com/docs/plugins/)
+##### [Jekyll-plugins](https://jekyllrb.com/docs/plugins/)
 
 {{% /tip %}}
 
