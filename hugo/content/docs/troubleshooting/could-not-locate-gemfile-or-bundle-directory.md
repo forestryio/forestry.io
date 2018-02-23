@@ -24,13 +24,13 @@ aliases: []
 draft: true
 
 ---
-# When I view an error log from Forestry I see `Could not locate Gemfile or .bundle/ directory`
+#### When I view an error log from Forestry I see: `Could not locate Gemfile or .bundle/ directory`
 
-## What that means
+## What this error means
 
 Gemfiles include a list of project dependencies and where to find them.  Bundler is a dependency manager for the Ruby programming language that can read Gemfiles, resolve the dependency graph and install those gems.  Jekyll is a ruby application and can use bundler to manage your project dependencies.  Forestry requires that your jekyll projects contain a Gemfile at the root of the repository.
 
-That error message typically means that your jekyll project doesn't have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
+This error message typically means that your jekyll project doesn't have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
 
 Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugin dependencies.
 
@@ -71,19 +71,39 @@ There easiest way to add a gemfile to a project is to have jekyll generate a Gem
 * install the dependencies with bundler
 * test that the project works the way that you expect it to with bundler
 * commit and push those changes with git
-    
+
   In bash this would correspond to the following set of commands:
 
 ```  
 cd my-jekyll-project  
-git status # you can use "git stash" to set aside any work in progress you might have  
-jekyll new . --force # this command will generate a template Gemfile,  calculate the dependency graph and install the dependencies with bundler  
-# now you can make  any changes you need to the Gemfile, the template is well commented  with regions to comment and uncomment based on common uses like  gem-based themes and setup for publishing to github pages  
-bundle exec jekyll serve # this command will test that the gemfile works and serve your project to localhost on port 4000  
-# open a web browser and got the the url localhost:4000 to make sure your website looks the way you expect it to  
+
+# you can use "git stash" to set aside any work 
+# in progress you might have  
+git status 
+
+# this command will generate a template Gemfile,
+# calculate the dependency graph and install the 
+# dependencies with bundler  
+jekyll new . --force 
+
+# Now you can make  any changes you need to the 
+# Gemfile, the template is well commented  with 
+# regions to comment and uncomment based on common 
+# uses like  gem-based themes and setup for publishing 
+# to github pages.
+
+# this command will test that the gemfile works and 
+# serve your project to localhost:4000  
+bundle exec jekyll serve 
+
+# Open a web browser and got the the url localhost:4000 
+# to make sure your website looks as expected 
 git add Gemfile Gemfile.lock  
 git commit -m "Dependency management handling via bundler"  
-git push # if you did stash any work above, reapply it now with "git stash pop"
+
+# If you did stash any work above, reapply it 
+# now with "git stash pop"
+git push 
 ```
 
 {{% tip %}}
