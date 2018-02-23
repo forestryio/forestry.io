@@ -28,9 +28,9 @@ draft: true
 
 ## What this error means
 
-Gemfiles include a list of project dependencies and where to find them.  Bundler is a dependency manager for the Ruby programming language that can read Gemfiles, resolve the dependency graph and install those gems.  Jekyll is a ruby application and can use bundler to manage your project dependencies.  Forestry requires that your jekyll projects contain a Gemfile at the root of the repository.
+Gemfiles include a list of project dependencies and where to find them.  Bundler is a dependency manager for the Ruby programming language that can read Gemfiles, resolve the dependency graph and install those gems.  Jekyll is a ruby application and can use Bundler to manage your project dependencies.  Forestry requires that your Jekyll projects contain a Gemfile at the root of the repository.
 
-This error message typically means that your jekyll project doesn't have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
+This error message typically means that your Jekyll project doesn't have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
 
 Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugin dependencies.
 
@@ -40,7 +40,9 @@ Read more about:
 
 ##### [Jekyll and Gemfiles](https://jekyllrb.com/docs/quickstart/#about-bundler)
 
-##### [Bundler and Gemfiles](http://bundler.io/)
+##### [Bundler](http://bundler.io/)
+
+##### [Gemfiles](http://bundler.io/v1.16/man/gemfile.5.html)
 
 ##### [Jekyll-plugins](https://jekyllrb.com/docs/plugins/)
 
@@ -62,7 +64,7 @@ If  your site builds and you don't see any errors, your project should also buil
 
 ### Adding a Gemfile to an existing project
 
-There easiest way to add a gemfile to a project is to have jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.
+In our opinion the easiest way to add a gemfile to a project is to have Jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.  To achieve you'll need to:
 
 * open a command line
 * navigate to the project directory
@@ -72,11 +74,11 @@ There easiest way to add a gemfile to a project is to have jekyll generate a Gem
 * test that the project works the way that you expect it to with bundler
 * commit and push those changes with git
 
-  In bash this would correspond to the following set of commands:
+In bash this would correspond to the following set of commands:
 
 {{% tip %}}
 
-Note that the "#" and everything after are comments to describe what each specific command should do
+Note that the "#" and everything after are comments to describe what the command should do.
 
 {{% /tip %}}
 
@@ -103,7 +105,7 @@ jekyll new . --force
 # serve your project to localhost:4000  
 bundle exec jekyll serve 
 
-# Open a web browser and got the the url localhost:4000 
+# Open a web browser and go to the url localhost:4000 
 # to make sure your website looks as expected
 
 git add Gemfile Gemfile.lock
@@ -114,6 +116,6 @@ git push
 # now with "git stash pop"
 ```
 
-Going forward, I recommend that you prepend all your jekyll  commands with `bundle exec` like we did in the example above. That way Forestry previews and publishes should match the experience you have on your computer when you serve and build with jekyll.
+Going forward, Forestry recommends that you prepend all your jekyll  commands with `bundle exec` like we have in the example above. That way Forestry previews and publishes should match the experience you have on your computer when you serve and build with Jekyll.
 
 If there are any questions or if you run into any issues please don't hesitate to contact our support team.
