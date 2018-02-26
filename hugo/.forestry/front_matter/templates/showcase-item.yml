@@ -1,10 +1,10 @@
 ---
 pages:
-- showcase/yieldmo.md
-- showcase/smallmultiples.md
-- showcase/_index.md
-- showcase/developerecosystem.md
 - showcase/borisfx.md
+- showcase/developerecosystem.md
+- showcase/_index.md
+- showcase/smallmultiples.md
+- showcase/yieldmo.md
 hide_body: false
 fields:
 - type: text
@@ -69,7 +69,7 @@ fields:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
     required: true
-  default: 2017-12-07 04:00:00 +0000
+  default: 2017-12-07 00:00:00 -0400
 - type: datetime
   name: expirydate
   label: Expiry Date
@@ -77,7 +77,7 @@ fields:
   config:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
-  default: 2030-01-01 04:00:00 +0000
+  default: 2030-01-01 00:00:00 -0400
 - type: field_group
   label: Footer Call To Action
   name: cta
