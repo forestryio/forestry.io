@@ -13,8 +13,8 @@ menu:
   docs:
     parent: Quick Start
     weight: 1
-
 ---
+
 ## Overview
 
 This tour will walk you through setting up your first site in Forestry. It demonstrates the primary features and editing functionality of the CMS.
@@ -23,7 +23,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 ## Getting Started
 
-![](/uploads/2018/02/Screen Shot 2018-02-23 at 5.13.20 PM.png)
+![](/uploads/2018/02/add-site-flow-choose-generator.png)
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
@@ -35,7 +35,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 6. Click "Create Site"
 7. After a moment you will be redirected to the Forestry CMS
 
-Congrats, your first site is being created! 
+Congrats, your first site is being created!
 
 This process may take a couple minutes. Forestry will create a new repository with your git provider, push a copy of our [Belkirk Jekyll Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo "Belkirk Jekyll Demo Repo") site, and then start the import process. Once the import is complete, the CMS will load in all of your content and you can move on to the next section.
 
