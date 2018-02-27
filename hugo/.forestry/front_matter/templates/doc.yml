@@ -1,6 +1,4 @@
 ---
-pages:
-- docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory.md
 hide_body: false
 fields:
 - type: text
