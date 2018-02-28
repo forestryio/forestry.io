@@ -25,7 +25,7 @@ This doc will walk you through:
 
 [Sign up](https://app.forestry.io/signup/) for a free account with Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you **Don't** have a Jekyll or Hugo site, fork the [Jekyll demo site](https://github.com/forestryio/belkirk-jekyll-demo) and check out the [product tour](/docs/quickstart/tour/).
+If you **don't** have a Jekyll or Hugo site, click the link in the bottom of the _setup window_ to launch the demo site.
 
 ### Select your Static Site Generator
 
