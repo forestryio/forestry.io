@@ -7,8 +7,8 @@ pages:
 - docs/_index.md
 - docs/changelog
 - docs/troubleshooting
-- careers/software-engineer.md
 - careers/marketing.md
+- careers/software-engineer.md
 - careers/full-stack.md
 - careers/admin.md
 - careers/devrel.md
