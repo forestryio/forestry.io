@@ -21,6 +21,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 draft: true
 
 ---
@@ -32,7 +33,7 @@ Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable plat
 
 ## Table of Contents
 
-We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll 
+We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll
 
 1. [Why Algolia?](#1-why-algolia)
 2. [Generating Your Search Index](#2-generating-your-search-index)
@@ -64,7 +65,7 @@ We'll do that in the next step!
 
 To get started with Algolia, the very first thing you'll need to do is [sign up](https://www.algolia.com/users/sign_up). Once that is out of the way, your next step is to generate your JSON search index.
 
-With Hugo, we'll do this using the [custom output formats](https://gohugo.io/templates/output-formats/) feature, which allows us to output an existing document in a different format (in this case, JSON).
+With Hugo, we'll do this using the [custom output formats](https://gohugo.io/templates/output-formats/) feature, which allows us to output an existing document in a different format (in this case, a valid Algolia JSON index).
 
 To get started, open up `config.toml`. Here, we'll add the Hugo configuration for your custom output formats.
 
@@ -84,14 +85,14 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\[outputFormats.Algolia\]`:
+In `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[outputFormats.Algolia\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\[params.algolia\]`:
+In `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[params.algolia\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
@@ -186,7 +187,9 @@ The next step is sending your search index to Algolia. For this article, we'll b
 
 [atomic-algolia](https://www.npmjs.com/package/atomic-algolia) is an NPM package that does _atomic_ updates to an Algolia index. This means that it only updates changed records, adds new records, or deletes expired records, and does it all at once, so that your index is never out-of-sync with your website's content.
 
-This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_
+This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_ Our user @budparr ran a quick test to find out just how many operations can be saved using [atomic-algolia](https://www.npmjs.com/package/atomic-algolia). The results are impressive, you can see that hugo-algolia generated 4,613 operations vs. [atomic-algolia](https://www.npmjs.com/package/atomic-algolia)'s 911 operations.
+
+![](/uploads/2018/03/atomic-algolia-vs-hugo-algolia-test.png)
 
 {{% /tip %}}
 
