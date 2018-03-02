@@ -162,3 +162,10 @@ fields:
 - type: list
   name: menu
   label: menu
+- type: datetime
+- type: datetime
+  label: Date
+  name: date
+  description: Date is seen by user
+  config:
+    required: true
