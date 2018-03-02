@@ -1,11 +1,11 @@
 ---
 title: Static site search with Hugo + Algolia
 description: ''
-date: 2018-03-02 09:00:00 +0000
+date: 2018-03-02 05:00:00 -0400
 authors:
 - Chris Macrae
-publishdate: 2018-03-02 02:00:00 -0400
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2018-03-02 06:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 textline: ''
 headline: ''
 images:
