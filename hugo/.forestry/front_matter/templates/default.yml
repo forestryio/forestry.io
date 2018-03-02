@@ -94,6 +94,12 @@ fields:
   name: tags
   label: Tags
 - type: datetime
+  label: Date
+  name: date
+  description: Date is seen by user
+  config:
+    required: true
+- type: datetime
   name: publishdate
   label: Publish Date
   description: Date this page should be made public
@@ -162,10 +168,3 @@ fields:
 - type: list
   name: menu
   label: menu
-- type: datetime
-- type: datetime
-  label: Date
-  name: date
-  description: Date is seen by user
-  config:
-    required: true
