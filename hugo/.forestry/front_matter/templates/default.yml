@@ -13,7 +13,6 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
-- blog/test.md
 - blog/search-with-algolia-in-hugo.md
 - blog/join-our-slack-community.md
 - blog/why-we-built-forestry.md
