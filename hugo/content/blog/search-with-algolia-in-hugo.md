@@ -1,7 +1,7 @@
 ---
 title: Static site search with Hugo + Algolia
 description: ''
-date: 2018-03-02 09:00:00 +0000
+date: 2018-02-06 09:40:26 +0000
 authors:
 - Chris Macrae
 publishdate: 2018-03-02 02:00:00 -0400
@@ -84,14 +84,14 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\[outputFormats.Algolia\]`:
+In `[outputFormats.Algolia]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\[params.algolia\]`:
+In `[params.algolia]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
