@@ -33,14 +33,14 @@ Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable plat
 
 ## Table of Contents
 
-We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll
+We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll do the necessary configurations on Algolia and send the new index to Algolia using the npm package [atomic-algolia](https://www.npmjs.com/package/atomic-algolia). Lastly, we'll simplify updating your search index using Serverless.
 
 1. [Why Algolia?](#1-why-algolia)
 2. [Generating Your Search Index](#2-generating-your-search-index)
-3. Create Your Index in Algolia
-4. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
-5. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
-6. [Next steps](#5-next-steps)
+3. [Create Your Index in Algolia](#3-create-your-index-in-algolia)
+4. [Sending Your Search Index to Algolia](#4-sending-your-search-index-to-algolia)
+5. [Updating Your Search Index with Serverless Functions](#5-updating-your-search-index-with-serverless-functions)
+6. [Next steps](#6-next-steps)
 
 ## 1) Why Algolia?
 
@@ -85,14 +85,14 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[outputFormats.Algolia\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]`:
+In `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[outputFormats.Algolia\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[params.algolia\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]`:
+In `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[params.algolia\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
