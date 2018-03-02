@@ -84,14 +84,14 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `[outputFormats.Algolia]`:
+In `\[outputFormats.Algolia\]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `[params.algolia]`:
+In `\[params.algolia\]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
@@ -338,7 +338,6 @@ Algolia has a fantastic library called [InstantSearch.js](https://community.algo
 <p><strong>Last week:</strong> We wrote a Jekyll-focused version of this article: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Jekyll Search with Algolia and Webtasks </a>.</p>  
 </div>
 
-<!--
-Have something to add?
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a>
--->
+## Have something to add? 
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16502918">Discuss on Hacker News</a>
