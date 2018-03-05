@@ -17,7 +17,7 @@ date: 2017-02-20 10:06:00 -0400
 ---
 Jekyll 3.4.0 was release on the 27th of January 2017 with some noteworthy enhancements that I'd like to share with you.  
 
-So what's new?  
+So what's new?
 
 ## Add connector param to ‘array_to_sentence_string’ filter
 

@@ -1,10 +1,10 @@
 ---
 title: Static site search with Hugo + Algolia
 description: ''
-date: 2018-02-06 09:40:26 +0000
+date: 2018-03-02 05:00:00 -0400
 authors:
 - Chris Macrae
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-03-02 06:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 textline: ''
 headline: ''
@@ -21,10 +21,10 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
+menu: []
 
 ---
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider. We published a Jekyll-focused version of this guide [last week](https://forestry.io/blog/search-with-algolia-in-jekyll).
+For this week on [_Frontend Friday_](https://forestry.io/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider. We published a Jekyll-focused version of this guide [last week](https://forestry.io/blog/search-with-algolia-in-jekyll).
 
 Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable platform for building search into your business,"_ and honestly, it's hard to disagree. Forestry's search is powered by Algolia _(just try searching for Algolia in the search above!)._
 
@@ -32,14 +32,14 @@ Algolia's self-proclaimed claim-to-fame is that they are_"the most reliable plat
 
 ## Table of Contents
 
-We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll 
+We're going to generate a JSON search index for our static site using Hugo's custom output formats. Then we'll do the necessary configurations on Algolia and send the new index to Algolia using the npm package [atomic-algolia](https://www.npmjs.com/package/atomic-algolia). Lastly, we'll simplify updating your search index using Serverless.
 
 1. [Why Algolia?](#1-why-algolia)
 2. [Generating Your Search Index](#2-generating-your-search-index)
-3. Create Your Index in Algolia
-4. [Sending Your Search Index to Algolia](#3-sending-your-search-index-to-algolia)
-5. [Updating Your Search Index with Serverless Functions](#4-updating-your-search-index-with-serverless-functions)
-6. [Next steps](#5-next-steps)
+3. [Create Your Index in Algolia](#3-create-your-index-in-algolia)
+4. [Sending Your Search Index to Algolia](#4-sending-your-search-index-to-algolia)
+5. [Updating Your Search Index with Serverless Functions](#5-updating-your-search-index-with-serverless-functions)
+6. [Next steps](#6-next-steps)
 
 ## 1) Why Algolia?
 
@@ -64,7 +64,7 @@ We'll do that in the next step!
 
 To get started with Algolia, the very first thing you'll need to do is [sign up](https://www.algolia.com/users/sign_up). Once that is out of the way, your next step is to generate your JSON search index.
 
-With Hugo, we'll do this using the [custom output formats](https://gohugo.io/templates/output-formats/) feature, which allows us to output an existing document in a different format (in this case, JSON).
+With Hugo, we'll do this using the [custom output formats](https://gohugo.io/templates/output-formats/) feature, which allows us to output an existing document in a different format (in this case, a valid Algolia JSON index).
 
 To get started, open up `config.toml`. Here, we'll add the Hugo configuration for your custom output formats.
 
@@ -79,19 +79,19 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
     isPlainText = true
     mediaType = "application/json"
     notAlternative = true
-    
+
     [params.algolia]
     vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
     params = ["categories", "tags"]
 
-In `\[outputFormats.Algolia\]`:
+In `[outputFormats.Algolia]`:
 
 * `baseName` tells the output format how to look for the Hugo layout for this output format
 * `isPlainText` tells the output format to use GoLang's plain text parser for the layout, preventing some automatic HTML formatting from ruining your JSON
 * `mediaType` tells the output format what kind of file to output.
 * `notAlternative` tells the output format not to be included when looping over the `.AlternativeOutputFormats` [page variable](https://gohugo.io/variables/page/#page-variables).
 
-In `\[params.algolia\]`:
+In `[params.algolia]`:
 
 * `vars` sets the [page variables](https://gohugo.io/variables/page/) in which you want included in your index.
 * `params` sets the [custom page params](https://gohugo.io/variables/page/#page-level-params) in which you want included in your index.
@@ -108,29 +108,58 @@ In the example above, we set `baseName` to `algolia`, which tells Hugo to look f
 
 Copy the contents below into `layouts/_default/list.algolia.json`
 
-    {{/* Generates a valid Algolia search index */}}
-    {{- $hits := slice -}}
-    {{- $validVars := $.Site.Params.algolia.vars | default slice -}}
-    {{- $validParams := $.Site.Params.algolia.params | default slice -}}
-    {{- range $i, $hit := where (where .Data.Pages "Params.private" "ne" "true") "Draft" "ne" "true" -}}
-      {{- $dot := . -}}
-      {{/* Set the hit's objectID */}}
-      {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
-      {{/* Include built-in page variables */}}
-      {{- range $key, $var := $hit -}}
-      	{{- if and not (eq $key "Params") (in $validVars (lower $key)) -}}
-        	{{- .Scratch.SetInMap $hit.File.Path $key $var -}}
-        {{- end -}}
+```
+{{/* Generates a valid Algolia search index */}}
+{{- $hits := slice -}}
+{{- $section := $.Site.GetPage "section" .Section }}
+{{- $validVars := $.Param "algolia.vars" | default slice -}}
+{{- $validParams := $.Param "algolia.params" | default slice -}}
+{{- range $i, $hit := .Site.AllPages -}}
+  {{- $dot := . -}}
+  {{- if or (and ($hit.IsDescendant $section) (and (not $hit.Draft) (not $hit.Params.private))) $section.IsHome -}}
+    {{/* Set the hit's objectID */}}
+    {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
+    {{/* Store built-in page variables in iterable object */}}
+    {{- .Scratch.SetInMap "temp" "content" $hit.Plain -}}
+    {{- .Scratch.SetInMap "temp" "date" $hit.Date.UTC.Unix -}}
+    {{- .Scratch.SetInMap "temp" "description" $hit.Description -}}
+    {{- .Scratch.SetInMap "temp" "dir" $hit.Dir -}}
+    {{- .Scratch.SetInMap "temp" "path" "temp" -}}
+    {{- .Scratch.SetInMap "temp" "expirydate" $hit.ExpiryDate.UTC.Unix -}}
+    {{- .Scratch.SetInMap "temp" "path" "temp" -}}
+    {{- .Scratch.SetInMap "temp" "fuzzywordcount" $hit.FuzzyWordCount -}}
+    {{- .Scratch.SetInMap "temp" "keywords" $hit.Keywords -}}
+    {{- .Scratch.SetInMap "temp" "kind" $hit.Kind -}}
+    {{- .Scratch.SetInMap "temp" "lang" $hit.Lang -}}
+    {{- .Scratch.SetInMap "temp" "lastmod" $hit.Lastmod.UTC.Unix -}}
+    {{- .Scratch.SetInMap "temp" "permalink" $hit.Permalink -}}
+    {{- .Scratch.SetInMap "temp" "publishdate" $hit.PublishDate -}}
+    {{- .Scratch.SetInMap "temp" "readingtime" $hit.ReadingTime -}}
+    {{- .Scratch.SetInMap "temp" "relpermalink" $hit.RelPermalink -}}
+    {{- .Scratch.SetInMap "temp" "summary" $hit.Summary -}}
+    {{- .Scratch.SetInMap "temp" "title" $hit.Title -}}
+    {{- .Scratch.SetInMap "temp" "type" $hit.Type -}}
+    {{- .Scratch.SetInMap "temp" "url" $hit.URL -}}
+    {{- .Scratch.SetInMap "temp" "weight" $hit.Weight -}}
+    {{- .Scratch.SetInMap "temp" "wordcount" $hit.WordCount -}}
+    {{- .Scratch.SetInMap "temp" "section" $hit.Section -}}
+    {{/* Include valid page vars */}}
+    {{- range $key, $param := (.Scratch.Get "temp") -}}
+      {{- if in $validVars $key -}}
+        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
       {{- end -}}
-      {{/* Include custom page params */}}
-      {{- range $key, $param := $hit.Params -}}
-        {{- if in $validParams (lower $key) -}}
-          {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
-        {{- end -}}
-      {{- end -}}
-      {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
     {{- end -}}
-    {{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
+    {{/* Include valid page params */}}
+    {{- range $key, $param := $hit.Params -}}
+      {{- if in $validParams $key -}}
+        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
+  {{- end -}}
+{{- end -}}
+{{- jsonify ($.Scratch.GetSortedMapValues "hits") -}}
+```
 
 In this layout, we loop through all of the current page's children and do the following:
 
@@ -186,7 +215,9 @@ The next step is sending your search index to Algolia. For this article, we'll b
 
 [atomic-algolia](https://www.npmjs.com/package/atomic-algolia) is an NPM package that does _atomic_ updates to an Algolia index. This means that it only updates changed records, adds new records, or deletes expired records, and does it all at once, so that your index is never out-of-sync with your website's content.
 
-This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_
+This is important, because Algolia's plans are based on _operations_ on your index, and _searches_ on the index, and this plugin ensures you use the _smallest amount of operations possible!_ Our user @budparr ran a quick test to find out just how many operations can be saved using [atomic-algolia](https://www.npmjs.com/package/atomic-algolia). The results are impressive, you can see that hugo-algolia generated 4,613 operations vs. [atomic-algolia](https://www.npmjs.com/package/atomic-algolia)'s 911 operations.
+
+![](/uploads/2018/03/atomic-algolia-vs-hugo-algolia-test.png)
 
 {{% /tip %}}
 
@@ -274,21 +305,21 @@ First, copy `config/secrets.yml.stub` to `config/secrets.yml` and then open it u
 Then, open up `config/index.js` in your favorite text editor:
 
     module.exports = () => {
-    
+
       var indexes = [
-    
+
         {
-    
+
           name: "YOUR_INDEX_NAME",
-    
+
           url: "PUBLIC_URL_OF_INDEX"
-    
+
         }
-    
+
       ]
-    
+
       return JSON.stringify(indexes)
-    
+
     }
 
 Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com`with your site's domain.
@@ -332,11 +363,10 @@ Algolia has a fantastic library called [InstantSearch.js](https://community.algo
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Front end Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
-<p><strong>Next week:</strong> Hugo Vs Jekyll, a comparisson</p>  
+<p><strong>Next week:</strong> Up & Running with Hugo: Building Your First Site</p>  
 <p><strong>Last week:</strong> We wrote a Jekyll-focused version of this article: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Jekyll Search with Algolia and Webtasks </a>.</p>  
 </div>
 
-<!--
-Have something to add?
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a>
--->
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16502918">Discuss on Hacker News</a>

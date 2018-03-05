@@ -7,8 +7,8 @@ pages:
 - docs/_index.md
 - docs/changelog
 - docs/troubleshooting
-- careers/software-engineer.md
 - careers/marketing.md
+- careers/software-engineer.md
 - careers/full-stack.md
 - careers/admin.md
 - careers/devrel.md
@@ -93,6 +93,12 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
+- type: datetime
+  label: Date
+  name: date
+  description: Date is seen by user
+  config:
+    required: true
 - type: datetime
   name: publishdate
   label: Publish Date
