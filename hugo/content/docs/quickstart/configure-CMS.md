@@ -27,7 +27,7 @@ When your team uploads images and other media, you want to ensure they're going 
 
 ![](/uploads/2018/01/settings.png)
 
-You should see the following settings which are described below. 
+You should see the following settings which are described below.
 
 ![](/uploads/2018/01/file-paths2.png)
 
