@@ -13,36 +13,31 @@ menu:
   docs:
     parent: Quick Start
     weight: 1
-
 ---
+
 ## Overview
 
 This tour will walk you through setting up your first site in Forestry. It demonstrates the primary features and editing functionality of the CMS.
-
-Follow along by forking the [Belkirk Demo Site](https://github.com/forestryio-templates/belkirk-jekyll-demo) on GitHub, or just read through the steps below.
 
 ---
 
 ## Getting Started
 
-For the purposes of this product tour, we'll assume you have a [GitHub account](https://github.com/signup) and have forked the [Belkirk College demo site](https://github.com/forestryio-templates/belkirk-jekyll-demo).
-
-![](/uploads/2018/01/12.png)
+![](/uploads/2018/02/add-site-flow-choose-generator.png)
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
-1. Click "Add Site". In the modal, choose "Import existing site".
-2. You'll be prompted to choose a static site generator. From the dropdown list, choose _Jekyll_.
-3. Select _GitHub_ from the list of options.
-4. You'll be prompted to choose "Public Repos" or "Private Repos". Your fork is a public fork, so click "Public Repos".
-5. Give Forestry access to your GitHub repositories by clicking "Authorize application". _If you are not already logged in, GitHub will prompt you for login credentials first._
-6. Once authorized, you will be redirected back to Forestry. In the first dropdown, select `username/belkirk-college-demo`, and in the second dropdown select the `master` branch.
-7. Enter _Belkirk Product Tour_ into the name field and then click _Next_.
-8. In the final step, you'll be asked to configure Hosting. Choose _Commit to source repo only_ and then click _Save Changes_
+1. Click "Take our demo site out for a spin!"
+2. Select your Git Provider from the list of options.
+3. A window will open asking you to give Forestry access to your repositories. _If you are not already logged in, your provider will prompt you for login credentials first._
+4. Click "Authorize application" and wait a few seconds for the window to close.
+5. Give the new repository a name, or keep the default: `forestry-demo`
+6. Click "Create Site"
+7. After a moment you will be redirected to the Forestry CMS
 
-Congrats, your first site is being imported! This will take a few seconds, so sit back and relax while it imports.
+Congrats, your first site is being created!
 
-When it has finished importing, the _Processing_ label will disappear. Click your site from the list to open up the CMS.
+This process may take a couple minutes. Forestry will create a new repository with your git provider, push a copy of our [Belkirk Jekyll Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo "Belkirk Jekyll Demo Repo") site, and then start the import process. Once the import is complete, the CMS will load in all of your content and you can move on to the next section.
 
 ---
 
