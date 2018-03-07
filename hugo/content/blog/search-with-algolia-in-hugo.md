@@ -102,7 +102,7 @@ The next step is to provide Hugo with the JSON template for your custom output f
 
 {{% tip %}}
 
-In the example above, we set `baseName` to `algolia`, which tells Hugo to look for list templates with "algolia" in the filename. For example, `list.agolia.json`, `taxonomy.algolia.json`.
+In the example above, we set `baseName` to `algolia`, which tells Hugo to look for list templates with "algolia" in the filename. For example, `list.algolia.json`, `taxonomy.algolia.json`.
 
 {{% /tip %}}
 
