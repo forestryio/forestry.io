@@ -1,7 +1,7 @@
 ---
 title: 'Up & Running With Hugo, Part 1: Building Your First Site'
 description: Build a working static site using Hugo in less than 30 minutes
-date: 2018-01-31 13:26:21 +0000
+date: 2018-03-09 05:00:00 -0400
 authors:
 - Chris Macrae
 publishdate: 2017-12-07 04:00:00 +0000
@@ -25,11 +25,13 @@ draft: true
 ---
 {{% tip %}}
 
-This guide was most recently updated on **February 9, 2018.**
+This guide was most recently updated on **March 9, 2018.**
 
 {{% /tip %}}
 
 ---
+
+[Hugo](https://gohugo.io "Hugo Website") has taken the dev-community by storm. The benefits are clear, it brings all the benefits of a static site generator (100% Flexibility, Security, Speed) but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article").
 
 For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS.
 
@@ -49,11 +51,11 @@ We'll be using [_Hugo Boilerplate_](https://github.com/forestryio/hugo-boilerpla
 
 To get started, [download the Hugo Boilerplate](https://github.com/forestryio/hugo-boilerplate/archive/master.zip "Download from GitHub"), and unzip the archive somewhere on your computer. You'll also have to have [Node.js](https://nodejs.org) and [NPM](https://www.npmjs.com/) installed, just follow the instructions on [Node's download page](https://nodejs.org/en/download/).
 
-{{% tip %}}
+<!-- {{% tip %}}
 
 Already have a Hugo site? In that case, feel free to skip ahead to part two of this guide: _Up & Running With Hugo, Part 2: Continuous Integration & Continuous Deployments_
 
-{{% /tip %}}
+{{% /tip %}} -->
 
 Hugo generates a project structure for you automatically. In the boilerplate project, this is the `hugo/` directory. Inside of this directory are various folders containing your site's content, layouts, and assets (e.g, CSS, JS, and images). Take a look at the breakdown of the boilerplates structure outlined below:
 
@@ -116,7 +118,7 @@ To start, let's update the example post shipped with the _Hugo Boilerplate_. Ope
     //=> prints 'Hi, Tom' to STDOUT.
     {{< /highlight >}}
     
-    Check out the [Hugo docs][hugo-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Hugo’s GitHub repo][hugo-gh]. If you have questions, you can ask them on [Hugo Community][hugo-community].
+    Check out the [Hugo docs][hugo-docs] for more info on how to get the most out of Hugo. File all bugs/feature requests at [Hugo’s GitHub repo][hugo-gh]. If you have questions, you can ask them on [Hugo Community][hugo-community].
     
     [hugo-docs]: https://gohugo.io/documentation/
     [hugo-gh]:   https://github.com/gohugoio/hugo
@@ -152,7 +154,7 @@ This will create your new post at `hugo/content/posts/my-first-post.md` as a mar
     draft: true
     ---
 
-In this file, we have _Front Matter (_structured metadata for the page) that can be used in your templates. Below the front matter, we can add markdown content as well.
+In this file, we have _Front Matter_ (structured metadata for the page) that can be used in your templates. Below the front matter, we can add markdown content as well.
 
 Try adding the following to the file and then save your changes.
 
@@ -167,7 +169,7 @@ Right now your new site isn't looking very pretty. Let's fix that by adding a pr
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 5.09.25 PM.png)
 
-We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@_vjeantet](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/`
+We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@vjeantet_](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/`
 
 [Download the theme](https://github.com/vjeantet/hugo-theme-casper/archive/master.zip), unzip the archive and then copy the contents to `hugo/themes/hugo-theme-casper/`.
 
@@ -216,9 +218,11 @@ First, we'll customize the site params. Open up `hugo/config.toml` once more, an
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.39.57 PM.png)
 
-Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\\\\\\\\\\\\\\\[params\\\\\\\\\\\\\\\]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
+Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `[params]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
 
-![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.40.26 PM.png)Now head back to your browser to see your updated site.
+![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.40.26 PM.png)
+
+Now head back to your browser to see your updated site.
 
 ## 4) Customizing Your Theme
 
@@ -284,7 +288,7 @@ Feel free to continue using the Casper theme, or start from scratch using the `h
 
 {{% tip %}}
 
-Check out the example files in the [_Boilerplate repository _](https://github.com/forestryio-templates/hugo-boilerplate/tree/master/hugo/layouts)if you choose to start from scratch.
+Check out the example files in the [_Boilerplate repository_](https://github.com/forestryio-templates/hugo-boilerplate/tree/master/hugo/layouts) if you choose to start from scratch.
 
 {{% /tip %}}
 
@@ -298,8 +302,20 @@ Check out the following further reading to learn more about Hugo:
 
 Next week we'll be releasing a post on setting up version control with Git to facilitate continuous integration and continuous deployment to various hosting providers using [_Forestry_](https://forestry.io)_,_ the CMS for static sites built with Hugo and Jekyll.
 
+
+<div style="padding: 20px 40px;background: #f7f7f7;">  
+<h2>Join us every Friday 📅</h2>  
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
+<p><strong>Next week:</strong> Up & Running with Hugo Part 2: Continuous Integration & Continuous Deployments</p>  
+<p><strong>Last week:</strong> We looked at integrating a performant search into your static site: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Static search with Hugo + Algolia </a>.</p>  
+</div>
+
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16502918">Discuss on Hacker News</a>
+
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
 
-### Last Week
+<!--### Last Week
 
-Last week we [released an article](/blog/hugo-and-jekyll-compared/) comparing two of the most popular static site generators, [_Hugo_](https://gohugo.io) and [_Jekyll_](https://jekyllrb.com). Check it out to learn which of these tools are the right tool for you or your business.
+Last week we [released an article](/blog/hugo-and-jekyll-compared/) comparing two of the most popular static site generators, [_Hugo_](https://gohugo.io) and [_Jekyll_](https://jekyllrb.com). Check it out to learn which of these tools are the right tool for you or your business.-->
