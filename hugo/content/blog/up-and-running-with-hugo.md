@@ -12,7 +12,8 @@ categories:
 tags:
 textline: ''
 headline: ''
-images: []
+images: 
+- "/uploads/2018/02/up_running_w_hugo_I_3.png"
 cta:
   headline: ''
   textline: ''
