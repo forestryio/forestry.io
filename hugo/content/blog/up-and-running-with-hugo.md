@@ -31,11 +31,9 @@ This guide was most recently updated on **March 9, 2018.**
 
 ---
 
-[Hugo](https://gohugo.io "Hugo Website") has taken the dev-community by storm. The benefits are clear, it brings all the benefits of a static site generator (100% Flexibility, Security, Speed) but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article").
+[Hugo](https://gohugo.io "Hugo Website") the popular static site generator written in GoLang has taken the community by storm. It brings all the benefits of a static site generator - 100% Flexibility, Security, Speed - but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article"). In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo. 
 
 For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS.
-
-Hugo is the popular static site generator written in GoLang and is incredibly fast. In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo.
 
 ## Table of Contents
 
@@ -57,26 +55,30 @@ Already have a Hugo site? In that case, feel free to skip ahead to part two of t
 
 {{% /tip %}} -->
 
-Hugo generates a project structure for you automatically. In the boilerplate project, this is the `hugo/` directory. Inside of this directory are various folders containing your site's content, layouts, and assets (e.g, CSS, JS, and images). Take a look at the breakdown of the boilerplates structure outlined below:
+Hugo generates a project structure for you automatically. In the boilerplate project, this is the `hugo/` directory. Inside of this directory are various folders containing your site's content, layouts, and assets (e.g, CSS, JS, and images). Take a look at the breakdown of the boilerplates structure outlined below - note that your OS might hide a few files and folders but that is not of importance to us at the moment:
 
     .
     ├── hugo/                  // The Hugo project; content, data and static files
     |   ├── .forestry/         // Contains Forestry.io configuration files
+    |   ├── archetypes/        // Contains content template files
     |   ├── content/           // Where all site content is stored 
     |   ├── data/              // TOML, YAML or JSON files containing site data 
     |   ├── layouts/           // Your site's layouts
+    |   |   ├── _default/      // Your site's default layouts
     |   |   ├── partials/      // Your site's partials
-    |   |   └── shortcodes/    // Your site's shortcodes
+    |   |   ├── shortcodes/    // Your site's shortcodes
+    |   |   └── 404.html       // 404 page
     |   ├── static/            // Where all static files live
     |   |   ├── css/           // Where compiled CSS files live
+    |   |   ├── img/           // Where user images are stored
     |   |   ├── js/            // Where compiled JS files live
-    |   |   └── uploads/       // Where user uploads are stored
+    |   |   └── svg/           // Where svg are stored
     |   └── config.toml        // The Hugo configuration file
     └─── src/
          ├── css               // CSS/SCSS source files to be compiled to /css/
          └── js                // JS source files to be compiled to /js/
 
-To get the project up and running, open up a terminal window and navigate to the boilerplate folder:
+To get the project up and running, open up a terminal window and navigate to the boilerplate folder (either `hugo-boilerplate/` or `hugo-boilerplate-master/`):
 
     cd path/to/hugo-boilerplate/
 
@@ -134,7 +136,7 @@ _Replace_ `YYYY-MM-DDTHH:MM:SS-00:00` _with a valid date, e.g,_ `2018-01-01T12:4
 
 {{% /tip %}}
 
-Save your changes and then view the updated post in your browser at [https://localhost:3000/posts/example/](https://localhost:3000/posts/example/).
+Save your changes and then view the updated post in your browser at [http://localhost:3000/](http://localhost:3000/). You can see that the date in front of your "Welcome to Hugo!" has changed.
 
 ## Create A New Post
 
@@ -161,7 +163,7 @@ Try adding the following to the file and then save your changes.
     ## Hello world
     Hi, I'm the *Hugo Boilerplate*. I hope you're enjoying this guide!
 
-You can view the updated post in your browser at [http://localhost:3000/posts/my-first-post/](https://localhost:3000/posts/my-first-post/).
+You can view the updated post in your browser at [http://localhost:3000/posts/my-first-post/](http://localhost:3000/posts/my-first-post/).
 
 ## Adding A Theme
 
@@ -169,9 +171,9 @@ Right now your new site isn't looking very pretty. Let's fix that by adding a pr
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 5.09.25 PM.png)
 
-We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@vjeantet_](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/`
+We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@vjeantet_](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/` (you have to add these inside your `hugo/` directory)
 
-[Download the theme](https://github.com/vjeantet/hugo-theme-casper/archive/master.zip), unzip the archive and then copy the contents to `hugo/themes/hugo-theme-casper/`.
+[Download the theme](https://github.com/vjeantet/hugo-theme-casper/archive/master.zip), unzip the archive and then copy the entire contents to `hugo/themes/hugo-theme-casper/`.
 
 Next, you'll need to update your site's configuration with any of the theme-specific configurations.
 
@@ -184,7 +186,7 @@ Open `hugo/config.toml` in your favorite text editor, and replace the contents w
     copyright = "All rights reserved - 2018"
     theme = "hugo-theme-casper"
     disableKinds = ["taxonomy", "taxonomyTerm"]
-    
+  
     [params]
       description = "Welcome to my website"
       metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
@@ -203,7 +205,7 @@ Finally, the boilerplate comes with some example layouts for developers that are
 
     rm -r hugo/layouts/
 
-Now head back over to the browser and check out your updated site!
+Now head back over to the browser and check out [your updated site](http://localhost:3000)! If your page isn't there you might have to use `npm start` again.
 
 ## 3) Customizing Your Site
 
@@ -222,7 +224,7 @@ Next, we'll update the default hero image to something else. Open up `hugo/confi
 
 ![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.40.26 PM.png)
 
-Now head back to your browser to see your updated site.
+Now head back to your browser to see your updated site. It doesn't quite look like the screenshot above but don't worry we'll get there.
 
 ## 4) Customizing Your Theme
 
@@ -272,7 +274,7 @@ Now all of your custom CSS and JS will be used on the site.
 
 Let's give it a try by adding a little border around all of the site's content. Open `src/css/styles.css` and adding the following to the bottom of the file:
 
-    .main-header {
+    .tag-head.main-header {
       height: 80vh;
     }
 
@@ -312,7 +314,7 @@ Next week we'll be releasing a post on setting up version control with Git to fa
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16502918">Discuss on Hacker News</a>
+<!--a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a-->
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
 
