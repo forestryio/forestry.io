@@ -33,7 +33,9 @@ This guide was most recently updated on **March 9, 2018.**
 
 The popular static site generator written in GoLang - [Hugo](https://gohugo.io "Hugo Website") - has taken the community by storm. It brings all the benefits of a static site generator - 100% Flexibility, Security, Speed - but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article"). In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo. 
 
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS.
+For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS. 
+
+How is this different from Hugo's Quick Start guide? We'll be using [_Hugo Boilerplate_](https://github.com/forestryio/hugo-boilerplate "See Hugo Boilerplate on GitHub")_,_ a continuously maintained boilerplate project for Hugo sites that offers a modern developer workflow on top of Hugo.
 
 ## Table of Contents
 
@@ -44,8 +46,6 @@ For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag
 5. [Next Steps](#5-next-steps)
 
 ## 1) Setting Up Hugo
-
-We'll be using [_Hugo Boilerplate_](https://github.com/forestryio/hugo-boilerplate "See Hugo Boilerplate on GitHub")_,_ a continuously maintained boilerplate project for Hugo sites that offers a modern developer workflow on top of Hugo.
 
 To get started, [download the Hugo Boilerplate](https://github.com/forestryio/hugo-boilerplate/archive/master.zip "Download from GitHub"), and unzip the archive somewhere on your computer. You'll also have to have [Node.js](https://nodejs.org) and [NPM](https://www.npmjs.com/) installed, just follow the instructions on [Node's download page](https://nodejs.org/en/download/).
 
