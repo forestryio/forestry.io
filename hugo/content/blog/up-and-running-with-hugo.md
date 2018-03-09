@@ -23,13 +23,13 @@ aliases: []
 draft: false
 
 ---
-{{% tip %}}
+<!--{{% tip %}}
 
 This guide was most recently updated on **March 9, 2018.**
 
 {{% /tip %}}
 
----
+--- -->
 
 The popular static site generator written in GoLang - [Hugo](https://gohugo.io "Hugo Website") - has taken the community by storm. It brings all the benefits of a static site generator - 100% Flexibility, Security, Speed - but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article"). In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo. 
 
