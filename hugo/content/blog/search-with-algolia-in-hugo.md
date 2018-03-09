@@ -68,11 +68,11 @@ With Hugo, we'll do this using the [custom output formats](https://gohugo.io/tem
 
 To get started, open up `config.toml`. Here, we'll add the Hugo configuration for your custom output formats.
 
-<!-- {{% tip %}}
+{{% tip %}}
 
 Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-and-running-with-hugo/) series to get started with the static site generator Hugo in less than 30 minutes!
 
-{{% /tip %}} -->
+{{% /tip %}}
 
     [outputFormats.Algolia]
     baseName = "algolia"
