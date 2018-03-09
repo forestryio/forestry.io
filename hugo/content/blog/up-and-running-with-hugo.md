@@ -1,5 +1,5 @@
 ---
-title: 'Up & Running With Hugo, Part 1: Building Your First Site'
+title: 'Up & Running With Hugo Part I: Building Your First Site'
 description: Build a working static site using Hugo in less than 30 minutes
 date: 2018-03-09 05:00:00 -0400
 authors:
@@ -166,7 +166,7 @@ You can view the updated post in your browser at [http://localhost:3000/posts/my
 
 Right now your new site isn't looking very pretty. Let's fix that by adding a pre-built Hugo theme from the [Hugo Theme Gallery](https://themes.gohugo.io/), built by one of Hugo's great community contributors.
 
-![](/uploads/2018/02/Screen Shot 2018-02-05 at 5.09.25 PM.png)
+![](/uploads/2018/02/up_running_w_hugo_I_1.png)
 
 We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@vjeantet_](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/`. You'll have to add these inside your `hugo/` directory.
 
@@ -215,11 +215,11 @@ First, we'll customize the site params. Open up `hugo/config.toml` once more, an
 * `metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"`
 * `author = "YOUR_NAME"`
 
-![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.39.57 PM.png)
+![](/uploads/2018/02/up_running_w_hugo_I_2.png)
 
 Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `[params]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
 
-![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.40.26 PM.png)
+![](/uploads/2018/02/up_running_w_hugo_I_3.png)
 
 Now head back to your browser to see your updated site. It won't look exactly like the screenshot above but don't worry we'll get there.
 
@@ -275,7 +275,7 @@ Let's give it a try by expanding the height of the main header. Open `src/css/st
       height: 80vh;
     }
 
-![](/uploads/2018/02/Screen Shot 2018-02-05 at 2.55.09 PM.png)
+![](/uploads/2018/02/up_running_w_hugo_I_4.png)
 
 Head back over to your browser to see the final result!
 
@@ -305,7 +305,7 @@ Next week we'll be releasing a post on setting up version control with Git to fa
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
-<p><strong>Next week:</strong> Up & Running with Hugo Part 2: Continuous Integration & Continuous Deployments</p>  
+<p><strong>Next week:</strong> Up & Running with Hugo Part II: Continuous Integration & Continuous Deployments</p>  
 <p><strong>Last week:</strong> We looked at integrating a performant search into your static site: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Static search with Hugo + Algolia </a>.</p>  
 </div>
 
