@@ -41,7 +41,7 @@ For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag
 2. [Adding Content & Installing a Theme](#2-setting-up-your-site)
 3. [Customizing Your Site](#3-customizing-your-site)
 4. [Customizing Your Theme](#4-customizing-your-theme)
-5. [Next Steps](#next-steps)
+5. [Next Steps](#5-next-steps)
 
 ## 1) Setting Up Hugo
 
