@@ -13,7 +13,7 @@ tags:
 textline: ''
 headline: ''
 images: 
-- "/uploads/2018/02/up_running_w_hugo_I_3.png"
+- "/uploads/2018/03/up_running_w_hugo_I_title.png"
 cta:
   headline: ''
   textline: ''
@@ -167,7 +167,7 @@ You can view the updated post in your browser at [http://localhost:3000/posts/my
 
 Right now your new site isn't looking very pretty. Let's fix that by adding a pre-built Hugo theme from the [Hugo Theme Gallery](https://themes.gohugo.io/), built by one of Hugo's great community contributors.
 
-![](/uploads/2018/02/up_running_w_hugo_I_1.png "Casper theme by @vjeantet")
+![](/uploads/2018/03/up_running_w_hugo_I_1.png "Casper theme by @vjeantet")
 
 We're going to use the [Casper](https://github.com/vjeantet/hugo-theme-casper) theme by [_@vjeantet_](https://github.com/vjeantet). We'll do this by adding the theme to the `hugo/themes/` directory, specifically `hugo/themes/hugo-theme-casper/`. You'll have to add these inside your `hugo/` directory.
 
@@ -216,11 +216,11 @@ First, we'll customize the site params. Open up `hugo/config.toml` once more, an
 * `metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"`
 * `author = "YOUR_NAME"`
 
-![](/uploads/2018/02/up_running_w_hugo_I_2.png "Casper theme with default styles and content")
+![](/uploads/2018/03/up_running_w_hugo_I_2.png "Casper theme with default styles and content")
 
 Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `[params]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
 
-![](/uploads/2018/02/up_running_w_hugo_I_3.png "Added a scenic image")
+![](/uploads/2018/03/up_running_w_hugo_I_3.png "Added a scenic image")
 
 Now head back to your browser to see your updated site. It won't look exactly like the screenshot above but don't worry we'll get there.
 
@@ -276,7 +276,7 @@ Let's give it a try by expanding the height of the main header. Open `src/css/st
       height: 80vh;
     }
 
-![](/uploads/2018/02/up_running_w_hugo_I_4.png "The final result")
+![](/uploads/2018/03/up_running_w_hugo_I_4.png "The final result")
 
 Head back over to your browser to see the final result!
 
