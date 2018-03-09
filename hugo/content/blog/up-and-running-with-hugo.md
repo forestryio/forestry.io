@@ -310,9 +310,9 @@ Next week we'll be releasing a post on setting up version control with Git to fa
 <p><strong>Last week:</strong> We looked at integrating a performant search into your static site: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Static search with Hugo + Algolia </a>.</p>  
 </div>
 
-<!--## Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a-->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16552437">Discuss on Hacker News</a>
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
 
