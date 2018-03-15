@@ -11,7 +11,7 @@ title: 'Product Update: Organizations + New Pricing'
 description: 'The all-new Organizations and our new pricing structure will let you collaborate with ease and scale at your own pace.'
 categories:
 - Cms
-date: 2018-03-16 12:00:00 +0000
+date: 2018-03-20 12:00:00 +0000
 draft: true
 
 ---
@@ -24,7 +24,7 @@ Are you on our Personal Plan? Check out your new features [here](#invite-guests-
 
 Let me give you a quick tour of the ways you can engage, collaborate and grow with your team and Organizations.
 
-<!--![](/uploads/2018/03/organizations.gif)-->
+![](/uploads/2018/03/organizations.gif)
 
 ### Add Unlimited sites
 Until now our upgrades were on a page-by-page basis. No more. With *Organizations*, you can add as many sites as you need with the same permissions and capabilities across all of your sites. 

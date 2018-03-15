@@ -1,15 +1,17 @@
 ---
-title: 'Up & Running With Hugo, Part 2: Continuous Integration & Continuous Deployments'
-description: ''
-date: 2018-02-05 15:47:26 +0000
-authors: []
+title: 'Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)'
+description: 'Using Continuous Integration and Continuous Deployment'
+date: 2018-03-16 15:47:26 +0000
+authors: 
+- Chris Macrae
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 tags:
 - Frontend Friday
 headline: ''
 textline: ''
-images: []
+images: 
+- "/uploads/2018/03/up_running_w_hugo_II_1.png"
 categories: []
 cta:
   headline: ''
@@ -21,15 +23,14 @@ aliases: []
 draft: true
 
 ---
-{{% tip %}}
+<!--{{% tip %}}
 
 This guide was most recently updated on **February 9, 2018.**
 
 {{% /tip %}}
 
----
-
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we have a follow up to [_Up & Running With Hugo, Part 1: Building Your First Site_](/blog/up-and-running-with-hugo/). This week, we cover integrating your repository with Git, and setting up continuous integration and continuous deployment.
+--- -->
+For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we have a follow up to [_Up & Running With Hugo, Part 1: Building Your First Site_](/blog/up-and-running-with-hugo/). This week, we cover integrating your repository with GitHub, and setting up continuous integration and continuous deployment with Forestry.io and some other handy tools.
 
 ## Table of Contents
 
@@ -45,7 +46,7 @@ Before we continue, you might be asking _What is CI & CD..?_ Let me explain:
 
 ### Continuous Integration (CI)
 
-Continuous Integration (CI) is a development practice where developers check-in code to a version control tool multiple times per day. Each time code is checked-in, an automated can be build performed, allowing developers to identify problems with code quickly.
+Continuous Integration (CI) is a development practice where developers check-in code to a version control tool multiple times per day. Each time code is checked-in, an automated build can be performed, allowing developers to identify problems with code quickly.
 
 ### Continuous Delivery (CD)
 
@@ -217,6 +218,20 @@ Now that you've completed the _Up & Running With Hugo_ guide, you're all set to 
 
 We recommend you head over to the [Forestry docs](https://forestry.io/docs) to learn how Forestry can help make managing your static site easier.
 
-### Up Next
+### Up next
 
-TK: todo
+This concludes our Hugo + Git + Forestry.io Introduction. Next week DJ is diving deeper into Continuous Integration and Continuous Deployment using CircleCI - a technology we at Forestry.io are using every day.
+
+
+<div style="padding: 20px 40px;background: #f7f7f7;">  
+<h2>Join us every Friday 📅</h2>  
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
+<p><strong>Next week:</strong> We'll look into Continuous Integration and Continuous Deployment: Automate Your Static Site Deployment with CircleCI</p>  
+<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo/">Up & Running With Hugo Part I: Building Your First Site</a>.</p>  
+</div>
+
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16552437">Discuss on Hacker News</a>
+
+[Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!

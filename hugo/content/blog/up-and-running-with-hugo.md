@@ -306,7 +306,7 @@ Next week we'll be releasing a post on setting up version control with Git to fa
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
-<p><strong>Next week:</strong> Up & Running with Hugo Part II: Continuous Integration & Continuous Deployments</p>  
+<p><strong>Next week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running with Hugo Part II: Continuous Integration & Continuous Deployments</a></p>  
 <p><strong>Last week:</strong> We looked at integrating a performant search into your static site: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Static search with Hugo + Algolia </a>.</p>  
 </div>
 
