@@ -8,8 +8,7 @@ images:
 publishDate: 2018-01-10 14:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 title: 'Product Update: Organizations + New Pricing'
-description: Have more control over what media is available in Forestry + Search &
-  Performance Improvements!
+description: 'The all-new Organizations and our new pricing structure will let you collaborate with ease and scale at your own pace.'
 categories:
 - Cms
 date: 2018-03-16 12:00:00 +0000
