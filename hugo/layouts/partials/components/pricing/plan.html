@@ -19,6 +19,12 @@
         <li class="plan--item">
           <div class="checkmark"></div>
           {{ .text }}
+          {{ with .info }}
+            <div class="plan--item__info">
+              <span class="plan--item__tooltip-toggle"></span>
+              <span class="plan--item__tooltip">{{ . }}</span>  
+            </div>
+          {{ end }}
         </li>
       {{ end }}
     </ul>

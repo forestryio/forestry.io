@@ -18,6 +18,7 @@ contentLoaded().then(() => {
   const isHome = document.body.classList.contains("home")
   const isDocs = document.body.classList.contains("section-docs")
   const isBlog = document.body.classList.contains("section-blog")
+  const isPricing = document.body.classList.contains("type-pricing")
 
   /**
    * Enable navbar logic
@@ -46,6 +47,28 @@ contentLoaded().then(() => {
       process.env.ALGOLIA_SEARCH_KEY,
       "blog"
     )
+  }
+
+  if (isPricing) {
+    const info = [...document.querySelectorAll(".plan--item__tooltip-toggle")]
+    info.forEach(function(item) {
+      item.addEventListener("click", function(event) {
+        item.nextElementSibling.classList.add("active")
+        event.stopPropagation()
+      })
+      item.addEventListener("touchstart", function(event) {
+        item.nextElementSibling.classList.add("active")
+        event.stopPropagation()
+      })
+      document.body.addEventListener("click", function(event) {
+        item.nextElementSibling.classList.remove("active")
+        event.stopPropagation()
+      })
+      document.body.addEventListener("touchstart", function(event) {
+        item.nextElementSibling.classList.remove("active")
+        event.stopPropagation()
+      })
+    })
   }
 
   /**

@@ -129,11 +129,64 @@
 }
 
 .plan--item {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid $color-grey;
   font-size: 0.8rem;
   padding: 0.5rem 0;
+  position: relative;
   &:last-of-type {
     border-bottom: 0;
+  }
+}
+
+.plan--item__info {
+  position: relative;
+  margin-left: auto;
+}
+
+.plan--item__tooltip-toggle {
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/info-circle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  &:hover + .plan--item__tooltip {
+    opacity: 1;
+    pointer-events: all;
+    user-select: all;
+  }
+}
+
+.plan--item__tooltip {
+  opacity: 0;
+  position: absolute;
+  top: -1rem;
+  transform: translate(-100%, 0%);
+  left: -0.5rem;
+  width: 160px;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  background: $color-white;
+  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  user-select: none;
+  z-index: 500;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    user-select: all;
+  }
+
+  @media screen and (min-width: 870px) {
+    transform: translate(-50%, -100%);
+    left: 50%;
   }
 }
 
