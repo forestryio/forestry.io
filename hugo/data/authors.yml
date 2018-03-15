@@ -7,6 +7,7 @@ map:
   Colin Garvey: colin-garvey
   Michael Soolee: michael-soolee
   Matt Duffy: matt-duffy
+  Sebastian Engels: sebastian-engels
 authors:
 - avatar: "/img/forestry-symbol.svg"
   bio: |
@@ -68,3 +69,11 @@ authors:
   twitter: ''
   title: Developer
   lastName: Duffy
+- avatar: "/uploads/2018/03/Sebastian.jpg"
+  bio: ''
+  firstName: Sebastian
+  fullName: Sebastian Engels
+  lastName: Engels
+  shortBio: ''
+  twitter: ''
+  title: "Head of Marketing & Growth"
