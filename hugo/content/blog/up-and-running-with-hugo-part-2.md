@@ -6,8 +6,10 @@ authors:
 - Chris Macrae
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-tags:
+categories:
 - Frontend Friday
+- CICD
+tags:
 headline: ''
 textline: ''
 images: 
@@ -30,14 +32,14 @@ This guide was most recently updated on **February 9, 2018.**
 {{% /tip %}}
 
 --- -->
-For this week on [_Frontend Friday_](/tags/frontend-friday/ "frontend friday tag")_,_ we have a follow up to [_Up & Running With Hugo, Part 1: Building Your First Site_](/blog/up-and-running-with-hugo/). This week, we cover integrating your repository with GitHub, and setting up continuous integration and continuous deployment with Forestry.io and some other handy tools.
+For this week on [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag")_,_ we have a follow up to [_Up & Running With Hugo, Part 1: Building Your First Site_](/blog/up-and-running-with-hugo/). This week, we cover integrating your repository with GitHub, and setting up continuous integration and continuous deployment with Forestry.io and some other handy tools.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Setting up Git](#setting-up-git)
-3. [Setting up Continuous Integration](#setting-up-continuous-integration)
-4. [Setting up Continuous Deployment with Forestry](#setting-up-continuous-deployment-with-forestry)
+1. [Introduction](#1-introduction)
+2. [Setting up Git](#2-setting-up-git)
+3. [Setting up Continuous Integration](#3-setting-up-continuous-integration)
+4. [Setting up Continuous Deployment with Forestry](#4-setting-up-continuous-deployment-with-forestry)
 5. [Next Steps](#next-steps)
 
 ## 1) Introduction
@@ -76,7 +78,7 @@ If you're new to Git and don't have Git installed, head over to [Git download pa
 
 {{% /tip %}}
 
-Next, open your terminal once more and ensure your working path is the _Boilerplate_ project. If not, run:
+Next, open your terminal once more and ensure your working path is the _Boilerplate_ project (or any project you would like to connect with git). If not, run:
 
     cd /PATH/TO/hugo-boilerplate
 
@@ -108,7 +110,7 @@ _If prompted, ensure you **don't** initialize the repository with a README, lice
 
 {{% tip %}}
 
-If you're new to Git, we recommend you create a [GitHub account](github.com/signup) and then create a [GitHub repository](https://help.github.com/articles/create-a-repo/).
+If you're new to Git, we recommend you create a [GitHub account](https://github.com/signup) and then create a [GitHub repository](https://help.github.com/articles/create-a-repo/).
 
 {{% /tip %}}
 
@@ -220,18 +222,18 @@ We recommend you head over to the [Forestry docs](https://forestry.io/docs) to l
 
 ### Up next
 
-This concludes our Hugo + Git + Forestry.io Introduction. Next week DJ is diving deeper into Continuous Integration and Continuous Deployment using CircleCI - a technology we at Forestry.io are using every day.
+This concludes our Hugo + Git + Forestry.io Introduction. Next week DJ is diving deeper into Continuous Integration and Continuous Delivery using CircleCI - a technology we at Forestry.io are using every day.
 
 
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> We'll look into Continuous Integration and Continuous Deployment: Automate Your Static Site Deployment with CircleCI</p>  
+<p><strong>Next week:</strong> We'll look into Continuous Integration and Continuous Delivery: Automate Your Static Site Deployment with CircleCI</p>  
 <p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo/">Up & Running With Hugo Part I: Building Your First Site</a>.</p>  
 </div>
 
-## Have something to add?
+<!--## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16552437">Discuss on Hacker News</a>
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16552437">Discuss on Hacker News</a>-->
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
