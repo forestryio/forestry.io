@@ -24,11 +24,10 @@ draft: true
 ---
 ## There are two ways to handle multilingual content in Hugo
 
-1) Separate your content into different directories based on language and create a different config file for each language.   With this method you're required to build each language separately. Running \*\*hugo --config="config_en.toml"\*\* would build the english version of your site, outputted to a /en/ directory (path is configurable)
-
-This method could work with Forestry, but since we only run config.toml when building your site it would require you to import each language as a different project into Forestry and ensuring each config file were named config.toml (instead of config_en.toml). Not ideal, but doable.
-
-2) The second method (preferred) only requires a single config file and also requires you to name each content file based on the language. So you could have home.en.md, home.jp.md, home.fr.md, etc. You can also specify a default language. For example, if your default language is set to English, you would have home.md and home.jp.md, home.fr.md, etc.  This method also outputs the site into different language directories (path is configurable).
+1. Separate your content into different directories based on language and create a different config file for each language.   With this method you're required to build each language separately. Running \*\*hugo --config="config_en.toml"\*\* would build the english version of your site, outputted to a /en/ directory (path is configurable)  
+     
+   This method could work with Forestry, but since we only run config.toml when building your site it would require you to import each language as a different project into Forestry and ensuring each config file were named config.toml (instead of config_en.toml). Not ideal, but doable.
+2. The second method (preferred) only requires a single config file and also requires you to name each content file based on the language. So you could have home.en.md, home.jp.md, home.fr.md, etc. You can also specify a default language. For example, if your default language is set to English, you would have home.md and home.jp.md, home.fr.md, etc.  This method also outputs the site into different language directories (path is configurable).
 
 See here: [https://gohugo.io/content/multilingual#multilingual-themes-support](https://gohugo.io/content/multilingual#multilingual-themes-support "https://gohugo.io/content/multilingual#multilingual-themes-support")
 
