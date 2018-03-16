@@ -27,7 +27,7 @@ draft: false
 ---
 <!--{{% tip %}}
 
-This guide was most recently updated on **February 9, 2018.**
+This guide was most recently updated on **March 16, 2018.**
 
 {{% /tip %}}
 
