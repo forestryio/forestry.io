@@ -232,8 +232,8 @@ This concludes our Hugo + Git + Forestry.io Introduction. Next week DJ is diving
 <p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo/">Up & Running With Hugo Part I: Building Your First Site</a>.</p>  
 </div>
 
-<!--## Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16552437">Discuss on Hacker News</a>-->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16600724">Discuss on Hacker News</a>
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
