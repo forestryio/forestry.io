@@ -117,7 +117,7 @@ If you're new to Git, we recommend you create a [GitHub account](https://github.
 Next, grab the _Remote URL_ for your repository, and we'll add it to your local repository. _(Instructions for finding this can be found for_ [_GitHub_](https://help.github.com/articles/which-remote-url-should-i-use/) _&_ [_BitBucket_](https://confluence.atlassian.com/bitbucket/change-the-remote-url-to-your-repository-794212774.html)_.)_
 
     git remote add origin YOUR_REMOTE_URL
-    git branch --set-upstream origin/master
+    git branch --set-upstream-to origin master
 
 Verify the URL is correct:
 
