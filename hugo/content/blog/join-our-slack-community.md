@@ -27,7 +27,7 @@ weight: ''
 ---
 Want to chat with the Forestry.io community about static sites, best-practices, features, and more? Join the slack community here (we'll get back to you ASAP).
 
-Sign up here:
+Sign up here: 
 <span style="text-decoration-style: initial; text-decoration-color: initial;"><u><a href="https://join.slack.com/t/forestry-community/shared_invite/enQtMzMyNDc0OTU0NTAyLTVkZjNkYjM4YmI3ZDQ3MjNkNzYzYzNjYmRkNzA1NmNhOTY2YThlY2UzMWU2OTgwMTcwNzk2ODk5Y2I1NzMwZDQ">Forestry.io Community</a></u></span>
 <!--
 <form action="https://formspree.io/scott@forestry.io" method="POST" style="position:relative;">
