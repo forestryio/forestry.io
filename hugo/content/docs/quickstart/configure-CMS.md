@@ -34,7 +34,7 @@ You should see the following settings which are described below.
 ### Upload Folder
 The folder within your repo to store the uploaded media. If this is set to a directory that doesn't exist, Forestry will create that directory.
 
-### Font Matter File URL
+### Front Matter File URL
 The path that will **prepend** media files uploaded from Front Matter fields. For example, if this value were set to `/uploads` Forestry would write out the following image value.
 
 ```yaml
