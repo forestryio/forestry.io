@@ -5,7 +5,7 @@ title: Team Management
 weight: 5
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-03-19 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -15,71 +15,87 @@ menu:
     weight: 5
 
 ---
-## Managing Team Members
 
-Team members are managed on a per-site basis. On free plans, you can only have 1 user per site.
+Currently collaboration with other users can happen in two ways, as Users and as Guests. Users are managed on a per-organization basis and can be assigned [different roles](#user-roles). Guests on the other hand have a predefined permission level and are assigned on a per-site basis. Any site can have up to 3 Guests.
 
-![](/uploads/2018/01/40.png)To manage the team for a site, navigate to the dashboard, click the "..." icon to the right of the site you want to manage, and then click "Manage Team".
+## Managing Users
 
-## Inviting New Members
+![](/uploads/2018/03/team-management-settings.png)
 
-To add a new team member, click _Add people_. This will add a new row to the list. Enter the new team member's email address and desired user role.
+To manage the team for an organizations, navigate to the dashboard and select your organization, click on the <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="2"><path d="M7.75 22.149L12 19.48l4.25 2.669a11.029 11.029 0 0 0 4.088-2.973l-1.224-4.865 3.85-3.216a10.933 10.933 0 0 0-1.561-4.807l-5.006-.34-1.87-4.656A11.032 11.032 0 0 0 12 1c-.87 0-1.715.1-2.527.292l-1.87 4.657-5.006.339a10.933 10.933 0 0 0-1.56 4.807l3.85 3.216-1.225 4.865a11.029 11.029 0 0 0 4.087 2.973z"></path><circle cx="12" cy="12" r="3"></circle></g></svg> in the upper right corner, and then click "Users".
 
-When you've finished adding all new team members, click _Save_ to confirm the changes.
+## Inviting New Users
 
-_This will send an email invitation to each new team member to join the site._
+To add a new User, click _Add User_. This will add a new row to the list. Enter the new User's email address and desired user role.
+
+When you've finished adding all new Users, click _Add_ to confirm the changes.
+
+_This will send an email invitation to the new Users to join the Organization._
 
 {{% tip %}}
-You can cancel any changes to your site's team by clicking the close _(X)_ button in the top right.
+You can cancel any changes to your Organization's team by clicking _Cancel_ in the bottom right corner.
 {{% /tip %}}
 
-## Removing Team Members
+## Removing Users
 
-To remove a team member, click the _trash_ icon to the right of their user role.
+To remove a User, click the _trash_ icon to the right of their user role, make sure you're removing the right User and then click on "Remove User"
+
+## Managing Guests
+
+![](/uploads/2018/03/team-management-add-guest.png)
+
+To add Guests to your sites, navigate to the dashboard and select "My sites" or an organization, choose a site and click on the "..." and then click on "Manage Guests". 
+
+The following screen shows you all the users that are already Guests to this site. 
+
+## Inviting Guests
+
+To add a Guest, click _Add Guest_. This will add a new row to the list. Enter the new Guest's email address you can repeat this process and continue adding Guests.
+
+When you've finished adding all new Guests, click _Save_ to confirm the changes.
+
+_This will send an email invitation to the new Guests to join the site._
+
+## Removing Guests
+
+To remove a Guest, click the _trash_ icon to the right of their e-mail.
 
 When you've finished, click _Save_ to confirm the changes.
 
 ## User Roles
 
-In Forestry, team members can be given one of four roles. These affect what the user can do in the CMS.
+In Organizations, Users can be given one of three roles. These affect what the user can do in the CMS.
 
-### Site Owner
+### Editor (also Guests)
 
-The primary account holder of a site.
+The editor role gives a User the ability to manage content across sites within that organization.
 
-They can:
+{{% tip %}}
+Guests have the ability to manage content for their respective site but don't have access to sites across the organization.
+{{% /tip %}} 
+
+*They can:*
 
 1. Edit and publish content
-2. Manage other users
-3. Manage billing/plan for the site
-4. Manage the site settings
-5. Delete the site (this is irreversible)
+2. Upload and manage media content
 
 ### Developer
 
-The developer role gives a team member the ability to manage all aspects of a site.
+The developer role gives a User all permissions of an Editor and they can:
 
-They can:
+*Editor Role and*
 
-1. Edit and publish content
-2. Manage other users
-3. Manage billing/plan for the site
-4. Can manage the site settings
+1. Edit and manage Front Matter templates
+2. Create and manage sites
+3. Manage site settings
 
-### Site Manager
+### Admin
 
-The manager role gives a team member the ability to manage a site's team and billing.
+The admin role gives a User all permissions of a Developer and they can:
 
-They can:
+*Developer Role and*
 
-1. Edit and publish content
-2. Manage other users
-3. Manage billing/plan for the site
-
-### Content Editor
-
-The content editor role gives a team member the ability to manage content.
-
-They can:
-
-1. Edit and publish content
+1. Manage other users
+2. Manage billing for the Organization
+3. Manage the organization & sites settings
+4. Delete the organization & sites (this is irreversible)
