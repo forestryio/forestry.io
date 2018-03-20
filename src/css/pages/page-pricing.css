@@ -103,17 +103,16 @@
 }
 
 .plan--description {
-  color: $color-dark;
   display: block;
-  font-size: 1rem;
   font-weight: 500;
-  margin-top: 2rem;
-  min-height: 3.5rem;
+  color: $color-white;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  width: 70%;
+}
 
-  @media screen and (min-width: 870px) {
-    margin-top: 3.5rem;
-    min-height: 3.5rem;
-  }
+.plan--description__mobile {
+  color: $color-dark;
 }
 
 .plan--cta {
@@ -190,14 +189,12 @@
   }
 }
 
-.fine-print {
-  background: $color-white;
-  padding-bottom: 4rem;
-  padding-top: 8rem;
+.plan--item__includes {
+  font-style: italic;
+  color: #999;
   font-size: 0.8rem;
+}
 
-  @media screen and (min-width: 870px) {
-    padding-bottom: 4rem;
-    padding-top: 0;
-  }
+.plan--item__includes {
+  margin-top: 3.5rem;
 }

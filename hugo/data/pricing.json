@@ -1,15 +1,20 @@
 {
   "plans": [
     {
-      "title": "personal",
+      "title": "Personal",
       "priceAnnually": 0,
       "priceMonthly": 0,
       "description": "",
+      "planIncludes": " .",
       "buttonText": "Get started",
       "buttonUrl": "https://forestry.io/signup/",
       "planItems": [
         {
-          "text": "1 User"
+          "text": "Up to 3 Guests per site",
+          "info": "Single-site users with limited permissions. Used for clients or external colleagues"
+        },
+        {
+          "text": "Unlimited sites"
         },
         {
           "text": "Community support"
@@ -27,75 +32,33 @@
           "text": "Jekyll plugin support"
         },
         {
+          "text": "Forestry Remote",
+          "info": "Install the Forestry CMS on your site (mysite.com/admin)"
+        },
+        {
           "text": "Preview in staging environment"
         }
       ]
     },
     {
-      "title": "small team",
+      "title": "Business",
       "priceAnnually": 0,
       "priceMonthly": 9,
-      "description": "",
+      "description": "Starting at $29/month which includes your first 5 users",
+      "planIncludes": "Everything in Personal plus",
       "buttonText": "Get started",
       "buttonUrl": "https://forestry.io/signup/",
       "planItems": [
         {
-          "text": "3 Users"
+          "text": "Organization account",
+          "info": "Manage one group of users across all of your sites and branches"
         },
         {
-          "text": "Community support"
+          "text": "User permissions",
+          "info": "Assign a role to each member in your organization"
         },
         {
-          "text": "Git sync"
-        },
-        {
-          "text": "Automatic build & deploy"
-        },
-        {
-          "text": "Host anywhere"
-        },
-        {
-          "text": "Jekyll plugin support"
-        },
-        {
-          "text": "Preview in staging environment"
-        },
-        {
-          "text": "Forestry Remote"
-        }
-      ]
-    },
-    {
-      "title": "large team",
-      "priceAnnually": 0,
-      "priceMonthly": 29,
-      "description": "",
-      "buttonText": "Get started",
-      "buttonUrl": "https://forestry.io/signup/",
-      "planItems": [
-        {
-          "text": "7 Users"
-        },
-        {
-          "text": "Business hour support"
-        },
-        {
-          "text": "Git sync"
-        },
-        {
-          "text": "Automatic build & deploy"
-        },
-        {
-          "text": "Host anywhere"
-        },
-        {
-          "text": "Jekyll plugin support"
-        },
-        {
-          "text": "Preview in staging environment"
-        },
-        {
-          "text": "Forestry Remote"
+          "text": "Business support"
         }
       ]
     },
@@ -104,6 +67,7 @@
       "priceAnnually": "_",
       "priceMonthly": "_",
       "description": "",
+      "planIncludes": "Everything in Business plus",
       "buttonText": "Get a quote",
       "buttonUrl": "/support",
       "planItems": [
@@ -111,34 +75,19 @@
           "text": "Flexible user limits"
         },
         {
-          "text": "Enterprise support"
+          "text": "Priority support"
         },
         {
-          "text": "Git sync"
+          "text": "* On-premise installation",
+          "info": "Run Forestry behind your firewall (optional)"
         },
         {
-          "text": "Automatic build & deploy"
+          "text": "Connect to on-premise Git sources",
+          "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
         },
         {
-          "text": "Host anywhere"
-        },
-        {
-          "text": "Jekyll plugin support"
-        },
-        {
-          "text": "Preview in staging environment"
-        },
-        {
-          "text": "Forestry Remote"
-        },
-        {
-          "text": "Enterprise User Management"
-        },
-        {
-          "text": "Manage multiple sites"
-        },
-        {
-          "text": "* On-premise Installation"
+          "text": "Enterprise user management",
+          "info": "Support for advanced authentication systems (LDAP, Active Directory, etc)"
         }
       ]
     }

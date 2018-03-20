@@ -6,7 +6,9 @@
       <span class="price">{{ .priceMonthly }}</span>
     </div>
     <span class="price-note">
-      Per site/month
+      {{ if eq .title "Business" }}Per user{{ end }}
+       / month
     </span>
   </div>
+  <p class="plan--description">{{ .description }}</p>
 </div>

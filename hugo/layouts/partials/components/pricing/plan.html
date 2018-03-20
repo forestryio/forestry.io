@@ -7,13 +7,17 @@
         <span class="price">{{ .priceMonthly }}</span>
       </div>
       <span class="price-note">
-        Per site/month
+        Per user / month
       </span>
+      <p class="plan--description plan--description__mobile">{{ .description }}</p>
     </div>
   </div>
   <a href="{{ .buttonUrl | absURL }}" class="plan--cta button primary small">{{ .buttonText }}</a>
-  <p class="plan--description">{{ .description }}</p>
+  <p class="plan--description"></p>
   <div class="plan--includes">
+    <div class="plan--item__includes">
+      {{ .planIncludes }}
+    </div>
     <ul>
       {{- range .planItems -}}
         <li class="plan--item">
@@ -22,7 +26,7 @@
           {{ with .info }}
             <div class="plan--item__info">
               <span class="plan--item__tooltip-toggle"></span>
-              <span class="plan--item__tooltip">{{ . }}</span>  
+              <span class="plan--item__tooltip">{{ . }}</span>
             </div>
           {{ end }}
         </li>
