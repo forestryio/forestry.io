@@ -43,7 +43,7 @@ Get up to 3 Guest users per site on all plans. A “Guest” is a single-site us
 
 With GitHub, you can set up unlimited repos and we feel it should be the same for sites in Forestry.  You can now manage unlimited sites with Forestry on all plans.  The Personal plan only allows up to 3 Guest users per site, so if you need to manage a larger team, upgrade to the Business plan.
 
-### Branches
+### A site for each branch
 
 Many of our users set up multiple branches in Forestry by creating a new site for every branch in their repository. For example, if your repository has a _staging_ branch and a _production_ branch, you can set those up as two separate sites within Forestry at no extra cost. If you’re on the Business plan, you can manage your users across all of your branches from a single Organization UI.
 
