@@ -27,7 +27,7 @@ Now, the Personal plan supports unlimited sites and up to 3 free Guest users per
 
 ![](/uploads/2018/03/forestryio-pricing.png)
 
-## Better for simple sites
+## A Better Personal Plan
 
 With our previous free plan, you were charged for each site that had multiple users and we felt it was too restrictive for people building simple static sites.
 
@@ -39,14 +39,14 @@ Get up to 3 Guest users per site on all plans. A “Guest” is a single-site us
 
 ## Unlimited Sites
 
-With GitHub, you can set up unlimited repos and we feel it should be the same for your Forestry sites.  You can now manage unlimited sites with Forestry on all plans (including free).  The free plan only allows up to 3 Guest users per site, so if you need to manage a large team upgrade to the Business plan.
+With GitHub, you can set up unlimited repos and we feel it should be the same for sites in Forestry.  You can now manage unlimited sites with Forestry on all plans (including free).  The free plan only allows up to 3 Guest users per site, so if you need to manage a large team, upgrade to the Business plan.
 
-## Manage Branches
+### Branches
 
 Many of our users set up multiple branches in Forestry. They do this by creating a new site for every branch in their repository. For example, if your repository has a staging branch and a production branch, you can set those up as two separate sites within Forestry at no extra cost. If you’re on the Business plan, you can manage your users across all of your branches from a single Organization.
 
-## Business Plan
+## Forestry Organizations
 
-Now you can set up a Forestry organization to manager your users across all of your sites.  The Business plan is an Organization Account account (like an Organization account in GitHub). It allows you to manage users and their roles for your entire organization.
+Now you can set up a Forestry organization to manager your users across all of your sites (and branches).  The Business plan is an Organization Account account (like an Organization Account in GitHub). It allows you to manage users and their roles for your entire organization.
 
 ![](/uploads/2018/03/business-plan-ui.png)
