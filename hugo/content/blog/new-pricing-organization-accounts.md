@@ -49,6 +49,6 @@ Many of our users set up multiple branches in Forestry by creating a new site fo
 
 ## Forestry Organizations
 
-Now you can set up a Forestry organization to manager your users across all of your sites (and branches).  The Business plan is an Organization Account account. It allows you to manage users and their roles for your entire organization.
+With the _Business_ plan you can set up an Organization Account to manager your users and their roles across all of your sites (and branches).  The Business plan starts at $29/month which includes your first 5 users. This plan grows with your company and each additional user is $9/month.  
 
 ![](/uploads/2018/03/business-plan-ui.png)
