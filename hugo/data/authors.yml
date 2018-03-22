@@ -8,6 +8,7 @@ map:
   Michael Soolee: michael-soolee
   Matt Duffy: matt-duffy
   Sebastian Engels: sebastian-engels
+  DJ Walker: dj-walker
 authors:
 - avatar: "/img/forestry-symbol.svg"
   bio: |
@@ -60,7 +61,7 @@ authors:
   lastName: Garvey
   fullName: Colin Garvey
   shortBio: |
-    Marketer. Developer. Founder of <a href='https://desiredpersona.com/' target='_blank'>Desired Persona</a>
+    Marketer. Developer. Founder of Desired Persona
   twitter: desiredpersona
   title: Marketing & Developer
 - avatar: ''
@@ -77,3 +78,11 @@ authors:
   shortBio: ''
   twitter: ''
   title: "Head of Marketing & Growth"
+- avatar: "/uploads/2018/03/DJ.jpg"
+  bio: ''
+  firstName: DJ
+  fullName: DJ Walker
+  lastName: Walker
+  shortBio: 'Musician who writes code to avoid disappointing his parents'
+  twitter: ''
+  title: 'Developer Relations'

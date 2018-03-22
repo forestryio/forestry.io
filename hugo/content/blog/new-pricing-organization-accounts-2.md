@@ -1,7 +1,7 @@
 ---
 title: New Pricing + Organization Accounts
 description: ''
-date: 2018-03-22 12:38:35 +0000
+date: 2018-03-23 12:38:35 +0000
 authors: ['scott-gallant']
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -37,7 +37,7 @@ That’s why we’re supporting **unlimited sites** and **up to 3 guest users pe
 
 ## A More Flexible Business Plan
 
-With the new Business Plan we're tackling essentially three issues that have arised for our business users in the past. We made it easier to give your collaborators limited access to your sites as a Guest. We moved away from a per-site plan to a per-organization plan. Now, the entire feature-set extends to all your sites and the Organization structure is aligning Forestry further with GitHub as well. Lastly, the new plan can grow organically with your team using a per-user fee.
+With the new Business Plan we moved away from a per-site plan to a per-organization plan. Now, the entire feature-set extends to all your sites and the Organization structure is aligning Forestry further with GitHub. Lastly, the new plan can grow organically with your team using a per-user fee.
 
 ### Guest Users
 
@@ -45,7 +45,7 @@ Get up to 3 Guest users per site on all plans. A “Guest” is a single-site us
 
 ### Unlimited Sites
 
-With GitHub, you can set up unlimited repos and we feel it should be the same for sites in Forestry.  You can now manage unlimited sites with Forestry on all plans.  The Personal plan only allows up to 3 Guest users per site, so if you need to manage a larger team, upgrade to the Business plan.
+With GitHub, you can set up unlimited repos and we feel it should be the same for sites in Forestry.  You can now manage unlimited sites with Forestry on all plans. The Personal plan only allows up to 3 Guest users per site, so if you need to manage a larger team, upgrade to the Business plan.
 
 {{% tip %}}
 **A site for each branch**
