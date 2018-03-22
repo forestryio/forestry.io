@@ -23,7 +23,7 @@ draft: true
 ---
 We’re excited to announce new pricing and Organization Accounts.
 
-Now, the Personal plan supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The Business plan also supports unlimited sites and is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations and offers enterprise-only features.
+Now, the Personal plan supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The Business plan also supports unlimited sites, but is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations with special requirements. 
 
 ![](/uploads/2018/03/forestryio-pricing.png)
 
