@@ -103,7 +103,7 @@ We are going to use the `cibuilds/hugo` image as the base for our Docker contain
 
 The `steps` section is where we add a list of commands needed to build, test, and deploy our project.
 
-1. Install Git and checkout the repository
+1 - Install Git and checkout the repository
 
           - run: apk update && apk add git
           - checkout
@@ -112,32 +112,32 @@ The `steps` section is where we add a list of commands needed to build, test, an
 
 Our `cibuilds/hugo` image is built on Alpine Linux, so we use the `apk` command to interact with the OS’s package manager. We run `apk update` to update the package index with the latest available packages, and then `apk add git` to install Git. Once Git is installed, we can run the `checkout` step.
 
-2. Install Submodules
+2 - Install Submodules
 
           - run: git submodule sync && git submodule update --init
 
 If you’re using Git submodules to manage any third party dependencies, you will need to run this step to install them.
 
-3. Install `awscli`
+3 - Install `awscli`
 
           - run: apk add --update python python-dev py-pip build-base
           - run: pip install awscli
 
 These commands install the `awscli` utility, which we will use to deploy the files to S3. We must first install `pip`, [Python’s package manager](https://pip.pypa.io/en/stable/installing/), to install `awscli`.
 
-4. Build With Hugo
+4 - Build With Hugo
 
           - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
 At this point, we have all of our source code in our build environment. It’s time to build! We tell Hugo to generate the files in `$HUGO_BUILD_DIR`, which is the environment variable we declared earlier in our config.
 
-5. Test With Htmlproofer
+5 - Test With Htmlproofer
 
           - run: htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html --empty-alt-ignore --disable-external
 
 This docker image comes with [html-proofer](https://github.com/gjtorikian/html-proofer) already installed, so we just have to run the `htmlproofer` command in our `$HUGO_BUILD_DIR` to test our generated HTML files.
 
-6. Prepare For Deployment
+6 - Prepare For Deployment
 
 After passing our tests, the code is now ready to deploy. Before we run the deploy command, however, we need to make sure CircleCI can communicate with our deployment target.
 
@@ -162,7 +162,7 @@ In order to deploy to S3, we will need to create an IAM user that can write to o
 
 Make note of the **Access Key ID** and **Secret Access Key** of this user. To provide this information to CircleCI, access your project’s build settings by clicking the cog next to the project name on the **Builds** screen. On the settings screen, locate the **AWS Permissions** link under the Permissions section. Here we can add the credentials for our IAM user.
 
-7. Deploy to Production Environment
+7 - Deploy to Production Environment
 
 We will use CircleCI’s `deploy` command to ship the code. `deploy` works just like the `run` command, but should be used instead of `run` for deploying code. CircleCI can be configured to run some steps in parallel, but any `deploy` steps will wait for parallel execution to finish and ensure that all tasks have completed successfully before running. Because of this, `deploy` should always be used when it’s time to move code out of the build environment.
 
