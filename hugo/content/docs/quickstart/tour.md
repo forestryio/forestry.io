@@ -6,7 +6,7 @@ authors: []
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 weight: 4
-date: 2017-12-07 04:00:00 +0000
+date: 2017-03-23 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -27,7 +27,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
-1. Click "Take our demo site out for a spin!"
+1. Click "Try our Jekyll starter template!"
 2. Select your Git Provider from the list of options.
 3. A window will open asking you to give Forestry access to your repositories. _If you are not already logged in, your provider will prompt you for login credentials first._
 4. Click "Authorize application" and wait a few seconds for the window to close.
@@ -77,7 +77,7 @@ You can leave this tab open and return to the editor in the CMS and make changes
 
 Next, set the post as published so that it will be included when the site is deployed. Click the "..." icon, and click _Set as Published_. You'll see the _Save Draft_ button now says _Publish_.
 
-Click the _Publish_ button to save your changes to back to your repository.
+Click the _Publish_ button to save your changes back to your repository.
 
 ---
 
@@ -151,6 +151,6 @@ Forestry can handle building and deploying your static site for you, or can inte
 
 You have many [hosting options](/docs/hosting/)!
 
-### Team Management
+### Team and Guest Management
 
 [Invite your clients or team members](/docs/settings/team-management) to update your site for you. [User roles](/docs/settings/team-management#user-roles) make managing your whole team simple.

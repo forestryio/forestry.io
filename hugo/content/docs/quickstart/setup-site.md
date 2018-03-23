@@ -5,7 +5,7 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 weight: 2
-date: 2017-12-07 04:00:00 +0000
+date: 2017-03-23 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -35,7 +35,7 @@ Before choosing your repository, Forestry needs to know which static site genera
 
 ### Select your Git Provider
 
-Forestry works by synchronize content changes with a git repository. In order to import your site, access to your git provider are required. There are currently three Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), and [Bitbucket](https://bitbucket.org/ "Bitbucket").
+Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently three Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), and [Bitbucket](https://bitbucket.org/ "Bitbucket").
 
 ![](/uploads/2018/02/add-site-flow-choose-provider.png)
 
@@ -47,7 +47,7 @@ Once the authorization is complete, you will be taken to the next screen where y
 In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.  
 {{% /warning %}}
 
-If you use Github, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you wan to grant access to Forestry to import your private repositories. You will only have to do this once.
+If you use Github, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you want to grant access to Forestry to import your private repositories. You will only have to do this once.
 
 ![](/uploads/2018/02/add-site-flow-choose-repo.png)
 

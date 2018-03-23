@@ -7,7 +7,7 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images: ['/uploads/2018/03/automated-deployment-with-circle-ci.png']
 categories: []
 tags: []
 cta:
@@ -207,19 +207,17 @@ If things aren’t working quite right for you, don’t panic! Automating someth
 
 For static sites, automated deployment is essential to providing a seamless publishing experience. Services like CircleCI have made automation accessible to developers at any level. It’s time to introduce automation into your static site workflow — once you do, you’ll wonder how you ever got along without it.
 
-<!-- ### Up next
-
-This concludes our Hugo + Git + Forestry.io Introduction. Next week DJ is diving deeper into Continuous Integration and Continuous Delivery using CircleCI - a technology we at Forestry.io are using every day.
-   
-<div style="padding: 20px 40px;background: #f7f7f7;">  
-<h2>Join us every Friday 📅</h2>  
-<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> We'll look into Continuous Integration and Continuous Delivery: Automate Your Static Site Deployment with CircleCI</p>  
-<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo/">Up & Running With Hugo Part I: Building Your First Site</a>.</p>  
-</div>-->
+### Up next
+Next week DJ is going to look into other best practices of modern web development with static websites.
+<div style="padding: 20px 40px;background: #f7f7f7;">
+<h2>Join us every Friday 📅</h2>
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+<p><strong>Next week:</strong> TBD</p>
+<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)</a></p>
+</div>
 
 <!-- ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16600724">Discuss on Hacker News</a> -->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a> -->
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!

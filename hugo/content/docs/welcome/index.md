@@ -56,7 +56,7 @@ Choosing to build a static site and use a Git-backed CMS comes with a multitude 
 
 ### Speed, reliability, and security
 
-Static sites don't require a complicated server setup to allow for the dynamic rendering of pages. This mean your site's download faster for visitors, can handle insane volumes of traffic, and have much fewer touch points that are vulnerable to hacking.
+Static sites don't require a complicated server setup to allow for the dynamic rendering of pages. This means your sites download faster for visitors, can handle insane volumes of traffic, and have much fewer touch points that are vulnerable to hacking.
 
 ### Continuous Deployment
 

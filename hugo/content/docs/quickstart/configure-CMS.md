@@ -5,7 +5,7 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 weight: 2
-date: 2017-12-07 04:00:00 +0000
+date: 2017-03-23 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -34,7 +34,7 @@ You should see the following settings which are described below.
 ### Upload Folder
 The folder within your repo to store the uploaded media. If this is set to a directory that doesn't exist, Forestry will create that directory.
 
-### Font Matter File URL
+### Front Matter File URL
 The path that will **prepend** media files uploaded from Front Matter fields. For example, if this value were set to `/uploads` Forestry would write out the following image value.
 
 ```yaml
@@ -112,7 +112,7 @@ For more information on media settings visit the [Media Library doc](/docs/editi
 ---
 ## Your Content Model &amp; Front Matter Templates
 
-### In this section we will configure your content model. This determines which fields are displayed your pages, posts, etc.
+### In this section we will configure your content model. This determines which fields are displayed for your pages, posts, etc.
 
 When you sync a new site with Forestry, all data found in the Front Matter for your pages will be displayed as UI fields.
 
