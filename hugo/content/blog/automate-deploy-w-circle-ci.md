@@ -225,10 +225,8 @@ Next week DJ is going to look into other best practices of modern web developmen
 <p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)</a>.</p>  
 </div>
 
-<!-- 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a> 
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16658610">Discuss on Hacker News</a> 
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
