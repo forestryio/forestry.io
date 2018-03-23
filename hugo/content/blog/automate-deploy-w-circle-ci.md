@@ -106,7 +106,7 @@ The `steps` section is where we add a list of commands needed to build, test, an
 1. Install Git and checkout the repository
 
           - run: apk update && apk add git
-           - checkout
+          - checkout
 
 `run` and `checkout` are CircleCI commands — they are the interface through which we can send instructions to the build environment. We will be using `run` heavily: it allows us to specify commands to be run in the build environment. `checkout` is a special step that CircleCI provides to simplify checking out the project into your build environment’s `working_directory`.
 
@@ -121,7 +121,7 @@ If you’re using Git submodules to manage any third party dependencies, you wil
 3. Install `awscli`
 
           - run: apk add --update python python-dev py-pip build-base
-           - run: pip install awscli
+          - run: pip install awscli
 
 These commands install the `awscli` utility, which we will use to deploy the files to S3. We must first install `pip`, [Python’s package manager](https://pip.pypa.io/en/stable/installing/), to install `awscli`.
 
