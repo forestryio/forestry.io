@@ -8,7 +8,9 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: ['/uploads/2018/03/automated-deployment-with-circle-ci.png']
-categories: []
+categories: 
+- Frontend Friday
+- CICD
 tags: []
 cta:
   headline: ''
@@ -20,9 +22,13 @@ aliases: []
 menu: []
 draft: true
 ---
+*This article is part of our on-going [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag") modern web development series*
+
 Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular and practical choice for developers. One major disadvantage these tools have, however, is the need to regenerate and redeploy their files every time there is new content to publish. 
 
 Automating this process will go a long way toward making your static site feel like a dynamic CMS. It will also save you time and improve the reliability of your deployments, as the exact same steps will run every time you deploy. For this reason, automated deployment is a cornerstone of modern web development.
+
+Our favorite deployment tool is CircleCI, we're using it at Forestry.io every day to deploy our Hugo site. For our tutorial today we'll be using CircleCI and deploy a Hugo site but you can use CircleCI for any static site that needs automated deployment.
 
 # Continuous Integration Vs Continuous Deployment 
 
@@ -99,14 +105,16 @@ We are going to use the `cibuilds/hugo` image as the base for our Docker contain
 The `steps` section is where we add a list of commands needed to build, test, and deploy our project.
 
 1. Install Git and checkout the repository
+
           - run: apk update && apk add git
-          - checkout
+           - checkout
 
 `run` and `checkout` are CircleCI commands — they are the interface through which we can send instructions to the build environment. We will be using `run` heavily: it allows us to specify commands to be run in the build environment. `checkout` is a special step that CircleCI provides to simplify checking out the project into your build environment’s `working_directory`.
 
 Our `cibuilds/hugo` image is built on Alpine Linux, so we use the `apk` command to interact with the OS’s package manager. We run `apk update` to update the package index with the latest available packages, and then `apk add git` to install Git. Once Git is installed, we can run the `checkout` step.
 
 2. Install Submodules
+
           - run: git submodule sync && git submodule update --init
 
 If you’re using Git submodules to manage any third party dependencies, you will need to run this step to install them.
@@ -114,16 +122,18 @@ If you’re using Git submodules to manage any third party dependencies, you wil
 3. Install `awscli`
 
           - run: apk add --update python python-dev py-pip build-base
-          - run: pip install awscli
+           - run: pip install awscli
 
-These commands install the `awscli` utility, which we will use to deploy the files to S3. We must first install `pip`, Python’s package manager, to install `awscli`.
+These commands install the `awscli` utility, which we will use to deploy the files to S3. We must first install `pip`, [Python’s package manager](https://pip.pypa.io/en/stable/installing/), to install `awscli`.
 
 4. Build With Hugo
+
           - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
 At this point, we have all of our source code in our build environment. It’s time to build! We tell Hugo to generate the files in `$HUGO_BUILD_DIR`, which is the environment variable we declared earlier in our config.
 
 5. Test With Htmlproofer
+
           - run: htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html --empty-alt-ignore --disable-external
 
 This docker image comes with [html-proofer](https://github.com/gjtorikian/html-proofer) already installed, so we just have to run the `htmlproofer` command in our `$HUGO_BUILD_DIR` to test our generated HTML files.
