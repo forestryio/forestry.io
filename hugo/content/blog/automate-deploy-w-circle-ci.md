@@ -9,7 +9,7 @@ headline: ''
 textline: ''
 images: ['/uploads/2018/03/automated-deployment-with-circle-ci.png']
 categories: 
-- Frontend Friday
+- Frontend-Friday
 - CICD
 tags: []
 cta:
