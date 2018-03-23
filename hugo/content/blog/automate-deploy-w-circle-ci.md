@@ -30,7 +30,7 @@ Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular an
 
 Automating this process will go a long way toward making your static site feel like a dynamic CMS. It will also save you time and improve the reliability of your deployments, as the exact same steps will run every time you deploy. For this reason, automated deployment is a cornerstone of modern web development.
 
-Our favorite deployment tool is CircleCI, we're using it at Forestry.io every day to deploy our Hugo site. For our tutorial today we'll be using CircleCI and deploy a Hugo site but you can use CircleCI for any static site that needs automated deployment.
+Our favorite deployment tool is CircleCI, we're using it at Forestry.io every day to deploy our Hugo site. For our tutorial today we'll be using CircleCI to deploy a Hugo site but you can use CircleCI for any static site that needs automated deployment.
 
 # Continuous Integration Vs Continuous Deployment 
 
