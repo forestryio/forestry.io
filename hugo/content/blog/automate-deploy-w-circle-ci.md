@@ -22,6 +22,7 @@ weight: ''
 aliases: []
 menu: []
 draft: false
+
 ---
 *This article is part of our on-going [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag") modern web development series*
 
@@ -53,7 +54,6 @@ To start using CircleCI, [sign up](https://circleci.com/signup/) and link your G
 
 Create a new file in your repository at `.circleci/config.yml` . CircleCI will use this file for its deployment instructions. Copy the following YAML into this file to use as a starting point:
 
-
     version: 2
     jobs:
       build:
@@ -70,7 +70,6 @@ Our `working_directory` is the location within the container that our build comm
 
 We can use the `environment` section to define environment variables that will be available to our build commands. In this section we will define a variable `HUGO_BUILD_DIR` and use that to reference the destination directory where Hugo should place our generated HTML. Let’s set this to `~/hugo/public`.
 
-
     version: 2
     jobs:
       build:
@@ -81,7 +80,6 @@ We can use the `environment` section to define environment variables that will b
         steps:
 
 ### The Docker Image
-
 
         docker:
           - image: cibuilds/hugo:latest
@@ -185,7 +183,6 @@ Things are pretty straightforward from here. This is a multi-line command so we 
 
 At this point, we’re all done! Your project should now build, test, and deploy successfully whenever code is pushed to the GitHub repo. 
 
-
 ## The Final Config File
 
     version: 2
@@ -213,7 +210,6 @@ At this point, we’re all done! Your project should now build, test, and deploy
                   echo "Not master branch, dry run only"
                 fi
 
-
 If things aren’t working quite right for you, don’t panic! Automating something is always more difficult than doing it manually. It’s worth taking the time up front to figure it out, as it will save you lots of work and frustration in the long run. Take a look at CircleCI’s [documentation](https://circleci.com/docs/) and [community forum](https://discuss.circleci.com/c/community) if you need help.
 
 For static sites, automated deployment is essential to providing a seamless publishing experience. Services like CircleCI have made automation accessible to developers at any level. It’s time to introduce automation into your static site workflow — once you do, you’ll wonder how you ever got along without it.
@@ -227,8 +223,10 @@ Next week DJ is going to look into other best practices of modern web developmen
 <p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)</a></p>
 </div>
 
-<!-- ## Have something to add?
+<!-- 
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a> -->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a> 
+-->
 
 [Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
