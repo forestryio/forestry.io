@@ -11,6 +11,7 @@ images: ['/uploads/2018/03/automated-deployment-with-circle-ci.png']
 categories: 
 - Frontend-Friday
 - CICD
+- Hugo
 tags: []
 cta:
   headline: ''
