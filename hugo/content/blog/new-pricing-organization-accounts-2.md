@@ -1,5 +1,5 @@
 ---
-title: New Pricing + Organization Accounts
+title: New Pricing
 description: ''
 date: 2018-03-23 12:38:35 +0000
 authors: ['scott-gallant']
@@ -48,7 +48,7 @@ Many of our users set up a separate Forestry CMS for each branch of their site (
 {{% /tip %}}
 
 
-## A More Flexible Business Plan
+## A Business Plan for Large Teams
 
 The new Business Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Business plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
 
