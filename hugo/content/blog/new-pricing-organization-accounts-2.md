@@ -21,7 +21,7 @@ menu: []
 draft: true
 
 ---
-We’re excited to announce new pricing and Organization Accounts.
+We’re excited to announce new pricing!
 
 Now, the [Personal plan](#a-better-personal-plan) supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The [Business plan](#a-more-flexible-business-plan) also supports unlimited sites, but is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations with special requirements.
 
@@ -39,17 +39,14 @@ This dawned on me when my brother got his Bluehost bill for a WordPress site tha
 Get up to 3 Guest users per site on all plans. A _Guest_ is a single-site user with limited permissions (similar to an _Editor_).  People typically use Guest accounts for clients, friends, or outside collaborators who want access to a single site.
 {{% /tip %}}
 
-## Unlimited Sites
-
-With GitHub, you can set up unlimited repos and we feel it should be the same for sites in Forestry.  You can now manage unlimited sites with Forestry on all plans. The Personal plan only allows up to 3 Guest users per site, so if you need to manage a larger team, upgrade to the Business plan.
-
-{{% tip "A CMS for each branch" %}}
-Many of our users set up a separate Forestry CMS for each branch of their site (ex. a _staging_ CMS and a _production_ CMS).
-{{% /tip %}}
-
 
 ## A Business Plan for Large Teams
 
-The new Business Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Business plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
+If you have a large team, the Business Plan supports any number of users and a new _Team_ UI to manage their roles.
 
 ![](/uploads/2018/03/business-plan-ui.png)
+
+The new Business Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Business plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
+
+## We'd love to hear from you
+Let us know what you think.
