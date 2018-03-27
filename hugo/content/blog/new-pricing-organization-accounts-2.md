@@ -48,5 +48,7 @@ If you have a large team, the Business Plan supports any number of users and a n
 
 The new Business Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Business plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
 
-## We'd love to hear from you
-Let us know what you think.
+## Conclusion
+We're on a mission to help people craft and spread their message online. Whether you're building a small site for your friend's restaurant or a mission-critical site for your company, we feel that our new pricing helps you choose a static approach.  
+
+If you have any comments or questions, don't hesitate to [contact us](https://forestry.io/support/).
