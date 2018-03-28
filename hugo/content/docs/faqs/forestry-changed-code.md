@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 1
+    weight: 2
 
 ---
 As devs, we hate when people mess with our code. So we try to do this as little as possible but sometimes it is unavoidable.

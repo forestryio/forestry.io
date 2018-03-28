@@ -5,7 +5,7 @@ title: Managing Content
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-03-28 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -15,7 +15,9 @@ menu:
     weight: 1
 
 ---
-Forestry allows editors to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over their content.
+Forestry allows editors and guests to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over their content. 
+
+For more information on guest and editor roles see [user roles](/docs/settings/team-management/#user-roles)
 
 ![](/uploads/2018/01/10.png)
 

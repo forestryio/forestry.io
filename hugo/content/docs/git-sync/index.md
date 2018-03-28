@@ -19,7 +19,7 @@ menu:
 This guide assumes you already have an existing [GitHub account](https://github.com/signup) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/tour/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
-Forestry's allows you to import your static site through public and private GitHub repositories. This allows Forestry to sync any changes made by editors in Forestry to be committed back to GitHub. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
+Forestry's allows you to import your static site through public and private GitHub repositories. This allows Forestry to sync any changes made by editors in Forestry to be committed back to GitHub. This also allows developers to work on your website on their local machine, and have all changes synced back to Forestry.
 
 ## Importing from GitHub
 
@@ -27,11 +27,11 @@ To import a site with GitHub, [login](https://app.forestry.io/login) to Forestry
 
 ![](/uploads/2018/01/12.png)
 
-From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal the opens, choose "Import existing site".
+From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose "Import existing site".
 
 ![](/uploads/2018/01/23.png)
 
-Choose the static site generator your site is built with from the dropdown, and then press "Next".
+Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
 ![](/uploads/2018/01/34.png)
 
@@ -39,7 +39,7 @@ Now, choose "GitHub" from the list of options.
 
 ![](/uploads/2018/01/44.png)
 
-You'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option the applies to your repository.
+You'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option that applies to your repository.
 
 ![](/uploads/2018/01/1.png)
 

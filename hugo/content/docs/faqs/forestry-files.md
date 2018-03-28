@@ -11,7 +11,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 4
+    weight: 3
 
 ---
 ## Why did you add a `.forestryio` file?

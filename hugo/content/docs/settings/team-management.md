@@ -2,43 +2,21 @@
 aliases:
 - "/docs/deployment-and-management/managing-users/"
 title: Team Management
-weight: 5
+weight: 6
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-03-19 00:00:00 -0400
+date: 2017-03-28 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 5
+    weight: 6
 
 ---
 
 Currently collaboration with other users can happen in two ways, as Users and as Guests. Users are managed on a per-organization basis and can be assigned [different roles](#user-roles). Guests on the other hand have a predefined permission level and are assigned on a per-site basis. Any site can have up to 3 Guests.
-
-## Managing Users
-
-![](/uploads/2018/03/team-management-settings.png)
-
-To manage the team for an organizations, navigate to the dashboard and select your organization, click on the <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="2"><path d="M7.75 22.149L12 19.48l4.25 2.669a11.029 11.029 0 0 0 4.088-2.973l-1.224-4.865 3.85-3.216a10.933 10.933 0 0 0-1.561-4.807l-5.006-.34-1.87-4.656A11.032 11.032 0 0 0 12 1c-.87 0-1.715.1-2.527.292l-1.87 4.657-5.006.339a10.933 10.933 0 0 0-1.56 4.807l3.85 3.216-1.225 4.865a11.029 11.029 0 0 0 4.087 2.973z"></path><circle cx="12" cy="12" r="3"></circle></g></svg> in the upper right corner, and then click "Users".
-
-## Inviting New Users
-
-To add a new User, click _Add User_. This will add a new row to the list. Enter the new User's email address and desired user role.
-
-When you've finished adding all new Users, click _Add_ to confirm the changes.
-
-_This will send an email invitation to the new Users to join the Organization._
-
-{{% tip %}}
-You can cancel any changes to your Organization's team by clicking _Cancel_ in the bottom right corner.
-{{% /tip %}}
-
-## Removing Users
-
-To remove a User, click the _trash_ icon to the right of their user role, make sure you're removing the right User and then click on "Remove User"
 
 ## Managing Guests
 
@@ -61,6 +39,40 @@ _This will send an email invitation to the new Guests to join the site._
 To remove a Guest, click the _trash_ icon to the right of their e-mail.
 
 When you've finished, click _Save_ to confirm the changes.
+
+## Organizations
+*This is a paid feature*
+
+Unlike Guests, Users can only be managed in Organization Accounts. Organizations are collections of sites assigned to a team. Organizations can have multiple users with different [user roles](/docs/settings/team-management/#user-roles) work across all sites of an organization.
+
+You can create an organization on your dashboard by clicking on "Create an Organization" in the left sidebar. 
+Once you filled in your information and named the organization you can proceed by clicking on "Create".
+
+The Organization you created will now show up underneath "My sites" in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
+
+Depending on your role in this organization your dashboard may vary, please read more in different [user roles](/docs/settings/team-management/#user-roles) to see what your assigned role allows you to do.
+
+## Managing Users
+
+![](/uploads/2018/03/team-management-settings.png)
+
+To manage the team for an organization, navigate to the dashboard and select your organization, click on the <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="2"><path d="M7.75 22.149L12 19.48l4.25 2.669a11.029 11.029 0 0 0 4.088-2.973l-1.224-4.865 3.85-3.216a10.933 10.933 0 0 0-1.561-4.807l-5.006-.34-1.87-4.656A11.032 11.032 0 0 0 12 1c-.87 0-1.715.1-2.527.292l-1.87 4.657-5.006.339a10.933 10.933 0 0 0-1.56 4.807l3.85 3.216-1.225 4.865a11.029 11.029 0 0 0 4.087 2.973z"></path><circle cx="12" cy="12" r="3"></circle></g></svg> in the upper right corner, and then click "Users".
+
+## Inviting New Users
+
+To add a new User, click _Add User_. This will add a new row to the list. Enter the new User's email address and desired user role.
+
+When you've finished adding all new Users, click _Add_ to confirm the changes.
+
+_This will send an email invitation to the new Users to join the Organization._
+
+{{% tip %}}
+You can cancel any changes to your Organization's team by clicking _Cancel_ in the bottom right corner.
+{{% /tip %}}
+
+## Removing Users
+
+To remove a User, click the _trash_ icon to the right of their user role, make sure you're removing the right User and then click on "Remove User"
 
 ## User Roles
 
