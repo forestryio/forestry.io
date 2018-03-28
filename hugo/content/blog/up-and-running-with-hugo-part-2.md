@@ -4,7 +4,7 @@ description: 'Using Continuous Integration and Continuous Deployment'
 date: 2018-03-16 15:47:26 +0000
 authors: 
 - Chris Macrae
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-03-16 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - Frontend-Friday

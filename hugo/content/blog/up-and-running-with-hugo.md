@@ -4,7 +4,7 @@ description: Build a working static site using Hugo in less than 30 minutes
 date: 2018-03-09 05:00:00 -0400
 authors:
 - Chris Macrae
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-03-09 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - Hugo

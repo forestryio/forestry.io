@@ -3,7 +3,7 @@ title: New Pricing
 description: 'You can now add up to 3 users per site on a free Personal Plan and the Business Plan allows for larger teams at $9/user/month.'
 date: 2018-03-28 12:38:35 +0000
 authors: ['scott-gallant']
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-03-28 14:17:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
