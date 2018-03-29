@@ -40,7 +40,7 @@ Unlike our AWS-specific deployment in the previous article, the `rsync` deployme
 
 ## Review: The *.circleci/config.yml* File
 
-Recall that we are telling CircleCI how to deploy our site by [inserting a configuration file](original-article#configuring-your-deployment) at `.circleci/config.yml` with the following information:
+Recall that we are telling CircleCI how to deploy our site by [inserting a configuration file](/blog/automate-deploy-w-circle-ci#configuring-your-deployment) at `.circleci/config.yml` with the following information:
 
 ```yaml
 
