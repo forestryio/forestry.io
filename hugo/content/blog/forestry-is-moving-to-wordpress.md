@@ -13,7 +13,7 @@ draft: true
 
 It is an understatement to say we weren’t the biggest fans of Wordpress. Static sites are at the core of Forestry.io's business model. They provide a more secure, flexible and performant environment than Wordpress.
 
-Yet, I’m excited to announce that today we’re moving our Forestry.io website to Wordpress. Visit our new site [here](/blog/wordpress/). 
+Yet, I’m excited to announce that today we’re moving our Forestry.io website to Wordpress. Visit our new site [here](/wordpress.html). 
 
 Forestry.io CMS has done its absolute best to create a seamless, customized UI to any static site. However, our site has some very specific needs that our own CMS can't fulfill. Let me explain why this move is the right one for us:
 
@@ -27,4 +27,4 @@ Forestry.io CMS has done its absolute best to create a seamless, customized UI t
 
 At Forestry.io we love experimentation, whether its features, design or communication. The majority of these experiments won’t ever see the light of day but our move to Wordpress has just become reality. Join us for this wild rollercoaster ride!
 
-Enough said check out our new site [here](/blog/wordpress/).
+Enough said check out our new site [here](/wordpress.html).

@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body style="height: 100%;
+      height: 100vh;
+      width: 100%;
+      width: 100vw;">
+<h1>Error Establishing a Database Connection</h1>
+<!--a href="https://forestry.io"><p style="
+      font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 16px; 
+      position: fixed; 
+      bottom: 10px; 
+      left: 20px; 
+      color: #343a40;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.15s ease;">We love static - go to Forestry.io!</p></a-->
+</body>
+</html>
