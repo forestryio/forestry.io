@@ -7,7 +7,7 @@ publishdate: 2018-03-29 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: 'CircleCI Followup: Deploying Via rsync'
 textline: 'CircleCI Followup: Deploying Via rsync'
-images: ['/uploads/2018/03/automated-deployment-with-circle-ci.png']
+images: ['/uploads/2018/03/follow-up-circleci-rsync.png']
 categories: 
 - CICD
 tags: []
@@ -19,7 +19,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
+draft: false
 
 ---
 In last week's article, we showed you how to [automate the deployment of a Hugo site using CircleCI](/blog/automate-deploy-w-circle-ci). The example we provided used the `awscli` utility to deploy the results of your build process to an AWS S3 bucket. In this follow-up, we will show you how to use the `rsync` utility to deploy your site to any rsync-enabled server.
