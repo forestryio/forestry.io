@@ -158,3 +158,7 @@ All that’s left is to send the generated static files contained in `$HUGO_BUIL
                 fi
 ```
 There you have it! Using this configuration you can deploy from your CircleCI environment to a variety of different hosting providers. If `rsync` isn’t your sauce, you can easily tweak the `deploy` step to run any commands in your build environment to get your files where they need to go.
+
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16710224">Discuss on Hacker News</a>
