@@ -19,7 +19,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: false
+draft: true
 
 ---
 In last week's article, we showed you how to [automate the deployment of a Hugo site using CircleCI](/blog/automate-deploy-w-circle-ci). The example we provided used the `awscli` utility to deploy the results of your build process to an AWS S3 bucket. In this follow-up, we will show you how to use the `rsync` utility to deploy your site to any rsync-enabled server.
@@ -78,6 +78,10 @@ In order to use `rsync` to deploy instead, a few things will need to be changed:
 4. The `deploy` command will be altered to use `rsync`
 
 ### Adding the SSH Key
+<video playsinline="true" autoplay="true" muted="" loop="true">
+    <source src="/video/circleci_add_ssh_key.webm" type="video/webm">
+    <source src="/video/circleci_add_ssh_key.webm.mp4" type="video/mp4">
+</video>
 To enable CircleCI to send files to your server via `rsync`, access your project’s build settings by clicking the cog next to the project name on the **Builds** screen. On the settings screen, locate the **SSH Permissions** link under the Permissions section. Click the **Add SSH Key** button and add your server’s hostname and the contents of the private key.
 
 ```yaml
