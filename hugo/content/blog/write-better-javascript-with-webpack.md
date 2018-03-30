@@ -7,7 +7,7 @@ publishdate: 2018-03-30 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: ['/img/write-better-javascript-with-webpack.png']
+images: ['/uploads/2018/03/write-better-javascript-with-webpack.png']
 categories: 
 - Frontend-Friday
 - Development-Tools
@@ -43,7 +43,7 @@ Maybe you’ve heard this before: **Gulp is a task runner, Webpack is a module b
 
 **Gulp is a great automation tool.** It allows developers to set up complex file processing pipelines using JavaScript, and run them as simple commands. However, when it comes to packaging your JavaScript application, the previously-mentioned file smashing is about as far as it can go. If code in file A depends on code in file B, you need to tell Gulp to include file A first. This can be done directly in the Gulp configuration, or by maintaining a separate manifest file for use with a plugin like [asset-builder](http://use-asset-builder.austinpray.com/). As you add more files and your dependency tree grows, this can become a chore to maintain.
 
-![He's a master of resolving the modules for everyone](/img/webpack_fighter_of_the_gulpstack_champion_of_the_bundle.png "He's a master of resolving the modules for everyone")
+![He's a master of resolving the modules for everyone](/uploads/2018/03/webpack_fighter_of_the_gulpstack_champion_of_the_bundle.png "He's a master of resolving the modules for everyone")
 
 **Complex dependency resolution is Webpack’s specialty.** You specify a file that serves as your application’s **entry point**, and Webpack will recursively process module imports in your code to build a dependency graph.  When it’s all done, Webpack emits your JavaScript in a single bundle file. There's no need to tell Webpack the order in which it should put your files together; it figures it out by reading your code.
 
