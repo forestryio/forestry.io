@@ -21,7 +21,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
+draft: false
 
 ---
 I get it. The JavaScript ecosystem is exhausting. There exists an [abundance of tools and frameworks](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f), and each one wants to rescue you from the shortcomings of its peers. Attempting to learn and keep up with these tools takes time and energy that you would rather devote to your project. Reducing cognitive overhead is a core component of Forestry.io's philosophy — we designed a static site CMS that is easy to set up and use. A good tool shouldn't get in your way!
@@ -171,3 +171,13 @@ Congratulations! You are now writing modular JavaScript, and you have a build pr
 
 We have only scratched the surface here: Webpack is capable of much more than this, but bundling JavaScript modules is its core feature. Next time, we will explore Webpack’s **loaders** and **plugins** in order to optimize your JavaScript bundle, and using the **development server** for live reloading of your browser. If you want to get started right away, go ahead and dive into the [Webpack documentation](https://webpack.js.org/concepts/).
 
+<div style="padding: 20px 40px;background: #f7f7f7;">  
+<h2>Join us every Friday 📅</h2>  
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
+<p><strong>Next week:</strong> We will explore Webpack's loaders, plugins and use live reloading</p>  
+<p><strong>Last week:</strong> We looked into CI/CD: <a href="https://forestry.io/blog/automate-deploy-w-circle-ci/">Automating Your Static Site Deployment with CircleCI</a>.</p>  
+</div>
+
+<!-- ## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16658610">Discuss on Hacker News</a> --> 

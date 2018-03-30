@@ -221,7 +221,7 @@ Next week DJ is going to look into other best practices of modern web developmen
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> TBD</p>  
+<p><strong>Next week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We will look at Webpack and how it can make you write better JavaScript.</a></p>  
 <p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)</a>.</p>  
 </div>
 
