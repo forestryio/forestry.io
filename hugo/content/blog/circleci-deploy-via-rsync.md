@@ -43,36 +43,34 @@ Unlike our AWS-specific deployment in the previous article, the `rsync` deployme
 Recall that we are telling CircleCI how to deploy our site by [inserting a configuration file](/blog/automate-deploy-w-circle-ci#configuring-your-deployment) at `.circleci/config.yml` with the following information:
 
 ```yaml
-
 version: 2
 jobs:
-    build:
+  build:
     docker:
-        - image: cibuilds/hugo:latest
+      - image: cibuilds/hugo:latest
     working_directory: ~/hugo
     environment:
-        HUGO_BUILD_DIR: ~/hugo/public
+      HUGO_BUILD_DIR: ~/hugo/public
     steps:
-        - run: apk update && apk add git
-        - checkout
-        - run: git submodule sync && git submodule update --init
-        - run: apk add --update python python-dev py-pip build-base
-        - run: pip install awscli
-        - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
-        - run: htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html --empty-alt-ignore --disable-external
-        - deploy:
-            name: deploy
-            command: |
+      - run: apk update && apk add git
+      - checkout
+      - run: git submodule sync && git submodule update --init
+      - run: curl -L https://github.com/bep/s3deploy/releases/download/v2.0.1/s3deploy_2.0.1_Linux-64bit.tar.gz | tar xvz
+      - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+      - run: htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      - deploy:
+          name: deploy
+          command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-                aws s3 sync $HUGO_BUILD_DIR s3://your-bucket-name/your-subfolder --delete
+              ./s3deploy -source=$HUGO_BUILD_DIR -region=us-east-1 -bucket=dwalkr-hugo-demo -path=your-subfolder
             else
-                echo "Not master branch, dry run only"
+              echo "Not master branch, dry run only"
             fi
 ```
 In order to use `rsync` to deploy instead, a few things will need to be changed:
 
 
-1. `pip` and `awscli` are no longer needed, so those commands will be removed.
+1. The `s3deploy` installation step will be removed.
 2. An **SSH key** will be added so the CI environment can connect to the hosting server.
 3. The **hostkey** of the hosting server needs to be added to the CI environment’s `known_hosts` file.
 4. The `deploy` command will be altered to use `rsync`
@@ -113,7 +111,7 @@ All that’s left is to send the generated static files contained in `$HUGO_BUIL
               name: deploy
               command: |
                 if [ "${CIRCLE_BRANCH}" = "master" ]; then
-                  rsync -ave ssh $HUGO_BUILD_DIR your-user@your-host:/path/to/your/website
+                  rsync -avce ssh $HUGO_BUILD_DIR your-user@your-host:/path/to/your/website
                 else
                   echo "Not master branch, dry run only"
                 fi
@@ -125,6 +123,7 @@ All that’s left is to send the generated static files contained in `$HUGO_BUIL
 |:---|:---|
 | **-a** | This configures rsync to run in **archive mode.** Archive mode automatically applies several useful settings such operating recursively on directory trees, preserving symlinks, and preserving file permissions. |
 | **-v** | This will run `rsync` in verbose mode, which will provide more information to the error log in the event something goes wrong. |
+| **-c** | By default, `rsync` skips files based on the file modification time. [As mentioned in the previous article](/blog/automate-deploy-w-circle-ci/), this is not optimal for static sites. With this flag, `rsync` will compute a **checksum** of each file to determine if the contents have changed. |
 | **-e&nbsp;ssh** | This tells `rsync` that we wish to execute commands on the remote machine via `ssh`. |
   
 ## The Final Config File
@@ -152,7 +151,7 @@ All that’s left is to send the generated static files contained in `$HUGO_BUIL
               name: deploy
               command: |
                 if [ "${CIRCLE_BRANCH}" = "master" ]; then
-                  rsync -av --progress -e ssh $HUGO_BUILD_DIR your-user@your-host:/path/to/your/website
+                  rsync -avce ssh $HUGO_BUILD_DIR your-user@your-host:/path/to/your/website
                 else
                   echo "Not master branch, dry run only"
                 fi
