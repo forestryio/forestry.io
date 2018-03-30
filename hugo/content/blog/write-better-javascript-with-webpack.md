@@ -180,6 +180,6 @@ We have only scratched the surface here: Webpack is capable of much more than th
 <p><strong>Last week:</strong> We looked into CI/CD: <a href="https://forestry.io/blog/automate-deploy-w-circle-ci/">Automating Your Static Site Deployment with CircleCI</a>.</p>  
 </div>
 
-<!-- ## Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16658610">Discuss on Hacker News</a> --> 
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16718162">Discuss on Hacker News</a> 
