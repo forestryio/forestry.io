@@ -4,10 +4,22 @@ description: 'I’m excited to announce that today we’re moving our Forestry.i
 date: 2018-04-01 12:01:56 +0000
 authors:
 - sebastian-engels
-images:
-- '/uploads/2018/03/wordpress-header.jpg'
 publishdate: 2018-04-01 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
+textline: ''
+headline: ''
+images:
+- '/uploads/2018/03/wordpress-header.jpg'
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
+menu: []
 draft: false
 ---
 
