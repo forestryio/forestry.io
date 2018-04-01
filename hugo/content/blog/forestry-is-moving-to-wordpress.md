@@ -33,7 +33,7 @@ WordPress offers all options right on the Dashboard. The user can add widgets an
 
 ![](/uploads/2018/03/wp-2.png)
 
-There’s almost 55.000 plugins. No other platform provides as vast a portfolio of plugins as WordPress does. The ability to quickly add and remove a plugin that implement state-of-the-art technologies is important. And there’s always a fallback plugin if one should fail ([Alternatives to 66 Dead WP Plugins](https://www.whoishostingthis.com/compare/wordpress/dead-plugins/)).
+There’s almost 55,000 plugins. No other platform provides as vast a portfolio of plugins as WordPress does. The ability to quickly add and remove a plugin that implements state-of-the-art technologies is important. And there’s always a fallback plugin if one should fail ([Alternatives to 66 Dead WP Plugins](https://www.whoishostingthis.com/compare/wordpress/dead-plugins/)).
 
 Maintenance and security issues with WordPress are well-known but the team at WordPress is working constantly on [crushing bugs and fixing vulnerabilities](https://core.trac.wordpress.org/tickets/latest).
 
