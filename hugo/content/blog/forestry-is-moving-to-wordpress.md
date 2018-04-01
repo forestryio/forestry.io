@@ -1,6 +1,6 @@
 ---
 title: Why is Forestry.io Moving to Wordpress?
-description: 'I’m excited to announce that today we’re moving our Forestry.io website to Wordpress.'
+description: 'It is an understatement to say we weren’t the biggest fans of WordPress. Static sites are at the core of Forestry.io’s business model.'
 date: 2018-04-01 12:01:56 +0000
 authors:
 - sebastian-engels
@@ -37,6 +37,6 @@ There’s almost 55.000 plugins. No other platform provides as vast a portfolio 
 
 Maintenance and security issues with WordPress are well-known but the team at WordPress is working constantly on [crushing bugs and fixing vulnerabilities](https://core.trac.wordpress.org/tickets/latest).
 
-At Forestry.io we love experimentation, whether its on features, design or communication. Some of these experiments won’t ever see the light of day but our move to WordPress has just become reality. Join us for this wild rollercoaster ride!
+At Forestry.io we love experimentation, whether it's on features, design or communication. Some of these experiments won’t ever see the light of day but our move to WordPress has just become reality. Join us for this wild rollercoaster ride!
 
 <div class="hero-cta center"><a href="https://forestry.io/wordpress.html" class="button primary big">Visit Site</a></div>
