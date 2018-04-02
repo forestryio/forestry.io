@@ -36,7 +36,7 @@ To answer that question, we’ll take a look at the features, speed, and extensi
 
 Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
 
-Started in 2008, Jekyll is toted as “a simple, blog-aware, static site generator.”
+Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
 
 It’s the most popular SSG (static site generator) in the space right now with over 30k stars on GitHub, largely due to its tight integration with GitHub pages.
 
@@ -76,7 +76,7 @@ Jekyll has a large community of free and paid themes available to use.
 
 Themes can easily be installed either by downloading and adding them to your Jekyll project or by installing them as a plugin using RubyGems.
 
-Jekyll’s themes are built using Shopify’s **Liquid templating engine**. Liquid is a _safe templating engine_ which is made to run untrusted code on their servers. This means that it’s built to do mostly everything you need without running custom code.
+Jekyll’s themes are built using Shopify’s **Liquid templating engine**. Liquid is a _safe templating engine_ which is made to run untrusted code on their servers. This means that it’s built to do mostly everything you need without running custom code.
 
     <div class=“container”>
     {% for post in site.posts %}
@@ -114,7 +114,7 @@ Any `.scss`, `.sass` or `.coffee` file with YAML front matter will be processed 
     ---
     alert "Hello world!
 
-Due to the need of adding YAML front matter to each file, a lot of larger production Jekyll sites opt to forgo the built-in asset pipeline for a modern build tool like Gulp or Grunt.
+Due to the need of adding YAML front matter to each file, a lot of larger production Jekyll sites opt to forgo the built-in asset pipeline for a modern build tool like Gulp or Webpack.
 
 These tools allow you to have direct control over your CSS, JS, images, and HTML, allowing for minification and optimization. These tools also provide you with access to BrowerSync or LiveReload, which speeds up development.
 
@@ -127,7 +127,7 @@ Jekyll by itself is fairly barebones and doesn’t do a lot of the things you ex
 * RSS/Atom Feed Generation
 * Analytics
 * Comments
-* Multilingual/il8n
+* Multilingual/i18n
 * And much more…
 
 However, this can all be supplemented by using third-party Jekyll plugins, which come in five flavors:
@@ -144,7 +144,7 @@ Another great feature of Jekyll is that it has a well-supported Wordpress import
 
 ### Performance
 
-Last week, we published a breakdown of how Hugo and Jekyll perform.
+Previously, we published a [breakdown of how Hugo and Jekyll perform](/blog/hugo-vs-jekyll-benchmark/).
 
 In our results, we discovered that Jekyll is _much slower_ in comparison to Hugo, about 35x slower. For smaller sites, the difference isn’t a deal breaker, but cumulatively it can make a big difference.
 
@@ -154,8 +154,7 @@ That’s a potential for up to 10 hours lost to build times in a year!
 
 ### Jekyll Summary
 
-Now that we’ve covered the core functionality of Jekyll, let’s
-Now that we’ve gone through all of the core areas of Hugo, let’s take a step back and take a bird’s eye view of this static site generator by looking at the pros and cons.
+Now that we’ve covered the core functionality of Jekyll, let’s take a step back and take a bird’s eye view of this static site generator by looking at the pros and cons.
 
 **Pros:**
 
@@ -166,7 +165,7 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 
 **Cons:**
 
-* **Slow performance.** If you’re building a small site, it’s no big deal. But larger sites may suffer from slow build times.
+* **Slow builds.** If you’re building a small site, it’s no big deal. But larger sites may suffer from longer build times.
 * **Lack of built-in features.** First-party features have better support and integration. Jekyll lacks this.
 
 ## Hugo
@@ -175,15 +174,15 @@ Hugo is the static site generator built by Steve Francia, a primary contributor 
 
 Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 18k stars on GitHub
 
-Hugo has a clear advantage over other SSGs: performance.
+Hugo has a clear advantage over other SSGs: it's **fast.**
 
-It also has one of if not the most thriving communities for an SSG.
+It also has one of the most (if not *the* most) thriving communities for an SSG.
 
-## Set up
+### Set up
 
 Setting up Hugo is more straightforward than Jekyll, regardless if you’re using Windows or a UNIX-based system.
 
-Since Hugo is built using GoLang — a compiled language — installing or updating Hugo is as simple as downloading a binary and setting up your system to use it.
+Since Hugo is built using Go — a compiled language — installing or updating Hugo is as simple as downloading a binary and setting up your system to use it.
 
 Hugo has [in-depth documentation](https://gohugo.io/getting-started/installing/) on how to do this.
 
@@ -191,7 +190,7 @@ Hugo has [in-depth documentation](https://gohugo.io/getting-started/installing/)
 
 Similar to Jekyll, all of your content is stored in text files in your project.
 
-In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo. **Markdown, Mark, HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
+In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown, Mark,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
 
 Hugo also supports **TOML, YAML, and JSON** for front matter where Jekyll only supports YAML.
 
@@ -211,7 +210,7 @@ While Hugo is only a few years old, a variety of themes are already available fo
 
 If you’re using the CLI (Command Line Interface), [installing themes from the Hugo Themes Repo](https://gohugo.io/themes/installing-and-using-themes/) is fairly straightforward.
 
-Hugo uses GoLang’s [package template](https://golang.org/pkg/html/template/) out of the box. This is similar to Liquid in that it allows limited logic in your templates.
+Hugo uses GoLang’s [template package](https://golang.org/pkg/html/template/) out of the box. This is similar to Liquid in that it allows limited logic in your templates.
 
     <div class=“container”>
     {{ range .Site.Pages}
@@ -227,13 +226,13 @@ Hugo uses GoLang’s [package template](https://golang.org/pkg/html/template/) o
 
 Again, this is great for beginners but will require you to extend the template engine with shortcodes to get additional functionality.
 
-Unfortunately, the package template’s syntax is not as straightforward for beginners as Liquid, and will not feel as familiar.
+Unfortunately, the template package’s syntax is not as straightforward for beginners as Liquid, and will not feel as familiar.
 
-However, support for both the [Amber](https://github.com/eknkc/amber) and [Ace](https://github.com/yosssi/ace) tempting engines is available. These feel may feel more familiar to developers coming from traditional Content Management Systems like Wordpress.
+However, support for both the [Amber](https://github.com/eknkc/amber) and [Ace](https://github.com/yosssi/ace) tempting engines is available. These may feel more familiar to developers coming from traditional Content Management Systems like Wordpress.
 
 ### Development Workflow
 
-Developing with Hugo feels **better than Jekyll** due to its performance and built-in live reload server.
+Developing with Hugo feels **better than Jekyll** due to its fast builds and built-in live reload server.
 
 From your project, you can call `hugo serve` to spin up the development server.
 
@@ -245,9 +244,9 @@ Hugo’s major shortcoming is its lack of any form of asset processing.
 
 Hugo’s only form of asset management is that it copies any files stored in the `/static` directory to your build directory as-is.
 
-If you’re used to using SASS, CoffeeScript or any other kind of preprocessing or asset management, you’ll have to look to external asset management pipeline tools like Gulp or Grunt.
+If you’re used to using Sass, CoffeeScript or any other kind of preprocessing or asset management, you’ll have to look to external asset management pipeline tools like Gulp or Webpack.
 
-This means you’ll have to include Hugo in your external build process, which can be troublesome for beginners.
+This also means you’ll likely want to include Hugo in your external build process, which can be troublesome for beginners.
 
 ### Useful Features
 
@@ -271,7 +270,7 @@ Here’s a summary of some of Hugo’s best features:
 
 ### Performance
 
-Hugo is blazingly fast. We released a post last week on the performance of Hugo and Jekyll and compared the two. Hugo was the clear winner.
+Hugo is blazingly fast. We previously released a post on the [performance of Hugo and Jekyll](/blog/hugo-vs-jekyll-benchmark/) and compared the two. Hugo was the clear winner.
 
 To put this into context, in our tests Hugo generated sites an average 35x faster than Jekyll, generating most sites in under a second.
 
@@ -284,7 +283,7 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 **Pros:**
 
 * **Extremely fast.** Build times under 1s.
-* \*\*Extremely versatile. \*\*Plenty of out the box functionality for enterprise-scale web sites.
+* **Extremely versatile.** Plenty of out the box functionality for enterprise-scale web sites.
 * **Enterprise ready.** With support for multiple output types and multilingual sites, you’re set!
 * **Thriving community.** Getting help with Hugo is easy. Ask a question on their forum and you _will_ get an answer.
 
