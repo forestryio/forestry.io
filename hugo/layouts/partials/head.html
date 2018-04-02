@@ -13,9 +13,7 @@
 <meta name="keywords" content="{{ . }}" />
 {{- end -}}
 {{- if eq (getenv "HUGO_ENV") "production" | or (eq $.Site.Params.env "production") -}}
-  {{- $rfc850 := .ExpiryDate.Format "Monday, 02-Jan-06 15:04:05 MST" -}}
-  {{- $expiry := cond (isset $ "rfc850") "" (printf "%s%s" "unavailable_after: " (.ExpiryDate.Format "Monday, 02-Jan-06 15:04:05 MST")) -}}
-  <meta name="robots" content="index, follow{{ if not (eq $expiry "") }}, {{ $expiry }}{{ end }}" />
+  <meta name="robots" content="index, follow{{ if isset .Params "expirydate" }}, unavailable_after: {{ .ExpiryDate.Format "Monday, 02-Jan-06 15:04:05 MST" }}{{ end }}" />
 {{- else -}}
   <meta name="robots" content="noindex, nofollow" />
 {{- end -}}
