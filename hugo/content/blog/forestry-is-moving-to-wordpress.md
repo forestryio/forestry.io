@@ -22,6 +22,7 @@ aliases: []
 menu: []
 draft: false
 ---
+*This article was published as part of an April Fool's Joke*
 
 It is an understatement to say we weren’t the biggest fans of WordPress. Static sites are at the core of Forestry.io’s business model. They provide a more secure, flexible and performant environment than WordPress.
 
