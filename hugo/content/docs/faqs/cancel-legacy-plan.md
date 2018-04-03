@@ -14,7 +14,7 @@ menu:
     weight: 2
 
 ---
-To cancel a per-site plan (e.g. Team Plan) navigate to the relevant site and click on "..." and select "Downgrade Plan" in the dropdown.
+To cancel a legacy plan (e.g. the _Team Plan_) navigate to your dashboard and click on the "..." next to your site name. From there, select "Downgrade Plan" in the dropdown.
 
 ![](/uploads/2018/04/dowgrade-plan.jpg)
 
