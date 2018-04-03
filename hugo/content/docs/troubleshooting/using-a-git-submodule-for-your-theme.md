@@ -21,7 +21,7 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    name: Using a Git submodule for you theme
+    name: Using a Git submodule for your theme
     weight: 1
     parent: Troubleshooting
 
