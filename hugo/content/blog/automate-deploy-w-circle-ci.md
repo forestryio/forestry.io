@@ -24,6 +24,13 @@ menu: []
 draft: false
 
 ---
+
+{{% tip %}}
+
+This tutorial was updated on **April 3, 2018** to use [bep/s3deploy](https://github.com/bep/s3deploy) in place of [aws/aws-cli](https://github.com/aws/aws-cli).
+
+{{% /tip %}}
+
 *This article is part of our on-going [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag") modern web development series*
 
 Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular and practical choice for developers. One major disadvantage these tools have, however, is the need to regenerate and redeploy their files every time there is new content to publish. 
