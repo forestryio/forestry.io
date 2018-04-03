@@ -28,14 +28,14 @@ weight = 5
 name = "Editing"
 weight = 4
 [[menu.docs]]
-name = "Git Sync"
-weight = 3
-[[menu.docs]]
 name = "Quick Start"
 weight = 2
 [[menu.docs]]
 name = "Welcome"
 weight = 1
+[[menu.docs]]
+name = "Git Sync"
+weight = 3
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
@@ -92,8 +92,8 @@ gtmid = "GTM-KL5HP9Q"
 images = ["/uploads/2018/01/OGimage-01-3x.jpg"]
 mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
 [params.algolia]
-vars = ["date", "description", "dir", "path", "expirydate", "fuzzywordcount", "keywords", "kind", "lang", "lastmod", "permalink", "publishdate", "readingtime", "relpermalink", "summary", "title", "type", "url", "weight", "wordcount", "section"]
 params = ["tags", "categories", "authors"]
+vars = ["date", "description", "dir", "path", "expirydate", "fuzzywordcount", "keywords", "kind", "lang", "lastmod", "permalink", "publishdate", "readingtime", "relpermalink", "summary", "title", "type", "url", "weight", "wordcount", "section"]
 [params.cloudinary]
 cloud_name = "forestry-demo"
 use_upload = false

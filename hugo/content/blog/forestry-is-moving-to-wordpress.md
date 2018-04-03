@@ -1,6 +1,7 @@
 ---
 title: Why is Forestry.io Moving to Wordpress?
-description: 'It is an understatement to say we weren’t the biggest fans of WordPress. Static sites are at the core of Forestry.io’s business model.'
+description: It is an understatement to say we weren’t the biggest fans of WordPress.
+  Static sites are at the core of Forestry.io’s business model.
 date: 2018-04-01 12:01:56 +0000
 authors:
 - sebastian-engels
@@ -9,7 +10,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 textline: ''
 headline: ''
 images:
-- '/uploads/2018/03/wordpress-header.jpg'
+- "/uploads/2018/03/wordpress-header.jpg"
 categories: []
 tags: []
 cta:
@@ -19,8 +20,7 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
-draft: false
+
 ---
 *This article was published as part of an April Fool's Joke*
 

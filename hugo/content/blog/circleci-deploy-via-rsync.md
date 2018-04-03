@@ -1,14 +1,17 @@
 ---
-title: "CircleCI Followup: Deploying Via rsync"
-description: 'In this follow-up, we show you how to use CircleCI with the `rsync` utility to deploy your site to any rsync-enabled server'
+title: 'CircleCI Followup: Deploying Via rsync'
+description: In this follow-up, we show you how to use CircleCI with the `rsync` utility
+  to deploy your site to any rsync-enabled server
 date: 2018-03-29 12:00:00 +0000
-authors: ['dj-walker']
+authors:
+- dj-walker
 publishdate: 2018-03-29 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: 'CircleCI Followup: Deploying Via rsync'
 textline: 'CircleCI Followup: Deploying Via rsync'
-images: ['/uploads/2018/03/follow-up-circleci-rsync.png']
-categories: 
+images:
+- "/uploads/2018/03/follow-up-circleci-rsync.png"
+categories:
 - CICD
 tags: []
 cta:
@@ -18,11 +21,8 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
-draft: false
 
 ---
-
 {{% tip %}}
 
 This tutorial was updated on **April 3, 2018**.

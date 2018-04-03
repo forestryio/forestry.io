@@ -19,6 +19,11 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu:
+  faqs:
+    name: What are Guests
+    weight: 3
+    parent: FAQs
 
 ---
 A Guest is a single-site user with limited permissions. Guests do not get access to support and are often used for clients or external colleagues.

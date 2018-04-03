@@ -10,7 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 5
+    weight: 7
 
 ---
 Adding [Front Matter](/docs/editing/front-matter) to your content allows you to add variables and configuration to your pages that can be used in your templates.

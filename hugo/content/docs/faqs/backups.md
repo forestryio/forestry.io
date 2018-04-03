@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 6
+    weight: 8
 
 ---
 For developers, backups are inherent due to the Git-backed nature of Forestry. Every change made to your site through Forestry is stored in version control.

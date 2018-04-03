@@ -16,16 +16,21 @@ faqs:
     file. No updates required
   headline: What is Forestry Remote?
 - headline: How many sites can I set up
-  textline: You can set up unlimited sites. If you are on the Business plan, you will be billed based on number of users in your organization.
+  textline: You can set up unlimited sites. If you are on the Business plan, you will
+    be billed based on number of users in your organization.
 - headline: Do I need to configure my project?
   textline: No configuration needed. Forestry will parse your project and automatically
     build your CMS.
 - headline: What is a Guest?
-  textline: A guest is a single-site user with limited permissions. Guests do not get access to support and are often used for clients or external colleagues.
+  textline: A guest is a single-site user with limited permissions. Guests do not
+    get access to support and are often used for clients or external colleagues.
 - headline: What is a User?
-  textline: On the Business plan, you can invite any  number of users to your organization. Unlike Guests, users can access many sites and can be assigned a role (developer, editor, etc).
+  textline: On the Business plan, you can invite any  number of users to your organization.
+    Unlike Guests, users can access many sites and can be assigned a role (developer,
+    editor, etc).
 - headline: Does the Business plan include Guests?
-  textline: Yes, the Business plan includes as many team members as you require ($9/month each) and also includes up to 3 Guest users per site.
+  textline: Yes, the Business plan includes as many team members as you require ($9/month
+    each) and also includes up to 3 Guest users per site.
 headline: ''
 description: ''
 textline: ''

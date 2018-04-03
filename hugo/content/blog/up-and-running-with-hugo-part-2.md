@@ -1,21 +1,17 @@
 ---
 title: 'Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)'
-description: 'Using Continuous Integration and Continuous Deployment'
+description: Using Continuous Integration and Continuous Deployment
 date: 2018-03-16 15:47:26 +0000
-authors: 
+authors:
 - Chris Macrae
 publishdate: 2018-03-16 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-categories:
-- Frontend-Friday
-- CICD
-- Hugo
-tags:
+categories: []
+tags: []
 headline: ''
 textline: ''
-images: 
+images:
 - "/uploads/2018/03/up_running_w_hugo_II_1.png"
-categories: []
 cta:
   headline: ''
   textline: ''
@@ -23,7 +19,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: false
 
 ---
 <!--{{% tip %}}

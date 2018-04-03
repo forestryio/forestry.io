@@ -12,8 +12,8 @@ menu:
   docs:
     parent: Quick Start
     weight: 2
----
 
+---
 This doc will walk you through:
 
 1. Setting up your site repository with Forestry

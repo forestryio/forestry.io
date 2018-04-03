@@ -22,7 +22,7 @@ images:
 menu:
   troubleshooting:
     parent: Troubleshooting
-    weight: 4
+    weight: 5
 draft: true
 
 ---
