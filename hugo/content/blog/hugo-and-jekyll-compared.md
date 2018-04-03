@@ -3,7 +3,7 @@ authors:
 - chris-macrae
 images:
 - "/uploads/2018/02/hugo-jekyll-compared-1.png"
-publishdate: 2017-07-21 08:19:09 +0000
+publishdate: 2018-04-07 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 excerpt: When it comes to building static sites, the two leading solutions right now
   are Hugo and Jekyll. So the question is, which is right for you?
@@ -11,7 +11,7 @@ title: Hugo or Jekyll? 6 Factors You Should Know
 categories:
 - hugo
 - jekyll
-date: 2017-07-21 08:19:09 +0000
+date: 2018-04-07 12:00:00 +0000
 headline: ''
 description: ''
 textline: ''
@@ -228,7 +228,7 @@ Again, this is great for beginners but will require you to extend the template e
 
 Unfortunately, the template package’s syntax is not as straightforward for beginners as Liquid, and will not feel as familiar.
 
-However, support for both the [Amber](https://github.com/eknkc/amber) and [Ace](https://github.com/yosssi/ace) tempting engines is available. These may feel more familiar to developers coming from traditional Content Management Systems like Wordpress.
+However, support for both the [Amber](https://github.com/eknkc/amber) and [Ace](https://github.com/yosssi/ace) templating engines is available. These may feel more familiar to developers coming from traditional Content Management Systems like Wordpress.
 
 ### Development Workflow
 
@@ -297,9 +297,15 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 
 We’ve covered the basics of Hugo and Jekyll, outlining ease of set up, content management, templating, development workflow, features, and performance.
 
-Both generators are leaders in the space, and there are great examples of both being used in the wild for big projects, like [healthcare.gov](https://github.com/springmeyer/healthcare.gov), using Jekyll, and the new [SmashingMagazine](https://next.smashingmagazine.com/) built using Hugo.
+Both generators are leaders in the space, and there are great examples of both being used in the wild for big projects, like [healthcare.gov](https://github.com/springmeyer/healthcare.gov), using Jekyll, and the new [Smashing Magazine](https://next.smashingmagazine.com/) built using Hugo.
 
 Now it’s time to make a choice! Here’s a quick summary for you:
 
 * **Jekyll** is a great choice if you’re familiar with the Ruby environment, or a beginner to the space due to its straightforward templating engine and extensive plugins.
 * **Hugo** is great for content-driven websites. What it lacks in extensibility, it makes up for in a plethora of built-in features, and speed unmatched by any other static site generator.
+
+{{% tip %}}
+
+Whether you preferr Jekyll or Hugo, Forestry.io provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry in minutes!
+
+{{% /tip %}}
