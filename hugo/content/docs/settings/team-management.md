@@ -12,10 +12,9 @@ images:
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 6
+    weight: 5
 
 ---
-
 Currently collaboration with other users can happen in two ways, as Users and as Guests. Users are managed on a per-organization basis and can be assigned [different roles](#user-roles). Guests on the other hand have a predefined permission level and are assigned on a per-site basis. Any site can have up to 3 Guests.
 
 ## Managing Guests

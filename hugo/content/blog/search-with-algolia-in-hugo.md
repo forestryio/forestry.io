@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 For this week on [_Frontend Friday_](https://forestry.io/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to set up lightning ⚡️ fast search for your Hugo site using [Algolia](https://algolia.com), the SaaS (Search as a Service 😉 ) provider. We published a Jekyll-focused version of this guide [last week](https://forestry.io/blog/search-with-algolia-in-jekyll).

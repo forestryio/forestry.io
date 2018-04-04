@@ -13,8 +13,8 @@ menu:
   docs:
     parent: Quick Start
     weight: 1
----
 
+---
 ## Overview
 
 This tour will walk you through setting up your first site in Forestry. It demonstrates the primary features and editing functionality of the CMS.

@@ -9,10 +9,10 @@ expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - Hugo
 - Frontend-Friday
-tags:
+tags: []
 textline: ''
 headline: ''
-images: 
+images:
 - "/uploads/2018/03/up_running_w_hugo_I_title.png"
 cta:
   headline: ''
@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: false
 
 ---
 <!--{{% tip %}}

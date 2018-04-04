@@ -22,7 +22,7 @@ images:
 menu:
   troubleshooting:
     parent: Troubleshooting
-    weight: 3
+    weight: 4
 
 ---
 When publishing, previewing, or saving a draft, there are a multitude of reasons why your site may fail to import. Generally, they boil down to 3 reasons:

@@ -1,14 +1,20 @@
 ---
 title: Automate Your Static Site Deployment with CircleCI
-description: 'Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular and practical choice for developers. One major disadvantage these tools have, however, is the need to regenerate and redeploy their files every time there is new content to publish. Automating this process will go a long way toward making your static site feel like a dynamic CMS.'
+description: Tools like Hugo, Jekyll, and Gatsby have made building static sites a
+  popular and practical choice for developers. One major disadvantage these tools
+  have, however, is the need to regenerate and redeploy their files every time there
+  is new content to publish. Automating this process will go a long way toward making
+  your static site feel like a dynamic CMS.
 date: 2018-03-23 12:38:35 +0000
-authors: ['dj-walker']
+authors:
+- dj-walker
 publishdate: 2018-03-23 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: ['/uploads/2018/03/automated-deployment-with-circle-ci.png']
-categories: 
+images:
+- "/uploads/2018/03/automated-deployment-with-circle-ci.png"
+categories:
 - Frontend-Friday
 - CICD
 - Hugo
@@ -20,11 +26,8 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
-draft: false
 
 ---
-
 {{% tip %}}
 
 This tutorial was updated on **April 3, 2018** to use [bep/s3deploy](https://github.com/bep/s3deploy) in place of [aws/aws-cli](https://github.com/aws/aws-cli).

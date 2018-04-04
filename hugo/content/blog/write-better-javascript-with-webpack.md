@@ -1,14 +1,18 @@
 ---
 title: Write Better JavaScript With Webpack
-description: 'This post will explore why Webpack is the right choice for bundling your JavaScript application. If you’ve never used a build tool for your frontend assets, Webpack is a great place to start. '
+description: 'This post will explore why Webpack is the right choice for bundling
+  your JavaScript application. If you’ve never used a build tool for your frontend
+  assets, Webpack is a great place to start. '
 date: 2018-03-30 12:00:00 +0000
-authors: ['dj-walker']
+authors:
+- dj-walker
 publishdate: 2018-03-30 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: ['/uploads/2018/03/write-better-javascript-with-webpack.png']
-categories: 
+images:
+- "/uploads/2018/03/write-better-javascript-with-webpack.png"
+categories:
 - Frontend-Friday
 - Development-Tools
 tags:
@@ -20,8 +24,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
-draft: false
 
 ---
 I get it. The JavaScript ecosystem is exhausting. There exists an [abundance of tools and frameworks](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f), and each one wants to rescue you from the shortcomings of its peers. Attempting to learn and keep up with these tools takes time and energy that you would rather devote to your project. Reducing cognitive overhead is a core component of Forestry.io's philosophy — we designed a static site CMS that is easy to set up and use. A good tool shouldn't get in your way!
