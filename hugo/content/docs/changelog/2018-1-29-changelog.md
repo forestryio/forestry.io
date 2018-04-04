@@ -22,8 +22,8 @@ cta:
 weight: ''
 menu:
   changelog:
-    weight: 1
     parent: Changelog
+    weight: 30
 
 ---
 ### Bug Fixes
