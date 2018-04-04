@@ -41,14 +41,13 @@ We updated our support to Hugo v0.37 and below. These are a few of the features,
 
 ### Bug Fixes
 
-* **Media:** White Images can now be detected in the Media Library
-* **UI:** Fix cropping of icons in CMS sidebar
-* **User Roles:** UI is not showing "Manage Guests" anymore for Guests of a site
-* **Redirect:** Removing a site from an Organization does not redirect to My Sites anymore
-* **Notifications:** Team members on an Organization now receive Notifications without having to refresh the page
-* **UI:** Added a more descriptive explanation to the Starter Template setup flow
-* **Github Authentication:** Increased timeout length and added a more descriptive message on timeout
-
-* **Import:** Fixed a bug that prevent all repos from being listed for Bitbucket users
-* **Import:** Including config filename in import path caused import to fail
 * **Documentation:** Links to documentation were updated
+* **Github Authentication:** Increased timeout length and added a more descriptive message on timeout
+* **Import:** Fixed a bug that prevents all repos from being listed for Bitbucket users
+* **Import:** Fixed a bug that prevented import if the config filename was provided in the import path
+* **Media:** White Images can now be detected in the Media Library
+* **Notifications:** Team members of an Organization now receive notifications without having to refresh the page
+* **Redirect:** Removing a site from an Organization does not redirect to My Sites anymore
+* **UI:** Fixed cropping of icons in CMS sidebar
+* **UI:** Added a more descriptive explanation to the Starter Template setup flow
+* **User Roles:** UI is not showing "Manage Guests" anymore for Guests of a site
