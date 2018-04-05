@@ -150,7 +150,7 @@ However, this can all be supplemented by using third-party Jekyll plugins, which
 
 For example, we’ve built a [menu plugin](https://github.com/forestryio/jekyll-menus) for Jekyll that allows you to manage menus inside Forestry.
 
-Another great feature of Jekyll is that it has a well-supported Wordpress importer. With 30% of the internet using Wordpress, it’s great to know migrating to the modern stack is easy.
+Another great feature of Jekyll is that it has a well-supported [Wordpress importer](http://import.jekyllrb.com/docs/wordpress/). With 30% of the internet using Wordpress, it’s great to know migrating to the modern stack is easy.
 
 ### Performance
 
