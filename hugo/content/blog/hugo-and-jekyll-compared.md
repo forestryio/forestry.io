@@ -34,6 +34,16 @@ To answer that question, we’ll take a look at the features, speed, and extensi
 
 ## Jekyll
 
+{{% tip %}}
+
+**Want to get started right away?**
+
+Explore Jekyll and the Forestry CMS with our Jekyll Starter Template.
+
+<a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
+<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry Account</a>
+{{% /tip %}}
+
 Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
 
 Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
