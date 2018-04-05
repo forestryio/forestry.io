@@ -124,7 +124,7 @@ Any `.scss`, `.sass` or `.coffee` file with YAML front matter will be processed 
     ---
     alert "Hello world!
 
-Due to the need of adding YAML front matter to each file, a lot of larger production Jekyll sites opt to forgo the built-in asset pipeline for a modern build tool like Gulp or Webpack.
+Due to the need of adding YAML front matter to each file, a lot of larger production Jekyll sites opt to forgo the built-in asset pipeline for a modern build tool like Gulp or [Webpack](/blog/write-better-javascript-with-webpack/).
 
 These tools allow you to have direct control over your CSS, JS, images, and HTML, allowing for minification and optimization. These tools also provide you with access to BrowerSync or LiveReload, which speeds up development.
 
@@ -248,7 +248,7 @@ However, support for both the [Amber](https://github.com/eknkc/amber) and [Ace](
 
 ### Development Workflow
 
-Developing with Hugo feels **better than Jekyll** due to its fast builds and built-in live reload server.
+Developing with Hugo feels better than Jekyll due to its fast builds and built-in live reload server.
 
 From your project, you can call `hugo serve` to spin up the development server.
 
@@ -256,13 +256,11 @@ This will allow you to access your site from a local IP address. As you make cha
 
 #### Asset Pipeline
 
-Hugo’s major shortcoming is its lack of any form of asset processing.
+Hugo takes a bare-bones approach to its asset pipeline: it simply copies any files stored in the `/static` directory to your build directory as-is.
 
-Hugo’s only form of asset management is that it copies any files stored in the `/static` directory to your build directory as-is.
+If you’re used to using Sass, CoffeeScript or any other kind of preprocessing or asset management, you’ll have to look to external asset management pipeline tools like Gulp or [Webpack](/blog/write-better-javascript-with-webpack/). This also means you’ll likely want to include Hugo in your external build process, which can be troublesome for beginners.
 
-If you’re used to using Sass, CoffeeScript or any other kind of preprocessing or asset management, you’ll have to look to external asset management pipeline tools like Gulp or Webpack.
-
-This also means you’ll likely want to include Hugo in your external build process, which can be troublesome for beginners.
+A more sophisticated asset pipeline is [in the works](https://github.com/gohugoio/hugo/issues/4446), but at the time of writing has not yet been integrated into the core.
 
 ### Useful Features
 
