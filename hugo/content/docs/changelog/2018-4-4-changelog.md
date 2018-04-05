@@ -27,7 +27,7 @@ menu:
 ---
 ### Hugo Support for v0.37
 
-We updated our support to Hugo v0.37 and below. Have a look at some of the new features available to you with this update:
+We updated our support to Hugo v0.37 and below. To give you a quick overview to what has changed with Hugo here is a list of the most important features, bug fixes and enhancements to Hugo since our last update:
 
 - Page Bundles and Image Processing ([see v0.32](https://gohugo.io/news/0.32-relnotes/))
 - Full custom layout and type support + Metadata for Images ([see v0.33](https://gohugo.io/news/0.33-relnotes/))
