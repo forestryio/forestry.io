@@ -48,7 +48,7 @@ Jekyll isn’t as straightforward to set up as we’d like it to be, especially 
 
 Jekyll is built on the **Ruby** programming language and requires you to have a Ruby environment set up on your machine.
 
-This isn’t the most painful experience, but it isn’t as simple as downloading an app. Luckily Jekyll has [great documentation](https://jekyllrb.com/docs/installation/) on installing Jekyll.
+This isn’t the most painful experience, but it isn’t as simple as downloading an app. Luckily Jekyll has a [great documentation](https://jekyllrb.com/docs/installation/) on installing Jekyll.
 
 ### Content
 
