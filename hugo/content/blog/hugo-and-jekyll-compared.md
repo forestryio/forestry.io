@@ -48,7 +48,7 @@ Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the 
 
 Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
 
-It’s the most popular SSG (static site generator) in the space right now with over 30k stars on GitHub, largely due to its tight integration with GitHub pages.
+It’s the most popular SSG (static site generator) in the space right now with over 33k stars on GitHub, largely due to its tight integration with GitHub pages.
 
 The value Jekyll offers is that it allows you to take the static HTML from any existing website and quickly turn it into a working static site with its simple templating library.
 
@@ -188,7 +188,7 @@ Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll
 
 Hugo is the static site generator built by Steve Francia, a primary contributor to Google’s GoLang programming language. So naturally, Hugo is built using Go!
 
-Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 18k stars on GitHub
+Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 24k stars on GitHub
 
 Hugo has a clear advantage over other SSGs: it's **fast.**
 
@@ -281,6 +281,13 @@ Here’s a summary of some of Hugo’s best features:
 * Comments (via Disqus)
 * Multilingual/il8n
 * Custom Output Formats
+
+
+{{% tip %}}
+
+Sold on Hugo, but stuck on Jekyll? [Hugo can import your Jekyll site with a single command!](https://gohugo.io/commands/hugo_import_jekyll/)
+
+{{% /tip %}}
 
 ### Performance
 
