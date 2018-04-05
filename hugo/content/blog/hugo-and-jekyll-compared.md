@@ -178,6 +178,12 @@ Now that we’ve covered the core functionality of Jekyll, let’s take a step b
 * **Slow builds.** If you’re building a small site, it’s no big deal. But larger sites may suffer from longer build times.
 * **Lack of built-in features.** First-party features have better support and integration. Jekyll lacks this.
 
+{{% tip %}}
+
+Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll/) to learn more about building a Jekyll site with Forestry.
+
+{{% /tip %}}
+
 ## Hugo
 
 Hugo is the static site generator built by Steve Francia, a primary contributor to Google’s GoLang programming language. So naturally, Hugo is built using Go!
@@ -302,6 +308,12 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 * **No extensions.** Hugo doesn’t have plugin support, so adding highly custom functionality isn’t possible.
 * **Confusing template syntax.** While the template engine for Hugo is versatile, it’s fairly non-standard and confusing for beginners.
 * **No asset pipeline.** Hugo doesn’t have any asset processing at all, so you need to use third-party tools.
+
+{{% tip %}}
+
+Check out our [Developing with Hugo guide](/docs/guides/developing-with-hugo/) to learn more about building a Hugo site with Forestry.
+
+{{% /tip %}}
 
 ## Wrapping Up
 
