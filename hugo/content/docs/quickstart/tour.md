@@ -23,7 +23,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 ## Getting Started
 
-![](/uploads/2018/02/add-site-flow-choose-generator.png)
+![](/uploads/2018/04/add-site-flow-choose-generator.png)
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
