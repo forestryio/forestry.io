@@ -186,7 +186,7 @@ Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll
 
 ## Hugo
 
-Hugo is the static site generator built by Steve Francia, a primary contributor to Google’s GoLang programming language. So naturally, Hugo is built using Go!
+Hugo is the static site generator built by Steve Francia, a primary contributor to Google’s Go programming language. So naturally, Hugo is built using Go!
 
 Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 24k stars on GitHub
 
@@ -226,7 +226,7 @@ While Hugo is only a few years old, a variety of themes are already available fo
 
 If you’re using the CLI (Command Line Interface), [installing themes from the Hugo Themes Repo](https://gohugo.io/themes/installing-and-using-themes/) is fairly straightforward.
 
-Hugo uses GoLang’s [template package](https://golang.org/pkg/html/template/) out of the box. This is similar to Liquid in that it allows limited logic in your templates.
+Hugo uses Go’s [template package](https://golang.org/pkg/html/template/) out of the box. This is similar to Liquid in that it allows limited logic in your templates.
 
     <div class=“container”>
     {{ range .Site.Pages}
