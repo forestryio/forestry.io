@@ -43,7 +43,7 @@ To answer that question, we’ll take a look at the features, speed, and extensi
 Explore Jekyll and the Forestry CMS with our Jekyll Starter Template.
 
 <a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
-<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry Account</a>
+<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry.io Account</a>
 {{% /tip %}}
 
 Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
@@ -150,7 +150,7 @@ However, this can all be supplemented by using third-party Jekyll plugins, which
 * **Tags**, allow you to add custom Liquid tags
 * **Filters**, allow you to modify the output of Liquid tags and variables
 
-For example, we’ve built a [menu plugin](https://github.com/forestryio/jekyll-menus) for Jekyll that allows you to manage menus inside Forestry.
+For example, we’ve built a [menu plugin](https://github.com/forestryio/jekyll-menus) for Jekyll that allows you to manage menus inside the Forestry CMS.
 
 Another great feature of Jekyll is that it has a well-supported [Wordpress importer](http://import.jekyllrb.com/docs/wordpress/). With 30% of the internet using Wordpress, it’s great to know migrating to the modern stack is easy.
 
@@ -182,7 +182,7 @@ Now that we’ve covered the core functionality of Jekyll, let’s take a step b
 
 {{% tip %}}
 
-Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll/) to learn more about building a Jekyll site with Forestry.
+Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll/) to learn more about building a Jekyll site with Forestry.io.
 
 {{% /tip %}}
 
@@ -318,7 +318,7 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 
 {{% tip %}}
 
-Check out our [Developing with Hugo guide](/docs/guides/developing-with-hugo/) to learn more about building a Hugo site with Forestry.
+Check out our [Developing with Hugo guide](/docs/guides/developing-with-hugo/) to learn more about building a Hugo site with Forestry.io.
 
 {{% /tip %}}
 
@@ -335,6 +335,6 @@ Now it’s time to make a choice! Here’s a quick summary for you:
 
 {{% tip %}}
 
-Whether you preferr Jekyll or Hugo, Forestry provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry in minutes!
+Whether you preferr Jekyll or Hugo, Forestry.io provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry.io in minutes!
 
 {{% /tip %}}
