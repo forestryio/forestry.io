@@ -36,7 +36,7 @@ To answer that question, we’ll take a look at the features, speed, and extensi
 
 ## Jekyll
 
-Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
+Started by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
 
 Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
 
@@ -188,7 +188,7 @@ Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll
 
 ## Hugo
 
-Hugo is the static site generator built by Steve Francia, a primary contributor to Google’s Go programming language. So naturally, Hugo is built using Go!
+Hugo is the static site generator founded by Steve Francia, a primary contributor to Google’s Go programming language. So naturally, Hugo is built using Go!
 
 Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 24k stars on GitHub
 
