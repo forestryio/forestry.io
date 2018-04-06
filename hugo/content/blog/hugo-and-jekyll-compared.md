@@ -338,3 +338,14 @@ Now it’s time to make a choice! Here’s a quick summary for you:
 Whether you prefer Jekyll or Hugo, Forestry.io provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry.io in minutes!
 
 {{% /tip %}}
+
+<div style="padding: 20px 40px;background: #f7f7f7;">  
+<h2>Join us every Friday 📅</h2>  
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
+<!-- <p><strong>Next week:</strong> TBD</p> -->
+<p><strong>Last week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We looked at Webpack and how it can make you write better JavaScript.</a></p>  
+</div>
+
+<!-- ## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16718162">Discuss on Hacker News</a> -->

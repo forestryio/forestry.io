@@ -178,7 +178,7 @@ We have only scratched the surface here: Webpack is capable of much more than th
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> We will explore Webpack's loaders, plugins and use live reloading</p>  
+<p><strong>Next week:</strong> we’ll compare the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p>  
 <p><strong>Last week:</strong> We looked into CI/CD: <a href="https://forestry.io/blog/automate-deploy-w-circle-ci/">Automating Your Static Site Deployment with CircleCI</a>.</p>  
 </div>
 
