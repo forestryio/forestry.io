@@ -222,7 +222,7 @@ Hugo also supports **TOML, YAML, and JSON** for front matter where Jekyll only s
 
 Hugo also supports external data, which can be stored in the `/data` folder of your project, or pulled from third-party sources like REST APIs. It supports both JSON and CSV sources.
 
-## Themes & Templates
+### Themes & Templates
 
 While Hugo is only a few years old, a variety of themes are already available for the quickly growing SSG.
 
