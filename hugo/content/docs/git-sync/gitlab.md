@@ -3,7 +3,7 @@ title: GitLab
 weight: 2
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-04-06 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -23,15 +23,11 @@ Forestry's allows you to import your static site through public and private GitL
 
 To import a site with GitLab, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
-![](/uploads/2018/01/12.png)
+![](/uploads/2018/04/add-site-flow-choose-generator.png)
 
-From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal the opens, choose "Import existing site".
+From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
-![](/uploads/2018/01/23.png)
-
-Choose the static site generator your site is built with from the dropdown, and then press "Next".
-
-![](/uploads/2018/01/34.png)
+![](/uploads/2018/04/add-site-flow-select-provider.png)
 
 Now, choose "GitLab" from the list of options.
 
@@ -47,15 +43,17 @@ Give Forestry access to your GitLab repositories by clicking "Authorize". You ca
 In order to import a site from GitLab, you will need [master permissions](https://gitlab.com/help/user/permissions) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
 {{% /warning %}}
 
-![](/uploads/2018/01/46.png)
+![](/uploads/2018/04/add-site-flow-choose-repo-not-github.png)
 
 Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. From the dropdowns, choose your repository and the branch you would like to import, and then press "Next".
 
-![](/uploads/2018/01/47.png)If Forestry can't locate your site's config file inside of the root of your project, you'll be prompted to provide the directory it is located in.![](/uploads/2018/01/48.png)Tell us what your site should be named inside of Forestry, as well as an optionally provide a URL to the _public location_ of your website, and then click _Next_.
+![](/uploads/2018/04/add-site-flow-config-file.png)
 
-![](/uploads/2018/01/3.png)
+If Forestry can't locate your site's config file inside of the root of your project, you'll be prompted to provide the directory it is located in.
 
-In the final step, you'll be prompted to choose a hosting provider. Choose "Commit to source repo only" to have Forestry commit all changes back to your repository, or click _Skip this step._
+![](/uploads/2018/04/add-site-flow-invite-guests.png)
+
+In the final step, you can invite up to 3 Guest users to edit content on your project with you. Learn more about [user roles](/docs/settings/team-management/). When you're done just click on "Import Site" and let us get your site ready.
 
 ## Importing from GitLab Groups
 

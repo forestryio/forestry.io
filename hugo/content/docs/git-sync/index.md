@@ -5,7 +5,7 @@ title: GitHub
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-04-06 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -25,21 +25,13 @@ Forestry's allows you to import your static site through public and private GitH
 
 To import a site with GitHub, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
-![](/uploads/2018/01/12.png)
+![](/uploads/2018/04/add-site-flow-choose-generator.png)
 
-From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose "Import existing site".
+From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
-![](/uploads/2018/01/23.png)
-
-Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
-
-![](/uploads/2018/01/34.png)
+![](/uploads/2018/04/add-site-flow-select-provider.png)
 
 Now, choose "GitHub" from the list of options.
-
-![](/uploads/2018/01/44.png)
-
-You'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option that applies to your repository.
 
 ![](/uploads/2018/01/1.png)
 
@@ -53,21 +45,19 @@ Give Forestry access to your GitHub repositories by clicking "Authorize applicat
 In order to import a site from GitHub, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
 {{% /warning %}}
 
-![](/uploads/2018/01/46.png)
+![](/uploads/2018/04/add-site-flow-choose-repo.png)
 
-Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. From the dropdowns, choose your repository and the branch you would like to import, and then press "Next".
+By default, only your "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" will be shown. To see your "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)" click on the link at the top of the modal with the <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="2"><rect width="14" height="13" x="5" y="10" rx="1"></rect><path d="M8 1h8v9H8z"></path></g></svg> in the front.
 
-![](/uploads/2018/01/47.png)
+Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. From the dropdowns, choose your repository and the branch you would like to import.
+
+![](/uploads/2018/04/add-site-flow-config-file.png)
 
 If Forestry can't locate your site's config file inside of the root of your project, you'll be prompted to provide the directory it is located in.
 
-![](/uploads/2018/01/48.png)
+![](/uploads/2018/04/add-site-flow-invite-guests.png)
 
-Tell us what your site should be named inside of Forestry, as well as an optionally provide a URL to the _public location_ of your website, and then click _Next_.
-
-![](/uploads/2018/01/3.png)
-
-In the final step, you'll be prompted to choose a hosting provider. Choose "Commit to source repo only" to have Forestry commit all changes back to your repository, or click _Skip this step._
+In the final step, you can invite up to 3 Guest users to edit content on your project with you. Learn more about [user roles](/docs/settings/team-management/). When you're done just click on "Import Site" and let us get your site ready.
 
 ## Importing from a GitHub organization
 
