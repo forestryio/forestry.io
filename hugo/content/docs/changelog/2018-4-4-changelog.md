@@ -25,9 +25,9 @@ menu:
     weight: 27
 
 ---
-### Hugo Support for v0.37
+### Hugo Support for v0.38.1
 
-We updated our support to Hugo v0.37 and below. To give you a quick overview to what has changed with Hugo here is a list of the most important features, bug fixes and enhancements to Hugo since our last update:
+We updated our support to Hugo v0.38.1 and below. To give you a quick overview to what has changes have been made to Hugo since our last update, here is a list of the most important features, bug fixes and enhancements:
 
 - Page Bundles and Image Processing ([see v0.32](https://gohugo.io/news/0.32-relnotes/))
 - Full custom layout and type support + Metadata for Images ([see v0.33](https://gohugo.io/news/0.33-relnotes/))
@@ -35,9 +35,8 @@ We updated our support to Hugo v0.37 and below. To give you a quick overview to 
 - Headless Bundles ([see v0.35](https://gohugo.io/news/0.35-relnotes/))
 - Smart Image Cropping ([see v0.36](https://gohugo.io/news/0.36-relnotes/))
 - Preserve PNG Colour Palette ([see v0.37](https://gohugo.io/news/0.37-relnotes/))
-
-[see releases](https://gohugo.io/news/0.37-relnotes/)
-
+- Fetching Date and Slug from the Content Filename ([see v0.38](https://gohugo.io/news/0.38-relnotes/))
+[see releases](https://gohugo.io/news/)
 
 ### Bug Fixes
 
