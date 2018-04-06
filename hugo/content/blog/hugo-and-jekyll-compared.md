@@ -26,14 +26,13 @@ aliases: []
 draft: true
 
 ---
-
-*Jekyll is a flexible and beginner-friendly static site generator. Hugo has a slightly higher learning curve, but is fast and packed with features. Read on to learn more about the differences between these two tools.*
-
 Choosing the right tools to build a website isn’t easy these days. There’s just too many options! Building a static site is one of these options, which comes with many advantages like top-notch security, blazingly-fast performance, and reduced costs.
 
 When it comes to building static sites, the two leading solutions right now are Hugo and Jekyll. So the question is, which is right for you?
 
 To answer that question, we’ll take a look at the features, speed, and extensibility of each, looking for the pros and the cons of both generators. By the end of this article, it should be clear to you which of the two is the right choice to get started with.
+
+*<strong>TL;DR:</strong> Jekyll is a flexible and beginner-friendly static site generator. Hugo has a slightly higher learning curve, but is fast and packed with features. Read on to learn more about the differences between these two tools.*
 
 ## Jekyll
 
@@ -336,6 +335,6 @@ Now it’s time to make a choice! Here’s a quick summary for you:
 
 {{% tip %}}
 
-Whether you preferr Jekyll or Hugo, Forestry.io provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry in minutes!
+Whether you preferr Jekyll or Hugo, Forestry provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry in minutes!
 
 {{% /tip %}}
