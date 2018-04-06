@@ -26,6 +26,9 @@ aliases: []
 draft: true
 
 ---
+
+*Jekyll is a flexible and beginner-friendly static site generator. Hugo has a slightly higher learning curve, but is fast and packed with features. Read on to learn more about the differences between these two tools.*
+
 Choosing the right tools to build a website isn’t easy these days. There’s just too many options! Building a static site is one of these options, which comes with many advantages like top-notch security, blazingly-fast performance, and reduced costs.
 
 When it comes to building static sites, the two leading solutions right now are Hugo and Jekyll. So the question is, which is right for you?
