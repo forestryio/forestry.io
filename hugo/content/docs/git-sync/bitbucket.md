@@ -23,7 +23,7 @@ Forestry's allows you to import your static site through BitBucket repositories.
 
 To import a site with BitBucket, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
-![](/uploads/2018/04/add-site-flow-choose-generator.png)
+![](/uploads/2018/04/add-site-flow-choose-generator-2.png)
 
 From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
