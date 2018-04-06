@@ -36,6 +36,14 @@ To answer that question, we’ll take a look at the features, speed, and extensi
 
 ## Jekyll
 
+Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
+
+Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
+
+It’s the most popular SSG (static site generator) in the space right now with over 33k stars on GitHub, largely due to its tight integration with GitHub pages.
+
+The value Jekyll offers is that it allows you to take the static HTML from any existing website and quickly turn it into a working static site with its simple templating library.
+
 {{% tip %}}
 
 **Want to get started right away?**
@@ -45,14 +53,6 @@ Explore Jekyll and the Forestry CMS with our Jekyll Starter Template.
 <a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
 <a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry.io Account</a>
 {{% /tip %}}
-
-Built by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of the static site movement that’s currently happening.
-
-Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
-
-It’s the most popular SSG (static site generator) in the space right now with over 33k stars on GitHub, largely due to its tight integration with GitHub pages.
-
-The value Jekyll offers is that it allows you to take the static HTML from any existing website and quickly turn it into a working static site with its simple templating library.
 
 ### Set up
 
