@@ -335,6 +335,6 @@ Now it’s time to make a choice! Here’s a quick summary for you:
 
 {{% tip %}}
 
-Whether you preferr Jekyll or Hugo, Forestry.io provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry.io in minutes!
+Whether you prefer Jekyll or Hugo, Forestry.io provides a rich CMS backend for your project. [Check out our getting started guide](/docs/quickstart/setup-site/) to set up your site with Forestry.io in minutes!
 
 {{% /tip %}}
