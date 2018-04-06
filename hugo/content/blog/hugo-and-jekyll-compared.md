@@ -346,6 +346,6 @@ Whether you prefer Jekyll or Hugo, Forestry.io provides a rich CMS backend for y
 <p><strong>Last week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We looked at Webpack and how it can make you write better JavaScript.</a></p>  
 </div>
 
-<!-- ## Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16718162">Discuss on Hacker News</a> -->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16774437">Discuss on Hacker News</a>
