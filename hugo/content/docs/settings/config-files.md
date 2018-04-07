@@ -199,7 +199,7 @@ Any configuration files removed from the repo will remain in the CMS and be re-a
 
 Changing the name of a Front Matter Template in Forestry will rename the config file in the repository.
 
-Changing the file name of a config file in your repository will rename the Front Matter Template in Forestry. Instead, a new Front Matter Template will be created with the new name, and the original template will remain in Forestry.
+Changing the file name of a config file in your repository will not rename the Front Matter Template in Forestry. Instead, a new Front Matter Template will be created with the new name, and the original template will remain in Forestry.
 
 ### Adding New Files
 
