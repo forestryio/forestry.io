@@ -19,6 +19,10 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu:
+  changelog:
+    parent: Changelog
+    weight: 29
 
 ---
 ### Bug Fixes
