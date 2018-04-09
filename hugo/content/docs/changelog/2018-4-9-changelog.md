@@ -29,7 +29,7 @@ menu:
 
 We updated our support to Hugo v0.38.1 and below. To give you a quick overview to what changes have been made to Hugo since our last update, here is a list of the most important features, bug fixes and enhancements:
 
-- Page Bundles and Image Processing ([see v0.32](https://gohugo.io/news/0.32-relnotes/))
+<!-- - Page Bundles and Image Processing ([see v0.32](https://gohugo.io/news/0.32-relnotes/)) -->
 - Full custom layout and type support + Metadata for Images ([see v0.33](https://gohugo.io/news/0.33-relnotes/))
 - Standard wildcard syntax for API used to find images and other resources in your page bundles ([see v0.34](https://gohugo.io/news/0.34-relnotes/))
 - Headless Bundles ([see v0.35](https://gohugo.io/news/0.35-relnotes/))
