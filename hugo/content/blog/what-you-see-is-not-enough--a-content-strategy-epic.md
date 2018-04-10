@@ -34,7 +34,7 @@ After a brief search, he found a talented developer named Prima. Prima was happy
 
 “I really need it to pop,” Quintus said. So Prima made it pop.
 
-Prima was a JAMStack devotee and knew all about the technical and performance advantages of static sites, so she used Hugo to build the site. Knowing that Quintus would want to manage his own content, she wisely used the [Forestry CMS](https://forestry.io) to provide a rich interface for creating and editing content.
+Prima was a JAMStack devotee and knew all about the technical and performance advantages of static sites, so she used Hugo to build the site. Knowing that Quintus would need to manage his own content, she wisely used the [Forestry CMS](https://forestry.io) to provide a rich interface for creating and editing content.
 
 ## II. WYSIWYG Woes
 
@@ -42,7 +42,7 @@ Quintus loved his new website. It was modern, sophisticated, and would enable hi
 
 ![nice-looking website with some junky wysiwyg-mangled content]()
 
-It was a terrific fight. Quintus was not happy with the result, but knew he was not going to do any better. He called Prima to complain. *Why did this page look so terrible?*
+It was a terrific fight. Quintus was not happy with the result, but knew he was not going to do any better. He called Prima to complain. _Why did this page look so terrible?_
 
 “It’s the WYSIWYG,” Prima said. “They’re always a pain to use.”
 
