@@ -32,7 +32,7 @@ When it comes to building static sites, the two leading solutions right now are 
 
 To answer that question, we’ll take a look at the features, speed, and extensibility of each, looking for the pros and the cons of both generators. By the end of this article, it should be clear to you which of the two is the right choice to get started with.
 
-*<strong>TL;DR:</strong> Jekyll is a flexible and beginner-friendly static site generator. Hugo has a slightly higher learning curve, but is fast and packed with features. Read on to learn more about the differences between these two tools.*
+_<strong>TL;DR:</strong> Jekyll is a flexible and beginner-friendly static site generator. Hugo has a slightly higher learning curve, but is fast and packed with features. Read on to learn more about the differences between these two tools._
 
 ## Jekyll
 
@@ -194,7 +194,7 @@ Started in 2013, Hugo has quickly grown to become the second most popular SSG wi
 
 Hugo has a clear advantage over other SSGs: it's **fast.**
 
-It also has one of the most (if not *the* most) thriving communities for an SSG.
+It also has one of the most (if not _the_ most) thriving communities for an SSG.
 
 ### Set up
 
@@ -208,7 +208,7 @@ Hugo has [in-depth documentation](https://gohugo.io/getting-started/installing/)
 
 Similar to Jekyll, all of your content is stored in text files in your project.
 
-In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown (Blackfriday or MMark), Org Mode,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
+In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown (Blackfriday or Mmark), Org Mode,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
 
 Hugo also supports **TOML, YAML, and JSON** for front matter where Jekyll only supports YAML.
 
@@ -283,7 +283,6 @@ Here’s a summary of some of Hugo’s best features:
 * Comments (via Disqus)
 * Multilingual/il8n
 * Custom Output Formats
-
 
 {{% tip %}}
 
