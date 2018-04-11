@@ -35,7 +35,7 @@ Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly 
 
 WYSIWYG Editors were created for a valid reason - HTML is hard to read and content editors shouldn't need to learn HTML to structure and write content. However, they are notoriously known for creating clunky, unreadable, hard to maintain code, affecting not only your ability to rank high on search engines but also the well-being of your developers.
 
-Markdown maintains a simple readable text (e.g. \*\* **word** \*\* _ _word_ _ ) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if you don't want to learn the simple Markdown syntax your editors will be able to add content right away, the Markdown just spices things up.
+Markdown maintains a simple readable text (e.g. \*\***word**\*\* \__word_\_) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if you don't want to learn the simple Markdown syntax your editors will be able to add content right away, the Markdown just spices things up.
 
 With WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
 
