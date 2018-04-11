@@ -23,7 +23,7 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: false
+menu: []
 
 ---
 Choosing the right tools to build a website isn’t easy these days. There’s just too many options! Building a static site is one of these options, which comes with many advantages like top-notch security, blazingly-fast performance, and reduced costs.
@@ -208,7 +208,7 @@ Hugo has [in-depth documentation](https://gohugo.io/getting-started/installing/)
 
 Similar to Jekyll, all of your content is stored in text files in your project.
 
-In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown, Mark,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
+In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown (Blackfriday or MMark), Org Mode,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
 
 Hugo also supports **TOML, YAML, and JSON** for front matter where Jekyll only supports YAML.
 
