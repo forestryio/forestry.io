@@ -50,19 +50,19 @@ To help with that content editors in Forestry.io use a Markdown editor that prov
 
 We put together a few tips to make your migration easier.
 
-### _Automate Migration with Pandoc_
+### Automate Migration with Pandoc
 
 If you need to convert files from one markup format into another, pandoc is your swiss-army knife. The learning curve is a little steep but if you have a lot of pages and you want to convert them automatically, this is a tool worth looking at.
 
 [https://pandoc.org/](https://pandoc.org/ "https://pandoc.org/")
 
-### _Simple Paste and Translate_
+### Simple Paste and Translate
 
 For those of you that just have a few pages to migrate, doing it manually might be more efficient and more accurate. A good tool to get a jump start on this is Dom Christie's Turndown project.
 
 [https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/ "https://domchristie.github.io/turndown/")
 
-### _Import to Hugo and Migrate later_
+### Import to Hugo and Migrate later
 
 Maybe your old content doesn't necessarily need to be updated immediately. In that case just follow the tutorial below and get started with you new Hugo page and set up Markdown for any future updates.
 
