@@ -4,7 +4,6 @@ description: 'Considering the issues the WYSIWYG Editor causes and the merits Ma
   provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018. '
 date: 2018-04-10 08:57:29 +0000
 authors:
-- Sebastian Engels
 - Scott Gallant
 publishdate: 2018-04-13 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
