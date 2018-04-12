@@ -29,21 +29,22 @@ In order to make data that is “machine friendly” like this, we need to expos
 
 ## Planning the Interface
 
-API stands for **Application Programming Interface**. The important part of an API isn’t the underlying software: the main focus is on creating an **Interface** that other developers can use for **Programming their Applications.** See what I did there?
+API stands for **Application Programming Interface**. When it comes to building an API, designing a good  **Interface** is as important as the underyling software. Other developers will use this **interface** for **programming their applications.** See what I did there?
 
 {{% tip %}}
 
-A **RESTful API** loosely follows the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) paradigm for API design: its goal is to use the built-in semantics of the HTTP standard to define the interface.
+A **RESTful API** is a slightly relaxed interpretation of the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) paradigm for API design: its goal is to use the built-in semantics of the HTTP standard to define the interface.
 <br />
-One of the primary ways an API can be RESTful is by using HTTP verbs to declare actions. These verbs include `GET`, `PUT`, `POST`, and `DELETE`, and correspond to different actions that should be performed on the requested resource. Since our static site can’t run any backend code, it can’t do anything meaningful with a `PUT`, `POST`, or `DELETE` request: we will only respond to `GET`. This is why our API is **read-only**.
+<br />
+One of the primary ways an API can be RESTful is by using **HTTP verbs** to denote the intent of the request. These verbs include `GET`, `PUT`, `POST`, and `DELETE`, and correspond to different actions that should be performed on the requested resource. Since our static site can’t run any backend code, it can’t do anything meaningful with a `PUT`, `POST`, or `DELETE` request: we will only respond to `GET`. This is why our API is **read-only**.
 
 {{% /tip %}}
 
-Our API will expose data for sports teams and players of a fictional High School.
+Our sample project will provide data for sports teams and players of a fictional High School.
 
 We’ll start with three endpoints where we’ll focus on returning listed data and individual player data:
 
-| Endpoint               | Resource                 |
+|:-- Endpoint               |:-- Resource                 |
 | ---------------------- | ------------------------ |
 | `GET /`                | Lists everything         |
 | `GET` `/players`       | Lists players            |
@@ -382,4 +383,3 @@ Using Hugo's Output Formats we were able to tell Hugo to output our pages in JSO
 Thanks to its templating logic we can now change or add keys to our players’ or teams’ output, add new content type and create a custom output object for them or let them use the default one. 
 
 A nice little follow-up exercise would be to create a JSON output for our sports taxonomy to list all of our sports!
-
