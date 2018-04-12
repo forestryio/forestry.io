@@ -123,14 +123,10 @@ To build our section list page and our home page, Hugo will look for
 
 ## Templating
 
-What we want to build is the API responses for our 3 different endpoints. Each of them will use a consistent « player » object.
+We will use custom templates to build the API responses for our first 3 endpoints. Each of them will use a consistent « player » object. We will need to create templates to support the following views:
 
-We still need to build several templates for our different responses.
-
-We want:
-
-- A list output for our players section and home page.
-- A single item output for each player.
+- A list view for our players section and home page.
+- A single item view for each player's details.
 
 To achieve this, we’ll create the following templates in `/layouts/_default/`:
 
@@ -139,7 +135,7 @@ To achieve this, we’ll create the following templates in `/layouts/_default/`:
 - `single.json.json` — The response output for a single player
 - `list.json.json` — The response output for a list of players
 
-[Base templates](https://gohugo.io/templates/base) are overarching templates that get used for all pages in Hugo. They are usually full of HTML where we lodge in different blocks but it will be much simpler for us. Our API response should contain a `data` object on success and an `error` object on error.  So we will set up the data object and use a block for the individual response.
+[Base templates](https://gohugo.io/templates/base) are top-level templates that are the starting point for all pages in Hugo. They are usually full of HTML where we lodge in different blocks, but our JSON base will be much simpler. Our API response should contain a `data` object on success and an `error` object on error.  So we will set up the data object and use a block for the individual response.
 
   
 
@@ -149,10 +145,10 @@ Our simple `baseof.json`:
         "data" : {{ block "response" .}}{{ end }}
     }
 
-**item.json.json**
+### item.json.json
 The Hugo docs suggest you call this template `li.json`, but for clarity we’ll call it `item.json`. This is the one item we’ll load or render every time we want to output information for a player.
 
-We want the output of a player object to look like this
+We want the output of a player object to look like this:
 
     {
         "name": "Frank J. Robinson",
@@ -160,7 +156,7 @@ We want the output of a player object to look like this
         "permalink" : "https://school.api/players/frank-j-robinson/index.json"
     }
 
-To reflect our model above, add the following to `item.json.json`
+To achieve this, add the following to `item.json.json`:
 
 
     {
@@ -169,9 +165,9 @@ To reflect our model above, add the following to `item.json.json`
         "permalink" : "{{ .Permalink }}"
     }
 
-Nice!
+That's all there is to it!
 
-**single.json.json**
+### single.json.json
 We just have to render our `item.json.json` inside our response block.  To do so, add this to `single.json.json`.
 
 
@@ -179,7 +175,9 @@ We just have to render our `item.json.json` inside our response block.  To do so
 
 Now you should be able to visit the API endpoint for a single player ([http://localhost:1313/players/frank-j-robinson/index.json](http://localhost:1313/players/frank-j-robinson/index.json)) and get a response.
 
-Notice: Hugo LiveReload is a bit capricious with output formats, if your JSON output does not update with your latest change on save: hit that refresh button!
+{{% warning %}}
+Hugo's built-in webserver doesn't always handle custom output formats as well as HTML. If your JSON output does not update with your latest changes, try reloading the browser. If that doesn't work, you may have to stop and restart the Hugo server.
+{{% /warning %}}
 
 
     {
@@ -190,10 +188,8 @@ Notice: Hugo LiveReload is a bit capricious with output formats, if your JSON ou
         }
     }
 
-**list.json.json**
-For our list template, we need to range on current section’s pages and render our `item.json.json` inside our response block. 
-
-JSON hating trailing commas, we’ll use `$index` to guard the door.
+### list.json.json
+For our list template, we need to iterate over the current section’s pages and render our `item.json.json` template for each one inside the response block. 
 
     {{ define "response" }}
     [
@@ -203,6 +199,7 @@ JSON hating trailing commas, we’ll use `$index` to guard the door.
     ]
     {{ end }}
   
+We're using the `$index` variable here to prevent our template from outputting a comma after the last item in our array, since that would result in invalid JSON.
 
 Now your players API endpoint (http://localhost:1313/players/index.json) should return a list
 
@@ -223,9 +220,8 @@ Now your players API endpoint (http://localhost:1313/players/index.json) should 
         ]
     }
 
-**404.json**
-Yes we need to eventually send out an error code in case the url does not exist.
-We’ll add a `404.json` in our static directory.
+### 404.json
+If the consumer of our API requests a nonexistent resource, it would be nice if we could return a 404 response with an error message in valid JSON. Let's add a `404.json` in our static directory:
 
     {
         "error" : "404",
@@ -235,11 +231,11 @@ We’ll add a `404.json` in our static directory.
 Then, all you have to do is make sure your server redirect to this file in case of a 404. If you’re not familiar on how to set up a server redirect, check out this [overview](https://gohugo.io/templates/404/) on different ways to go about it.
 
 
-## Level 2 : Teams and Sports
+## Adding Teams and Sports
 
-Great job, you just built a simple but fully functioning API using Hugo’s Output formats and templating. Don’t stop now! Let’s add some additional features.
+Great job! You just built a simple but fully functioning API using Hugo’s Output formats and cusotm templates. While we're on a roll, let’s keep going with some additional features.
 
-**Team section**
+## Adding Teams
 A lot of these steps are similar to creating the endpoint for `players`. First, we’ll add a `teams` section to our content directory and add team `.md` files. We’ll create `/content/teams/sly-turtles.md`.
 
     ---
@@ -271,13 +267,20 @@ And we have a team: http://localhost:1313/teams/sly-turtles/index.json
     }
   
 
-**Improving our response**
+### Improving our response
 Now that we have two types of entries, it makes sense to provide some additional information when listing them in our `list.json.json`. This is the structure of our new response:
 
+```text
+{
+	{ T},
+    { t },
+    [ th]
+}
+```
 
-1. What are we looking at ?
-2. How many are there ?
-3. Entries stored into an array
+- The type of resource we're looking at
+- The number of results found
+- An array of results
 
 
     {{ define "response" }}
@@ -294,8 +297,11 @@ Now that we have two types of entries, it makes sense to provide some additional
         }
     {{ end }}
 
-**Sports taxonomy**
-Adding a sports category into the mix is not that complicated. Let’s open our `config.toml` and tell Hugo there’s a new Taxo in town and that we need an Output Format for it.
+### Adding a Taxonomy for Sports
+Adding a sports category into the mix is not that complicated. First, we need to open `config.toml` to tell Hugo two things:
+
+1. We are declaring a new taxonomy called *sports*, and
+2. Taxonomies are also compatible with our JSON output format.
 
 
     [taxonomies]
@@ -307,14 +313,17 @@ Adding a sports category into the mix is not that complicated. Let’s open our 
         taxonomy = ["json"] # All items from a sport
   
 
-Then add them to our players and teams:
+We can now add `sports` to our players and teams:
 
 
     ---
     title: "Frank J. Robinson"
     [...]
     sports: ["soccer", "baseball"]
-  Then in our `list.json.json` template, we could add the possibility of a taxonomy page and enrich the output by checking if the page of kind `section` or `taxonomy`.
+    
+    
+In our `list.json.json` template, we could then add the possibility of a taxonomy page and enrich the output by checking if the page is of kind `section` or `taxonomy`.
+  
     {{ with eq .Kind  "section"}}
         "section" : "{{ $.Section }}",
     {{ end }}
@@ -323,7 +332,7 @@ Then add them to our players and teams:
         "term" : "{{ $.Data.Term }}",
     {{ end }}
 
-And we have a sport: http://localhost:1313/sports/football/index.json
+We now have a sport index: http://localhost:1313/sports/football/index.json
 
 
     {
@@ -354,8 +363,8 @@ And we have a sport: http://localhost:1313/sports/football/index.json
         }
     }
 
-**Creating a generic item.json.json**
-For the sake of simplicity we added `items.json.json` to `layouts/_default`, however, it really only caters to the `players` endpoint. Let’s move it to `layouts/players/item.json.json`. 
+### Creating a generic item.json.json
+For the sake of simplicity we added `items.json.json` to `layouts/_default`. However, it really only caters to the `players` endpoint. Let’s move it to `layouts/players/item.json.json`. 
 
 Instead we'll create a more generic `layouts/_default/item.json.json` for all other types of entries.
 
@@ -367,7 +376,7 @@ Instead we'll create a more generic `layouts/_default/item.json.json` for all ot
       "summary" : "{{ .Summary }}"
     }
 
-Nice, the API is now Content type proof!
+Our API is now Content-type agnostic!
 
 ## Next Steps
 
@@ -380,6 +389,7 @@ What we built is a stand alone API, but in order to add it as an extra layer to 
       ...
 
 Using Hugo's Output Formats we were able to tell Hugo to output our pages in JSON. We now have an out of the box RESTful GET API!
+
 Thanks to its templating logic we can now change or add keys to our players’ or teams’ output, add new content type and create a custom output object for them or let them use the default one. 
 
 A nice little follow-up exercise would be to create a JSON output for our sports taxonomy to list all of our sports!
