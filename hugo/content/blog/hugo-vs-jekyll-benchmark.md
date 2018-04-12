@@ -23,8 +23,13 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 
 ---
+{{% tip %}}  
+We've also compared Jekyll & Hugo features across 6 dimensions. [Learn More](/blog/hugo-and-jekyll-compared/)  
+{{% /tip %}}
+
 Hugo and Jekyll are the leading static site generators according to [StaticGen.com](https://staticgen.com), and both supported by our [CMS](https://forestry.io).  We're often asked which tool performs better so we decided to do an analysis.
 
 ## TL;DR
@@ -71,7 +76,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     date: 2017-07-17T13:48:56-03:00
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -81,7 +86,7 @@ For the first benchmark, we generated content with a title, a body, and a date i
     layout: post
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 ---
@@ -161,7 +166,7 @@ In this case, our content looked like this:
     date: 2017-07-17T14:07:58-03:00
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 **Jekyll**
@@ -173,7 +178,7 @@ In this case, our content looked like this:
     layout: post
     ---
     # Page Headline
-
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna nisl. Donec rhoncus libero eget tristique dapibus. Nullam ultricies ullamcorper ipsum sed lacinia.
 
 ---
@@ -250,4 +255,4 @@ Do you run a Jekyll or Hugo site? Share your build times are in the conversation
 
 ---
 
-**Next week,** we’ll compare the usability and features of Hugo and Jekyll to help you decide which static site generator is right for you.
+**Next week,** we’ll [compare the usability and features of Hugo and Jekyll](/blog/hugo-and-jekyll-compared/) to help you decide which static site generator is right for you.

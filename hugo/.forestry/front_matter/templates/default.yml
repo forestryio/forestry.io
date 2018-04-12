@@ -13,6 +13,7 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/hugo-vs-jekyll-benchmark.md
 - blog/content-blocks-give-your-editors-the-power-to-built-pages.md
 - blog/build-a-json-api-with-hugo.md
 - blog/how-to-use-hugo-s-image-processing-with-forestry.md
@@ -41,7 +42,6 @@ pages:
 - blog/wysiwyg-formatting-in-front-matter.md
 - blog/layout-improvements.md
 - blog/a-hugo-update-everyone-should-be-talking-about.md
-- blog/hugo-vs-jekyll-benchmark.md
 - blog/hugo-and-jekyll-compared.md
 - blog/building-a-company-component-library.md
 - blog/up-and-running-with-hugo-part-2.md
