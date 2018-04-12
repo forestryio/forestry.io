@@ -34,7 +34,7 @@ API stands for **Application Programming Interface**. The important part of an A
 {{% tip %}}
 
 A **RESTful API** loosely follows the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) paradigm for API design: its goal is to use the built-in semantics of the HTTP standard to define the interface.
-
+<br />
 One of the primary ways an API can be RESTful is by using HTTP verbs to declare actions. These verbs include `GET`, `PUT`, `POST`, and `DELETE`, and correspond to different actions that should be performed on the requested resource. Since our static site can’t run any backend code, it can’t do anything meaningful with a `PUT`, `POST`, or `DELETE` request: we will only respond to `GET`. This is why our API is **read-only**.
 
 {{% /tip %}}
