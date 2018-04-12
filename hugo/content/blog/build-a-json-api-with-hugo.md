@@ -44,8 +44,8 @@ Our sample project will provide data for sports teams and players of a fictional
 
 We’ll start with three endpoints where we’ll focus on returning listed data and individual player data:
 
-|:-- Endpoint               |:-- Resource                 |
-| ---------------------- | ------------------------ |
+| Endpoint               | Resource                 |
+| :--------------------- | :----------------------- |
 | `GET /`                | Lists everything         |
 | `GET` `/players`       | Lists players            |
 | `GET /players/{:slug}` | Data for a single player |
@@ -53,21 +53,21 @@ We’ll start with three endpoints where we’ll focus on returning listed data 
 Later on, we will add teams and a sports taxonomy, adding three new endpoints.
 
 | Endpoint               | Resource                                          |
-| ---------------------- | ------------------------------------------------- |
+| :--------------------- | :------------------------------------------------ |
 | `GET /teams`           | Lists teams                                       |
 | `GET /team/{:slug}`    | Team data and players                             |
 | `GET /sports/{:sport}` | List of players and teams for the specified sport |
 
 ## Setting up the Site
 
-Create a new Hugo site (see Hugo’s [quick start guide](https://gohugo.io/getting-started/quick-start/)).
+Start by creating a new Hugo site (see Hugo’s [quick start guide](https://gohugo.io/getting-started/quick-start/)).
 
   
 
 In our content directory, we’ll create a `players` folder and add some players to it. 
 
   
-    ├── hugo/                  # The Hugo project; 
+    ├── my-hugo-project/       # The root of our Hugo project
     |   ├── content/           # Where all site content is stored 
     |   |   ├── players/       # Your players section  
     |   |   |   ├── frank-j-robinson.md
@@ -95,7 +95,7 @@ By default, Hugo will build an HTML version of each page. It will also build an 
 
 In our case, all we need to output is a JSON formatted file for each page, section and the home page.
 
-The JSON output format is also [built-in](https://gohugo.io/templates/output-formats/#output-formats), all we need is to open our config file and tell Hugo where to use it.
+The JSON output format is also [built-in](https://gohugo.io/templates/output-formats/#output-formats), all we need is to open our `config.toml` file and tell Hugo where to use it.
 
 
     [outputs]
@@ -109,16 +109,16 @@ Next, we need to create a template for Hugo to build this format. When creating 
 
     {pageKind}.{outputFormatName}.{extension}
 
-From within `layouts/` to build our single players page, Hugo will look for 
+To build our single players page, Hugo will look for 
 
   
-    _default/single.json.json 
+    layout/_default/single.json.json 
   
 
-To build our section list page and our home page Hugo will look for
+To build our section list page and our home page, Hugo will look for
 
 
-    _default/list.json.json
+    layouts/_default/list.json.json
 
 
 ## Templating
