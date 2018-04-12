@@ -26,6 +26,7 @@ Hugo’s `0.32` update introduced built-in [image processing](https://gohugo.io/
 
 ## 1. Create the uploads content section
 
+<!-- I don't love the word 'trick' - how about: Hugo needs to think we have a content type called `uploads`,... -->
 We're going to trick Hugo into thinking we have a content type called `uploads`, so that Hugo can browse this section and locate subresources.
 
 Create a folder in your `content/` directory called `uploads`, and add a file named `_index.md` with the following content:
@@ -53,6 +54,8 @@ Inside the CMS, click on `Settings` to access your site's settings. Scroll down 
 In the same section, update the URLs in your front matter to match the new upload location: `/uploads`.
 
 ## 4. Lookup the page resource in your template
+
+<!-- since you're using 'lookup' as a verb it's 'look up' -->
 
 At this point, you can access image front matter by searching for it in the upload section resources:
 
