@@ -188,7 +188,7 @@ Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll
 
 ## Hugo
 
-Hugo is a static site generator written in Go. It was founded by Steve Francia in 2013, but these days its development is community-driven, led by Bjørn Erik Pedersen.
+Hugo is a static site generator written in Go. Hugo is created by Steve Francia and Bjørn Erik Pedersen. The development is currently lead by the Norwegian.
 
 Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 24k stars on GitHub
 
