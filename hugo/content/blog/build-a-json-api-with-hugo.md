@@ -1,7 +1,7 @@
 ---
 title: Build a JSON API With Hugo's Custom Output Formats
 description: ''
-date: 2018-04-13 15:53:27 -1100
+date: 2018-04-13 05:00:27 -1100
 authors:
 - Régis Philibert
 publishdate: 2017-12-07 04:00:00 +0000
