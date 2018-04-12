@@ -2,13 +2,15 @@
 title: Content Blocks - Give Your Editors the Power to Build Pages
 description: ''
 date: 2018-04-11 23:41:56 +0000
-authors: []
+authors:
+- Sebastian Engels
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
@@ -21,8 +23,7 @@ menu: []
 draft: true
 
 ---
-
-Overview what is the goal of Matrix Fields and Sub Front Matter?
+## Overview what is the goal of Matrix Fields and Sub Front Matter?
 
 - Giving Editors more power to organize the sites while leaving full control to devs in terms of code cleanliness and SEO optimization / Making Pages unbreakable
 
@@ -30,7 +31,7 @@ Overview what is the goal of Matrix Fields and Sub Front Matter?
 
 - Pulling up to existing CMS solutions
 
-\## Matrix Fields, How are they different from site builders?
+## Matrix Fields, How are they different from site builders?
 
 - Pre defined blocks (something of a bootstrap)
 
@@ -42,7 +43,7 @@ Overview what is the goal of Matrix Fields and Sub Front Matter?
 
 - What are other possible uses?
 
-\## Sub Front Matter
+## Sub Front Matter
 
 - The little broter of Matrix Fields
 
