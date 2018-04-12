@@ -8,7 +8,8 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/04/hugo-forestry-img-processing.png"
 categories: []
 tags: []
 cta:
@@ -48,6 +49,8 @@ There's an unfortunate side effect of this: you will now see **Uploads** under y
 ## 2. Change the upload file path in Forestry settings
 
 Inside the CMS, click on `Settings` to access your site's settings. Scroll down to the **File Paths** section. By default, this will be set to `/static/uploads/:year:/:month:/:day:`. Change this to `/content/uploads` so that Hugo can view these files as Page Resources.
+
+![](/uploads/2018/04/settings-content-uploads.png)
 
 ## 3. Update front matter and body upload URLs
 
