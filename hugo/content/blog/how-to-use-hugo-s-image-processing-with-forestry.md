@@ -25,6 +25,8 @@ draft: true
 ---
 Hugo’s `0.32` update introduced built-in [image processing](https://gohugo.io/content-management/image-processing/) for certain assets. One limitation of this feature is that it only works for [page resources](https://gohugo.io/content-management/page-resources/), which are page-relative assets stored alongside your posts in the `content/` directory of your site. Since Forestry’s uploads are stored in the `static/uploads/` directory by default, these assets cannot be resized in your templates using Hugo’s built-in resizer. This document will provide a step-by-step guide for working around this limitation.
 
+![](/uploads/2018/04/media-library-hugo-img-processing.png)
+
 ## 1. Create the uploads content section
 
 <!-- I don't love the word 'trick' - how about: Hugo needs to think we have a content type called `uploads`,... -->
