@@ -228,7 +228,7 @@ A lot of these steps are similar to creating the endpoint for `players`. First, 
     
     Sly Turtles were cool before Nemo!
 
-We need a new item object to display a team. All we have to do is create `layouts/teams/item.\`\`json.\`\`json` for Hugo to pick it up instantly when rendering a page from `teams`.
+We need a new item object to display a team. All we have to do is create `layouts/teams/item.\\`\`json.\`\`json`for Hugo to pick it up instantly when rendering a page from`teams\`.
 
     {
         "title": "{{ .Title }}",
@@ -370,7 +370,7 @@ Thanks to its templating logic we can now change or add keys to our players’ o
 
 A nice little follow-up exercise would be to create a JSON output for our sports taxonomy to list all of our sports!
 
-<div style="padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding Responsive Images to your Static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
+<div style="padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding responsive images to your static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
 
 <!-- Have something to add?
 
