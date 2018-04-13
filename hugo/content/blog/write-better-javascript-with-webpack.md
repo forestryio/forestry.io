@@ -35,6 +35,7 @@ Writing complex client-side code is **painful** without some help. You already k
 Many solutions in this space, such as Gulp, can be used to smash a bunch of JavaScript files together into a single bundle. This is a great improvement — but is it really enough? We’re left with a linear dependency chain and relying on global variables to share information between our separate files.
 
 ### A Better Way
+
 This post will explore why Webpack is the right choice for bundling your JavaScript application. If you’ve never used a build tool for your frontend assets, Webpack is a great place to start. If you’re already comfortable using a task runner like Gulp, delegating the asset bundling to Webpack will provide you with a more sophisticated organization and dependency management strategy.
 
 Webpack **helps you write better code** and **gets out of your way** so you can focus on making great software.
@@ -46,7 +47,7 @@ Maybe you’ve heard this before: **Gulp is a task runner, Webpack is a module b
 **Gulp is a great automation tool.** It allows developers to set up complex file processing pipelines using JavaScript, and run them as simple commands. However, when it comes to packaging your JavaScript application, the previously-mentioned file smashing is about as far as it can go. If code in file A depends on code in file B, you need to tell Gulp to include file A first. This can be done directly in the Gulp configuration, or by maintaining a separate manifest file for use with a plugin like [asset-builder](http://use-asset-builder.austinpray.com/). As you add more files and your dependency tree grows, this can become a chore to maintain.
 
 <div style="text-align: center;">
-    <img src="/uploads/2018/03/webpack_fighter_of_the_gulpstack_champion_of_the_bundle.png" alt="He's a master of resolving the modules for everyone" title="He's a master of resolving the modules for everyone">
+<img src="/uploads/2018/03/webpack_fighter_of_the_gulpstack_champion_of_the_bundle.png" alt="He's a master of resolving the modules for everyone" title="He's a master of resolving the modules for everyone">
 </div>
 
 **Complex dependency resolution is Webpack’s specialty.** You specify a file that serves as your application’s **entry point**, and Webpack will recursively process module imports in your code to build a dependency graph.  When it’s all done, Webpack emits your JavaScript in a single bundle file. There's no need to tell Webpack the order in which it should put your files together; it figures it out by reading your code.
@@ -60,33 +61,34 @@ In order for Webpack to work its magic, your code needs to be written as **JavaS
 Webpack supports two standards for Module configuration: **EcmaScript** and **CommonJS**. The following examples demonstrate how you would configure a module defined in `hello.js` to be loaded by a file named `app.js` in each of these standards:
 
 ### EcmaScript Module Syntax
+
 **hello.js**
-```
-export function hello() {
-    console.log('Hello World!');
-};
-```
+
+    export function hello() {
+        console.log('Hello World!');
+    };
+
 **app.js**
-```
-import {hello} from './hello';
-hello();
-```
+
+    import {hello} from './hello';
+    hello();
+
 The EcmaScript standard uses the `export` and `import` keywords.
 
 ### CommonJS Module Syntax
-**hello.js**
-```
-module.exports = function() {
-    console.log('Hello World!');
-};
-```
-**app.js**
-```
-const hello = require('./hello');
-hello();
-```
-The CommonJS standard works by assigning the exported code to `module.exports` and importing it by calling the `require()` function.
 
+**hello.js**
+
+    module.exports = function() {
+        console.log('Hello World!');
+    };
+
+**app.js**
+
+    const hello = require('./hello');
+    hello();
+
+The CommonJS standard works by assigning the exported code to `module.exports` and importing it by calling the `require()` function.
 
 {{% tip %}}
 
@@ -101,34 +103,41 @@ Webpack’s dependency resolution is **intuitive** because you don’t need to l
 ## Configuring Webpack
 
 Let’s set up the simplest possible configuration to understand the core components of Webpack. Start by setting up the following file structure:
+
 ```text
 src/
     app.js
 webpack.config.js
 ```
+
 By default, Webpack looks for configuration in a file called `webpack.config.js`. Next, let’s install the Webpack modules by running the following terminal commands:
+
 ```text
 npm init -y
 npm install --save-dev webpack webpack-cli
 ```
+
 Now that Webpack is installed in the project, open up `webpack.config.js` in a text editor and add the following code:
-```
-var path = require('path');
-module.exports = {
-    entry: './src/app.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
-    },
-};
-```
+
+    var path = require('path');
+    module.exports = {
+        entry: './src/app.js',
+        output: {
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'bundle.js'
+        },
+    };
+
 That’s all you need for a bare-bones Webpack config: define the **entry point** and the **output file**. Webpack requires an absolute path for the output, so we need to use the `path` module to resolve this at runtime.
 
 We can then run Webpack by invoking the CLI command:
+
 ```text
 ./node_modules/webpack-cli/bin/webpack.js
 ```
+
 This will read `src/app.js` and compile it into `dist/bundle.js`. Once the command completes, our project should look like this:
+
 ```text
 dist/
     bundle.js
@@ -137,11 +146,13 @@ src/
 package.json
 webpack.config.js
 ```
+
 ## Using NPM Scripts
 
 A common strategy for streamlining your build CLI is to add custom scripts to the `scripts` property in your `package.json` file. You can then invoke these scripts with `npm run SCRIPT_NAME`.
 
 Open your `package.json` file in a text editor and locate the `scripts` section:
+
 ```json
 {
     "name": "my-webpack-demo",
@@ -152,6 +163,7 @@ Open your `package.json` file in a text editor and locate the `scripts` section:
     ...
 }
 ```
+
 The default `package.json` comes with one script called `test` that just returns an error message. Let’s add two more:
 
 ```json
@@ -166,10 +178,10 @@ The default `package.json` comes with one script called `test` that just returns
     ...
 }
 ```
+
 Now we can run our Webpack build by simply calling `npm run build`. We have also added a `watch` script that passes the `--watch` flag to `webpack-cli`. When invoked with this flag, Webpack will watch our files and automatically run the build when changes are detected.
 
-Congratulations! You are now writing modular JavaScript, and you have a build process that puts it all together for you. 
-
+Congratulations! You are now writing modular JavaScript, and you have a build process that puts it all together for you.
 
 ## Next Steps
 
@@ -178,10 +190,10 @@ We have only scratched the surface here: Webpack is capable of much more than th
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> we’ll compare the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p>  
+<p><strong>Next week:</strong> We’ll compare the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p>  
 <p><strong>Last week:</strong> We looked into CI/CD: <a href="https://forestry.io/blog/automate-deploy-w-circle-ci/">Automating Your Static Site Deployment with CircleCI</a>.</p>  
 </div>
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16718162">Discuss on Hacker News</a> 
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16718162">Discuss on Hacker News</a>
