@@ -9,7 +9,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
-- "/uploads/2018/04/aleksander-naug-84513-unsplash.jpg"
+- "/uploads/2018/04/aleksander-naug-84513-unsplash.png"
 categories: []
 tags: []
 cta:
