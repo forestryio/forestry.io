@@ -13,10 +13,10 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - blog/hugo-vs-jekyll-benchmark.md
 - blog/content-blocks-give-your-editors-the-power-to-built-pages.md
 - blog/build-a-json-api-with-hugo.md
-- blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - blog/what-you-see-is-not-enough--a-content-strategy-epic.md
 - blog/test.md

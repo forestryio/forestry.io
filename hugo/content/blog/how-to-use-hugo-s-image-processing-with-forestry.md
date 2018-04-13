@@ -62,6 +62,7 @@ In the same section, update the URLs in your front matter to match the new uploa
 At this point, you can access image front matter by searching for it in the upload section resources:
 
 ```go-html-template
-{{{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .image) }}
-<img src="{{ $imageResource.RelPermalink }}" />
+{{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .image) }}
+{{ $resized := $imageResource.Fill "200x200" }}
+<img src="{{ $resized.RelPermalink }}" />
 ```
