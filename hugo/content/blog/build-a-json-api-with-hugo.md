@@ -228,7 +228,7 @@ A lot of these steps are similar to creating the endpoint for `players`. First, 
     
     Sly Turtles were cool before Nemo!
 
-We need a new item object to display a team. All we have to do is create `layouts/teams/item.\\`\`json.\`\`json`for Hugo to pick it up instantly when rendering a page from`teams\`.
+We need a new item object to display a team. All we have to do is create `layouts/teams/item.\\\\`\`json.\`\`json`for Hugo to pick it up instantly when rendering a page from`teams\`.
 
     {
         "title": "{{ .Title }}",
