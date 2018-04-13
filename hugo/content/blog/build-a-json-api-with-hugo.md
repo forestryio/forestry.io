@@ -372,6 +372,6 @@ A nice little follow-up exercise would be to create a JSON output for our sports
 
 <div style="padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding Responsive Images to your Static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
 
-Have something to add?
+<!-- Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16774437">Discuss on Hacker News</a>
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16774437">Discuss on Hacker News</a> -->
