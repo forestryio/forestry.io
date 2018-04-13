@@ -26,7 +26,6 @@ As developers, we love open and accessible data.  For example, you may want to u
 
 In order to make data that is “machine friendly” like this, we can expose it with a [RESTful API](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming). Normally, the quickest way to bootstrap an API like this would be to start with a popular framework like Flask or Ruby on Rails, spin up a webserver, and connect a database. We can achieve something even simpler, however, by creating a read-only API with a static site generator. In this article, we’ll use [Hugo](https://gohugo.io) to build a JSON API using its [Custom](https://gohugo.io/templates/output-formats#output-formats) [Output Formats](https://gohugo.io/templates/output-formats#output-formats) feature.
 
-
 ## Planning the Interface
 
 API stands for **Application Programming Interface**. When it comes to building an API, designing a good  **Interface** is as important as the underyling software. Other developers will use this **interface** for **programming their applications.** See what I did there?
@@ -44,39 +43,33 @@ Our sample project will provide data for sports teams and players of a fictional
 
 We’ll start with three endpoints where we’ll focus on returning listed data and individual player data:
 
-| Endpoint               | Resource                 |
-| :--------------------- | :----------------------- |
-| `GET /`                | Lists everything         |
-| `GET` `/players`       | Lists players            |
-| `GET /players/{:slug}` | Data for a single player |
+| Endpoint | Resource |
+| :--- | :--- |
+| GET / | Lists everything |
+| GET /players | Lists players |
+| GET /players/{:slug} | Data for a single player |
 
 Later on, we will add teams and a sports taxonomy, adding three new endpoints.
 
-| Endpoint               | Resource                                          |
-| :--------------------- | :------------------------------------------------ |
-| `GET /teams`           | Lists teams                                       |
-| `GET /team/{:slug}`    | Team data and players                             |
-| `GET /sports/{:sport}` | List of players and teams for the specified sport |
+| Endpoint | Resource |
+| :--- | :--- |
+| GET /teams | Lists teams |
+| GET /team/{:slug} | Team data and players |
+| GET /sports/{:sport} | List of players and teams for the specified sport |
 
 ## Setting up the Site
 
-Start by creating a new Hugo site (see Hugo’s [quick start guide](https://gohugo.io/getting-started/quick-start/)).
+Start by creating a new Hugo site (see our [Up & Running with Hugo](https://forestry.io/blog/up-and-running-with-hugo/) series or Hugo’s [quick start guide](https://gohugo.io/getting-started/quick-start/)).
 
-  
+In our content directory, we’ll create a `players` folder and add some players to it.
 
-In our content directory, we’ll create a `players` folder and add some players to it. 
-
-  
     ├── my-hugo-project/       # The root of our Hugo project
     |   ├── content/           # Where all site content is stored 
     |   |   ├── players/       # Your players section  
     |   |   |   ├── frank-j-robinson.md
     |   |   |   └── jody-garland.md
-        
-    
 
 Our player markdown will look something like this:
-
 
     ---
     title: "Frank J. Robinson"
@@ -88,7 +81,6 @@ Our player markdown will look something like this:
     
     Frank, our number one second baseman!
 
-
 ## Output Formats
 
 By default, Hugo will build an HTML version of each page. It will also build an XML version of your home page, using its built-in RSS Output Format.
@@ -97,47 +89,38 @@ In our case, all we need to output is a JSON formatted file for each page, secti
 
 The JSON output format is also [built-in](https://gohugo.io/templates/output-formats/#output-formats), all we need is to open our `config.toml` file and tell Hugo where to use it.
 
-
     [outputs]
       page = ["json"] # A player
       section = ["json"] # All players
       home = ["json"] # Everything
-  
 
 Next, we need to create a template for Hugo to build this format. When creating Hugo template files for a custom output format, we need to follow a specific naming convention:
 
-
     {pageKind}.{outputFormatName}.{extension}
 
-To build our single players page, Hugo will look for 
+To build our single players page, Hugo will look for
 
-  
     layout/_default/single.json.json 
-  
 
 To build our section list page and our home page, Hugo will look for
 
-
     layouts/_default/list.json.json
-
 
 ## Templating
 
 We will use custom templates to build the API responses for our first 3 endpoints. Each of them will use a consistent « player » object. We will need to create templates to support the following views:
 
-- A list view for our players section and home page.
-- A single item view for each player's details.
+* A list view for our players section and home page.
+* A single item view for each player's details.
 
 To achieve this, we’ll create the following templates in `/layouts/_default/`:
 
-- `baseof.json.json` — A [base template](https://gohugo.io/templates/base/#base-template-lookup-order) for our API response.
-- `item.json.json` — The single item object, which will be reused in all of our templates, every time we need to output a player. In Hugo we call this a [Content View](https://gohugo.io/templates/views), but for our API I see it more like a transformer.
-- `single.json.json` — The response output for a single player
-- `list.json.json` — The response output for a list of players
+* `baseof.json.json` — A [base template](https://gohugo.io/templates/base/#base-template-lookup-order) for our API response.
+* `item.json.json` — The single item object, which will be reused in all of our templates, every time we need to output a player. In Hugo we call this a [Content View](https://gohugo.io/templates/views), but for our API I see it more like a transformer.
+* `single.json.json` — The response output for a single player
+* `list.json.json` — The response output for a list of players
 
 [Base templates](https://gohugo.io/templates/base) are top-level templates that are the starting point for all pages in Hugo. They are usually full of HTML where we lodge in different blocks, but our JSON base will be much simpler. Our API response should contain a `data` object on success and an `error` object on error.  So we will set up the data object and use a block for the individual response.
-
-  
 
 Our simple `baseof.json`:
 
@@ -146,6 +129,7 @@ Our simple `baseof.json`:
     }
 
 ### item.json.json
+
 The Hugo docs suggest you call this template `li.json`, but for clarity we’ll call it `item.json`. This is the one item we’ll load or render every time we want to output information for a player.
 
 We want the output of a player object to look like this:
@@ -158,7 +142,6 @@ We want the output of a player object to look like this:
 
 To achieve this, add the following to `item.json.json`:
 
-
     {
         "name": "{{ .Title }}",
         "contact" : "{{ .Params.emergency_contact }}",
@@ -168,8 +151,8 @@ To achieve this, add the following to `item.json.json`:
 That's all there is to it!
 
 ### single.json.json
-We just have to render our `item.json.json` inside our response block.  To do so, add this to `single.json.json`.
 
+We just have to render our `item.json.json` inside our response block.  To do so, add this to `single.json.json`.
 
     {{ define "response" }} {{ .Render "item" }} {{ end }}
 
@@ -178,7 +161,6 @@ Now you should be able to visit the API endpoint for a single player ([http://lo
 {{% warning %}}
 Hugo's built-in webserver doesn't always handle custom output formats as well as HTML. If your JSON output does not update with your latest changes, try reloading the browser. If that doesn't work, you may have to stop and restart the Hugo server.
 {{% /warning %}}
-
 
     {
         "data": {
@@ -189,7 +171,8 @@ Hugo's built-in webserver doesn't always handle custom output formats as well as
     }
 
 ### list.json.json
-For our list template, we need to iterate over the current section’s pages and render our `item.json.json` template for each one inside the response block. 
+
+For our list template, we need to iterate over the current section’s pages and render our `item.json.json` template for each one inside the response block.
 
     {{ define "response" }}
     [
@@ -198,11 +181,10 @@ For our list template, we need to iterate over the current section’s pages and
         {{ end }}
     ]
     {{ end }}
-  
+
 We're using the `$index` variable here to prevent our template from outputting a comma after the last item in our array, since that would result in invalid JSON.
 
 Now your players API endpoint (http://localhost:1313/players/index.json) should return a list
-
 
     {
         "data": [
@@ -221,6 +203,7 @@ Now your players API endpoint (http://localhost:1313/players/index.json) should 
     }
 
 ### 404.json
+
 If the consumer of our API requests a nonexistent resource, it would be nice if we could return a 404 response with an error message in valid JSON. Let's add a `404.json` in our static directory:
 
     {
@@ -230,12 +213,12 @@ If the consumer of our API requests a nonexistent resource, it would be nice if 
 
 Then, all you have to do is make sure your server redirect to this file in case of a 404. If you’re not familiar on how to set up a server redirect, check out this [overview](https://gohugo.io/templates/404/) on different ways to go about it.
 
-
 ## Adding Teams and Sports
 
 Great job! You just built a simple but fully functioning API using Hugo’s Output formats and cusotm templates. While we're on a roll, let’s keep going with some additional features.
 
 ## Adding Teams
+
 A lot of these steps are similar to creating the endpoint for `players`. First, we’ll add a `teams` section to our content directory and add team `.md` files. We’ll create `/content/teams/sly-turtles.md`.
 
     ---
@@ -245,19 +228,16 @@ A lot of these steps are similar to creating the endpoint for `players`. First, 
     
     Sly Turtles were cool before Nemo!
 
-We need a new item object to display a team. All we have to do is create `layouts/teams/item.``json.``json` for Hugo to pick it up instantly when rendering a page from `teams`.
-
+We need a new item object to display a team. All we have to do is create `layouts/teams/item.\`\`json.\`\`json` for Hugo to pick it up instantly when rendering a page from `teams`.
 
     {
         "title": "{{ .Title }}",
         "mascot": "{{ .Params.mascot }}",
         "permalink": "{{ .Permalink }}"
     }
-  
 
 And we have a team: http://localhost:1313/teams/sly-turtles/index.json
 
-  
     {
         "data": {
             "title": "Sly Turtles",
@@ -265,9 +245,9 @@ And we have a team: http://localhost:1313/teams/sly-turtles/index.json
             "permalink": "http://localhost:1313/teams/sly-turtles/index.json"
         }
     }
-  
 
 ### Improving our response
+
 Now that we have two types of entries, it makes sense to provide some additional information when listing them in our `list.json.json`. This is the structure of our new response:
 
 ```text
@@ -278,52 +258,48 @@ Now that we have two types of entries, it makes sense to provide some additional
 }
 ```
 
-- The type of resource we're looking at
-- The number of results found
-- An array of results
+* The type of resource we're looking at
+* The number of results found
+* An array of results
 
-
-    {{ define "response" }}
-        {
-            {{ with .Section }}
-                "section" : "{{ . }}",
-            {{ end }}
-            "count" : "{{ len .Data.Pages }}"
-            ,"items" : [
-            {{ range $i, $e := .Data.Pages }}
-                {{ if $i }}, {{ end }}{{ .Render "item" }}
-            {{ end }}
-            ]
-        }
-    {{ end }}
+  {{ define "response" }}
+  {
+  {{ with .Section }}
+  "section" : "{{ . }}",
+  {{ end }}
+  "count" : "{{ len .Data.Pages }}"
+  ,"items" : \[
+  {{ range $i, $e := .Data.Pages }}
+  {{ if $i }}, {{ end }}{{ .Render "item" }}
+  {{ end }}
+  \]
+  }
+  {{ end }}
 
 ### Adding a Taxonomy for Sports
+
 Adding a sports category into the mix is not that complicated. First, we need to open `config.toml` to tell Hugo two things:
 
-1. We are declaring a new taxonomy called *sports*, and
+1. We are declaring a new taxonomy called _sports_, and
 2. Taxonomies are also compatible with our JSON output format.
 
-
-    [taxonomies]
-        sport = "sports"
-    [outputs]
-        page = ["json"] # A player
-        section = ["json"] # All players
-        home = ["json"] # Everything
-        taxonomy = ["json"] # All items from a sport
-  
+   \[taxonomies\]
+   sport = "sports"
+   \[outputs\]
+   page = \["json"\] # A player
+   section = \["json"\] # All players
+   home = \["json"\] # Everything
+   taxonomy = \["json"\] # All items from a sport
 
 We can now add `sports` to our players and teams:
-
 
     ---
     title: "Frank J. Robinson"
     [...]
     sports: ["soccer", "baseball"]
-    
-    
+
 In our `list.json.json` template, we could then add the possibility of a taxonomy page and enrich the output by checking if the page is of kind `section` or `taxonomy`.
-  
+
     {{ with eq .Kind  "section"}}
         "section" : "{{ $.Section }}",
     {{ end }}
@@ -333,7 +309,6 @@ In our `list.json.json` template, we could then add the possibility of a taxonom
     {{ end }}
 
 We now have a sport index: http://localhost:1313/sports/football/index.json
-
 
     {
         "data": {
@@ -364,7 +339,8 @@ We now have a sport index: http://localhost:1313/sports/football/index.json
     }
 
 ### Creating a generic item.json.json
-For the sake of simplicity we added `items.json.json` to `layouts/_default`. However, it really only caters to the `players` endpoint. Let’s move it to `layouts/players/item.json.json`. 
+
+For the sake of simplicity we added `items.json.json` to `layouts/_default`. However, it really only caters to the `players` endpoint. Let’s move it to `layouts/players/item.json.json`.
 
 Instead we'll create a more generic `layouts/_default/item.json.json` for all other types of entries.
 
@@ -390,6 +366,6 @@ What we built is a stand alone API, but in order to add it as an extra layer to 
 
 Using Hugo's Output Formats we were able to tell Hugo to output our pages in JSON. We now have an out of the box RESTful GET API!
 
-Thanks to its templating logic we can now change or add keys to our players’ or teams’ output, add new content type and create a custom output object for them or let them use the default one. 
+Thanks to its templating logic we can now change or add keys to our players’ or teams’ output, add new content type and create a custom output object for them or let them use the default one.
 
 A nice little follow-up exercise would be to create a JSON output for our sports taxonomy to list all of our sports!
