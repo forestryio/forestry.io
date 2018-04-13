@@ -366,14 +366,14 @@ Using Hugo's Output Formats we were able to tell Hugo to output our pages in JSO
 Thanks to its templating logic we can now change or add keys to our players’ or teams’ output, add new content type and create a custom output object for them or let them use the default one.
 
 ### Using Forestry for Content Management
+
+![](/uploads/2018/04/forestry_admin_demo-1.png)
+
 Bootstrapping an API this easily is great, but your content editors might not enjoy working with raw markdown files and dealing with a git repo. Fortunately, we can use the Forestry CMS to instantly add a content management backend for our API!
 
 <div style="text-align: center;"><a href="https://app.forestry.io/signup" class="button small primary">Get Started With Forestry</a></div>
 <br /><br />
 From the content side, our JSON API is no different than a conventional Hugo site. This means that managing our content in Forestry will work the same regardless of whether we plan to output JSON or HTML (or both!)
-
-
-
 
 <div style="padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding responsive images to your static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
 
