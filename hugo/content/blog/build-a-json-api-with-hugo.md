@@ -59,6 +59,10 @@ Later on, we will add teams and a sports taxonomy, adding three new endpoints.
 
 ## Setting up the Site
 
+{{% tip %}}
+Download the [sample project](https://github.com/regisphilibert/hugoGetApi/) to hit the ground running.
+{{% /tip %}}
+
 Start by creating a new Hugo site (see our [Up & Running with Hugo](https://forestry.io/blog/up-and-running-with-hugo/) series or Hugo’s [quick start guide](https://gohugo.io/getting-started/quick-start/)).
 
 In our content directory, we’ll create a `players` folder and add some players to it.
