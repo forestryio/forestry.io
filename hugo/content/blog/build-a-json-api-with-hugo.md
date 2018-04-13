@@ -163,7 +163,9 @@ We just have to render our `item.json.json` inside our response block.  To do so
 Now you should be able to visit the API endpoint for a single player ([http://localhost:1313/players/frank-j-robinson/index.json](http://localhost:1313/players/frank-j-robinson/index.json)) and get a response.
 
 {{% warning %}}
-Hugo's built-in webserver doesn't always handle custom output formats as well as HTML. If your JSON output does not update with your latest changes, try reloading the browser. If that doesn't work, you may have to stop and restart the Hugo server.
+While developing your API, you will need to run the `hugo serve` command with the `--disableFastRender` flag in order for Hugo to automatically rebuild these JSON files.
+<br /><br />
+Also, note that Hugo's built-in webserver can't live reload non-HTML documents, so you will need to manually reload the browser to see your changes.
 {{% /warning %}}
 
     {

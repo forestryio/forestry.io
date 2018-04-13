@@ -6,6 +6,7 @@ pages:
 - showcase/developerecosystem.md
 - showcase/borisfx.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   label: Title

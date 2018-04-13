@@ -47,6 +47,7 @@ pages:
 - blog/up-and-running-with-hugo-part-2.md
 - blog/search-with-algolia-in-jekyll.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   label: Title

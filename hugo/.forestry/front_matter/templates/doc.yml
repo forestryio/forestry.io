@@ -4,6 +4,7 @@ pages:
 - docs/editing/multiple-languages.md
 - docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   label: Title
