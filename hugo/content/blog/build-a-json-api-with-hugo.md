@@ -221,7 +221,7 @@ Then, all you have to do is make sure your server redirect to this file in case 
 
 ## Adding Teams and Sports
 
-Great job! You just built a simple but fully functioning API using Hugo’s Output formats and cusotm templates. While we're on a roll, let’s keep going with some additional features.
+Great job! You just built a simple but fully functioning API using Hugo’s Output formats and custom templates. While we're on a roll, let’s keep going with some additional features.
 
 ### Adding Teams
 
