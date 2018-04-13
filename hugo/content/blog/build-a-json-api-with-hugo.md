@@ -218,7 +218,7 @@ Then, all you have to do is make sure your server redirect to this file in case 
 
 Great job! You just built a simple but fully functioning API using Hugo’s Output formats and cusotm templates. While we're on a roll, let’s keep going with some additional features.
 
-## Adding Teams
+### Adding Teams
 
 A lot of these steps are similar to creating the endpoint for `players`. First, we’ll add a `teams` section to our content directory and add team `.md` files. We’ll create `/content/teams/sly-turtles.md`.
 
@@ -229,7 +229,7 @@ A lot of these steps are similar to creating the endpoint for `players`. First, 
     
     Sly Turtles were cool before Nemo!
 
-We need a new item object to display a team. All we have to do is create `layouts/teams/item.\\\\`\`json.\`\`json`for Hugo to pick it up instantly when rendering a page from`teams\`.
+We need a new item object to display a team. All we have to do is create `layouts/teams/item.json.json` for Hugo to pick it up instantly when rendering a page from`teams`.
 
     {
         "title": "{{ .Title }}",
@@ -251,31 +251,25 @@ And we have a team: http://localhost:1313/teams/sly-turtles/index.json
 
 Now that we have two types of entries, it makes sense to provide some additional information when listing them in our `list.json.json`. This is the structure of our new response:
 
-```text
-{
-	{ T},
-    { t },
-    [ th]
-}
-```
-
 * The type of resource we're looking at
 * The number of results found
 * An array of results
 
-  {{ define "response" }}
-  {
+```text
+{{ define "response" }}
+{
   {{ with .Section }}
   "section" : "{{ . }}",
   {{ end }}
-  "count" : "{{ len .Data.Pages }}"
-  ,"items" : \[
+  "count" : "{{ len .Data.Pages }}",
+  "items" : [
   {{ range $i, $e := .Data.Pages }}
   {{ if $i }}, {{ end }}{{ .Render "item" }}
   {{ end }}
-  \]
-  }
-  {{ end }}
+  ]
+}
+{{ end }}
+```
 
 ### Adding a Taxonomy for Sports
 
@@ -284,13 +278,15 @@ Adding a sports category into the mix is not that complicated. First, we need to
 1. We are declaring a new taxonomy called _sports_, and
 2. Taxonomies are also compatible with our JSON output format.
 
-   \[taxonomies\]
+```toml
+[taxonomies]
    sport = "sports"
-   \[outputs\]
-   page = \["json"\] # A player
-   section = \["json"\] # All players
-   home = \["json"\] # Everything
-   taxonomy = \["json"\] # All items from a sport
+[outputs]
+   page = ["json"] # A player
+   section = ["json"] # All players
+   home = ["json"] # Everything
+   taxonomy = ["json"] # All items from a sport
+```
 
 We can now add `sports` to our players and teams:
 
@@ -369,7 +365,15 @@ Using Hugo's Output Formats we were able to tell Hugo to output our pages in JSO
 
 Thanks to its templating logic we can now change or add keys to our players’ or teams’ output, add new content type and create a custom output object for them or let them use the default one.
 
-A nice little follow-up exercise would be to create a JSON output for our sports taxonomy to list all of our sports!
+### Using Forestry for Content Management
+Bootstrapping an API this easily is great, but your content editors might not enjoy working with raw markdown files and dealing with a git repo. Fortunately, we can use the Forestry CMS to instantly add a content management backend for our API!
+
+<div style="text-align: center;"><a href="https://app.forestry.io/signup" class="button small primary">Get Started With Forestry</a></div>
+<br /><br />
+From the content side, our JSON API is no different than a conventional Hugo site. This means that managing our content in Forestry will work the same regardless of whether we plan to output JSON or HTML (or both!)
+
+
+
 
 <div style="padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding responsive images to your static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
 
