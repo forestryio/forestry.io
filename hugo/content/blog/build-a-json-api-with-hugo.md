@@ -20,6 +20,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
+draft: true
 
 ---
 As developers, we love open and accessible data.  For example, you may want to use your local transit data for a mobile app, or maybe you want a service like [Zapier](https://zapier.com/) or [IFTTT](https://ifttt.com/) to send you an email every time the weather forecast calls for rain.  If you’re a super geek like [@bdougieyo](https://twitter.com/bdougieyo), you’ve built an app that tells you when to leave work in order to avoid traffic from your local baseball team’s home games ([from his excellent talk here](https://youtu.be/XpveOehxvoM?t=6m1s)).
@@ -28,7 +29,7 @@ In order to make data that is “machine friendly” like this, we can expose it
 
 ## Planning the Interface
 
-API stands for **Application Programming Interface**. When it comes to building an API, designing a good  **Interface** is as important as the underyling software. Other developers will use this **interface** for **programming their applications.** See what I did there?
+API stands for **Application Programming Interface**. When it comes to building an API, designing a good  **Interface** is as important as the underlying software. Other developers will use this **interface** for **programming their applications.** See what I did there?
 
 {{% tip %}}
 
@@ -374,7 +375,7 @@ Bootstrapping an API this easily is great, but your content editors might not en
 <br /><br />
 From the content side, our JSON API is no different than a conventional Hugo site. This means that managing our content in Forestry will work the same regardless of whether we plan to output JSON or HTML (or both!)
 
-<div style="padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding responsive images to your static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look into adding responsive images to your static site.</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
 
 <!-- Have something to add?
 
