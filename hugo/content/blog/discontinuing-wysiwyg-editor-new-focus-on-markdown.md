@@ -25,8 +25,7 @@ draft: true
 
 ---
 {{% tip %}}  
-Forestry.io is currently using two editors. This article only affects those users that are using HTML (.html) files and not Markdown (.md) files to edit their content. Our Markdown Editor stays unaffected by this change.
-{{% /tip %}}
+Forestry.io is currently using two editors. This change only affects those users that are using HTML (.html) files and not Markdown (.md) files to edit their content. Our Markdown Editor stays unaffected by this change. {{% /tip %}}
 
 The WYSIWYG / HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG Editor causes and the merits Markdown provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018.
 
