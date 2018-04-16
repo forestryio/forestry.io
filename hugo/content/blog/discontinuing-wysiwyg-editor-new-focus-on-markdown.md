@@ -27,9 +27,9 @@ menu: []
 {{% warning %}}
 We are not changing or removing the Markdown WYSIWYG editor. Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.{{% /warning %}}
 
-The WYSIWYG HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG HTML Editor causes and the merits Markdown provides we made the decision to discontinue our WYSIWYG HTML Editor on 5/11/2018.
+The  HTML WYSIWYG Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the HTML WYSIWYG Editor causes and the merits Markdown provides we made the decision to discontinue our WYSIWYG HTML Editor on 5/11/2018.
 
-For those users that continue to use HTML over Markdown the plaintext editor will still be available.
+For those limited users that are impacted by this change we will continue to provide the plaintext editor to edit HTML files.
 
 ![](/uploads/2018/04/source-html-editor-1.png)
 
@@ -42,6 +42,8 @@ WYSIWYG Editors were created for a valid reason - HTML is hard to read and conte
 Markdown maintains a simple readable text (e.g. \*\*word\*\* -> **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if your editors don't want to learn the simple Markdown syntax right away, they will be able to add content, the Markdown just spices things up.
 
 With WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
+
+![](/uploads/2018/04/woof-woof-test.png)
 
 However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users.
 
