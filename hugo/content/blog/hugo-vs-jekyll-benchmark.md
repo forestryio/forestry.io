@@ -247,6 +247,10 @@ So as we can see, when it comes to speed and build performance, Hugo is a _clear
 
 Don't just take our word for it. [Smashing Magazine](https://www.smashingmagazine.com/), [reportedly](https://discourse.gohugo.io/t/smashing-magazine-s-redesign-powered-by-hugo-jamstack/5826/9) builds their 7,500-page Hugo site in 13 seconds and Hugo user [@darinpope](https://twitter.com/darinpope) managed to [generate 600,000 pages in under 5 minutes](https://discourse.gohugo.io/t/page-generation-performance-expectations/1335/6).
 
+{{% tip %}}  
+Check out our [**Developing with Hugo guide**](https://forestry.io/docs/guides/developing-with-hugo/) to learn more about building a Hugo site with Forestry.io.  
+{{% /tip %}}
+
 ## What's your experience?
 
 Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker  News.
