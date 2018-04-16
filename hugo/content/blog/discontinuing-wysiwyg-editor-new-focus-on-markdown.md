@@ -24,12 +24,12 @@ menu: []
 
 ---
 {{% warning %}}  
-We are not changing or removing the Markdown WYSIWYG editor. Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.  
+**We are not changing or removing the Markdown WYSIWYG editor.** Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.  
 {{% /warning %}}
 
 The WYSIWYG HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG HTML Editor causes and the merits Markdown provides we made the decision to discontinue our HTML file support for the WYSIWYG Editor on 5/11/2018.
 
-For those users that want to use HTML Forestry.io will continue to support editing with a plaintext source code editor. 
+For those users that want to use HTML Forestry.io will continue to support editing with a plaintext source code editor.
 
 ![](/uploads/2018/04/source-html-editor-1.png)Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
 
@@ -41,7 +41,9 @@ Markdown maintains a simple readable text (e.g. \*\*word\*\* -> **word**) that c
 
 With WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
 
-However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users.![](/uploads/2018/04/Markdown-Editor.png)
+However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users.
+
+![](/uploads/2018/04/woof-woof-test.png)
 
 To help with that content editors in Forestry.io use a Markdown editor that provides a simplified formatting giving content editors control over the styling of their article.
 
