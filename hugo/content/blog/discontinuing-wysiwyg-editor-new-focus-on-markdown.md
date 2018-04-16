@@ -11,7 +11,6 @@ categories:
 - CMS
 headline: ''
 textline: ''
-images: []
 tags: []
 cta:
   headline: ''
