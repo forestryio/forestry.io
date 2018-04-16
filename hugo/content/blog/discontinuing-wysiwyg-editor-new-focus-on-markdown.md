@@ -41,13 +41,11 @@ WYSIWYG Editors were created for a valid reason - HTML is hard to read and conte
 
 Markdown maintains a simple readable text (e.g. \*\*word\*\* -> **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if your editors don't want to learn the simple Markdown syntax right away, they will be able to add content, the Markdown just spices things up.
 
-With WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
+With HTML WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
 
 ![](/uploads/2018/04/woof-woof-test.png)
 
-However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users.
-
-To help with that content editors in Forestry.io use a Markdown editor that provides a simplified formatting giving content editors control over the styling of their article.
+However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users. To help with that content editors in Forestry.io use a **Markdown WYSIWYG Editor** that provides a simplified formatting giving content editors control over the styling of their article.
 
 ## Tools and Tips to Migrate Existing Site
 
