@@ -253,7 +253,7 @@ Check out our [**Developing with Hugo guide**](https://forestry.io/docs/guides/
 
 ## What's your experience?
 
-Do you run a Jekyll or Hugo site? Share your build times are in the conversation on Hacker  News.
+Do you run a Jekyll or Hugo site? Share your build times in the conversation on Hacker  News.
 
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16265259">Comment on Hacker News</a>
 
