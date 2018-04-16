@@ -1,5 +1,5 @@
 ---
-title: HTML File Contents are Moving to Plaintext Editor
+title: HTML file contents are moving to plaintext editor
 description: 'Considering the issues the WYSIWYG Editor causes and the merits Markdown
   provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018. '
 date: 2018-04-15 21:57:29 -1100
@@ -23,13 +23,17 @@ aliases: []
 menu: []
 
 ---
-{{% warning %}}  
-**We are not changing or removing the Markdown WYSIWYG editor.** Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.  
+{{% warning %}}
+
+**We are not changing or removing the Markdown WYSIWYG editor.** 
+
+Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.
+
 {{% /warning %}}
 
-The WYSIWYG HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG HTML Editor causes and the merits Markdown provides we made the decision to discontinue our HTML file support for the WYSIWYG Editor on 5/11/2018.
+The WYSIWYG / HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG Editor causes and the merits Markdown provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018.
 
-For those users that want to use HTML Forestry.io will continue to support editing with a plaintext source code editor.
+For those users that continue to use HTML over Markdown the Source View Editor continues to be available.
 
 ![](/uploads/2018/04/source-html-editor-1.png)Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
 
@@ -43,8 +47,6 @@ With WYSIWYG Editors you often don't know whether content was formatted consiste
 
 However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users.
 
-![](/uploads/2018/04/woof-woof-test.png)
-
 To help with that content editors in Forestry.io use a Markdown editor that provides a simplified formatting giving content editors control over the styling of their article.
 
 ## Tools and Tips to Migrate Existing Site
@@ -55,20 +57,22 @@ We put together a few tips to make your migration easier.
 
 If you need to convert files from one markup format into another, pandoc is your swiss-army knife. The learning curve is a little steep but if you have a lot of pages and you want to convert them automatically, this is a tool worth looking at.
 
-[https://pandoc.org/](https://pandoc.org/)
+[https://pandoc.org/](https://pandoc.org/ "https://pandoc.org/")
 
 ### Simple Paste and Translate
 
 For those of you that just have a few pages to migrate, doing it manually might be more efficient and more accurate. A good tool to get a jump-start on converting pages manually is Dom Christie's _Turndown_ project.
 
-[https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/)
+[https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/ "https://domchristie.github.io/turndown/")
 
 ### Import to Hugo and Migrate later
 
 Maybe your old content doesn't necessarily need to be updated immediately. In that case just follow the tutorial below and get started with your new Hugo page and set up Markdown for any future updates.
 
-[http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/](http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/)
+[http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/](http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/ "http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/")
 
-{{% tip %}}A similar setup works for Jekyll as well. Consult the docs [https://jekyllrb.com/tutorials/convert-site-to-jekyll/](https://jekyllrb.com/tutorials/convert-site-to-jekyll/){{% /tip %}}
+{{% tip %}}  
+A similar setup works for Jekyll as well. Consult the docs [https://jekyllrb.com/tutorials/convert-site-to-jekyll/](https://jekyllrb.com/tutorials/convert-site-to-jekyll/ "https://jekyllrb.com/tutorials/convert-site-to-jekyll/")  
+{{% /tip %}}
 
 At Forestry.io we want to provide you with the best content editing experience and we believe Markdown gives us the simplicity to start creating content for static sites right away and the flexibility to further improve your editor over time.
