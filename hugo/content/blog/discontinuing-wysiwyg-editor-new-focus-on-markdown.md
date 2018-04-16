@@ -25,7 +25,7 @@ menu: []
 ---
 {{% warning %}}
 
-**We are not changing or removing the Markdown WYSIWYG editor.** 
+We are **not changing or removing the Markdown WYSIWYG editor**.
 
 Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.
 
