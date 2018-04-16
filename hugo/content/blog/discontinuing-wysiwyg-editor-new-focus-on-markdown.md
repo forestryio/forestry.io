@@ -1,5 +1,5 @@
 ---
-title: Discontinuing WYSIWYG Editor - New Focus on Markdown
+title: HTML file contents are moving to plaintext editor
 description: 'Considering the issues the WYSIWYG Editor causes and the merits Markdown
   provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018. '
 date: 2018-04-15 21:57:29 -1100
@@ -24,7 +24,8 @@ menu: []
 
 ---
 {{% warning %}}  
-Forestry.io is currently using two editors. This change only affects those users that are using HTML (.html) files and not Markdown (.md) files to edit their content. Our Markdown Editor stays unaffected by this change. {{% /warning %}}
+**We are not changing or removing the Markdown WYSIWYG editor.** Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.  
+{{% /warning %}}
 
 The WYSIWYG / HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG Editor causes and the merits Markdown provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018.
 
