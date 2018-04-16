@@ -24,7 +24,7 @@ menu: []
 
 ---
 {{% warning %}}  
-**We are not changing or removing the Markdown WYSIWYG editor.** Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.  
+We are not changing or removing the Markdown WYSIWYG editor. Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.  
 {{% /warning %}}
 
 The WYSIWYG HTML Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the WYSIWYG HTML Editor causes and the merits Markdown provides we made the decision to discontinue our HTML file support for the WYSIWYG Editor on 5/11/2018.
