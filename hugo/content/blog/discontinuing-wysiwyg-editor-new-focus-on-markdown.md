@@ -2,10 +2,10 @@
 title: Discontinuing WYSIWYG Editor - New Focus on Markdown
 description: 'Considering the issues the WYSIWYG Editor causes and the merits Markdown
   provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018. '
-date: 2018-04-10 08:57:29 +0000
+date: 2018-04-15 21:57:29 -1100
 authors:
 - Sebastian Engels
-publishdate: 2018-04-13 03:00:00 +0000
+publishdate: 2018-04-15 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - CMS
