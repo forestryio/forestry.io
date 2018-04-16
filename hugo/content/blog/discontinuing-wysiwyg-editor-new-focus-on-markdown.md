@@ -1,7 +1,8 @@
 ---
-title: HTML file contents are moving to plaintext editor
+title: HTML File Contents are Moving to Plaintext Editor
 description: 'Considering the issues the WYSIWYG Editor causes and the merits Markdown
-  provides we made the decision to discontinue our WYSIWYG / HTML Editor on 5/11/2018. '
+  provides we made the decision to discontinue our HTML file support for the WYSIWYG
+  Editor on 5/11/2018. '
 date: 2018-04-15 21:57:29 -1100
 authors:
 - Sebastian Engels
@@ -25,7 +26,7 @@ menu: []
 ---
 {{% warning %}}
 
-We are **not changing or removing the Markdown WYSIWYG editor**.
+**We are not changing or removing the Markdown WYSIWYG editor.** 
 
 Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.
 
@@ -35,7 +36,10 @@ The WYSIWYG / HTML Editor has proven to be less and less the state-of-the-art co
 
 For those users that continue to use HTML over Markdown the Source View Editor continues to be available.
 
-![](/uploads/2018/04/source-html-editor-1.png)Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
+![](/uploads/2018/04/source-html-editor-1.png)
+
+  
+Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
 
 ## Future-Proof Markdown
 
