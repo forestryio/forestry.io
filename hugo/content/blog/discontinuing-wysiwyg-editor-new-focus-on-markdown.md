@@ -11,6 +11,7 @@ categories:
 - CMS
 headline: ''
 textline: ''
+images: []
 tags: []
 cta:
   headline: ''
@@ -29,7 +30,7 @@ The WYSIWYG / HTML Editor has proven to be less and less the state-of-the-art co
 
 For those users that continue to use HTML over Markdown the Source View Editor continues to be available.
 
-Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
+![](/uploads/2018/04/source-html-editor-1.png)Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
 
 ## Future-Proof Markdown
 
