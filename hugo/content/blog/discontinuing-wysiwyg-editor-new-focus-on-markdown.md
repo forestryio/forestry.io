@@ -37,7 +37,7 @@ Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly 
 
 WYSIWYG Editors were created for a valid reason - HTML is hard to read and content editors shouldn't need to learn HTML to structure and write content. However, they are notoriously known for creating clunky, unreadable, hard to maintain code, affecting not only your ability to rank high on search engines but also the well-being of your developers.
 
-Markdown maintains a simple readable text (e.g. \*\***word**\*\* **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if you don't want to learn the simple Markdown syntax your editors will be able to add content right away, the Markdown just spices things up.
+Markdown maintains a simple readable text (e.g. \*\*word\*\* -> **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if your editors don't want to learn the simple Markdown syntax right away, they will be able to add content, the Markdown just spices things up.
 
 With WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
 
@@ -57,13 +57,13 @@ If you need to convert files from one markup format into another, pandoc is yo
 
 ### Simple Paste and Translate
 
-For those of you that just have a few pages to migrate, doing it manually might be more efficient and more accurate. A good tool to get a jump start on this is Dom Christie's Turndown project.
+For those of you that just have a few pages to migrate, doing it manually might be more efficient and more accurate. A good tool to get a jump-start on converting pages manually is Dom Christie's _Turndown_ project.
 
 [https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/ "https://domchristie.github.io/turndown/")
 
 ### Import to Hugo and Migrate later
 
-Maybe your old content doesn't necessarily need to be updated immediately. In that case just follow the tutorial below and get started with you new Hugo page and set up Markdown for any future updates.
+Maybe your old content doesn't necessarily need to be updated immediately. In that case just follow the tutorial below and get started with your new Hugo page and set up Markdown for any future updates.
 
 [http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/](http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/ "http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/")
 
