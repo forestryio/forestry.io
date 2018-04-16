@@ -13,6 +13,7 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/join-our-slack-community.md
 - blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - blog/hugo-vs-jekyll-benchmark.md
 - blog/content-blocks-give-your-editors-the-power-to-built-pages.md
@@ -23,7 +24,6 @@ pages:
 - blog/new-pricing-organization-accounts.md
 - blog/up-and-running-with-hugo.md
 - blog/search-with-algolia-in-hugo.md
-- blog/join-our-slack-community.md
 - blog/why-we-built-forestry.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/the-new-forestry-io.md
