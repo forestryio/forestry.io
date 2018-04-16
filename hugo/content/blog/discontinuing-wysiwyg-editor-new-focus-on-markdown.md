@@ -53,20 +53,20 @@ We put together a few tips to make your migration easier.
 
 If you need to convert files from one markup format into another, pandoc is your swiss-army knife. The learning curve is a little steep but if you have a lot of pages and you want to convert them automatically, this is a tool worth looking at.
 
-[https://pandoc.org/](https://pandoc.org/ "https://pandoc.org/")
+[https://pandoc.org/](https://pandoc.org/)
 
 ### Simple Paste and Translate
 
 For those of you that just have a few pages to migrate, doing it manually might be more efficient and more accurate. A good tool to get a jump-start on converting pages manually is Dom Christie's _Turndown_ project.
 
-[https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/ "https://domchristie.github.io/turndown/")
+[https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/)
 
 ### Import to Hugo and Migrate later
 
 Maybe your old content doesn't necessarily need to be updated immediately. In that case just follow the tutorial below and get started with your new Hugo page and set up Markdown for any future updates.
 
-[http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/](http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/ "http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/")
+[http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/](http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/)
 
-{{% tip %}}A similar setup works for Jekyll as well. Consult the docs [https://jekyllrb.com/tutorials/convert-site-to-jekyll/](https://jekyllrb.com/tutorials/convert-site-to-jekyll/ "https://jekyllrb.com/tutorials/convert-site-to-jekyll/"){{% /tip %}}
+{{% tip %}}A similar setup works for Jekyll as well. Consult the docs [https://jekyllrb.com/tutorials/convert-site-to-jekyll/](https://jekyllrb.com/tutorials/convert-site-to-jekyll/){{% /tip %}}
 
 At Forestry.io we want to provide you with the best content editing experience and we believe Markdown gives us the simplicity to start creating content for static sites right away and the flexibility to further improve your editor over time.
