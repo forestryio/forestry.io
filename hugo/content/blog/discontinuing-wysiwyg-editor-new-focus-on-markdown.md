@@ -1,8 +1,8 @@
 ---
 title: HTML File Contents are Moving to Plaintext Editor
-description: 'Considering the issues the WYSIWYG Editor causes and the merits Markdown
-  provides we made the decision to discontinue our HTML file support for the WYSIWYG
-  Editor on 5/11/2018. '
+description: 'Considering the issues the HTML WYSIWYG Editor causes and the merits
+  Markdown provides we made the decision to discontinue our HTML file support for
+  the WYSIWYG Editor on 5/11/2018. '
 date: 2018-04-15 21:57:29 -1100
 authors:
 - Sebastian Engels
