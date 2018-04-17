@@ -47,7 +47,7 @@
       "description": "Starting at $29/month which includes your first 5 users",
       "planIncludes": "Everything in Personal plus",
       "buttonText": "Get started",
-      "buttonUrl": "https://forestry.io/signup/",
+      "buttonUrl": "https://app.forestry.io/signup/",
       "planItems": [
         {
           "text": "Organization account",
