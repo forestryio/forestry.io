@@ -1,5 +1,5 @@
 ---
-title: Content Blocks - Give Your Editors the Power to Build Pages
+title: Blocks - Give Your Editors the Power to Build Pages
 description: ''
 date: 2018-04-11 23:41:56 +0000
 authors:
