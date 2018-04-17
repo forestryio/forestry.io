@@ -23,25 +23,25 @@ menu: []
 draft: true
 
 ---
-Today we introduce Blocks - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts without the help of a developer.
+Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template or _Block Template_.
 
 This is a big deal and here is why!
 
 ## What is Blocks?
 
-Blocks is a Field Type that is made up of multiple templates. These templates are repeatable layouts that can be used in a variety of combinations.
+Blocks is a Field Type that is made up of multiple templates, so-called _Block Templates_. These templates are repeatable layouts that can be composed in a variety of combinations.
 
-![](/uploads/2018/04/block-compose.gif)Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
+![](/uploads/2018/04/block-compose.gif)Using Blocks, content editors can compose and reorganize entire pages without the support of a developer.
 
 Blocks makes it possible to create pages like our homepage within minutes.
 
-\[Insert Scroll Gif of Homepage\]
+![](/uploads/2018/04/ui-scroll-blocks.gif)
 
-We created a \[Starter Kit Repository\](link to sawmill) and a \[Tutorial\](link to frontend friday article) so you can get started right away.
+{{% tip %}}We created a \[Starter Kit Repository\](link to sawmill) and a \[Tutorial\](link to frontend friday article) so you can get started right away.{{% /tip %}}
 
 ## How do Blocks work?
 
-The developer creates the templates as clean code chunks and defines what templates make up a Blocks Field. The editor can then bootstrap entire pages composing and rearranging these pre-defined blocks without affecting the code itself.
+The developer creates the _Block Templates_ as clean code chunks and groups the templates that make up a Blocks Field for a certain type of content. The editor can then bootstrap entire pages composing and rearranging these pre-defined blocks without affecting the _Block Templates_ itself.
 
 \[Gif showing the rearranging of code\]
 
