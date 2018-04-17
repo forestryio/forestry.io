@@ -25,19 +25,25 @@ draft: true
 ---
 Today we introduce Blocks - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts without the help of a developer.
 
+This is a big deal and here is why!
+
 ## What is Blocks?
 
 Blocks is a Field Type that is made up of multiple templates. These templates are repeatable layouts that can be used in a variety of combinations.![](/uploads/2018/04/Screen Shot 2018-04-17 at 12.17.38 PM.png)
 
-Using Blocks editors can compose and reorganize entire pages without the support of a developer.
+Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
 
 ![](/uploads/2018/04/block-compose.gif)
 
+Creating pages like our Homepage within minutes
+
 \[Insert Scroll Gif of Homepage\]
+
+You can do this now, too. We created a Starter Kit Repository and a Tutorial so you can get started right away.
 
 ## How do Blocks work?
 
-The developer creates the templates as clean code chunks and defines what templates make up a Blocks Field. The editor can then bootstrap entire page composing and rearranging these pre-defined blocks without affecting the code itself.
+The developer creates the templates as clean code chunks and defines what templates make up a Blocks Field. The editor can then bootstrap entire pages composing and rearranging these pre-defined blocks without affecting the code itself.
 
 \[Gif showing the rearranging of code\]
 
@@ -45,6 +51,6 @@ To give an idea of what is happening behind the scenes we created this :point_up
 
 ## Need to know more?
 
-We just published a Frontend Friday article providing an in-depth explanation on how to use blocks and set them up.  
-  
+We just published a Frontend Friday article providing an in-depth explanation on how to use blocks and set them up.
+
 Also make sure to check out our docs on this topic.
