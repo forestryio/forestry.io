@@ -69,6 +69,6 @@ At this point, you can access image front matter by searching for it in the uplo
 {{ end }}
 ```
 
-In this example, the image is in the item's front matter and has the key of `image` (e.g. `image: "/uploads/picture.jpg"`). Replace `.Params.image` with the name of your front matter field if this is different.
+In this example, the image is in the item's front matter and has the key of `image`. Replace `.Params.image` with the name of your front matter field if this is different.
 
 To use the page resource image, we have to search for it in the **uploads** content section we created earlier. We strip the `/uploads/` prefix to get the filename and use `.Resources.GetMatch` to perform the search, storing the result in a variable called `$imageResource`. You can then call any of the [image processing methods](https://gohugo.io/content-management/image-processing/#image-processing-methods) on `$imageResource` to get a resized version.
