@@ -375,8 +375,21 @@ Thanks to its templating logic we can now change or add keys to our players’ o
 ![](/uploads/2018/04/forestry_admin_demo-1.png)
 
 Bootstrapping an API this easily is great, but your content editors might not enjoy working with raw markdown files and dealing with a git repo. Fortunately, we can use the Forestry CMS to instantly add a content management backend for our API!
+<div id="root"></div>
+<div id="modal-root"></div>
+<script type="text/javascript">
+window.addSite = {
+    engine: { name: "hugo", version: "0.37.1" },
+    source: {
+        repo: "git@github.com:ncphillips/sawmill.git",
+        branch: "master",
+    },
+    repoName: "forestry-blocks-demo",
+}
+</script>
+<script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script>
+<div style="text-align: center;"><a href="#/add-site" class="button small primary">Edit this site in Forestry!</a></div>
 
-<div style="text-align: center;"><a href="https://app.forestry.io/signup" class="button small primary">Get Started With Forestry</a></div>
 <br /><br />
 From the content side, our JSON API is no different than a conventional Hugo site. This means that managing our content in Forestry will work the same regardless of whether we plan to output JSON or HTML (or both!)
 
