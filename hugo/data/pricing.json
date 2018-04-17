@@ -7,7 +7,7 @@
       "description": "",
       "planIncludes": " .",
       "buttonText": "Get started",
-      "buttonUrl": "https://forestry.io/signup/",
+      "buttonUrl": "https://app.forestry.io/signup/",
       "planItems": [
         {
           "text": "Up to 3 Guests per site",
