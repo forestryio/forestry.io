@@ -43,7 +43,7 @@ This will configure `content/uploads` as a [headless bundle](https://gohugo.io/c
 
 {{% warning %}}
 
-There's an unfortunate side effect of this: you will now see **Uploads** under your content menu in the Forestry CMS. This is because both Hugo and Forestry treat this folder as a content section.
+There's an unfortunate side effect of this: you will now see **Uploads** under your content menu in the Forestry CMS. This is because both Hugo and Forestry treat this folder as a content section. This will be fixed in a future update.
 
 {{% /warning %}}
 
