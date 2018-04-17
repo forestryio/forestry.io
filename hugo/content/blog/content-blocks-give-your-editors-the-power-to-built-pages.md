@@ -29,17 +29,15 @@ This is a big deal and here is why!
 
 ## What is Blocks?
 
-Blocks is a Field Type that is made up of multiple templates. These templates are repeatable layouts that can be used in a variety of combinations.![](/uploads/2018/04/Screen Shot 2018-04-17 at 12.17.38 PM.png)
+Blocks is a Field Type that is made up of multiple templates. These templates are repeatable layouts that can be used in a variety of combinations.
 
-Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
+![](/uploads/2018/04/block-compose.gif)Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
 
-![](/uploads/2018/04/block-compose.gif)
-
-Creating pages like our Homepage within minutes
+Blocks makes it possible to create pages like our homepage within minutes.
 
 \[Insert Scroll Gif of Homepage\]
 
-You can do this now, too. We created a Starter Kit Repository and a Tutorial so you can get started right away.
+We created a \[Starter Kit Repository\](link to sawmill) and a \[Tutorial\](link to frontend friday article) so you can get started right away.
 
 ## How do Blocks work?
 
