@@ -43,7 +43,7 @@ Blocks makes it possible to create pages like our homepage within minutes.
 
 The developer creates the _Block Templates_ as clean code chunks and groups the templates that make up a Blocks Field for a certain type of content. The editor can then bootstrap entire pages composing and rearranging these pre-defined blocks without affecting the _Block Templates_ itself.
 
-\[Gif showing the rearranging of code\]
+![](/uploads/2018/04/code-moving-reduced.gif)
 
 To give an idea of what is happening behind the scenes we created this :point_up:
 
