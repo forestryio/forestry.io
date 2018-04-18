@@ -27,7 +27,7 @@ draft: true
 ---
 Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template or _Block Template_.
 
-You might recognize this feature as it is inspired by CraftCMS' [Matrix fields](https://craftcms.com/features/matrix) and Wordpress' [Advanced Custom Fields](https://www.advancedcustomfields.com/)
+We were heavily inspired by CraftCMS' [Matrix fields](https://craftcms.com/features/matrix) and Wordpress' [Advanced Custom Fields](https://www.advancedcustomfields.com/).
 
 ## What is Blocks?
 
