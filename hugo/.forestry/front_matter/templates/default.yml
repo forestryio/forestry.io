@@ -13,8 +13,8 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
-- blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - blog/content-blocks-give-your-editors-the-power-to-built-pages.md
+- blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - blog/join-our-slack-community.md
 - blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - blog/hugo-vs-jekyll-benchmark.md

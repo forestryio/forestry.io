@@ -1,6 +1,8 @@
 ---
 title: Blocks - Give Your Editors the Power to Build Pages
-description: ''
+description: Today we introduce Blocks - a powerful Field Type that enables your editors
+  to build entire landing pages from scratch and create rich blog post layouts with
+  a pre-defined code template or Block Template.
 date: 2018-04-11 23:41:56 +0000
 authors:
 - Sebastian Engels
