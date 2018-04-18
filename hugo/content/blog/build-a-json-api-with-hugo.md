@@ -375,8 +375,6 @@ Thanks to its templating logic we can now change or add keys to our players’ o
 ![](/uploads/2018/04/forestry_admin_demo-1.png)
 
 Bootstrapping an API this easily is great, but your content editors might not enjoy working with raw markdown files and dealing with a git repo. Fortunately, we can use the Forestry CMS to instantly add a content management backend for our API!
-<div id="root"></div>
-<div id="modal-root"></div>
 <script type="text/javascript">
 window.addSite = {
     engine: { name: "hugo", version: "0.37.1" },

@@ -1,4 +1,6 @@
 {{- define "main" -}}
+  <div id="root"></div>
+  <div id="modal-root"></div>
   <main class="single-post">
     {{- with .Params.images -}}
       {{- range first 1 . -}}
