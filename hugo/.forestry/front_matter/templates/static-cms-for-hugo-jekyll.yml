@@ -1,0 +1,198 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: aliases
+  label: Aliases
+  type: list
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: authors
+  label: Authors
+  type: tag_list
+  hidden: false
+  default: ''
+- name: publishdate
+  label: Publishdate
+  type: datetime
+  hidden: false
+  default: ''
+- name: expirydate
+  label: Expirydate
+  type: datetime
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: ''
+- name: cta
+  label: Cta
+  type: field_group
+  fields:
+  - name: headline
+    label: Headline
+    type: text
+    hidden: false
+    default: ''
+  - name: textline
+    label: Textline
+    type: text
+    hidden: false
+    default: ''
+  - name: calls_to_action
+    label: Calls to action
+    type: list
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: hero
+  label: Hero
+  type: field_group
+  fields:
+  - name: headline
+    label: Headline
+    type: text
+    hidden: false
+    default: ''
+  - name: textline
+    label: Textline
+    type: text
+    hidden: false
+    default: ''
+  - name: ctas
+    label: Ctas
+    type: field_group_list
+    fields:
+    - name: permalink
+      label: Permalink
+      type: text
+      hidden: false
+      default: ''
+    - name: textline
+      label: Textline
+      type: text
+      hidden: false
+      default: ''
+    - name: button
+      label: Button
+      type: boolean
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  - name: video
+    label: Video
+    type: field_group
+    fields:
+    - name: fallbackVisual
+      label: Fallbackvisual
+      type: file
+      hidden: false
+      default: ''
+    - name: sources
+      label: Sources
+      type: field_group_list
+      fields:
+      - name: permalink
+        label: Permalink
+        type: text
+        hidden: false
+        default: ''
+      - name: type
+        label: Type
+        type: text
+        hidden: false
+        default: ''
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  - name: logos
+    label: Logos
+    type: field_group
+    fields:
+    - name: textline
+      label: Textline
+      type: text
+      hidden: false
+      default: ''
+    - name: sources
+      label: Sources
+      type: field_group_list
+      fields:
+      - name: permalink
+        label: Permalink
+        type: file
+        hidden: false
+        default: ''
+      - name: alt
+        label: Alt
+        type: text
+        hidden: false
+        default: ''
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: features
+  label: Features
+  type: field_group_list
+  fields:
+  - name: headline
+    label: Headline
+    type: text
+    hidden: false
+    default: ''
+  - name: textline
+    label: Textline
+    type: textarea
+    hidden: false
+    default: ''
+  - name: visual
+    label: Visual
+    type: field_group
+    fields:
+    - name: permalink
+      label: Permalink
+      type: file
+      hidden: false
+      default: ''
+    - name: alt
+      label: Alt
+      type: text
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  - name: direction
+    label: Direction
+    type: text
+    hidden: false
+    default: ''
+  - name: class
+    label: Class
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
