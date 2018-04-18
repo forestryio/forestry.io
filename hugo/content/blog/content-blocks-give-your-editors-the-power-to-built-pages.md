@@ -31,7 +31,9 @@ This is a big deal and here is why!
 
 Blocks is a Field Type that is made up of multiple templates, so-called _Block Templates_. These templates are repeatable layouts that can be composed in a variety of combinations.
 
-![](/uploads/2018/04/block-compose.gif)Using Blocks, content editors can compose and reorganize entire pages without the support of a developer.
+![](/uploads/2018/04/block-compose.gif)
+
+Using Blocks, content editors can compose and reorganize entire pages without the support of a developer.
 
 Blocks makes it possible to create pages like our homepage within minutes.
 
