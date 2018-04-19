@@ -4,7 +4,7 @@ layout: blocks
 date: 2018-04-19 01:33:08 -1100
 blocks:
 - template: hero
-  headline: Introducing Blocks
+  headline: Introducing **Blocks**
   textline: With Blocks your Editors will be able to create entire pages without ever
     touching a single line of code.
   ctas:
