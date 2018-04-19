@@ -33,6 +33,6 @@ When publishing, previewing, or saving a draft, there are a multitude of reasons
 
 We output the error the caused the import to fail and allow you to view it in order to help you debug.
 
-To find this error, look for the failure message in your `Site Acvity`, located in the sidebar beside the logo.
+To find this error, look for the failure message in your `Site Activity`, located in the sidebar beside the logo.
 
 Inside the failure message you will see a `Failed, Show Log` button. Clicking this button will open new page with the error that caused the action to fail.
