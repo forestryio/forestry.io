@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    window.addSite = {
+        engine: { name: "{{ .Get "engineName" }}", version: "{{ .Get "engineVersion" }}" },
+        source: {
+            repo: "{{ .Get "repo" }}",
+            branch: "{{ .Get "branch" }}",
+        },
+        repoName: "{{ .Get "forkName" }}",
+    }
+</script>
+<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
+<div style="text-align: center;">
+    <a href="#/add-site" class="button small primary">Edit this site in Forestry!</a>
+</div>
