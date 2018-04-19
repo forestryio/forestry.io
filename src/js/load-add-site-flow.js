@@ -1,7 +1,12 @@
 console.log("Load add site flow")
 
-fetch("http://assets.forestry.io/add-site/asset-manifest.json")
-  .then((response) => response.json())
+fetch("https://assets.forestry.io/add-site/asset-manifest.json", {
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "application/json"
+  }
+})
+  .then((response) => console.log(response) || response.json())
   .then(addManifestFiles)
   .catch((e) => console.log("Error", e))
 
