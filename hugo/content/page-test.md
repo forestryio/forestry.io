@@ -8,9 +8,9 @@ blocks:
   textline: With Blocks your Editors will be able to create entire pages without ever
     touching a single line of code.
   ctas:
-  - textline: Get Started
+  - permalink: "/"
+    textline: View Video
     button: true
-    permalink: "/"
   video:
     fallbackVisual: "/uploads/2018/04/block-title-5.png"
 - template: feature
