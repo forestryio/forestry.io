@@ -21,6 +21,8 @@ fields:
   - type: boolean
     name: button
     label: Button
+  config:
+    labelField: permalink
 - type: field_group
   name: video
   label: Video
