@@ -16,9 +16,9 @@ fields:
   name: visual
   label: Visual
   fields:
-  - type: text
-    name: permalink
+  - type: file
     label: Permalink
+    name: permalink
   - type: text
     name: alt
     label: Alt
