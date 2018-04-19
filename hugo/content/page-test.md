@@ -12,14 +12,14 @@ blocks:
     button: true
     permalink: "/"
   video:
-    fallbackVisual: "/uploads/2018/04/block-title.png"
+    fallbackVisual: "/uploads/2018/04/block-title-5.png"
 - template: feature
   headline: Block More Blocks With Blocks
   textline: Have you ever wanted to block your block? Well now you block, with blocks!
-  direction: rtl
+  direction: ltr
   class: section-roots
   visual:
-    alt: This should be an image
+    alt: Moving Blocks
     permalink: "/uploads/2018/04/block-compose.gif"
 - template: call-to-action
   headline: Block block block?
