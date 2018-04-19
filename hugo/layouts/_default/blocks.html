@@ -6,7 +6,7 @@
 {{- define "main" -}}
     {{- range .Params.blocks -}}
         {{- if eq .template "hero" -}}{{- partial "components/hero" . -}}{{- end -}}
-        {{- if eq .template "feature" -}}{{- partial "components/feature" dict ("pg" $ "feature" .) -}}{{- end -}}
+        {{- if eq .template "feature" -}}{{- partial "components/feature" (dict "pg" $ "feature" .) -}}{{- end -}}
         {{- if eq .template "call-to-action" -}}{{- partial "components/cta/basic" . -}}{{- end -}}
     {{- end -}}
 {{- end -}}
