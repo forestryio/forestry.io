@@ -35,13 +35,13 @@ Blocks is a Field Type that is made up of multiple templates, so-called _Block T
 
 ![](/uploads/2018/04/block-compose.gif)
 
-Using Blocks, content editors can compose and reorganize entire pages without the support of a developer.
+Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
 
 Blocks makes it possible to create pages like our homepage within minutes.
 
 ![](/uploads/2018/04/ui-scroll-blocks.gif)
 
-{{% tip %}}We created a \[Starter Kit Repository\](link to sawmill) and a \[Tutorial\](link to frontend friday article) so you can get started right away.{{% /tip %}}
+{{% tip %}}We created a \[Starter Kit Repository\](link to sawmill) and an \[Introduction to Blocks\](link to frontend friday article) so you can get started right away.{{% /tip %}}
 
 ## How do Blocks work?
 
