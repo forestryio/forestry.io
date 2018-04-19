@@ -19,6 +19,7 @@ blocks:
   class: section-roots
   visual:
     alt: This should be an image
+    permalink: "/uploads/2018/04/block-compose.gif"
 - template: call-to-action
   headline: Block block block?
   textline: Block block block blockety block.
