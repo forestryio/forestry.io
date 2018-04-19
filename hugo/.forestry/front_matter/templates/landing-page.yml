@@ -12,3 +12,8 @@ fields:
   - call-to-action
   - feature
   - hero
+- type: text
+  name: template
+  label: template
+  hidden: true
+  default: blocks
