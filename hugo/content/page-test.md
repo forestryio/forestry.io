@@ -14,8 +14,10 @@ blocks:
   video:
     fallbackVisual: "/uploads/2018/04/block-title-5.png"
 - template: feature
-  headline: Block More Blocks With Blocks
-  textline: Have you ever wanted to block your block? Well now you block, with blocks!
+  headline: Our Version of a Page Builder
+  textline: A powerful Field Type that enables your editors to build entire landing
+    pages from scratch and create rich blog post layouts with a pre-defined code template
+    or Block Template.
   direction: ltr
   class: section-roots
   visual:
