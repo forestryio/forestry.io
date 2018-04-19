@@ -17,12 +17,15 @@ blocks:
   headline: Our Version of a Page Builder
   textline: A powerful Field Type that enables your editors to build entire landing
     pages from scratch and create rich blog post layouts with a pre-defined code template
-    or Block Template.
+    - _Block Template_
   direction: ltr
   class: section-roots
   visual:
     alt: Moving Blocks
     permalink: "/uploads/2018/04/block-compose.gif"
+- template: feature
+  direction: rtl
+  class: section-sync
 - template: call-to-action
   headline: Block block block?
   textline: Block block block blockety block.
