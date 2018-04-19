@@ -82,6 +82,7 @@
     "eslint-plugin-compat": "^2.1.0",
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
+    "imports-loader": "^0.8.0",
     "lint-staged": "^6.0.0",
     "prettier": "1.9.2",
     "stylelint": "^8.2.0",
