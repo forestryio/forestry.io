@@ -1,0 +1,14 @@
+{{- define "json-ld" -}}
+  {{- partial "seo/json-ld/organization" . -}}
+  {{- partial "seo/json-ld/search" . -}}
+  {{- partial "seo/json-ld/index" . -}}
+{{- end -}}
+{{- define "main" -}}
+    {{- with .Params.blocks -}}
+        {{- range . -}}
+            {{- if eq .template "hero" -}}{{- partial "components/hero" . -}}{{- end -}}
+            {{- if eq .template "feature" -}}{{- partial "components/feature" (dict "pg" $ "feature" .) -}}{{- end -}}
+            {{- if eq .template "call-to-action" -}}{{- partial "components/cta/basic" . -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
