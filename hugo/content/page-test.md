@@ -33,9 +33,9 @@ blocks:
   visual:
     permalink: "/uploads/2018/04/block-rearrange-1.gif"
 - template: feature
-  textline: The developer creates the Block Templates as clean code chunks and groups
-    the Block Templates. The Editor can then bootstrap entire pages composing and
-    rearranging these pre-defined blocks without affecting the Block Templates itself.
+  textline: The developer creates the Block Templates as clean code chunks. The Editor
+    can then bootstrap entire pages composing and rearranging these pre-defined blocks
+    without affecting the code itself.
   headline: Your Code Stays Untouched
   direction: ltr
   class: section-sync
