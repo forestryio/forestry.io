@@ -68,8 +68,8 @@ Start by creating a new Hugo site (see our [Up & Running with Hugo](https://fore
 In our content directory, we’ll create a `players` folder and add some players to it.
 
     ├── my-hugo-project/       # The root of our Hugo project
-    |   ├── content/           # Where all site content is stored 
-    |   |   ├── players/       # Your players section  
+    |   ├── content/           # Where all site content is stored
+    |   |   ├── players/       # Your players section
     |   |   |   ├── frank-j-robinson.md
     |   |   |   └── jody-garland.md
 
@@ -82,7 +82,7 @@ Our player markdown will look something like this:
     emergency_contact: +1 (555) 555 5555
     year: junior
     ---
-    
+
     Frank, our number one second baseman!
 
 ## Output Formats
@@ -104,7 +104,7 @@ Next, we need to create a template for Hugo to build this format. When creating 
 
 To build our single players page, Hugo will look for
 
-    layout/_default/single.json.json 
+    layout/_default/single.json.json
 
 To build our section list page and our home page, Hugo will look for
 
@@ -231,7 +231,7 @@ A lot of these steps are similar to creating the endpoint for `players`. First, 
     title: Sly Turtles
     mascot: Turtle Todd
     ---
-    
+
     Sly Turtles were cool before Nemo!
 
 We need a new item object to display a team. All we have to do is create `layouts/teams/item.json.json` for Hugo to pick it up instantly when rendering a page from`teams`.
@@ -375,18 +375,12 @@ Thanks to its templating logic we can now change or add keys to our players’ o
 ![](/uploads/2018/04/forestry_admin_demo-1.png)
 
 Bootstrapping an API this easily is great, but your content editors might not enjoy working with raw markdown files and dealing with a git repo. Fortunately, we can use the Forestry CMS to instantly add a content management backend for our API!
-<script type="text/javascript">
-window.addSite = {
-    engine: { name: "hugo", version: "0.37.1" },
-    source: {
-        repo: "git@github.com:ncphillips/sawmill.git",
-        branch: "master",
-    },
-    repoName: "forestry-blocks-demo",
-}
-</script>
-<script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script>
-<div style="text-align: center;"><a href="#/add-site" class="button small primary">Edit this site in Forestry!</a></div>
+{{% create_site_button
+    repo="git@github.com:ncphillips/sawmill.git"
+    branch="master"
+    engineName="hugo"
+    engineVersion="0.37.1"
+    forkName="forestry-blocks-demo" %}}
 
 <br /><br />
 From the content side, our JSON API is no different than a conventional Hugo site. This means that managing our content in Forestry will work the same regardless of whether we plan to output JSON or HTML (or both!)
