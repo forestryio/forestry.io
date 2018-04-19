@@ -7,4 +7,4 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections: 
-version: 0.31.1
+version: 0.38.1
