@@ -50,7 +50,7 @@ Using front matter in this way can give your content creators a lot of power ove
 
 ### 3. Making Front Matter Modular
 
-*What if we just build the whole page from front matter?*
+_What if we just build the whole page from front matter?_
 
 Instead of thinking about a page as a single continuous block of prose with a header and footer at the ends, we can think of it as a series of distinct sections.
 
@@ -86,11 +86,9 @@ And the page layout might look something like this:
         {{- end -}}
     {{ end }}
 
-
-In this example, the `blocks` parameter can contain a variable number of grouped fields &mdash; let's refer to each of these groups of fields as a **block**. Each block has a `template` field that indicates what type of block it is, and the rest of its fields can be used in constructing the block template. In the layout, we simply have to iterate over all of these blocks and include a different partial depending on the value of the `template` field. This partial will contain the HTML to build the block and can use any of the fields configured within that block.
+In this example, the `blocks` parameter can contain a variable number of grouped fields — let's refer to each of these groups of fields as a **block**. Each block has a `template` field that indicates what type of block it is, and the rest of its fields can be used in constructing the block template. In the layout, we simply have to iterate over all of these blocks and include a different partial depending on the value of the `template` field. This partial will contain the HTML to build the block and can use any of the fields configured within that block.
 
 This is exactly how Sawmill works.
-
 
 ## Using Sawmill
 
@@ -99,6 +97,8 @@ Sawmill includes a handful of components for building dynamic landing pages, and
 ### Forestry Blocks
 
 Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
+
+![](/uploads/2018/04/blocks-field-templates.png)
 
 When defining a **Blocks** field, you can assign it one or more **front matter partial** templates that can be used as blocks in that section. Front matter partials are just regular front matter templates that have the **is partial** option selected.
 
@@ -112,13 +112,11 @@ Sawmill is ready for use but, at the time of writing, its features are limited. 
 
 Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
-
-
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.37.1"
-heading="Edit this site in Forestry"
-linkText="Open in Forestry"
-forkName="sawmill-starter" %}}
+forkName="sawmill-starter"
+heading="Create a New Site With Sawmill"
+linkText="Open in Forestry" %}}
