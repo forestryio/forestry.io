@@ -16,8 +16,8 @@ blocks:
   textline: _Blocks_ is a powerful Field Type that enables your Editors to build entire
     landing pages from scratch and create rich blog post layouts.
   ctas:
-  - permalink: "/blog/empower-content-creators-with-a-modular-content-strategy/"
-    textline: Get Started
+  - permalink: "/blog/sawmill-layout-composer-for-hugo-and-forestry/"
+    textline: Get Started with Blocks
     button: true
   - permalink: https://forestry.wistia.com/medias/pfn29x5xgi
     textline: View Video
