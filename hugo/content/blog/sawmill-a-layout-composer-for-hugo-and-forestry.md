@@ -1,5 +1,5 @@
 ---
-title: 'Sawmill: A Layout Composer for Hugo and Forestry'
+title: 'Sawmill: A Razorsharp Layout Composer for Hugo and Forestry'
 description: ''
 date: 2018-04-20 04:50:19 -1100
 authors: []
