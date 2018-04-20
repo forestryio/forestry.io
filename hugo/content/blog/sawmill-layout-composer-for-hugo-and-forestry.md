@@ -135,6 +135,6 @@ Sawmill is ready for use but, at the time of writing, its features are limited. 
 
 Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
-<div style="text-align: center; padding: 1em;" data-proofer-ignore>
+<!--div style="text-align: center; padding: 1em;" data-proofer-ignore>
 <a href="#/add-site" class="create-site-button">Create a New Sawmill Site in Forestry</a>
-</div>
+</div-->
