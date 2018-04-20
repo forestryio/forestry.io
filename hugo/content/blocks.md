@@ -48,7 +48,7 @@ blocks:
 - template: call-to-action
   ctas:
   - textline: Get Started
-    RelPermalink: "/"
+    RelPermalink: "/#/add-site"
     button: true
   headline: Get Started With Blocks
   textline: Import our Starter Kit Template and play with Blocks
