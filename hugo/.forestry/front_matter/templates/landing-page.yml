@@ -1,8 +1,7 @@
 ---
 pages:
-- page-test.md
-- landing-page-test.md
 - another-landing-page.md
+- landing-page-test.md
 hide_body: true
 is_partial: false
 fields:
