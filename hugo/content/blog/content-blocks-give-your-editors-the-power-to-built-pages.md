@@ -24,7 +24,7 @@ aliases: []
 menu: []
 
 ---
-Today we introduce [_Blocks_](/features/blocks/) - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
+Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
 
 This feature was inspired by CraftCMS' [Matrix fields](https://craftcms.com/features/matrix) and the Wordpress Plugin [Advanced Custom Fields](https://www.advancedcustomfields.com/).
 
