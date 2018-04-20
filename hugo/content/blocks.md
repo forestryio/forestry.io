@@ -54,11 +54,10 @@ blocks:
 - template: call-to-action
   ctas:
   - textline: Get Started
-    RelPermalink: "/blog/empower-content-creators-with-a-modular-content-strategy/"
+    RelPermalink: "/blog/sawmill-layout-composer-for-hugo-and-forestry/"
     button: true
   headline: Get Started With Blocks
-  textline: Import our Starter Kit Template and play with Blocks
+  textline: Import our Starter Kit Template
 type: landing-page
-draft: true
 
 ---
