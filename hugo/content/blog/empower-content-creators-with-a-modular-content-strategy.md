@@ -26,6 +26,8 @@ When it comes to creating websites, good content strategy is all about turning i
 
 Every approach is a compromise between flexibility and ease-of-use. Even if a developer could anticipate all of a content creator's needs, these needs will change over time. On top of that, developers have to work within UI limitations imposed by the CMS. Finding the right balance can be tricky and depends on the situation.
 
+![Sawmill logo](/uploads/2018/04/sawmill-full.svg)
+
 [Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files.
 
 To better understand how Sawmill's page composition works, let's examine some common content strategy solutions:
@@ -41,6 +43,8 @@ WYSIWYG editors provide flexibility where needs can’t be fully anticipated, bu
 Many systems provide something like [shortcodes](https://gohugo.io/content-management/shortcodes/) to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow. In addition, programming a WYSIWYG editor to correctly render shortcodes can be challenging and in some cases impossible, leaving it up to your content editors to understand and write this special syntax.
 
 ### 2. Building Page Sections With Front Matter
+
+![](/uploads/2018/04/front-matter-content.png)
 
 Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page, so developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
 
@@ -93,6 +97,8 @@ In this example, the `blocks` parameter can contain a variable number of grouped
 This is exactly how Sawmill works.
 
 ## Using Sawmill
+
+![](/uploads/2018/04/sawmill-create-page.png)
 
 Sawmill includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
 
