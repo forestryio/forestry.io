@@ -5,8 +5,8 @@ date: 2018-04-19 01:33:08 -1100
 blocks:
 - template: hero
   headline: Introducing **Blocks**
-  textline: With Blocks your Editors will be able to create entire pages without ever
-    touching a single line of code.
+  textline: _Blocks_ is a powerful Field Type that enables your Editors to build entire
+    landing pages from scratch and create rich blog post layouts.
   ctas:
   - permalink: "/"
     textline: View Video
@@ -15,9 +15,8 @@ blocks:
     fallbackVisual: "/uploads/2018/04/block-title-5.png"
 - template: feature
   headline: Our Version of a Page Builder
-  textline: _Blocks_ are a powerful Field Type that enables your editors to build
-    entire landing pages from scratch and create rich blog post layouts with a pre-defined
-    code template - _Block Template_
+  textline: With Blocks your Editors will be able to create entire pages without ever
+    touching a single line of code.
   direction: ltr
   class: section-sync
   visual:
@@ -26,8 +25,9 @@ blocks:
 - template: feature
   direction: rtl
   class: section-roots
-  textline: Blocks are made up of so-called Block Templates. These templates are repeatable
-    layouts that can be composed in a variety of combinations.
+  textline: Blocks are made up of pre-defined code chunks, so-called _Block Templates_.
+    These templates are repeatable layouts that can be composed inside the Forestry
+    UI.
   headline: Add and Compose Blocks
   visual:
     permalink: "/uploads/2018/04/block-rearrange-1.gif"
