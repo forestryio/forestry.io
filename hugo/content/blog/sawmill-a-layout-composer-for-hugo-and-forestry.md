@@ -1,5 +1,5 @@
 ---
-title: 'Sawmill: A Razor-sharp Layout Composer for Hugo and Forestry'
+title: 'Sawmill: A Razorsharp Layout Composer for Hugo and Forestry'
 description: ''
 date: 2018-04-20 04:50:19 -1100
 authors: []
@@ -23,7 +23,7 @@ draft: true
 ---
 [Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. To create a page in sawmill individual layout modules/page sections are stacked together. These sections are self-contained components, whose style and information can be configured with [front matter](/docs/editing/front-matter/).
 
-To make it easy to manage these front matter sections, Sawmill was created to work with [_Blocks_](/features/blocks/) in Forestry.io.
+To make it easy to manage these front matter sections, Sawmill was created to work with Forestry's CMS making use of \[Blocks\](/features/blocks/).
 
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
@@ -40,9 +40,7 @@ When it comes to creating websites, good content strategy is all about turning i
 
 Every approach is a compromise between flexibility and ease-of-use. Even if a developer could anticipate all of a content creator's needs, these needs will change over time. On top of that, developers have to work within UI limitations imposed by the CMS. Finding the right balance can be tricky and depends on the situation.
 
-Looking at the layout in terms of blocks makes them easier to maintain and more resistant to failing.
-
-To better understand how Sawmill's page composition works, let's examine some common content strategy solutions:
+Sawmill is making use of this approach. To better understand how Sawmill's page composition works, let's examine some common content strategy solutions:
 
 ### 1. The Content Sandwich
 
