@@ -40,7 +40,7 @@ Blocks makes it possible for Editors to create pages like our homepage within mi
 
 ![](/uploads/2018/04/ui-scroll-blocks.gif)
 
-<!--{{% tip %}}We created a \[Starter Kit Repository\](#/add-site) and an \[Introduction to Blocks\](link to frontend friday article) so you can get started right away.{{% /tip %}}-->
+{{% tip %}}We created [Sawmill](https://github.com/dwalkr/sawmill) as a Starter-Kit and an [Introduction to Sawmill and Blocks](/blog/sawmill-layout-composer-for-hugo-and-forestry/) so you can get started right away.{{% /tip %}}
 
 ## How do Blocks work?
 
