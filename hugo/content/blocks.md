@@ -59,5 +59,6 @@ blocks:
   headline: Get Started With Blocks
   textline: Import our Starter Kit Template
 type: landing-page
+draft: true
 
 ---
