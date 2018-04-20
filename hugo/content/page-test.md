@@ -20,7 +20,7 @@ blocks:
   direction: ltr
   class: section-sync
   visual:
-    alt: Moving Blocks
+    alt: Moving Blocks as a Page
     permalink: "/uploads/2018/04/blocks-added-2-1.gif"
 - template: feature
   direction: rtl
@@ -31,6 +31,7 @@ blocks:
   headline: Add and Compose Blocks
   visual:
     permalink: "/uploads/2018/04/block-rearrange-1.gif"
+    alt: Arrange and Compose Blocks in the UI
 - template: feature
   textline: Block Templates are left untouched and can be crafted and optimized individually.
   headline: No Code Changes
@@ -38,6 +39,7 @@ blocks:
   class: section-sync
   visual:
     permalink: "/uploads/2018/04/code-moving-reduced.gif"
+    alt: No Code Changes
 - template: call-to-action
   ctas:
   - textline: Get Started
