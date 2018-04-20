@@ -21,9 +21,9 @@ menu: []
 draft: true
 
 ---
-[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. To create a page in sawmill individual layout modules/page sections are stacked together. These sections are self-contained components, whose style and information can be configured with [front matter](/docs/editing/front-matter/). 
+[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. To create a page in sawmill individual layout modules/page sections are stacked together. These sections are self-contained components, whose style and information can be configured with [front matter](/docs/editing/front-matter/).
 
-To make it easy to manage these front matter sections, Sawmill was created to work with [_Blocks_](/features/blocks/) in Forestry.io. Go ahead and set up your Sawmill in Forestry.io.
+To make it easy to manage these front matter sections, Sawmill was created to work with [_Blocks_](/features/blocks/) in Forestry.io.
 
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
