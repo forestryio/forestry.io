@@ -32,7 +32,7 @@ Every approach is a compromise between flexibility and ease-of-use. Even if a de
 
 To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files. This theme is being released in tandem with Forestry's new [Blocks](https://forestry.io/features/blocks) feature and takes full advantage of this new field type for its page builder.
 
-<div id="get-started-with-sawmill">
+<div id="get-started-with-sawmill" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
