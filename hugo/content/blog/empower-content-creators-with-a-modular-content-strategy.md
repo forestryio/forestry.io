@@ -33,7 +33,7 @@ One of the most straight-forward approaches to dynamic content is to build a car
 WYSIWYG editors are all about compromise. They provide flexibility where needs can’t be fully anticipated, but when they are too flexible the results can clash with the site’s design or introduce problems in a layout. Complex layout elements are difficult to achieve within a WYSIWYG editor without falling back to writing plain HTML, making the whole endeavor pointless.
 
 Many systems provide something like **shortcodes** to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow. In addition, programming a WYSIWYG editor to correctly render shortcodes can be challenging and in some cases impossible, leaving it up to your content editors to understand and write this special syntax.
- 
+
 
 ## Building Page Sections With Front Matter
 
@@ -49,7 +49,7 @@ Using front matter in this way can give your content creators a lot of power ove
 
 **What if we just build the whole page from front matter?**
 
-Instead of thinking about a page as a single continuous block of prose with a header and footer at the ends, we can think of it as a series of distinct sections. 
+Instead of thinking about a page as a single continuous block of prose with a header and footer at the ends, we can think of it as a series of distinct sections.
 
 In this paradigm, a block of content is just one of several possible sections that can be chained together to create the page. Each section has its own front matter schema, and any number of these sections can be defined in a page’s front matter in any combination. In your page layout, you just have to iterate over each of these front matter sections and include a corresponding partial that renders the section.
 
@@ -104,4 +104,6 @@ Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want
     branch="master"
     engineName="hugo"
     engineVersion="0.37.1"
-    forkName="sawmill-starter" %-->
+    forkName="sawmill-starter"
+    heading="Edit this site in Forestry"
+    linkText="Open in Forestry" %-->

@@ -11,6 +11,6 @@
 <script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
 <!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
 <div class="create-site-block">
-    <h2>Edit this site in Forestry</h2>
-    <a href="#/add-site" class="create-site-button">Open in Forestry</a>
+    <h2>{{ .Get "heading" }}</h2>
+    <a href="#/add-site" class="create-site-button">{{ .Get "linkText" }}</a>
 </div>
