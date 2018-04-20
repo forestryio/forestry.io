@@ -15,14 +15,14 @@ blocks:
     fallbackVisual: "/uploads/2018/04/block-title-5.png"
 - template: feature
   headline: Our Version of a Page Builder
-  textline: A powerful Field Type that enables your editors to build entire landing
-    pages from scratch and create rich blog post layouts with a pre-defined code template
-    - _Block Template_
+  textline: _Blocks_ are a powerful Field Type that enables your editors to build
+    entire landing pages from scratch and create rich blog post layouts with a pre-defined
+    code template - _Block Template_
   direction: ltr
   class: section-sync
   visual:
     alt: Moving Blocks
-    permalink: "/uploads/2018/04/blocks-added-2.gif"
+    permalink: "/uploads/2018/04/blocks-added-2-1.gif"
 - template: feature
   direction: rtl
   class: section-roots
