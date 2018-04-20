@@ -20,7 +20,8 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
-aliases: []
+aliases:
+- "/blog/blocks-editors-build-pages/"
 menu: []
 
 ---
@@ -50,6 +51,6 @@ The developer creates the _Block Templates_ as clean code chunks and groups the 
 
 ## Need to know more?
 
-We just published a Frontend Friday [article](/blog/sawmill-layout-composer-for-hugo-and-forestry/) providing an in-depth explanation on how to use blocks and set them up.
+Check out our Frontend Friday [article](/blog/sawmill-layout-composer-for-hugo-and-forestry/) on Sawmill, a Hugo theme designed to work with Blocks.
 
 <!--Also make sure to check out our [docs]() on this topic.-->
