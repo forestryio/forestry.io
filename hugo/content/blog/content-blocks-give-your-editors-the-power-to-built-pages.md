@@ -5,7 +5,7 @@ description: Today we introduce Blocks - a powerful Field Type that enables your
 date: 2018-04-19 12:41:56 -1100
 authors:
 - Sebastian Engels
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-04-19 12:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
