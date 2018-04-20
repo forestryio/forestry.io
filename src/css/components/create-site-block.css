@@ -1,0 +1,41 @@
+.create-site-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 3rem 0;
+
+  h2 {
+    margin: 0 0 1rem 0 !important;
+  }
+}
+
+.create-site-button {
+  position: relative;
+  background: $color-brand;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  margin-left: 2rem;
+  white-space: nowrap;
+  transition: background 0.15s !important;
+}
+
+.create-site-button:hover {
+  background: $color-brand-light;
+}
+
+.create-site-button:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -2rem;
+  top: 0;
+  width: 2rem;
+  height: 100%;
+  background-color: $color-brand-light;
+  background-image: url("../../img/forestry-neg-symbol.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
