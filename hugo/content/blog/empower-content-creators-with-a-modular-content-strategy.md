@@ -2,7 +2,8 @@
 title: Empower Content Creators With a Modular Content Strategy
 description: ''
 date: 2018-04-19 17:05:10 -1100
-authors: []
+authors:
+- DJ Walker
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
@@ -38,17 +39,19 @@ Many systems provide something like **shortcodes** to allow a developer to defin
 
 Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page: developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema in the page’s front matter.
 
+{{% tip %}}
 Forestry.io’s CMS is all about manipulating front matter. Forestry allows you to create **front matter templates** that define a set of fields and their type that are used to configure the CMS interface. Front matter templates are great for defining and enforcing specific front matter schema: the page creator doesn’t need to remember what front matter values to add in order to trigger certain behaviors in the page layout. They will be prompted by the CMS.
+{{% /tip %}}
 
-Using front matter in this way can give your content creators a lot of power over their page layouts, but there are still limits to its flexibility. If you wanted one of these front matter-based sections in the *middle* of your page content instead of at the *end*, you would still have to resort to something like a shortcode.
+Using front matter in this way can give your content creators a lot of power over their page layouts, but there are still limits to its flexibility. If you wanted one of these front matter-based sections in the *middle* of your page content instead of at the *end*, for example, you would still have to resort to something like a shortcode.
 
 ## Making Front Matter Modular
 
-**What if we decided to just build the whole page from front matter?**
+**What if we just build the whole page from front matter?**
 
-Instead of thinking about a page as a single continuous block of prose with a header and footer at the ends, we can think of it as a series of sections. 
+Instead of thinking about a page as a single continuous block of prose with a header and footer at the ends, we can think of it as a series of distinct sections. 
 
-In this paradigm, a block of content is just one of several possible sections that can be chained together to create the page. Each section has its own front matter schema, and any number of these sections can be defined in a page’s front matter in any combination. In your page template, you just have to iterate over each of these front matter sections and include a corresponding partial that renders the section.
+In this paradigm, a block of content is just one of several possible sections that can be chained together to create the page. Each section has its own front matter schema, and any number of these sections can be defined in a page’s front matter in any combination. In your page layout, you just have to iterate over each of these front matter sections and include a corresponding partial that renders the section.
 
 ### Hugo Example
 
@@ -85,8 +88,20 @@ And the page layout might look something like this:
 
 ## Forestry’s Blocks
 
-Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this.
+Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
+
+A **Blocks** field contains a list of reorderable front matter templates. These front matter templates define the fields used by each type of block. When creating a page that has one of these **Blocks** fields, you can create any number of blocks in any combination.
 
 ### Sawmill
 
+[Sawmill](https://dwalkr.github.io/sawmill/) is a theme built to take advantage of this modular content strategy and Forestry's **Blocks** feature. The theme includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured.
 
+Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to add it to an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
+
+
+<!--% create_site_button
+    repo="https://github.com/dwalkr/sawmill-starter.git"
+    branch="master"
+    engineName="hugo"
+    engineVersion="0.37.1"
+    forkName="sawmill-starter" %-->
