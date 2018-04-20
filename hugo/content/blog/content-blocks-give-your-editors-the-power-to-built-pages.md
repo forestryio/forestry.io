@@ -21,6 +21,7 @@ cta:
 private: false
 weight: ''
 aliases:
+- "/blog/content-blocks-give-your-editors-the-power-to-built-pages/"
 - "/blog/blocks-editors-build-pages/"
 menu: []
 
