@@ -2,17 +2,6 @@
 hide_body: false
 is_partial: true
 fields:
-- type: select
-  config:
-    source:
-      type: simple
-    options:
-    - hugo
-    - jekyll
-    required: true
-  label: Engine Name
-  name: engine_name
-  default: hugo
 - type: text
   name: engine_version
   label: Engine Version
