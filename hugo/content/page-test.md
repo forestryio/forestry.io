@@ -35,7 +35,8 @@ blocks:
     permalink: "/uploads/2018/04/block-rearrange-1.gif"
     alt: Arrange and Compose Blocks in the UI
 - template: feature
-  textline: Block Templates are left untouched and can be crafted and optimized individually.
+  textline: The code inside Block Templates is always left unchanged making code maintenance
+    easy and quick.
   headline: No Code Changes
   direction: ltr
   class: section-sync
