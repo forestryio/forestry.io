@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="forestry_logo"
+   data-name="Forestry Logotype"
+   width="340.0163"
+   height="104.75685"
+   viewBox="0 0 340.01629 104.75685"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sawmill-full.svg"
+   inkscape:export-filename="/home/dj/_FORESTRYIO/sawmill-s.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata4317">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Forestry Logotype</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4315" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     id="namedview4313"
+     showgrid="false"
+     inkscape:zoom="2.8960958"
+     inkscape:cx="210.97737"
+     inkscape:cy="-2.3384824"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="forestry_logo"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <title
+     id="title4281">Forestry Logotype</title>
+  <g
+     id="g4319"
+     transform="matrix(0,1,1,0,-8.3431458,0.02842712)"
+     style="stroke:#eb2650;stroke-opacity:1"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
+    <polyline
+       id="polyline4283"
+       style="fill:none;fill-rule:evenodd;stroke:#eb2650;stroke-width:8px;stroke-miterlimit:10;stroke-opacity:1"
+       points="2.8 39.5 28.3 14 53.8 39.5" />
+    <polyline
+       id="polyline4285"
+       style="fill:none;fill-rule:evenodd;stroke:#eb2650;stroke-width:8px;stroke-miterlimit:10;stroke-opacity:1"
+       points="2.8 62.1 28.3 36.6 53.8 62.1" />
+    <polyline
+       id="polyline4287"
+       style="fill:none;fill-rule:evenodd;stroke:#eb2650;stroke-width:8px;stroke-miterlimit:10;stroke-opacity:1"
+       points="101.9 36.6 76.4 62.1 50.9 36.6" />
+    <polyline
+       id="polyline4289"
+       style="fill:none;fill-rule:evenodd;stroke:#eb2650;stroke-width:8px;stroke-miterlimit:10;stroke-opacity:1"
+       points="101.9 14 76.4 39.5 50.9 14" />
+  </g>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4373"
+     style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+       id="flowRegion4375"><rect
+         id="rect4377"
+         width="215.46248"
+         height="108.42183"
+         x="64.914978"
+         y="-2.2838063"
+         style="font-size:50px" /></flowRegion><flowPara
+       id="flowPara4379"
+       style="font-size:50px">SAWMILL</flowPara></flowRoot>  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="63.533806"
+     y="81.967552"
+     id="text4234"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4236"
+       x="63.533806"
+       y="81.967552"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Sawmill</tspan></text>
+</svg>
