@@ -43,7 +43,7 @@ jobs:
 
       - run:
           name: "Test HTML"
-          command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --file_ignore=./dist/admin/index.html,./dist/404.html
+          command: htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --allow-hash-href --file_ignore=./dist/admin/index.html,./dist/404.html
 
       - deploy:
           name: "Deploy website to AWS S3"
