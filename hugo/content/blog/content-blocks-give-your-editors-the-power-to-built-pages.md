@@ -2,7 +2,7 @@
 title: Blocks - Give Your Editors the Power to Build Pages
 description: Today we introduce Blocks - a powerful Field Type that enables your editors
   to build entire landing pages from scratch.
-date: 2018-04-19 12:41:56 -1100
+date: 2018-04-19 14:41:00 -1100
 authors:
 - Sebastian Engels
 publishdate: 2018-04-19 12:00:00 -1100
