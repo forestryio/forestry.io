@@ -10,7 +10,9 @@ headline: ''
 textline: ''
 images:
 - "/uploads/2018/04/logs.jpg"
-categories: []
+categories:
+- Hugo
+- Frontend-Friday
 tags: []
 cta:
   headline: ''
