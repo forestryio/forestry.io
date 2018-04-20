@@ -9,6 +9,7 @@
             {{- if eq .template "hero" -}}{{- partial "components/hero" . -}}{{- end -}}
             {{- if eq .template "feature" -}}{{- partial "components/feature" (dict "pg" $ "feature" .) -}}{{- end -}}
             {{- if eq .template "call-to-action" -}}{{- partial "components/cta/basic" . -}}{{- end -}}
+            {{- if eq .template "create-site-button" -}}{{- partial "components/create-site-button" . -}}{{- end -}}
         {{- end -}}
     {{- end -}}
 {{- end -}}

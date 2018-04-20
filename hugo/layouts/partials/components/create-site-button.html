@@ -1,0 +1,12 @@
+<script type="text/javascript">
+    window.addSite = {
+        engine: { name: "{{ .engine_name }}", version: "{{ .engine_version }}" },
+        source: {
+            repo: "{{ .repo_name }}",
+            branch: "{{ .branch_name }}",
+        },
+        repoName: "{{ .fork_name }}",
+    }
+</script>
+<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
