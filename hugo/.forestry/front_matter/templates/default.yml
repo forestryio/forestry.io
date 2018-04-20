@@ -13,6 +13,8 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/empower-content-creators-with-a-modular-content-strategy.md
+- blog/search-with-algolia-in-hugo.md
 - blog/content-strategies--rated.md
 - blog/content-blocks-give-your-editors-the-power-to-built-pages.md
 - blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
@@ -24,7 +26,6 @@ pages:
 - blog/test.md
 - blog/new-pricing-organization-accounts.md
 - blog/up-and-running-with-hugo.md
-- blog/search-with-algolia-in-hugo.md
 - blog/why-we-built-forestry.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/the-new-forestry-io.md
