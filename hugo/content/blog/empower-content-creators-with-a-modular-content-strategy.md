@@ -30,17 +30,30 @@ Every approach is a compromise between flexibility and ease-of-use. Even if a de
 
 [Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files.
 
+<div id="get-started-with-sawmill">
+{{% create_site_button
+repo="https://github.com/dwalkr/sawmill-starter.git"
+branch="master"
+engineName="hugo"
+engineVersion="0.37.1"
+forkName="sawmill-starter"
+heading="Want to Get Started Right Away?"
+linkText="Create a New Sawmill Site in Forestry" %}}
+</div>
+
 To better understand how Sawmill's page composition works, let's examine some common content strategy solutions:
 
 ### 1. The Content Sandwich
 
 ![](/uploads/2018/04/content-sandwich.png)
 
-One of the most straight-forward approaches to dynamic content is to build a carefully-prescribed page layout, and then dump a content section in the middle. The content might be entered in a web interface using a WYSIWYG editor, to provide content creators with the power to create dynamic content without having to know how to write HTML.
+One of the most straight-forward approaches to dynamic content is to build a carefully-prescribed page layout, and then dump a content section in the middle. This limits content editors to creating content in one small section of the page and is often even limited to specific sections of a site (e.g. Blog, Documentation).
+
+Furthermore, often times the content might be entered in a web interface using a WYSIWYG editor, to provide content creators with the power to create dynamic content without having to know how to write HTML.
 
 WYSIWYG editors provide flexibility where needs can’t be fully anticipated, but when they are too flexible the results can clash with the site’s design or introduce problems in a layout. Additionally, complex layout elements are difficult to achieve within a WYSIWYG editor without falling back to writing plain HTML, at which point using a WYSIWYG starts to seem pointless.
 
-Many systems provide something like [shortcodes](https://gohugo.io/content-management/shortcodes/) to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow. In addition, programming a WYSIWYG editor to correctly render shortcodes can be challenging and in some cases impossible, leaving it up to your content editors to understand and write this special syntax.
+Many systems provide something like [shortcodes](https://gohugo.io/content-management/shortcodes/) to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow.
 
 ### 2. Building Page Sections With Front Matter
 
@@ -120,11 +133,6 @@ Sawmill is ready for use but, at the time of writing, its features are limited. 
 
 Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
-{{% create_site_button
-repo="https://github.com/dwalkr/sawmill-starter.git"
-branch="master"
-engineName="hugo"
-engineVersion="0.37.1"
-forkName="sawmill-starter"
-heading="Create a New Site With Sawmill"
-linkText="Open in Forestry" %}}
+<div style="text-align: center; padding: 1em;">
+<a href="#/add-site" class="create-site-button">Open in Forestry</a>
+</div>
