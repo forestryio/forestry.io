@@ -36,7 +36,7 @@ linkText="Open in Forestry" %}}
 
 ## Why use a Modular Approach?
 
-When it comes to creating websites, good content strategy is all about turning ideas into HTML with a minimal amount of friction. Content creators need an easy way to create visually interesting and well-structured content. We believe the answer is to think of content layouts in terms of components or blocks.
+When it comes to creating websites, good content strategy is all about turning ideas into HTML with a minimal amount of friction. Content creators need an easy way to create visually interesting and well-structured content. 
 
 Every approach is a compromise between flexibility and ease-of-use. Even if a developer could anticipate all of a content creator's needs, these needs will change over time. On top of that, developers have to work within UI limitations imposed by the CMS. Finding the right balance can be tricky and depends on the situation.
 
