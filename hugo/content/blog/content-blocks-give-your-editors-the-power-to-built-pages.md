@@ -2,7 +2,7 @@
 title: Blocks - Give Your Editors the Power to Build Pages
 description: Today we introduce Blocks - a powerful Field Type that enables your editors
   to build entire landing pages from scratch.
-date: 2018-04-11 23:41:56 +0000
+date: 2018-04-19 12:41:56 -1100
 authors:
 - Sebastian Engels
 publishdate: 2017-12-07 04:00:00 +0000
@@ -25,7 +25,7 @@ menu: []
 draft: true
 
 ---
-Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
+Today we introduce [_Blocks_](/features/blocks/) - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
 
 This feature was inspired by CraftCMS' [Matrix fields](https://craftcms.com/features/matrix) and the Wordpress Plugin [Advanced Custom Fields](https://www.advancedcustomfields.com/).
 
@@ -51,6 +51,6 @@ The developer creates the _Block Templates_ as clean code chunks and groups the 
 
 ## Need to know more?
 
-We just published a Frontend Friday [article](/blog/empower-content-creators-with-a-modular-content-strategy/) providing an in-depth explanation on how to use blocks and set them up.
+We just published a Frontend Friday [article](/blog/sawmill-layout-composer-for-hugo-and-forestry/) providing an in-depth explanation on how to use blocks and set them up.
 
-Also make sure to check out our [docs]() on this topic.
+<!--Also make sure to check out our [docs]() on this topic.-->
