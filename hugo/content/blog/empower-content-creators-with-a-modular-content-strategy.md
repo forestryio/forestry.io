@@ -26,9 +26,9 @@ When it comes to creating websites, good content strategy is all about turning i
 
 Every approach is a compromise between flexibility and ease-of-use. Even if a developer could anticipate all of a content creator's needs, these needs will change over time. On top of that, developers have to work within UI limitations imposed by the CMS. Finding the right balance can be tricky and depends on the situation.
 
-[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files.
+[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files.
 
-To better understand how Sawmill's page composition works, let's examine some other common content strategy solutions:
+To better understand how Sawmill's page composition works, let's examine some common content strategy solutions:
 
 ### 1. The Content Sandwich
 
@@ -40,7 +40,7 @@ Many systems provide something like [shortcodes](https://gohugo.io/content-manag
 
 ### 2. Building Page Sections With Front Matter
 
-Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page: developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema in the page’s front matter.
+Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page: developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
 
 {{% tip %}}
 Forestry.io’s CMS is all about manipulating front matter. Forestry allows you to create **front matter templates** that define a set of fields and their type that are used to configure the CMS interface.
@@ -50,13 +50,13 @@ Using front matter in this way can give your content creators a lot of power ove
 
 ### 3. Making Front Matter Modular
 
-**What if we just build the whole page from front matter?**
+*What if we just build the whole page from front matter?*
 
 Instead of thinking about a page as a single continuous block of prose with a header and footer at the ends, we can think of it as a series of distinct sections.
 
-In this paradigm, a block of content is just one of several possible sections that can be chained together to create the page. Each section has its own front matter schema, and any number of these sections can be defined in a page’s front matter in any combination. In your page layout, you just have to iterate over each of these front matter sections and include a corresponding partial that renders the section.
+Using this paradigm, a block of content is just one of several possible sections that can be chained together to create the page. Each section has its own front matter schema, and any number of these sections can be defined in a page’s front matter in any combination. In your page layout, you just have to iterate over each of these front matter sections and include a corresponding partial that renders the section.
 
-### Hugo Example
+#### Hugo Example
 
 A page’s TOML front matter might look something like this:
 
@@ -92,22 +92,23 @@ In this example, the `blocks` parameter can contain a variable number of grouped
 
 ## Using Sawmill
 
-[Sawmill](https://dwalkr.github.io/sawmill/) includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. When creating a new page in Forestry, select the **Page** front matter template to use this layout builder.
-
+[Sawmill](https://dwalkr.github.io/sawmill/) includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
 
 ### Forestry Blocks
 
 Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
 
-A **Blocks** field contains a list of reorderable front matter templates. These front matter templates define the fields used by each type of block. When creating a page that has one of these **Blocks** fields, you can create any number of blocks in any combination.
+When defining a **Blocks** field, you can assign it one or more **front matter partial** templates that can be used as blocks in that section. Front matter partials are just regular front matter templates that have the **is partial** option selected.
 
-### Suggest More Blocks
+[Check out the docs](/) for more information on how to use Blocks.
+
+## Improving Sawmill
 
 Sawmill is ready for use but, at the time of writing, its features are limited. Adding new components is easy, so [post an issue](https://github.com/dwalkr/sawmill/issues) or [submit a PR](https://github.com/dwalkr/sawmill/pulls) with your suggestions!
 
-### Get Started With Sawmill
+## Get Started With Sawmill
 
-Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to add it to an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
+Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
 
 
