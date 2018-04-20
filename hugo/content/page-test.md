@@ -22,7 +22,7 @@ blocks:
   class: section-sync
   visual:
     alt: Moving Blocks
-    permalink: "/uploads/2018/04/blocks-compose-3.gif"
+    permalink: "/uploads/2018/04/blocks-added.gif"
 - template: feature
   direction: rtl
   class: section-roots
