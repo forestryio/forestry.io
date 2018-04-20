@@ -36,16 +36,11 @@ One of the most straight-forward approaches to dynamic content is to build a car
 
 WYSIWYG editors provide flexibility where needs can’t be fully anticipated, but when they are too flexible the results can clash with the site’s design or introduce problems in a layout. Additionally, complex layout elements are difficult to achieve within a WYSIWYG editor without falling back to writing plain HTML, at which point using a WYSIWYG starts to seem pointless.
 
-<<<<<<< HEAD
-Many systems provide something like **shortcodes** to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow. In addition, programming a WYSIWYG editor to correctly render shortcodes can be challenging and in some cases impossible, leaving it up to your content editors to understand and write this special syntax.
-
-=======
 Many systems provide something like [shortcodes](https://gohugo.io/content-management/shortcodes/) to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow. In addition, programming a WYSIWYG editor to correctly render shortcodes can be challenging and in some cases impossible, leaving it up to your content editors to understand and write this special syntax.
->>>>>>> master
 
 ### 2. Building Page Sections With Front Matter
 
-Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page: developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
+Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page, so developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
 
 {{% tip %}}
 Forestry.io’s CMS is all about manipulating front matter. Forestry allows you to create **front matter templates** that define a set of fields and their type that are used to configure the CMS interface.
@@ -94,10 +89,12 @@ And the page layout might look something like this:
 
 In this example, the `blocks` parameter can contain a variable number of grouped fields &mdash; let's refer to each of these groups of fields as a **block**. Each block has a `template` field that indicates what type of block it is, and the rest of its fields can be used in constructing the block template. In the layout, we simply have to iterate over all of these blocks and include a different partial depending on the value of the `template` field. This partial will contain the HTML to build the block and can use any of the fields configured within that block.
 
+This is exactly how Sawmill works.
+
 
 ## Using Sawmill
 
-[Sawmill](https://dwalkr.github.io/sawmill/) includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
+Sawmill includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
 
 ### Forestry Blocks
 
@@ -117,11 +114,11 @@ Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want
 
 
 
-<!--% create_site_button
+{{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.37.1"
-forkName="sawmill-starter"
 heading="Edit this site in Forestry"
-linkText="Open in Forestry" %-->
+linkText="Open in Forestry"
+forkName="sawmill-starter" %}}
