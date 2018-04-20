@@ -12,6 +12,7 @@ fields:
   name: blocks
   label: Blocks
   template_types:
+  - create-site-button-js
   - call-to-action
   - feature
   - hero
