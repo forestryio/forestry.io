@@ -30,7 +30,7 @@ Every approach is a compromise between flexibility and ease-of-use. Even if a de
 
 [Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in Sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. 
 
-To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files. This theme is being released in tandem with Forestry's new **Blocks** feature and takes full advantage of this new field type for its page builder.
+To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files. This theme is being released in tandem with Forestry's new [Blocks](https://forestry.io/blog/content-blocks-give-your-editors-the-power-to-built-pages/) feature and takes full advantage of this new field type for its page builder.
 
 <div id="create-site-with-sawmill" data-proofer-ignore>
 {{% create_site_button
@@ -119,7 +119,7 @@ Sawmill includes a handful of components for building dynamic landing pages, and
 
 ### Forestry Blocks
 
-Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
+Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it [Blocks](https://forestry.io/blog/content-blocks-give-your-editors-the-power-to-built-pages/).
 
 ![Forestry blocks template selector](/uploads/2018/04/blocks-field-templates.png)
 
