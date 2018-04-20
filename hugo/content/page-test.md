@@ -32,9 +32,7 @@ blocks:
   visual:
     permalink: "/uploads/2018/04/block-rearrange-1.gif"
 - template: feature
-  textline: Block Templates are clean code chunks and can be optimized individually.
-    The Editor can then bootstrap entire pages composing and rearranging these pre-defined
-    blocks without affecting the code itself.
+  textline: Block Templates are left untouched and can be crafted and optimized individually.
   headline: No Code Changes
   direction: ltr
   class: section-sync
