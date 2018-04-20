@@ -21,9 +21,9 @@ menu: []
 draft: true
 
 ---
-[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in sawmill are composed by stacking together page sections. These sections are self-contained components, whose style and information can be configured with front matter.
+[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. To create a page in sawmill individual layout modules/page sections are stacked together. These sections are self-contained components, whose style and information can be configured with [front matter](/docs/editing/front-matter/). 
 
-Having these self-contained components be configurable with front matter empowers content creators to create exciting, dynamic layouts. To make it easy to manage these sections, Sawmill was created to work with [_Blocks_](/features/blocks/) in Forestry.io, straight out of the box.
+To make it easy to manage these front matter sections, Sawmill was created to work with [_Blocks_](/features/blocks/) in Forestry.io. Go ahead and set up your Sawmill in Forestry.io.
 
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
@@ -34,9 +34,13 @@ forkName="sawmill-starter"
 heading="Create a New Site With Sawmill"
 linkText="Open in Forestry" %}}
 
-When it comes to creating websites, good content strategy is all about turning ideas into HTML with a minimal amount of friction. Content creators need an easy way to create visually interesting and well-structured content. We think the answer is to think of content in terms of _Blocks_.
+## Why use a Modular Approach?
+
+When it comes to creating websites, good content strategy is all about turning ideas into HTML with a minimal amount of friction. Content creators need an easy way to create visually interesting and well-structured content. We believe the answer is to think of content layouts in terms of components or blocks.
 
 Every approach is a compromise between flexibility and ease-of-use. Even if a developer could anticipate all of a content creator's needs, these needs will change over time. On top of that, developers have to work within UI limitations imposed by the CMS. Finding the right balance can be tricky and depends on the situation.
+
+Looking at the layout in terms of blocks makes them easier to maintain and more resistant to failing.
 
 To better understand how Sawmill's page composition works, let's examine some common content strategy solutions:
 
@@ -44,21 +48,23 @@ To better understand how Sawmill's page composition works, let's examine some co
 
 ![](/uploads/2018/04/content-sandwich.png)
 
-One of the most straight-forward approaches to dynamic content is to build a carefully-prescribed page layout, and then dump a content section in the middle. The content might be entered in a web interface using a WYSIWYG editor, to provide content creators with the power to create dynamic content without having to know how to write HTML.
+One of the most straight-forward approaches to dynamic content is to build a carefully-prescribed page layout, and then dump a content section in the middle. This limits content editors to creating content in one small section of the page and is often even limited to specific sections of a site (e.g. Blog, Documentation).
+
+Furthermore, often times the content might be entered in a web interface using a WYSIWYG editor, to provide content creators with the power to create dynamic content without having to know how to write HTML.
 
 WYSIWYG editors provide flexibility where needs can’t be fully anticipated, but when they are too flexible the results can clash with the site’s design or introduce problems in a layout. Additionally, complex layout elements are difficult to achieve within a WYSIWYG editor without falling back to writing plain HTML, at which point using a WYSIWYG starts to seem pointless.
 
-Many systems provide something like [shortcodes](https://gohugo.io/content-management/shortcodes/) to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow. In addition, programming a WYSIWYG editor to correctly render shortcodes can be challenging and in some cases impossible, leaving it up to your content editors to understand and write this special syntax.
+Many systems provide something like [shortcodes](https://gohugo.io/content-management/shortcodes/) to allow a developer to define a complex component that can be configured with a few simple values. These are great for reducing code repetition and keeping content sections organized, but require introducing non-standard syntax to your content workflow.
 
 ### 2. Building Page Sections With Front Matter
 
 Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page, so developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
 
 {{% tip %}}
-Forestry.io’s CMS is all about manipulating front matter. Forestry allows you to create **front matter templates** that define a set of fields and their type that are used to configure the CMS interface.
+Forestry.io’s CMS is all about manipulating front matter. Forestry allows you to create [**front matter templates**](/docs/settings/front-matter-templates/) that define a set of fields and their type that are used to configure the CMS interface.
 {{% /tip %}}
 
-Using front matter in this way can give your content creators a lot of power over their page layouts, but there are still limits to its flexibility. If you wanted one of these front matter-based sections in the _middle_ of your page content instead of at the _end_, for example, you would still have to resort to something like a shortcode.
+Using front matter in this way can give your content creators a lot of power over their page layouts but there are still limits to its flexibility. If you wanted one of these front matter-based sections in the _middle_ of your page content instead of at the _end_, for example, you would still have to resort to something like a shortcode or a WYSIWYG Editor.
 
 ### 3. Making Front Matter Modular
 
@@ -104,11 +110,11 @@ This is exactly how Sawmill works.
 
 ## Using Sawmill
 
-Sawmill includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
+Sawmill includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this page builder.
 
 ### Forestry Blocks
 
-Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
+Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it [**Blocks**](/features/blocks/).
 
 ![Forestry blocks template selector](/uploads/2018/04/blocks-field-templates.png)
 
