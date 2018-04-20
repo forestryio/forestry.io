@@ -10,7 +10,9 @@ headline: ''
 textline: ''
 images:
 - "/uploads/2018/04/aleksander-naug-84513-unsplash.png"
-categories: []
+categories:
+- Hugo
+- Frontend-Friday
 tags: []
 cta:
   headline: ''
