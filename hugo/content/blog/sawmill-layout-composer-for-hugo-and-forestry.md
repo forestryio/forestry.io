@@ -125,7 +125,7 @@ Forestry has a type of front matter field designed for the express purpose of cr
 
 When defining a **Blocks** field, you can assign it one or more **front matter partial** templates that can be used as blocks in that section. Front matter partials are just regular front matter templates that have the **is partial** option selected.
 
-[Check out the docs](/) for more information on how to use Blocks.
+<!--[Check out the docs](/) for more information on how to use Blocks.-->
 
 ## Improving Sawmill
 
