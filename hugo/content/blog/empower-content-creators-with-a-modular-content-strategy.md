@@ -119,4 +119,6 @@ repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.37.1"
+heading="Edit this site in Forestry"
+linkText="Open in Forestry"
 forkName="sawmill-starter" %}}
