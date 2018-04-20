@@ -1,9 +1,9 @@
 ---
 pages:
-- another-landing-page.md
-- landing-page-test.md
-- test-landing-page.md
 - blocks.md
+- test-landing-page.md
+- landing-page-test.md
+- another-landing-page.md
 hide_body: true
 is_partial: false
 fields:
