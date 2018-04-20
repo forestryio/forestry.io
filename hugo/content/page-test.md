@@ -46,6 +46,9 @@ blocks:
   - textline: Get Started
     RelPermalink: "/"
     button: true
+  headline: Get Started With Blocks
+  textline: Import our Starter Kit Template and play with Blocks. For more information
+    check out our [docs](/)
 type: page
 draft: true
 
