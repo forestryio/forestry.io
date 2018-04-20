@@ -40,7 +40,7 @@ Many systems provide something like [shortcodes](https://gohugo.io/content-manag
 
 ### 2. Building Page Sections With Front Matter
 
-Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page: developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
+Static site generators like Hugo and Jekyll have a mechanism for including structured data with a page’s content, in the form of **front matter**. This front matter can be queried anywhere on the page, so developers can set up any part of the layout to be configurable via front matter values. Since front matter can contain complex data structures like lists and maps, a variable number of elements can be generated on a page according to an agreed-upon schema.
 
 {{% tip %}}
 Forestry.io’s CMS is all about manipulating front matter. Forestry allows you to create **front matter templates** that define a set of fields and their type that are used to configure the CMS interface.
@@ -112,9 +112,9 @@ Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want
 
 
 
-<!--% create_site_button
+{{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.37.1"
-forkName="sawmill-starter" %-->
+forkName="sawmill-starter" %}}
