@@ -25,19 +25,19 @@ menu: []
 draft: true
 
 ---
-Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template or _Block Template_.
+Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
 
 This feature was inspired by CraftCMS' [Matrix fields](https://craftcms.com/features/matrix) and the Wordpress Plugin [Advanced Custom Fields](https://www.advancedcustomfields.com/).
 
 ## What is Blocks?
 
-Blocks is a Field Type that is made up of multiple templates, so-called _Block Templates_. These templates are repeatable layouts that can be composed in a variety of combinations.
+Blocks is a Field Type that is made up of multiple templates, so-called _Block Templates_. These templates are repeatable layouts that can be used without having to touch any code.
 
 ![](/uploads/2018/04/block-compose.gif)
 
 Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
 
-Blocks makes it possible to create pages like our homepage within minutes.
+Blocks makes it possible for Editors to create pages like our homepage within minutes.
 
 ![](/uploads/2018/04/ui-scroll-blocks.gif)
 
@@ -49,10 +49,8 @@ The developer creates the _Block Templates_ as clean code chunks and groups the 
 
 ![](/uploads/2018/04/code-moving-reduced.gif)
 
-To give an idea of what is happening behind the scenes we created this :point_up:
-
 ## Need to know more?
 
-We just published a Frontend Friday article providing an in-depth explanation on how to use blocks and set them up.
+We just published a Frontend Friday [article](/blog/empower-content-creators-with-a-modular-content-strategy/) providing an in-depth explanation on how to use blocks and set them up.
 
-Also make sure to check out our docs on this topic.
+Also make sure to check out our [docs]() on this topic.
