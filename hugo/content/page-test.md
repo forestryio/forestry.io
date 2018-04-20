@@ -26,9 +26,8 @@ blocks:
 - template: feature
   direction: rtl
   class: section-roots
-  textline: Blocks is a Field Type that is made up of multiple templates, so-called
-    Block Templates. These templates are repeatable layouts that can be composed in
-    a variety of combinations.
+  textline: Blocks are made up of so-called Block Templates. These templates are repeatable
+    layouts that can be composed in a variety of combinations.
   headline: Add and Compose Blocks
   visual:
     permalink: "/uploads/2018/04/block-rearrange-1.gif"
