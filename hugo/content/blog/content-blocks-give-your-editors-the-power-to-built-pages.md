@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Today we introduce [_Blocks_](/features/blocks/) - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
