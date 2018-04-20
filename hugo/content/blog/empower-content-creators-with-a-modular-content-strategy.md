@@ -32,6 +32,8 @@ To better understand how Sawmill's page composition works, let's examine some co
 
 ### 1. The Content Sandwich
 
+![](/uploads/2018/04/content-sandwich.png)
+
 One of the most straight-forward approaches to dynamic content is to build a carefully-prescribed page layout, and then dump a content section in the middle. The content might be entered in a web interface using a WYSIWYG editor, to provide content creators with the power to create dynamic content without having to know how to write HTML.
 
 WYSIWYG editors provide flexibility where needs can’t be fully anticipated, but when they are too flexible the results can clash with the site’s design or introduce problems in a layout. Additionally, complex layout elements are difficult to achieve within a WYSIWYG editor without falling back to writing plain HTML, at which point using a WYSIWYG starts to seem pointless.
@@ -98,7 +100,7 @@ Sawmill includes a handful of components for building dynamic landing pages, and
 
 Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
 
-![](/uploads/2018/04/blocks-field-templates.png)
+![Forestry blocks template selector](/uploads/2018/04/blocks-field-templates.png)
 
 When defining a **Blocks** field, you can assign it one or more **front matter partial** templates that can be used as blocks in that section. Front matter partials are just regular front matter templates that have the **is partial** option selected.
 
