@@ -20,7 +20,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 When it comes to creating websites, good content strategy is all about turning ideas into HTML with a minimal amount of friction. Whether using a CMS with a web interface or editing content files for a static site generator, content creators need an easy way to create visually interesting and well-structured content.
