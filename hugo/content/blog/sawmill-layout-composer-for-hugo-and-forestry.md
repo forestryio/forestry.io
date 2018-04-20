@@ -32,7 +32,7 @@ Every approach is a compromise between flexibility and ease-of-use. Even if a de
 
 To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files. This theme is being released in tandem with Forestry's new [Blocks](https://forestry.io/features/blocks) feature and takes full advantage of this new field type for its page builder.
 
-<div id="get-started-with-sawmill" data-proofer-ignore>
+<div id="get-started-with-sawmill">
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
@@ -135,6 +135,6 @@ Sawmill is ready for use but, at the time of writing, its features are limited. 
 
 Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
-<!--div style="text-align: center; padding: 1em;" data-proofer-ignore>
+<div style="text-align: center; padding: 1em;">
 <a href="#/add-site" class="create-site-button">Create a New Sawmill Site in Forestry</a>
-</div-->
+</div>
