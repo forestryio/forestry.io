@@ -54,7 +54,7 @@ blocks:
 - template: call-to-action
   ctas:
   - textline: Get Started
-    RelPermalink: "#/add-site"
+    RelPermalink: "/blog/empower-content-creators-with-a-modular-content-strategy/"
     button: true
   headline: Get Started With Blocks
   textline: Import our Starter Kit Template and play with Blocks
