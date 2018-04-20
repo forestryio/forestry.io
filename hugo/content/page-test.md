@@ -28,7 +28,7 @@ blocks:
   direction: rtl
   class: section-roots
   textline: Blocks are made up of pre-defined code chunks, so-called _Block Templates_.
-    These templates are repeatable layouts that can be added and arrange inside the
+    These templates are repeatable layouts that can be added and arranged inside the
     Forestry UI.
   headline: Add and Compose Blocks
   visual:
