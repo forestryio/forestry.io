@@ -89,10 +89,12 @@ And the page layout might look something like this:
 
 In this example, the `blocks` parameter can contain a variable number of grouped fields &mdash; let's refer to each of these groups of fields as a **block**. Each block has a `template` field that indicates what type of block it is, and the rest of its fields can be used in constructing the block template. In the layout, we simply have to iterate over all of these blocks and include a different partial depending on the value of the `template` field. This partial will contain the HTML to build the block and can use any of the fields configured within that block.
 
+This is exactly how Sawmill works.
+
 
 ## Using Sawmill
 
-[Sawmill](https://dwalkr.github.io/sawmill/) includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
+Sawmill includes a handful of components for building dynamic landing pages, and is packaged with Forestry configuration files so your front matter templates are already configured. Select the **Page** front matter template when creating a page in Forestry in order to use this layout builder.
 
 ### Forestry Blocks
 
