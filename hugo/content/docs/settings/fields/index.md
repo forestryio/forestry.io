@@ -216,3 +216,35 @@ authors:
 ```
 
 [See detailed documentation](/docs/settings/fields/repeatable-field-group)
+
+## Template Include
+
+![](/uploads/2018/04/fmt-include-ss.png)
+
+Include the fields of another *Front Matter Template* into the current one. Good for commonly-reused front matter fields like SEO information.
+
+
+## Blocks
+
+A *Blocks* field is similar to a Repeatable Field Group, except that it supports *unlike* objects. Blocks fields are great for things like dynamic page layouts: a series of sections where each section may consist of different fields.
+
+![](/uploads/2018/04/fmt-blocks-ss.png)
+
+Blocks fields work by including *other* front matter templates. You specify which templates can be used in your blocks field when creating the Front Matter Template. When adding content to a blocks field, you can select which of these templates to add from a dropdown.
+
+```toml
++++
+[[blocks]]
+background_style = "Brand Color"
+heading = "Features"
+size = "Small"
+template = "hero-section"
+[[blocks]]
+background_style = "Light"
+content = "[Bulma](https://bulma.io/) is a modern, responsive CSS framework with a flexbox-based grid system. "
+heading = "Built With Bulma"
+image = "/uploads/2018/04/19/bulma-logo.png"
+image_position = "Left"
+template = "media-feature"
++++
+```
