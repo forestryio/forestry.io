@@ -14,9 +14,11 @@ menu:
     weight: 3
 
 ---
-{{% tip %}}
-The HTML editor is currently a _beta_ feature. For the best experience possible, please use the [markdown editor](/docs/editing/markdown-editor/).
-{{% /tip %}}
+{{% warning %}}
+The HTML WYSIWYG editor will be [discontinued on May 11th, 2018](/blog/discontinuing-wysiwyg-editor-new-focus-on-markdown/).
+<br><br>
+The [Visual Markdown editor](/docs/editing/markdown-editor/) and the [Textarea Field](/docs/settings/fields/textarea/) (with WYSIWYG and Markdown mode) will continue to be supported and improved.
+{{% /warning %}}
 
 Forestry has an _optional_ WYSIWYG HTML editor that allows you to edit content files with the `.HTML` extension. Your content's [front matter](/docs/settings/front-matter-templates/) is shown on the left, and your content's HTML body is shown on the right.
 
