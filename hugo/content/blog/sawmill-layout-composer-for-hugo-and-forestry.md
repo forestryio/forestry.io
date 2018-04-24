@@ -10,7 +10,9 @@ headline: ''
 textline: ''
 images:
 - "/uploads/2018/04/logs.jpg"
-categories: []
+categories:
+- Hugo
+- Frontend-Friday
 tags: []
 cta:
   headline: ''
@@ -20,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 When it comes to creating websites, good content strategy is all about turning ideas into HTML with a minimal amount of friction. Whether using a CMS with a web interface or editing content files for a static site generator, content creators need an easy way to create visually interesting and well-structured content.
@@ -29,9 +30,11 @@ Every approach is a compromise between flexibility and ease-of-use. Even if a de
 
 ![Sawmill logo](/uploads/2018/04/sawmill-full.svg)
 
-[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files.
+[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in Sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. 
 
-<div id="get-started-with-sawmill">
+To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files. This theme is being released in tandem with Forestry's new [Blocks](https://forestry.io/blog/content-blocks-give-your-editors-the-power-to-built-pages/) feature and takes full advantage of this new field type for its page builder.
+
+<div id="create-site-with-sawmill" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/dwalkr/sawmill-starter.git"
 branch="master"
@@ -118,13 +121,13 @@ Sawmill includes a handful of components for building dynamic landing pages, and
 
 ### Forestry Blocks
 
-Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it **Blocks.**
+Forestry has a type of front matter field designed for the express purpose of creating modular content sections like this. We call it [Blocks](https://forestry.io/blog/content-blocks-give-your-editors-the-power-to-built-pages/).
 
 ![Forestry blocks template selector](/uploads/2018/04/blocks-field-templates.png)
 
 When defining a **Blocks** field, you can assign it one or more **front matter partial** templates that can be used as blocks in that section. Front matter partials are just regular front matter templates that have the **is partial** option selected.
 
-[Check out the docs](/) for more information on how to use Blocks.
+<!--[Check out the docs](/) for more information on how to use Blocks.-->
 
 ## Improving Sawmill
 
@@ -135,5 +138,5 @@ Sawmill is ready for use but, at the time of writing, its features are limited. 
 Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
 <div style="text-align: center; padding: 1em;">
-<a href="#/add-site" class="create-site-button">Open in Forestry</a>
+<a href="#/add-site" class="create-site-button" data-proofer-ignore>Create a New Sawmill Site in Forestry</a>
 </div>

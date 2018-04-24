@@ -230,7 +230,7 @@ A *Blocks* field is similar to a Repeatable Field Group, except that it supports
 
 ![](/uploads/2018/04/blocks-content-ui.png)
 
-Blocks fields work by including *other* front matter templates. You specify which templates can be used in your blocks field when creating the Front Matter Template. When adding content to a blocks field, you can select which of these templates to add from a dropdown.
+Blocks fields work by including *other* front matter templates. You specify which templates can be used in your blocks field when creating the Front Matter Template. When adding content to a Blocks field, you can select which of these templates to add from a dropdown.
 
 ```toml
 +++

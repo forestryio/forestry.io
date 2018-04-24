@@ -2,10 +2,10 @@
 title: Blocks - Give Your Editors the Power to Build Pages
 description: Today we introduce Blocks - a powerful Field Type that enables your editors
   to build entire landing pages from scratch.
-date: 2018-04-11 23:41:56 +0000
+date: 2018-04-19 14:41:00 -1100
 authors:
 - Sebastian Engels
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-04-19 12:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -20,9 +20,10 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
-aliases: []
+aliases:
+- "/blog/content-blocks-give-your-editors-the-power-to-built-pages/"
+- "/blog/blocks-editors-build-pages/"
 menu: []
-draft: true
 
 ---
 Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.
@@ -41,7 +42,7 @@ Blocks makes it possible for Editors to create pages like our homepage within mi
 
 ![](/uploads/2018/04/ui-scroll-blocks.gif)
 
-{{% tip %}}We created a \[Starter Kit Repository\](link to sawmill) and an \[Introduction to Blocks\](link to frontend friday article) so you can get started right away.{{% /tip %}}
+{{% tip %}}We created [Sawmill](https://github.com/dwalkr/sawmill) as a Starter-Kit and an [Introduction to Blocks](/blog/sawmill-layout-composer-for-hugo-and-forestry/) so you can get started right away.{{% /tip %}}
 
 ## How do Blocks work?
 
@@ -51,6 +52,6 @@ The developer creates the _Block Templates_ as clean code chunks and groups the 
 
 ## Need to know more?
 
-We just published a Frontend Friday [article](/blog/empower-content-creators-with-a-modular-content-strategy/) providing an in-depth explanation on how to use blocks and set them up.
+We just published a Frontend Friday [article](/blog/sawmill-layout-composer-for-hugo-and-forestry/) providing an in-depth explanation on how to use blocks and set them up.
 
-Also make sure to check out our [docs]() on this topic.
+<!--Also make sure to check out our [docs]() on this topic.-->

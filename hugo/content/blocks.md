@@ -5,13 +5,19 @@ title: Blocks
 layout: blocks
 date: 2018-04-19 01:33:08 -1100
 blocks:
+- template: create-site-button-js
+  engine_name: hugo
+  engine_version: 0.37.1
+  repo_name: https://github.com/dwalkr/sawmill-starter.git
+  fork_name: sawmill-starter
+  branch_name: master
 - template: hero
   headline: Introducing **Blocks**
   textline: _Blocks_ is a powerful Field Type that enables your Editors to build entire
     landing pages from scratch and create rich blog post layouts.
   ctas:
-  - permalink: "/blog/empower-content-creators-with-a-modular-content-strategy/"
-    textline: Get Started
+  - permalink: "/blog/sawmill-layout-composer-for-hugo-and-forestry/"
+    textline: Get Started with Blocks
     button: true
   - permalink: https://forestry.wistia.com/medias/pfn29x5xgi
     textline: View Video
@@ -48,10 +54,10 @@ blocks:
 - template: call-to-action
   ctas:
   - textline: Get Started
-    RelPermalink: "/"
+    RelPermalink: "/blog/sawmill-layout-composer-for-hugo-and-forestry/"
     button: true
   headline: Get Started With Blocks
-  textline: Import our Starter Kit Template and play with Blocks
+  textline: Import our Starter Kit Template
 type: landing-page
 draft: true
 
