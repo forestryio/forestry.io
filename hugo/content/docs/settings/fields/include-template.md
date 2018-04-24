@@ -13,7 +13,7 @@ This can be useful for organizing your front matter and consolidating frequently
 ![Include template interface](/uploads/2018/04/include-field-ui.png)
 
 - *Label* &mdash; the human-friendly label shown above the input field in the editor
-- *Name* &mdash; the key stored in your content's front matter, used to access it in your templates
+- *Name* &mdash; *this field is not used for this field type*
 - *Description* &mdash; a human-friendly description of what the field does and/or instructions for your editors
 - *Hidden* &mdash; hides the filed in the editor; but allows developers to set default values or maintain the field for legacy purposes.
 - *Template* &mdash; the front matter template whose fields you wish to include. 
