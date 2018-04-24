@@ -25,8 +25,8 @@ If you are getting an error when authenticating with GitLab that looks like this
 
     Failed to authenticate SSH session: Waiting for USERAUTH response
 
-1\. Go to https://app.forestry.io/sites/SITE-ID_/disconnect/gitlab   
-\(where SITE-ID is the unique string in the URL when you visit your Forestry CMS_). This will disconnect your account from GitLab.
+1\. Go to https://app.forestry.io/sites/SITE-ID/disconnect/gitlab   
+\(where SITE-ID is the unique string in the URL when you visit your Forestry CMS). This will disconnect your account from GitLab.
 
 2\. Go to [https://gitlab.com/profile/keys](https://gitlab.com/profile/keys "https://gitlab.com/profile/keys") and delete the Forestry.io key.
 
