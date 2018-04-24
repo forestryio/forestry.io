@@ -46,7 +46,7 @@ Hugo's `partial` function includes a file from the `layout/partials` directory a
 
 #### Jekyll
 
-In this Jekyll example, the individual block's front matter will be available to the included template via the `blocks` variable.
+In this Jekyll example, the individual block's front matter will be available to the included template via the `block` variable.
 
 ```
 {% for block in page.blocks %}
