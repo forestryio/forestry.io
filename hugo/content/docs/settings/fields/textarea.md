@@ -60,9 +60,18 @@ config:
   wysiwyg: false
 ```
 
+
 ## WYSIWYG
 
-Enable HTML rich-text input with inline formatting only.
+Enables a rich text editor.
+
+### File Format
+
+This field appears when *WYSIWYG* is enabled. Select which format should be output to your front matter:
+
+- **Markdown**
+- **HTML**
+- **Inline HTML** (only inline elements allowed)
 
 ## Field UI
 ![](/uploads/2018/01/textarea-wysiwyg-preview.png)
