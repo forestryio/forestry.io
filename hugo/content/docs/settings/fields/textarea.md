@@ -16,6 +16,7 @@ date: 2017-12-31 00:00:00 -0400
 * _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 * _Required_ – prevent changes from being saved if this field is empty.
 * _WYSIWYG_ – toggle on rich-text editing. [See WYSIWYG mode](/docs/settings/fields/textarea/#WYSIWYG)
+* _File Format_ – determines exported format. `Markdown` for Markdown, `HTML` for HTML, and `Inline HTML` for only inline HTML elements.
 
 ## Field UI
 ![](/uploads/2018/01/textarea-preview.png)
