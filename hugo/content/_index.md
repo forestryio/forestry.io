@@ -8,10 +8,10 @@ authors:
 - forestryio
 blocks:
 - template: create-site-button-js
-  engine_name: hugo
-  engine_version: 0.37.1
-  repo_name: https://github.com/dwalkr/sawmill-starter.git
-  fork_name: sawmill-starter
+  engine_name: jekyll
+  engine_version: 3.6.0
+  repo_name: https://github.com/forestryio-templates/belkirk-jekyll-demo.git
+  fork_name: forestry-demo
   branch_name: master
 hero:
   headline: A static CMS that **commits**
