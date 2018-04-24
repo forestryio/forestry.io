@@ -219,18 +219,16 @@ authors:
 
 ## Template Include
 
-![](/uploads/2018/04/fmt-include-ss.png)
-
 Include the fields of another *Front Matter Template* into the current one. Good for commonly-reused front matter fields like SEO information.
 
-Detailed documentation coming soon
+[See detailed documentation](/docs/settings/fields/include-template)
 
 
 ## Blocks
 
 A *Blocks* field is similar to a Repeatable Field Group, except that it supports *unlike* objects. Blocks fields are great for things like dynamic page layouts: a series of sections where each section may consist of different fields.
 
-![](/uploads/2018/04/fmt-blocks-ss.png)
+![](/uploads/2018/04/blocks-content-ui.png)
 
 Blocks fields work by including *other* front matter templates. You specify which templates can be used in your blocks field when creating the Front Matter Template. When adding content to a Blocks field, you can select which of these templates to add from a dropdown.
 
@@ -250,5 +248,4 @@ image_position = "Left"
 template = "media-feature"
 +++
 ```
-
-Detailed documentation coming soon
+[See detailed documentation](/docs/settings/fields/blocks)
