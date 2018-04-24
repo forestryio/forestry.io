@@ -65,6 +65,9 @@ To edit an FMT, navigate to the _Front Matter_ page in the CMS, and click the FM
 
 ![](/uploads/2018/01/35.png)On the left, you'll see a preview of how your FMT will look in the editors, and on the right you'll see the list of available field types.
 
+### Partial Templates
+Turn on the **Is Partial** toggle to designate this FMT as a *Partial Front Matter Template*. Partial FMTs are used with the [Blocks](/docs/fields/blocks) field type.
+
 ### Adding a Field
 
 To add a field, click the _Add_ button under the field type you'd like to add. This will add the field to the bottom of your FMT.
