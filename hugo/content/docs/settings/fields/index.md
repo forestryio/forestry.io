@@ -217,7 +217,7 @@ authors:
 
 [See detailed documentation](/docs/settings/fields/repeatable-field-group)
 
-## Template Include
+## Include Template
 
 Include the fields of another *Front Matter Template* into the current one. Good for commonly-reused front matter fields like SEO information.
 
