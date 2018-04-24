@@ -6,6 +6,13 @@ description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to
   sites.
 authors:
 - forestryio
+blocks:
+- template: create-site-button-js
+  engine_name: hugo
+  engine_version: 0.37.1
+  repo_name: https://github.com/dwalkr/sawmill-starter.git
+  fork_name: sawmill-starter
+  branch_name: master
 hero:
   headline: A static CMS that **commits**
   textline: Sync your Jekyll or Hugo site. Your editors will love it and won’t realize
@@ -14,6 +21,9 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Start building now
     button: true
+  - permalink: "#/add-site"
+    textline: Launch Demo
+    button: false
   video:
     fallbackVisual: "/video/forestry_factory.jpg"
     sources:
