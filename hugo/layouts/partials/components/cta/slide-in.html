@@ -1,0 +1,59 @@
+<div id="slide-in-cta" class="container" style="background-color: #FFFFFF; position: fixed; right: -380px; bottom: 100px; border-left-style: solid; border-left-width: 4px; border-left-color: rgb(32, 201, 151); max-width: 380px; padding: 20px 30px; z-index: 100; transition-duration: 0.3s;">
+  <img class="toggle-close" style="position: absolute; top: 10px; right: 10px;" src="/img/navtoggle-close.svg" onClick="closeSlideIn()" alt="Close nav">
+  <h2 class="" style="margin-bottom: initial;">{{ .headline | default "Want to hear it first?" }}</h2>
+  <p class="section--sub is-center">{{ .textline | default "Subscribe to our newsletter to get the posts directly in your inbox." }}</p>
+  <br>
+    {{- with .ctas -}}
+      {{- range . -}}
+      <a href="{{ .RelPermalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+      {{- end -}}
+    {{- else -}}
+    <form action="https://www.getrevue.co/profile/forestryio/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+      <div class="newsletter-signup--field form--joined form--large form--center">
+        <input class="revue-form-field" placeholder="your.name@example.com" type="email" name="member[email]" id="member_email">
+        <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class="button primary small">Subscribe</button>
+      </div>
+    </form>
+    {{- end -}}
+</div>
+
+<script type="text/javascript">
+  // Boolean Switch to check whether Slide-In CTA has been seen by User - Prevent multiple pop-ups
+  var slideInSeen = false
+  var scrollTimer, lastScrollFireTime = 0;
+
+  window.onscroll = function() {
+    // Function to throttle onscroll event by setting a min time that needs to pass before next check
+    var minScrollTime = 300;
+    var now = new Date().getTime();
+
+    function checkSlideIn() {
+      // Function to check whether user has scrolled into the article enough to possibly convert
+      var d = document.documentElement;
+      var offset = d.scrollTop + window.innerHeight;
+      var height = document.getElementById("post-container").scrollHeight * 0.5; // Slide-In fires at half height of article
+      if (offset >= height && slideInSeen == false) {
+        // Pulls Slide-In into the user's view
+        document.getElementById("slide-in-cta").style.transform = "translateX(-385px)";
+        slideInSeen = true;
+      }
+    }
+
+    if (!scrollTimer) {
+      // Evaluate whether enough time has passed since the last check
+        if (now - lastScrollFireTime > (3 * minScrollTime)) {
+            checkSlideIn();   // fire immediately on first scroll
+            lastScrollFireTime = now;
+        }
+        scrollTimer = setTimeout(function() {
+            scrollTimer = null;
+            lastScrollFireTime = new Date().getTime();
+            checkSlideIn();
+        }, minScrollTime);
+    }
+  };
+
+  function closeSlideIn() {
+    document.getElementById("slide-in-cta").style.transform = "translateX(385px)";
+  };
+</script>
