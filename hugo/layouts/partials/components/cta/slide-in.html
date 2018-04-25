@@ -23,37 +23,43 @@
   var scrollTimer, lastScrollFireTime = 0;
 
   window.onscroll = function() {
-    // Function to throttle onscroll event by setting a min time that needs to pass before next check
-    var minScrollTime = 300;
-    var now = new Date().getTime();
+    if (slideInSeen == false) {
+      // Function to throttle onscroll event by setting a min time that needs to pass before next check
+      var minScrollTime = 1000;
+      var now = new Date().getTime();
 
-    function checkSlideIn() {
-      // Function to check whether user has scrolled into the article enough to possibly convert
-      var d = document.documentElement;
-      var offset = d.scrollTop + window.innerHeight;
-      var height = document.getElementById("post-container").scrollHeight * 0.5; // Slide-In fires at half height of article
-      if (offset >= height && slideInSeen == false) {
-        // Pulls Slide-In into the user's view
-        document.getElementById("slide-in-cta").style.transform = "translateX(0)";
-        slideInSeen = true;
-      }
-    }
+      function checkSlideIn() {
+        // Function to check whether user has scrolled into the article enough to possibly convert
+        let d = document.documentElement;
+        let offset = window.pageYOffset + window.innerHeight;
+        let height = document.getElementById("post-container").scrollHeight * 0.5; // Slide-In fires at half height of article
 
-    if (!scrollTimer) {
-      // Evaluate whether enough time has passed since the last check
-        if (now - lastScrollFireTime > (3 * minScrollTime)) {
-            checkSlideIn();   // fire immediately on first scroll
-            lastScrollFireTime = now;
+        console.log(offset)
+        console.log(height)
+
+        if (offset >= height && slideInSeen == false) {
+          // Pulls Slide-In into the user's view
+          document.getElementById("slide-in-cta").style.transform = "translateX(0)";
+          slideInSeen = true;
         }
-        scrollTimer = setTimeout(function() {
-            scrollTimer = null;
-            lastScrollFireTime = new Date().getTime();
-            checkSlideIn();
-        }, minScrollTime);
+      }
+
+      if (!scrollTimer) {
+        // Evaluate whether enough time has passed since the last check
+          if (now - lastScrollFireTime > (3 * minScrollTime)) {
+              checkSlideIn();   // fire immediately on first scroll
+              lastScrollFireTime = now;
+          }
+          scrollTimer = setTimeout(function() {
+              scrollTimer = null;
+              lastScrollFireTime = new Date().getTime();
+              checkSlideIn();
+          }, minScrollTime);
+      }
     }
   };
 
   function closeSlideIn() {
     document.getElementById("slide-in-cta").style.transform = "translateX(100%)";
   };
-</script>
+</script> 
