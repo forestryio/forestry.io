@@ -66,6 +66,7 @@
     "postcss-cachebuster": "^0.1.5",
     "postcss-cssnext": "^2.7.0",
     "postcss-reporter": "^5.0.0",
+    "postcss-sass": "^0.3.0",
     "postcss-scss": "^1.0.2",
     "precss": "^2.0.0",
     "run-sequence": "^2.2.0",

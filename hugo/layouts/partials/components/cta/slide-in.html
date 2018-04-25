@@ -1,4 +1,4 @@
-<div id="slide-in-cta" class="container" style="background-color: #FFFFFF; position: fixed; right: -380px; bottom: 100px; border-left-style: solid; border-left-width: 4px; border-left-color: rgb(32, 201, 151); max-width: 380px; padding: 20px 30px; z-index: 100; transition-duration: 0.3s;">
+<div id="slide-in-cta" class="container" style="background-color: #FFFFFF; position: fixed; width: 380px; right: -1px; bottom: 100px; border-left-style: solid; border-left-width: 4px; border-left-color: rgb(32, 201, 151); max-width: 100%; padding: 20px 30px; z-index: 100; transform: translateX(100%); transition-duration: 0.3s; box-shadow: rgba(0, 0, 0, 0.2) 11px 10px 40px;">
   <img class="toggle-close" style="position: absolute; top: 10px; right: 10px;" src="/img/navtoggle-close.svg" onClick="closeSlideIn()" alt="Close nav">
   <h2 class="" style="margin-bottom: initial;">{{ .headline | default "Want to hear it first?" }}</h2>
   <p class="section--sub is-center">{{ .textline | default "Subscribe to our newsletter to get the posts directly in your inbox." }}</p>
@@ -34,7 +34,7 @@
       var height = document.getElementById("post-container").scrollHeight * 0.5; // Slide-In fires at half height of article
       if (offset >= height && slideInSeen == false) {
         // Pulls Slide-In into the user's view
-        document.getElementById("slide-in-cta").style.transform = "translateX(-385px)";
+        document.getElementById("slide-in-cta").style.transform = "translateX(0)";
         slideInSeen = true;
       }
     }
@@ -54,6 +54,6 @@
   };
 
   function closeSlideIn() {
-    document.getElementById("slide-in-cta").style.transform = "translateX(385px)";
+    document.getElementById("slide-in-cta").style.transform = "translateX(100%)";
   };
 </script>
