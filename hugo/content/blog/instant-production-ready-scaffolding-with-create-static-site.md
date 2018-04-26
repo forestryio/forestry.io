@@ -50,7 +50,7 @@ Using `npx` we can invoke the `create-static-site` command without having to ins
 npx create-static-site my-new-site --template hugo
 ```
 
-After running the above command, a new Hugo site will be created in the `my-new-site` directory. You can create a new Jekyll site instead by passing `--template jekyll` instead:
+After running the above command, a new Hugo site will be created in the `my-new-site` directory. You can create a new Jekyll site by passing `--template jekyll` instead:
 
 ```
 npx create-static-site my-new-site --template jekyll
@@ -74,6 +74,8 @@ To start your development server, run the following command:
 npm start
 ```
 
+This will start up the dev server, watch your files for changes, and set up BrowserSync for automatic reloading.
+
 To build your production site, run the following command:
 
 ```
@@ -90,7 +92,7 @@ If you have `yarn` installed, *Create Static Site* will recommend running these 
 
 ## Directory Structure
 
-If you're used to bootstrapping a new site with `hugo new` or `jekyll new`, things will look a bit different here. You will find the standard Hugo or Jekyll files in the `site/` subdirectory. Your assets (CSS, JS, and images) are located in the `src/` subdirectory, and the generated site (after running `npm run build`) will be generated in the `dist/` subdirectory.
+If you're accustomed to bootstrapping a new site with `hugo new` or `jekyll new`, things will look a bit different here. You will find the standard Hugo or Jekyll files in the `site/` subdirectory. Your assets (CSS, JS, and images) are located in the `src/` subdirectory, and the generated site (after running `npm run build`) will be generated in the `dist/` subdirectory.
 
 {{% tip %}}
 ### Importing to Forestry
