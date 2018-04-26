@@ -6,6 +6,13 @@ description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to
   sites.
 authors:
 - forestryio
+blocks:
+- template: create-site-button-js
+  engine_name: jekyll
+  engine_version: 3.6.0
+  repo_name: https://github.com/forestryio-templates/belkirk-jekyll-demo.git
+  fork_name: forestry-demo
+  branch_name: master
 hero:
   headline: A static CMS that **commits**
   textline: Sync your Jekyll or Hugo site. Your editors will love it and won’t realize
@@ -14,6 +21,9 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Start building now
     button: true
+  - permalink: "#/add-site"
+    textline: Launch Demo
+    button: false
   video:
     fallbackVisual: "/video/forestry_factory.jpg"
     sources:

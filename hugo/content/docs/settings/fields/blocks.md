@@ -34,7 +34,7 @@ The intended use is to iterate over the elements in your Blocks field and render
 Hugo's `partial` function includes a file from the `layout/partials` directory and allows us to pass a context. Passing `.` from inside the loop will pass all of the individual block's front matter into the partial template.
 
 ```
-{{ range .Params.blocks }}
+{{ range .Params.page_sections }}
     {{ if eq "hero-section" .template }}
         {{ partial "blocks/hero" . }}
     {{ end }}
@@ -46,10 +46,10 @@ Hugo's `partial` function includes a file from the `layout/partials` directory a
 
 #### Jekyll
 
-In this Jekyll example, the individual block's front matter will be available to the included template via the `blocks` variable.
+In this Jekyll example, the individual block's front matter will be available to the included template via the `block` variable.
 
 ```
-{% for block in page.blocks %}
+{% for block in page.page_sections %}
     {% assign template = block.template %}
     {% case template%}
     {% when 'hero-section' %}
@@ -65,7 +65,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
 
 ```yaml
 type: blocks
-name: sections
+name: page_sections
 label: Page Sections
 template_types:
 - example-partial-fmt-1
@@ -74,7 +74,7 @@ template_types:
 
 ### Example
 ```yaml
-blocks:
+page_sections:
     - template: hero-section
       title: Hello
       subtitle: World

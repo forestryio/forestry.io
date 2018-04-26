@@ -4,8 +4,9 @@
   {{- partial "seo/json-ld/index" . -}}
 {{- end -}}
 {{- define "main" -}}
+<div id="root"></div>
+<div id="modal-root"></div>
   {{- partial "components/hero" .Params.hero }}
-
   {{- range .Params.features -}}
     {{- partial "components/feature" (dict "pg" $ "feature" .) -}}
   {{- end -}}
@@ -16,4 +17,10 @@
   {{- with .Params.cta -}}
     {{- partial "components/cta/basic" . -}}
   {{- end -}}
+
+  {{- with .Params.blocks -}}
+    {{- range . -}}
+        {{- if eq .template "create-site-button-js" -}}{{- partial "components/create-site-button" . -}}{{- end -}}
+    {{- end -}}
+{{- end -}}
 {{- end -}}
