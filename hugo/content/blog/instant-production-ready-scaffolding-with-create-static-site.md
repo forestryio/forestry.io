@@ -28,11 +28,11 @@ The success and utility of Create React App has inspired some of the brains at F
 
 ## Why *Create Static Site*
 
-Hugo and Jekyll each have their own command-line utility for quickly creating a new project.
+Building a website to keep up with modern demands requires a modern asset pipeline. You need to provide optimum cross-browser and legacy browser support to ensure your code works on as many devices as possible. You will want to [use a bundler like Webpack so you can write modular, well-organized JavaScript](https://forestry.io/blog/write-better-javascript-with-webpack/). You also want to serve optimized assets to your users so that your page loads as quickly as possible. All of this, of course, should be as fast and automatic as possible, so you're not wasting time manually recompiling and re-optimizing your scripts.
 
-As discussed previously, [organizing your code into modules and using a bundler like Webpack](https://forestry.io/blog/write-better-javascript-with-webpack/) is the best option for writing modern JavaScript. Neither Jekyll nor Hugo's out-of-the-box configuration provides for this, but they both make room for external tools.
+Neither Jekyll nor Hugo's `new` command will provide this out of the box. Jekyll provides CSS preprocessing with Sass (and can handle CoffeeScript with an additional plugin,) and Hugo is even simpler: it just copies any assets added to your site's `static` folder, allowing the developer to install whatever asset processing they want.
 
-Jekyll and Hugo also have their own built-in webserver and file watching behavior. Integrating this with a custom build process is not straightforward; *Create Static Site* takes care of this for you.
+This is where *Create Static Site* comes in. *Create Static Site* builds off the scaffolding provided by the `new` command to include a **modern, production-ready asset pipeline** with your new site, while keeping the interface simple by using a single command and no configuration.
 
 ## Getting Started
 
@@ -42,7 +42,55 @@ The easiest way to get started with *Create Static Site* is with [npx](https://w
 I recommend using [nvm](https://github.com/creationix/nvm) to switch between multiple versions of node and npm.
 {{% /tip %}}
 
-### Directory Structure
+If using this tool to create a Jekyll site, you will also need to have `ruby` and `bundler` available on your system.
+
+Using `npx` we can invoke the `create-static-site` command without having to install it anywhere:
+
+```
+npx create-static-site my-new-site --template hugo
+```
+
+After running the above command, a new Hugo site will be created in the `my-new-site` directory. You can create a new Jekyll site instead by passing `--template jekyll` instead:
+
+```
+npx create-static-site my-new-site --template jekyll
+```
+
+After the install finishes, navigate to the directory of your new site:
+
+```
+cd my-new-site
+```
+
+If you're using Jekyll, you will need to install the gems before continuing:
+
+```
+bundle install
+```
+
+To start your development server, run the following command:
+
+```
+npm start
+```
+
+To build your production site, run the following command:
+
+```
+npm run build
+```
+
+This is the command you will want to [run in your CI environment](https://forestry.io/blog/automate-deploy-w-circle-ci/) to build your static site before deploying. It will build production assets and also run the static site generator.
+
+{{% tip %}}
+If you have `yarn` installed, *Create Static Site* will recommend running these commands through Yarn instead via `yarn start` and `yarn build`.
+{{% /tip %}}
+
+
+
+## Directory Structure
+
+If you're used to bootstrapping a new site with `hugo new` or `jekyll new`, things will look a bit different here. You will find the standard Hugo or Jekyll files in the `site/` subdirectory. Your assets (CSS, JS, and images) are located in the `src/` subdirectory, and the generated site (after running `npm run build`) will be generated in the `dist/` subdirectory.
 
 {{% tip %}}
 When importing a site created with *Create Static Site* to Forestry, ...
@@ -52,6 +100,7 @@ When importing a site created with *Create Static Site* to Forestry, ...
 
 ### `.gitignore` Included
 
+### BrowserSync (even w/ jekyll)
 
 ### Styles
 
