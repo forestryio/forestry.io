@@ -28,9 +28,9 @@ The success and utility of Create React App has inspired some of the brains at F
 
 ## Why *Create Static Site*
 
-Building a website to keep up with modern demands requires a modern asset pipeline. You need to provide optimum cross-browser and legacy browser support to ensure your code works on as many devices as possible. You will want to [use a bundler like Webpack so you can write modular, well-organized JavaScript](https://forestry.io/blog/write-better-javascript-with-webpack/). You also want to serve optimized assets to your users so that your page loads as quickly as possible. All of this, of course, should be as fast and automatic as possible, so you're not wasting time manually recompiling and re-optimizing your scripts.
+Building a website to keep up with modern demands requires a modern asset pipeline. You need to provide optimum cross-browser and legacy browser support to ensure your code works on as many devices as possible. You will want to [use a bundler like Webpack so you can write modular, well-organized JavaScript](https://forestry.io/blog/write-better-javascript-with-webpack/). You also want to serve optimized assets to your users so that your page loads as quickly as possible. All of this, of course, should be as fast as possible and completely automatic, so you're not wasting time manually recompiling and re-optimizing your scripts.
 
-Neither Jekyll nor Hugo's `new` command will provide this out of the box. Jekyll provides CSS preprocessing with Sass (and can handle CoffeeScript with an additional plugin,) and Hugo is even simpler: it just copies any assets added to your site's `static` folder, allowing the developer to install whatever asset processing they want.
+Neither Jekyll nor Hugo's `new` command will provide this out of the box. Jekyll provides CSS preprocessing with Sass (and can handle CoffeeScript with an additional plugin,) and Hugo is even more barebones: it just copies any assets added to your site's `static` folder, intending for the developer to install whatever asset processing they want.
 
 This is where *Create Static Site* comes in. *Create Static Site* builds off the scaffolding provided by the `new` command to include a **modern, production-ready asset pipeline** with your new site, while keeping the interface simple by using a single command and no configuration.
 
@@ -93,8 +93,18 @@ If you have `yarn` installed, *Create Static Site* will recommend running these 
 If you're used to bootstrapping a new site with `hugo new` or `jekyll new`, things will look a bit different here. You will find the standard Hugo or Jekyll files in the `site/` subdirectory. Your assets (CSS, JS, and images) are located in the `src/` subdirectory, and the generated site (after running `npm run build`) will be generated in the `dist/` subdirectory.
 
 {{% tip %}}
-When importing a site created with *Create Static Site* to Forestry, ...
+### Importing to Forestry
+![screenshot of "config path" field]()
+When importing a site created with *Create Static Site* to Forestry, you will need to tell it that your SSG files are in the `site/` subdirectory. After you select the repo and branch, Forestry will prompt you for the *config path*. Enter `site` in this field, and Forestry should then be able to locate your site.
 {{% /tip %}}
+
+{{% tip %}}
+
+### Configuring Forestry's Uploads Directory
+
+{{% /tip %}}
+
+
 
 ## Features
 
