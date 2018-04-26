@@ -129,12 +129,21 @@ Webpack handles your JavaScript, so you can organize your code into modules. Bab
 
 Imagemin is used to optimize raster images.
 
-Create Static Site will also take SVG files added to `img/svg` and compile them into a single spritesheet. Create Static Site includes a template to easily insert these images into your site.
+Create Static Site will also take SVG files added to `img/svg` and compile them into a single spritesheet. Create Static Site includes a template to easily insert these images into your site. The SVGs can be referenced by their ID in the spritesheet, which is `svg--` followed by the filename. The following examples demonstrate including the default SVG image found at `img/svg/bitbucket.svg`:
 
 #### Hugo
 ```
 {{ partial "svg" (dict "id" "svg--bitbucket") }}
 ```
+
+#### Jekyll
+
+```
+{% include svg.html id="svg--bitbucket" %}
+
+```
+
+You can also pass the `class`, `width`, and `height` parameters to this partial to add the corresponding html attributes.
 
 ## Ejecting
 
