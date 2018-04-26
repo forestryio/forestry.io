@@ -1,7 +1,7 @@
 {{- define "main" -}}
   <div id="root"></div>
   <div id="modal-root"></div>
-  <main class="single-post">
+  <main id="post-container" class="single-post">
     {{- with .Params.images -}}
       {{- range first 1 . -}}
         <div class="post--feature-image">
@@ -89,5 +89,8 @@
     {{- end -}}
   </main>
 
+    {{- with .Params.cta -}}
+      {{- partial "components/cta/slide-in" . -}}
+    {{- end -}}
   {{- partial "components/cta/newsletter" .Params.cta -}}
 {{- end -}}
