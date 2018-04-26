@@ -30,6 +30,7 @@
 @import "components/footer.css";
 @import "components/lightbox.css";
 @import "components/create-site-block.css";
+@import "components/slide-in-cta.css";
 
 /* Pages */
 @import "pages/page-features.css";
