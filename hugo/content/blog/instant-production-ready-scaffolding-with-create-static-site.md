@@ -114,7 +114,7 @@ _Create Static Site_ uses [PostCSS](http://postcss.org/) to handle CSS transform
 
 ### Images
 
-[Imagemin](https://github.com/imagemin/imagemin) is used to optimize raster images.
+[Imagemin](https://github.com/imagemin/imagemin) is used to optimize images stored in `src/img/`.
 
 {{% tip %}}
 
