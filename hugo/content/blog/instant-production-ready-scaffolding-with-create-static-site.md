@@ -155,7 +155,7 @@ We are actively looking for help and input on how to make _Create Static Site_ b
 
 If you'd like to contribute, [check out the contribution guidelines](https://github.com/forestryio/create-static-site/blob/master/CONTRIBUTING.md) and take a look at the [issues that are actively seeking contributions](https://github.com/forestryio/create-static-site/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD</p><p><strong>Last week:</strong> We introduced Blocks and Sawmill, a Hugo Theme that empowers your Editors to <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">build their own pages</a> while keeping a clean code.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD</p><p><strong>Last week:</strong> We introduced Blocks and Sawmill, a Hugo Theme that empowers your Editors to <a href="https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/#/">build their own pages</a> while keeping a clean code.</p></div>
 
 <!--Have something to add?
 
