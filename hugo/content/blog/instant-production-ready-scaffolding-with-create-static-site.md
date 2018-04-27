@@ -8,7 +8,8 @@ publishdate: 2018-04-25 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/04/s2-art-616310-unsplash.jpg"
 categories: []
 tags: []
 cta:
@@ -97,19 +98,19 @@ This may sound like a minor quibble, but having a `.gitignore` preconfigured to 
 
 ### Live Reloading via BrowserSync
 
-It should be noted here that Hugo offers a nice development workflow out of the box with its `hugo serve` command, which uses BrowserSync to automatically reload the browser window when changes are detected. Create Static Site offers the same functionality in its asset pipeline. If you're a Jekyll user, you will love having live reloading without needing any additional config.
+It should be noted here that Hugo offers a nice development workflow out of the box with its `hugo serve` command, which uses BrowserSync to automatically reload the browser window when changes are detected. _Create Static Site_ offers the same functionality in its asset pipeline. If you're a Jekyll user, you will love having live reloading without needing any additional config.
 
 ### Styles
 
 ![](/uploads/2018/04/postcss-logo.png)
 
-Create Static Site uses [PostCSS](http://postcss.org/) to handle CSS transformations. You get [precss](https://github.com/jonathantneal/precss) to provide Sass-like features such as variables and selector nesting. You can use cutting-edge CSS features while maintaining cross-browser and legacy browser support with [cssnext](http://cssnext.io/) and [laggard](https://github.com/seaneking/laggard). [postcss-reporter](https://github.com/postcss/postcss-reporter) and [postcss-browser-reporter](https://github.com/postcss/postcss-browser-reporter) are included to make it easy to spot CSS errors in development, and [cssnano](http://cssnano.co/) shrinks your CSS down to the smallest file size possible.
+_Create Static Site_ uses [PostCSS](http://postcss.org/) to handle CSS transformations. You get [precss](https://github.com/jonathantneal/precss) to provide Sass-like features such as variables and selector nesting. You can use cutting-edge CSS features while maintaining cross-browser and legacy browser support with [cssnext](http://cssnext.io/) and [laggard](https://github.com/seaneking/laggard). [postcss-reporter](https://github.com/postcss/postcss-reporter) and [postcss-browser-reporter](https://github.com/postcss/postcss-browser-reporter) are included to make it easy to spot CSS errors in development, and [cssnano](http://cssnano.co/) shrinks your CSS down to the smallest file size possible.
 
 ### Scripts
 
 ![](/uploads/2018/04/webpack-logo.png)
 
-[Webpack](https://forestry.io/blog/write-better-javascript-with-webpack/) handles your JavaScript, so you can organize your code into modules. [Babel](https://babeljs.io/) is included, with the popular [env preset](https://babeljs.io/docs/plugins/preset-env/) configuration so you can use modern syntax while supporting older browsers. In addition to the env preset, Create Static Site includes plugins to support [the rest/spread operator for objects](https://babeljs.io/docs/plugins/transform-object-rest-spread). Finally, Create Static Site uses [Uglify JS](https://github.com/webpack-contrib/uglifyjs-webpack-plugin) to minify your JavaScript.
+[Webpack](https://forestry.io/blog/write-better-javascript-with-webpack/) handles your JavaScript, so you can organize your code into modules. [Babel](https://babeljs.io/) is included, with the popular [env preset](https://babeljs.io/docs/plugins/preset-env/) configuration so you can use modern syntax while supporting older browsers. In addition to the env preset, _Create Static Site_ includes plugins to support [the rest/spread operator for objects](https://babeljs.io/docs/plugins/transform-object-rest-spread). Finally, _Create Static Site_ uses [Uglify JS](https://github.com/webpack-contrib/uglifyjs-webpack-plugin) to minify your JavaScript.
 
 ### Images
 
@@ -121,11 +122,11 @@ Create Static Site uses [PostCSS](http://postcss.org/) to handle CSS transformat
 
 ![](/uploads/2018/04/create-static-site-forestry-upload-paths.png)
 
-After importing your site to Forestry, go to _Settings_ and configure your upload paths in the _File Paths_ section. To take advantage of Create Static Site's image optimization for your uploads, ensure your upload folder begins with `/src/img/` and your file URLs start with `/img/`.
+After importing your site to Forestry, go to _Settings_ and configure your upload paths in the _File Paths_ section. To take advantage of _Create Static Site_'s image optimization for your uploads, ensure your upload folder begins with `/src/img/` and your file URLs start with `/img/`.
 
 {{% /tip %}}
 
-Create Static Site will also take SVG files added to `img/svg` and compile them into a single spritesheet. Create Static Site includes a template to easily insert these images into your site. The SVGs can be referenced by their ID in the spritesheet, which is `svg--` followed by the filename. The following examples demonstrate including the default SVG image found at `img/svg/bitbucket.svg`:
+_Create Static Site_ will also take SVG files added to `img/svg` and compile them into a single spritesheet. _Create Static Site_ includes a template to easily insert these images into your site. The SVGs can be referenced by their ID in the spritesheet, which is `svg--` followed by the filename. The following examples demonstrate including the default SVG image found at `img/svg/bitbucket.svg`:
 
 #### Hugo
 
@@ -139,14 +140,14 @@ You can also pass the `class`, `width`, and `height` parameters to this partial 
 
 ## Ejecting
 
-Just like Create React App, Create Static Site gives you the option to **eject** your configuration if you need to customize it. Note that after ejecting, you will have to maintain the build configuration yourself!
+Just like Create React App, _Create Static Site_ gives you the option to **eject** your configuration if you need to customize it. Note that after ejecting, you will have to maintain the build configuration yourself!
 
 {{% tip %}}
-Is there something missing from Create Static Site that is essential to your workflow? Consider [forking the repository](https://github.com/forestryio/create-static-site) to create a new flavor, or [posting an issue](https://github.com/forestryio/create-static-site/issues) if you think it would be a sensible default feature.
+Is there something missing from _Create Static Site_ that is essential to your workflow? Consider [forking the repository](https://github.com/forestryio/create-static-site) to create a new flavor, or [posting an issue](https://github.com/forestryio/create-static-site/issues) if you think it would be a sensible default.
 {{% /tip %}}
 
 ## The Future of _Create Static Site_
 
-We are actively looking for help and input on how to make Create Static Site better. One thing we want to do is support more static site generators beyond Jekyll and Hugo.
+We are actively looking for help and input on how to make _Create Static Site_ better. One thing we want to do is support more static site generators beyond Jekyll and Hugo.
 
 If you'd like to contribute, [check out the contribution guidelines](https://github.com/forestryio/create-static-site/blob/master/CONTRIBUTING.md) and take a look at the [issues that are actively seeking contributions](https://github.com/forestryio/create-static-site/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
