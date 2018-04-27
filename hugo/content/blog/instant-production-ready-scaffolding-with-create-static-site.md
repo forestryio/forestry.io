@@ -156,6 +156,6 @@ If you'd like to contribute, [check out the contribution guidelines](https://git
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll explore how to automatically publish scheduled posts for your static site</p><p><strong>Last week:</strong> We introduced Blocks and Sawmill, a Hugo Theme that empowers your Editors to <a href="https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/#/">build their own pages</a> while keeping a clean code.</p></div>
 
-<!--Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a-->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16941327">Discuss on Hacker News</a>
