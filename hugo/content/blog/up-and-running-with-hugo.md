@@ -21,6 +21,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 
 ---
 <!--{{% tip %}}
@@ -31,9 +32,9 @@ This guide was most recently updated on **March 9, 2018.**
 
 --- -->
 
-The popular static site generator written in GoLang - [Hugo](https://gohugo.io "Hugo Website") - has taken the community by storm. It brings all the benefits of a static site generator - 100% Flexibility, Security, Speed - but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article"). In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo. 
+The popular static site generator written in GoLang - [Hugo](https://gohugo.io "Hugo Website") - has taken the community by storm. It brings all the benefits of a static site generator - 100% Flexibility, Security, Speed - but also steals the show otherwise 👉 [Hugo + Jekyll Benchmarked](/blog/hugo-vs-jekyll-benchmark/ "Hugo + Jekyll Benchmarked Article"). In fact, the [Forestry.io](https://forestry.io "forestry.io") website is built with Hugo.
 
-For this week on [_Frontend Friday_](https://forestry.io/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS. 
+For this week on [_Frontend Friday_](https://forestry.io/categories/frontend-friday/ "frontend friday tag")_,_ we'll be covering how to get set up with [Hugo](https://gohugo.io "Hugo Website") on your local machine, including setting up a theme and customizing it, as well as writing your own CSS & JS.
 
 How is this different from Hugo's Quick Start guide? We'll be using [_Hugo Boilerplate_](https://github.com/forestryio/hugo-boilerplate "See Hugo Boilerplate on GitHub")_,_ a continuously maintained boilerplate project for Hugo sites that offers a modern developer workflow on top of Hugo.
 
@@ -86,6 +87,12 @@ Then install all of the project dependencies by running:
 To start the development server and open it up in your browser, simply run:
 
     npm start
+
+{{% tip %}}
+
+Want to get started without the Hugo Boilerplate - Check out [our other guide](https://forestry.io/docs/guides/developing-with-hugo/).
+
+{{% /tip %}}
 
 ## 2) Setting Up Your Site
 
@@ -183,7 +190,7 @@ Open `hugo/config.toml` in your favorite text editor, and replace the contents w
     copyright = "All rights reserved - 2018"
     theme = "hugo-theme-casper"
     disableKinds = ["taxonomy", "taxonomyTerm"]
-  
+    
     [params]
       description = "Welcome to my website"
       metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
@@ -217,7 +224,7 @@ First, we'll customize the site params. Open up `hugo/config.toml` once more, an
 
 ![](/uploads/2018/03/up_running_w_hugo_I_2.png "Casper theme with default styles and content")
 
-Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `[params]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
+Next, we'll update the default hero image to something else. Open up `hugo/config.toml` and find `\[params\]`. Below, find the parameter `cover` and update it to `/img/darius-soodmand-116253.jpg`, and save your changes.
 
 ![](/uploads/2018/03/up_running_w_hugo_I_3.png "Added a scenic image")
 
@@ -300,7 +307,6 @@ Check out the following further reading to learn more about Hugo:
 ### Up next
 
 Next week we'll be releasing a post on setting up version control with Git to facilitate continuous integration and continuous deployment to various hosting providers using [_Forestry_](https://forestry.io)_,_ the CMS for static sites built with Hugo and Jekyll.
-
 
 <div style="padding: 20px 40px;background: #f7f7f7;">  
 <h2>Join us every Friday 📅</h2>  
