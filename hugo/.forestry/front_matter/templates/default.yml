@@ -13,6 +13,7 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
+- blog/what-s-new-in-jekyll-3.8.md
 - blog/two-simple-solutions-for-publishing-scheduled-posts.md
 - blog/landing-page-create-static-site-copy.md
 - blog/instant-production-ready-scaffolding-with-create-static-site.md
