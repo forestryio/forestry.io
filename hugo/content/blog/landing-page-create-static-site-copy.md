@@ -1,5 +1,5 @@
 ---
-title: Landing Page Create-Static-Site copy
+title: Create-Static-Site
 description: ''
 date: 2018-05-03 01:01:16 -1100
 authors: []
@@ -22,8 +22,6 @@ draft: true
 
 ---
 Theme used: hugo-base-theme https://themes.gohugo.io/hugo-base-theme/
-
-# Create-Static-Site
 
 A zero-configuration, modern, production-ready build pipeline for your static site
 
