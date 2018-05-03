@@ -33,18 +33,22 @@ _(_[_npx_](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-5
 
 ### Hugo
 
-`npx create-static-site my-site --template hugo`
-`cd my-site`
-`npm start`
+```
+npx create-static-site my-site --template hugo
+cd my-site
+npm start
+```
 
 ### Jekyll
 
 _ruby and bundler required_
 
-`npx create-static-site my-site --template jekyll`
-`cd my-site`
-`bundle install`
-`npm start`
+```
+npx create-static-site my-site --template jekyll
+cd my-site
+bundle install
+npm start
+```
 
 Then open http://localhost:3000/ to see your site.
 
