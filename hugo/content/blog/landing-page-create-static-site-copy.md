@@ -33,24 +33,22 @@ _(_[_npx_](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-5
 
 ### Hugo
 
-```
-npx create-static-site my-site --template hugo
-cd my-site
-npm start
-```
+    npx create-static-site my-site --template hugo
+    cd my-site
+    npm start
 
 ### Jekyll
 
 _ruby and bundler required_
 
-```
-npx create-static-site my-site --template jekyll
-cd my-site
-bundle install
-npm start
-```
+    npx create-static-site my-site --template jekyll
+    cd my-site
+    bundle install
+    npm start
 
-Then open http://localhost:3000/ to see your site.
+Then open http://localhost:3000/ to see your site.  
+  
+\[Link to FEF Tutorial\] – A guide on why and how to use CSS for your modern web development workflow
 
 ## Modern Asset Pipeline
 
@@ -71,6 +69,8 @@ Organize your code in modules, use the latest JavaScript language features and m
 ### Optimize Images
 
 Images are automatically optimized and SVG are compressed in a single spritesheet.
+
+\[Link Documentation\] – A comprehensive list of features and detailed guide
 
 ## Hassle-free Updates
 
