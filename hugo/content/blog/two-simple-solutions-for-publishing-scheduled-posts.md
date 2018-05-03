@@ -29,19 +29,21 @@ Part of our mission at Forestry is to dissolve the perceived limitations of stat
 
 This perspective is core to the philosophy at Forestry. Our content editor takes advantage of this simplicity and interoperability, acting as an additional layer on top of the existing static site machinery. When a site is hooked up to Forestry, it can still be edited in a local development environment as usual. We don't have to rewire anything about how the site works.
 
-Today, we will tackle a basic feature: publishing scheduled content. This would be useful, for example, if you were going on vacation 
+Today, we will tackle a basic feature: publishing scheduled content. This would be useful, for example, if you were going on vacation
 
 ## The Old Way
 
 Scheduling posts is easy when using a database-driven, backend-heavy CMS like WordPress: just enter the date and time you want to schedule the post, and click the "Schedule" button. Your post should automatically appear on the site once the date and time of the post have passed. You're done!
 
-**Actually, hang on.** If you're using a page cache plugin (which is essential to keep the site running fast,) you will probably need to clear the cache once the post is published. Once you figure out how to clear the page cache at regular intervals, perhaps you've solved this problem and now you're done.
+**Actually, hang on.** If you're using a page cache plugin (which is essential to keep the site running fast,) you will probably need to clear the cache once the post is published. Once you figure out how to clear the page cache at regular intervals, you can sit back and let your scheduled posts publish themselves automatically.
 
-**Ah, but maybe not.** Sometimes WordPress will give you a *Missed Schedule* error and won't publish the post! Go ahead and spend the rest of your day sorting that one out.
+**Ah, but maybe not.** Sometimes WordPress will give you a _Missed Schedule_ error and won't publish the post! Go ahead and spend the rest of your day sorting that one out.
+
+Maybe it's not that easy.
 
 ## Statelessness is Next to Godliness
 
-Surely, you could use another dynamic CMS that doesn't have the same scheduling issues as WordPress. However, they all share the same problem: they need to react to *changes in state*. 
+Surely, you could use another dynamic CMS that doesn't have the same scheduling issues as WordPress. However, they all share the same problem: they need to react to _changes in state_.
 
 Our static site knows how to handle future posts by following a very simple algorithm during the build process:
 
@@ -49,10 +51,7 @@ Our static site knows how to handle future posts by following a very simple algo
 
 We can conceive of a very simple procedure for publishing posts in the future by ensuring that we automatically run this build process, and handle the subsequent deployment, at a regular interval.
 
-
-## Building the Solution
-
-### Scheduled Deployments with CircleCI
+## Scheduling Deployments with CircleCI
 
 If you're already using CircleCI to build and deploy your site, you can achieve this by adding a few extra lines to your CircleCI configuration at `.circleci/config.yml`.
 
@@ -60,36 +59,77 @@ If you don't have an automated build and deploy process for your static site, ta
 
 We can use CircleCI's [workflows](https://circleci.com/docs/2.0/workflows/) feature to schedule recurring automatic deployment of our site. To do this, we just have to add a new section to our `.circleci/config.yml` file with the following info:
 
-```
-workflows:
-  version: 2
-  build_test_deploy:
-    jobs:
-      - build
-  autopublish:
-    triggers:
-      - schedule:
-          cron: "0 */6 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
-```
+    workflows:
+      version: 2
+      build_test_deploy:
+        jobs:
+          - build
+      autopublish:
+        triggers:
+          - schedule:
+              cron: "0 */6 * * *"
+              filters:
+                branches:
+                  only:
+                    - master
+        jobs:
+          - build
 
-This creates two workflows: one called `build_test_deploy`, and one called `autopublish`. We need to create the `build_test_deploy` workflow to preserve the automatic deployment behavior, since CircleCI won't do that by default if you have `workflows` defined.
+This creates two workflows: one called `build_test_deploy`, and one called `autopublish`. We need to create the `build_test_deploy` workflow to preserve the automatic deployment behavior, since CircleCI won't do that by default if you have any `workflows` defined.
 
 The `autopublish` workflow runs the same `build` job, but we have configured it to run on a schedule using `triggers`, and to only run this on the master branch.
 
-The `cron` parameter accents crontab syntax to determine the interval between deployments. Our example uses `0 */6 * * *` which means to run it once every 6 hours. Feel free to tweak this to suit your publishing schedule.
+The `cron` parameter accepts crontab syntax to determine the interval between deployments. Our example deploys every 6 hours. Feel free to tweak this to suit your publishing schedule.
 
-### Use a Lambda Task to Trigger Your Build
+## Using a Lambda Task to Trigger Your Build
 
 If you are using a different deployment solution, such as deploying from Forestry, I have developed a more generic solution.
 
 [serverless-autopublish](https://github.com/dwalkr/serverless-autopublish) is an AWS Lambda task built with the [serverless framework](https://serverless.com/). Its purpose is very simple: it pushes a new commit to your GitHub repository at regular intervals. This will trigger any automated deployment you have configured as if you were updating the site manually.
 
 {{% tip %}}
-If your site is deployed by Forestry, be sure to select the *Deploy on Git Push* option in your site settings in order for your site to deploy when code is pushed to the repo.
+If your site is deployed by Forestry, be sure to select the _Deploy on Git Push_ option in your site settings in order for your site to deploy when code is pushed to the repo.
 {{% /tip %}}
+
+### Installation
+
+Follow the [serverless framework AWS quick start](https://serverless.com/framework/docs/providers/aws/guide/quick-start/) to install the framework and connect it to your AWS account.
+
+{{% tip %}}
+**How much is this gonna cost?**
+
+AWS Lambda has a generous free tier that allows up to 400,000 CPU-seconds of usage every month before you start incurring charges. If you run this task 4 times a day, you will stay within the free tier as long as the task completes in **under an hour**. That's a lifetime for a computer!
+
+Depending on the size of your repos, publishing can take several seconds. However, you can cap the execution time of your function: I have set it to 15 seconds, which is plenty of time for most use cases. 
+{{% /tip %}}
+
+This serverless function is written in Go, and uses the fantastic [go-git](https://github.com/src-d/go-git) library. 
+
+### Usage
+
+```
+serverless create --template-url https://github.com/dwalkr/serverless-autopublish --path autopublish
+```
+
+(or just fork the repo)
+
+... update serverless.yml ...
+
+```
+serverless deploy
+```
+
+```
+serverless invoke -f publish
+```
+
+```
+serverless remove
+```
+
+### Local Testing
+
+install go/godep
+update publish_test.go with test values
+cd publish/
+go test
