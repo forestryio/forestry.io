@@ -23,6 +23,8 @@ draft: true
 ---
 Theme used: hugo-base-theme https://themes.gohugo.io/hugo-base-theme/
 
+Add a github star button to the page
+
 A zero-configuration tool to set up a modern build pipeline for your static site.
 
 \[Hugo logo + Jekyll logo\]
