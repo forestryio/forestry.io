@@ -103,25 +103,55 @@ AWS Lambda has a generous free tier that allows up to 400,000 CPU-seconds of usa
 Depending on the size of your repos, publishing can take several seconds. However, you can cap the execution time of your function: I have set it to 15 seconds, which is plenty of time for most use cases. 
 {{% /tip %}}
 
-This serverless function is written in Go, and uses the fantastic [go-git](https://github.com/src-d/go-git) library. 
-
 ### Usage
 
+This serverless function is written in Go, and uses the fantastic [go-git](https://github.com/src-d/go-git) library. The project includes the compiled binaries for the AWS Lambda environment, so you don't need to have Go installed on your machine to deploy it.
+
+To get started, you can either fork the repo or initialize a new serverless project with this template:
+
 ```
-serverless create --template-url https://github.com/dwalkr/serverless-autopublish --path autopublish
+serverless create --template-url https://github.com/dwalkr/serverless-autopublish --path serverless-autopublish
 ```
 
-(or just fork the repo)
+Once the project is created, open the `serverless-autopublish` directory. The `serverless.yml` file is where you will configure your function. When you open it, you will see something like this:
 
-... update serverless.yml ...
+```
+functions:
+  publish:
+    handler: bin/publish
+    timeout: 15
+    events:
+      - schedule: rate(6 hours)
+    environment:
+      github_token: ${ssm:github_token}
+      author_name: your-author-name
+      author_email: your-author-email
+      repos: https://github.com/FIRST-REPO;https://github.com/SECOND-REPO
+```
+
+This configuration defines a function called `publish` that will run every hour. You can adjust this by modifying the `schedule` parameter.
+
+The variables in the `environment` section are passed to the function as environment variables. This is how we will configure the publisher. Change `author_name` and `author_email` to whatever you want, and add the repositories you want to publish to the `repos` variable. Separate multiple repos with a semicolon.
+
+#### Adding Your Github Access Token
+
+In order to authenticate with your Github account, you need to provide the function with an access token ([Github: creating a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)). Serverless provides functionality to retrieve values from the [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html), and our configuration will look for the token in here. 
+
+Log in to AWS and locate the Systems Manager service. Select **Parameter Store** and create a new parameter. The parameter name will be `github_token` and the value will be the token you requested from Github. Once your token is in Parameter Store, Serverless will automatically add it to your `serverless.yml` function when you deploy it.
+
+After you're satisfied with your configuration, run the following command to send your function to AWS:
 
 ```
 serverless deploy
 ```
 
+After the command finishes, your function is live! You can expect your repos to receive commits every six hours. If you want to run your function right away, run the following command:
+
 ```
 serverless invoke -f publish
 ```
+
+If you want to remove your function from AWS, use the `remove` command:
 
 ```
 serverless remove
