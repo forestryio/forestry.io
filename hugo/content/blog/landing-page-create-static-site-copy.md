@@ -23,13 +23,13 @@ draft: true
 ---
 Theme used: hugo-base-theme https://themes.gohugo.io/hugo-base-theme/
 
-A zero-configuration, modern, production-ready build pipeline for your static site
+A zero-configuration tool to set up a modern build pipeline for your static site.
 
 \[Hugo logo + Jekyll logo\]
 
 ## Easy Installation
 
-_(_[_npx_](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) _comes with npm 5.2+ and higher)_
+_(_[_npx_](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) _comes with npm 5.2 and higher)_
 
 ### Hugo
 
@@ -39,15 +39,15 @@ _(_[_npx_](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-5
 
 ### Jekyll
 
-_ruby and bundler required_
+_\[ruby\]() and \[bundler\]() required_
 
     npx create-static-site my-site --template jekyll
     cd my-site
     bundle install
     npm start
 
-Then open http://localhost:3000/ to see your site.  
-  
+Then open http://localhost:3000/ to see your site.
+
 \[Link to FEF Tutorial\] – A guide on why and how to use CSS for your modern web development workflow
 
 ## Modern Asset Pipeline
@@ -56,7 +56,7 @@ Add modern web development tools to your website with CLI.
 
 ### Cross-browser and legacy browser support
 
-Automatically autoprefix your CSS to work across different browsers and versions.
+Babel and CSSNext process ensure that your JavaScript and CSS works as expected across different browsers and versions.
 
 ### Live-Reloading via BrowserSync
 
@@ -68,7 +68,7 @@ Organize your code in modules, use the latest JavaScript language features and m
 
 ### Optimize Images
 
-Images are automatically optimized and SVG are compressed in a single spritesheet.
+Images are automatically optimized and SVG are combined into a single spritesheet.
 
 \[Link Documentation - doesn't exist but probably necessary\] – A complete list of features and comprehensive guide
 
