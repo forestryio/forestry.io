@@ -31,6 +31,8 @@ A zero-configuration, modern, production-ready build pipeline for your static si
 
 ## Easy Installation
 
+_(_[_npx_](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) _comes with npm 5.2+ and higher)_
+
 ### Hugo
 
 `npx create-static-site my-site --template hugo`
@@ -39,18 +41,20 @@ A zero-configuration, modern, production-ready build pipeline for your static si
 
 ### Jekyll
 
+_ruby and bundler required_
+
 `npx create-static-site my-site --template jekyll`
 `cd my-site`
 `bundle install`
 `npm start`
 
-_ruby and bundler required_
+Then open http://localhost:3000/ to see your site.
 
 ## Modern Asset Pipeline
 
 Add modern web development tools to your website with CLI.
 
-### Cross-browser and legacy browser support 
+### Cross-browser and legacy browser support
 
 Automatically autoprefix your CSS to work across different browsers and versions.
 
