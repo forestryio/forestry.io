@@ -29,7 +29,7 @@ Part of our mission at Forestry is to dissolve the perceived limitations of stat
 
 This perspective is core to the philosophy at Forestry. Our content editor takes advantage of this simplicity and interoperability, acting as an additional layer on top of the existing static site machinery. When a site is hooked up to Forestry, it can still be edited in a local development environment as usual. We don't have to rewire anything about how the site works.
 
-Today, we will tackle a basic feature {...}
+Today, we will tackle a basic feature: publishing scheduled content. This would be useful, for example, if you were going on vacation 
 
 ## The Old Way
 
@@ -41,14 +41,55 @@ Scheduling posts is easy when using a database-driven, backend-heavy CMS like Wo
 
 ## Statelessness is Next to Godliness
 
-At first, adding dynamic behaviors to a static site {...}
+Surely, you could use another dynamic CMS that doesn't have the same scheduling issues as WordPress. However, they all share the same problem: they need to react to *changes in state*. 
 
-> Build the site that everyone will see. Only include posts with a publish date of right now, or some time in the past. 
+Our static site knows how to handle future posts by following a very simple algorithm during the build process:
 
-If I want to publish a post tomorrow, I will just re-run this algorithm tomorrow.
+> If the post's publish date is right now or some time in the past, build it into the site. If not, leave it alone.
+
+We can conceive of a very simple procedure for publishing posts in the future by ensuring that we automatically run this build process, and handle the subsequent deployment, at a regular interval.
+
 
 ## Building the Solution
 
 ### Scheduled Deployments with CircleCI
 
+If you're already using CircleCI to build and deploy your site, you can achieve this by adding a few extra lines to your CircleCI configuration at `.circleci/config.yml`.
+
+If you don't have an automated build and deploy process for your static site, take a look at our tutorial on [setting up an automatic static site deployment with CircleCI](https://forestry.io/blog/automate-deploy-w-circle-ci/).
+
+We can use CircleCI's [workflows](https://circleci.com/docs/2.0/workflows/) feature to schedule recurring automatic deployment of our site. To do this, we just have to add a new section to our `.circleci/config.yml` file with the following info:
+
+```
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - build
+  autopublish:
+    triggers:
+      - schedule:
+          cron: "0 */6 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
+```
+
+This creates two workflows: one called `build_test_deploy`, and one called `autopublish`. We need to create the `build_test_deploy` workflow to preserve the automatic deployment behavior, since CircleCI won't do that by default if you have `workflows` defined.
+
+The `autopublish` workflow runs the same `build` job, but we have configured it to run on a schedule using `triggers`, and to only run this on the master branch.
+
+The `cron` parameter accents crontab syntax to determine the interval between deployments. Our example uses `0 */6 * * *` which means to run it once every 6 hours. Feel free to tweak this to suit your publishing schedule.
+
 ### Use a Lambda Task to Trigger Your Build
+
+If you are using a different deployment solution, such as deploying from Forestry, I have developed a more generic solution.
+
+[serverless-autopublish](https://github.com/dwalkr/serverless-autopublish) is an AWS Lambda task built with the [serverless framework](https://serverless.com/). Its purpose is very simple: it pushes a new commit to your GitHub repository at regular intervals. This will trigger any automated deployment you have configured as if you were updating the site manually.
+
+{{% tip %}}
+If your site is deployed by Forestry, be sure to select the *Deploy on Git Push* option in your site settings in order for your site to deploy when code is pushed to the repo.
+{{% /tip %}}
