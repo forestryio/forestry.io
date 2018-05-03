@@ -56,7 +56,7 @@ Add modern web development tools to your website with CLI.
 
 ### Cross-browser and legacy browser support
 
-Babel and CSSNext process ensure that your JavaScript and CSS works as expected across different browsers and versions.
+JavaScript and CSS are optimized using Babel and CSSNext to make sure your site works as expected across browsers and versions.
 
 ### Live-Reloading via BrowserSync
 
