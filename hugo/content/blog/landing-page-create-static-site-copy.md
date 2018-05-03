@@ -58,7 +58,7 @@ Add modern web development tools to your website with CLI.
 
 Automatically autoprefix your CSS to work across different browsers and versions.
 
-###### Live-Reloading via BrowserSync
+### Live-Reloading via BrowserSync
 
 Automatically reload the browser window when changes are detected.
 
