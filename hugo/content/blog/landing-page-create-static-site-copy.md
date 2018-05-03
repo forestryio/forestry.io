@@ -70,7 +70,7 @@ Organize your code in modules, use the latest JavaScript language features and m
 
 Images are automatically optimized and SVG are compressed in a single spritesheet.
 
-\[Link Documentation\] – A complete list of features and detailed installation guide
+\[Link Documentation\] – A complete list of features and comprehensive guide
 
 ## Hassle-free Updates
 
