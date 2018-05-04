@@ -1,5 +1,5 @@
 ---
-title: 'Beyond Static: Publishing Scheduled Posts'
+title: Automatically Publish Scheduled Posts For Your Static Site
 description: ''
 date: 2018-05-03 07:10:15 -1100
 authors:
