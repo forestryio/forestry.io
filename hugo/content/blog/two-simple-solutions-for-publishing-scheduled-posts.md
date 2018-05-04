@@ -7,6 +7,7 @@ authors:
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
+- Beyond Static
 - Frontend-Friday
 headline: ''
 textline: ''
@@ -23,11 +24,14 @@ menu: []
 draft: true
 
 ---
-Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with. Suggesting that a statically-generated site isn't capable of *feature X* is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform. 
+Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that a static site isn't capable of *feature X* is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
 
-This perspective is core to our philosophy. Forestry's editor is an interface on top of your static site, but works by updating content the same way a human editor would, using the built-in features of the platform. Forestry is friendly to a variety of workflows: you can continue editing content files in your local development environment if you really want, without needing to know whether the site is hooked up to Forestry.
+This perspective is core to our philosophy. Forestry's editor is an interface on top of your static site, but works by updating content the same way a human editor would, using the built-in features of the platform. Forestry is friendly to a variety of workflows: you can continue editing content files in your local development environment if you really want, without needing to know whether the site is hooked up to Forestry. You can think of Forestry itself as an extension to your static site.
 
-Today, we will tackle a basic feature of dynamic sites: publishing scheduled content.
+Previously, we showed you [how to set up Algolia with Jekyll](https://forestry.io/blog/search-with-algolia-in-jekyll/) as well as [with Hugo](https://forestry.io/blog/search-with-algolia-in-hugo/) to make your content searchable. Today, we will tackle a basic feature of dynamic sites: publishing scheduled content. This article will present two options for achieving this:
+
+1. [Extending your CircleCI configuration](#option-1-scheduling-deployments-with-circleci), for projects deployed via CircleCI
+2. [Using a serverless function](#option-2-using-a-lambda-task-to-trigger-your-build)
 
 ## The Old Way
 
@@ -160,4 +164,4 @@ serverless remove
 
 ## Go Beyond
 
-Our scheduled post solution is pretty basic, but effective. Using serverless strategies and build automation, we can start to reimagine what static sites are capable of.
+Our scheduled post solution is pretty basic, but effective. Using strategies like serverless functions and build automation, we can start to reimagine what static sites are capable of.
