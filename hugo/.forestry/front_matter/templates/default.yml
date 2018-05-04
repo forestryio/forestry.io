@@ -102,6 +102,7 @@ fields:
     - Static Site Generators
     - Company
     - Frontend-Friday
+    - Beyond Static
 - type: tag_list
   name: tags
   label: Tags
