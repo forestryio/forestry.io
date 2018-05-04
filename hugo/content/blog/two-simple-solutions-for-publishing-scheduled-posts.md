@@ -24,7 +24,7 @@ menu: []
 draft: true
 
 ---
-Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that a static site isn't capable of *feature X* is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
+Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that static sites are not capable of *feature X* is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
 
 This perspective is core to our philosophy. Forestry's editor is an interface on top of your static site, but works by updating content the same way a human editor would, using the built-in features of the platform. Forestry is friendly to a variety of workflows: you can continue editing content files in your local development environment if you really want, without needing to know whether the site is hooked up to Forestry. You can think of Forestry itself as an extension to your static site.
 
