@@ -129,7 +129,7 @@ Once the project is created, open the `serverless-autopublish` directory. The `s
 
 This configuration defines a function called `publish` that will run every hour. You can adjust this by modifying the `schedule` parameter.
 
-The variables in the `environment` section are passed to the function as environment variables. This is how we will configure the publisher. Change `author_name` and `author_email` to whatever you want, and add the repositories you want to publish to the `repos` variable. Separate multiple repos with a semicolon.
+The variables in the `environment` section are passed to the function as environment variables. This is how we will configure the publisher. Change `author_name` and `author_email` to your desired Git signature, and add the repositories you want to publish to the `repos` variable. Separate multiple repos with a semicolon.
 
 #### Adding Your Github Access Token
 
