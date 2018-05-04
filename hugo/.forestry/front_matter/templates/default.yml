@@ -13,10 +13,10 @@ pages:
 - careers/admin.md
 - careers/devrel.md
 - careers/_index.md
-- blog/what-s-new-in-jekyll-3.8.md
-- blog/two-simple-solutions-for-publishing-scheduled-posts.md
-- blog/landing-page-create-static-site-copy.md
+- blog/up-and-running-with-hugo.md
 - blog/instant-production-ready-scaffolding-with-create-static-site.md
+- blog/what-s-new-in-jekyll-3.8.md
+- blog/landing-page-create-static-site-copy.md
 - blog/sawmill-layout-composer-for-hugo-and-forestry.md
 - blog/sawmill-a-layout-composer-for-hugo-and-forestry.md
 - blog/search-with-algolia-in-hugo.md
@@ -27,7 +27,6 @@ pages:
 - blog/build-a-json-api-with-hugo.md
 - blog/test.md
 - blog/new-pricing-organization-accounts.md
-- blog/up-and-running-with-hugo.md
 - blog/why-we-built-forestry.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/the-new-forestry-io.md
