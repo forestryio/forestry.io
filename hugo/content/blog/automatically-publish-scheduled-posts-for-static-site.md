@@ -44,7 +44,7 @@ Maybe it's not that easy.
 
 ## Statelessness is Next to Godliness
 
-Static sites are inherently _stateless_. They can't respond to or even keep track of changes in state. The HTML payload delivered to a user can't make decisions based on what time it is, or where the user is located. Everbody gets the same page, all the time.
+Static sites are inherently _stateless_. They can't respond to or even keep track of changes in state. The HTML payload delivered to a user can't make decisions based on what time it is, or where the user is located. Everybody gets the same page, all the time.
 
 This stateless nature makes our site very easy to understand and reason about. Our static site generator knows how to handle future posts by following a very simple algorithm during the build process:
 
