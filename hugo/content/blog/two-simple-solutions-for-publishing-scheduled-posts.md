@@ -23,11 +23,11 @@ menu: []
 draft: true
 
 ---
-Part of our mission at Forestry is to dissolve the perceived limitations of static sites. The reality is that static sites are relatively simple to interoperate with, and suggesting that a statically-generated site isn't capable of _feature X_ is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
+Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with. Suggesting that a statically-generated site isn't capable of *feature X* is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform. 
 
-This perspective is core to the philosophy at Forestry. Our content editor takes advantage of this simplicity and interoperability, acting as an additional layer on top of the existing static site machinery. When a site is hooked up to Forestry, it can still be edited in a local development environment as usual. We don't have to rewire anything about how the site works.
+This perspective is core to our philosophy. Forestry's editor is an interface on top of your static site, but works by updating content the same way a human editor would, using the built-in features of the platform. Forestry is friendly to a variety of workflows: you can continue editing content files in your local development environment if you really want, without needing to know whether the site is hooked up to Forestry.
 
-Today, we will tackle a basic feature: publishing scheduled content. 
+Today, we will push past static site limitations by tackling a basic feature: publishing scheduled content.
 
 ## The Old Way
 
@@ -41,11 +41,11 @@ Maybe it's not that easy.
 
 ## Statelessness is Next to Godliness
 
-Surely, you could use another dynamic CMS that doesn't have the same scheduling issues as WordPress. However, they all share the same problem: they need to react to _changes in state_.
+Static sites are inherently *stateless*. They can't respond to or even keep track of changes in state. The HTML payload delivered to a user can't make decisions based on what time it is, or where the user is located. Everbody gets the same page, all the time.
 
-Our static site knows how to handle future posts by following a very simple algorithm during the build process:
+This stateless nature makes our site very easy to understand and reason about. Our static site knows how to handle future posts by following a very simple algorithm during the build process:
 
-> If the post's publish date is right now or some time in the past, build it into the site. If not, leave it alone.
+> If the post's publish date is right now or some time in the past, build it into the site. <br />If not, leave it alone.
 
 We can conceive of a very simple procedure for publishing posts in the future by ensuring that we automatically run this build process, and handle the subsequent deployment, at a regular interval.
 
@@ -97,7 +97,7 @@ Follow the [serverless framework AWS quick start](https://serverless.com/framewo
 **Lambda Pricing**
 <br /><br />
 AWS Lambda has a generous free tier that allows up to 400,000 CPU seconds of usage every month before you start incurring charges. If you run this task 4 times a day, you will stay within the free tier as long as the task completes in under an hour. (That's a really long time.)
-
+<br /><br />
 Depending on the size of your repos, publishing can take several seconds. However, you can cap the execution time of your function: I have set it to 15 seconds, which is plenty of time for most use cases.
 {{% /tip %}}
 
@@ -146,7 +146,7 @@ After you're satisfied with your configuration, run the following command to sen
 serverless deploy
 ```
 
-After the command finishes, your function is live! You can expect your repos to receive commits every six hours. If you want to run your function right away, run the following command:
+After the command finishes, your function is live! You can expect your repos to start receiving commits according to the schedule you configured in the `serverless.yml` file. You can run the function immediately with the following command:
 
 ```
 serverless invoke -f publish
@@ -157,4 +157,3 @@ If you want to remove your function from AWS, use the `remove` command:
 ```
 serverless remove
 ```
-
