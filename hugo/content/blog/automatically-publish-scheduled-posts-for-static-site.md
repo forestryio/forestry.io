@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
 
 ---
 Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that static sites are not capable of _feature X_ is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
