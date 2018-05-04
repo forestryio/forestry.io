@@ -158,7 +158,7 @@ If you want to remove your function from AWS, use the `remove` command:
 
 Our scheduled post solution is pretty basic, but effective. Using strategies like serverless functions and build automation, we can start to reimagine what static sites are capable of.
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you how to create a static e-commerce site.</p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/">Create Static Site</a> to bootstrap a production-ready static site project.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look at what's new in the latest Jekyll update.</p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/">Create Static Site</a> to bootstrap a production-ready static site project.</p></div>
 
 <!--
 
