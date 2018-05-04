@@ -21,6 +21,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+draft: true
 
 ---
 Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that static sites are not capable of _feature X_ is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
@@ -158,10 +159,7 @@ Our scheduled post solution is pretty basic, but effective. Using strategies lik
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look at what's new in the latest Jekyll update.</p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/">Create Static Site</a> to bootstrap a production-ready static site project.</p></div>
 
-<!--
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16941327">Discuss on Hacker News</a>
-
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16995570">Discuss on Hacker News</a>
