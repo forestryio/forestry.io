@@ -1,5 +1,5 @@
 ---
-title: Two Simple Solutions for Publishing Scheduled Posts
+title: 'Beyond Static: Publishing Scheduled Posts'
 description: ''
 date: 2018-05-03 07:10:15 -1100
 authors:
@@ -23,13 +23,11 @@ menu: []
 draft: true
 
 ---
-## Going Beyond Static
-
 Part of our mission at Forestry is to dissolve the perceived limitations of static sites. The reality is that static sites are relatively simple to interoperate with, and suggesting that a statically-generated site isn't capable of _feature X_ is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
 
 This perspective is core to the philosophy at Forestry. Our content editor takes advantage of this simplicity and interoperability, acting as an additional layer on top of the existing static site machinery. When a site is hooked up to Forestry, it can still be edited in a local development environment as usual. We don't have to rewire anything about how the site works.
 
-Today, we will tackle a basic feature: publishing scheduled content. This would be useful, for example, if you were going on vacation
+Today, we will tackle a basic feature: publishing scheduled content. 
 
 ## The Old Way
 
@@ -51,7 +49,7 @@ Our static site knows how to handle future posts by following a very simple algo
 
 We can conceive of a very simple procedure for publishing posts in the future by ensuring that we automatically run this build process, and handle the subsequent deployment, at a regular interval.
 
-## Scheduling Deployments with CircleCI
+## Option 1: Scheduling Deployments with CircleCI
 
 If you're already using CircleCI to build and deploy your site, you can achieve this by adding a few extra lines to your CircleCI configuration at `.circleci/config.yml`.
 
@@ -81,7 +79,7 @@ The `autopublish` workflow runs the same `build` job, but we have configured it 
 
 The `cron` parameter accepts crontab syntax to determine the interval between deployments. Our example deploys every 6 hours. Feel free to tweak this to suit your publishing schedule.
 
-## Using a Lambda Task to Trigger Your Build
+## Option 2: Using a Lambda Task to Trigger Your Build
 
 If you are using a different deployment solution, such as deploying from Forestry, I have developed a more generic solution.
 
@@ -96,11 +94,11 @@ If your site is deployed by Forestry, be sure to select the _Deploy on Git Push_
 Follow the [serverless framework AWS quick start](https://serverless.com/framework/docs/providers/aws/guide/quick-start/) to install the framework and connect it to your AWS account.
 
 {{% tip %}}
-**How much is this gonna cost?**
+**Lambda Pricing**
+<br /><br />
+AWS Lambda has a generous free tier that allows up to 400,000 CPU seconds of usage every month before you start incurring charges. If you run this task 4 times a day, you will stay within the free tier as long as the task completes in under an hour. (That's a really long time.)
 
-AWS Lambda has a generous free tier that allows up to 400,000 CPU-seconds of usage every month before you start incurring charges. If you run this task 4 times a day, you will stay within the free tier as long as the task completes in **under an hour**. That's a lifetime for a computer!
-
-Depending on the size of your repos, publishing can take several seconds. However, you can cap the execution time of your function: I have set it to 15 seconds, which is plenty of time for most use cases. 
+Depending on the size of your repos, publishing can take several seconds. However, you can cap the execution time of your function: I have set it to 15 seconds, which is plenty of time for most use cases.
 {{% /tip %}}
 
 ### Usage
@@ -139,6 +137,9 @@ In order to authenticate with your Github account, you need to provide the funct
 
 Log in to AWS and locate the Systems Manager service. Select **Parameter Store** and create a new parameter. The parameter name will be `github_token` and the value will be the token you requested from Github. Once your token is in Parameter Store, Serverless will automatically add it to your `serverless.yml` function when you deploy it.
 
+
+#### Deploy and Run
+
 After you're satisfied with your configuration, run the following command to send your function to AWS:
 
 ```
@@ -157,9 +158,3 @@ If you want to remove your function from AWS, use the `remove` command:
 serverless remove
 ```
 
-### Local Testing
-
-install go/godep
-update publish_test.go with test values
-cd publish/
-go test
