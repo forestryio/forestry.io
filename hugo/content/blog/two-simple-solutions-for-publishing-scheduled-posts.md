@@ -11,7 +11,8 @@ categories:
 - Frontend-Friday
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/05/burning_newspaper.jpg"
 tags: []
 cta:
   headline: ''
@@ -24,7 +25,7 @@ menu: []
 draft: true
 
 ---
-Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that static sites are not capable of *feature X* is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
+Part of our mission at Forestry is to dissolve the perceived limitations of static sites. In reality, static sites are easy to understand and integrate with, and the belief that static sites are not capable of _feature X_ is largely a failure of imagination. With a little cleverness and determination, virtually anything is possible on a static platform.
 
 This perspective is core to our philosophy. Forestry's editor is an interface on top of your static site, but works by updating content the same way a human editor would, using the built-in features of the platform. Forestry is friendly to a variety of workflows: you can continue editing content files in your local development environment if you really want, without needing to know whether the site is hooked up to Forestry. You can think of Forestry itself as an extension to your static site.
 
@@ -39,13 +40,15 @@ Scheduling posts is easy when using a database-driven, backend-heavy CMS like Wo
 
 **Actually, hang on.** If you're using a page cache plugin (which is essential to keep the site running fast,) you will probably need to clear the cache once the post is published. Once you figure out how to clear the page cache at regular intervals, you can sit back and let your scheduled posts publish themselves automatically.
 
+![](/uploads/2018/05/wp-missed-schedule-ss.png)
+
 **Ah, but maybe not.** Sometimes WordPress will give you a _Missed Schedule_ error and won't publish the post! Go ahead and spend the rest of your day sorting that one out.
 
 Maybe it's not that easy.
 
 ## Statelessness is Next to Godliness
 
-Static sites are inherently *stateless*. They can't respond to or even keep track of changes in state. The HTML payload delivered to a user can't make decisions based on what time it is, or where the user is located. Everbody gets the same page, all the time.
+Static sites are inherently _stateless_. They can't respond to or even keep track of changes in state. The HTML payload delivered to a user can't make decisions based on what time it is, or where the user is located. Everbody gets the same page, all the time.
 
 This stateless nature makes our site very easy to understand and reason about. Our static site generator knows how to handle future posts by following a very simple algorithm during the build process:
 
@@ -111,25 +114,21 @@ This serverless function is written in Go, and uses the fantastic [go-git](https
 
 To get started, you can either fork the repo or initialize a new serverless project with this template:
 
-```
-serverless create --template-url https://github.com/dwalkr/serverless-autopublish --path serverless-autopublish
-```
+    serverless create --template-url https://github.com/dwalkr/serverless-autopublish --path serverless-autopublish
 
 Once the project is created, open the `serverless-autopublish` directory. The `serverless.yml` file is where you will configure your function. When you open it, you will see something like this:
 
-```
-functions:
-  publish:
-    handler: bin/publish
-    timeout: 15
-    events:
-      - schedule: rate(6 hours)
-    environment:
-      github_token: ${ssm:github_token}
-      author_name: your-author-name
-      author_email: your-author-email
-      repos: https://github.com/FIRST-REPO;https://github.com/SECOND-REPO
-```
+    functions:
+      publish:
+        handler: bin/publish
+        timeout: 15
+        events:
+          - schedule: rate(6 hours)
+        environment:
+          github_token: ${ssm:github_token}
+          author_name: your-author-name
+          author_email: your-author-email
+          repos: https://github.com/FIRST-REPO;https://github.com/SECOND-REPO
 
 This configuration defines a function called `publish` that will run every hour. You can adjust this by modifying the `schedule` parameter.
 
@@ -137,31 +136,36 @@ The variables in the `environment` section are passed to the function as environ
 
 #### Adding Your Github Access Token
 
-In order to authenticate with your Github account, you need to provide the function with an access token ([Github: creating a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)). Serverless provides functionality to retrieve values from the [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html), and our configuration will look for the token in here. 
+In order to authenticate with your Github account, you need to provide the function with an access token ([Github: creating a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)). Serverless provides functionality to retrieve values from the [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html), and our configuration will look for the token in here.
+
+![](/uploads/2018/05/parameter_store_ss.png)
 
 Log in to AWS and locate the Systems Manager service. Select **Parameter Store** and create a new parameter. The parameter name will be `github_token` and the value will be the token you requested from Github. Once your token is in Parameter Store, Serverless will automatically add it to your `serverless.yml` configuration when you deploy it.
-
 
 #### Deploy and Run
 
 After you're satisfied with your configuration, run the following command to send your function to AWS:
 
-```
-serverless deploy
-```
+    serverless deploy
 
 After the command finishes, your function is live! You can expect your repos to start receiving commits according to the schedule you configured in the `serverless.yml` file. You can run the function immediately with the following command:
 
-```
-serverless invoke -f publish
-```
+    serverless invoke -f publish
 
 If you want to remove your function from AWS, use the `remove` command:
 
-```
-serverless remove
-```
+    serverless remove
 
 ## Go Beyond
 
 Our scheduled post solution is pretty basic, but effective. Using strategies like serverless functions and build automation, we can start to reimagine what static sites are capable of.
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you how to create a static e-commerce site.</p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/">Create Static Site</a> to bootstrap a production-ready static site project.</p></div>
+
+<!--
+
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16941327">Discuss on Hacker News</a>
+
+-->
