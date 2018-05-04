@@ -27,7 +27,7 @@ Part of our mission at Forestry is to dissolve the perceived limitations of stat
 
 This perspective is core to our philosophy. Forestry's editor is an interface on top of your static site, but works by updating content the same way a human editor would, using the built-in features of the platform. Forestry is friendly to a variety of workflows: you can continue editing content files in your local development environment if you really want, without needing to know whether the site is hooked up to Forestry.
 
-Today, we will push past static site limitations by tackling a basic feature: publishing scheduled content.
+Today, we will tackle a basic feature of dynamic sites: publishing scheduled content.
 
 ## The Old Way
 
@@ -43,7 +43,7 @@ Maybe it's not that easy.
 
 Static sites are inherently *stateless*. They can't respond to or even keep track of changes in state. The HTML payload delivered to a user can't make decisions based on what time it is, or where the user is located. Everbody gets the same page, all the time.
 
-This stateless nature makes our site very easy to understand and reason about. Our static site knows how to handle future posts by following a very simple algorithm during the build process:
+This stateless nature makes our site very easy to understand and reason about. Our static site generator knows how to handle future posts by following a very simple algorithm during the build process:
 
 > If the post's publish date is right now or some time in the past, build it into the site. <br />If not, leave it alone.
 
@@ -158,3 +158,6 @@ If you want to remove your function from AWS, use the `remove` command:
 serverless remove
 ```
 
+## Go Beyond
+
+Our scheduled post solution is pretty basic, but effective. Using serverless strategies and build automation, we can start to reimagine what static sites are capable of.
