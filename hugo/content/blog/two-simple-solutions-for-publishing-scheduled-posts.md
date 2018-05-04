@@ -157,3 +157,4 @@ If you want to remove your function from AWS, use the `remove` command:
 ```
 serverless remove
 ```
+
