@@ -135,7 +135,7 @@ The variables in the `environment` section are passed to the function as environ
 
 In order to authenticate with your Github account, you need to provide the function with an access token ([Github: creating a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)). Serverless provides functionality to retrieve values from the [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html), and our configuration will look for the token in here. 
 
-Log in to AWS and locate the Systems Manager service. Select **Parameter Store** and create a new parameter. The parameter name will be `github_token` and the value will be the token you requested from Github. Once your token is in Parameter Store, Serverless will automatically add it to your `serverless.yml` function when you deploy it.
+Log in to AWS and locate the Systems Manager service. Select **Parameter Store** and create a new parameter. The parameter name will be `github_token` and the value will be the token you requested from Github. Once your token is in Parameter Store, Serverless will automatically add it to your `serverless.yml` configuration when you deploy it.
 
 
 #### Deploy and Run
