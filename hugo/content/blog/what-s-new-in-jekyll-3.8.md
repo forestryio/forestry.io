@@ -24,7 +24,7 @@ draft: true
 ---
 # What’s new in Jekyll 3.8
 
-Jekyll 3.8.1 was released on the 1st of May 2018, just two weeks after 3.8.0. The project has come along way since I last wrote a [Jekyll update on Forestry](https://forestry.io/blog/what-s-new-in-jekyll-3-4-0/){:target="_blank"}. [Olivia](https://liv.cat/){:target="_blank"} is now Jekyll’s new [Lead Developer](https://jekyllrb.com/news/2018/02/19/meet-jekyll-s-new-lead-developer/){:target="_blank"} since Parker Moore decided to step down after four years leading the project.
+Jekyll 3.8.1 was released on the 1st of May 2018, just two weeks after 3.8.0. The project has come along way since I last wrote a [Jekyll update on Forestry](https://forestry.io/blog/what-s-new-in-jekyll-3-4-0/). [Olivia](https://liv.cat/) is now Jekyll’s new [Lead Developer](https://jekyllrb.com/news/2018/02/19/meet-jekyll-s-new-lead-developer/) since Parker Moore decided to step down after four years leading the project.
 
 So what does Jekyll bring us this time?
 
@@ -40,17 +40,17 @@ On i18n websites, some users have reported an amazing significant decrease in th
 
 Jekyll also now calculates `site.related_posts` only when needed and way more efficiently. It’s only noticeable if you have thousands of posts.
 
-Let’s test this with [a blog with more than 2200 posts](https://github.com/tomjoht/tomjoht.github.io){:target="_blank"} and some default plugins.
+Let’s test this with [a blog with more than 2200 posts](https://github.com/tomjoht/tomjoht.github.io) and some default plugins.
 
 ![](/uploads/2018/05/total-build-times.png)
 
-[https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/")[{:target="_blank"}](https://idratherbewriting.com/%7B:target=%22_blank%22%7D) took on average around 140s to build with Jekyll 3.7.3.
+[https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/")[](https://idratherbewriting.com/%7B:target=%22_blank%22%7D) took on average around 140s to build with Jekyll 3.7.3.
 
 Now it takes around 112s with 3.8.0. That’s a 20% decrease! :blush:
 
 Your mileage may vary depending on your layouts, the plugins used, and the size of your website.
 
-[My minimal and tiny blog](http://desiredpersona.com/){:target="_blank"} now builds  in 1.76 seconds which is merely 0.02 seconds faster on average. Don’t expect a major speed improvement for such a small website.
+[My minimal and tiny blog](http://desiredpersona.com/) now builds  in 1.76 seconds which is merely 0.02 seconds faster on average. Don’t expect a major speed improvement for such a small website.
 
 ## Ordinal dates support
 
@@ -106,25 +106,25 @@ It turns out I have a `{{ page.subtitle }}` variable in my `post.html` layout te
 
 Ruby installation is certainly the most frustrating part and biggest paint point for beginners.
 
-It’s now much easier to get started [installing Jekyll on macOS](https://jekyllrb.com/docs/installation/#macOS){:target="_blank"} [Ubuntu](https://jekyllrb.com/docs/installation/#ubuntu){:target="_blank"} or [Windows](https://jekyllrb.com/docs/windows/#installation-via-rubyinstaller){:target="_blank"} using the official instructions.
+It’s now much easier to get started [installing Jekyll on macOS](https://jekyllrb.com/docs/installation/#macOS) [Ubuntu](https://jekyllrb.com/docs/installation/#ubuntu) or [Windows](https://jekyllrb.com/docs/windows/#installation-via-rubyinstaller) using the official instructions.
 
-You may also want to read over this [new tutorial to help you use bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/){:target="_blank"} to handle your Ruby gems in your Jekyll’s projects. Alternatively you may be interested in Forestry’s [create static site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/){:target="_blank"} a tool that can set up a new Hugo or Jekyll site with a modern, production-ready build pipeline in seconds.
+You may also want to read over this [new tutorial to help you use bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to handle your Ruby gems in your Jekyll’s projects. Alternatively you may be interested in Forestry’s [create static site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) a tool that can set up a new Hugo or Jekyll site with a modern, production-ready build pipeline in seconds.
 
-If you are looking to add search to your static site, give jekyll-algolia plugin a try. Algolia have provided great documentation which includes a live demo to get you up and running quickly with [Algolia search for Jekyll](https://community.algolia.com/jekyll-algolia/getting-started.html){:target="_blank"}.
+If you are looking to add search to your static site, give jekyll-algolia plugin a try. Algolia have provided great documentation which includes a live demo to get you up and running quickly with [Algolia search for Jekyll](https://community.algolia.com/jekyll-algolia/getting-started.html).
 
-Search has been successfully implemented on [http://yeoman.io/generators/](http://yeoman.io/generators/ "http://yeoman.io/generators/")[{:target="_blank"}](http://yeoman.io/generators/%7B:target=%22_blank%22%7D) and [https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/") {:target="_blank"} if you want to give it a try.
+Search has been successfully implemented on [http://yeoman.io/generators/](http://yeoman.io/generators/ "http://yeoman.io/generators/")[](http://yeoman.io/generators/%7B:target=%22_blank%22%7D) and [https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/")  if you want to give it a try.
 
-Chris Macrae has also previously covered [Jekyll Search with Algolia and Webtasks](https://forestry.io/blog/search-with-algolia-in-jekyll/){:target="_blank"} on the Forestry blog. I highly recommend you check it out.
+Chris Macrae has also previously covered [Jekyll Search with Algolia and Webtasks](https://forestry.io/blog/search-with-algolia-in-jekyll/) on the Forestry blog. I highly recommend you check it out.
 
-[Premonition](https://github.com/amedia/premonition){:target="_blank"} is a Jekyll plugin by Amedia that can transform Markdown blockquotes into styled blocks of code. This plugin makes adding notices to your Jekyll site a breeze. Check out [the demo site](https://amedia.github.io/premonition-demo/){:target="_blank"}.
+[Premonition](https://github.com/amedia/premonition) is a Jekyll plugin by Amedia that can transform Markdown blockquotes into styled blocks of code. This plugin makes adding notices to your Jekyll site a breeze. Check out [the demo site](https://amedia.github.io/premonition-demo/).
 
 ## What’s next?
 
-Development of [Jekyll 4.0 has started](https://jekyllrb.com/news/2018/04/19/development-update/){:target="_blank"}, so now is the right time to [share your ideas](https://github.com/jekyll/jekyll/issues/6948){:target="_blank"} for the next major version. We should see some improvements on the incremental regeneration, smarter URL filters and hopefully a more coherent way to manage posts, pages and collection’s documents.
+Development of [Jekyll 4.0 has started](https://jekyllrb.com/news/2018/04/19/development-update/), so now is the right time to [share your ideas](https://github.com/jekyll/jekyll/issues/6948) for the next major version. We should see some improvements on the incremental regeneration, smarter URL filters and hopefully a more coherent way to manage posts, pages and collection’s documents.
 
 An official directory to allow to search for plugins and open source gem-based themes is also in the work.
 
-If you would like to get involved with the project check out Jekyll’s [contributor](https://jekyllrb.com/docs/contributing/){:target="_blank"} and [maintaining](https://jekyllrb.com/docs/maintaining/){:target="_blank"} docs for ways to contribute.
+If you would like to get involved with the project check out Jekyll’s [contributor](https://jekyllrb.com/docs/contributing/) and [maintaining](https://jekyllrb.com/docs/maintaining/) docs for ways to contribute.
 
 Please share if you found this post helpful and let us know if you’d like to see more of these updates.
 
