@@ -1,5 +1,5 @@
 ---
-title: 2018/2/2 Changelog
+title: 2018-2-2 Changelog
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
