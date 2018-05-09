@@ -1,0 +1,25 @@
+---
+pages:
+- blocks.md
+- another-landing-page.md
+- landing-page-test.md
+- test-landing-page.md
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - create-site-button-js
+  - call-to-action
+  - feature
+  - hero
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: blocks
