@@ -1,8 +1,7 @@
 ---
-title: 2018-05-09 Changelog
+title: 2018-05-08 00:00:00 +0000
 date: 2018-05-09 03:47:28 -1100
 aliases: []
-type: ''
 authors: []
 publishdate: ''
 expirydate: ''
