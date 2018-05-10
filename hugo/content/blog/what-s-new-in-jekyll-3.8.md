@@ -1,15 +1,20 @@
 ---
 title: What's New in Jekyll 3.8
-description: ''
-date: 2018-05-03 08:14:47 -1100
-authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+description: Jekyll 3.8.1 was released on the 1st of May 2018, just two weeks after
+  3.8.0. The project has come along way since I last wrote a Jekyll update on Forestry.
+  So what does Jekyll bring us this time?
+date: 2018-05-11 08:14:47 -1100
+authors:
+- Colin Garvey
+publishdate: 2018-05-10 16:00:00 -1100
+expirydate: 2029-12-31 17:00:00 -1100
 images:
 - "/uploads/2017/12/jekyll-3.4.0-2.png"
 headline: ''
 textline: ''
-categories: []
+categories:
+- Frontend-Friday
+- Jekyll
 tags: []
 cta:
   headline: ''
