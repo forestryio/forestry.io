@@ -48,7 +48,7 @@ Let’s test this with [a blog with more than 2200 posts](https://github.com/tom
 
 ![](/uploads/2018/05/total-build-times.png)
 
-[https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/") took on average around 140s to build with Jekyll 3.7.3.
+[https://idratherbewriting.com/](https://idratherbewriting.com/)took on average around 140s to build with Jekyll 3.7.3.
 
 Now it takes around 112s with 3.8.0. That’s a 20% decrease! :blush:
 
