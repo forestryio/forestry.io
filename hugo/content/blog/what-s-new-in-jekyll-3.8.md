@@ -131,6 +131,6 @@ Until next time. Jekyll FTW
   
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We look at using Snipcart and Forestry to make your static site ready for e-Commerce.</p><p><strong>Last week:</strong> We looked at how to <a href="https://forestry.io/blog/automatically-publish-scheduled-posts-for-static-site/">automatically publish scheduled posts</a> for your static site.</p></div>
 
-<!--## Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="#">Discuss on Hacker News</a>-->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17047294">Discuss on Hacker News</a>
