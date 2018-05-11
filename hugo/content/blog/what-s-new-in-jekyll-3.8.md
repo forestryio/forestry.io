@@ -36,9 +36,7 @@ So what does Jekyll bring us this time?
 
 Large sites containing a huge amount of posts are going to see a massive reduction in their total build times especially if they are doing multiple calls to the `where` filter with the same `input` and `property` parameter.
 
-On i18n websites, some users have reported an amazing significant decrease in their build time with 3.8:
-
-<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">3.7.3 : 916 seconds <a href="https://t.co/dpbywRDVxM">https://t.co/dpbywRDVxM</a><br>3.8.0 : 263 seconds <a href="https://t.co/PyhNB9GeCd">https://t.co/PyhNB9GeCd</a><br><br>Gain: -71%</p>— Boris 🚀 (@borisschapira) <a href="https://twitter.com/borisschapira/status/987005069097914368?ref_src=twsrc%5Etfw">April 19, 2018</a></blockquote>
+On i18n websites, some users have reported an amazing significant decrease in their build time with 3.8: <blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">3.7.3 : 916 seconds <a href="https://t.co/dpbywRDVxM">https://t.co/dpbywRDVxM</a><br>3.8.0 : 263 seconds <a href="https://t.co/PyhNB9GeCd">https://t.co/PyhNB9GeCd</a><br><br>Gain: -71%</p>— Boris 🚀 (@borisschapira) <a href="https://twitter.com/borisschapira/status/987005069097914368?ref_src=twsrc%5Etfw">April 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Jekyll also now calculates `site.related_posts` only when needed and way more efficiently. It’s only noticeable if you have thousands of posts.
