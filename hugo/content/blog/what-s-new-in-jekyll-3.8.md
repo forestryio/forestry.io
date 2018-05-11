@@ -24,7 +24,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 # What’s new in Jekyll 3.8
