@@ -29,7 +29,7 @@ draft: true
 ---
 # What’s new in Jekyll 3.8
 
-Jekyll 3.8.1 was released on the 1st of May 2018, just two weeks after 3.8.0. The project has come along way since I last wrote a [Jekyll update on Forestry](https://forestry.io/blog/what-s-new-in-jekyll-3-4-0/). [Olivia](https://liv.cat/) is now Jekyll’s new [Lead Developer](https://jekyllrb.com/news/2018/02/19/meet-jekyll-s-new-lead-developer/) since Parker Moore decided to step down after four years leading the project.
+Jekyll 3.8.1 was released on the 1st of May 2018, just two weeks after 3.8.0. The project has come a long way since I last wrote a [Jekyll update on Forestry](https://forestry.io/blog/what-s-new-in-jekyll-3-4-0/). [Olivia](https://liv.cat/) is now Jekyll’s new [Lead Developer](https://jekyllrb.com/news/2018/02/19/meet-jekyll-s-new-lead-developer/) since Parker Moore decided to step down after four years leading the project.
 
 So what does Jekyll bring us this time?
 
@@ -37,11 +37,10 @@ So what does Jekyll bring us this time?
 
 Large sites containing a huge amount of posts are going to see a massive reduction in their total build times especially if they are doing multiple calls to the `where` filter with the same `input` and `property` parameter.
 
-On i18n websites, some users have reported an amazing significant decrease in their build time with 3.8: 
+On i18n websites, some users have reported an amazing significant decrease in their build time with 3.8:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">3.7.3 : 916 seconds <a href="https://t.co/dpbywRDVxM">https://t.co/dpbywRDVxM</a><br>3.8.0 : 263 seconds <a href="https://t.co/PyhNB9GeCd">https://t.co/PyhNB9GeCd</a><br><br>Gain: -71%</p>&mdash; Boris 🚀 (@borisschapira) <a href="https://twitter.com/borisschapira/status/987005069097914368?ref_src=twsrc%5Etfw">April 19, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">3.7.3 : 916 seconds <a href="https://t.co/dpbywRDVxM">https://t.co/dpbywRDVxM</a><br>3.8.0 : 263 seconds <a href="https://t.co/PyhNB9GeCd">https://t.co/PyhNB9GeCd</a><br><br>Gain: -71%</p>— Boris 🚀 (@borisschapira) <a href="https://twitter.com/borisschapira/status/987005069097914368?ref_src=twsrc%5Etfw">April 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 Jekyll also now calculates `site.related_posts` only when needed and way more efficiently. It’s only noticeable if you have thousands of posts.
 
@@ -49,7 +48,7 @@ Let’s test this with [a blog with more than 2200 posts](https://github.com/tom
 
 ![](/uploads/2018/05/total-build-times.png)
 
-[https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/")[](https://idratherbewriting.com/%7B:target=%22_blank%22%7D) took on average around 140s to build with Jekyll 3.7.3.
+[https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/") took on average around 140s to build with Jekyll 3.7.3.
 
 Now it takes around 112s with 3.8.0. That’s a 20% decrease! :blush:
 
@@ -117,7 +116,7 @@ You may also want to read over this [new tutorial to help you use bundler](https
 
 If you are looking to add search to your static site, give jekyll-algolia plugin a try. Algolia have provided great documentation which includes a live demo to get you up and running quickly with [Algolia search for Jekyll](https://community.algolia.com/jekyll-algolia/getting-started.html).
 
-Search has been successfully implemented on [http://yeoman.io/generators/](http://yeoman.io/generators/ "http://yeoman.io/generators/")[](http://yeoman.io/generators/%7B:target=%22_blank%22%7D) and [https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/")  if you want to give it a try.
+Search has been successfully implemented on [http://yeoman.io/generators/](http://yeoman.io/generators/ "http://yeoman.io/generators/") and [https://idratherbewriting.com/](https://idratherbewriting.com/ "https://idratherbewriting.com/")  if you want to give it a try.
 
 Chris Macrae has also previously covered [Jekyll Search with Algolia and Webtasks](https://forestry.io/blog/search-with-algolia-in-jekyll/) on the Forestry blog. I highly recommend you check it out.
 
