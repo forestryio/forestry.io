@@ -3,8 +3,8 @@ pages:
 - showcase/yieldmo.md
 - showcase/smallmultiples.md
 - showcase/_index.md
-- showcase/developerecosystem.md
 - showcase/borisfx.md
+- showcase/developerecosystem.md
 hide_body: false
 is_partial: false
 fields:

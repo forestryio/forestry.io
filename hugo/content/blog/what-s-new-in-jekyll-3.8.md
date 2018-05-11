@@ -48,7 +48,7 @@ Let’s test this with [a blog with more than 2200 posts](https://github.com/tom
 
 ![](/uploads/2018/05/total-build-times.png)
 
-[https://idratherbewriting.com/](https://idratherbewriting.com/)took on average around 140s to build with Jekyll 3.7.3.
+[https://idratherbewriting.com/](https://idratherbewriting.com/) took on average around 140s to build with Jekyll 3.7.3.
 
 Now it takes around 112s with 3.8.0. That’s a 20% decrease! :blush:
 
@@ -99,7 +99,7 @@ warn — Output a warning on the console for each error.
 
 strict — Output an error message and stop the build.
 
-After restarting my own site I ran in to the following error.
+After restarting my own site I ran into the following error.
 
     Liquid Exception: Liquid error (line 5): undefined variable subtitle in /_layouts/post.html
     jekyll 3.8.0 | Error:  Liquid error (line 5): undefined variable subtitle
