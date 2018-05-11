@@ -108,11 +108,11 @@ It turns out I have a `{{ page.subtitle }}` variable in my `post.html` layout te
 
 ## Documentation Updates
 
-Ruby installation is certainly the most frustrating part and biggest paint point for beginners.
+Ruby installation is certainly the most frustrating part and biggest pain point for beginners.
 
 It’s now much easier to get started [installing Jekyll on macOS](https://jekyllrb.com/docs/installation/#macOS) [Ubuntu](https://jekyllrb.com/docs/installation/#ubuntu) or [Windows](https://jekyllrb.com/docs/windows/#installation-via-rubyinstaller) using the official instructions.
 
-You may also want to read over this [new tutorial to help you use bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to handle your Ruby gems in your Jekyll’s projects. Alternatively you may be interested in Forestry’s [create static site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) a tool that can set up a new Hugo or Jekyll site with a modern, production-ready build pipeline in seconds.
+You may also want to read over this [new tutorial to help you use bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to handle your Ruby gems in your Jekyll’s projects. Alternatively you may be interested in Forestry’s [create static site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/), a tool that can set up a new Hugo or Jekyll site with a modern, production-ready build pipeline in seconds.
 
 If you are looking to add search to your static site, give jekyll-algolia plugin a try. Algolia have provided great documentation which includes a live demo to get you up and running quickly with [Algolia search for Jekyll](https://community.algolia.com/jekyll-algolia/getting-started.html).
 
