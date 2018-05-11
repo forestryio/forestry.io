@@ -134,7 +134,7 @@ Please share if you found this post helpful and let us know if you’d like to s
 
 Until next time. Jekyll FTW  
   
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We look at using Snipcart and Forestry to make your Static Site e-Commerce ready.</p><p><strong>Last week:</strong> We looked at how to <a href="https://forestry.io/blog/automatically-publish-scheduled-posts-for-static-site/">automatically publish scheduled posts</a> for your static site.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We look at using Snipcart and Forestry to make your static site e-Commerce-Ready.</p><p><strong>Last week:</strong> We looked at how to <a href="https://forestry.io/blog/automatically-publish-scheduled-posts-for-static-site/">automatically publish scheduled posts</a> for your static site.</p></div>
 
 <!--## Have something to add?
 
