@@ -1,10 +1,10 @@
 ---
 title: Add E-Commerce to Your Static Site With Snipcart
 description: ''
-date: 2018-05-14 03:36:07 -1100
+date: 2018-05-18 03:36:07 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2017-12-06 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - Beyond Static
@@ -166,7 +166,7 @@ The reason the URL is so important is because we are just inserting the product 
 ### Adding Custom Product Options
 You may wish to for some of your products to be customizable, or to have different options. Snipcart provides a simple interface for configuring these via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). 
 
-We're going to use Forestry's [blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
+We're going to use Forestry's [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
 
 In the demo project, I've created some Front Matter Template Partials: `text-option`, `paragraph-text-option`, `checkbox-option`, `simple-dropdown-option`, and `advanced-dropdown-option` (which allows you to modify the product price based on the option selected). 
 
@@ -188,7 +188,7 @@ After we set up our partial templates, we need to add the *blocks* field to our 
 
 *Once again, don't worry about knowing this configuration syntax: configuring Front Matter Templates is easy to do in the Forestry UI.*
 
-All that's left is to implement these options in our template. 
+All that's left is to implement these options in our template. We're going to iterate over each option and include a different partial depending on what Front Matter Template the option is using. If you've read [our blog post about Blocks and the Sawmill demo theme](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry), this ["block loop" pattern](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/#hugo-example) will look familiar to you. The new HTML for our Snipcart button is as follows:
 
 ```
 <button
@@ -213,8 +213,30 @@ Buy {{ .Title }}
 </button>
 ```
 
+In this case, we are loading a partial from `site/layouts/partials/custom-options/` with a filename matching the name of the Front Matter Partial Template. So, a custom option using the `advanced-dropdown-option` template will use the partial located in `site/layouts/partials/custom-options/advanced-dropdown-option.html`. We're wrapping this in a call to `safeHTMLAttr` because our partials will be outputting HTML attributes to the Snipcart button.
+
+For the sake of brevity, we won't go into implementing each of these partials, but all they need to do is add some additional data attributes in order for Snipcart to understand the custom options. For example, the `text-option` partial:
+
+```
+data-item-custom{{ .Index }}-name="{{ .Option.name }}"
+{{- if .Option.required -}}
+data-item-custom{{ .Index }}-required="true"
+{{- end -}}
+```
+
+The first option is configured with `data-item-custom1-name`, the second with `data-item-custom2-name`, and so on. We pass the variable `Index` to this partial to keep track of that, and the rest of the option configuration in an `Option` variable. 
+
+Take a look at [the `custom-options` partials in our demo repo](/) to see how we did the rest.
+
+{{% tip %}}
+More info on how to configure custom options with data attributes is available in the [Snipcart documentation](https://docs.snipcart.com/configuration/custom-fields).
+{{% /tip %}}
+
+
 ## Going Live
+
+When you're ready to go live,
 
 ## Additional Features
 
-profile/login/logout links
+Snipcart has some other nice features like user account dashboards and a customizable shopping cart. All of this is very easy to integrate into your site - check out their documentation
