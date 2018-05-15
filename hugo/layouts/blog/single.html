@@ -19,7 +19,7 @@
             {{- $authorName := . -}}
             {{- range $.Site.Data.authors.authors -}}
               {{- if eq (urlize .fullName) (urlize $authorName) -}}
-              <a href="{{ "/authors/" | relURL }}{{ .fullName | urlize }}" class="author--wrapper">
+              <a href="{{ "/authors/" | relURL }}{{ .fullName | urlize }}/" class="author--wrapper">
                 <div class="author--avatar">
                   <img src="{{ .avatar }}" alt="{{ .fullName | default .avatar }}">
                 </div>
