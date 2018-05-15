@@ -28,7 +28,7 @@ draft: true
 ---
 Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very performant. They couldn't run a store, though, could they? At the absolute minimum, we know that some backend code will be required to process customer orders.
 
-Well, with an external service and a sprinkling of JavaScript we can make a static site do anything we want.
+Well, with an external service and a sprinkle of JavaScript we can make a static site do anything we want.
 
 Two of the best options for integrating e-commerce into our static site are Snipcart and the Buy Button from Shopify. Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of the two options, but the most important feature to us is how easily Snipcart adapts to a variety of content strategies. To integrate a Shopify Buy Button into your website, Shopify provides a code snippet you can copy and paste into your HTML. This certainly makes things easy, but requires you to adapt your content strategy to work around this special markup. Snipcart, on the other hand, allows you to attach data attributes to any HTML element on your page to identify your products. This gives us the power to define our own content strategy and integrate Snipcart at the template level.
 
@@ -245,6 +245,6 @@ In order to generate a live API key, you will need to enter billing information 
 For more information, view [Snipcart's "going live" docs](https://docs.snipcart.com/testing/going-live)
 {{% /tip %}}
 
-## Additional Features
+## Taking it Further
 
-Snipcart has some other nice features like user account dashboards and a customizable shopping cart. All of this is very easy to integrate into your site - check out their documentation
+This post focused on integrating products, but Snipcart has some other nice features like user account dashboards and a customizable shopping cart. All of this is very easy to integrate into your site &mdash; check out [Snipcart's documentation](https://docs.snipcart.com/) or their [guides and tutorials](https://docs.snipcart.com/getting-started/guides-and-tutorials) for inspiration.
