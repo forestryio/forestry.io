@@ -235,7 +235,13 @@ More info on how to configure custom options with data attributes is available i
 
 ## Going Live
 
-When you're ready to go live,
+When you're ready to go live, you just have to enter your live API key in the `snipcart_live_api_key` field in the `site/config.toml` file, or in your **Site Params** in Forestry.
+
+{{% tip %}}
+In order to generate a live API key, you will need to enter billing information and connect a payment gateway.
+
+For more information, view [Snipcart's "going live" docs](https://docs.snipcart.com/testing/going-live)
+{{% /tip %}}
 
 ## Additional Features
 
