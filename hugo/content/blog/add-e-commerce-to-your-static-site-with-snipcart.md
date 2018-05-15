@@ -24,9 +24,7 @@ menu: []
 draft: true
 
 ---
-## Want to Build an Online Store in 2018? 
-
-Why not **#gostatic**?
+## Building an Online Store in 2018? Go static!
 
 Obviously, an online store can't be 100% static. At the absolute minimum, we know that backend code will be required to process and store customer orders. If we want to have an online store while still reaping the benefits of using a static site, we will need to integrate our site with an external service.
 
@@ -45,7 +43,7 @@ linkText="Import our demo into Forestry" %}}
 
 ## Bootstrapping the Project
 
-We're using [Create Static Site](https://github.com/forestryio/create-static-site) to set up a new Hugo project with a [production-ready build pipleline](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/). We can invoke `create-static-site` with `npx`:
+We're using [Create Static Site](https://github.com/forestryio/create-static-site) to set up a new Hugo project with a production-ready build pipleline. We can invoke `create-static-site` with `npx`:
 
 ```
 npx create-static-site snipcart-hugo --template hugo
@@ -53,31 +51,46 @@ npx create-static-site snipcart-hugo --template hugo
 
 This will set up a new project in the `snipcart-hugo/` directory.
 
+{{% tip %}}
+Check out our blog post on [getting started with Create Static Site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) for more information on using this utility.
+{{% /tip %}}
+
 ## Getting Started With Snipcart
 
 In order to test out the demo project, you will need to provide a Snipcart API key. To obtain this, [sign up for a Snipcart account](https://app.snipcart.com/register) and log in to the dashboard. From there, Browse to the "API Keys" section of your account settings. You will be presented with your **public test API key**. We're going to store this key in our *site params* in the `site/config.toml` file, so that we can edit it later in Forestry if we want to:
 
 ```toml
 [params]
-snipcart_api_key = "YOUR-API-KEY"
+snipcart_test_api_key = "YOUR-API-KEY"
+snipcart_live_api_key = ""
 ```
 *Replace `YOUR-API-KEY` with the public test API key from your Snipcart account.*
 
-To embed the necessary snipcart scripts, we will add the following to `site/layouts/partials/head.html` before the closing `head` tag:
+Notice that we have declared two values here: `snipcart_test_api_key` and `snipcart_live_api_key`. When you're ready to go live, you will add your live API key here as well.
+
+To embed the necessary Snipcart scripts, we will add the following to `site/layouts/partials/head.html` before the closing `head` tag:
 
 ```
 <!-- snipcart assets -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="{{ .Site.Params.snipcart_api_key }}"></script>
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="
+  {{- if eq (getenv "HUGO_ENV") "development" -}}
+  {{ .Site.Params.snipcart_test_api_key }}
+  {{- else -}}
+  {{ .Site.Params.snipcart_live_api_key }}
+  {{- end -}}
+"></script>
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 ```
+
+We're using the `HUGO_ENV` variable to load the testing API key in our development environment, and the live API key in our production environment. This will allow us to continue to test our implementation in a development environment even after we make our store live.
 
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
 {{% /tip %}}
 
 ### API Key Security
-The API key you received from snipcart is a **Public API Key.** This key is inserted directly into the HTML. Since this key is publicly visible, it is OK for this key to be added directly to your git repo.
+The API key you received from Snipcart is a **Public API Key.** This key is inserted directly into the HTML. Since this key is already publicly visible, it is OK for this key to be added directly to your git repo.
 
 ## Setting Up Our Products
 
@@ -86,18 +99,41 @@ Let's add a new content section for products by adding a `products` directory un
 Keeping products in their own content section will make it easy to define product-specific layouts. Create a file called `single.html` in `site/layouts/products` to serve as the single product template.
 
 {{% tip %}}
-This guide focuses on the markup necessary to make our project work with Snipcart; [view the demo project](/) to get the full source code.
+This guide focuses on the markup necessary to make our project work with Snipcart. [View the demo project](/) to get the full source code.
 {{% /tip %}}
 
 ### Creating a Front Matter Template in Forestry
 
+We can use Forestry to make it easy to create and edit new products. Let's add a new Front Matter template for products. In this template we will add the necessary fields to configure our Snipcart product: the price, a short description, and a 50x50px image to display in the user's cart. This is easy to do in the Forestry UI, but if you want to do it a little quicker you can just create a new file in `site/.forestry/front_matter/templates/products.yml` with the following content:
 
+```
+---
+hide_body: false
+is_partial: false
+fields:
+- type: number
+  config:
+    step: ".01"
+    required: true
+  label: Price
+  name: price
+- type: textarea
+  name: shortDescription
+  label: Short Description
+  description: Shows on product and cart pages
+- type: file
+  name: image
+  label: Image
+  description: Displays on product page
+- type: file
+  name: cartImage
+  label: Cart Image
+  description: Upload a 50x50 image to display in shopping cart
+```
 
 ### Adding a Buy Button
 
-We can use data attributes to enable "add to cart" behavior on any HTML element
-
-For our single product template, we will attach this data to a button:
+We can use data attributes to enable "add to cart" behavior on any HTML element. For our single product template, we will attach this data to a button:
 
 ```
 <button
@@ -113,11 +149,14 @@ For our single product template, we will attach this data to a button:
     data-item-image="{{ . | absURL }}"
     {{ end }}
 >
-        Buy {{ .Title }}
+Buy {{ .Title }}
 </button>
 ```
 
 The `snipcart-add-item` class tells Snipcart to listen for a click on this element. The `data-item-id`, `data-item-name`, `data-item-price`, and `data-item-url` attributes are required to tell Snipcart which product should be added to the cart. The rest of the attributes are optional, and there are [even more attributes available](https://docs.snipcart.com/configuration/product-definition).
+
+#### Item ID
+The item ID is important, as this should uniquely identify your product to Snipcart. However, aside from being unique to this product, the ID doesn't need to be anything in particular. Our item URL is a good fit for this.
 
 #### Item URL
 The `data-item-url` attribute needs to point to a place where the Snipcart product data is rendered. Since we have each product on its own page, this is just the URL to the current product.
@@ -127,7 +166,52 @@ The reason the URL is so important is because we are just inserting the product 
 ### Adding Custom Product Options
 You may wish to for some of your products to be customizable, or to have different options. Snipcart provides a simple interface for configuring these via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). 
 
-We're going to use Forestry's blocks feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
+We're going to use Forestry's [blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
+
+In the demo project, I've created some Front Matter Template Partials: `text-option`, `paragraph-text-option`, `checkbox-option`, `simple-dropdown-option`, and `advanced-dropdown-option` (which allows you to modify the product price based on the option selected). 
+
+All of these share a `base-product-option` template which has the essential fields for a custom option: the name, and whether it is required.
+
+After we set up our partial templates, we need to add the *blocks* field to our `products` Front Matter Template. Let's call the field `customOptions` and configure it like so:
+
+```
+- type: blocks
+  name: customOptions
+  label: Custom Options
+  template_types:
+  - text-option
+  - text-block-option
+  - checkbox-option
+  - simple-dropdown-option
+  - advanced-dropdown-option
+```
+
+*Once again, don't worry about knowing this configuration syntax: configuring Front Matter Templates is easy to do in the Forestry UI.*
+
+All that's left is to implement these options in our template. 
+
+```
+<button
+    class="button is-primary snipcart-add-item"
+    data-item-id="{{ .URL }}"
+    data-item-name="{{ .Title }}"
+    data-item-price="{{ .Params.price }}"
+    data-item-url="{{ .Permalink }}"
+    {{ with .Params.shortDescription }}
+    data-item-description="{{ . }}"
+    {{ end }}
+    {{ with .Params.cartImage }}
+    data-item-image="{{ . | absURL }}"
+    {{ end }}
+    {{ with .Params.customOptions }}
+        {{- range $index, $option := . -}}
+        {{ safeHTMLAttr (partial (printf "custom-options/%s" .template) (dict "Index" (add 1 $index) "Option" $option)) }}
+        {{- end -}}
+    {{ end }}
+>
+Buy {{ .Title }}
+</button>
+```
 
 ## Going Live
 
