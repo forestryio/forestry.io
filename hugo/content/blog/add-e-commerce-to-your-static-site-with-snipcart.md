@@ -1,5 +1,5 @@
 ---
-title: Add E-Commerce to Your Static Site With Snipcart
+title: Snipcart Brings E‑Commerce to Your Static Site
 description: ''
 date: 2018-05-18 03:36:07 -1100
 authors:
@@ -43,7 +43,7 @@ linkText="Import our demo into Forestry" %}}
 
 ## Bootstrapping the Project
 
-We're using [Create Static Site](https://github.com/forestryio/create-static-site) to set up a new Hugo project with a production-ready build pipleline. We can invoke `create-static-site` with `npx`:
+We're using [Create Static Site](https://github.com/forestryio/create-static-site) to set up a new Hugo project with a production-ready build pipeline. We can invoke `create-static-site` with `npx`:
 
 ```
 npx create-static-site snipcart-hugo --template hugo
