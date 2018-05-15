@@ -12,7 +12,9 @@ categories:
 headline: ''
 textline: ''
 images: []
-tags: []
+tags:
+- Hugo
+- Blocks
 cta:
   headline: ''
   textline: ''
@@ -24,9 +26,9 @@ menu: []
 draft: true
 
 ---
-## Building an Online Store in 2018? Go static!
+Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very performant. They couldn't run a store, though, could they? At the absolute minimum, we know that some backend code will be required to process customer orders.
 
-Obviously, an online store can't be 100% static. At the absolute minimum, we know that backend code will be required to process and store customer orders. If we want to have an online store while still reaping the benefits of using a static site, we will need to integrate our site with an external service.
+Well, with an external service and a sprinkling of JavaScript we can make a static site do anything we want.
 
 Two of the best options for integrating e-commerce into our static site are Snipcart and the Buy Button from Shopify. Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of the two options, but the most important feature to us is how easily Snipcart adapts to a variety of content strategies. To integrate a Shopify Buy Button into your website, Shopify provides a code snippet you can copy and paste into your HTML. This certainly makes things easy, but requires you to adapt your content strategy to work around this special markup. Snipcart, on the other hand, allows you to attach data attributes to any HTML element on your page to identify your products. This gives us the power to define our own content strategy and integrate Snipcart at the template level.
 
@@ -161,7 +163,7 @@ The item ID is important, as this should uniquely identify your product to Snipc
 #### Item URL
 The `data-item-url` attribute needs to point to a place where the Snipcart product data is rendered. Since we have each product on its own page, this is just the URL to the current product.
 
-The reason the URL is so important is because we are just inserting the product price in the HTML. Anyone could edit the document to change the price, and thus pay whatever they want for a product. Snipcart thwarts this by making a separate request to the item URL to verify the product's price.
+The item URL is very important: since we are just inserting the product price in the HTML, anyone could edit the document to change the price, and thus pay whatever they want for a product. Snipcart thwarts this by making their own request to the item URL to verify the product's price.
 
 ### Adding Custom Product Options
 You may wish to for some of your products to be customizable, or to have different options. Snipcart provides a simple interface for configuring these via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). 
@@ -239,7 +241,7 @@ When you're ready to go live, you just have to enter your live API key in the `s
 
 {{% tip %}}
 In order to generate a live API key, you will need to enter billing information and connect a payment gateway.
-
+<br /><br />
 For more information, view [Snipcart's "going live" docs](https://docs.snipcart.com/testing/going-live)
 {{% /tip %}}
 
