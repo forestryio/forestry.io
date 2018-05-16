@@ -30,18 +30,18 @@ Picture this: it's 2018, and your client needs an online store. You know that st
 
 Well, with an external service and a sprinkle of JavaScript we can make a static site do anything we want.
 
-Two of the best options for integrating e-commerce into our static site are Snipcart and the Buy Button from Shopify. Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of the two options, but the most important feature to us is how easily Snipcart adapts to a variety of content strategies. To integrate a Shopify Buy Button into your website, Shopify provides a code snippet you can copy and paste into your HTML. This certainly makes things easy, but requires you to adapt your content strategy to work around this special markup. Snipcart, on the other hand, allows you to attach data attributes to any HTML element on your page to identify your products. This gives us the power to define our own content strategy and integrate Snipcart at the template level.
+Two of the best options for integrating e-commerce into our static site are Snipcart and the Buy Button from Shopify. Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of the two options, but the most important feature to us is how easily Snipcart adapts to a variety of content strategies. To integrate a Shopify Buy Button into your website, Shopify provides a code snippet you can copy and paste into your HTML. This certainly makes things easy, but requires you to adapt your content strategy to work around this special markup. Snipcart, on the other hand, allows you to attach data attributes to any HTML element on your page to identify your products. This gives us the power to define our own content strategy and integrate Snipcart at the template level. **Snipcart adapts to the way we want our website to work.**
 
 This blog post will show you how easy it is to integrate Snipcart with a Hugo website, using Forestry to complete the experience with a product management UI.
 
 {{% create_site_button
-repo="https://github.com/dwalkr/xyz.git"
+repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
 branch="master"
 engineName="hugo"
-engineVersion="0.37.1"
+engineVersion="0.38.1"
 forkName="snipcart-hugo"
 heading="Follow Along or Make it Your Own"
-linkText="Import our demo into Forestry" %}}
+linkText="Import our Snipcart demo into Forestry" %}}
 
 ## Bootstrapping the Project
 
@@ -56,6 +56,10 @@ This will set up a new project in the `snipcart-hugo/` directory.
 {{% tip %}}
 Check out our blog post on [getting started with Create Static Site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) for more information on using this utility.
 {{% /tip %}}
+
+{{% tip %}}
+If you don't want to use Create Static Site for your project, you can just use the `hugo new site` command to initialize a new Hugo site. Note that all of the file paths we reference are prefixed with `site/` due to Create Static Site's conventions. Your filepaths will be slightly different if you use a vanilla Hugo install.
+{{%% /tip %}}
 
 ## Getting Started With Snipcart
 
@@ -101,37 +105,8 @@ Let's add a new content section for products by adding a `products` directory un
 Keeping products in their own content section will make it easy to define product-specific layouts. Create a file called `single.html` in `site/layouts/products` to serve as the single product template.
 
 {{% tip %}}
-This guide focuses on the markup necessary to make our project work with Snipcart. [View the demo project](/) to get the full source code.
+This guide focuses on the markup necessary to make our project work with Snipcart. [View the demo project](https://github.com/dwalkr/snipcart-hugo-demo) to get the full source code.
 {{% /tip %}}
-
-### Creating a Front Matter Template in Forestry
-
-We can use Forestry to make it easy to create and edit new products. Let's add a new Front Matter template for products. In this template we will add the necessary fields to configure our Snipcart product: the price, a short description, and a 50x50px image to display in the user's cart. This is easy to do in the Forestry UI, but if you want to do it a little quicker you can just create a new file in `site/.forestry/front_matter/templates/products.yml` with the following content:
-
-```
----
-hide_body: false
-is_partial: false
-fields:
-- type: number
-  config:
-    step: ".01"
-    required: true
-  label: Price
-  name: price
-- type: textarea
-  name: shortDescription
-  label: Short Description
-  description: Shows on product and cart pages
-- type: file
-  name: image
-  label: Image
-  description: Displays on product page
-- type: file
-  name: cartImage
-  label: Cart Image
-  description: Upload a 50x50 image to display in shopping cart
-```
 
 ### Adding a Buy Button
 
@@ -155,6 +130,10 @@ Buy {{ .Title }}
 </button>
 ```
 
+{{% tip %}}
+Our template is expecting some specific front matter fields for our products. We could create an [archetype](https://gohugo.io/content-management/archetypes/) to assist our users with entering the necessary front matter, but since we're using Forestry to provide a content editing UI, we have chosen instead to include a Front Matter Template for products. This will provide the appropriate fields when adding a product in the Forestry UI.
+{{% /tip %}}
+
 The `snipcart-add-item` class tells Snipcart to listen for a click on this element. The `data-item-id`, `data-item-name`, `data-item-price`, and `data-item-url` attributes are required to tell Snipcart which product should be added to the cart. The rest of the attributes are optional, and there are [even more attributes available](https://docs.snipcart.com/configuration/product-definition).
 
 #### Item ID
@@ -166,29 +145,11 @@ The `data-item-url` attribute needs to point to a place where the Snipcart produ
 The item URL is very important: since we are just inserting the product price in the HTML, anyone could edit the document to change the price, and thus pay whatever they want for a product. Snipcart thwarts this by making their own request to the item URL to verify the product's price.
 
 ### Adding Custom Product Options
-You may wish to for some of your products to be customizable, or to have different options. Snipcart provides a simple interface for configuring these via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). 
+You may wish for some of your products to be customizable, or perhaps you want to offer multiple variations of the same product. Snipcart provides a simple interface for configuring these options via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). 
 
 We're going to use Forestry's [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
 
-In the demo project, I've created some Front Matter Template Partials: `text-option`, `paragraph-text-option`, `checkbox-option`, `simple-dropdown-option`, and `advanced-dropdown-option` (which allows you to modify the product price based on the option selected). 
-
-All of these share a `base-product-option` template which has the essential fields for a custom option: the name, and whether it is required.
-
-After we set up our partial templates, we need to add the *blocks* field to our `products` Front Matter Template. Let's call the field `customOptions` and configure it like so:
-
-```
-- type: blocks
-  name: customOptions
-  label: Custom Options
-  template_types:
-  - text-option
-  - text-block-option
-  - checkbox-option
-  - simple-dropdown-option
-  - advanced-dropdown-option
-```
-
-*Once again, don't worry about knowing this configuration syntax: configuring Front Matter Templates is easy to do in the Forestry UI.*
+In the demo project, I've created some Front Matter Template Partials: `text-option`, `paragraph-text-option`, `checkbox-option`, `simple-dropdown-option`, and `advanced-dropdown-option` (which allows you to modify the product price based on the option selected). All of these share a `base-product-option` template which has the essential fields for a custom option: the name, and whether it is required. After we set up our partial templates, we need to add the *blocks* field to our `products` Front Matter Template.
 
 All that's left is to implement these options in our template. We're going to iterate over each option and include a different partial depending on what Front Matter Template the option is using. If you've read [our blog post about Blocks and the Sawmill demo theme](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry), this ["block loop" pattern](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/#hugo-example) will look familiar to you. The new HTML for our Snipcart button is as follows:
 
@@ -228,7 +189,7 @@ data-item-custom{{ .Index }}-required="true"
 
 The first option is configured with `data-item-custom1-name`, the second with `data-item-custom2-name`, and so on. We pass the variable `Index` to this partial to keep track of that, and the rest of the option configuration in an `Option` variable. 
 
-Take a look at [the `custom-options` partials in our demo repo](/) to see how we did the rest.
+Take a look at [the `custom-options` partials in our demo repo](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options) to see how we did the rest.
 
 {{% tip %}}
 More info on how to configure custom options with data attributes is available in the [Snipcart documentation](https://docs.snipcart.com/configuration/custom-fields).
