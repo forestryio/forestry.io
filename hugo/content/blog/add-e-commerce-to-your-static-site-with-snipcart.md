@@ -149,9 +149,9 @@ There are several more attributes you can choose to define for your products. Ch
 #### Item URL
 The `data-item-url` attribute needs to point to a place where the Snipcart product data is rendered. Since we have each product on its own page, this is just the URL to the current product.
 
-{{% warn %}}
+{{% warning %}}
 The item URL is very important: since we are just inserting the product price in the HTML, anyone could edit the document to change the price, and thus pay whatever they want for a product. Snipcart thwarts this by making their own request to the item URL to verify the product's price.
-{{% /warn %}}
+{{% /warning %}}
 
 #### Item ID
 The item ID should uniquely identify your product to Snipcart. However, aside from being unique to this product, the ID doesn't need to be anything in particular. Since the product's URL also has to be unique to the product, it makes sense to use it for the product ID as well.
