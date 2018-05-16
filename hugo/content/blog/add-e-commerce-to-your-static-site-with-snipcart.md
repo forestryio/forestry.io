@@ -11,7 +11,8 @@ categories:
 - Frontend-Friday
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/05/coins.jpg"
 tags:
 - Hugo
 - Blocks
