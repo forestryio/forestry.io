@@ -26,11 +26,19 @@ menu: []
 draft: true
 
 ---
-Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very performant. They couldn't run a store, though, could they? At the absolute minimum, we know that some backend code will be required to process customer orders.
+Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very fast. Since static sites can't run backend code, though, could you use them to run an online store?
 
-Well, with an external service and a sprinkle of JavaScript we can make a static site do anything we want.
+**Of course you can!** By using external services for the heavy lifting, and connecting them to our static site with JavaScript, we can do anything!
 
-Two of the best options for integrating e-commerce into our static site are Snipcart and the Buy Button from Shopify. Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of the two options, but the most important feature to us is how easily Snipcart adapts to a variety of content strategies. To integrate a Shopify Buy Button into your website, Shopify provides a code snippet you can copy and paste into your HTML. This certainly makes things easy, but requires you to adapt your content strategy to work around this special markup. Snipcart, on the other hand, allows you to attach data attributes to any HTML element on your page to identify your products. This gives us the power to define our own content strategy and integrate Snipcart at the template level. **Snipcart adapts to the way we want our website to work.**
+For static sites, our best option for integrating e-commerce are [Snipcart](https://snipcart.com/) and [Shopify's Buy Buttons](https://www.shopify.com/buy-button). Both options have different advantages, but for our purposes, Snipcart's killer feature is its adaptability to any content strategy.
+
+See, Shopify's Buy Buttons work by providing you with code snippets you can copy and paste into your site that will display the product and allow the user to add it to their shopping cart. In order to use this effectively, you will need to adapt your content strategy around this limitation. Snipcart, on the other hand, learns about your products from data attributes in your site's HTML. As long as you provide [a few essential pieces of data](https://docs.snipcart.com/configuration/product-definition), anything on your site can become a Snipcart product!
+
+In other words, we would have to *adapt our workflow to accomodate Shopify*, but *Snipcart will adapt to us.*
+
+{{% tip %}}
+Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of these two offerings if you'd like more information.
+{{% /tip %}}
 
 This blog post will show you how easy it is to integrate Snipcart with a Hugo website, using Forestry to complete the experience with a product management UI.
 
@@ -57,9 +65,7 @@ This will set up a new project in the `snipcart-hugo/` directory.
 Check out our blog post on [getting started with Create Static Site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) for more information on using this utility.
 {{% /tip %}}
 
-{{% tip %}}
 If you don't want to use Create Static Site for your project, you can just use the `hugo new site` command to initialize a new Hugo site. Note that all of the file paths we reference are prefixed with `site/` due to Create Static Site's conventions. Your filepaths will be slightly different if you use a vanilla Hugo install.
-{{%% /tip %}}
 
 ## Getting Started With Snipcart
 
