@@ -30,7 +30,7 @@ Picture this: it's 2018, and your client needs an online store. You know that st
 
 **Of course you can!** By using external services for the heavy lifting, and connecting them to our static site with JavaScript, we can do anything!
 
-For static sites, our best option for integrating e-commerce are [Snipcart](https://snipcart.com/) and [Shopify's Buy Buttons](https://www.shopify.com/buy-button). Both options have different advantages, but for our purposes, Snipcart's killer feature is its adaptability to any content strategy.
+For static sites, our best option for adding e-commerce are [Snipcart](https://snipcart.com/) and [Shopify's Buy Buttons](https://www.shopify.com/buy-button). Both options have different advantages, but for our purposes, Snipcart's killer feature is its adaptability to any content strategy.
 
 See, Shopify's Buy Buttons work by providing you with code snippets you can copy and paste into your site that will display the product and allow the user to add it to their shopping cart. In order to use this effectively, you will need to adapt your content strategy around this limitation. Snipcart, on the other hand, learns about your products from data attributes in your site's HTML. As long as you provide [a few essential pieces of data](https://docs.snipcart.com/configuration/product-definition), anything on your site can become a Snipcart product!
 
@@ -40,7 +40,7 @@ In other words, we would have to *adapt our workflow to accomodate Shopify*, but
 Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-vs-shopify-buy-button-review) of these two offerings if you'd like more information.
 {{% /tip %}}
 
-This blog post will show you how easy it is to integrate Snipcart with a Hugo website, using Forestry to complete the experience with a product management UI.
+This blog post will show you how easy it is to integrate Snipcart with a Hugo website. We will also use Forestry to complete the experience with a product management UI.
 
 {{% create_site_button
 repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
@@ -65,7 +65,7 @@ This will set up a new project in the `snipcart-hugo/` directory.
 Check out our blog post on [getting started with Create Static Site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) for more information on using this utility.
 {{% /tip %}}
 
-If you don't want to use Create Static Site for your project, you can just use the `hugo new site` command to initialize a new Hugo site. Note that all of the file paths we reference are prefixed with `site/` due to Create Static Site's conventions. Your filepaths will be slightly different if you use a vanilla Hugo install.
+If you don't want to use Create Static Site for your project, you can just use [Hugo's `new site` command](https://gohugo.io/commands/hugo_new_site/) to initialize a new Hugo site. Note that all of the file paths we reference are prefixed with `site/` due to Create Static Site's conventions. Your filepaths will be slightly different if you use a vanilla Hugo install.
 
 ## Getting Started With Snipcart
 
@@ -140,18 +140,24 @@ Buy {{ .Title }}
 Our template is expecting some specific front matter fields for our products. We could create an [archetype](https://gohugo.io/content-management/archetypes/) to assist our users with entering the necessary front matter, but since we're using Forestry to provide a content editing UI, we have chosen instead to include a Front Matter Template for products. This will provide the appropriate fields when adding a product in the Forestry UI.
 {{% /tip %}}
 
-The `snipcart-add-item` class tells Snipcart to listen for a click on this element. The `data-item-id`, `data-item-name`, `data-item-price`, and `data-item-url` attributes are required to tell Snipcart which product should be added to the cart. The rest of the attributes are optional, and there are [even more attributes available](https://docs.snipcart.com/configuration/product-definition).
+The `snipcart-add-item` class tells Snipcart to listen for a click on this element. The `data-item-id`, `data-item-name`, `data-item-price`, and `data-item-url` attributes are required to tell Snipcart which product should be added to the cart. The rest of the attributes are optional.
 
-#### Item ID
-The item ID is important, as this should uniquely identify your product to Snipcart. However, aside from being unique to this product, the ID doesn't need to be anything in particular. Our item URL is a good fit for this.
+{{% tip %}}
+There are several more attributes you can choose to define for your products. Check out [Snipcart's product definition docs](https://docs.snipcart.com/configuration/product-definition) to see all the options.
+{{% /tip %}}
 
 #### Item URL
 The `data-item-url` attribute needs to point to a place where the Snipcart product data is rendered. Since we have each product on its own page, this is just the URL to the current product.
 
+{{% warn %}}
 The item URL is very important: since we are just inserting the product price in the HTML, anyone could edit the document to change the price, and thus pay whatever they want for a product. Snipcart thwarts this by making their own request to the item URL to verify the product's price.
+{{% /warn %}}
+
+#### Item ID
+The item ID should uniquely identify your product to Snipcart. However, aside from being unique to this product, the ID doesn't need to be anything in particular. Since the product's URL also has to be unique to the product, it makes sense to use it for the product ID as well.
 
 ### Adding Custom Product Options
-You may wish for some of your products to be customizable, or perhaps you want to offer multiple variations of the same product. Snipcart provides a simple interface for configuring these options via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). 
+Snipcart provides a way to add custom fields to your product that will appear in the user's shopping cart via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). You might want to use this feature for customizable products, or products that have different variations like size or color.. Snipcart provides a simple interface for configuring these options via its . 
 
 We're going to use Forestry's [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
 
@@ -193,7 +199,7 @@ data-item-custom{{ .Index }}-required="true"
 {{- end -}}
 ```
 
-The first option is configured with `data-item-custom1-name`, the second with `data-item-custom2-name`, and so on. We pass the variable `Index` to this partial to keep track of that, and the rest of the option configuration in an `Option` variable. 
+Our custom field data attributes follow the format `data-item-custom<number>-<attribute>`, with `<number>` identifying the option and `<attribute>` being one of the attributes that configures the field.
 
 Take a look at [the `custom-options` partials in our demo repo](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options) to see how we did the rest.
 
@@ -214,4 +220,4 @@ For more information, view [Snipcart's "going live" docs](https://docs.snipcart.
 
 ## Taking it Further
 
-This post focused on integrating products, but Snipcart has some other nice features like user account dashboards and a customizable shopping cart. All of this is very easy to integrate into your site &mdash; check out [Snipcart's documentation](https://docs.snipcart.com/) or their [guides and tutorials](https://docs.snipcart.com/getting-started/guides-and-tutorials) for inspiration.
+In this post, we focused on building a static product catalog with Hugo to integrate with Snipcart. Snipcart has some other nice features like user account dashboards and a customizable shopping cart, and makes integrating these into your site just as easy. Check out [Snipcart's documentation](https://docs.snipcart.com/) or their [guides and tutorials](https://docs.snipcart.com/getting-started/guides-and-tutorials) for inspiration.
