@@ -50,7 +50,7 @@ engineName="hugo"
 engineVersion="0.38.1"
 forkName="snipcart-hugo"
 heading="Follow Along or Make it Your Own"
-linkText="Import our Snipcart demo into Forestry" %}}
+linkText="Import Our Snipcart Demo" %}}
 
 ## Bootstrapping the Project
 
@@ -97,6 +97,8 @@ We're using the `HUGO_ENV` variable to load the testing API key in our developme
 
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
+<br /><br />
+<a href="#/add-site" class="create-site-button">Import Our Snipcart Demo</a>
 {{% /tip %}}
 
 ### API Key Security
@@ -199,7 +201,7 @@ For the sake of brevity, we won't go into implementing each of these partials, b
 
 Our custom field data attributes follow the format `data-item-custom<number>-<attribute>`, with `<number>` identifying the option and `<attribute>` being one of the attributes that configures the field.
 
-Take a look at [the ](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options)`\[custom-options\](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options)`[ partials in our demo repo](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options) to see how we did the rest.
+Take a look at [the custom-options partials ](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options) to see how we did the rest.
 
 {{% tip %}}
 More info on how to configure custom options with data attributes is available in the [Snipcart documentation](https://docs.snipcart.com/configuration/custom-fields).
