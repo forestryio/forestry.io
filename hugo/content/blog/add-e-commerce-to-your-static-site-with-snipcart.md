@@ -68,6 +68,8 @@ If you don't want to use Create Static Site for your project, you can just use [
 
 ## Getting Started With Snipcart
 
+![Snipcart API key dashboard](/uploads/2018/05/snipcart-apikey-ss.png)
+
 In order to test out the demo project, you will need to provide a Snipcart API key. To obtain this, [sign up for a Snipcart account](https://app.snipcart.com/register) and log in to the dashboard. From there, Browse to the "API Keys" section of your account settings. You will be presented with your **public test API key**. We're going to store this key in our _site params_ in the `site/config.toml` file, so that we can edit it later in Forestry if we want to:
 
 ```toml
@@ -103,7 +105,7 @@ If you've already imported the demo to Forestry, you will want to log in to the 
 
 ### API Key Security
 
-The API key you received from Snipcart is a **Public API Key.** This key is inserted directly into the HTML. Since this key is already publicly visible, it is OK for this key to be added directly to your git repo.
+Although I blurred the key in the screenshot, the API key you received from Snipcart is a **Public API Key.** This key is inserted directly into the HTML. Since this key is already publicly visible, it is OK for this key to be added directly to your git repo.
 
 ## Setting Up Our Products
 
@@ -111,22 +113,20 @@ Let's add a new content section for products by adding a `products` directory un
 
 Keeping products in their own content section will make it easy to define product-specific layouts. Create a file called `single.html` in `site/layouts/products` to serve as the single product template.
 
-
 ### Defining Product Front Matter
+
+![Screenshot of product page](/uploads/2018/05/snipcart-product-ss.png)
 
 Our products will need some specific front matter in order to work with Snipcart, such as the product price. As an example, here is `site/content/products/axe.md` from the demo project:
 
-```
-+++
-cartImage = "/uploads/2018/05/15/axe-thumb.jpg"
-customOptions = []
-date = "2018-05-15T18:53:23Z"
-image = "/uploads/2018/05/15/axe.jpg"
-price = 50
-shortDescription = "Swing with purpose."
-title = "Axe"
-+++
-```
+    +++
+    cartImage = "/uploads/2018/05/15/axe-thumb.jpg"
+    date = "2018-05-15T18:53:23Z"
+    image = "/uploads/2018/05/15/axe.jpg"
+    price = 50
+    shortDescription = "Swing with purpose."
+    title = "Axe"
+    +++
 
 The `price` parameter is necessary, and the `shortDescription` and `cartImage` parameters will improve the shopping experience if they are filled out.
 
@@ -135,7 +135,7 @@ The `price` parameter is necessary, and the `shortDescription` and `cartImage` p
 <br /><br />
 Snipcart does not require a currency to be defined with the price. You can set the currency for your store under the **Regional Settings** section in your Snipcart dashboard.
 <br /><br />
-Our demo project also includes a currency setting under **Site Params**. This is only used to determine how to display the price in our templates. To customize the way prices display in your chosen currency, add a conditional to the [price partial](https://github.com/dwalkr/snipcart-hugo-demo/blob/master/site/layouts/partials/price.html).
+Our demo project also includes a currency setting under **Site Params**. This is only used to determine how to display the price in our templates. To customize the way prices display in your chosen currency, you can modify the [price partial](https://github.com/dwalkr/snipcart-hugo-demo/blob/master/site/layouts/partials/price.html).
 {{% /tip %}}
 
 In order to assist our users with product creation, we could create an [archetype](https://gohugo.io/content-management/archetypes/) for products that will initialize these special front matter fields when we create a product with the `hugo new` command. Since we're using Forestry, however, we will instead create a Front Matter Template in Forestry that will configure the UI with the appropriate fields whenever someone creates a new product.
@@ -166,10 +166,6 @@ We can use data attributes to enable "add to cart" behavior on any HTML element.
 
 The `snipcart-add-item` class tells Snipcart to listen for a click on this element. The `data-item-id`, `data-item-name`, `data-item-price`, and `data-item-url` attributes are required to tell Snipcart which product should be added to the cart. The rest of the attributes are optional.
 
-{{% tip %}}
-There are several more attributes you can choose to define for your products. Check out [Snipcart's product definition docs](https://docs.snipcart.com/configuration/product-definition) to see all the options.
-{{% /tip %}}
-
 #### Item URL
 
 The `data-item-url` attribute needs to point to a place where the Snipcart product data is rendered. Since we have each product on its own page, this is just the URL to the current product.
@@ -182,11 +178,21 @@ The item URL is very important: since we are just inserting the product price in
 
 The item ID should uniquely identify your product to Snipcart. However, aside from being unique to this product, the ID doesn't need to be anything in particular. Since the product's URL also has to be unique to the product, it makes sense to use it for the product ID as well.
 
-### Adding Custom Product Options
+{{% tip %}}
+There are several more attributes you can choose to define for your products. Check out [Snipcart's product definition docs](https://docs.snipcart.com/configuration/product-definition) to see all the options.
+{{% /tip %}}
 
-![](/uploads/2018/05/snipcart-cart-example.png)
+After you add this markup to the `single.html` template, you should now have a functioning buy button on your product pages. **You don't need to add these products to your Snipcart dashboard** — Snipcart will pick up on them automatically when a user adds them to their cart.
 
-Snipcart provides a way to add custom fields to your product that will appear in the user's shopping cart via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). You might want to use this feature for customizable products, or products that have different variations like size or color.
+![Snipcart's Fetch Products interface](/uploads/2018/05/snipcart-fetch-ss.png)
+
+If you want to see all your products in Snipcart right away, you can use the **Fetch Products** interface and Snipcart will crawl your site to pick up any products that are defined on the page. This approach to product management will seem unconventional to a lot of users, but this behavior is what makes Snipcart so easy to adapt to any content strategy.
+
+## Enhancement: Adding Custom Product Options
+
+![Example of product in cart with custom option](/uploads/2018/05/snipcart-cart-example.png)
+
+At this point, we already have a functioning store on our static site! However, one feature you might wish to add is **custom options** for your products. This would be useful if you have customizable products, or products that have different variations like size or color. Snipcart provides a way to add custom fields to your product via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields).
 
 We're going to use Forestry's [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
 
@@ -234,7 +240,11 @@ More info on how to configure custom options with data attributes is available i
 
 ## Going Live
 
-When you're ready to go live, you just have to enter your live API key in the `snipcart_live_api_key` field in the `site/config.toml` file, or in your **Site Params** in Forestry.
+![](/uploads/2018/05/snipcart-env-toggle.png)
+
+Flip the environment toggle in your Snipcart dashboard over to "Live" to access your production settings and API key. When you're ready to go live, you just have to generate a live API key and enter it in the `snipcart_live_api_key` field in the `site/config.toml` file, or in your **Site Params** in Forestry.
+
+You will also want to add the domain of your production site in the **Domains & URLs** section of your Snipcart account settings (this is how Snipcart prevents other sites from using your public API key!)
 
 {{% tip %}}
 In order to generate a live API key, you will need to enter billing information and connect a payment gateway.
