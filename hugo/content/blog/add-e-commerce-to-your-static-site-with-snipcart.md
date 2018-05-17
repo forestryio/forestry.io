@@ -43,13 +43,17 @@ Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-v
 
 This blog post will show you how easy it is to integrate Snipcart with a Hugo website. We will also use Forestry to complete the experience with a product management UI.
 
+## The Demo Project
+
+Accompanying this blog post is a sample Hugo website that integrates Snipcart to provide an e-commerce frontend. [Try out the live demo](https://dwalkr.github.io/snipcart-hugo-demo/) to get a feel for how Snipcart works, or [take a look at the source code](https://github.com/dwalkr/snipcart-hugo-demo) to see how it was done. If you want to get started right away, you can import this demo site into Forestry with the button below.
+
 {{% create_site_button
 repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.38.1"
 forkName="snipcart-hugo"
-heading="Follow Along or Make it Your Own"
+heading="Make it Your Own"
 linkText="Import Our Snipcart Demo" %}}
 
 ## Bootstrapping the Project
