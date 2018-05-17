@@ -27,9 +27,9 @@ menu: []
 draft: true
 
 ---
-Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very fast. Since static sites can't run backend code, though, could you use them to run an online store?
+Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very fast. However, since a static site can't run backend code, it won't be able to do some things necessary for e-commerce, such as process customer orders. Can you really use a static site to operate an e-commerce storefront?
 
-**Of course you can!** By using external services for the heavy lifting, and connecting them to our static site with JavaScript, we can do anything!
+**Of course you can!** By using external services for the heavy lifting, and connecting them to our static site with JavaScript, we can do anything with our static site!
 
 For static sites, our best option for adding e-commerce are [Snipcart](https://snipcart.com/) and [Shopify's Buy Buttons](https://www.shopify.com/buy-button). Both options have different advantages, but for our purposes, Snipcart's killer feature is its adaptability to any content strategy.
 
@@ -64,7 +64,7 @@ This will set up a new project in the `snipcart-hugo/` directory.
 Check out our blog post on [getting started with Create Static Site](https://forestry.io/blog/instant-production-ready-scaffolding-with-create-static-site/) for more information on using this utility.
 {{% /tip %}}
 
-If you don't want to use Create Static Site for your project, you can just use [Hugo's ](https://gohugo.io/commands/hugo_new_site/)`[new site](https://gohugo.io/commands/hugo_new_site/)`[ command](https://gohugo.io/commands/hugo_new_site/) to initialize a new Hugo site. Note that all of the file paths we reference are prefixed with `site/` due to Create Static Site's conventions. Your filepaths will be slightly different if you use a vanilla Hugo install.
+If you don't want to use Create Static Site for your project, you can just use [Hugo's new site command](https://gohugo.io/commands/hugo_new_site/) to initialize a new Hugo site. Note that all of the file paths we reference are prefixed with `site/` due to Create Static Site's conventions. Your filepaths will be slightly different if you use a vanilla Hugo install.
 
 ## Getting Started With Snipcart
 
@@ -159,7 +159,7 @@ The item ID should uniquely identify your product to Snipcart. However, aside fr
 
 ![](/uploads/2018/05/snipcart-cart-example.png)
 
-Snipcart provides a way to add custom fields to your product that will appear in the user's shopping cart via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). You might want to use this feature for customizable products, or products that have different variations like size or color.. Snipcart provides a simple interface for configuring these options via its .
+Snipcart provides a way to add custom fields to your product that will appear in the user's shopping cart via its [custom fields data attributes](https://docs.snipcart.com/configuration/custom-fields). You might want to use this feature for customizable products, or products that have different variations like size or color.
 
 We're going to use Forestry's [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature to define some custom field types. This will enable us to specify any number of custom fields for each individual product.
 
@@ -199,7 +199,7 @@ For the sake of brevity, we won't go into implementing each of these partials, b
 
 Our custom field data attributes follow the format `data-item-custom<number>-<attribute>`, with `<number>` identifying the option and `<attribute>` being one of the attributes that configures the field.
 
-Take a look at [the ](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options)`[custom-options](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options)`[ partials in our demo repo](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options) to see how we did the rest.
+Take a look at [the ](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options)`\[custom-options\](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options)`[ partials in our demo repo](https://github.com/dwalkr/snipcart-hugo-demo/tree/master/site/layouts/partials/custom-options) to see how we did the rest.
 
 {{% tip %}}
 More info on how to configure custom options with data attributes is available in the [Snipcart documentation](https://docs.snipcart.com/configuration/custom-fields).
