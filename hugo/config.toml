@@ -25,6 +25,9 @@ weight = 6
 name = "Hosting"
 weight = 5
 [[menu.docs]]
+name = "Media"
+weight = 5
+[[menu.docs]]
 name = "Editing"
 weight = 4
 [[menu.docs]]
