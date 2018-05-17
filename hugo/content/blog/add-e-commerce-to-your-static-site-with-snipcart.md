@@ -82,6 +82,10 @@ _Replace_ `_YOUR-API-KEY_` _with the public test API key from your Snipcart acco
 
 Notice that we have declared two values here: `snipcart_test_api_key` and `snipcart_live_api_key`. When you're ready to go live, you will add your live API key here as well.
 
+{{% tip %}}
+Your **Test API Key** should work in most local development environments. If it doesn't seem to be working, however, try adding the domain of your development environment in the **Domains & URLs** section of your account settings.
+{{% /tip %}}
+
 To embed the necessary Snipcart scripts, we will add the following to `site/layouts/partials/head.html` before the closing `head` tag:
 
     <!-- snipcart assets -->
