@@ -111,13 +111,42 @@ Let's add a new content section for products by adding a `products` directory un
 
 Keeping products in their own content section will make it easy to define product-specific layouts. Create a file called `single.html` in `site/layouts/products` to serve as the single product template.
 
+
+### Defining Product Front Matter
+
+Our products will need some specific front matter in order to work with Snipcart, such as the product price. As an example, here is `site/content/products/axe.md` from the demo project:
+
+```
++++
+cartImage = "/uploads/2018/05/15/axe-thumb.jpg"
+customOptions = []
+date = "2018-05-15T18:53:23Z"
+image = "/uploads/2018/05/15/axe.jpg"
+price = 50
+shortDescription = "Swing with purpose."
+title = "Axe"
++++
+```
+
+The `price` parameter is necessary, and the `shortDescription` and `cartImage` parameters will improve the shopping experience if they are filled out.
+
+{{% tip %}}
+**Defining your store's currency**
+<br /><br />
+Snipcart does not require a currency to be defined with the price. You can set the currency for your store under the **Regional Settings** section in your Snipcart dashboard.
+<br /><br />
+Our demo project also includes a currency setting under **Site Params**. This is only used to determine how to display the price in our templates. To customize the way prices display in your chosen currency, add a conditional to the [price partial](https://github.com/dwalkr/snipcart-hugo-demo/blob/master/site/layouts/partials/price.html).
+{{% /tip %}}
+
+In order to assist our users with product creation, we could create an [archetype](https://gohugo.io/content-management/archetypes/) for products that will initialize these special front matter fields when we create a product with the `hugo new` command. Since we're using Forestry, however, we will instead create a Front Matter Template in Forestry that will configure the UI with the appropriate fields whenever someone creates a new product.
+
+### Adding a Buy Button
+
 {{% tip %}}
 This guide focuses on the markup necessary to make our project work with Snipcart. [View the demo project](https://github.com/dwalkr/snipcart-hugo-demo) to get the full source code.
 {{% /tip %}}
 
-### Adding a Buy Button
-
-We can use data attributes to enable "add to cart" behavior on any HTML element. For our single product template, we will attach this data to a button:
+We can use data attributes to enable "add to cart" behavior on any HTML element. For our single product template at `site/layouts/products/single.html`, we will attach this data to a button:
 
     <button
         class="snipcart-add-item"
@@ -134,10 +163,6 @@ We can use data attributes to enable "add to cart" behavior on any HTML element.
     >
     Buy {{ .Title }}
     </button>
-
-{{% tip %}}
-Our template is expecting some specific front matter fields for our products. We could create an [archetype](https://gohugo.io/content-management/archetypes/) to assist our users with entering the necessary front matter, but since we're using Forestry to provide a content editing UI, we have chosen instead to include a Front Matter Template for products. This will provide the appropriate fields when adding a product in the Forestry UI.
-{{% /tip %}}
 
 The `snipcart-add-item` class tells Snipcart to listen for a click on this element. The `data-item-id`, `data-item-name`, `data-item-price`, and `data-item-url` attributes are required to tell Snipcart which product should be added to the cart. The rest of the attributes are optional.
 
