@@ -190,7 +190,7 @@ After you add this markup to the `single.html` template, you should now have a f
 
 ![Snipcart's Fetch Products interface](/uploads/2018/05/snipcart-fetch-ss.png)
 
-If you want to see all your products in Snipcart right away, you can use the **Fetch Products** interface and Snipcart will crawl your site to pick up any products that are defined on the page. This approach to product management will seem unconventional to a lot of users, but this behavior is what makes Snipcart so easy to adapt to any content strategy.
+If you want to see all your products in Snipcart right away, you can use the **Fetch Products** interface and Snipcart will crawl your site to pick up any products that are defined on the page. This unconventional approach to product management is what makes Snipcart so easy to adapt to any content strategy.
 
 ## Enhancement: Adding Custom Product Options
 
