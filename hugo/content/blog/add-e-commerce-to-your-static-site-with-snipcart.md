@@ -31,7 +31,7 @@ Picture this: it's 2018, and your client needs an online store. You know that st
 
 **Of course you can!** By using external services for the heavy lifting, and connecting them to our static site with JavaScript, we can do anything with our static site!
 
-For static sites, our best option for adding e-commerce are [Snipcart](https://snipcart.com/) and [Shopify's Buy Buttons](https://www.shopify.com/buy-button). Both options have different advantages, but for our purposes, Snipcart's killer feature is its adaptability to any content strategy.
+For static sites, our best options for adding e-commerce are [Snipcart](https://snipcart.com/) and [Shopify's Buy Buttons](https://www.shopify.com/buy-button). Both options have different advantages, but for our purposes, Snipcart's killer feature is its adaptability to any content strategy.
 
 See, Shopify's Buy Buttons work by providing you with code snippets you can copy and paste into your site that will display the product and allow the user to add it to their shopping cart. In order to use this effectively, you will need to adapt your content strategy around this limitation. Snipcart, on the other hand, learns about your products from data attributes in your site's HTML. As long as you provide [a few essential pieces of data](https://docs.snipcart.com/configuration/product-definition), anything on your site can become a Snipcart product!
 
@@ -70,7 +70,7 @@ If you don't want to use Create Static Site for your project, you can just use [
 
 ![Snipcart API key dashboard](/uploads/2018/05/snipcart-apikey-ss.png)
 
-In order to test out the demo project, you will need to provide a Snipcart API key. To obtain this, [sign up for a Snipcart account](https://app.snipcart.com/register) and log in to the dashboard. From there, Browse to the "API Keys" section of your account settings. You will be presented with your **public test API key**. We're going to store this key in our _site params_ in the `site/config.toml` file, so that we can edit it later in Forestry if we want to:
+In order to test out the demo project, you will need to provide a Snipcart API key. To obtain this, [sign up for a Snipcart account](https://app.snipcart.com/register) and log in to the dashboard. From there, Browse to the **API Keys** section of your account settings. You will be presented with your **Public Test API key**. We're going to store this key in our **Site Params** in the `site/config.toml` file, so that we can edit it later in Forestry if we want to:
 
 ```toml
 [params]
@@ -99,7 +99,7 @@ To embed the necessary Snipcart scripts, we will add the following to `site/layo
     "></script>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 
-We're using the `HUGO_ENV` variable to load the testing API key in our development environment, and the live API key in our production environment. This will allow us to continue to test our implementation in a development environment even after we make our store live.
+We're using the `HUGO_ENV` variable to load the testing API key in our development environment, and the live API key in our production environment. This will allow us to continue to test our implementation in a development environment, using the test API key, even after we make our store live.
 
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
@@ -109,7 +109,7 @@ If you've already imported the demo to Forestry, you will want to log in to the 
 
 ### API Key Security
 
-Although I blurred the key in the screenshot, the API key you received from Snipcart is a **Public API Key.** This key is inserted directly into the HTML. Since this key is already publicly visible, it is OK for this key to be added directly to your git repo.
+Although I blurred the key in the screenshot, the API key you receive from Snipcart is a **Public API Key.** This key is inserted directly into the HTML. Since this key is already publicly visible, it is OK for this key to be added directly to your git repo.
 
 ## Setting Up Our Products
 
