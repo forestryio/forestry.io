@@ -4,7 +4,7 @@ description: ''
 date: 2018-05-04 07:10:15 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-05-03 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - Beyond Static
