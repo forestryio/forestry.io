@@ -44,7 +44,7 @@ This blog post will show you how easy it is to integrate Snipcart with a Hugo we
 ## The Demo Project
 
 Accompanying this blog post is a sample Hugo website that integrates Snipcart to provide an e-commerce frontend. [Try out the live demo](https://dwalkr.github.io/snipcart-hugo-demo/) to get a feel for how Snipcart works, or [take a look at the source code](https://github.com/dwalkr/snipcart-hugo-demo) to see how it was done. If you want to get started right away, you can import this demo site into Forestry with the button below.
- 
+
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
@@ -267,8 +267,6 @@ In this post, we focused on building a static product catalog with Hugo to integ
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll dig deeper into creating a JSON API with Hugo. </p><p><strong>Last week:</strong> We told you about <a href="https://forestry.io/blog/what-s-new-in-jekyll-3.8/">the latest updates to Jekyll</a>.</p></div>
 
-<!--
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17047294">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17101744">Discuss on Hacker News</a>
