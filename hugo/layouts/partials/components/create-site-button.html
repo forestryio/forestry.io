@@ -6,6 +6,7 @@
             branch: "{{ .branch_name }}",
         },
         repoName: "{{ .fork_name }}",
+        configPath: "{{ .config_path }}"
     }
 </script>
 <script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
