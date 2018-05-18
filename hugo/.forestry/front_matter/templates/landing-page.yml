@@ -1,9 +1,4 @@
 ---
-pages:
-- test-landing-page.md
-- landing-page-test.md
-- another-landing-page.md
-- blocks.md
 hide_body: true
 is_partial: false
 fields:
@@ -23,3 +18,8 @@ fields:
   label: Layout
   hidden: true
   default: blocks
+pages:
+- test-landing-page.md
+- landing-page-test.md
+- another-landing-page.md
+- blocks.md
