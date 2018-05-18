@@ -23,7 +23,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
 
 ---
 Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very fast. However, since a static site can't run backend code, it won't be able to do some things necessary for e-commerce, such as process customer orders. Can you really use a static site to operate an e-commerce storefront?
