@@ -45,6 +45,7 @@ This blog post will show you how easy it is to integrate Snipcart with a Hugo we
 
 Accompanying this blog post is a sample Hugo website that integrates Snipcart to provide an e-commerce frontend. [Try out the live demo](https://dwalkr.github.io/snipcart-hugo-demo/) to get a feel for how Snipcart works, or [take a look at the source code](https://github.com/dwalkr/snipcart-hugo-demo) to see how it was done. If you want to get started right away, you can import this demo site into Forestry with the button below.
 
+<div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
 branch="master"
@@ -53,6 +54,7 @@ engineVersion="0.38.1"
 forkName="snipcart-hugo"
 heading="Make it Your Own"
 linkText="Import Our Snipcart Demo" %}}
+</div>
 
 ## Bootstrapping the Project
 
@@ -106,7 +108,7 @@ We're using the `HUGO_ENV` variable to load the testing API key in our developme
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
 <br /><br />
-<a href="#/add-site" class="create-site-button">Import Our Snipcart Demo</a>
+<a href="#/add-site" class="create-site-button" data-proofer-ignore>Import Our Snipcart Demo</a>
 {{% /tip %}}
 
 ### API Key Security
