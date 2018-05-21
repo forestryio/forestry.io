@@ -12,6 +12,10 @@ menu:
 
 ## Migrating Existing Media
 
+Currently, we are not able to automatically migrate existing media from a git repo to a user's Cloudinary account. We recommend logging in to your Cloudinary dashboard and bulk uploading your images there. After the images are in your Cloudinary account, they will also appear in your Media Library in Forestry.
+
+Unfortunately, for the time being, you will need to manually update your front matter to reassign the new images.
+
 ## Using Cloudinary Images
 
 Cloudinary supports a vast array of image manipulation options that can be implemented directly in the image URL. Cloudinary has [so many transformation options](https://cloudinary.com/documentation/image_transformations) that, rather than attempt to support a subset of them in our UI, we have instead decided to make it easy for developers to configure these image transformations themselves in the site's templates.
