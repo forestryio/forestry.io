@@ -19,6 +19,7 @@ A date and time picker.
 * _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 * _Date Format_ – how the date should be displayed in the editor.
 * _Date Format_ – how the date should be displayed in the editor.
+* _Display UTC_ – activating this option will display the date in UTC regardless of user's locale settings.
 * _Required_ – prevent changes from being saved if this field is empty.
 
 ## Field UI
@@ -49,6 +50,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     description: [String] 
     default: [String]
     hidden: [true|false]
+    display_utc: [true|false]
     config:
       date_format: [String]
       time_format: [String] 
@@ -59,6 +61,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     label: Date
     description: The creation date for this page 
     hidden: false
+    display_utc: false
     config:
       date_format: "YYYY/MM/DD"
       time_format: "HH:MM:SS"
