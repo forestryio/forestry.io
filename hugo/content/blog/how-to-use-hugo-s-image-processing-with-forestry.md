@@ -26,7 +26,7 @@ menu: []
 
 ![](/uploads/2018/04/media-library-hugo-img-processing.png){{% tip %}} 
 **Interested in image processing?!** We are adding [Cloudinary](https://cloudinary.com/) support for Forestry giving you access to their powerful image processing capabilities.
-{{% /tip %}}
+{{% /tip %}}<p>
 
 ## 1. Create the uploads content section
 
