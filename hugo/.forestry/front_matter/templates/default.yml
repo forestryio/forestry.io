@@ -144,6 +144,7 @@ pages:
 - careers/admin.md
 - careers/marketing.md
 - careers/software-engineer.md
+- blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - blog/join-our-slack-community.md
 - blog/test.md
 - blog/new-pricing-organization-accounts.md
@@ -172,7 +173,6 @@ pages:
 - blog/sawmill-a-layout-composer-for-hugo-and-forestry.md
 - blog/search-with-algolia-in-hugo.md
 - blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
-- blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - blog/hugo-vs-jekyll-benchmark.md
 - blog/build-a-json-api-with-hugo.md
 - blog/why-we-built-forestry.md
