@@ -49,13 +49,13 @@ There's an unfortunate side effect of this: you will now see **Uploads** under y
 
 ## 2. Change the upload file path in Forestry settings
 
-Inside the CMS, click on `Settings` to access your site's settings. Scroll down to the **Media Paths** section. We need to change the **Upload Directory** settings: By default, this will be set to `/static/uploads/:year:/:month:/:day:`. Change this to `content/uploads` so that Hugo can view these files as Page Resources.
+Inside the CMS, click on `Settings` to access your site's settings. Scroll down to the **Media Paths** section. We need to change the **Upload Directory** settings: By default, this will be set to `/static/uploads`. Change this to `content/uploads` so that Hugo can view these files as Page Resources.
 
 ![](/uploads/2018/05/media_paths_settings_ss.png)
 
 ## 3. Update file URL paths
 
-In the same section, update the **Public Path** to match the new upload location: `/uploads`. Then open up the **Advanced** toggle and change the file path to just `:filename:`.
+In the same section, update the **Public Path** to match the new upload location: `/uploads`. Then open up the **Advanced** toggle and change the **File Path** to just `:filename:`.
 
 ## 4. Look up the page resource in your template
 
