@@ -4,7 +4,7 @@ description: ''
 date: 2018-05-25 05:13:41 -1100
 authors:
 - Régis Philibert
-publishdate: 2018-05-25 16:00:00 -1100
+publishdate: 2018-05-26 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 draft: true
 
 ---
@@ -441,3 +440,12 @@ Using `Scratch`, we can create temporary variables to store the data structure w
 This is a more idiomatic way to create JSON output. Since JSON is fundamentally a data format and was designed to be easy for machines to process, we should expect `jsonify` to do a better job of marshaling our JSON than the built-by-hand templates demonstrated earlier in this article. And while it may be a little less obvious to a beginner, using this strategy makes it much easier to change our data structure in the future, and not have to worry about silly things like avoiding trailing commas.
 
 Happy coding!
+
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at Cloudinary's image transformations. </p><p><strong>Last week:</strong> We showed you how to <a href="https://forestry.io/blog/snipcart-brings-ecommerce-static-site/">build a static e-commerce site with Snipcart</a>.</p></div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/">Discuss on Hacker News</a>
+-->
