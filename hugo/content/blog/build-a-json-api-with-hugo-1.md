@@ -1,5 +1,5 @@
 ---
-title: 'Build a JSON API with Hugo: Part 2'
+title: Enhance Your Hugo JSON API using Custom Output Formats and Netlify Redirects
 description: ''
 date: 2018-05-25 05:13:41 -1100
 authors:
