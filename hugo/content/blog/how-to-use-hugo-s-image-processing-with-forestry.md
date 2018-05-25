@@ -1,10 +1,10 @@
 ---
 title: How To Use Hugo's Image Processing With Forestry
 description: ''
-date: 2018-04-11 07:09:02 +0000
+date: 2018-05-21 20:09:02 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-05-21 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -20,12 +20,13 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
-Hugo’s `0.32` update introduced built-in [image processing](https://gohugo.io/content-management/image-processing/) for certain assets. One limitation of this feature is that it only works for [page resources](https://gohugo.io/content-management/page-resources/), which are page-relative assets stored alongside your posts in the `content/` directory of your site. Since Forestry’s uploads are stored in the `static/uploads/` directory by default, these assets cannot be resized in your templates using Hugo’s built-in resizer. This document will provide a step-by-step guide for working around this limitation.
+`0.32` update introduced built-in [image processing](https://gohugo.io/content-management/image-processing/) for certain assets. One limitation of this feature is that it only works for [page resources](https://gohugo.io/content-management/page-resources/), which are page-relative assets stored alongside your posts in the `content/` directory of your site. Since Forestry’s uploads are stored in the `static/uploads/` directory by default, these assets cannot be resized in your templates using Hugo’s built-in resizer. This document will provide a step-by-step guide for working around this limitation.
 
-![](/uploads/2018/04/media-library-hugo-img-processing.png)
+![](/uploads/2018/04/media-library-hugo-img-processing.png){{% tip %}} 
+**Interested in image processing?!** Watch our updates, we are adding [Cloudinary](https://cloudinary.com/) support for Forestry giving you access to powerful image processing capabilities.
+{{% /tip %}}<p>
 
 ## 1. Create the uploads content section
 
@@ -49,13 +50,13 @@ There's an unfortunate side effect of this: you will now see **Uploads** under y
 
 ## 2. Change the upload file path in Forestry settings
 
-Inside the CMS, click on `Settings` to access your site's settings. Scroll down to the **File Paths** section. By default, this will be set to `/static/uploads/:year:/:month:/:day:`. Change this to `/content/uploads` so that Hugo can view these files as Page Resources.
+Inside the CMS, click on `Settings` to access your site's settings. Scroll down to the **Media Paths** section. We need to change the **Upload Directory** settings: By default, this will be set to `/static/uploads`. Change this to `content/uploads` so that Hugo can view these files as Page Resources.
 
-![](/uploads/2018/04/settings-content-uploads.png)
+![](/uploads/2018/05/media_paths_settings_ss.png)
 
-## 3. Update front matter and body upload URLs
+## 3. Update file URL paths
 
-In the same section, update the URLs in your front matter to match the new upload location: `/uploads`.
+In the same section, update the **Public Path** to match the new upload location: `/uploads`. Then open up the **Advanced** toggle and change the **File Path** to just `:filename:`.
 
 ## 4. Look up the page resource in your template
 

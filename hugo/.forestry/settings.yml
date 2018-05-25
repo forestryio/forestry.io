@@ -1,10 +1,12 @@
 ---
-upload_path: "/hugo/static/uploads/:year:/:month:"
-frontmatter_file_url_template: "/uploads/:year:/:month:"
-body_file_url_template: "/uploads/:year:/:month:"
 new_page_extension: md
 auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections: 
+upload_dir: hugo/static/uploads
+public_path: "/uploads"
+front_matter_path: "/uploads"
+use_front_matter_path: false
+file_template: ":year:/:month:/:filename:"
 version: 0.38.1

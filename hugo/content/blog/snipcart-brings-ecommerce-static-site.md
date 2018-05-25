@@ -4,7 +4,7 @@ description: ''
 date: 2018-05-18 03:36:07 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-06 17:00:00 -1100
+publishdate: 2018-05-17 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - Beyond Static
@@ -23,8 +23,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
-draft: true
 
 ---
 Picture this: it's 2018, and your client needs an online store. You know that static sites are great: they're easy to scale, have a minimal attack surface, and are very fast. However, since a static site can't run backend code, it won't be able to do some things necessary for e-commerce, such as process customer orders. Can you really use a static site to operate an e-commerce storefront?
@@ -43,14 +41,21 @@ Snipcart published an [in-depth comparison](https://snipcart.com/blog/snipcart-v
 
 This blog post will show you how easy it is to integrate Snipcart with a Hugo website. We will also use Forestry to complete the experience with a product management UI.
 
+## The Demo Project
+
+Accompanying this blog post is a sample Hugo website that integrates Snipcart to provide an e-commerce frontend. [Try out the live demo](https://dwalkr.github.io/snipcart-hugo-demo/) to get a feel for how Snipcart works, or [take a look at the source code](https://github.com/dwalkr/snipcart-hugo-demo) to see how it was done. If you want to get started right away, you can import this demo site into Forestry with the button below. Be sure to [set up your API key](#getting-started-with-snipcart) after importing the site to enable the Snipcart features.
+
+<div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
+configPath="site"
 branch="master"
 engineName="hugo"
 engineVersion="0.38.1"
 forkName="snipcart-hugo"
-heading="Follow Along or Make it Your Own"
+heading="Make it Your Own"
 linkText="Import Our Snipcart Demo" %}}
+</div>
 
 ## Bootstrapping the Project
 
@@ -104,7 +109,7 @@ We're using the `HUGO_ENV` variable to load the testing API key in our developme
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
 <br /><br />
-<a href="#/add-site" class="create-site-button">Import Our Snipcart Demo</a>
+<a href="#/add-site" class="create-site-button" data-proofer-ignore>Import Our Snipcart Demo</a>
 {{% /tip %}}
 
 ### API Key Security
@@ -259,3 +264,9 @@ For more information, view [Snipcart's "going live" docs](https://docs.snipcart.
 ## Taking it Further
 
 In this post, we focused on building a static product catalog with Hugo to integrate with Snipcart. Snipcart has some other nice features like user account dashboards and a customizable shopping cart, and makes integrating these into your site just as easy. Check out [Snipcart's documentation](https://docs.snipcart.com/) or their [guides and tutorials](https://docs.snipcart.com/getting-started/guides-and-tutorials) for inspiration.
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll dig deeper into creating a JSON API with Hugo. </p><p><strong>Last week:</strong> We told you about <a href="https://forestry.io/blog/what-s-new-in-jekyll-3.8/">the latest updates to Jekyll</a>.</p></div>
+
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17101744">Discuss on Hacker News</a>
