@@ -1,5 +1,5 @@
 ---
-title: Build a JSON API with Hugo Part 2
+title: 'Build a JSON API with Hugo: Part 2'
 description: ''
 date: 2018-05-25 05:13:41 -1100
 authors:
