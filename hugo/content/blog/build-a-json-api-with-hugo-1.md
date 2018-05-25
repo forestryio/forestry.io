@@ -1,5 +1,5 @@
 ---
-title: Enhance Your Hugo JSON API using Custom Output Formats and Netlify Redirects
+title: Enhance Your Hugo JSON API Using Custom Output Formats and Netlify Redirects
 description: ''
 date: 2018-05-25 05:13:41 -1100
 authors:
