@@ -375,6 +375,7 @@ The `$key` is the pluralized name of our taxonomy. Because we can only pass one 
     /players/?sport=football to /sports/football/players.json
 
 and not `/players/?sports=football`.
+
 {{% tip %}}
 Those`-`attached to the opening of our`range`and`end` curly braces is to make sure Hugo does not add too many line breaks.
 {{% /tip %}}
