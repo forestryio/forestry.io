@@ -25,4 +25,4 @@ If your site has a large number of media files, we highly recommend you select a
 
 Forestry can use [Cloudinary](https://cloudinary.com/) to store your media files. With Cloudinary, you have the advantage of easy image manipulation directly in your templates.
 
-[Read the full guide on using cloudinary for media storage](/docs/media/git)
+[Read the full guide on using cloudinary for media storage](/docs/media/cloudinary)
