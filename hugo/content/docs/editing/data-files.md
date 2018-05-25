@@ -5,7 +5,7 @@ title: Data Files
 weight: 5
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2018-05-25 16:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -24,8 +24,6 @@ Forestry allows you to edit existing data files. They can be found under _Data_ 
 ## Customizing Fields
 
 You can also apply [Front Matter Templates](/docs/settings/front-matter-templates/#applying-fmts-to-content) to your data files, allowing configuration of the fields that are displayed in the CMS. To do so, navigate to the Data File you want to customize:
-
-![](/uploads/2018/01/13.png)
 
 1. Click the settings button in the top right, next to the "Save" button
 2. Click "Change Template"

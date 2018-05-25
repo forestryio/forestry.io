@@ -7,7 +7,7 @@ title: Media Library
 weight: 6
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2018-05-25 16:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -45,51 +45,34 @@ To delete media files, navigate to the _Media Library_ page in the CMS, and foll
 2. Click the trash icon in the top right corner of the page
 3. You can confirm that each upload is being deleted by checking _Site Activity_ in the top right of the sidebar
 
-{{% tip %}}
-If you deleted a media upload by accident, worry not! All media uploads are stored in your Git repositories history.
-{{% /tip %}}
-
 ## Configuring the Media Library
 
-The Media Library displays media files found inside a single uploads folder. This can be configured from your site's settings.
+You can configure the paths used for your media files in the **Media Paths** section of your site settings.
 
-![](/uploads/2018/01/settings-filepaths.png)
+![Media Path Settings](/uploads/2018/05/media-paths-settings.png)
 
-#### Upload Folder
+### Upload Directory
 
-The upload path where media uploads should be saved, relative to the root of your repository.
+The directory where media uploads should be saved, relative to the root of your repository.
 
-* _Default:_ `/uploads/:year:/:month:/:day:/`
+### Public Path
 
-#### Front Matter File URL
+The *URL path* that maps to your upload directory. For example, a Hugo website might use `static/uploads` as the **upload directory**, and `/uploads` as the **public path** since Hugo copies files placed in `static` directly into the root of the published website. 
 
-The relative path from the root of your site for media uploads inserted into front matter fields.
+### File Path
 
-* _Default:_ `/uploads/:year:/:month:/:day:/`
-
-{{% tip %}}
-The _Front Matter File URL_ may need to be different than the _Content Body File URL_ if your theme handles appending the path to the media upload.
-{{% /tip %}}
-
-#### Content Body File URL
-
-The relative path from the site's root for media uploads in the content body.
-
-* _Default:_ `/uploads/:year:/:month:/:day:/`
-
-{{% tip %}}
-The _Content Body File URL_ should always be the relative path to your media uploads folder from the root of your site to ensure that images load correctly.
-{{% /tip %}}
-
-#### Variables
-
-Each of these settings support the following variables at upload time:
+This value will be appended to both your **upload directory** and **public path**. You can use this setting to specify a subfolder to place your uploads in. You may use the following variables as a way of bucketing your uploads:
 
 * `:year:`: the current year, formatted `YYYY`
 * `:month:`: the current month, formatted `MM`
 * `:day:`: the current day, formatted `DD`
 
-## Futher Reading
+### Front Matter Path
 
+You may optionally use a different *public path* for images uploaded to front matter, as opposed to images uploaded via the content editor. You may wish to do this if you already have the *public path* value written into your templates where the front matter is used.
+
+## Further Reading
+
+* [Media Storage Options in Forestry](/docs/media/)
 * [Hugo, Static Files](https://gohugo.io/content-management/static-files/)
 * [Jekyll, Static Files](https://jekyllrb.com/docs/static-files/)
