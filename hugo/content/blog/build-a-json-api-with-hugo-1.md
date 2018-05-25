@@ -249,7 +249,7 @@ Our API now serves Endpoints for all these different URLs:
 This is great! The most important part is done. However, the developer experience of using our API could stand to be improved. For this step, I have identified two problems that I would like to solve:
 
 1. It would be nice if developers didn't have to append `index.json` to all of these requests.
-2. Our API would be more intuitive if looking up players by team or sport used the same route as looking up all players, since the type of data being returned is fundamentally the same. Ideally, we would like the for the developer to feel as if they're applying a filter to the base `players` route.
+2. Our API would be more intuitive if looking up players by team or sport used the same route as looking up all players, since the type of data being returned is fundamentally the same. Ideally, we would like for the developer to feel as if they're applying a filter to the base `players` route.
 
 We can solve these problems with URL rewrites. Reviewing the two problems above, I propose the following changes to our URLs:
 
