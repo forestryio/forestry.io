@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
 
 ---
 Hugo makes it super easy to build simple APIs with its built-in output formats. In [my previous article](https://forestry.io/blog/build-a-json-api-with-hugo/), we built a fully functional JSON API.  Today we’re going to extend the capabilities of this API and improve the user experience with better URLs.
