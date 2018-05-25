@@ -67,6 +67,10 @@ This value will be appended to both your **upload directory** and **public path*
 * `:month:`: the current month, formatted `MM`
 * `:day:`: the current day, formatted `DD`
 
+### Front Matter Path
+
+You may optionally use a different *public path* for images uploaded to front matter, as opposed to images uploaded via the content editor. You may wish to do this if you already have the *public path* value written into your templates where the front matter is used.
+
 ## Further Reading
 
 * [Media Storage Options in Forestry](/docs/media/)
