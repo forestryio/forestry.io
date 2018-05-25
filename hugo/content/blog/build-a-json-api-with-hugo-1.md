@@ -24,7 +24,7 @@ menu: []
 draft: true
 
 ---
-Hugo makes it super easy to build simple APIs with its built-in output formats. In a previous article, we built a fully functional JSON API.  Today we’re going to extend the capabilities of this API and improve the user experience with better URLs.
+Hugo makes it super easy to build simple APIs with its built-in output formats. In [my previous article](https://forestry.io/blog/build-a-json-api-with-hugo/), we built a fully functional JSON API.  Today we’re going to extend the capabilities of this API and improve the user experience with better URLs.
 
 At the moment our API can look up specific items, but can’t look at them in relation to each other. Say you want to know what players are in a specific team: with our current API, you can't do that easily. To solve this, we’ll use Custom Output Formats to create another JSON route to read and use these relationships.
 
@@ -437,6 +437,6 @@ Using `Scratch`, we can create temporary variables to store the data structure w
     {{- .Scratch.SetInMap "output" "data" (.Scratch.Get "data") -}}
     {{- .Scratch.Get "output" | jsonify -}}
 
-This is a more idiomatic way to create JSON output. Since JSON is fundamentally a data format and was designed to be easy for machines to process, we should expect `jsonify` to do a better job of marshaling our JSON than the built-by-hand templates demonstrated earlier in this article. And while it may be a little less obvious to a beginner, using this strategy makes it much easier to change our data structure in the future, and not have to worry about silly things like curly braces and removing trailing commas.
+This is a more idiomatic way to create JSON output. Since JSON is fundamentally a data format and was designed to be easy for machines to process, we should expect `jsonify` to do a better job of marshaling our JSON than the built-by-hand templates demonstrated earlier in this article. And while it may be a little less obvious to a beginner, using this strategy makes it much easier to change our data structure in the future, and not have to worry about silly things like avoiding trailing commas.
 
 Happy coding!
