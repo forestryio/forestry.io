@@ -25,8 +25,6 @@ Forestry allows you to edit existing data files. They can be found under _Data_ 
 
 You can also apply [Front Matter Templates](/docs/settings/front-matter-templates/#applying-fmts-to-content) to your data files, allowing configuration of the fields that are displayed in the CMS. To do so, navigate to the Data File you want to customize:
 
-![](/uploads/2018/01/13.png)
-
 1. Click the settings button in the top right, next to the "Save" button
 2. Click "Change Template"
 3. Choose the Front Matter Template you want and click "Done"
