@@ -1,6 +1,7 @@
 ---
 title: Storing Media in Git
 weight: 2
+date: 2018-05-25 16:00:00 -0400
 menu:
   docs:
     parent: Media
