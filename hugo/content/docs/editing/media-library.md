@@ -46,9 +46,29 @@ To delete media files, navigate to the _Media Library_ page in the CMS, and foll
 3. You can confirm that each upload is being deleted by checking _Site Activity_ in the top right of the sidebar
 
 ## Configuring the Media Library
-[View our documentation on media storage](/docs/media/)
 
-## Futher Reading
+You can configure the paths used for your media files in the **Media Paths** section of your site settings.
 
+![Media Path Settings](/uploads/2018/05/media-paths-settings.png)
+
+### Upload Directory
+
+The directory where media uploads should be saved, relative to the root of your repository.
+
+### Public Path
+
+The *URL path* that maps to your upload directory. For example, a Hugo website might use `static/uploads` as the **upload directory**, and `/uploads` as the **public path** since Hugo copies files placed in `static` directly into the root of the published website. 
+
+### File Path
+
+This value will be appended to both your **upload directory** and **public path**. You can use this setting to specify a subfolder to place your uploads in. You may use the following variables as a way of bucketing your uploads:
+
+* `:year:`: the current year, formatted `YYYY`
+* `:month:`: the current month, formatted `MM`
+* `:day:`: the current day, formatted `DD`
+
+## Further Reading
+
+* [Media Storage Options in Forestry](/docs/media/)
 * [Hugo, Static Files](https://gohugo.io/content-management/static-files/)
 * [Jekyll, Static Files](https://jekyllrb.com/docs/static-files/)
