@@ -1,5 +1,5 @@
 ---
-title: 2018-02-09 00:00:00 +0000
+title: 2018/02/09 Changelog
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []

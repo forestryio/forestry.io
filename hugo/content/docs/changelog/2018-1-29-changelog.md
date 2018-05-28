@@ -1,5 +1,5 @@
 ---
-title: 2018-01-29 00:00:00 +0000
+title: 2018/01/29 Changelog
 date: 2018-01-29 14:40:49 +0000
 authors:
 - Forestry Team
