@@ -25,9 +25,9 @@ draft: true
 * **Cloudinary Support**
 * **Data-file templates**
   * Data files can now use templates in the same way that pages can
-* **Color-Picker front-matter field added**
+* **Color-picker front-matter field added**
 * **Text strikethrough ability added to editor**
-* **Oauth login added to remote admin**
+* **OAuth login added to remote admin**
 
 ### Enhancements
 
@@ -37,10 +37,11 @@ draft: true
 * **Group-list “Add” button applies smart labels to pluralized group names**
   * (E.g "Add Person" to a people group-list )
 * **Added info icons next to front matter field types**
-* **Codeblock input rules can take a language**
+* **Code-block input rules can take a language**
 * **Front matter wysiwyg now supports Markdown**
 * **Removed HTML wysiwyg**
 * **Media settings moved to its own tab**
+* **"Save" Button shows feedback when saving**
 
 ### Bug Fixes
 
@@ -54,5 +55,12 @@ draft: true
 * **Group lists:**
   * Validation fixes for malformed values
 * **Organizations:**
-  * Logo links back to the site's organzation instead of to "My Sites"
-* Date
+  * Logo links back to the site's organization instead of to "My Sites"
+* **Date Picker**
+  * Fixed Safari issue where the date-picker would immediately close.
+* **Number field**
+  * Fix for: not validating if min/max was 0
+* **Previews:**
+  * Fixed issue where having a string value for a group causes previews to fail with no error
+* **Auth:**
+  * Email validation accepts longer endings
