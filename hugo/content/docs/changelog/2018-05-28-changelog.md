@@ -1,5 +1,5 @@
 ---
-title: 2018-05-28 00:00:00 +0000
+title: 2018-05-28 Changelog
 date: 2018-05-28 06:24:44 -1100
 publishdate: 2018-05-27 16:00:00 -1100
 layout: single
