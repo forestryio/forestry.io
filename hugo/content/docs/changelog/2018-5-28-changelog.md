@@ -46,6 +46,7 @@ menu:
 * **Removed HTML wysiwyg**
 * **Media settings moved to its own tab**
 * **"Save" Button shows feedback when saving**
+* **Show Modal when navigating to a page with unsaved changes**
 
 ### Bug Fixes
 
@@ -68,3 +69,5 @@ menu:
   * Fixed issue where having a string value for a group causes previews to fail with no error
 * **Auth:**
   * Email validation accepts longer endings
+* **Front Matter Templates**
+  * Fix for: editing a front matter template, and navigating to one of its pages caused git sync confusion.
