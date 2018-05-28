@@ -23,7 +23,6 @@ menu:
     name: 2018-05-28 00:00:00 +0000
     weight: 1
     parent: Changelog
-draft: true
 
 ---
 ### Features
