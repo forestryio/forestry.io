@@ -1,5 +1,5 @@
 ---
-title: 2018-2-2 Changelog
+title: 2018-02-02 00:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
@@ -22,7 +22,7 @@ aliases: []
 menu:
   changelog:
     parent: Changelog
-    weight: 29
+    weight: 4
 
 ---
 ### Bug Fixes

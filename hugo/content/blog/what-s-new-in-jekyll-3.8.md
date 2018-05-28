@@ -6,8 +6,8 @@ description: Jekyll 3.8.1 was released on the 1st of May 2018, just two weeks af
 date: 2018-05-11 08:14:47 -1100
 authors:
 - Colin Garvey
-publishdate: 2018-05-10 16:00:00 -1100
-expirydate: 2029-12-31 17:00:00 -1100
+publishdate: 2018-05-11 03:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 images:
 - "/uploads/2017/12/jekyll-3.4.0-2.png"
 headline: ''
@@ -23,7 +23,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 # What’s new in Jekyll 3.8

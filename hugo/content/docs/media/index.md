@@ -6,9 +6,8 @@ menu:
   docs:
     parent: Media
     weight: 1
-    name: Storing Media Files
----
 
+---
 Forestry provides multiple options for media storage.
 
 ## Git

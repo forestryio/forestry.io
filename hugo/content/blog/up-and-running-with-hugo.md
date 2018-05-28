@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 <!--{{% tip %}}

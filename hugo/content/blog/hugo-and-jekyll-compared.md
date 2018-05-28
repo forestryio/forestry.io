@@ -23,7 +23,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 Choosing the right tools to build a website isn’t easy these days. There’s just too many options! Building a static site is one of these options, which comes with many advantages like top-notch security, blazingly-fast performance, and reduced costs.

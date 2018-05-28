@@ -5,7 +5,7 @@ description: Today we introduce Blocks - a powerful Field Type that enables your
 date: 2018-04-19 14:41:00 -1100
 authors:
 - Sebastian Engels
-publishdate: 2018-04-19 12:00:00 -1100
+publishdate: 2018-04-19 23:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -23,7 +23,6 @@ weight: ''
 aliases:
 - "/blog/content-blocks-give-your-editors-the-power-to-built-pages/"
 - "/blog/blocks-editors-build-pages/"
-menu: []
 
 ---
 Today we introduce _Blocks_ - a powerful Field Type that enables your editors to build entire landing pages from scratch and create rich blog post layouts with a pre-defined code template, we call it a _Block Template_.

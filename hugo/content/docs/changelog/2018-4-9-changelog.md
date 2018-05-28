@@ -1,5 +1,5 @@
 ---
-title: 2018-4-9 Changelog
+title: 2018-04-09 00:00:00 +0000
 date: 2018-04-09 12:00:00 +0000
 authors:
 - Forestry Team
@@ -22,7 +22,7 @@ weight: ''
 menu:
   changelog:
     parent: Changelog
-    weight: 27
+    weight: 2
 
 ---
 ### Hugo Support for v0.38.1

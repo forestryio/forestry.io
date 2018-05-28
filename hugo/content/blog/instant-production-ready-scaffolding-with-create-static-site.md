@@ -4,7 +4,7 @@ description: ''
 date: 2018-04-27 09:38:55 -1100
 authors:
 - DJ Walker
-publishdate: 2018-04-25 16:00:00 -1100
+publishdate: 2018-04-26 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -22,7 +22,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 [Create React App](https://github.com/facebook/create-react-app) is a utility provided by the Facebook team in support of the [React](https://reactjs.org/) JavaScript framework. The goal of Create React App is to allow developers to quickly bootstrap a React project without having to spend time sorting out the build pipeline. With over 47,000 stars on Github (over half as many as the actual React library,) Create React App's popularity speaks for itself.

@@ -1,5 +1,5 @@
 ---
-title: 2018-2-9 Changelog
+title: 2018-02-09 00:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
@@ -22,7 +22,7 @@ aliases: []
 menu:
   changelog:
     parent: Changelog
-    weight: 28
+    weight: 3
 
 ---
 This week we have a short changelog, but keep an eye out as we prepare to release some improvements from the wood shop! 

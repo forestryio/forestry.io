@@ -6,7 +6,7 @@ description: 'Considering the issues the HTML WYSIWYG Editor causes and the meri
 date: 2018-04-15 21:57:29 -1100
 authors:
 - Sebastian Engels
-publishdate: 2018-04-15 16:00:00 -1100
+publishdate: 2018-04-16 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - CMS
@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 {{% warning %}}

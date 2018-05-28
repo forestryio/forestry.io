@@ -4,7 +4,7 @@ description: ''
 date: 2018-04-13 05:00:27 -1100
 authors:
 - Régis Philibert
-publishdate: 2018-04-12 16:00:00 -1100
+publishdate: 2018-04-13 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -21,7 +21,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 As developers, we love open and accessible data.  For example, you may want to use your local transit data for a mobile app, or maybe you want a service like [Zapier](https://zapier.com/) or [IFTTT](https://ifttt.com/) to send you an email every time the weather forecast calls for rain.  If you’re a super geek like [@bdougieyo](https://twitter.com/bdougieyo), you’ve built an app that tells you when to leave work in order to avoid traffic from your local baseball team’s home games ([from his excellent talk here](https://youtu.be/XpveOehxvoM?t=6m1s)).

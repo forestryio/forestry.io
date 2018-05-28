@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 6
+    weight: 7
 
 ---
 We strive to always supports the previous 3 major versions of Hugo with their latest patch. (e.g, x.3.x, x.2.x, x.1.x).

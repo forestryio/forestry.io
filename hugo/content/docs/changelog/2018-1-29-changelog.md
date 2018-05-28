@@ -1,5 +1,5 @@
 ---
-title: 2018-1-29 Changelog
+title: 2018-01-29 00:00:00 +0000
 date: 2018-01-29 14:40:49 +0000
 authors:
 - Forestry Team
@@ -23,7 +23,7 @@ weight: ''
 menu:
   changelog:
     parent: Changelog
-    weight: 30
+    weight: 5
 
 ---
 ### Bug Fixes
