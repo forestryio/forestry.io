@@ -44,11 +44,13 @@ Instead of uploading images through Cloudinary, your non-developers can simply u
 
 ## Front Matter Templates for Data Files
 
-Now you can use templates for Data Files the same way you're used to with other content in Forestry.   
-  
-![](/uploads/2018/05/data-file-templates.png)
+Now you can use templates for Data Files the same way you're used to with other content in Forestry. 
+
+![](/uploads/2018/05/template-for-data-files.png)
 
 ## Color Picker
+
+![](/uploads/2018/05/color-picker-field.png)
 
 ## OAuth Login for Admin
 
