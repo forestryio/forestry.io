@@ -41,7 +41,7 @@ Once you connect Cloudinary to your account, Forestry inserts the `image_name.ex
 
 Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the full set of image transformations. Here are a few examples of image manipulation through Cloudinary URLs: <div style="width:100%;min-height:150px;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
 
-<p id="cloudinary-url" style="word-break:break-all;"></p> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script> _Click on the images to check their_ `srcset` _-attribute._
+<div style="width:100%;min-height:20px;background-color:#f1f3f5;padding:5px"><p id="cloudinary-url" style="word-break:break-all;"></p></div> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script> _Click on the images to check their_ `srcset` _-attribute._
 
 This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to use our simple drag and drop feature without having to juggle assets across different accounts and multiple providers.
 
@@ -61,7 +61,7 @@ We also rolled out a few other feature that might be interesting to you.
 
 ## Front Matter Templates for Data Files
 
-This update allows you to use and change templates for data files. 
+This update allows you to use and change templates for data files.
 
 ![](/uploads/2018/05/template-for-data-files.png)
 
