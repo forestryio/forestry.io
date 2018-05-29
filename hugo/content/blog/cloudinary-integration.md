@@ -1,5 +1,5 @@
 ---
-title: Cloudinary Integration
+title: Cloudinary Integration, Data File Templates and more
 description: ''
 date: 2018-05-28 15:12:40 -1100
 authors: []
@@ -23,7 +23,7 @@ draft: true
 ---
 ## Image Transformation and Responsive Image Delivery
 
-We’re happy to introduce you to an easy way to optimize your image delivery with Cloudinary and Forestry.
+Today we're proud to announce an easy way to optimize your image delivery with Cloudinary and Forestry.
 
 Static sites are fast and the delivery of resources shouldn’t slow it down. Now it is possible to use the Cloudinary CDN and have non-developers use Forestry to upload new images and add them to their content.
 
@@ -33,13 +33,15 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
 {{% /tip %}}
 
-Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples: <div><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <div><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
 
-Your non-developers can continue uploading images through Forestry’s Media Library and use them in their content.
+This integration makes it possible to use the latest technology advances while keeping your non-developers experience simple and clean. Content Editors can continue uploading and using images through Forestry’s Media Library and Editor.
 
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif" />
 
 # Other New Features
+
+We also rolled out a few other feature that might be interesting to you.
 
 ## Front Matter Templates for Data Files
 
@@ -47,12 +49,22 @@ Until now you weren't able to make use of Data files in the same way you could i
 
 ![](/uploads/2018/05/template-for-data-files.png)
 
-This update allows you to change templates of data files in the same way you can with articles, pages, etc.
+This update allows you to use templates for data files in the same way you use them with articles, pages, etc.
 
 ## Color Picker
 
+This new field allows your users to easily change colors of a Front Matter Field from within Forestry.
+
 ![](/uploads/2018/05/color-picker-field.png)
+
+You can add values through HEX, RGB or pick a color from the selector.
+
+![](/uploads/2018/05/Screen Shot 2018-05-29 at 8.36.03 AM.png)
 
 ## OAuth Login for Admin
 
+If you're using the remote admin capability you'll be glad to hear that 
+
 ![](/uploads/2018/05/oauth-admin.png)
+
+For a full list of changes please check out our [changelog]()
