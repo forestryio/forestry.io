@@ -35,7 +35,7 @@ It's as simple as adding your cloud name, API key and secret to your site's sett
 
 This integration makes it possible to efficiently store, organize and deliver images in Cloudinary while keeping the editing experience simple and clean in Forestry.
 
-Non-developers can continue to use our simple drag and drop feature in Forestry without having to juggle assets across different accounts and multiple providers.
+Non-developers can continue to use our simple drag and drop feature without having to juggle assets across different accounts and multiple providers.
 
 ![](/uploads/2018/05/drag_drop.png)
 
