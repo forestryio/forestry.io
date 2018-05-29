@@ -48,7 +48,7 @@ The Forestry Media Library and Cloudinary are always in sync. All assets on Clou
 Once you connect Cloudinary to your account, Forestry inserts the `image_name.extension` without any path components into your Front Matter. Instead of supporting a subset of Cloudinary’s features in our UI, this gives you the maximum amount of flexibility to use Cloudinary features in your templates.
 
 Here are a few examples of image manipulation via Cloudinary URLs:
-<p data-height="331" data-theme-id="0" data-slug-hash="YvzVXX" data-default-tab="html,result" data-user="germoe" data-embed-version="2" data-pen-title="YvzVXX" class="codepen">See the Pen <a href="[https://codepen.io/germoe/pen/YvzVXX/](https://codepen.io/germoe/pen/YvzVXX/ "https://codepen.io/germoe/pen/YvzVXX/")">Cloudinary Example</a> on <a href="[https://codepen.io](https://codepen.io "https://codepen.io")">CodePen</a>.</p>
+<p data-height="265" data-theme-id="light" data-slug-hash="YvzVXX" data-default-tab="html,result" data-user="germoe" data-embed-version="2" data-pen-title="YvzVXX" class="codepen">See the Pen <a href="[https://codepen.io/germoe/pen/YvzVXX/](https://codepen.io/germoe/pen/YvzVXX/ "https://codepen.io/germoe/pen/YvzVXX/")">Cloudinary Example</a> on <a href="[https://codepen.io](https://codepen.io "https://codepen.io")">CodePen</a>.</p>
 
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
