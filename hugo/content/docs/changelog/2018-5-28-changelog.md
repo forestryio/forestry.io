@@ -28,7 +28,7 @@ menu:
 
 * **Cloudinary Support**
 * **Data-file templates**
-  * Data files can now use templates in the same way that pages can
+  * Data files can now use templates in the same way that pages can.
 * **Color-picker front-matter field added**
 * **Text strikethrough ability added to editor**
 * **OAuth login added to remote admin**
