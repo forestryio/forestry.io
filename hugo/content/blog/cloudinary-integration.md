@@ -20,6 +20,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
+draft: true
 
 ---
 ## Image Transformation and Responsive Image Delivery
