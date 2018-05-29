@@ -33,8 +33,13 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
 {{% /tip %}}
 
-Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <div><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="() => showURL()"/>
+<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="() => showURL()"/>
+<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="showURL()"/>
+<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300,r_30/v1527559425/uploads/2018/05/29/girl.jpg" onclick="function showURL()"/>
 
+<div><p id="cloudinary-url"></p></div>
+<script type="text/javascript">function showURL() {var paragraph = document.getElementById('cloudinary-url');var text = document.createTextNode("This just got added");paragraph.appendChild(text);}</script>
 _Use Inspect and check the_ `_src_`_-attribute to see the Cloudinary URLs._
 
 This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
