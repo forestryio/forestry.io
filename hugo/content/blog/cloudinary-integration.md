@@ -25,7 +25,9 @@ draft: true
 
 Today we're proud to announce an easy way to optimize your image delivery with Cloudinary and Forestry.
 
-Static sites are fast and the delivery of resources shouldn’t slow it down. Now it is possible to use the Cloudinary CDN and have non-developers use Forestry to upload new images and add them to their content.
+Until now you would be able to use Cloudinary on sites that were managed by Forestry (e.g. this site) but the implementation was anything but straightforward and a lot of the simplicity of using Cloudinary would get lost.
+
+As a developer you can now use the super fast Cloudinary CDN the way you would with any other static site. At the same time your editors can use Forestry's Media Library and Editor to use and upload Cloudinary assets.
 
 {{% tip %}}
 
@@ -33,18 +35,18 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
 {{% /tip %}}
 
-Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs:
-<div style="width:100%;min-height:150px;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display=inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_300/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_300/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_300/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_300/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
+Once you connect Cloudinary to your account, Forestry is giving you full access to Cloudinary features in your templates, only inserting the `image_name.extension` without any path components into your Front Matter.
 
-<p id="cloudinary-url" style="word-break:break-all;"></p> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script> _Click on the images to check their _`srcset`_-attribute._
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in their site templates. Here are a few examples of image manipulation through Cloudinary URLs:
+<div style="width:100%;min-height:150px;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
 
-This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
+<p id="cloudinary-url" style="word-break:break-all;"></p> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script> _Click on the images to check their_ `srcset` _-attribute._
+
+This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to use our simple drag and drop feature without having to juggle assets across different accounts and multiple providers.
 
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif" />
 
 The Forestry Media Library and Cloudinary are always in sync. Every resource that you can find on Cloudinary can be accessed through the Forestry Media Library.
-
-Once you connect Cloudinary to your account, Forestry is giving you full access to Cloudinary features in your Templates by inserting the `image_name.extension` only.
 
 {{% tip %}}
 Check out our docs for tips and tricks on how to best handle Cloudinary URLs in templates.
