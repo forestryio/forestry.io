@@ -33,9 +33,9 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
 {{% /tip %}}
 
-Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <div><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <div><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" srcset="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
 
-*Use Inspect and check the `src`-attribute to see the Cloudinary URLs.*
+_Use Inspect and check the_ `_src_`_-attribute to see the Cloudinary URLs._
 
 This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
 
@@ -73,7 +73,7 @@ You can add values through HEX, RGB or pick a color from the selector.
 
 ## OAuth Login for Admin
 
-If you're using the remote admin capability you'll be glad to hear that 
+If you're using the remote admin capability you'll be glad to hear that
 
 ![](/uploads/2018/05/oauth-admin.png)
 
