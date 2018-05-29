@@ -50,6 +50,10 @@ Here are a few examples of image manipulation via Cloudinary URLs: <p data-heigh
 Check out our [docs](https://forestry.io/docs/media/cloudinary/#using-cloudinary-images) for tips and tricks on [how to handle Cloudinary URLs](https://forestry.io/docs/media/cloudinary/#using-cloudinary-images) in templates.
 {{% /tip %}}
 
+{{% warning %}}
+Note that we currently do not support [fetch](https://cloudinary.com/documentation/upload_images#auto_fetching_remote_images) resources.
+{{% /warning %}}
+
 # Other New Features
 
 We also rolled out a few other features that might be interesting to you.
