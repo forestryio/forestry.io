@@ -31,16 +31,14 @@ It's as simple as adding your cloud name, API key and secret to your site's sett
 As a developer you can use the super fast Cloudinary CDN and store your assets outside your repository. At the same time your editors can use Forestry's Media Library and Editor to upload and manage Cloudinary assets.
 
 {{% tip %}}
-
 You can set up Cloudinary + Forestry in less than 3 Minutes: [Create a Cloudinary Account](https://cloudinary.com/) and follow along with our [docs](https://forestry.io/docs/media/cloudinary/).
-
 {{% /tip %}}
 
 This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. 
 
 Non-developers can continue to use our simple drag and drop feature in Forestry without having to juggle assets across different accounts and multiple providers.
 
-<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif" />
+![](http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif)
 
 The Forestry Media Library and Cloudinary are always in sync. All assets on Cloudinary can also be accessed through the Forestry Media Library and vice versa.
 
@@ -48,10 +46,8 @@ The Forestry Media Library and Cloudinary are always in sync. All assets on Clou
 
 Once you connect Cloudinary to your account, Forestry inserts the `image_name.extension` without any path components into your Front Matter. Instead of supporting a subset of Cloudinary’s features in our UI, this gives you the maximum amount of flexibility to use Cloudinary features in your templates.
 
-Here are a few examples of image manipulation via Cloudinary URLs: <div style="width:100%;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
-
-<div style="width:100%;min-height:20px;background-color:#f1f3f5;padding:15px"><p id="cloudinary-url" style="word-break:break-all;text-align:center">_Click on the images to check their_ `srcset` _-attribute._</p></div> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script>
-
+Here are a few examples of image manipulation via Cloudinary URLs: 
+<div style="width:100%;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div><div style="width:100%;min-height:20px;background-color:#f1f3f5;padding:15px"><p id="cloudinary-url" style="word-break:break-all;text-align:center">_Click on the images to check their_ `srcset` _-attribute._</p></div> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script>
 
 {{% tip %}}
 Check out our [docs](https://forestry.io/docs/media/cloudinary/#using-cloudinary-images) for tips and tricks on [how to handle Cloudinary URLs](https://forestry.io/docs/media/cloudinary/#using-cloudinary-images) in templates.
