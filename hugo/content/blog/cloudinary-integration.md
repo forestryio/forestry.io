@@ -1,14 +1,16 @@
 ---
-title: Cloudinary Integration, Data File Templates and more
+title: Cloudinary Integration, Data File Templates and Other Features
 description: ''
 date: 2018-05-28 15:12:40 -1100
-authors: []
+authors:
+- Sebastian Engels
 publishdate: 2018-05-28 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
@@ -25,9 +27,9 @@ draft: true
 
 Today we're proud to announce an easy way to optimize your image delivery with Cloudinary and Forestry.
 
-Implementation with Cloudinary on sites that were managed by Forestry (e.g. this site) was anything but straightforward and a lot of the simplicity of using Cloudinary got lost on the way.
+Using Cloudinary on sites that were managed by Forestry (e.g. this site) usually resulted in verbose implementations that had lost much of the simplicity. Now it's as simple as adding your cloud name, API key and secret to Forestry's Media settings to sync these two libraries.
 
-As a developer you can now use the super fast Cloudinary CDN the way you would with any other static site. At the same time your editors can use Forestry's Media Library and Editor to use and upload Cloudinary assets.
+As a developer you can use the super fast Cloudinary CDN the way you would with any other static site. At the same time your editors can use Forestry's Media Library and Editor to use and upload Cloudinary assets.
 
 {{% tip %}}
 
@@ -35,7 +37,7 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
 {{% /tip %}}
 
-Once you connect Cloudinary to your account, Forestry is giving you full access to Cloudinary features in your templates, only inserting the `image_name.extension` without any path components into your Front Matter.
+Once you connect Cloudinary to your account, Forestry inserts the `image_name.extension` without any path components into your Front Matter. This gives you the maximum amount of flexibility to use Cloudinary features in your templates.
 
 Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in their site templates. Here are a few examples of image manipulation through Cloudinary URLs:
 <div style="width:100%;min-height:150px;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
