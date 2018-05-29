@@ -66,8 +66,6 @@ This update allows you to [use and change templates for data files](https://fore
 
 Until now you weren't able to use templates with data files and anytime the format of the data files changed a developer needed to go into the code base.
 
-From now on you can delegate those updating tasks and build your data file structure the way it suits you best.
-
 ## Color Picker
 
 This new field allows your users to easily change colors of a Front Matter Field from within Forestry.
@@ -78,7 +76,7 @@ You can add values through HEX, RGB or pick a color from the selector.
 
 ## OAuth Login for Remote Admin
 
-The remote admin now also works for OAuth logins.
+OAuth login is now available in the remote admin.
 
 ![](/uploads/2018/05/oauth-admin.png)
 
