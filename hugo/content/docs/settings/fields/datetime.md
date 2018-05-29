@@ -50,10 +50,10 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     description: [String] 
     default: [String]
     hidden: [true|false]
-    display_utc: [true|false]
     config:
       date_format: [String]
-      time_format: [String] 
+      time_format: [String]
+      display_utc: [true|false]
 
 ### Example
     type: datetime
@@ -61,10 +61,10 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     label: Date
     description: The creation date for this page 
     hidden: false
-    display_utc: false
     config:
       date_format: "YYYY/MM/DD"
       time_format: "HH:MM:SS"
+      display_utc: false
 
 {{% tip %}}
 The `date_format` and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
