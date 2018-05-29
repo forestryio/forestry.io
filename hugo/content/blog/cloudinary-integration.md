@@ -26,7 +26,7 @@ menu: []
 
 Today we're proud to announce an easy way to optimize your image delivery with a Cloudinary integration for Forestry.
 
-As a developer you can now use the super fast Cloudinary CDN and store your assets outside your repository. While at the same time your editors can use Forestry's Media Library and Editor to upload and manage Cloudinary assets.
+As a developer you can now use the super fast Cloudinary CDN and store your assets outside your repository. While at the same time your editors can use Forestry's Media Library and Editor to upload and manage Cloudinary assets without even knowing it.
 
 {{% tip %}}
 
