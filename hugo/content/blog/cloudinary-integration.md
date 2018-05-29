@@ -20,7 +20,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 ## Image Transformation and Responsive Image Delivery
@@ -61,7 +60,7 @@ We also rolled out a few other features that might be interesting to you.
 
 ## Front Matter Templates for Data Files
 
-This update allows you to use and change templates for data files.
+This update allows you to [use and change templates for data files](https://forestry.io/docs/editing/data-files/#customizing-fields).
 
 ![](/uploads/2018/05/template-for-data-files.png)
 
