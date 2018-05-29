@@ -49,3 +49,7 @@ Now you can use templates for Data Files the same way you're used to with other 
 ![](/uploads/2018/05/data-file-templates.png)
 
 ## Color Picker
+
+## OAuth Login for Admin
+
+![](/uploads/2018/05/oauth-admin.png)
