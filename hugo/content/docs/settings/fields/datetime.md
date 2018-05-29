@@ -11,7 +11,7 @@ A date and time picker.
 
 ## Options
 
-![](/uploads/2018/01/datetime-options.png)
+![](/uploads/2018/05/date-field-ui.png)
 
 * _Label_ – the human-friendly label shown above the input field in the editor.
 * _Name_ – the key stored in your content’s front matter, used to access it in your templates.
