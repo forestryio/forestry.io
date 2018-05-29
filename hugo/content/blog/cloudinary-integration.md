@@ -37,9 +37,17 @@ Instead of supporting a subset of Cloudinary’s features in our UI, we made it 
 
 *Use Inspect and check the `src`-attribute to see the Cloudinary URLs.*
 
-This integration makes it possible to use the latest technology advances while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
+This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
 
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif" />
+
+The Forestry Media Library and Cloudinary are always in sync. Every resource that you can find on Cloudinary can be accessed through the Forestry Media Library.
+
+Once you connect Cloudinary to your account, Forestry is giving you full access to Cloudinary features in your Templates by inserting the `image_name.extension` only.
+
+{{% tip %}}
+Check out our docs for tips and tricks on how to best handle Cloudinary URLs in templates.
+{{% /tip %}}
 
 # Other New Features
 
@@ -47,11 +55,11 @@ We also rolled out a few other feature that might be interesting to you.
 
 ## Front Matter Templates for Data Files
 
-Until now you weren't able to make use of Data files in the same way you could interact with other content on Forestry. That didn't seem right.
+Until now you weren't able to make use of Data files in the same way you could use with other content on Forestry. That didn't seem right.
 
 ![](/uploads/2018/05/template-for-data-files.png)
 
-This update allows you to use templates for data files in the same way you use them with articles, pages, etc.
+This update allows you to use templates for data files.
 
 ## Color Picker
 
