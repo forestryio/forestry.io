@@ -68,7 +68,7 @@ Until now you weren't able to use templates with data files and anytime the form
 
 ## Color Picker
 
-This new field allows your users to easily change colors of a Front Matter Field from within Forestry.
+This [new field](https://forestry.io/docs/settings/fields/color-picker/) allows your users to easily change colors in a Front Matter Field from within Forestry.
 
 ![](/uploads/2018/05/color_picker.png)
 
