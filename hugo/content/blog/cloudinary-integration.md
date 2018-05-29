@@ -36,7 +36,7 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <div><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
 
 {{% tip %}}
-Use Inspect on these images and check the `src`-attribute to see the Cloudinary URLs in action.
+Use Inspect and check the `src`-attribute to see the Cloudinary URLs.
 {{% /tip %}}
 
 This integration makes it possible to use the latest technology advances while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
