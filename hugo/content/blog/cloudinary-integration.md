@@ -33,10 +33,10 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
 {{% /tip %}}
 
-Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="() => showURL()"/>
-<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="() => showURL()"/>
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples using Cloudinary URLs: <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="showURL()"/>
+<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="showURL()"/>
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_300/v1527559425/uploads/2018/05/29/girl.jpg" onclick="showURL()"/>
-<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300,r_30/v1527559425/uploads/2018/05/29/girl.jpg" onclick="function showURL()"/>
+<img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300,r_30/v1527559425/uploads/2018/05/29/girl.jpg" onclick="showURL()"/>
 
 <div><p id="cloudinary-url"></p></div>
 <script type="text/javascript">function showURL() {var paragraph = document.getElementById('cloudinary-url').innerHTML = "This just got added";}</script>
