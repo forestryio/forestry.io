@@ -104,6 +104,16 @@ publish_date: 2018-01-07T12:00:00+00:00
 
 ---
 
+## Color Picker
+
+![Color Picker field UI](/uploads/2018/05/colorpicker-field-ui.png)
+
+A color picker. Useful for *Front Matter values* that are used to render color. Can be saved as RGB or hex value.
+
+[See detailed documentation](/docs/settings/fields/color-picker)
+
+---
+
 ## Tags Field
 ![](/uploads/2018/01/tags-preview.png)
 
