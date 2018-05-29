@@ -278,7 +278,7 @@ We can break this line down into three parts:
 2. The second part is the URL that should be called. Here `:splat` is where the matched string will go, just before our `index.json`
 3. The third part is the response code. `200` means it is not a redirect, but a rewriting.
 
-From now on, Netlify will automatically point any URL to their `index.json` file. Meaning `school.api/players/index.json` will be called via `school.api/players/`, `api.com/players/jacky-f-robinson/index.json` will be called via `school.api/players/jacky-robinson/`, and so on.
+From now on, Netlify will automatically point any URL to their `index.json` file. Meaning `school.api/players/index.json` will be called via `school.api/players/`, `api.com/players/jacky-f-robinson/index.json` will be called via `school.api/players/jacky-f-robinson/`, and so on.
 
 That simple line makes our URLs already so beautiful. But we can do more!
 
@@ -328,7 +328,7 @@ Now that we have created our Media Type, we can add it to our Custom Output Form
         baseName = "_redirects"
         isPlainText = true
 
-You can call the output format whatever you’d like,but for our purposes `redirect` makes the most sense.
+You can call the output format whatever you’d like, but for our purposes `redirect` makes the most sense.
 We assign it the `mediatype` we just created.
 The `baseName` is the name of the file to output, we need it to be `_redirects`.
 And just like JSON or CSS, our file will be plain text.
