@@ -46,7 +46,9 @@ This integration makes it possible to efficiently store, organize and deliver im
 
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif" />
 
-The Forestry Media Library and Cloudinary are always in sync. Every resource that you can find on Cloudinary can be accessed through the Forestry Media Library.
+The Forestry Media Library and Cloudinary are always in sync. All assets on Cloudinary can also be accessed through the Forestry Media Library.
+
+![](/uploads/2018/05/forestry_cloudinary.png)
 
 {{% tip %}}
 Check out our docs for tips and tricks on how to best handle Cloudinary URLs in templates.
