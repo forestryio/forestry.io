@@ -27,7 +27,7 @@ draft: true
 
 Today we're proud to announce an easy way to optimize your image delivery with Cloudinary and Forestry.
 
-Using Cloudinary on sites that were managed by Forestry (e.g. this site) usually resulted in verbose implementations that had lost much of the simplicity. Now it's as simple as adding your cloud name, API key and secret to Forestry's Media settings to sync these two libraries.
+Using Cloudinary on sites that were managed by Forestry (e.g. this site) usually resulted in verbose implementations. Now it's as simple as adding your cloud name, API key and secret to your site's settings.
 
 As a developer you can use the super fast Cloudinary CDN the way you would with any other static site. At the same time your editors can use Forestry's Media Library and Editor to use and upload Cloudinary assets.
 
