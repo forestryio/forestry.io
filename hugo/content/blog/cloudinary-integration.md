@@ -33,13 +33,13 @@ As a developer you can use the super fast Cloudinary CDN and store your assets o
 
 {{% tip %}}
 
-You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary Account and follow along with our [docs](https://forestry.io/docs/media/cloudinary/).
+You can set up Cloudinary + Forestry in less than 3 Minutes: [Create a Cloudinary Account](https://cloudinary.com/) and follow along with our [docs](https://forestry.io/docs/media/cloudinary/).
 
 {{% /tip %}}
 
 Once you connect Cloudinary to your account, Forestry inserts the `image_name.extension` without any path components into your Front Matter. This gives you the maximum amount of flexibility to use Cloudinary features in your templates.
 
-Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the full set of image transformations. Here are a few examples of image manipulation through Cloudinary URLs: <div style="width:100%;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the full set of image transformations. Here are a few examples of image manipulation via Cloudinary URLs: <div style="width:100%;"><div id="img-1" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-2" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-3" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"> <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_220/v1527559425/uploads/2018/05/29/girl.jpg"/></div> <div id="img-4" onclick="showURL('http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg', 'cloudinary-url')" style="display:inline-block;"><img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_220,r_30/v1527559425/uploads/2018/05/29/girl.jpg"/></div></div>
 
 <div style="width:100%;min-height:20px;background-color:#f1f3f5;padding:15px"><p id="cloudinary-url" style="word-break:break-all;text-align:center">_Click on the images to check their_ `srcset` _-attribute._</p></div> <script type="text/javascript">function showURL(url, target) {document.getElementById(target).innerHTML = url}</script>
 
@@ -52,12 +52,12 @@ The Forestry Media Library and Cloudinary are always in sync. All assets on Clou
 ![](/uploads/2018/05/forestry_cloudinary.png)
 
 {{% tip %}}
-Check out our docs for tips and tricks on how to best handle Cloudinary URLs in templates.
+Check out our [docs](https://forestry.io/docs/media/cloudinary/#using-cloudinary-images) for tips and tricks on [how to handle Cloudinary URLs](https://forestry.io/docs/media/cloudinary/#using-cloudinary-images) in templates.
 {{% /tip %}}
 
 # Other New Features
 
-We also rolled out a few other feature that might be interesting to you.
+We also rolled out a few other features that might be interesting to you.
 
 ## Front Matter Templates for Data Files
 
