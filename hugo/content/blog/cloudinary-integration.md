@@ -37,7 +37,7 @@ This integration makes it possible to efficiently store, organize and deliver im
 
 Non-developers can continue to use our simple drag and drop feature in Forestry without having to juggle assets across different accounts and multiple providers.
 
-![](http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif)
+![](/uploads/2018/05/drag_drop.gif)
 
 The Forestry Media Library and Cloudinary are always in sync. All assets on Cloudinary can also be accessed through the Forestry Media Library and vice versa.
 
