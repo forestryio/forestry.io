@@ -1,6 +1,6 @@
 ---
 title: Cloudinary Integration, Data File Templates and Other Features
-description: 'Today we're proud to announce an easy way to optimize your image delivery with a Cloudinary integration for Forestry.'
+description: "Today we're proud to announce an easy way to optimize your image delivery with a Cloudinary integration for Forestry."
 date: 2018-05-28 15:12:40 -1100
 authors:
 - Sebastian Engels
@@ -8,7 +8,6 @@ publishdate: 2018-05-28 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
 categories:
 - CMS
 tags: []
