@@ -25,7 +25,7 @@ draft: true
 
 Today we're proud to announce an easy way to optimize your image delivery with Cloudinary and Forestry.
 
-Until now you would be able to use Cloudinary on sites that were managed by Forestry (e.g. this site) but the implementation was anything but straightforward and a lot of the simplicity of using Cloudinary would get lost.
+Implementation with Cloudinary on sites that were managed by Forestry (e.g. this site) was anything but straightforward and a lot of the simplicity of using Cloudinary got lost on the way.
 
 As a developer you can now use the super fast Cloudinary CDN the way you would with any other static site. At the same time your editors can use Forestry's Media Library and Editor to use and upload Cloudinary assets.
 
