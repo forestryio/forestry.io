@@ -39,7 +39,7 @@ Instead of supporting a subset of Cloudinary’s features in our UI, we made it 
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_300,r_30/v1527559425/uploads/2018/05/29/girl.jpg" onclick="function showURL()"/>
 
 <div><p id="cloudinary-url"></p></div>
-<script type="text/javascript">function showURL() {var paragraph = document.getElementById('cloudinary-url');var text = document.createTextNode("This just got added");paragraph.appendChild(text);}</script>
+<script type="text/javascript">function showURL() {var paragraph = document.getElementById('cloudinary-url').innerHTML = "This just got added";}</script>
 _Use Inspect and check the_ `_src_`_-attribute to see the Cloudinary URLs._
 
 This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean. Non-developers can continue to upload and use images through Forestry’s Media Library and Editor.
