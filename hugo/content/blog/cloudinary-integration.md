@@ -26,12 +26,11 @@ menu: []
 
 Today we're proud to announce an easy way to optimize your image delivery with Cloudinary and Forestry.
 
-It's as simple as adding your cloud name, API key and secret to your site's settings to get started.
-
 As a developer you can use the super fast Cloudinary CDN and store your assets outside your repository. At the same time your editors can use Forestry's Media Library and Editor to upload and manage Cloudinary assets.
 
 {{% tip %}}
-You can set up Cloudinary + Forestry in less than 3 Minutes: [Create a Cloudinary Account](https://cloudinary.com/) and follow along with our [docs](https://forestry.io/docs/media/cloudinary/).
+
+It's as simple as adding your cloud name, API key and secret to your site's settings to get started. You can set up Cloudinary + Forestry in less than 3 Minutes: [Create a Cloudinary Account](https://cloudinary.com/) and follow along with our [docs](https://forestry.io/docs/media/cloudinary/).
 {{% /tip %}}
 
 This integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean.
