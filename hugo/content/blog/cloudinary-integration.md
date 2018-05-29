@@ -33,10 +33,9 @@ You can set up Cloudinary + Forestry in less than 3 Minutes: Create a Cloudinary
 
  {{% /tip %}}
 
-Once your account is connected you can make full use of Cloudinary’s features in your site layouts. Here are a few examples:
-<div><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
+Instead of supporting a subset of Cloudinary’s features in our UI, we made it easy for developers to make use of the vast array in the site templates. Here are a few examples: <div><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,e_art:hokusai,h_600/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_crop,g_face/h_565/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150/v1527559425/uploads/2018/05/29/girl.jpg" /><img style="display: inline-block;" src="http://res.cloudinary.com/dljtb0dbc/image/upload/c_scale,h_600,q_150,r_30/v1527559425/uploads/2018/05/29/girl.jpg" /></div>
 
-Instead of uploading images through Cloudinary, your non-developers can simply upload images through Forestry’s Media Library and use them in their content.
+Once those templates are done, instead of uploading images through Cloudinary, your non-developers can simply upload images through Forestry’s Media Library and use them in their content.
 
 <img src="http://res.cloudinary.com/dljtb0dbc/image/upload/v1527561785/drag_drop.gif" />
 
@@ -44,9 +43,11 @@ Instead of uploading images through Cloudinary, your non-developers can simply u
 
 ## Front Matter Templates for Data Files
 
-Now you can use templates for Data Files the same way you're used to with other content in Forestry. 
+Until now you weren't able to make use of Data files in the same way you could interact with other content on Forestry. That didn't seem right.
 
 ![](/uploads/2018/05/template-for-data-files.png)
+
+This update allows you to change templates of data files in the same way you can with articles, pages, etc.
 
 ## Color Picker
 
