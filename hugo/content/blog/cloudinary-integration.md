@@ -60,26 +60,28 @@ We also rolled out a few other feature that might be interesting to you.
 
 ## Front Matter Templates for Data Files
 
-Until now you weren't able to make use of Data files in the same way you could use with other content on Forestry. That didn't seem right.
+This update allows you to use and change templates for data files. 
 
 ![](/uploads/2018/05/template-for-data-files.png)
 
-This update allows you to use templates for data files.
+Until now you weren't able to use templates with data files and anytime the format of the data files changed a developer needed to go into the code base.
+
+From now on you can delegate those updating tasks and build your data file structure the way it suits you best.
 
 ## Color Picker
 
 This new field allows your users to easily change colors of a Front Matter Field from within Forestry.
 
-![](/uploads/2018/05/color-picker-field.png)
+![](/uploads/2018/05/color_picker.png)
 
 You can add values through HEX, RGB or pick a color from the selector.
 
-![](/uploads/2018/05/Screen Shot 2018-05-29 at 8.36.03 AM.png)
-
 ## OAuth Login for Admin
 
-If you're using the remote admin capability you'll be glad to hear that
+The remote admin now also works for OAuth logins.
 
 ![](/uploads/2018/05/oauth-admin.png)
+
+You can now login with your favorite Git-provider.
 
 For a full list of changes please check out our [changelog]()
