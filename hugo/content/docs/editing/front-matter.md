@@ -30,7 +30,7 @@ title: Homepage
 Thanks for visiting our site!
 ```
 
-Forestry provides a simple and intuitive editor for Front Matter, for both [Markdown](/docs/editing/markdown-editor/) and [HTML documents](/docs/editing/html-editor/).
+Forestry provides a simple and intuitive editor for Front Matter, for both [Markdown](/docs/editing/markdown-editor/) and HTML documents.
 
 ![](/uploads/2018/01/14.png)
 
