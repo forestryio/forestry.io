@@ -1,5 +1,5 @@
 ---
-title: Master Image Delivery With Cloudinary
+title: Mastering Image Delivery With Cloudinary
 description: ''
 date: 2018-05-31 06:43:49 -1100
 authors:
@@ -27,13 +27,14 @@ At what point do you stop trying to make your website faster?
 
 Sure, if you have a static site with well-optimized assets, your site is probably fast enough. I’m not going to tell you that your users will abandon you if your site takes half a second to load. But if you could make it faster, you’d still want to do it.
 
-In this article, we will look at using Cloudinary to optimize the delivery of images on your static site. Cloudinary is an easy to use, all-in-one solution for storing, serving, and transforming your media files.
+In this article, we will look at using Cloudinary to take control of image delivery on your static site. Cloudinary is an easy to use, all-in-one solution for storing, serving, and transforming your media files.
 
-## Nodes in The ‘Hood
+
+## Keep Your Data Close
 
 Data moves fast, but nothing can move faster than the speed of light. The location of a server matters: the farther away a server is from you, the longer you have to wait before you get a response from that server. When the server is relatively close to you, this communication feels nearly instantaneous. However, if the server is halfway across the planet, this latency starts to matter. **This is a physical limitation:** No matter how much you increase your bandwidth, it will not reduce your latency.
 
-A **Content Delivery Network** or **CDN** gets around this speed limit by replicating a resource to a network of edge nodes spread out across the world. The idea is, wherever your users are located, their traffic will be directed to the nearest edge node to download your content.
+A **Content Delivery Network**, or **CDN**, gets around this speed limit by replicating a resource to a network of edge nodes spread out across the world. The idea is, wherever your users are located, their traffic will be directed to the nearest edge node to download your content.
 
 Cloudinary’s CDN solves our latency problem, but there’s more we can do to optimize our asset delivery.
 
@@ -166,4 +167,12 @@ We can add automatic cropping to our original aspect ratio crop by adding the pa
 
 Notice that the boots in the first image have now shifted toward the center:
 
-## ![](/uploads/2018/05/product-list-smartcropped.png)
+![](/uploads/2018/05/product-list-smartcropped.png)
+
+## Next Steps
+
+Our example shows a practical application of some simple Cloudinary transformations, but Cloudinary has an incredible array of [transformation options](https://cloudinary.com/documentation/image_transformations) such as face detection, artistic filters, image overlays, and animation support. Their wide array of transformations and the ability to stack transformations on top of each other makes Cloudinary a powerful image manipulation engine!
+
+You may also be interested in [automating your responsive image sizing](https://cloudinary.com/documentation/responsive_images#automating_responsive_images_with_javascript) using Cloudinary's JavaScript library to easily add responsive images to an existing site.
+
+When you're ready to connect your Forestry media library to Cloudinary, check out our [Cloudinary documentation](https://forestry.io/docs/media/cloudinary/) to get started.
