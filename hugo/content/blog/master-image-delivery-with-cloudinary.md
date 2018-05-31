@@ -49,12 +49,11 @@ Of course, in order to provide these scaled down images, we have to create them.
 
 Another option would be to transform images at build time, using something like a gulp task. With this approach, we define the image sizes we want ahead of time, and have our build process generate all the resized images we need. Automation is always great, but this solution is not perfect: as we add more images, our builds will gradually get slower. We’re also being imprecise, as it’s unlikely all of our images will need to be resized to all of those sizes. It depends on where the image is used on the site.
 
-What we *really* need is something that can do the following:
-
+What we _really_ need is something that can do the following:
 
 1. Resize images programmatically,
 2. only resize images that we know need to be resized, and
-3. only resize *those* images into the sizes that we know we’ll need
+3. only resize _those_ images into the sizes that we know we’ll need
 
 Before you run away from the seeming complexity of this problem, consider a zen approach: **only create a resized image once it is requested.** I believe that the best way to accomplish this is to have a CDN that can perform these transformations upon request, and cache the results for subsequent requests. The clever people at Cloudinary clearly feel the same way, because Cloudinary can do precisely this.
 
@@ -65,15 +64,14 @@ Cloudinary has a rich image transformation API, and offers SDKs for a variety of
 To demonstrate how to do this, I’ve taken the demo site we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s new [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
 
 ### Building Cloudinary URLs
+
 When Forestry saves a Cloudinary URL to front matter, it only saves the the file path relative to your cloud root. This is a deliberate decision to make it easy to insert image transformations in the URL path.
 
 For our demo site, I’ve added the base cloudinary URL to our [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
 
-
     <img src="{{ $.Site.Params.cloudinary_base_url }}{{ .Params.image }}" />
 
 To resize this image to a width of 500px, we just have to insert another path in between the two variables:
-
 
     <img src="{{ $.Site.Params.cloudinary_base_url }}/w_500{{ .Params.image }}" />
 
@@ -85,41 +83,36 @@ One way we can improve this project is by automatically generating thumbnails fo
 
 To change this, we just have to replace the image in the `data-item-image` parameter in `layouts/partials/buy-button.html`:
 
-
     {{ with .Params.image }}
         data-item-image="{{ $.Site.Params.cloudinary_base_url }}/w_50,h_50,c_fill{{ . }}"
     {{ end }}
 
 In our transformation, we use `w_50` and `h_50` to specify the desired width and height. `c_fill` tells Cloudinary to crop the image to prevent it from being distorted by the resize, and to crop it in a way that fills up the 50x50 square.
 
-### Use *srcset* to Deliver Responsive Images
+### Use _srcset_ to Deliver Responsive Images
 
 The next thing we want to do is provide scaled-down images at smaller resolutions. We can do that using the `srcset` image attribute. `srcset` works by specifying a set of images and leaving it up to the browser to download the appropriately-sized one. This is an easy way to serve smaller images on smaller devices that wouldn't be able to display the full resolution, and also for ensuring that computers with High-DPI displays can access high-resolution images.
 
 To keep our code organized, I've decided to move these responsive image tags into partials. For the image in the single template (`layouts/products/single.html`,) I've created a partial at `layouts/partials/images/single-product.html`. We will call this partial in our single template and pass it the image, and also grab our base URL from the site settings:
 
-```
-<div class="product__image column is-half">
-        {{ partial "images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
-</div>
-```
+    <div class="product__image column is-half">
+            {{ partial "images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+    </div>
 
 In our partial, I've specified four image sizes for different screens:
 
-```
-<img 
-srcset="
-{{ .baseURL }}/w_500{{ .image }} 500w,
-{{ .baseURL }}/w_710{{ .image }} 710w,
-{{ .baseURL }}/w_1000{{ .image }} 1000w,
-{{ .baseURL }}/w_1420{{ .image }} 1420w"
-src="{{ .baseURL }}/w_500{{ .image }}"
- />
- ```
- 
- Devices that don't support `srcset` will fall back to the 500px version specified in the `src` tag.
- 
- That's all it takes to add responsive images with Cloudinary!
+    <img 
+    srcset="
+    {{ .baseURL }}/w_500{{ .image }} 500w,
+    {{ .baseURL }}/w_710{{ .image }} 710w,
+    {{ .baseURL }}/w_1000{{ .image }} 1000w,
+    {{ .baseURL }}/w_1420{{ .image }} 1420w"
+    src="{{ .baseURL }}/w_500{{ .image }}"
+     />
+
+Devices that don't support `srcset` will fall back to the 500px version specified in the `src` tag.
+
+That's all it takes to add responsive images with Cloudinary!
 
 ### Crop Images For Beautiful Grids
 
@@ -127,33 +120,50 @@ Cloudinary's image transformations give us the ability to do more than just scal
 
 Our product list view uses a flexbox-based grid. Effort was made to keep our grid lines strong, but there is room for improvement here. The images used in our product grid have different **aspect ratios**, so when they are resized to the same width, they end up with different heights.
 
+![](/uploads/2018/05/product-list-uncropped.png)
+
 This is easy to solve with Cloudinary's **Aspect Ratio Cropping**. Instead of specifying a width and a height, we can just tell it to crop to a certain aspect ratio.
 
 Let's start by updating our list template to use a partial for the image tag, just like we did in our single template. The product list template is already using the `list-product.html` partial to render each product in list view, so open up `layouts/partials/list-product.html` and update the product image tag to the following:
 
-```
-<div class="product__image">
-    {{ partial "images/list-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
-</div>
-```
+    <div class="product__image">
+        {{ partial "images/list-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+    </div>
 
 Then, in `layouts/partials/images/list-product.html`, we can add the following:
 
-```
-<img src="{{ .baseURL }}/ar_4:3,c_fill/{{ .image }}" />
-```
+    <img src="{{ .baseURL }}/ar_4:3,c_fill/{{ .image }}" />
 
-`ar_4:3` tells Cloudinary to crop our image to a 4:3 aspect ratio, and we're using `c_fill` again to ensure we fill out the full aspect ratio. This will give us nice neat lines in our grid:
+The `ar_4:3` parameter tells Cloudinary to crop our image to a 4:3 aspect ratio, and we're using `c_fill` again to ensure we fill the full area of the image. This will give us nice neat lines in our grid.
 
+![](/uploads/2018/05/product-list-cropped.png)
 
+We can **stack this transformation** with a resizing rule for responsive delivery of these cropped images:
 
-### Smart Cropping For Beautiful-er Grids
+    <img 
+    srcset="
+    {{ .baseURL }}/ar_4:3,c_fill/w_500{{ .image }} 500w,
+    {{ .baseURL }}/ar_4:3,c_fill/w_710{{ .image }} 710w,
+    {{ .baseURL }}/ar_4:3,c_fill/w_1000{{ .image }} 1000w,
+    {{ .baseURL }}/ar_4:3,c_fill/w_1420{{ .image }} 1420w"
+    src="{{ .baseURL }}/ar_4:3,c_fill/w_500{{ .image }}"
+     />
 
-Remember earlier when I said that manually cropping images was good
+### Smart Cropping To Preserve Areas of Interest
 
-crop and fill for pretty grids
-→ stack this transformation. crop first, then resize?
+We have one more trick up our sleeve for this product layout. Sometimes, cropping an image like this might remove parts of the image that you wanted to keep. Cloudinary uses the [gravity](https://cloudinary.com/documentation/image_transformations#control_gravity) parameter to control which part of the image will serve as the focus when it is cropped. One of the more interesting options for the gravity parameter is `auto`, which will enable [automatic cropping](https://cloudinary.com/documentation/image_transformations#automatic_cropping), where Cloudinary attempts to find the regions of interest in the image and crop around them.
 
-smart crop for bonus pretty
+We can add automatic cropping to our original aspect ratio crop by adding the parameter into the URL:
 
-##
+    <img 
+    srcset="
+    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_500{{ .image }} 500w,
+    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_710{{ .image }} 710w,
+    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_1000{{ .image }} 1000w,
+    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_1420{{ .image }} 1420w"
+    src="{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_500{{ .image }}"
+     />
+
+Notice that the boots in the first image have now shifted toward the center:
+
+## ![](/uploads/2018/05/product-list-smartcropped.png)
