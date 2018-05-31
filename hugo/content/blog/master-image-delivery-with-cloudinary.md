@@ -50,15 +50,21 @@ To demonstrate how to do this, I’ve taken the [demo site](https://github.com/d
 
 When Forestry saves a Cloudinary image to front matter, it only saves a part of the file URL, relative to your base Cloudinary URL. This is a deliberate decision to make it easy to insert image transformations in the URL path, in between your base URL and the file path.
 
-For our demo site, I’ve added the base cloudinary URL to our [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
+For our demo site, I’ve added our base cloudinary URL to the [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
 
     <img src="{{ $.Site.Params.cloudinary_base_url }}{{ .Params.image }}" />
 
-To resize this image to a width of 500px, we just have to insert another path in between the two variables:
+To perform a transformation on this image, we just have to insert the transformation parameters in a new URL path between these two variables. Let's say we want to resize this image to a width of 500px. All we have to do is insert `w_500` in our URL path:
 
     <img src="{{ $.Site.Params.cloudinary_base_url }}/w_500{{ .Params.image }}" />
 
-Using this strategy, it is easy to perform all kinds of image transformations in your templates. You can even stack transformations by adding multiple paths to a single URL. Check out [Cloudinary’s image transformation docs](https://cloudinary.com/documentation/image_transformations) to see all of the different things you can do.
+Using this strategy, it is easy to perform all kinds of image transformations in your templates. You can even stack transformations by adding multiple paths to a single URL. For example, let's say we wanted to resize the image and then flip it horizontally with the `hflip` option:
+
+```
+<img src="{{ $.Site.Params.cloudinary_base_url }}/w_500/a_hflip{{ .Params.image }}" />
+```
+
+You can stack as many of these transformations as you want to achieve complex results.
 
 ### Resize Images to Create Thumbnails
 
@@ -93,7 +99,7 @@ In our partial, I've specified four image sizes for different screens:
     src="{{ .baseURL }}/w_500{{ .image }}"
      />
 
-Devices that don't support `srcset` will fall back to the 500px version specified in the `src` tag.
+Browsers that don't support `srcset` will fall back to the 500px version specified in the `src` tag.
 
 That's all it takes to add responsive images with Cloudinary!
 
@@ -105,7 +111,7 @@ Our product list view uses a flexbox-based grid. Effort was made to keep our gri
 
 ![](/uploads/2018/05/product-list-uncropped.png)
 
-This is easy to solve with Cloudinary's **Aspect Ratio Cropping**. Instead of specifying a width and a height, we can just tell it to crop to a certain aspect ratio.
+This is easy to solve with Cloudinary's [aspect ratio cropping](https://cloudinary.com/documentation/image_transformations#aspect_ratio_based_cropping). Instead of specifying a width and a height, we can just tell it to crop to a certain aspect ratio.
 
 Let's start by updating our list template to use a partial for the image tag, just like we did in our single template. The product list template is already using the `list-product.html` partial to render each product in list view, so open up `layouts/partials/list-product.html` and update the product image tag to the following:
 
@@ -121,7 +127,7 @@ The `ar_4:3` parameter tells Cloudinary to crop our image to a 4:3 aspect ratio,
 
 ![](/uploads/2018/05/product-list-cropped.png)
 
-We can **stack this transformation** with a resizing rule for responsive delivery of these cropped images:
+We can stack this transformation with a resizing rule for responsive delivery of these cropped images:
 
     <img 
     srcset="
