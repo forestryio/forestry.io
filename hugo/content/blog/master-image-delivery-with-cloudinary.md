@@ -8,7 +8,8 @@ publishdate: 2018-05-31 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/05/cloud.png"
 categories:
 - Frontend-Friday
 tags: []
@@ -23,28 +24,7 @@ menu: []
 draft: true
 
 ---
-At what point do you stop trying to make your website faster?
-
-Sure, if you have a static site with well-optimized assets, your site is probably fast enough. I’m not going to tell you that your users will abandon you if your site takes half a second to load. But if you could make it faster, you’d still want to do it.
-
-In this article, we will look at using Cloudinary to take control of image delivery on your static site. Cloudinary is an easy to use, all-in-one solution for storing, serving, and transforming your media files.
-
-
-## Keep Your Data Close
-
-Data moves fast, but nothing can move faster than the speed of light. The location of a server matters: the farther away a server is from you, the longer you have to wait before you get a response from that server. When the server is relatively close to you, this communication feels nearly instantaneous. However, if the server is halfway across the planet, this latency starts to matter. **This is a physical limitation:** No matter how much you increase your bandwidth, it will not reduce your latency.
-
-A **Content Delivery Network**, or **CDN**, gets around this speed limit by replicating a resource to a network of edge nodes spread out across the world. The idea is, wherever your users are located, their traffic will be directed to the nearest edge node to download your content.
-
-Cloudinary’s CDN solves our latency problem, but there’s more we can do to optimize our asset delivery.
-
-## Serving Responsive Images
-
-Applying a responsive strategy for displaying images means more than just adding `max-width: 100%;` to your image tags. You don't want to display an image that is much larger than the area it occupies, otherwise you’re just wasting bits.
-
-One way to provide responsive images is to use the `srcset` attribute with your image tags. This allows you to define scaled down versions of the original resource to be delivered when the image is displaying inside of a smaller area, thus reducing the size of the file.
-
-### Handling Image Transformation
+Applying a responsive strategy for displaying images means more than just adding `max-width: 100%;` to your image tags. You don't want to display an image that is much larger than the area it occupies, otherwise you’re just wasting bits. You need to deliver scaled-down versions of these images where appropriate.
 
 Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to create the scaled-down version yourself. The advantage of this option is that you can find an optimal way to tweak and crop your images as you downsize them, but it is very time-consuming. We can do better!
 
@@ -56,7 +36,9 @@ What we _really_ need is something that can:
 2. only resize images that we know need to be resized, and
 3. only resize _those_ images into the sizes that we know we’ll need
 
-This problem appears intimidating at first, but it's really not that bad. Consider a zen approach: **only create a resized image once it is requested.** I believe that the best way to accomplish this is to have a CDN that can perform these transformations upon request, and cache the results for subsequent requests. The clever people at Cloudinary clearly feel the same way, because this is what Cloudinary does!
+This problem appears intimidating at first, but we can solve it by changing our approach: instead of creating all of the image sizes we need beforehand, why not just *wait and see* which ones we end up needing? With this "zen" approach, **we only create a resized image once it is requested.** 
+
+The simplest way to accomplish this would be to have an image server that can perform these transformations upon request, and cache the results for subsequent requests. Even better, this image server should actually be a CDN, so we can provide low-latency resources no matter where our users are located. The clever people at Cloudinary clearly feel the same way, because this is exactly what Cloudinary is!
 
 ## Programmatic Image Transformations With Cloudinary
 
@@ -175,4 +157,4 @@ Our example shows a practical application of some simple Cloudinary transformati
 
 You may also be interested in [automating your responsive image sizing](https://cloudinary.com/documentation/responsive_images#automating_responsive_images_with_javascript) using Cloudinary's JavaScript library to easily add responsive images to an existing site.
 
-When you're ready to connect your Forestry media library to Cloudinary, check out our [Cloudinary documentation](https://forestry.io/docs/media/cloudinary/) to get started.
+When you're ready to connect your Forestry media library to Cloudinary, check out our [Cloudinary documentation](https://forestry.io/docs/media/cloudinary/) to get started!
