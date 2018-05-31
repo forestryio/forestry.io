@@ -127,7 +127,3 @@ fields:
   description: Sets the Hugo's Layout (https://gohugo.io/themes/creating/#layouts)
   default: single
   hidden: true
-pages:
-- docs/troubleshooting/gitlab-ssh-error.md
-- docs/faqs/guests.md
-- docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory.md
