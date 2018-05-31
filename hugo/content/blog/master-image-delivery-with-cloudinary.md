@@ -26,9 +26,9 @@ draft: true
 ---
 Applying a responsive strategy for displaying images means more than just adding `max-width: 100%;` to your image tags. You don't want to display an image that is much larger than the area it occupies, otherwise you’re just wasting bits. You need to deliver scaled-down versions of these images where appropriate.
 
-Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to create the scaled-down version yourself. The advantage of this option is that you can find an optimal way to tweak and crop your images as you downsize them, but it is very time-consuming. We can do better!
+Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to manually create the scaled-down version using image editing software. This way, you can crop your images to your liking as you downsize them, but it is very time-consuming. We can do better!
 
-Another option is to transform the images at build time, using something like a gulp task. With this approach, we define the image sizes we want ahead of time, and have our build process generate all the resized images we need. This solution is not perfect: as we add more images, our builds will take longer. We’re also being imprecise, as it’s unlikely all of our images will need to be resized to all of those sizes. It depends on where the image is used on the site.
+Another option is to transform the images at build time, using something like a gulp task. With this approach, we define the image sizes we want ahead of time, and have our build process generate all the resized images we need. This solution is not perfect: as we add more images to our site, our builds will take longer. We’re also being imprecise, as it’s unlikely that *every* image will need to be available in *every* size. It depends on where the image is used on the site.
 
 What we _really_ need is something that can:
 
@@ -42,13 +42,13 @@ The simplest way to accomplish this would be to have an image server that can pe
 
 ## Programmatic Image Transformations With Cloudinary
 
-Cloudinary has a rich image transformation API, and offers SDKs for a variety of languages and frameworks. There is also a language-agnostic API that we will be using for our examples here: by adding special paths into our image URL, we can define how we want our images to be transformed.
+Cloudinary has a rich image transformation API, and offers SDKs for a variety of languages and frameworks. You can also create image transformations without an SDK just by adding special paths into the image URL.
 
-To demonstrate how to do this, I’ve taken the demo site we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s new [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
+To demonstrate how to do this, I’ve taken the [demo site](https://github.com/dwalkr/snipcart-hugo-demo) we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s new [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
 
 ### Building Cloudinary URLs
 
-When Forestry saves a Cloudinary URL to front matter, it only saves the the file path relative to your cloud root. This is a deliberate decision to make it easy to insert image transformations in the URL path.
+When Forestry saves a Cloudinary image to front matter, it only saves a part of the file URL, relative to your base Cloudinary URL. This is a deliberate decision to make it easy to insert image transformations in the URL path, in between your base URL and the file path.
 
 For our demo site, I’ve added the base cloudinary URL to our [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
 
