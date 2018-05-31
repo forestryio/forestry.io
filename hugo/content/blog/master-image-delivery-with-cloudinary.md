@@ -40,27 +40,27 @@ Cloudinary’s CDN solves our latency problem, but there’s more we can do to o
 
 ## Serving Responsive Images
 
-Applying a truly responsive strategy for displaying images means more than just adding `max-width: 100%;` to your image tags. Ideally, you won’t display an image that is significantly larger than the area it occupies. Otherwise you’re just wasting bits!
+Applying a responsive strategy for displaying images means more than just adding `max-width: 100%;` to your image tags. You don't want to display an image that is much larger than the area it occupies, otherwise you’re just wasting bits.
 
-One way to provide responsive images is to use the `srcset` attribute with you image tags. This allows you to define multiple sources, as well as the width that the source should be used. These sources should be versions of the original image that have been scaled down before delivering to the end user, thus reducing the size of the file.
+One way to provide responsive images is to use the `srcset` attribute with your image tags. This allows you to define scaled down versions of the original resource to be delivered when the image is displaying inside of a smaller area, thus reducing the size of the file.
 
 ### Handling Image Transformation
 
-Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to manually resize these images yourself. The advantage of this option is that you can find an optimal way to tweak and crop your images as you downsize them, but it is very time-consuming. We can do better!
+Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to create the scaled-down version yourself. The advantage of this option is that you can find an optimal way to tweak and crop your images as you downsize them, but it is very time-consuming. We can do better!
 
-Another option would be to transform images at build time, using something like a gulp task. With this approach, we define the image sizes we want ahead of time, and have our build process generate all the resized images we need. Automation is always great, but this solution is not perfect: as we add more images, our builds will gradually get slower. We’re also being imprecise, as it’s unlikely all of our images will need to be resized to all of those sizes. It depends on where the image is used on the site.
+Another option is to transform the images at build time, using something like a gulp task. With this approach, we define the image sizes we want ahead of time, and have our build process generate all the resized images we need. This solution is not perfect: as we add more images, our builds will take longer. We’re also being imprecise, as it’s unlikely all of our images will need to be resized to all of those sizes. It depends on where the image is used on the site.
 
-What we _really_ need is something that can do the following:
+What we _really_ need is something that can:
 
-1. Resize images programmatically,
+1. resize images programmatically,
 2. only resize images that we know need to be resized, and
 3. only resize _those_ images into the sizes that we know we’ll need
 
-Before you run away from the seeming complexity of this problem, consider a zen approach: **only create a resized image once it is requested.** I believe that the best way to accomplish this is to have a CDN that can perform these transformations upon request, and cache the results for subsequent requests. The clever people at Cloudinary clearly feel the same way, because Cloudinary can do precisely this.
+This problem appears intimidating at first, but it's really not that bad. Consider a zen approach: **only create a resized image once it is requested.** I believe that the best way to accomplish this is to have a CDN that can perform these transformations upon request, and cache the results for subsequent requests. The clever people at Cloudinary clearly feel the same way, because this is what Cloudinary does!
 
 ## Programmatic Image Transformations With Cloudinary
 
-Cloudinary has a rich image transformation API, and offers SDKs for a variety of languages and frameworks. There is also a language-agnostic API that we will be using for our examples here: by simply adding special paths into our image URL, we can define how we want our images to be transformed.
+Cloudinary has a rich image transformation API, and offers SDKs for a variety of languages and frameworks. There is also a language-agnostic API that we will be using for our examples here: by adding special paths into our image URL, we can define how we want our images to be transformed.
 
 To demonstrate how to do this, I’ve taken the demo site we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s new [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
 
