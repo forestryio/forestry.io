@@ -43,7 +43,7 @@ Applying a truly responsive strategy for displaying images means more than just 
 
 One way to provide responsive images is to use the `srcset` attribute with you image tags. This allows you to define multiple sources, as well as the width that the source should be used. These sources should be versions of the original image that have been scaled down before delivering to the end user, thus reducing the size of the file.
 
-**Handling Image Transformation**
+### Handling Image Transformation
 
 Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to manually resize these images yourself. The advantage of this option is that you can find an optimal way to tweak and crop your images as you downsize them, but it is very time-consuming. We can do better!
 
@@ -64,7 +64,7 @@ Cloudinary has a rich image transformation API, and offers SDKs for a variety of
 
 To demonstrate how to do this, I’ve taken the demo site we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s new [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
 
-**Building Cloudinary URLs**
+### Building Cloudinary URLs
 When Forestry saves a Cloudinary URL to front matter, it only saves the the file path relative to your cloud root. This is a deliberate decision to make it easy to insert image transformations in the URL path.
 
 For our demo site, I’ve added the base cloudinary URL to our [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
@@ -79,7 +79,7 @@ To resize this image to a width of 500px, we just have to insert another path in
 
 Using this strategy, it is easy to perform all kinds of image transformations in your templates. You can even stack transformations by adding multiple paths to a single URL. Check out [Cloudinary’s image transformation docs](https://cloudinary.com/documentation/image_transformations) to see all of the different things you can do.
 
-**Resize Images to Create Thumbnails**
+### Resize Images to Create Thumbnails
 
 One way we can improve this project is by automatically generating thumbnails for the shopping cart page. Snipcart requires an image no larger than 50x50 pixels for the cart thumbnail. In the first version of this demo site, we required users to create their own 50x50 thumbnail for the cart image and upload it to a second front matter field. Automatically generating this image will save our content editors a lot of time.
 
@@ -92,14 +92,45 @@ To change this, we just have to replace the image in the `data-item-image` param
 
 In our transformation, we use `w_50` and `h_50` to specify the desired width and height. `c_fill` tells Cloudinary to crop the image to prevent it from being distorted by the resize, and to crop it in a way that fills up the 50x50 square.
 
-**Use** ***srcset*** **to Deliver Responsive Images**
+### Use *srcset* to Deliver Responsive Images
 
-The next thing we want to do is 
+The next thing we want to do is provide scaled-down images at smaller resolutions. We can do that using the `srcset` image attribute. `srcset` works by specifying a set of images and leaving it up to the browser to download the appropriately-sized one. This is an easy way to serve smaller images on smaller devices that wouldn't be able to display the full resolution, and also for ensuring that computers with High-DPI displays can access high-resolution images.
+
+To keep our code organized, I've decided to move these responsive image tags into partials. For the image in the single template (`layouts/products/single.html`,) I've created a partial at `layouts/partials/images/single-product.html`. We will call this partial in our single template and pass it the image, and also grab our base URL from the site settings:
+
+```
+<div class="product__image column is-half">
+        {{ partial "images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+</div>
+```
+
+In our partial, I've specified four image sizes for different screens:
+
+```
+<img 
+srcset="
+{{ .baseURL }}/w_500{{ .image }} 500w,
+{{ .baseURL }}/w_710{{ .image }} 710w,
+{{ .baseURL }}/w_1000{{ .image }} 1000w,
+{{ .baseURL }}/w_1420{{ .image }} 1420w"
+src="{{ .baseURL }}/w_500{{ .image }}"
+ />
+ ```
+ 
+ Devices that don't support `srcset` will fall back to the 500px version specified in the `src` tag.
+ 
+ That's all it takes to add responsive images with Cloudinary!
+
+### Crop Images For Beautiful Grids
+
+Cloudinary's image transformations give us the ability to do more than just scale images down, however. Similar to what we did with the cart image, we can crop images to fit them to a certain aspect ratio.
+
+Our product list view uses a flexbox-based grid. Effort was made to keep our grid lines strong, but there is room for improvement here. The images used in our product grid have different **aspect ratios**, so when they are resized to the same width, they end up with different heights.
+
+This is easy to solve with Cloudinary's **Aspect Ratio Cropping**. Instead of specifying a width and a height, we can just tell it to crop to a certain aspect ratio.
 
 
-**Crop Images For Beautiful Grids**
-
-**Smart Cropping For Beautiful-er Grids**
+### Smart Cropping For Beautiful-er Grids
 
 Remember earlier when I said that manually cropping images was good
 
@@ -109,4 +140,5 @@ crop and fill for pretty grids
 smart crop for bonus pretty
 
 ## 
+
 
