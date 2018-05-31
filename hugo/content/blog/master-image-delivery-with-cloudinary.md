@@ -129,6 +129,23 @@ Our product list view uses a flexbox-based grid. Effort was made to keep our gri
 
 This is easy to solve with Cloudinary's **Aspect Ratio Cropping**. Instead of specifying a width and a height, we can just tell it to crop to a certain aspect ratio.
 
+Let's start by updating our list template to use a partial for the image tag, just like we did in our single template. The product list template is already using the `list-product.html` partial to render each product in list view, so open up `layouts/partials/list-product.html` and update the product image tag to the following:
+
+```
+<div class="product__image">
+    {{ partial "images/list-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+</div>
+```
+
+Then, in `layouts/partials/images/list-product.html`, we can add the following:
+
+```
+<img src="{{ .baseURL }}/ar_4:3,c_fill/{{ .image }}" />
+```
+
+`ar_4:3` tells Cloudinary to crop our image to a 4:3 aspect ratio, and we're using `c_fill` again to ensure we fill out the full aspect ratio. This will give us nice neat lines in our grid:
+
+
 
 ### Smart Cropping For Beautiful-er Grids
 
@@ -139,6 +156,4 @@ crop and fill for pretty grids
 
 smart crop for bonus pretty
 
-## 
-
-
+##
