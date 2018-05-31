@@ -1,10 +1,10 @@
 ---
 title: Mastering Image Delivery With Cloudinary
 description: ''
-date: 2018-05-31 06:43:49 -1100
+date: 2018-06-01 05:00:49 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-05-31 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
