@@ -2,9 +2,111 @@
 title: Master Image Delivery With Cloudinary
 description: ''
 date: 2018-05-31 06:43:49 -1100
-authors: []
+authors:
+- DJ Walker
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
+headline: ''
+textline: ''
+images: []
+categories:
+- Frontend-Friday
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
+menu: []
 draft: true
 
 ---
+At what point do you stop trying to make your website faster?
+
+Sure, if you have a static site with well-optimized assets, your site is probably fast enough. I’m not going to tell you that your users will abandon you if your site takes half a second to load. But if you could make it faster, you’d still want to do it.
+
+In this article, we will look at using Cloudinary to optimize the delivery of images on your static site. Cloudinary is an easy to use, all-in-one solution for storing, serving, and transforming your media files.
+
+## Nodes in The ‘Hood
+
+Data moves fast, but nothing can move faster than the speed of light. The location of a server matters: the farther away a server is from you, the longer you have to wait before you get a response from that server. When the server is relatively close to you, this communication feels nearly instantaneous. However, if the server is halfway across the planet, this latency starts to matter. **This is a physical limitation:** No matter how much you increase your bandwidth, it will not reduce your latency.
+
+A **Content Delivery Network** or **CDN** gets around this speed limit by replicating a resource to a network of edge nodes spread out across the world. The idea is, wherever your users are located, their traffic will be directed to the nearest edge node to download your content.
+
+Cloudinary’s CDN solves our latency problem, but there’s more we can do to optimize our asset delivery.
+
+## Serving Responsive Images
+
+Applying a truly responsive strategy for displaying images means more than just adding `max-width: 100%;` to your image tags. Ideally, you won’t display an image that is significantly larger than the area it occupies. Otherwise you’re just wasting bits!
+
+One way to provide responsive images is to use the `srcset` attribute with you image tags. This allows you to define multiple sources, as well as the width that the source should be used. These sources should be versions of the original image that have been scaled down before delivering to the end user, thus reducing the size of the file.
+
+**Handling Image Transformation**
+
+Of course, in order to provide these scaled down images, we have to create them. The most basic way to do this would be to manually resize these images yourself. The advantage of this option is that you can find an optimal way to tweak and crop your images as you downsize them, but it is very time-consuming. We can do better!
+
+Another option would be to transform images at build time, using something like a gulp task. With this approach, we define the image sizes we want ahead of time, and have our build process generate all the resized images we need. Automation is always great, but this solution is not perfect: as we add more images, our builds will gradually get slower. We’re also being imprecise, as it’s unlikely all of our images will need to be resized to all of those sizes. It depends on where the image is used on the site.
+
+What we *really* need is something that can do the following:
+
+
+1. Resize images programmatically,
+2. only resize images that we know need to be resized, and
+3. only resize *those* images into the sizes that we know we’ll need
+
+Before you run away from the seeming complexity of this problem, consider a zen approach: **only create a resized image once it is requested.** I believe that the best way to accomplish this is to have a CDN that can perform these transformations upon request, and cache the results for subsequent requests. The clever people at Cloudinary clearly feel the same way, because Cloudinary can do precisely this.
+
+## Programmatic Image Transformations With Cloudinary
+
+Cloudinary has a rich image transformation API, and offers SDKs for a variety of languages and frameworks. There is also a language-agnostic API that we will be using for our examples here: by simply adding special paths into our image URL, we can define how we want our images to be transformed.
+
+To demonstrate how to do this, I’ve taken the demo site we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s new [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
+
+**Building Cloudinary URLs**
+When Forestry saves a Cloudinary URL to front matter, it only saves the the file path relative to your cloud root. This is a deliberate decision to make it easy to insert image transformations in the URL path.
+
+For our demo site, I’ve added the base cloudinary URL to our [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
+
+
+    <img src="{{ $.Site.Params.cloudinary_base_url }}{{ .Params.image }}" />
+
+To resize this image to a width of 500px, we just have to insert another path in between the two variables:
+
+
+    <img src="{{ $.Site.Params.cloudinary_base_url }}/w_500{{ .Params.image }}" />
+
+Using this strategy, it is easy to perform all kinds of image transformations in your templates. You can even stack transformations by adding multiple paths to a single URL. Check out [Cloudinary’s image transformation docs](https://cloudinary.com/documentation/image_transformations) to see all of the different things you can do.
+
+**Resize Images to Create Thumbnails**
+
+One way we can improve this project is by automatically generating thumbnails for the shopping cart page. Snipcart requires an image no larger than 50x50 pixels for the cart thumbnail. In the first version of this demo site, we required users to create their own 50x50 thumbnail for the cart image and upload it to a second front matter field. Automatically generating this image will save our content editors a lot of time.
+
+To change this, we just have to replace the image in the `data-item-image` parameter in `layouts/partials/buy-button.html`:
+
+
+    {{ with .Params.image }}
+        data-item-image="{{ $.Site.Params.cloudinary_base_url }}/w_50,h_50,c_fill{{ . }}"
+    {{ end }}
+
+In our transformation, we use `w_50` and `h_50` to specify the desired width and height. `c_fill` tells Cloudinary to crop the image to prevent it from being distorted by the resize, and to crop it in a way that fills up the 50x50 square.
+
+**Use** ***srcset*** **to Deliver Responsive Images**
+
+The next thing we want to do is 
+
+
+**Crop Images For Beautiful Grids**
+
+**Smart Cropping For Beautiful-er Grids**
+
+Remember earlier when I said that manually cropping images was good
+
+crop and fill for pretty grids
+→ stack this transformation. crop first, then resize?
+
+smart crop for bonus pretty
+
+## 
+
