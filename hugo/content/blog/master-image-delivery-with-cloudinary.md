@@ -27,7 +27,7 @@ Applying a responsive strategy for displaying images means more than just adding
 
 A popular way to generate these scaled-down assets is to automatically resize our images during the build process, using something like a gulp task, but that solution isn't perfect. As we add more images to our site, our builds will take longer, and it’s unlikely that *every* image will need to be available in *every* size. Instead of creating all of the image sizes we need beforehand, why not just **wait and see** which ones we end up needing? With this "zen" approach, **we only create a resized image once it is requested.** 
 
-This would be easy to do if we had an image server that can perform these transformations upon request, and cache the results for subsequent requests. Even better, this image server could actually CDN, to deliver resources with low latency. The clever people at [Cloudinary](https://cloudinary.com/) clearly feel the same way, because this is exactly what Cloudinary is!
+This would be easy to do if we had an image server that can perform these transformations upon request, and cache the results for subsequent requests. Even better, this image server could actually be a CDN, to deliver resources with low latency. The clever people at [Cloudinary](https://cloudinary.com/) clearly feel the same way, because this is exactly what Cloudinary is!
 
 In this article, I will show you how to use Cloudinary's image transformations with a Hugo site to create responsive image sets. We will also be using Forestry as our static content manager, taking advantage of Forestry's [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/) to easily upload and manage Cloudinary assets.
 
