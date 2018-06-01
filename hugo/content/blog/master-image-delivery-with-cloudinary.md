@@ -160,3 +160,11 @@ Our example shows a practical application of some simple Cloudinary transformati
 You may also be interested in [automating your responsive image sizing](https://cloudinary.com/documentation/responsive_images#automating_responsive_images_with_javascript) using Cloudinary's JavaScript library to easily add responsive images to an existing site.
 
 When you're ready to connect your Forestry media library to Cloudinary, check out our [Cloudinary documentation](https://forestry.io/docs/media/cloudinary/) to get started!
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We added some enhancements to our <a href="https://forestry.io/blog/hugo-json-api-part-2/">Hugo JSON API</a>.</p></div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17101744">Discuss on Hacker News</a>
+-->
