@@ -38,6 +38,16 @@ Be sure to add the correct **URL** to your theme repo and the correct **path** t
 
 Once you create the submodule, you'll need to add and commit this from your parent repository.
 
-You should also notice a `.gitsubmodules` file in your parent repository.
+You should also notice a `.gitmodules` file in your parent repository.
 
-Going forward, if you make a change to your theme repository. You'll need to commit the change from your theme (child repository) and commit it from your parent repository too.
+If you need to make a change to this theme, the changes should be pushed to the original repository you created the submodule from. You can then update the submodule on your site with the following command:
+
+```
+git submodule update --remote
+```
+
+This is also how you update a third-party theme that you have installed as a submodule.
+
+{{% tip %}}
+Don't forget to set the theme you just installed as your active theme! In Hugo this is your [config.toml](https://gohugo.io/themes/installing-and-using-themes/#config-file) file, and in Jekyll this will be [_config.yml](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/#adding-a-jekyll-theme-in-your-sites-_configyml-file).
+{{% /tip %}}
