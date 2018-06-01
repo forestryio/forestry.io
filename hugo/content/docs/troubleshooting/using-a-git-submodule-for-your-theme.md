@@ -36,9 +36,7 @@ Be sure to add the correct **URL** to your theme repo and the correct **path** t
 
 ![](/uploads/2018/02/submodules-1.png)
 
-Once you create the submodule, you'll need to add and commit this from your parent repository.
-
-You should also notice a `.gitmodules` file in your parent repository.
+Once you create the submodule, you'll notice a `.gitmodules` file in the root of your project. Commit this file as well as the module inside of your theme directory to your project.
 
 If you need to make a change to this theme, the changes should be pushed to the original repository you created the submodule from. You can then update the submodule on your site with the following command:
 
