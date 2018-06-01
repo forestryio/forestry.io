@@ -38,6 +38,10 @@ Cloudinary has a rich image transformation API, and offers SDKs for a variety of
 
 To demonstrate how to do this, I’ve taken the [demo site](https://github.com/dwalkr/snipcart-hugo-demo) we created for our [Snipcart tutorial](https://forestry.io/blog/snipcart-brings-ecommerce-static-site/#/) and moved the product images to Cloudinary using Forestry’s Cloudinary integration.
 
+{{% tip %}}
+Check out [Forestry's Cloudinary docs](https://forestry.io/docs/media/cloudinary/) for information on getting started with Cloudinary in Forestry's content manager.
+{{% /tip %}}
+
 ### Building Cloudinary URLs
 
 When Forestry saves a Cloudinary image to front matter, it only saves a part of the file URL, relative to your base Cloudinary URL. This is a deliberate decision to make it easy to insert image transformations in the URL path, in between your base URL and the file path.
