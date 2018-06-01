@@ -30,7 +30,7 @@ A popular way to generate these scaled-down assets is to automatically resize ou
 
 This would be easy to do if we had an image server that can perform these transformations upon request, and cache the results for subsequent requests. Even better, this image server could actually CDN, to deliver resources with low latency. The clever people at [Cloudinary](https://cloudinary.com/) clearly feel the same way, because this is exactly what Cloudinary is!
 
-In this article, I will show you how to use Cloudinary's image transformations with a Hugo site to create responsive image sets, and how to build Cloudinary URLs when using Forestry's [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/).
+In this article, I will show you how to use Cloudinary's image transformations with a Hugo site to create responsive image sets. We will also be using Forestry as our static content manager, taking advantage of Forestry's [media library integration for Cloudinary](https://forestry.io/blog/cloudinary-integration/) to easily upload and manage Cloudinary assets.
 
 ## Programmatic Image Transformations With Cloudinary
 
