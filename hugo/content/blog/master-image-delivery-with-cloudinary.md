@@ -4,7 +4,7 @@ description: ''
 date: 2018-06-01 05:00:49 -1100
 authors:
 - DJ Walker
-publishdate: 2018-05-31 17:00:00 -1100
+publishdate: 2018-06-01 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
