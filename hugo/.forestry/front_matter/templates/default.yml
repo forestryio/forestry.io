@@ -144,10 +144,10 @@ pages:
 - careers/_index.md
 - careers/devrel.md
 - careers/full-stack.md
+- blog/building-a-company-component-library.md
 - blog/master-image-delivery-with-cloudinary.md
 - blog/cloudinary-integration.md
 - blog/up-and-running-with-hugo-part-2.md
-- blog/building-a-company-component-library.md
 - blog/a-hugo-update-everyone-should-be-talking-about.md
 - blog/march-27th-service-outage.md
 - blog/why-we-built-forestry.md
