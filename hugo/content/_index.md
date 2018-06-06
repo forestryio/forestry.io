@@ -19,10 +19,10 @@ hero:
     they’re making commits.
   ctas:
   - permalink: https://app.forestry.io/signup
-    textline: Start building now
+    textline: Import Your Site Now
     button: true
   - permalink: "#/add-site"
-    textline: Launch Demo
+    textline: Import a Sample Site
     button: false
   video:
     fallbackVisual: "/video/forestry_factory.jpg"
