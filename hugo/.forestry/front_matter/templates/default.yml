@@ -144,6 +144,7 @@ pages:
 - careers/_index.md
 - careers/devrel.md
 - careers/full-stack.md
+- blog/the-new-forestry-io.md
 - blog/building-a-company-component-library.md
 - blog/master-image-delivery-with-cloudinary.md
 - blog/cloudinary-integration.md
@@ -175,7 +176,6 @@ pages:
 - blog/improved-collaboration-and-more.md
 - blog/introducing-forestry-config-files.md
 - blog/introducing-media-management.md
-- blog/the-new-forestry-io.md
 - blog/wysiwyg-formatting-in-front-matter.md
 - blog/what-s-new-in-jekyll-3-4-0.md
 - blog/new-pricing-organization-accounts.md

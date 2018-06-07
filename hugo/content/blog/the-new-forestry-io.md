@@ -16,6 +16,16 @@ title: The New Forestry.io
 categories:
 - CMS
 date: 2016-11-01 19:36:26 -0400
+headline: ''
+textline: ''
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+menu: []
 
 ---
 We're happy to announce some huge improvements to [Forestry.io](http://Forestry.io), our CMS for Jekyll and Hugo sites.
@@ -28,16 +38,16 @@ Before I outline what's new, I want to thank everyone who has been testing this 
 
 We totally rebuilt our WYSIWYG editor (inspired by Medium.com).
 
-*   Flip between Markdown (or HTML) and WYSIWYG.
-*   Drag and drop images
-*   Highlight text to change formatting
-*   Clean and simple interface
+* Flip between Markdown (or HTML) and WYSIWYG.
+* Drag and drop images
+* Highlight text to change formatting
+* Clean and simple interface
 
-![](/uploads/2017/12/Forestry-io-editor.png){:style="width: 95%; margin: 2em auto; border: 1px solid rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);"}
+![](/uploads/2017/12/Forestry-io-editor.gif)
 
 Thanks to [@envygeeks](https://envygeeks.io/) for all of his hard work on this.
 
-* * *
+---
 
 ### Redesigned UI
 
@@ -45,7 +55,7 @@ Our UI has been completely redesigned and is now mobile friendly.  We're not go
 
 ![](/uploads/2017/12/new-forestry-io-cms-3.png)
 
-* * *
+---
 
 ### Remote Admin
 
@@ -53,7 +63,7 @@ Remote Admin is a single html file that you drop into your static site and it al
 
 ![](/uploads/2017/12/forestry-remote.gif)
 
-* * *
+---
 
 ### Custom Branding
 
@@ -61,7 +71,7 @@ With Remote, you can also customize the branding and replace the Forestry logo w
 
 ![](/uploads/2017/12/forestry-white-label.gif)
 
-* * *
+---
 
 ### Automatic Building and Deploying
 
@@ -69,23 +79,23 @@ You can tell Forestry to watch Jekyll or Hugo repo and build your site when you 
 
 ![](/uploads/2017/12/xQ36lylOK6.gif)
 
-* * *
+---
 
 ### Pricing and Billing
 
 We changed our pricing to build a better, more sustainable service. Forestry will be free to use for personal projects (1 user), but we'll be charging medium and larger teams. Also, soon you'll be able to set up client billing if you want your client to handle the payment. [Peter](https://github.com/volgorean) has been heading this up while juggling countless support requests.
 
-* * *
+---
 
 ### What's next?
 
-*   Hosting - we're building a hosting platform on top of a blazing-fast, global CDN. If you're a paying Forestry customer, you can host with us for no additional cost.
-*   Better control over the UI
-    *   Support for new front matter fields like photo galleries
-    *   Customize the CMS interface (hide stuff, move stuff, etc)
-    *   Jekyll nav menus (Hugo already supports this)
-*   Media manager
-*   Image editing (cropping, resizing, etc)
-*   Support for more static site generators
+* Hosting - we're building a hosting platform on top of a blazing-fast, global CDN. If you're a paying Forestry customer, you can host with us for no additional cost.
+* Better control over the UI
+  * Support for new front matter fields like photo galleries
+  * Customize the CMS interface (hide stuff, move stuff, etc)
+  * Jekyll nav menus (Hugo already supports this)
+* Media manager
+* Image editing (cropping, resizing, etc)
+* Support for more static site generators
 
 We're super excited to get this into your hands. We're absolutely convinced this is the future of the web and we're dead-set on making the best tools for it. As always, let us know what you'd like to see improved.
