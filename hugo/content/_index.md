@@ -85,7 +85,7 @@ features:
   class: section-deploy
 cta:
   headline: Build amazing sites
-  textline: No credit card required. 14-day free trial on all plans.
+  textline: We have the tools to manage your content. Ready to try Forestry?
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 type: page
