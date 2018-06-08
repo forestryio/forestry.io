@@ -28,4 +28,3 @@ menu:
     weight: 4
 
 ---
- 
