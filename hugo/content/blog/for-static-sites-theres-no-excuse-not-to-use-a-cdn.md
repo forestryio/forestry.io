@@ -64,7 +64,7 @@ By changing the hostname in my command from `ec2.us-east-1.amazonaws.com` to `ec
     PING ec2.ap-southeast-2.amazonaws.com (54.240.195.243) 56(84) bytes of data. 
     64 bytes from 54.240.195.243: icmp_seq=1 ttl=233 time=301 ms
 
-Communicating with the more distant server caused a _600% increase_ in round-trip latency. 250 milliseconds may sound like a short amount of time, but this time penalty applies to _every request_ the user makes to that server: CSS, JavaScript, images, etc. Even [small amounts of latency can negatively impact your site](https://blog.gigaspaces.com/amazon-found-every-100ms-of-latency-cost-them-1-in-sales/). If there were an easy way to eliminate this latency, wouldn’t you want to do it?
+Communicating with the more distant server caused a _500% increase_ in round-trip latency. 250 milliseconds may sound like a short amount of time, but this time penalty applies to _every request_ the user makes to that server: CSS, JavaScript, images, etc. Even [small amounts of latency can negatively impact your site](https://blog.gigaspaces.com/amazon-found-every-100ms-of-latency-cost-them-1-in-sales/). If there were an easy way to eliminate this latency, wouldn’t you want to do it?
 
 {{% tip %}}
 If you want to experiment with pinging other regions, take a look at this [chart of EC2 regions](http://ec2-reachability.amazonaws.com/). You can ping the IP address directly, or use a hostname following the convention `ec2.$REGION.amazonaws.com`.
