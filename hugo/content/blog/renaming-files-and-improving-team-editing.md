@@ -20,6 +20,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+images: []
 menu: []
 
 ---
@@ -63,6 +64,6 @@ Until now users were booted from the post they were editing if the connection wa
 
 Especially when setting up a new site, users are frequently pushing changes directly to the repo while they are being edited in Forestry. Users in Forestry will now be notified that a change has occurred in those cases.
 
-![](/uploads/2018/06/someone-updated.png)
+![](/uploads/2018/06/another-user.png)
 
 **Unsaved Changes** - To make sure we use the right version, we will now also prompt users when we found unsaved changes for a file.
