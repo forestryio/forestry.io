@@ -46,7 +46,7 @@ This option can be found in the Editor under "..." in the top-right corner.
 
 ### Currently Edited by - Indicator 💁
 
-As a Git-backed content manager we need to prevent merge conflicts. That’s why Forestry only allows one editor to change a document at a time. Now you can see immediately who is currently editing a document.
+As a Git-backed content manager, we need to prevent merge conflicts. That’s why Forestry only allows one editor to change a document at a time. Now you can see immediately who is currently editing a document.
 
 ![](/uploads/2018/06/status-indicator.png)
 
@@ -54,7 +54,7 @@ As a Git-backed content manager we need to prevent merge conflicts. That’s why
 
 ### Connection Lost 💔
 
-Until now users were booted from the post they were editing, if the connection was lost. Even though we saved those changes it made for a less than optimal user experience. From now on users will only see a bar at the top letting them know that the connection was lost and that we will try to reconnect as soon as possible.
+Until now, users were booted from the post they were editing if the connection was lost. Even though we saved those changes, it made for a less than optimal user experience. From now on, users will only see a bar at the top letting them know that the connection was lost and that we will try to reconnect as soon as possible.
 
 ![](/uploads/2018/06/connection-lost-arrow.png)
 
@@ -62,8 +62,8 @@ Until now users were booted from the post they were editing, if the connection w
 
 ### Notification about Git-based or unsaved changes 🔔
 
-Especially when setting up a new site users are frequently pushing changes directly to the repo while they are being edited in Forestry. Users in Forestry will now be notified that a  change has occurred in those cases.
+Especially when setting up a new site, users are frequently pushing changes directly to the repo while they are being edited in Forestry. Users in Forestry will now be notified that a change has occurred in those cases.
 
 ![](/uploads/2018/06/someone-updated.png)
 
-**Unsaved Changes** - To make sure we use the right version we will now also prompt users when we found unsaved changes for a file.
+**Unsaved Changes** - To make sure we use the right version, we will now also prompt users when we found unsaved changes for a file.
