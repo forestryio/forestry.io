@@ -1,14 +1,19 @@
 ---
-title: Working Title The new UI
+title: 'Improving the Editor Experience: Renaming Files and Improvements to Editing
+  in Teams'
 description: ''
-date: 2018-06-07 09:39:03 -1100
-authors: []
-publishdate: 2017-12-07 04:00:00 +0000
+date: 2018-06-08 09:39:03 -1100
+authors:
+- Sebastian Engels
+publishdate: 2018-06-08 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
-headline: ''
+headline: Over the past couple weeks we were hard at work to improve the editor experience
+  for our Git-backed content manager. Working with Git repos we come across some unique
+  advantages and challenges.
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
