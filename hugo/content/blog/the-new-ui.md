@@ -21,19 +21,21 @@ menu: []
 draft: true
 
 ---
-It’s a nice day here on Prince Edward Island and we’re happy to announce some new features.
+It’s a cloudy day ☁️ here on Prince Edward Island, the perfect opportunity to announce some new features.
 
 Over the past couple weeks we were hard at work to improve the editor experience for our Git-backed content manager. Working with Git repos we come across some unique advantages and challenges. This update is focused on addressing some of these challenges.
 
 ---
 
-### Renaming Files
+### Renaming Files ✍️
 
-Freshly out - You can now change the filename for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.![](/uploads/2018/06/2018-06-08 08.07.58.gif)
+Freshly out - You can now change the filename for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.
+
+![](/uploads/2018/06/loop-rename-page.gif)
 
 ---
 
-### Currently Edited by - Indicator
+### Currently Edited by - Indicator 
 
 As a Git-backed content manager we need to prevent merge conflicts. That’s why Forestry only allows one editor to change a document at a time. Now you can see immediately who is currently editing a document.
 
@@ -55,4 +57,4 @@ Especially when setting up a new site users are frequently pushing changes direc
 
 ![](/uploads/2018/06/someone-updated.png)
 
-**Unsaved Changes** - We get it, sometimes you make changes without saving them directly. The problem is that we won’t know if you want these changes to persist until you save your changes. To make sure we use the right version we will now prompt users that we found unsaved changes for a file.
+**Unsaved Changes** - To make sure we use the right version we will now also prompt users when we found unsaved changes for a file.
