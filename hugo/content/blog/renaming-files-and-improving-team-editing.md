@@ -33,7 +33,7 @@ Over the past couple weeks we were hard at work to improve the editor experience
 
 ### Renaming Files ✍️
 
-Freshly out - You can now change the filename for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.  
+Freshly out - You can now change the name for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.  
 ![](/uploads/2018/06/loop-rename-page.gif)
 
 {{% tip %}}
