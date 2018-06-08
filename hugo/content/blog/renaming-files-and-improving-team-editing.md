@@ -44,7 +44,7 @@ This option can be found in the Editor under "..." in the top-right corner.
 
 ---
 
-### Currently Edited by - Indicator 💁
+### Currently Being Edited by - Indicator 💁
 
 As a Git-backed content manager, we need to prevent merge conflicts. That’s why Forestry only allows one editor to change a document at a time. Now you can see immediately who is currently editing a document.
 
