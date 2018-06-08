@@ -140,9 +140,7 @@ Thanks to static sites, it has never been easier to make your website fast and h
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you our favorite solutions for handling form submissions with your static site. </p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/master-image-delivery-with-cloudinary/">Cloudinary</a> to optimize your image delivery.</p></div>
 
-<!--
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17205725">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17266006">Discuss on Hacker News</a>
