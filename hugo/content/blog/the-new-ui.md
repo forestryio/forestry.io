@@ -29,7 +29,7 @@ Over the past couple weeks we were hard at work to improve the editor experience
 
 ### Renaming Files
 
-Freshly out - You can now change the filename for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously filename changes could only be done directly in the repo.
+Freshly out - You can now change the filename for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.
 
 ![](/uploads/2018/06/2018-06-07 15.24.54.gif)
 
@@ -45,13 +45,7 @@ As a Git-backed content manager we need to prevent merge conflicts. That’s why
 
 ### Connection Lost
 
-Until now users were ejected from the post they were editing, if the connection was lost at some point. Even though we saved those changes it made for a less than optimal user experience. From now on users will only see a bar at the top letting them know that the connection was lost and that we will try to reconnect as soon as possible.
-
-{{% tip %}}
-
-As outlined above we need to make sure that documents are locked if a user is currently editing them, however, we also strive to keep documents locked as little as possible. Hence, when your connection is lost we unlock the document as we can’t know when you’ll be back.
-
-{{% /tip %}}
+Until now users were booted from the post they were editing, if the connection was lost. Even though we saved those changes it made for a less than optimal user experience. From now on users will only see a bar at the top letting them know that the connection was lost and that we will try to reconnect as soon as possible.
 
 ![](/uploads/2018/06/connection-lost-arrow.png)
 
@@ -63,4 +57,4 @@ Especially when setting up a new site users are frequently pushing changes direc
 
 ![](/uploads/2018/06/someone-updated.png)
 
-We get it, sometimes you make changes without saving them. The problem is that we won’t know if you want these changes to persist until you save your changes. To prevent us from keeping multiple versions of the same document we will now prompt users if we kept unsaved changes for a file.
+**Unsaved Changes** - We get it, sometimes you make changes without saving them directly. The problem is that we won’t know if you want these changes to persist until you save your changes. To make sure we use the right version we will now prompt users that we found unsaved changes for a file.
