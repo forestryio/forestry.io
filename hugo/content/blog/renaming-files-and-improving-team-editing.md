@@ -3,10 +3,10 @@ title: Renaming Files and Improving Editing in a Team
 description: Over the past couple weeks we were hard at work to improve the editor
   experience for our Git-backed content manager. Working with Git repos we come across
   some unique advantages and challenges.
-date: 2018-06-08 09:39:03 -1100
+date: 2018-06-08 04:39:03 -1100
 authors:
 - Sebastian Engels
-publishdate: 2018-06-09 03:00:00 +0000
+publishdate: 2018-06-08 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
