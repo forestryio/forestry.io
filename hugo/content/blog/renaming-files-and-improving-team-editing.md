@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 It’s a cloudy day ☁️ here on Prince Edward Island, the perfect opportunity to announce some new features.
