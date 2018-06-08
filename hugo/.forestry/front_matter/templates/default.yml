@@ -144,9 +144,9 @@ pages:
 - careers/_index.md
 - careers/devrel.md
 - careers/full-stack.md
+- blog/the-new-forestry-io.md
 - blog/renaming-files-and-improving-team-editing.md
 - blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn.md
-- blog/the-new-forestry-io.md
 - blog/building-a-company-component-library.md
 - blog/master-image-delivery-with-cloudinary.md
 - blog/cloudinary-integration.md

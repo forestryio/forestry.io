@@ -6,7 +6,7 @@ description: Over the past couple weeks we were hard at work to improve the edit
 date: 2018-06-08 09:39:03 -1100
 authors:
 - Sebastian Engels
-publishdate: 2018-06-08 16:00:00 -1100
+publishdate: 2018-06-09 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -27,13 +27,13 @@ draft: true
 ---
 It’s a cloudy day ☁️ here on Prince Edward Island, the perfect opportunity to announce some new features.
 
-Over the past couple weeks we were hard at work to improve the editor experience for our Git-backed content manager. Renaming files is just one of those updates. We also needed to improve notifications and indicators to make working in a team on Forestry easier.
+Over the past couple weeks, we were hard at work to improve the editor experience for our Git-backed content manager. Renaming files is just one of those updates. We also needed to improve notifications and indicators to make working in a team on Forestry easier.
 
 ---
 
 ### Renaming Files ✍️
 
-Freshly out &mdash; you can now change the name for your content files with Forestry. Jekyll and Hugo take the filename to create the default URL paths, so editors can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.
+Freshly out — you can now change the name for your content files with Forestry. Jekyll and Hugo take the filename to create the default URL paths, so editors can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.
 
 ![](/uploads/2018/06/loop-rename-page.gif)
 
