@@ -21,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Are you getting the most out of your static site? If you’re not hosting your site on a CDN, you definitely aren’t.
