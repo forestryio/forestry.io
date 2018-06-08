@@ -1,5 +1,5 @@
 ---
-title: Renaming Files and Improving the Team Experience
+title: Renaming Files and Improving Editing in a Team
 description: Over the past couple weeks we were hard at work to improve the editor
   experience for our Git-backed content manager. Working with Git repos we come across
   some unique advantages and challenges.
