@@ -84,10 +84,10 @@ To demonstrate this, I enlisted the help of my friend Chris (Instagram: [@chrism
 
 ### Ping Response Times
 
-|                    | `ping ec2.us-east-1.amazonaws.com` | `ping forestry.io` |
-| ------------------ | ---------------------------------- | ------------------ |
-| DJ (Maryland)      | 50 ms                               | 33 ms               |
-| Chris (California) | 80 ms                               | 15 ms               |
+|                               | DJ (Maryland) | Chris (California) |
+| ----------------------------- | ------------- | ------------------ |
+| `ec2.us-east-1.amazonaws.com` | 50 ms         | 80 ms              |
+| `forestry.io`            | 33 ms         | 15 ms              |
 
 
 Now, there several factors that affect ping, but here’s the takeaway: we both received a response from `forestry.io` faster than we received a response from the server in Northern Virginia, despite being on opposite ends of the country.
