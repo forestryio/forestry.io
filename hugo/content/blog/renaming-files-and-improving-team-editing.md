@@ -33,7 +33,8 @@ Over the past couple weeks we were hard at work to improve the editor experience
 
 ### Renaming Files ✍️
 
-Freshly out - You can now change the name for your content files with Forestry. Since Jekyll takes the filename to create the default URL paths, editors for Jekyll sites can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.  
+Freshly out &mdash; you can now change the name for your content files with Forestry. Jekyll and Hugo take the filename to create the default URL paths, so editors can now easily change the URL path with this new feature. Previously, filename changes could only be made directly in the repo.
+
 ![](/uploads/2018/06/loop-rename-page.gif)
 
 {{% tip %}}
@@ -46,7 +47,7 @@ This option can be found in the Editor under "..." in the top-right corner.
 
 ### Currently Being Edited by - Indicator 💁
 
-As a Git-backed content manager, we need to prevent merge conflicts. That’s why Forestry only allows one editor to change a document at a time. Now you can see immediately who is currently editing a document.
+As a Git-backed content manager, we need to prevent merge conflicts. That’s why Forestry only allows one editor to change a document at a time. Now you can see immediately who is currently editing a document and if it has unsaved changes.
 
 ![](/uploads/2018/06/status-indicator.png)
 
@@ -54,7 +55,7 @@ As a Git-backed content manager, we need to prevent merge conflicts. That’s wh
 
 ### Connection Lost 💔
 
-Until now, users were booted from the post they were editing if the connection was lost. Even though we saved those changes, it made for a less than optimal user experience. From now on, users will only see a bar at the top letting them know that the connection was lost and that we will try to reconnect as soon as possible.
+Until now users were booted from the post they were editing if the connection was lost. Even though we saved those changes, it made for a less than optimal user experience. From now on, users will only see a bar at the top letting them know that the connection was lost and that we will try to reconnect as soon as possible.
 
 ![](/uploads/2018/06/connection-lost-arrow.png)
 
