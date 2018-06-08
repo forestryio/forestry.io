@@ -62,7 +62,7 @@ Until now users were booted from the post they were editing, if the connection w
 
 ### Notification about Git-based or unsaved changes 🔔
 
-Especially when setting up a new site users are frequently pushing changes directly to the repo while they are being edited in Forestry. Users in Forestry will now be notified that a change has occurred in those cases.
+Especially when setting up a new site users are frequently pushing changes directly to the repo while they are being edited in Forestry. Users in Forestry will now be notified that a  change has occurred in those cases.
 
 ![](/uploads/2018/06/someone-updated.png)
 
