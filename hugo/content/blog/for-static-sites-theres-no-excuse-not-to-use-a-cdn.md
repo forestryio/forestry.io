@@ -77,7 +77,7 @@ There are plenty of technologies that rely on real-time peer-to-peer communicati
 
 This is exactly what a CDN can do for us! CDN stands for **Content Delivery Network**, and its purpose is to replicate resources to a network of **edge nodes** distributed all over the world. When a user requests a resource hosted by the CDN, they are routed to the edge node closest to them.
 
-To demonstrate this, I enlisted the help of my friend Chris (Instagram: [@chrismaustphotos](https://www.instagram.com/chrismaustphotos/)) who lives on the other side of the USA in San Diego, California. For this experiment, I had us both run the `ping` command against two hosts. The first host was the same `ec2.us-east-1.amazonaws.com` from the previous example, and the second was `forestry.io`. Forestry is hosted on AWS’ CloudFront CDN, so I was expecting it to take him longer to reach the `us-east-1` server, but for us both to reach `forestry.io` quickly. The results confirm this hypothesis:
+To demonstrate this, I enlisted the help of my friend Chris (IG: [@chrismaustphotos](https://www.instagram.com/chrismaustphotos/)) who lives on the other side of the USA in San Diego, California. For this experiment, I had us both run the `ping` command against two hosts. The first host was the same `ec2.us-east-1.amazonaws.com` from the previous example, and the second was `forestry.io`. Forestry is hosted on AWS’ CloudFront CDN, so I was expecting it to take him longer to reach the `us-east-1` server, but for us both to reach `forestry.io` quickly. The results confirm this hypothesis:
 
 ### Ping Response Times
 
