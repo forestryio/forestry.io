@@ -27,7 +27,7 @@ draft: true
 ---
 It’s a cloudy day ☁️ here on Prince Edward Island, the perfect opportunity to announce some new features.
 
-Over the past couple weeks we were hard at work to improve the editor experience for our Git-backed content manager. Working with Git repos we come across some unique advantages and challenges. This update is focused on addressing some of these challenges.
+Over the past couple weeks we were hard at work to improve the editor experience for our Git-backed content manager. Renaming files is just one of those updates. We also needed to improve notifications and indicators to make working in a team on Forestry easier.
 
 ---
 
