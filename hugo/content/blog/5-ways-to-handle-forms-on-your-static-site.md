@@ -38,6 +38,7 @@ In this post I will explore five options for handling form submissions with your
 Google Forms provides a clean, intuitive form builder UI for creating forms. These forms can then be embedded on your website in an `iframe` tag. Submissions are visible in form dashboard under the **Responses** tab.
 
 **Best Feature:** Easy-to-use form builder.
+
 **Biggest Downside:** Doesn’t integrate nicely with your site. Can’t retrofit existing forms, need to re-create them in Google Forms.
 
 ### Spam Countermeasures
@@ -54,6 +55,7 @@ Navigate to the [Google Forms dashboard](https://docs.google.com/forms/) and sel
 FormKeep is another SaaS offering to handle your form submissions. FormKeep integrates easily with your existing forms, only requiring you to change the `action` attribute in the form HTML. You can view each form’s submissions in your FormKeep dashboard.
 
 **Best Feature:** Lots of integration options.
+
 **Biggest Downside:**  No free tier, only limited free trials.
 
 ### Spam Countermeasures
@@ -85,6 +87,7 @@ After:
 Netlify offers a unique approach for integrating forms into your site. There is no JavaScript required, and your form does not post to a different domain: you simply add a `netlify` attribute to your `<form>` tag, and you can start receiving submissions in your Netlify dashboard. This is possible because Netlify parses your site’s HTML at deploy time, so they can identify your forms and ensure the necessary form handling code is present in the site’s hosting environment. The downside of this is that this feature is only available if you are using Netlify’s platform to deploy and host your static site.
 
 **Best Feature:** Easy integration and highly extensible
+
 **Biggest Downside:** Only available if you’re already using Netlify for hosting and deployment. Free tier limited to 100 submissions per month.
 
 ### Spam Countermeasures
@@ -131,6 +134,7 @@ Of all the options presented here, Formspree provides the shortest path to addin
 Formspree is also an open source project ([view on Github](https://github.com/formspree/formspree),) and they provide instructions on how to run your own instance of Formspree on Heroku.
 
 **Best Feature:** Open source, can run your own instance on Heroku
+
 **Biggest Downside:** Submissions are only persisted in email (for free plan)
 
 ### Spam Countermeasures
@@ -177,6 +181,7 @@ After:
 FormPlug is an option for power users who want full control over the code that handles their submissions. FormPlug is an open source project built with the [Serverless Framework](https://serverless.com/). The code runs on AWS Lambda and uses Amazon SES to send emails.
 
 **Best Features:** Free and open source. Uses Serverless Framework so it’s relatively easy to install on your AWS environment.
+
 **Biggest Downside:**  Submissions are persisted in email, like Formspree
 
 ### Spam Countermeasures
