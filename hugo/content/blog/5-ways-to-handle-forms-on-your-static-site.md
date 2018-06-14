@@ -234,7 +234,7 @@ Each of these solutions have different strengths and weaknesses. There is no one
 - **Netlify Forms** is an excellent option if you already use Netlify for deploying and hosting your static site.
 - You might like **FormKeep** if you have a high volume of submissions and want to automate as much as possible with its Zapier integration.
 - If your needs are simple and you don’t want to devote a lot of time and money to forms, **Formspree** will get you up and running quickly.
-- Code warriors who prefer to own their services will prefer to use something like **FormPlug**.
+- Code warriors who prefer to own their services will like **FormPlug**.
 
 
 
