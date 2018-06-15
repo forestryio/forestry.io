@@ -7,9 +7,9 @@
   padding: 1rem 1rem 1rem 2rem;
   position: relative;
 
+  h3,
   h4 {
     margin-top: 0;
-    text-transform: uppercase;
   }
 
   p {
