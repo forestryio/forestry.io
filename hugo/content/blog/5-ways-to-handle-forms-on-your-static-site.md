@@ -103,6 +103,8 @@ After:
 
 ## [Netlify Forms](https://www.netlify.com/docs/form-handling/)
 
+![](/uploads/2018/06/netlifyforms.png)
+
 Netlify offers a unique approach for integrating forms into your site. There is no JavaScript required, and your form does not post to a different domain: you simply add a `netlify` attribute to your `<form>` tag, and you can start receiving submissions in your Netlify dashboard. This is possible because Netlify parses your site’s HTML at deploy time, so they can identify your forms and ensure the necessary form handling code is present in the site’s hosting environment. The downside of this is that this feature is only available if you are using Netlify’s platform to deploy and host your static site.
 
 **Best Feature:** Easy integration and highly extensible
@@ -204,6 +206,8 @@ After:
     }
 
 ## [FormPlug](https://danielireson.github.io/formplug-serverless/)
+
+[![](/uploads/2018/06/formplug.png)](https://github.com/danielireson/formplug-serverless)
 
 FormPlug is an option for power users who want full control over the code that handles their submissions. FormPlug is an open source project built with the [Serverless Framework](https://serverless.com/). The code runs on AWS Lambda and uses Amazon SES to send emails.
 
