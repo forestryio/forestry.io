@@ -25,6 +25,13 @@ Forestry supports storing your media in your own [Cloudinary](https://cloudinary
 
 ![Cloudinary sample image in media library](/uploads/2018/05/media-library-cloudinary.png)
 
+## Recommended Path Settings
+
+You will want to adjust your paths in the **Media** section to work with Cloudinary.
+
+- **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `https://res.cloudinary.com/$USERNAME/`.
+- **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
+
 ## Migrating Existing Media
 
 Currently, we are not able to automatically migrate existing media from a git repo to a user's Cloudinary account. We recommend logging in to your Cloudinary dashboard and bulk uploading your images there. After the images are in your Cloudinary account, they will also appear in your Media Library in Forestry.
