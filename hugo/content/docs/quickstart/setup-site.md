@@ -51,9 +51,10 @@ If you use Github, you will see a button at the top of the modal with a lock. By
 
 ![](/uploads/2018/02/add-site-flow-choose-repo.png)
 
-{{% warning "Config file in sub Folder" %}}  
-Forestry may ask you to provide the path to your Jekyll or Hugo config file, if it cannot be found in the root of your project.  
-{{% /warning %}}
+### Config Path
+Forestry will look in the root of your repository for a Hugo or Jekyll configuration file. This will be a file named `config.toml` in Hugo, and `_config.yml` in Jekyll. If this file cannot be located, Forestry will prompt you to enter the path to this file. Enter the path from the root of your project to the directory containing this file.
+
+For example, if you have a repository containing a Hugo site in a subfolder named `hugo/`, your `config.toml` file will be located at `hugo/config.toml`. When you import your site into Forestry, it will prompt you to enter the config path, and you should enter `hugo` in this field.
 
 Once you have chosen your repository and the config file for your site has been found, click the **Import Site** button. After a few moments you will be redirected into the Forestry CMS while the site finishes importing. Depending on the size of your site, the import process can take a few minutes. Stretch your legs, grab a glass of water, and it will be done before you know it.
 
