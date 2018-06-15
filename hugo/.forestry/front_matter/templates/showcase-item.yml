@@ -124,7 +124,7 @@ fields:
       type: datafiles
 pages:
 - showcase/yieldmo.md
-- showcase/_index.md
 - showcase/smallmultiples.md
+- showcase/_index.md
 - showcase/developerecosystem.md
 - showcase/borisfx.md

@@ -1,10 +1,10 @@
 ---
 title: 5 Ways to Handle Forms on Your Static Site
 description: ''
-date: 2018-06-14 09:34:13 -1100
+date: 2018-06-15 03:30:13 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-06-15 03:30:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -24,18 +24,25 @@ menu: []
 draft: true
 
 ---
-
 When I first started exploring the potential of static sites, I was attracted by their speed and simplicity. I knew these benefits came at a cost, however: since static sites can’t run backend code, there are limits to what you can accomplish with a static solution.
 
 I no longer see things this way.
 
 JAMStack is not about sacrificing features for the sake of a performant, easy to maintain website. Rather, it is about re-evaluating how much of your desired functionality should be delegated to your web frontend. For example, does the same software that distributes your HTML contact form *also* need to handle submissions from that form?
 
-In this post I will explore five options for handling form submissions with your static site. The options presented here range from fully-managed solutions for lean teams, all the way up to self-hosted alternatives for those who want full control.
+In this post I will explore five options for handling form submissions with your static site:
+
+1. [Google Forms](#google-forms-https-www-google-com-forms-about)
+2. [FormKeep](#formkeep-httpos-formkeep-com)
+3. [Netlify Forms](#netlify-forms-https-www-netlify-com-docs-form-handling)
+4. [Formspree](#formspree-https-formspree-io)
+5. [FormPlug](#formplug-https-danielireson-github-io-formplug-serverless)
+
+The options presented here range from fully-managed solutions for lean teams, all the way up to self-hosted alternatives for those who want full control.
 
 ## [Google Forms](https://www.google.com/forms/about/)
 
-Google Forms provides a clean, intuitive form builder UI for creating forms. These forms can then be embedded on your website in an `iframe` tag. Submissions are visible in form dashboard under the **Responses** tab.
+Google Forms provides a clean, intuitive form builder UI for creating forms. These forms can then be embedded on your website in an `iframe` tag. Submissions are visible in the form dashboard under the **Responses** tab.
 
 **Best Feature:** Easy-to-use form builder.
 
@@ -235,6 +242,3 @@ Each of these solutions have different strengths and weaknesses. There is no one
 - You might like **FormKeep** if you have a high volume of submissions and want to automate as much as possible with its Zapier integration.
 - If your needs are simple and you don’t want to devote a lot of time and money to forms, **Formspree** will get you up and running quickly.
 - Code warriors who prefer to own their services will like **FormPlug**.
-
-
-

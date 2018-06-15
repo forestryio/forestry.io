@@ -20,6 +20,6 @@ fields:
   default: blocks
 pages:
 - test-landing-page.md
+- blocks.md
 - landing-page-test.md
 - another-landing-page.md
-- blocks.md
