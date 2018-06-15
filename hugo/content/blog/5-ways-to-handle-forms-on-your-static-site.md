@@ -29,7 +29,7 @@ When I first started exploring the potential of static sites, I was attracted by
 
 I no longer see things this way.
 
-JAMStack is not about sacrificing features for the sake of a performant, easy to maintain website. Rather, it is about re-evaluating how much of your desired functionality should be delegated to your web frontend. For example, does the same software that distributes your HTML contact form *also* need to handle submissions from that form?
+JAMStack is not about sacrificing features for the sake of a performant, easy to maintain website. Rather, it is about re-evaluating how much of your desired functionality should be delegated to your web frontend. For example, does the same software that distributes your HTML contact form _also_ need to handle submissions from that form?
 
 In this post I will explore five options for handling form submissions with your static site:
 
@@ -43,6 +43,8 @@ The options presented here range from fully-managed solutions for lean teams, al
 
 ## [Google Forms](https://www.google.com/forms/about/)
 
+![](/uploads/2018/06/googleforms.png)
+
 Google Forms provides a clean, intuitive form builder UI for creating forms. These forms can then be embedded on your website in an `iframe` tag. Submissions are visible in the form dashboard under the **Responses** tab.
 
 **Best Feature:** Easy-to-use form builder.
@@ -50,15 +52,20 @@ Google Forms provides a clean, intuitive form builder UI for creating forms. The
 **Biggest Downside:** Doesn’t integrate nicely with your site. Can’t retrofit existing forms, need to re-create them in Google Forms.
 
 ### Spam Countermeasures
+
 Google implements reCAPTCHA for forms that collect email addresses.
 
 ### Extensibility
+
 Google has a healthy library of add-ons for forms, and also lets you add functionality to your forms via [Google Apps Scripts](https://developers.google.com/apps-script/overview). It’s also easy to export your responses to google sheets for further processing.
 
 ### Using Google Forms
+
 Navigate to the [Google Forms dashboard](https://docs.google.com/forms/) and select a form at the top to create a new form. Use the UI to create your form. When your form is finished, click the **Send** button and navigate to the `<>` tab to view the embed code. Copy this code and paste it anywhere in your document that you want the form to appear.
 
 ## [FormKeep](https://formkeep.com/)
+
+![](/uploads/2018/06/formkeep.png)
 
 FormKeep is another SaaS offering to handle your form submissions. FormKeep integrates easily with your existing forms, only requiring you to change the `action` attribute in the form HTML. You can view each form’s submissions in your FormKeep dashboard.
 
@@ -67,12 +74,15 @@ FormKeep is another SaaS offering to handle your form submissions. FormKeep inte
 **Biggest Downside:**  No free tier, only limited free trials.
 
 ### Spam Countermeasures
+
 FormKeep uses a filtering strategy to automatically detect spam. You can also add a reCAPTCHA field to your forms. Further reading: [How does FormKeep protect from spam?](https://intercom.help/formkeep/frequently-asked-questions/how-does-formkeep-protect-from-spam)
 
 ### Extensibility
+
 FormKeep allows you to add webhooks that will be called when submissions are recieved, and integrates with a handful of services including Zapier.
 
 ### Using FormKeep
+
 After creating your FormKeep account, log in to view your forms and submissions. You can navigate between forms or add a new form from the dropdown in the top right. Navigate to the **Setup** tab to get the unique URL for that form. You will hook your existing HTML form up to FormKeep by adding this  URL to your form’s `action` attribute.
 
 Before:
@@ -90,6 +100,7 @@ After:
         <textarea name="comments"></textarea>
       </label>
     </form>
+
 ## [Netlify Forms](https://www.netlify.com/docs/form-handling/)
 
 Netlify offers a unique approach for integrating forms into your site. There is no JavaScript required, and your form does not post to a different domain: you simply add a `netlify` attribute to your `<form>` tag, and you can start receiving submissions in your Netlify dashboard. This is possible because Netlify parses your site’s HTML at deploy time, so they can identify your forms and ensure the necessary form handling code is present in the site’s hosting environment. The downside of this is that this feature is only available if you are using Netlify’s platform to deploy and host your static site.
@@ -99,6 +110,7 @@ Netlify offers a unique approach for integrating forms into your site. There is 
 **Biggest Downside:** Only available if you’re already using Netlify for hosting and deployment. Free tier limited to 100 submissions per month.
 
 ### Spam Countermeasures
+
 Netlify runs a spam filter against all submissions and will display a captcha only to submissions that it identifies as possible spam.
 
 You have the option of forcing all users to fill out a captcha by including a `div` with the `netlify-recaptcha` attribute. Netlify will populate this div with the captcha field.
@@ -106,9 +118,11 @@ You have the option of forcing all users to fill out a captcha by including a `d
 Netlify also supports a [honeypot field](https://www.netlify.com/docs/form-handling/#honeypot-field). Add the name of this field to your form via the `netlify-honeypot` attribute.
 
 ### Extensibility
+
 Netlify’s form solution is highly extensible. Forms and submissions are accessible via an API, you can add webhooks to be triggered on new submissions, and they are currently beta testing an [integration with Zapier](https://zapier.com/developer/invite/27442/6c1b6a3bbcf86c07c0a0f7dfe2d0327c/?utm_source=Netlify+and+BitBalloon&utm_campaign=7897bcd976-Netlify_Newsletter_8_Zapier&utm_medium=email&utm_term=0_200b533eb5-7897bcd976-).
 
 ### Using Netlify Forms
+
 Just add the `netlify` attribute to your form, and ensure your form has a `name`. For the following example, we will also demonstrate adding a honeypot field.
 
 Before:
@@ -137,6 +151,8 @@ After:
 
 ## [Formspree](https://formspree.io/)
 
+![](/uploads/2018/06/formspree.png)
+
 Of all the options presented here, Formspree provides the shortest path to adding submission handling to an existing form. Formspree works by receiving submissions at `https://formspree.io/$YOUR_EMAIL` and will forward the submission data to the email address specified in that URL. Unfortunately, this means that the only way to view submissions is through your email inbox, though users who register and upgrade to the Gold plan can view their submissions in Formspree’s dashboard.
 
 Formspree is also an open source project ([view on Github](https://github.com/formspree/formspree),) and they provide instructions on how to run your own instance of Formspree on Heroku.
@@ -150,9 +166,11 @@ Formspree is also an open source project ([view on Github](https://github.com/fo
 Formspree uses reCAPTCHA to identify spam submissions. You can also add a honeypot field to your form with the name `_gotcha`.
 
 ### Extensibility
+
 Formspree doesn’t offer any extension opportunities out of the box.
 
 ### Using Formspree
+
 You can start using Formspree without even visiting their website. Just point your form to `https://formspree.io/$YOUR_EMAIL` where `$YOUR_EMAIL` is the email you want submissions to be sent to. Once the form is configured correctly, submit it once. You should then receive an email from Formspree asking you to confirm your email address.
 
 {{% tip %}}
@@ -184,6 +202,7 @@ After:
     .hpot {
       display: none;
     }
+
 ## [FormPlug](https://danielireson.github.io/formplug-serverless/)
 
 FormPlug is an option for power users who want full control over the code that handles their submissions. FormPlug is an open source project built with the [Serverless Framework](https://serverless.com/). The code runs on AWS Lambda and uses Amazon SES to send emails.
@@ -193,17 +212,20 @@ FormPlug is an option for power users who want full control over the code that h
 **Biggest Downside:**  Submissions are persisted in email, like Formspree
 
 ### Spam Countermeasures
+
 FormPlug also offers a honeypot field using the name `_honeypot`. In my experience, honeypot fields are reasonably effective on their own. They don’t seem very hard to thwart, though, and I wouldn’t be surprised if at some point they become utterly useless.
 
 FormPlug also allows you to [encrypt your email address](https://github.com/danielireson/formplug-serverless#encryption) so it isn’t exposed on the frontend.
 
 ### Extensibility
+
 Similar to Formspree, FormPlug doesn’t offer any extensibility out of the box. Since it’s open source, you always have the option of forking it and implementing your own extension at least.
 
 ### Using FormPlug
+
 To use FormPlug, you will need an AWS account. Follow the [setup instructions](https://github.com/danielireson/formplug-serverless#setup) to install FormPlug to your AWS environment.
 
-To hook your form up to FormPlug, retrieve the API Gateway URL for your FormPlug installation from the AWS console. Add this URL as the `action` attribute for your form, and insert the email that you want to receive submissions into a hidden field with the name of `_to`. 
+To hook your form up to FormPlug, retrieve the API Gateway URL for your FormPlug installation from the AWS console. Add this URL as the `action` attribute for your form, and insert the email that you want to receive submissions into a hidden field with the name of `_to`.
 
 We will again demonstrate using the honeypot field in our example.
 
@@ -232,16 +254,14 @@ After:
       display: none;
     }
 
-
 ## Finding the Form Solution That’s Right For You
 
 Each of these solutions have different strengths and weaknesses. There is no one solution that stands out as the best; the utility of each depends on your needs. If you still aren’t sure which one to go with, here’s a brief summary of each one’s strengths:
 
-
-- Your organization will appreciate **Google Forms** if you have non-developers involved in the form creation process.
-- **Netlify Forms** is an excellent option if you already use Netlify for deploying and hosting your static site.
-- You might like **FormKeep** if you have a high volume of submissions and want to automate as much as possible with its Zapier integration.
-- If your needs are simple and you don’t want to devote a lot of time and money to forms, **Formspree** will get you up and running quickly.
-- Code warriors who prefer to own their services will like **FormPlug**.
+* Your organization will appreciate **Google Forms** if you have non-developers involved in the form creation process.
+* **Netlify Forms** is an excellent option if you already use Netlify for deploying and hosting your static site.
+* You might like **FormKeep** if you have a high volume of submissions and want to automate as much as possible with its Zapier integration.
+* If your needs are simple and you don’t want to devote a lot of time and money to forms, **Formspree** will get you up and running quickly.
+* Code warriors who prefer to own their services will like **FormPlug**.
 
 Regardless of which option you choose, these form handlers demonstrate that you can easily add dynamic behavior to your static site. The next time you decide that a static site is a bad choice for your use case, take a moment and consider: should your web frontend be responsible for this feature, or can you use some imagination and technical know-how to get the best of both worlds?
