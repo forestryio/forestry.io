@@ -33,7 +33,7 @@ JAMStack is not about sacrificing features for the sake of a performant, easy to
 In this post I will explore five options for handling form submissions with your static site:
 
 1. [Google Forms](#google-forms-https-www-google-com-forms-about)
-2. [FormKeep](#formkeep-httpos-formkeep-com)
+2. [FormKeep](#formkeep-https-formkeep-com)
 3. [Netlify Forms](#netlify-forms-https-www-netlify-com-docs-form-handling)
 4. [Formspree](#formspree-https-formspree-io)
 5. [FormPlug](#formplug-https-danielireson-github-io-formplug-serverless)
@@ -192,7 +192,7 @@ FormPlug is an option for power users who want full control over the code that h
 **Biggest Downside:**  Submissions are persisted in email, like Formspree
 
 ### Spam Countermeasures
-FormPlug also offers a honeypot field using the name `_honeypot`. In my experience, honeypot fields are reasonably effective on their own. They don’t seem very hard to thwart, though, and I wouldn’t be surprised if at some point they will become utterly useless.
+FormPlug also offers a honeypot field using the name `_honeypot`. In my experience, honeypot fields are reasonably effective on their own. They don’t seem very hard to thwart, though, and I wouldn’t be surprised if at some point they become utterly useless.
 
 FormPlug also allows you to [encrypt your email address](https://github.com/danielireson/formplug-serverless#encryption) so it isn’t exposed on the frontend.
 
@@ -242,3 +242,5 @@ Each of these solutions have different strengths and weaknesses. There is no one
 - You might like **FormKeep** if you have a high volume of submissions and want to automate as much as possible with its Zapier integration.
 - If your needs are simple and you don’t want to devote a lot of time and money to forms, **Formspree** will get you up and running quickly.
 - Code warriors who prefer to own their services will like **FormPlug**.
+
+Regardless of which option you choose, these form handlers demonstrate that you can easily add dynamic behavior to your static site. The next time you decide that a static site is a bad choice for your use case, take a moment and consider: should your web frontend be responsible for this feature, or can you use some imagination and technical know-how to get the best of both worlds?
