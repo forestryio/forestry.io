@@ -19,7 +19,7 @@ The Remote Admin allows editors to access and manage your site without leaving y
 
 This is great for large businesses or white-label solutions where you don’t want your users accessing the CMS through the Forestry website.
 
-![](/uploads/2018/01/28.png)
+![](/uploads/2018/05/oauth-admin.png)
 
 ## Setting up the Remote Admin
 
@@ -43,7 +43,3 @@ If [hosting](/docs/hosting) is configured, you can deploy the Remote Admin to yo
 ![](/uploads/2018/01/settings-projectpaths.png)
 
 Then you can access the admin from your hosted site at your specified path. E.g, `https://example.com/admin`
-
-{{% tip %}}
-If you signed up for Forestry using social auth, you will need to configure a password to log in to the Remote Admin. This can be done using the [forgot password utility](https://app.forestry.io/password)
-{{% /tip %}}
