@@ -31,7 +31,6 @@ How is it going with Forestry? We just made a big change to how we handle Hugo I
 ## Hugo Support for All Versions 🔥🔥🔥
 
 ![](/uploads/2018/06/hugo-1)
-
 Hugo has a great developer community that is constantly pushing new features. Until now you sometimes had to wait a few months until you were able to use the latest version of Hugo with Forestry as we were trying to catch up.
 
 We now support all Hugo versions from the moment they are released.
@@ -40,7 +39,8 @@ We now support all Hugo versions from the moment they are released.
 
 ## Sort Pages by Title 📝 or Date 📅
 
-![](/uploads/2018/06/2018-06-19 12.50.29.gif) We used to sort your pages and posts by the last edited date. A lot of you have told us that that's not always ideal. Now you can sort your pages by Title and by Date depending on the situation.
+![](/uploads/2018/06/2018-06-19 12.50.29.gif) 
+We used to sort your pages and posts by the last edited date. A lot of you have told us that that's not always ideal. Now you can sort your pages by Title and by Date depending on the situation.
 
 ---
 
