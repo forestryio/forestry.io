@@ -1,5 +1,5 @@
 ---
-title: "\U0001F49E Hugo Support, Sorting for Pages and more"
+title: "\U0001F49E Continuous Hugo Support, Sorting for Pages and more"
 description: ''
 date: 2018-06-18 23:32:20 -1100
 authors: []
