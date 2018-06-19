@@ -38,7 +38,7 @@ We now support all Hugo versions from the moment they are released.
 
 ## Sort Pages by Title 📝 or Date 📅
 
-We used to sort your pages and posts by the last edited date. A lot of you have told us that that's not always ideal. Now you can sort your pages by Title and by Date depending on your needs.
+We used to sort your pages and posts by the last edited date. A lot of you have told us that's not always ideal. Now you can sort your pages by Title and by Date depending on your needs.
 
 ![](/uploads/2018/06/2018-06-19 12.50.29.gif)
 
