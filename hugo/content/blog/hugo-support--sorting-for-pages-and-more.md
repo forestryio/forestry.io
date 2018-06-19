@@ -21,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 We just made a big change to how we handle Hugo projects and introduced a few new features that make it easier to stay organized.
