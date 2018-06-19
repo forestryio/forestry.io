@@ -41,3 +41,7 @@ We now support all Hugo versions from the moment they are released.
 ![](/uploads/2018/06/2018-06-19 12.50.29.gif) We used to sort your pages and posts by the last edited date. A lot of you have told us that that's not always ideal. Now you can sort your pages by Title and by Date depending on the situation.
 
 ---
+
+## Separate Template and Partials categories
+
+![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)With the Blocks building feature we introduced Partial Front Matter Templates. They can't be used in the same way as regular Templates can be used and that's why we decided to organize them into two visually separate categories.
