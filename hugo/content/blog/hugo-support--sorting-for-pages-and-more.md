@@ -3,13 +3,15 @@ title: "Hugo Support for All Versions \U0001F49E, Sorting for Pages \U0001F4C4 a
   more"
 description: ''
 date: 2018-06-18 23:32:20 -1100
-authors: []
-publishdate: 2017-12-07 04:00:00 +0000
+authors:
+- Sebastian Engels
+publishdate: 2018-06-18 16:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
