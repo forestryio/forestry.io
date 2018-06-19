@@ -44,7 +44,7 @@ We used to sort your pages and posts by the last edited date. A lot of you have 
 
 ---
 
-## Separate Template and Partials categories 👀
+## Separate Categories for Front Matter Templates and Partials 👀
 
 ![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)
 
