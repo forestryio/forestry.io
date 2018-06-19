@@ -38,4 +38,6 @@ We now support all Hugo versions from the moment they are released.
 
 ## Sort Pages by Title or Date
 
-![](/uploads/2018/06/2018-06-18 11.28.39.gif)hhhhh
+![](/uploads/2018/06/2018-06-19 12.50.29.gif) We used to sort your pages and posts by the last edited date. A lot of you have told us that that's not always ideal. Now you can sort your pages by Title and by Date depending on the situation.
+
+---
