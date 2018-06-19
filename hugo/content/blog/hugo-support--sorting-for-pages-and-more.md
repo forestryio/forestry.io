@@ -1,5 +1,6 @@
 ---
-title: "Continuous Hugo Support \U0001F49E, Sorting for Pages \U0001F4C4and more"
+title: "Hugo Support for All Versions \U0001F49E, Sorting for Pages \U0001F4C4 and
+  more"
 description: ''
 date: 2018-06-18 23:32:20 -1100
 authors: []
@@ -23,7 +24,7 @@ draft: true
 ---
 Hi guys,
 
-How is it going with Forestry? We just made a big change to how we handle Hugo Imports and I’d love to tell you a little bit about some smaller UI changes - I recommend opening Forestry and try as you go.
+How is it going with Forestry? We just made a big change to how we handle Hugo Imports and introduced a new sorting feature. You might also like how we organized the Front Matter section into Templates and Partials.
 
 ---
 
@@ -45,6 +46,7 @@ We now support all Hugo versions from the moment they are released.
 
 ## Separate Template and Partials categories 👀
 
-![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)With the Blocks building feature we introduced Partial Front Matter Templates. They can't be used in the same way as regular Templates that's why we decided to organize them into two visually separate categories.
+![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)
+With the Blocks building feature we introduced Partial Front Matter Templates. They can't be used in the same way as regular Templates that's why we decided to organize them into two visually separate categories.
 
 See more updates 👉[Renaming Files and Improving Editing in a Team](/blog/renaming-files-and-improving-team-editing/)
