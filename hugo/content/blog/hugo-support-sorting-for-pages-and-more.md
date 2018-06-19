@@ -1,6 +1,7 @@
 ---
 title: Hugo Support for All Versions, Sorting for Pages and more
-description: ''
+description: We just made a big change to how we handle Hugo projects and introduced
+  a few new features that make it easier to stay organized.
 date: 2018-06-18 23:32:20 -1100
 authors:
 - Sebastian Engels
