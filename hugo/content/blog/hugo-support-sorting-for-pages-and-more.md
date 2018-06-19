@@ -1,6 +1,5 @@
 ---
-title: "Hugo Support for All Versions \U0001F49E, Sorting for Pages \U0001F4C4 and
-  more"
+title: Hugo Support for All Versions, Sorting for Pages and more
 description: ''
 date: 2018-06-18 23:32:20 -1100
 authors:
