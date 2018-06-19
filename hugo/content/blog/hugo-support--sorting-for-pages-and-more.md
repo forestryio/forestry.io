@@ -29,7 +29,8 @@ How is it going with Forestry? We just made a big change to how we handle Hugo I
 
 ## Hugo Support for All Versions 🔥🔥🔥
 
-![](/uploads/2018/06/hugo.png)
+![](/uploads/2018/06/hugo-1)
+
 Hugo has a great developer community that is constantly pushing new features. Until now you sometimes had to wait a few months until you were able to use the latest version of Hugo with Forestry as we were trying to catch up.
 
 We now support all Hugo versions from the moment they are released.
