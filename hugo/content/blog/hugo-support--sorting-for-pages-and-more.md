@@ -22,12 +22,12 @@ menu: []
 draft: true
 
 ---
-Hi guys,
-
 How is it going with Forestry? We just made a big change to how we handle Hugo Imports and introduced a few new features that make it easier to stay organized.
 
 ---
+
 ## Hugo Support for All Versions 🔥🔥🔥
+
 Hugo has a great developer community that is constantly pushing new features. Until now you sometimes had to wait a few months until you were able to use the latest version of Hugo with Forestry as we were trying to catch up.
 
 We now support all Hugo versions from the moment they are released.
@@ -35,13 +35,15 @@ We now support all Hugo versions from the moment they are released.
 ![](/uploads/2018/06/hugo-1)
 
 ---
+
 ## Sort Pages by Title 📝 or Date 📅
 
 We used to sort your pages and posts by the last edited date. A lot of you have told us that that's not always ideal. Now you can sort your pages by Title and by Date depending on your needs.
 
-![](/uploads/2018/06/2018-06-19 12.50.29.gif) 
+![](/uploads/2018/06/2018-06-19 12.50.29.gif)
 
 ---
+
 ## Separate Template and Partials categories 👀
 
 ![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)
