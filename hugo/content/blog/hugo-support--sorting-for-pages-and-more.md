@@ -48,8 +48,8 @@ We used to sort your pages and posts by the last edited date. A lot of you have 
 
 ## Separate Categories for Front Matter Templates and Partials 👀
 
-![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)
-
 With the [Blocks](/docs/settings/fields/blocks/) building feature we introduced [Partial Front Matter Templates](/docs/settings/front-matter-templates/#partial-templates). They can't be used like regular Front Matter Templates that's why we decided to organize them into two visually separate categories.
+
+![](/uploads/2018/06/Screen Shot 2018-06-19 at 1.18.43 PM-1.43 PM)
 
 See more updates 👉[Renaming Files and Improving Editing in a Team](/blog/renaming-files-and-improving-team-editing/)
