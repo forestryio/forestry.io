@@ -31,9 +31,9 @@ In April we announced a feature that we believed was a game-changer for static s
 
 While we did our best to show you how to set them up and give you an idea of how powerful they could be, we noticed that getting to know Blocks and figuring out how to set them up from scratch wasn't as easy as we had hoped. We needed something that would guide people to success.
 
-## Solution
+Enter our brand-new theme for Jekyll and Hugo - uBuild \[beta\] (see the live demo here)! This fully-responsive theme comes with 16 design blocks to put together your favorite site. Our norwegian designer made sure it looked stunning but see for yourself.
 
-Enter our brand-new theme for Jekyll and Hugo - uBuild (see the live demo here)! This fully-responsive theme comes with 16 design blocks to put together your favorite site. Our norwegian designer made sure it looked stunning but see for yourself.
+![](/uploads/2018/06/all-blocks.png)
 
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
@@ -46,8 +46,6 @@ forkName="jekyll-ubuild"
 heading="Make it Your Own"
 linkText="Import Jekyll uBuild Now" %}}
 </div>
-
-add site button
 
 image image image
 
