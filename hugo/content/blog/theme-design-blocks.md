@@ -27,9 +27,7 @@ menu: []
 draft: true
 
 ---
-## Problem
-
-In April we announced a feature that we believed was a game-changer for static site content managers. With Blocks we introduced a way for you to put together sites using pre-composed site snippets inside Forestry.
+In April we announced a feature that we believed was a game-changer for static site content managers. Blocks was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
 
 While we did our best to show you how to set them up and give you an idea of how powerful they could be, we noticed that getting to know Blocks and figuring out how to set them up from scratch wasn't as easy as we had hoped. We needed something that would guide people to success.
 
@@ -37,7 +35,19 @@ While we did our best to show you how to set them up and give you an idea of how
 
 Enter our brand-new theme for Jekyll and Hugo - uBuild (see the live demo here)! This fully-responsive theme comes with 16 design blocks to put together your favorite site. Our norwegian designer made sure it looked stunning but see for yourself.
 
-add site button 
+<div id="import-ubuild-theme-button" data-proofer-ignore>
+{{% create_site_button
+repo="https://github.com/forestryio/forestry-blocks.git"
+configPath="site"
+branch="master"
+engineName="jekyll"
+engineVersion="3.6.0"
+forkName="jekyll-ubuild"
+heading="Make it Your Own"
+linkText="Import Jekyll uBuild Now" %}}
+</div>
+
+add site button
 
 image image image
 
