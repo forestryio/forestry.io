@@ -144,6 +144,7 @@ pages:
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/admin.md
+- hugo/content/blog/theme-design-blocks.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
@@ -157,7 +158,6 @@ pages:
 - hugo/content/blog/building-a-company-component-library.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
 - hugo/content/blog/_index.md
-- hugo/content/blog/theme-design-blocks.md
 - hugo/content/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn.md
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
 - hugo/content/blog/up-and-running-with-hugo.md
