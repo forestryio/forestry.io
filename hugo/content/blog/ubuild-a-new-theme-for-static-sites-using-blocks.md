@@ -1,5 +1,5 @@
 ---
-title: uBuild - A New Theme For Jekyll and Hugo Sites Using Blocks
+title: uBuild - A New Theme For Jekyll Using Blocks
 description: ''
 date: 2018-06-22 18:20:06 +0000
 authors:
@@ -49,22 +49,71 @@ linkText="Import Jekyll uBuild Now" %}}
 
 ## The Theme
 
-The theme consists of six sections:
+The theme consists of seven sections:
 - Navigation Bar
 - Hero Section
 - Content Feature
-- Detail Section
 - 1-2-3 columns
+- Details Section
+- Call-To-Action
 - Footer
 
-Each section has 1-3 blocks you can choose with different stylings. 
+Each section has 1-3 alternatives you can choose from.
 
 
-## Purpose
+
+
+## How did we build it
 
 This theme is created to give you a starting point for adding builder functionalities to your own site or just take it and add your own components to it.
 
-<add site button
+A regular Block is simply an `includes` template. The code for our `text-1` Block looks like this.
+
+```
+<section class="block block-text-1">
+  <div class="container">
+    <div class="columns">
+      <div class="column headline">
+        <h3>{{ section.headline }}</h3>
+      </div>
+      <div class="column text">
+        {{ section.content }}
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+{{% tip %}}
+Note that you can use any variable but we're using `sections` for all our parameters to make sure that we're only using the specific part of our Front Matter set for this specific Block.
+{{% /tip %}}
+
+The way Blocks work are through the power of Front Matter. Basically we will loop over an array in our Front Matter and tell our template to include a Block if it is mentioned.
+
+Let's include the above Block in our Front Matter!
+
+```
+---
+title: Title
+layout: blocks
+date: 2018-06-21 00:00:00 +0000
+page_sections:
+- template: text-1
+  block: text-1
+  headline: Headline
+  content: "<p>This is some content!</p>"
+---
+```
+
+Apart from a title and some other metadata we point to a `layout` called `blocks`, which we are going to create in the next step, and it has an array called `page_sections`. This is where we added our Block. The only required fields for Blocks are `template`, which is the name of the block used inside your content manager, for our purposes this is Forestry, and `block`, which is the filename of the Block. Since we also included two variables we need to add those to the Front Matter as well. 
+
+{{% tip %}}
+Most of the time the values for `template` and `block` will identical but if a user changes the name of the Block in the content manager we need to make sure that this won't break our set up that's why we need the `block` value as well.
+{{% /tip %}}
+
+In the next step we create a file called `blocksare going to loop over `page_sections` in our `blocks` layout. 
+
+
 
 ## Future
 
