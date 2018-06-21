@@ -111,7 +111,7 @@ Apart from a title and some other metadata we point to a `layout` called `blocks
 Most of the time the values for `template` and `block` will identical but if a user changes the name of the Block in the content manager we need to make sure that this won't break our set up that's why we need the `block` value as well.
 {{% /tip %}}
 
-In the next step we create a file called `blocksare going to loop over `page_sections` in our `blocks` layout. 
+In the next step we create a file called `blocks` are going to loop over `page_sections` in our `blocks` layout. 
 
 
 
