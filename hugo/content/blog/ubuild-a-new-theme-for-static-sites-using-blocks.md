@@ -27,17 +27,18 @@ menu: []
 draft: true
 
 ---
-In April [we announced a feature](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) that we believed was a game-changer for static site content managers. [Blocks](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/#/) was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
+In April we announced a feature that we believed was a game-changer for static site content managers. Blocks was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
 
 While we did our best to show you how to set them up and give you an idea of how powerful they could be, we noticed that getting to know Blocks and figuring out how to set them up from scratch wasn't as easy as we had hoped. We needed something that would guide people to success.
 
-Enter our brand new theme for Jekyll and Hugo - uBuild! This fully-responsive theme comes with 16 design blocks to put together your favorite site. Our Norwegian designer [@nichlaswa](https://twitter.com/nichlaswa) made sure it looked stunning but see for yourself.
+Enter our brand-new theme for Jekyll and Hugo - uBuild \[beta\] (see the live demo here)! This fully-responsive theme comes with 16 design blocks to put together your favorite site. Our norwegian designer made sure it looked stunning but see for yourself.
 
 ![](/uploads/2018/06/all-blocks.png)
 
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/forestryio/ubuild-jekyll"
+repo="https://github.com/forestryio/forestry-blocks.git"
+configPath="site"
 branch="master"
 engineName="jekyll"
 engineVersion="3.6.0"
@@ -48,8 +49,7 @@ linkText="Import Jekyll uBuild Now" %}}
 
 ## The Theme
 
-uBuild consists of seven main sections:
-
+The theme consists of seven sections:
 - Navigation Bar
 - Hero Section
 - Content Feature
@@ -61,11 +61,13 @@ uBuild consists of seven main sections:
 Each section has 1-3 alternatives you can choose from.
 
 
-## How We Made *uBuild*
 
-uBuild is intended to give you a starting point for adding page builder functionality to your own site, but is complete enough that you can use it as-is and add new components as you see fit.
 
-A regular Block is simply an `includes` template. The code for our `text-1` Block looks like this.
+## How did we build it
+
+This theme is created to give you a starting point for adding builder functionalities to your own site or just take it and add your own components to it.
+
+A regular Block is simply an `includes` template. We decided to name prepend all our block filenames with `block-`. The name for our `text-1` Block is therefore `block-text-1.html` and the code for our `text-1` Block looks like this.
 
 ```
 <section class="block block-text-1">
@@ -109,18 +111,43 @@ Apart from a title and some other metadata we point to a `layout` called `blocks
 Most of the time the values for `template` and `block` will identical but if a user changes the name of the Block in the content manager we need to make sure that this won't break our set up that's why we need the `block` value as well.
 {{% /tip %}}
 
-In the next step we create a file called `blocks` are going to loop over `page_sections` in our `blocks` layout. 
+In the next step we create a file called `blocks` inside our `_layouts` directory, which is going to loop over our Front Matter array, `page_sections`.
+
+```
+{% include head.html %}
+{% for section in page.page_sections %}
+{% include block-{{ section.block }}.html %}
+{% endfor %}
+{% include footer.html %}
+```
+
+That's it! Now any Block can be added simply using Front Matter.
+
+## Blocks + Forestry
+
+Blocks can be inserted and customized using Front Matter. Forestry manages Front Matter through [Front Matter Templates](https://forestry.io/docs/settings/front-matter-templates/), a powerful tool that ultimately makes it possible to manage Blocks through Forestry.
+
+{{% tip %}}
+Since uBuild is already set up for Forestry all you need to do is to click on [the button](#import-ubuild-theme-button) at the top of this page and import the theme into your Forestry dashboard to get started.
+{{% /tip %}}
+
+Once the layout and styling for a Block is created it can be added and customized in Forestry. You simply need to create a Front Matter Template for each Block and set the `is Partial` toggle to true.
+
+For our `text-1` Block this would look something like this.
+ 
+![](/uploads/2018/06/text-1-block-settings.png)
+
+{{% tip %}}
+Front Matter Templates can also be set in `.yml` files inside the `.forestry.io` directory.
+{{% /tip %}}
 
 
-<div class="create-site-block" data-proofer-ignore>
-    <h2>Let's Roll</h2>
-    <a href="#/add-site" class="create-site-button">Import Jekyll uBuild Now</a>
-</div>
+
 
 ## Future
 
 We have big plans for Blocks!
 
-An open-source theme is a great start but we understand that won't fulfill all your needs. We'd like to build an entire Blocks suite from which you can pick and choose as you desire. So as we proceed with our exploration of this tool we're going to add to it and to do that we'd love to have your [feedback and contributions](https://github.com/forestryio/ubuild-blocks).
+An open-source theme is a great start but we understand that won't fulfill all your needs. We'd like to build an entire Blocks suite from which you can pick and choose as you desire. So as we proceed with our exploration of this tool we're going to add to it and to do that we'd love to have your [feedback and contributions]().
 
-Anything that could be assembled with pre-defined code blocks can be built with Blocks. We'd love for you to share with the community what you've built using Forestry Blocks. [Join our community Slack](https://join.slack.com/t/forestry-community/shared_invite/enQtMzgzMjQ1OTk0MDUwLThlYzZmMTQwMWFmMWRhOTU4NjY4MjM4ODdmMmQ0YzI0Y2M5YzViNGE0Y2VhZDY3MDEzYjcxZTMzODE2NDk1ZmI) or tag us on Twitter ([@forestryio](https://twitter.com/forestryio)).
+Anything that could be assembled with pre-defined code blocks can be build with Blocks. We'd love to share with the community what you built using Forestry Blocks. Just write us in the comments, slack or tag us on twitter.
