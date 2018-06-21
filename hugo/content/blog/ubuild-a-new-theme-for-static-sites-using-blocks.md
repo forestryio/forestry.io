@@ -89,7 +89,7 @@ A regular Block is simply an `includes` template. We decided to prepend all our 
 Note that you can use any variable but we're using `sections` for all our parameters to make sure that we're only using the specific part of our Front Matter set for this specific Block.
 {{% /tip %}}
 
-The way Blocks work are through the power of Front Matter. Basically we will loop over an array in our Front Matter and tell our template to include a Block if it is mentioned.
+Blocks work through the power of Front Matter. Basically we will loop over an array in our Front Matter and tell our template to include a Block if it is mentioned.
 
 Let's include the above Block in our Front Matter!
 
