@@ -35,6 +35,8 @@ Enter our brand-new theme for Jekyll and Hugo - uBuild \[beta\] (see the live de
 
 ![](/uploads/2018/06/all-blocks.png)
 
+<span style="{text-align: center}">All available blocks</span>
+
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/forestryio/forestry-blocks.git"
@@ -47,9 +49,9 @@ heading="Make it Your Own"
 linkText="Import Jekyll uBuild Now" %}}
 </div>
 
-image image image
+## The Idea
 
-## Theme introduction
+
 
 ## Purpose
 
