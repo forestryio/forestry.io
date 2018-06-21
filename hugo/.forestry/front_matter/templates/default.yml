@@ -144,7 +144,7 @@ pages:
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/admin.md
-- hugo/content/blog/ubuild-a-new-theme-for-static-sites.md
+- hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
