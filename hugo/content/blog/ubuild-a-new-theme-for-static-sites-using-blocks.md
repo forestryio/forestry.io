@@ -50,6 +50,7 @@ linkText="Import Jekyll uBuild Now" %}}
 ## The Theme
 
 The theme consists of seven sections:
+
 - Navigation Bar
 - Hero Section
 - Content Feature
@@ -67,7 +68,7 @@ Each section has 1-3 alternatives you can choose from.
 
 This theme is created to give you a starting point for adding builder functionalities to your own site or just take it and add your own components to it.
 
-A regular Block is simply an `includes` template. We decided to name prepend all our block filenames with `block-`. The name for our `text-1` Block is therefore `block-text-1.html` and the code for our `text-1` Block looks like this.
+A regular Block is simply an `includes` template. We decided to prepend all our block filenames with `block-`. The name for our `text-1` Block is therefore `block-text-1.html` and the code for our `text-1` Block looks like this.
 
 ```
 <section class="block block-text-1">
