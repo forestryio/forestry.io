@@ -4,10 +4,10 @@ description: |-
   In April we announced a feature that we believed was a game-changer for static site content managers. Blocks was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
 
   While we did our best to show you how to set them up and give you an idea of how powerful they could be, we noticed that getting to know Blocks and figuring out how to set them up from scratch wasn't as self-explanatory as we had hoped. We needed something that would guide people to success.
-date: 2018-06-22 03:00:06 -1100
+date: 2018-06-22 14:00:06 +0000
 authors:
 - Sebastian Engels
-publishdate: 2018-06-20 17:00:00 -1100
+publishdate: 2018-06-21 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -100,7 +100,7 @@ A regular Block is simply an HTML template inside the `_includes` directory. For
 There's nothing irregular about the HTML snippet. A Block is just an `include` template.
 
 {{% tip %}}
-We iterate over all the defined blocks in [`_layouts/blocks.html`](ubuild-jekyll/_layouts/blocks.html) and scope all of the block values inside of a variable called `section`. Within our block include, we will call any block-specific values from the `section` variable.
+We iterate over all the defined blocks in [`_layouts/blocks.html`](https://github.com/forestryio/ubuild-jekyll/blob/f5f19ca6faf3a492c4b12e3a30de435f32299f65/_layouts/blocks.html) and scope all of the block values inside of a variable called `section`. Within our block include, we will call any block-specific values from the `section` variable.
 {{% /tip %}}
 
 Let's include the above Block in our Front Matter!
