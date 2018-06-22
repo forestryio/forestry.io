@@ -72,9 +72,9 @@ Each section has 1-3 alternatives you can choose from. Once you grasp the concep
 
 ## How does it work?
 
-This theme is created to give you a starting point for adding builder functionalities to your own site, whether you use it out-of-the-box or as a starting point to learn how to implement your own Blocks theme.
+This theme is created to give you a starting point for adding builder functionalities to your own site, whether you use it out-of-the-box or as a starting point to learn how to implement your own Blocks.
 
-A regular Block is simply an HTML template inside the `_includes` directory. For clarity, we decided to prepend all our block filenames with `block-`. Hence the filename for our `text-1` Block is `block-text-1.html`. Let's have a look at Block `text-1`!
+A regular Block is simply an HTML template inside the `_includes` directory. For clarity, we decided to prepend all our Block filenames with `block-`. Hence the filename for our `text-1` Block is `block-text-1.html`. Let's have a look at Block `text-1`!
 
     <section class="block block-text-1">
       <div class="container">
@@ -106,7 +106,9 @@ Let's include the above Block in our Front Matter!
       content: "<p>This is some content!</p>"
     ---
 
-Blocks work through the power of Front Matter. We can see in the Front Matter above that apart from a `title` and some other metadata we point to a `layout` called `blocks`. We will have to create that layout in the next step. The Front Matter for this page also has an array called `page_sections`. This is where we add our Block details. There are two required fields for Blocks `template` and `block`, which is the name of the block used in Forestry and the explicit filename of the Block. In this case we also included two variables in the Block template so we need to add those to the Front Matter as well.
+Blocks work through the power of Front Matter. We can see in the Front Matter above that we point to a `layout` called `blocks`. We will have to create that layout in the next step. The Front Matter for this page also has an array called `page_sections`. This is where we add our Block details. 
+
+There are two required fields for Blocks `template` and `block`, which is the name of the block used in Forestry and the explicit filename of the Block. In this case we also included two variables (`headline` and `content`) in the Block template so we need to add those to the Front Matter as well.
 
 {{% tip %}}
 Most of the time the values for `template` and `block` will be identical but sometimes we'd like to use a more user-friendly name for our Block in the content manager, in that case we need to make sure that we can still find the correct file, hence we need the `block` value to stay consistent. {{% /tip %}}
