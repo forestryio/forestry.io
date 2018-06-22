@@ -56,7 +56,7 @@ linkText="Import Jekyll uBuild Now" %}}
 
 ## The Theme
 
-We built this theme to work out-of-the-box with or without Forestry. All content is controlled through Front Matter. Using exclusively Front Matter and not the `content` tag made it possible to create a theme that is completely modular, which was a prerequisite to add Blocks.
+We built this theme to work out-of-the-box with or without Forestry. All content is controlled through Front Matter. Using exclusively Front Matter and not the `{{ content }}` tag made it possible to create a theme that is completely modular, which was a prerequisite to add Blocks.
 
 The theme consists of seven sections:
 
