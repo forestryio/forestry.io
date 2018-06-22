@@ -1,5 +1,5 @@
 ---
-title: uBuild - A New Jekyll Theme Using Blocks
+title: uBuild - A New Jekyll Theme Using Blocks [Beta]
 description: ''
 date: 2018-06-22 18:20:06 +0000
 authors:
