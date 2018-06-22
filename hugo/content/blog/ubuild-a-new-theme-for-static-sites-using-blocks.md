@@ -1,5 +1,5 @@
 ---
-title: uBuild - A New Jekyll Theme Using Blocks [Beta]
+title: uBuild [Beta] - A New Jekyll Theme Using Blocks
 description: |-
   In April we announced a feature that we believed was a game-changer for static site content managers. Blocks was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
 
