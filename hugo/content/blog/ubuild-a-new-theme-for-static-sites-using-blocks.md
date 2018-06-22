@@ -27,7 +27,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Back in April [we announced a feature](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) that we believed was a game-changer for static site content managers. [Blocks](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/#/) was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
