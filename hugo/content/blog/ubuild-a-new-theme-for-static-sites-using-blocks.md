@@ -35,6 +35,16 @@ Enter our brand-new theme for Jekyll - uBuild \[beta\] (see the live demo \[here
 
 ![](/uploads/2018/06/all-blocks.png)
 
+## Quick Start
+
+1. Fork the repo and import the site into Forestry (or click on the Import Button above).
+
+2. Add a new page to your pages directory in Forestry and select the Page-Builder template.
+
+3. Add and customize the available Blocks and preview them as you go along.
+
+4. Read the rest of this article and create your own Blocks.
+
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/forestryio/forestry-blocks.git"
@@ -136,7 +146,13 @@ For this Block we only need to add two Text fields (one for `block` and one for 
 Front Matter Templates can also be set in `.yml` files inside the `.forestry.io` directory.
 {{% /tip %}}
 
+In our last step we need to make sure that there is one Front Matter Template that knows about all the different Partials. For this purpose we specifically created the Field called Blocks. 
 
+![](/uploads/2018/06/page-builder.png)
+
+Make sure all Partial Front Matter Templates are added under `Templates`.
+
+In this last step we are going to use 
 
 ## Future
 
