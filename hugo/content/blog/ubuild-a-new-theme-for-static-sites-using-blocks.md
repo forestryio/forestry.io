@@ -4,7 +4,7 @@ description: |-
   In April we announced a feature that we believed was a game-changer for static site content managers. Blocks was here to introduce a way for you to put together sites using pre-composed site snippets inside Forestry.
 
   While we did our best to show you how to set them up and give you an idea of how powerful they could be, we noticed that getting to know Blocks and figuring out how to set them up from scratch wasn't as self-explanatory as we had hoped. We needed something that would guide people to success.
-date: 2018-06-22 03:00:06 -1100
+date: 2018-06-21 17:00:06 -1100
 authors:
 - Sebastian Engels
 publishdate: 2018-06-20 17:00:00 -1100
