@@ -47,7 +47,7 @@ Enter our brand-new theme for Jekyll - uBuild \[beta\] (see the live demo [here]
 
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/forestryio/forestry-blocks.git"
+repo="https://github.com/forestryio/ubuild-jekyll.git"
 configPath="site"
 branch="master"
 engineName="jekyll"
