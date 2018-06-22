@@ -52,7 +52,7 @@ configPath="site"
 branch="master"
 engineName="jekyll"
 engineVersion="3.6.0"
-forkName="jekyll-ubuild"
+forkName="ubuild-jekyll"
 heading="Make it Your Own"
 linkText="Import Jekyll uBuild Now" %}}
 </div>
