@@ -151,12 +151,14 @@ In our last step we need to make sure that there is one Front Matter Template th
 
 Make sure all Partial Front Matter Templates are added under `Templates`.
 
-In this last step we are going to use 
+In this last step we are going to create a new page with Blocks. Simply navigate to `Pages` in the content section and click on `add new` in the upper-left corner. In the modal you choose a Title for the page and select the Page-Builder template. Click on Create.
+
+![](/uploads/2018/06/page-section.png)
+
+Now all that's left to do is to choose the Blocks you'd like to add and select them using the Page Section drop down.
 
 ## Future
 
-We have big plans for Blocks!
+We think an open-source theme is a great start but we understand that it might not be perfect but we'd like to know if this is something you can use. As we add Blocks to this theme and look for ways to improve the Blocks feature we'd love to have your [feedback, ideas and contributions]().
 
-An open-source theme is a great start but we understand that won't fulfill all your needs. We'd like to build an entire Blocks suite from which you can pick and choose as you desire. So as we proceed with our exploration of this tool we're going to add to it and to do that we'd love to have your [feedback and contributions]().
-
-Anything that could be assembled with pre-defined code blocks can be build with Blocks. We'd love to share with the community what you built using Forestry Blocks. Just write us in the comments, slack or tag us on twitter.
+We believe anything awesome stuff can be build with Blocks (as we will explore in future posts on this blog as well). We'd love to share with the community what you built using Forestry Blocks. Just write us in the comments on Hackernews, [slack](https://forestry.io/blog/join-our-slack-community/) or tag [@forestryio on twitter](https://twitter.com/forestryio/).
