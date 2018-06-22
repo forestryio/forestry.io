@@ -176,8 +176,6 @@ We believe awesome stuff can be built with Blocks, and plan to explore this more
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll explore Hugo's new theme inheritance feature.</p><p><strong>Last week:</strong> We looked at ways to <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handle forms on your static site.</a></p></div>
 
-<!--
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17320887">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17374309">Discuss on Hacker News</a>
