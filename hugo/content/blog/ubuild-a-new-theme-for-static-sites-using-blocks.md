@@ -162,6 +162,6 @@ Now all that's left to do is to choose the Blocks you'd like to add and select t
 
 ## Future
 
-We think an open-source theme is a great start but we understand that it might not be perfect but we'd like to know if this is something you can use. As we add Blocks to this theme and look for ways to improve the Blocks feature we'd love to have your [feedback, ideas and contributions](https://github.com/forestryio/ubuild-jekyll/issues).
+We think an open-source theme is a great start but we'd like to know your thoughts to make it even better. As we add Blocks to this theme and look for ways to improve the Blocks feature we'd love to have your [feedback, ideas and contributions](https://github.com/forestryio/ubuild-jekyll/issues).
 
 We believe awesome stuff can be build with Blocks (as we will explore in future posts on this blog as well). We'd love to share with the community what you built using Forestry Blocks. Just write us in the comments on Hackernews, [slack](https://forestry.io/blog/join-our-slack-community/) or tag [@forestryio on twitter](https://twitter.com/forestryio/).
