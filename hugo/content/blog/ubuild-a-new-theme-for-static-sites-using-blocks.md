@@ -75,9 +75,9 @@ Each section has 1-3 alternatives you can choose from and can easily be added an
 
 ## How does it work?
 
-This theme is created to give you a starting point for adding builder functionalities to your own site, whether you use it out-of-the-box or as a starting point to learn how to implement your own Blocks.
+This theme is created to give you a starting point for adding builder functionalities to your own site. We hope it'll help you whether you use it out-of-the-box or as a starting point to learn how to implement your own Blocks. 
 
-A regular Block is simply an HTML template inside the `_includes` directory. For clarity, we decided to prepend all our Block filenames with `block-`. Hence the filename for our `text-1` Block is `block-text-1.html`. Let's have a look at Block `text-1`!
+A regular Block is simply an HTML template inside the `_includes` directory. For clarity, we prepend all our Block filenames with `block-`. Hence the filename for our `text-1` Block is `block-text-1.html`. Let's have a look at Block `text-1`!
 
     <section class="block block-text-1">
       <div class="container">
