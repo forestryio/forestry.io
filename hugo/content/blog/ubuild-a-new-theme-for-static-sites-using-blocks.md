@@ -71,7 +71,7 @@ The theme consists of seven sections:
 * Call-To-Action
 * Footer
 
-Each section has 1-3 alternatives you can choose from. Once you grasp the concept of how Blocks work you can create new Blocks using simple HTML and CSS.
+Each section has 1-3 alternatives you can choose from and can easily be added and rearranged. Once you grasp the concept of how Blocks work you can create new Blocks using simple HTML and CSS.
 
 ## How does it work?
 
