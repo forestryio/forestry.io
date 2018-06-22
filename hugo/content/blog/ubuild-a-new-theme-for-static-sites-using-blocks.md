@@ -174,3 +174,11 @@ Now all that's left to do is to choose the Blocks you'd like to add and select t
 We think an open-source theme is a great start but we'd like to know your thoughts to make it even better. As we add Blocks to this theme and look for ways to improve the Blocks feature we'd love to have your [feedback, ideas and contributions](https://github.com/forestryio/ubuild-jekyll/issues).
 
 We believe awesome stuff can be built with Blocks, and plan to explore this more in the future. In the meantime, we'd love for you to share with the community what you've built using Forestry Blocks. [Join our community Slack](https://join.slack.com/t/forestry-community/shared_invite/enQtMzgzMjQ1OTk0MDUwLThlYzZmMTQwMWFmMWRhOTU4NjY4MjM4ODdmMmQ0YzI0Y2M5YzViNGE0Y2VhZDY3MDEzYjcxZTMzODE2NDk1ZmI) or tag us on Twitter ([@forestryio](https://twitter.com/forestryio)) to let us know!
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll explore Hugo's new theme inheritance feature.</p><p><strong>Last week:</strong> We looked at ways to <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handle forms on your static site.</a></p></div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17320887">Discuss on Hacker News</a>
+-->
