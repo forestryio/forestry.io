@@ -41,7 +41,7 @@ Enter our brand-new theme for Jekyll - uBuild \[beta\] (see the live demo [here]
 ## Quick Start
 
 1. Fork the repo and import the site into Forestry (or click on the Import Button below).
-2. Add a new page to your pages directory in Forestry and select the Page-Builder template.
+2. Click on 'Add New' in Forestry and select the Page-Builder template.
 3. Add and customize the available Blocks and preview them as you go along.
 4. Read the rest of this article and create your own Blocks.
 
