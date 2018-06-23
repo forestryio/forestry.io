@@ -29,7 +29,7 @@ Select the General tab, and find the Project Paths option. From here you provide
 
 ![](/uploads/2018/01/settings-projectpaths.png)
 
-The Remote Admin is deployed as a static HTML page, so be sure you deploy it to a path that will be treated as a [static file](http://localhost:3000/docs/faqs/glossary/static-files/) by your static site generator.
+The Remote Admin is deployed as a static HTML page, so be sure you deploy it to a path that will be treated as a [static file](/docs/faqs/glossary/static-files/) by your static site generator.
 
 ### Examples
 
