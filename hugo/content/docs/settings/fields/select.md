@@ -127,13 +127,10 @@ Omit the `config.section` option to allow selection from all content in the site
 {{% /tip %}}
 
 ## Data Source
-Allows developers to source options from a data file.
 
-The field will store the key from the data file in your front matter.
+Allows developers to source options from a data file. The data structure must be either an array of strings, or a single object where both keys and values are strings. More complex data types, such as an array of objects, are not supported.
 
-{{% warning %}}
-The Data Source Type only allows for selection from named key-value pairs, and will not work with an array or an array of objects.
-{{% /warning %}}
+When an object is used, the field will store the key from the data file in your front matter.
 
 ## Templating
 You can query for the value in the data file in your templates using the field's `name`:
