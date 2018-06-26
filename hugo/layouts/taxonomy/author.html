@@ -16,7 +16,7 @@
               </div>
             </div>
             <br />
-            <p class="author--bio">{{ .shortBio }}</p>
+            <p class="author--bio">{{ markdownify .shortBio }}</p>
             {{- end -}}
           {{- end -}}
         </div>
