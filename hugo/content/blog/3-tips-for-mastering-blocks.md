@@ -78,7 +78,7 @@ This strategy came in handy for uBuild. I refactored the front matter templates 
 
 The option to either namespace these fields or not comes in very handy. For example, the **Text Column** pattern is used in the 1-, 2-, and 3-column text blocks. It is included at the top level of the 1-column text block for the sake of simplicity, but is scoped inside of Field Groups for the 2- and 3-column text blocks so that we can re-use the same fields.
 
-Following the same logic, you can also use a **Repeatable Field Group** to scope your Include Template fields. This will allow content editors to create an indefinite number of content items based on the included template. In uBuild, the **Link** partial is used in both standard Field Groups as well as Repeatable Field Groups. For example, the *Call-to-action* section in the *Hero Banner w/ Image* section allows you to add a single link inside of the `cta` field group. The two header variants, on the other hand, include a navigation menu that is constructed by creating a Repeatable Field Group that includes the same link partial.
+Following the same logic, you can also use a **Repeatable Field Group** to scope your Include Template fields. This will allow content editors to create an indefinite number of content items based on the included template. In uBuild, the **Link** partial is used in both standard Field Groups as well as Repeatable Field Groups. For example, the *Call-to-action* field in the *Hero Banner w/ Image* block allows you to add a single link inside of the `cta` field group. The two header variants, on the other hand, include a navigation menu that is constructed by creating a Repeatable Field Group that includes the same link partial.
 
 
 ## Pass Page Context To Your Hugo Block Layouts
