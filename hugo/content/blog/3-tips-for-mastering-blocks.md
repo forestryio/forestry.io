@@ -110,5 +110,5 @@ Hugo’s restrictive variable scope may be frustrating to deal with at first, bu
 
 ## We’re in This Together
 
-As the capabilities of Forestry grow, so do the options available to our users. The three strategies presented here are the result of my own observation and experimentation; if you’ve found a way to use Forestry that you think is really powerful, we’d love to hear about it! Let us know on [Twitter](/) or {{% slack_invite_link “in our community Slack” %}}.
+As the capabilities of Forestry grow, so do the options available to our users. The three strategies presented here are the result of my own observation and experimentation; if you’ve found a way to use Forestry that you think is really powerful, we’d love to hear about it! Let us know on [Twitter](/) or {{% slack_invite_link “in our community Slack.” %}}
 
