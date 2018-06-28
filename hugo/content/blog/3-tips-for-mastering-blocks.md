@@ -1,10 +1,10 @@
 ---
 title: 3 Tips for Mastering Blocks
 description: ''
-date: 2018-06-28 23:00:15 -1100
+date: 2018-06-29 10:00:15 +0000
 authors:
 - DJ Walker
-publishdate: 2018-06-28 23:00:00 -1100
+publishdate: 2018-06-29 10:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -26,7 +26,18 @@ draft: true
 ---
 Last week, we brought you [a theme for Jekyll](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) that takes advantage of Forestry’s Blocks feature to build whole page layouts using modular components, called uBuild. This week, I ported uBuild to Hugo to make it available to our Hugo users. When we first announced the Blocks feature, I created a Hugo theme called [Sawmill](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry) to demonstrate the Blocks' page-building capabilities. Since creating that theme, I’ve been using Blocks extensively and have learned a lot about how to use this feature effectively.
 
-In this post, I want to take you through a few of the design decisions I made for `ubuild-hugo`. My hope is that this will give you some insight into how uBuild is put together, as well as help you use Blocks (and Front Matter Templates in general) effectively in your own projects.
+In this post, I want to take you through a few of the design decisions I made for [ubuild-hugo](https://github.com/forestryio/ubuild-hugo). My hope is that this will give you some insight into how uBuild is put together, as well as help you use Blocks (and Front Matter Templates in general) effectively in your own projects.
+
+<div id="import-snipcart-demo-button" data-proofer-ignore>
+{{% create_site_button
+repo="https://github.com/forestryio/ubuild-hugo-starter"
+branch="master"
+engineName="hugo"
+engineVersion="0.42.2"
+forkName="ubuild-hugo-demo"
+heading="Get Started With uBuild"
+linkText="Import The Starter Site" %}}
+</div>
 
 
 ## Add Default Values to Hidden Text Fields For Template-Level Config
@@ -122,5 +133,4 @@ Hugo’s restrictive variable scope may be frustrating to deal with at first, bu
 
 ## We’re in This Together
 
-As the capabilities of Forestry grow, so do the options available to our users. The three strategies presented here are the result of my own observation and experimentation; if you’ve found a way to use Forestry that you think is really powerful, we’d love to hear about it! Let us know on [Twitter](/) or {{% slack_invite_link "in our community Slack" %}}.
-
+As the capabilities of Forestry grow, so do the options available to our users. The three strategies presented here are the result of my own observation and experimentation; if you’ve found a way to use Forestry that you think is really powerful, we’d love to hear about it! Let us know on Twitter([@forestryio](https://twitter.com/forestryio)) or {{% slack_invite_link "in our community Slack" %}}.
