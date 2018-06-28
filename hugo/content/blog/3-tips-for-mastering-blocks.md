@@ -68,7 +68,7 @@ The **Include Template** field type is a very useful one in Forestry: it allows 
 
 One gotcha of using the Include Template field is that it doesn’t use its `name` or `label` parameters when it comes time to actually edit and create front matter. This is by design: included partial templates are more versatile if they don’t have to be nested inside of another field.
 
-There are times, however, where you might want nest the fields of an include template inside of another front matter value. For example, you might want to avoid naming collisions with other fields in your FMT, or you might want to use multiple copies of the included template. In this case, all you have to do is create a **Field Group** and include the FMT Partial as the only field inside of the group. When you edit this front matter, it will behave like a conventional field group, and all of the included fields will be nested inside of a variable matching the `name`  attribute of your Field Group (just like a Field Group made of basic fields.)
+There are times, however, where you might want nest the fields of an include template inside of another front matter value. For example, you might want to avoid naming collisions with other fields in your FMT, or you might want to use multiple copies of the included template. In this case, all you have to do is create a **Field Group** and include the FMT Partial as the only field inside of the group. All of the included fields will then be nested inside this group in your front matter.
 
 This strategy came in handy for uBuild. I refactored the front matter templates so that three common field patterns were abstracted away into Front Matter Partial templates:
 
