@@ -144,6 +144,7 @@ pages:
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/admin.md
+- hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/improved-collaboration-and-more.md
 - hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
