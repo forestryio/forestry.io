@@ -144,6 +144,8 @@ pages:
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/admin.md
+- hugo/content/blog/improved-collaboration-and-more.md
+- hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
@@ -151,8 +153,6 @@ pages:
 - hugo/content/blog/the-new-forestry-io.md
 - hugo/content/blog/march-27th-service-outage.md
 - hugo/content/blog/layout-improvements.md
-- hugo/content/blog/improved-collaboration-and-more.md
-- hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - hugo/content/blog/cloudinary-integration.md
 - hugo/content/blog/building-a-company-component-library.md
