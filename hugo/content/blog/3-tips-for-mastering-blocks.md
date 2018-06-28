@@ -31,6 +31,12 @@ In this post, I want to take you through a few of the design decisions I made fo
 
 ## Add Default Values to Hidden Text Fields For Template-Level Config
 
+<video playsinline autoplay muted loop width="100%" controls>
+  <source src="/uploads/2018/06/using_hidden_text_field.mp4" type="video/mp4">
+  <source src="/uploads/2018/06/using_hidden_text_field.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
+
 If you take a look at the Front Matter Templates that compose uBuild’s blocks, you will find that the very first field in each one is a hidden text field with the name of `block`. Each FMT specifies its own default value for this field, effectively setting a value that changes depending on which block is being included. The value of the `block` field is used to determine which partial to include for each block when we iterate over the blocks contained in the `page_sections` variable.
 
 When using Blocks with Forestry, the `template` parameter is also generated in the front matter for each block. This could be used instead of creating the new `block` field; however, using an additional field whose value can be changed as necessary creates a looser coupling between the name of the Front Matter Template and the layout file used to generate it. This will remove the need to modify your layout files if you decide to rename your Front Matter Templates in the future.
@@ -40,6 +46,12 @@ Another place I’ve applied this strategy is in the **Page Builder** Front Matt
 Generally speaking, this hidden field strategy can be useful for associating additional information at the template level, whether providing additional information to a Blocks field, setting page-level configuration like the page layout, or something else entirely.
 
 ## Use a Field Group to Namespace Template-Included Fields
+
+<video playsinline autoplay muted loop width="100%" controls>
+  <source src="/uploads/2018/06/using_include_in_rfg.mp4" type="video/mp4">
+  <source src="/uploads/2018/06/using_include_in_rfg.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
 
 The **Include Template** field type is a very useful one in Forestry: it allows you to reuse a group of fields in multiple Front Matter Templates without having to redefine them every time.
 
