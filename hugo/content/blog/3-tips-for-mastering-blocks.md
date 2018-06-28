@@ -24,7 +24,7 @@ menu: []
 draft: true
 
 ---
-Last week, we brought you a theme for Jekyll that takes advantage of Forestry’s Blocks feature to build whole page layouts using modular components. This week, I ported uBuild to Hugo to make it available to our Hugo users. When we first announced the Blocks feature, I created a Hugo theme called [Sawmill](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry) to demonstrate the page-building capabilities of it. Since creating that theme, I’ve been using Blocks extensively and have learned a lot about how to use this feature effectively.
+Last week, we brought you [a theme for Jekyll](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) that takes advantage of Forestry’s Blocks feature to build whole page layouts using modular components, called uBuild. This week, I ported uBuild to Hugo to make it available to our Hugo users. When we first announced the Blocks feature, I created a Hugo theme called [Sawmill](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry) to demonstrate the Blocks' page-building capabilities. Since creating that theme, I’ve been using Blocks extensively and have learned a lot about how to use this feature effectively.
 
 In this post, I want to take you through a few of the design decisions I made for `ubuild-hugo`. My hope is that this will give you some insight into how uBuild is put together, as well as help you use Blocks (and Front Matter Templates in general) effectively in your own projects.
 
@@ -103,7 +103,7 @@ Using this approach, the section-level variables can be accessed from `.Section`
       </ul>
     </nav>
 
-Notice how we access the section-level data with `.Section.logo` and `.Section.navigation`, and the page-level data with `.Page.Site.BaseURL` and `$.Page.Permalink` (using `$` in the second example because it is inside of a child scope!)
+Notice how we access the section-level data with `.Section.logo` and `.Section.navigation`, and the page-level data with `.Page.Site.BaseURL` and `$.Page.Permalink` (using `$` in the second example because it is inside of a nested scope!)
 
 Hugo’s restrictive variable scope may be frustrating to deal with at first, but it saves you from a lot of invisible bugs. Once you learn to wield [dict](https://gohugo.io/functions/dict/) like a pro, it won’t be a problem for you anymore.
 
