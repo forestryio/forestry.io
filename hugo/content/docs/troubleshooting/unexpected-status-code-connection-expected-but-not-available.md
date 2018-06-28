@@ -19,7 +19,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-draft: true
 
 ---
 This error typically occurs when there is a problem with your **authentication token**. This token tells your **source provider** (GitHub, GitLab, or Bitbucket) that Forestry is allowed to push/pull changes to/from your repository.
