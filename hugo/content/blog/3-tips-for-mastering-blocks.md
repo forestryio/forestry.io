@@ -103,7 +103,7 @@ If we had written our loop to only pass the current context instead:
 
 We would only be able to access the values specific to that element of `page_sections` (in other words, the current block) in our partial. Jekyll doesn’t have these same scope restrictions, so you would be able to access other values at the page-level and site-level without having to do anything else here.
 
-Since we have a few partials that use the current page URL as well as the site’s base URL, we can cover our bases by passing the root page-level config to our partial. We’re inside of a `range` statement, the current scope (represented by  `.` ) refers to the current item being iterated over. When we’re in a “nested scope” like this, we can use `$` to refer back to the top-level scope for the page. By using this information and combining it with the `dict` function which lets us create a dict/hash/map/object (whatever you prefer to call it), we can construct an object on-the-fly that gets passed into our partials:
+Since we have a few partials that use the current page URL as well as the site’s base URL, we can cover our bases by passing the root page-level config to our partial. We’re inside of a `range` statement, so the current scope (represented by  `.` ) refers to the current item being iterated over. When we’re in a “nested scope” like this, we can use `$` to refer back to the top-level scope for the page. By using this information and combining it with the `dict` function which lets us create a dict/hash/map/object (whatever you prefer to call it), we can construct an object on-the-fly that gets passed into our partials:
 
 
     (dict "Section" . "Page" $)
