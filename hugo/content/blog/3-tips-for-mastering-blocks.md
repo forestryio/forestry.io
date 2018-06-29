@@ -24,9 +24,16 @@ menu: []
 draft: true
 
 ---
-Last week, we brought you [a theme for Jekyll](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) that takes advantage of Forestry’s Blocks feature to build whole page layouts using modular components, called uBuild. This week, I ported uBuild to Hugo to make it available to our Hugo users. When we first announced the Blocks feature, I created a Hugo theme called [Sawmill](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry) to demonstrate the Blocks' page-building capabilities. Since creating that theme, I’ve been using Blocks extensively and have learned a lot about how to use this feature effectively.
+Last week, we brought you [a theme for Jekyll](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) that takes advantage of [Forestry’s Blocks feature](https://forestry.io/docs/settings/fields/blocks/) to build whole page layouts using modular components, called uBuild. This week, I ported uBuild to Hugo to make it available to our Hugo users. When we first announced the Blocks feature, I created a Hugo theme called [Sawmill](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry) to demonstrate the Blocks' page-building capabilities. Since creating that theme, I’ve been using Blocks extensively and have learned a lot about how to use this feature effectively.
 
-In this post, I want to take you through a few of the design decisions I made for [ubuild-hugo](https://github.com/forestryio/ubuild-hugo). My hope is that this will give you some insight into how uBuild is put together, as well as help you use Blocks (and Front Matter Templates in general) effectively in your own projects.
+In this post, I want to take you through a few of the design decisions I made for [ubuild-hugo](https://github.com/forestryio/ubuild-hugo):
+
+ 1. [Add Default Values to Hidden Text Fields For Template-Level Config](#add-default-values-to-hidden-text-fields-for-template-level-config)
+ 2. [Use a Field Group to Namespace Template-Included Fields](#use-a-field-group-to-namespace-template-included-fields)
+ 3. [Pass Page Context To Your Hugo Block Layouts](#pass-page-context-to-your-hugo-block-layouts)
+
+
+My hope is that this will give you some insight into how uBuild is put together, as well as help you use Blocks (and [Front Matter Templates](https://forestry.io/docs/settings/front-matter-templates/) in general) effectively in your own projects.
 
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
@@ -47,6 +54,8 @@ linkText="Import The Starter Site" %}}
   <source src="/uploads/2018/06/using_hidden_text_field.webm" type="video/webm">
 Your browser does not support the video tag.
 </video>
+
+I often find myself wanting to attach additional information to a Front Matter Template, and I don't want it to be changed.
 
 If you take a look at the Front Matter Templates that compose uBuild’s blocks, you will find that the very first field in each one is a hidden text field with the name of `block`. Each FMT specifies its own default value for this field, effectively setting a value that changes depending on which block is being included. The value of the `block` field is used to determine which partial to include for each block when we iterate over the blocks contained in the `page_sections` variable.
 
