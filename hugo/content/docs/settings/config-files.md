@@ -32,11 +32,34 @@ The following is an example of `settings.yml` for a Hugo site.
     admin_path: "/admin"
     webhook_url: http://example.com/webhook
     sections:
-      posts:
-        default_front_matter_template: posts
-      pages:
-        default_front_matter_template: pages
-    version: 0.26
+
+    - path: content
+      label: Pages
+      create: all
+      # Imported pages without a FMT assigned
+      # will automatically use "pages"
+      default_front_matter_template: pages
+
+    - path: content/posts
+      label: Posts
+      create: all
+      default_front_matter_template: posts
+      # use the "templates" parameter to control
+      # which templates can be used for new content
+      # in this section. First listed template
+      # is the default option.
+      templates:
+      - posts
+
+    # items in content/secrets is hidden from menu
+    - path: content/secrets
+      hidden: true
+
+    # items in content/products can be edited but not created
+    - path: content/products
+      label: Products
+      create: none
+    version: 0.38.1
     ---
 
 ### Options
@@ -77,47 +100,88 @@ Allows you to configure if publishing should be triggered when a commit is made 
 
 ---
 
-**Web Hook URL** `webhook_url` `string`
+**Web Hook URL** `webhook_url:` `string`
 
 Allows you to provide a [web hook](/docs/hosting/webhooks/) to be triggered when events occur in Forestry.
 
 ---
 
-**Sections** _(Hugo-only)_ `sections` `object`
+**Sections** _(Hugo only)_ `sections:` `Array`
 
-Allows you to configure the default Front Matter Template for content in each section.
+**Collections** _(Jekyll only)_ `collections:` `Array`
 
-Sections are mapped by their directory structure inside the `/content` folder.
+This setting allows you to control the way users are able to edit your different content sections.
 
-### Options
+{{% warning %}}
+Currently, Hugo sites use the `sections` parameter for this information, and Jekyll sites use `collections`.
+<br /><br />
+As we move toward consistency in configuration and app behavior, these settings will likely converge into a single parameter, but make note of the difference for now.
+{{% /warning %}}
 
-**Default Front Matter Template** `default_front_matter_template` `string`
+The `sections`/`collections` option allows you to configure the default Front Matter Template for content in each section.
+
+## Section/Collection Options
+
+**Path**
+
+This option identifies the path to the collection you intend to configure. Note that this should be the full path from the root of your site, so a Hugo section of `posts` for example would have a path of `content/posts`
+
+Example:
+
+    collections:
+    - path: _posts
+
+**Default Front Matter Template** `default_front_matter_template:` `string`
 
 The Front Matter Template applied to any pages without a Front Matter Template. Set the value to the file name of the Front Matter Template without the file extension, or `none` to remove the current template from the section.
 
 Example:
 
     sections:
-      posts:
-        default_front_matter_template: example-template
+    - path: content/posts
+      default_front_matter_template: example-template
 
----
+**Label** `label:` `string`
 
-**Collections** _(Jekyll-only)_ `sections` `object`
+Change the text that appears for this section in the content navigation sidebar.
 
-Allows you to configure the default Front Matter Template for content in each collection.
-
-Collections are mapped by their directory structure inside the root of your Jekyll site.
-
-### Options
-
-**Default Front Matter Template** `default_front_matter_template` `string`
-
-The Front Matter Template applied to any pages without a Front Matter Template. Set the value to the file name of the Front Matter Template without the file extension, or `none` to remove the current template from the section.  Example:
+Example:
 
     collections:
-      _posts:
-        default_front_matter_template: posts
+    - path: _posts
+      label: News
+
+**Hidden** `hidden:` `boolean`
+
+When `true`, this section will not be visible in the content navigation sidebar.
+
+Example:
+
+    sections:
+    - path: content/posts
+      hidden: true
+
+**Create** `create:` `all|none`
+
+When this is set to `all`, content can be added normally. When set to `none`, existing content items can be edited, but no new ones can be created.
+
+Example:
+
+    collections:
+    - path: _posts
+      create: all
+
+**Templates** `templates:` `Array`
+
+Pass in an array of Front Matter Template slugs (without their extension) to limit the available Front Matter Templates when creating a new content item in this section. The templates will be shown in the dropdown in the same order they are listed here, with the first template being the default selection.
+
+Example:
+
+    sections:
+    - path: content/posts
+      templates:
+      - post
+      - newsletter
 
 ---
 
