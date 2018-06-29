@@ -106,6 +106,11 @@ Allows you to provide a [web hook](/docs/hosting/webhooks/) to be triggered when
 
 ---
 
+**Version** _(Hugo-only)_ `version:` `string`
+This allows you to configure the version of Hugo your site uses. This is limited to the latest versions of Hugo [supported by Forestry](https://forestry.io/docs/faq/what-versions-of-hugo-do-you-support/).
+
+---
+
 **Sections** _(Hugo only)_ `sections:` `Array`
 
 **Collections** _(Jekyll only)_ `collections:` `Array`
@@ -130,6 +135,7 @@ Example:
 
     collections:
     - path: _posts
+---
 
 **Default Front Matter Template** `default_front_matter_template:` `string`
 
@@ -140,6 +146,7 @@ Example:
     sections:
     - path: content/posts
       default_front_matter_template: example-template
+---
 
 **Label** `label:` `string`
 
@@ -150,6 +157,7 @@ Example:
     collections:
     - path: _posts
       label: News
+---
 
 **Hidden** `hidden:` `boolean`
 
@@ -160,6 +168,7 @@ Example:
     sections:
     - path: content/posts
       hidden: true
+---
 
 **Create** `create:` `all|none`
 
@@ -170,6 +179,7 @@ Example:
     collections:
     - path: _posts
       create: all
+---
 
 **Templates** `templates:` `Array`
 
@@ -184,9 +194,6 @@ Example:
       - newsletter
 
 ---
-
-**Version** _(Hugo-only)_ `version:` `string`
-This allows you to configure the version of Hugo your site uses. This is limited to the latest versions of Hugo [supported by Forestry](https://forestry.io/docs/faq/what-versions-of-hugo-do-you-support/).
 
 ## Front Matter Templates
 
