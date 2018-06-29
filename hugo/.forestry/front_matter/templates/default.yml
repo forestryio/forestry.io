@@ -132,18 +132,18 @@ fields:
   label: menu
 pages:
 - hugo/content/terms.md
-- hugo/content/docs/welcome
-- hugo/content/docs/_index.md
-- hugo/content/docs/changelog
-- hugo/content/docs/troubleshooting
-- hugo/content/docs/faqs
-- hugo/content/docs/git-sync
 - hugo/content/careers/software-engineer.md
 - hugo/content/careers/marketing.md
 - hugo/content/careers/_index.md
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/admin.md
+- hugo/content/docs/welcome
+- hugo/content/docs/_index.md
+- hugo/content/docs/changelog
+- hugo/content/docs/troubleshooting
+- hugo/content/docs/faqs
+- hugo/content/docs/git-sync
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/improved-collaboration-and-more.md
 - hugo/content/blog/forestryio-techstars-2016.md
