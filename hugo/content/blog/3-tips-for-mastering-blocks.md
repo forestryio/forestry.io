@@ -143,3 +143,11 @@ Hugo’s restrictive variable scope may be frustrating to deal with at first, bu
 ## We’re in This Together
 
 As the capabilities of Forestry grow, so do the options available to our users. The three strategies presented here are the result of my own observation and experimentation; if you’ve found a way to use Forestry that you think is really powerful, we’d love to hear about it! Let us know on Twitter([@forestryio](https://twitter.com/forestryio)) or {{% slack_invite_link "in our community Slack" %}}.
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD  </p><p><strong>Last week:</strong> We introduced uBuild, a <a href="https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/#/">Jekyll Theme</a> with a Blocks-based page builder.</p></div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17205725">Discuss on Hacker News</a>
+-->
