@@ -123,13 +123,21 @@ Currently, Hugo sites use the `sections` parameter for this information, and Jek
 As we move toward consistency in configuration and app behavior, these settings will likely converge into a single parameter, but make note of the difference for now.
 {{% /warning %}}
 
-The `sections`/`collections` option allows you to configure the default Front Matter Template for content in each section.
-
 ## Section/Collection Options
+
+_Sidebar Order_
+
+Sections/Collections will appear in the sidebar in the same order they are defined in your `sections`/`collections` section.
+
+---
 
 **Path**
 
-This option identifies the path to the collection you intend to configure. Note that this should be the full path from the root of your site, so a Hugo section of `posts` for example would have a path of `content/posts`
+This option identifies the path to the collection you intend to configure. Note that this should be the full path from the root of your site, so a Hugo section of `posts` for example would have a path of `content/posts`.
+
+{{% tip %}}
+Currently, you can only configure content sections that already exist in your file structure. Defining new sections/collections that do not exist in your project will have no effect.
+{{% /tip %}}
 
 Example:
 
@@ -183,7 +191,7 @@ Example:
 
 **Templates** `templates:` `Array`
 
-Pass in an array of Front Matter Template slugs (without their extension) to limit the available Front Matter Templates when creating a new content item in this section. The templates will be shown in the dropdown in the same order they are listed here, with the first template being the default selection.
+Pass in an array of Front Matter Template slugs (without their extension) to limit the available Front Matter Templates when creating a new content item in this section. The templates will be shown in the dropdown in the same order they are listed here, with the first template being the default selection. If only one template is defined, the template selection dropdown will not appear when adding new content.
 
 Example:
 
