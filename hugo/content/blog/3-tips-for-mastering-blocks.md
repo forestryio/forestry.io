@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Last week, we brought you [a theme for Jekyll](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) that takes advantage of [Forestry’s Blocks feature](https://forestry.io/docs/settings/fields/blocks/) to build whole page layouts using modular components, called uBuild. This week, I ported uBuild to Hugo to make it available to our Hugo users. When we first announced the Blocks feature, I created a Hugo theme called [Sawmill](https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry) to demonstrate the Blocks' page-building capabilities. Since creating that theme, I’ve been using Blocks extensively and have learned a lot about how to use this feature effectively.
