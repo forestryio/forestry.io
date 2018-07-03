@@ -70,8 +70,7 @@ sections:
 - path: content/posts
   label: Blog
 ```
-
-———
+<hr />
 ## Assign Front Matter Templates
 
 Until now everytime you created new content you would have to choose from a long list of all available templates, even if they didn’t make sense for that part of a site. We heard you. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. Simply use
