@@ -94,3 +94,5 @@ sections:
   - post
   - article
 ```
+
+Read more about these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options)
