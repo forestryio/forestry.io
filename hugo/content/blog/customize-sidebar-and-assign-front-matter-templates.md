@@ -21,9 +21,9 @@ menu: []
 draft: true
 
 ---
-Another week full of new things! After launching our Blocks theme uBuild recently, our dev team kept working on new product features. 
+Another week full of new things! After launching our Blocks theme uBuild recently, our developer team kept working on a new product feature.
 
-We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. You can also assign Front Matter Templates to specific types of content.
+We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Now, you can make Front Matter Templates only available to specific types of content, too.
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
