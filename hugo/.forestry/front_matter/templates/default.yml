@@ -144,6 +144,7 @@ pages:
 - hugo/content/docs/troubleshooting
 - hugo/content/docs/faqs
 - hugo/content/docs/git-sync
+- hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/improved-collaboration-and-more.md
