@@ -23,14 +23,15 @@ draft: true
 ---
 Another week, full of new things! After launching our Blocks theme uBuild recently, our dev team kept working on new product features. 
 
-We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. You can also assign Front Matter Templates to specific types of content. All these new features can be configured in the Forestry config file ‘settings.yml’. 
+We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. You can also assign Front Matter Templates to specific types of content.
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
-———
-## Customize the Sidebar
+All of your sidebar configurations are organized in your `settings.yml` under `sections`/`collections` depending on whether you use Hugo or Jekyll.
+<hr />
+## Customize Visibility of Content Types
 
-You can now decide which content types are visible by using our `hidden` tag. Sections (Hugo) / Collections (Jekyll) appear in the same order they are defined in your `settings.yml`. 
+You can now decide which content types are visible by using our `hidden` tag. Also, all your content types will appear in the order they are specified under `sections`/`collections`.
 
 ![](/uploads/2018/07/remove-content-type.gif)
 
@@ -49,8 +50,7 @@ sections:
   label: Posts
   hidden: true
 ```
-
-———
+<hr />
 ## Label Categories
 
 Sometimes naming a directory a certain way makes sense for development purposes but not for editing purposes. That’s why you can now choose to label your content types differently from your directory names.
