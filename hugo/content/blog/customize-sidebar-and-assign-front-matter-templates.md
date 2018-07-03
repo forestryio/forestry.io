@@ -21,7 +21,7 @@ menu: []
 draft: true
 
 ---
-Another week, full of new things! After launching our Blocks theme uBuild recently, our dev team kept working on new product features. 
+Another week full of new things! After launching our Blocks theme uBuild recently, our dev team kept working on new product features. 
 
 We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. You can also assign Front Matter Templates to specific types of content.
 
