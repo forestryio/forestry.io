@@ -55,7 +55,7 @@ sections:
 
 ## Label Categories
 
-Sometimes your directory names might not ideal outside a development environment. That’s why you can now choose to rename the labels of your content types.
+Sometimes your directory names might not be ideal outside a development environment. That’s why you can now choose to rename the labels of your content types.
 
 ![](/uploads/2018/07/switch-label.gif)
 
