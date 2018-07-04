@@ -77,7 +77,7 @@ sections:
 
 ## Assign Front Matter Templates
 
-Until now everytime you created new content you would have to choose from a long list of all Front Matter Templates, even if they didn’t make sense for that part of a site. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. You can even provide them in a specific order that makes sense for that type of content.
+Until now everytime you created new content you would have to choose from a long list of all Front Matter Templates, even if they didn’t make sense for that part of a site. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. You can even provide them in a specific order.
 
 ![](/uploads/2018/07/create-posts.gif)
 
