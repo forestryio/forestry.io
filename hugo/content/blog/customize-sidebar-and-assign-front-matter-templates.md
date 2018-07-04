@@ -110,7 +110,7 @@ If you only add one template to a section, that template will be pre-selected an
 
 ## Restrict Adding More Content to a Section
 
-You can also prevent adding content to a section altogether.
+You can also prevent content to be added to a section altogether.
 
 ![](/uploads/2018/07/content-all-none.gif)
 
