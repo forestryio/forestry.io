@@ -23,7 +23,7 @@ draft: true
 ---
 Another week full of new things! While we were launching our Blocks 🔲🔲🔲 theme [uBuild](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) for Jekyll and Hugo, our developer team kept working on a new product feature.
 
-Making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Some of you also wanted to limit access to Front Matter Templates for some content sections (e.g. the Post FMT might only make sense to be used in the Posts content category). You can do that now, too.
+Making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Some of you also wanted to limit access to Front Matter Templates for some content sections (e.g. the Front Matter Templates for posts should in certain cases only be available in the Blog content section). You can do that now, too.
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
