@@ -11,7 +11,6 @@ publishdate: 2018-07-03 16:00:00 -1100
 expirydate: 2029-12-31 17:00:00 -1100
 headline: ''
 textline: ''
-images: []
 categories:
 - CMS
 tags: []
