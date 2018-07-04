@@ -128,3 +128,5 @@ _For Hugo:_
 
 
 Read more on these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options) 📖
+
+You can also check out our [previous update](https://forestry.io/blog/hugo-support-sorting-for-pages-and-more/) 😍
