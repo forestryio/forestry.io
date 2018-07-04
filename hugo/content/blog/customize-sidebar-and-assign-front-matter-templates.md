@@ -23,7 +23,7 @@ draft: true
 ---
 Another week full of new things! While we were launching our Blocks theme [uBuild](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) for Jekyll and Hugo, our developer team kept working on a new product feature.
 
-We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Also, you can now configure where Front Matter Templates (FMTs) are made available (e.g. the Post FMT might only make sense to be used in the Posts content category).
+We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Also, you can now configure in which section specific Front Matter Templates (FMTs) are made available (e.g. the Post FMT might only make sense to be used in the Posts content category).
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
@@ -33,7 +33,9 @@ All of your sidebar configurations are organized in your `settings.yml` under `s
 
 ## Customize Visibility of Content Types
 
-You can now decide which content types are visible by using our `hidden` tag. Also, all your content types will appear in the order they are specified under `sections`/`collections`.
+Some sections of a site are not important for content editing purposes, so they shouldn't add clutter to your content manager! 
+
+You can now decide which content types are visible by using our `hidden` tag. Also, all your content types will appear in the exact order you specify them under `sections`/`collections`.
 
 ![](/uploads/2018/07/remove-content-type.gif)
 
@@ -77,7 +79,9 @@ sections:
 
 ## Assign Front Matter Templates
 
-Until now everytime you created new content you would have to choose from a long list of all Front Matter Templates, even if they didn’t make sense for that part of a site. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. You can even provide them in an order you specify.
+Until now everytime you created new content you would have to choose from a long list of Front Matter Templates. That wasn't ideal and bogged content editors down. 
+
+Now you can assign one or more Front Matter Templates for a specific content type and only expose them for that type of content. You can even provide them in an order you specify.
 
 ![](/uploads/2018/07/create-posts.gif)
 
