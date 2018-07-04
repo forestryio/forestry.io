@@ -1,5 +1,6 @@
 ---
-title: Customize Sidebar and Assign Front Matter Templates
+title: "Hide Sections \U0001F648, Switch Labels \U0001F3F7️ and Limit Template Access
+  to Sections \U0001F448"
 description: ''
 date: 2018-07-03 04:17:18 -1100
 authors: []
@@ -21,9 +22,9 @@ menu: []
 draft: true
 
 ---
-Another week full of new things! While we were launching our Blocks theme [uBuild](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) for Jekyll and Hugo, our developer team kept working on a new product feature.
+Another week full of new things! While we were launching our Blocks 🔲🔲🔲 theme uBuild for Jekyll and Hugo, our developer team kept working on a new product feature.
 
-We kept hearing from you that making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Also, you can now configure in which section specific Front Matter Templates (FMTs) are made available (e.g. the Post FMT might only make sense to be used in the Posts content category).
+Making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Some of you also wanted to limit access to Front Matter Templates for some content sections (e.g. the Post FMT might only make sense to be used in the Posts content category). You can do that now, too.
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
@@ -31,8 +32,7 @@ All of your sidebar configurations are organized in your `settings.yml` under `s
 
 ---
 
-## Customize Visibility of Content Types
-
+## Hide Sections 🙈
 Some sections of a site are not important for content editing purposes, so they shouldn't add clutter to your content manager! 
 
 You can now decide which content types are visible by using our `hidden` tag. Also, all your content types will appear in the exact order you specify them under `sections`/`collections`.
@@ -55,8 +55,7 @@ sections:
 
 ---
 
-## Label Categories
-
+## Switch Labels 🏷️
 Sometimes your directory names might not be ideal outside a development environment. That’s why you can now choose to rename the labels of your content types.
 
 ![](/uploads/2018/07/switch-label.gif)
@@ -77,9 +76,8 @@ sections:
 
 ---
 
-## Assign Front Matter Templates
-
-Until now everytime you created new content you would have to choose from a long list of Front Matter Templates. That wasn't ideal and bogged content editors down. 
+## Assign Front Matter Templates to Sections  👈👆👉
+Until now every time you created new content you would have to choose from a long list of Front Matter Templates. That wasn't ideal and bogged content editors down. 
 
 Now you can assign one or more Front Matter Templates for a specific content type and only expose them for that type of content. You can even provide them in an order you specify.
 
@@ -103,4 +101,4 @@ sections:
   - article
 ```
 
-Read more about these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options)
+Read more on these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options)📖
