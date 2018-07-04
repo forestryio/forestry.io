@@ -1,5 +1,5 @@
 ---
-title: Customize Your Sidebar and Limit Templates to Sections
+title: Customize Your Sidebar and Limit Front Matter Templates to Sections
 description: Making the sidebar configurable was really high up on your wish list
   and this is the week we decided to make it happen. Some of you also wanted to limit
   access to Front Matter Templates for some content sections. You can do that now,
@@ -23,7 +23,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Another week full of new features! While the marketing team launched the Blocks theme [uBuild](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) for Jekyll and Hugo, the development team kept working on new product features.
