@@ -35,7 +35,7 @@ All of your sidebar configurations are organized in your `settings.yml` under `s
 
 Some sections of a site are not important for content editing purposes, so they shouldn't add clutter to your content manager!
 
-You can now decide which content types are visible by using our `hidden` tag. Also, all your content types will appear in the exact order you specify them under `sections`/`collections`.
+You can now decide which content types are visible by using our `hidden` tag. Also, your content sections will appear in the exact order you specify them under `sections`/`collections`.
 
 ![](/uploads/2018/07/remove-content-type.gif)
 
