@@ -101,4 +101,4 @@ _For Hugo:_
       - post
       - article
 
-Read more on these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options)📖
+Read more on these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options) 📖
