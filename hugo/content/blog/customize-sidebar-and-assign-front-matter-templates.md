@@ -81,7 +81,7 @@ _For Hugo:_
 
 Until now every time you created new content you would have to choose from a long list of Front Matter Templates. That wasn't ideal and bogged content editors down.
 
-Now you can assign one or more Front Matter Templates to a specific content section and only expose them for that type of content. You can even provide them in an order you specify.
+Now you can assign one or more Front Matter Templates to a specific content section and only expose them for that section. You can even provide them in an order you specify.
 
 ![](/uploads/2018/07/create-posts.gif)
 
