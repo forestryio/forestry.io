@@ -12,7 +12,8 @@ expirydate: 2029-12-31 17:00:00 -1100
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
