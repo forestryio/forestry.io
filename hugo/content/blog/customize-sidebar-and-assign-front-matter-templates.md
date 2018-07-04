@@ -28,7 +28,9 @@ We kept hearing from you that making the sidebar configurable was really high up
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
 All of your sidebar configurations are organized in your `settings.yml` under `sections`/`collections` depending on whether you use Hugo or Jekyll. So let's go ahead and open that.
-<hr />
+
+---
+
 ## Customize Visibility of Content Types
 
 You can now decide which content types are visible by using our `hidden` tag. Also, all your content types will appear in the order they are specified under `sections`/`collections`.
@@ -50,7 +52,9 @@ sections:
   label: Posts
   hidden: true
 ```
-<hr />
+
+---
+
 ## Label Categories
 
 Sometimes your directory names might not ideal outside a development environment. That’s why you can now choose to rename the labels of your content types.
@@ -70,7 +74,9 @@ sections:
 - path: content/posts
   label: Blog
 ```
-<hr />
+
+---
+
 ## Assign Front Matter Templates
 
 Until now everytime you created new content you would have to choose from a long list of all Front Matter Templates, even if they didn’t make sense for that part of a site. We heard you. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. You can even provide them in a specific order that makes sense for that type of content.
