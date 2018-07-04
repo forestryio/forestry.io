@@ -1,10 +1,14 @@
 ---
 title: Customize Your Sidebar and Limit Templates to Sections
-description: ''
-date: 2018-07-03 04:17:18 -1100
-authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+description: Making the sidebar configurable was really high up on your wish list
+  and this is the week we decided to make it happen. Some of you also wanted to limit
+  access to Front Matter Templates for some content sections. You can do that now,
+  too.
+date: 2018-07-04 02:17:18 -1100
+authors:
+- Sebastian Engels
+publishdate: 2018-07-03 16:00:00 -1100
+expirydate: 2029-12-31 17:00:00 -1100
 headline: ''
 textline: ''
 images: []
@@ -23,7 +27,7 @@ draft: true
 ---
 Another week full of new things! While we were launching our Blocks 🔲🔲🔲 theme [uBuild](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/) for Jekyll and Hugo, our developer team kept working on a new product feature.
 
-Making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Some of you also wanted to limit access to Front Matter Templates for some content sections (e.g. the Front Matter Templates for posts should in certain cases only be available in the Blog content section). You can do that now, too.
+Making the sidebar configurable was really high up on your wish list and this is the week we decided to make it happen. Some of you also wanted to limit access to [Front Matter Templates](https://forestry.io/docs/settings/front-matter-templates/) for some content sections (e.g. the Front Matter Templates for posts should in certain cases only be available in the Blog content section). You can do that now, too.
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
@@ -77,7 +81,7 @@ _For Hugo:_
 
 Until now every time you created new content you would have to choose from a long list of Front Matter Templates. That wasn't ideal and bogged content editors down.
 
-Now you can assign one or more Front Matter Templates for a specific content type and only expose them for that type of content. You can even provide them in an order you specify.
+Now you can assign one or more Front Matter Templates to a specific content section and only expose them for that type of content. You can even provide them in an order you specify.
 
 ![](/uploads/2018/07/create-posts.gif)
 
