@@ -1,6 +1,5 @@
 ---
-title: "Hide Sections \U0001F648, Switch Labels \U0001F3F7️ and Limit Template Access
-  to Sections \U0001F448"
+title: Customize Your Sidebar and Limit Templates to Sections
 description: ''
 date: 2018-07-03 04:17:18 -1100
 authors: []
