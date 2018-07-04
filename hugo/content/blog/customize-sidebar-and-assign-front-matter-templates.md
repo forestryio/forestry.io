@@ -31,7 +31,7 @@ Making the sidebar configurable was really high up on your wish list and this we
 
 Let’s look at a few examples and feel free to open up your code editor and follow along.
 
-All of your sidebar configurations are organized in your `settings.yml` under `sections`/`collections` depending on whether you use Hugo or Jekyll. So let's go ahead and open `settings.yml`
+All of your sidebar configurations are organized in your `settings.yml` under `sections`/`collections` depending on whether you use Hugo or Jekyll. So let's go ahead and open that file.
 
 ***
 
