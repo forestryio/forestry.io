@@ -39,13 +39,13 @@ You can now decide which content types are visible by using our `hidden` tag. Al
 
 ![](/uploads/2018/07/remove-content-type.gif)
 
-Jekyll
+_For Jekyll:_
 
     collections:
     - path: _posts
       hidden: true
 
-Hugo
+_For Hugo:_
 
     sections:
     - path: content/posts
@@ -59,13 +59,13 @@ Sometimes your directory names might not be ideal outside a development environm
 
 ![](/uploads/2018/07/switch-label.gif)
 
-Jekyll
+_For Jekyll:_
 
     collections:
     - path: _posts
       label: Blog
 
-Hugo
+_For Hugo:_
 
     sections:
     - path: content/posts
@@ -81,7 +81,7 @@ Now you can assign one or more Front Matter Templates for a specific content typ
 
 ![](/uploads/2018/07/create-posts.gif)
 
-Jekyll
+_For Jekyll:_
 
     collections:
     - path: _posts
@@ -89,7 +89,7 @@ Jekyll
       - post
       - article
 
-Hugo
+_For Hugo:_
 
     sections:
     - path: content/posts
