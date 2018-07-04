@@ -53,7 +53,7 @@ sections:
 <hr />
 ## Label Categories
 
-Sometimes naming a directory a certain way makes sense for development purposes but not for editing purposes. That’s why you can now choose to label your content types differently from your directory names.
+Sometimes your directory names might not ideal outside a development environment. That’s why you can now choose to rename the labels of your content types.
 
 ![](/uploads/2018/07/switch-label.gif)
 
@@ -73,7 +73,7 @@ sections:
 <hr />
 ## Assign Front Matter Templates
 
-Until now everytime you created new content you would have to choose from a long list of all available templates, even if they didn’t make sense for that part of a site. We heard you. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. Simply use
+Until now everytime you created new content you would have to choose from a long list of all Front Matter Templates, even if they didn’t make sense for that part of a site. We heard you. Now you can assign one or more Front Matter Templates for a specific content type (top-level directory) and only expose those when a specific type of content is edited. You can even provide them in a specific order that makes sense for that type of content.
 
 ![](/uploads/2018/07/create-posts.gif)
 
