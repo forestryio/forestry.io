@@ -41,7 +41,6 @@ Jekyll
 ```
 collections:
 - path: _posts
-  label: Posts
   hidden: true
 ```
 
@@ -49,7 +48,6 @@ Hugo
 ```
 sections:
 - path: content/posts
-  label: Posts
   hidden: true
 ```
 
