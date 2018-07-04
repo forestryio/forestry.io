@@ -101,5 +101,30 @@ _For Hugo:_
       templates:
       - post
       - article
+      
+{{% tip %}}
+If you only add one template to a section, that template will be pre-selected and we won't show the dropdown anymore.
+{{% /tip %}}
+
+---
+
+## Restrict Adding More Content to a Section
+
+You can also prevent adding content to a section altogether.
+
+![](/uploads/2018/07/content-all-none.gif)
+
+_For Jekyll:_
+
+    collections:
+    - path: _posts
+      create: none
+
+_For Hugo:_
+
+    sections:
+    - path: content/posts
+      create: none
+
 
 Read more on these updates in our [docs](https://forestry.io/docs/settings/config-files#section-collection-options) 📖
