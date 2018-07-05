@@ -10,6 +10,7 @@ map:
   Sebastian Engels: sebastian-engels
   DJ Walker: dj-walker
   Régis Philibert: regis-philibert
+  Josh Dzielak: josh-dzielak
 authors:
 - avatar: "/img/forestry-symbol.svg"
   bio: |
@@ -95,3 +96,10 @@ authors:
   twitter: regisphilibert
   title: Hugo Evangelist
   lastName: Philibert
+- avatar: ""
+  firstName: Josh
+  lastName: Dzielak
+  fullName: Josh Dzielak
+  shortBio: "Developer advocate and indie hacker. Blogs at [dzello.com](https://dzello.com/blog/). Formerly Algolia and Keen IO. American living in Paris."
+  twitter: dzello
+  title: Community Writer
