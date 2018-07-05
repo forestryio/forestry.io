@@ -35,8 +35,10 @@ authors:
   firstName: Jordan
   lastName: Patterson
   fullName: Jordan Patterson
-  shortBio: |
-    CTO and Co-founder of <a href='https://forestry.io' title='Forestry.io CMS'>Forestry.io</a>. Backend developer, systems guy, father, builder of houses
+  shortBio: 'CTO and Co-founder of <a href=''https://forestry.io'' title=''Forestry.io
+    CMS''>Forestry.io</a>. Backend developer, systems guy, father, builder of houses
+
+'
   twitter: jpatterson
   title: CTO and co-founder
 - avatar: "/uploads/2017/12/AAEAAQAAAAAAAAaSAAAAJGJjNjM0NjAzLTVmZjMtNGNlZC1iZmNhLThhNGZmMWE4ODEwNQ-1-1.jpg"
@@ -62,8 +64,9 @@ authors:
   firstName: Colin
   lastName: Garvey
   fullName: Colin Garvey
-  shortBio: |
-    Marketer. Media Buyer. Open Source Developer.
+  shortBio: 'Marketer. Media Buyer. Open Source Developer.
+
+'
   twitter: desiredpersona
   title: Marketing & Developer
 - avatar: ''
@@ -96,10 +99,11 @@ authors:
   twitter: regisphilibert
   title: Hugo Evangelist
   lastName: Philibert
-- avatar: ""
+- avatar: "/uploads/2018/07/jdzielak.jpg"
   firstName: Josh
   lastName: Dzielak
   fullName: Josh Dzielak
-  shortBio: "Developer advocate and indie hacker. Blogs at [dzello.com](https://dzello.com/blog/). Formerly Algolia and Keen IO. American living in Paris."
+  shortBio: Developer advocate and indie hacker. Blogs at [dzello.com](https://dzello.com/blog/).
+    Formerly Algolia and Keen IO. American living in Paris.
   twitter: dzello
   title: Community Writer
