@@ -160,6 +160,7 @@ pages:
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
+- hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/5-ways-to-handle-forms-on-your-static-site.md
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
@@ -168,7 +169,6 @@ pages:
 - hugo/content/blog/introducing-media-management.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md
 - hugo/content/blog/bigger-better-editor.md
-- hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/front-matter-templates.md
 - hugo/content/blog/discontinuing-zip-sites.md
 - hugo/content/blog/search-with-algolia-in-jekyll.md

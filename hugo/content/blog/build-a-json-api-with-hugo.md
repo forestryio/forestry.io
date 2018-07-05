@@ -1,7 +1,8 @@
 ---
 title: Build a JSON API With Hugo's Custom Output Formats
-description: ''
-date: 2018-04-13 05:00:27 -1100
+description: In this article, we create simple read-only API with the static site
+  generator Hugo to build a JSON API using its Custom Output Formats feature.
+date: 2018-04-13 16:00:27 +0000
 authors:
 - Régis Philibert
 publishdate: 2018-04-13 03:00:00 +0000
@@ -21,11 +22,23 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 
 ---
 As developers, we love open and accessible data.  For example, you may want to use your local transit data for a mobile app, or maybe you want a service like [Zapier](https://zapier.com/) or [IFTTT](https://ifttt.com/) to send you an email every time the weather forecast calls for rain.  If you’re a super geek like [@bdougieyo](https://twitter.com/bdougieyo), you’ve built an app that tells you when to leave work in order to avoid traffic from your local baseball team’s home games ([from his excellent talk here](https://youtu.be/XpveOehxvoM?t=6m1s)).
 
 In order to make data that is “machine friendly” like this, we can expose it with a [RESTful API](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming). Normally, the quickest way to bootstrap an API like this would be to start with a popular framework like Flask or Ruby on Rails, spin up a webserver, and connect a database. We can achieve something even simpler, however, by creating a read-only API with a static site generator. In this article, we’ll use [Hugo](https://gohugo.io) to build a JSON API using its [Custom](https://gohugo.io/templates/output-formats#output-formats) [Output Formats](https://gohugo.io/templates/output-formats#output-formats) feature.
+
+<div id="import-snipcart-demo-button" data-proofer-ignore>
+{{% create_site_button
+repo="https://github.com/regisphilibert/hugoGetApi/"
+branch="master"
+engineName="hugo"
+engineVersion="0.42.2"
+forkName="hugo-json-api"
+heading="Get Started With Hugo JSON API"
+linkText="Import the Hugo Project" %}}
+</div>
 
 ## Planning the Interface
 
