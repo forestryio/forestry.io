@@ -34,7 +34,7 @@ There are many other advantages that the combination of Reveal.js and an SSG off
 
 By the end of the tutorial you’ll have created your first presentation and learned a new workflow that’ll make you the fastest slide maker in the office.
 
-{gif}
+![](/uploads/2018/07/powerpoint.gif)
 
 ## Step 1: Create a New Hugo Site
 
@@ -64,11 +64,11 @@ Let’s confirm that you can build and run this new, empty site.
 hugo server
 ```
 
-{screencast}
+![](/uploads/2018/07/start-hugo-serve.gif)
 
 If you open localhost:1313 in your browser, you should see a blank page. That’s ok. It’s because we haven’t added any content or layout files yet.
 
-## Step 2: Add the *reveal-hugo* Theme
+## Step 2: Add the _reveal-hugo_ Theme
 
 With Hugo, layout files typically live in the `layouts` folder, but they can also come from themes. To create our demo presentation, we’ll use a theme I wrote called reveal-hugo. This theme comes with layout HTML files, JavaScript, and CSS built-in, so all you have to add is Markdown-based content.
 
@@ -84,7 +84,7 @@ Now, let’s add the submodule.
 git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
 ```
 
-{screencast}
+![](/uploads/2018/07/git-submodule.gif)
 
 Next, we need to tell Hugo that we want to use this theme, as well as register `Reveal` as an [output format](https://gohugo.io/templates/output-formats/). Open the `config.toml` file in your editor and add the following lines.
 
@@ -116,7 +116,7 @@ outputs = ["Reveal"]
 
 If you aren’t already running it, run `hugo server` and open a web browser to `http://localhost:1313`. You should be greeted with a one-slide presentation displayed with the black Reveal.js default theme:
 
-{screenshot}
+![](/uploads/2018/07/slideshow-example-1.png)
 
 The content is coming from the Markdown in the `_index.md` file. We have just one slide, but it’s very easy to add another. Let’s do that next.
 
@@ -134,7 +134,7 @@ Save and your HTML page should reload immediately. This is one of the benefits o
 
 Look for a blue arrow in the bottom-right hand corner of the first slide. Click it, or use your right arrow key to navigate to the next slide.
 
-{screenshot}
+![](/uploads/2018/07/slideshow-example-2.png)
 
 This is one of the most well-known computer science quotes of all time, attributed to [Phil Karlton](http://www.meerkat.com/karlton/) by [Tim Bray](https://twitter.com/timbray/status/506146595650699264).
 
@@ -163,7 +163,6 @@ weight = 10
 Just like with the content in `_index.md` we can add as many slides as we want in this file delimited by `---`.
 
 Note the presence of the `weight` parameter in the front matter. `weight` is a [Hugo concept](https://gohugo.io/templates/lists/#by-weight) that is used to order content in the same section, specified as an integer and sorted ascendingly. Assume that we had added several more quotes or groups of quotes in their own files - how we would determine their order in the presentation? This is what weight is for. We would give each content file its own `weight` parameter - 10, 20, 30, and so on.
-
 
 ### Customizing the Reveal.js Presentation
 
@@ -201,15 +200,15 @@ Now, Forestry will be able to find and import your site. If you don’t already 
 
 Go to your Forestry Dashboard located at [https://app.forestry.io/dashboard/](https://app.forestry.io/dashboard/). Click the “Add Site” button and a modal dialog will appear.
 
-{screenshot}
+![](/uploads/2018/07/add-site-modal.png)
 
 Choose Hugo and then click Next. Select your git provider on the next screen and click Next. Now it’s time to choose the git repository. Type “programming-quotes” into the dropdown box and you should see the repository you just created.
 
-{screenshot}
+![](/uploads/2018/07/forestry-select-repo.png)
 
 Click it and another dropdown will appear for you to choose the branch. Choose master and then click Next. Invite any guests you like using the next dialog, and then click Import Site. After a few seconds, you’ll be taken to the Forestry editor for your new site.
 
-{screenshot}
+![](/uploads/2018/07/forestry-admin.png)
 
 ### Using the Forestry Editor
 
@@ -227,17 +226,17 @@ In the top-right hand corner of the screen to the left of the green Save button 
 
 Click the eye icon to open a preview of your presentation in a new browser window. Use the blue arrow or arrow keys to navigate to and inspect your new slide. If you’ve done everything right, it should look like this.
 
-{screenshot}
+![](/uploads/2018/07/slideshow-example-3.png)
 
 The last thing we need to do with Forestry is commit our new slide back to our git repository. That’s easy, we can just click the Save button back in our editor. You can verify that Forestry has made the commit by looking at your git history.
 
-{screenshot}
+![](/uploads/2018/07/git-history.png)
 
 ### Live Preview With Forestry
 
 Here’s what the last few steps look like in one animated GIF. You can see that editing, live previewing and saving to takes just a few seconds - this GIF is not sped up :p
 
-{screencast}
+![](/uploads/2018/07/using-forestry-editor.gif)
 
 ## Step 5: Deploy Your Presentation
 
@@ -245,8 +244,7 @@ You can host your Hugo + Reveal.js presentation anywhere that serves up static s
 
 If you don’t have a Netlify account, head over and [create one](https://app.netlify.com/signup). From your [Netlify dashboard](https://app.netlify.com/), click the ‘New Site from git’ button. You should see this 3-step modal window appear:
 
-{screenshot}
-
+![](/uploads/2018/07/netlify-ui.png)
 
 Choose the git provider you used in previous steps and then choose the `programming-quotes` repository from the dropdown that follows. Set the build command to `hugo` and the publish directory to `public` (these are the defaults). Then click Deploy Site.
 
@@ -264,10 +262,10 @@ If you’ve followed the full tutorial, you now have a home on the Internet for 
 
 Here are a few more things you can do in the future:
 
-- Create more presentations in the same repository. To do that, just create new sections of your Hugo site and set their output format to `[“Reveal”]`. You can customize each one with [different Reveal.js parameters](https://github.com/dzello/reveal-hugo#configuration).
-- Add Reveal.js presentations to an existing Hugo site. Because “Reveal” simply is an output format with reveal-hugo, it can be used to output specific sections of a Hugo site without trying to turn the rest of the site into a presentation. You might use this, for example, to host slides next to the blog post for a talk you recently gave.
-- Use reveal-hugo shortcodes like `{{% fragment %}}` and `{{% section %}}` to enrich your presentations. Read the [full reveal-hugo documentation](https://github.com/dzello/reveal-hugo) to learn now.
-- Create a custom Reveal.js theme that matches your company branding. To learn how and see a beautiful example, check out [this tutorial](https://medium.com/myplanet-musings/building-a-responsive-reveal-js-theme-399179632cc6) and [this live presentation](https://gapple.github.io/myplanet-revealjs/#/intro).
+* Create more presentations in the same repository. To do that, just create new sections of your Hugo site and set their output format to `\[“Reveal”\]`. You can customize each one with [different Reveal.js parameters](https://github.com/dzello/reveal-hugo#configuration).
+* Add Reveal.js presentations to an existing Hugo site. Because “Reveal” simply is an output format with reveal-hugo, it can be used to output specific sections of a Hugo site without trying to turn the rest of the site into a presentation. You might use this, for example, to host slides next to the blog post for a talk you recently gave.
+* Use reveal-hugo shortcodes like `{{% fragment %}}` and `{{% section %}}` to enrich your presentations. Read the [full reveal-hugo documentation](https://github.com/dzello/reveal-hugo) to learn now.
+* Create a custom Reveal.js theme that matches your company branding. To learn how and see a beautiful example, check out [this tutorial](https://medium.com/myplanet-musings/building-a-responsive-reveal-js-theme-399179632cc6) and [this live presentation](https://gapple.github.io/myplanet-revealjs/#/intro).
 
 Thanks for reading!
 
