@@ -40,6 +40,10 @@ heading="Get Started With Hugo JSON API"
 linkText="Import the Hugo Project" %}}
 </div>
 
+{{% warning %}}
+The Hugo JSON API can easily be edited in Forestry but when you preview please make sure to add `index.json` (e.g. `https://the-site-id.preview.forestry.io/players/frank-j-robinson/index.json`)
+{{% /warning %}}
+
 ## Planning the Interface
 
 API stands for **Application Programming Interface**. When it comes to building an API, designing a good  **Interface** is as important as the underlying software. Other developers will use this **interface** for **programming their applications.** See what I did there?
