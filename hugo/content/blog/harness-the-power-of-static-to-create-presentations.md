@@ -1,11 +1,11 @@
 ---
 title: Harness the Power of Static Site Generators to Create Presentations
 description: ''
-date: 2018-07-05 17:00:46 -1100
+date: 2018-07-06 04:00:46 +0000
 authors:
 - Josh Dzielak
-publishdate: 2018-07-05 17:00:00 -1100
-expirydate: 2029-12-31 17:00:00 -1100
+publishdate: 2018-07-06 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
@@ -280,9 +280,7 @@ If you have any questions about or suggestions for how to improve reveal-hugo, d
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD  </p><p><strong>Last week:</strong> We showed you the Hugo version of uBuild and <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/#/">discussed some strategies for using Blocks.</a></p></div>
 
-<!--
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17424969">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17471333">Discuss on Hacker News</a>
