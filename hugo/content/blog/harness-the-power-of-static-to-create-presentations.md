@@ -34,12 +34,17 @@ There are many other advantages that the combination of Reveal.js and an SSG off
 
 By the end of the tutorial you’ll have created your first presentation and learned a new workflow that’ll make you the fastest slide maker in the office.
 
-![](/uploads/2018/07/powerpoint.gif)
+<div style="text-align: center;">
+
+<img src="/uploads/2018/07/powerpoint.gif" />
+
+</div>
 
 ## Step 1: Create a New Hugo Site
 
 {{% tip %}}
-No prior knowledge of Hugo or Reveal.js is required but a basic understanding of how static site generators work will be helpful. I recommend trying [this tutorial](https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319) if you haven’t created a static site before.
+No prior knowledge of Hugo or Reveal.js is required but a basic understanding of how static site 
+generators work will be helpful. I recommend trying [this tutorial](https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319) if you haven’t created a static site before.
 {{% /tip %}}
 
 If you don’t have Hugo installed yet, [install it using the instructions on gohugo.io](https://gohugo.io/getting-started/installing/).
