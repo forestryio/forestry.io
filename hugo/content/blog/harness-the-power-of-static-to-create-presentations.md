@@ -32,19 +32,16 @@ With an SSG however, I can do this easily, because SSGs all have a way to order 
 
 There are many other advantages that the combination of Reveal.js and an SSG offer over the traditional Powerpoint method, and my goal today is to show you how to take advantage of them. I’ll walk you through how to use a theme I’ve created for Hugo called [reveal-hugo](https://dzello.com/reveal-hugo/) which contains all of the Reveal.js boilerplate so you can start creating slides instantly.
 
+[![](/uploads/2018/07/slideshow-example.png)](https://dzello.com/reveal-hugo)
+
 By the end of the tutorial you’ll have created your first presentation and learned a new workflow that’ll make you the fastest slide maker in the office.
 
-<div style="text-align: center;">
-
-<img src="/uploads/2018/07/powerpoint.gif" />
-
-</div>
+![](/uploads/2018/07/powerpoint.gif)
 
 ## Step 1: Create a New Hugo Site
 
 {{% tip %}}
-No prior knowledge of Hugo or Reveal.js is required but a basic understanding of how static site 
-generators work will be helpful. I recommend trying [this tutorial](https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319) if you haven’t created a static site before.
+No prior knowledge of Hugo or Reveal.js is required but a basic understanding of how static site generators work will be helpful. I recommend trying [this tutorial](https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319) if you haven’t created a static site before.
 {{% /tip %}}
 
 If you don’t have Hugo installed yet, [install it using the instructions on gohugo.io](https://gohugo.io/getting-started/installing/).
@@ -267,7 +264,7 @@ If you’ve followed the full tutorial, you now have a home on the Internet for 
 
 Here are a few more things you can do in the future:
 
-* Create more presentations in the same repository. To do that, just create new sections of your Hugo site and set their output format to `\[“Reveal”\]`. You can customize each one with [different Reveal.js parameters](https://github.com/dzello/reveal-hugo#configuration).
+* Create more presentations in the same repository. To do that, just create new sections of your Hugo site and set their output format to `\\\[“Reveal”\\\]`. You can customize each one with [different Reveal.js parameters](https://github.com/dzello/reveal-hugo#configuration).
 * Add Reveal.js presentations to an existing Hugo site. Because “Reveal” simply is an output format with reveal-hugo, it can be used to output specific sections of a Hugo site without trying to turn the rest of the site into a presentation. You might use this, for example, to host slides next to the blog post for a talk you recently gave.
 * Use reveal-hugo shortcodes like `fragment` and `section` to enrich your presentations. Read the [full reveal-hugo documentation](https://github.com/dzello/reveal-hugo) to learn now.
 * Create a custom Reveal.js theme that matches your company branding. To learn how and see a beautiful example, check out [this tutorial](https://medium.com/myplanet-musings/building-a-responsive-reveal-js-theme-399179632cc6) and [this live presentation](https://gapple.github.io/myplanet-revealjs/#/intro).
@@ -275,11 +272,3 @@ Here are a few more things you can do in the future:
 Thanks for reading!
 
 If you have any questions about or suggestions for how to improve reveal-hugo, don’t hesitate to reach out, I’m [@dzello](https://twitter.com/dzello) on Twitter.
-
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD  </p><p><strong>Last week:</strong> We showed you the Hugo version of uBuild and <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/#/">discussed some strategies for using Blocks.</a></p></div>
-
-<!--
-## Have something to add?
-
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17424969">Discuss on Hacker News</a>
--->
