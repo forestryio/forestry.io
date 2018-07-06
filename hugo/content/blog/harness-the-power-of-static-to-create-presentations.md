@@ -20,7 +20,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 As a developer evangelist, I make a lot of presentations. Over the years, I’ve used a variety of different drag-and-drop tools to make slides including Powerpoint, Keynote and Google Docs. I’ve also used more developer-friendly frameworks like Reveal.js.
