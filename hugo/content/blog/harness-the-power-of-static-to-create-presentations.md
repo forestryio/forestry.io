@@ -269,7 +269,7 @@ If you’ve followed the full tutorial, you now have a home on the Internet for 
 
 Here are a few more things you can do in the future:
 
-* Create more presentations in the same repository. To do that, just create new sections of your Hugo site and set their output format to `\\\[“Reveal”\\\]`. You can customize each one with [different Reveal.js parameters](https://github.com/dzello/reveal-hugo#configuration).
+* Create more presentations in the same repository. To do that, just create new sections of your Hugo site and set their output format to `[“Reveal”]`. You can customize each one with [different Reveal.js parameters](https://github.com/dzello/reveal-hugo#configuration).
 * Add Reveal.js presentations to an existing Hugo site. Because “Reveal” simply is an output format with reveal-hugo, it can be used to output specific sections of a Hugo site without trying to turn the rest of the site into a presentation. You might use this, for example, to host slides next to the blog post for a talk you recently gave.
 * Use reveal-hugo shortcodes like `fragment` and `section` to enrich your presentations. Read the [full reveal-hugo documentation](https://github.com/dzello/reveal-hugo) to learn now.
 * Create a custom Reveal.js theme that matches your company branding. To learn how and see a beautiful example, check out [this tutorial](https://medium.com/myplanet-musings/building-a-responsive-reveal-js-theme-399179632cc6) and [this live presentation](https://gapple.github.io/myplanet-revealjs/#/intro).
