@@ -8,7 +8,8 @@ publishdate: 2018-07-05 17:00:00 -1100
 expirydate: 2029-12-31 17:00:00 -1100
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/07/projector.jpg"
 categories: []
 tags: []
 cta:
