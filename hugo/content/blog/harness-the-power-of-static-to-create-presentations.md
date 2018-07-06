@@ -36,12 +36,17 @@ There are many other advantages that the combination of Reveal.js and an SSG off
 
 By the end of the tutorial you’ll have created your first presentation and learned a new workflow that’ll make you the fastest slide maker in the office.
 
-![](/uploads/2018/07/powerpoint.gif)
+<div style="text-align: center;">
+
+<img src="/uploads/2018/07/powerpoint.gif" />
+
+</div>
 
 ## Step 1: Create a New Hugo Site
 
 {{% tip %}}
-No prior knowledge of Hugo or Reveal.js is required but a basic understanding of how static site generators work will be helpful. I recommend trying [this tutorial](https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319) if you haven’t created a static site before.
+No prior knowledge of Hugo or Reveal.js is required but a basic understanding of how static site
+generators work will be helpful. I recommend trying [this tutorial](https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319) if you haven’t created a static site before.
 {{% /tip %}}
 
 If you don’t have Hugo installed yet, [install it using the instructions on gohugo.io](https://gohugo.io/getting-started/installing/).
@@ -272,3 +277,12 @@ Here are a few more things you can do in the future:
 Thanks for reading!
 
 If you have any questions about or suggestions for how to improve reveal-hugo, don’t hesitate to reach out, I’m [@dzello](https://twitter.com/dzello) on Twitter.
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD  </p><p><strong>Last week:</strong> We showed you the Hugo version of uBuild and <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/#/">discussed some strategies for using Blocks.</a></p></div>
+
+<!--
+
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17424969">Discuss on Hacker News</a>
+-->
