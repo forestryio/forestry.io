@@ -109,7 +109,7 @@ Field defaults are only applied when _creating new pages_ and aren't intended to
 Any field in an FMT can be hidden. This hides the field in the editors, but allows developers to set default values or maintain the field for legacy purposes.
 
 {{% tip %}}
-This can be used to set default values when creating new pages for fields that shouldn't be modified by an editor.
+This can be used to set default values when creating new pages for fields that shouldn't be modified by an editor. Check out our post on [3 tips for mastering blocks](https://forestry.io/blog/3-tips-for-mastering-blocks/#add-default-values-to-hidden-text-fields-for-template-level-config) for some examples.
 {{% /tip %}}
 
 ## Applying FMTs to Content
