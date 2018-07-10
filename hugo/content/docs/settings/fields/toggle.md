@@ -42,7 +42,7 @@ Use a toggle to filter pages in a loop:
 
 ### Hugo
 ```
-{{ range where .Data.Pages ".Params.is_featured" "true" }}
+{{ range where .Data.Pages ".Params.is_featured" "eq" true }}
     <h2>{{ .Title }}</h2>
     <p>{{ .Description }}</p>
 {{ end }}
