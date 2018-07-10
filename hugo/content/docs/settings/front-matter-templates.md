@@ -3,6 +3,7 @@ aliases:
 - "/docs/front-matter-templates/"
 - "/docs/site-configuration/front-matter-templates/"
 - "/docs/managing-content/default-fields/"
+- "/docs/setting-up-a-site/front-matter-templates/"
 title: Front Matter Templates
 weight: 2
 publishdate: 2017-12-31 04:00:00 +0000
