@@ -101,11 +101,7 @@ To get a feel for how to use `.Scratch`, let’s start building `list.json.json`
 
     {{- .Scratch.Set "items" slice -}}
     {{- range .Pages -}}
-        <!--
-        
-        Load the page's data into "item"
-        
-        -->
+        <!-- Load the page's data into "item" -->
         {{- $.Scratch.Add "items" ($.Scratch.Get "item") -}}
         {{- $.Scratch.Delete "item" -}}
     {{- end -}}
