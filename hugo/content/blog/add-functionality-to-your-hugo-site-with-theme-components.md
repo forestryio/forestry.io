@@ -26,10 +26,6 @@ draft: true
 ---
 Theme Components are a relatively new addition to Hugo, first appearing in the `0.42` release. Previously, you could specify a single theme in your `config.toml` file. When Hugo looks for certain files (such as data and layout files,) it will first look in the top level of your project, and then look in the subdirectory of `themes/` that matches the theme you have set in `config.toml`. The way theme components work is pretty simple: they allow you to specify an array of themes in `config.toml`. The same lookup occurs as before, but now it will check all of the themes in the array, moving from left to right. 
 
-Being such a new addition, there aren’t many uses of theme components out in the wild. One anticipated use of theme components is for theme developers to create "systems" of themes, with parent-child relationships, providing some modularity to theming in Hugo. Due to how new this feature is, this hasn't really happened yet.
-
-Another possible use of theme components is to create theme-agnostic bundles of functionality, such as a bundle of shortcodes. Additionally, since theme components can configure `outputformats` and `mediatypes` in its configuration file, providing additional output formats dor a site could be a good use for a theme component.
-
 When I was trying to come up with a project to try out theme components, I ultimately decided that re-implementing [the JSON API from our previous post](https://forestry.io/blog/build-a-json-api-with-hugo/) would be the perfect candidate. The resulting component will be something that can be installed on any existing Hugo site to provide JSON output for all content types, without the user having to write their own layouts. Thanks to theme components, they can install this alongside an existing theme and use both!
 
 In this article, I will show you how to create [this theme component](https://github.com/dwalkr/hugo-json-api-component) yourself, and discuss some considerations to be made when building a theme component.
