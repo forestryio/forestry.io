@@ -96,7 +96,11 @@ To get a feel for how to use `.Scratch`, let’s start building `list.json.json`
 
     {{- .Scratch.Set "items" slice -}}
     {{- range .Pages -}}
-        <!-- Load the page's data into "item" -->
+        <!-- 
+        ...
+        Load the page's data into "item" 
+        ...
+        -->
         {{- $.Scratch.Add "items" ($.Scratch.Get "item") -}}
         {{- $.Scratch.Delete "item" -}}
     {{- end -}}
@@ -104,20 +108,20 @@ To get a feel for how to use `.Scratch`, let’s start building `list.json.json`
 
 Using `.Scratch.Set` and `.Scratch.Get`, we can set and retrieve values on the `Scratch` object. `.Scratch.Add` adds a value to a slice. In this case, we’re iterating over all of the pages in our list, adding the page’s data into a `.Scratch` value called `item`, and then adding that value to the `items` slice. This slice is then output as JSON.
 
-Alright, here comes the tricky part: parsing the schema from the `json_schema.yml` datafile and building the appropriate content into our data structure. Since this is something we will need to do for both `list` and `single` layouts, it is a good idea to encapsulate this behavior into a partial.
+Alright, here comes the tricky part: parsing the schema from the `json_schema.yml` datafile and building the appropriate content into our data structure. Since this is something we will need to do for both `list` and `single` layouts, it is a good idea to encapsulate this behavior into a partial. Hugo requires us to explicitly pass all of the data to be used in the partial as the second parameter to the `partial` function, so we're going to use `dict` to build an object on-the-fly containing all of the values we plan to use.
+
+{{% tip %}}
+If you need more help, I've previously discussed [using `dict` to pass more context into partials](https://forestry.io/blog/3-tips-for-mastering-blocks/#pass-page-context-to-your-hugo-block-layouts).
+{{% /tip %}}
 
 
     {{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "list") -}}
 
-We need to pass a lot of information to this partial, so we’re going to wrap it all together in a single object using the `dict` function. We’re passing the current page in our loop as `currentPage`, the root context as `Root`, and another one called `SchemaType`. Since we’re planning to use this same partial for the single layout as well, we need some way for the `schema_item.tmpl` template to know whether we’re in a single or list context, so we create a variable called `SchemaType` and pass it the value of `list`.
+We’re passing the current page in our loop as `currentPage`, the root context as `Root`, and another one called `SchemaType`. Since we’re planning to use this same partial for the single layout as well, we need some way for the `schema_item.tmpl` template to know whether we’re in a single or list context, so we create a variable called `SchemaType` and pass it the value of `list`.
 
-{{% tip %}}
-If this code snippet is tripping you up, I've previously discussed [using `dict` to pass more context into partials](https://forestry.io/blog/3-tips-for-mastering-blocks/#pass-page-context-to-your-hugo-block-layouts).
-{{% /tip %}}
+The way we've set up our code, we are expecting the `schema_item.tmpl` file to place our page's data in a `.Scratch` value with the key of `item`.
 
-Inside of our `schema_item.tmpl` file, all we have to do is set up our data object using a `.Scratch` value with the key of `item` following the schema defined in the `json_schema.yml` file.
-
-The first thing we need to do is locate a compatible schema configuration. We will initially look for a schema defined for the current content section, falling back to `default` if it isn’t found. For example, if this were rendering the list view for posts, we would check for configuration at `posts.list`, falling back to `default.list` if that doesn’t exist.
+The first thing we need to do is locate a compatible schema configuration. We will initially look for a schema defined for the current content section, falling back to `default` if it isn’t found. For example, when rendering the list view for posts, we will check for configuration at `posts.list`, falling back to `default.list` if that doesn’t exist.
 
 
     {{- if and (isset $.Root.Site.Data.json_schema .currentPage.Section) (isset (index $.Root.Site.Data.json_schema .currentPage.Section) .SchemaType) -}}
@@ -126,10 +130,9 @@ The first thing we need to do is locate a compatible schema configuration. We wi
         {{- $.Root.Scratch.Set "schema" (index $.Root.Site.Data.json_schema.default .SchemaType) -}}
     {{- end -}}
 
-As you can see, we’re using `.Scratch` again to temporarily store the schema configuration we’re going to use. This will make it easier to reference it in the subsequent code.
+We’re using `.Scratch` again to temporarily store the schema configuration we’re going to use. This will make it easier to reference it in the subsequent code.
 
-The next thing we’re going to do is set the `uri` value of our data item. I decided to set this regardless of what is defined in the item schema, because it is useful not only to locate the single item URL for an item in a list, but also to serve as a unique identifier for the item in the absence of anything else:
-
+The next thing we’re going to do is set the `uri` value of our data item. This is one value that I decided should always be set in an item's JSON. It's useful not only to locate the single item URL for an item in a list, but also to serve as a unique identifier for the item. We can use `.Scratch.SetInMap` to add the 'uri' key to our 'item' object.
 
     {{- $.Root.Scratch.SetInMap "item" "uri" ($.currentPage.OutputFormats.Get "json").Permalink -}}
 
@@ -150,9 +153,9 @@ Now that that’s done, all that’s left is to loop over the fields defined in 
 Using the `default` function, we make the `key` parameter optional when defining a schema. It will default to the name of the front matter field.
 {{% /tip %}}
 
-That’s all we have to do for our `schema_item.tmpl` partial! Deciding to make schema user-definable may have seemed like more work at first, but the resulting code is pretty light and it makes our theme component very flexible.
+That’s all we have to do for our `schema_item.tmpl` partial! Deciding to let the user define their own schema may have seemed like more work at first, but it makes our theme component very flexible.
 
-Here’s the cool part: since we abstracted the work of processing the schema into our `schema_item.tmpl` partial, our `single.json.json` layout code is only two lines!
+Here’s the cool part: since we made the `schema_item.tmpl` partial do all the work, our `single.json.json` layout code is only two lines!
 
 
     {{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "single") -}}
