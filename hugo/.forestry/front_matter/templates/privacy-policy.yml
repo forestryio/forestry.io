@@ -7,29 +7,29 @@ fields:
   label: Title
   type: text
   hidden: title
-  default: ''
+  default: Privacy Policy
 - name: publishdate
   label: Publishdate
   type: datetime
   hidden: publishdate
-  default: ''
+  default: 2017-12-30 12:00:00 -1100
 - name: expirydate
   label: Expirydate
   type: datetime
   hidden: expirydate
-  default: ''
+  default: 2029-12-31 12:00:00 -1100
 - name: date
   label: Date
   type: datetime
   hidden: date
-  default: ''
+  default: 2018-07-11 11:00:00 -1100
 - name: weight
   label: Weight
   type: text
   hidden: weight
-  default: ''
+  default: '3'
 - name: type
   label: Type
   type: text
   hidden: type
-  default: ''
+  default: page
