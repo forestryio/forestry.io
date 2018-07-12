@@ -31,7 +31,7 @@ Another possible use of theme components is to create theme-agnostic bundles of 
 
 When I was trying to come up with a project to try out theme components, I ultimately decided that re-implementing [the JSON API from our previous post](https://forestry.io/blog/build-a-json-api-with-hugo/) would be the perfect candidate. The resulting component will be something that can be installed on any existing Hugo site to provide JSON output for all content types, without the user having to write their own layouts. Thanks to theme components, they can install this alongside an existing theme and use both!
 
-In this article, I will show you how to create this theme component yourself, and discuss some considerations to be made when building a theme component.
+In this article, I will show you how to create [this theme component](https://github.com/dwalkr/hugo-json-api-component) yourself, and discuss some considerations to be made when building a theme component.
 
 ## Planning The API Component
 
@@ -59,10 +59,10 @@ Since we’re making this a theme component, we will keep all of our code at `th
 
 `json_schema.yml` is how we’ll let users define their own schema. More on that later. The files in `layouts` will do the heavy lifting of rendering our JSON.
 
-**The JSON Output Format**
+### The JSON Output Format
 JSON is one of Hugo’s built-in output formats. This theme component will follow Hugo’s default JSON behavior, so we don’t need to do any additional configuration. JSON files will be available at `{{slug}}/index.json`
 
-**Configurable Schema**
+### Configurable Schema
 Our theme component will provide a schema file defining the default schema, and users can override this data file in their project to define their own schema. Our component will read the schema from this data file and generate the appropriate JSON.
 
 Our default schema looks like this:
@@ -90,7 +90,7 @@ The top-level key represents which content section this schema applies to, and t
 Hugo will actually **merge** data files with the same name when resolving theme components. This means that when someone using our theme component overrides `json_schema.yml` inside their project, they don't need to redefine the `default` schema if they don't want to: it will still be available from the theme's `json_schema.yml` file!
 {{% /tip %}}
 
-**Rendering JSON with** ***jsonify***
+### Rendering JSON with *jsonify*
 
 If you read our initial article about creating a JSON API with Hugo, you’ll know that there are two layouts we need to create: `list.json.json` and `single.json.json`. These layouts will both output JSON, with `list.json.json` handling lists of content, and `single.json.json` taking care of single pages.
 
@@ -231,5 +231,6 @@ Remember that Hugo merges data files, so even though we are overriding this file
 
 [Check out the list view](https://hardcore-knuth-fc0978.netlify.com/garage/index.json) in our example to see the new schema in action.
 
+## The Tip of the Iceberg
 
-### Editing the Schema in Forestry
+While theme components aren't exactly "plugins", they are a novel way to provide self-contained functionality to a Hugo site. I'm looking forward to seeing some themes that take advantage of this new feature, and seeing what else might come out of this more modular way to develop Hugo sites. If you've discovered a great use for theme components, {{% slack_invite_link "Share it with us in our community Slack!" %}}
