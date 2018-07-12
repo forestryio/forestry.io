@@ -24,17 +24,15 @@ menu: []
 draft: true
 
 ---
-Theme Components are a relatively new addition to Hugo, first appearing in the `0.42` release. Previously, you could specify a single theme in your `config.toml` file. When Hugo looks for certain files (such as data and layout files,) it will first look in the top level of your project, and then look in the subdirectory of `themes/` that matches the theme you have set in `config.toml`. The way theme components work is pretty simple: they allow you to specify an array of themes in `config.toml`. The same lookup occurs as before, but now it will check all of the themes in the array, moving from left to right. 
+Theme Components are a relatively new addition to Hugo, first appearing in the `0.42` release. Previously, you could specify a single theme in your `config.toml` file. When Hugo looks for certain files (such as data and layout files,) it will first look in the top level of your project, and then look in the subdirectory of `themes/` that matches the theme you have set in `config.toml`. The way theme components work is pretty simple: they allow you to specify an array of themes in `config.toml`. The same lookup occurs as before, but now it will check all of the themes in the array, moving from left to right.
 
-When I was trying to come up with a project to try out theme components, I ultimately decided that re-implementing [the JSON API from our previous post](https://forestry.io/blog/build-a-json-api-with-hugo/) would be the perfect candidate. The resulting component will be something that can be installed on any existing Hugo site to provide JSON output for all content types, without the user having to write their own layouts. Thanks to theme components, they can install this alongside an existing theme and use both!
-
-In this article, I will show you how to create [this theme component](https://github.com/dwalkr/hugo-json-api-component) yourself, and discuss some considerations to be made when building a theme component.
+One good use case for theme components is to implement alternative output formats for a site's content. We previously showed you [how to add a JSON API to your Hugo site](https://forestry.io/blog/build-a-json-api-with-hugo/) &mdash; in this article, I will be re-implementing this feature as a theme component. The [resulting component](https://github.com/dwalkr/hugo-json-api-component) will be something that can be installed on any existing Hugo site to provide JSON output for all content types, without the user having to write their own layouts. Thanks to theme components, they can install this alongside an existing theme and use both!
 
 ## Planning The API Component
 
 Our goal is to create a self-contained component that will enable anyone to add a JSON API to the content on their site. 
 
-Since we want this to work for a variety of use cases without modification, it would be great if there were a way for the user to specify their own schema: that is, we should let the user define the shape of their data that will ultimately be rendered as JSON. This may seem like more work at first, but the end result will enable users to define their own schema without having to override and re-implement most of our layout code.
+Since we want this to work for a variety of use cases without modification, the user should be able to define the shape of their data to be rendered as JSON. This may seem like more work at first, but the end result will enable users to define their own schema without having to override and re-implement most of our layout code.
 
 One thing that will also make our layout code simpler and less error-prone will be to use `.Scratch` to build the data object that we want to output, and then outputting it all at once using Hugo’s `jsonify` function. We briefly touched on this approach [the last time we talked about rendering JSON with Hugo](https://forestry.io/blog/hugo-json-api-part-2#addendum-creating-json-output-with-jsonify).
 
