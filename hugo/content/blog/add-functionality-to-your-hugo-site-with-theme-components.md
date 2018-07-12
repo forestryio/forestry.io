@@ -55,10 +55,10 @@ Since we’re making this a theme component, we will keep all of our code at `th
 `json_schema.yml` is how we’ll let users define their own schema. More on that later. The files in `layouts` will do the heavy lifting of rendering our JSON.
 
 ### The JSON Output Format
-JSON is one of Hugo’s built-in output formats. This theme component will follow Hugo’s default JSON behavior, so we don’t need to do any additional configuration. JSON files will be available at `{{slug}}/index.json`
+JSON is one of [Hugo’s built-in output formats](https://gohugo.io/templates/output-formats/#output-format-definitions). This theme component will follow Hugo’s default JSON behavior, so we don’t need to do any additional configuration. The JSON version of a page or section can be accessed by adding `index.json` to the end of its URL.
 
 ### Configurable Schema
-Our theme component will provide a schema file defining the default schema, and users can override this data file in their project to define their own schema. Our component will read the schema from this data file and generate the appropriate JSON.
+Our theme component will define the default schema in its `json_schema.yml` data file, and users can override this file in their project to define their own schema. Our component will read the schema from this data file and generate the appropriate JSON.
 
 Our default schema looks like this:
 
