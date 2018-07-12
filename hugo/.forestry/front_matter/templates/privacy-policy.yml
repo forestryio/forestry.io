@@ -1,0 +1,35 @@
+---
+label: Privacy Policy
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: title
+  default: ''
+- name: publishdate
+  label: Publishdate
+  type: datetime
+  hidden: publishdate
+  default: ''
+- name: expirydate
+  label: Expirydate
+  type: datetime
+  hidden: expirydate
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: date
+  default: ''
+- name: weight
+  label: Weight
+  type: text
+  hidden: weight
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: type
+  default: ''
