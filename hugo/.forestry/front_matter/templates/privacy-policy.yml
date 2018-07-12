@@ -6,27 +6,27 @@ fields:
 - name: title
   label: Title
   type: text
-  hidden: title
+  hidden: false
   default: Privacy Policy
 - name: publishdate
   label: Publishdate
   type: datetime
-  hidden: publishdate
+  hidden: false
   default: 2017-12-30 12:00:00 -1100
 - name: expirydate
   label: Expirydate
   type: datetime
-  hidden: expirydate
+  hidden: false
   default: 2029-12-31 12:00:00 -1100
 - name: date
   label: Date
   type: datetime
-  hidden: date
+  hidden: false
   default: 2018-07-11 11:00:00 -1100
 - name: weight
   label: Weight
   type: text
-  hidden: weight
+  hidden: false
   default: '3'
 - name: type
   label: Type
