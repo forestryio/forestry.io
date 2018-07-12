@@ -8,7 +8,8 @@ publishdate: 2018-07-12 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/07/leaf-group.jpg"
 categories:
 - Frontend-Friday
 tags: []
