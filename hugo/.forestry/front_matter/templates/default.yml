@@ -1,4 +1,5 @@
 ---
+label: default
 hide_body: false
 is_partial: false
 fields:
@@ -146,22 +147,23 @@ pages:
 - hugo/content/docs/_index.md
 - hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/improved-collaboration-and-more.md
-- hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
+- hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/_index.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
-- hugo/content/blog/building-a-company-component-library.md
 - hugo/content/blog/cloudinary-integration.md
 - hugo/content/blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - hugo/content/blog/layout-improvements.md
 - hugo/content/blog/march-27th-service-outage.md
 - hugo/content/blog/the-new-forestry-io.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
-- hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
+- hugo/content/blog/building-a-company-component-library.md
+- hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
+- hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/5-ways-to-handle-forms-on-your-static-site.md
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
 - hugo/content/blog/forestry-gitlab.md
