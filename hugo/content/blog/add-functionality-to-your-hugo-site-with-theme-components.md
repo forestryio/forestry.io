@@ -147,6 +147,10 @@ Now that that’s done, all that’s left is to loop over the fields defined in 
         {{- end -}}
     {{- end -}}
 
+{{% tip %}}
+Using the `default` function, we make the `key` parameter optional when defining a schema. It will default to the name of the front matter field.
+{{% /tip %}}
+
 That’s all we have to do for our `schema_item.tmpl` partial! Deciding to make schema user-definable may have seemed like more work at first, but the resulting code is pretty light and it makes our theme component very flexible.
 
 Here’s the cool part: since we abstracted the work of processing the schema into our `schema_item.tmpl` partial, our `single.json.json` layout code is only two lines!
@@ -160,5 +164,72 @@ We just need to load the `schema_item.tmpl` partial and tell it we’re using th
 
 
 ## Installing the JSON Theme Component On An Existing Site
+
+To use this theme component on an existing site, we just have to take care of a few quick steps:
+
+1. Add our theme component to `themes/` as a submodules
+2. Update the `theme` setting in `config.toml` to include our theme component
+3. Set up JSON output for pages and sections
+
+To demonstrate this, I've created a demo site that uses the [Paper theme](https://github.com/nanxiaobei/hugo-paper/). This site has a couple of blog posts, and three pages about different cars. [Here's a demo running on Netlify](https://hardcore-knuth-fc0978.netlify.com/).
+
+### Setting up the JSON component
+
+We can install the theme component with the following command:
+
+```
+git submodule add https://github.com/dwalkr/hugo-json-api-component themes/json-api
+```
+
+Then, we just have to open up `config.toml` and change the following line:
+
+```
+theme = "paper"
+```
+
+to this:
+
+```
+theme = ["paper","json-api"]
+```
+
+Finally, to enable the JSON output format for our list and single views, we need to specify it in the `outputs` section of our `config.toml` file:
+
+```
+[outputs]
+    page = ["html","json"]
+    section = ["html","json"]
+```
+
+Once this is done, restart your Hugo server and you should be able to access the JSON data by adding `/index.json` to the end of section and page URLs.
+
+
+### Customizing the Schema
+
+The default schema works pretty well for our content in `posts`, but the cars that we added to the `garage` section have additional front matter that I want to expose in the JSON. Since the JSON API component lets us customize the JSON schema by section, this is really easy to do! Just add a file at `data/json_schema.yml` and configure it like this:
+
+```
+garage:
+  list:
+    fields:
+      - field: year
+      - field: make
+      - field: model
+  single:
+    fields:
+      - field: title
+        key: name
+      - field: year
+      - field: make
+      - field: model
+      - field: engine
+      - field: $PAGECONTENT
+        key: description
+```
+
+Remember that Hugo merges data files, so even though we are overriding this file from our theme component, the `default` configuration will still be available to Hugo.
+
+[Check out the list view](https://hardcore-knuth-fc0978.netlify.com/garage/index.json) in our example to see the new schema in action.
+
 
 ### Editing the Schema in Forestry
