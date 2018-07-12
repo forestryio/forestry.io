@@ -117,7 +117,7 @@ If this code snippet is tripping you up, I've previously discussed [using `dict`
 
 Inside of our `schema_item.tmpl` file, all we have to do is set up our data object using a `.Scratch` value with the key of `item` following the schema defined in the `json_schema.yml` file.
 
-First, let’s find a compatible schema configuration. We will first look for a schema defined for the current content section, falling back to `default` if it isn’t found. For example, if this were rendering the list view for posts, we would check for configuration at `posts.list`, falling back to `default.list` if that doesn’t exist.
+The first thing we need to do is locate a compatible schema configuration. We will initially look for a schema defined for the current content section, falling back to `default` if it isn’t found. For example, if this were rendering the list view for posts, we would check for configuration at `posts.list`, falling back to `default.list` if that doesn’t exist.
 
 
     {{- if and (isset $.Root.Site.Data.json_schema .currentPage.Section) (isset (index $.Root.Site.Data.json_schema .currentPage.Section) .SchemaType) -}}
@@ -232,4 +232,4 @@ Remember that Hugo merges data files, so even though we are overriding this file
 
 ## The Tip of the Iceberg
 
-While theme components aren't exactly "plugins", they are a novel way to provide self-contained functionality to a Hugo site. I'm looking forward to seeing some themes that take advantage of this new feature, and seeing what else might come out of this more modular way to develop Hugo sites. If you've discovered a great use for theme components, {{% slack_invite_link "Share it with us in our community Slack!" %}}
+While theme components aren't exactly "plugins", they are a novel way to provide self-contained functionality to a Hugo site. I'm looking forward to seeing themes take advantage of this new feature, and seeing what else might come out of this more modular way to develop Hugo sites. If you've discovered a great use for theme components, {{% slack_invite_link "Share it with us in our community Slack!" %}}
