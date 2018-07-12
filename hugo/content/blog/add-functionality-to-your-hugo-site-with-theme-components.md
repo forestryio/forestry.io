@@ -23,7 +23,7 @@ menu: []
 draft: true
 
 ---
-Theme Components are a relatively new addition to Hugo, first appearing in the `0.42` release. The way theme components work is pretty simple: previously, you could specify a single theme in your `config.toml` file. When Hugo looks for certain files (such as data and layout files,) it will first look in the top level of your project, and then look in the subdirectory of `themes/` that matches the theme you have set in `config.toml`. Theme Components extends this by allowing you to specify an array of themes in `config.toml`. The same lookup occurs as before, but now it will check all of the themes in the array, moving from left to right. 
+Theme Components are a relatively new addition to Hugo, first appearing in the `0.42` release. The way theme components work is pretty simple. Previously, you could specify a single theme in your `config.toml` file. When Hugo looks for certain files (such as data and layout files,) it will first look in the top level of your project, and then look in the subdirectory of `themes/` that matches the theme you have set in `config.toml`. Theme Components extends this by allowing you to specify an array of themes in `config.toml`. The same lookup occurs as before, but now it will check all of the themes in the array, moving from left to right. 
 
 Being such a new addition, there aren’t many uses of theme components out in the wild. One anticipated use of theme components is for theme developers to create "systems" of themes, with parent-child relationships, providing some modularity to theming in Hugo. Due to how new this feature is, this hasn't really happened yet.
 
