@@ -29,7 +29,16 @@ When I previously showed you [how to integrate Snipcart with your Forestry site]
 
 For this project, I decided to use Formspree because it is easy to integrate with custom forms, and there is no account setup required. We recently published a [rundown of different form options](https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/) for static sites. If you prefer to use one of the other options from that article instead, this solution would be easy to port to FormKeep, Netlify, and FormPlug as well.
 
-(insert "import to forestry" button here)
+<div id="import-form-builder-button" data-proofer-ignore>
+{{% create_site_button
+repo="https://github.com/dwalkr/forestry-form-builder"
+branch="master"
+engineName="hugo"
+engineVersion="0.43"
+forkName="form-builder"
+heading="Start Building Forms Right Now"
+linkText="Import the Form Builder to Forestry" %}}
+</div>
 
 ## Applying a Modular Content Strategy to Forms
 
@@ -43,7 +52,7 @@ We can create basic forms that also have this vertical rhythm. To make a form bu
 ## Setting Up the Forestry Admin
 
 {{% tip %}}
-If you want to skip this step, the Front Matter Templates are already configured in [the demo project](/). You can fork the project, or just grab the front matter templates in `.forestry/front-matter/templates`.
+If you want to skip this step, the Front Matter Templates are already configured in [the demo project](https://github.com/dwalkr/forestry-form-builder). You can fork the project, or just grab the front matter templates in `.forestry/front-matter/templates`.
 {{% /tip %}}
 
 We're going to make new **Front Matter Templates** to set up our form builder interface. Our project will support two types of forms:
@@ -186,7 +195,7 @@ The full example of our block loop looks like this:
 
 This just adds some wrapper HTML to make the field look nice, and makes use of the `label` and `description` fields that exist for all forms.
 
-Implementing the fields themselves is pretty straight-forward. Check out the code in [the demo repository](/) to see how it was done.
+Implementing the fields themselves is pretty straight-forward. Check out the code in [the demo repository](https://github.com/dwalkr/forestry-form-builder/tree/master/layouts/partials/fields) to see how it was done.
 
 ### Finishing the Form
 
