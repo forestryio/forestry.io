@@ -111,6 +111,10 @@ Alright, here comes the tricky part: parsing the schema from the `json_schema.ym
 
 We need to pass a lot of information to this partial, so we’re going to wrap it all together in a single object using the `dict` function. We’re passing the current page in our loop as `currentPage`, the root context as `Root`, and another one called `SchemaType`. Since we’re planning to use this same partial for the single layout as well, we need some way for the `schema_item.tmpl` template to know whether we’re in a single or list context, so we create a variable called `SchemaType` and pass it the value of `list`.
 
+{{% tip %}}
+If this code snippet is tripping you up, I've previously discussed [using `dict` to pass more context into partials](https://forestry.io/blog/3-tips-for-mastering-blocks/#pass-page-context-to-your-hugo-block-layouts).
+{{% /tip %}}
+
 Inside of our `schema_item.tmpl` file, all we have to do is set up our data object using a `.Scratch` value with the key of `item` following the schema defined in the `json_schema.yml` file.
 
 First, let’s find a compatible schema configuration. We will first look for a schema defined for the current content section, falling back to `default` if it isn’t found. For example, if this were rendering the list view for posts, we would check for configuration at `posts.list`, falling back to `default.list` if that doesn’t exist.
