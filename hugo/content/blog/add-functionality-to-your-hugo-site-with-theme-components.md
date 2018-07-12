@@ -89,7 +89,7 @@ Hugo will actually **merge** data files with the same name when resolving theme 
 
 If you read our initial article about creating a JSON API with Hugo, you’ll know that there are two layouts we need to create: `list.json.json` and `single.json.json`. These layouts will both output JSON, with `list.json.json` handling lists of content, and `single.json.json` taking care of single pages.
 
-As mentioned, we’re going to use Hugo’s `.Scratch` feature to build a data structure instead of us writing out the JSON syntax. Unlike Jekyll, Hugo doesn’t let you create new variables to use within your templates. Instead, it offers `.Scratch`, a key-value store that we will use to build our data object.
+As mentioned, we’re going to use [Hugo’s `.Scratch` feature](https://gohugo.io/functions/scratch/) to build a data structure instead of us writing out the JSON syntax. Unlike Jekyll, Hugo doesn’t let you create new variables to use within your templates. Instead, it offers `.Scratch`, a key-value store that we will use to build our data object.
 
 To get a feel for how to use `.Scratch`, let’s start building `list.json.json`:
 
