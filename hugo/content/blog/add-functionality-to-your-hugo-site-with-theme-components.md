@@ -241,3 +241,9 @@ Remember that Hugo merges data files, so even though we are overriding this file
 ## The Tip of the Iceberg
 
 While theme components aren't exactly "plugins", they are a novel way to provide self-contained functionality to a Hugo site. I'm looking forward to seeing themes take advantage of this new feature, and seeing what else might come out of this more modular way to develop Hugo sites. If you've discovered a great use for theme components, {{% slack_invite_link "Share it with us in our community Slack!" %}}
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> Creating a Form Builder With Formspree and Forestry Blocks</p><p><strong>Last week:</strong> We showed you how <a href="https://forestry.io/blog/https://forestry.io/blog/harness-the-power-of-static-to-create-presentations/">Reveal.JS + Hugo and Forestry make a great team for your next slide deck</a></p></div>
+
+<!--Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17471333">Discuss on Hacker News</a>-->
