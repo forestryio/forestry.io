@@ -155,10 +155,10 @@ pages:
 - hugo/content/blog/march-27th-service-outage.md
 - hugo/content/blog/the-new-forestry-io.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
-- hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
+- hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/building-a-company-component-library.md
