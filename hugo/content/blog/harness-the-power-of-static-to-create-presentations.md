@@ -10,7 +10,8 @@ headline: ''
 textline: ''
 images:
 - "/uploads/2018/07/projector.jpg"
-categories: []
+categories:
+- Frontend-Friday
 tags: []
 cta:
   headline: ''
