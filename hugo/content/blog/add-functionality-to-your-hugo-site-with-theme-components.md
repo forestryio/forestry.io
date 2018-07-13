@@ -1,6 +1,12 @@
 ---
 title: Add Functionality to Your Hugo Site With Theme Components
-description: ''
+description: Theme components are great for implementing alternative output formats
+  for a site's content. We previously showed you how to add a JSON API to your Hugo
+  site — in this article, I will be re-implementing this feature as a theme component.
+  The resulting component will be something that can be installed on any existing
+  Hugo site to provide JSON output for all content types, without the user having
+  to write their own layouts. Thanks to theme components, they can install this alongside
+  an existing theme and use both!
 date: 2018-07-13 01:05:06 -1100
 authors:
 - DJ Walker
@@ -21,7 +27,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Theme Components are a relatively new addition to Hugo, first appearing in the `0.42` release. When Hugo looks for certain files (such as data and layout files,) it will first look in the top level of your project, and then look in the subdirectory of `themes/` that matches the theme you have set in `config.toml`. Previously, you could only specify a single theme in your `config.toml` file. The way theme components work is pretty simple: they allow you to specify an array of themes in `config.toml`. The same lookup occurs as before, but now it will check all of the themes in the array, moving from left to right.
