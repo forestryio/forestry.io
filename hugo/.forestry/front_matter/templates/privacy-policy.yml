@@ -12,17 +12,17 @@ fields:
   label: Publishdate
   type: datetime
   hidden: false
-  default: 2017-12-30 12:00:00 -1100
+  default: 2017-12-30 23:00:00 +0000
 - name: expirydate
   label: Expirydate
   type: datetime
   hidden: false
-  default: 2029-12-31 12:00:00 -1100
+  default: 2029-12-31 23:00:00 +0000
 - name: date
   label: Date
   type: datetime
   hidden: false
-  default: 2018-07-11 11:00:00 -1100
+  default: 2018-07-11 22:00:00 +0000
 - name: weight
   label: Weight
   type: text
