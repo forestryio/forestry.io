@@ -24,7 +24,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 When we announced the Blocks feature, we touted it as a great way to create a page builder for your site. While this use case drove the development of Blocks, we knew there would be other interesting things that could be done with it.
