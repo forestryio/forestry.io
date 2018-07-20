@@ -23,7 +23,6 @@ menu:
   docs:
     parent: Settings & Configuration
     weight: 2
-draft: true
 
 ---
 
