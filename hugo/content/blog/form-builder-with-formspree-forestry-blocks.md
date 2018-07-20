@@ -136,8 +136,6 @@ Save this template, and your UI is done! You have successfully configured Forest
 
 ## The Code
 
-\(another "import to forestry" button here maybe?)
-
 Our sample project is a bare-bones Hugo site using [Bulma](https://bulma.io/) to quickly create nice-looking forms. We've tacked the form-generation code onto the end of the `single.html` template:
 
     {{- with .Params.Form -}}
