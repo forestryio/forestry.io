@@ -220,5 +220,5 @@ Once that's in place, our code to display both form types is complete!
 I hope this post has given you an idea of what's possible with Blocks. I encourage you to reach for this feature the next time you want to give your content editors the power to **build**!
 
 {{% tip "Found an Interesting Use for Blocks?" %}}
-Share it with us in our [Community Slack](https://join.slack.com/t/forestry-community/shared_invite/enQtMzgzMjQ1OTk0MDUwLThlYzZmMTQwMWFmMWRhOTU4NjY4MjM4ODdmMmQ0YzI0Y2M5YzViNGE0Y2VhZDY3MDEzYjcxZTMzODE2NDk1ZmI)!
+Share it with us in our [Community Slack](http://bit.ly/2Ntg0Yu)!
 {{% /tip %}}
