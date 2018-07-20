@@ -7,28 +7,40 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
 date: 2018-07-20 02:58:59 -1100
-draft: true
+headline: ''
+description: ''
+textline: ''
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
 menu:
   docs:
     parent: Settings & Configuration
     weight: 2
----
+draft: true
 
-Snippets are pieces of content that can be inserted into the body of your
+---
 
 ## Creating Snippets
 
-You can create a snippet by simply adding a `.snippet` file to
-the `.forestry/snippets` directory in your repository.
+To create a snippet, add a `.snippet` file to the `.forestry/snippets` directory in your repository. Fill that file with whatever text should be inserted. 
+
+### Example
+
+The Forestry.io websites has a Hugo shortcode for adding helpful tips to our blog posts and documentation. To make inserting these easier, we have added a [Tip Snippet](https://github.com/forestryio/forestry.io/blob/master/hugo/.forestry/snippets/tip.snippet "Tip Snippet") for inserting that shortcode. Here is the snippet:
 
 **.forestry/snippets/tip.snippet**
 
-```
-{{%/* tip */%}} Tip Body {{%/* /tip */%}}
-```
-
-{{% tip %}}
+    {{%/* tip */%}} Tip Body {{%/* /tip */%}}
 
 ## Using Snippets
 
-Snippets are available in any the Body editor and WYSIWYG Textareas.
+You can access the list of available snippets by clicking the `{ }` snippet icon in the editor toolbar. 
+
+![](/uploads/2018/07/snippet-toolbar.png)
