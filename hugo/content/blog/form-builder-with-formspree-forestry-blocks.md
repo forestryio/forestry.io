@@ -81,7 +81,9 @@ If you're confused, consider this: you're creating Front Matter Templates to pro
 
 ### Creating The Fields
 
-![](/uploads/2018/07/Screen Shot 2018-07-20 at 1.01.35 PM.png)We will be creating **five** Front Matter Templates using these fields. For each one, be sure to turn on the **Is Partial** setting so we can use these as Blocks. Create the following templates, being sure to include the essential fields defined above (`type`, `name`, `label`, and `description`) and set the default value for the `type` field to the type of each:
+![](/uploads/2018/07/is_partial.png)
+
+We will be creating **five** Front Matter Templates using these fields. For each one, be sure to turn on the **Is Partial** setting so we can use these as Blocks. Create the following templates, being sure to include the essential fields defined above (`type`, `name`, `label`, and `description`) and set the default value for the `type` field to the type of each:
 
 * `text`
 * `textarea`
