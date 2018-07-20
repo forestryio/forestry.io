@@ -4,7 +4,7 @@ description: When I previously showed you how to integrate Snipcart with your Fo
   site, I used Blocks to configure custom fields for Snipcart products. Today, I'm
   going to take that idea to a whole new level by using Blocks to create a full-fledged
   form builder that your website editors can use to create web forms.
-date: 2018-07-20 22:51:14 +0000
+date: 2018-07-19 11:51:14 -1100
 authors:
 - DJ Walker
 publishdate: 2018-07-20 04:00:00 +0000
