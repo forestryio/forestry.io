@@ -130,3 +130,4 @@ fields:
   hidden: true
 pages:
 - hugo/content/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available.md
+- hugo/content/docs/settings/snippets.md
