@@ -29,32 +29,6 @@ You can also apply [Front Matter Templates](/docs/settings/front-matter-template
 2. Click "Change Template"
 3. Choose the Front Matter Template you want and click "Done"
 
-{{% warning %}}
-
-**Jekyll users:**
-
-In order to use Front Matter Templates with data files, you will need to place all of your fields inside of a [Field Group](/docs/settings/fields/field-group/) with the same name as the name of your data file. 
-
-For example, if you want to create a FMT for a data file named `social.yml`, you will need to place your fields in a Field Group with the name of `social`:
-
-```
-fields:
-- type: field_group
-  name: social
-  label: Social
-  fields:
-  - type: text
-    name: twitter_url
-    label: Twitter URL
-  - type: text
-    name: facebook_url
-    label: Facebook URL
-```
-
-This will be improved in a future update.
-
-{{% /warning %}}
-
 ## Futher Reading
 
 * [Hugo's Data Template Docs](https://gohugo.io/templates/data-templates/)
