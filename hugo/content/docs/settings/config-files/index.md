@@ -111,20 +111,14 @@ This allows you to configure the version of Hugo your site uses. This is limited
 
 ---
 
-## Content Sections `sections:` `Array`
+## Content Sections 
+`sections:` `Array`
 
 This setting allows you to tell Forestry which parts of your site contain editable content files.
 
 [View the full Content Section documentation](/docs/settings/config-files/content-sections)
 
-| Key | Description | Type | Default |
-| --- | --- | --- | --- |
-| `type` | Type of content | `directory`,`jekyll-pages`,`jekyll-posts` | `directory` |
-| `label` | Text to display in Forestry menu | String | N/A |
-| `path` | Path to folder from project root | String | N/A |
-| `match` | Glob of files to match inside of path | String (Fileglob) | `**/*` |
-| `create` | Restrictions on creating new content items | `all`,`none` | `all` |
-| `templates` | Control Which Front Matter Templates can be used in section | Array | All templates |
+{{% markdownpartial "docs/section-config-attribute-table.md" %}}
 
 ## Front Matter Templates
 

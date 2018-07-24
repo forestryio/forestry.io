@@ -18,14 +18,7 @@ A content section in Forestry is primarily defined by the path to the folder con
 
 ## Section Configuration
 
-| Key | Description | Type | Default |
-| --- | --- | --- | --- |
-| `type` | Type of content | `directory`,`jekyll-pages`,`jekyll-posts` | `directory` |
-| `label` | Text to display in Forestry menu | String | N/A |
-| `path` | Path to folder from repository root (only applies to `directory` type) | String | N/A |
-| `match` | Glob of files to match inside of path (only applies to `directory` type) | String (Fileglob) | `**/*` |
-| `create` | Restrictions on creating new content items | `all`,`none` | `all` |
-| `templates` | Control Which Front Matter Templates can be used in section | Array | All templates |
+{{% markdownpartial "docs/section-config-attribute-table.md" %}}
 
 ### _Sidebar Order_
 
@@ -36,9 +29,13 @@ Sections will appear in the sidebar in the same order they are defined.
 
 The `type` parameter is used by Forestry to determine how to handle the files defined in the content section. The default type is `directory`, which will search for content files according to the `path` and `match` configuration. The other two options are `jekyll-pages` and `jekyll-posts`, which will follow special rules for Jekyll's [page](https://jekyllrb.com/docs/pages/) and [post](https://jekyllrb.com/docs/posts/) content types.
 
+{{% warning %}}
+The `jekyll-pages` and `jekyll-posts` section types should only be used with Jekyll sites. Additionally, you can only have one `jekyll-pages` section and one `jekyll-posts` section per site.
+{{% warning %}}
+
 ### Path
 
-The `path` parameter should be a path to the directory that holds this section's content files, relative to the root of your repository.
+The `path` parameter should be a path to the directory that holds this section's content files, relative to the root of your repository. This setting only applies to sections of type `directory`.
 
 {{% tip %}}
 Because the path is relative to your project root, users configuring content sections for their Hugo site will want to prefix all of their paths with `content/`.
@@ -46,7 +43,7 @@ Because the path is relative to your project root, users configuring content sec
 
 ### Match
 
-The `match` parameter should be a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) that matches the files you want to be able to edit for this content section. Files that don't match this pattern will be ignored.
+The `match` parameter should be a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) that matches the files you want to be able to edit for this content section. Files that don't match this pattern will be ignored. This setting only applies to sections of type `directory`.
 
 The default `match` value is `**/*` which will match all files, including any files in subdirectories.
 
