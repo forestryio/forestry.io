@@ -31,7 +31,7 @@ The `type` parameter is used by Forestry to determine how to handle the files de
 
 {{% warning %}}
 The `jekyll-pages` and `jekyll-posts` section types should only be used with Jekyll sites. Additionally, you can only have one `jekyll-pages` section and one `jekyll-posts` section per site.
-{{% warning %}}
+{{% /warning %}}
 
 ### Path
 
