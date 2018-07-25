@@ -45,13 +45,17 @@ Because the path is relative to your project root, users configuring content sec
 
 The `match` parameter should be a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) that matches the files you want to be able to edit for this content section. Files that don't match this pattern will be ignored. This setting only applies to sections of type `directory`.
 
-The default `match` value is `**/*` which will match all files, including any files in subdirectories.
-
 {{% tip "Example glob patterns" %}}
 - `**/*.md`: Match all markdown files
 - `*.md`: Match all markdown files, excluding files in subdirectories
 - `**/*.fr.md`: Match all files with a filename ending in `.fr.md` (useful if you're using Hugo's [filename-based translations](https://gohugo.io/content-management/multilingual/#translation-by-filename))
 {{% /tip %}}
+
+The default `match` value is `**/*` which will match all files, including any files in subdirectories.
+
+{{% warning %}}
+You can use the `match` parameter to separate a single directory into multiple content sections, but take care to ensure that no files overlap between sections. This may cause unexpected behavior.
+{{% /warning %}}
 
 ### Create
 
