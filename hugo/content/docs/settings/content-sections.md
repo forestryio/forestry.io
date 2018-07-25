@@ -3,16 +3,16 @@ title: Content Sections
 weight: 1
 publishdate: 2018-07-24 00:00:00 -0400
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-07-24 00:00:00 -0400
+date: 2018-07-25 00:00:00 -0400
 layout: single
 menu:
   docs:
-    parent: Config Files
-    weight: 1
+    parent: Settings & Configuration
+    weight: 3
 
 ---
 
-You can define which areas (folders) of your site contain editable content files by modifying the `sections` value in the `.forestry/settings.yml` configuration file.
+You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file.
 
 A content section in Forestry is primarily defined by the path to the folder containing content files, and a glob to match against the contents of that folder.
 
@@ -61,6 +61,10 @@ The `create` parameter allows you to specify whether new files can be created fo
 
 Pass in an array of Front Matter Template filenames (without their extension) to limit the available Front Matter Templates when creating a new content item in this section. The templates will be shown in the dropdown in the same order they are listed here, with the first template being the default selection. If only one template is defined, the template selection dropdown will not appear when adding new content.
 
+### New Document File Extension
+
+The `new_doc_ext` parameter lets you specify the extension to be used for new files created in this content section. You can specify a file extension with or without the extension delimiter (the `.`). The default file extension is whatever you have set as the **New Page Extension** in your site settings.
+
 ## Examples
 
 Jekyll site with pages, posts, and a custom collection:
@@ -86,12 +90,14 @@ Multilingual Hugo Blog:
 ```
 sections:
 - type: directory
-  path: content/posts
-  match: **/*.en.md
+  path: "content/posts"
+  match: "**/*.en.md"
   label: English
+  new_file_ext: ".en.md"
 
 - type: directory
-  path: content/posts
-  match: **/*.fr.md
+  path: "content/posts"
+  match: "**/*.fr.md"
   label: French
+  new_file_ext: ".en.md"
 ```

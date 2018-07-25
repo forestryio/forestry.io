@@ -3,7 +3,7 @@ title: Config Files
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-07-24 00:00:00 -0400
+date: 2018-07-25 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -111,12 +111,11 @@ This allows you to configure the version of Hugo your site uses. This is limited
 
 ---
 
-## Content Sections 
-`sections:` `Array`
+**Content Sections** `sections:` `Array`
 
 This setting allows you to tell Forestry which parts of your site contain editable content files.
 
-[View the full Content Section documentation](/docs/settings/config-files/content-sections)
+[View the full Content Section documentation](/docs/settings/content-sections)
 
 {{% markdownpartial "docs/section-config-attribute-table.md" %}}
 

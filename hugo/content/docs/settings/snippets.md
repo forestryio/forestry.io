@@ -22,7 +22,7 @@ aliases: []
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 2
+    weight: 4
 
 ---
 ## Creating Snippets
