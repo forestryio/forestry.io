@@ -4,21 +4,31 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- path: hugo/content
+- type: directory
+  path: hugo/content
   label: Pages
   create: all
-- path: hugo/content/careers
+  match: "*"
+- type: directory
+  path: hugo/content/careers
   label: Careers
   create: all
-- path: hugo/content/docs
+  match: "**/*"
+- type: directory
+  path: hugo/content/docs
   label: Docs
   create: all
-- path: hugo/content/showcase
+  match: "**/*"
+- type: directory
+  path: hugo/content/showcase
   label: Showcase
   create: all
-- path: hugo/content/blog
+  match: "**/*"
+- type: directory
+  path: hugo/content/blog
   label: Blog
   create: all
+  match: "**/*"
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
