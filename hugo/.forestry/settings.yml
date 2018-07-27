@@ -29,6 +29,13 @@ sections:
   label: Blog
   create: all
   match: "**/*"
+- type: directory
+  label: Changelog
+  path: hugo/contents/docs/changelog
+  match: "*"
+  create: all
+  templates:
+  - changelog
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
