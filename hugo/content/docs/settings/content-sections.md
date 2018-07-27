@@ -103,5 +103,5 @@ sections:
   path: "content/posts"
   match: "**/*.fr.md"
   label: French
-  new_file_ext: ".en.md"
+  new_file_ext: ".fr.md"
 ```
