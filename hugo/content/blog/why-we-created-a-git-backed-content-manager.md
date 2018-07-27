@@ -21,7 +21,7 @@ menu: []
 draft: true
 
 ---
-Version control systems are tools for managing software by tracking all changes that occur to the code. Any code project will benefit greatly from using version control, and any developer worth her salt should be wary of a codebase that does not use version control. Version control makes it easy to monitor changes to code, track down bugs, and manage releases.
+Software developers have long used Version Control Systems for tracking changes to code. Any code project will benefit greatly from using version control, and any developer worth her salt should be wary of a codebase that does not use version control. Version control makes it easy to monitor changes to code, track down bugs, and manage releases.
 
 Forestry’s content manager is supported by Git, one of the most popular version control systems available today. Forestry saves changes to your content by **committing these changes into your Git repository**. This is what we mean when we say Forestry is a **Git-backed content manager**. In this article, I will explore why using version control to manage your content can offer many of the same benefits as using it for your code.
  
@@ -75,14 +75,16 @@ A static site generator borrows the lessons learned by these dynamic CMS platfor
 
 Automatic deployment is a crucial part of efficiently maintaining a static site, and the easiest way to take advantage of the readily available deployment tools is to **put your site in a Git repository**. This makes it simple for deployment tools to retrieve your code in order to build your static site and deploy it to your webserver.
 
-
 ## Storing Content in Version Control
 
-Because a static site doesn’t run any code on the webserver, only static files, content **must** be updated by committing changes to the site’s Git repository. While this may seem llimiting at first, it can offer some distinct advantages.
+Because a static site doesn’t run any code on the webserver, only static files, content can only be updated by rebuilding and redeploying the website. It therefore makes sense to keep your content in a Git repository, just like your code. While this may seem limiting at first, it can offer some distinct advantages.
 
-### Code and Content Live Together
+### Content is Portable
 
-A traditional CMS will store content in a database, or in files on the webserver where the code is running. Migrating one of these websites to a new server, or adopting a modern development process where developers work on a local copy of the website, requires copying this content to the new environment. A static site in a repository, on the other hand, contains both code and content together, so anybody with a copy of the codebase also has all of the website’s content.
+A traditional CMS will store content in a database, or in files on the webserver where the code is running. Migrating one of these websites to a new server, or adopting a modern development process where developers work on a local copy of the website, requires copying this content to the new environment.
+
+Storing a site's content in Git makes it easy to copy and share with everyone who needs access to it. It's also easy to merge changes from multiple users &mdash; something that can not easily be done with multiple copies of a database or un-versioned files.
+
 
 ### Access Full Content History and Recover Changes
 
