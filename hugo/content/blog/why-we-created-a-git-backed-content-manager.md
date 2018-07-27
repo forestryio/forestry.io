@@ -1,7 +1,7 @@
 ---
 title: Why We Created a Git-Backed Content Manager
 description: ''
-date: 2018-07-27 03:31:20 -1100
+date: 2018-07-27 14:31:20 +0000
 authors: []
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -94,22 +94,23 @@ Since all changes are recorded in the commit history, it’s also possible to re
 
 With a static site, both developers and content editors follow the same workflow to make updates to the site. Because code and content live together, and updates are deployed via an automatic process, both code and content are updated by committing changes to the git repo. Contrast this with a traditional CMS, where code may be updated by committing to the site’s repository, but content changes are made by logging in to the CMS backend and saving changes to a database.
 
-Forestry offers a content management interface that will feel familiar to users of a traditional CMS, but it functions quite differently when it’s time to save your changes. **Forestry commits the modified content files to your git repository**. Our aim is to assist users with editing content by providing rich and intuitive UI options, but all of your site’s content can still be edited outside of Forestry’s editor. Even if one user edits files in Forestry and the other edits files in their text editor, both users are doing fundamentally the same thing: updating files and committing them to the git repository.
+Forestry offers a content management interface that will feel familiar to users of a traditional CMS, but it functions quite differently when it’s time to save your changes. **Forestry commits the modified content files to your git repository**. All of your site’s content can still be edited outside of Forestry by following the same workflow of committing the changes to the repo. Even if one user edits files in Forestry and the other edits files in their text editor, both users are doing fundamentally the same thing.
 
+## Content Management That Lets You Work the Way You Want
 
-
-
-
-
+Forestry doesn't require you to make compromises about how your content is managed. Our aim is to assist users with creating and editing content by providing rich and intuitive UI options. By integrating git into the content management workflow, we gain all the benefits of version control applied to a site's content while also making it easy to include other options for updating content. Whether you have users who prefer to update markdown files with a standard text editor, or you have an automated system that contributes machine-generated content to your repository, Forestry can work alongside any of these options.
 
 
 
 ## Developer Tip: Filter Out Forestry Commits From Git Log
 
+One thing that developers may not like about having content in version control is that content updates can clutter up the commit history. A solution I've found to filter out commits from Forestry is to use `git log`'s `--invert-grep` flag to filter out commits that have Forestry's commit message:
 
-    git log --invert-grep --grep="Update from Forestry.io"
+```
+git log --invert-grep --grep="Update from Forestry.io"
+```
 
-I recommend aliasing this command to something shorter, like `devlog`
+I recommend aliasing this command to something shorter, like `devlog`, if you plan to use it frequently.
 
 
 
