@@ -116,7 +116,7 @@ Forestry offers a content management interface that will feel familiar to users 
 
 ## Content Management That Lets You Work the Way You Want
 
-Forestry doesn't require you to make compromises about how your content is managed. Our aim is to assist users with creating and editing content by providing rich and intuitive UI options. By integrating Git into the content management workflow, we gain all the benefits of version control applied to a site's content while also making it easy to include other options for updating content. Whether you have users who prefer to update markdown files with a standard text editor, or you have an automated system that contributes machine-generated content to your repository, Forestry can work alongside any of these options.
+Forestry doesn't require you to make compromises about how your content is managed, or which tools you use. Our aim is to assist users with creating and editing content by providing rich and intuitive UI options. By integrating Git into the content management workflow, we gain all the benefits of version control applied to a site's content while also making it easy to include other options for updating content. Whether you have users who prefer to update markdown files with a standard text editor, or you have an automated system that contributes machine-generated content to your repository, Forestry can work alongside any of these options.
 
 
 
