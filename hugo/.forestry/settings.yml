@@ -31,7 +31,7 @@ sections:
   match: "**/*"
 - type: directory
   label: Changelog
-  path: hugo/contents/docs/changelog
+  path: hugo/content/docs/changelog
   match: "*"
   create: all
   templates:
