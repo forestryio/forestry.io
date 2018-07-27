@@ -3,7 +3,7 @@ title: Config Files
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2018-07-25 00:00:00 -0400
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -111,97 +111,13 @@ This allows you to configure the version of Hugo your site uses. This is limited
 
 ---
 
-**Sections** _(Hugo only)_ `sections:` `Array`
+**Content Sections** `sections:` `Array`
 
-**Collections** _(Jekyll only)_ `collections:` `Array`
+This setting allows you to tell Forestry which parts of your site contain editable content files.
 
-This setting allows you to control the way users are able to edit your different content sections.
+[View the full Content Section documentation](/docs/settings/content-sections)
 
-{{% warning %}}
-Currently, Hugo sites use the `sections` parameter for this information, and Jekyll sites use `collections`.
-<br /><br />
-As we move toward consistency in configuration and app behavior, these settings will likely converge into a single parameter, but make note of the difference for now.
-{{% /warning %}}
-
-## Section/Collection Options
-
-_Sidebar Order_
-
-Sections/Collections will appear in the sidebar in the same order they are defined in your `sections`/`collections` section.
-
----
-
-**Path**
-
-This option identifies the path to the collection you intend to configure. Note that this should be the full path from the root of your site, so a Hugo section of `posts` for example would have a path of `content/posts`.
-
-{{% tip %}}
-Currently, you can only configure content sections that already exist in your file structure. Defining new sections/collections that do not exist in your project will have no effect.
-{{% /tip %}}
-
-Example:
-
-    collections:
-    - path: _posts
----
-
-**Default Front Matter Template** `default_front_matter_template:` `string`
-
-The Front Matter Template applied to any pages without a Front Matter Template. Set the value to the file name of the Front Matter Template without the file extension, or `none` to remove the current template from the section.
-
-Example:
-
-    sections:
-    - path: content/posts
-      default_front_matter_template: example-template
----
-
-**Label** `label:` `string`
-
-Change the text that appears for this section in the content navigation sidebar.
-
-Example:
-
-    collections:
-    - path: _posts
-      label: News
----
-
-**Hidden** `hidden:` `boolean`
-
-When `true`, this section will not be visible in the content navigation sidebar.
-
-Example:
-
-    sections:
-    - path: content/posts
-      hidden: true
----
-
-**Create** `create:` `all|none`
-
-When this is set to `all`, content can be added normally. When set to `none`, existing content items can be edited, but no new ones can be created.
-
-Example:
-
-    collections:
-    - path: _posts
-      create: all
----
-
-**Templates** `templates:` `Array`
-
-Pass in an array of Front Matter Template slugs (without their extension) to limit the available Front Matter Templates when creating a new content item in this section. The templates will be shown in the dropdown in the same order they are listed here, with the first template being the default selection. If only one template is defined, the template selection dropdown will not appear when adding new content.
-
-Example:
-
-    sections:
-    - path: content/posts
-      templates:
-      - post
-      - newsletter
-
----
+{{% markdownpartial "docs/section-config-attribute-table.md" %}}
 
 ## Front Matter Templates
 
