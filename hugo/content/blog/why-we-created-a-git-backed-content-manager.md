@@ -92,6 +92,18 @@ With Git, every change is tracked and can be examined by viewing the **commit hi
 
 Since all changes are recorded in the commit history, it’s also possible to revert changes and recover anything that was deleted by grabbing the old content from a previous commit.
 
+{{% tip "Time Traveling With Git" %}}
+When the entire site is stored in the same Git repo, it is easy to see what the site looked like at any point in time. The following commands will clone this website's repository and roll it back to the way it looked 6 months ago:
+
+```
+git clone https://github.com/forestryio/forestry.io.git forestry-timewarp
+cd forestry-timewarp
+git checkout fd0a4a87afa9954b3ce31ccecdde9328d8bf37bd
+```
+
+You can use this to go as far back into your commit history as you want, all the way to the first commit!
+{{% /tip %}}
+
 ### Unified Workflow
 
 With a static site, both developers and content editors follow the same workflow to make updates to the site. Because code and content live together, and updates are deployed via an automatic process, both code and content are updated by committing changes to the Git repo. Contrast this with a traditional CMS, where code may be updated by committing to the site’s repository, but content changes are made by logging in to the CMS backend and saving changes to a database.
