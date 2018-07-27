@@ -30,10 +30,10 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  label: Changelog
   path: hugo/content/docs/changelog
-  match: "*"
+  label: Changelog
   create: all
+  match: "*"
   templates:
   - changelog
 upload_dir: hugo/static/uploads
