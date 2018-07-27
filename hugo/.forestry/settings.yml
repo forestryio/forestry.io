@@ -18,7 +18,7 @@ sections:
   path: hugo/content/docs
   label: Docs
   create: all
-  match: "{[^{changelog/}{faqs/}]**/*,*}"
+  match: "{[^{changelog}{faq}]**/*,*}"
 - type: directory
   path: hugo/content/showcase
   label: Showcase
