@@ -23,12 +23,12 @@ draft: true
 ---
 Version control systems are tools for managing software by tracking all changes that occur to the code. Any code project will benefit greatly from using version control, and any developer worth her salt should be wary of a codebase that does not use version control. Version control makes it easy to monitor changes to code, track down bugs, and manage releases.
 
-Forestry’s content manager is supported by git, one of the most popular version control systems available today. Forestry saves changes to your content by **committing these changes into your git repository**. This is what we mean when we say Forestry is a **git-backed content manager**. In this article, I will explore why using version control to manage your content can offer many of the same benefits as using it for your code.
+Forestry’s content manager is supported by Git, one of the most popular version control systems available today. Forestry saves changes to your content by **committing these changes into your Git repository**. This is what we mean when we say Forestry is a **Git-backed content manager**. In this article, I will explore why using version control to manage your content can offer many of the same benefits as using it for your code.
  
 
 ## An Evolutionary History of Static Sites
 
-To better understand how we arrived at the idea of creating a git-backed content manager, let’s look briefly at how modern static sites evolved.
+To better understand how we arrived at the idea of creating a Git-backed content manager, let’s look briefly at how modern static sites evolved.
 
 ### Everything is HTML
 
@@ -73,12 +73,12 @@ A static site generator borrows the lessons learned by these dynamic CMS platfor
 
 ### Everything Lives in Git
 
-Automatic deployment is a crucial part of efficiently maintaining a static site, and the easiest way to take advantage of the readily available deployment tools is to **put your site in a git repository**. This makes it simple for deployment tools to retrieve your code in order to build your static site and deploy it to your webserver.
+Automatic deployment is a crucial part of efficiently maintaining a static site, and the easiest way to take advantage of the readily available deployment tools is to **put your site in a Git repository**. This makes it simple for deployment tools to retrieve your code in order to build your static site and deploy it to your webserver.
 
 
 ## Storing Content in Version Control
 
-Because a static site doesn’t run any code on the webserver, only static files, content **must** be updated by committing changes to the site’s git repository. While this may seem llimiting at first, it can offer some distinct advantages.
+Because a static site doesn’t run any code on the webserver, only static files, content **must** be updated by committing changes to the site’s Git repository. While this may seem llimiting at first, it can offer some distinct advantages.
 
 ### Code and Content Live Together
 
@@ -86,19 +86,19 @@ A traditional CMS will store content in a database, or in files on the webserver
 
 ### Access Full Content History and Recover Changes
 
-With git, every change is tracked and can be examined by viewing the **commit history**. This is great for seeing the changes to your content over time, and will even let you see which user made a given change.
+With Git, every change is tracked and can be examined by viewing the **commit history**. This is great for seeing the changes to your content over time, and will even let you see which user made a given change.
 
 Since all changes are recorded in the commit history, it’s also possible to revert changes and recover anything that was deleted by grabbing the old content from a previous commit.
 
 ### Unified Workflow
 
-With a static site, both developers and content editors follow the same workflow to make updates to the site. Because code and content live together, and updates are deployed via an automatic process, both code and content are updated by committing changes to the git repo. Contrast this with a traditional CMS, where code may be updated by committing to the site’s repository, but content changes are made by logging in to the CMS backend and saving changes to a database.
+With a static site, both developers and content editors follow the same workflow to make updates to the site. Because code and content live together, and updates are deployed via an automatic process, both code and content are updated by committing changes to the Git repo. Contrast this with a traditional CMS, where code may be updated by committing to the site’s repository, but content changes are made by logging in to the CMS backend and saving changes to a database.
 
-Forestry offers a content management interface that will feel familiar to users of a traditional CMS, but it functions quite differently when it’s time to save your changes. **Forestry commits the modified content files to your git repository**. All of your site’s content can still be edited outside of Forestry by following the same workflow of committing the changes to the repo. Even if one user edits files in Forestry and the other edits files in their text editor, both users are doing fundamentally the same thing.
+Forestry offers a content management interface that will feel familiar to users of a traditional CMS, but it functions quite differently when it’s time to save your changes. **Forestry commits the modified content files to your Git repository**. All of your site’s content can still be edited outside of Forestry by following the same workflow of committing the changes to the repo. Even if one user edits files in Forestry and the other edits files in their text editor, both users are doing fundamentally the same thing.
 
 ## Content Management That Lets You Work the Way You Want
 
-Forestry doesn't require you to make compromises about how your content is managed. Our aim is to assist users with creating and editing content by providing rich and intuitive UI options. By integrating git into the content management workflow, we gain all the benefits of version control applied to a site's content while also making it easy to include other options for updating content. Whether you have users who prefer to update markdown files with a standard text editor, or you have an automated system that contributes machine-generated content to your repository, Forestry can work alongside any of these options.
+Forestry doesn't require you to make compromises about how your content is managed. Our aim is to assist users with creating and editing content by providing rich and intuitive UI options. By integrating Git into the content management workflow, we gain all the benefits of version control applied to a site's content while also making it easy to include other options for updating content. Whether you have users who prefer to update markdown files with a standard text editor, or you have an automated system that contributes machine-generated content to your repository, Forestry can work alongside any of these options.
 
 
 
@@ -112,7 +112,10 @@ git log --invert-grep --grep="Update from Forestry.io"
 
 I recommend aliasing this command to something shorter, like `devlog`, if you plan to use it frequently.
 
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at setting up multilingual sites with Forestry. </p><p><strong>Last week:</strong> We showed you how to use Forestry's Blocks feature to <a href="https://forestry.io/blog/form-builder-with-formspree-forestry-blocks/">create a form builder.</a></p></div>
 
+<!--
+## Have something to add?
 
-
-
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17471333">Discuss on Hacker News</a>
+-->
