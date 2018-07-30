@@ -9,6 +9,7 @@ import Nav from "./imports/nav"
 import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
 import Sticky from "./imports/sticky"
+import AjaxForm from "./imports/ajaxForm"
 
 /**
  * Don't fire application logic
@@ -28,25 +29,29 @@ contentLoaded().then(() => {
   /**
    * Enable search
    */
-  if (isHome) {
-    new Search(
-      process.env.ALGOLIA_APP_ID,
-      process.env.ALGOLIA_SEARCH_KEY,
-      "dist"
-    )
-  } else if (isDocs) {
-    new Search(
-      process.env.ALGOLIA_APP_ID,
-      process.env.ALGOLIA_SEARCH_KEY,
-      "docs"
-    )
-  } else if (isBlog) {
-    console.log(isBlog)
-    new Search(
-      process.env.ALGOLIA_APP_ID,
-      process.env.ALGOLIA_SEARCH_KEY,
-      "blog"
-    )
+  try {
+    if (isHome) {
+      new Search(
+        process.env.ALGOLIA_APP_ID,
+        process.env.ALGOLIA_SEARCH_KEY,
+        "dist"
+      )
+    } else if (isDocs) {
+      new Search(
+        process.env.ALGOLIA_APP_ID,
+        process.env.ALGOLIA_SEARCH_KEY,
+        "docs"
+      )
+    } else if (isBlog) {
+      console.log(isBlog)
+      new Search(
+        process.env.ALGOLIA_APP_ID,
+        process.env.ALGOLIA_SEARCH_KEY,
+        "blog"
+      )
+    }
+  } catch (err) {
+    console.warn(err)
   }
 
   if (isPricing) {
@@ -99,4 +104,6 @@ contentLoaded().then(() => {
    * Enable lightboxes for images
    */
   const lightBoxes = new LightBox([".md-content img"])
+
+  const ajaxForm = new AjaxForm("")
 })
