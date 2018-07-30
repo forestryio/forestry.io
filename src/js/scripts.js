@@ -105,5 +105,10 @@ contentLoaded().then(() => {
    */
   const lightBoxes = new LightBox([".md-content img"])
 
-  const ajaxForm = new AjaxForm("")
+  let formspreeForms = document.querySelectorAll(
+    'form[action^="https://formspree.io"]'
+  )
+  for (let i = 0; i < formspreeForms.length; i++) {
+    new AjaxForm(formspreeForms[i])
+  }
 })
