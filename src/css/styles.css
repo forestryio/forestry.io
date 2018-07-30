@@ -3,6 +3,7 @@
 @import "base/typography.css";
 @import "base/base.css";
 @import "base/layout.css";
+@import "base/animations.css";
 
 /* Components */
 @import "components/button.css";

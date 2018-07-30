@@ -45,3 +45,37 @@
   justify-content: center;
   margin: 0 auto;
 }
+
+.form--submitting {
+  opacity: 0.5;
+  position: relative;
+}
+.form--submitting:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid $color-brand;
+  border-right-color: transparent;
+  animation: rotateCW 0.5s linear infinite;
+  position: absolute;
+  top: calc(40% - 15px);
+  left: calc(40% - 15px);
+}
+.form--submit-fail:before {
+  content: attr(data-error);
+  display: block;
+  margin: 5px 0;
+  color: $color-error;
+}
+.form--submit-success * {
+  display: none !important;
+}
+.form--submit-success:before {
+  display: block !important;
+  content: attr(data-message);
+  margin: 10px 0;
+  color: $color-brand;
+  font-size: 1.4em;
+}
