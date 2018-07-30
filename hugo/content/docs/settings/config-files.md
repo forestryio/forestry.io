@@ -38,12 +38,10 @@ The following is an example of `settings.yml` for a Hugo site.
       create: all
       # Imported pages without a FMT assigned
       # will automatically use "pages"
-      default_front_matter_template: pages
 
     - path: content/posts
       label: Posts
       create: all
-      default_front_matter_template: posts
       # use the "templates" parameter to control
       # which templates can be used for new content
       # in this section. First listed template
