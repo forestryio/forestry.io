@@ -24,7 +24,7 @@ aliases: []
 menu: []
 
 ---
-We're happy to announce some new features today! ☀️
+I'm happy to announce some new features today! ☀️
 
 Long awaited, our Snippets feature is finally here. Our Hugo users felt especially strong about using Hugo's powerful Shortcodes feature in Forestry. You can now add HTML snippets to your Markdown Editor whether you're using Hugo or Jekyll.
 
