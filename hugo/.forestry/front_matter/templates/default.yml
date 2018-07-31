@@ -161,6 +161,7 @@ pages:
 - hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/introducing-forestry-config-files.md
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
+- hugo/content/blog/snippets-custom-content-sections-and-more.md
 - hugo/content/blog/forestry-gitlab.md
 - hugo/content/blog/introducing-media-management.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md
