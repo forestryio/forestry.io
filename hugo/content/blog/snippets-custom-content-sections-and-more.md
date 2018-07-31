@@ -27,7 +27,7 @@ We're happy to announce some new features today! ☀️
 
 Long awaited, our Snippets feature is finally here. Our Hugo users felt especially strong about using Hugo's powerful Shortcodes feature in Forestry. You can now add HTML snippets to your Markdown Editor whether you're using Hugo or Jekyll.
 
-Moreover, the team has continued to improve the sidebar. We added advanced configuration for the content section allowing you to choose the structure of your content in Forestry. Lastly, the new site/branch indicator makes it easier to always know what you’re working on.
+Moreover, the team has continued to improve the sidebar. We added advanced configuration of content sections so you can control the structure of your content in Forestry. Lastly, the new site/branch indicator makes it easier to always know what you’re working on.
 
 ***
 
