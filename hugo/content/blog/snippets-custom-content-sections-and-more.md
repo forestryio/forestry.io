@@ -21,9 +21,11 @@ menu: []
 draft: true
 
 ---
-Long awaited, our Snippets feature is finally here. Especially, our Hugo users felt strongly about using Hugo's powerful Shortcodes feature in Forestry. We finally added it and made it available to our Jekyll users as well. You can now add HTML snippets to your Markdown Editor whether you're using Hugo or Jekyll.
- 
-Moreover, the team is still working on the sidebar adding a new advanced configuration for the content section allowing you to pick and choose the structure of how your content will be made available to you in Forestry.
+We're happy to announce these new features today! ☀️
+
+Long awaited, our Snippets feature is finally here. Especially, our Hugo users felt strongly about using Hugo's powerful Shortcodes feature in Forestry. We made it available to our Jekyll users as well. You can now add HTML snippets to your Markdown Editor whether you're using Hugo or Jekyll.
+
+Moreover, the team has continued to improve the sidebar, adding a new advanced configuration for the content section allowing you to choose the structure of how your content will be made available in Forestry.
 
 Lastly, an indicator to show you what site and branch you're on makes it clear what you're currently working on.
 
@@ -31,7 +33,7 @@ Read more and get the links below.
 
 ***
 
-## Snippets 
+## Snippets
 
 You can now add custom HTML snippets by adding a `.snippet` file to `.forestry/snippets/` in your repository. Have a look at our [tip snippet](https://github.com/forestryio/forestry.io/blob/master/hugo/.forestry/snippets/tip.snippet) and the [docs](https://forestry.io/docs/settings/snippets/) to implement your own. We've still got upgrades to come for this feature so stay tuned.
 
@@ -49,7 +51,7 @@ Over the past few weeks `settings.yml` has become a very powerful feature in For
 
 ## Site and Branch at-a-glance
 
-Working on different sites with multiple branches that all live in Forestry just got a lot easier to navigate. Each site now features the site name and branch in the top of your side bar. No more clicking around, it's now all out in the open.  
+Working on different sites with multiple branches that all live in Forestry just got a lot easier to navigate. Each site now features the site name and branch in the top of your side bar. No more clicking around, it's now all out in the open.
 
 ![](/uploads/2018/07/branch-and-repo.png)
 
