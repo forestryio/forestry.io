@@ -22,7 +22,6 @@ export default class AjaxForm {
     this.form.classList.remove("form--submit-fail")
     this.form.classList.remove("form--submit-success")
     this.form.dataset.error = ""
-    this.form.dataset.message = ""
 
     // send submission to formspree
     let formData = new FormData(this.form)
@@ -35,7 +34,6 @@ export default class AjaxForm {
     })
       .then((response) => {
         // show success state
-        this.form.dataset.message = response.data.success
         this.form.classList.add("form--submit-success")
         this.form.classList.remove("form--submitting")
         this.submitting = false
