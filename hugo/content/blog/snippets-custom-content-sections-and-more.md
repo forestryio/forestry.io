@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 We're happy to announce some new features today! ☀️
@@ -53,7 +52,7 @@ Curious how we use it? We pulled out our Changelog files as a separate Content S
 
 ## Site and Branch at-a-glance
 
-Working on different sites with multiple branches that all live in Forestry? They just got a lot easier to navigate. Each site now features the site name and branch in the top of your side bar. No more clicking around, it's now all out in the open.
+Working on different sites with multiple branches that all live in Forestry? They just got a lot easier to navigate. Each site now features the site name and branch in the top of your sidebar. No more clicking around, it's now all out in the open.
 
 ![](/uploads/2018/07/branch-and-repo.png)
 
