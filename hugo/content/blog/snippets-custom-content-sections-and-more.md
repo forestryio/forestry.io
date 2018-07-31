@@ -32,7 +32,7 @@ Moreover, the team has continued to improve the sidebar. We added advanced confi
 
 ***
 
-## Snippets
+## Snippets ✂️
 
 You can now add custom HTML snippets by adding a `.snippet` file to `.forestry/snippets/` in your repository. Have a look at our [tip snippet](https://github.com/forestryio/forestry.io/blob/master/hugo/.forestry/snippets/tip.snippet) and the [docs](https://forestry.io/docs/settings/snippets/) to implement your own.
 
@@ -40,7 +40,7 @@ You can now add custom HTML snippets by adding a `.snippet` file to `.forestry/s
 
 ***
 
-## Custom Content Sections
+## Custom Content Sections 🌈
 
 Over the past few weeks `settings.yml` has become a very powerful feature in Forestry. Read through [Content Sections](https://forestry.io/docs/settings/content-sections/) to learn how to make the Forestry content manager truly your own. 
 
@@ -50,7 +50,7 @@ Curious how we use it? We pulled out our Changelog files as a separate Content S
 
 ***
 
-## Site and Branch at-a-glance
+## Site and Branch at-a-glance 👀
 
 Working on different sites with multiple branches that all live in Forestry? They just got a lot easier to navigate. Each site now features the site name and branch in the top of your sidebar. No more clicking around, it's now all out in the open.
 
