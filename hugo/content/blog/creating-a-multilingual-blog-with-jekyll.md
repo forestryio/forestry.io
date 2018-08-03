@@ -32,7 +32,7 @@ Jekyll doesn’t have support for multi-language sites baked in, but there are m
 The example site I created for this post uses the popular Hyde theme, and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications.
 
 {{% tip %}}
-I used Google Translate for the Spanish content. <em title=”Don’t hate me.”>No me odies.</em>
+I used Google Translate for the Spanish content. <em title="Don&rsquo;t hate me.">No me odies.</em>
 {{% /tip %}}
 
 ### Separate Languages By Path
