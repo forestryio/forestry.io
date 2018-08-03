@@ -150,7 +150,7 @@ With the following:
 
 Our language selector looks much nicer now!
 
-To translate text used in layout files, I’m using a `translations.yml` file to store translations of arbitrary text that we might want to use in our layouts. Our translation files organizes translations by a specified identifier, as opposed to looking them up based on an English phrase. This allows us to change the English text as well as the translations without breaking anything.
+To translate text used in layout files, I’m using a `translations.yml` file to store translations of arbitrary text that we might want to use in our layouts. Our translations file organizes translations by a specified identifier, as opposed to looking them up based on an English phrase. This allows us to change the English text as well as the translations without breaking anything.
 
 __data/translations.yml_
 
@@ -204,7 +204,7 @@ It’s worth noting that I’ve also adapted Hyde’s original `index.html` home
 
 ### Replace Homepage
 
-Since we put all of our english content inside of `/en/`, When a user visits the homepage, the site doesn’t know which language to display. We can address this by adding a splash page to the homepage where a user can select their language.
+Since we put all of our english content inside of `/en/`, when a user visits the homepage, the site doesn’t know which language to display. We can address this by adding a splash page to the homepage where a user can select their language.
 
 The splash page loops over the languages defined in `_data/languages.yml` and displays a link to the section.
 
@@ -227,7 +227,7 @@ After first importing our site, we are faced with a default configuration for ou
 
 Once the existing sections are removed, we can click **Add Section** to open the section creation modal. All of our sections will be of type **directory**. For our English posts, we can use a label of **English - Posts**. Under **path**, we will enter the path to our content. In this case, we will enter `en/_posts` to only display content located in that directory.
 
-The **match** option takes a glob which can be used to filter which files and subdirectories are identified as content. For our purposes the default of `\*\*/\*` will work fine to match everything in this directory.
+The **match** option takes a glob which can be used to filter which files and subdirectories are identified as content. For our purposes the default of `**/*` will work fine to match everything in this directory.
 
 We can use the default values for **create**, **new file extension**, and **available templates**. Check out the [documentation on sidebar configuration](https://forestry.io/docs/settings/content-sections/) to learn more about what these do.
 
