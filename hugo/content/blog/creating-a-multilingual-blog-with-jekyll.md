@@ -242,3 +242,11 @@ We now have a customized editing experience for editors and translators!
 ## Static Makes it Easy
 
 Creating an effective multilingual site can be challenging, but using static sites and Forestry's UI can go a long way to making the translation process as streamlined as possible. I highly recommend you experiment with what's possible using custom paths and Forestry's configurable content sections!
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We discussed <a href="https://forestry.io/blog/why-we-created-a-git-backed-content-manager/">why we like storing content in Git.</a></p></div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17627221">Discuss on Hacker News</a>
+-->
