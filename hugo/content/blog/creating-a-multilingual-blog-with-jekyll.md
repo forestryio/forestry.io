@@ -29,10 +29,10 @@ In this post, I will explore how to set up a Jekyll site to support multiple lan
 
 Jekyll doesn’t have support for multi-language sites baked in, but there are many solutions out there that can make it happen. For this post, I wanted to find a solution that was simple to understand and didn’t require any plugins. My favorite solution came from [this blog post](http://chocanto.me/2016/04/16/jekyll-multilingual.html) by Anthony Granger. His strategy involves having a separate path for each language’s content, and using a couple front matter values to tie things together.
 
-The example site I created for this post uses the popular Hyde theme, and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications.
+The [example site](https://github.com/dwalkr/jekyll-multilingual) I created for this post uses the popular Hyde theme, and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications.
 
 {{% tip %}}
-I used Google Translate for the Spanish content. <em title="Don&rsquo;t hate me.">No me odies.</em>
+I used Google Translate for the Spanish content. <em title="Don’t hate me.">No me odies.</em>
 {{% /tip %}}
 
 ### Separate Languages By Path
@@ -219,6 +219,20 @@ To access the sidebar configuration, click on **Settings** in the sidebar and na
 
 After first importing our site, we are faced with a default configuration for our posts and pages. We will be removing these and replacing them with our language-scoped sections.
 
-Once the existing sections are removed, we can click **Add Section** to open the section creation modal. All of our sections will be of type **Directory**. For our English posts, we can use a label of **English - Posts**. Under **Path**, we will enter the path to our content. In this case, we will enter `en/_posts` to only display content located in that directory.
+Once the existing sections are removed, we can click **Add Section** to open the section creation modal. All of our sections will be of type **directory**. For our English posts, we can use a label of **English - Posts**. Under **path**, we will enter the path to our content. In this case, we will enter `en/_posts` to only display content located in that directory.
 
-The **match** option takes a glob which can be used to filter which files and subdirectories are identified as content. For our purposes the default of `\\\\\\\*\\\\\\\*/\\\\\\\*` will work fine to match everything in this directory.
+The **match** option takes a glob which can be used to filter which files and subdirectories are identified as content. For our purposes the default of `\*\*/\*` will work fine to match everything in this directory.
+
+We can use the default values for **create**, **new file extension**, and **available templates**. Check out the [documentation on sidebar configuration](https://forestry.io/docs/settings/content-sections/) to learn more about what these do.
+
+Once our English section is created, we can do the same for Spanish. Create a new section and set the **path** to `es/_posts` and the label to **Español - Posts**.
+
+Once your sections are configured, hit the **Save** button and then re-import your site from the **Repository** tab. You should now see the two content sections you just configured in your sidebar:
+
+![](/uploads/2018/08/sections-ui.png)
+
+We now have a customized editing experience for editors and translators!
+
+## Static Makes it Easy
+
+Creating an effective multilingual site can be challenging, but using static sites and Forestry's UI can go a long way to making the translation process as streamlined as possible. I highly recommend you experiment with what's possible using custom paths and Forestry's configurable content sections!
