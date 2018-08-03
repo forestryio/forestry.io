@@ -33,7 +33,7 @@ In this post, I will explore how to set up a Jekyll site to support multiple lan
 
 Jekyll doesn’t have support for multi-language sites baked in, but there are many solutions out there that can make it happen. For this post, I wanted to find a solution that was simple to understand and didn’t require any plugins. My favorite solution came from [this blog post](http://chocanto.me/2016/04/16/jekyll-multilingual.html) by Anthony Granger. His strategy involves having a separate path for each language’s content, and using a couple front matter values to tie things together.
 
-The [example site](https://github.com/dwalkr/jekyll-multilingual) I created for this post uses the popular Hyde theme, and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications.
+The example site I created for this post uses the popular Hyde theme, and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications. Check out the demo [here](https://condescending-bose-e6c590.netlify.com/en/) and view the source code on [Github](https://github.com/dwalkr/jekyll-multilingual)
 
 {{% tip %}}
 I used Google Translate for the Spanish content. <em title="Don’t hate me.">No me odies.</em>
@@ -214,6 +214,8 @@ The splash page loops over the languages defined in `_data/languages.yml` and di
     <li><a href="{{site.baseurl}}{{lang[0]}}">{{language.icon}} {{ language.label }} ({{ language.code }})</a></li>
     {% endfor %}
     </ul>
+
+[This is what it looks like!](https://condescending-bose-e6c590.netlify.com/)
 
 ## Setting Up The Editing Interface in Forestry
 
