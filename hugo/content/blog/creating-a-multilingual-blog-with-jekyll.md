@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Reaching an international audience means having international content. Having your content available in multiple languages is great for maximizing your potential audience. On top of that, ensuring your multilingual site’s content is easy to edit is especially important, to enable translators without development experience to work effectively and reduce the incidence of translation errors.
