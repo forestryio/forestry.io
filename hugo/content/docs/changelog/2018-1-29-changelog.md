@@ -23,7 +23,7 @@ weight: ''
 menu:
   changelog:
     parent: Changelog
-    weight: 5
+    weight: 99
 
 ---
 ### Bug Fixes

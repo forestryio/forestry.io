@@ -1,9 +1,11 @@
 ---
 title: 2018/08/06 Changelog
 date: 2018-08-06 08:07:22 -1100
+publishdate: 2018-08-06 08:07:22 -1100
 aliases: []
 type: ''
-authors: []
+authors:
+- team forestry
 publishdate: ''
 expirydate: ''
 layout: ''
@@ -18,11 +20,15 @@ cta:
   calls_to_action: []
 weight: ''
 images: []
+menu:
+  changelog:
+    weight: 94
+    parent: Changelog
 
 ---
 It has been a while since we've updated the changelog. Here's a shortlist of some of the more recent changes.
 
-## Features
+### Features
 
 * [Section Configuration](https://forestry.io/docs/settings/content-sections/ "Content Sections")
 * [Snippet Support](https://forestry.io/blog/snippets-custom-content-sections-and-more/#snippets "Blog")

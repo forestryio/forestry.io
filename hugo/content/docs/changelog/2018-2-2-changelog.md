@@ -22,7 +22,7 @@ aliases: []
 menu:
   changelog:
     parent: Changelog
-    weight: 4
+    weight: 98
 
 ---
 ### Bug Fixes
