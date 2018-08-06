@@ -99,3 +99,5 @@ fields:
   type: image_gallery
   hidden: false
   default: ''
+pages:
+- hugo/content/docs/changelog/2018-08-06-changelog.md
