@@ -1,6 +1,9 @@
 dl.attribute-list dt {
   font-style: italic;
 }
+dl.attribute-list dt code {
+  font-style: normal;
+}
 @media (max-width: 767px) {
   dl.attribute-list dd {
     margin-left: 2.4em;

@@ -30,6 +30,7 @@ The `type` parameter is used by Forestry to determine how to handle the files de
 {{< dl >}}
 {{% dt %}}
 Directory
+<br />`directory`
 {{% /dt %}}
 {{% dd %}}
 `directory` is the default type for sidebar sections. A `directory` section will search for content files according to the `path` and `match` configuration. 
@@ -37,6 +38,7 @@ Directory
 
 {{% dt %}}
 Document
+<br />`document`
 {{% /dt %}}
 {{% dd %}}
 A `document` section can be used to allow a single document to be edited. Use the `path` option to specify the path to the file you want to be edited.
@@ -44,6 +46,7 @@ A `document` section can be used to allow a single document to be edited. Use th
 
 {{% dt %}}
 Heading
+<br />`heading`
 {{% /dt %}}
 {{% dd %}}
 The `heading` section type can be used to separate your sidebar sections into logical groups. A section of type `heading` only needs to specify a label for the heading.
@@ -51,6 +54,8 @@ The `heading` section type can be used to separate your sidebar sections into lo
 
 {{% dt %}}
 Jekyll Pages &amp; Jekyll Posts
+<br />`jekyll-pages`
+<br />`jekyll-posts`
 {{% /dt %}}
 {{% dd %}}
 The other two options are `jekyll-pages` and `jekyll-posts`, which will follow special rules for Jekyll's [page](https://jekyllrb.com/docs/pages/) and [post](https://jekyllrb.com/docs/posts/) content types.
@@ -103,6 +108,14 @@ The `new_doc_ext` parameter lets you specify the extension to be used for new fi
 Jekyll site with pages, posts, and a custom collection:
 
     sections:
+
+    - type: document
+      label: Help
+      path: README.md
+    
+    - type: heading
+      label: Content
+
     - type: jekyll-pages
       label: Pages
     
@@ -118,14 +131,21 @@ Jekyll site with pages, posts, and a custom collection:
 Multilingual Hugo Blog:
 
     sections:
+
+    - type: heading
+      label: English
+
     - type: directory
       path: "content/posts"
       match: "**/*.en.md"
-      label: English
+      label: Posts
       new_doc_ext: ".en.md"
     
+    - type: heading
+      label: Français
+
     - type: directory
       path: "content/posts"
       match: "**/*.fr.md"
-      label: French
+      label: Posts
       new_doc_ext: ".fr.md"
