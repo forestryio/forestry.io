@@ -1,5 +1,5 @@
 ---
-title: Content Sections
+title: Sidebar Configuration
 weight: 1
 publishdate: 2018-07-24 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -15,7 +15,7 @@ You can define which areas (folders) of your site contain editable content files
 
 A content section in Forestry is primarily defined by the path to the folder containing content files, and a glob to match against the contents of that folder.
 
-## Section Configuration
+## Options
 
 {{% markdownpartial "docs/section-config-attribute-table.md" %}}
 
@@ -25,7 +25,37 @@ Sections will appear in the sidebar in the same order they are defined.
 
 ### Type
 
-The `type` parameter is used by Forestry to determine how to handle the files defined in the content section. The default type is `directory`, which will search for content files according to the `path` and `match` configuration. The other two options are `jekyll-pages` and `jekyll-posts`, which will follow special rules for Jekyll's [page](https://jekyllrb.com/docs/pages/) and [post](https://jekyllrb.com/docs/posts/) content types.
+The `type` parameter is used by Forestry to determine how to handle the files defined in the content section. 
+
+{{< dl >}}
+{{% dt %}}
+Directory
+{{% /dt %}}
+{{% dd %}}
+`directory` is the default type for sidebar sections. A `directory` section will search for content files according to the `path` and `match` configuration. 
+{{% /dd %}}
+
+{{% dt %}}
+Document
+{{% /dt %}}
+{{% dd %}}
+A `document` section can be used to allow a single document to be edited. Use the `path` option to specify the path to the file you want to be edited.
+{{% /dd %}}
+
+{{% dt %}}
+Heading
+{{% /dt %}}
+{{% dd %}}
+The `heading` section type can be used to separate your sidebar sections into logical groups. A section of type `heading` only needs to specify a label for the heading.
+{{% /dd %}}
+
+{{% dt %}}
+Jekyll Pages &amp; Jekyll Posts
+{{% /dt %}}
+{{% dd %}}
+The other two options are `jekyll-pages` and `jekyll-posts`, which will follow special rules for Jekyll's [page](https://jekyllrb.com/docs/pages/) and [post](https://jekyllrb.com/docs/posts/) content types.
+{{% /dd %}}
+{{< /dl >}}
 
 {{% warning %}}
 The `jekyll-pages` and `jekyll-posts` section types should only be used with Jekyll sites. Additionally, you can only have one `jekyll-pages` section and one `jekyll-posts` section per site.
