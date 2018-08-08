@@ -38,12 +38,7 @@ fields:
     type: list
     hidden: false
     default: ''
-  hidden: false
-  default: ''
-- name: weight
-  label: Weight
-  type: text
-  hidden: false
+  hidden: true
   default: ''
 pages:
 - hugo/content/docs/changelog/2018-08-08-changelog.md
