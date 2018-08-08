@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: hugo/content
   label: Pages
@@ -15,11 +17,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: hugo/content/docs
-  label: Docs
-  create: all
-  match: "{{editing,faqs,git-sync,guides,hosting,media,quickstart,settings,troubleshooting,welcome}/**/*,*}"
-- type: directory
   path: hugo/content/showcase
   label: Showcase
   create: all
@@ -29,6 +26,13 @@ sections:
   label: Blog
   create: all
   match: "**/*"
+- type: heading
+  label: Documentation
+- type: directory
+  path: hugo/content/docs
+  label: Docs
+  create: all
+  match: "{{editing,faqs,git-sync,guides,hosting,media,quickstart,settings,troubleshooting,welcome}/**/*,*}"
 - type: directory
   path: hugo/content/docs/changelog
   label: Changelog
