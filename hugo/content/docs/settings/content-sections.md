@@ -8,7 +8,7 @@ layout: single
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 3
+    weight: 4
 
 ---
 You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file.

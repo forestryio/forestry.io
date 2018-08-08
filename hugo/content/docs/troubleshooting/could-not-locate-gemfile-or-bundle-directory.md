@@ -25,8 +25,8 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    parent: Troubleshooting
     name: Could not locate Gemfile or .bundle/ directroy
+    parent: Troubleshooting
     weight: 2
 
 ---

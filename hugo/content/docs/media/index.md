@@ -1,7 +1,7 @@
 ---
 title: Storing Media Files
 weight: 1
-date: 2018-05-25 16:00:00 -0400
+date: 2018-05-25 20:00:00 +0000
 menu:
   docs:
     parent: Media

@@ -3,14 +3,14 @@ title: Config Files
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-07-25 00:00:00 -0400
+date: 2018-07-25 04:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 4
+    weight: 5
 
 ---
 Forestry stores the settings and configuration of the CMS for each site in a `.forestry/` folder in your site’s source code. This allows developers to create default configurations that can be shared between multiple sites, and to deliver source code with Forestry CMS pre-configured.

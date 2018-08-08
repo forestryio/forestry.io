@@ -1,14 +1,14 @@
 ---
 title: Cloud Media Storage With Cloudinary
 weight: 3
-date: 2018-05-25 16:00:00 -0400
+date: 2018-05-25 20:00:00 +0000
 menu:
   docs:
+    name: Cloudinary
     parent: Media
     weight: 3
-    name: Cloudinary
----
 
+---
 Forestry supports storing your media in your own [Cloudinary](https://cloudinary.com/) cloud.
 
 ## Linking Your Cloudinary Account

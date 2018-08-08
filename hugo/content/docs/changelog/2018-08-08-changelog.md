@@ -18,6 +18,10 @@ cta:
   calls_to_action: []
 weight: ''
 images: []
+menu:
+  changelog:
+    weight: 1
+    parent: Changelog
 draft: true
 
 ---

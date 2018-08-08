@@ -7,7 +7,7 @@ weight: 1
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -93,4 +93,3 @@ These are the ruby gems that Forestry will bundle with your build by default, wi
 We also support the following software that are not gems, but Forestry will use when building Jekyll sites.
 
 *   pandoc (1.17.1)
-

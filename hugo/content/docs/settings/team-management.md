@@ -5,14 +5,14 @@ title: Team Management
 weight: 6
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-03-28 00:00:00 -0400
+date: 2017-03-28 04:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 5
+    weight: 7
 
 ---
 Currently collaboration with other users can happen in two ways, as Users and as Guests. Users are managed on a per-organization basis and can be assigned [different roles](#user-roles). Guests on the other hand have a predefined permission level and are assigned on a per-site basis. Any site can have up to 3 Guests.

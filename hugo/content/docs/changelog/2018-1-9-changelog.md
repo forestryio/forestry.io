@@ -24,7 +24,7 @@ images:
 menu:
   changelog:
     parent: Changelog
-    weight: 100
+    weight: 8
 
 ---
 ### Bug Fixes

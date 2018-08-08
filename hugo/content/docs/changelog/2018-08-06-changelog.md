@@ -1,12 +1,11 @@
 ---
 title: 2018/08/06 Changelog
-date: 2018-08-06 08:07:22 -1100
-publishdate: 2018-08-06 08:07:22 -1100
+date: 2018-08-06 19:07:22 +0000
+publishdate: ''
 aliases: []
 type: ''
 authors:
 - team forestry
-publishdate: ''
 expirydate: ''
 layout: ''
 categories: []
@@ -22,7 +21,7 @@ weight: ''
 images: []
 menu:
   changelog:
-    weight: 94
+    weight: 2
     parent: Changelog
 
 ---

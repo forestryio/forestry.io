@@ -3,10 +3,10 @@ title: Snippets
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
-publishdate: 2018-07-19 16:00:00 -1100
+publishdate: 2018-07-20 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
-date: 2018-07-20 02:58:59 -1100
+date: 2018-07-20 13:58:59 +0000
 headline: ''
 description: ''
 textline: ''
@@ -22,10 +22,9 @@ aliases: []
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 4
+    weight: 6
 
 ---
-
 **Snippets** in Forestry are pre-defined chunks of text that can be inserted into your content. You can put anything in a snippet that you might normally insert into your content, but they are especially useful in conjunction with [shortcodes](https://gohugo.io/content-management/shortcodes/) in Hugo or certain [Liquid tags](https://jekyllrb.com/docs/plugins/#tags) in Jekyll,
 
 ## Creating Snippets

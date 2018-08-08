@@ -6,7 +6,7 @@ type: pricing
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-12-31 04:00:00 +0000
 faqs:
 - headline: What is Automatic build & deploy?
   textline: Forestry will watch your repo and automatically deploy your site whenever

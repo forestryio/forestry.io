@@ -28,4 +28,3 @@ If you use Gulp, Grunt or another build tool to process your assets, you *must* 
 
 [1]: /docs/editing/previews
 [2]: /docs/hosting/
-
