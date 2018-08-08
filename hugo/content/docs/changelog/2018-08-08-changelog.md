@@ -22,7 +22,6 @@ menu:
   changelog:
     weight: 1
     parent: Changelog
-draft: true
 
 ---
 ## Features
