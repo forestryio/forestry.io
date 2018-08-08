@@ -150,7 +150,6 @@ pages:
 - hugo/content/docs/welcome
 - hugo/content/docs/_index.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
-- hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/building-a-company-component-library.md
@@ -163,6 +162,7 @@ pages:
 - hugo/content/blog/introducing-forestry-config-files.md
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
 - hugo/content/blog/snippets-custom-content-sections-and-more.md
+- hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/blog/forestry-gitlab.md
 - hugo/content/blog/introducing-media-management.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md

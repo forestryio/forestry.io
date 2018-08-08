@@ -100,4 +100,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- hugo/content/docs/changelog/2018-08-08-changelog.md
 - hugo/content/docs/changelog/2018-08-06-changelog.md
