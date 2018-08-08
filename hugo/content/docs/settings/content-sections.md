@@ -3,7 +3,7 @@ title: Sidebar Configuration
 weight: 1
 publishdate: 2018-07-24 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-07-25 04:00:00 +0000
+date: 2018-08-08 04:00:00 +0000
 layout: single
 menu:
   docs:
