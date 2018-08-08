@@ -25,7 +25,7 @@ Sections will appear in the sidebar in the same order they are defined.
 
 ### Type
 
-The `type` parameter is used by Forestry to determine how to handle the files defined in the content section. 
+The `type` parameter is used by Forestry to determine how to handle the files defined in the content section.
 
 {{< dl >}}
 {{% dt %}}
@@ -33,7 +33,7 @@ Directory
 <br />`directory`
 {{% /dt %}}
 {{% dd %}}
-`directory` is the default type for sidebar sections. A `directory` section will search for content files according to the `path` and `match` configuration. 
+`directory` is the default type for sidebar sections. A `directory` section will search for content files according to the `path` and `match` configuration.
 {{% /dd %}}
 
 {{% dt %}}
@@ -49,11 +49,13 @@ Heading
 <br />`heading`
 {{% /dt %}}
 {{% dd %}}
+
+![](/uploads/2018/08/sidebar-headings.png)
 The `heading` section type can be used to separate your sidebar sections into logical groups. A section of type `heading` only needs to specify a label for the heading.
 {{% /dd %}}
 
 {{% dt %}}
-Jekyll Pages &amp; Jekyll Posts
+Jekyll Pages & Jekyll Posts
 <br />`jekyll-pages`
 <br />`jekyll-posts`
 {{% /dt %}}
@@ -80,12 +82,12 @@ The `match` parameter should be a [glob pattern](https://en.wikipedia.org/wiki/G
 
 {{% tip "Example glob patterns" %}}
 
-* `**/*.md`: Match all markdown files
-* `*.md`: Match all markdown files, excluding files in subdirectories
-* `**/*.fr.md`: Match all files with a filename ending in `.fr.md` (useful if you're using Hugo's [filename-based translations](https://gohugo.io/content-management/multilingual/#translation-by-filename))
+* `\*\*/\*.md`: Match all markdown files
+* `\*.md`: Match all markdown files, excluding files in subdirectories
+* `\*\*/\*.fr.md`: Match all files with a filename ending in `.fr.md` (useful if you're using Hugo's [filename-based translations](https://gohugo.io/content-management/multilingual/#translation-by-filename))
   {{% /tip %}}
 
-The default `match` value is `**/*` which will match all files, including any files in subdirectories.
+The default `match` value is `\*\*/\*` which will match all files, including any files in subdirectories.
 
 {{% warning %}}
 You can use the `match` parameter to separate a single directory into multiple content sections, but take care to ensure that no files overlap between sections. This may cause unexpected behavior.
@@ -108,14 +110,14 @@ The `new_doc_ext` parameter lets you specify the extension to be used for new fi
 Jekyll site with pages, posts, and a custom collection:
 
     sections:
-
+    
     - type: document
       label: Help
       path: README.md
     
     - type: heading
       label: Content
-
+    
     - type: jekyll-pages
       label: Pages
     
@@ -131,10 +133,10 @@ Jekyll site with pages, posts, and a custom collection:
 Multilingual Hugo Blog:
 
     sections:
-
+    
     - type: heading
       label: English
-
+    
     - type: directory
       path: "content/posts"
       match: "**/*.en.md"
@@ -143,7 +145,7 @@ Multilingual Hugo Blog:
     
     - type: heading
       label: Français
-
+    
     - type: directory
       path: "content/posts"
       match: "**/*.fr.md"
