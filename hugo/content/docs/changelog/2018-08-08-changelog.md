@@ -28,7 +28,7 @@ draft: true
 ## Features
 
 * **New Section Types:**
-  * **Heading:** Organize your content in the sidebar. 
+  * **Heading:** Organize your content in the sidebar.
 
     ```yaml
     sections:
@@ -51,6 +51,7 @@ draft: true
 ## Bug Fixes
 
 * **Section Configuration:** Fixed bug causing section's to shuffle after saving.
+* **Remote Admin:** Fixed issue preventing users from logging into the Remote Admin.
 
 ## Performance
 
