@@ -144,13 +144,13 @@ pages:
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/why-we-created-a-git-backed-content-manager.md
-- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/docs/faqs
 - hugo/content/docs/git-sync
 - hugo/content/docs/troubleshooting
 - hugo/content/docs/welcome
 - hugo/content/docs/_index.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
+- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/building-a-company-component-library.md

@@ -40,7 +40,7 @@ branch="master"
 engineName="ENGINE_NAME"
 engineVersion="ENGINE_VERSION"
 forkName="FORK_NAME"
-heading="You don't have a Vuepress Project?"
+heading="You don't have a Vuepress Project? No Problem."
 linkText="Import Vuepress Portfolio Theme" %}}
 </div>
 
