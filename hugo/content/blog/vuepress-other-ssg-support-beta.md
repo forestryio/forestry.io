@@ -35,11 +35,11 @@ This is a big announcement for us and we're looking forward to hearing what you 
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
-repo="LINK_TO_GITHUB_REPO"
+repo="https://github.com/Germoe/vuepress-homepage"
 branch="master"
-engineName="ENGINE_NAME"
-engineVersion="ENGINE_VERSION"
-forkName="FORK_NAME"
+engineName="vuepress"
+engineVersion="0.12.0"
+forkName="vuepress-homepage"
 heading="You don't have a Vuepress Project? No Problem."
 linkText="Import Vuepress Portfolio Theme" %}}
 </div>
