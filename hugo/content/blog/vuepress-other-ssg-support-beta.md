@@ -23,29 +23,29 @@ draft: true
 ---
 Support for Vuepress + Other SSGs is here.
 
-This is a big announcement for us and we've been looking forward to making it for quite some time now. So let me walk you through what is new.
+This is a big announcement for us and we've been looking forward to making it for quite some time now. So let me walk you through importing your project in two steps.
 
 ***
 
-## Import your Vuepress or Other Project
+## 1. Import your Vuepress or Other Project
 
-You can now select your Vuepress project in our options when you add a new site. Actually, you can add any Static Site Generator to Forestry now.
+You can now select your Vuepress project in our options when you add a new site. In fact, you can add any project that is using .md or .html fies and edit them in Forestry now.
 
 ![](/uploads/2018/08/import-vuepress.png)
 
 ***
 
-## Configure Your Sidebar
+## 2. Configure Your Sidebar
 
-After your import we'll ask you to configure your sidebar. Simply click the link or go to `Settings` and select the `Sidebar` tab. Check out the [docs]()
+After your import we'll ask you to configure your sidebar. Simply click the link after your import or go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information.
 
 ![](/uploads/2018/08/docs-configuration.png)
 
 ***
 
-## Site and Branch at-a-glance 👀
+## Add Headings and Single Documents to Your Sidebar
 
-Working on different sites with multiple branches that all live in Forestry? They just got a lot easier to navigate. Each site now features the site name and branch in the top of your sidebar. No more clicking around, it's now all out in the open.
+With our latest update we've also included the ability to add section headings such as (`data` or `site`) and single files to your sidebar. 
 
 ![](/uploads/2018/07/branch-and-repo.png)
 
