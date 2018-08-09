@@ -82,12 +82,12 @@ The `match` parameter should be a [glob pattern](https://en.wikipedia.org/wiki/G
 
 {{% tip "Example glob patterns" %}}
 
-* `\*\*/\*.md`: Match all markdown files
-* `\*.md`: Match all markdown files, excluding files in subdirectories
-* `\*\*/\*.fr.md`: Match all files with a filename ending in `.fr.md` (useful if you're using Hugo's [filename-based translations](https://gohugo.io/content-management/multilingual/#translation-by-filename))
+* `**/*.md`: Match all markdown files
+* `*.md`: Match all markdown files, excluding files in subdirectories
+* `**/*.fr.md`: Match all files with a filename ending in `.fr.md` (useful if you're using Hugo's [filename-based translations](https://gohugo.io/content-management/multilingual/#translation-by-filename))
   {{% /tip %}}
 
-The default `match` value is `\*\*/\*` which will match all files, including any files in subdirectories.
+The default `match` value is `**/*` which will match all files, including any files in subdirectories.
 
 {{% warning %}}
 You can use the `match` parameter to separate a single directory into multiple content sections, but take care to ensure that no files overlap between sections. This may cause unexpected behavior.
