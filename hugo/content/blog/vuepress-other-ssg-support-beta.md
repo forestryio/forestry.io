@@ -1,5 +1,5 @@
 ---
-title: Vuepress + Other SSG support [Beta]
+title: Support for Vuepress + Other SSG [Beta]
 description: ''
 date: 2018-08-08 21:36:10 -1100
 authors:
