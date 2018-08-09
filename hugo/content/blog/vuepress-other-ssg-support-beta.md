@@ -52,5 +52,3 @@ With our latest update we've also included the ability to add section headings s
 ![](/uploads/2018/08/sidebar-headings-1.png)
 
 This time more than other times it is important that you give us feedback on what is working for you, what isn't and what features you will need.
-
-🌲🌲🌲

@@ -141,6 +141,7 @@ pages:
 - hugo/content/blog/layout-improvements.md
 - hugo/content/blog/march-27th-service-outage.md
 - hugo/content/blog/the-new-forestry-io.md
+- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/why-we-created-a-git-backed-content-manager.md
@@ -150,7 +151,6 @@ pages:
 - hugo/content/docs/welcome
 - hugo/content/docs/_index.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
-- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/building-a-company-component-library.md
