@@ -150,6 +150,7 @@ pages:
 - hugo/content/docs/welcome
 - hugo/content/docs/_index.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
+- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/building-a-company-component-library.md
