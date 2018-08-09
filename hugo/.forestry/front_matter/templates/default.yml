@@ -141,10 +141,10 @@ pages:
 - hugo/content/blog/layout-improvements.md
 - hugo/content/blog/march-27th-service-outage.md
 - hugo/content/blog/the-new-forestry-io.md
-- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/why-we-created-a-git-backed-content-manager.md
+- hugo/content/blog/vuepress-other-ssg-support-beta.md
 - hugo/content/docs/faqs
 - hugo/content/docs/git-sync
 - hugo/content/docs/troubleshooting

@@ -25,7 +25,24 @@ draft: true
 ---
 Support for Vuepress + Other SSGs is here.
 
-This is a big announcement for us and we've been looking forward to making it for quite some time now. So let me walk you through importing your project in two steps.
+If you have a look at our [launch on Producthunt](https://www.producthunt.com/posts/forestry) almost two years ago the vision to expand the capabilities of our content management tool to other SSGs was already there.
+
+<iframe style="border: none;" src="https://cards.producthunt.com/cards/comments/320289?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+It took us some time to polish the Forestry experience and a few unexpected features that took priority but today it is finally here, we're adding support for Vuepress and other SSGs.
+
+This is a big announcement for us and we're looking forward to hearing what you have to say about it. So let me walk you through importing your first Vuepress project in two steps.
+
+<div id="ELEMENT_ID" data-proofer-ignore>
+{{% create_site_button
+repo="LINK_TO_GITHUB_REPO"
+branch="master"
+engineName="ENGINE_NAME"
+engineVersion="ENGINE_VERSION"
+forkName="FORK_NAME"
+heading="You don't have a Vuepress Project?"
+linkText="Import Vuepress Portfolio Theme" %}}
+</div>
 
 ***
 
@@ -47,7 +64,7 @@ After your import we'll ask you to configure your sidebar. Simply click the link
 
 ## Add Headings and Single Documents to Your Sidebar
 
-With our latest update we've also included the ability to add section headings such as (`data` or `site`) and single files to your sidebar. 
+With our latest update we've also included the ability to add section headings such as (`data` or `site`) and single files to your sidebar.
 
 ![](/uploads/2018/08/sidebar-headings-1.png)
 
