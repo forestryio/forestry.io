@@ -49,6 +49,8 @@ After your import we'll ask you to configure your sidebar. Simply click the link
 
 With our latest update we've also included the ability to add section headings such as (`data` or `site`) and single files to your sidebar. 
 
-![](/uploads/2018/07/branch-and-repo.png)
+![](/uploads/2018/08/sidebar-headings-1.png)
 
-As always, message us if you notice any bugs, have any questions or any feedback.
+This time more than other times it is important that you give us feedback on what is working for you, what isn't and what features you will need.
+
+🌲🌲🌲
