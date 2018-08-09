@@ -1,5 +1,5 @@
 ---
-title: Support for Vuepress + Other SSG [Beta]
+title: Support for Vuepress [Beta]
 description: ''
 date: 2018-08-08 21:36:10 -1100
 authors:
@@ -23,13 +23,13 @@ menu: []
 draft: true
 
 ---
-Support for Vuepress + Other SSGs is here.
+Support for Vuepress is here.
 
-If you have a look at our [launch on Producthunt](https://www.producthunt.com/posts/forestry) almost two years ago the vision to expand the capabilities of our content management tool to other SSGs was already there.
+If you have a look at our [launch on Producthunt](https://www.producthunt.com/posts/forestry) almost two years ago the idea to expand the capabilities of our content management tool to other SSGs was already there.
 
 <iframe style="border: none;" src="https://cards.producthunt.com/cards/comments/320289?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
-It took us some time to polish the Forestry experience and a few unexpected features that took priority but today it is finally here, we're adding support for Vuepress and other SSGs.
+It took us some time to polish the Forestry experience and a few unexpected features that took priority but today it is finally here, we're adding support for Vuepress and are looking forward to adding support to other SSGs down the road.
 
 This is a big announcement for us and we're looking forward to hearing what you have to say about it. So let me walk you through importing your first Vuepress project in two steps.
 
@@ -40,17 +40,17 @@ branch="master"
 engineName="vuepress"
 engineVersion="0.12.0"
 forkName="vuepress-homepage"
-heading="You don't have a Vuepress Project? No Problem."
-linkText="Import Vuepress Portfolio Theme" %}}
+heading="You don't have a Vuepress Project?"
+linkText="Add Forestry's Vuepress Theme" %}}
 </div>
 
 ***
 
-## 1. Import your Vuepress or Other Project
+## 1. Import your Vuepress Project
 
-You can now select your Vuepress project in our options when you add a new site. In fact, you can add any project that is using .md or .html fies and edit them in Forestry now.
+You can now select your Vuepress project in our options when you add a new site.
 
-![](/uploads/2018/08/import-vuepress.png)
+![](/uploads/2018/08/import-vuepress-2.png)
 
 ***
 
