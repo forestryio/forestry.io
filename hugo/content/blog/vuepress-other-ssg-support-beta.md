@@ -26,7 +26,7 @@ draft: true
 ---
 Vuepress support is here!
 
-Support for Static Site Generators (SSGs) beyond Jekyll and Hugo was on our roadmap for a while now. In fact, Jordan mentioned adding other SSGs  to Forestry back when the app [launched on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289 "launched on Producthunt") almost two years ago.
+Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was on our roadmap for a while now. In fact, Jordan mentioned adding other SSGs  to Forestry back when the app [launched on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289 "launched on Producthunt") almost two years ago.
 
 _Why did you make us wait?_ We love to create a great content management experience and make an app that is as easy-to-use for developers as it is for editors. That's why until now other features (e.g. [blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/), [cloudinary integration](https://forestry.io/blog/cloudinary-integration/) or [editing in teams](https://forestry.io/blog/renaming-files-and-improving-team-editing/)) were given priority over expanding our support to other SSGs.
 
