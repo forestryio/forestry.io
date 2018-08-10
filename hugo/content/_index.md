@@ -15,8 +15,8 @@ blocks:
   branch_name: master
 hero:
   headline: A static CMS that **commits**
-  textline: Sync your Jekyll or Hugo site. Your editors will love it and won’t realize
-    they’re making commits.
+  textline: Sync your Jekyll, Hugo or Vuepress site. Your editors will love it and
+    won’t realize they’re making commits.
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
@@ -40,10 +40,12 @@ hero:
       alt: Hugo
     - permalink: img/logos/jekyll.svg
       alt: Jekyll
+    - permalink: "/uploads/2018/08/vuepress-1.png"
+      alt: Vuepress
 features:
 - headline: Your site, your workflow
   textline: |
-    Write front-end code with Jekyll or Hugo and push to your Git repo. Forestry will pull in your commits and update the CMS.
+    Write front-end code with Jekyll, Hugo or Vuepress and push to your Git repo. Forestry will pull in your commits and update the CMS.
 
     Invite your team to create content in a rich UI. Their updates get committed back without merge conflicts.
   visual:
