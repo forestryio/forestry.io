@@ -79,7 +79,7 @@ You can reset previous configurations by removing `.forestry/settings.yml` and r
 
 ## Add Headings and Single Documents to Your Sidebar
 
-We also made a few other changes. Now, you can create custom headings in your content sections and add single files to your sidebar.
+We also made a few other changes. Now, you can create custom headings in your content sections and add single files to your sidebar. Read more in the [docs](https://forestry.io/docs/settings/content-sections#type)
 
 ![](/uploads/2018/08/sidebar-headings-1.png)
 
