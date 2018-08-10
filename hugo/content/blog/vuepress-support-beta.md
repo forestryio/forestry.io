@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 [Vuepress](https://vuepress.vuejs.org/) support is here! 🎉🎉🎉
@@ -88,6 +87,6 @@ You can check out a full list of changes, bug fixes and upgrades in our [changel
 
 We're looking forward to hearing your feedback and suggestions on how we can make your experience better.
 
-If you like this please consider telling your friends about it on Twitter 🐦, in chats 💬 or over coffee ☕.
+If you like this, please consider telling your friends about it on Twitter 🐦, in chats 💬 or over coffee ☕.
 
 <!-- a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a -->
