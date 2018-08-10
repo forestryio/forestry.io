@@ -15,7 +15,7 @@ blocks:
   branch_name: master
 hero:
   headline: A static CMS that **commits**
-  textline: Sync your Jekyll, Hugo or Vuepress site. Your editors will love it and
+  textline: Sync your Jekyll, Hugo or VuePress site. Your editors will love it and
     won’t realize they’re making commits.
   ctas:
   - permalink: https://app.forestry.io/signup
