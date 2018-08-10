@@ -30,7 +30,7 @@ Support for Vuepress and other static site generators was on our roadmap for a w
 
 _Why did you make us wait?_ We love to create a great content management experience and make an app that is as easy-to-use for developers as it is for editors. That's why until now other features (e.g. [blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/), [cloudinary integration](https://forestry.io/blog/cloudinary-integration/) or [editing in teams](https://forestry.io/blog/renaming-files-and-improving-team-editing/)) were given priority over expanding our support to other SSGs.
 
-_Why Vuepress and not Gatsby?_ Vuepress' default support for .html and .md is similar to Hugo and Jekyll behavior which makes it a great candidate for our content editor. We already made a lot of changes (to the sidebar, imports etc.), so jumping to an SSG like Gatsby that doesn't default to .md or .html files felt like we're skipping a step.
+_Why Vuepress and not Gatsby?_ Vuepress' default support for .html and .md is similar to Hugo and Jekyll behavior which makes it a great candidate for our content editor. We already made a lot of changes (to the sidebar, imports etc.), so jumping to an SSG like Gatsby that doesn't default to .md or .html files felt like we were skipping a step.
 
 This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://forestry.io/blog/join-our-slack-community/) Let me walk you through importing your first Vuepress project in two steps.
 
