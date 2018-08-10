@@ -42,7 +42,10 @@ VuePress actually encourages you to use its default theme for your project. Acco
 
 ### Built-in Search
 
-[screencast of search bar being used in demo project]
+<video playsinline="true" autoplay="true" muted="true" loop="true">
+    <source src="/video/vuepress-search.webm" type="video/webm">
+    <source src="/video/vuepress-search.mp4" type="video/mp4">
+</video>
 
 A usable search is essential for documentation. VuePress’ default theme supports searching out of the box. The search bar in your site’s header will search across the headings and subheadings in all of your markdown files and link to the relevant section when selected. When your documentation gets too dense to rely on a headings-based search, you can easily [switch over to Algolia DocSearch](https://vuepress.vuejs.org/default-theme-config/#algolia-search) with a little configuration.
 
