@@ -47,11 +47,11 @@ linkText="Add Forestry's Vuepress Portfolio Theme" %}}
 
 ![](/uploads/2018/08/Screen Shot 2018-08-10 at 10.40.28 AM.png)
 
-{% warning %}
+{{% warning %}}
 
 Please note that the Vuepress support doesn't include certain features you might be used to from other imports at this point. Specifically, previews are not available at this point.
 
-{% /warning %}
+{{% /warning %}}
 
 ***
 
