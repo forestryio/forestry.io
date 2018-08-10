@@ -71,7 +71,7 @@ After your import we'll ask you to configure your sidebar. Simply click the link
 
 {{% tip %}}
 
-If you added the Portfolio Theme above we've already pre-configured a few sections for you. You can reset the configuration by removing the `.forestry` directory and reimporting your site under `Settings` -> `Repository`.
+The Portfolio Theme comes pre-configured. You can reset the configuration by removing `.forestry/settings.yml` and reimporting your site under `Settings` selecting the `Repository` tab.
 
 {{% /tip %}}
 
@@ -79,7 +79,7 @@ If you added the Portfolio Theme above we've already pre-configured a few sectio
 
 ## Add Headings and Single Documents to Your Sidebar
 
-With our latest update we've also included the ability to add section headings such as (`data` or `site`) and single files to your sidebar.
+We also made a few other changes. Now, you can create custom headings in your content sections and add single files to your sidebar.
 
 ![](/uploads/2018/08/sidebar-headings-1.png)
 
