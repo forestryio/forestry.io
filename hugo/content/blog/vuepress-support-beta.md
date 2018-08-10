@@ -45,6 +45,8 @@ heading="You don't have a Vuepress Project?"
 linkText="Add Forestry's Vuepress Portfolio Theme" %}}
 </div>
 
+See the repo [here](https://github.com/forestryio/portfolio-vuepress)
+
 ![](/uploads/2018/08/portfolio-screenshot.png)
 
 {{% warning %}}
