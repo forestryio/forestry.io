@@ -1,6 +1,7 @@
 ---
 title: Support for Vuepress [Beta]
-description: ''
+description: "Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was
+  on our roadmap for a while. Now, Vuepress support is here! \U0001F389\U0001F389\U0001F389 "
 date: 2018-08-09 21:36:10 -1100
 authors:
 - Sebastian Engels
