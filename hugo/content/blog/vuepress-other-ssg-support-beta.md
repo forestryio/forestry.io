@@ -65,7 +65,7 @@ You can now select your Vuepress project in our options when you [add a new site
 
 ## 2. Configure Your Sidebar
 
-After your import, we'll ask you to configure your sidebar. Simply click the link after your import or go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information.
+After your import, we'll ask you to configure your sidebar. Simply go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information.
 
 ![](/uploads/2018/08/docs-configuration.png)
 
@@ -85,5 +85,4 @@ We also made a few other changes. Now, you can create custom headings in your co
 
 You can check out a full list of changes, bug fixes and upgrades in our [changelogs](https://forestry.io/docs/changelog/).
 
-We're looking forward to hearing your feedback and suggestions on how we can improve your experience and workflow.
-
+We're looking forward to hearing your feedback and suggestions on how we can improve your experience.
