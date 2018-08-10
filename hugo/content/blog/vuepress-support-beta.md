@@ -25,7 +25,7 @@ menu: []
 draft: true
 
 ---
-Vuepress support is here! 🎉🎉🎉
+[Vuepress](https://vuepress.vuejs.org/) support is here! 🎉🎉🎉
 
 Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was on our roadmap for a while now. In fact, Jordan mentioned adding other SSGs to Forestry back when our first beta was [leaked on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289) two years ago.
 
