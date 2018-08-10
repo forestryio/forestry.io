@@ -33,7 +33,7 @@ _Why did you make us wait?_ We love to create a great content management experie
 
 _Why Vuepress?_ VuePress is a simple and easy-to-learn SSG that gets you up-and-running in no time. This simplicity made adding support for VuePress a lot more manageable. Additionally, since it generates content from markdown files with YAML front matter, it's a great fit for our existing editor.
 
-This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://forestry.io/blog/join-our-slack-community/). Now, let me walk you through importing your first Vuepress project in two steps.
+This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LWUyYTk3NDY2ZDNiMjFhNmVlMjExM2FjYzFhNjJhNjU2NTc2ODVjZTdlYjJiODhhZDgwYTVhYjY0ZGU3ZWFmYzM). Now, let me walk you through importing your first Vuepress project in two steps.
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
