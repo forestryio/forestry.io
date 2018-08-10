@@ -1,11 +1,11 @@
 ---
-title: Support for Vuepress [Beta]
+title: Support for VuePress [Beta]
 description: "Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was
-  on our roadmap for a while. Now, Vuepress support is here! \U0001F389\U0001F389\U0001F389 "
-date: 2018-08-09 21:36:10 -1100
+  on our roadmap for a while. Now, VuePress support is here! \U0001F389\U0001F389\U0001F389 "
+date: 2018-08-10 08:36:10 +0000
 authors:
 - Sebastian Engels
-publishdate: 2018-08-09 16:00:00 -1100
+publishdate: 2018-08-10 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -24,15 +24,15 @@ aliases: []
 menu: []
 
 ---
-[Vuepress](https://vuepress.vuejs.org/) support is here! 🎉🎉🎉
+[VuePress](https://vuepress.vuejs.org/) support is here! 🎉🎉🎉
 
 Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was on our roadmap for a while now. In fact, Jordan mentioned adding other SSGs to Forestry back when our first beta was [leaked on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289) two years ago.
 
 _Why did you make us wait?_ We love to create a great content management experience and make an app that is as easy-to-use for developers as it is for editors. That's why until now other features (e.g. [blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/), [cloudinary integration](https://forestry.io/blog/cloudinary-integration/) or [editing in teams](https://forestry.io/blog/renaming-files-and-improving-team-editing/)) were given priority.
 
-_Why Vuepress?_ VuePress is a simple and easy-to-learn SSG that gets you up-and-running in no time. This simplicity made adding support for VuePress a lot more manageable. Additionally, since it generates content from markdown files with YAML front matter, it's a great fit for our existing editor.
+_Why VuePress?_ VuePress is a simple and easy-to-learn SSG that gets you up-and-running in no time. This simplicity made adding support for VuePress a lot more manageable. Additionally, since it generates content from markdown files with YAML front matter, it's a great fit for our existing editor.
 
-This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LWUyYTk3NDY2ZDNiMjFhNmVlMjExM2FjYzFhNjJhNjU2NTc2ODVjZTdlYjJiODhhZDgwYTVhYjY0ZGU3ZWFmYzM). Now, let me walk you through importing your first Vuepress project in two steps.
+This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LWUyYTk3NDY2ZDNiMjFhNmVlMjExM2FjYzFhNjJhNjU2NTc2ODVjZTdlYjJiODhhZDgwYTVhYjY0ZGU3ZWFmYzM). Now, let me walk you through importing your first VuePress project in two steps.
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
@@ -41,8 +41,8 @@ branch="master"
 engineName="vuepress"
 engineVersion="0.12.0"
 forkName="portfolio-vuepress"
-heading="You don't have a Vuepress Project?"
-linkText="Add Forestry's Vuepress Portfolio Theme" %}}
+heading="You don't have a VuePress Project?"
+linkText="Add Forestry's VuePress Portfolio Theme" %}}
 </div>
 
 See the repo [here](https://github.com/forestryio/portfolio-vuepress)
@@ -51,15 +51,15 @@ See the repo [here](https://github.com/forestryio/portfolio-vuepress)
 
 {{% warning %}}
 
-Please note that the Vuepress support is currently still in beta. Certain features such as previews are not available at this point.
+Please note that the VuePress support is currently still in beta. Certain features such as previews are not available at this point.
 
 {{% /warning %}}
 
 ***
 
-## 1. Import your Vuepress Project
+## 1. Import your VuePress Project
 
-You can now select your Vuepress project in our options when you [add a new site](https://app.forestry.io/dashboard/#add-site).
+You can now select your VuePress project in our options when you [add a new site](https://app.forestry.io/dashboard/#add-site).
 
 ![](/uploads/2018/08/import-vuepress-flow.png)
 
