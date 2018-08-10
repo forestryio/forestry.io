@@ -1,10 +1,10 @@
 ---
 title: VuePress Brings Your Documentation to Life
 description: ''
-date: 2018-08-10 04:48:09 -1100
+date: 2018-08-10 15:48:09 +0000
 authors:
 - DJ Walker
-publishdate: 2018-08-10 04:00:00 -1100
+publishdate: 2018-08-10 15:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -32,19 +32,17 @@ VuePress has the flexibility to build any static site, but it particularly excel
 
 One thing that sets VuePress apart from some other SSGs is its beautiful default theme. It’s clear that a lot of effort was put into the default theme to give new projects a fully-featured starting point.
 
-It’s common for other SSGs to have a minimal or blank default theme (the default theme for new Jekyll projects is called *minima* for a reason.) This approach makes sense — “build a website that looks like everyone else’s” is not really a selling point. There’s a case to be made, however, when you just want to get your content on the web without investing a lot of time in putting together a website for it.
-
+It’s common for other SSGs to have a minimal or blank default theme (the default theme for new Jekyll projects is called _minima_ for a reason.) This approach makes sense — “build a website that looks like everyone else’s” is not really a selling point. There’s a case to be made, however, when you just want to get your content on the web without investing a lot of time in putting together a website for it.
 
 > VuePress is composed of two parts: a minimalistic static site generator with a Vue-powered theming system, and a default theme optimized for writing technical documentation.
 
 VuePress actually encourages you to use its default theme for your project. According to [their documentation](https://vuepress.vuejs.org/guide/#how-it-works), the default theme is a core component of the VuePress project, not just a demo of how the generator works.
 
-
 ### Built-in Search
 
 <video playsinline="true" autoplay="true" muted="true" loop="true">
-    <source src="/video/vuepress-search.webm" type="video/webm">
-    <source src="/video/vuepress-search.mp4" type="video/mp4">
+<source src="/video/vuepress-search.webm" type="video/webm">
+<source src="/video/vuepress-search.mp4" type="video/mp4">
 </video>
 
 A usable search is essential for documentation. VuePress’ default theme supports searching out of the box. The search bar in your site’s header will search across the headings and subheadings in all of your markdown files and link to the relevant section when selected. When your documentation gets too dense to rely on a headings-based search, you can easily [switch over to Algolia DocSearch](https://vuepress.vuejs.org/default-theme-config/#algolia-search) with a little configuration.
@@ -52,9 +50,6 @@ A usable search is essential for documentation. VuePress’ default theme suppor
 {{% tip "What is Algolia?" %}}
 If you’re not familiar with Algolia’s search service, [check out our blog post on the subject](https://forestry.io/blog/search-with-algolia-in-jekyll/).
 {{% /tip %}}
-
-
-
 
 ## Great For Github Projects
 
@@ -64,29 +59,25 @@ Towards this end, VuePress plays very well with documentation that lives on Gith
 
 VuePress also does a good job of staying out of the way of your codebase. VuePress stores its files in a `.vuepress` folder, separate from the rest of your code. When VuePress builds your site, it looks exclusively for markdown files, so it’s not likely to build anything into your docs that shouldn’t be there.
 
-
 ## Adding VuePress to Your Project
 
 To demonstrate how easy it is to beef up your docs with a VuePress site, I’ve created a documentation website for my [serverless-autopublish](https://github.com/dwalkr/serverless-autopublish) project. [View the finished product here](https://peaceful-newton-6cfb0f.netlify.com/).
 
 ### Project Setup
 
-Before adding VuePress, I reorganized the documentation a little bit. It’s common for a project’s documentation to serve two different audiences: those who want to use the software, and those who want to contribute to it. So, I took the documentation that was previously consolidated in a single `README.md` file and broke it out into two smaller documents that I [placed in the `docs/` folder](https://github.com/dwalkr/serverless-autopublish/tree/master/docs). I then modified the `README.md` file to continue to provide an overview of the project and link to the respective documents.
-
+Before adding VuePress, I reorganized the documentation a little bit. It’s common for a project’s documentation to serve two different audiences: those who want to use the software, and those who want to contribute to it. So, I took the documentation that was previously consolidated in a single `README.md` file and broke it out into two smaller documents that I [placed in the ](https://github.com/dwalkr/serverless-autopublish/tree/master/docs)`[docs/](https://github.com/dwalkr/serverless-autopublish/tree/master/docs)`[ folder](https://github.com/dwalkr/serverless-autopublish/tree/master/docs). I then modified the `README.md` file to continue to provide an overview of the project and link to the respective documents.
 
 ### Installing and Running Vuepress
-VuePress recommends using [Yarn](https://yarnpkg.com/) to install your project dependencies. If your project doesn’t already have a `package.json`, you can create one with the following command:
 
+VuePress recommends using [Yarn](https://yarnpkg.com/) to install your project dependencies. If your project doesn’t already have a `package.json`, you can create one with the following command:
 
     yarn init -y
 
 You can then add VuePress as a dev dependency:
 
-
     yarn add -D vuepress
 
 Once VuePress is installed, open your `package.json` file and add the following scripts:
-
 
     "scripts": {
       "docs:build": "vuepress build",
@@ -101,7 +92,6 @@ VuePress’ default theme exposes several configuration options. A couple you wi
 
 To configure VuePress, add a `config.js` file inside of the `.vuepress` directory (go ahead and create the `.vuepress` directory if it doesn’t exist yet.) Insert the following code into the file:
 
-
     module.exports = {
       themeConfig: {
         sidebar: 'auto',
@@ -111,8 +101,9 @@ To configure VuePress, add a `config.js` file inside of the `.vuepress` director
 
 The `auto` setting for the sidebar automatically generates anchor links based on the headings in your document. This is a handy default for building useful documentation!
 
-The `nav` option enables you to configure the navigation bar at the top of the page. This option takes an array of objects with a `text` and `link` attribute. You can generate multi-tiered navigation by including an `items` attribute instead of a `link`, and pass in an array of navigation items. Here’s what I added for my documentation nav:
+![](/uploads/2018/08/vuepress-nav.png)
 
+The `nav` option enables you to configure the navigation bar at the top of the page. This option takes an array of objects with a `text` and `link` attribute. You can generate multi-tiered navigation by including an `items` attribute instead of a `link`, and pass in an array of navigation items. Here’s what I added for my documentation nav:
 
     module.exports = {
         themeConfig: {
@@ -130,8 +121,6 @@ The `nav` option enables you to configure the navigation bar at the top of the p
         }
     }
 
-[screenshot of navigation]
-
 ### Deploying to Netlify
 
 Deploying the documentation site with Netlify is easy as usual. After adding the site to Netlify, we just need to set the **build command** to `yarn docs:build` and the **publish directory** to `.vuepress/dist`.
@@ -140,25 +129,29 @@ Deploying the documentation site with Netlify is easy as usual. After adding the
 Checkout the [VuePress deployment docs](https://vuepress.vuejs.org/guide/deploy.html) if you want to deploy your site to Github Pages.
 {{% /tip %}}
 
-
 ## Use it With Forestry
 
-By the way, you can totally edit your VuePress site in Forestry now.
+By the way, you can totally edit your VuePress site in Forestry now! 🎉
 
-[screenshot of vuepress button]
+![](/uploads/2018/08/add-site-vuepress.png)
 
 To do so, import a new site and select **VuePress** as the engine. After the site imports, you will need to configure your content sections. Navigate to the **Settings** section and click the **Sidebar** tab. Follow the instructions in the [sidebar documentation]() to tell Forestry which content files you want to be able to edit.
 
 For my project, I’ve elected to keep all the documentation in a `docs/` folder while still using the `README.md` file at the root of the project to provide a project overview. To configure this in Forestry, I’m going to create two sections:
 
-
-- A `document` section for the `README.md` file. I label this section “Home” since it serves as the project homepage.
-- A `directory` section for the `docs` folder to edit the documentation files.
+* A `document` section for the `README.md` file. I label this section “Home” since it serves as the project homepage.
+* A `directory` section for the `docs` folder to edit the documentation files.
 
 VuePress support is a new feature in Forestry and currently comes with some constraints. You can’t preview your pages, and Forestry can’t build and deploy the site for you. This is why I’ve elected to use Netlify to handle the deployment and hosting.
-
 
 ## VuePress and Beyond
 
 You may have noticed that there isn’t much special about the `serverless-autopublish` project that identifies it as a VuePress site. To use it with Forestry, I just had to tell it where my markdown files were. VuePress adapts well to existing markdown documentation, and Forestry can be used to edit a VuePress site, so it stands to reason that Forestry could be used effectively to edit markdown docs for anything. Our release of VuePress support is just the first steps on a path of supporting a wide variety of content publishing tools!
 
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We showed you <a href="https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/">how to create a multilingual blog in Jekyll.</a></p></div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a>
+-->

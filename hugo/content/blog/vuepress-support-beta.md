@@ -91,4 +91,4 @@ We're looking forward to hearing your feedback and suggestions on how we can mak
 
 If you like this, please consider telling your friends about it on Twitter 🐦, in chats 💬 or over coffee ☕.
 
-<!-- a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a -->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17734860">Discuss on Hacker News</a>
