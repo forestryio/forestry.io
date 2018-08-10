@@ -86,3 +86,5 @@ We also made a few other changes. Now, you can create custom headings in your co
 You can check out a full list of changes, bug fixes and upgrades in our [changelogs](https://forestry.io/docs/changelog/).
 
 We're looking forward to hearing your feedback and suggestions on how we can make your experience better.
+
+If you like this please consider telling your friends about it on Twitter 🐦, in chats 💬 or over coffee ☕. 
