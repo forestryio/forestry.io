@@ -60,7 +60,7 @@ Please note that the Vuepress support is currently still in beta. Certain featur
 
 You can now select your Vuepress project in our options when you [add a new site](https://app.forestry.io/dashboard/#add-site).
 
-![](/uploads/2018/08/import-vuepress-modal.png)
+![](/uploads/2018/08/import-vuepress-flow.png)
 
 ***
 
