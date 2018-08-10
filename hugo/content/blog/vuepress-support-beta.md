@@ -27,7 +27,7 @@ draft: true
 ---
 Vuepress support is here! 🎉🎉🎉
 
-Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was on our roadmap for a while now. In fact, Jordan mentioned adding other SSGs  to Forestry back when the app [launched on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289 "launched on Producthunt") two years ago.
+Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was on our roadmap for a while now. In fact, Jordan mentioned adding other SSGs to Forestry back when our first beta was [leaked on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289) two years ago.
 
 _Why did you make us wait?_ We love to create a great content management experience and make an app that is as easy-to-use for developers as it is for editors. That's why until now other features (e.g. [blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/), [cloudinary integration](https://forestry.io/blog/cloudinary-integration/) or [editing in teams](https://forestry.io/blog/renaming-files-and-improving-team-editing/)) were given priority.
 
@@ -37,7 +37,7 @@ This is a big announcement for us and we're looking forward to hearing what you 
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/itsnwa/portfolio-vuepress"
+repo="https://github.com/forestryio/portfolio-vuepress"
 branch="master"
 engineName="vuepress"
 engineVersion="0.12.0"
@@ -46,7 +46,7 @@ heading="You don't have a Vuepress Project?"
 linkText="Add Forestry's Vuepress Portfolio Theme" %}}
 </div>
 
-![](/uploads/2018/08/Screen Shot 2018-08-10 at 10.40.28 AM.png)
+![](/uploads/2018/08/portfolio-screenshot.png)
 
 {{% warning %}}
 
@@ -89,3 +89,5 @@ You can check out a full list of changes, bug fixes and upgrades in our [changel
 We're looking forward to hearing your feedback and suggestions on how we can make your experience better.
 
 If you like this please consider telling your friends about it on Twitter 🐦, in chats 💬 or over coffee ☕.
+
+<!-- a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a -->
