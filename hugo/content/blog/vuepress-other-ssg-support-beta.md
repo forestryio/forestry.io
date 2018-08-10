@@ -71,7 +71,7 @@ After your import we'll ask you to configure your sidebar. Simply click the link
 
 {{% tip %}}
 
-If you added the Portfolio Theme above we've already pre-configured a few sections for you. If you're curious what the configuration looks like go to  `settings` and select the `sidebar` tab.
+If you added the Portfolio Theme above we've already pre-configured a few sections for you. You can reset the configuration by removing the `.forestry` directory and reimporting your site under `Settings` -> `Repository`.
 
 {{% /tip %}}
 
