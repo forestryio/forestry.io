@@ -88,4 +88,4 @@ You can check out a full list of changes, bug fixes and upgrades in our [changel
 
 We're looking forward to hearing your feedback and suggestions on how we can make your experience better.
 
-If you like this please consider telling your friends about it on [Twitter](https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fforestry.io%2Fblog%2Fvuepress-support-beta%2F&linkname=Support%20for%20Vuepress%20%5BBeta%5D&linknote=) 🐦, in chats 💬 or over coffee ☕.
+If you like this please consider telling your friends about it on Twitter 🐦, in chats 💬 or over coffee ☕.
