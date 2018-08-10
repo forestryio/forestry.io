@@ -10,6 +10,10 @@ cta:
 draft: true
 
 ---
+## Features 
+
+* **VuePress Support:** You can now manage the content in your [VuePress](https://vuepress.vuejs.org/ "VuePress") sites with the Forestry CMS!
+
 ## Enhancements
 
 * **Welcome to your CMS:** Added a landing page to CMS
