@@ -37,13 +37,13 @@ This is a big announcement for us and we're looking forward to hearing what you 
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/Germoe/vuepress-homepage"
+repo="https://github.com/itsnwa/portfolio-vuepress"
 branch="master"
 engineName="vuepress"
 engineVersion="0.12.0"
-forkName="vuepress-homepage"
+forkName="portfolio-vuepress"
 heading="You don't have a Vuepress Project?"
-linkText="Add Forestry's Vuepress Theme" %}}
+linkText="Add Forestry's Vuepress Portfolio Theme" %}}
 </div>
 
 ***
