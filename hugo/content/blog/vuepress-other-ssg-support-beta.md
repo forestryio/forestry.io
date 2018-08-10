@@ -83,4 +83,7 @@ We also made a few other changes. Now, you can create custom headings in your co
 
 ![](/uploads/2018/08/sidebar-headings-1.png)
 
-More than other times, it is important that we get feedback on what is working for you, what isn't and what features you will need.
+You can check out a full list of changes, bug fixes and upgrades in our [changelogs](https://forestry.io/docs/changelog/).
+
+We're looking forward to hearing your feedback and suggestions on how we can improve your experience and workflow.
+
