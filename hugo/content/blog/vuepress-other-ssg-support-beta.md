@@ -32,7 +32,7 @@ _Why did you make us wait?_ We love to create a great content management experie
 
 _Why Vuepress and not Gatsby?_ Vuepress' default support for .html and .md is similar to Hugo and Jekyll behavior which makes it a great candidate for our content editor. We already made a lot of changes (to the sidebar, imports etc.), so jumping to an SSG like Gatsby that doesn't default to .md or .html files felt like we were skipping a step.
 
-This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://forestry.io/blog/join-our-slack-community/) Let me walk you through importing your first Vuepress project in two steps.
+This is a big announcement for us and we're looking forward to hearing what you have to say about it. Feel free to reach out to us via the `Support` section in your sidebar, on [Twitter](https://twitter.com/forestryio) or our [Slack Community](https://forestry.io/blog/join-our-slack-community/). Now, let me walk you through importing your first Vuepress project in two steps.
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
