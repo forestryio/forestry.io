@@ -53,6 +53,7 @@ fields:
     - Company
     - Frontend-Friday
     - Beyond Static
+    - VuePress
 - type: tag_list
   name: tags
   label: Tags
