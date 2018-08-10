@@ -65,9 +65,15 @@ You can now select your Vuepress project in our options when you [add a new site
 
 ## 2. Configure Your Sidebar
 
-After your import we'll ask you to configure your sidebar. Simply click the link after your import or go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information. For the Portfolio Theme above we've already pre-configured a few sections for you.
+After your import we'll ask you to configure your sidebar. Simply click the link after your import or go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information.
 
 ![](/uploads/2018/08/docs-configuration.png)
+
+{{% tip %}}
+
+If you added the Portfolio Theme above we've already pre-configured a few sections for you. If you're curious what the configuration looks like go to  `settings` and select the `sidebar` tab.
+
+{{% /tip %}}
 
 ***
 
