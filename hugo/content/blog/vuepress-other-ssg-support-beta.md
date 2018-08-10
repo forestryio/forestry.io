@@ -8,7 +8,8 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/08/vuepress.png"
 categories:
 - CMS
 tags: []
@@ -27,7 +28,7 @@ Vuepress support is here!
 
 Support for Vuepress and other static site generators was on our roadmap for a while now. In fact, we were thinking about adding other SSGs to Forestry back when we [launched on Producthunt](https://www.producthunt.com/posts/forestry#comment-320289 "launched on Producthunt") almost two years ago.
 
-_Why did it take so long?_ First and foremost it's important for us to create a great content management experience and make an app that is as easy-to-use for developers as it is for editors. That's why other features were given priority over expanding our support to other SSGs. Until now.
+_Why did it take so long?_ We love to create a great content management experience and make an app that is as easy-to-use for developers as it is for editors. That's why until now other features were given priority over expanding our support to other SSGs.
 
 _Why Vuepress and not Gatsby?_ Vuepress' default support for .html and .md is similar to Hugo and Jekyll behavior which makes it a great candidate for our content editor which is optimized for .html and .md files. We already made a lot of changes (to the sidebar, imports etc.), so jumping to an SSG like Gatsby that doesn't default to .md or .html files felt like we're skipping a step.
 
