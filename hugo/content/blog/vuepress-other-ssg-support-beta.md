@@ -59,19 +59,19 @@ Please note that the Vuepress support is currently still in beta. Certain featur
 
 You can now select your Vuepress project in our options when you [add a new site](https://app.forestry.io/dashboard/#add-site).
 
-![](/uploads/2018/08/import-vuepress-2.png)
+![](/uploads/2018/08/import-vuepress-modal.png)
 
 ***
 
 ## 2. Configure Your Sidebar
 
-After your import we'll ask you to configure your sidebar. Simply click the link after your import or go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information.
+After your import, we'll ask you to configure your sidebar. Simply click the link after your import or go to `Settings` and select the `Sidebar` tab. Check out the [docs](https://forestry.io/docs/settings/content-sections/) for more information.
 
 ![](/uploads/2018/08/docs-configuration.png)
 
 {{% tip %}}
 
-The Portfolio Theme comes pre-configured. You can reset the configuration by removing `.forestry/settings.yml` and reimporting your site under `Settings` selecting the `Repository` tab.
+You can reset previous configurations by removing `.forestry/settings.yml` and reimporting your site under `Settings` selecting the `Repository` tab.
 
 {{% /tip %}}
 
