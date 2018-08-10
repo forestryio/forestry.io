@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 VuePress is a static site generator based on Vue JavaScript framework. With the first release appearing back in April and the current version being `0.14.1`, VuePress is a young project that shows a lot of promise.
