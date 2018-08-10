@@ -49,7 +49,7 @@ linkText="Add Forestry's Vuepress Portfolio Theme" %}}
 
 {{% warning %}}
 
-Please note that the Vuepress support doesn't include certain features you might be used to from other imports at this point. Specifically, previews are not available at this point.
+Please note that the Vuepress support is currently still in beta. Certain features such as previews are not available at this point.
 
 {{% /warning %}}
 
