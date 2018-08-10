@@ -46,6 +46,8 @@ heading="You don't have a Vuepress Project?"
 linkText="Add Forestry's Vuepress Portfolio Theme" %}}
 </div>
 
+![](/uploads/2018/08/Screen Shot 2018-08-10 at 10.40.28 AM.png)
+
 ***
 
 ## 1. Import your Vuepress Project
