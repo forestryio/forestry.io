@@ -65,7 +65,7 @@ To demonstrate how easy it is to beef up your docs with a VuePress site, I’ve 
 
 ### Project Setup
 
-Before adding VuePress, I reorganized the documentation a little bit. It’s common for a project’s documentation to serve two different audiences: those who want to use the software, and those who want to contribute to it. So, I took the documentation that was previously consolidated in a single `README.md` file and broke it out into two smaller documents that I [placed in the ](https://github.com/dwalkr/serverless-autopublish/tree/master/docs)`[docs/](https://github.com/dwalkr/serverless-autopublish/tree/master/docs)`[ folder](https://github.com/dwalkr/serverless-autopublish/tree/master/docs). I then modified the `README.md` file to continue to provide an overview of the project and link to the respective documents.
+Before adding VuePress, I reorganized the documentation a little bit. It’s common for a project’s documentation to serve two different audiences: those who want to use the software, and those who want to contribute to it. So, I took the documentation that was previously consolidated in a single `README.md` file and broke it out into two smaller documents that I [placed in the `docs` folder](https://github.com/dwalkr/serverless-autopublish/tree/master/docs). I then modified the `README.md` file to continue to provide an overview of the project and link to the respective documents.
 
 ### Installing and Running Vuepress
 
@@ -135,7 +135,7 @@ By the way, you can totally edit your VuePress site in Forestry now! 🎉
 
 ![](/uploads/2018/08/add-site-vuepress.png)
 
-To do so, import a new site and select **VuePress** as the engine. After the site imports, you will need to configure your content sections. Navigate to the **Settings** section and click the **Sidebar** tab. Follow the instructions in the [sidebar documentation]() to tell Forestry which content files you want to be able to edit.
+To do so, import a new site and select **VuePress** as the engine. After the site imports, you will need to configure your content sections. Navigate to the **Settings** section and click the **Sidebar** tab. Follow the instructions in the [sidebar documentation](https://forestry.io/docs/settings/content-sections/) to tell Forestry which content files you want to be able to edit.
 
 For my project, I’ve elected to keep all the documentation in a `docs/` folder while still using the `README.md` file at the root of the project to provide a project overview. To configure this in Forestry, I’m going to create two sections:
 
@@ -151,6 +151,7 @@ You may have noticed that there isn’t much special about the `serverless-autop
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We showed you <a href="https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/">how to create a multilingual blog in Jekyll.</a></p></div>
 
 <!--
+
 ## Have something to add?
 
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="">Discuss on Hacker News</a>
