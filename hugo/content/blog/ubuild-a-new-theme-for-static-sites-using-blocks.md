@@ -174,7 +174,7 @@ We think an open-source theme is a great start but we'd like to know your though
 
 We believe awesome stuff can be built with Blocks, and plan to explore this more in the future. In the meantime, we'd love for you to share with the community what you've built using Forestry Blocks. [Join our community Slack](https://join.slack.com/t/forestry-community/shared_invite/enQtMzgzMjQ1OTk0MDUwLThlYzZmMTQwMWFmMWRhOTU4NjY4MjM4ODdmMmQ0YzI0Y2M5YzViNGE0Y2VhZDY3MDEzYjcxZTMzODE2NDk1ZmI) or tag us on Twitter ([@forestryio](https://twitter.com/forestryio)) to let us know!
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll explore Hugo's new theme inheritance feature.</p><p><strong>Last week:</strong> We looked at ways to <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handle forms on your static site.</a></p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/">some tips for using blocks.</a></p><p><strong>Last week:</strong> We looked at ways to <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handle forms on your static site.</a></p></div>
 
 ## Have something to add?
 

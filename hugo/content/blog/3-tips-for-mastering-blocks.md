@@ -144,7 +144,7 @@ Hugo’s restrictive variable scope may be frustrating to deal with at first, bu
 
 As the capabilities of Forestry grow, so do the options available to our users. The three strategies presented here are the result of my own observation and experimentation; if you’ve found a way to use Forestry that you think is really powerful, we’d love to hear about it! Let us know on Twitter([@forestryio](https://twitter.com/forestryio)) or {{% slack_invite_link "in our community Slack" %}}.
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD  </p><p><strong>Last week:</strong> We introduced uBuild, a <a href="https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/#/">Jekyll Theme</a> with a Blocks-based page builder.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you a <a href="https://forestry.io/blog/harness-the-power-of-static-to-create-presentations/">Hugo theme for creating presentation decks.</a> </p><p><strong>Last week:</strong> We introduced uBuild, a <a href="https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/#/">Jekyll Theme</a> with a Blocks-based page builder.</p></div>
 
 
 ## Have something to add?

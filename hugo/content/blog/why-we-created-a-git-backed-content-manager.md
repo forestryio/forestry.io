@@ -129,7 +129,7 @@ git log --invert-grep --grep="Update from Forestry.io"
 
 I recommend aliasing this command to something shorter, like `devlog`, if you plan to use it frequently.
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at setting up multilingual sites with Forestry. </p><p><strong>Last week:</strong> We showed you how to use Forestry's Blocks feature to <a href="https://forestry.io/blog/form-builder-with-formspree-forestry-blocks/">create a form builder.</a></p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at <a href="https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/">setting up multilingual sites with Forestry.</a> </p><p><strong>Last week:</strong> We showed you how to use Forestry's Blocks feature to <a href="https://forestry.io/blog/form-builder-with-formspree-forestry-blocks/">create a form builder.</a></p></div>
 
 
 ## Have something to add?

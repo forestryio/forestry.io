@@ -160,7 +160,7 @@ You may also be interested in [automating your responsive image sizing](https://
 
 When you're ready to connect your Forestry media library to Cloudinary, check out our [Cloudinary documentation](https://forestry.io/docs/media/cloudinary/) to get started!
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We added some enhancements to our <a href="https://forestry.io/blog/hugo-json-api-part-2/">Hugo JSON API</a>.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look at <a href="https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/"> the advantages of hosting your static site on a CDN.</a> </p><p><strong>Last week:</strong> We added some enhancements to our <a href="https://forestry.io/blog/hugo-json-api-part-2/">Hugo JSON API</a>.</p></div>
 
 ## Have something to add?
 

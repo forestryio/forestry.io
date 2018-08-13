@@ -138,7 +138,7 @@ Netlify not only makes set up easy: their deployment process automatically takes
 
 Thanks to static sites, it has never been easier to make your website fast and highly available to a global audience. Choosing to #gostatic gives you great performance out of the gate, but using a CDN to deliver your site will ensure your site stays fast for everyone. Thanks to the simplicity of Netlify, there’s no excuse not to give it a shot!
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you our favorite solutions for handling form submissions with your static site. </p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/master-image-delivery-with-cloudinary/">Cloudinary</a> to optimize your image delivery.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you our favorite solutions for <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handling form submissions with your static site.</a> </p><p><strong>Last week:</strong> We showed you how to use <a href="https://forestry.io/blog/master-image-delivery-with-cloudinary/">Cloudinary</a> to optimize your image delivery.</p></div>
 
 
 ## Have something to add?

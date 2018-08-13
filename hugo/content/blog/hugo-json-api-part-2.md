@@ -442,7 +442,7 @@ This is a more idiomatic way to create JSON output. Since JSON is fundamentally 
 Happy coding!
 
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at Cloudinary's image transformations. </p><p><strong>Last week:</strong> We showed you how to <a href="https://forestry.io/blog/snipcart-brings-ecommerce-static-site/">build a static e-commerce site with Snipcart</a>.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at <a href="https://forestry.io/blog/master-image-delivery-with-cloudinary/">Cloudinary's image transformations.</a> </p><p><strong>Last week:</strong> We showed you how to <a href="https://forestry.io/blog/snipcart-brings-ecommerce-static-site/">build a static e-commerce site with Snipcart</a>.</p></div>
 
 
 ## Have something to add?

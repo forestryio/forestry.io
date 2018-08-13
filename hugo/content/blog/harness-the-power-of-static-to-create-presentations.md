@@ -279,7 +279,7 @@ Thanks for reading!
 
 If you have any questions about or suggestions for how to improve reveal-hugo, don’t hesitate to reach out, I’m [@dzello](https://twitter.com/dzello) on Twitter.
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD  </p><p><strong>Last week:</strong> We showed you the Hugo version of uBuild and <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/#/">discussed some strategies for using Blocks.</a></p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look at one way to use <a href="https://forestry.io/blog/add-functionality-to-your-hugo-site-with-theme-components/">Hugo's new Theme Components feature.</a> </p><p><strong>Last week:</strong> We showed you the Hugo version of uBuild and <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/#/">discussed some strategies for using Blocks.</a></p></div>
 
 
 ## Have something to add?

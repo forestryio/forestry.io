@@ -265,7 +265,7 @@ For more information, view [Snipcart's "going live" docs](https://docs.snipcart.
 
 In this post, we focused on building a static product catalog with Hugo to integrate with Snipcart. Snipcart has some other nice features like user account dashboards and a customizable shopping cart, and makes integrating these into your site just as easy. Check out [Snipcart's documentation](https://docs.snipcart.com/) or their [guides and tutorials](https://docs.snipcart.com/getting-started/guides-and-tutorials) for inspiration.
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll dig deeper into creating a JSON API with Hugo. </p><p><strong>Last week:</strong> We told you about <a href="https://forestry.io/blog/what-s-new-in-jekyll-3.8/">the latest updates to Jekyll</a>.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll dig deeper into <a href="https://forestry.io/blog/hugo-json-api-part-2/">creating a JSON API with Hugo.</a> </p><p><strong>Last week:</strong> We told you about <a href="https://forestry.io/blog/what-s-new-in-jekyll-3.8/">the latest updates to Jekyll</a>.</p></div>
 
 ## Have something to add?
 

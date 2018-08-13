@@ -139,3 +139,5 @@ Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want
 <div style="text-align: center; padding: 1em;">
 <a href="#/add-site" class="create-site-button" data-proofer-ignore>Create a New Sawmill Site in Forestry</a>
 </div>
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong>We'll show you one way to <a href="https://forestry.io/blog/automatically-publish-scheduled-posts-for-static-site/">automatically publish scheduled posts for a static site.</a> </p><p><strong>Last week:</strong> We showed you how to <a href="https://forestry.io/blog/build-a-json-api-with-hugo">build a JSON API with Hugo.</a></p></div>
