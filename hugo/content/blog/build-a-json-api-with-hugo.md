@@ -137,7 +137,7 @@ We will use custom templates to build the API responses for our first 3 endpoint
 
 To achieve this, we’ll create the following templates in `/layouts/_default/`:
 
-* `baseof.json.json` — A [base template](https://gohugo.io/templates/base/#base-template-lookup-order) for our API response.
+* `baseof.json` — A [base template](https://gohugo.io/templates/base/#base-template-lookup-order) for our API response.
 * `item.json.json` — The single item object, which will be reused in all of our templates, every time we need to output a player. In Hugo we call this a [Content View](https://gohugo.io/templates/views), but for our API I see it more like a transformer.
 * `single.json.json` — The response output for a single player
 * `list.json.json` — The response output for a list of players
