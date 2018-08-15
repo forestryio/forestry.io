@@ -22,7 +22,7 @@ aliases: []
 menu:
   changelog:
     parent: Changelog
-    weight: 6
+    weight: 7
 
 ---
 This week we have a short changelog, but keep an eye out as we prepare to release some improvements from the wood shop! 

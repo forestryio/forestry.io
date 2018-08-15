@@ -20,7 +20,7 @@ weight: ''
 images: []
 menu:
   changelog:
-    weight: 4
+    weight: 5
     parent: Changelog
 
 ---

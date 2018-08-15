@@ -9,7 +9,7 @@ cta:
   calls_to_action: []
 menu:
   changelog:
-    weight: 1
+    weight: 2
     parent: Changelog
 
 ---
