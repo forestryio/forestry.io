@@ -134,7 +134,6 @@ fields:
   label: menu
 pages:
 - hugo/content/blog/improved-collaboration-and-more.md
-- hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/_index.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
 - hugo/content/blog/cloudinary-integration.md
@@ -152,12 +151,10 @@ pages:
 - hugo/content/docs/_index.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/vuepress-support-beta.md
-- hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/building-a-company-component-library.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/5-ways-to-handle-forms-on-your-static-site.md
-- hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn.md
 - hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
@@ -166,6 +163,9 @@ pages:
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
 - hugo/content/blog/snippets-custom-content-sections-and-more.md
 - hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
+- hugo/content/blog/vuepress-brings-your-documentation-to-life.md
+- hugo/content/blog/build-a-json-api-with-hugo.md
+- hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/forestry-gitlab.md
 - hugo/content/blog/introducing-media-management.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md
@@ -174,7 +174,6 @@ pages:
 - hugo/content/blog/discontinuing-zip-sites.md
 - hugo/content/blog/search-with-algolia-in-jekyll.md
 - hugo/content/blog/new-pricing-organization-accounts.md
-- hugo/content/blog/sawmill-a-layout-composer-for-hugo-and-forestry.md
 - hugo/content/blog/what-s-new-in-jekyll-3-4-0.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/full-stack.md
