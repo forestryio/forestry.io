@@ -87,6 +87,7 @@ However, Jekyll supports static assets in your project root.  For this reason, w
 <td><code>/uploads</code></td>
 <td><code>/uploads</code></td>
 </tr>  
+<tr>
 <td>VuePress</td>  
 <td><code>.vuepress/public/upload</code></td>  
 <td><code>/uploads</code></td>  
