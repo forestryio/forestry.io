@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 **Don’t Repeat Yourself** is the perennial mantra of the software developer. It doesn't mean you should never do the same thing twice, but instead refers to having a **single, authoritative source of truth** for every piece of information used in your software.
