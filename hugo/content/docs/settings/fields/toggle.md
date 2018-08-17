@@ -40,6 +40,10 @@ You can access this field in your templates using the field’s `name`:
 
 #### VuePress
 
+    <div v-if="$page.frontmatter.is_featured">
+        // Do something special!
+    </div>
+
 Use a toggle to filter pages in a loop:
 
 ### Hugo
@@ -55,6 +59,28 @@ Use a toggle to filter pages in a loop:
         <h2>{{ page.title }}</h2>
         <p>{{ page.description }}</p>
     {% endif %}
+
+### VuePress
+
+    <template>
+      <div class="featured-posts">
+        <div v-for="post in featuredPosts" class="featured-post">
+          <h2>{{ post.frontmatter.title }}</h2>
+          <p>{{ post.frontmatter.description }}</p>
+        </div>
+      </div>
+    </template>
+    <script>
+       export default {
+        computed: {
+          featuredPosts() {
+            return this.$site.pages
+              .filter(page => page.path.startsWith("/posts/")
+              .filter(page => page.frontmatter.is_featured)
+          }
+        }
+      }
+    </script>
 
 ## Config Files
 
