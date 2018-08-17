@@ -1,7 +1,7 @@
 ---
 title: 'Keeping Content DRY: Data Relationships In Hugo'
 description: ''
-date: 2018-08-17 05:05:07 -1100
+date: 2018-08-17 16:05:07 +0000
 authors:
 - DJ Walker
 publishdate: 2017-12-07 04:00:00 +0000
@@ -135,8 +135,7 @@ Thanks to Forestry's front matter UI, it's easy to apply this content strategy t
     <p><strong>Last week:</strong> We looked at <a href="https://forestry.io/blog/vuepress-brings-your-documentation-to-life/">VuePress, a static site generator that's great for documentation</a>.</p>
 </div>
 
-<!--
+
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17784971">Discuss on Hacker News</a>
