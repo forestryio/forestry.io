@@ -59,6 +59,11 @@ Then select the branch that contains your built static site and click on the Sav
 
 Your site should now be served at `http://username.github.io/repository`.
 
-{{% tip "Hugo CNAME file" %}}
-With Hugo, ensure your CNAME file is in your `/static` directory. Otherwise, Hugo will delete your CNAME file when building your site. More details here: [Trouble shooting CNAME files](https://forestry.io/docs/troubleshooting/cname/)
-{{% /tip %}}
+
+## Using a Custom Domain
+
+If you want to use a custom domain with GitHub Pages, you will need to include a `CNAME` file containing your custom domain. If you manually add this file to your `gh-pages` branch, it will be deleted the next time Forestry deploys your site. The `CNAME` file should instead be added to your source files, in a location where it will be copied to the generated site. In the case of a Hugo site, this should be in your `static/` directory, while it can live in the root of your project if you're using Jekyll.
+
+[GitHub Help: Using a Custom Domain With GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+
+[Forestry: Troubleshooting CNAME files](https://forestry.io/docs/troubleshooting/cname/)
