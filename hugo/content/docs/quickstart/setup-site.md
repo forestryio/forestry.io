@@ -19,17 +19,17 @@ This doc will walk you through:
 1. Setting up your site repository with Forestry
 2. Making your first commit by publishing some changes
 
----
+***
 
 ## Import Site from Repo
 
 [Sign up](https://app.forestry.io/signup/) for a free account with Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you **don't** have a Jekyll or Hugo site, click the link in the bottom of the _setup window_ to launch the demo site.
+If you **don't** have a Jekyll, Hugo or VuePress site already, click the link in the bottom of the _setup window_ to launch the demo site.
 
 ### Select your Static Site Generator
 
-Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports both [Jekyll](http://jekyllrb.com/) and [Hugo](http://gohugo.io/). In the case of Hugo, you must also specify which _version_ you use.
+Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](http://jekyllrb.com/), [Hugo](http://gohugo.io/), and [VuePress](). In the case of Hugo, you must also specify which _version_ you use.
 
 ![](/uploads/2018/02/add-site-flow-choose-generator.png)
 
@@ -43,8 +43,10 @@ Forestry works by synchronizing content changes with a git repository. In order 
 
 Once the authorization is complete, you will be taken to the next screen where you can choose the repository you wish to import.
 
-{{% warning %}} 
+{{% warning %}}
+
 ### GitHub Repository Permissions
+
 In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.  
 {{% /warning %}}
 
@@ -55,7 +57,8 @@ If you use Github, you will see a button at the top of the modal with a lock. By
 {{% tip %}}
 
 ### Config Path
-Forestry will look in the root of your repository for a Hugo or Jekyll configuration file. This will be a file named `config.toml` in Hugo, and `_config.yml` in Jekyll. If this file cannot be located, Forestry will prompt you to enter the path to this file. Enter the path from the root of your project to the directory containing this file.
+
+If you are using Hugo or Jekyll, Forestry will look in the root of your repository for a configuration file. This will be a file named `config.toml` in Hugo, and `_config.yml` in Jekyll. If this file cannot be located, Forestry will prompt you to enter the path to this file. Enter the path from the root of your project to the directory containing this file.
 <br /><br />
 For example, if you have a repository containing a Hugo site in a subfolder named `hugo/`, your `config.toml` file will be located at `hugo/config.toml`. When you import your site into Forestry, it will prompt you to enter the config path, and you should enter `hugo` in this field.
 
