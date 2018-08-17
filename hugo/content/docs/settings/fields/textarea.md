@@ -46,8 +46,14 @@ You can access this field in your templates using the field’s `name`:
 ### VuePress
 
     <template>
-      <p>{{ $page.frontmatter.description }}</p>
-    </template
+      <!--- Description is Plain Text -->
+      <div>
+        <p v-text="$page.frontmatter.description" />
+      </div>
+      
+      <!--- Description Contains HTML -->
+      <div v-html="$page.frontmatter.description" />
+    </template>
 
 {{% tip "Storing Markdown VuePress Front Matter " %}} VuePress does not have a built-in `markdownify` like function in Hugo or Jekyll, but you could always write your own [filter](https://vuejs.org/v2/guide/filters.html "Vue Filters")! {{% /tip %}}
 
