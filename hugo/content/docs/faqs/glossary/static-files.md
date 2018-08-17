@@ -17,5 +17,6 @@ Static files are files that are not processed by your static site generator. Ins
 
 ## Examples
 
-- **Jekyll**: in Jekyll, this is any file without front matter.
-- **Hugo**: in Hugo, this is any file in the `staticDir`, which defaults to `static/`
+* **Jekyll**: any file without front matter.
+* **Hugo**: static files live in the `staticDir`, which defaults to `static/`
+* **VuePress:** static files live in `.vuepress/public`
