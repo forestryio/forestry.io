@@ -36,7 +36,9 @@ You can access this field in your templates using the field’s `name`:
 ### VuePress
 
 ```vue
-<h1>{{ $page.frontmatter.title }}</h1>
+<template>
+  <h1>{{ $page.frontmatter.title }}</h1>
+</template>
 ```
 
 ## Config Files
