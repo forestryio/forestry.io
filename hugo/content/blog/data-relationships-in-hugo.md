@@ -25,9 +25,9 @@ menu: []
 draft: true
 
 ---
-**Don’t Repeat Yourself** is the perennial mantra of the software developer. While this advice is sometimes taken too literally, the idea is that you should not keep the same information in different places. If this information ever needs to change, updating everything can be difficult and tedious, leading to wasted hours and potential errors.
+**Don’t Repeat Yourself** is the perennial mantra of the software developer. It doesn't mean you should never do the same thing twice, but instead refers to having a **single, authoritative source of truth** for every piece of information used in your software.
 
-While _Don’t Repeat Yourself_ is often applied to code, it applies similarly to content. In this article, I will show you how you can use Hugo to organize and link content items together for a resilient and highly maintainable content strategy.
+*Don't Repeat Yourself* is frequently applied to code, where knowledge is susceptible to duplication through the copying and pasting of code blocks where an abstraction should be used instead. This wisdom can similarly be applied to your website's content, as updating content that is duplicated across a site can be tedious and error-prone. In this article, I will show you how you can use Hugo to organize and link content items together for a resilient and highly maintainable content strategy.
 
 ## Grouping Pages With Taxonomies
 
@@ -108,6 +108,16 @@ After importing your site to Forestry, navigate to the **Front Matter** section 
 ![](/uploads/2018/08/dropdown-data-source.png)
 
 Select fields in Forestry’s Front Matter Templates have multiple data source options. Under **Source Type**, select **Pages** to populate the venue dropdown with options from one of your page sections. After selecting **Pages**, you will see another dropdown to select which **Section** to show pages from. Select **Venues** as the section to enable users to select from the pages in your `venues` page bundle when assigning a venue to an event.
+
+{{% tip %}}
+When using pages as a data source, Forestry saves the full path to the file from the root of your content directory. In our example, the venue is saved as `venues/monticello.md`. We need to make a small change to our layout code to accomodate this by stripping out the section from the path:
+
+```
+{{ with (index (.Resources.Match (index (last 1 (split $.Params.venue "/")) 0)) 0) }}
+```
+
+This code gets the basename of your path by splitting the string on the directory separator and using the last item in the resulting slice.
+{{% /tip %}}
 
 ### Set Up Your Headless Bundle as a Distinct Sidebar Section
 
