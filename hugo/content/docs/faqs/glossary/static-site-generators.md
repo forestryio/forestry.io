@@ -18,5 +18,7 @@ Static Site Generators are developer tools that convert various data formats int
 These data formats are generally [content files](/docs/faqs/glossary/content-files/) stored in a Git repository. They can also be data pulled from third-party services.
 
 ## Examples
-- [**Jekyll**](https://jekyllrb.com) is the static site generator written in Ruby and created by [GitHub](https://github.com) founder, Tom Preston Werner.
-- [**Hugo**](https://gohugo.io) is the static site generator written in GoLang and created by Steve Francia.
+
+* [**Jekyll**](https://jekyllrb.com) is the static site generator written in Ruby and created by [GitHub](https://github.com) founder, Tom Preston Werner.
+* [**Hugo**](https://gohugo.io) is the static site generator written in GoLang and created by Steve Francia.
+* [**VuePress**](https://vuepress.vuejs.org/ "VuePress") is the Vue-powered static site generator created by Evan You
