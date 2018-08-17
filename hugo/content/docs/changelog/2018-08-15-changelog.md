@@ -2,14 +2,15 @@
 title: 2018/08/15 Changelog
 authors:
 - team forestry
-date: 2018-08-15 02:53:36 -1100
+date: 2018-08-15 13:53:36 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
 menu:
   changelog:
-    weight: 1
+    name: 2018/08/15
+    weight: 2
     parent: Changelog
 
 ---

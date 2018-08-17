@@ -21,8 +21,9 @@ weight: ''
 aliases: []
 menu:
   changelog:
+    name: 2018/02/02
     parent: Changelog
-    weight: 8
+    weight: 9
 
 ---
 ### Bug Fixes

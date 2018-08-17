@@ -23,8 +23,9 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   changelog:
+    name: 2018/01/09
     parent: Changelog
-    weight: 10
+    weight: 11
 
 ---
 ### Bug Fixes
