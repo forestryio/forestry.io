@@ -2,13 +2,16 @@
 title: 'Keeping Content DRY: Data Relationships In Hugo'
 description: ''
 date: 2018-08-17 05:05:07 -1100
-authors: []
+authors:
+- DJ Walker
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- Hugo
+- Frontend-Friday
 tags: []
 cta:
   headline: ''
@@ -57,7 +60,7 @@ Instead of using a taxonomy to keep track of our venues, it might make more sens
 One reason why you may not want to keep your data in the `content` section is because, by default, all markdown files in `content` are turned into HTML pages when the site is generated. However, since version `0.35`, you can create **headless bundles** in Hugo. A [headless bundle](https://gohugo.io/content-management/page-bundles/#headless-bundle) is a collection of pages that will not get published when the site is generated.
 
 {{% warning %}}
-You can’t query headless bundles with `.Site.Pages` or `.Site.RegularPages`, but you can retrieve pages from a bundle with `.Site.GetPage`.
+You can’t query headless bundles with `.Site.Pages` or `.Site.RegularPages`, but you can retrieve a page bundle with `.Site.GetPage`.
 {{% /warning %}}
 
 Let's switch our `venues` from a taxonomy to a headless bundle. After removing it from the `[taxonomy]` block in our `config.toml` file and deleting the file at `/content/venues/monticello/_index.md`, create  a new file at `/content/venues/index.md`. To identify the `venues` section as a headless bundle, insert the following front matter into that file:
