@@ -38,6 +38,8 @@ However the configuration works, you should opt for tools that allow you to stor
 
 ## CircleCI
 
+![](/uploads/2018/08/circleci_splash.png)
+
 CircleCI is a hosted CI/CD service that connects to your repository and runs your build pipeline whenever commits are pushed. CircleCI can run your build jobs in a Docker image, a Linux VM, or a MacOS VM for your iOS projects.
 
 Jobs in CircleCI are configured via a `.circleci/config.yml` file in your repository. This file specifies the docker image that should be used for your build environment, as well as the commands to run in order to build, test, and deploy your application.
@@ -57,6 +59,8 @@ Check out our article on [deploying a static site to CircleCI](https://forestry.
 {{% /tip %}}
 
 ## TravisCI
+
+![](/uploads/2018/08/travis_pipeline.png)
 
 TravisCI is a hosted CI/CD solution that integrates with your Github projects. TravisCI builds are configured with a `.travis.yml`  file that lives in your repository.
 
@@ -100,6 +104,8 @@ Obviously, using GitLab CI requires you to use GitLab to host your source code. 
 
 ## Jenkins
 
+![](/uploads/2018/08/jenkins_logo.png)
+
 Jenkins is a CI/CD server that you install and run on your own hardware. The Jenkins project [began in 2004](https://www.cloudbees.com/jenkins/about), and today is a popular choice for organizations that want to own their CI infrastructure.
 
 Jenkins has a huge plugin library for adding features to your CI server. Jenkins builds are configured with a `Jenkinsfile`, provided you have the recommended  [Pipeline Plugin installed](https://jenkins.io/doc/book/pipeline/getting-started/). Like CircleCI, a Jenkins build environment can be configured via a Docker image, though there are [several other options](https://jenkins.io/doc/book/pipeline/syntax/#agent) as well.
@@ -123,10 +129,10 @@ The variety of CI/CD options has made automation more accessible to developers t
 What do you use for automation? Is there a killer feature that I missed? {{% slack_invite_link "Let us know in our Slack Community!" %}}
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
-    <h2>Join us every Friday :date:</h2>
-    <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
-    <p><strong>Next week:</strong> TBD </p>
-    <p><strong>Last week:</strong> We looked at <a href="https://forestry.io/blog/data-relationships-in-hugo/">creating data relationships with Hugo's headless bundles</a>.</p>
+<h2>Join us every Friday :date:</h2>
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+<p><strong>Next week:</strong> TBD </p>
+<p><strong>Last week:</strong> We looked at <a href="https://forestry.io/blog/data-relationships-in-hugo/">creating data relationships with Hugo's headless bundles</a>.</p>
 </div>
 
 <!--
