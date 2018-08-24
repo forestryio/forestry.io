@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 We’ve written before about the [advantages of automated deployment,](https://forestry.io/blog/automate-deploy-w-circle-ci/) particularly for static sites. Continuous Integration and Continuous Deployment are a ubiquitous strategy for managing the release of software. There are several options out there for running your CI/CD pipelines, with their own strengths and weaknesses. Which one should you use? In this article, we will look at 5 different services that you can use to build, test, and deploy your code.
