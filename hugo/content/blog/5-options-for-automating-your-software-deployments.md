@@ -90,6 +90,8 @@ Drone is a relative newcomer to the space, and its documentation could use some 
 
 ## GitLab CI
 
+![](https://about.gitlab.com/images/ci/ci-cd-test-deploy-illustration_2x.png)
+
 If you use GitLab to host your code, you already have access to Gitlab’s Continuous Integration tools!
 
 All you have to do to add a CI pipeline to your GitLab project is add a `.gitlab-ci.yml` file to your project. I appreciate the fact that you don’t need to navigate a UI to set up CI on a project - if you have a lot of projects and want to automatically manage their CI in batches, this option is great for automating.
