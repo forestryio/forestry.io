@@ -75,6 +75,8 @@ TravisCI promises to be free for open source projects, forever. TravisCI also in
 
 With TravisCI, your builds are forced to run in an Ubuntu environment. You can [install Docker](https://docs.travis-ci.com/user/docker/) into this environment to pull images, but doing so is more verbose than other solutions. Additionally, you can only use TravisCI with projects hosted on Github.
 
+{{% tip %}} [TravisCI: Getting Started Guide](https://docs.travis-ci.com/user/getting-started/) {{% /tip %}} 
+
 ## Drone
 
 Drone is a CI/CD server written in Go. Drone is self-hosted, but a hosted option is currently in the works. Drone contains a plugin system that provides a way to add new features.
@@ -88,6 +90,8 @@ Drone's [matrix builds](http://docs.drone.io/matrix-builds/) feature provides an
 ### We’re Not Crazy About:
 
 Drone is a relative newcomer to the space, and its documentation could use some help.
+
+{{% tip %}} [Getting Started With Drone CI](http://docs.drone.io/getting-started/) {{% /tip %}} 
 
 ## GitLab CI
 
@@ -104,6 +108,8 @@ GitLab CI works with all versions of GitLab: you can use it on gitlab.com or on 
 ### We’re Not Crazy About:
 
 Obviously, using GitLab CI requires you to use GitLab to host your source code. However, the option to self-host the whole software suite may mitigate lock-in concerns.
+
+{{% tip %}} [GitLab CI Quick Start Guide](https://docs.gitlab.com/ee/ci/quick_start/) {{% /tip %}} 
 
 ## Jenkins
 
@@ -124,6 +130,10 @@ Since Jenkins is written in Java, it is cross-platform friendly and runs on any 
 ### We’re Not Crazy About:
 
 There’s not much to complain about here: Jenkins can do just about anything you need it to! Individuals or small teams may not like the maintenance burden of self-hosting their CI server, however.
+
+{{% tip %}}
+[Jenkins: Getting Started](https://jenkins.io/doc/pipeline/tour/getting-started/)
+{{% /tip %}}
 
 ## Picking the Tool That Works For You
 
