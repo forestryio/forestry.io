@@ -131,7 +131,7 @@ Thanks to Forestry's front matter UI, it's easy to apply this content strategy t
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
     <h2>Join us every Friday :date:</h2>
     <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
-    <p><strong>Next week:</strong> We look at the differences between some [popular Continuous Integration Tools](https://forestry.io/blog/5-options-for-automating-your-software-deployments/). </p>
+    <p><strong>Next week:</strong> We look at the differences between some <a href="https://forestry.io/blog/5-options-for-automating-your-software-deployments/">popular Continuous Integration Tools</a>. </p>
     <p><strong>Last week:</strong> We looked at <a href="https://forestry.io/blog/vuepress-brings-your-documentation-to-life/">VuePress, a static site generator that's great for documentation</a>.</p>
 </div>
 
