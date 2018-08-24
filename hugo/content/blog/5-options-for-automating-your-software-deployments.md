@@ -1,5 +1,5 @@
 ---
-title: 5 Options For Automating Your Software Deployments
+title: In Search of the Best Continuous Deployment Service
 description: ''
 date: 2018-08-24 05:01:35 -1100
 authors:
@@ -8,7 +8,8 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/08/pocketknife_texture.jpg"
 categories:
 - Frontend-Friday
 tags:
