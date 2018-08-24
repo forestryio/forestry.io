@@ -137,7 +137,7 @@ There’s not much to complain about here: Jenkins can do just about anything yo
 
 ## Picking the Tool That Works For You
 
-The variety of CI/CD options has made automation more accessible to developers than ever before. Open source apps with straight-forward build requirements can take advantage of **TravisCI’s** free offering. Users with code already in GitLab should look into using **Gitlab CI**. **Drone** is a good choice for users who want a simple, self-hosted solution, especially if they’re familiar with `docker-compose` syntax. **CircleCI** is a great choice for those who want flexibility but don’t want the burden of self-hosting. **Jenkins** will require some man-hours to support it, but it can do pretty much anything.
+The variety of CI/CD options has made automation more accessible to developers than ever before. Open source apps with straight-forward build requirements can take advantage of **TravisCI’s** free offering. Users with code already in GitLab should look into using **Gitlab CI**. **Drone** is a good choice for users who want a simple, self-hosted solution, especially if they’re familiar with `docker-compose` syntax. **CircleCI** is a great choice for those who want flexibility but don’t want the burden of self-hosting. **Jenkins** will require some man-hours to support it, but is an incredibly capable piece of software.
 
 What do you use for automation? Is there a killer feature that I missed? {{% slack_invite_link "Let us know in our Slack Community!" %}}
 
