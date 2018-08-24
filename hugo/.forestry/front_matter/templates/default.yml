@@ -133,11 +133,11 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
-- hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/vuepress-support-beta.md
 - hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/blog/snippets-custom-content-sections-and-more.md
