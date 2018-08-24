@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
