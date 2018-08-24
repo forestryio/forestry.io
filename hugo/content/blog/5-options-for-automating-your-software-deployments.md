@@ -147,8 +147,6 @@ What do you use for automation? Is there a killer feature that I missed? {{% sla
 <p><strong>Last week:</strong> We looked at <a href="https://forestry.io/blog/data-relationships-in-hugo/">creating data relationships with Hugo's headless bundles</a>.</p>
 </div>
 
-<!--
-\## Have something to add?
+## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
-\-->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17836668">Discuss on Hacker News</a>
