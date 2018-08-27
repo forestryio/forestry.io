@@ -29,7 +29,7 @@ Today, we rolled out an update that uses persistent SSH keys to interact with yo
 
 ## What this Means For Your Projects
 
-Your existing projects should continue to work as usual, but we recommend you switch them over to key-based authentication at your convenience.
+Your existing projects should continue to work as usual, but we recommend you switch them over to key-based authentication at your convenience. We will be sunsetting token-based authentication on **February 1, 2019.**
 
 ### How to Migrate Your Project
 
@@ -41,7 +41,7 @@ To migrate your **Github or GitLab** project to key-based authentication, all yo
 
 When you create a new project in Forestry, you will now notice a **Quick Setup via OAuth** option. This is the recommended option and will follow the same setup flow you're used to, but will create the persistent SSH key behind the scenes.
 
-Because we are currently unable to automatically apply SSH keys to Bitbucket accounts, the **Quick Setup via Oauth** option is not available for Bitbucket projects. Please consult our [manual project setup](/docs/git-sync/manual-setup/) guide for instructions on setting up a new Bitbucket project.
+Because we are currently unable to automatically apply SSH keys to Bitbucket accounts, the **Quick Setup via OAuth** option is not available for Bitbucket projects. Please consult our [manual project setup](/docs/git-sync/manual-setup/) guide for instructions on setting up a new Bitbucket project.
 
 ## More Info on Source Provider Connections
 
