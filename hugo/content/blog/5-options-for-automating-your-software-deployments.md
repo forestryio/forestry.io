@@ -106,7 +106,7 @@ GitLab CI works with all versions of GitLab: you can use it on gitlab.com or on 
 
 ### We’re Not Crazy About:
 
-Obviously, using GitLab CI requires you to use GitLab to host your source code. However, the option to self-host the whole software suite may mitigate lock-in concerns.
+For free tier users, GitLab CI requires you to use GitLab to host your source code (certain paid tiers provide support for [using Gitlab CI with external repositories](https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/)). However, the option to self-host the whole software suite may mitigate lock-in concerns.
 
 {{% tip %}} [GitLab CI Quick Start Guide](https://docs.gitlab.com/ee/ci/quick_start/) {{% /tip %}} 
 
@@ -139,6 +139,11 @@ There’s not much to complain about here: Jenkins can do just about anything yo
 The variety of CI/CD options has made automation more accessible to developers than ever before. Open source apps with straight-forward build requirements can take advantage of **TravisCI’s** free offering. Users with code already in GitLab should look into using **Gitlab CI**. **Drone** is a good choice for users who want a simple, self-hosted solution, especially if they’re familiar with `docker-compose` syntax. **CircleCI** is a great choice for those who want flexibility but don’t want the burden of self-hosting. **Jenkins** will require some man-hours to support it, but is an incredibly capable piece of software.
 
 What do you use for automation? Is there a killer feature that I missed? {{% slack_invite_link "Let us know in our Slack Community!" %}}
+
+---
+
+***Updated August 27, 2018:*** *a previous version of this article incorrectly stated that GitLab CI could only be used with GitLab-hosted projects. GitLab's Premium plan and higher plans enable using Gitlab CI with external repositories.*
+
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
 <h2>Join us every Friday :date:</h2>
