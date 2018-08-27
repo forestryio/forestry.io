@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/migrating-to-key-based-authentication.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/data-relationships-in-hugo.md
