@@ -8,7 +8,6 @@ publishdate: 2018-08-28 02:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
 categories:
 - CMS
 tags: []
