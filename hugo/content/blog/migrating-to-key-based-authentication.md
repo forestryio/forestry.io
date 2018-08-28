@@ -1,10 +1,10 @@
 ---
 title: Migrating to Key-based Authentication
 description: ''
-date: 2018-08-27 06:01:18 -1100
+date: 2018-08-27 17:01:18 +0000
 authors:
 - DJ Walker
-publishdate: 2018-08-27 01:00:00 -1100
+publishdate: 2018-08-27 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -29,7 +29,7 @@ Today, we rolled out an update that uses persistent SSH keys to interact with yo
 
 ## What this Means For Your Projects
 
-Your existing projects should continue to work as usual, but we recommend you switch them over to key-based authentication at your convenience. We will be sunsetting token-based authentication on **February 1, 2019.**
+Your existing projects should continue to work as usual, but we recommend you switch them over to key-based authentication at your convenience. **We will be sunsetting token-based authentication on February 1, 2019.**
 
 ### How to Migrate Your Project
 
