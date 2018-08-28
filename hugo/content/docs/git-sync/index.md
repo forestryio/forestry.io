@@ -15,7 +15,6 @@ menu:
     weight: 1
 
 ---
-
 Forestry saves changes to your content by committing back to your Git repository. Adding a site to Forestry first requires that the source code for your site is available through one of our supported source providers. When setting up a new site in Forestry, you will be prompted to connect to your preferred source provider to link your repository.
 
 Currently, Forestry supports the use of **Github**, **GitLab**, and **Bitbucket** as source providers.
@@ -24,12 +23,14 @@ Currently, Forestry supports the use of **Github**, **GitLab**, and **Bitbucket*
 
 This is the recommeded way to connect your repository. Forestry will connect to your Git provider and automatically configure your repository to work with Forestry.
 
+![](/uploads/2018/08/addsite-w-quick-setup.png)
+
 After selecting your Git provider, ensure the **Quick Setup via OAuth** toggle is activated and click **Next**. You will be prompted to authenticate with the selected provider if not already logged in.
 
 ### Detailed Quick Setup Guides
 
-- [Github](/docs/git-sync/github/)
-- [GitLab](/docs/git-sync/gitlab/)
+* [Github](/docs/git-sync/github/)
+* [GitLab](/docs/git-sync/gitlab/)
 
 {{% warning %}}
 Due to some issues with the Bitbucket API, quick setup is not currently available for Bitbucket projects. Please refer to the manual setup documentation for instructions on setting up your Bitbucket project with Forestry.
