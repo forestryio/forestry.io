@@ -11,8 +11,8 @@ menu:
   docs:
     parent: Git Sync
     weight: 4
----
 
+---
 The **manual setup** option can be used to set up your project without having to authenticate with your source provider through Forestry.
 
 ## Using Manual Setup
@@ -23,11 +23,15 @@ Before you can continue, you must still select the git provider you are using. T
 
 ## Setting the Repo Location
 
+![](/uploads/2018/08/manual-init.png)
+
 After you click **Next**, you will be prompted to enter the repository URL, the branch you wish to import, and the [config path](/docs/quickstart/setup-site#config-path). The repository URL should be the **SSH URL**, not the HTTPS URL.
 
 ## Completing the Connection
 
 After you enter your repo information and click **Next**, you will be taken to the **repository settings** screen on your site dashboard. This screen will give you access to the information that needs to be added to your git provider's settings.
+
+![](/uploads/2018/08/ssh-settings.png)
 
 ## Webhook URL
 
@@ -37,7 +41,7 @@ This URL needs to be added as a webhook that reacts to **push** events on your r
 
 The webhooks for your repo can be accessed at `https://github.com/$USERNAME/$REPOSITORY/settings/hooks`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
-Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**. Set the **Content type** to `application/json`, and select **Just the `push` event** where it asks you which events should trigger this webhook.
+Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**. Set the **Content type** to `application/json`, and select **Just the** `**push**` **event** where it asks you which events should trigger this webhook.
 
 Click the **Add webhook** button to complete the webhook setup.
 
