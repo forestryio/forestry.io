@@ -1,10 +1,10 @@
 ---
 title: Migrating to Key-based Authentication
 description: ''
-date: 2018-08-27 17:01:18 +0000
+date: 2018-08-28 02:00:18 -1100
 authors:
 - DJ Walker
-publishdate: 2018-08-27 12:00:00 +0000
+publishdate: 2018-08-28 01:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
