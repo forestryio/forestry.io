@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Git Sync
-    weight: 1
+    weight: 2
 
 ---
 {{% tip "Disclaimer" %}}

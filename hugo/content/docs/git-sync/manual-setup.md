@@ -10,7 +10,7 @@ images:
 menu:
   docs:
     parent: Git Sync
-    weight: 4
+    weight: 5
 
 ---
 The **manual setup** option can be used to set up your project without having to authenticate with your source provider through Forestry.

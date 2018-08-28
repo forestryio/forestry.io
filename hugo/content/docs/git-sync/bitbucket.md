@@ -10,10 +10,9 @@ images:
 menu:
   docs:
     parent: Git Sync
-    weight: 3
+    weight: 4
 
 ---
-
 {{% warning "Temporarily Unavailable" %}}
 Due to some issues with the Bitbucket API, we are not currently able to offer Quick Setup for Bitbucket projects. Please refer to our [manual setup](/docs/git-sync/manual-setup/) documentation for instructions on setting up your Bitbucket project.
 {{% /warning %}}

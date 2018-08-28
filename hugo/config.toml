@@ -16,6 +16,9 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
+name = "Editing"
+weight = 4
+[[menu.docs]]
 name = "Media"
 weight = 6
 [[menu.docs]]
@@ -27,9 +30,6 @@ weight = 2
 [[menu.docs]]
 name = "Welcome"
 weight = 1
-[[menu.docs]]
-name = "Editing"
-weight = 4
 [[menu.docs]]
 name = "Other"
 weight = 8
@@ -43,11 +43,16 @@ weight = 3
 name = "Glossary"
 weight = 2
 [[menu.footer]]
-name = "Product"
-weight = 1
-[[menu.footer]]
 name = "Company"
 weight = 2
+[[menu.footer]]
+name = "Product"
+weight = 1
+[[menu.main]]
+identifier = "signup"
+name = "Sign up"
+url = "https://app.forestry.io/signup"
+weight = 8
 [[menu.main]]
 identifier = "userdashboard"
 name = "Dashboard"
@@ -58,11 +63,6 @@ identifier = "login"
 name = "Login"
 url = "https://app.forestry.io/login"
 weight = 6
-[[menu.main]]
-identifier = "signup"
-name = "Sign up"
-url = "https://app.forestry.io/signup"
-weight = 8
 [[menu.main]]
 identifier = "useraccount"
 name = "My Account"

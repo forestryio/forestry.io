@@ -22,6 +22,9 @@ private: false
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
+  main:
+    name: Docs
+    weight: 3
   footer:
     name: Docs
     parent: Product
@@ -29,9 +32,6 @@ menu:
   docs:
     parent: Welcome
     weight: 1
-  main:
-    name: Docs
-    weight: 3
 
 ---
 Forestry.io is a Git-backed CMS (content management system) for websites and web products built using [_static site generators_](/docs/faqs/glossary/static-site-generators/ "Static Site Generators"). Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
