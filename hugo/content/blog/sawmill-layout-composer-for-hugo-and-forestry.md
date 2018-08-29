@@ -35,7 +35,7 @@ To make it easy to manage these sections, Sawmill was created to work with Fores
 
 <div id="create-site-with-sawmill" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/dwalkr/sawmill-starter.git"
+repo="git@github.com:dwalkr/sawmill-starter.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.37.1"

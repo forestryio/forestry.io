@@ -31,7 +31,7 @@ In order to make data that is “machine friendly” like this, we can expose it
 
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/regisphilibert/hugoGetApi/"
+repo="git@github.com:regisphilibert/hugoGetApi.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.42.2"

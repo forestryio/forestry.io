@@ -36,7 +36,7 @@ This is a big announcement for us and we're looking forward to hearing what you 
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/forestryio/portfolio-vuepress"
+repo="git@github.com:forestryio/portfolio-vuepress.git"
 branch="master"
 engineName="vuepress"
 engineVersion="0.12.0"

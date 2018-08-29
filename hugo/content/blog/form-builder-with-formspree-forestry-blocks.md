@@ -34,7 +34,7 @@ For this project, I decided to use Formspree because it is easy to integrate wit
 
 <div id="import-form-builder-button" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/dwalkr/forestry-form-builder"
+repo="git@github.com:dwalkr/forestry-form-builder.git"
 branch="master"
 engineName="hugo"
 engineVersion="0.43"

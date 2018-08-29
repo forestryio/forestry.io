@@ -47,7 +47,7 @@ Accompanying this blog post is a sample Hugo website that integrates Snipcart to
 
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
+repo="git@github.com:dwalkr/snipcart-hugo-demo.git"
 configPath="site"
 branch="master"
 engineName="hugo"
