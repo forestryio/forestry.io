@@ -10,7 +10,7 @@ blocks:
 - template: create-site-button-js
   engine_name: jekyll
   engine_version: 3.6.0
-  repo_name: https://github.com/forestryio-templates/belkirk-jekyll-demo.git
+  repo_name: git@github.com:forestryio-templates/belkirk-jekyll-demo.git
   fork_name: forestry-demo
   branch_name: master
 hero:
