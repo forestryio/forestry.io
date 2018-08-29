@@ -32,7 +32,8 @@ sections:
   path: hugo/content/docs
   label: Docs
   create: all
-  match: "{{editing,faqs,git-sync,guides,hosting,media,quickstart,settings,troubleshooting,welcome}/**/*,*}"
+  match: "**/*"
+  exclude: changelog/*
 - type: directory
   path: hugo/content/docs/changelog
   label: Changelog
