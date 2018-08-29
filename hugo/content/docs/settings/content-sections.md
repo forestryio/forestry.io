@@ -93,6 +93,14 @@ The default `match` value is `**/*` which will match all files, including any fi
 You can use the `match` parameter to separate a single directory into multiple content sections, but take care to ensure that no files overlap between sections. This may cause unexpected behavior.
 {{% /warning %}}
 
+### Exclude
+
+The `exclude` parameter allows you to exclude files and paths from your `directory` sections. `exclude` accepts a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) just like `match`.
+
+{{% tip "Excluding files from Jekyll pages" %}}
+For a `jekyll-pages` section, Forestry will use the value of the `exclude` parameter in your [Jekyll configuration](https://jekyllrb.com/docs/configuration/).
+{{% /tip %}}
+
 ### Create
 
 The `create` parameter allows you to specify whether new files can be created for the section. Setting this parameter to `all` allows for new files to be created, while setting it to `none` will only allow existing files to be edited.
