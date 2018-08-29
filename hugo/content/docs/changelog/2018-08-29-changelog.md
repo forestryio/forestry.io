@@ -2,7 +2,7 @@
 title: 2018/08/29 Changelog
 authors:
 - team forestry
-date: 2018-08-29 03:34:09 -1100
+date: 2018-08-29 14:34:09 +0000
 cta:
   headline: ''
   textline: ''
@@ -18,6 +18,7 @@ menu:
 
 * **Directory Sections:** A new `exclude` glob can be set to exclude files from your directory sections.
 * **Jekyll Pages Sections:** Forestry now respects the `exclude` field found in your [Jekyll config](https://jekyllrb.com/docs/configuration/ "Jekyll Configuration").
+* **Block Labels:** You can now label your blocks by setting the Display Field on your fmt partials.
 
 ## Bug Fixes
 
