@@ -16,9 +16,9 @@ menu:
 ---
 ## Enhancements
 
-* **Directory Sections:** A new `exclude` glob can be set to exclude files from your directory sections. 
-* **Jekyll Pages Sections:** Forestry now respects the `exclude` file found in your [Jekyll config](https://jekyllrb.com/docs/configuration/ "Jekyll Configuration").
+* **Directory Sections:** A new `exclude` glob can be set to exclude files from your directory sections.
+* **Jekyll Pages Sections:** Forestry now respects the `exclude` field found in your [Jekyll config](https://jekyllrb.com/docs/configuration/ "Jekyll Configuration").
 
 ## Bug Fixes
 
-* **Bitbucket SSH Setup:** During the setup of a new Bitbucket repo, Forestry now links directly to the Bitbucket page where you can upload the SSH key. 
+* **Bitbucket SSH Setup:** During the setup of a new Bitbucket repo, Forestry now links directly to the Bitbucket page where you can upload the SSH key.
