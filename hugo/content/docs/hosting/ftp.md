@@ -10,7 +10,7 @@ images:
 menu:
   docs:
     parent: Hosting
-    weight: 5
+    weight: 4
 
 ---
 {{% tip "Disclaimer" %}}

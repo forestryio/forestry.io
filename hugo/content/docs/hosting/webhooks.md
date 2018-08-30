@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Hosting
-    weight: 6
+    weight: 5
 
 ---
 ## Overview
