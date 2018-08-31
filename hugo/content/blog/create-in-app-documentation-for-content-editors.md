@@ -1,10 +1,10 @@
 ---
 title: Create In-App Documentation For Content Editors
 description: ''
-date: 2018-08-31 05:31:37 -1100
+date: 2018-08-31 16:31:37 +0000
 authors:
 - DJ Walker
-publishdate: 2018-08-31 05:31:00 -1100
+publishdate: 2018-08-31 16:31:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -37,7 +37,7 @@ If you’re a webdev lone wolf and don’t think you need to write documentation
 
 Embedding docs in Forestry is very easy and flexible thanks to our configurable sidebar. The new read-only feature for document sections lets you add links to markdown documents in the sidebar that will display the rendered markdown when clicked.
 
-For this post, I will add some embedded documentation for the Hugo version of our uBuild project.
+For this post, I will add some embedded documentation for [the Hugo version of our uBuild project](https://github.com/forestryio/ubuild-hugo-starter).
 
 ### Creating the document
 
