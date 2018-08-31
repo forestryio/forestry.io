@@ -126,6 +126,7 @@ Jekyll site with pages, posts, and a custom collection:
     - type: document
       label: Help
       path: README.md
+      read_only: true
     
     - type: heading
       label: Content
