@@ -8,7 +8,8 @@ publishdate: 2018-08-31 16:31:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/08/books_hanging.jpg"
 categories:
 - Frontend-Friday
 tags: []
@@ -20,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Say you’re writing some code and you hit a road block: _what was the name of that method again? Which parameters do I need to send in this API request? What does this error message mean?_ At times like this, developers reach for the documentation. Ideally, this documentation is close at hand in order to minimize the interruption to your coding flow.
@@ -61,7 +61,6 @@ We want to make sure our document doesn’t get built with the rest of our site.
     
     Without any page sections, your uBuild page is a blank slate! You will likely want 
     to start the page with a **Navigation header** or a **Simple header**.
-
 
 ### Configure the Sidebar Section
 
@@ -154,3 +153,16 @@ Don’t forget that when using Formspree, you need to submit the form once and c
 ## Help Your Users Help Themselves
 
 Documentation isn’t worth much when nobody can find it. By embedding your docs directly in the Forestry app, you make it easy for anyone editing your content to get to the information they need without disrupting their workflow. We are always looking for ways to coordinate the efforts of developers and content editors, and providing documentation can help bridge that gap!
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
+    <h2>Join us every Friday :date:</h2>
+    <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+    <p><strong>Next week:</strong> We'll discuss a strategy for hosting static sites on AWS.</p>
+    <p><strong>Last week:</strong> We compared <a href="https://forestry.io/blog/5-options-for-automating-your-software-deployments/">5 of our favorite CI services.</a></p>
+</div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
+-->
