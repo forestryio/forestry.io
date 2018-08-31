@@ -79,7 +79,7 @@ To add your help doc by editing the `.forestry/settings.yml` file, just add the 
 
 ![](/uploads/2018/08/embedded_help_doc.png)
 
-Once you’re repo is done importing, you should see a new item in your sidebar labeled **Help**. Clicking on this will display a rendered version of your markdown document!
+Once your repo is done importing, you should see a new item in your sidebar labeled **Help**. Clicking on this will display a rendered version of your markdown document!
 
 ### Link to In-App Elements
 
