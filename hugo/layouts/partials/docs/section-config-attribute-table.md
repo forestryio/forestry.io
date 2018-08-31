@@ -8,3 +8,4 @@
 | `create` | Restrictions on creating new content items | `all`,`none` | `all` |
 | `templates` | Control Which Front Matter Templates can be used in section | Array | All templates |
 | `new_doc_ext` | File extension for new documents created in this section | String | Value of **New File Format** in Forestry Settings |
+| `read_only` | Prevent content from being edited (only applies to `document` type) | Boolean | `false` |
