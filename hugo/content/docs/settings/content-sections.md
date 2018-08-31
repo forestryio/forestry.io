@@ -41,7 +41,7 @@ Document
 <br />`document`
 {{% /dt %}}
 {{% dd %}}
-A `document` section can be used to allow a single document to be edited. Use the `path` option to specify the path to the file you want to be edited.
+A `document` section can be used to allow a single document to be edited. Use the `path` option to specify the path to the file you want to be edited. Use the [read_only](#read-only) option to prevent this document from being edited in Forestry.
 {{% /dd %}}
 
 {{% dt %}}
@@ -112,6 +112,10 @@ Pass in an array of Front Matter Template filenames (without their extension) to
 ### New Document File Extension
 
 The `new_doc_ext` parameter lets you specify the extension to be used for new files created in this content section. You can specify a file extension with or without the extension delimiter (the `.`). The default file extension is whatever you have set as the **New Page Extension** in your site settings.
+
+### Read Only
+
+The `read_only` setting only applies to `document` sections. This will prevent the document from being editable in Forestry, only showing the contents of the document on the page. When used with a markdown document, the markdown will be converted to HTML and rendered appropriately. Read-only document sections are a great way to include documentation for your editors that can be accessed directly from the Forestry sidebar.
 
 ## Examples
 
