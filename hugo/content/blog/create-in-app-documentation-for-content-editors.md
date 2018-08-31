@@ -161,8 +161,6 @@ Documentation isn’t worth much when nobody can find it. By embedding your docs
     <p><strong>Last week:</strong> We compared <a href="https://forestry.io/blog/5-options-for-automating-your-software-deployments/">5 of our favorite CI services.</a></p>
 </div>
 
-<!--
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17887656">Discuss on Hacker News</a>
