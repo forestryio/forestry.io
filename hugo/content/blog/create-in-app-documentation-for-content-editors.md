@@ -39,7 +39,7 @@ Embedding docs in Forestry is very easy and flexible thanks to our configurable 
 
 For this post, I will add some embedded documentation for the Hugo version of our uBuild project.
 
-**Creating the document**
+### Creating the document
 
 To get started with our embedded documentation, let’s create a new markdown file in our project. Using `README.md` is a common convention for documentation included with a project, but this documentation is often intended to be broader in scope and oriented to people working with the code. We want to make a document for the benefit of people using Forestry with this project, so I’ve decided to name this document `README-FORESTRY.md`. Feel free to name it whatever you want, though.
 
@@ -62,9 +62,12 @@ We want to make sure our document doesn’t get built with the rest of our site.
     Without any page sections, your uBuild page is a blank slate! You will likely want 
     to start the page with a **Navigation header** or a **Simple header**.
 
-**Configure the Sidebar Section**
+
+### Configure the Sidebar Section
 
 Forestry’s editor can be configured either through editing the `.forestry/settings.yml` file or through the **Settings** screen in the UI.
+
+{{% screencast "setting_up_readonly_doc" %}}
 
 To add your help doc through the UI, navigate to the **Sidebar** tab of the Settings screen. Click the **Add Section** button to add your section, and select **Document** from the **Type** dropdown. Enter `Help` as the label, and `README-FORESTRY.md` as the path. Activate the **Read Only** toggle to enable the read-only behavior. After that’s finished, click the **Done** button and proceed to **Save** the changes to your section. In order to see the updated sidebar, navigate to the **Repository** tab and re-import.
 
@@ -79,7 +82,7 @@ To add your help doc by editing the `.forestry/settings.yml` file, just add the 
 
 Once you’re repo is done importing, you should see a new item in your sidebar labeled **Help**. Clicking on this will display a rendered version of your markdown document!
 
-**Link to In-App Elements**
+### Link to In-App Elements
 
 Embedding documentation directly in the Forestry app means we can link to in-app pages to make them easier for the user to find. You don’t have to struggle like me, trying to tell the user where to go in so many words - just send them straight there!
 
@@ -104,6 +107,8 @@ With this knowledge, let’s update our help file to link directly to our pages 
     click the **Add New** button. Enter the title for your page, and select **Page builder** 
     for the front matter template. Start building your page by adding **Page Sections** 
     from the dropdown.
+
+{{% screencast "in_app_links" %}}
 
 Just like that, the link will take the user directly to the pages section. Instant gratification!
 
