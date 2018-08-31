@@ -23,7 +23,7 @@ menu: []
 draft: true
 
 ---
-Say you’re writing some code and you hit a road block: *what was the name of that method again? Which parameters do I need to send in this API request? What does this error message mean?* At times like this, developers reach for the documentation. Ideally, this documentation is close at hand in order to minimize the interruption to your coding flow.
+Say you’re writing some code and you hit a road block: _what was the name of that method again? Which parameters do I need to send in this API request? What does this error message mean?_ At times like this, developers reach for the documentation. Ideally, this documentation is close at hand in order to minimize the interruption to your coding flow.
 
 Forestry’s content editor plays an interesting role in the creation of static sites. Developers build a site, and then configure our content editor with Front Matter Templates to provide a polished editing experience. Our editor makes it easy to edit content, front matter, and data files, but the connection between this information and its representation on the finished website is not always obvious.
 
@@ -33,20 +33,17 @@ Whether you are handing off your Forestry-enhanced website to a customer, to col
 If you’re a webdev lone wolf and don’t think you need to write documentation for anyone, at least do it for your future self!
 {{% /tip %}}
 
-
 ## Creating an Embedded Doc in Forestry
 
 Embedding docs in Forestry is very easy and flexible thanks to our configurable sidebar. The new read-only feature for document sections lets you add links to markdown documents in the sidebar that will display the rendered markdown when clicked.
 
-For this post, I will add some embedded documentation for the Hugo version of our uBuild project. 
+For this post, I will add some embedded documentation for the Hugo version of our uBuild project.
 
 **Creating the document**
 
 To get started with our embedded documentation, let’s create a new markdown file in our project. Using `README.md` is a common convention for documentation included with a project, but this documentation is often intended to be broader in scope and oriented to people working with the code. We want to make a document for the benefit of people using Forestry with this project, so I’ve decided to name this document `README-FORESTRY.md`. Feel free to name it whatever you want, though.
 
 We want to make sure our document doesn’t get built with the rest of our site. For a standard Hugo project, including this file in the root of our project (outside of the `content` directory) is enough to take care of this. In my `README-FORESTRY.md` file, I’ve included some basic content to help the user understand Forestry as well as the uBuild project:
-
-
 
     # Editing Your uBuild Site
     This website uses a Hugo theme called uBuild, which was designed to use Forestry's 
@@ -65,7 +62,6 @@ We want to make sure our document doesn’t get built with the rest of our site.
     Without any page sections, your uBuild page is a blank slate! You will likely want 
     to start the page with a **Navigation header** or a **Simple header**.
 
-
 **Configure the Sidebar Section**
 
 Forestry’s editor can be configured either through editing the `.forestry/settings.yml` file or through the **Settings** screen in the UI.
@@ -74,11 +70,12 @@ To add your help doc through the UI, navigate to the **Sidebar** tab of the Sett
 
 To add your help doc by editing the `.forestry/settings.yml` file, just add the following item to the `sections:` array.
 
-
     - type: document
       path: README-FORESTRY.md
       label: Help
       read_only: true  
+
+![](/uploads/2018/08/embedded_help_doc.png)
 
 Once you’re repo is done importing, you should see a new item in your sidebar labeled **Help**. Clicking on this will display a rendered version of your markdown document!
 
@@ -90,18 +87,17 @@ The Forestry editor is a React App, and routes in the app are appended to a **ha
 
 Here are some useful links you could insert into your document:
 
-| Page                            | URI                          |
-|---------------------------------|------------------------------|
-| Media Manager                   | `#/media/`                   |
-| General Settings                | `#/settings`                 |
-| Repository Settings (Re-import) | `#/settings/repository`      |
-| Pages Listing                   | `#/sections/pages/`          |
-| Homepage for most Hugo sites    | `#/pages/content-_index-md/` |
+| Page | URI |
+| --- | --- |
+| Media Manager | #/media/ |
+| General Settings | #/settings |
+| Repository Settings (Re-import) | #/settings/repository |
+| Pages Listing | #/sections/pages/ |
+| Homepage for most Hugo sites | #/pages/content-_index-md/ |
 
 It’s easy to grab links for any screen in the app; just copy the end of the URI, starting with the hash.
 
 With this knowledge, let’s update our help file to link directly to our pages section:
-
 
     ### Using uBuild
     To create a new landing page, navigate to the [pages section](#/sections/pages/) and 
@@ -120,7 +116,6 @@ Readonly documents are a brand new feature. The markdown parser currently suppor
 Markdown supports most HTML syntax, so we can try to get creative with what we offer in our embedded docs. Here’s one interesting idea I had:
 
 Forestry offers support for our users, but a lot of troubleshooting is best left to site administrators. You may wish to give your non-admins a convenient way to contact you directly if they encounter a problem while working in the editor. I’ve [mentioned before](https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/) how dead simple it is to [set up a contact form with Formspree,](https://forestry.io/blog/form-builder-with-formspree-forestry-blocks/) so let’s try it here!
-
 
     ## Need Help?
     Drop me a line if you're having trouble.
@@ -145,10 +140,11 @@ Forestry offers support for our users, but a lot of troubleshooting is best left
 
 We’re using the `form-field` class to pick up some styles that already exist in the app, and inlining anything else we might need. After committing these changes, we have a working contact form embedded directly in our help doc!
 
+![](/uploads/2018/08/embedded_contact_form.png)
+
 {{% tip %}}
 Don’t forget that when using Formspree, you need to submit the form once and confirm your email address before you start receiving submissions.
 {{% /tip %}}
-
 
 ## Help Your Users Help Themselves
 
