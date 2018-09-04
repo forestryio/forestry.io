@@ -64,18 +64,20 @@ Now we need to properly configure the bucket with a _permission policy_ that wil
 * Replace `example.com` in the `Resource` field with the name of your bucket _(e.g, forestry.io)_.
 * Click `Save`
 
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-      "Version": "2012-10-17",
-        "Statement": [
-        {
-          "Sid": "PublicReadGetObject",
-          "Effect": "Allow",
-          "Principal": "*",
-          "Action": "s3:GetObject",
-          "Resource": "arn:aws:s3:::example.com/*"
-        }
-        ]
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::example.com/*"
     }
+  ]
+}
+```
 
 ## Setting Up An IAM User
 
