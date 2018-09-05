@@ -53,7 +53,7 @@ These nifty docs live in your sidebar. You can add anything to them (from simple
 
 ## Exclude Field
 
-Using the match field to include & exclude files had the potential to get pretty complicated. That's why we added a field dedicated to hiding files from a section. The new exclude field uses a simple glob pattern. 👉See the content section configuration [here](https://forestry.io/docs/settings/content-sections/)
+Using the match field to include & exclude files had the potential to get pretty complicated. That's why we added a field dedicated to hiding files from a section. The new exclude field uses a simple glob pattern. 👉 See the content section configuration [here](https://forestry.io/docs/settings/content-sections/)
 
 ![](https://downloads.intercomcdn.com/i/o/74958160/9c6cfa72409f11cd94269450/exclude_glob_pattern.png)
 
