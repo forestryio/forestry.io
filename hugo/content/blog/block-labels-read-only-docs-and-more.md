@@ -35,7 +35,7 @@ We also made the configuration of your sidebar easier by adding an exclude field
 
 ## Block Display Field 🔖
 
-Until now Blocks couldn't be labelled individually. This made them hard to navigate if the same Block was added multiple times. Since the Blocks had the same name it became unclear as to what content a specific Block held. The new `display_field` allows you to define a field that will be used as a label in addition to the Block's name.
+Until now Blocks couldn't be labelled individually. This caused confusion if the same Block was added multiple times, since all Blocks would carry the same name. The new `display_field` allows you to define a field that will be used as a label.
 
 See the docs [here](https://forestry.io/docs/settings/front-matter-templates#display-field)
 
