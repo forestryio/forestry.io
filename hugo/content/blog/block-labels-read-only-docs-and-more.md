@@ -57,6 +57,4 @@ Hiding certain files from a content section had the potential to get pretty comp
 
 ![](https://downloads.intercomcdn.com/i/o/74958160/9c6cfa72409f11cd94269450/exclude_glob_pattern.png)
 
-***
-
 Feel free to check out more changes and bug fixes in our [changelogs](https://forestry.io/docs/changelog/).  
