@@ -27,9 +27,9 @@ Last week we added a bunch of features to make your life a little easier!
 
 You are shaping Forestry every day with your feedback and this is exactly what happened with this improvement. You made us aware that Blocks can get hard to navigate when you add the same Block multiple times. To make this easier you can now add a `display_field` to label your Blocks.
 
-We believe the best way to explain intricate settings or features is documentation right at your fingertips. The new read-only docs feature allows you to add such a resource inside the content manager. Making it accessible to you whenever you need it. 👉 Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
+We believe the best way to explain intricate settings or features is documentation right at your fingertips. The new read-only docs feature allows you to add such a resource inside the content manager making it accessible to you whenever you need it. 👉 Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
 
-We also made the configuration of your sidebar easier by adding an exclude field and we fixed some bugs 🐛
+We also made your sidebar configuration more flexible by adding an exclude field and we fixed some bugs 🐛
 
 ***
 
@@ -45,7 +45,7 @@ See the docs [here](https://forestry.io/docs/settings/front-matter-templates#di
 
 ## Read-Only Docs 📝😍
 
-These nifty docs live in your sidebar. You can add anything to them from simple links to full-fledged contact forms. We looked at a some use cases in our latest blog post. 👉Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
+These nifty docs live in your sidebar. You can add anything to them (from simple links, to full-fledged contact forms). We looked at a some use cases in our latest blog post. 👉Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
 
 ![](https://downloads.intercomcdn.com/i/o/74949100/3fc78db6ab9d6160bacb6f56/read-only-documentation.png)
 
@@ -53,7 +53,7 @@ These nifty docs live in your sidebar. You can add anything to them from simple 
 
 ## Exclude Field
 
-Hiding certain files from a content section had the potential to get pretty complicated. That's why we added a field dedicated to hiding files from a section. The new exclude field uses a simple glob pattern. 👉See the content section configuration [here](https://forestry.io/docs/settings/content-sections/)
+Using the match field to include & exclude files had the potential to get pretty complicated. That's why we added a field dedicated to hiding files from a section. The new exclude field uses a simple glob pattern. 👉See the content section configuration [here](https://forestry.io/docs/settings/content-sections/)
 
 ![](https://downloads.intercomcdn.com/i/o/74958160/9c6cfa72409f11cd94269450/exclude_glob_pattern.png)
 
