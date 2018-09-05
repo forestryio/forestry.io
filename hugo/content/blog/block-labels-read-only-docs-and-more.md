@@ -29,7 +29,7 @@ You are shaping Forestry every day with your feedback and this is exactly what h
 
 We believe the best way to explain intricate settings or features is documentation right at your fingertips. The new read-only docs feature allows you to add such a resource inside the content manager and is accessible to you whenever you need it. 👉 Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
 
-We also made the configuration of your sidebar easier by adding an exclude field and fixed some bugs.
+We also made the configuration of your sidebar easier by adding an exclude field and fixed some bugs 🐛
 
 ***
 
