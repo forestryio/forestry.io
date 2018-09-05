@@ -20,7 +20,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Last week we added a bunch of features to make your life a little easier!
@@ -45,7 +44,7 @@ See the docs [here](https://forestry.io/docs/settings/front-matter-templates#di
 
 ## Read-Only Docs 📝😍
 
-These nifty docs live in your sidebar. You can add anything to them (from simple links, to full-fledged contact forms). We looked at a some use cases in our latest blog post. 👉Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
+These nifty docs live in your sidebar. You can add anything to them (from simple links, to full-fledged contact forms). We looked at some use cases in our latest blog post. 👉Read more [here](https://forestry.io/blog/create-in-app-documentation-for-content-editors/)
 
 ![](https://downloads.intercomcdn.com/i/o/74949100/3fc78db6ab9d6160bacb6f56/read-only-documentation.png)
 
