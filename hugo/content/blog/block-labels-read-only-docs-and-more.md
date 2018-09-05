@@ -56,4 +56,6 @@ Using the match field to include & exclude files had the potential to get pretty
 
 ![](https://downloads.intercomcdn.com/i/o/74958160/9c6cfa72409f11cd94269450/exclude_glob_pattern.png)
 
-Feel free to check out all changes and bug fixes in our [changelogs](https://forestry.io/docs/changelog/).
+Feel free to check out all changes and bug fixes in our [changelogs](https://forestry.io/docs/changelog/).  
+  
+As always, message us if you notice any bugs, have any questions or any feedback.
