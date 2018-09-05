@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/block-labels-read-only-docs-and-more.md
 - hugo/content/blog/create-in-app-documentation-for-content-editors.md
 - hugo/content/blog/vuepress-support-beta.md
 - hugo/content/blog/migrating-to-key-based-authentication.md
