@@ -1,10 +1,10 @@
 ---
 title: Automate Your Static Hosting Environment With AWS CloudFormation
 description: ''
-date: 2018-09-07 04:04:56 -1100
+date: 2018-09-07 15:04:56 +0000
 authors:
 - DJ Walker
-publishdate: 2018-09-07 04:04:00 -1100
+publishdate: 2018-09-07 15:04:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -75,6 +75,19 @@ To create our static site hosting environment on AWS, we’re going to need the 
 - A **CloudFront Distribution** to handle requests to our website and retrieve the pages from our S3 Bucket.
 
 CloudFront is AWS’ CDN service. It *is* possible to serve a website directly from S3 without CloudFront, but this is not recommended by AWS. Accessing and caching the requests through CloudFront will generally be cheaper than serving them directly from S3. In fact, we will be configuring a **Bucket Policy** and a **CloudFront Origin Access Identity** to ensure that *only* CloudFront can read from our Bucket, and that it isn’t exposed to the general public.
+
+{{% tip "Follow Along" %}}
+
+[View the complete template on GitHub](https://github.com/forestryio/cloudformation-templates/blob/35179ceaa0d0b12a5e4560fe69f774adcca6f875/static-site-hosting/basic-s3-cloudfront.yml),
+
+or 
+
+Create this stack on AWS: 
+
+<a title="Launch S3+Cloudfront Stack" href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=my-static-website&templateURL=https:%2F%2Fs3.amazonaws.com%2Fdwalkr-cf-templates%2Fbasic-s3-cloudfront.yml">
+  <img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch stack button" />
+</a>
+{{% /tip %}}
 
 ### Defining Parameters
 
@@ -239,6 +252,6 @@ Now, when we create a new stack with our template, the user will see these value
 
 ## Going Further
 
-CloudFormation helps wrangle the complicated process of wiring up AWS services, and provides a way to express your infrastructure in a single configuration file.
-
 Our tutorial today covered the basics of creating a static site hosting environment with CloudFormation, but it leaves a few things to be desired. Next time, we’ll improve our template using **Route53** to hook up a domain name to our CloudFront Distribution, **Certificate Manager** to make our site available over HTTPS, and a **Lambda@Edge** function to make “pretty” URLs work.
+
+Hopefully, this post has helped you to see the potential of a tool like CloudFormation. The next time you need to set up a hosting environment for your static site, consider expressing your **infrastructure as code** with CloudFormation!
