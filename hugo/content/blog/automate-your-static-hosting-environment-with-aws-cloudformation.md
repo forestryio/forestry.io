@@ -246,8 +246,6 @@ Hopefully, this post has helped you to see the potential of a tool like CloudFor
     <p><strong>Last week:</strong> We gave you some tips on creating <a href="https://forestry.io/blog/create-in-app-documentation-for-content-editors/">in-app documentation in Forestry.</a></p>
 </div>
 
-<!--
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17936287">Discuss on Hacker News</a>
