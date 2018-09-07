@@ -8,7 +8,8 @@ publishdate: 2018-09-07 15:04:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/09/james-donaldson-404533-unsplash.jpg"
 categories:
 - Frontend-Friday
 tags: []
@@ -20,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 I love automation. If you’ve been following this blog, you’ll know I’ve written [a few times](https://forestry.io/blog/5-options-for-automating-your-software-deployments/) about using [continuous integration](https://forestry.io/blog/automate-deploy-w-circle-ci/) to automate the deployment of your software. Why stop at deployment? Can we use automation to improve our infrastructure?
