@@ -100,3 +100,6 @@
     margin-left: 0.5rem;
   }
 }
+img[src$="cloudformation-launch-stack.png"] {
+  min-width: 144px;
+}
