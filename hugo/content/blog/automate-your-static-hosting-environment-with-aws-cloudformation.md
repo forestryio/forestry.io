@@ -45,7 +45,7 @@ AWS’ CloudFormation service manages **stacks** of services. To create a new st
 
 For our purposes, we’re going to write a configuration file from scratch. CloudFormation accepts both JSON and YAML files. We’ll be using YAML in our example, as I find it slightly easier to write, and we can embed comments into our configuration to improve the self-documenting nature of our template.
 
-**Anatomy of a CloudFormation Template**
+### Anatomy of a CloudFormation Template
 
 A CloudFormation template consists of three main sections: Parameters, Resources, and Outputs. The following code will provide us with a base for building our template:
 
@@ -58,7 +58,7 @@ A CloudFormation template consists of three main sections: Parameters, Resources
       # Specify AWS Resources to be created
     Outputs:
       # Important information that should be provided to the user after the resources have been created
-## 
+
 
 The **Parameters** section is where you define the user-defined values in your template. Using parameters will make your template more reusable. When a user creates a new CloudFormation stack from your template, the CloudFormation UI will provide fields for them to fill out these parameters.
 
@@ -76,7 +76,7 @@ To create our static site hosting environment on AWS, we’re going to need the 
 
 CloudFront is AWS’ CDN service. It *is* possible to serve a website directly from S3 without CloudFront, but this is not recommended by AWS. Accessing and caching the requests through CloudFront will generally be cheaper than serving them directly from S3. In fact, we will be configuring a **Bucket Policy** and a **CloudFront Origin Access Identity** to ensure that *only* CloudFront can read from our Bucket, and that it isn’t exposed to the general public.
 
-**Defining Parameters**
+### Defining Parameters
 
 Let’s start by defining the **Parameters** we want to include with our template. This template will take two parameters that will be used in configuring our CloudFront Distribution: the path to the default root document, and the path to the error page. The default root document will be displayed when somebody visits the homepage, and the error page will be displayed when a user requests a page that could not be found.
 
@@ -104,7 +104,7 @@ We can reference these values in our template using [CloudFormation’s template
     InterpolatedValue: !Sub 'mywebsite.com${DefaultRootObject}' # mywebsite.com/index.html
 
 
-**Setting up the S3 Bucket**
+### Setting up the S3 Bucket
 
 Now it’s time to start adding resources. Our first resource is easy, the S3 bucket to store the contents of our website:
 
@@ -117,7 +117,7 @@ The **Type** attribute of our resource tells AWS what kind of resource we are pr
 
 Specifying a new resource with a **Type** of `AWS::S3::Bucket` is all we need to have AWS create a new bucket with a unique identifier. We can reference this bucket elsewhere in our template using the `!Ref` and `!Sub` functions, just like with our parameters.
 
-**Controlling Access to Our Bucket**
+### Controlling Access to The Bucket
 
 As mentioned before, we won’t be exposing our bucket contents directly to the general public: we want all requests to be handled by our CloudFront distribution. To make this work, we are going to create a **CloudFront Origin Access Identity**. This identity is how we will grant the CloudFront Distribution access to our S3 Bucket. 
 
@@ -149,7 +149,7 @@ To grant this identity access to our bucket, we will create a **BucketPolicy** r
 
 This policy is applied to our bucket and grants read access to the Origin Access Identity we just created. Note we’re using another function, `!GetAtt`, to retrieve nested attributes from our `CloudFrontOriginAccessIdentity` resource. The CloudFormation resource documentation tells us which values can be retrieved from a resource in its [Return Values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html#aws-resource-cloudfront-cloudfrontoriginaccessidentity-returnvalues) section.
 
-**Creating the CloudFront Distribution**
+### Creating the CloudFront Distribution
 
 Now that we have our bucket defined, and an access identity that can read from it, we just need to set up our CloudFront Distribution with our bucket as its origin:
 
@@ -182,7 +182,8 @@ Be sure to check out the [full template on GitHub](https://github.com/forestryio
 CloudFront’s `DefaultRootObject` only applies to requests to the homepage, not subpages. If your website uses “pretty URLs” (leaving off the `/index.html`  by default,) the `DefaultRootObject` configuration is not enough. We will explore ways to solve this using CloudFormation in a future post.
 {{% /tip %}}
 
-**Adding Publish Credentials**
+### Adding Publish Credentials
+
 The four resources we’ve created so far — the `Bucket`, `BucketPolicy`, `CloudFrontOriginAccessIdentity`, and `CloudFrontDistribution` — are all we need for a basic static site hosting environment on AWS. We can then upload files to the bucket, and they can be access from our CloudFront URL.
 
 If we want to programmatically push code to our S3 Bucket, however, we’ll need some credentials that can be used to write to it. This can be done easily by creating an **IAM User** with an attached policy, and an **IAM Access Key** for that user:
@@ -207,7 +208,7 @@ If we want to programmatically push code to our S3 Bucket, however, we’ll need
 
 The directly-attached policy will allow all operations on the bucket. The AccessKey will give us programmatic access to the bucket. However, after an access key is created, we can’t fetch the secret from the AWS IAM interface. This is where CloudFormation’s **Outputs** come in handy.
 
-**Adding Outputs**
+### Adding Outputs
 
 The third major component of a CloudFormation template is the **Outputs** section. This is where we can retrieve information from the resources we created and display them for the user.
 
@@ -241,5 +242,3 @@ Now, when we create a new stack with our template, the user will see these value
 CloudFormation helps wrangle the complicated process of wiring up AWS services, and provides a way to express your infrastructure in a single configuration file.
 
 Our tutorial today covered the basics of creating a static site hosting environment with CloudFormation, but it leaves a few things to be desired. Next time, we’ll improve our template using **Route53** to hook up a domain name to our CloudFront Distribution, **Certificate Manager** to make our site available over HTTPS, and a **Lambda@Edge** function to make “pretty” URLs work.
-
-
