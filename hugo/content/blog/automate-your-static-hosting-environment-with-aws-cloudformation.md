@@ -71,7 +71,7 @@ Finally, **Outputs** is where you define the information that should be provided
 To create our static site hosting environment on AWS, we’re going to need the following resources:
 
 
-- An **S3 Bucket** that contains the HTML of our website ****
+- An **S3 Bucket** that contains the HTML of our website
 - A **CloudFront Distribution** to handle requests to our website and retrieve the pages from our S3 Bucket.
 
 CloudFront is AWS’ CDN service. It *is* possible to serve a website directly from S3 without CloudFront, but this is not recommended by AWS. Accessing and caching the requests through CloudFront will generally be cheaper than serving them directly from S3. In fact, we will be configuring a **Bucket Policy** and a **CloudFront Origin Access Identity** to ensure that *only* CloudFront can read from our Bucket, and that it isn’t exposed to the general public.
