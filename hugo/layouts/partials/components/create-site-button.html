@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type="text/javascript" id="add-site-settings">
     window.addSite = {
         engine: { name: "{{ .engine_name }}", version: "{{ .engine_version }}" },
         source: {
@@ -9,5 +9,5 @@
         configPath: "{{ .config_path }}"
     }
 </script>
-<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
+<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript" id="add-site-script"></script>
 <!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
