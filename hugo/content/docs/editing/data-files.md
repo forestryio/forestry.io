@@ -17,9 +17,23 @@ menu:
 ---
 Data files are pieces of content that don’t belong to a specific page or piece of content. They are commonly used for managing content like social media handles and links, contact information, and branding (e.g, logo images and site colours).
 
-![](/uploads/2018/01/11.png)
+## Datafile Sections
 
-Forestry allows you to edit existing data files. They can be found under _Data_ in the sidebar.
+You can configure access to data files with [Sidebar Sections](/docs/settings/content-sections/), explicitly adding them to the sidebar like the rest of your content. In this case, your Sidebar Configuration will display the data editing UI for JSON, YAML, and TOML files instead of the default content UI. You can use the `match` and `new_doc_ext` options to configure a sidebar section that operates exclusively on data files.
+
+{{% tip %}}
+For more information on how to configure the sidebar for data files, view our [Sidebar Configuration documentation.](/docs/settings/content-sections/#configuring-data-file-sections)
+{{% /tip %}}
+
+### Existing Jekyll & Hugo Projects
+
+The **Datafile Sections** feature was launched on **September 7, 2018**. Jekyll and Hugo projects that existed in Forestry before this date have the option of opting in to this new behavior. To opt in to this method of handling Data files, go to your project settings, scroll to the bottom of the **General** tab, and activate the toggle labeled **Datafile Sections**.
+
+If you don't opt-in to **Datafile Sections**, Forestry will import data files it finds in the `data` directory of your Hugo project, or the `_data` directory in your Jekyll project. These files will then appear under a **Data** heading in your sidebar.
+
+{{% warning %}}
+Legacy data file handling is now **deprecated** and will be removed in a future update. It is recommended you migrate your existing Jekyll & Hugo projects by opting in to the new data file behavior and configuring access to your data files via the sidebar configuration.
+{{% /warning %}}
 
 ## Customizing Fields
 

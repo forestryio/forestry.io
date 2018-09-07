@@ -164,3 +164,30 @@ Multilingual Hugo Blog:
       match: "**/*.fr.md"
       label: Posts
       new_doc_ext: ".fr.md"
+
+## Configuring Data File Sections
+
+When using the [Datafile Sections](/docs/editing/data-files/#datafile-sections) behavior, Forestry will include data files when collecting content in a sidebar section. The `directory` type can be used with the `match` and `new_doc_ext` options to create a section that allows to creation and management of data files similar to the behavior of markdown content.
+
+### Datafile Section Example
+
+Access an entire directory of data files:
+
+```
+sections:
+- type: directory
+  label: Data
+  path: data
+  match: "*.toml"
+  new_doc_ext: ".toml"
+  create: all
+```
+
+Access a specific data file:
+
+```
+sections:
+- type: document
+  label: Authors
+  path: _data/authors.yml
+```
