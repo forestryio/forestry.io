@@ -24,7 +24,7 @@ menu:
   changelog:
     name: 2018/01/29
     parent: Changelog
-    weight: 13
+    weight: 15
 
 ---
 ### Bug Fixes

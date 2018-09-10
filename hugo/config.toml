@@ -16,6 +16,9 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
+name = "Git Sync"
+weight = 3
+[[menu.docs]]
 name = "Hosting"
 weight = 5
 [[menu.docs]]
@@ -36,9 +39,6 @@ weight = 1
 [[menu.docs]]
 name = "Other"
 weight = 8
-[[menu.docs]]
-name = "Git Sync"
-weight = 3
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
