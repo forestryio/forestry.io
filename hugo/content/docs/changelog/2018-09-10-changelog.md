@@ -20,3 +20,4 @@ menu:
 * **Readonly Documents:** No longer are locked when being viewed.
 * **Logo:** Started suppressing console error that isn't actually a problem.
 * **Menus:** Fixed issue where menu item weights would sometimes get jumbled after adding a new item.
+* **Jekyll Previews:** Fixed an issue which caused Jekyll previews to not open at the correct URL.
