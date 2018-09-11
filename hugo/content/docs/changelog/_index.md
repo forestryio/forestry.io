@@ -10,11 +10,11 @@ menu:
   docs:
     parent: Other
     weight: 4
-  changelog:
-    identifier: changelog
-    weight: 1
   footer:
     parent: Product
     weight: 4
+  changelog:
+    identifier: changelog
+    weight: 1
 
 ---
