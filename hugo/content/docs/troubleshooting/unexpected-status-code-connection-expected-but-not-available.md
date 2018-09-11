@@ -19,7 +19,12 @@ cta:
 private: false
 weight: ''
 aliases: []
-
+menu:
+  troubleshooting:
+    name: Unexpected Status Code / Connection Expected but not Available
+    weight: 1
+    parent: Troubleshooting
+    
 ---
 This error typically occurs when there is a problem with your **authentication token**. This token tells your **source provider** (GitHub, GitLab, or Bitbucket) that Forestry is allowed to push/pull changes to/from your repository.
 

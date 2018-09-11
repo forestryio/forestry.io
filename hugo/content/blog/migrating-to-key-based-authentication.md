@@ -18,7 +18,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 Head's up! We're making some changes to how Forestry authenticates with your Git repos.
