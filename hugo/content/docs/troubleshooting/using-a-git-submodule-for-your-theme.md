@@ -22,7 +22,7 @@ aliases: []
 menu:
   troubleshooting:
     name: Using a Git submodule for your theme
-    weight: 1
+    weight: 2
     parent: Troubleshooting
 
 ---

@@ -46,7 +46,7 @@ weight = 2
 name = "Status"
 parent = "Product"
 url = "https://status.forestry.io"
-weight = 5
+weight = 6
 [[menu.footer]]
 name = "Company"
 weight = 2

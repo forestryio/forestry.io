@@ -3,10 +3,10 @@ title: Unexpected Status Code / Connection Expected but not Available
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
-publishdate: 2018-06-27 21:00:00 -1100
+publishdate: 2018-06-28 08:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
-date: 2018-06-28 03:08:09 -1100
+date: 2018-06-28 14:08:09 +0000
 headline: ''
 description: ''
 textline: ''
@@ -21,10 +21,9 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    name: Unexpected Status Code / Connection Expected but not Available
     weight: 1
     parent: Troubleshooting
-    
+
 ---
 This error typically occurs when there is a problem with your **authentication token**. This token tells your **source provider** (GitHub, GitLab, or Bitbucket) that Forestry is allowed to push/pull changes to/from your repository.
 

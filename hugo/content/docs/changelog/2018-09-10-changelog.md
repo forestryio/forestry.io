@@ -10,7 +10,7 @@ cta:
 menu:
   changelog:
     name: 2018/09/10
-    weight: 2
+    weight: 1
     parent: Changelog
 
 ---
