@@ -32,4 +32,4 @@ We've rolled out an update that uses persistent SSH keys to interact with your r
 
 **We will be sunsetting token-based authentication on February 1, 2019.**
 
-Read About [How to Migrate Your Projects](/blog/migrating-to-key-based-authentication/)
+More on [How To Migrate Your Projects](/blog/migrating-to-key-based-authentication/)
