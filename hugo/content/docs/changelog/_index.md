@@ -13,5 +13,8 @@ menu:
   changelog:
     identifier: changelog
     weight: 1
+  footer:
+    parent: Product
+    weight: 4
 
 ---
