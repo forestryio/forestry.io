@@ -23,7 +23,6 @@ menu:
   sunset:
     weight: 1
     parent: Sunset Notices
-draft: true
 
 ---
 We've rolled out an update that uses persistent SSH keys to interact with your repo. Previously, we were relying on OAuth tokens to gain access as needed, but some users were encountering problems with this method as tokens would intermittently expire before they could be refreshed. Using long-lived SSH credentials is intended to solve this problem.
