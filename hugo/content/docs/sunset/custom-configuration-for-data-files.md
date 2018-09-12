@@ -16,7 +16,7 @@ tags: []
 publishdate: 2018-09-11 11:00:00 -1100
 expirydate: 2029-12-31 12:00:00 -1100
 private: false
-weight: ''
+weight: 1
 aliases: []
 menu: []
 layout: ''
