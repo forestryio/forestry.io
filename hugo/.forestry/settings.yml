@@ -41,6 +41,11 @@ sections:
   match: "*"
   templates:
   - changelog
+- type: directory
+  path: hugo/content/docs/sunset
+  label: Sunset Notices
+  create: all
+  match: "*"
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
