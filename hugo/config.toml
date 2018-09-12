@@ -54,6 +54,11 @@ weight = 2
 name = "Product"
 weight = 1
 [[menu.main]]
+identifier = "useraccount"
+name = "My Account"
+url = "https://app.forestry.io/settings"
+weight = 5
+[[menu.main]]
 identifier = "signup"
 name = "Sign up"
 url = "https://app.forestry.io/signup"
@@ -68,11 +73,6 @@ identifier = "login"
 name = "Login"
 url = "https://app.forestry.io/login"
 weight = 6
-[[menu.main]]
-identifier = "useraccount"
-name = "My Account"
-url = "https://app.forestry.io/settings"
-weight = 5
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
