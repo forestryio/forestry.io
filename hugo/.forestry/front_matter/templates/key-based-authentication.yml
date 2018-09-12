@@ -94,3 +94,5 @@ fields:
   type: text
   hidden: false
   default: ''
+pages:
+- hugo/content/docs/sunset/custom-configuration-for-data-files.md
