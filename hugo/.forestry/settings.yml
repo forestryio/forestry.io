@@ -33,7 +33,7 @@ sections:
   label: Docs
   create: all
   match: "**/*"
-  exclude: changelog/*
+  exclude: "{changelog,sunset}/*"
 - type: directory
   path: hugo/content/docs/changelog
   label: Changelog
