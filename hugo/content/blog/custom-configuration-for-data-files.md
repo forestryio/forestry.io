@@ -25,7 +25,7 @@ We're excited to announce custom configuration for data files.
 
 A little over two months ago we made it possible to customize the sidebar for your content files (i.e. .md and .html). With today's update we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
 
-All new sites will have this feature enabled by default. Existing Jekyll and Hugo sites are not automatically migrating until October 16th, 2018, giving you time to make adjustments, if necessary. Read more in our [docs](https://forestry.io/docs/editing/data-files#existing-jekyll-hugo-projects).
+All new sites will have this feature enabled by default. Existing Jekyll and Hugo sites are not automatically migrating until October 16th, 2018, giving you time to make adjustments, if necessary. Read more in our [docs](/docs/editing/data-files#existing-jekyll-hugo-projects).
 
 Here's a quick walkthrough on how you can set up data file sections on your site.
 
@@ -49,7 +49,7 @@ Next you can select the _Sidebar_ tab to add new sections. We first want to add
 
 **Add Your First Data Files Section** 📊
 
-Adding a data files section is very similar to adding a _Heading_ Section. After clicking on _Add Section_ you choose Type _Directory_. In the following you'll have to fill out _Label_, _Path_ and _New File Extension_. Use the match field if you only want to use a subset of files in the directory. To learn more about the individual fields visit our [docs](https://forestry.io/docs/settings/content-sections/).
+Adding a data files section is very similar to adding a _Heading_ Section. After clicking on _Add Section_ you choose Type _Directory_. In the following you'll have to fill out _Label_, _Path_ and _New File Extension_. Use the match field if you only want to use a subset of files in the directory. To learn more about the individual fields visit our [docs](/docs/settings/content-sections/).
 
 ![](/uploads/2018/09/datafiles-setup-1.gif)
 
@@ -67,4 +67,4 @@ That's it! You can now add as many sections as you like and you can even put con
 
 We're excited to hear from you. Let us know if you come across any bugs or have any improvement suggestions.
 
-To review all changes please visit our [changelog](https://forestry.io/docs/changelog/) or visit our [sunset notices](https://forestry.io/docs/sunset/) to see if any features are going to be replaced or removed.
+To review all changes please visit our [changelog](/docs/changelog/) or visit our [sunset notices](/docs/sunset/) to see if any features are going to be replaced or removed.
