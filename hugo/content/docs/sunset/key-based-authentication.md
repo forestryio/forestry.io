@@ -6,7 +6,7 @@ authors: []
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 layout: single
-date: 2019-01-31 23:37:36 -1100
+date: 2019-02-01 10:37:36 +0000
 headline: ''
 description: ''
 textline: ''
@@ -17,7 +17,7 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 3
 aliases: []
 menu:
   sunset:
