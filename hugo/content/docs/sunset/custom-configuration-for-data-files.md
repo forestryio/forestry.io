@@ -20,6 +20,10 @@ weight: 1
 aliases: []
 menu: []
 layout: ''
+menu:
+  sunset:
+    weight: 1
+    parent: Sunset Notices
 draft: true
 
 ---

@@ -21,7 +21,7 @@ weight: 3
 aliases: []
 menu:
   sunset:
-    weight: 1
+    weight: 2
     parent: Sunset Notices
 
 ---
