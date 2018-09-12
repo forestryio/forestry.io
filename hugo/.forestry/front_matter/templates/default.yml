@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/custom-configuration-for-data-files.md
 - hugo/content/blog/improved-collaboration-and-more.md
 - hugo/content/blog/introducing-media-management.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
