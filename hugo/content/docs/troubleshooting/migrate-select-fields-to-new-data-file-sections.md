@@ -21,8 +21,8 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    name: Using a Git submodule for your theme
-    weight: 2
+    name: Migrate Select Fields to New Data File Sections
+    weight: 1
     parent: Troubleshooting
 draft: true
 
