@@ -27,26 +27,32 @@ menu:
 draft: true
 
 ---
-If you have a repository for your Jekyll or Hugo project and you want use a different repository for your theme, you should set up your theme repo as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+With our recent update for Data Files we allow users to have full control over their Data Files in their Sidebar. To make this change happen we need to ask our users to update their existing sites. A guide on how to update the Sidebar to show Data Files can be found [here](/blog/custom-configuration-for-data-files/)
 
-To add a theme as a Git Submodule, run the following command from the root of your project:
+If you're using Data Files as a source for your Select Fields there is an additional step to migrate successfully to the new handling of Data Files.
 
-    git submodule add https://github.com/spf13/hyde.git themes/hyde
+To update your data source with Forestry you can navigate to a relevant Front Matter Template in your Front Matter Settings and click on the <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="2"><path d="M7.75 22.149L12 19.48l4.25 2.669a11.029 11.029 0 0 0 4.088-2.973l-1.224-4.865 3.85-3.216a10.933 10.933 0 0 0-1.561-4.807l-5.006-.34-1.87-4.656A11.032 11.032 0 0 0 12 1c-.87 0-1.715.1-2.527.292l-1.87 4.657-5.006.339a10.933 10.933 0 0 0-1.56 4.807l3.85 3.216-1.225 4.865a11.029 11.029 0 0 0 4.087 2.973z"></path><circle cx="12" cy="12" r="3"></circle></g></svg> next to the Select Field.
 
-Be sure to add the correct **URL** to your theme repo and the correct **path** to where you want this repo to live within your project.
+At the bottom of the Field Editor you can now 
 
-![](/uploads/2018/02/submodules-1.png)
+{% tip %}
+If you prefer to make these changes directly in the Front Matter you have to adjust the following code for your select fields. 
+```
+config:
+	source:
+		type: datafiles
+		file: filename
+		path: path
+```
 
-Once you create the submodule, you'll notice a `.gitmodules` file in the root of your project. Commit this file as well as the module inside of your theme directory to your project.
-
-If you need to make a change to this theme, the changes should be pushed to the original repository you created the submodule from. You can then update the submodule on your site with the following command:
+to 
 
 ```
-git submodule update --remote
+config:
+	source:
+		type: documents
+		file: pathto/filename
+		path: path
+		section: section-name
 ```
-
-This is also how you update a third-party theme that you have installed as a submodule.
-
-{{% tip %}}
-Don't forget to set the theme you just installed as your active theme! In Hugo this is your [config.toml](https://gohugo.io/themes/installing-and-using-themes/#config-file) file, and in Jekyll this will be [_config.yml](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/#adding-a-jekyll-theme-in-your-sites-_configyml-file).
-{{% /tip %}}
+{% /tip %}
