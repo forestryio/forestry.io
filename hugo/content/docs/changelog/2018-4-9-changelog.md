@@ -23,7 +23,7 @@ menu:
   changelog:
     name: 2018/04/09
     parent: Changelog
-    weight: 12
+    weight: 14
 
 ---
 ### Hugo Support for v0.38.1

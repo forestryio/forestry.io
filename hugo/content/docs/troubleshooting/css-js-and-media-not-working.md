@@ -22,7 +22,7 @@ weight: ''
 menu:
   troubleshooting:
     parent: Troubleshooting
-    weight: 7
+    weight: 8
 
 ---
 Sometimes you’ll find your assets aren’t loading when you preview or publish your site. This is almost always due to *path issues*.

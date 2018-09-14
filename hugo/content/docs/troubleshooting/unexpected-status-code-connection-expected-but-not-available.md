@@ -21,7 +21,7 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    weight: 1
+    weight: 2
     parent: Troubleshooting
 
 ---

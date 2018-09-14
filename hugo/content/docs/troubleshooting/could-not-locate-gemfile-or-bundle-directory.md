@@ -27,7 +27,7 @@ menu:
   troubleshooting:
     name: Could not locate Gemfile or .bundle/ directroy
     parent: Troubleshooting
-    weight: 3
+    weight: 4
 
 ---
 #### When I view an error log from Forestry I see: `Could not locate Gemfile or .bundle/ directory`
