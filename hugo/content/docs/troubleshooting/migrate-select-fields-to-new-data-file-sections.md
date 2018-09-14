@@ -23,7 +23,6 @@ menu:
   troubleshooting:
     weight: 1
     parent: Troubleshooting
-draft: true
 
 ---
 <!--With our recent update for Data Files we allow users to have full control over their Data Files in their Sidebar. To make this change happen we need to ask our users to update their existing sites. A guide on how to update the Sidebar to show Data Files can be found [here](/blog/custom-configuration-for-data-files/)-->
