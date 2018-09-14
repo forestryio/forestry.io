@@ -26,11 +26,9 @@ menu: []
 ---
 Previously, I showed you how to [automatically provision AWS resources with CloudFormation](https://forestry.io/blog/automate-your-static-hosting-environment-with-aws-cloudformation/). CloudFormation provides a concise, declarative syntax for configuring a “stack” of AWS resources. Given the sizable catalog of services provided by AWS, and the need to connect services together for most use cases, being able to declare a stack of connected services all together in a single configuration file will help you keep track of your project’s infrastructure and reduce the likelihood of misconfiguration.
 
-
 ## Our CloudFormation Stack
 
 The stack we worked on last time set up a hosting environment for a static website, with an S3 bucket to hold the files, and a CloudFront distribution to serve these files to the public via a CDN. Our end result left a few things to be desired. In this article, we’re going to cover **attaching a Lambda function** to our CloudFront distribution to improve our URL handling, using a custom domain with CloudFront by **creating a DNS record in Route 53**, and **creating a TLS certificate via** **Certificate Manager** to serve our site over HTTPS.
-
 
 ## Default Directory Index
 
@@ -47,7 +45,6 @@ Fortunately, we can use **Lambda@Edge** to tweak the behavior of our CloudFront 
 We need to create an IAM Role for our Lambda function. We can use the standard Lambda permissions by adding the policy to `ManagedPolicyArns`.
 
 Recall that all resources should be declared inside of the `Resources:` section of our CloudFormation template. We define our role as follows:
-
 
     LambdaRole:
       Type: 'AWS::IAM::Role'
@@ -67,7 +64,6 @@ Recall that all resources should be declared inside of the `Resources:` section 
 ### Creating the Lambda Function
 
 To create the function, we create a new resource of type `AWS::Lambda::Function`. We can then include the code of our Lambda function directly in the template:
-
 
     LambdaFunction:
       Type: 'AWS::Lambda::Function'
@@ -117,10 +113,9 @@ To create the function, we create a new resource of type `AWS::Lambda::Function`
 
 This function does three things:
 
-
-- When the URI ends with a `/`, the function appends `index.html` before forwarding the request to the S3 Bucket. URIs that end with a `/` are considered the canonical version of the URI.
-- When the URI ends with `/index.html`, the function issues a 302 redirect to the canonical URI (`index.html` is truncated from the URI)
-- When the URI is anything that does not end in a `/` or a file extension, a `/` is appended to the URI and a 302 redirect is issued.
+* When the URI ends with a `/`, the function appends `index.html` before forwarding the request to the S3 Bucket. URIs that end with a `/` are considered the canonical version of the URI.
+* When the URI ends with `/index.html`, the function issues a 302 redirect to the canonical URI (`index.html` is truncated from the URI)
+* When the URI is anything that does not end in a `/` or a file extension, a `/` is appended to the URI and a 302 redirect is issued.
 
 Non-canonical URIs are redirected to prevent duplicate content penalties from search engine crawlers.
 
@@ -129,17 +124,15 @@ Note that we are using the `!Sub` template function to insert template Parameter
 {{% tip "Escaping JavaScript Template Syntax" %}}
 We are using JavaScript template syntax in our Lambda function to interpolate variable values in strings. This syntax normally looks the same as interpolating template parameters using `!Sub`. Because of this, we use `!` to escape JavaScript template variables when using them in a string passed to `!Sub`, like so:
 
-
     `${!request.uri}${!indexDocument}`
 
 {{% /tip %}}
 
 ### Versioning the Lambda Function
 
-We can’t attach a Lambda function directly to a CloudFront distribution. We need to create a *version* of our function, and attach this version to the distribution. A Lambda version is a snapshot of the code at a particular point in time. If the function is changed, it will not affect the behavior of our CloudFront distribution until a new version is created and attached in place of the old one.
+We can’t attach a Lambda function directly to a CloudFront distribution. We need to create a _version_ of our function, and attach this version to the distribution. A Lambda version is a snapshot of the code at a particular point in time. If the function is changed, it will not affect the behavior of our CloudFront distribution until a new version is created and attached in place of the old one.
 
- Let’s create the `AWS::Lambda::Version` resource:
-
+Let’s create the `AWS::Lambda::Version` resource:
 
     VersionedLambdaFunction:
         Type: 'AWS::Lambda::Version'
@@ -148,8 +141,7 @@ We can’t attach a Lambda function directly to a CloudFront distribution. We ne
 
 ### Modifying the CloudFront Distribution
 
-To attach the Lambda function to our CloudFront distribution, all we have to do is add `LambdaFunctionAssociations` to our `DefaultCacheBehavior` object, tell it we want this function to respond to an `origin-request`, and give it an ARN. Remember, the ARN we provide must belong to the *version* ******of our Lambda function that we just created, not the function itself, or CloudFormation will fail to create the stack.
-
+To attach the Lambda function to our CloudFront distribution, all we have to do is add `LambdaFunctionAssociations` to our `DefaultCacheBehavior` object, tell it we want this function to respond to an `origin-request`, and give it an ARN. Remember, the ARN we provide must belong to the _version_ ******of our Lambda function that we just created, not the function itself, or CloudFormation will fail to create the stack.
 
     CloudFrontDistribution:
       Type: 'AWS::CloudFront::Distribution'
@@ -176,7 +168,6 @@ Our template will assume the user has already set up a Hosted Zone for their dom
 
 In order to know which records we should be creating, we will add two more parameters to our CloudFormation template, under the `Parameters` section:
 
-
     Domain:
       Description: 'The domain of your website.'
       Type: String
@@ -189,7 +180,6 @@ Note the `Type` of the `HostedZoneID` parameter, `AWS::Route53::HostedZone::Id`.
 ### Creating the Record Set
 
 We want to create an A record in our Hosted Zone, and use Route 53’s special Alias feature to connect it to an AWS resource.
-
 
     Route53Record:
       Type: 'AWS::Route53::RecordSet'
@@ -207,7 +197,6 @@ The `HostedZoneId` of any CloudFront distribution will always be `Z2FDTNDATAQYW2
 
 We also need to add our domain as an alias for our CloudFront distribution. To do this, we add it to the `Aliases` field in the `DistributionConfig`:
 
-
     CloudFrontDistribution:
       Type: 'AWS::CloudFront::Distribution'
       Properties:
@@ -216,11 +205,9 @@ We also need to add our domain as an alias for our CloudFront distribution. To d
           - !Ref Domain
           # ...
 
-
 ## Requesting a Certificate Via Certificate Manager
 
 Finally, let’s create a TLS certificate so we can serve our site over HTTPS. To do that, create a resource of type `AWS::CertificateManager::Certificate` with a `ValidationMethod` of DNS.
-
 
     Cert:
       Type: 'AWS::CertificateManager::Certificate'
@@ -238,7 +225,6 @@ Using Certificate Manager with CloudFront requires that your CloudFormation stac
 
 We need to make one final modification to our CloudFront distribution’s `DistributionConfig` to add this certificate:
 
-
     CloudFrontDistribution:
       Type: 'AWS::CloudFront::Distribution'
       Properties:
@@ -250,18 +236,28 @@ We need to make one final modification to our CloudFront distribution’s `Distr
             SslSupportMethod: 'sni-only'
           # ...
 
-
-
 ## A Fully-Capable Static Hosting Stack
 
 With these additions, our CloudFormation template can now be used to create a complete static hosting environment. To do this, we created resources from six different services:
 
-
-- An S3 Bucket to store the HTML of our website,
-- A CloudFront distribution to optimize the delivery of our content,
-- A Lambda@Edge function to give us control over our URI structure,
-- A Route 53 Record Set to make our site accessible from our custom domain,
-- A TLS Certificate from Certificate Manager to make our site available over HTTPS, and
-- Some IAM Roles and Policies to tie it all together.
+* An S3 Bucket to store the HTML of our website,
+* A CloudFront distribution to optimize the delivery of our content,
+* A Lambda@Edge function to give us control over our URI structure,
+* A Route 53 Record Set to make our site accessible from our custom domain,
+* A TLS Certificate from Certificate Manager to make our site available over HTTPS, and
+* Some IAM Roles and Policies to tie it all together.
 
 Considering that AWS has [over 90 different services](https://aws.amazon.com/products/), it’s clear that our use case has only scratched the surface of what a tool like CloudFormation is capable of. [Serverless Framework](https://serverless.com/), for example, uses CloudFormation under the hood to make it easy to build sophisticated serverless applications. As the popularity and complexity of cloud services grows, the ability to express infrastructure as code is more important than ever. If you choose to host on AWS, you should definitely have CloudFormation in your arsenal.
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
+    <h2>Join us every Friday :date:</h2>
+    <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+    <p><strong>Next week:</strong> TBD </p>
+    <p><strong>Last week:</strong> We took our first steps with CloudFormation to <a href="https://forestry.io/blog/automate-your-static-hosting-environment-with-aws-cloudformation/">create a static hosting environment</a>.</p>
+</div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
+-->
