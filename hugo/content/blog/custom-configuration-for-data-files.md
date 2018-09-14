@@ -37,7 +37,7 @@ Here's a quick walkthrough on how you can set up data file sections on your site
 
 Before we start you might have to manually opt-in to use the new data file sections. Please go to your site's settings and select the _General_ tab. At the bottom of the page you'll find the _Enable Data File Sections_ toggle. Make sure it is enabled.
 
-![](/uploads/2018/09/toggle_data_file_sections-1.png)
+![](/uploads/2018/09/data-file-sections-fixed.png)
 
 ***
 
