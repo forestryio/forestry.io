@@ -1,6 +1,9 @@
 ---
 title: "Custom Configuration for Data Files \U0001F4CA"
-description: ''
+description: |-
+  A little over two months ago we made it possible to customize the sidebar for your content files (i.e. .md and .html). With today's update we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
+
+  Here's a quick walkthrough on how you can set up data file sections on your site.
 date: 2018-09-13 13:36:32 +0000
 authors: []
 publishdate: 2018-09-13 09:00:00 +0000
@@ -18,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 We're excited to announce custom configuration for data files.
