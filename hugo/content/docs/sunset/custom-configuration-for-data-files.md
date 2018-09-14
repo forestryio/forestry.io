@@ -23,7 +23,6 @@ menu:
   sunset:
     weight: 1
     parent: Sunset Notices
-draft: true
 
 ---
 Previously we made it possible to customize the sidebar for your content files (i.e. .md and .html). With this update we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
