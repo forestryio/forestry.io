@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack.md
 - hugo/content/blog/custom-configuration-for-data-files.md
 - hugo/content/blog/improved-collaboration-and-more.md
 - hugo/content/blog/introducing-media-management.md
