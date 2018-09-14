@@ -1,9 +1,9 @@
 ---
 title: "Custom Configuration for Data Files \U0001F4CA"
 description: ''
-date: 2018-09-13 02:36:32 -1100
+date: 2018-09-13 13:36:32 +0000
 authors: []
-publishdate: 2018-09-12 22:00:00 -1100
+publishdate: 2018-09-13 09:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -62,6 +62,12 @@ Forestry adds new sections to the top of the list. If that's not the correct ord
 ![](/uploads/2018/09/organize-sections.gif)
 
 ***
+
+{{% tip "SELECT FIELDS" %}}
+
+If you're using Data Files as a source for your Select Fields you might have to make a few additional changes. See our [migration guide](/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
+
+{{% /tip %}}
 
 That's it! You can now add as many sections as you like and you can even put content and data files under the same heading (if that makes sense for your site).
 
