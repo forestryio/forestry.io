@@ -256,8 +256,6 @@ Considering that AWS has [over 90 different services](https://aws.amazon.com/pro
     <p><strong>Last week:</strong> We took our first steps with CloudFormation to <a href="https://forestry.io/blog/automate-your-static-hosting-environment-with-aws-cloudformation/">create a static hosting environment</a>.</p>
 </div>
 
-<!--
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17989603">Discuss on Hacker News</a>
