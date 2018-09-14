@@ -249,6 +249,13 @@ With these additions, our CloudFormation template can now be used to create a co
 
 Considering that AWS has [over 90 different services](https://aws.amazon.com/products/), it’s clear that our use case has only scratched the surface of what a tool like CloudFormation is capable of. [Serverless Framework](https://serverless.com/), for example, uses CloudFormation under the hood to make it easy to build sophisticated serverless applications. As the popularity and complexity of cloud services grows, the ability to express infrastructure as code is more important than ever. If you choose to host on AWS, you should definitely have CloudFormation in your arsenal.
 
+{{% tip "Try it out" %}}
+Click the button below to launch our static site hosting stack. <br />
+<a target="_blank" title="Launch S3+Cloudfront Stack" href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=my-static-website&templateURL=https:%2F%2Fs3.amazonaws.com%2Fdwalkr-cf-templates%2Fadvanced-route53-acm.yml">
+<img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch stack button" />
+</a>
+{{% /tip %}}
+
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
     <h2>Join us every Friday :date:</h2>
     <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
