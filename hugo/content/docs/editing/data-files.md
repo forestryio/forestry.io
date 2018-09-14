@@ -37,7 +37,7 @@ Legacy data file handling is now **deprecated** and will be removed in a future 
   
 {{% tip "SELECT FIELDS" %}}
 
-If you're using Data Files as a source for your Select Fields you might have to make a few additional changes. See our \[Select Field migration guide\](/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
+If you're using Data Files as a source for your Select Fields you might have to make a few additional changes. See our Select Field [migration guide](/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
 
 {{% /tip %}}
 
