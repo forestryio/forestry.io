@@ -33,7 +33,13 @@ If you don't opt-in to **Datafile Sections**, Forestry will import data files it
 
 {{% warning %}}
 Legacy data file handling is now **deprecated** and will be removed in a future update. It is recommended you migrate your existing Jekyll & Hugo projects by opting in to the new data file behavior and configuring access to your data files via the sidebar configuration.
-{{% /warning %}}
+{{% /warning %}}  
+  
+{{% tip "SELECT FIELDS" %}}
+
+If you're using Data Files as a source for your Select Fields you might have to make a few additional changes. See our \[Select Field migration guide\](/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
+
+{{% /tip %}}
 
 ## Customizing Fields
 
