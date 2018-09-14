@@ -1,5 +1,5 @@
 ---
-title: Adding DNS and Edge Functions to Our CloudFormation Stack
+title: Creating Lambda@Edge and Route 53 Resources with CloudFormation
 description: ''
 date: 2018-09-14 05:55:46 -1100
 authors:
