@@ -16,7 +16,7 @@ menu:
 ---
 
 {{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
+This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a static site connected to Forestry. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
 ## Overview
@@ -74,7 +74,7 @@ templateURL="https://s3.amazonaws.com/dwalkr-cf-templates/advanced-route53-acm.y
 
 ![](/uploads/2018/09/cf-step-1.png)
 
-After deciding whether you want to use the **basic** or **complete** template, click the corresponding button. This will take you to the CloudFormation Stack Creation page (you will be required to log in to your AWS account if you are not already logged in.) This screen will have pre-selected our CloudFormation template for you. Click **Next.**
+After deciding whether you want to use the **basic** or **complete** template, click the corresponding button above. This will take you to the CloudFormation Stack Creation page (you will be required to log in to your AWS account if you are not already logged in.) This screen will have pre-selected our CloudFormation template for you. Click **Next.**
 
 ![](/uploads/2018/09/cf-step-2.png)
 
