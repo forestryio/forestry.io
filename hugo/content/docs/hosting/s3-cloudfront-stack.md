@@ -72,15 +72,25 @@ templateURL="https://s3.amazonaws.com/dwalkr-cf-templates/advanced-route53-acm.y
 
 ## Running the CloudFormation Template
 
+![](/uploads/2018/09/cf-step-1.png)
+
 After deciding whether you want to use the **basic** or **complete** template, click the corresponding button. This will take you to the CloudFormation Stack Creation page (you will be required to log in to your AWS account if you are not already logged in.) This screen will have pre-selected our CloudFormation template for you. Click **Next.**
+
+![](/uploads/2018/09/cf-step-2.png)
 
 You will then proceed to the **Stack Details** screen. Here, you will configure your stack. Choose a **Stack name** that uniquely identifies this project, as it will be used in the names of your resources, and will be the way you reference this stack from the CloudFormation console. From here, specify the path to your error page, the default index document, and log retention period.
 
 If you're using the **complete** template, you will also need to enter in your domain name and select your hosted zone. If the appropriate hosted zone is not available in the dropdown, ensure that you have created it first. You also have the option to avoid creating the TLS certificate if you wish.
 
+![](/uploads/2018/09/cf-step-3.png)
+
 After clicking **Next**, you are taken to the Options screen. Here you may add tags for the generated resources, delegate the resource creation to a separate IAM role, and add monitoring options. None of this is required and much of it is not necessary for such a simple stack, so go ahead and click **Next** here.
 
+![](/uploads/2018/09/cf-step-4.png)
+
 You will be presented with a screen to review your stack configuration. Because our stack creates an IAM role, you must check the box labeled **I acknowledge that AWS CloudFormation might create IAM resources** before clicking **Next**.
+
+![](/uploads/2018/09/cf-stack-dashboard.png)
 
 You will then be taken to your CloudFormation dashboard. This is where you will see all of your CloudFormation stacks and their progress. If you don't see the stack you just created, give it a moment and refresh, and it should appear. Click on the name of your stack to view its progress.
 
@@ -90,7 +100,11 @@ View your stack details and open the **Resources** pane to see all of the resour
 
 If you are running the **complete** template and chose to have it create a TLS Certificate for you, you must perform a manual step to enable certificate validation. ***Until this step is completed, your template will not finish running.***
 
-Navigate to the **Certificate Manager** Console by searching for it in the services navigation or navigating to [https://console.aws.amazon.com/acm](https://console.aws.amazon.com/acm). You should see a certificate request for your domain with a status of **Pending validation**. Expand this row, and expand the details for your domain. Here you will see a button labeled **Create record in Route 53**. Click this button, and then confirm your action in the modal that pops up.
+Navigate to the **Certificate Manager** Console by searching for it in the services navigation or navigating to [https://console.aws.amazon.com/acm](https://console.aws.amazon.com/acm). You should see a certificate request for your domain with a status of **Pending validation**.
+
+![](/uploads/2018/09/cf-domain-validation.png)
+
+Expand this row, and expand the details for your domain. Here you will see a button labeled **Create record in Route 53**. Click this button, and then confirm your action in the modal that pops up.
 
 Once this step is complete, your certificate will be issued after the domain validation finishes. This may take a while, so be patient!
 
@@ -108,6 +122,7 @@ Your CloudFormation stack contains an **IAM User** with access to write files to
 
 To create an access key, again refer to the **Resources** pane in your stack details. Locate the resource with the Logical ID of `PublishUser` and click on the Physical ID to be taken to the IAM management page for this user. 
 
+![](/uploads/2018/09/cf-step-5.png)
 
 Click on the **Security credentials** tab and, under the **Access keys** section, click on **Create access key**. A modal window will pop up containing the **Access key ID** and the **Secret access key**.
 
@@ -117,4 +132,10 @@ The secret access key can only be viewed in this modal. Once you dismiss it, you
 
 ### Adding to Forestry
 
-Once you have these credentials, open your website in Forestry and navigate to the **Settings**. Click on the **Deployment** tab, and select **Amazon S3** as your connection. You will be presented with fields to fill in your **Bucket**, **Access Key**, and **Secret**. Under **Advanced options**, do *not* enable Gzip compression (CloudFront will handle this for you,) and leave the path as `/`.
+![](/uploads/2018/09/cf-step-6.png)
+
+Once you have these credentials, open your website in Forestry and navigate to the **Settings**. Click on the **Deployment** tab, and select **Amazon S3** as your connection. You will be presented with fields to fill in your **Bucket**, **Access Key**, and **Secret**. 
+
+{{% tip %}}
+Under **Advanced options**, do *not* enable Gzip compression (CloudFront will handle this for you,) and leave the path as `/`.
+{{% /tip %}}
