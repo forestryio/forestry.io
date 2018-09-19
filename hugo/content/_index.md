@@ -64,7 +64,7 @@ features:
   direction: rtl
   class: section-sync
 - headline: Your entire team will be making commits
-  textline: Your editing team won't even realize they're editing Markdown and committing
+  textline: Your editing team won't even realize they're writing Markdown and committing
     to your repo.
   visual:
     permalink: "/img/commits-illustration.png"

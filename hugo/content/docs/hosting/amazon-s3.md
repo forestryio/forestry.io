@@ -7,10 +7,6 @@ date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 layout: single
-menu:
-  docs:
-    parent: Hosting
-    weight: 2
 
 ---
 {{% tip "Disclaimer" %}}
