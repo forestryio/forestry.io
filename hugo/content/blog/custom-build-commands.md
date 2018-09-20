@@ -1,15 +1,15 @@
 ---
-title: "Custom Build Commands!"
-description: |-
-  ...
+title: Custom Build Commands!
+description: "..."
 date: 2018-09-21 09:00:00 +0000
-draft: true
-authors: []
+authors:
+- DJ Walker
 publishdate: 2018-09-21 09:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
@@ -18,10 +18,9 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
+draft: true
 
 ---
-
 Forestry now supports **custom build commands**!
 
 When you add custom build commands to your project, Forestry will run those commands when creating a preview or preparing your site for deployment. Custom build commands are added in your `.forestry/settings.yml` file. To learn how to set up custom build commands for your site, check out our [build commands documentation](/docs/settings/build-commands/).
