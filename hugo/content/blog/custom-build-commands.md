@@ -1,6 +1,8 @@
 ---
 title: Custom Build Commands!
-description: "..."
+description: "Forestry now supports custom build commands! When you add custom build commands to your project, Forestry will run those commands when creating a preview or preparing your site for deployment.
+
+If your site uses a build process to compile your frontend assets (such as Gulp or Webpack,) Forestry can now run those scripts when building your site for preview or deployment."
 date: 2018-09-21 09:00:00 +0000
 authors:
 - DJ Walker
