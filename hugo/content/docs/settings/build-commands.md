@@ -23,7 +23,7 @@ Build commands are optional for all projects. Jekyll and Hugo projects have a de
 All sites are built in a Linux container and have access to the following tools:
 
 - Ruby
-- Jekyll
+- Bundler
 - Hugo
 - NodeJS
 - NPM
