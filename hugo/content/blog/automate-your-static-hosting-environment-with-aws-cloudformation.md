@@ -242,7 +242,7 @@ Hopefully, this post has helped you to see the potential of a tool like CloudFor
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
     <h2>Join us every Friday :date:</h2>
     <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
-    <p><strong>Next week:</strong> We'll improve our CloudFormation template to easily create a static site hosting setup.</p>
+    <p><strong>Next week:</strong> We'll <a href="/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack/">improve our CloudFormation template</a> to easily create a static site hosting setup.</p>
     <p><strong>Last week:</strong> We gave you some tips on creating <a href="https://forestry.io/blog/create-in-app-documentation-for-content-editors/">in-app documentation in Forestry.</a></p>
 </div>
 

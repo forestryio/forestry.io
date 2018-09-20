@@ -157,7 +157,7 @@ Documentation isn’t worth much when nobody can find it. By embedding your docs
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
     <h2>Join us every Friday :date:</h2>
     <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
-    <p><strong>Next week:</strong> We'll discuss a strategy for hosting static sites on AWS.</p>
+    <p><strong>Next week:</strong> We'll discuss a strategy for <a href="/blog/automate-your-static-hosting-environment-with-aws-cloudformation/">hosting static sites on AWS</a>.</p>
     <p><strong>Last week:</strong> We compared <a href="https://forestry.io/blog/5-options-for-automating-your-software-deployments/">5 of our favorite CI services.</a></p>
 </div>
 

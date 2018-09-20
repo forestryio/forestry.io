@@ -148,7 +148,7 @@ What do you use for automation? Is there a killer feature that I missed? {{% sla
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
 <h2>Join us every Friday :date:</h2>
 <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
-<p><strong>Next week:</strong> TBD </p>
+<p><strong>Next week:</strong> We'll show you how to create <a href="/blog/create-in-app-documentation-for-content-editors/">In-App Documentation for your Forestry site</a>. </p>
 <p><strong>Last week:</strong> We looked at <a href="https://forestry.io/blog/data-relationships-in-hugo/">creating data relationships with Hugo's headless bundles</a>.</p>
 </div>
 
