@@ -77,11 +77,9 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=#{self.site_settings.engine_version || '0.17'}
-  - TIMEZONE=#{self.site_settings.timezone}
   publish_env: 
   - HUGO_ENV=production
   - HUGO_VERSION=#{self.site_settings.engine_version || '0.17'}
-  - TIMEZONE=#{self.site_settings.timezone}
 ```
 
 ### Jekyll
@@ -92,10 +90,8 @@ build:
   output_directory: _forestry_site
   preview_env:
   - JEKYLL_ENV=staging
-  - TIMEZONE=#{self.site_settings.timezone}
   publish_env: 
   - JEKYLL_ENV=production
-  - TIMEZONE=#{self.site_settings.timezone}
 ```
 
 ## Environment Variables
@@ -112,7 +108,7 @@ Sets the version of ruby used in your environment. You can use any version insta
 
 Sets the version of nodejs used in your environment. You can use any version installable via [nvm](https://github.com/creationix/nvm).
 
-*Default:* `8.0.0`
+*Default:* `8`
 
 ### `HUGO_VERSION`
 
@@ -125,10 +121,3 @@ Sets the version of Hugo used in your environment. This shouldn't be necessary i
 Sets the environment used by your Hugo or Jekyll site.
 
 *Default:* `staging` for previews, `production` for publishing
-
-
-### `TIMEZONE`
-
-Sets the timezone in your build environment.
-
-*Default:* The timezone set in your site settings.
