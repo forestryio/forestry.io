@@ -1,5 +1,5 @@
 ---
-title: Introducing Custom Build Commands and Creating Directories
+title: Introducing Custom Build Commands, VuePress Previews and Creating Directories
 description: ''
 date: 2018-09-20 18:11:49 -1100
 authors: []
@@ -23,23 +23,40 @@ draft: true
 ---
 You can now decide what command should be run to build your project. Forestry now supports custom Build Commands.
 
-Until now Forestry chose the command that needed to be run for your project, which worked fine for many projects. However, this meant that projects that needed to run their own build commands were unable to use Forestry's deployment tools and in some cases unable to use Forestry's previews. We'll now run _your_ commands for deployments as well as previews.
+Until now Forestry chose the command that needed to be run for you, which worked fine for many projects. However, this meant that projects that needed to run their own build commands were unable to use Forestry's deployment tools and in some cases unable to use Forestry's previews. 
 
-Did you ever get frustrated that you couldn't create directories inside Forestry? So did we. Now, users can create new directories in Forestry and keep their content organized.
+You can now choose _your_ commands for deployments as well as previews. Learn how to set them up in our [build commands documentation](/docs/settings/build-commands/)
 
----  
-  
-Custom Build Commands
+***
 
-When you add custom build commands to your project, Forestry will run those commands when creating a preview or preparing your site for deployment. Custom build commands are added in your `.forestry/settings.yml` file. To set up custom build commands for your site, check out our [build commands documentation](/docs/settings/build-commands/).
+**Custom Build Commands**
+
+When you add custom build commands to your project, Forestry will run those commands when creating a preview or preparing your site for deployment. Check out our [build commands documentation](/docs/settings/build-commands/).
+
+    build:
+      preview_command: hugo -D -F -E
+      publish_command: hugo
+      output_directory: public
+      preview_env:
+      - HUGO_ENV=staging
+      publish_env: 
+      - HUGO_ENV=production
+
+***
 
 **Sites with Frontend Asset Pipelines**
 
-If your site uses a build process to compile your frontend assets (such as Gulp or Webpack) then you previously had to commit compiled assets to your repo in order for your site to preview correctly, and had to stick with an external CI tool for deploying your site. **That is no longer necessary,** as Forestry can now run those scripts when building your site for preview or deployment.
+You no longer need to compile your frontend assets (with tools such as Gulp or Webpack). With custom Build Commands, Forestry compiles your assets for your previews and deployments. Effectively, we can now replace you external CI tools. Simply add your custom build commands to your `settings.yml`. Go to the [docs](/docs/settings/build-commands/).
+
+***
 
 **Preview & Deploy for VuePress**
 
-When we first introduced VuePress support, previewing and deployment were not possible for VuePress sites. Now, adding custom build commands for your VuePress site will unlock preview and deployment capabilities in Forestry!
+When we first introduced VuePress support, previewing and deployment were not possible for VuePress sites. Now, adding custom build commands for your VuePress site will unlock preview and deployment capabilities in Forestry! 🌲🎉
+
+![](/uploads/2018/09/vuepress-add-preview.gif)
+
+***
 
 **Flexibility for More Workflows**
 
