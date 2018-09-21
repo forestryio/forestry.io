@@ -8,7 +8,8 @@ publishdate: 2018-09-21 05:43:00 -1100
 expirydate: 2029-12-31 17:00:00 -1100
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/09/mixing-board.jpg"
 categories:
 - VuePress
 - Frontend-Friday
@@ -21,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 Here at Forestry, [we think VuePress is pretty cool](https://forestry.io/blog/vuepress-brings-your-documentation-to-life/). When it came time to set our sights on supporting SSGs beyond Hugo and Jekyll, [we selected VuePress as our guinea pig](https://forestry.io/blog/vuepress-support-beta/). Our adoption of VuePress has helped to highlight the differences among the variety of Static Site Generators, and move us in a direction that will enable users of SSGs beyond Hugo and Jekyll to take advantage of Forestry’s content manager.
@@ -169,3 +169,16 @@ Once our build commands are in place, our VuePress site will display the preview
 ## Strength in Numbers
 
 Pursuing support for other SSGs in Forestry has led us to many improvements and increased the flexibility of our content management interface. Thanks to recent updates like the [configurable sidebar](https://forestry.io/docs/settings/content-sections/) and [custom build commands](https://forestry.io/docs/settings/build-commands/), you can now use Forestry with many workflows that weren’t possible just a few months ago. Looking to the future, we hope to make Forestry even more configurable and support more SSGs, so that Forestry can be a tool for all JAMStack devs to take advantage of.
+
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;">
+    <h2>Join us every Friday :date:</h2>
+    <p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+    <p><strong>Next week:</strong> TBD </p>
+    <p><strong>Last week:</strong> We used AWS CloudFormation to <a href="https://forestry.io/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack/">set up a hosting stack for a static site</a>.</p>
+</div>
+
+<!--
+## Have something to add?
+
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
+-->
