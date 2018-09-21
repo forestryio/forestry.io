@@ -4,12 +4,11 @@ description: |-
   We're excited to announce Custom Build Commands! You can now decide what build command should be run for your project.
 
   Until now Forestry chose the build command that needed to be run for your project, which worked fine for most cases. However, this meant that projects that needed a custom build process were unable to use Forestry's deployment tools and (in some cases) previews.
-date: 2018-09-20 18:11:49 -1100
+date: 2018-09-21 05:11:49 +0000
 authors:
 - DJ Walker
-- Sebastian Engels
-publishdate: 2018-09-20 16:00:00 -1100
-expirydate: 2029-12-31 17:00:00 -1100
+publishdate: 2018-09-21 03:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
