@@ -21,7 +21,7 @@ menu: []
 draft: true
 
 ---
-We're excited to announce Custom Build Commands. You can now decide what build command should be run for your project. 
+We're excited to announce Custom Build Commands. You can now decide what build command should be run for your project.
 
 Until now Forestry chose the build command that needed to be run for your project, which worked fine for most cases. However, this meant that projects that needed a custom build process were unable to use Forestry's deployment tools and (in some cases) previews.
 
@@ -43,7 +43,7 @@ When you add custom build commands to your project, Forestry will run those comm
 
 **Sites with Frontend Asset Pipelines**
 
-You no longer need to compile your frontend assets (with tools such as Gulp or Webpack). With custom Build Commands, Forestry compiles your assets for your previews and deployments. Effectively, we can now replace you external CI tools. Simply add your custom build commands to your `settings.yml`. Go to the [docs](/docs/settings/build-commands/).
+You no longer need to compile your frontend assets (with tools such as Gulp or Webpack). With custom build commands, Forestry compiles your assets for your previews and deployments. Effectively, we can now replace you external CI tools. Simply add your custom build commands to your `settings.yml`. Go to the [docs](/docs/settings/build-commands/).
 
 ***
 
