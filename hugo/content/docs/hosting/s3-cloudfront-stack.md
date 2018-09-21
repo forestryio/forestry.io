@@ -44,7 +44,7 @@ To get started with the **basic template**, click the button below:
 {{% aws_launch_stack 
 title="Launch the basic static site stack" 
 stackName="basic-static-site" 
-templateURL="https://s3.amazonaws.com/dwalkr-cf-templates/basic-s3-cloudfront-v2.yml" %}}
+templateURL="https://s3.amazonaws.com/forestryio-cf-templates/static-site-hosting/basic-s3-cloudfront.yml" %}}
 
 ---
 
@@ -66,7 +66,7 @@ To get started with the **complete template**, click the button below:
 {{% aws_launch_stack 
 title="Launch the complete static site stack" 
 stackName="my-static-site" 
-templateURL="https://s3.amazonaws.com/dwalkr-cf-templates/advanced-route53-acm.yml" %}}
+templateURL="https://s3.amazonaws.com/forestryio-cf-templates/static-site-hosting/advanced-route53-acm.yml" %}}
 
 ---
 
