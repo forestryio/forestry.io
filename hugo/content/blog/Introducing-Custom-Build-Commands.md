@@ -1,5 +1,5 @@
 ---
-title: Introducing Custom Build Commands and VuePress Previews + Deployments
+title: Introducing Custom Build Commands
 description: |-
   We're excited to announce Custom Build Commands! You can now decide what build command should be run for your project.
 
@@ -11,6 +11,7 @@ publishdate: 2018-09-21 03:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
+images: []
 categories:
 - CMS
 tags: []
