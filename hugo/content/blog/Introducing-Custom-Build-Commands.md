@@ -23,24 +23,21 @@ draft: true
 ---
 You can now decide what command should be run to build your project.
 
-Until now Forestry chose the command that needed to be run for you, which worked fine for many projects. However, this meant that projects that needed to run their own build commands were unable to use Forestry's deployment tools and in some cases unable to use Forestry's previews.
+Until now Forestry chose the command that needed to be run for your project, which worked fine for most cases. However, this meant that projects that needed a custom build process were unable to use Forestry's deployment tools and (in some cases) previews.
 
-You can now choose _your_ commands for deployments as well as previews. Learn how to set them up in our [build commands documentation](/docs/settings/build-commands/)
+Picking your own commands enables you to really choose your own workflow and give you the flexibility you need.
 
 ***
 
 **Custom Build Commands**
 
-When you add custom build commands to your project, Forestry will run those commands when creating a preview or preparing your site for deployment. Check out our [build commands documentation](/docs/settings/build-commands/).
+When you add custom build commands to your project, Forestry will run those commands when creating a preview or preparing your site for deployment. Learn [how to set up build commands](/docs/settings/build-commands/).
 
     build:
       preview_command: hugo -D -F -E
       publish_command: hugo
       output_directory: public
-      preview_env:
-      - HUGO_ENV=staging
-      publish_env: 
-      - HUGO_ENV=production
+      ...
 
 ***
 
