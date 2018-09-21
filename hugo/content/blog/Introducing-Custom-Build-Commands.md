@@ -5,13 +5,16 @@ description: |-
 
   Until now Forestry chose the build command that needed to be run for your project, which worked fine for most cases. However, this meant that projects that needed a custom build process were unable to use Forestry's deployment tools and (in some cases) previews.
 date: 2018-09-20 18:11:49 -1100
-authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+authors:
+- DJ Walker
+- Sebastian Engels
+publishdate: 2018-09-20 16:00:00 -1100
+expirydate: 2029-12-31 17:00:00 -1100
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
