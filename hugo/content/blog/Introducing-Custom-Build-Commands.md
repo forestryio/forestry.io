@@ -1,5 +1,5 @@
 ---
-title: Introducing Custom Build Commands, VuePress Previews and Creating Directories
+title: Introducing Custom Build Commands and VuePress Previews + Deployments
 description: ''
 date: 2018-09-20 18:11:49 -1100
 authors: []
@@ -21,9 +21,9 @@ menu: []
 draft: true
 
 ---
-You can now decide what command should be run to build your project.
+We're excited to announce Custom Build Commands. You can now decide what build command should be run for your project. 
 
-Until now Forestry chose the command that needed to be run for your project, which worked fine for most cases. However, this meant that projects that needed a custom build process were unable to use Forestry's deployment tools and (in some cases) previews.
+Until now Forestry chose the build command that needed to be run for your project, which worked fine for most cases. However, this meant that projects that needed a custom build process were unable to use Forestry's deployment tools and (in some cases) previews.
 
 Picking your own commands enables you to really choose your own workflow and give you the flexibility you need.
 
