@@ -21,9 +21,9 @@ menu: []
 draft: true
 
 ---
-You can now decide what command should be run to build your project. Forestry now supports custom Build Commands.
+You can now decide what command should be run to build your project.
 
-Until now Forestry chose the command that needed to be run for you, which worked fine for many projects. However, this meant that projects that needed to run their own build commands were unable to use Forestry's deployment tools and in some cases unable to use Forestry's previews. 
+Until now Forestry chose the command that needed to be run for you, which worked fine for many projects. However, this meant that projects that needed to run their own build commands were unable to use Forestry's deployment tools and in some cases unable to use Forestry's previews.
 
 You can now choose _your_ commands for deployments as well as previews. Learn how to set them up in our [build commands documentation](/docs/settings/build-commands/)
 
