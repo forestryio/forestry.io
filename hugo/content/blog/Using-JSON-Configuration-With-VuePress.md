@@ -177,8 +177,7 @@ Pursuing support for other SSGs in Forestry has led us to many improvements and 
     <p><strong>Last week:</strong> We used AWS CloudFormation to <a href="https://forestry.io/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack/">set up a hosting stack for a static site</a>.</p>
 </div>
 
-<!--
+
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=18041692">Discuss on Hacker News</a>
