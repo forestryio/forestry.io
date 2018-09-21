@@ -133,7 +133,10 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/Introducing-Custom-Build-Commands.md
 - hugo/content/blog/custom-build-commands.md
+- hugo/content/blog/create-in-app-documentation-for-content-editors.md
+- hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack.md
 - hugo/content/blog/custom-configuration-for-data-files.md
 - hugo/content/blog/improved-collaboration-and-more.md
@@ -153,9 +156,7 @@ pages:
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/automate-your-static-hosting-environment-with-aws-cloudformation.md
 - hugo/content/blog/block-labels-read-only-docs-and-more.md
-- hugo/content/blog/create-in-app-documentation-for-content-editors.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
-- hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
