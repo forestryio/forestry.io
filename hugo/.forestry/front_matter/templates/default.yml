@@ -135,7 +135,6 @@ fields:
 pages:
 - hugo/content/blog/Using-JSON-Configuration-With-VuePress.md
 - hugo/content/blog/Introducing-Custom-Build-Commands.md
-- hugo/content/blog/custom-build-commands.md
 - hugo/content/blog/create-in-app-documentation-for-content-editors.md
 - hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack.md
