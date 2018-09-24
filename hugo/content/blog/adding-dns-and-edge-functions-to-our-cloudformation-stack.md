@@ -1,7 +1,7 @@
 ---
 title: Creating Lambda@Edge and Route 53 Resources with CloudFormation
 description: ''
-date: 2018-09-14 05:55:46 -1100
+date: 2018-09-14 16:55:46 +0000
 authors:
 - DJ Walker
 publishdate: 2017-12-07 04:00:00 +0000
@@ -265,4 +265,4 @@ Click the button below to launch our static site hosting stack. <br />
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=17989603">Discuss on Hacker News</a>
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=18057153">Discuss on Hacker News</a>
