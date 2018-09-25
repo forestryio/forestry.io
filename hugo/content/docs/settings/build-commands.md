@@ -13,7 +13,6 @@ menu:
     weight: 8
 
 ---
-
 **Build Commands** allow you to customize how Forestry builds your website when it creates a preview or before it deploys your site.
 
 Build commands are optional for all projects. Jekyll and Hugo projects have a default build configuration that will be followed when custom build commands are not provided. VuePress and all other project types will simply not have preview and deployment capabilities unless a build configuration is defined.

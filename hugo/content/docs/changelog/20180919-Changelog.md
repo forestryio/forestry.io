@@ -7,6 +7,10 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
+menu:
+  changelog:
+    name: 2018/09/24
+    weight: 19
 
 ---
 ## Features
