@@ -1,13 +1,12 @@
 ---
-title: 2018/09/19 Changelog
+title: 2018/09/24 Changelog
 authors:
 - team forestry
-date: 2018-09-19 07:50:56 -1100
+date: 2018-09-19 18:50:56 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
-draft: true
 
 ---
 ## Features
