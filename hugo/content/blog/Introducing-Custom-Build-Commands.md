@@ -21,6 +21,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+images: []
 menu: []
 
 ---
@@ -54,7 +55,7 @@ You no longer need to compile your frontend assets (with tools such as Gulp or W
 
 When we first introduced VuePress support, previewing and deployment were not possible for VuePress sites. Now, adding custom build commands for your VuePress site will unlock preview and deployment capabilities in Forestry! 🌲🎉
 
-![](/uploads/2018/09/vuepress-add-preview.gif)
+![](/uploads/2018/09/vuepress-add-preview-1.gif)
 
 ***
 
