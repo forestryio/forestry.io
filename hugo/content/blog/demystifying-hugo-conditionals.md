@@ -30,7 +30,7 @@ Hugo is a great choice for a static site generator: it’s compiled into a stati
 
 ## A Functional Approach
 
-One of the most obtuse aspects of templating in Hugo is that _operators are expressed as functions_.
+One of the more abstruse aspects of templating in Hugo is that _operators are expressed as functions_.
 
 For example, the following code in Jekyll:
 
