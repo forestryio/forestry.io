@@ -85,8 +85,7 @@ If you keep those things in mind, you should be able to tackle conditionals easi
     <p><strong>Last week:</strong> We explored how to <a href="https://forestry.io/blog/using-json-configuration-with-vuepress/">use a JSON config file with VuePress</a>.</p>
 </div>
 
-<!--
+
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=18096215">Discuss on Hacker News</a>
