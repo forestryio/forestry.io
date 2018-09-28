@@ -31,7 +31,7 @@ All new sites will have this feature enabled by default. **Existing Jekyll and H
 
 {{% tip "SELECT FIELDS" %}}
 
-If you’re using Data Files as a source for your Select Fields you might have to make a few additional changes. See our [migration guide](https://vmmg2iumi9gjha.preview.forestry.io/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
+If you’re using Data Files as a source for your Select Fields you might have to make a few additional changes. See our [migration guide](/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
 
 {{% /tip %}}
 
