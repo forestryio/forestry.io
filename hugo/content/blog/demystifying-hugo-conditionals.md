@@ -1,10 +1,10 @@
 ---
 title: Demystifying Hugo Conditionals
 description: ''
-date: 2018-09-28 05:00:00 -1100
+date: 2018-09-28 16:00:00 +0000
 authors:
 - DJ Walker
-publishdate: 2018-09-28 05:00:00 -1100
+publishdate: 2018-09-28 16:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -22,11 +22,8 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
-# De-mystifying Hugo Conditionals
-
 When we published our [comparison of Jekyll and Hugo](https://forestry.io/blog/hugo-and-jekyll-compared/), we got a lot of flak from Hugo die-hards for suggesting that Jekyll had a more intuitive templating syntax. While the intuitiveness of a particular language is somewhat subjective, criticism of Hugo’s template syntax frequently comes up in discussion with other developers.
 
 Hugo is a great choice for a static site generator: it’s compiled into a static binary, so it’s easy to install on any system, and [it’s _fast_](https://forestry.io/blog/hugo-vs-jekyll-benchmark/). Don’t let the learning curve turn you off: building sites with Hugo can be a very enjoyable experience! In this article, I’ll discuss one of the core concepts with Hugo templating, allowing you to dive into a Hugo project with confidence.
@@ -49,7 +46,7 @@ Would be expressed like this in Hugo:
 
 This will feel uncomfortable to some people, but there is nothing wrong with this approach. Technically, `a == b` is also an expression of a function. Written `a == b`, this function is using [infix notation](https://en.wikipedia.org/wiki/Infix_notation). We can write the same function in _prefix notation_ by writing `== a b`. `==` is the name of the function, and `a` and `b` are the parameters. Hugo’s template functions don’t use symbols; instead, `eq` is the name of our equality function.
 
-Put another way, `**a == b**` **is syntactic sugar!**
+Put another way, `a == b` is little more than **syntactic sugar**!
 
 ### Parentheses, But Not Where You Think
 
@@ -63,7 +60,7 @@ If you strictly follow the same notation for all of your function expressions, t
 
 Infix and prefix notation together? _How unintuitive!_ We _need_ the extra symbols in there to make sense of this.
 
-What if we expressed this in a Hugo template? (_Note: Hugo doesn’t have an_ `*isNan*` _function; it’s just included here for parity with the JS example_)
+What if we expressed this in a Hugo template? (_Note: Hugo doesn’t have an_ `isNan` _function; it’s just included here for parity with the JS example_)
 
     {{ if and (eq a b) (isNaN c) }}
 
