@@ -32,4 +32,6 @@ A Guest can only access the site that you invite them to, whereas your _team_ (a
 
 Each site can have up to 3 Guest accounts. 
 
+![](/uploads/2018/10/guests.png)
+
 For more information on managing Guests, see [Team Management](/docs/settings/team-management/).
