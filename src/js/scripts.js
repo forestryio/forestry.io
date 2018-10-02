@@ -10,6 +10,7 @@ import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
 import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
+import ASBGenerator from "./imports/asbButtonGenerator"
 
 /**
  * Don't fire application logic
@@ -105,10 +106,18 @@ contentLoaded().then(() => {
    */
   const lightBoxes = new LightBox([".md-content img:not(.no-lightbox)"])
 
+  /**
+   * handle forms via ajax to avoid ungraceful redirect
+   */
   let formspreeForms = document.querySelectorAll(
     'form[action^="https://formspree.io"]'
   )
   for (let i = 0; i < formspreeForms.length; i++) {
     new AjaxForm(formspreeForms[i])
   }
+
+  /**
+   * Hook up add-site-button generator behavior
+   */
+  const asbGenerator = new ASBGenerator(document.getElementById("ASBGenerator"))
 })

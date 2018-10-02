@@ -1,0 +1,42 @@
+<aside class="asb-generator" id="ASBGenerator">
+    <div class="asbparams">
+        <div class="asbparams__group">
+            <label for="repoURL">Repository URL</label>
+            <input id="ASBrepoURL" type="text" name="asb_repo" placeholder="https://github.com/forestryio/ubuild-hugo-starter" />
+        </div>
+        <div class=".asbparams__group asbparams__group--engine">
+            <div class="asbparams__group">
+                <label for="ASBengine">Engine</label>
+                <select id="ASBengine" name="asb_engine">
+                    <option value="hugo" selected="selected">Hugo</option>
+                    <option value="jekyll">Jekyll</option>
+                    <option value="vuepress">VuePress</option>
+                </select>
+            </div>
+            <div class="asbparams__group asbparams__group--hugo-only">
+                <label for="ASBversion">
+                    version
+                </label>
+                <input id="ASBversion" type="text" name="asb_version" value="0.49" />
+            </div>
+        </div>
+        <div class="asbparams__group">
+            <label for="ASBbuttonStyle">Button Style</label>
+            <div id="ASBbuttonStyle" class="asbparams__button-options">
+                <label><input checked="checked" type="radio" name="asb_buttonStyle" value="import-to-forestry.svg" /> <img data-lightbox="false" class="no-lightbox" alt="Import button in green" src="https://assets.forestry.io/import-to-forestry.svg" /></label>
+                <label><input type="radio" name="asb_buttonStyle" value="import-to-forestryW.svg" /> <img class="no-lightbox" alt="Import button in white" src="https://assets.forestry.io/import-to-forestryW.svg" /></label>
+                <label><input type="radio" name="asb_buttonStyle" value="import-to-forestryK.svg" /> <img class="no-lightbox" alt="Import button in black" src="https://assets.forestry.io/import-to-forestryK.svg" /></label>
+            </div>
+        </div>
+    </div>
+
+    <h3>Preview</h3>
+    <div class="asb-preview"></div>
+
+
+    <h3>HTML</h3>
+    <div class="asb-html"></div>
+
+    <h3>Markdown</h3>
+    <div class="asb-md"></div>
+</aside>
