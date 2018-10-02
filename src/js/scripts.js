@@ -103,7 +103,7 @@ contentLoaded().then(() => {
   /**
    * Enable lightboxes for images
    */
-  const lightBoxes = new LightBox([".md-content img"])
+  const lightBoxes = new LightBox([".md-content img:not(.no-lightbox)"])
 
   let formspreeForms = document.querySelectorAll(
     'form[action^="https://formspree.io"]'

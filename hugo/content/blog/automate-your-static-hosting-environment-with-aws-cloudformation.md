@@ -77,7 +77,7 @@ CloudFront is AWS’ CDN service. It _is_ possible to serve a website directly f
 
 Create this stack on AWS <br />
 <a title="Launch S3+Cloudfront Stack" href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=my-static-website&templateURL=https:%2F%2Fs3.amazonaws.com%2Fdwalkr-cf-templates%2Fbasic-s3-cloudfront.yml">
-<img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch stack button" />
+<img class="no-lightbox" src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch stack button" />
 </a>
 {{% /tip %}}
 
