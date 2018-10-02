@@ -252,7 +252,7 @@ Considering that AWS has [over 90 different services](https://aws.amazon.com/pro
 {{% tip "Try it out" %}}
 Click the button below to launch our static site hosting stack. <br />
 <a target="_blank" title="Launch S3+Cloudfront Stack" href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=my-static-website&templateURL=https:%2F%2Fs3.amazonaws.com%2Fdwalkr-cf-templates%2Fadvanced-route53-acm.yml">
-<img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch stack button" />
+<img class="no-lightbox" src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch stack button" />
 </a>
 {{% /tip %}}
 
