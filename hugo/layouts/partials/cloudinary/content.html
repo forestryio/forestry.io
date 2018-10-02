@@ -2,6 +2,7 @@
   {{ $page := .pg }}
   {{ $lazySizes := $page.Site.Params.cloudinary.lazysizes.enabled }}
   {{ $find_images_regex := "(?:<img[^>]*)>*" }}
+  {{ $find_class_regex := "(?:(?:class=)(?:\"?)([^\"]*)(?:\"?))" }}
   {{ $find_src_regex := "(?:(?:src=)(?:\"?)([^\"]*)(?:\"?))" }}
   {{ $find_datasrc_regex := "(?:(?:data-src=)(?:\"?)([^\"]*)(?:\"?))" }}
   {{ $find_alt_regex := "(?:(?:alt=)(?:\"?)([^\"]*)(?:\"?))"}}
@@ -22,10 +23,13 @@
     {{ $alt := replaceRE $clean_regex "$1" $altRaw }}
     {{ $titleRaw := index (findRE $find_title_regex $value 1) 0 }}
     {{ $title := replaceRE $clean_regex "$1" $titleRaw }}
+    {{ $classRaw := index (findRE $find_class_regex $value 1) 0 }}
+    {{ $class := replaceRE $clean_regex "$1" $classRaw }}
     {{ $image := cond (and $lazySizes (not (eq $dataSrc ""))) $dataSrc $src }}
     {{ $page.Scratch.SetInMap "url" "alt" $alt }}
     {{ $page.Scratch.SetInMap "url" "title" $title }}
     {{ $page.Scratch.SetInMap "url" "image" $image }}
+    {{ $page.Scratch.SetInMap "url" "class" $class }}
     {{ if not (in $image "https://res.cloudinary.com/") }}
       {{ $replacement := (partial "cloudinary/image" ($page.Scratch.Get "url")) }}
     {{ $page.Scratch.Set "content" (replace $content $value $replacement) }}
