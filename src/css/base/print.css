@@ -1,0 +1,25 @@
+@media print {
+  .header > .right-block {
+    display: none !important;
+  }
+  .header .left-block .logo {
+    display: block !important;
+    background-image: url(../img/forestry-full.svg)!important!;
+  }
+  .footer,
+  .lower-footer {
+    padding-top: 0 !important;
+  }
+  .footer .columns > .column {
+    display: none !important;
+    &:first-child {
+      display: block !important;
+    }
+  }
+  .contact {
+    display: none !important;
+  }
+  .docs-content {
+    padding-top: 70px !important;
+  }
+}
