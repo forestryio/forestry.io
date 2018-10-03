@@ -105,3 +105,13 @@
     }
   }
 }
+
+img[src*="import-to-forestry"] {
+  min-height: 2em;
+}
+
+.vert-level {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
