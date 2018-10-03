@@ -1,3 +1,42 @@
+.asb-generator {
+  .asb-url-error {
+    display: none;
+    background-color: $color-error;
+    &,
+    p {
+      color: $color-light-grey;
+    }
+    padding: 1.2em;
+    code {
+      background: transparent;
+      color: $color-copy-dark;
+    }
+  }
+  .asbresults {
+    background-color: $color-medium-dark;
+    padding: 1.2em;
+    h3,
+    p {
+      color: $color-light-grey;
+    }
+    pre,
+    code {
+      display: block;
+      overflow: auto;
+    }
+  }
+  &.has-error {
+    .asb-url-error {
+      display: block;
+    }
+    .asbresults {
+      display: none;
+    }
+  }
+  .asb-preview {
+    text-align: center;
+  }
+}
 .asbparams {
   background: $color-dark;
   padding: 1.2em;
@@ -60,6 +99,9 @@
       flex-grow: 0;
       width: 6em;
       margin-left: 0.6em;
+      &.hidden {
+        display: none;
+      }
     }
   }
 }

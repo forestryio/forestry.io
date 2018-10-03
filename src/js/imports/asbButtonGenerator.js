@@ -1,10 +1,11 @@
 export default class ASBGenerator {
   constructor(element) {
-    this.timeout = null
-    this.container = element
-    if (!this.container) {
+    if (!element) {
       return
     }
+
+    this.timeout = null
+    this.container = element
 
     // get form fields
     this.urlField = this.container.querySelector('[name="asb_repo"]')
@@ -26,6 +27,12 @@ export default class ASBGenerator {
     for (let button of this.buttonStyleOptions) {
       button.addEventListener("change", this.debounceUpdate.bind(this))
     }
+
+    // toggle visibility of version field when 'hugo' selected as engine
+    this.engineField.addEventListener(
+      "change",
+      this.toggleVersionFieldVisibility.bind(this)
+    )
 
     // run initial render
     this.handleUpdate()
@@ -56,29 +63,54 @@ export default class ASBGenerator {
       var {provider, repoPath} = this.parseRepoUrl(repoUrl)
     } catch (err) {
       // go into some kind of "you entered a bad URL" state
+      this.container.classList.add("has-error")
       return
     }
+
+    this.container.classList.remove("has-error")
 
     let addsiteUrl = this.getAddsiteURL(provider, repoPath, engine, version)
     let imageUrl = this.getImageUrl(buttonStyle)
 
     // update preview and code samples
     this.previewContainer.innerHTML = this.getHTML(addsiteUrl, imageUrl)
-    this.HTMLContainer.innerHTML =
-      "<pre>" +
-      this.getHTML(addsiteUrl, imageUrl)
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;") +
-      "</pre>"
-    this.markdownContainer.innerHTML =
-      "<pre>" + this.getMarkdown(addsiteUrl, imageUrl) + "</pre>"
+
+    let buttonHTML = this.getHTML(addsiteUrl, imageUrl)
+    let sanitizedHTML = buttonHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    let markdown = this.getMarkdown(addsiteUrl, imageUrl)
+    this.HTMLContainer.innerHTML = sanitizedHTML
+    this.HTMLContainer.nextSibling.setAttribute(
+      "data-clipboard-text",
+      buttonHTML
+    )
+    this.markdownContainer.innerHTML = markdown
+    this.markdownContainer.nextSibling.setAttribute(
+      "data-clipboard-text",
+      markdown
+    )
   }
 
   parseRepoUrl(url) {
-    console.log(new URL(url))
     let urlInfo = new URL(url)
-    let provider = urlInfo.host.split(".")[0]
-    let repoPath = urlInfo.pathname.split(".")[0].substr(1)
+
+    if (
+      ["github.com", "gitlab.com", "bitbucket.org"].indexOf(
+        urlInfo.host.toLowerCase()
+      ) < 0
+    ) {
+      throw "Invalid provider"
+    }
+
+    let provider = urlInfo.host.split(".")[0].toLowerCase()
+    let repoPath = urlInfo.pathname
+      .split(".")[0]
+      .substr(1)
+      .toLowerCase()
+
+    // do some sanity checks here and throw an error if things are wrong
+    if (!provider || !repoPath) {
+      throw "Invalid repository URL"
+    }
 
     return {
       provider: provider,
@@ -97,7 +129,7 @@ export default class ASBGenerator {
   }
 
   getHTML(url, imageUrl) {
-    return `<a rel="nofollow" href="${url}">
+    return `<a href="${url}">
     <img alt="Import this project into Forestry" src="${imageUrl}" />
 </a>`
   }
@@ -106,10 +138,11 @@ export default class ASBGenerator {
     return `[![Import this project into Forestry](${imageUrl})](${url})`
   }
 
-  debug() {
-    console.log(this.urlField.value)
-    console.log(this.engineField.value)
-    console.log(this.versionField.value)
-    console.log(this.getSelectedButtonOption().value)
+  toggleVersionFieldVisibility() {
+    if (this.engineField.value === "hugo") {
+      this.versionField.parentNode.classList.remove("hidden")
+    } else {
+      this.versionField.parentNode.classList.add("hidden")
+    }
   }
 }

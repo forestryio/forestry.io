@@ -14,7 +14,7 @@ import Clipboard from "clipboard"
  */
 export default class CodeBlock {
   constructor(options) {
-    if (typeof options !== Object) options = {}
+    if (typeof options !== "object") options = {}
 
     const defaultOptions = {
       copyClass: ["code--copy", "button", "main", "small"],
@@ -22,15 +22,20 @@ export default class CodeBlock {
       copySuccessText: "Copied!",
       copyTimeout: 1000,
       copyTargets: ["pre"],
-      highlightTargets: ["pre code"],
+      highlightTargets: ["pre code:not(.no-highlight)"],
       hljsOptions: {
         tabReplace: 4
-      }
+      },
+      onComplete: null
     }
 
     this.options = Object.assign(defaultOptions, options)
 
     this.init()
+
+    if (typeof this.options.onComplete == "function") {
+      this.options.onComplete()
+    }
   }
 
   init() {

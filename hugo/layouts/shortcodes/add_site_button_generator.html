@@ -2,18 +2,18 @@
     <div class="asbparams">
         <div class="asbparams__group">
             <label for="repoURL">Repository URL</label>
-            <input id="ASBrepoURL" type="text" name="asb_repo" placeholder="https://github.com/forestryio/ubuild-hugo-starter" />
+            <input id="ASBrepoURL" type="text" name="asb_repo" value="https://github.com/forestryio/ubuild-jekyll" placeholder="https://github.com/forestryio/ubuild-jekyll" />
         </div>
         <div class=".asbparams__group asbparams__group--engine">
             <div class="asbparams__group">
                 <label for="ASBengine">Engine</label>
                 <select id="ASBengine" name="asb_engine">
-                    <option value="hugo" selected="selected">Hugo</option>
-                    <option value="jekyll">Jekyll</option>
+                    <option value="hugo">Hugo</option>
+                    <option value="jekyll" selected="selected">Jekyll</option>
                     <option value="vuepress">VuePress</option>
                 </select>
             </div>
-            <div class="asbparams__group asbparams__group--hugo-only">
+            <div class="asbparams__group asbparams__group--hugo-only hidden">
                 <label for="ASBversion">
                     version
                 </label>
@@ -29,14 +29,31 @@
             </div>
         </div>
     </div>
+    <div class="asb-url-error">
+        <h3>Invalid repository URL</h3>
+        <p>
+            That URL doesn't look like something we can import.
+            Please ensure your URL meets the following requirements:
+        </p>
+        <ul>
+            <li>Starts with <code>https://</code></li>
+            <li>Is hosted on <code>github.com</code>, <code>gitlab.com</code>, or <code>bitbucket.org</code></li>
+            <li>Contains the <strong>full path</strong> to your repository index, with or without <code>.git</code></li>
+        </ul>
+        <p>
+            For example, the URL for our <a href="https://github.com/forestryio/ubuild-jekyll">uBuild</a> project is <br /><code>https://github.com/forestryio/ubuild-jekyll</code>
+        </p>
+        <p><strong>Please note that we use heuristics to determine if your URL is valid and you should test your import button to ensure your repository is recognized.</strong></p>
+    </div>
+    <div class="asbresults">
+        <h3>Preview</h3>
+        <div class="asb-preview"></div>
 
-    <h3>Preview</h3>
-    <div class="asb-preview"></div>
 
+        <h3>HTML</h3>
+        <pre><code class="asb-html no-highlight"></code></pre>
 
-    <h3>HTML</h3>
-    <div class="asb-html"></div>
-
-    <h3>Markdown</h3>
-    <div class="asb-md"></div>
+        <h3>Markdown</h3>
+        <pre><code class="asb-md no-highlight"></code></pre>
+    </div>
 </aside>

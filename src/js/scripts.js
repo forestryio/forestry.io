@@ -99,7 +99,16 @@ contentLoaded().then(() => {
   /**
    * Enable code highlighting and copying
    */
-  const codeBlocks = new CodeBlocks()
+  const codeBlocks = new CodeBlocks({
+    onComplete: function() {
+      /**
+       * Hook up add-site-button generator behavior
+       */
+      const asbGenerator = new ASBGenerator(
+        document.getElementById("ASBGenerator")
+      )
+    }
+  })
 
   /**
    * Enable lightboxes for images
@@ -115,9 +124,4 @@ contentLoaded().then(() => {
   for (let i = 0; i < formspreeForms.length; i++) {
     new AjaxForm(formspreeForms[i])
   }
-
-  /**
-   * Hook up add-site-button generator behavior
-   */
-  const asbGenerator = new ASBGenerator(document.getElementById("ASBGenerator"))
 })
