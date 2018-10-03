@@ -205,7 +205,7 @@ tr:nth-child(odd) td {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
-  img:hover {
+  img:hover:not(.no-lightbox) {
     opacity: 0.8;
     transform: translateY(-0.3rem);
     cursor: pointer;
