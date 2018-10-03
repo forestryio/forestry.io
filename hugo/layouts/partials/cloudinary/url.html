@@ -3,9 +3,10 @@
 
   {{/* Prefix with baseURL if a relative link */}}
   {{- $image := (cond (or (in .image "http://") (in .image "https://")) .image (.image | absURL)) -}}
+  {{- $ext := (index (split $image ".") (sub (len (split $image ".")) 1)) -}}
 
   {{/* Only return cloudinary URL in production and not localhost */}}
-  {{- if and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "://localhost" $image)) 0) -}}
+  {{- if and (ne $ext "svg") (and (eq (getenv "HUGO_ENV") "production") (eq (len (findRE "://localhost" $image)) 0)) -}}
     {{/* Get fetch mode */}}
     {{- $mode_config := cond (in $image "://") "fetch" "upload" -}}
     {{- $mode := cond ($page.Site.Params.cloudinary.use_upload) $mode_config "fetch" -}}
