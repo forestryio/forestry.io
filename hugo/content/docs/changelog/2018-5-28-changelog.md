@@ -21,7 +21,7 @@ images: []
 menu:
   changelog:
     name: 2018/05/28
-    weight: 13
+    weight: 15
     parent: Changelog
 
 ---
