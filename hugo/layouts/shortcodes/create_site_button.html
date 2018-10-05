@@ -15,8 +15,6 @@
 
 <div class="create-site-block">
     <h2>{{ .Get "heading" }}</h2>
-    <a target="_blank" href="{{ $asbURL }}">
-        <img class="no-lightbox" alt="{{ .Get "linkText" }}" src="https://assets.forestry.io/import-to-forestry.svg" />
-    </a>
+    <a target="_blank" href="{{ $asbURL }}" class="create-site-button">{{ .Get "linkText" }}</a>
 </div>
 
