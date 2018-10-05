@@ -13,7 +13,7 @@ menu:
 
 ---
 
-The import button lets users fork a project and import it into Forestry in one fell swoop. 
+The import button lets users create their own copy of your project and import it into Forestry in one fell swoop.
 
 If you have a static site project &mdash; like a theme or starter site &mdash; that is optimized for use with Forestry and you want to share it, adding an import button to your readme or website will make it easy for users to get started using your project with Forestry.
 
@@ -30,7 +30,7 @@ Your import button will use our *quick start* flow to clone the project into the
 
 ## Project Requirements
 
-Your project should be a fully functional static site project that can be imported into Forestry.
+Your project should be a fully functional static site project that can be imported into Forestry, and available from a **public repository** on Github, GitLab, or BitBucket.
 
 For example, if you want to create an import button for your Hugo theme, you should create a new Hugo site configured to use your theme. Forestry won't be able to import your theme code on its own, as it doesn't share the same file structure as a Hugo site.
 
