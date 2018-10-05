@@ -106,7 +106,7 @@ We're using the `HUGO_ENV` variable to load the testing API key in our developme
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
 <br /><br />
-<a href="#/add-site" class="create-site-button" data-proofer-ignore>Import Our Snipcart Demo</a>
+<a href="https://app.forestry.io/quick-start?repo=dwalkr/snipcart-hugo-demo&engine=hugo" class="create-site-button" data-proofer-ignore>Import Our Snipcart Demo</a>
 {{% /tip %}}
 
 ### API Key Security

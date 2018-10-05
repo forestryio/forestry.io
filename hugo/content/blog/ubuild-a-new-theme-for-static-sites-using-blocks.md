@@ -139,7 +139,7 @@ That's it for our code! Now any Block can be added simply by using Front Matter.
 As we figured out in the previous section, defining and adding Front Matter is all that is necessary to add and customize Blocks. Since Forestry offers a UI to manage Front Matter, we can use the uBuild theme and any Blocks implementation without having to look at the code. Forestry uses [Front Matter Templates](https://forestry.io/docs/settings/front-matter-templates/), a powerful tool that works like a blueprint for Front Matter of all the different types of content you have across your site.
 
 {{% tip %}}
-Since uBuild is already set up for Forestry, all you need to do to get started is to <a href="#/add-site" data-proofer-ignore>import the theme into your Forestry dashboard.</a>
+Since uBuild is already set up for Forestry, all you need to do to get started is to <a href="https://app.forestry.io/quick-start?repo=forestryio/ubuild-jekyll&engine=jekyll" data-proofer-ignore>import the theme into your Forestry dashboard.</a>
 {{% /tip %}}
 
 Once the layout and styling for a Block is created, it can be added and customized in Forestry. You simply need to create a Front Matter Template for each Block and set the `is Partial` toggle to true.
