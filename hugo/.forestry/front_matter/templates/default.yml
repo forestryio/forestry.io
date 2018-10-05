@@ -133,6 +133,8 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
+- hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/demystifying-hugo-conditionals.md
 - hugo/content/blog/Using-JSON-Configuration-With-VuePress.md
 - hugo/content/blog/Introducing-Custom-Build-Commands.md
@@ -142,7 +144,6 @@ pages:
 - hugo/content/blog/custom-configuration-for-data-files.md
 - hugo/content/blog/improved-collaboration-and-more.md
 - hugo/content/blog/introducing-media-management.md
-- hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/layout-improvements.md
 - hugo/content/blog/vuepress-support-beta.md
 - hugo/content/blog/5-ways-to-handle-forms-on-your-static-site.md
@@ -172,7 +173,6 @@ pages:
 - hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
 - hugo/content/blog/forestryio-techstars-2016.md
-- hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/the-new-forestry-io.md
