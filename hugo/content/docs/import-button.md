@@ -30,7 +30,7 @@ Your import button will use our *quick start* flow to clone the project into the
 
 ## Project Requirements
 
-Your project should be a fully functional static site project that can be imported into Forestry, and available from a **public repository** on Github, GitLab, or BitBucket.
+Your project should be a fully functional static site project that can be imported into Forestry, and should be available from a **public repository** on Github, GitLab, or BitBucket.
 
 For example, if you want to create an import button for your Hugo theme, you should create a new Hugo site configured to use your theme. Forestry won't be able to import your theme code on its own, as it doesn't share the same file structure as a Hugo site.
 
