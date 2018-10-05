@@ -20,7 +20,7 @@ Here's an example of a live preview configuration in a `.forestry/settings.yml` 
 ```
 build:
     custom_preview: true
-    preview_command: hugo serve -D --port 8080 --bind 0.0.0.0
+    preview_command: hugo server -D --port 8080 --bind 0.0.0.0
 ```
 
 {{% warning "Attention Beta Users!" %}}
@@ -39,14 +39,14 @@ Hit the **Restart Preview Environment** button to terminate the current preview 
 
 ## Command Limitations
 
-Your live previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo serve` or `jekyll serve`.
+Your live previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `jekyll serve`.
 
 ### Network Details
 
 Your preview needs to run on **port 8080** and bind to all network interfaces (`0.0.0.0`).
 
 For example, a compatible Hugo command would look like this: 
-<br />`hugo serve --port 8080 --bind 0.0.0.0`.
+<br />`hugo server --port 8080 --bind 0.0.0.0`.
 
 A Jekyll command might look like this: 
 <br />`bundle exec jekyll serve --port 8080 --host 0.0.0.0`.
