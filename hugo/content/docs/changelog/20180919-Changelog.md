@@ -10,7 +10,7 @@ cta:
 menu:
   changelog:
     name: 2018/09/24
-    weight: 19
+    weight: 21
 
 ---
 ## Features

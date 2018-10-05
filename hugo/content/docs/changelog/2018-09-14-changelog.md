@@ -10,7 +10,7 @@ cta:
 menu:
   changelog:
     name: 2018/09/14
-    weight: 1
+    weight: 3
 
 ---
 ## Enhancements

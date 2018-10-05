@@ -9,10 +9,9 @@ images:
 menu:
   docs:
     parent: Other
-    weight: 8
+    weight: 6
 
 ---
-
 The import button lets users create their own copy of your project and import it into Forestry in one fell swoop.
 
 If you have a static site project &mdash; like a theme or starter site &mdash; that is optimized for use with Forestry and you want to share it, adding an import button to your readme or website will make it easy for users to get started using your project with Forestry.
@@ -60,4 +59,3 @@ We have provided three SVG buttons for your use:
 You can use our button generator below to create the appropriate markup for your button.
 
 {{% add_site_button_generator %}}
-
