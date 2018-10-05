@@ -53,11 +53,9 @@ You can use the button below to automatically copy the `ubuild-jekyll` repo to y
 
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
-repo="git@github.com:forestryio/ubuild-jekyll.git"
-branch="master"
+repo="https://github.com/forestryio/ubuild-jekyll.git"
 engineName="jekyll"
 engineVersion="3.6.0"
-forkName="ubuild-jekyll"
 heading="Make it Your Own"
 linkText="Import Jekyll uBuild Now" %}}
 </div>

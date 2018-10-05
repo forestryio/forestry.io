@@ -31,11 +31,9 @@ In order to make data that is “machine friendly” like this, we can expose it
 
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
-repo="git@github.com:regisphilibert/hugoGetApi.git"
-branch="master"
+repo="https://github.com/regisphilibert/hugoGetApi.git"
 engineName="hugo"
 engineVersion="0.42.2"
-forkName="hugo-json-api"
 heading="Get Started With Hugo JSON API"
 linkText="Import the Hugo Project" %}}
 </div>

@@ -36,11 +36,9 @@ This is a big announcement for us and we're looking forward to hearing what you 
 
 <div id="ELEMENT_ID" data-proofer-ignore>
 {{% create_site_button
-repo="git@github.com:forestryio/portfolio-vuepress.git"
-branch="master"
+repo="https://github.com/forestryio/portfolio-vuepress.git"
 engineName="vuepress"
 engineVersion="0.12.0"
-forkName="portfolio-vuepress"
 heading="You don't have a VuePress Project?"
 linkText="Add Forestry's VuePress Portfolio Theme" %}}
 </div>

@@ -1,17 +1,22 @@
-<script type="text/javascript">
-    window.addSite = {
-        engine: { name: "{{ .Get "engineName" }}", version: "{{ .Get "engineVersion" }}" },
-        source: {
-            repo: "{{ .Get "repo" }}",
-            branch: "{{ .Get "branch" }}",
-        },
-        repoName: "{{ .Get "forkName" }}",
-        configPath: "{{ .Get "configPath" }}"
-    }
-</script>
-<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
-<!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
+{{ $asbURL := "https://app.forestry.io/quick-start?" }}
+{{ $repoURL := urls.Parse (.Get "repo") }}
+{{ $asbURL := printf "%s%s%s" $asbURL "repo=" (index (split (substr $repoURL.Path 1) ".") 0) }}
+
+{{ if eq $repoURL.Host "gitlab.com" }}
+{{ $asbURL := printf "%s%s" $asbURL "&provider=gitlab"}}
+{{ else if eq $repoURL.Host "bitbucket.org" }}
+{{ $asbURL := printf "%s%s" $asbURL "&provider=bitbucket"}}
+{{ end }}
+
+{{ $asbURL := printf "%s%s%s" $asbURL "&engine=" (.Get "engineName") }}
+{{ if and (eq (.Get "engineName") "hugo") (.Get "engineVersion") }}
+{{ $asbURL := printf "%s%s%s" $asbURL "&version=" (.Get "engineVersion") }}
+{{ end }}
+
 <div class="create-site-block">
     <h2>{{ .Get "heading" }}</h2>
-    <a href="#/add-site" class="create-site-button">{{ .Get "linkText" }}</a>
+    <a target="_blank" href="{{ $asbURL }}">
+        <img class="no-lightbox" alt="{{ .Get "linkText" }}" src="https://assets.forestry.io/import-to-forestry.svg" />
+    </a>
 </div>
+

@@ -37,11 +37,9 @@ My hope is that this will give you some insight into how uBuild is put together,
 
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
-repo="git@github.com:forestryio/ubuild-hugo-starter.git"
-branch="master"
+repo="https://github.com/forestryio/ubuild-hugo-starter.git"
 engineName="hugo"
 engineVersion="0.42.2"
-forkName="ubuild-hugo-demo"
 heading="Get Started With uBuild"
 linkText="Import The Starter Site" %}}
 </div>
