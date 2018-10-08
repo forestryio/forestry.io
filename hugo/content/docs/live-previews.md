@@ -7,6 +7,14 @@ layout: plain
 
 With **live previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
 
+{{% warning "Before You Start" %}}
+
+In order to use live previews, your site must be using **Key-based Authentication** to access your Git repo. Sites created before **August 28, 2018** may need to perform a manual upgrade in order to work with live previews.
+<br /><br />
+[Upgrade Guide: Key-Based Authentication](https://forestry.io/blog/migrating-to-key-based-authentication/)
+
+{{% /warning %}}
+
 ## Adding a Live Preview
 
 To add a live preview, add a compatible command to `preview_command` option in the `build` section of your `.forestry/settings.yml` file. You will also need to add an option named `custom_preview` to the top level of your forestry configuration, set to `true`.
