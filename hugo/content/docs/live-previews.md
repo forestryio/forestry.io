@@ -9,7 +9,7 @@ With **live previews**, you can take advantage of your static site generator's b
 
 ## Adding a Live Preview
 
-To add a live preview, add a compatible command to `preview_command` option in the `build` section of your `.forestry/settings.yml` file. You will also need to add an option named `custom_preview`, set to `true`.
+To add a live preview, add a compatible command to `preview_command` option in the `build` section of your `.forestry/settings.yml` file. You will also need to add an option named `custom_preview` to the top level of your forestry configuration, set to `true`.
 
 {{% tip %}}
 [More info on build commands](https://forestry.io/docs/settings/build-commands/)
@@ -18,8 +18,8 @@ To add a live preview, add a compatible command to `preview_command` option in t
 Here's an example of a live preview configuration in a `.forestry/settings.yml` file:
 
 ```
+custom_preview: true
 build:
-    custom_preview: true
     preview_command: hugo server -D --port 8080 --bind 0.0.0.0
 ```
 
