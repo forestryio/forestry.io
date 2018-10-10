@@ -35,6 +35,7 @@ jobs:
               npm run preDeploy
             else
               npm run build
+            fi
 
       - run:
           name: Create Artifacts
