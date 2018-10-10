@@ -57,7 +57,7 @@ gulp.task("build", ["clean"], cb => {
  * search index to algolia
  */
 gulp.task("preDeploy", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "generator", "algolia", cb)
+  runsequence("build", "algolia", cb)
 })
 
 /**
