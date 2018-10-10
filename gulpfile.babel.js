@@ -109,7 +109,7 @@ gulp.task("algolia", cb => {
         const indexName = basename(dirname(file.path))
 
         atomicalgolia(indexName, file.path, function(err, res) {
-          if (err) return
+          if (err) throw err
 
           var count = res.objectIDs.length
           var message = `Sent ${count} operations to ${indexName}...`
