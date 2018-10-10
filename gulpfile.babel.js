@@ -48,6 +48,15 @@ gulp.task("generator", cb => build(cb))
  * compiles the static site with Hugo
  */
 gulp.task("build", ["clean"], cb => {
+  runsequence(["styles", "scripts", "images", "svg"], "generator", cb)
+})
+
+/**
+ * @task preDeploy
+ * Same as build, but also submits
+ * search index to algolia
+ */
+gulp.task("preDeploy", ["clean"], cb => {
   runsequence(["styles", "scripts", "images", "svg"], "generator", "algolia", cb)
 })
 
@@ -100,7 +109,7 @@ gulp.task("algolia", cb => {
         const indexName = basename(dirname(file.path))
 
         atomicalgolia(indexName, file.path, function(err, res) {
-          if (err) throw err
+          if (err) return
 
           var count = res.objectIDs.length
           var message = `Sent ${count} operations to ${indexName}...`
