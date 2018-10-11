@@ -10,6 +10,7 @@
     "start": "gulp server",
     "preview": "cross-env NODE_ENV=production GENERATOR_ARGS=preview gulp server",
     "build": "cross-env NODE_ENV=production gulp build",
+    "preDeploy": "cross-env NODE_ENV=production gulp preDeploy",
     "clean": "gulp clean",
     "eslint": "./node_modules/eslint/bin/eslint.js src/js/ --ext .js",
     "eslint:fix": "./node_modules/eslint/bin/eslint.js src/js/ --ext .js --fix",
