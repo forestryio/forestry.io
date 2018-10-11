@@ -14,15 +14,23 @@ export default class ASBGenerator {
     this.buttonStyleOptions = this.container.querySelectorAll(
       '[name="asb_buttonStyle"]'
     )
+    this.branchField = this.container.querySelector('[name="asb_branch"]')
+    this.configField = this.container.querySelector('[name="asb_config"]')
 
     // get preview/code sample containers
     this.previewContainer = this.container.querySelector(".asb-preview")
     this.HTMLContainer = this.container.querySelector(".asb-html")
     this.markdownContainer = this.container.querySelector(".asb-md")
 
-    // detect form changes
-    this.urlField.addEventListener("keyup", this.debounceUpdate.bind(this))
-    this.versionField.addEventListener("keyup", this.debounceUpdate.bind(this))
+    for (let field of [
+      this.urlField,
+      this.versionField,
+      this.branchField,
+      this.configField
+    ]) {
+      field.addEventListener("keyup", this.debounceUpdate.bind(this))
+    }
+
     this.engineField.addEventListener("change", this.debounceUpdate.bind(this))
     for (let button of this.buttonStyleOptions) {
       button.addEventListener("change", this.debounceUpdate.bind(this))
@@ -57,6 +65,8 @@ export default class ASBGenerator {
     let engine = this.engineField.value
     let version = this.versionField.value
     let buttonStyle = this.getSelectedButtonOption().value
+    let branch = this.branchField.value
+    let config = this.configField.value
 
     // parse URL to get provider and repo path
     try {
@@ -69,7 +79,14 @@ export default class ASBGenerator {
 
     this.container.classList.remove("has-error")
 
-    let addsiteUrl = this.getAddsiteURL(provider, repoPath, engine, version)
+    let addsiteUrl = this.getAddsiteURL(
+      provider,
+      repoPath,
+      engine,
+      version,
+      branch,
+      config
+    )
     let imageUrl = this.getImageUrl(buttonStyle)
 
     // update preview and code samples
@@ -118,10 +135,23 @@ export default class ASBGenerator {
     }
   }
 
-  getAddsiteURL(provider, repoPath, engine, version) {
-    return engine === "hugo"
-      ? `https://app.forestry.io/quick-start?repo=${repoPath}&provider=${provider}&engine=${engine}&version=${version}`
-      : `https://app.forestry.io/quick-start?repo=${repoPath}&provider=${provider}&engine=${engine}`
+  getAddsiteURL(provider, repoPath, engine, version, branch, config) {
+    let url = `https://app.forestry.io/quick-start?repo=${repoPath}`
+    if (provider != "github") {
+      url += `&provider=${provider}`
+    }
+    if (engine != "hugo") {
+      url += `&engine=${engine}`
+    } else if (version) {
+      url += `&version=${version}`
+    }
+    if (branch != "master") {
+      url += `&branch=${branch}`
+    }
+    if (config != "/") {
+      url += `&config=${config}`
+    }
+    return url
   }
 
   getImageUrl(buttonStyle) {

@@ -4,7 +4,17 @@
             <label for="repoURL">Repository URL</label>
             <input id="ASBrepoURL" type="text" name="asb_repo" value="https://github.com/forestryio/ubuild-jekyll" placeholder="https://github.com/forestryio/ubuild-jekyll" />
         </div>
-        <div class=".asbparams__group asbparams__group--engine">
+        <div class="asbparams__group asbparams__group--row">
+            <div class="asbparams__group">
+                <label for="ASBbranch">Branch</label>
+                <input id="ASBbranch" type="text" name="asb_branch" value="master" />
+            </div>
+            <div class="asbparams__group">
+                <label for="ASBconfig">Config Path</label>
+                <input id="ASBconfig" type="text" name="asb_config" value="/" />
+            </div>
+        </div>
+        <div class="asbparams__group asbparams__group--row">
             <div class="asbparams__group">
                 <label for="ASBengine">Engine</label>
                 <select id="ASBengine" name="asb_engine">
