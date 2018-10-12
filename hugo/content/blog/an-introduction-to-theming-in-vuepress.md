@@ -1,14 +1,15 @@
 ---
 title: An Introduction to Theming in VuePress
 description: ''
-date: 2018-10-08 21:46:25 +0000
+date: 2018-10-12 02:00:25 -1100
 authors:
 - DJ Walker
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-10-12 02:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/10/markus-spiske-445251-unsplash.jpg"
 categories:
 - VuePress
 tags: []
