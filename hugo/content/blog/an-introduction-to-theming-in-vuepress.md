@@ -21,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 When [I first looked at VuePress](https://forestry.io/blog/vuepress-brings-your-documentation-to-life/), I marveled at how quickly you could install it alongside your project's existing markdown docs to create a polished documentation website. This is without a doubt one of VuePress’ biggest strengths, but documentation is not the only thing it can do. VuePress is a highly flexible static site generator, and provides the ability to completely customize the way your pages are built via its Layout component. In this article, we’ll take a look at some fundamentals of building a blog theme in VuePress.
