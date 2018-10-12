@@ -1,7 +1,7 @@
 ---
 title: An Introduction to Theming in VuePress
 description: ''
-date: 2018-10-08 10:46:25 -1100
+date: 2018-10-08 21:46:25 +0000
 authors:
 - DJ Walker
 publishdate: 2017-12-07 04:00:00 +0000
@@ -23,7 +23,7 @@ menu: []
 draft: true
 
 ---
-When [I first looked at VuePress](https://forestry.io/blog/vuepress-brings-your-documentation-to-life/), I marveled at how quickly you could install it alongside your existing markdown documentation to create a polished documentation website. This is without a doubt one of VuePress’ biggest strengths, but documentation is not the only thing it can do. VuePress is a highly flexible static site generator, and provides the ability to completely customize the way your pages are built via its Layout component. In this article, we’ll take a look at some fundamentals of building a blog theme in VuePress.
+When [I first looked at VuePress](https://forestry.io/blog/vuepress-brings-your-documentation-to-life/), I marveled at how quickly you could install it alongside your project's existing markdown docs to create a polished documentation website. This is without a doubt one of VuePress’ biggest strengths, but documentation is not the only thing it can do. VuePress is a highly flexible static site generator, and provides the ability to completely customize the way your pages are built via its Layout component. In this article, we’ll take a look at some fundamentals of building a blog theme in VuePress.
 
 {{% warning "Before We Get Started" %}}
 VuePress is built on the Vue.js framework, and a working knowledge of Vue.js will be tremendously helpful in understanding how to create VuePress themes. This guide will attempt to explain some concepts as we go along, but I highly recommend you take a look at the [Vue.js documentation](https://vuejs.org/v2/guide/) if you get lost. Don’t be intimidated: Vue is pretty easy to get the hang of!
@@ -274,9 +274,9 @@ Now that you’ve seen some of the basics of how to work with VuePress layouts, 
 
 VuePress is still a newcomer to the static site world: version 1.0 is currently in alpha, and this tutorial was done with version `0.14.4`. With its slick default theme and simple customization via Vue components, I look forward to seeing what this project  holds in the future.
 
-
 <!--
+
 ## Have something to add?
 
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
--->
+\-->
