@@ -274,9 +274,6 @@ Now that you’ve seen some of the basics of how to work with VuePress layouts, 
 
 VuePress is still a newcomer to the static site world: version 1.0 is currently in alpha, and this tutorial was done with version `0.14.4`. With its slick default theme and simple customization via Vue components, I look forward to seeing what this project  holds in the future.
 
-<!--
-
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="$HACKER_NEWS_LINK">Discuss on Hacker News</a>
-\-->
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=18203322">Discuss on Hacker News</a>
