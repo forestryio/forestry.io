@@ -89,16 +89,22 @@
       }
     }
   }
-  .asbparams__group--engine {
+  .asbparams__group--row {
     display: flex;
     > .asbparams__group {
       flex-flow: row;
       flex-grow: 1;
+      margin-bottom: 0;
+    }
+    > .asbparams__group {
+      margin-left: 0.6em;
+      &:first-child {
+        margin-left: 0;
+      }
     }
     > .asbparams__group--hugo-only {
       flex-grow: 0;
       width: 6em;
-      margin-left: 0.6em;
       &.hidden {
         display: none;
       }
