@@ -27,12 +27,14 @@ Jekyll also supports preprocessing CoffeeScript with an officially support gem. 
 
 ## Best Practises for Gulp, Grunt, and Other Build Tools
 
-Forestry does not currently support external build tools in the build process.
+In order to use external build like Gulp, Grunt, or Webpack with Forestry's [previewing][1] and [deployment][2], you should configure them as follows:
 
-When publishing, previewing, or saving drafts, Forestry will *only* run:
-`jekyll build`
+1. Use a NodeJS-based tool installable via NPM and configured in `package.json`.
+2. Define the build script(s) as NPM scripts in your `package.json` file.
+3. Use [custom build commands](/docs/settings/build-commands/) to call these NPM scripts.
 
-If you use Gulp, Grunt or another build tool to process your assets, you *must* commit your final working assets to your repository, otherwise [previewing](/docs/editing/previews) and [deployment](/docs/hosting) will **not** work.
+[1]: /docs/editing/previews
+[2]: /docs/hosting/
 
 ## Further Reading
 - [Jekyll Assets Reference](http://jekyllrb.com/docs/assets/)
