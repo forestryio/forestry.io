@@ -121,8 +121,6 @@ This setting allows you to tell Forestry which parts of your site contain editab
 
 The configuration files for Front Matter Templates is found in `.forestry/front_matter/templates/`. Each Front Matter Template is stored as a separate file.
 
-When importing a site for the first time in Forestry, these configuration files will take precedence over autogeneration from any Jekyll defaults or Hugo archetypes.
-
 The following is an example of a front matter template configuration file.
 
     homepage.yml
