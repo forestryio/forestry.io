@@ -39,7 +39,7 @@ _This option is only available for a limited time_
 
 If you had Data Files and you haven't made the migration until now, you'll see a link in your Sidebar.
 
-![](/uploads/2018/10/Screen Shot 2018-10-15 at 4.32.40 PM.png)
+![](/uploads/2018/10/where-did-my-datafiles-go.png)
 
 Click on the link and **Start Migration**. Once Forestry finishes loading you'll see your new Data Files section in the Sidebar.
 
