@@ -19,6 +19,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+images: []
 menu: []
 
 ---
@@ -29,6 +30,18 @@ A little over two months ago we made it possible to customize the sidebar for yo
 All new sites will have this feature enabled by default. Existing Jekyll and Hugo sites are not automatically migrating until October 16th, 2018, giving you time to make adjustments, if necessary. Read more in our [docs](/docs/editing/data-files#existing-jekyll-hugo-projects).
 
 Here's a quick walkthrough on how you can set up data file sections on your site.
+
+You can allow Forestry to migrate Data files for you or choose to make this configuration yourself.  
+  
+**Automatic Migration of Data Files** ⭐
+
+_This option is only available for a limited time_
+
+If you had Data Files and you haven't made the migration until now, you'll see a link in your Sidebar.
+
+![](/uploads/2018/10/Screen Shot 2018-10-15 at 4.32.40 PM.png)
+
+Click on the link and **Start Migration**. Once Forestry finishes loading you'll see your new Data Files section in the Sidebar.
 
 ***
 
