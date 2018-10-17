@@ -24,7 +24,7 @@ Your import button will use our *quick start* flow to clone the project into the
 | --- | --- | --- | --- |
 | `repo` | Path to repository, of the format `$group/$project` | String | None |
 | `provider` | Which git provider your repository is hosted from | `github`, `gitlab`, or `bitbucket` | `github` |
-| `engine` | The static site generator used by your project. | `hugo`, `jekyll`, or `vuepress` | `hugo` |
+| `engine` | The static site generator used by your project. | `hugo`, `jekyll`, or `vuepress` | None |
 | `version` | The Hugo version to use (only applies when engine is `hugo`) | Decimal | Latest |
 | `branch` | The repository branch to import | String | `master` |
 | `config` | Relative path to your source files | String | `/` |

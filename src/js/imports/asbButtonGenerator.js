@@ -140,9 +140,8 @@ export default class ASBGenerator {
     if (provider != "github") {
       url += `&provider=${provider}`
     }
-    if (engine != "hugo") {
-      url += `&engine=${engine}`
-    } else if (version) {
+    url += `&engine=${engine}`
+    if (engine == "hugo" && version) {
       url += `&version=${version}`
     }
     if (branch != "master") {
