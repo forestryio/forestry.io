@@ -9,3 +9,15 @@ public/
 hugo/public/
 dist/
 .tmp/
+
+# Don't add files that are created in the build process
+hugo/static/css/styles.css.map
+hugo/static/css/styles.min.css
+hugo/static/js/ads.js.map
+hugo/static/js/ads.min.js
+hugo/static/js/hljs.worker.js.map
+hugo/static/js/hljs.worker.min.js
+hugo/static/js/load-add-site-flow.js.map
+hugo/static/js/load-add-site-flow.min.js
+hugo/static/js/scripts.js.map
+hugo/static/js/scripts.min.js
