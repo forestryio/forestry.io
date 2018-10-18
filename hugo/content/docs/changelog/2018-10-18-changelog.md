@@ -10,12 +10,18 @@ cta:
 draft: true
 
 ---
-## Sunsets
+## Features
 
-* **Data Files:** We changed the way we handle data files. They are now imported using contenct sections.
+* **Duplicating Pages:** Click on the "..." on a page, and create a duplicate! All fields are copied over, and the status is set to "draft".
 
-## Enhancements
+## Updates
 
-* **Deployment Logs:** Forestry now collects logs from deployment and makes them available through the Notification UI.
-* **Sidebar Settings:** The list of sections now contains more information about the type of section and the content it includes.
-* **Site Brand:** The Forestry Logo inside the CMS now behaves like a link i.e. Ctrl/Cmd+Click will open the Forestry Dashboard in a new tab.
+* **Switching Templates:** Updated the behaviour when switching a page's template:
+
+  When switching to an FMT with defaults:
+
+  • New fields _should_ be set to the default
+
+  • Existing fields _should not_ be set to the default
+
+  • Hidden fields _should always_ be set to the default
