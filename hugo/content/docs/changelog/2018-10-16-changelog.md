@@ -8,6 +8,12 @@ cta:
   textline: ''
   calls_to_action: []
 
+menu:
+  changelog:
+    name: 2018/10/16
+    parent: Changelog
+    weight: 7
+
 ---
 ## Sunsets
 
