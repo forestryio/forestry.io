@@ -8,11 +8,11 @@ date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
-  footer:
-    parent: Product
-    weight: 2
   docs:
     parent: Other
+    weight: 2
+  footer:
+    parent: Product
     weight: 2
 
 ---
