@@ -2,17 +2,16 @@
 title: 2018/10/16 Changelog
 authors:
 - team forestry
-date: 2018-10-16 04:02:43 -1100
+date: 2018-10-16 15:02:43 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
-
 menu:
   changelog:
     name: 2018/10/16
     parent: Changelog
-    weight: 7
+    weight: 2
 
 ---
 ## Sunsets
