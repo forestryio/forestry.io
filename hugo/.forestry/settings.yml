@@ -52,3 +52,7 @@ front_matter_path: "/uploads"
 use_front_matter_path: false
 file_template: ":year:/:month:/:filename:"
 version: 0.42.2
+build:
+  preview_command: yarn build
+  publish_command: yarn preDeploy
+  output_directory: dist
