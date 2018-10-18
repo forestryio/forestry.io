@@ -11,7 +11,6 @@ menu:
   changelog:
     name: 2018/10/18
     weight: 1
-draft: true
 
 ---
 ## Features
