@@ -14,7 +14,6 @@ menu:
     weight: 15
 
 ---
-
 Hugo supports pre-procesing CSS files via SCSS, and post-processing via PostCSS.
 
 ## Hugo's Built-in Asset Pipeline
