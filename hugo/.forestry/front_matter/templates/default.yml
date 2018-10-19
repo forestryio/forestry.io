@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/data-files-directories-and-duplicating-pages.md
 - hugo/content/blog/an-introduction-to-theming-in-vuepress.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
