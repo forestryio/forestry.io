@@ -46,6 +46,11 @@ sections:
   label: Sunset Notices
   create: all
   match: "*"
+- type: directory
+  path: hugo/data
+  label: Data
+  create: none
+  match: "**/*.{json,yaml,yml,toml}"
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
