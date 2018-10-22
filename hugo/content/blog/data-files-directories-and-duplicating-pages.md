@@ -1,14 +1,16 @@
 ---
 title: Data Files, Directories, and Duplicating Pages
 description: ''
-date: 2018-10-22 07:36:31 -1100
-authors: []
-publishdate: 2018-10-22 07:36:31 -1100
+date: 2018-10-22 18:36:31 +0000
+authors:
+- DJ Walker
+publishdate: 2018-10-22 18:36:31 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
