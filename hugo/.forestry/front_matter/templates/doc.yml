@@ -35,9 +35,10 @@ fields:
   config:
     use_select: true
     source:
-      type: datafiles
-      file: authors-yml
+      type: documents
+      file: hugo/data/authors.yml
       path: map
+      section: authors
   default: []
 - type: list
   name: categories
