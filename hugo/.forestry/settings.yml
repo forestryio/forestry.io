@@ -51,15 +51,12 @@ sections:
 - type: document
   path: hugo/data/authors.yml
   label: Authors
-  match: "**/*"
 - type: document
   path: hugo/data/testimonials.yml
   label: Testimonials
-  match: "**/*"
 - type: document
   path: hugo/data/pricing.json
   label: Pricing
-  match: "**/*"
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
