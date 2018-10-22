@@ -49,15 +49,15 @@ sections:
 - type: heading
   label: Data
 - type: document
-  path: hugo/_data/authors.yml
+  path: hugo/data/authors.yml
   label: Authors
   match: "**/*"
 - type: document
-  path: hugo/_data/testimonials.yml
+  path: hugo/data/testimonials.yml
   label: Testimonials
   match: "**/*"
 - type: document
-  path: hugo/_data/pricing.json
+  path: hugo/data/pricing.json
   label: Pricing
   match: "**/*"
 upload_dir: hugo/static/uploads
