@@ -31,6 +31,8 @@ We have removed support for our old way of handling data files. Previously, we u
 
 ## VuePress Now Out of Beta
 
+{{% screencast "vuepress-removebeta" %}}
+
 Abstracting data file discovery in our content manager has paved the way for more easily supporting other static site generators. We have now removed the **beta** flag from our VuePress importer, as we believe that our editor can now **fully support VuePress content management**.
 
 ## More Content Manipulation tools
