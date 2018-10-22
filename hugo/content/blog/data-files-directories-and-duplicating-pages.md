@@ -1,9 +1,9 @@
 ---
 title: Data Files, Directories, and Duplicating Pages
 description: ''
-date: 2018-10-19 07:36:31 -1100
+date: 2018-10-22 07:36:31 -1100
 authors: []
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2018-10-22 07:36:31 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -37,10 +37,27 @@ Abstracting data file discovery in our content manager has paved the way for mor
 
 ## More Content Manipulation tools
 
-We've added some small quality-of-life improvements for content creation. Forestry users can now **create folders** in any content section with `create: all` permissions. In addition, you can **duplicate pages** by clicking the `...` next to the item in the pages listing and selecting **Duplicate**.
+We've added some quality-of-life improvements for content creation. 
 
-## More Goodies
+![](/uploads/2018/10/create-directory-ui.png)
 
-* Sidebar items show more info
-* Performance improvements
-* Bugfixes
+Forestry users can now **create folders** in any content section with `create: all` permissions. 
+
+![](/uploads/2018/10/duplicate-document-ui.png)
+
+In addition, you can **duplicate pages** by clicking the `...` next to the item in the pages listing and selecting **Duplicate**.
+
+## Additional Goodies
+
+### Sidebar Editor Shows More Info
+
+![](/uploads/2018/10/sidebar-config-ui.png)
+
+We've added more context to the sidebar editor to help you see how your sidebar is configured at a glance.
+
+### Performance Improvements & Bugfixes
+
+We've trimmed some fat to improve frontend performance, and squashed a few bugs along the way.
+
+
+To stay on top of the improvements we make to Forestry, be sure to check our [changelog](https://forestry.io/docs/changelog/) from time to time!
