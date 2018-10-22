@@ -51,6 +51,16 @@ sections:
   label: Data
   create: none
   match: "**/*.{json,yaml,yml,toml}"
+- type: heading
+  label: Data
+- type: document
+  path: _data/authors.yml
+  label: Authors
+  match: "**/*"
+- type: document
+  path: _data/testimonials.yml
+  label: Testimonials
+  match: "**/*"
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
