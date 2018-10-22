@@ -1,7 +1,7 @@
 ---
 title: Data Files, Directories, and Duplicating Pages
 description: ''
-date: 2018-10-22 18:36:31 +0000
+date: 2018-10-22 07:36:31 -1100
 authors:
 - DJ Walker
 publishdate: 2018-10-22 18:36:31 +0000
