@@ -51,15 +51,19 @@ Forestry users can now **create folders** in any content section with `create: a
 
 In addition, you can **duplicate pages** by clicking the `...` next to the item in the pages listing and selecting **Duplicate**.
 
-## Additional Goodies
+## Sidebar Editor Improvements
 
-### Sidebar Editor Shows More Info
+We've made configuring content sections in your sidebar a little easier.
 
 ![](/uploads/2018/10/sidebar-config-ui.png)
 
-We've added more context to the sidebar editor to help you see how your sidebar is configured at a glance.
+The list of your sidebar sections contains more contextual information now, to help you see how your sidebar is configured at a glance.
 
-### Performance Improvements & Bugfixes
+![](/uploads/2018/10/section-config-ui-1.png)
+
+We've also broken up sidebar management into a two-step process and reorganized the configuration screen to make things a bit easier to understand.
+
+## Performance Improvements & Bugfixes
 
 We've trimmed some fat to improve frontend performance, and squashed a few bugs along the way.
 
