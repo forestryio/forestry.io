@@ -20,7 +20,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 <div style="text-align: center;">
