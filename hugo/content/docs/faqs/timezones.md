@@ -28,3 +28,4 @@ The upshot of this behavior is that anyone editing content on your Forestry site
 **While we're on the subject,** I highly recommend watching this wonderful rant on the challenge of programming with time zones:
 
 <iframe style="display: block; margin: 0 auto;" width="560" height="315" src="https://www.youtube.com/embed/-5wpm-gesOY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div style="text-align: center;">🤷</div>
