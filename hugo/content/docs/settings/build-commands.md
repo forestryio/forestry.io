@@ -93,6 +93,33 @@ build:
   - JEKYLL_ENV=production
 ```
 
+{{% tip "Adding Build Commands for VuePress" %}}
+Forestry can build with any static site generator installable via npm. A VuePress site, for example, can be built as follows:
+<br /><br />
+### 1. Install VuePress in your project
+This step is important, as you could otherwise run node packages on your local machine by installing them globally, but Forestry won't have these global packages installed.
+
+```
+npm install --save vuepress
+```
+
+### 2. Configure a build script in *package.json*
+Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
+
+```
+"scripts": {
+  "forestry:preview": "vuepress build"
+}
+```
+
+### 3. Run the NPM script in your build command
+```
+build:
+  preview_command: npm run forestry:preview
+  output_directory: .vuepress/dist
+```
+{{% /tip %}}
+
 ## Environment Variables
 
 The following Environment Variables can be customized in your build commands:
