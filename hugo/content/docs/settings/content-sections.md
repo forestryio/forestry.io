@@ -3,7 +3,7 @@ title: Sidebar Configuration
 weight: 1
 publishdate: 2018-07-24 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-08-08 04:00:00 +0000
+date: 2018-10-24 04:00:00 +0000
 layout: single
 menu:
   docs:
@@ -103,7 +103,13 @@ For a `jekyll-pages` section, Forestry will use the value of the `exclude` param
 
 ### Create
 
-The `create` parameter allows you to specify whether new files can be created for the section. Setting this parameter to `all` allows for new files to be created, while setting it to `none` will only allow existing files to be edited.
+![By default, users can create both files and directories](/uploads/2018/10/create-directory-ui.png)
+
+The `create` parameter allows you to specify whether new files can be created for the section. 
+
+- `all`: Users can create new files and folders
+- `documents`: Users can create new files, but not new folders
+- `none`: Users can edit existing files, but cannot create new ones
 
 ### Templates
 
