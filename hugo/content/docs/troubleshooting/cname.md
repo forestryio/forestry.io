@@ -37,3 +37,4 @@ Make sure you place your `CNAME` file in your source directory, not your build d
 ### Examples
 - **Jekyll:** any file without [front matter](/docs/editing/front-matter) is treated as a static file, so place your `CNAME` file in the root of your source folder
 - **Hugo**: any file inside of the `static/` directory in your source folder is treated as a static file.
+- **VuePress**: files inside of `.vuepress/public` are treated as static files.
