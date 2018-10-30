@@ -1,21 +1,19 @@
 ---
 aliases:
 - "/jekyll/"
-title: Static CMS for Hugo & Jekyll
-description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to build
-  sites.
+title: Static CMS for Jekyll
+description: Forestry
 authors:
 - forestryio
 blocks:
 hero:
   headline: A Jekyll CMS that **commits**
-  textline: Sync your Jekyll, Hugo or VuePress site. Your editors will love it and
-    won’t realize they’re making commits.
+  textline: Forestry takes Git-powered Content Management to Jekyll Sites. Easily update, build and deploy sites in Forestry and store your site in Git. [Learn More](#your-site-your-workflow)
   ctas:
   - permalink: https://app.forestry.io/signup
-    textline: Import Your Site Now
+    textline: Start Building Free
     button: true
-  - permalink: "https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll"
+  - permalink: "https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll"
     textline: Launch Demo
     button: false
   video:
@@ -42,10 +40,20 @@ features:
     Write front-end code with Jekyll, Hugo or Vuepress and push to your Git repo. Forestry will pull in your commits and update the CMS.
 
     Invite your team to create content in a rich UI. Their updates get committed back without merge conflicts.
-  visual:
-    permalink: "/img/dev-illustration-02.png"
-    alt: Dev workflow
-  direction: ltr
+  tabs:
+  - headline: 1 Tab
+    textline: |
+      This is the first description
+    visual:
+      permalink: "/img/dev-illustration-02.png"
+      alt: Dev workflow
+  - headline: 2 Tab
+    textline: |
+      This is the second description
+    visual:
+      permalink: "/img/dev-illustration-02.png"
+      alt: Dev workflow
+  direction: tab
   class: section-roots
 - headline: Empower your editors
   textline: |
