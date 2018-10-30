@@ -1,12 +1,6 @@
 html,
-body.home,
-body.kind-404 {
-  height: 100%;
-}
-
-html,
 body {
-  width: 100%;
+  min-height: 100%;
 }
 
 body.in-transition {
@@ -181,6 +175,11 @@ body.in-transition {
 
   .feature-block--illu {
     position: relative;
+    width: inherit;
+  }
+
+  .feature-block--illu img {
+    width: inherit;
   }
 
   .illu-shadow--left img {
