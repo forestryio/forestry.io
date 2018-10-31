@@ -8,7 +8,7 @@ authors:
 blocks:
 hero:
   headline: A Jekyll CMS that **commits**
-  textline: Forestry takes Git-powered Content Management to Jekyll Sites. Easily update, build and deploy sites in Forestry and store your site in Git. [Learn More](#your-site-your-workflow)
+  textline: Forestry takes Git-powered Content Management to Jekyll Sites. Easily update, build and deploy sites in Forestry. [Learn More](#support-for-all-of-your-favorite-tools)
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Start Building Free
@@ -35,39 +35,69 @@ hero:
     - permalink: "/uploads/2018/08/vuepress-1.png"
       alt: Vuepress
 features:
-- headline: "Manage your sites in one place: Choose the tools for your own workflow"
+- headline: Support for all of your favorite tools
   textline: |
-  tabs:
-  - headline: Connect
-    textline: |
-      We provide full support for your Jekyll powered site. You can use a theme, start from scratch or use the [Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll).
-  - headline: Update
-    textline: |
-      Forestry offers 
-  - headline: Build
-    textline: |
-      This is the second description
-  - headline: Deploy
-    textline: |
-      This is the second description
-    visual:
-      permalink: "/img/dev-illustration-02.png"
-      alt: Dev workflow
-  direction: tab
-  class: section-roots
-- headline: Empower your editors
-  textline: |
-    Your editing team deserves a powerful admin interface. Customize each page with Forestry's rich editing fields.
-
-    Login from your **yoursite.com/admin**. With Forestry Remote, your site will transcend static.
+    Forestry is optimized for Jekyll including Liquid, Sass and Coffeescript.
+    
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
+      <div style="flex:auto;">
+        <img height="35px" src="/img/logos/jekyll.svg" alt="Jekyll">
+      </div>
+      <div style="flex:auto;">
+        <img height="35px" src="/img/logos/sass.svg" alt="Sass">
+      </div>
+      <div style="flex:auto;">
+        <img height="35px" src="/img/logos/coffeescript.svg" alt="CoffeeScript">
+      </div>
+    </div>
+  
+    Choose your own tools and include them into the build process with Custom Build Commands.
+    
+    Use an existing theme, create your own site or make use of a Starter-Kit. [Too many options?](#)
   visual:
-    permalink: "/img/editor-illustration-02.png"
-    alt: Editor friendly interface
+    permalink: "/img/dev-illustration-02.png"
+    alt: Dev workflow
+  direction: ltr
+  class: section-roots
+- headline: Support for all of your favorite tools
+  textline: |
+    Forestry is optimized for Jekyll including Liquid, Sass and Coffeescript.
+    
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
+      <div style="flex:auto;">
+        <img height="35px" src="/img/logos/jekyll.svg" alt="Jekyll">
+      </div>
+      <div style="flex:auto;">
+        <img height="35px" src="/img/logos/sass.svg" alt="Sass">
+      </div>
+      <div style="flex:auto;">
+        <img height="35px" src="/img/logos/coffeescript.svg" alt="CoffeeScript">
+      </div>
+    </div>
+  
+    Choose your own tools and include them into the build process with Custom Build Commands.
+    
+    Use an existing theme, create your own site or make use of a Starter-Kit. [Too many options?](#)
+  visual:
+    permalink: "/img/dev-illustration-02.png"
+    alt: Dev workflow
   direction: rtl
   class: section-sync
-- headline: Your entire team will be making commits
-  textline: Your editing team won't even realize they're writing Markdown and committing
-    to your repo.
+- headline: Choose your Git Integration
+  textline: |
+    Forestry seamlessly integrates with your Git workflow keeping your content in-sync without merge conflicts.
+
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
+      <div style="flex:auto;text-align:center;">
+        <img height="35px;" src="/img/logos/github.svg" alt="Github">
+      </div>
+      <div style="flex:auto;text-align:center;">
+        <img height="35px;" src="/img/logos/gitlab.svg" alt="Gitlab">
+      </div>
+      <div style="flex:auto;text-align:center;">
+        <img height="35px;" src="/img/logos/bitbucket-logo.svg" alt="Bitbucket">
+      </div>
+    </div>
   visual:
     permalink: "/img/commits-illustration.png"
     alt: Editor workflow
@@ -87,6 +117,26 @@ features:
     Fastly, and GitHub Pages. You can even deploy with plain old FTP.
   direction: vertical
   class: section-deploy
+- headline: "Manage your sites in one place: Choose the tools for your own workflow"
+  textline: |
+  tabs:
+  - headline: Connect
+    textline: |
+      We provide full support for your Jekyll powered site. You can use a theme, start from scratch or use the [Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll).
+  - headline: Update
+    textline: |
+      Forestry is optimized to work with Jekyll and is using customizable templates to make edits to Front Matter and uses a WYSIWYG Editor (visual) based on Markdown.  
+  - headline: Build
+    textline: |
+      This is the second description
+  - headline: Deploy
+    textline: |
+      This is the second description
+    visual:
+      permalink: "/img/dev-illustration-02.png"
+      alt: Dev workflow
+  direction: tab
+  class: section-roots
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?

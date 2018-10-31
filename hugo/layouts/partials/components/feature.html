@@ -2,7 +2,7 @@
 {{- with .feature -}}
   {{- if .headline -}}
   {{- if or (.textline) (eq .direction "tab") -}}
-  <section class="section{{ with .class }} {{ . }}{{- end -}}{{ if or (eq .direction "vertical") (eq .direction "tab") }} center{{ end }}">
+  <section id="{{- .headline | urlize -}}" class="section{{ with .class }} {{ . }}{{- end -}}{{ if or (eq .direction "vertical") (eq .direction "tab") }} center{{ end }}">
     <div class="container">
       <div class="feature-block {{ .direction | default "ltr" }}">
         {{- if eq .direction "rtl" -}}{{- with .visual -}}
