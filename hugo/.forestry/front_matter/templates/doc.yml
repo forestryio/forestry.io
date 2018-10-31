@@ -9,37 +9,12 @@ fields:
   description: Used for SEO. Fallback for Headline.
   config:
     required: true
-- type: text
-  name: headline
-  label: Page Headline
-  description: Optional override for title
-- type: textarea
-  name: description
-  label: Description
-  description: Used for SEO
-  config:
-    required: false
-- type: textarea
-  name: textline
-  label: Page Textline
-  description: Optional override for description
 - type: image_gallery
   name: images
   label: Images
   description: Used for SEO & Featured Images
   default:
   - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-- type: list
-  name: authors
-  label: Authors
-  config:
-    use_select: true
-    source:
-      type: documents
-      file: hugo/data/authors.yml
-      path: map
-      section: authors
-  default: []
 - type: list
   name: categories
   label: Categories
@@ -54,9 +29,6 @@ fields:
     - Static Sites
     - Static Site Generators
     - Company
-- type: tag_list
-  name: tags
-  label: Tags
 - type: datetime
   name: publishdate
   label: Publish Date
@@ -66,6 +38,34 @@ fields:
     time_format: h:mmA
     required: true
   default: 2017-12-07 04:00:00 +0000
+- type: text
+  name: headline
+  label: Page Headline
+  description: Optional override for title
+- type: textarea
+  name: description
+  label: Description
+  description: Used for SEO
+  config:
+    required: false
+- type: textarea
+  name: textline
+  label: Page Textline
+  description: Optional override for description
+- type: list
+  name: authors
+  label: Authors
+  config:
+    use_select: true
+    source:
+      type: documents
+      file: hugo/data/authors.yml
+      path: map
+      section: authors
+  default: []
+- type: tag_list
+  name: tags
+  label: Tags
 - type: datetime
   name: expirydate
   label: Expiry Date
