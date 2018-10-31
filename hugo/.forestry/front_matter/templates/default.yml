@@ -134,6 +134,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/new-improve-media-gallery.md
 - hugo/content/blog/data-files-directories-and-duplicating-pages.md
 - hugo/content/blog/an-introduction-to-theming-in-vuepress.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
