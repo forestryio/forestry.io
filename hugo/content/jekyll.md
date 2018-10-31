@@ -35,19 +35,19 @@ hero:
     - permalink: "/uploads/2018/08/vuepress-1.png"
       alt: Vuepress
 features:
-- headline: Your site, your workflow
+- headline: "Manage your sites in one place: Choose the tools for your own workflow"
   textline: |
-    Write front-end code with Jekyll, Hugo or Vuepress and push to your Git repo. Forestry will pull in your commits and update the CMS.
-
-    Invite your team to create content in a rich UI. Their updates get committed back without merge conflicts.
   tabs:
-  - headline: 1 Tab
+  - headline: Connect
     textline: |
-      This is the first description
-    visual:
-      permalink: "/img/dev-illustration-02.png"
-      alt: Dev workflow
-  - headline: 2 Tab
+      We provide full support for your Jekyll powered site. You can use a theme, start from scratch or use the [Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll).
+  - headline: Update
+    textline: |
+      Forestry offers 
+  - headline: Build
+    textline: |
+      This is the second description
+  - headline: Deploy
     textline: |
       This is the second description
     visual:

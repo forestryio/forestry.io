@@ -226,9 +226,25 @@ body.in-transition {
       border-bottom: solid 1px;
     }
 
+    @media screen and (max-width: 700px) {
+      .feature-block--nav-row > div {
+        padding: 5px 8px;
+      }
+    }
+
     .feature-block--nav-row > div.active {
       color: #20c997;
       transition-duration: 0.3s;
+    }
+
+    .feature-block--data {
+      width: 460px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .feature-block--data {
+        width: 100%;
+      }
     }
 
     .feature-block--data > div {
