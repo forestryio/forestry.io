@@ -35,29 +35,42 @@ hero:
     - permalink: "/uploads/2018/08/vuepress-1.png"
       alt: Vuepress
 features:
-- headline: Support for all of your favorite tools
+- headline: "Creating a superior editing experience for the site of the future"
   textline: |
-    Forestry is optimized for Jekyll including Liquid, Sass and Coffeescript.
-    
-    <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
-      <div style="flex:auto;">
-        <img height="35px" src="/img/logos/jekyll.svg" alt="Jekyll">
-      </div>
-      <div style="flex:auto;">
-        <img height="35px" src="/img/logos/sass.svg" alt="Sass">
-      </div>
-      <div style="flex:auto;">
-        <img height="35px" src="/img/logos/coffeescript.svg" alt="CoffeeScript">
-      </div>
-    </div>
-  
-    Choose your own tools and include them into the build process with Custom Build Commands.
-    
-    Use an existing theme, create your own site or make use of a Starter-Kit. [Too many options?](#)
-  visual:
-    permalink: "/img/dev-illustration-02.png"
-    alt: Dev workflow
-  direction: ltr
+  tabs:
+  - headline: Connect
+    textline: |
+      Import your Jekyll powered site and make edits within minutes. Tell Forestry what parts of your site you want exposed and configure templates to create new content. 
+    visual:
+      permalink: "/img/connect.gif"
+      alt: Dev workflow
+    features:
+    - name: Custom Sections
+    - name: Set Templates
+    - name: Exclude Files 
+  - headline: Edit
+    textline: |
+      Forestry is optimized to work with Jekyll and is using customizable templates to make edits to Front Matter and uses a WYSIWYG Editor (visual) based on Markdown.  
+    visual:
+      permalink: "/img/editing-top-bar.gif"
+      alt: Dev workflow
+    features:
+    - name: WYSIWYG & Markdown
+    - name: Snippets & Blocks
+    - name: Drafts 
+  - headline: Preview
+    textline: |
+      This is the second description
+    visual:
+      permalink: "/img/preview.gif"
+      alt: Dev workflow
+  - headline: Roles
+    textline: |
+      This is the second description
+    visual:
+      permalink: "/img/roles.png"
+      alt: Dev workflow
+  direction: tab
   class: section-roots
 - headline: Support for all of your favorite tools
   textline: |
@@ -104,8 +117,11 @@ features:
   direction: vertical
   class: section-sync
 - headline: Deployment made simple
-  textline: When editors publish, Forestry deploys. Send your compiled site to your
-    host or just commit changes back to your repo. Forestry integrates with your deployment
+  textline: |
+    When editors publish, Forestry deploys. Send the built site to your
+    host or just commit changes back to your repo.  
+    
+    Forestry integrates with your deployment
     process.
   visual:
     permalink: "/img/deploy-illustration-02.png"
@@ -114,29 +130,9 @@ features:
   class: section-automated
 - headline: Host where you want
   textline: Your static site can live anywhere you want — including on Amazon S3,
-    Fastly, and GitHub Pages. You can even deploy with plain old FTP.
+    Fastly, Netlify and GitHub Pages. You can even deploy with plain old FTP.
   direction: vertical
   class: section-deploy
-- headline: "Manage your sites in one place: Choose the tools for your own workflow"
-  textline: |
-  tabs:
-  - headline: Connect
-    textline: |
-      We provide full support for your Jekyll powered site. You can use a theme, start from scratch or use the [Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll).
-  - headline: Update
-    textline: |
-      Forestry is optimized to work with Jekyll and is using customizable templates to make edits to Front Matter and uses a WYSIWYG Editor (visual) based on Markdown.  
-  - headline: Build
-    textline: |
-      This is the second description
-  - headline: Deploy
-    textline: |
-      This is the second description
-    visual:
-      permalink: "/img/dev-illustration-02.png"
-      alt: Dev workflow
-  direction: tab
-  class: section-roots
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?

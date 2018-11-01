@@ -18,33 +18,58 @@
         </div>        
         {{- if eq .direction "tab" -}}
         {{- with .tabs -}}
-        <div class="feature-block--nav-row" style="display:flex;flex-direction: row;">
+        <div class="feature-block--container">
+          <div class="feature-block--content">
+        <div class="feature-block--nav-row" style="">
         {{- range $index, $value := . -}}
             <div id="{{ .headline | urlize }}-nav" onclick="switchTab({{ .headline | urlize }})" class="feature-block--nav {{ if eq $index 0 }}active{{ end }}">
               <h4>{{ .headline }}</h4>
             </div>
         {{- end -}}
         </div>
-        <div class="feature-block--data">
         {{- range $index, $value := . -}}
-            <div id="{{ .headline | urlize }}" class="feature-block--tab-data {{ if eq $index 0 }}active{{ end }}">
+            <div id="{{ .headline | urlize }}-content" class="feature-block--tab-content {{ if eq $index 0 }}active{{ end }}" style="max-width: 660px;margin: auto;">
               <p>{{ markdownify .textline }}</p>
+              <div class="feature-block--data-features">
+                {{- if .features -}}
+                {{- range .features -}}
+                <div>
+                  <p>{{.name}}</p>
+                </div>
+                {{- end -}}
+                {{- end -}}
+              </div>
+            </div>
+        {{- end -}}
+      </div>
+        <div class="feature-block--data" style="width: 100%;">
+        {{- range $index, $value := . -}}
+            <div id="{{ .headline | urlize }}-img" class="feature-block--tab-data {{ if eq $index 0 }}active{{ end }}">
               {{- with .visual -}}
               <div class="feature-block--illu illu-shadow--left">
                 {{- partial "cloudinary/image" (dict "pg" $.pg "preset" "feature" "image" .permalink "alt" (.alt | default .permalink)) }}
               </div>
               {{- end -}}
             </div>
-        {{- end -}}{{- end -}}      
+        {{- end -}}  
+        </div>
+        </div>{{- end -}} 
         <script>
 
         function switchTab(tab) {
           const navName = tab + "-nav"
-          const dataName = tab
+          const contentName = tab + "-content"
+          const imgName = tab + "-img"
           const allElements = document.getElementsByClassName("feature-block--tab-data")
           for (let i=0; i < allElements.length; i++) {
             if (allElements[i].classList.contains("active")) {
               allElements[i].classList.remove("active");
+            }
+          }
+          const allContentElements = document.getElementsByClassName("feature-block--tab-content")
+          for (let i=0; i < allContentElements.length; i++) {
+            if (allContentElements[i].classList.contains("active")) {
+              allContentElements[i].classList.remove("active");
             }
           }
           const allNavElements = document.getElementsByClassName("feature-block--nav")
@@ -54,8 +79,10 @@
             }
           }
           const navElement = document.getElementById(navName)
-          const dataElement = document.getElementById(dataName)
-          dataElement.classList.add("active")
+          const contentElement = document.getElementById(contentName)
+          const imgElement = document.getElementById(imgName)
+          imgElement.classList.add("active")
+          contentElement.classList.add("active")
           navElement.classList.add("active")
         }
         </script>{{- end -}}
