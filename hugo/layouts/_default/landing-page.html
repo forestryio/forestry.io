@@ -15,7 +15,7 @@
   {{- partial "components/tweets" (dict "pg" $ "tweets" $tweets) -}}
 
   {{- with .Params.cta -}}
-    {{- partial "components/cta/basic" . -}}
+    {{- partial "components/cta/quick" . -}}
   {{- end -}}
 
   {{- with .Params.blocks -}}
