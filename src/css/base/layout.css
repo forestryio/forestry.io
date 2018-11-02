@@ -233,6 +233,7 @@ body.in-transition {
     .feature-block--nav-row {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       width: 100%;
       justify-content: center;
       margin-top: 3rem;

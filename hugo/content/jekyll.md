@@ -8,7 +8,7 @@ authors:
 blocks:
 hero:
   headline: A Jekyll CMS that **commits**
-  textline: Forestry takes Git-powered Content Management to Jekyll Sites. Easily update, build and deploy sites in Forestry. [Learn More](#support-for-all-of-your-favorite-tools)
+  textline: Forestry takes Git-powered Content Management to Jekyll Sites. Easily update, build and deploy sites in Forestry. [Learn More](#everything-you-need-for-superior-content-management)
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Start Building Free
@@ -60,12 +60,20 @@ features:
     - name: Drafts 
   - headline: Preview
     textline: |
-      Previewing allows to take guessing out of your editing. Forestry offers full control over how you preview your project and even allows sharing with your team and clients.
+      Previewing allows to take the guessing out of your editing and makes it easy to share your project with your team and clients.
     visual:
       permalink: "/img/preview.gif"
       alt: Dev workflow
     features:
     - name: Shareable Preview
+  - headline: Publish
+    textline: |
+      Forestry can build and deploy your site to your host on every change. Further optimize the content on its way out by running gems or custom scripts.
+    visual:
+      permalink: "/img/deploy-illustration-02.png"
+      alt: Simple deployment
+    features:
+    - name: Automatic Deployment
     - name: Custom Build Commands
   - headline: Roles
     textline: |
