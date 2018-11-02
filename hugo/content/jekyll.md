@@ -36,7 +36,7 @@ hero:
       alt: Vuepress
 features:
 - headline: "Everything you need for great content management"
-  textline: |
+  textline: ""
   tabs:
   - headline: Connect
     textline: |
