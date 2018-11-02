@@ -106,10 +106,10 @@ features:
   class: section-sync
 - headline: Choose your Git Integration
   textline: |
-    Forestry seamlessly integrates with your Git-workflow, keeping your content in-sync without merge conflicts.
+    All Forestry powered projects live on Git.  
 
-    All Forestry powered projects live on Git.
-
+    Forestry seamlessly integrates with your Git-workflow, keeping your content in-sync without merge conflicts.  
+    <br />
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
       <div style="flex:auto;text-align:center;">
         <img height="35px;" src="/img/logos/github.svg" alt="Github">
@@ -124,21 +124,17 @@ features:
   visual:
     permalink: "/img/commits-illustration.png"
     alt: Editor workflow
-  direction: vertical
-  class: section-sync
-- headline: Deployment made simple
-  textline: |
-    Forestry can build and deploy your site to your host on every change.
-
-    Optimize the content on its way out by running gems or custom scripts.
-  visual:
-    permalink: "/img/deploy-illustration-02.png"
-    alt: Simple deployment
   direction: ltr
-  class: section-automated
+  class: section-sync
+- headline: Host where you want
+  textline: Your static site can live anywhere you want — including on Amazon S3,
+    Fastly, Netlify and GitHub Pages. You can even deploy with plain old FTP.
+  direction: vertical
+  class: section-deploy
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?
+  class: section-roots
 type: landing-page
 layout: landing-page
 draft: true
