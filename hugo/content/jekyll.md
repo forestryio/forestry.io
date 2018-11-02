@@ -35,7 +35,7 @@ hero:
     - permalink: "/uploads/2018/08/vuepress-1.png"
       alt: Vuepress
 features:
-- headline: "Creating a superior editing experience for the site of the future"
+- headline: "Everything you need for superior content management"
   textline: |
   tabs:
   - headline: Connect
@@ -50,7 +50,7 @@ features:
     - name: Exclude Files 
   - headline: Edit
     textline: |
-      Forestry is optimized to work with Jekyll and is using customizable templates to make edits to Front Matter and uses a WYSIWYG Editor (visual) based on Markdown.  
+      Make edits right away or create Front Matter Templates to create new content. Our WYSIWYG Editor is based on Markdown and allows for seamless editing in the visual editor.  
     visual:
       permalink: "/img/editing-top-bar.gif"
       alt: Dev workflow
@@ -60,13 +60,20 @@ features:
     - name: Drafts 
   - headline: Preview
     textline: |
-      This is the second description
+      Previewing allows to take guessing out of your editing. Forestry offers full control over how you preview your project and even allows sharing with your team and clients.
     visual:
       permalink: "/img/preview.gif"
       alt: Dev workflow
+    features:
+    - name: Shareable Preview
+    - name: Custom Build Commands
   - headline: Roles
     textline: |
-      This is the second description
+      With Forestry you can provide the access to users that they need for their individual use-case. Give your entire team access to all sites in your Organization.
+    features:
+    - name: Editing in Teams
+    - name: Organizations
+    - name: Restrict Access
     visual:
       permalink: "/img/roles.png"
       alt: Dev workflow
@@ -90,7 +97,8 @@ features:
   
     Choose your own tools and include them into the build process with Custom Build Commands.
     
-    Use an existing theme, create your own site or make use of a Starter-Kit. [Too many options?](#)
+    Use an existing theme, create your own site or make use of a Starter-Kit. 
+    
   visual:
     permalink: "/img/dev-illustration-02.png"
     alt: Dev workflow
@@ -98,7 +106,9 @@ features:
   class: section-sync
 - headline: Choose your Git Integration
   textline: |
-    Forestry seamlessly integrates with your Git workflow keeping your content in-sync without merge conflicts.
+    Forestry seamlessly integrates with your Git-workflow, keeping your content in-sync without merge conflicts.
+
+    All Forestry powered projects live on Git.
 
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
       <div style="flex:auto;text-align:center;">
@@ -118,21 +128,14 @@ features:
   class: section-sync
 - headline: Deployment made simple
   textline: |
-    When editors publish, Forestry deploys. Send the built site to your
-    host or just commit changes back to your repo.  
-    
-    Forestry integrates with your deployment
-    process.
+    Forestry can build and deploy your site to your host on every change.
+
+    Optimize the content on its way out by running gems or custom scripts.
   visual:
     permalink: "/img/deploy-illustration-02.png"
     alt: Simple deployment
   direction: ltr
   class: section-automated
-- headline: Host where you want
-  textline: Your static site can live anywhere you want — including on Amazon S3,
-    Fastly, Netlify and GitHub Pages. You can even deploy with plain old FTP.
-  direction: vertical
-  class: section-deploy
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?

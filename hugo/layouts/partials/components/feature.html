@@ -11,7 +11,7 @@
         </div>
         {{- end -}}{{- end -}}
         <div class="feature-block--copy">
-          <h2 class="section--title" style='{{- if eq .direction "tab" -}}max-width:660px;{{- end -}}'>{{ markdownify .headline }}</h2>
+          <h2 class="section--title" style='{{- if eq .direction "tab" -}}max-width:460px;{{- end -}}'>{{ markdownify .headline }}</h2>
           <div class="section--sub{{ if or (eq .direction "vertical") (eq .direction "tab") }} is-center{{ end }}">
             {{ markdownify .textline }}
           </div>
