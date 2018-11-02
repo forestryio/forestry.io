@@ -35,7 +35,7 @@ hero:
     - permalink: "/uploads/2018/08/vuepress-1.png"
       alt: Vuepress
 features:
-- headline: "Everything you need for superior content management"
+- headline: "Everything you need for great content management"
   textline: |
   tabs:
   - headline: Connect
