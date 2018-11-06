@@ -17,14 +17,7 @@ hero:
     textline: Launch Demo
     button: false
   video:
-    fallbackVisual: "/video/forestry_factory.jpg"
-    sources:
-    - permalink: "/video/forestry_factory.webm"
-      type: video/webm
-    - permalink: "/video/forestry_factory.mp4"
-      type: video/mp4
-    - permalink: "/video/forestry_factory.ogv"
-      type: video/ogg
+    fallbackVisual: "/img/main.gif"
   logos:
     textline: Built for static site generators
     sources:
