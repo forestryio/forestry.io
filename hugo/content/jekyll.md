@@ -19,8 +19,6 @@ hero:
   video:
     fallbackVisual: "/img/fmt-cms-comparison-3.png"
     sources:
-    - permalink: "/video/fmt-cms-comparison-3.webm"
-      type: video/webm
     - permalink: "/video/fmt-cms-comparison-3.mp4"
       type: video/mp4
   logos:
