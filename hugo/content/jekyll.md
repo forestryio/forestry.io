@@ -113,7 +113,7 @@ features:
     All Forestry powered projects live on Git.  
 
     Forestry seamlessly integrates with your Git-workflow, keeping your content in-sync without merge conflicts.  
-    <br />
+    </p>
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
       <div style="flex:auto;text-align:center;">
         <img height="35px;" src="/img/logos/github.svg" alt="Github">
@@ -124,7 +124,7 @@ features:
       <div style="flex:auto;text-align:center;">
         <img height="35px;" src="/img/logos/bitbucket-logo.svg" alt="Bitbucket">
       </div>
-    </div>
+    </div><p>
   visual:
     permalink: "/img/commits-illustration.png"
     alt: Editor workflow
