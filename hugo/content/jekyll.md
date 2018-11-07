@@ -46,22 +46,23 @@ features:
     - name: Exclude Files 
   - headline: Edit
     textline: |
-      Make edits right away or create Front Matter Templates to create new content. Our WYSIWYG Editor is based on Markdown and allows for seamless editing in the visual editor.  
+      Make edits right away or create content models with Front Matter Templates. Our WYSIWYG Editor is based on Markdown and allows for seamless editing, even on-the-move.  
     visual:
       permalink: "/img/editing-top-bar.gif"
       alt: Dev workflow
     features:
     - name: WYSIWYG & Markdown
     - name: Snippets & Blocks
-    - name: Drafts 
+    - name: Mobile Version
   - headline: Preview
     textline: |
-      Previewing allows to take the guessing out of your editing and makes it easy to share your project with your team and clients.
+      Take the guessing out of your editing, with previews you always know exactly what your site will look like. Quickly share your project with your team and clients.
     visual:
       permalink: "/img/preview.gif"
       alt: Dev workflow
     features:
     - name: Shareable Preview
+    - name: Custom Preview Commands
   - headline: Publish
     textline: |
       Forestry can build and deploy your site to your host on every change. Further optimize the content on its way out by running gems or custom scripts.
