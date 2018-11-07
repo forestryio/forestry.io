@@ -17,7 +17,7 @@ hero:
     textline: Launch Demo
     button: false
   video:
-    fallbackVisual: "/img/fmt-cms-comparison-3.gif"
+    fallbackVisual: "/img/fmt-cms-comparison-3.png"
     sources:
     - permalink: "/video/fmt-cms-comparison-3.webm"
       type: video/webm
