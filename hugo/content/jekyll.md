@@ -17,7 +17,7 @@ hero:
     textline: Launch Demo
     button: false
   video:
-    fallbackVisual: "/img/fmt-cms-comparison-2.gif"
+    fallbackVisual: "/img/fmt-cms-comparison-3.gif"
   logos:
     textline: Built for static site generators
     sources:
