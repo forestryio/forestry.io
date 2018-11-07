@@ -18,6 +18,11 @@ hero:
     button: false
   video:
     fallbackVisual: "/img/fmt-cms-comparison-3.gif"
+    sources:
+    - permalink: "/video/fmt-cms-comparison-3.webm"
+      type: video/webm
+    - permalink: "/video/fmt-cms-comparison-3.mp4"
+      type: video/mp4
   logos:
     textline: Built for static site generators
     sources:
