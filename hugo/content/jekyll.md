@@ -150,6 +150,5 @@ cta:
 type: landing-page
 layout: landing-page
 date: 2018-11-08 04:00:00 +0000
-draft: true
 
 ---
