@@ -42,7 +42,7 @@ features:
       Forestry what parts of your site you want exposed and configure templates to
       create new content. \n"
     video:
-      fallbackVisual: "/img/connect.png"
+      fallbackVisual: "/img/connect.jpg"
       sources:
       - permalink: "/video/connect.webm"
         type: video/webm
@@ -56,7 +56,7 @@ features:
     textline: "Make edits right away or create content models with Front Matter Templates.
       Our WYSIWYG Editor is based on Markdown and allows for seamless editing.  \n"
     video:
-      fallbackVisual: "/img/editing.png"
+      fallbackVisual: "/img/editing.jpg"
       sources:
       - permalink: "/video/editing.webm"
         type: video/webm
@@ -73,7 +73,7 @@ features:
 
 '
     video:
-      fallbackVisual: "/img/preview.png"
+      fallbackVisual: "/img/preview.jpg"
       sources:
       - permalink: "/video/preview.webm"
         type: video/webm
