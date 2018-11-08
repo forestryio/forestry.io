@@ -46,6 +46,17 @@ sections:
   label: Sunset Notices
   create: all
   match: "*"
+- type: heading
+  label: Data
+- type: document
+  path: hugo/data/authors.yml
+  label: Authors
+- type: document
+  path: hugo/data/testimonials.yml
+  label: Testimonials
+- type: document
+  path: hugo/data/pricing.json
+  label: Pricing
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"

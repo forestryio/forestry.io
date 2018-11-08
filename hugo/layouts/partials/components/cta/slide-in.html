@@ -34,9 +34,6 @@
         let offset = window.pageYOffset + window.innerHeight;
         let height = document.getElementById("post-container").scrollHeight * 0.5; // Slide-In fires at half height of article
 
-        console.log(offset)
-        console.log(height)
-
         if (offset >= height && slideInSeen == false) {
           // Pulls Slide-In into the user's view
           document.getElementById("slide-in-cta").style.transform = "translateX(0)";

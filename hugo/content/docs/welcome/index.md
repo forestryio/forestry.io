@@ -34,11 +34,13 @@ menu:
     weight: 3
 
 ---
-Forestry.io is a Git-backed CMS (content management system) for websites and web products built using [_static site generators_](/docs/faqs/glossary/static-site-generators/ "Static Site Generators"). Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
+## Introduction
+
+Forestry.io is a Git-backed CMS (content management system) for websites and web products built using [**_static site generators_**](https://forestry.io/docs/faqs/glossary/static-site-generators/ "Static Site Generators"). Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
 
 {{% tip %}}
 
-[Sign up](https://app.forestry.io/signup "Forestry CMS Sign Up") for free today, or learn more about our [pricing](/pricing "Forestry.io's Pricing") for teams.
+[**Sign up**](https://app.forestry.io/signup "Forestry CMS Sign Up") for free today, or learn more about our [**pricing**](https://forestry.io/pricing "Forestry.io's Pricing") for teams.
 
 {{% /tip %}}
 
