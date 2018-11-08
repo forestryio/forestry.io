@@ -117,7 +117,7 @@ features:
     \   <img height=\"35px\" src=\"/img/logos/coffeescript.svg\" alt=\"CoffeeScript\">\n
     \ </div>\n</div>\n\nChoose your own tools and include them into the build process
     with Custom Build Commands.\n\nUse an existing theme, create your own site or
-    make use of a ![Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll).
+    make use of a [Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll).
     \n"
   visual:
     permalink: "/img/dev-illustration-02.png"
