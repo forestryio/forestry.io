@@ -48,6 +48,8 @@ features:
         type: video/webm
       - permalink: "/video/connect-dark.mp4"
         type: video/mp4
+      permalink: "/img/connect.jpg"
+      alt: Connect 
     features:
     - name: Custom Sections
     - name: Set Templates
@@ -62,6 +64,8 @@ features:
         type: video/webm
       - permalink: "/video/editing-dark.mov"
         type: video/mov
+      permalink: "/img/editing.jpg"
+      alt: Editing 
     features:
     - name: WYSIWYG & Markdown
     - name: Snippets & Blocks
@@ -69,9 +73,7 @@ features:
   - headline: Preview
     textline: 'Take the guessing out of your editing, with previews you always know
       exactly what your site will look like. Quickly share your project with your
-      team and clients.
-
-'
+      team and clients.'
     video:
       fallbackVisual: "/img/preview.jpg"
       sources:
@@ -79,6 +81,8 @@ features:
         type: video/webm
       - permalink: "/video/preview-dark.mp4"
         type: video/mp4
+      permalink: "/img/preview.jpg"
+      alt: Preview
     features:
     - name: Shareable Preview
     - name: Custom Preview Commands

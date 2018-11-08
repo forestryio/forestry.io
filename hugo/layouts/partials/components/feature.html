@@ -52,11 +52,14 @@
                 {{- end -}}
                 {{- else if .video -}}
                 {{- with .video -}}
-                <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="">
+                <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="desktop-only">
                     {{- range .sources -}}
                     <source src="{{ .permalink }}" type="{{ .type }}">
                     {{- end -}}
                 </video>
+                <div class="mobile-only">
+                  {{- partial "cloudinary/image" (dict "pg" $.pg "preset" "feature" "image" .permalink "alt" (.alt | default .permalink)) }}
+                </div>
                 {{- end -}}
                 {{- end -}}
               </div>

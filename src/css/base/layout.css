@@ -317,6 +317,16 @@ body.in-transition {
       .feature-block--data-features {
         grid-template-columns: 1fr;
       }
+
+      .desktop-only {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 701px) {
+      .mobile-only {
+        display: none;
+      }
     }
   }
 }
