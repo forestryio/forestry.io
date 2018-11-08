@@ -42,9 +42,9 @@ features:
     video:
       fallbackVisual: "/img/connect.png"
       sources:
-      - permalink: "/video/connect.webm"
+      - permalink: "/video/connect-dark.webm"
         type: video/webm
-      - permalink: "/video/connect.mp4"
+      - permalink: "/video/connect-dark.mp4"
         type: video/mp4
     features:
     - name: Custom Sections
@@ -56,9 +56,9 @@ features:
     video:
       fallbackVisual: "/img/editing.png"
       sources:
-      - permalink: "/video/editing.webm"
+      - permalink: "/video/editing-dark.webm"
         type: video/webm
-      - permalink: "/video/editing.mov"
+      - permalink: "/video/editing-dark.mov"
         type: video/mov
     features:
     - name: WYSIWYG & Markdown
@@ -70,9 +70,9 @@ features:
     video:
       fallbackVisual: "/img/preview.png"
       sources:
-      - permalink: "/video/preview.webm"
+      - permalink: "/video/preview-dark.webm"
         type: video/webm
-      - permalink: "/video/preview.mp4"
+      - permalink: "/video/preview-dark.mp4"
         type: video/mp4
     features:
     - name: Shareable Preview
