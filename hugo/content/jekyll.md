@@ -46,7 +46,7 @@ features:
       sources:
       - permalink: "/video/connect.webm"
         type: video/webm
-      - permalink: "/video/connect-dark.mp4"
+      - permalink: "/video/connect.mp4"
         type: video/mp4
     features:
     - name: Custom Sections
@@ -60,7 +60,7 @@ features:
       sources:
       - permalink: "/video/editing.webm"
         type: video/webm
-      - permalink: "/video/editing-dark.mov"
+      - permalink: "/video/editing.mov"
         type: video/mov
     features:
     - name: WYSIWYG & Markdown
@@ -77,7 +77,7 @@ features:
       sources:
       - permalink: "/video/preview.webm"
         type: video/webm
-      - permalink: "/video/preview-dark.mp4"
+      - permalink: "/video/preview.mp4"
         type: video/mp4
     features:
     - name: Shareable Preview
