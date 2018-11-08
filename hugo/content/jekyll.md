@@ -42,7 +42,7 @@ features:
     video:
       fallbackVisual: "/img/connect.png"
       sources:
-      - permalink: "/video/connect-dark.webm"
+      - permalink: "/video/connect.webm"
         type: video/webm
       - permalink: "/video/connect-dark.mp4"
         type: video/mp4
