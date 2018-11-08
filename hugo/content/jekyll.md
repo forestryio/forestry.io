@@ -21,6 +21,8 @@ hero:
     sources:
     - permalink: "/video/fmt-cms-comparison-3.mp4"
       type: video/mp4
+    - permalink: "/video/fmt-cms-comparison-3.webm"
+      type: video/webm
   logos:
     textline: Built for static site generators
     sources:
@@ -37,9 +39,13 @@ features:
   - headline: Connect
     textline: |
       Import your Jekyll powered site and make edits within minutes. Tell Forestry what parts of your site you want exposed and configure templates to create new content. 
-    visual:
-      permalink: "/img/connect.gif"
-      alt: Dev workflow
+    video:
+      fallbackVisual: "/img/connect.png"
+      sources:
+      - permalink: "/video/connect.webm"
+        type: video/webm
+      - permalink: "/video/connect.mp4"
+        type: video/mp4
     features:
     - name: Custom Sections
     - name: Set Templates
@@ -47,9 +53,13 @@ features:
   - headline: Edit
     textline: |
       Make edits right away or create content models with Front Matter Templates. Our WYSIWYG Editor is based on Markdown and allows for seamless editing, even on-the-move.  
-    visual:
-      permalink: "/img/editing-top-bar.gif"
-      alt: Dev workflow
+    video:
+      fallbackVisual: "/img/editing.png"
+      sources:
+      - permalink: "/video/editing.webm"
+        type: video/webm
+      - permalink: "/video/editing.mov"
+        type: video/mov
     features:
     - name: WYSIWYG & Markdown
     - name: Snippets & Blocks
@@ -57,9 +67,13 @@ features:
   - headline: Preview
     textline: |
       Take the guessing out of your editing, with previews you always know exactly what your site will look like. Quickly share your project with your team and clients.
-    visual:
-      permalink: "/img/preview.gif"
-      alt: Dev workflow
+    video:
+      fallbackVisual: "/img/preview.png"
+      sources:
+      - permalink: "/video/preview.webm"
+        type: video/webm
+      - permalink: "/video/preview.mp4"
+        type: video/mp4
     features:
     - name: Shareable Preview
     - name: Custom Preview Commands
@@ -75,13 +89,13 @@ features:
   - headline: Roles
     textline: |
       With Forestry you can provide the access to users that they need for their individual use-case. Give your entire team access to all sites in your Organization.
+    visual:
+      permalink: "/img/roles.png"
+      alt: Roles & Permissions
     features:
     - name: Editing in Teams
     - name: Organizations
     - name: Restrict Access
-    visual:
-      permalink: "/img/roles.png"
-      alt: Dev workflow
   direction: tab
   class: section-roots
 - headline: Support for all of your favorite tools

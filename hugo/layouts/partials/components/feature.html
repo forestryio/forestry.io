@@ -45,11 +45,21 @@
         <div class="feature-block--data" style="width: 100%;">
         {{- range $index, $value := . -}}
             <div id="{{ .headline | urlize }}-img" class="feature-block--tab-data {{ if eq $index 0 }}active{{ end }}">
-              {{- with .visual -}}
               <div class="feature-block--illu illu-shadow--left">
-                {{- partial "cloudinary/image" (dict "pg" $.pg "preset" "feature" "image" .permalink "alt" (.alt | default .permalink)) }}
+                {{- if .visual -}}
+                {{- with .visual -}}
+                  {{- partial "cloudinary/image" (dict "pg" $.pg "preset" "feature" "image" .permalink "alt" (.alt | default .permalink)) }}
+                {{- end -}}
+                {{- else if .video -}}
+                {{- with .video -}}
+                <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="">
+                    {{- range .sources -}}
+                    <source src="{{ .permalink }}" type="{{ .type }}">
+                    {{- end -}}
+                </video>
+                {{- end -}}
+                {{- end -}}
               </div>
-              {{- end -}}
             </div>
         {{- end -}}  
         </div>
