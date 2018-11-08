@@ -116,7 +116,7 @@ features:
   
     Choose your own tools and include them into the build process with Custom Build Commands.
     
-    Use an existing theme, create your own site or make use of a Starter-Kit. 
+    Use an existing theme, create your own site or make use of a ![Starter-Kit](https://app.forestry.io/quick-start?repo=forestryio/hydeout-jekyll-starter&provider=github&engine=jekyll). 
     
   visual:
     permalink: "/img/dev-illustration-02.png"
