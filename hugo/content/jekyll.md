@@ -56,7 +56,7 @@ features:
     video:
       fallbackVisual: "/img/editing.png"
       sources:
-      - permalink: "/video/editing-dark.webm"
+      - permalink: "/video/editing.webm"
         type: video/webm
       - permalink: "/video/editing-dark.mov"
         type: video/mov
@@ -70,7 +70,7 @@ features:
     video:
       fallbackVisual: "/img/preview.png"
       sources:
-      - permalink: "/video/preview-dark.webm"
+      - permalink: "/video/preview.webm"
         type: video/webm
       - permalink: "/video/preview-dark.mp4"
         type: video/mp4
