@@ -19,10 +19,10 @@ hero:
   video:
     fallbackVisual: "/img/fmt-cms-comparison-3.png"
     sources:
-    - permalink: "/video/fmt-cms-comparison-3.mp4"
-      type: video/mp4
     - permalink: "/video/fmt-cms-comparison-3.webm"
       type: video/webm
+    - permalink: "/video/fmt-cms-comparison-3.mp4"
+      type: video/mp4
   logos:
     textline: Built for static site generators
     sources:
@@ -52,7 +52,7 @@ features:
     - name: Exclude Files 
   - headline: Edit
     textline: |
-      Make edits right away or create content models with Front Matter Templates. Our WYSIWYG Editor is based on Markdown and allows for seamless editing, even on-the-move.  
+      Make edits right away or create content models with Front Matter Templates. Our WYSIWYG Editor is based on Markdown and allows for seamless editing.  
     video:
       fallbackVisual: "/img/editing.png"
       sources:
@@ -82,7 +82,7 @@ features:
       Forestry can build and deploy your site to your host on every change. Further optimize the content on its way out by running gems or custom scripts.
     visual:
       permalink: "/img/deploy-illustration-02.png"
-      alt: Simple deployment
+      alt: Simple Deployment
     features:
     - name: Automatic Deployment
     - name: Custom Build Commands
