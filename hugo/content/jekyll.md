@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/jekyll/"
-title: Static CMS for Jekyll
+title: 'Static CMS for Jekyll '
 description: Forestry
 authors:
 - forestryio
@@ -29,7 +29,7 @@ hero:
       type: video/webm
     - permalink: "/video/fmt-cms-comparison-mobile.mp4"
       type: video/mp4
-    class: "jekyll-hero-video"
+    class: jekyll-hero-video
   logos:
     textline: Built for static site generators
     sources:
@@ -55,7 +55,7 @@ features:
       - permalink: "/video/connect-dark-sm.mp4"
         type: video/mp4
       permalink: "/img/connect.jpg"
-      alt: Connect 
+      alt: Connect
     features:
     - name: Custom Sections
     - name: Set Templates
@@ -71,15 +71,15 @@ features:
       - permalink: "/video/editing-dark-sm.mp4"
         type: video/mp4
       permalink: "/img/editing.jpg"
-      alt: Editing 
+      alt: Editing
     features:
     - name: WYSIWYG & Markdown
     - name: Snippets & Blocks
     - name: Mobile Version
   - headline: Preview
-    textline: 'Take the guessing out of your editing, with previews you always know
+    textline: Take the guessing out of your editing, with previews you always know
       exactly what your site will look like. Quickly share your project with your
-      team and clients.'
+      team and clients.
     video:
       fallbackVisual: "/img/preview.jpg"
       sources:
