@@ -313,17 +313,21 @@ body.in-transition {
       }
     }
 
+    .desktop-only {
+      display: none;
+    }
+
     @media screen and (max-width: 700px) {
       .feature-block--data-features {
         grid-template-columns: 1fr;
       }
-
-      .desktop-only {
-        display: none;
-      }
     }
 
     @media screen and (min-width: 701px) {
+      .desktop-only {
+        display: block;
+      }
+
       .mobile-only {
         display: none;
       }
