@@ -27,6 +27,13 @@ hero:
       type: video/mp4
     - permalink: "/video/forestry_factory.ogv"
       type: video/ogg
+    mobile:
+    - permalink: "/video/forestry_factory.webm"
+      type: video/webm
+    - permalink: "/video/forestry_factory.mp4"
+      type: video/mp4
+    - permalink: "/video/forestry_factory.ogv"
+      type: video/ogg
   logos:
     textline: Built for static site generators
     sources:

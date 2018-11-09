@@ -24,6 +24,11 @@ hero:
       type: video/webm
     - permalink: "/video/fmt-cms-comparison-3-sm.mp4"
       type: video/mp4
+    mobile:
+    - permalink: "/video/fmt-cms-comparison-mobile.webm"
+      type: video/webm
+    - permalink: "/video/fmt-cms-comparison-mobile.mp4"
+      type: video/mp4
   logos:
     textline: Built for static site generators
     sources:
