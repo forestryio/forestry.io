@@ -22,7 +22,7 @@
         <source src="{{ .permalink }}" type="{{ .type }}">
         {{- end -}}
     </video>
-    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video mobile-only {{ .mobileclass }}">
+    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video mobile-only {{ .class }}">
         {{- range .mobile -}}
         <source src="{{ .permalink }}" type="{{ .type }}">
         {{- end -}}

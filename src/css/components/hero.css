@@ -143,6 +143,8 @@
 }
 
 .factory-video.jekyll-hero-video {
+  top: 85%;
+
   @media screen and (min-width: 600px) {
     top: 70%;
   }
