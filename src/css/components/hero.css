@@ -143,12 +143,18 @@
 }
 
 .factory-video.jekyll-hero-video {
+  top: 85%;
+
   @media screen and (min-width: 600px) {
     top: 70%;
   }
 
+  @media screen and (min-width: 1000px) {
+    top: 45%;
+  }
+
   @media screen and (min-width: 1200px) {
-    top: 85%;
+    top: 45%;
   }
 }
 

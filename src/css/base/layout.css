@@ -247,7 +247,7 @@ body.in-transition {
     .feature-block--nav-row > div {
       transition-duration: 0.3s;
       padding: 5px 30px;
-      border-bottom: solid 1px;
+      border-bottom: solid 1px #464646;
     }
 
     @media screen and (max-width: 700px) {
@@ -259,6 +259,7 @@ body.in-transition {
 
     .feature-block--nav-row > div.active {
       color: #20c997;
+      border-bottom-color: #20c997;
       transition-duration: 0.3s;
     }
 
