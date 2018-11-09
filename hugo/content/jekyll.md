@@ -20,9 +20,9 @@ hero:
   video:
     fallbackVisual: "/img/fmt-cms-comparison-3.jpg"
     sources:
-    - permalink: "/video/fmt-cms-comparison-3.webm"
+    - permalink: "/video/fmt-cms-comparison-3-sm.webm"
       type: video/webm
-    - permalink: "/video/fmt-cms-comparison-3.mp4"
+    - permalink: "/video/fmt-cms-comparison-3-sm.mp4"
       type: video/mp4
   logos:
     textline: Built for static site generators
@@ -44,9 +44,9 @@ features:
     video:
       fallbackVisual: "/img/connect.jpg"
       sources:
-      - permalink: "/video/connect.webm"
+      - permalink: "/video/connect-sm.webm"
         type: video/webm
-      - permalink: "/video/connect-dark.mp4"
+      - permalink: "/video/connect-dark-sm.mp4"
         type: video/mp4
       permalink: "/img/connect.jpg"
       alt: Connect 
@@ -60,9 +60,9 @@ features:
     video:
       fallbackVisual: "/img/editing.jpg"
       sources:
-      - permalink: "/video/editing.webm"
+      - permalink: "/video/editing-sm.webm"
         type: video/webm
-      - permalink: "/video/editing-dark.mov"
+      - permalink: "/video/editing-dark-sm.mov"
         type: video/mov
       permalink: "/img/editing.jpg"
       alt: Editing 
@@ -77,9 +77,9 @@ features:
     video:
       fallbackVisual: "/img/preview.jpg"
       sources:
-      - permalink: "/video/preview.webm"
+      - permalink: "/video/preview-sm.webm"
         type: video/webm
-      - permalink: "/video/preview-dark.mp4"
+      - permalink: "/video/preview-dark-sm.mp4"
         type: video/mp4
       permalink: "/img/preview.jpg"
       alt: Preview
