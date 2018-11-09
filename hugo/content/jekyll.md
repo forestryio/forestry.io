@@ -62,8 +62,8 @@ features:
       sources:
       - permalink: "/video/editing-sm.webm"
         type: video/webm
-      - permalink: "/video/editing-dark-sm.mov"
-        type: video/mov
+      - permalink: "/video/editing-dark-sm.mp4"
+        type: video/mp4
       permalink: "/img/editing.jpg"
       alt: Editing 
     features:
