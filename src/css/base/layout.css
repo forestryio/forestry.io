@@ -253,7 +253,6 @@ body.in-transition {
     @media screen and (max-width: 700px) {
       .feature-block--nav-row > div {
         padding: 5px 8px;
-        border-bottom: none;
       }
     }
 
