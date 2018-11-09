@@ -41,11 +41,6 @@ headless: true
 
 This will configure `content/uploads` as a [headless bundle](https://gohugo.io/content-management/page-bundles/#headless-bundle), meaning Hugo will not generate pages for content it finds in here.
 
-{{% warning %}}
-
-There's an unfortunate side effect of this: you will now see **Uploads** under your content menu in the Forestry CMS. This is because both Hugo and Forestry treat this folder as a content section. This will be fixed in a future update.
-
-{{% /warning %}}
 
 ## 2. Change the upload file path in Forestry settings
 
