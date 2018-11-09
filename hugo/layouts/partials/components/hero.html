@@ -17,12 +17,12 @@
     {{- if .visual -}}
       {{/* TODO: hero visual */}}
     {{- else if .video -}}{{- with .video -}}
-    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video desktop-only">
+    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video desktop-only {{ .class }}">
         {{- range .sources -}}
         <source src="{{ .permalink }}" type="{{ .type }}">
         {{- end -}}
     </video>
-    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video mobile-only">
+    <video playsinline autoplay muted loop poster="{{ .fallbackVisual }}" class="factory-video mobile-only {{ .mobileclass }}">
         {{- range .mobile -}}
         <source src="{{ .permalink }}" type="{{ .type }}">
         {{- end -}}

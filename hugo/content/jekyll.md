@@ -29,6 +29,7 @@ hero:
       type: video/webm
     - permalink: "/video/fmt-cms-comparison-mobile.mp4"
       type: video/mp4
+    class: "jekyll-hero-video"
   logos:
     textline: Built for static site generators
     sources:

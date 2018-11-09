@@ -142,6 +142,12 @@
   }
 }
 
+.factory-video.jekyll-hero-video {
+  @media screen and (min-width: 600px) {
+    top: 70%;
+  }
+}
+
 .built-for {
   bottom: 2rem;
   font-size: 0.65rem;
