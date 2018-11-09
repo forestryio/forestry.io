@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/jekyll/"
-title: 'Static CMS for Jekyll '
+title: Static CMS for Jekyll
 description: Forestry
 authors:
 - forestryio
