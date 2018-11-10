@@ -1,8 +1,9 @@
 ---
 title: Spike, Test, Reset
-description: ''
+description: 'Spike, Test, Reset: How to refactor when you''re lost'
 date: 2018-11-09 22:33:28 +0000
-authors: []
+authors:
+- Nolan Phillips
 publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
