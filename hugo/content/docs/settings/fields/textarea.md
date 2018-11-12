@@ -93,6 +93,19 @@ This field appears when _WYSIWYG_ is enabled. Select which format should be outp
 * **HTML**
 * **Inline HTML** (only inline elements allowed)
 
+### Example
+
+    type: textarea
+    name: description
+    label: Description
+    description: Short description of the page
+    hidden: false
+    default: ""
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+
 ## Field UI
 
 ![](/uploads/2018/01/textarea-wysiwyg-preview.png)
