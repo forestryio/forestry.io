@@ -1,7 +1,7 @@
 ---
-title: Snipcart Brings E‑Commerce to Your Static Site
+title: 'Snipcart Brings E‑Commerce to Your Static Site '
 description: ''
-date: 2018-05-18 03:36:07 -1100
+date: 2018-05-18 14:36:07 +0000
 authors:
 - DJ Walker
 publishdate: 2018-05-18 04:00:00 +0000
