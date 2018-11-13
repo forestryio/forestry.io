@@ -13,7 +13,7 @@ menu:
 ---
 You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file.
 
-A content section in Forestry is primarily defined by the path to the folder containing content files, and a glob to match against the contents of that folder.
+A content section in Forestry is primarily defined by the path to the folder containing content files, and a [glob](/docs/guides/misc/working-with-globs/) to match against the contents of that folder.
 
 ## Options
 
@@ -78,14 +78,11 @@ Because the path is relative to your project root, users configuring content sec
 
 ### Match
 
-The `match` parameter should be a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) that matches the files you want to be able to edit for this content section. Files that don't match this pattern will be ignored. This setting only applies to sections of type `directory`.
+{{% tip %}}
+Read our short guide on [working with globs](/docs/guides/misc/working-with-globs/) for advice on how to configure the `match` and `exclude` parameters for sidebars.
+{{% /tip %}}
 
-{{% tip "Example glob patterns" %}}
-
-* `**/*.md`: Match all markdown files
-* `*.md`: Match all markdown files, excluding files in subdirectories
-* `**/*.fr.md`: Match all files with a filename ending in `.fr.md` (useful if you're using Hugo's [filename-based translations](https://gohugo.io/content-management/multilingual/#translation-by-filename))
-  {{% /tip %}}
+The `match` parameter should be a [glob pattern](/docs/guides/misc/working-with-globs/) that matches the files you want to be able to edit for this content section. Files that don't match this pattern will be ignored. This setting only applies to sections of type `directory`.
 
 The default `match` value is `**/*` which will match all files, including any files in subdirectories.
 
@@ -95,7 +92,7 @@ You can use the `match` parameter to separate a single directory into multiple c
 
 ### Exclude
 
-The `exclude` parameter allows you to exclude files and paths from your `directory` sections. `exclude` accepts a [glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) just like `match`.
+The `exclude` parameter allows you to exclude files and paths from your `directory` sections. `exclude` accepts a [glob pattern](/docs/guides/misc/working-with-globs/) just like `match`.
 
 {{% tip "Excluding files from Jekyll pages" %}}
 For a `jekyll-pages` section, Forestry will use the value of the `exclude` parameter in your [Jekyll configuration](https://jekyllrb.com/docs/configuration/).
