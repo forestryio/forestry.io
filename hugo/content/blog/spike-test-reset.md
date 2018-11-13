@@ -22,7 +22,37 @@ menu: []
 draft: true
 
 ---
-In the past two years, we have written a lot of code. Some of our code is elegant, efficient, easy to ready, and thoroughly tested. Other code is, well...
+Refactoring is one of the most important skills of software development. [DevOps Research and Assessment](https://devops-research.com "DevOps Research") has shown that delivering working software sooner and more frequently is correlated with positive organizational outcomes. Delivering quickly and frequently requires we defer design decisions and be able to easily modify existing code. To do these things well, we must know how to safely refactor.
+
+Regression (i.e. a break existing behaviour) is the main risk of refactoring. We can mitigate this risk by checking that our code still works after each change. However as we increase the scope of the refactored code, the number of scenarios impacted increases non-linearly and testing becomes more difficult. By writing high-quality automated tests, we can drastically reduce the overhead of checking for regressions.
+
+Ideally, we write these tests around the same time we write the code. Whether we should write the tests first or the code first is [up for debate](). Unfortunately this doesn't always happen. External pressures and lax discipline mean we leave our tests unwritten. Eventually we'll need to change this code, and it's a good idea to add the tests when we do.
+
+### Dealing with Untested Code
+
+The usual process for dealing with untested code is
+
+1. Relearn how the code works
+2. Write the tests you should have wrote a year ago
+3. Refactor
+
+With a clear head this process is fairly straightforward, but sometimes learning how the code works is just too hard.
+
+### Spike-Test-Reset
+
+_Spike, Test, Reset_  is programming strategy for getting old code under test. It consists of three steps:
+
+* **Spike:** Change the code until it's clear how it works.
+* **Test:** Write as many tests as you can; and do not use stubs or mocks for any of the new methods/classes you made.
+* **Reset:** Reset all changes to your source code, leaving only the tests.
+
+This strategy is useful **when you don't understand the code well enough to even write one test**. You refactor until you (a) understand the code, and (b) know what tests to write. Once you've done this, you put the tests in place. Having tests is a big improvement, but we don't know if they're valid. To make sure our tests are correct, we reset the source code. If they all still pass, we can be pretty sure that our _new tests_ describe the _old code_. Without the reset we have no idea whether we were refactoring during the spike, or just breaking things.
+
+***
+
+**TODO: I'm not sure if the examples below adds enough to the article. Maybe I'll leave them for now and write another article if necessary.**
+
+***
 
 ### The Code
 
@@ -57,21 +87,19 @@ class Site
 end
 ```
 
-The best thing I can say about this code, is that **it works and it hasn't been a problem for us**. But there's changes a-coming to Forestry that will make this little method troublesome. Here are a few of the things I have in mind:
+The above code shows how Forestry extracts menu items from a page's front matter. The best I can say about this code, is that **it works and it hasn't been a problem for us**. But there's changes coming to Forestry that will make this little method troublesome. Here are a few of the things I have in mind:
 
-* **Coupling:** So. Much. Coupling. The `Site` class is our main domain model, and this method deeply couples it to both Hugo's _and_ Jekyll's menu systems. 
-* **Zero Test:** None. There is not one piece of information here that describes the expected behaviour of this method, or confirms that it works.
+* **Coupling:** The `Site` class is our main domain model, and this method deeply couples it to both Hugo's _and_ Jekyll's menu systems.
+* **Zero Test:** There is not one piece of information here that describes the expected behaviour of this method, or confirms that it works.
 * **It's wrong:** One detail missing from this method, is that `jekyll-menus` supports both the `"menu"` and `"menus"` keys in the front matter of a page.
 * **"unless"**: One of the strangest keywords I've come across. Maybe someday it will just seem natural to me.
 * **Nesting, Looping Nesting:** end end end end end
 
-Feeling ambitious, I decided to take this method on. My goal was to get this code well tested, pull the behaviour out of `Site`,  and create two utility classes–one for Hugo and one for Jekyll.
-
-My initial plan was to write all the test before changing anything. This is usually a great strategy because refactoring is significantly safer when you have tests to catch your mistakes. During a recent _Learning Hour_, we watched the ["Untested Code"](https://www.destroyallsoftware.com/screencasts/catalog/untested-code-part-1-introduction) series by Gary Bernhardt. In these videos, Gary laid out a fantastic strategy for testing unfamiliar code. Unfortunately, I am slow after lunch and I couldn't figure out where to start. 
+Feeling ambitious, I decided to take this method on. My goal was to get this code tested, pull the behaviour out of the `Site` class, and create two utility classes–one for Hugo and one for Jekyll. Unfortunately a large lunch left me dazed, so my usual strategy of learn/test/refactor wasn't working out.
 
 ### Spike
 
-My discipline broke and I dove right into refactoring. I extracted the `menu_key` logic; inverted that `unless`; reformatted; and pulled both sides of the `if/elsif` for creating menu items into their own methods. Suddenly it didn't seem so daunting:
+My discipline broke and I dove right into refactoring. I extracted the `menu``_key_` _logic; inverted that_ `_unless_`_; reformatted; and pulled out both sides of the_ `_if/elsif_` _for creating menu items. Suddenly, `create_menu_item` it didn't seem so daunting:
 
 ```ruby
 class Site
@@ -121,7 +149,7 @@ end
 
 ### Test
 
-With the code flattened out, and the actions abstracted a bit further, I started testing. Following Gary's wise advice, I started building up a spec sort of like this...
+With the code flattened out, and each action abstracted a bit further, I started testing. 
 
 ```ruby
 describe Site
@@ -136,7 +164,7 @@ describe Site
       it 'should do nothing'
     end
     
-    # and so on...
+    # etc.
   end
 end
 ```
@@ -149,24 +177,4 @@ With the tests passing and my understanding of the code improved, I ran the most
 git checkout app/models/site.rb
 ```
 
-The purpose of refactoring is to improve the design of your software without changing it's visible behaviour. Doing this without tests (especially after filling your belly with shawarma) is a risky game. By resetting the source code after getting the system under test, you validate that your tests actually describe the existing behaviour. 
-
-### Summary
-
-_Spike, Test, Reset_  is programming strategy for getting old code under test. It consists of three steps:
-
-* **Spike:** Change the code until it's clear how it works.
-* **Test:** Write as many tests as you can; and do not use stubs or mocks for any of the new methods/classes you made.
-* **Reset:** Reset all changes to your source code, leaving only the tests.
-
-This strategy is useful when you don't understand the code well enough to even write one test. You refactor until you (a) understand the code, and (b) know what test to write. Once you've done this, you put the test in place. Resetting makes sure that your new tests describe the _old code_. This is how you can confirm that you were refactoring during your spike, and not breaking things.
-
-***
-
-**Longer Feedback Cycle:** We don't really know if the tests we write are valid until after we reset. There's a chance everything will turn red if we made an error in logic half-way through refactoring.
-
-***
-
-Spike, Test, Reset, is like using the Sand of Time from Prince of Persia to run ahead, learn that the hallway contains a giant saw (which cut you in two), and than go back in time to navigate the hallway safely.
-
-<!-- TODO: Remove the previous analogy. It's bad. -->
+The purpose of refactoring is to improve the design of your software without changing it's visible behaviour. Doing this without tests (especially after filling your belly with shawarma) is a risky game. By resetting the source code after getting the system under test, you validate that your tests actually describe the existing behaviour.
