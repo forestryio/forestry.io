@@ -34,7 +34,7 @@ For example, the pattern `/content/**/index.md` matches all of the following:
 
 ## Practical Examples
 
-The following examples
+The following are examples of some patterns you might use in your sidebar configuration's `match` or `exclude` field.
 
 | Pattern | Matches |
 | --- | --- |
