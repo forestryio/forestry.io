@@ -29,7 +29,7 @@ If you **don't** have a Jekyll, Hugo or VuePress site already, click the link in
 
 ### Select your Static Site Generator
 
-Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](http://jekyllrb.com/), [Hugo](http://gohugo.io/), and [VuePress](). In the case of Hugo, you must also specify which _version_ you use.
+Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](http://jekyllrb.com/), [Hugo](http://gohugo.io/), and [VuePress](https://vuepress.vuejs.org/). In the case of Hugo, you must also specify which _version_ you use.
 
 ![](/uploads/2018/02/add-site-flow-choose-generator.png)
 
