@@ -60,16 +60,29 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 <!-- End Google Tag Manager -->
 {{- end -}}
 
-{{- if $.Param "hotjar" -}}
+{{- if $.Param "inspectlet" -}}
 <!-- Begin Inspectlet Asynchronous Code -->
 <script type="text/javascript">
-(function() {
-window.__insp = window.__insp || [];
-__insp.push(['wid', 669564344]);
-var ldinsp = function(){
-if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=669564344&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
-setTimeout(ldinsp, 0);
-})();
+			(function(window) {
+        let params = window.location.search || ""
+        console.log(params)
+        let jekyll_sponsor = params.match(/utm_campaign=jekyllsponsor/)
+        if (jekyll_sponsor) {
+          (function() {
+            window.__insp = window.__insp || [];
+            __insp.push(['wid', 669564344]);
+            var ldinsp = function(){
+            if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=669564344&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 0);
+          })();
+        }
+			})(window);
 </script>
-<!-- End Inspectlet Asynchronous Code -->
-{{- end }}
+<!-- End Inspectlet Asynchronous Code 
+
+<script type="text/javascript">
+
+</script>
+
+-->
+{{- end -}}
