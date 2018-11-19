@@ -9,6 +9,15 @@ images:
 layout: single
 
 ---
+
+{{% warning "No Longer Recommended" %}}
+The following guide will show you how to configure web hosting directly from an Amazon S3 bucket. However, Amazon [recommends using CloudFront to serve S3 content](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) instead of serving directly from S3. 
+<br /><br />
+If you wish to create a website hosting stack with S3 and CloudFront together, please see our [Static Site Hosting on AWS](https://forestry.io/docs/hosting/s3-cloudfront-stack/) documentation.
+{{% /warning %}}
+
+---
+
 {{% tip "Disclaimer" %}}
 This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
 {{% /tip %}}
