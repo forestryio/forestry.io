@@ -60,6 +60,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 <!-- End Google Tag Manager -->
 {{- end -}}
 
+{{- if eq (getenv "HUGO_ENV") "production" | or (eq $.Site.Params.env "production") -}}
 {{- if $.Param "inspectlet" -}}
 <!-- Begin Inspectlet Asynchronous Code -->
 <script type="text/javascript">
@@ -87,4 +88,5 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 			})();
 </script>
 <!-- End Inspectlet Asynchronous Code -->
+{{- end -}}
 {{- end -}}
