@@ -1,4 +1,3 @@
-</p>
 {{ if eq (.Get 1) "off" }}
 <div class="featureGate" data-featureName="{{ .Get 0 }}" data-featureState="off">
     {{ .Inner }}
@@ -11,4 +10,3 @@
     featureFlagContent['{{ $contentDigest }}'] = '{{ safeHTML .Inner }}';
 </script>
 {{ end }}
-<p>
