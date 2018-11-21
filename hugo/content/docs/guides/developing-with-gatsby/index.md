@@ -81,11 +81,13 @@ Because Gatsby's behavior is highly configurable, many different **starter proje
 
 We are working on a blog starter that will make it easy to get started with Forestry. For the time being, [we've forked a blog starter from Gatsby](https://github.com/forestryio/gatsby-starter-blog) and pre-configured some Forestry settings.
 
+<div>
 {{% create_site_button
 repo="https://github.com/forestryio/gatsby-starter-blog"
 engineName="gatsby"
 linkText="Import Gatsby Starter to Forestry"
  %}}
+ </div>
 
 {{% /tip %}}
 
