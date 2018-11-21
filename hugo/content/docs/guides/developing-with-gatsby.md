@@ -2,6 +2,7 @@
 title: Developing with Gatsby
 date: 2018-11-20 00:00:00 +0000
 toc: false
+description: Gatsby is a highly flexible static site generator that uses ReactJS under the hood. This guide will explain how Gatsby works, and help you get the most out of your Gatsby site in the Forestry CMS.
 menu:
   guides:
     parent: Developing with Gatsby
