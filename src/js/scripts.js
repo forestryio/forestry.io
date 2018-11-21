@@ -11,6 +11,7 @@ import SmoothScroll from "./imports/smoothScroll"
 import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
 import ASBGenerator from "./imports/asbButtonGenerator"
+import FeatureGates from "./imports/featureGates"
 
 /**
  * Don't fire application logic
@@ -124,4 +125,9 @@ contentLoaded().then(() => {
   for (let i = 0; i < formspreeForms.length; i++) {
     new AjaxForm(formspreeForms[i])
   }
+
+  /**
+   * feature gate
+   */
+  const featureGates = new FeatureGates(".featureGate", featureFlagContent)
 })
