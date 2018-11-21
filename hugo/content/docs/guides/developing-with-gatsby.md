@@ -73,23 +73,53 @@ npm install -g gatsby
 gatsby new my-gatsby-site
 ```
 
+This will create a new Gatsby site in the `my-new-site` directory. To run your site locally, you can run the following commands:
+
+```
+cd my-gatsby-site
+gatsby develop
+```
+
+This will start a live-reloading development server and your site will appear at `localhost:8000`.
+
 ### Using a Starter Instead
 
 Because Gatsby's behavior is highly configurable, many different **starter projects** have been created. These projects wire up Gatsby to work for various use cases. You can take a look at the [full list of starters](https://www.gatsbyjs.org/starters/?v=2) or, if you're planning to use your Gatsby site with Forestry, [try one of the markdown starters](https://www.gatsbyjs.org/starters/?c=Markdown&v=2) as your starting point.
 
-{{% tip "Forestry's Gatsby Starter" %}}
 
-We are working on a blog starter that will make it easy to get started with Forestry. For the time being, [we've forked a blog starter from Gatsby](https://github.com/forestryio/gatsby-starter-blog) and pre-configured some Forestry settings.
+*Forestry's Gatsby Starter*<br />
+We are working on a blog starter that will make it easy to get started with Forestry. For the time being, [we've forked a blog starter from Gatsby](https://github.com/forestryio/gatsby-starter-blog) and pre-configured some Forestry settings. Use the `forestry` branch when importing this project into Forestry.
 
 <div>
 {{% create_site_button
 repo="https://github.com/forestryio/gatsby-starter-blog"
 engineName="gatsby"
+branch="forestry"
 linkText="Import Gatsby Starter to Forestry"
  %}}
  </div>
 
+
+{{% tip %}}
+If you're not using the Forestry starter, be sure to review the following documentation to configure your Gatsby site with Forestry:
+
+- [Media Files](/docs/media/)
+- [Sidebar Configuration](/docs/settings/content-sections/)
+- [Build Commands](/docs/settings/build-commands/)
 {{% /tip %}}
+
+## Known Limitations
+
+The following are some acknowledged bugs or practical limitations of using Gatsby with Forestry:
+
+### Forestry doesn't like relative image URLs; Gatsby Prefers Them
+Depending on how you're querying images from your Gatsby site, you may have issues with Forestry. If you want to do any transformations on your images, Gatsby will want you to use the **file path** to your image instead of a URL. This is typically accomplished by inserting a **relative path** to the image in markdown files. Unfortunately, keeping track of your relative position in the file system and inserting an accurate relative path is tricky for any CMS, and Forestry won't do it. Additionally, Gatsby interprets absolute files paths **relative to the system root** and not the project root, so a solution based on absolute paths will not work across different environments.
+
+Here are some options for getting around this:
+
+- Store and reference images from the `static/` directory (this is the solution currently used by our [blog starter](https://github.com/forestryio/gatsby-starter-blog/blob/forestry/.forestry/settings.yml#L20)). This will not allow you to transform images via GraphQL queries.
+- Use [gatsby-remark-normalize-paths](https://www.gatsbyjs.org/packages/gatsby-remark-normalize-paths/) to convert project-relative absolute paths to relative paths.
+
 
 
 {{% /feature_flag %}}
