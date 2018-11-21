@@ -9,7 +9,7 @@ export default class FeatureGates {
     }
 
     this.flagContent = flagContent
-    this.userEmail = readCookie("forestry_email")
+    this.userEmail = decodeURIComponent(readCookie("forestry_email"))
   }
 
   apply() {
@@ -18,7 +18,6 @@ export default class FeatureGates {
         key: this.userEmail
       })
       client.on("ready", () => {
-        console.log(`Connected to LaunchDarkly as user ${this.userEmail}`)
         for (let gate of this.gates) {
           let featureName = gate.dataset.featurename
           let featureState = gate.dataset.featurestate
