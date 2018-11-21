@@ -9,27 +9,28 @@ export default class FeatureGates {
     }
 
     this.flagContent = flagContent
-
     this.userEmail = readCookie("forestry_email")
-    this.userEmail = "dj@forestry.io"
-    this.client = LDClient.initialize("5beaef624274db30424f398f", {
-      key: this.userEmail
-    })
+  }
 
-    this.flags = new Map()
-
-    this.client.on("ready", () => {
-      for (let gate of this.gates) {
-        let featureName = gate.dataset.featurename
-        let featureState = gate.dataset.featurestate
-        if (this.client.variation(featureName)) {
-          if (featureState === "on") {
-            this.activateContent(gate)
-          } else {
-            this.deactivateContent(gate)
+  apply() {
+    return new Promise((resolve) => {
+      const client = LDClient.initialize("5beaef624274db30424f398f", {
+        key: this.userEmail
+      })
+      client.on("ready", () => {
+        for (let gate of this.gates) {
+          let featureName = gate.dataset.featurename
+          let featureState = gate.dataset.featurestate
+          if (client.variation(featureName)) {
+            if (featureState === "on") {
+              this.activateContent(gate)
+            } else {
+              this.deactivateContent(gate)
+            }
           }
         }
-      }
+        resolve()
+      })
     })
   }
 
