@@ -37,7 +37,7 @@ One of Gatsby's primary goals is to make it easy to create a performant website 
 
 ### ...But Not at the Build Stage
 
-It should be noted that Gatsby users typically experience slower build times compared to a site build with Hugo or Jekyll. Due to Gatsby's flexibility, build times will vary widely, depending on your setup.
+It should be noted that Gatsby users typically experience slower build times compared to a site built with Hugo or Jekyll. Due to Gatsby's flexibility, build times will vary widely, depending on your setup.
 
 ### Choose Gatsby if you:
 - Plan to use an advanced asset pipeline
