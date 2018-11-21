@@ -11,117 +11,129 @@ import SmoothScroll from "./imports/smoothScroll"
 import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
 import ASBGenerator from "./imports/asbButtonGenerator"
+import FeatureGates from "./imports/featureGates"
 
 /**
  * Don't fire application logic
  * until the DOM is ready
  */
-contentLoaded().then(() => {
-  const isHome = document.body.classList.contains("home")
-  const isDocs = document.body.classList.contains("section-docs")
-  const isBlog = document.body.classList.contains("section-blog")
-  const isPricing = document.body.classList.contains("type-pricing")
+contentLoaded()
+  .then(() => {
+    /**
+     * feature gate
+     */
+    const featureGates = new FeatureGates(".featureGate", featureFlagContent)
+    return featureGates.apply()
+  })
+  .then(() => {
+    const isHome = document.body.classList.contains("home")
+    const isDocs = document.body.classList.contains("section-docs")
+    const isBlog = document.body.classList.contains("section-blog")
+    const isPricing = document.body.classList.contains("type-pricing")
 
-  /**
-   * Enable navbar logic
-   */
-  const nav = new Nav()
+    /**
+     * Enable navbar logic
+     */
+    const nav = new Nav()
 
-  /**
-   * Enable search
-   */
-  try {
-    if (isHome) {
-      new Search(
-        process.env.ALGOLIA_APP_ID,
-        process.env.ALGOLIA_SEARCH_KEY,
-        "dist"
-      )
-    } else if (isDocs) {
-      new Search(
-        process.env.ALGOLIA_APP_ID,
-        process.env.ALGOLIA_SEARCH_KEY,
-        "docs"
-      )
-    } else if (isBlog) {
-      console.log(isBlog)
-      new Search(
-        process.env.ALGOLIA_APP_ID,
-        process.env.ALGOLIA_SEARCH_KEY,
-        "blog"
-      )
+    /**
+     * Enable search
+     */
+    try {
+      if (isHome) {
+        new Search(
+          process.env.ALGOLIA_APP_ID,
+          process.env.ALGOLIA_SEARCH_KEY,
+          "dist"
+        )
+      } else if (isDocs) {
+        new Search(
+          process.env.ALGOLIA_APP_ID,
+          process.env.ALGOLIA_SEARCH_KEY,
+          "docs"
+        )
+      } else if (isBlog) {
+        console.log(isBlog)
+        new Search(
+          process.env.ALGOLIA_APP_ID,
+          process.env.ALGOLIA_SEARCH_KEY,
+          "blog"
+        )
+      }
+    } catch (err) {
+      console.warn(err)
     }
-  } catch (err) {
-    console.warn(err)
-  }
 
-  if (isPricing) {
-    const info = [...document.querySelectorAll(".plan--item__tooltip-toggle")]
-    info.forEach(function(item) {
-      item.addEventListener("click", function(event) {
-        item.nextElementSibling.classList.add("active")
-        event.stopPropagation()
+    if (isPricing) {
+      const info = [...document.querySelectorAll(".plan--item__tooltip-toggle")]
+      info.forEach(function(item) {
+        item.addEventListener("click", function(event) {
+          item.nextElementSibling.classList.add("active")
+          event.stopPropagation()
+        })
+        item.addEventListener("touchstart", function(event) {
+          item.nextElementSibling.classList.add("active")
+          event.stopPropagation()
+        })
+        document.body.addEventListener("click", function(event) {
+          item.nextElementSibling.classList.remove("active")
+          event.stopPropagation()
+        })
+        document.body.addEventListener("touchstart", function(event) {
+          item.nextElementSibling.classList.remove("active")
+          event.stopPropagation()
+        })
       })
-      item.addEventListener("touchstart", function(event) {
-        item.nextElementSibling.classList.add("active")
-        event.stopPropagation()
-      })
-      document.body.addEventListener("click", function(event) {
-        item.nextElementSibling.classList.remove("active")
-        event.stopPropagation()
-      })
-      document.body.addEventListener("touchstart", function(event) {
-        item.nextElementSibling.classList.remove("active")
-        event.stopPropagation()
-      })
+    }
+
+    /**
+     * Enable heading links
+     */
+    const headingLinks = new HeadingLinks([
+      ".single-post",
+      ".docs-content .container"
+    ])
+
+    /**
+     * Actvate smooth scrolling for the entire
+     * website for hash links
+     */
+    SmoothScroll()
+
+    /**
+     * Enable position sticky for certain elements
+     */
+    const sticky = new Sticky([
+      ".blog-header--sticky",
+      ".search-header--sticky"
+    ])
+
+    /**
+     * Enable code highlighting and copying
+     */
+    const codeBlocks = new CodeBlocks({
+      onComplete: function() {
+        /**
+         * Hook up add-site-button generator behavior
+         */
+        const asbGenerator = new ASBGenerator(
+          document.getElementById("ASBGenerator")
+        )
+      }
     })
-  }
 
-  /**
-   * Enable heading links
-   */
-  const headingLinks = new HeadingLinks([
-    ".single-post",
-    ".docs-content .container"
-  ])
+    /**
+     * Enable lightboxes for images
+     */
+    const lightBoxes = new LightBox([".md-content img:not(.no-lightbox)"])
 
-  /**
-   * Actvate smooth scrolling for the entire
-   * website for hash links
-   */
-  SmoothScroll()
-
-  /**
-   * Enable position sticky for certain elements
-   */
-  const sticky = new Sticky([".blog-header--sticky", ".search-header--sticky"])
-
-  /**
-   * Enable code highlighting and copying
-   */
-  const codeBlocks = new CodeBlocks({
-    onComplete: function() {
-      /**
-       * Hook up add-site-button generator behavior
-       */
-      const asbGenerator = new ASBGenerator(
-        document.getElementById("ASBGenerator")
-      )
+    /**
+     * handle forms via ajax to avoid ungraceful redirect
+     */
+    let formspreeForms = document.querySelectorAll(
+      'form[action^="https://formspree.io"]'
+    )
+    for (let i = 0; i < formspreeForms.length; i++) {
+      new AjaxForm(formspreeForms[i])
     }
   })
-
-  /**
-   * Enable lightboxes for images
-   */
-  const lightBoxes = new LightBox([".md-content img:not(.no-lightbox)"])
-
-  /**
-   * handle forms via ajax to avoid ungraceful redirect
-   */
-  let formspreeForms = document.querySelectorAll(
-    'form[action^="https://formspree.io"]'
-  )
-  for (let i = 0; i < formspreeForms.length; i++) {
-    new AjaxForm(formspreeForms[i])
-  }
-})

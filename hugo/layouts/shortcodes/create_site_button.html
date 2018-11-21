@@ -12,7 +12,9 @@
 {{- $asbURL := .Scratch.Get "asbURL" -}}
 
 {{- $asbURL := printf "%s%s%s" $asbURL "&engine=" (.Get "engineName") -}}
+{{- .Scratch.Set "asbURL" $asbURL -}}
 {{- if and (eq (.Get "engineName") "hugo") (.Get "engineVersion") -}}
+{{- $asbURL := .Scratch.Get "asbURL" -}}
 {{- $asbURL := printf "%s%s%s" $asbURL "&version=" (.Get "engineVersion") -}}
 {{- .Scratch.Set "asbURL" $asbURL -}}
 {{- end }}
