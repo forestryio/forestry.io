@@ -79,7 +79,7 @@ Because Gatsby's behavior is highly configurable, many different **starter proje
 
 {{% tip "Forestry's Gatsby Starter" %}}
 
-We are working on a blog starter that will make it easy to get started with Forestry. For the time being, [we've forked a blog starter from Gatsby](https://github.com/forestryio/gatsby-starter-blog) that has some Forestry settings pre-configured.
+We are working on a blog starter that will make it easy to get started with Forestry. For the time being, [we've forked a blog starter from Gatsby](https://github.com/forestryio/gatsby-starter-blog) and pre-configured some Forestry settings.
 
 {{% create_site_button
 repo="https://github.com/forestryio/gatsby-starter-blog"
