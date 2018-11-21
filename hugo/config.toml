@@ -37,8 +37,11 @@ weight = 2
 name = "Welcome"
 weight = 1
 [[menu.docs]]
-name = "Other"
+name = "Developer Guides"
 weight = 8
+[[menu.docs]]
+name = "Other"
+weight = 9
 [[menu.faqs]]
 name = "Glossary"
 weight = 2

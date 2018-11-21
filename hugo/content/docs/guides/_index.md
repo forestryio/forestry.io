@@ -11,8 +11,5 @@ menu:
   footer:
     parent: Product
     weight: 2
-  docs:
-    parent: Other
-    weight: 2
 
 ---

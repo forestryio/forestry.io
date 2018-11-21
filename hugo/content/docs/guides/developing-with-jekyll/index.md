@@ -14,6 +14,11 @@ menu:
     parent: Developing with Jekyll
     identifier: _jekyll-intro
     weight: 3
+  docs:
+    parent: Developer Guides
+    name: Jekyll
+    identifier: developing-with-jekyll
+    weight: 2
 
 ---
 Jekyll is one of the oldest static site generators available. Built by [GitHub][1], it has tons of community support and is very stable. Additional features can be added onto Jekyll through the use of plugins. It also uses the templating language [Liquid][2], which feels very familiar to developers and is also used by Shopify and other large-scale applications. 
