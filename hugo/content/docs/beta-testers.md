@@ -29,7 +29,7 @@ To make sure you have access to any documentation that might help you as a beta 
 1. Are logged in to the app in the same browsing session that you are using to view the docs. You should see your name in the top navigation next to the "Dashboard" button.
 2. Are not blocking communication with LaunchDarkly, such as via an adblocker.
 
-If you are using an adblocker, you will need to whitelist communication with `events.launchdarkly.com`. If users of the uBlock Origin extension, visit your uBlock Dashboard and add the following line under **My filters**:
+If you are using an adblocker, you will need to whitelist communication with `events.launchdarkly.com`. For users of the uBlock Origin extension, visit your uBlock Dashboard and add the following line under **My filters**:
 
 ```
 @@events.launchdarkly.com/*
