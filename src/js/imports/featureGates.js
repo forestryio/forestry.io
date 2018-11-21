@@ -18,6 +18,7 @@ export default class FeatureGates {
         key: this.userEmail
       })
       client.on("ready", () => {
+        console.log(`Connected to LaunchDarkly as user ${this.userEmail}`)
         for (let gate of this.gates) {
           let featureName = gate.dataset.featurename
           let featureState = gate.dataset.featurestate
