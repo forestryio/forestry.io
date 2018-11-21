@@ -1,6 +1,7 @@
 ---
 title: Developing with Gatsby
 date: 2018-11-20 00:00:00 +0000
+toc: false
 menu:
   guides:
     parent: Developing with Gatsby
