@@ -27,7 +27,7 @@ Gatsby is one of the most flexible and most popular static site generators. You 
 
 In the past this often meant that we needed to align all our processes and tools to that goal of providing editors with a user interface. With Headless CMS and Content Management Infrastructures we've made a step in the right direction. Nevertheless, even today, using a CMS usually means drastic compromises in our workflow and how we store our code, content and data.
 
-Forestry now supports Gatsby and challenges they way we approach content management for Gatsby projects and other static site generators. Forestry provides a non-invasive content management tool that allows you to keep your own workflow and tools.
+Forestry now supports Gatsby and challenges the way we approach content management for Gatsby projects and other static site generators. Forestry provides a non-invasive content management tool that allows you to keep your own workflow and tools.
 
 #### _How to store content with Gatsby?_
 
