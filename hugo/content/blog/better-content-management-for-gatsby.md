@@ -23,7 +23,7 @@ menu: []
 draft: true
 
 ---
-Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites. Even though Gatsby tries to make things as simple as possible with that flexibility we face tougher design challenges especially when it comes to including non-tech team members, writers, editors and clients into our editing workflow.
+Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites. With that flexibility we face tougher design challenges, especially when it comes to including non-tech team members, writers, editors and clients into the editing workflow.
 
 In the past this often meant that we needed to align all our processes and tools to that goal of providing editors with an editing tool. With Headless CMS and Content Management Infrastructures we've made a step in the right direction. Nevertheless, even today, using a CMS usually means drastic compromises in our workflow and how we store our code, content and data.
 
