@@ -25,7 +25,7 @@ draft: true
 ---
 Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites. With that flexibility we face tougher design challenges, especially when it comes to including non-tech team members, writers, editors and clients into the editing workflow.
 
-In the past this often meant that we needed to align all our processes and tools to that goal of providing editors with an editing tool. With Headless CMS and Content Management Infrastructures we've made a step in the right direction. Nevertheless, even today, using a CMS usually means drastic compromises in our workflow and how we store our code, content and data.
+In the past this often meant that we needed to align all our developer workflow to that goal of providing editors with an editing tool. With Headless CMS we've made a step into the right direction. Nevertheless, even today, using a CMS usually means drastic compromises in our workflow and how we store our code, content and data.
 
 _TL;DR_
 
@@ -33,7 +33,7 @@ _Forestry now supports Gatsby and challenges the way we approach content managem
 
 #### _How to store content with Gatsby?_
 
-We've been closely watching the community around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins)). Separating content from the layout solves the problem of swifting through obtrusive markup and enables editing with any code editor. We believe this is the most frictionless way to work with content from a developer's perspective. And we're not alone as most other static site generators use Markdown and the Gatsby team themselves embraces Markdown for managing content on [gatsbyjs.org](https://gatsbyjs.org).
+We've been closely watching the community around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins)). Separating content from the layout solves the problem of hunting for content hidden in-between obtrusive markup and enables editing with any code editor. We believe this is the most frictionless way to work with content from a developer's perspective. And we're not alone as most other static site generators use Markdown and the Gatsby team themselves embraces Markdown for managing content on [gatsbyjs.org](https://gatsbyjs.org).
 
 #### _What exactly is the problem?_
 
