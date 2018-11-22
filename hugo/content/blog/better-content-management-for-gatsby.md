@@ -23,7 +23,9 @@ menu: []
 draft: true
 
 ---
-Gatsby you can create anything from Progressive Web Apps to content-driven blogs. It is one of the most flexible static site generators. With that flexibility we face tougher design challenges especially surrounding how to structure our data.
+With Gatsby you can create anything from Progressive Web Apps to content-driven blogs. It is one of the most flexible and most popular static site generators. With that flexibility we face tougher design challenges especially surrounding how to structure our data. That doesn't mean we should make compromises on our workflow and how we store our code, content and data.
+
+Forestry now supports Gatsby and makes content management a lot easier for your Gatsby projects without having to learn an entirely new workflow.
 
 _How to store content with Gatsby?_  
 We've been closely watching the hype around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins) or [gatsbyjs.org](https://gatsbyjs.org)). With separating content from code layout, it is not interrupted by obtrusive markup, can be organized easily in your filesystem and edited with any code editor. This is the most frictionless way to work with content from a developer's perspective.
