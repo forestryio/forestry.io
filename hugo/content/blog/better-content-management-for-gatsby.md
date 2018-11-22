@@ -28,21 +28,21 @@ With Gatsby you can create anything from Progressive Web Apps to content-driven 
 Forestry now supports Gatsby and makes content management a lot easier for your Gatsby projects without having to learn an entirely new workflow.
 
 _How to store content with Gatsby?_  
-We've been closely watching the hype around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins) or [gatsbyjs.org](https://gatsbyjs.org)). With separating content from code layout, it is not interrupted by obtrusive markup, can be organized easily in your filesystem and edited with any code editor. This is the most frictionless way to work with content from a developer's perspective.
+We've been closely watching the hype around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins) or [gatsbyjs.org](https://gatsbyjs.org)). With separating content from the code layout, it is not interrupted by obtrusive markup, can be organized easily in your filesystem and edited with any code editor. This is the most frictionless way to work with content from a developer's perspective.
 
-_What is the conflict?_
-As with any other website or project, most of the time we work in teams or for teams. These teams usually include non-tech people and clients, these types of users need to be able to edit content on a regular basis as well. However, most marketers, writers and clients don’t feel at home with Markdown. Navigating the file system and using the code editor can easily feel foreign. However, to be able to do what they do best, they need to feel comfortable making changes. 
+_What is the problem?_
+Nowadays, websites (and most other projects) are almost always done in teams. These teams usually include non-tech people and clients, we need to enable them to edit content on our Gatsby sites on a regular basis as well. However, most marketers, writers and clients don’t feel at home with Markdown. Navigating the file system and using the code editor can easily feel intimidating.
 
-To enable other users to make edits to sites we use content management systems (CMS). Using a CMS usually takes over handling our content, data and forces us (at least partially) to use a specific workflow. However, as developers direct access to our data and seeing how it's structured speeds up our workflow and makes our lives easier. Moving content to a third-party vendor removes data one step, cuts-off that direct access and is detrimental to our own workflow.
+To enable other users to make edits to sites we use content management systems (CMS). Using a CMS usually means we have to leave the handling of our content, data and structure to third-party vendors. It also forces us (at least partially) to use a specific workflow. However, as developers direct access to our data and seeing/adapting how it's structured speeds up our workflow and makes our lives easier. Moving content to a third-party vendor removes data one step, cuts-off that direct access and is detrimental to our own workflow. It's a step backward to traditional CMS like Wordpress.
 
 _How do Developers keep their workflow and enable Editors to edit content?_
-Forestry solves this issue simply by adding a UI layer on top of your data files that shows editors only what they need without having to be afraid of breaking anything and provides them with a WYSIWYG (visual) editor, toolbar and Media library to make changes to their content the way they are used to. All while leaving your code base completely untouched and the way you've planned it out.
+Forestry solves this issue simply by adding a UI layer on top of your data files that shows editors only what they need without having to be afraid of breaking anything and provides them with a WYSIWYG (visual) editor, toolbar and Media library to make changes to their content the way they are used to. All while leaving your code base completely untouched and flexible enough to make changes to it as you would without a CMS.
 
 {{% tip %}}
 Other structured data formats such as JSON, YAML or TOML can also be edited via Forestry. 
 {{% /tip %}}
 
-By adding a layer on top of your existing code base, Forestry allows developers to stick to their favorite tools and workflow. We don’t believe content management systems (CMS) should dictate your workflow. Forestry simply ensures your non-tech team can make changes to your Gatsby site’s content without a developer’s help.
+By adding a layer on top of your existing code base, Forestry allows developers to stick to their favorite tools and workflow. We don’t believe content management systems (CMS) should dictate your workflow. Forestry simply ensures your non-tech team can make changes to and maintain the Gatsby site's content without needing a developer’s help at every turn.
 
 \[Forestry Screenshot\]
 
@@ -50,9 +50,11 @@ Button → Try Gatsby with Forestry
 
 ## Forestry’s Content Management
 
+We've set a few ground-rules of what we believe how content management in 2018 for Gatsby should be done. These are the principles we adhere to.
+
 ### Git-Priority
 
-Git has proven to be the most popular tool for developers to store their code today and we believe your code, content and data is yours and should be stored with access to modern technologies in. Hence, Forestry takes a Git-backed approach to content management pushing all changes back to your Git repository and pulling updated code directly into the content manager as it is updated. This way your Gatsby site is always in-sync, you can take advantage of all the tools in the Git environment and editors can edit and preview the latest version of the site.
+Git has proven to be the most popular tool for developers to store their code today and we believe your code, content and data is yours and should be stored with access to modern technologies. Hence, Forestry takes a Git-backed approach to content management pushing all changes back to your Git repository and pulling updated code directly into the content manager as it is updated. This way your Gatsby site is always in-sync, you can take advantage of all the tools in the Git environment and editors can edit and preview the latest version of the site.
 
 \[Screenshot of Editor Change and Markdown diff\]
 
@@ -70,7 +72,7 @@ Check out a guide on how to get started with Forestry and Gatsby or simply impor
 
 \[Sidebar Screenshot\]
 
-### **Code Cleanliness**
+### Code Cleanliness
 
 There’s no need for lengthy authorization setups, plugins or deep integrations into your codebase. Forestry’s entire site configuration lives in a well-contained .forestry directory and will not pollute your codebase. Having all settings inside the .forestry directory gives you the flexibility of configuring Front Matter Templates with the Forestry UI or directly in the code editor.
 
@@ -78,11 +80,11 @@ Lastly, Forestry does not lock you into its system and the costs of transitionin
 
 \[.forestry settings are separate from rest of the code base\]
 
-### **Out-of-the-Box Previews**
+### Out-of-the-Box Previews
 
 Content creators need an immediate feedback loop to create great content. Seeing what the text or copy looks like _before_ it is published is a crucial step to successful content editing. While setting up a preview with other systems can be cumbersome, Forestry has integrated previews and ships them out-of-the-box, all you need to do is to declare the command that should be run for your Gatsby site.
 
-### **Updates and Deployments in the Cloud**
+### Updates and Deployments in the Cloud
 
 Forestry lives in the cloud and is accessible everywhere. No need to start-up your computer or pull the repository to deploy an update to your Gatsby site. This can be handled easily from your mobile phone or any other computer. Simply login and hit save, Forestry uses your [Build Commands](http://Build Commands) to deploy the compiled site to a variety of possible [Hosts](http://Hosts).
 
