@@ -134,6 +134,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/spike-test-reset.md
 - hugo/content/blog/new-improve-media-gallery.md
 - hugo/content/blog/data-files-directories-and-duplicating-pages.md
@@ -169,7 +170,6 @@ pages:
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/snippets-custom-content-sections-and-more.md
 - hugo/content/docs/_index.md
-- hugo/content/docs/welcome
 - hugo/content/docs/troubleshooting
 - hugo/content/docs/git-sync
 - hugo/content/docs/faqs
