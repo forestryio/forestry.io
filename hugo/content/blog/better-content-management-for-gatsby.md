@@ -23,7 +23,7 @@ menu: []
 draft: true
 
 ---
-With Gatsby you can create anything from Progressive Web Apps to content-driven blogs. It is one of the most flexible and most popular static site generators. With that flexibility we face tougher design challenges especially surrounding how to structure our data. That doesn't mean we should make compromises on our workflow and how we store our code, content and data.
+With Gatsby you can create anything from Progressive Web Apps to content-driven blogs. It is one of the most flexible and most popular static site generators. With that flexibility we face tougher design challenges especially surrounding the structuring of our data and how to include non-tech team members, writers, editors and clients. That doesn't mean we should be making compromises on our workflow and how we store our code, content and data.
 
 Forestry now supports Gatsby and makes content management a lot easier for your Gatsby projects without having to learn an entirely new workflow.
 
