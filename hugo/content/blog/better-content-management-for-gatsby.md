@@ -50,7 +50,7 @@ Button → Try Gatsby with Forestry
 
 ## Forestry’s Content Management
 
-We've set a few ground-rules of what we believe how content management in 2018 for Gatsby should be done. These are the principles we adhere to.
+We've set a few ground-rules of how we want to handle content management in 2018. These are the principles we adhere to.
 
 ### Git-Priority
 
