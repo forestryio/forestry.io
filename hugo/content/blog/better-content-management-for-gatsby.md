@@ -27,15 +27,16 @@ Gatsby is one of the most flexible and most popular static site generators. With
 
 Forestry now supports Gatsby and makes content management a lot easier for your Gatsby projects without having to learn an entirely new workflow.
 
-_How to store content with Gatsby?_  
+#### _How to store content with Gatsby?_  
 We've been closely watching the hype around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins)). With separating content from the code layout, it is not interrupted by obtrusive markup, can be organized easily in your filesystem and edited with any code editor. We believe this is the most frictionless way to work with content from a developer's perspective. And we're not alone as the Gatsby team themselves uses Markdown for managing content on [gatsbyjs.org](https://gatsbyjs.org).
 
-_What is the problem?_
+#### _What is the problem?_
+
 Nowadays, websites (and most other projects) are almost always done in teams. These teams usually include non-tech people and clients, we need to enable them to edit content on our Gatsby sites on a regular basis as well. However, most marketers, writers and clients don’t feel at home with Markdown. Navigating the file system and using the code editor can easily feel intimidating.
 
 To enable other users to make edits to sites we use content management systems (CMS). Using a CMS usually means we have to leave the handling of our content, data and structure to third-party vendors. It also forces us (at least partially) to use a specific workflow. However, as developers direct access to our data and seeing/adapting how it's structured speeds up our workflow and makes our lives easier. Moving content to a third-party vendor removes data one step, cuts-off that direct access and is detrimental to our own workflow. It's a step backward to traditional CMS like Wordpress.
 
-_How do Developers keep their workflow and enable Editors to edit content?_
+#### _Forestry allows Developers to keep their workflow and provide Editors a CMS._
 Forestry solves this issue simply by adding a UI layer on top of your data files that shows editors only what they need without having to be afraid of breaking anything and provides them with a WYSIWYG (visual) editor, toolbar and Media library to make changes to their content the way they are used to. All while leaving your code base completely untouched and flexible enough to make changes to it as you would without a CMS.
 
 {{% tip %}}
