@@ -25,7 +25,7 @@ draft: true
 ---
 Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites. Even though Gatsby tries to make things as simple as possible with that flexibility we face tougher design challenges for each project especially when it comes to including non-tech team members, writers, editors and clients into our editing workflow.
 
-In the past this often meant that we needed to align all our processes and tools to that goal of providing editors with a user interface. With Headless CMS and Content Management Infrastructures we've made a step in the right direction. Nevertheless, even today, using a CMS usually means drastic compromises in our workflow and how we store our code, content and data.
+In the past this often meant that we needed to align all our processes and tools to that goal of providing editors with an editing tool. With Headless CMS and Content Management Infrastructures we've made a step in the right direction. Nevertheless, even today, using a CMS usually means drastic compromises in our workflow and how we store our code, content and data.
 
 Forestry now supports Gatsby and challenges the way we approach content management for Gatsby projects and other static site generators. Forestry provides a non-invasive content management tool that allows you to keep your own workflow and tools.
 
