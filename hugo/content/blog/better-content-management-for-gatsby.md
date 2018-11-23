@@ -27,7 +27,7 @@ Gatsby is one of the most flexible and most popular static site generators. You 
   
 If your Gatsby site uses anything content-related (e.g. articles, products, announcements) it's likely that you need a CMS. Writers, marketers and clients tend to be uncomfortable with code editors. Most people choose to go with a traditional CMS or headless CMS to solve this problem. In both case you have to remove your data and content from your codebase and hand it over to a third-party vendor or host it separately.
 
-There must be an easier way to give content writers and editor they can use without turning my codebase upside down or rip out large parts of it. Forestry provides a non-invasive content management tool that allows you to keep your own workflow and tools. You won't even notice it's there unless you need it.
+We believe there's an easier way to give content writers a content management tool they can use without changing your entire workflow. Forestry provides a non-invasive content management tool for your editors that integrates into your own workflow and tools with Git. You won't even notice it's there unless you need it.
 
 #### _How to store content with Gatsby?_
 
