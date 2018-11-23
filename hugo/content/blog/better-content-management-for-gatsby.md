@@ -23,13 +23,11 @@ menu: []
 draft: true
 
 ---
-Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites \[provide examples of cool apps built with Gatsby\]. With that flexibility we face tougher design challenges, especially when it comes to including non-tech team members, writers, editors and clients.
+Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites \[provide examples of cool apps built with Gatsby\].   
+  
+If your Gatsby site uses anything content-related (e.g. articles, products, announcements) it's likely that you need a CMS. Writers, marketers and clients tend to be uncomfortable with code editors. Most people choose to go with a traditional CMS or headless CMS to solve this problem. In both case you have to remove your data and content from your codebase and hand it over to a third-party vendor or host it separately.
 
-In the past this often meant that we needed to align our developer-centric workflow to editors-centric workflow. All with the single goal of enable an editor to make changes to a website. With Headless CMS we've made a step into the right direction, we've decoupled content from the rest of our codebase. However, that means we've removed a central component of our site, our data and our content, and have it being handled by a third-party vendor.
-
-_TL;DR_
-
-_Forestry now supports Gatsby and challenges the way we approach content management for Gatsby projects and other static site generators. Forestry provides a non-invasive content management tool that allows you to keep your own workflow and tools._
+There must be an easier way to give content writers and editor they can use without turning my codebase upside down or rip out large parts of it. Forestry provides a non-invasive content management tool that allows you to keep your own workflow and tools. You won't even notice it's there unless you need it.
 
 #### _How to store content with Gatsby?_
 
