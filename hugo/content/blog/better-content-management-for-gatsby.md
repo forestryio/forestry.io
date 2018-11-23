@@ -39,7 +39,7 @@ We've been closely watching the community around Gatsby and are happy to see tha
 
 Nowadays, websites (and most other projects) are almost always created in teams. These teams usually include non-tech people and clients. However, most marketers, writers and clients don’t feel at home with Markdown. Navigating the file system and using the code editor can easily feel intimidating, if you're not using it on a daily basis. Our task is to enable these users to edit content on Gatsby sites as if they make changes directly in Markdown files.
 
-To enable other users to make edits to sites we use content management systems (CMS). Using a CMS usually means we have to leave the handling of our content, data and structure to third-party vendors. It also forces us (at least partially) to use a specific workflow. 
+To enable other users to make edits to sites we use content management systems (CMS). Using a CMS usually means we have to leave the handling of our content, data and structure to third-party vendors. It also forces us (at least partially) to use a specific workflow.
 
 However, as developers we appreciate direct access to our site's data and being able to adapt how it's structured speeds up our workflow and makes our lives easier. Moving content to a third-party vendor removes data one step, cuts-off that direct access and is detrimental to our workflow. It's a step backwards toward a traditional CMS like Wordpress.
 
