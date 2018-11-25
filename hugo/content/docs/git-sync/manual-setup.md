@@ -65,7 +65,7 @@ Forestry generates a keypair that will allow it to authenticate with your reposi
 
 To add a new key to your Github repo, navigate to `https://github.com/$USERNAME/$REPOSITORY/settings/keys`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
-Click the **Add deploy key** button. Enter whatever you want for the **Title**: this will help you identify what the key is for. Under **Key**, paste the private key provided by Forestry.
+Click the **Add deploy key** button. Enter whatever you want for the **Title**: this will help you identify what the key is for. Under **Key**, paste the public key provided by Forestry.
 
 Be sure to check the **Allow write access** box before clicking **Add key** to add this key to your repository.
 
@@ -73,7 +73,7 @@ Be sure to check the **Allow write access** box before clicking **Add key** to a
 
 To add a new key to your GitLab repo, navigate to `https://gitlab.com/$USERNAME/$REPOSITORY/settings/repository`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository, and expand the **Deploy Keys** section.
 
-Youy may add a label for this deploy key in the **Title** field to identify what this key is for. Paste the private key provided by Forestry in the **Key** field.
+Youy may add a label for this deploy key in the **Title** field to identify what this key is for. Paste the public key provided by Forestry in the **Key** field.
 
 Make sure to check the **Write access allowed** box before clicking the **Add key** button to add this key to your repository.
 
