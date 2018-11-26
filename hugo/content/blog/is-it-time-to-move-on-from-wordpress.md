@@ -25,7 +25,7 @@ menu: []
 draft: true
 
 ---
-WordPress 5.0 is [slated for release tomorrow](https://wordpress.org/news/2018/11/wordpress-5-0-release-candidate/), and with it comes their much-hyped new editing experience, [Gutenberg](https://wordpress.org/gutenberg/). The inclusion of Gutenberg in this release has caused no shortage of acrimony in the WordPress community. The new editor is opt-out as opposed to opt-in (and opting out requires installing [yet another plugin](https://wordpress.org/plugins/classic-editor/), and is such a significant departure from their original content editor that it is guaranteed to cause major issues with third-party plugins and themes (Gutenberg, for example, does not support WordPress’ meta box API, an essential component of customizing the current editing interface used by countless plugins.)
+WordPress 5.0 is [slated for release tomorrow](https://wordpress.org/news/2018/11/wordpress-5-0-release-candidate/), and with it comes their much-hyped new editing experience, [Gutenberg](https://wordpress.org/gutenberg/). The inclusion of Gutenberg in this release has caused no shortage of acrimony in the WordPress community. The new editor is opt-out as opposed to opt-in (and opting out requires installing [yet another plugin](https://wordpress.org/plugins/classic-editor/)), and is such a significant departure from their original content editor that it is guaranteed to cause major issues with third-party plugins and themes (Gutenberg, for example, does not support WordPress’ meta box API, an essential component of customizing the current editing interface used by countless plugins.)
 
 {{% media img="/uploads/2018/11/gutenberg_reviews.png" alt="Plugin reviews for Gutenberg" caption="Many critics of Gutenberg have elected to express their disapproval in the plugin reviews. I can say that I’ve never heard a piece of software referred to as “Stalinesque” before!" %}}
 
@@ -41,7 +41,7 @@ WordPress 5.0 will no doubt cause a major disruption for many users who update. 
 
 Some of you with experience in the broader software world might be confused as to why this is such a big deal. If you don’t like the WordPress 5 editor, why not just stick with WordPress 4?
 
-This is a bad idea, as **WordPress does not provide security patches for earlier versions**. The only way to fix security vulnerabilities in your WordPress install is to update to the latest version. This itself is not a huge problem, for the most part, as **WordPress has a long track record of maintaining backward compatibility**. Users have been able to update with confidence that everything will continue to work. Finally, **WordPress doesn’t explicitly follow semantic versioning.** There is no reason for users to expect that incrementing the major release number (from 4 to 5) should cause significant compatibility issues for their websites.
+This is a bad idea, as **WordPress does not provide security patches for earlier versions**. The only way to fix security vulnerabilities in your WordPress install is to update to the latest version. This itself is not a huge problem, for the most part, as **WordPress has a long track record of maintaining backward compatibility**. Users have been able to update with confidence that everything will continue to work. On top of that, **WordPress doesn’t explicitly follow semantic versioning.** There is no reason for users to expect that incrementing the major release number (from 4 to 5) should cause significant compatibility issues for their websites.
 
 The dogged adherence to backward compatibility might seem great for end users, but it can be a nightmare for developers building on the platform. 
 
@@ -101,7 +101,7 @@ Being able to adopt a user interface that makes both developers and editors happ
 
 To be honest, I find the name *Gutenberg* a little cloying. Not to say it’s undeserved: it’s named after the inventor of the printing press, and WordPress’ software certainly deserves some credit for enabling the proliferation of ideas across the internet — an estimated [30% of all websites](https://venturebeat.com/2018/03/05/wordpress-now-powers-30-of-websites/) are powered by WordPress!
 
-{{% media img="/uploads/2018/11/wp_footer.png" alt="Screenshot of the footer on wordpress.org" caption="Indeed, nothing could be more pretentious than the wordpress.org footer, proclaiming in low contrast that “code is poetry”." %}}
+{{% media img="/uploads/2018/11/wp_footer.png" alt="Screenshot of the footer on wordpress.org" caption="And no name could be more pretentious than the wordpress.org footer, proclaiming in low contrast that “code is poetry”." %}}
 
 But my issues here really aren’t with Gutenberg itself, but with the way WordPress has broken from its conventions and created a painful (and mandatory) upgrade path for a huge swath of its users. Gutenberg actually seems like a great idea, and it’s nice to see that WordPress is thinking outside the box in the pursuit of a more intuitive editing experience. Unfortunately for Gutenberg, WordPress has too many problems.
 
