@@ -111,5 +111,3 @@ But my issues here really aren’t with Gutenberg itself, but with the way WordP
 With WordPress 5.0 forcing the adoption of a new editing paradigm, leaving countless plugins and themes in the lurch, now seems like a good time to switch to a platform that’s easier to secure, easier to scale, and easier to develop on.
 
 It’s time to move on from WordPress.
-
-
