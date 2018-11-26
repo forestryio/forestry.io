@@ -47,7 +47,7 @@ In Forestry, all of your content is sorted into _Collections_ under _Content_ in
 
 ![](/uploads/2018/01/10.png)
 
-* **Pages:** any content this is not part of a collection
+* **Pages:** any content that is not part of a collection
 * **People:** a Jekyll collection of "staff members"
 * **Posts:** a Jekyll collection of blog posts
 * **Projects:** a Jekyll collection of projects
@@ -69,7 +69,7 @@ Select the _Posts_ collection in the sidebar, then open up the editor by selecti
 On the left is the post's front matter (custom metadata for the post, like its title and thumbnail), and on the right is the markdown content body of the post. The editor provides a visual, rich-text editor that is friendly for non-technical users and saves to markdown.
 
 ![](/uploads/2018/01/59-preview.png)
-Make you first edit by updating the post's title, and then click the preview button in the top right. This will open new tab and begin generating a preview with your content changes.
+Make your first edit by updating the post's title, and then click the preview button in the top right. This will open a new tab and begin generating a preview with your content changes.
 
 {{% tip %}}
 You can leave this tab open and return to the editor in the CMS and make changes. Any time you click the _preview button_ the preview will updated with any new content changes you've made.
