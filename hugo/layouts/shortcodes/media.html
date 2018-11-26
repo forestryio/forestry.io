@@ -1,0 +1,6 @@
+<figure class="post-media">
+    <img src="{{ .Get "img" }}" {{if (.Get "alt")}}alt="{{ .Get "alt" }}"{{ end }} />
+    {{ with (.Get "caption") }}
+    <figcaption>{{ . }}</figcaption>
+    {{ end }}
+</figure>
