@@ -13,7 +13,7 @@ menu:
     weight: 13
 
 ---
-They are three unique developer environments when working with a Hugo site in Forestry:
+There are three unique developer environments when working with a Hugo site in Forestry:
 
 * **Local environment** this is your local development environment on your own machine. See [Local Development](/docs/guides/developing-with-hugo/local-development) for more info.
 
