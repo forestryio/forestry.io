@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 WordPress 5.0 is [slated for release tomorrow](https://wordpress.org/news/2018/11/wordpress-5-0-release-candidate/), and with it comes their much-hyped new editing experience, [Gutenberg](https://wordpress.org/gutenberg/). The inclusion of Gutenberg in this release has caused no shortage of acrimony in the WordPress community. The new editor is opt-out as opposed to opt-in (and opting out requires installing [yet another plugin](https://wordpress.org/plugins/classic-editor/)), and is such a significant departure from their original content editor that it is guaranteed to cause major issues with third-party plugins and themes (Gutenberg, for example, does not support WordPress’ meta box API, an essential component of customizing the current editing interface used by countless plugins.)
