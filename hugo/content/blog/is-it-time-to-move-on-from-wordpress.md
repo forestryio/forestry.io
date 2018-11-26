@@ -1,14 +1,15 @@
 ---
 title: Is it Time to Move on From WordPress?
 description: ''
-date: 2018-11-26 05:30:05 -1100
+date: 2018-11-26 16:30:05 +0000
 authors:
 - DJ Walker
-publishdate: 2018-11-26 05:30:00 -1100
+publishdate: 2018-11-26 16:30:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/11/tim-gouw-68319-unsplash.jpg"
 categories:
 - Static Sites
 tags:
