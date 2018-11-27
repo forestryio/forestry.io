@@ -1,5 +1,5 @@
 ---
-title: Better Content Management (CMS) for Gatsby
+title: Better Content Management for Gatsby
 description: ''
 date: 2018-11-22 10:22:29 +0000
 authors:
