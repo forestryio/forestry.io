@@ -41,8 +41,8 @@ fields:
   hidden: true
   default: ''
 pages:
-- hugo/content/docs/changelog/2018-10-16-changelog.md
 - hugo/content/docs/changelog/2018-11-27-changelog.md
+- hugo/content/docs/changelog/2018-10-16-changelog.md
 - hugo/content/docs/changelog/20180919-Changelog.md
 - hugo/content/docs/changelog/2018-08-15-changelog.md
 - hugo/content/docs/changelog/2018-09-14-changelog.md
