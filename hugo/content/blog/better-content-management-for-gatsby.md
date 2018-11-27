@@ -1,5 +1,5 @@
 ---
-title: Better Content Management for Gatsby
+title: Content Management for Gatsby Inside Your Repository
 description: ''
 date: 2018-11-22 10:22:29 +0000
 authors:
