@@ -31,7 +31,7 @@ There's an easier way to give content writers a content management tool without 
 
 #### _What exactly is the problem?_
 
-Nowadays, websites (and most other projects) are almost always created in teams. These teams usually include non-tech people and clients. However, most marketers, writers and clients don’t feel at home with Markdown. Navigating the file system and using the code editor can easily feel intimidating, if you're not using it on a daily basis. Our task is to enable these users to edit content on Gatsby sites as if they make changes directly in Markdown files.
+Nowadays, websites (and most other projects) are almost always created in teams. These teams usually include non-tech people and clients. However, most marketers, writers and clients don’t feel at home with Markdown. Navigating the file system and using the code editor can feel intimidating, if you're not using it on a daily basis. Our task is to enable these users to edit content on Gatsby sites as if they make changes directly in Markdown files.
 
 To enable other users to make edits to sites we use content management systems (CMS). Using a CMS usually means we have to leave the handling of our content, data and structure to third-party vendors. It also forces us to (at least partially) use a specific workflow.
 
