@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/static-files"
-date: 2013-07-24 00:00:00 +0000
+date: 2018-02-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Static Files
