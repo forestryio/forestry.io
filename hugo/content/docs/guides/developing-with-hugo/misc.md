@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/misc/"
-date: 2018-02-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: Other things you can do with Hugo
 tags: ''
 title: Misc

@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/local-development/"
-date: 2018-02-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Local Development
