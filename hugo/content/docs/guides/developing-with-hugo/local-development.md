@@ -24,7 +24,7 @@ If you set up and imported your site with Git, local development becomes much ea
 
 To get started, clone your repository to your desktop. For example:
 
-	$ git clone https://github.com/forestryio/jekyll-demo.git
+	$ git clone https://github.com/forestryio/hugo-demo.git
 
 Now you can begin working on your site. Any changes made to your site can be committed in Git, and will automatically be synced with your Forestry CMS.
 
