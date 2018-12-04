@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-templating
-    weight: 7
+    weight: 13
 
 ---
 Jekyll allows users to build their HTML templates using the template language *Liquid* built and used by the popular eCommerce application [Shopify][1].

@@ -11,7 +11,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 1
+    weight: 2
 
 ---
 Navigate to a site on your Dashboard (e.g. "My Sites"). Click on the "..." next to a site and select "Transfer Site" in the dropdown. On the next screen you can choose between "My sites" or an "Organization".

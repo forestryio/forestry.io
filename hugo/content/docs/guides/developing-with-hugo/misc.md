@@ -11,7 +11,7 @@ weight: 9
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 18
+    weight: 25
 
 ---
 ## Sitemap

@@ -1,15 +1,15 @@
 ---
 title: Gatsby's Project Structure
 date: 2018-11-20 00:00:00 +0000
-draft: true
 menu:
   guides:
-    parent: Developing with Gatsby
     name: Project Structure
+    parent: Developing with Gatsby
     identifier: gatsby-project-structure
-    weight: 3
----
+    weight: 5
+draft: true
 
+---
 most of this is just convention
 
 src

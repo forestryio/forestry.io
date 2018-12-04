@@ -11,14 +11,14 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 weight: 1
 menu:
-  guides:
-    parent: Developing with Hugo
-    weight: 2
   docs:
-    parent: Developer Guides
     name: Hugo
+    parent: Developer Guides
     identifier: developing-with-hugo
     weight: 1
+  guides:
+    parent: Developing with Hugo
+    weight: 4
 
 ---
 Hugo is a *fast* static site generator, with a *lot* of enterprise features. If you’re building a large business, publication, or community website Hugo is likely the right choice due to features likes localization, RSS Feed & Sitemap generation, and much more.

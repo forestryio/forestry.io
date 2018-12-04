@@ -11,8 +11,8 @@ menu:
   faqs:
     parent: FAQs
     weight: 1
----
 
+---
 ![You may see a different timezone in your commit than you see in the Forestry UI.](/uploads/2018/10/forestry-timezones.png)
 
 **We hear this one a lot, and the confusion is understandable.**

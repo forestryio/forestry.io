@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-misc
-    weight: 19
+    weight: 26
 
 ---
 ## Sitemaps/Feeds

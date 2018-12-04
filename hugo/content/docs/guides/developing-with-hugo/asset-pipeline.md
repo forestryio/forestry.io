@@ -11,7 +11,7 @@ weight: 5
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 15
+    weight: 22
 
 ---
 Hugo supports pre-procesing CSS files via SCSS, and post-processing via PostCSS.

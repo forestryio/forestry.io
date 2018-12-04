@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-asset-pipeline
-    weight: 14
+    weight: 20
 
 ---
 If you’re planning on using any preprocessing on your assets (images, CSS, or JS) you’ll need to be careful how you implement this as it effects how Forestry builds your sites. 

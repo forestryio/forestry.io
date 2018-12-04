@@ -9,7 +9,7 @@ images:
 menu:
   guides:
     parent: Hosting
-    weight: 1
+    weight: 2
 
 ---
 ## Using Jekyll with GitHub Pages

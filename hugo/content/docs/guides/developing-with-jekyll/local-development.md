@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-local-development
-    weight: 10
+    weight: 16
 
 ---
 Jekyll allows you to work on your site in a local environment on your computer. It requires you to have `Ruby`, `RubyGems` and `Bundler` installed.

@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-environments
-    weight: 12
+    weight: 18
 
 ---
 There are three unique developer environments when working with a Jekyll site in Forestry:

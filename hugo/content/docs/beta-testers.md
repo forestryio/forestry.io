@@ -9,9 +9,9 @@ images:
 menu:
   docs:
     parent: Other
-    weight: 10
----
+    weight: 6
 
+---
 From time to time, we will invite some of our users to test new additions to the platform.
 
 ## How to Become a Beta Tester

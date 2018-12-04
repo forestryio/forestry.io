@@ -7,9 +7,9 @@ weight: 5
 menu:
   guides:
     parent: Miscellaneous
-    weight: 15
----
+    weight: 21
 
+---
 Certain configuration values in Forestry, such as the [sidebar `match` and `exclude` parameters,](/docs/settings/content-sections/) accept what is known as a _glob_. A glob is a string of characters that follows a special syntax, used to match paths in a file tree.
 
 ## Basic Syntax
