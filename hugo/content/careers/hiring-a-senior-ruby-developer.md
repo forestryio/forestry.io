@@ -1,5 +1,5 @@
 ---
-title: We're hiring a senior Ruby developer
+title: 'Hiring: Senior Ruby Developer'
 description: Forestry.io is a content management system for static websites built
   with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around
   the world are leaving WordPress and Drupal for more secure, performant, static sites
