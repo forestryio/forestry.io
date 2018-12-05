@@ -18,7 +18,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 # Devops Engineer
@@ -47,3 +46,5 @@ draft: true
 * Have experience with Terraform and Packer
 
 We are open to remote candidates.
+
+Interested candidates, please contact [jobs@forestry.io](mailto:jobs@forestry.io)
