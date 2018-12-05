@@ -52,3 +52,5 @@ menu: []
 * have a passion for the solving the needs of our users
 
 We are open to remote candidates.
+
+Interested candidates, please contact [jobs@forestry.io](mailto:jobs@forestry.io)
