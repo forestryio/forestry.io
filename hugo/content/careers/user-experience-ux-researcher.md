@@ -3,8 +3,8 @@ publishDate: 2017-08-09 10:20:51 +0000
 expirydate: 2029-12-31 17:00:00 -1100
 description: We are hiring a User Experience (UX) Researcher to help us build a Content
   Management System for the next generation of websites.
-headline: User Experience (UX) Researcher
-title: Hiring a User Experience (UX) Researcher
+headline: 'Hiring: User Experience (UX) Researcher'
+title: 'Hiring: User Experience (UX) Researcher'
 date: 2018-12-04 00:20:51 -1100
 publishdate: 2018-12-04 00:20:00 -1100
 textline: ''
