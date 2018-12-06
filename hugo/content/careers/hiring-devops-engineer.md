@@ -1,15 +1,15 @@
 ---
 title: 'Hiring: DevOps Engineer'
 description: ''
-date: 2018-12-03 17:00:00 -1100
+date: 2018-12-04 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
 authors: []
 categories: []
 tags: []
-publishdate: 2018-12-03 17:00:00 -1100
-expirydate: 2030-12-11 17:00:00 -1100
+publishdate: 2018-12-04 04:00:00 +0000
+expirydate: 2030-12-12 04:00:00 +0000
 cta:
   headline: ''
   textline: ''
@@ -22,7 +22,7 @@ menu: []
 ---
 # Devops Engineer
 
-[Forestry.io](https://forestry.io) is a content management system for static websites that are built with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around the world are leaving WordPress and Drupal for more secure, performant, static sites and Forestry allows their non-technical teams to manage content.  Forestry takes a Git-based approach to content management. When content is edited in Forestry, all updates are saved as commits in the Git repo for that site.  Our product is a Rails application and we are currently seeking a senior Rails developer to join the team and help us continue to build out the product.
+[Forestry.io](https://forestry.io) is a content management system for static websites that are built with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around the world are leaving WordPress and Drupal for more secure, performant, static sites and Forestry allows their non-technical teams to manage content.  Forestry takes a Git-based approach to content management. When content is edited in Forestry, all updates are saved as commits in the Git repo for that site.
 
 **Responsibilities**
 

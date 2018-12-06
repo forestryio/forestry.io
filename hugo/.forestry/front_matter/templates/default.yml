@@ -134,6 +134,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/_index.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
 - hugo/content/blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
@@ -203,7 +204,6 @@ pages:
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
 - hugo/content/careers/hiring-devops-engineer.md
 - hugo/content/asdd.md
-- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
