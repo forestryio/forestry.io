@@ -8,3 +8,19 @@ cta:
   calls_to_action: []
 
 ---
+## Enhancements
+
+* **Tags Field Separators:** The following keys can now be used to create tags
+  * Comma (new)
+  * Enter
+  * Tab
+
+## Bug Fixes
+
+* **Build Commands:** Fixed issue in which valid environment variables caused a warning when importing a repository.
+
+## Copy Edits
+
+* **Front Matter Templates:** Switched to labeling from "Front Matter Templates" to "Templates" in the following locations
+  * Creating Pages
+  * Changing a Page's FMT
