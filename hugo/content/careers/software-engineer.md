@@ -19,6 +19,8 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
+draft: true
 
 ---
 <div style="padding: 10px 0 20px 0; color: #222;">
