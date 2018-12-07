@@ -2,12 +2,11 @@
 title: 2018/11/27 Changelog
 authors:
 - team forestry
-date: 2018-11-27 06:51:59 -1100
+date: 2018-11-27 17:51:59 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
-draft: true
 
 ---
 ## Enhancements
