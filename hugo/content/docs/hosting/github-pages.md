@@ -14,7 +14,7 @@ menu:
 
 ---
 {{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [GitHub account](https://github.com/signup), and a repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
+This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [GitHub account](https://github.com/signup), and a repository with a project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
 ## Getting Started
@@ -58,7 +58,6 @@ Then select the branch that contains your built static site and click on the Sav
 ![](/uploads/2018/01/41.png)
 
 Your site should now be served at `http://username.github.io/repository`.
-
 
 ## Using a Custom Domain
 
