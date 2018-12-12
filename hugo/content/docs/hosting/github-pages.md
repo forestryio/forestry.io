@@ -25,9 +25,11 @@ To deploy a static site to GitHub pages using Forestry, you must first set up a 
 
 ## Configuring Forestry
 
-Once your new branch is created, navigate to the _Settings_ page of your site in Forestry, click the _Hosting_ tab, and set the _Connection_ option to _GitHub Pages_.
+Once your new branch is created, navigate to the _Settings_ page of your site in Forestry, click the _Deployment_ tab, and set the _Connection_ option to _GitHub Pages_.
 
-![](/uploads/2018/01/29.png)If you haven't authenticated with GitHub before, you'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option the applies to your repository.
+![](/uploads/2018/12/shadow-template.png)
+
+If you haven't authenticated with GitHub before, you'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option that applies to your repository.
 
 ![](/uploads/2018/01/1.png)
 
