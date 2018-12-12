@@ -29,7 +29,7 @@ Once your new branch is created, navigate to the _Settings_ page of your site in
 
 ![](/uploads/2018/12/shadow-template.png)
 
-If you haven't authenticated with GitHub before, you'll be prompted to choose "[Public Repos](https://help.github.com/articles/making-a-private-repository-public/)" or "[Private Repos](https://help.github.com/articles/making-a-public-repository-private/)". Choose the option that applies to your repository.
+Click on "Click here to edit repo & branch" to connect your new _gh-pages_ branch with Forestry.
 
 ![](/uploads/2018/01/1.png)
 
@@ -45,7 +45,7 @@ In order to host a site with GitHub Pages, you will need [admin permissions](htt
 
 Once authorized, you will be redirected back to Forestry.
 
-![](/uploads/2018/01/43.png)
+![](/uploads/2018/12/authorized-settings.png)
 
 Next, choose your repository, select the new `gh-pages` branch, and then click _Save Settings_.
 
@@ -63,7 +63,11 @@ Your site should now be served at `http://username.github.io/repository`.
 
 ## Using a Custom Domain
 
-If you want to use a custom domain with GitHub Pages, you will need to include a `CNAME` file containing your custom domain. If you manually add this file to your `gh-pages` branch, it will be deleted the next time Forestry deploys your site. The `CNAME` file should instead be added to your source files, in a location where it will be copied to the generated site. In the case of a Hugo site, this should be in your `static/` directory, while it can live in the root of your project if you're using Jekyll.
+If you want to use a custom domain with GitHub Pages, you will need to include a `CNAME` file containing your custom domain. The `CNAME` file should instead be added to your source files, in a location where it will be copied to the generated site. In the case of a Hugo site, this should be in your `static/` directory, while it can live in the root of your project if you're using Jekyll.
+
+{{% warning %}}
+If you manually add this file to your `gh-pages` branch, it will be deleted the next time Forestry deploys your site.
+{{% /warning%}}
 
 [GitHub Help: Using a Custom Domain With GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
