@@ -25,7 +25,15 @@ draft: true
 ---
 Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites \[provide examples of cool apps built with Gatsby\].
 
-Once your Gatsby site uses any content that requires frequent changes (e.g. articles, products, announcements) it's likely that you'll be working with writers, marketers or for clients. These users tend to be uncomfortable with working directly in the codebase or with any mark-up language. To solve this problem most people go on the hunt for a CMS. \[Some data points on how many sites are using a CMS\] But, most CMS need you to follow their workflow, meaning you'll end up making all sorts of compromises along the way. The best case scenario your content files live with the third-party application in some database, far away from your codebase. The worst case scenario you have to move the entire code to the CMS and completely relearn how to build websites.
+Once your Gatsby site uses any content that requires frequent changes (e.g. articles, products, announcements) it's likely that you'll be working with writers, marketers or for clients. These users tend to be uncomfortable with working directly in the codebase or with any mark-up language. To solve this problem most people go on the hunt for a CMS. 
+
+{{% tip %}}
+
+It's estimated that roughly half of the 1.8 billion websites online today are using some form of a CMS. _source:_ [_w3techs.com_](https://w3techs.com/technologies/overview/content_management/all)
+
+{{% /tip %}}
+
+But, most CMS need you to follow their workflow, meaning you'll end up making all sorts of compromises along the way. The best case scenario your content files live with the third-party application in some database, far away from your codebase. The worst case scenario you have to move the entire code to the CMS and completely relearn how to build websites.
 
 There's an easier way to give content writers a content management tool without having to turn your entire workflow upside down. Forestry provides a non-invasive content management tool for your editors that integrates into your own workflow and tools, with Git. You won't even notice it's there unless you need it.
 
@@ -49,9 +57,9 @@ By adding a layer on top of your existing code base, Forestry allows developers 
 
 Button → Try Gatsby with Forestry
 
-#### _Is there a catch?_ 
+#### _Is there a catch?_
 
-Not really. But Gatsby allows you to create pages with the content directly inside the pages. But, Forestry needs you to store your content in Markdown files. 
+Not really. But Gatsby allows you to create pages with the content directly inside the pages. But, Forestry needs you to store your content in Markdown files.
 
 We've been closely watching the community around Gatsby and are happy to see that Markdown has become the format of choice to edit, update and store your content-heavy Gatsby site (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins)). Separating content from the layout solves the problem of hunting for content hidden in-between obtrusive markup and enables easy and clean editing with any code editor. We believe this is the most frictionless way to work with content from a developer's perspective. And we're not alone as most other static site generators use Markdown and the Gatsby team themselves embraces Markdown for managing content on [gatsbyjs.org](https://gatsbyjs.org).
 
