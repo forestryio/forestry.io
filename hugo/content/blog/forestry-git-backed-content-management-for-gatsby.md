@@ -41,7 +41,7 @@ Git has proven to be the most popular tool for developers to store their code to
 
 ### Easy integration
 
-Forestry directly connects to your Git repository to manage your content files. All you need to get started with Forestry is to import the repository that contains your Gatsby site and point Forestry to directories that hold content that you want to access.
+Forestry directly connects to your Git repository to manage your content files. All you need to get started with Forestry is to import the repository that contains your Gatsby site, point Forestry to directories that hold content that you want to access and add your build commands.
 
 If you want users to be able to create brand new content you can create content models (we call them Front Matter Templates or FMTs). These come with an abundance of different fields from simple text fields and color pickers to fields that enable the creation of modular layouts with [Blocks](https://forestry.io/docs/settings/fields/blocks/).
 
@@ -55,7 +55,7 @@ There’s no need for lengthy authorization setups, plugins or deep integrations
 
 Lastly, Forestry does not lock you into its system and the cost of transitioning from an existing system is minimal. If you decide to switch the content manager, simply remove your site from Forestry and delete the .forestry folder in your repository. No unpleasant surprises of finding Forestry snippets in your code later on.
 
-\[.forestry settings are separate from rest of the code base\]
+\[image depicting .forestry settings are separate from rest of the code base\]
 
 ### Out-of-the-Box Features (including Previews)
 
