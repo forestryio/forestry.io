@@ -25,7 +25,7 @@ draft: true
 ---
 Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites \[provide examples of cool apps built with Gatsby\].
 
-Once your Gatsby site uses any content that requires frequent changes (e.g. articles, products, announcements) it's likely that you'll be working with writers, marketers or for clients. These users tend to be uncomfortable with working directly in the codebase or with any mark-up language. To solve this problem most people go on the hunt for a CMS. 
+Once your Gatsby site uses any content that requires frequent changes (e.g. articles, products, announcements) it's likely that you'll be working with writers, marketers or for clients. These users tend to be uncomfortable with working directly in the codebase or with any mark-up language. To solve this problem most people go on the hunt for a CMS.
 
 {{% tip %}}
 
@@ -64,3 +64,5 @@ Not really. Gatsby allows you to create pages with the content directly inside t
 We've been closely watching the community around Gatsby and are happy to see that Markdown has indeed become the format of choice to edit, update and store your content-heavy Gatsby sites (see Gatsby’s [tutorial](https://www.gatsbyjs.org/tutorial/part-six/#transformer-plugins)). Separating content from the layout solves the problem of hunting for content hidden in-between obtrusive markup and enables easy and clean editing with any code editor. We believe this is the most frictionless way to work with content from a developer's perspective. And we're not alone as most other static site generators use Markdown and the Gatsby team themselves embraces Markdown for managing content on [gatsbyjs.org](https://gatsbyjs.org).
 
 {{% tip %}} No worries, we also support other structured data formats. Available data formats are JSON, YAML and TOML and can be edited via Forestry easily. {{% /tip %}}
+
+This Gatsby tutorial shows you [step-by-step](http://Link to Gatsby Docs) on how to set up a Gatsby site with Forestry or simply [import this starter](https://test.com) we've prepared to get started right away.
