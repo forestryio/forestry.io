@@ -21,7 +21,7 @@ menu: []
 draft: true
 
 ---
-Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications and content-driven sites \[provide examples of cool apps built with Gatsby\].
+Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications, content-driven sites and so much more. \[provide examples of cool apps built with Gatsby\].
 
 Once your Gatsby site uses any content that requires frequent changes (e.g. articles, products, announcements) it's likely that you'll be working with writers, marketers or for clients. These users tend to be uncomfortable with working directly in the codebase or with any mark-up language. To solve this problem most people go on the hunt for a CMS.
 
