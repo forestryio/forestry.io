@@ -65,4 +65,6 @@ We've been closely watching the community around Gatsby and are happy to see tha
 
 {{% tip %}} No worries, we also support other structured data formats. Available data formats are JSON, YAML and TOML and can be edited via Forestry easily. {{% /tip %}}
 
+## What's Next?
+
 This Gatsby tutorial shows you [step-by-step](http://Link to Gatsby Docs) on how to set up a Gatsby site with Forestry or simply [import this starter](https://test.com) we've prepared to get started right away.
