@@ -1,5 +1,5 @@
 ---
-title: Content Management for Gatsby in Your Git Repository
+title: Content Management for Gatsby with Git
 description: ''
 date: 2018-11-22 10:22:29 +0000
 authors:
