@@ -21,5 +21,6 @@ fields:
 pages:
 - hugo/content/test-landing-page.md
 - hugo/content/blocks.md
+- hugo/content/gatsby-+-forestry-feature-list.md
 - hugo/content/another-landing-page.md
 - hugo/content/landing-page-test.md
