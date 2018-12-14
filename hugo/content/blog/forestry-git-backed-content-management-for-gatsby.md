@@ -27,6 +27,8 @@ Once your Gatsby site uses any content that requires frequent changes (e.g. arti
 
 Forestry provides a non-invasive content management tool for your editors that integrates into your own workflow and tools, with Git. You won’t even notice it’s there unless you need it.
 
+\[Import Button\]
+
 ## Forestry’s Content Management
 
 We've set a few ground-rules of how we want to handle content management in 2018. These are the principles we adhere to and that you can rely on when using Forestry with Gatsby.
@@ -68,3 +70,5 @@ This holds true for all of our Editor-centric features.
 Forestry lives in the cloud and is accessible everywhere. No need to start-up your computer or pull the repository to deploy an update to your Gatsby site. This can be handled easily from your mobile phone or any other computer. Simply login, make a change and hit save, Forestry uses your [Build Commands](http://Build Commands) to deploy the compiled site to a variety of possible [Hosts](http://Hosts) or simply back to a repository, if you like to handle deployment yourself.
 
 This Gatsby tutorial shows you [step-by-step](http://Link to Gatsby Docs) on how to set up a Gatsby site with Forestry. To hit the ground running or just try it out, we've pre-configured a [Forestry+Gatsby starter](https:// Gatsby Starter) for you that can be imported within seconds.
+
+\[Import Button\]
