@@ -166,7 +166,6 @@ pages:
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
 - hugo/content/blog/forestry-git-backed-content-management-for-gatsby.md
-- hugo/content/gatsby-+-forestry-feature-list.md
 - hugo/content/blog/demystifying-hugo-conditionals.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
