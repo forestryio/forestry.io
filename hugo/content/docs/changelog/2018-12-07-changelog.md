@@ -1,11 +1,15 @@
 ---
 title: 2018/12/07 Changelog
 authors: []
-date: 2018-12-06 17:00:00 -1100
+date: 2018-12-07 04:00:00 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
+menu:
+  changelog:
+    name: 2018/12/07
+    weight: 2
 
 ---
 ## Enhancements
