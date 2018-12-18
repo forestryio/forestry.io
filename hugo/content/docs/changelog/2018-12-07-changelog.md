@@ -8,6 +8,7 @@ cta:
   calls_to_action: []
 menu:
   changelog:
+    parent: Changelog
     name: 2018/12/07
     weight: 2
 
