@@ -21,13 +21,13 @@ menu: []
 draft: true
 
 ---
-Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications, content-driven sites and so much more. \[provide examples of cool apps built with Gatsby\].
+Gatsby is one of the most flexible and most popular static site generators. You can use it to create Progressive Web Apps, hybrid applications, content-driven sites and so much more. [AirBnB](https://airbnb.io/)'s docs, [Hopper](https://www.hopper.com/)'s landing page and the [report on the state of european tech](https://2017.stateofeuropeantech.com/) are just a few examples of what you can do with Gatsby.
 
 Once your Gatsby site uses any content that requires frequent changes (e.g. articles, products, announcements) it's likely that you'll be working with writers, marketers or for clients. These users tend to be uncomfortable with working directly in the codebase or with any mark-up language. To solve this problem most people go on the hunt for a CMS.
 
 Forestry provides a non-invasive content management tool for your editors that integrates into your own workflow and tools, with Git. You won’t even notice it’s there unless you need it.
 
-\[Import Button\]
+[![Import this project into Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&engine=gatsby)
 
 ## Forestry’s Content Management
 
