@@ -31,7 +31,7 @@ aliases: []
 
 In order for this to work, Hugo needs to think we have a content type called `uploads`, so that it can browse this section and locate subresources.
 
-Create a folder in your `content/` directory called `uploads`, and add a file named `_index.md` with the following content:
+Create a folder in your `content/` directory called `uploads`, and add a file named `index.md` with the following content:
 
 ``` yaml
 ---
