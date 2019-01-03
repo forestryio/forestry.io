@@ -37,7 +37,10 @@ We've set a few ground-rules of how we want to handle content management in 2018
 
 Git has proven to be the most popular tool for developers to store their code today and we believe your code, content and data is yours and should be stored with access to modern technologies. Hence, Forestry takes a Git-backed approach to content management pushing all changes back to your Git repository and pulling updated code directly into the content manager as it is updated. This way your Gatsby site is always in-sync, you can take advantage of all the tools in the Git environment and editors can edit and preview the latest version of the site.
 
-\[Screenshot of Editor Change and Markdown diff\]
+<video playsinline autoplay muted loop poster="" class="">
+    <source src="https://forestry.io/video/gatsby-diff.webm" type="video/webm">
+    <source src="https://forestry.io/video/gatsby-diff.mp4" type="video/mp4">
+</video>
 
 \[Cheering / raised hand emojis for Git providers \]
 
@@ -49,7 +52,7 @@ If you want users to be able to create brand new content you can create content 
 
 {{% tip %}} Check out a guide on how to get started with Forestry and Gatsby or simply import the starter above to begin exploring. {{% /tip %}}
 
-\[Sidebar Screenshot\]
+![](/uploads/2018/12/gatsby-sidebar.png)
 
 ### Code Cleanliness
 
@@ -57,7 +60,7 @@ There’s no need for lengthy authorization setups, plugins or deep integrations
 
 Lastly, Forestry does not lock you into its system and the cost of transitioning from an existing system is minimal. If you decide to switch the content manager, simply remove your site from Forestry and delete the .forestry folder in your repository. No unpleasant surprises of finding Forestry snippets in your code later on.
 
-\[image depicting .forestry settings are separate from rest of the code base\]
+![](/uploads/2018/12/gatsby-forestry-config.png)
 
 ### Out-of-the-Box Features (including Previews)
 
@@ -73,4 +76,4 @@ Forestry lives in the cloud and is accessible everywhere. No need to start-up yo
 
 This Gatsby tutorial shows you [step-by-step](http://Link to Gatsby Docs) on how to set up a Gatsby site with Forestry. To hit the ground running or just try it out, we've pre-configured a [Forestry+Gatsby starter](https:// Gatsby Starter) for you that can be imported within seconds.
 
-\[Import Button\]
+[![Import this project into Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&engine=gatsby)

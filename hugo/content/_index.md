@@ -19,21 +19,17 @@ hero:
     textline: Launch Demo
     button: false
   video:
-    fallbackVisual: "/video/forestry_factory.jpg"
+    fallbackVisual: "/video/fmt-cms-comparison-generic-1.jpg"
     sources:
-    - permalink: "/video/forestry_factory.webm"
+    - permalink: "/video/fmt-cms-comparison-generic-1.webm"
       type: video/webm
-    - permalink: "/video/forestry_factory.mp4"
+    - permalink: "/video/fmt-cms-comparison-generic-1.mp4"
       type: video/mp4
-    - permalink: "/video/forestry_factory.ogv"
-      type: video/ogg
     mobile:
-    - permalink: "/video/forestry_factory.webm"
+    - permalink: "/video/fmt-cms-comparison-generic-1-sm.webm"
       type: video/webm
-    - permalink: "/video/forestry_factory.mp4"
+    - permalink: "/video/fmt-cms-comparison-generic-1-sm.mp4"
       type: video/mp4
-    - permalink: "/video/forestry_factory.ogv"
-      type: video/ogg
   logos:
     textline: Built for static site generators
     sources:
