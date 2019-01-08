@@ -132,3 +132,4 @@ fields:
 pages:
 - hugo/content/docs/settings/snippets.md
 - hugo/content/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available.md
+- hugo/content/docs/media/cloud-media-storage-with-aws-s3.md
