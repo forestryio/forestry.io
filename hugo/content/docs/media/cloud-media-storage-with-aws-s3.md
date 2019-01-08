@@ -30,29 +30,41 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
 
 ![](/uploads/2019/01/s3-settings.png)
 
-1. [Sign up for an AWS account](https://portal.aws.amazon.com/billing/signup#/start)
-2. Log in to your dashboard and click open the _Services_ dropdown in the top bar then click on the S3 service.
-3. Create a Bucket and make not of the Bucket name for later. In the _Set Permissions_ step ensure to uncheck the following options:
-   * Block new public ACLs and uploading public objects
-   * Remove public access granted through public ACLs
+{{% tip %}}
+If this is your first time creating a bucket simply keep the default settings if not mentioned otherwise.
+{{% /tip %}}
 
-   {{% tip %}}
+## AWS S3 Configuration
 
-   If this is your first time creating a bucket simply keep the default settings if not noted otherwise.
+ 1. [Sign up for an AWS account](https://portal.aws.amazon.com/billing/signup#/start)
+ 2. Log in to your dashboard and open the _Services_ dropdown in the top bar then click on the **S3** service.
+ 3. Create a Bucket and make note of the Bucket name for later. In the _Set Permissions_ step ensure to uncheck the following options:
+    * **Block new public ACLs and uploading public objects**
+    * **Remove public access granted through public ACLs**
+ 4. Create User Credentials with a IAM Service. Open _Services_ and select the **IAM** service.
+ 5. Navigate to _Users_ and click on **Add User**.
+ 6. Grant **Programmatic access** to create an _access key ID_ and _secret access key._
+ 7. Choose **Attach existing policies directly** and click on **Create Policy** in the _Set Permissions_ step.
 
-   {{% /tip %}}
-4. Open up your site's dashboard in Forestry and navigate to the **Settings** section, and select the **Media** tab.
-5. Under **Media Management**, select **Cloudinary**. You should see fields appear for **Cloud name**, **API key**, and **API secret**.
-6. Enter your Cloudinary info int these fields and click the **Save Settings** button.
-7. Navigate to the **Media** section in the Forestry dashboard. If you see the Cloudinary sample image in your library, you are successfully connected!
+    ![](/uploads/2019/01/policy-settings.png)
+
+    _Possible permissions for your policy_ 👆
+ 8. Select your newly created policy as your user's permissions and finish the creation of your new user.
+
+    ![](/uploads/2019/01/permissions-new-user.png)
+ 9. Take note of the **Access key ID** and the **Secret access key** and navigate to the _Media_ tab on your site's _Settings_ in Forestry
+10. Select **Amazon** **S3** as a _Media Storage Provider_ and fill in the **Bucket**, **Access Key** and **Secret**. Click on _Save Media Settings_ and upload an image in the _Media_ section. You are now connected to your S3 bucket.
 
 ![Cloudinary sample image in media library](/uploads/2018/05/media-library-cloudinary.png)
 
 ## Recommended Path Settings
 
-You will want to adjust your paths in the **Media** section to work with Cloudinary.
+You will want to adjust your paths in the **Media** section to work with S3.
 
-* **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `[https://res.cloudinary.com/](https://res.cloudinary.com/ "https://res.cloudinary.com/")``{{ CLOUD_NAME }}/image/upload/`.
+* **Public Path**: You should enter the full URL to your S3 bucket. This will look something like `https://``{{ REGION }}``.amazonaws.com/``{{ BUCKET_NAME }}/`.
+{{% tip %}}
+{{ REGION }} usually looks something like `s3-us-west-2` except for the US EAST (North Virgina) region which is simply `s3`.
+{{% /tip %}}
 * **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
 
 ### Applying transforms to markdown content
