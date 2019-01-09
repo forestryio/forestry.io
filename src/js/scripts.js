@@ -1,5 +1,4 @@
 import "./imports/sidebarActiveState"
-import CodeBlocks from "./imports/codeBlocks"
 import contentLoaded from "content-loaded"
 import EQCSS from "eqcss"
 import HeadingLinks from "./imports/headingLinks"
@@ -109,18 +108,11 @@ contentLoaded()
     ])
 
     /**
-     * Enable code highlighting and copying
+     * Hook up add-site-button generator behavior
      */
-    const codeBlocks = new CodeBlocks({
-      onComplete: function() {
-        /**
-         * Hook up add-site-button generator behavior
-         */
-        const asbGenerator = new ASBGenerator(
-          document.getElementById("ASBGenerator")
-        )
-      }
-    })
+    const asbGenerator = new ASBGenerator(
+      document.getElementById("ASBGenerator")
+    )
 
     /**
      * Enable lightboxes for images
