@@ -36,7 +36,7 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
 
  1. [Sign up for an AWS account](https://portal.aws.amazon.com/billing/signup#/start)
  2. Log in to your dashboard and open the _Services_ dropdown in the top bar, then click on the **S3** service.
- 3. Create a Bucket and make note of the **Bucket name** for later.
+ 3. Click on **Create Bucket**, name it, remember the **Bucket name** for later and proceed to the _Set Permissions step. 
  4. In the _Set Permissions_ step ensure to uncheck the following options:
     * **Block new public ACLs and uploading public objects**
     * **Remove public access granted through public ACLs**
