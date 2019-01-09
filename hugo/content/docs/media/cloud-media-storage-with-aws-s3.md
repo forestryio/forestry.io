@@ -26,7 +26,7 @@ draft: true
 ---
 Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html).
 
-## Linking Your S3 Account
+## Linking Your S3 Bucket
 
 ![](/uploads/2019/01/s3-settings.png)
 
@@ -62,9 +62,9 @@ If this is your first time creating a bucket simply keep the default settings if
 You will want to adjust your paths in the **Media** section to work with S3.
 
 * **Public Path**: You should enter the full URL to your S3 bucket. This will look something like `https://``{{ REGION }}``.amazonaws.com/``{{ BUCKET_NAME }}/`.
-{{% tip %}}
-{{ REGION }} usually looks something like `s3-us-west-2` except for the US EAST (North Virgina) region which is simply `s3`.
-{{% /tip %}}
+  {{% tip %}}
+  {{ REGION }} usually looks something like `s3-us-west-2` except for the US EAST (North Virgina) region which is simply `s3`.
+  {{% /tip %}}
 * **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
 
 ### Applying transforms to markdown content
