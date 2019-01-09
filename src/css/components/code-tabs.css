@@ -16,7 +16,7 @@
     cursor: pointer;
     display: inline-block;
     padding: 0.2em;
-    margin-left: 0.2em;
+    margin-left: 0.5em;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -28,5 +28,9 @@
       border-bottom: 2px solid $color-black;
       margin-bottom: -2px;
     }
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
   }
 }
