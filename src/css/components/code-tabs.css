@@ -8,11 +8,12 @@
     }
   }
   .tab-labels {
-    color: $color-brand-light;
-    border-bottom: 2px solid $color-brand-light;
+    color: $color-medium-light;
+    border-bottom: 2px solid $color-medium-light;
     margin-bottom: 0.5em;
   }
   .tab-label {
+    font-weight: bold;
     cursor: pointer;
     display: inline-block;
     padding: 0.2em;
@@ -25,7 +26,7 @@
     }
     &.active {
       color: $color-black;
-      border-bottom: 2px solid $color-black;
+      border-bottom: 2px solid $color-brand;
       margin-bottom: -2px;
     }
     -webkit-user-select: none; /* Chrome all / Safari all */
