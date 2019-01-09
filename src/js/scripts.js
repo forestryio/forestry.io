@@ -11,7 +11,9 @@ import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
 import ASBGenerator from "./imports/asbButtonGenerator"
 import FeatureGates from "./imports/featureGates"
+import {setCodeTabs, initCodeTabs} from "./imports/code-tabs"
 
+window.setCodeTabs = setCodeTabs
 /**
  * Don't fire application logic
  * until the DOM is ready
@@ -128,4 +130,9 @@ contentLoaded()
     for (let i = 0; i < formspreeForms.length; i++) {
       new AjaxForm(formspreeForms[i])
     }
+
+    /**
+     * Tabbed code snippets
+     */
+    initCodeTabs()
   })

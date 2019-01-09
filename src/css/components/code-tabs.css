@@ -1,0 +1,32 @@
+.code-tabs {
+  display: flex;
+  flex-direction: column-reverse;
+  .tab {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .tab-labels {
+    color: $color-brand-light;
+    border-bottom: 2px solid $color-brand-light;
+    margin-bottom: 0.5em;
+  }
+  .tab-label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.2em;
+    margin-left: 0.2em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.active {
+      color: $color-black;
+      border-bottom: 2px solid $color-black;
+      margin-bottom: -2px;
+    }
+  }
+}
