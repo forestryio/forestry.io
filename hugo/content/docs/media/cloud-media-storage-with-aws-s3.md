@@ -40,18 +40,19 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
  4. In the _Set Permissions_ step ensure to uncheck the following options:
     * **Block new public ACLs and uploading public objects**
     * **Remove public access granted through public ACLs**
- 5. Create User Credentials for the new Bucket. Open _Services_ and select the **IAM** service.
- 6. Navigate to _Users_ and click on **Add User**.
- 7. Grant **Programmatic access** to create an _access key ID_ and _secret access key._
- 8. Choose **Attach existing policies directly.** You'l need to click on **Create Policy** in the _Set Permissions_ step.
- 9. Name and set your permissions for your policy. Below is an example of the minimum permissions necessary for Forestry's Media Library.
+ 5. Review and create your Bucket.
+ 6. Create User Credentials for the new Bucket. Open _Services_ and select the **IAM** service.
+ 7. Navigate to _Users_ and click on **Add User**.
+ 8. Grant **Programmatic access** to create an _access key ID_ and _secret access key._
+ 9. Choose **Attach existing policies directly.** You'l need to click on **Create Policy** in the _Set Permissions_ step.
+10. Name and set your permissions for your policy. Below is an example of the minimum permissions necessary for Forestry's Media Library.
 
     ![](/uploads/2019/01/policy-settings.png)
-10. Select your newly created policy as your user's permissions and finish the creation of your new user.
+11. Select your newly created policy as your user's permissions and finish the creation of your new user.
 
     ![](/uploads/2019/01/permissions-new-user.png)
-11. Take note of the **Access key ID** and the **Secret access key** and navigate to the _Media_ tab on your site's _Settings_ in Forestry
-12. Select **Amazon** **S3** as a _Media Storage Provider_ and fill in the **Bucket**, **Access Key** and **Secret**. Click on _Save Media Settings_. You are now connected to your S3 bucket. You can now upload an image in the _Media_ section to test your connection.
+12. Take note of the **Access key ID** and the **Secret access key** and navigate to the _Media_ tab on your site's _Settings_ in Forestry
+13. Select **Amazon** **S3** as a _Media Storage Provider_ and fill in the **Bucket**, **Access Key** and **Secret**. Click on _Save Media Settings_. You are now connected to your S3 bucket. You can now upload an image in the _Media_ section to test your connection.
 
 ![](/uploads/2019/01/s3-image.png)
 
