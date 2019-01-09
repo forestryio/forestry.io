@@ -72,7 +72,7 @@ Unfortunately, for the time being, you will need to manually update your front m
 
 ## Additional Resources
 
-Here we list a few resources that might be helpful for your S3 implementation. Different from dedicated image services (e.g. Cloudinary), S3 needs some additional setup to make eager and lazy image manipulations etc. possible.
+Here we list a few resources that might be helpful for your S3 implementation. Different from dedicated image services (e.g. Cloudinary), S3 needs some additional setup to make eager and lazy image manipulations possible.
 
 ### Image Manipulation
 
