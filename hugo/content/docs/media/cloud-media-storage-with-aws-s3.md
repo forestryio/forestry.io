@@ -53,13 +53,13 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
 11. Take note of the **Access key ID** and the **Secret access key** and navigate to the _Media_ tab on your site's _Settings_ in Forestry
 12. Select **Amazon** **S3** as a _Media Storage Provider_ and fill in the **Bucket**, **Access Key** and **Secret**. Click on _Save Media Settings_. You are now connected to your S3 bucket. You can now upload an image in the _Media_ section to test your connection.
 
-![Cloudinary sample image in media library](/uploads/2018/05/media-library-cloudinary.png)
+![](/uploads/2019/01/s3-image.png)
 
 ## Recommended Path Settings
 
 You will want to adjust your paths in the **Media** section to work with S3.
 
-* **Public Path**: You should enter the full URL to your S3 bucket. This will look something like `https://``{{ REGION }}``.amazonaws.com/``{{ BUCKET_NAME }}/`. 
+* **Public Path**: You should enter the full URL to your S3 bucket. This will look something like `https://``{{ REGION }}``.amazonaws.com/``{{ BUCKET_NAME }}/`.
   * AWS REGION format looks like `s3-us-west-2` except for the US EAST (North Virgina) region which is simply `s3`. ([full region list](https://docs.aws.amazon.com/general/latest/gr/rande.html))
 * **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter.
 
