@@ -7,3 +7,17 @@
   overflow-x: auto;
   border-radius: 4px;
 }
+
+/* Inline code */
+p > code {
+  background: $color-light-grey;
+  color: $color-brand;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.15em 0.5em;
+}
+
+pre > code {
+  font-family: "Roboto Mono", monospace;
+}
