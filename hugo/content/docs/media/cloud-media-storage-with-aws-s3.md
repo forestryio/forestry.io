@@ -48,7 +48,7 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
 10. Name and set your permissions for your policy. Below is an example of the minimum permissions necessary for Forestry's Media Library.
 
     ![](/uploads/2019/01/policy-settings.png)
-11. Select your newly created policy as your user's permissions and finish the creation of your new user.
+11. Set your newly created policy as your user's permissions and finish the creation of your new user.
 
     ![](/uploads/2019/01/permissions-new-user.png)
 12. Take note of the **Access key ID** and the **Secret access key** and navigate to the _Media_ tab on your site's _Settings_ in Forestry
@@ -78,3 +78,4 @@ Here we list a few resources that might be helpful for your S3 implementation. D
 
 * [Basic Architecture for lazy image processing](https://aws.amazon.com/blogs/compute/resize-images-on-the-fly-with-amazon-s3-aws-lambda-and-amazon-api-gateway/)
 * [Production-Ready Solution with Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/)
+* [Use a third-party service such as Imgix for image handling](https://docs.imgix.com/setup/serving-images)
