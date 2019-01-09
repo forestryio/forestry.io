@@ -68,3 +68,12 @@ You will want to adjust your paths in the **Media** section to work with S3.
 Currently, we are not able to automatically migrate existing media from a git repo to a user's AWS S3 Bucket. We recommend logging in to your AWS console, select your Bucket and bulk upload your images there. After the images are in your Bucket, they will also appear in your Media Library in Forestry.
 
 Unfortunately, for the time being, you will need to manually update your front matter to reassign the new images.
+
+## Additional Resources
+
+Here we list a few resources that might be helpful for your S3 implementation. Different from dedicated image services (e.g. Cloudinary), S3 needs some additional setup to make eager and lazy image manipulations etc. possible.
+
+### Image Manipulation
+
+* [Basic Architecture for lazy image processing](https://aws.amazon.com/blogs/compute/resize-images-on-the-fly-with-amazon-s3-aws-lambda-and-amazon-api-gateway/)
+* [Production-Ready Solution with Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/)
