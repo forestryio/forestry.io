@@ -1,14 +1,16 @@
 ---
 title: "Image Handling with S3 \U0001F5BC️ and Billing Contact Information \U0001F4B5"
 description: ''
-date: 2019-01-08 12:00:00 -1100
-authors: []
-publishdate: 2017-12-07 04:00:00 +0000
+date: 2019-01-09 12:00:00 -1100
+authors:
+- Sebastian Engels
+publishdate: 2019-01-09 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
