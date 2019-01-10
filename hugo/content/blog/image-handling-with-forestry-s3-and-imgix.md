@@ -56,3 +56,7 @@ To see your Billing Information you need to be the owner of your Organization.
 ### Fixed a Few Bugs 🐛
 
 * **Document Editing Status:** fixed an issue where the “currently being edited by…” status for a document would take 5-15 seconds to clear.
+
+***
+
+To stay on top of the improvements we make to Forestry, be sure to check our [**changelog**](https://forestry.io/docs/changelog/) from time to time!
