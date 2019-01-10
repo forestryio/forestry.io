@@ -1,5 +1,5 @@
 ---
-title: "Announcing: Image Handling with S3 \U0001F5BC️ + Billing Contact Information
+title: "Announcing Image Handling with S3 \U0001F5BC️ + Billing Contact Information
   \U0001F4B5"
 description: ''
 date: 2019-01-09 12:00:00 -1100
