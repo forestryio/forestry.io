@@ -31,7 +31,7 @@ The S3 integration makes it possible to efficiently store, organize and deliver 
 
 ![](/uploads/2019/01/dragndrop.png)
 
-With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore open up opportunities to add an image manipulation service of your choice. Popular solutions include [imgix](https://docs.imgix.com/setup/quick-start) and [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/).
+With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore allow you to add additional services for your images. A popular choice is the image delivery and manipulation service [imgix](https://docs.imgix.com/setup/quick-start) (or AWS' [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/)), try it out and let us know what you think.
 
 ![](/uploads/2019/01/manipulations-2.png)
 
