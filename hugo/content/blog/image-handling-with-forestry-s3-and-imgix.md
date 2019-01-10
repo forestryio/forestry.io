@@ -43,6 +43,12 @@ You can now update all your billing information for Organizations right in the a
 
 ![](/uploads/2019/01/billing-information.png)
 
+{{% tip %}}
+
+To see your Billing Information you need to be the owner of your Organization
+
+{{% /tip %}}
+
 ***
 
 ### Fixed a Few Bugs 🐛
