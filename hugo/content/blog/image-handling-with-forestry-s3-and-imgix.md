@@ -25,13 +25,13 @@ draft: true
 ---
 Happy New Year! We're starting into 2019 with an exciting new feature. Today we can announce S3 support as an image storage provider for Forestry.
 
-With S3 support you can now store your images outside of your repo and take control of your image handling. The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience simple and clean in Forestry.
+The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience in Forestry simple and clean.
 
 ![](/uploads/2019/01/Forestry S3.jpg)Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. Making it possible to use drag & drop upload and previewing their media assets.
 
 ![](/uploads/2019/01/dragndrop.png)
 
-Furthermore, uploading images to an S3 Bucket via Forestry opens up the opportunity to add image manipulation options of your choice. Popular solutions include [imgix](https://docs.imgix.com/setup/quick-start) and [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/).
+With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore open up opportunities to add an image manipulation service of your choice. Popular solutions include [imgix](https://docs.imgix.com/setup/quick-start) and [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/).
 
 ![](/uploads/2019/01/manipulations-2.png)
 
