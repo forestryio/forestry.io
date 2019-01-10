@@ -29,7 +29,7 @@ With S3 support you can now store your images outside of your repo and take cont
 
 ![](/uploads/2019/01/dragndrop.png)
 
-Add images to your S3 Bucket via Forestry and handle image manipulation with popular solutions like [imgix](https://docs.imgix.com/setup/quick-start) or [Serverless-Image-Handler]().
+Add images to your S3 Bucket via Forestry and handle image manipulation with popular solutions like [imgix](https://docs.imgix.com/setup/quick-start) or [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/).
 
 ![](/uploads/2019/01/manipulations-2.png)
 
