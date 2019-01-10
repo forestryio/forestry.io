@@ -1,5 +1,6 @@
 ---
-title: "Image Handling with S3 \U0001F5BC️ and Billing Contact Information \U0001F4B5"
+title: "Announcing: Image Handling with S3 \U0001F5BC️ + Billing Contact Information
+  \U0001F4B5"
 description: ''
 date: 2019-01-09 12:00:00 -1100
 authors:
@@ -27,7 +28,7 @@ Happy New Year! We're starting into 2019 with an exciting new feature. Today we 
 
 The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience in Forestry simple and clean.
 
-![](/uploads/2019/01/Forestry S3.jpg)Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. Making it possible to use drag & drop for uploads or offer previews of their media assets.
+![](/uploads/2019/01/Forestry S3.jpg)Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. Making it possible to use drag & drop for uploads or offer previews of their images.
 
 ![](/uploads/2019/01/dragndrop.png)
 
