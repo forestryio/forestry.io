@@ -151,6 +151,7 @@ pages:
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/create-in-app-documentation-for-content-editors.md
+- hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/block-labels-read-only-docs-and-more.md
 - hugo/content/blog/is-it-time-to-move-on-from-wordpress.md
@@ -210,7 +211,6 @@ pages:
 - hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
 - hugo/content/blog/image-handling-with-forestry-s3-and-imgix.md
-- hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/test.md
 - hugo/content/blog/what-s-new-in-jekyll-3.8.md
