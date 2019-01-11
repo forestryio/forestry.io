@@ -244,7 +244,7 @@ plugins:
 
 Commit URL: [264db43](https://github.com/desiredpersona/jekyll-test-site/commit/264db43d64760637b9e752104a44d0e9b81e81eb)
 
-It important to note that when using the `jekyll-include-cache` plugin you cannot rely on the [page context to pass variables to your include](https://github.com/benbalter/jekyll-include-cache#one-potential-gotcha). This limitation made it impossible to cache some of my include files without breaking the themes functionality.
+It's important to note that when using the `jekyll-include-cache` plugin you cannot rely on the [page context to pass variables to your include](https://github.com/benbalter/jekyll-include-cache#one-potential-gotcha). This limitation made it impossible to cache some of my include files without breaking the themes functionality.
 
 I started by caching the navigation in the header and footer of my site. These includes are being called on every page and don’t change that frequently.
 
@@ -264,11 +264,11 @@ After all these changes Jekyll now builds my site in **6.262** seconds a further
 
 In closing I have managed to shave a grand total of **9.852** seconds off my original build time of **16.114** seconds, which is a whopping **61.139%** speed improvement.
 
-It worth mentioning we can also enable [incremental regeneration](https://jekyllrb.com/docs/configuration/incremental-regeneration/) which helps shorten Jekyll build times by only generating the documents and pages that were updated since the previous build.
+It's worth mentioning we can also enable [incremental regeneration](https://jekyllrb.com/docs/configuration/incremental-regeneration/) which helps shorten Jekyll build times by only generating the documents and pages that were updated since the previous build.
 
     bundle exec jekyll serve --incremental
 
-You can also set `incremental: true` in Jekyll’s `_config.yml` file. Im seeing build times as low as **5.11** seconds with this feature enabled.
+Alternatively you can set `incremental: true` in Jekyll’s `_config.yml` file. Im seeing build times as low as **5.11** seconds with this feature enabled.
 
 Please consider posting your benchmarking results on [the Jekyll Forum](http://talk.jekyllrb.com/t/help-us-benchmark-jekyll/1629/17). Jekyll’s core team of volunteers are actively working on improving Jekyll’s performance and would appreciate your feedback.
 
