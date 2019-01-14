@@ -145,20 +145,6 @@
     max-width: 100%;
   }
 
-  /* Inline code */
-  code {
-    background: $color-light-grey;
-    color: $color-brand;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.15em 0.5em;
-  }
-
-  pre code {
-    color: $color-dark;
-  }
-
   p.tip {
     background: $color-grey;
     padding: 1rem 1rem 1rem 2rem;
