@@ -37,7 +37,7 @@ With S3 support you can now store your images outside of your repo and take cont
 
 ![](/uploads/2019/01/manipulations-2.png)
 
-**Ready to get started with S3?** Follow our [How-to guide](/docs/media/cloud-media-storage-with-aws-s3/) in the docs.
+**Ready to get started with S3?** Follow our [How-to guide](/docs/media/s3/) in the docs.
 
 ***
 
