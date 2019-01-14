@@ -5,7 +5,7 @@ description: ''
 date: 2019-01-09 23:00:00 +0000
 authors:
 - Sebastian Engels
-publishdate: 2019-01-14 10:00:00 -1100
+publishdate: 2019-01-14 21:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -19,8 +19,8 @@ cta:
   calls_to_action: []
 private: false
 weight: ''
-aliases: []
-menu: []
+aliases:
+- "/blog/image-handling-with-forestry-s3-and-imgix/"
 
 ---
 Happy New Year! We're starting into 2019 with an exciting new feature. 
