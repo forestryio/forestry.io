@@ -58,7 +58,7 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
 
 {{% warning %}}
 
-We usually recommend placing your S3 bucket behind a CDN (e.g. Imgix, Cloudfront or similar service). However, Forestry requires you to make objects publicly available at the moment (Step 4). This will be fixed in a future update. 
+Currently, Forestry needs to be able to upload public objects to your S3 bucket in order to display them in the media library (_see Step 4_). We plan to remove this requirement in a future update.
 
 {{% /warning%}}
 
