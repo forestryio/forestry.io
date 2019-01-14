@@ -10,6 +10,9 @@ paginate = 10
 pluralizeListTitles = false
 relativeURLs = false
 title = "Forestry.io"
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "dracula"
 [blackfriday]
 angledQuotes = false
 hrefTargetBlank = false

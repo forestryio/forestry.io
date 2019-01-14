@@ -215,24 +215,6 @@ tr:nth-child(odd) td {
     display: inline-block;
   }
 
-  /* Inline code */
-  code {
-    background: $color-light-grey;
-    color: $color-brand;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.15em 0.5em;
-  }
-
-  pre {
-    margin: 1rem 0;
-  }
-
-  pre code {
-    color: $color-dark;
-  }
-
   @media screen and (max-width: 1100px) {
     figure {
       max-width: 140% !important;

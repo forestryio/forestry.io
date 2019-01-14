@@ -1,0 +1,2 @@
+{{ $.Page.Scratch.Add "tablabels" (slice (.Get 0)) }}
+<div class="tab active" data-label="{{ urlize (.Get 0) }}">{{ .Inner }}</div>
