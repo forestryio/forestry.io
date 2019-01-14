@@ -1,7 +1,7 @@
 ---
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-publishdate: 2019-01-08 17:00:00 -1100
+publishdate: 2019-01-14 17:00:00 -1100
 authors:
 - Sebastian Engels
 expirydate: 2030-01-01 04:00:00 +0000
@@ -26,7 +26,6 @@ menu:
     name: S3
     weight: 4
     parent: Media
-draft: true
 
 ---
 Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html).
