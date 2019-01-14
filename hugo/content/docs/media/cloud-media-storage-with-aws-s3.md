@@ -21,6 +21,11 @@ private: false
 weight: ''
 aliases: []
 date: 2019-01-08 02:34:02 -1100
+menu:
+  docs:
+    name: S3
+    weight: 4
+    parent: Media
 draft: true
 
 ---

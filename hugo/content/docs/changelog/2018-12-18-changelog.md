@@ -2,15 +2,15 @@
 title: 2018/12/18 Changelog
 authors:
 - team forestry
-date: 2018-12-18 05:54:05 -1100
+date: 2018-12-18 16:54:05 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
 menu:
   changelog:
-    parent: Changelog
     name: 2018/12/18
+    parent: Changelog
     weight: 1
 
 ---
