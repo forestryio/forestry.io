@@ -1,6 +1,6 @@
 ---
 title: "Announcing Image Handling with S3 \U0001F5BC️ + Billing Contact Information
-  \U0001F4B5"
+  \U0001F4B5 and more"
 description: ''
 date: 2019-01-09 12:00:00 -1100
 authors:
@@ -51,6 +51,12 @@ You can now update all your billing information for Organizations right in the a
 To see your Billing Information you need to be the owner of your Organization.
 
 {{% /tip %}}
+
+***
+
+### Drag & Drop Functionality for Blocks on Mobile
+
+Drag & Drop until now was limited to the desktop version of Forestry. Now you can use this functionality on all mobile devices as well.
 
 ***
 
