@@ -34,7 +34,7 @@ Editors, marketers and writers can continue to use the Forestry Media Library wi
 
 ![](/uploads/2019/01/dragndrop.png)
 
-With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore allow you to add additional services for your images. A popular choice is the image delivery and manipulation service [imgix](https://docs.imgix.com/setup/quick-start) (or AWS' [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/)). Try it out and let us know what you think.
+With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore allow you to add additional services for your images. A popular choice for on-the-fly transformations is the image delivery and manipulation service [imgix](https://docs.imgix.com/setup/quick-start) (or AWS' [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/)). Try it out and let us know what you think.
 
 ![](/uploads/2019/01/manipulations-2.png)
 
@@ -64,7 +64,7 @@ Until now our Drag & Drop functionality was limited to the desktop version of Fo
 
 ***
 
-### Fixed a Few Bugs 🐛
+### Fixed a Bug or Two 🐛
 
 * **Document Editing Status:** fixed an issue where the “currently being edited by…” status for a document would take 5-15 seconds to clear.
 
