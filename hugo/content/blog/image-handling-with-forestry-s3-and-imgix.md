@@ -56,7 +56,9 @@ To see your Billing Information you need to be the owner of your Organization.
 
 ### Drag & Drop Functionality for Blocks on Mobile
 
-Drag & Drop until now was limited to the desktop version of Forestry. Now you can use this functionality on all mobile devices as well.
+Until now our Drag & Drop functionality was limited to the desktop version of Forestry. Now you can use this functionality on your mobile devices as well.
+
+![](/uploads/2019/01/dnd-blocks-mobile.gif)
 
 ***
 
