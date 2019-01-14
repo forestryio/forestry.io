@@ -65,4 +65,4 @@ Until now our Drag & Drop functionality for Blocks was limited to the desktop ve
 
 To stay on top of the improvements we make to Forestry, be sure to check our [**changelog**](https://forestry.io/docs/changelog/) from time to time!
 
-As always, if you come across any issues or suggestions, let us know on [Twitter](https://twitter.com/forestryio), in-app support or via [email](mailto:support@forestry.io)
+As always, if you come across a bug or have any suggestions, let us know on [Twitter](https://twitter.com/forestryio), in-app support or via [email](mailto:support@forestry.io)
