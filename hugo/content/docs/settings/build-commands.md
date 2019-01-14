@@ -21,12 +21,12 @@ Build commands are optional for all projects. Jekyll and Hugo projects have a de
 
 All sites are built in a Linux container and have access to the following tools:
 
-- Ruby
-- Bundler
-- Hugo
-- NodeJS
-- NPM
-- Yarn
+* Ruby
+* Bundler
+* Hugo
+* NodeJS
+* NPM
+* Yarn
 
 If your project has a `package.json` file, your `node_modules` will be installed automatically. Feel free to use NPM or Yarn scripts in your build commands!
 
@@ -34,11 +34,12 @@ If your project has a `package.json` file, your `node_modules` will be installed
 
 Build command configuration in Forestry consists of the **command**, the **output directory**, and any number of **environment variables**.
 
-### *Command*
+### _Command_
+
 The **Command** is a shell command that will be run inside the build environment to generate your site.
 
+### _Output Directory_
 
-### *Output Directory*
 You will use the **Output Directory** setting to tell Forestry where to find the generated HTML of your site after the build runs. For example, if your build command is `jekyll build --destination dist`, your site will be generated into a folder named `dist`, so you should set your **Output Directory** to `dist`.
 
 {{% tip "Why do I need to set the output directory in two places?" %}}
@@ -47,29 +48,27 @@ When we build your site, we treat your build command as a black box. In the abov
 In this example, the `--destination` flag could be omitted from your build command entirely if you wish, as long as you set the **output directory** to `_site`, which is the default destination that Jekyll will use when generating your site's HTML.
 {{% /tip %}}
 
-### *Environment Variables*
+### _Environment Variables_
 
 **Environment variables** are values that will be passed into the build environment. Depending on the static site generator you're using and how your site is coded, you can control different behaviors with environment variables.
 
 Additionally, you can override the following variables to control the preview environment:
 
 | Variable | Description | Default |
-|:---------|:------------|:--------|
-| `RUBY_VERSION` | Sets the version of ruby used in your environment. You can use any version installable via [rvm](https://rvm.io/). | `2.3.6` |
-| `NODE_VERSION` | Sets the version of nodejs used in your environment. You can use any version installable via [nvm](https://github.com/creationix/nvm). | `8` |
-| `HUGO_VERSION` | Version of Hugo to use | Version selected when importing site |
-| `HUGO_ENV` | Environment used by Hugo | `staging` for previews, `production` for publish. |
-| `HUGO_ENV` | Environment used by Jekyll | `staging` for preview, `production` for publish. |
+| :--- | :--- | :--- |
+| RUBY_VERSION | Sets the version of ruby used in your environment. You can use any version installable via rvm. | 2.3.6 |
+| NODE_VERSION | Sets the version of nodejs used in your environment. You can use any version installable via nvm. | 8 |
+| HUGO_VERSION | Version of Hugo to use | Version selected when importing site |
+| HUGO_ENV | Environment used by Hugo | staging for previews, production for publish. |
+| HUGO_ENV | Environment used by Jekyll | staging for preview, production for publish. |
 
 ## Defining Custom Build Commands
 
-Forestry currently recognizes two different commands for building your site: a **preview command**, and a **publish command**. 
+Forestry currently recognizes two different commands for building your site: a **preview command**, and a **publish command**.
 
-The **preview command** should build a development version of your site suitable for testing and previewing changes. Such a command will, for example, generate drafts as well as published content so that you can preview unfinished posts. 
+The **preview command** should build a development version of your site suitable for testing and previewing changes. Such a command will, for example, generate drafts as well as published content so that you can preview unfinished posts.
 
 The **publish command** should build a production-ready version of your site. This command wouldn't generate drafts, and may perform other production optimizations like minifying assets.
-
-
 
 ### Customizing the Preview Command
 
@@ -104,6 +103,7 @@ build:
 ```
 
 ### Example Config
+
 ```yaml
 build:
   # preview
@@ -125,6 +125,7 @@ When you import a new project, basic build commands will be configured for you b
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
+
 ```yaml
 build:
   # preview
@@ -141,8 +142,10 @@ build:
   - HUGO_ENV=production
   - HUGO_VERSION=#{self.site_settings.engine_version}
 ```
+
 {{% /tab %}}
 {{% tab "Jekyll" %}}
+
 ```yaml
 build:
   # preview
@@ -157,8 +160,10 @@ build:
   publish_env: 
   - JEKYLL_ENV=production
 ```
+
 {{% /tab %}}
 {{% tab "VuePress" %}}
+
 ```yaml
 build:
   # preview
@@ -171,25 +176,28 @@ build:
   output_directory: .vuepress/dist
   publish_env: 
 ```
+
 {{% /tab %}}
 {{% /code_tabs %}}
 
 ## Using NPM Scripts as Build Commands
 
-Of course, many modern frontend stacks leverage NPM libraries and might have a build process managed by a tool like Gulp or Webpack. Our build environment will automatically install your NPM packages and can run NPM scripts defined in a `package.json` file. 
+Of course, many modern frontend stacks leverage NPM libraries and might have a build process managed by a tool like Gulp or Webpack. Our build environment will automatically install your NPM packages and can run NPM scripts defined in a `package.json` file.
 
 When using custom build tools not already supported by our build environment, using NPM scripts is the recommended way to incorporate these tools into your preview or publish command.
 
 In the following example, we will run our VuePress build as an NPM script:
 
 ### 1. Install VuePress in your project
+
 This step is important, as you could otherwise run node packages on your local machine by installing them globally, but Forestry won't have these global packages installed.
 
 ```bash
 npm install --save vuepress
 ```
 
-### 2. Configure a build script in *package.json*
+### 2. Configure a build script in _package.json_
+
 Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
 
 ```json
@@ -199,6 +207,7 @@ Commands run as NPM scripts will automatically include any installed node module
 ```
 
 ### 3. Run the NPM script in your build command
+
 ```yaml
 build:
   preview_command: npm run forestry:preview
