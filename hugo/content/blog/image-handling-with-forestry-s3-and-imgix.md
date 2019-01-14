@@ -21,12 +21,11 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
-Happy New Year! We're starting into 2019 with an exciting new feature. Today we can announce S3 support as an image storage provider for Forestry.
+Happy New Year! We're starting into 2019 with an exciting new feature. 
 
-The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience in Forestry simple and clean.
+Today we can announce support for S3 as an image storage provider for Forestry. The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience in Forestry simple and clean.
 
 ![](/uploads/2019/01/Forestry S3.jpg)
 
@@ -34,7 +33,7 @@ Editors, marketers and writers can continue to use the Forestry Media Library wi
 
 ![](/uploads/2019/01/dragndrop.png)
 
-With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore allow you to add additional services for your images. A popular choice for on-the-fly transformations is the image delivery and manipulation service [imgix](https://docs.imgix.com/setup/quick-start) (or AWS' [Serverless-Image-Handler](https://aws.amazon.com/answers/web-applications/serverless-image-handler/)). Try it out and let us know what you think.
+With S3 support you can now store your images outside of your repo and take control of your image handling. S3 Buckets are widely supported and therefore allow you to add additional services for your images. A popular choice for on-the-fly transformations is the image delivery and manipulation service [imgix](https://docs.imgix.com/setup/quick-start). Try it out and let us know what you think.
 
 ![](/uploads/2019/01/manipulations-2.png)
 
@@ -58,7 +57,7 @@ To see your Billing Information you need to be the owner of your Organization.
 
 ### Drag & Drop Functionality for Blocks on Mobile 📱
 
-Until now our Drag & Drop functionality was limited to the desktop version of Forestry. Now you can use this functionality on your mobile devices as well.
+Until now our Drag & Drop functionality for Blocks was limited to the desktop version of Forestry. Now you can use this functionality on your mobile devices as well.
 
 ![](/uploads/2019/01/dnd-blocks-mobile.gif)
 
