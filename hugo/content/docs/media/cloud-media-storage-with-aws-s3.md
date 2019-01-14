@@ -56,12 +56,18 @@ Forestry supports storing your media in your own [AWS S3 bucket](https://docs.aw
 
 ![](/uploads/2019/01/s3-image.png)
 
+{{% warning %}}
+
+We usually recommend placing your S3 bucket behind a CDN (e.g. Imgix, Cloudfront or similar service). However, Forestry requires you to make objects publicly available at the moment (Step 4). This will be fixed in a future update. 
+
+{{% /warning%}}
+
 ## Recommended Path Settings
 
 You will want to adjust your paths in the **Media** section to work with S3.
 
 * **Public Path**: You should enter the full URL to your S3 bucket. This will look something like `https://``{{ REGION }}``.amazonaws.com/``{{ BUCKET_NAME }}/`.
-  * AWS REGION format looks like `s3-us-west-2` except for the US EAST (North Virgina) region which is simply `s3`. ([full region list](https://docs.aws.amazon.com/general/latest/gr/rande.html))
+  * AWS REGION format (e.g. `s3-us-west-2)` is consistent across regions with the exception of the US EAST 1 (North Virginia) region which is simply `s3`. ([full region list](https://docs.aws.amazon.com/general/latest/gr/rande.html))
 * **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter.
 
 ## Migrating Existing Media
