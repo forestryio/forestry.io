@@ -136,7 +136,6 @@ fields:
 pages:
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/_index.md
-- hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
 - hugo/content/blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - hugo/content/blog/march-27th-service-outage.md
 - hugo/content/blog/the-new-forestry-io.md
@@ -155,11 +154,9 @@ pages:
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/block-labels-read-only-docs-and-more.md
 - hugo/content/blog/is-it-time-to-move-on-from-wordpress.md
-- hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack.md
 - hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
-- hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
 - hugo/content/blog/snippets-custom-content-sections-and-more.md
 - hugo/content/blog/Introducing-Custom-Build-Commands.md
@@ -205,6 +202,9 @@ pages:
 - hugo/content/blog/search-with-algolia-in-hugo.md
 - hugo/content/blog/up-and-running-with-hugo.md
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
+- hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
+- hugo/content/blog/data-relationships-in-hugo.md
+- hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
 - hugo/content/careers/hiring-devops-engineer.md
 - hugo/content/asdd.md
 - hugo/content/careers/user-experience-ux-researcher.md

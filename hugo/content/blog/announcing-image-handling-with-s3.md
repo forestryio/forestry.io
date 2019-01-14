@@ -22,13 +22,13 @@ aliases:
 - "/blog/image-handling-with-forestry-s3-and-imgix/"
 
 ---
-Happy New Year! We're starting into 2019 with an exciting new feature. 
+Happy New Year! We're starting into 2019 with an exciting new feature.
 
 Today we can announce support for S3 as an image storage provider for Forestry. The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience in Forestry simple and clean.
 
 ![](/uploads/2019/01/Forestry S3.jpg)
 
-Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. Making it possible to use drag & drop for uploads or offer previews of their images.
+Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. This makes it possible to use drag & drop for uploads and offers previews for their images.
 
 ![](/uploads/2019/01/dragndrop.png)
 
