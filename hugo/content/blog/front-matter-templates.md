@@ -45,7 +45,7 @@ The following page makes use of a variety of front matter:
 
 <img src="/uploads/2017/12/front-matter-templates-1.jpg" alt="Forestry front matter demo" class="wider-than-text">
 
-```
+```yaml
 ---
 title: Astronomy
 layout: astronomy

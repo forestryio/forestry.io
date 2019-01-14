@@ -34,16 +34,20 @@ Let’s say we have a website that displays information for specific events. We 
 
 One way we can do this is with [taxonomies](https://gohugo.io/content-management/taxonomies/). Taxonomies are the primary way to associate pages in Hugo. To add a taxonomy, we just have to add this line to our `config.toml` file:
 
-    [taxonomies]
-      venue = "venues"
+```toml
+[taxonomies]
+    venue = "venues"
+```
 
 That’s all we need to let Hugo know about a new taxonomy. To use this taxonomy, we use the singular name of the taxonomy as a front matter key for our page:
 
-    ---
-    title: Party at TJ's
-    venue: monticello
-    ---
-    We hold these truths to be self-evident, that this party is going to rock.
+```md
+---
+title: Party at TJ's
+venue: monticello
+---
+We hold these truths to be self-evident, that this party is going to rock.
+```
 
 This is an easy way to link items together. Since I added `monticello`  as the venue for this event, a taxonomy term page will be created at `/venues/monticello`. This page will display all the events happening at `monticello`.
 
@@ -61,16 +65,20 @@ You can’t query headless bundles with `.Site.Pages` or `.Site.RegularPages`, b
 
 Let's switch our `venues` from a taxonomy to a headless bundle. After removing it from the `[taxonomy]` block in our `config.toml` file and deleting the file at `/content/venues/monticello/_index.md`, create  a new file at `/content/venues/index.md`. To identify the `venues` section as a headless bundle, insert the following front matter into that file:
 
-    ---
-    headless: true
-    ---
+```yaml
+---
+headless: true
+---
+```
 
 This will prevent the generator from creating HTML pages from any markdown files in this folder. Now, to add our venue, we create a file at `content/venues/monticello.md` with the following content:
 
-    ---
-    title: Monticello
-    address: 931 Thomas Jefferson Pkwy, Charlottesville, VA 22902
-    ---
+```yaml
+---
+title: Monticello
+address: 931 Thomas Jefferson Pkwy, Charlottesville, VA 22902
+---
+```
 
 Our `monticello.md` file is now the **single source of truth** within our site for information about this venue.
 
@@ -78,19 +86,23 @@ Our `monticello.md` file is now the **single source of truth** within our site f
 
 Since we’re now using a page and not a taxonomy term for venues, we need to make a small tweak to our event front matter. Instead of inserting the taxonomy term as the front matter value for `venue`, we will want to insert the filename of the venue file:
 
-    ---
-    title: Party at TJ's
-    venue: monticello.md
-    ---
+```yaml
+---
+title: Party at TJ's
+venue: monticello.md
+---
+```
 
 We can retrieve the venue data from this filename in our single event template with the following code:
 
-    {{ with .Site.GetPage "venues" }}
-        {{ with (index (.Resources.Match $.Params.venue) 0) }}
-            <p>Venue: {{ .Title }}</p>
-            <p>Address: {{ .Params.address }}</p>
-        {{ end }}
+```go-html-template
+{{ with .Site.GetPage "venues" }}
+    {{ with (index (.Resources.Match $.Params.venue) 0) }}
+        <p>Venue: {{ .Title }}</p>
+        <p>Address: {{ .Params.address }}</p>
     {{ end }}
+{{ end }}
+```
 
 We use `.Site.GetPage` to load up all the items in our `venues` bundle. It’s a little counterintuitive; `GetPage` sounds like you’re getting a single page, but when using page bundles you need to use `GetPage` to access the entire bundle. Once the `venues` bundle is retrieved, we use `.Resources.Match` to search all the pages in the bundle to find one whose filename matches the `venue` in our event front matter. When we find a match, we then output the venue information on the event page.
 
@@ -111,7 +123,7 @@ Select fields in Forestry’s Front Matter Templates have multiple data source o
 {{% tip %}}
 When using pages as a data source, Forestry saves the full path to the file from the root of your content directory. In our example, the venue is saved as `venues/monticello.md`. We need to make a small change to our layout code to accomodate this by stripping out the section from the path:
 
-```
+```go-text-template
 {{ with (index (.Resources.Match (index (last 1 (split $.Params.venue "/")) 0)) 0) }}
 ```
 

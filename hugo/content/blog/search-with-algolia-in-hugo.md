@@ -73,15 +73,17 @@ Don't have a Hugo site yet? Check out our [_Up & Running With Hugo_](/blog/up-an
 
 {{% /tip %}}
 
-    [outputFormats.Algolia]
-    baseName = "algolia"
-    isPlainText = true
-    mediaType = "application/json"
-    notAlternative = true
+```toml
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
 
-    [params.algolia]
-    vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-    params = ["categories", "tags"]
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+```
 
 In `[outputFormats.Algolia]`:
 
@@ -107,7 +109,7 @@ In the example above, we set `baseName` to `algolia`, which tells Hugo to look f
 
 Copy the contents below into `layouts/_default/list.algolia.json`
 
-```
+```go-text-template
 {{/* Generates a valid Algolia search index */}}
 {{- $.Scratch.Add "index" slice -}}
 {{- $section := $.Site.GetPage "section" .Section }}
@@ -142,8 +144,10 @@ We can do this in two ways, using the `outputs` [param](https://gohugo.io/templa
 
 For the purposes of this guide, we'll do the former. Open up your config file one more time, and add the following:
 
-    [outputs]
-    home = ["HTML", "RSS", "Algolia"]
+```toml
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+```
 
 This configuration tells Hugo to output the HTML document, the RSS Feed, and an Algolia index for your site's homepage, which will contain every other page on your site. (That's perfect!)
 
@@ -191,11 +195,15 @@ This will install the atomic-algolia package to a local `node_modules` folder an
 
 Next, open up the newly created `package.json`, where we'll add an NPM script to update your index. Find `"scripts"`, and add the following:
 
+```json
     "algolia": "atomic-algolia"
+```
 
 Now, you can update your index by running the following command:
 
+```go-text-template
     ALGOLIA_APP_ID={{ YOUR_APP_ID }} ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }} ALGOLIA_INDEX_NAME={{ YOUR_INDEX NAME }} ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }} npm run algolia
+```
 
 {{% tip %}}
 
@@ -209,10 +217,12 @@ Passing in the environment variables to the NPM script each time you call it isn
 
 Create a new file in the root of your Hugo project called `.env`, and add the following contents:
 
-    ALGOLIA_APP_ID={{ YOUR_APP_ID }}
-    ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }}
-    ALGOLIA_INDEX_NAME={{ YOUR_INDEX_NAME }}
-    ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }}
+```go-text-template
+ALGOLIA_APP_ID={{ YOUR_APP_ID }}
+ALGOLIA_ADMIN_KEY={{ YOUR_ADMIN_KEY }}
+ALGOLIA_INDEX_NAME={{ YOUR_INDEX_NAME }}
+ALGOLIA_INDEX_FILE={{ PATH/TO/algolia.json }}
+```
 
 Now you can update your index more simply by running:
 
@@ -256,29 +266,33 @@ Next, you'll need to configure the function with your indices and Algolia app in
 
 First, copy `config/secrets.yml.stub` to `config/secrets.yml` and then open it up in your favorite text editor.
 
-    ALGOLIA_APP_ID: {{ YOUR_APP_ID }}
-    ALGOLIA_ADMIN_KEY: {{ YOUR_ADMIN_KEY }}
-    DEBOUNCE: 0
+```go-text-template
+ALGOLIA_APP_ID: {{ YOUR_APP_ID }}
+ALGOLIA_ADMIN_KEY: {{ YOUR_ADMIN_KEY }}
+DEBOUNCE: 0
+```
 
 Then, open up `config/index.js` in your favorite text editor:
 
-    module.exports = () => {
+```js
+module.exports = () => {
 
-      var indexes = [
+    var indexes = [
 
-        {
+    {
 
-          name: "YOUR_INDEX_NAME",
+        name: "YOUR_INDEX_NAME",
 
-          url: "PUBLIC_URL_OF_INDEX"
-
-        }
-
-      ]
-
-      return JSON.stringify(indexes)
+        url: "PUBLIC_URL_OF_INDEX"
 
     }
+
+    ]
+
+    return JSON.stringify(indexes)
+
+}
+```
 
 Update `name` to the name of your index that you set up earlier, and `url` to `yourdomain.com/algola.json`, replacing `yourdomain.com`with your site's domain.
 

@@ -12,7 +12,7 @@ relativeURLs = false
 title = "Forestry.io"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
-pygmentsStyle = "dracula"
+pygmentsStyle = "monokai"
 [blackfriday]
 angledQuotes = false
 hrefTargetBlank = false
