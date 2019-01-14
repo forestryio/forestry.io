@@ -18,8 +18,9 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
-aliases: []
+weight: 4
+aliases:
+- s3
 date: 2019-01-08 02:34:02 -1100
 menu:
   docs:
