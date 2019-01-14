@@ -65,5 +65,12 @@ file_template: ":year:/:month:/:filename:"
 build:
   preview_command: npm run forestry:preview
   publish_command: npm run preDeploy
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.42.2
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.42.2
+  preview_output_directory: public
   output_directory: dist
 version: 0.42.2
