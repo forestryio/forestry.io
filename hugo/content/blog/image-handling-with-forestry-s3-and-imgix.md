@@ -5,7 +5,7 @@ description: ''
 date: 2019-01-09 12:00:00 -1100
 authors:
 - Sebastian Engels
-publishdate: 2019-01-09 17:00:00 -1100
+publishdate: 2019-01-14 17:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -61,12 +61,6 @@ To see your Billing Information you need to be the owner of your Organization.
 Until now our Drag & Drop functionality was limited to the desktop version of Forestry. Now you can use this functionality on your mobile devices as well.
 
 ![](/uploads/2019/01/dnd-blocks-mobile.gif)
-
-***
-
-### Fixed a Bug or Two 🐛
-
-* **Document Editing Status:** fixed an issue where the “currently being edited by…” status for a document would take 5-15 seconds to clear.
 
 ***
 
