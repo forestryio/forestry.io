@@ -9,7 +9,8 @@
 }
 
 /* Inline code */
-p > code {
+p > code,
+td > code {
   background: $color-light-grey;
   color: $color-brand;
   font-family: "Roboto Mono", monospace;
