@@ -2,10 +2,10 @@
 title: "Announcing Image Handling with S3 \U0001F5BC️ + Billing Contact Information
   \U0001F4B5 and more"
 description: ''
-date: 2019-01-09 12:00:00 -1100
+date: 2019-01-09 23:00:00 +0000
 authors:
 - Sebastian Engels
-publishdate: 2019-01-14 17:00:00 -1100
+publishdate: 2019-01-15 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -65,3 +65,5 @@ Until now our Drag & Drop functionality was limited to the desktop version of Fo
 ***
 
 To stay on top of the improvements we make to Forestry, be sure to check our [**changelog**](https://forestry.io/docs/changelog/) from time to time!
+
+As always, if you come across any issues or suggestions, let us know on [Twitter](https://twitter.com/forestryio), in-app support or via [email](mailto:support@forestry.io)
