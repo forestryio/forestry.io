@@ -28,7 +28,9 @@ Happy New Year! We're starting into 2019 with an exciting new feature. Today we 
 
 The S3 integration makes it possible to efficiently store, organize and deliver images while keeping the editing experience in Forestry simple and clean.
 
-![](/uploads/2019/01/Forestry S3.jpg)Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. Making it possible to use drag & drop for uploads or offer previews of their images.
+![](/uploads/2019/01/Forestry S3.jpg)
+
+Editors, marketers and writers can continue to use the Forestry Media Library without even knowing that they are using S3 in the backend. Making it possible to use drag & drop for uploads or offer previews of their images.
 
 ![](/uploads/2019/01/dragndrop.png)
 
@@ -54,7 +56,7 @@ To see your Billing Information you need to be the owner of your Organization.
 
 ***
 
-### Drag & Drop Functionality for Blocks on Mobile
+### Drag & Drop Functionality for Blocks on Mobile 📱
 
 Until now our Drag & Drop functionality was limited to the desktop version of Forestry. Now you can use this functionality on your mobile devices as well.
 
