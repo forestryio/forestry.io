@@ -8,7 +8,7 @@ date: 2019-01-15 04:00:00 +0000
 draft: true
 
 ---
-Forestry respects the configuration set for your Front Matter format (JSON, TOML or YAML) set in you `config.yml` or `config.tml` file. 
+Forestry respects the configuration set for your Front Matter format (JSON, TOML or YAML) set in your `config` file.
 
 {{% code_tabs %}} {{% tab "toml" %}}
 
