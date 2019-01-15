@@ -1,5 +1,5 @@
 ---
-title: How to Migrate Site to a Different Repo or Git Provider
+title: How to Migrate a Site to a Different Repo or Git Provider
 weight: 1
 layout: single
 publishdate: 2019-01-15 04:00:00 +0000
