@@ -13,7 +13,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 6
+    weight: 8
 
 ---
 Forestry will use whatever version of Jekyll is specified in your `Gemfile`.

@@ -8,11 +8,11 @@ languageCode = "en"
 metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
-relativeURLs = false
-title = "Forestry.io"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "monokai"
+relativeURLs = false
+title = "Forestry.io"
 [blackfriday]
 angledQuotes = false
 hrefTargetBlank = false

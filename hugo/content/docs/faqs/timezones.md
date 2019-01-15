@@ -10,7 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 1
+    weight: 3
 
 ---
 ![You may see a different timezone in your commit than you see in the Forestry UI.](/uploads/2018/10/forestry-timezones.png)

@@ -1,14 +1,13 @@
 ---
 title: Instant Previews
-draft: true
-date: 2019-01-08
+date: 2019-01-08 00:00:00 +0000
 menu:
   docs:
-    name: Instant Previews
     parent: Settings & Configuration
-    weight: 11
----
+    weight: 9
+draft: true
 
+---
 {{% warning %}}
 This feature is currently in private beta.
 {{% /warning %}}

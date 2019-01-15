@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 8
+    weight: 10
 
 ---
 Forestry supports all stable releases of Hugo. If your project requires a version that is not available in the version dropdown, please [let us know](/support/) and we can add it.

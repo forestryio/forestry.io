@@ -1,10 +1,15 @@
 ---
 title: How to use YAML with Hugo?
-weight: 1
+weight: 2
 layout: single
 publishdate: 2019-01-15 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2019-01-15 04:00:00 +0000
+menu:
+  faqs:
+    name: How to use YAML or JSON with Hugo?
+    weight: 2
+    parent: FAQs
 draft: true
 
 ---

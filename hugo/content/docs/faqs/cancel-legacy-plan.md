@@ -11,7 +11,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 3
+    weight: 5
 
 ---
 To cancel a legacy plan (e.g. the _Team Plan_) navigate to your dashboard and click on the "..." next to your site name. From there, select "Downgrade Plan" in the dropdown.

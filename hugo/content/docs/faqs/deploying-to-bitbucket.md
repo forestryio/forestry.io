@@ -8,7 +8,7 @@ date: 2018-11-09 04:00:00 +0000
 menu:
   faqs:
     parent: FAQs
-    weight: 10
+    weight: 12
 
 ---
 Bitbucket allows you to [host a website](https://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html) by pushing static HTML to a branch in your Bitbucket repo, much like GitHub Pages. Previously, users with a Bitbucket repo could configure their site to be deployed back to Bitbucket, much like our [GitHub Pages deployment option](/docs/hosting/github-pages/).

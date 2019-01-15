@@ -22,7 +22,7 @@ aliases: []
 menu:
   faqs:
     name: What are Guests
-    weight: 4
+    weight: 6
     parent: FAQs
 
 ---
