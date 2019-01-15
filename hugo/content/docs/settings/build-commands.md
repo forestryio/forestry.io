@@ -118,6 +118,15 @@ build:
   publish_env: 
   - HUGO_ENV=production
 ```
+{{% feature_flag "preview-method" "kubernetes" %}}
+### Instant Previews
+
+As mentioned, your preview command should *not* start a development server, as this will cause the preview to be stuck generaring indefinitely.
+
+However, our **instant previews** feature treats preview generation differently, allowing for you to spin up a development server in our preview environment which will drastically reduce preview times in most cases.
+
+To learn more about how to use instant previews, view the [instant previews documentation](/docs/instant-previews/).
+{{% /feature_flag %}}
 
 ## Default Commands
 
@@ -172,7 +181,52 @@ build:
   publish_env: 
 ```
 {{% /tab %}}
+{{% tab "Gatsby [beta]" %}}
+```yaml
+build:
+  # preview
+  preview_command: gatsby build
+  preview_output_directory: public
+  preview_env:
+
+  # publish
+  publish_command: gatsby build
+  output_directory: public
+  publish_env: 
+
+```
+{{% /tab %}}
 {{% /code_tabs %}}
+
+{{% feature_flag "preview-method" "kubernetes" %}}
+### Default Instant Preview Commands
+{{% code_tabs %}}
+{{% tab "Hugo" %}}
+```yaml
+build:
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
+```
+{{% /tab %}}
+{{% tab "Jekyll" %}}
+```yaml
+build:
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+```
+{{% /tab %}}
+{{% tab "VuePress" %}}
+```yaml
+build:
+  instant_preview_command: vuepress dev -p 8080 -h 0.0.0.0
+```
+{{% /tab %}}
+{{% tab "Gatsby" %}}
+```yaml
+build:
+  instant_preview_command: gatsby develop -H 0.0.0.0 -p 8080
+```
+{{% /tab %}}
+{{% /code_tabs %}}
+{{% /feature_flag %}}
 
 ## Using NPM Scripts as Build Commands
 
