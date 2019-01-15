@@ -25,7 +25,7 @@ menu:
     weight: 6
 
 ---
-**Snippets** in Forestry are pre-defined chunks of text that can be inserted into your content. You can put anything in a snippet that you might normally insert into your content, but they are especially useful in conjunction with [shortcodes](https://gohugo.io/content-management/shortcodes/) in Hugo or certain [Liquid tags](https://jekyllrb.com/docs/plugins/#tags) in Jekyll,
+**Snippets** in Forestry are pre-defined chunks of text that can be inserted into your content. You can put anything in a snippet that you might normally insert into your content, but they are especially useful in conjunction with [shortcodes](https://gohugo.io/content-management/shortcodes/) in Hugo or certain [Liquid tags](https://jekyllrb.com/docs/plugins/tags/) in Jekyll,
 
 ## Creating Snippets
 
