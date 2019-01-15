@@ -51,7 +51,7 @@ In this Jekyll example, the individual block's front matter will be available to
 ```
 {% for block in page.page_sections %}
     {% assign template = block.template %}
-    {% case template%}
+    {% case template %}
     {% when 'hero-section' %}
         {% include blocks/hero.html %}
     {% when 'call-to-action' %}
