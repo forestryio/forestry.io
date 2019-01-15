@@ -1,5 +1,5 @@
 ---
-title: How to use the default Front Matter format to YAML or JSON with Hugo?
+title: How to change the default Front Matter format to YAML or JSON with Hugo?
 weight: 2
 layout: single
 publishdate: 2019-01-15 04:00:00 +0000
