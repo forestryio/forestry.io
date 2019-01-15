@@ -196,7 +196,6 @@ pages:
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/_index.md
 - hugo/content/careers/marketing.md
-- hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/careers/software-engineer.md
 - hugo/content/blog/sawmill-layout-composer-for-hugo-and-forestry.md
 - hugo/content/blog/search-with-algolia-in-hugo.md
@@ -209,6 +208,7 @@ pages:
 - hugo/content/asdd.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/blog/better-content-management-for-gatsby.md
+- hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/test.md
