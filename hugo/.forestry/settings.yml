@@ -71,6 +71,6 @@ build:
   publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.42.2
-  preview_output_directory: public
+  preview_output_directory: dist
   output_directory: dist
 version: 0.42.2
