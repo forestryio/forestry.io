@@ -39,3 +39,9 @@ There are only a couple exceptions to this rule:
   * Your deployment settings include sensitive information. Forestry will never store sensitive information in your Git repository.
 * Invited Guests
   * Guests will need to be re-invited to the new site.
+
+{{% warning %}}
+
+Importing your existing repo as a new site will automatically connect your remote admin to the new site and remove the connection from the old site.
+
+{{% /warning %}}
