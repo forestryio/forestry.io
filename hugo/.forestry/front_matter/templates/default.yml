@@ -210,6 +210,7 @@ pages:
 - hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
+- hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/test.md
 - hugo/content/blog/what-s-new-in-jekyll-3.8.md
