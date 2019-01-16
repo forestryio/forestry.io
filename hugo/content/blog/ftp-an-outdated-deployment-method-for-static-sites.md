@@ -31,9 +31,9 @@ Current users of the FTP deployment method are able to continue to use FTP for t
 
 A lot has been said on the security vulnerabilities of plain FTP already. [This](https://www.ssh.com/ssh/ftp/server), [this](http://blog.jdpfu.com/2011/07/10/why-you-need-to-stop-using-ftp) or [this](https://www.motherjones.com/politics/2017/10/trump-election-commissioners-voter-database-is-a-ripe-target-for-hackers/) and [the list goes on](https://www.google.com/search?q=ftp+security+issues&oq=ftp+security+issues&aqs=chrome.0.69i59j0l4.3491j0j4&sourceid=chrome&ie=UTF-8). FTP hasn't been secure since the mid-1990s but Forestry has supported it until now as it is often an easy way to kick the tires and get started with a demo or test site.
 
-The simplicity of FTP is certainly its biggest selling point but even easier ways to host and deploy your sites has emerged and they are gaining rapid adoption in the developer community. That's why we believe it is time to lay FTP-support to rest and stop letting people board this train into no-man's-land.
+The simplicity of FTP is certainly its biggest selling point but even easier ways to host and deploy your sites has emerged and they are gaining rapid adoption in the developer community. That's why we believe it is time to lay FTP-support to rest and stop letting people board this train to no-man's-land.
 
-<div style="width:100%;height:0;padding-bottom:46%;position:relative;"><iframe src="[https://giphy.com/embed/Az1CJ2MEjmsp2](https://giphy.com/embed/Az1CJ2MEjmsp2 "https://giphy.com/embed/Az1CJ2MEjmsp2")" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+<div style="width:100%;height:0;padding-bottom:46%;position:relative;"><iframe src="https://giphy.com/embed/Az1CJ2MEjmsp2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 ## Future-Proof Markdown
 
