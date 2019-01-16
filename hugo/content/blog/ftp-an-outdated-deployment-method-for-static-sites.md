@@ -35,42 +35,24 @@ The simplicity of FTP is certainly its biggest selling point but even easier way
 
 <div style="width:100%;height:0;padding-bottom:46%;position:relative;"><iframe src="https://giphy.com/embed/Az1CJ2MEjmsp2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
-## Future-Proof Markdown
+## We'll let FTP die
 
-WYSIWYG Editors were created for a valid reason - HTML is hard to read and content editors shouldn't need to learn HTML to structure and write content. However, they are notoriously known for creating clunky, unreadable, hard to maintain code, affecting not only your ability to rank high on search engines but also the well-being of your developers.
+Forestry will stop supporting FTP, FTP with Implicit SSL and FTP with TLS/SSL starting **XX/XX/XXXX**. SFTP (or SSH-based FTP) continues to be available through Forestry and we have no plans of removing support for this very viable deployment option.  
+  
+Existing sites that use FTP, FTP with Implicit SSL or FTP with TLS/SSL will be able to continue using it. However, new users and new sites won't be able to see this option anymore starting on the date mentioned above.  
+  
+We understand this might cause some issues for users that are new to the static space and that aren't familiar with other hosting options.   
+  
+To  those users I'd like to say: "This is where the good part starts!" You'll be able to deploy your new sites within seconds and likely save much of your annual costs by using the providers I outline below.
 
-Markdown maintains a simple readable text (e.g. **word** -> **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if your editors don't want to learn the simple Markdown syntax right away, they will be able to add content, the Markdown just spices things up.
+## How to deploy and host static sites in 2019
 
-With HTML WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
+We put together a few tips and providers to make it easier for you to get started with static sites. The major selling point for these methods is that they distribute your site across multiple CDNs making your time to first byte ultra short. [We wrote about this before](https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/) and it was quite popular.
 
-![](/uploads/2018/04/woof-woof-test.png)
+### Git-based deployment methods
 
-However, the big caveat is that editors won't be able to immediately see the styling of a heading, bold, italic or linked word it can make adoption slightly more difficult for non-tech users. To help with that content editors in Forestry.io use a **Markdown WYSIWYG Editor** that provides a simplified formatting giving content editors control over the styling of their article.
+In recent years providers such as Netlify, Github Pages or Zeit have caused quite a bit of a wave. These providers offer a very generous free plan, which is more than enough for most personal, non-profit or semi-commercial sites. 
 
-## Tools and Tips to Migrate Existing Site
+Github Pages and Zeit simply take your repository and host it for you. This is more than enough and can easily be configured with Forestry. You'll use the deployment method "Github Pages" (limited to Github at the moment). We wrote a [quick guide](https://forestry.io/docs/hosting/github-pages/) on how to set up Github Pages (also applies to Zeit).
 
-We put together a few tips to make your migration easier.
-
-### Automate Migration with Pandoc
-
-If you need to convert files from one markup format into another, pandoc is your swiss-army knife. The learning curve is a little steep but if you have a lot of pages and you want to convert them automatically, this is a tool worth looking at.
-
-[https://pandoc.org/](https://pandoc.org/ "https://pandoc.org/")
-
-### Simple Paste and Translate
-
-For those of you that just have a few pages to migrate, doing it manually might be more efficient and more accurate. A good tool to get a jump-start on converting pages manually is Dom Christie's _Turndown_ project.
-
-[https://domchristie.github.io/turndown/](https://domchristie.github.io/turndown/ "https://domchristie.github.io/turndown/")
-
-### Import to Hugo and Migrate later
-
-Maybe your old content doesn't necessarily need to be updated immediately. In that case just follow the tutorial below and get started with your new Hugo page and set up Markdown for any future updates.
-
-[http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/](http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/ "http://whipperstacker.com/2016/09/22/convert-an-existing-site-into-hugo/")
-
-{{% tip %}}  
-A similar setup works for Jekyll as well. Consult the docs [https://jekyllrb.com/tutorials/convert-site-to-jekyll/](https://jekyllrb.com/tutorials/convert-site-to-jekyll/ "https://jekyllrb.com/tutorials/convert-site-to-jekyll/")  
-{{% /tip %}}
-
-At Forestry.io we want to provide you with the best content editing experience and we believe Markdown gives us the simplicity to start creating content for static sites right away and the flexibility to further improve your editor over time.
+Netlify can also be used with Gitlab or Bitbucket and they offer some additional tooling. You can have them use a custom build command to built your site. To use Netlify with Forestry you simply need use the default deployment setting "Commit to source repo only".
