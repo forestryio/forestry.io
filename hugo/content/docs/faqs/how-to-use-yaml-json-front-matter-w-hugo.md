@@ -9,7 +9,6 @@ menu:
   faqs:
     weight: 2
     parent: FAQs
-draft: true
 
 ---
 Forestry respects the configuration set in your `config` file. The variable you have to set to change the default Front Matter format is called `metaDataFormat`.
