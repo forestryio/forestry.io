@@ -12,7 +12,7 @@ menu:
 draft: true
 
 ---
-Forestry respects the configuration set for your Front Matter format (JSON, TOML or YAML) set in your `config` file.
+Forestry respects the configuration set in your `config` file. The variable you have to set to change the default Front Matter format is called `metaDataFormat`.
 
 {{% code_tabs %}} {{% tab "toml" %}}
 
@@ -22,6 +22,6 @@ Forestry respects the configuration set for your Front Matter format (JSON, TOML
 {{% /tab %}} {{% tab "yaml" %}}
 
     ## Possible options "yaml", "toml" or "json"
-    metaDataFormat: "toml"
+    metaDataFormat: "yaml"
 
 {{% /tab %}} {{% /code_tabs %}}
