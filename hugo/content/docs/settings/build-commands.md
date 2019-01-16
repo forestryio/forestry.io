@@ -3,7 +3,7 @@ title: Build Commands
 weight: 7
 publishdate: 2018-09-19 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-09-19 04:00:00 +0000
+date: 2019-01-16 04:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -56,11 +56,11 @@ Additionally, you can override the following variables to control the preview en
 
 | Variable | Description | Default |
 | :--- | :--- | :--- |
-| RUBY_VERSION | Sets the version of ruby used in your environment. You can use any version installable via rvm. | 2.3.6 |
-| NODE_VERSION | Sets the version of nodejs used in your environment. You can use any version installable via nvm. | 8 |
-| HUGO_VERSION | Version of Hugo to use | Version selected when importing site |
-| HUGO_ENV | Environment used by Hugo | staging for previews, production for publish. |
-| HUGO_ENV | Environment used by Jekyll | staging for preview, production for publish. |
+| `RUBY_VERSION` | Sets the version of ruby used in your environment. You can use any version installable via rvm. | `2.3.6` |
+| `NODE_VERSION` | Sets the version of nodejs used in your environment. You can use any version installable via nvm. | `8` |
+| `HUGO_VERSION` | Version of Hugo to use | Version selected when importing site |
+| `HUGO_ENV` | Environment used by Hugo | `staging` for previews, `production` for publish. |
+| `JEKYLL_ENV` | Environment used by Jekyll | `staging` for preview, `production` for publish. |
 
 ## Defining Custom Build Commands
 
