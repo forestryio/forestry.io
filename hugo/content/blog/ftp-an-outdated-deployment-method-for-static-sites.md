@@ -1,12 +1,10 @@
 ---
 title: 'FTP: An Outdated Deployment Method for Static Sites'
-description: 'Considering the issues the HTML WYSIWYG Editor causes and the merits
-  Markdown provides we made the decision to discontinue our HTML file support for
-  the WYSIWYG Editor on 5/11/2018. '
-date: 2018-04-16 08:57:29 +0000
+description: ''
+date: 2019-01-15 22:57:29 -1100
 authors:
 - Sebastian Engels
-publishdate: 2018-04-16 03:00:00 +0000
+publishdate: 2019-01-16 07:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 categories:
 - CMS
@@ -21,25 +19,28 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 draft: true
 
 ---
 {{% warning %}}
-We are not changing or removing the Markdown WYSIWYG editor. Our Markdown editor will continue to offer both plaintext and WYSIWYG input modes. In fact, removing the HTML WYSIWYG editor will allow us to focus on making the Markdown editor even better.{{% /warning %}}
 
-The  HTML WYSIWYG Editor has proven to be less and less the state-of-the-art content editing experience it once set out to be. Considering the issues the HTML WYSIWYG Editor causes and the merits Markdown provides we made the decision to discontinue our WYSIWYG HTML Editor on 5/11/2018.
+Current users of the FTP deployment method are able to continue to use FTP for the foreseeable future. However, we won't add any additional features or output and we truly believe that you should switch to a more secure deployment method such as SFTP (SSH-based deployment).  
+New users won't be able to select plain-old FTP as a deployment method anymore. See below to learn about state-of-the-art alternatives.
 
-For those limited users that are impacted by this change we will continue to provide the plaintext editor to edit HTML files.
+{{% /warning %}}
 
-![](/uploads/2018/04/source-html-editor-1.png)
+A lot has been said on the security vulnerabilities of plain FTP already. [This](https://www.ssh.com/ssh/ftp/server), [this](http://blog.jdpfu.com/2011/07/10/why-you-need-to-stop-using-ftp) or [this](https://www.motherjones.com/politics/2017/10/trump-election-commissioners-voter-database-is-a-ripe-target-for-hackers/) and [the list goes on](https://www.google.com/search?q=ftp+security+issues&oq=ftp+security+issues&aqs=chrome.0.69i59j0l4.3491j0j4&sourceid=chrome&ie=UTF-8). FTP hasn't been secure since the mid-1990s but Forestry has supported it until now as it is often an easy way to kick the tires and get started with a demo or test site.
 
-Since Markdown proves to be increasingly ubiquitous, we want to lay out clearly why we believe Markdown is the future and how you can make the move as well.
+The simplicity of FTP is certainly its biggest selling point but even easier ways to host and deploy your sites has emerged and they are gaining rapid adoption in the developer community. That's why we believe it is time to lay FTP-support to rest and stop letting people board this train into no-man's-land. 
+
+<iframe src="[https://giphy.com/embed/Az1CJ2MEjmsp2](https://giphy.com/embed/Az1CJ2MEjmsp2 "https://giphy.com/embed/Az1CJ2MEjmsp2")" width="480" height="221" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="[https://giphy.com/gifs/bare-barren-Az1CJ2MEjmsp2](https://giphy.com/gifs/bare-barren-Az1CJ2MEjmsp2 "https://giphy.com/gifs/bare-barren-Az1CJ2MEjmsp2")">via GIPHY</a></p>
 
 ## Future-Proof Markdown
 
 WYSIWYG Editors were created for a valid reason - HTML is hard to read and content editors shouldn't need to learn HTML to structure and write content. However, they are notoriously known for creating clunky, unreadable, hard to maintain code, affecting not only your ability to rank high on search engines but also the well-being of your developers.
 
-Markdown maintains a simple readable text (e.g. \*\*word\*\* -> **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if your editors don't want to learn the simple Markdown syntax right away, they will be able to add content, the Markdown just spices things up.
+Markdown maintains a simple readable text (e.g. **word** -> **word**) that can be converted into consistent HTML. The styling will be applied separately and can be easily migrated to a new design without having to alter the content itself. Even if your editors don't want to learn the simple Markdown syntax right away, they will be able to add content, the Markdown just spices things up.
 
 With HTML WYSIWYG Editors you often don't know whether content was formatted consistently without going into the code (e.g. H1 can often look similar to a larger sized font that was set to bold). Markdown takes care of this issue by forcing a consistent mark up through limiting options.
 
