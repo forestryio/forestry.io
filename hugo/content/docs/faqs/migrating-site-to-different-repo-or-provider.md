@@ -9,7 +9,6 @@ menu:
   faqs:
     parent: FAQs
     weight: 1
-draft: true
 
 ---
 If you consider switching to a different provider or there is an issue with your current import of your repository in Forestry, you might consider deleting your current import of your repository and importing it as a new site.
