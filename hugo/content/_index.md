@@ -6,7 +6,7 @@ description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to
   sites.
 authors:
 - forestryio
-blocks:
+blocks: 
 hero:
   headline: A static CMS that **commits**
   textline: Sync your Jekyll, Hugo or VuePress site. Your editors will love it and
@@ -15,7 +15,7 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
     button: true
-  - permalink: "https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll"
+  - permalink: https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll
     textline: Launch Demo
     button: false
   video:
