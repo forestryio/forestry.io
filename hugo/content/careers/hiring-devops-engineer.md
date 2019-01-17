@@ -18,6 +18,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
+draft: true
 
 ---
 # Devops Engineer
