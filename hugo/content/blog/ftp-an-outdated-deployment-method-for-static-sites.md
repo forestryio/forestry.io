@@ -51,7 +51,7 @@ We put together a few tips and providers to make it easier for you to get starte
 
 ### Git-based deployment methods
 
-In recent years providers such as Netlify, Github Pages or Zeit have caused quite a bit of a wave. These providers offer a very generous free plan, which is more than enough for most personal, non-profit or semi-commercial sites.
+In recent years providers such as Netlify, Github Pages or Zeit have caused quite a bit of a wave. These providers offer a very generous free plan, which is more than enough for most personal, non-profit or semi-commercial sites. Another benefit is certainly the ease-of-use, you can set up a hosted site within only a few minutes.
 
 Github Pages and Zeit simply take your repository and host it for you. This is more than enough and can easily be configured with Forestry. You'll use the deployment method "Github Pages" (limited to Github as a storage provider at the moment). Read our [quick guide](https://forestry.io/docs/hosting/github-pages/) on how to set up Github Pages (or Zeit) with Forestry.
 
@@ -59,6 +59,10 @@ Netlify can also be used with Gitlab or Bitbucket and they offer some additional
 
 ### Store your site in a Bucket
 
-For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. The stack that we're proposing is an **S3 bucket** to store your file, a **CloudFront distribution** to cache and serve your files to the public,a **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default and an **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.  
+For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. Despite the implementation being more advanced, we believe AWS is worth the effort.  
+  
+The stack that we're proposing is an **S3 bucket** to store your file, a **CloudFront distribution** to cache and serve your files to the public,a **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default and an **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.
+
+An additional benefit using this stack is that you can also [store your media files on S3](https://forestry.io/docs/media/s3/) with Forestry, having it all on one platform can help keeping control over your files.  
   
 To make it easier for you to implement this solution we created [a template and a guide](https://forestry.io/docs/hosting/s3-cloudfront-stack/).
