@@ -43,16 +43,20 @@ Existing sites that use FTP, FTP with Implicit SSL or FTP with TLS/SSL will be a
 
 We understand this might cause some issues for users that are new to the static space and that aren't familiar with other hosting options.
 
-To  those users I'd like to say: "This is where the good part starts!" You'll be able to deploy your new sites within seconds and likely save much of your annual costs by using the providers I outline below.
+For those users I put together an overview of other options in the space that can save a lot of headache and are just as easy to implement. You'll be able to deploy your new sites within seconds and likely save much of your annual costs by using the providers I outline below.
 
 ## How to deploy and host static sites in 2019
 
-We put together a few tips and providers to make it easier for you to get started with static sites. The major selling point for these methods is that they distribute your site across multiple CDNs making your time to first byte ultra short. [We wrote about this before](https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/) and it was quite popular.
+We put together a few tips and providers to make it easier for you to get started with static site deployments. The major selling point for these methods is that they distribute your site across multiple CDNs making your time to first byte as short as possible. [We wrote about this before](https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/).
 
 ### Git-based deployment methods
 
 In recent years providers such as Netlify, Github Pages or Zeit have caused quite a bit of a wave. These providers offer a very generous free plan, which is more than enough for most personal, non-profit or semi-commercial sites.
 
-Github Pages and Zeit simply take your repository and host it for you. This is more than enough and can easily be configured with Forestry. You'll use the deployment method "Github Pages" (limited to Github at the moment). We wrote a [quick guide](https://forestry.io/docs/hosting/github-pages/) on how to set up Github Pages (also applies to Zeit).
+Github Pages and Zeit simply take your repository and host it for you. This is more than enough and can easily be configured with Forestry. You'll use the deployment method "Github Pages" (limited to Github as a storage provider at the moment). Read our [quick guide](https://forestry.io/docs/hosting/github-pages/) on how to set up Github Pages (or Zeit) with Forestry.
 
-Netlify can also be used with Gitlab or Bitbucket and they offer some additional tooling. You can have them use a custom build command to built your site. To use Netlify with Forestry you simply need use the default deployment setting "Commit to source repo only".
+Netlify can also be used with Gitlab or Bitbucket and they offer some additional tooling. You can have them use a custom build command to build your site, run functions or add authentication. To use Netlify with Forestry you simply need use the default deployment setting "Commit to source repo only".
+
+### Store your site in a Bucket
+
+For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. The stack that we're proposing is an **S3 bucket** to store your file, a **CloudFront distribution** to cache and serve your files to the public,a **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default and an **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.
