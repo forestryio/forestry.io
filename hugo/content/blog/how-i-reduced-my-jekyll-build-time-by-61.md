@@ -1,7 +1,7 @@
 ---
 title: How I reduced my Jekyll build time by 61%
 description: ''
-date: 2019-01-08 13:00:00 -1100
+date: 2019-01-09 00:00:00 +0000
 authors:
 - Colin Garvey
 publishdate: 2017-12-07 04:00:00 +0000
@@ -23,24 +23,21 @@ menu: []
 draft: true
 
 ---
-As of writing this Jekyll’s performance is still actively being worked on by the Core Team for an upcoming version 4 release. One of the main complaints about Jekyll for users is often the [build times of larger websites](https://forestry.io/blog/hugo-vs-jekyll-benchmark/). I want to take this opportunity to see just how much I can expect to improve my current site build times by using the latest master branch.
+As of writing this Jekyll’s performance is still actively being worked on by the Core Team for an upcoming version 4 release. One of the main complaints about Jekyll for users is often the [build times of larger websites](https://forestry.io/blog/hugo-vs-jekyll-benchmark/). I want to take this opportunity to see just how much I can expect to improve my current site's build times by using the latest master branch.
 
 Sound good? Let’s get started.
-
 
 ## Benchmarking your Jekyll website
 
 First we need to evaluate the current build status. We can achieve this by using Jekyll’s built in liquid profiler flag to spot any performance improvement opportunities.
 
-```
-bundle exec jekyll build --profile
-```
+    bundle exec jekyll build --profile
 
 Output:
 
     Filename                         | Count |    Bytes |  Time
     ---------------------------------+-------+----------+------
-
+    
     _layouts/post.html               |   277 | 3978.62K | 3.137
     _layouts/default.html            |   308 | 5580.10K | 2.943
     _layouts/archive.html            |    88 | 1629.61K | 1.732
@@ -58,9 +55,9 @@ Output:
     _includes/disqus_comments.html   |   277 |  155.65K | 0.349
     sitemap.xml                      |     1 |   42.99K | 0.218
     feed.xml                         |     1 |   58.57K | 0.038
-
+    
     ...
-
+    
     done in 16.114 seconds.
 
 As you can see above, Jekyll 3.8.5 manages to build my website which has **277** posts and **30** pages in **16.114** seconds.
@@ -68,7 +65,6 @@ As you can see above, Jekyll 3.8.5 manages to build my website which has **277**
 Not bad but we can definitely improve this.
 
 ### :hourglass: 16.114 seconds
-
 
 ## 1. Switch to the latest Jekyll master branch
 
@@ -91,7 +87,7 @@ end
 
 Commit URL: [b572c61](https://github.com/desiredpersona/jekyll-test-site/commit/b572c61bf6c8f6adea79185831c82d8e71aa70b4)
 
-We also need to add `.jekyll-cache` to our `.gitignore` file because Jekyll has a new [cache API](https://github.com/jekyll/jekyll/blob/master/docs/_tutorials/cache_api.md). 
+We also need to add `.jekyll-cache` to our `.gitignore` file because Jekyll has a new [cache API](https://github.com/jekyll/jekyll/blob/master/docs/_tutorials/cache_api.md).
 
 Next update Jekyll with `bundle update` and then once again run a new build command with the liquid `--profile` flag.
 
@@ -100,7 +96,6 @@ Jekyll builds my site in **8.55** seconds which is already a decrease of **46.9%
 We are off to a good start.
 
 ### :hourglass: 8.55 Seconds
-
 
 ## 2. Use Shopify’s Liquid-C gem
 
