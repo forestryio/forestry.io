@@ -37,7 +37,7 @@ The simplicity of FTP is certainly its biggest selling point but even easier way
 
 ## We'll let plain-old FTP die
 
-Forestry will stop supporting FTP, FTP with Implicit SSL and FTP with TLS/SSL starting **XX/XX/XXXX**. SFTP (or SSH-based FTP) continues to be available through Forestry and we have no plans of removing support for this very viable deployment option.
+Forestry will stop supporting FTP, FTP with Implicit SSL and FTP with TLS/SSL starting **XX/XX/XXXX**. SFTP (or SSH-based FTP) continues to be available through Forestry and we believe this to be a very viable deployment option.
 
 Existing sites that use FTP, FTP with Implicit SSL or FTP with TLS/SSL will be able to continue using it. However, new users and new sites won't be able to see this option anymore starting on the date mentioned above.
 
@@ -59,10 +59,10 @@ Netlify can also be used with Gitlab or Bitbucket and they offer some additional
 
 ### Store your site in a Bucket
 
-For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. Despite the implementation being more advanced, we believe AWS is worth the effort.  
-  
+For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. Despite the implementation being more advanced, we believe AWS is worth the effort.
+
 The stack that we're proposing is an **S3 bucket** to store your file, a **CloudFront distribution** to cache and serve your files to the public,a **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default and an **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.
 
-An additional benefit using this stack is that you can also [store your media files on S3](https://forestry.io/docs/media/s3/) with Forestry, having it all on one platform can help keeping control over your files.  
-  
+An additional benefit using this stack is that you can also [store your media files on S3](https://forestry.io/docs/media/s3/) with Forestry, having it all on one platform can help keeping control over your files.
+
 To make it easier for you to implement this solution we created [a template and a guide](https://forestry.io/docs/hosting/s3-cloudfront-stack/).
