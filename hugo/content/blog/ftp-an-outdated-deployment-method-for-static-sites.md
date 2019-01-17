@@ -59,4 +59,6 @@ Netlify can also be used with Gitlab or Bitbucket and they offer some additional
 
 ### Store your site in a Bucket
 
-For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. The stack that we're proposing is an **S3 bucket** to store your file, a **CloudFront distribution** to cache and serve your files to the public,a **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default and an **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.
+For the longest time I believed AWS made it purposefully difficult to use their services. I haven't dropped that thought quite yet but there's certainly something to be said about how powerful this option can be. The stack that we're proposing is an **S3 bucket** to store your file, a **CloudFront distribution** to cache and serve your files to the public,a **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default and an **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.  
+  
+To make it easier for you to implement this solution we created [a template and a guide](https://forestry.io/docs/hosting/s3-cloudfront-stack/).

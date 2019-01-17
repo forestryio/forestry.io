@@ -204,13 +204,13 @@ pages:
 - hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
-- hugo/content/careers/hiring-devops-engineer.md
 - hugo/content/asdd.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
 - hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
+- hugo/content/careers/hiring-devops-engineer.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/test.md
 - hugo/content/blog/what-s-new-in-jekyll-3.8.md
