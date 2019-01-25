@@ -23,13 +23,15 @@ draft: true
 ---
 Today we're happy to announce a major improvement to the way you can preview your content in Forestry. Instant Previews allow you to incrementally update your site, dramatically reducing the time to create your preview.
 
-Add some type of mission (Forestry strives to make content editing as simple as possible, previews are an integral part to updating content, inching closer to the speed you'd have in a local environment is essential)
+At Forestry we strive to make your content editing experience as seamless as possible and closing in on the speed of making edits in your local environment is high up on our list. We've heard loud and clear from companies, agencies, teams and creators we spoke to that one of the major issues they have is the speed of previewing content. With Instant Previews you're able to use your static site generator's built-in incremental-update mode to get feedback much faster.
 
 Why is this an issue?
 
-Content Creators sometimes need to wait a long time for previews to be created, backed up tasks can become a problem, especially as your site grows. Updates need to be done in order.  
+Fast previews are essential to a seamless editing experience. Especially at later stages of an article editors need to have an idea of what that text, that headline and that image is going to look like in its final state. Anybody who's ever edited an article knows this usually means a lot of clicking back and forth between editor and site. Any delay can frustrate and significantly impact time-to-publish.  
   
-However, previews take up a big part of that time. I've noticed myself getting pulled out of my focus waiting for the preview to update.
+This can even affect the quality of the final product. Delays often cause my mind to wander and break focus from what's at hand, making me lose that important spark or cause breaks in the narrative due to a lost thought.   
+  
+Delays... Are... A... Big... Issue!
 
 How did it work so far?  
 The general preview system builds your site from scratch every time  

@@ -186,7 +186,6 @@ pages:
 - hugo/content/blog/an-introduction-to-theming-in-vuepress.md
 - hugo/content/blog/data-files-directories-and-duplicating-pages.md
 - hugo/content/careers/hiring-technical-support.md
-- hugo/content/blog/announcing-instant-previews.md
 - hugo/content/blog/bigger-better-editor.md
 - hugo/content/blog/front-matter-templates.md
 - hugo/content/blog/discontinuing-zip-sites.md
@@ -202,6 +201,7 @@ pages:
 - hugo/content/blog/search-with-algolia-in-hugo.md
 - hugo/content/blog/up-and-running-with-hugo.md
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
+- hugo/content/blog/announcing-instant-previews.md
 - hugo/content/blog/add-functionality-to-your-hugo-site-with-theme-components.md
 - hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
