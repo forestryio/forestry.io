@@ -55,13 +55,51 @@ It gets even better, Instant Previews allow you to update regardless of what's i
 
 With Instant Previews this bottleneck is removed, whether or not your previous jobs have been completed, your preview will be updated without delay and delivered as soon as it's ready.
 
-## See it in Action!
+### Regular Previews vs Instant Previews
+
+The best way to show off the power of Instant Previews is by seeing them in action. Side-by-side.
 
 \[Gif of regular preview\] 
 
 \[gif of instant preview\]
 
-This feature is free for everyone to use. But, it will have a 100 GB limit per month. This is enough for most sites to use this feature with no additional costs. However, the data limit is going to impact users with very media-heavy sites or otherwise very large sites.
+## Setting up Instant Previews
+
+Navigate to your `Previews` settings and switch `Instant Previews` to on.
+
+Now add your preview command and the necessary additional parameters. [Learn More](/docs/instant-previews/)
+
+{{% code_tabs %}} {{% tab "Hugo" %}}
+
+    hugo server --renderToDisk --port 8080 --bind 0.0.0.0
+
+{{% /tab %}} {{% tab "Jekyll" %}}
+
+    bundle exec jekyll serve --port 8080 --host 0.0.0.0
+
+{{% /tab %}} {{% tab "VuePress" %}}
+
+    vuepress dev --port 8080 --host 0.0.0.0
+
+{{% /tab %}}
+
+{{% tab "Gatsby \[beta\]" %}}
+
+    gatsby develop -p 8080 -H 0.0.0.0
+
+{{% /tab %}} {{% /code_tabs %}}
+
+That's it! You're all set.  
+  
+To debug your previews we've provided you the log in your `Previews` settings.
+
+## Is this a free feature?
+
+Currently, this feature has a 100 GB limit per month/per site. This should be more than enough for most sites to use this feature with no additional costs.   
+  
+The data limit might impact users with very media-heavy sites or otherwise large sites. Forestry will make sure that you're contacted once you hit the data limit.
+
+***
 
 If you have any questions feel free to reach out to our support team.  
   
