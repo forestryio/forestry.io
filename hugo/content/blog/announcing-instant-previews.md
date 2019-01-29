@@ -95,7 +95,7 @@ That's it! You're all set.
   
 To debug your previews we've provided you the log in your `Previews` settings.
 
-{{% tip Is this a free feature? %}}
+{{% tip %}}
 
 Currently, this feature has a 100 GB limit per month/per site. This should be more than enough for most sites to use this feature with no additional costs.   
   
