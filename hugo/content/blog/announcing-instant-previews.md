@@ -61,9 +61,9 @@ With Instant Previews this bottleneck is removed, whether or not your previous j
 
 The best way to show off the power of Instant Previews is by seeing them in action. Side-by-side.
 
-<video playsinline="" autoplay="" muted="" loop="" poster="" class="factory-video desktop-only "><source src="/video/regular-preview.webm" type="video/webm"><source src="/video/regular-preview.mp4" type="video/mp4"></video>
+<video playsinline="" autoplay="" muted="" loop="" poster="" class="factory-video desktop-only "><source src="/video/regular-previews.mp4" type="video/mp4"></video>
 
-<video playsinline="" autoplay="" muted="" loop="" poster="" class="factory-video desktop-only "><source src="/video/instant-preview.webm" type="video/webm"><source src="/video/instant-preview.mp4" type="video/mp4"></video>
+<video playsinline="" autoplay="" muted="" loop="" poster="" class="factory-video desktop-only "><source src="/video/instant-previews.mp4" type="video/mp4"></video>
 
 ## Setting up Instant Previews
 
