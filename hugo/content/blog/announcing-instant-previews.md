@@ -39,7 +39,7 @@ Depending on your static site generator a large site can cause a significant hea
 
 **In short: Delays... Are... A... Big... Issue...**
 
-## What do Instant Previews do differently?
+## What do Instant Previews do?
 
 Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the Preview Button, Forestry builds your entire site from scratch. That's not super efficient.
 
