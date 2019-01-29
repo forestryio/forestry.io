@@ -61,9 +61,9 @@ With Instant Previews this bottleneck is removed, whether or not your previous j
 
 The best way to show off the power of Instant Previews is by seeing them in action. Side-by-side.
 
-<video playsinline="" autoplay="" muted="" loop="" poster="" class="factory-video desktop-only "><source src="/video/regular-previews.mp4" type="video/mp4"></video>
+<video playsinline="" autoplay="" muted="" loop="" poster="" class=""><source src="/video/regular-previews.mp4" type="video/mp4"></video>
 
-<video playsinline="" autoplay="" muted="" loop="" poster="" class="factory-video desktop-only "><source src="/video/instant-previews.mp4" type="video/mp4"></video>
+<video playsinline="" autoplay="" muted="" loop="" poster="" class=""><source src="/video/instant-previews.mp4" type="video/mp4"></video>
 
 ## Setting up Instant Previews
 
@@ -91,20 +91,20 @@ Now add your preview command and the necessary additional parameters. [Learn Mor
 
 {{% /tab %}} {{% /code_tabs %}}
 
-That's it! You're all set.  
-  
+That's it! You're all set.
+
 To debug your previews we've provided you the log in your `Previews` settings.
 
 {{% tip %}}
 
-Currently, this feature has a 100 GB limit per month/per site. This should be more than enough for most sites to use this feature with no additional costs.   
-  
+Currently, this feature has a 100 GB limit per month/per site. This should be more than enough for most sites to use this feature with no additional costs.
+
 The data limit might impact users with very media-heavy sites or otherwise large sites. Forestry will make sure that you're contacted once you hit the data limit.
 
 {{% /tip %}}
 
 ***
 
-If you have any questions feel free to reach out to our support team.  
-  
+If you have any questions feel free to reach out to our support team.
+
 Any recommendations? Good or bad? We want to hear them all - email, twitter or support
