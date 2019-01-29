@@ -23,27 +23,29 @@ menu: []
 draft: true
 
 ---
-Today we're happy to announce a faster way to preview your content in Forestry. Instant Previews allow you to incrementally update your site, dramatically reducing the time to create your preview.
+Today we're happy to announce a faster way to preview your content in Forestry. Our new feature **Instant Previews** allows you to incrementally update your site, dramatically reducing the time to create your preview.
 
 ## Why Instant Previews?
 
-At Forestry we strive to make your content editing experience as seamless as possible and closing in on the speed of editing in your local environment is one of the keys to achieving that goal. Anybody we spoke to made it clear: speedy previews are what Forestry needs!
+We strive to make your content editing experience as seamless as possible and we were told that closing in on the speed of editing in your local environment is one of the keys to achieving that goal. From big companies and agencies to the individual dev you made it clear: 
+
+_Speedy Previews is what Forestry needs!_
 
 ### Better Editing
 
-Fast previews are essential for a great editing experience. Writing an article, editors need to have an idea of what that text, that headline and that image is going to look like in its final state. This usually means a lot of clicking back and forth between editor and site, any delay here can frustrate and significantly impact time-to-publish.
+Writing an article, editors need to know what that text, that headline or that image is going to look like in its final state. This usually means a lot of clicking back and forth between editor and site preview, any delay here can frustrate and significantly impact time-to-publish.
 
-Moreover, delays disruptive to focus and thoughts. Writing is an inherently creative task, getting into the "zone" is essential to achieve great results. A delayed preview can rip you out of the deep state of mind and makes you lose that important spark or train of thought.
+Moreover, delays are disruptive to keeping focused and your thoughts in order. Writing is an inherently creative task, getting into the "zone" is essential to achieve great results. A delayed preview can rip you out of that deep state of mind and risks the loss of that important spark or train of thought.
 
 ### Large Sites
 
-Depending on your static site generator a large site can cause a significant headache. Waiting ten minutes for a site to build might be acceptable for deployment but it's not workable for reviewing and previewing a post, page or article.
+Depending on your static site generator, large sites can take a horrendous amount of time, some sites might take multiple hours. Waiting ten minutes for a site to build is not rare once you have a large blog using Jekyll, don't get me started on other popular static site generators. This might be acceptable for deployment but it's not workable for reviewing and previewing a post, page or article.
 
 **In short: Delays... Are... A... Big... Issue...**
 
 ## What do Instant Previews do?
 
-Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the Preview Button, Forestry builds your entire site from scratch. That's not super efficient for previewing.
+Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the Preview Button, Forestry builds your entire site from scratch. That's not the most efficient way to handle previewing.
 
 ### Spin up a Development Server
 
