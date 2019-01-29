@@ -95,11 +95,13 @@ That's it! You're all set.
   
 To debug your previews we've provided you the log in your `Previews` settings.
 
-## Is this a free feature?
+{{% tip Is this a free feature? %}}
 
 Currently, this feature has a 100 GB limit per month/per site. This should be more than enough for most sites to use this feature with no additional costs.   
   
 The data limit might impact users with very media-heavy sites or otherwise large sites. Forestry will make sure that you're contacted once you hit the data limit.
+
+{{% /tip %}}
 
 ***
 
