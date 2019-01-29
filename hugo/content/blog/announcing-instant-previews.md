@@ -1,11 +1,11 @@
 ---
 title: Announcing Instant Previews
 description: ''
-date: 2019-02-05 06:00:00 -1100
+date: 2019-02-05 17:00:00 +0000
 authors:
 - Sebastian Engels
-publishdate: 2019-02-05 06:00:00 -1100
-expirydate: 2030-02-04 17:00:00 -1100
+publishdate: 2019-02-05 17:00:00 +0000
+expirydate: 2030-02-05 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
@@ -61,9 +61,9 @@ With Instant Previews this bottleneck is removed, whether or not your previous j
 
 The best way to show off the power of Instant Previews is by seeing them in action. Side-by-side.
 
-<video playsinline="" autoplay="" muted="" loop="" poster="" class=""><source src="/video/regular-previews.mp4" type="video/mp4"></video>
+<video playsinline="" autoplay="" poster="" class=""><source src="/video/regular-previews.mp4" type="video/mp4"></video>
 
-<video playsinline="" autoplay="" muted="" loop="" poster="" class=""><source src="/video/instant-previews.mp4" type="video/mp4"></video>
+<video playsinline="" autoplay="" poster="" class=""><source src="/video/instant-previews.mp4" type="video/mp4"></video>
 
 ## Setting up Instant Previews
 
@@ -99,7 +99,7 @@ To debug your previews we've provided you the log in your `Previews` settings.
 
 Currently, this feature has a 100 GB limit per month/per site. This should be more than enough for most sites to use this feature with no additional costs.
 
-The data limit might impact users with very media-heavy sites or otherwise large sites. Forestry will make sure that you're contacted once you hit the data limit. 
+The data limit might impact users with very media-heavy sites or otherwise large sites. Forestry will make sure that you're contacted once you hit the data limit.
 
 {{% /tip %}}
 
