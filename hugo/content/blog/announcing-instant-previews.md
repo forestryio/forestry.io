@@ -19,6 +19,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 draft: true
 
 ---
@@ -62,11 +63,11 @@ The best way to show off the power of Instant Previews is by seeing them in acti
 
 _Regular Previews_ 👇
 
-{{% screencast "regular-previews" %}}{{% /screencast %}}
+{{% screencast "regular-previews" %}}
 
 _Instant Previews_ 👇
 
-{{% screencast "instant-previews" %}}{{% /screencast %}}
+{{% screencast "instant-previews" %}}
 
 ## Setting up Instant Previews
 
