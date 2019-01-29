@@ -41,14 +41,28 @@ Depending on your static site generator a large site can cause a significant hea
 
 ## What do Instant Previews do?
 
-Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the Preview Button, Forestry builds your entire site from scratch. That's not super efficient.
+Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the Preview Button, Forestry builds your entire site from scratch. That's not super efficient for previewing.
+
+### Spin up a Development Server
 
 Most static site generators have a `preview command` that allows for incremental updates. This makes your previews much faster.
 
 Now Instant Previews allows you to take advantage of these commands by running your own development server in our preview environment.
 
-It gets even better, with the regular Preview system you can come into the position of waiting for your preview to be backed up in the queue. Because Previews are generally handled like other jobs in our queue, they can't be cancelled and have to be completed in order.
+### Skip the Queue
+
+It gets even better, Instant Previews allow you to update regardless of what's in the queue. With the regular Preview system you can come into the position of waiting for your preview to be backed up in the queue behind other tasks. Because regular Previews are generally handled like other jobs in our queue, they can't be cancelled and have to be completed in order.
 
 With Instant Previews this bottleneck is removed, whether or not your previous jobs have been completed, your preview will be updated without delay and delivered as soon as it's ready.
 
+## See it in Action!
+
+\[Gif of regular preview\] 
+
+\[gif of instant preview\]
+
 This feature is free for everyone to use. But, it will have a 100 GB limit per month. This is enough for most sites to use this feature with no additional costs. However, the data limit is going to impact users with very media-heavy sites or otherwise very large sites.
+
+If you have any questions feel free to reach out to our support team.  
+  
+Any recommendations? Good or bad? We want to hear them all - email, twitter or support
