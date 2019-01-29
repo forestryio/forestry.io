@@ -1,14 +1,16 @@
 ---
 title: Announcing Instant Previews
 description: ''
-date: 2019-01-27 06:00:00 -1100
-authors: []
-publishdate: 2019-01-27 06:00:00 -1100
-expirydate: 2030-01-01 04:00:00 +0000
+date: 2019-02-05 06:00:00 -1100
+authors:
+- Sebastian Engels
+publishdate: 2019-02-05 06:00:00 -1100
+expirydate: 2030-02-04 17:00:00 -1100
 headline: ''
 textline: ''
 images: []
-categories: []
+categories:
+- CMS
 tags: []
 cta:
   headline: ''
