@@ -27,7 +27,7 @@ Today we're happy to announce a faster way to preview your content in Forestry. 
 
 ## Why Instant Previews?
 
-We strive to make your content editing experience as seamless as possible and we were told that closing in on the speed of editing in your local environment is one of the keys to achieving that goal. From big companies and agencies to the individual dev you made it clear: 
+We strive to make your content editing experience as seamless as possible and we were told that closing in on the speed of editing in your local environment is one of the keys to achieving that goal. From big companies and agencies to the individual dev you made it clear:
 
 _Speedy Previews is what Forestry needs!_
 
@@ -61,15 +61,15 @@ With Instant Previews this bottleneck is removed, whether or not your previous j
 
 ### Regular Previews vs Instant Previews
 
-The best way to show off the power of Instant Previews is by seeing them in action.
+The best way to show off the power of Instant Previews is by seeing them in action. For this example we used our demo Jekyll site. Import it [here](https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll).
 
-_Regular Previews_ 👇
+_Regular Previews (\~14 seconds)_ 👇
 
-{{% screencast "regular-previews" %}}
+{{% screencast "regular-preview" %}}
 
-_Instant Previews_ 👇
+_Instant Previews_ (\~3 seconds)👇
 
-{{% screencast "instant-previews" %}}
+{{% screencast "instant-preview" %}}
 
 ## Setting up Instant Previews
 
