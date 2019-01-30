@@ -25,7 +25,7 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    name: Could not locate Gemfile or .bundle/ directroy
+    name: Could not locate Gemfile or .bundle/ directory
     parent: Troubleshooting
     weight: 4
 
