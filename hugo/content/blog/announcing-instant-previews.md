@@ -117,7 +117,7 @@ To debug your previews we've provided you the log in your `Previews` settings.
 
 {{% tip %}}
 
-Currently, this feature has a 100 GB per site/per month limit. This should be more than enough for most sites to use this feature with no additional costs.
+Currently, this feature has a 100 GB per site/per month limit. This should be more than enough for most sites.
 
 However, the data limit might impact users with media-heavy sites or otherwise large sites. Forestry will make sure that you're contacted once you hit the data limit.
 
