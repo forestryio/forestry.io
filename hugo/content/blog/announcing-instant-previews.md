@@ -27,13 +27,13 @@ Today we're happy to announce a faster way to preview your content in Forestry. 
 
 ## Why Instant Previews?
 
-We strive to make your content editing experience as seamless as possible and we like to do so by talking with our users. We've been talking to big companies and agencies as well as individual devs and content creators and most of you made it clear to us:
+We strive to make your content editing experience as seamless as possible and we like to do so by talking with our users. We've been talking to big companies and agencies as well as individual devs and content creators and most of you made it very clear:
 
 _Speedy Previews is what Forestry needs!_
 
 ![](/uploads/2019/01/judge-judy.gif)
 
-Here are a couple reasons why faster previews are necessary, just in case you need any convincing.
+Here are a couple of reasons why faster previews are necessary, just in case you need any convincing.
 
 ### Better Editing
 
