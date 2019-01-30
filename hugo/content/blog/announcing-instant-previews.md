@@ -51,7 +51,7 @@ Ready to set up Instant Previews? Check out our [Instant Previews Guide](/docs/i
 
 ## What do Instant Previews do?
 
-Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the Preview Button, Forestry builds your entire site from scratch. There's a more efficient way to handling previewing and you're most likely using it in your local environment already.
+Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="1.2"><path d="M12 18c6 0 10-6 10-6s-4-6-10-6-10 6-10 6 4 6 10 6z"></path><circle cx="12" cy="12" r="2"></circle></g></svg> Button, Forestry builds your entire site from scratch. This works but there's a more efficient way to handling previewing and you're most likely using it in your local environment already.
 
 ### Spin up a Development Server
 
