@@ -37,21 +37,25 @@ Here are a couple reasons why faster previews are necessary, if you need any con
 
 ### Better Editing
 
-Writing an article, content creators need to know what that text, that headline or that image is going to look like in its final state. This usually means a lot of back and forth between editing and regenerating a site preview, any delay here can frustrate and significantly impact time-to-publish.
+Writing an article, content creators need to know what that paragraph, that headline or that image is going to look like in its final state. This usually means a lot of back and forth between editing and regenerating a site preview, any delay here can frustrate and significantly impact time-to-publish.
 
-Moreover, delays are disruptive to staying focused and keeping your thoughts in order. Writing is an inherently creative task, getting into the "zone" is essential to achieve great results. A delayed preview can rip you out of that deep state of mind and risks the loss of that important spark or train of thought.
+Moreover, delays are disruptive to staying focused and keeping your thoughts in order. Writing is an inherently creative task, getting into the "zone" is essential to achieve great results. A delayed preview can rip you out of that deep state of mind and risks the loss of that spark of genius or train of thought.
 
 ### Large Sites
 
-Depending on your static site generator, large sites can take a long time to build, for some sites it might even take a couple hours. If you're using Jekyll, waiting ten minutes for a site to build is not rare. This might be acceptable for deployment but it's not workable for reviewing and previewing a post, page or article.
+Depending on your static site generator, large sites can take a long time to build, for some sites we've seen build times of more than an hour. If you're using Jekyll, waiting ten minutes for a site to build is not rare. This might (in some cases) be acceptable for deployment but it's not usable for reviewing and editing a post, page or article.
 
 **In short: Delays... Are... A... Big... Issue...**
 
+{{% tip %}}
+
 Ready to set up Instant Previews? Check out our [Instant Previews Guide](/docs/instant-previews/).
+
+{{% /tip %}}
 
 ## What do Instant Previews do?
 
-Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="1.2"><path d="M12 18c6 0 10-6 10-6s-4-6-10-6-10 6-10 6 4 6 10 6z"></path><circle cx="12" cy="12" r="2"></circle></g></svg> Button, Forestry builds your entire site from scratch. This works but there's a more efficient way to handling previewing and you're most likely using it in your local environment already.
+Using regular Previews, Forestry builds your previews just like your deployments. Every time you click on the <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="1.2"><path d="M12 18c6 0 10-6 10-6s-4-6-10-6-10 6-10 6 4 6 10 6z"></path><circle cx="12" cy="12" r="2"></circle></g></svg> button, Forestry builds your entire site from scratch. This works but there's a much more efficient way to handling previewing and you're most likely using it in your local environment already.
 
 ### Spin up a Development Server
 
@@ -67,7 +71,7 @@ With Instant Preview this bottleneck is removed, whether or not your previous jo
 
 ### Regular Previews vs Instant Previews
 
-The best way to show off the speed of Instant Preview is by seeing it in action. For this example we used our [Belkirk-Jekyll-Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo/) site. You can test and import it [here](https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll).
+We believe the best way to show off the speed of Instant Preview is by seeing it in action.
 
 ### _Regular Previews (\~14 seconds)_ 👇
 
@@ -77,9 +81,11 @@ The best way to show off the speed of Instant Preview is by seeing it in action.
 
 {{% screencast "instant-preview" %}}
 
+For this example we used our [Belkirk-Jekyll-Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo/) site. You can test and import it [here](https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll).
+
 ## Setting up Instant Previews
 
-Navigate to your `Previews` settings and switch `Instant Previews` to on.
+Navigate to your `Previews` settings and switch `Instant Previews` to _on_
 
 Now add your preview command and the necessary additional parameters. [Learn More](/docs/instant-previews/)
 
