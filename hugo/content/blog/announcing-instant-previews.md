@@ -33,7 +33,7 @@ _Speedy Previews is what Forestry needs!_
 
 ![](/uploads/2019/01/judge-judy.gif)
 
-Here are a couple reasons why faster previews are necessary, if you need any convincing.
+Here are a couple reasons why faster previews are necessary, just in case you need any convincing.
 
 ### Better Editing
 
