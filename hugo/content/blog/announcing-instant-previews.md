@@ -65,7 +65,7 @@ Now, Instant Preview allows you to take advantage of these commands by running y
 
 ### Skip the Queue
 
-It gets even better, Instant Preview allows you to update regardless of what's in the queue. With the regular Preview system you can come into the position of having your preview request be backed up in the queue behind other tasks.
+It gets even better, Instant Preview allows you to update regardless of what's in the queue. With the regular Preview system you can come into the position of having your preview request backed up in the queue behind other tasks.
 
 With Instant Preview this bottleneck is removed, whether or not your previous jobs have been completed, your preview will be updated without delay and delivered as soon as it's ready.
 
