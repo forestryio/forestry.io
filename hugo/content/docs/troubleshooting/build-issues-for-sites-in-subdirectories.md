@@ -21,7 +21,6 @@ menu:
   troubleshooting:
     parent: Troubleshooting
     weight: 3
-draft: true
 
 ---
 
