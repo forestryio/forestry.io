@@ -27,7 +27,7 @@ Today we're happy to announce a faster way to preview your content in Forestry. 
 
 ## Why Instant Previews?
 
-We strive to make your content editing experience as seamless as possible and we like to do so by talking with our users. We've been talking to big companies and agencies as well as individual devs and content creators and most of you made it very clear:
+We strive to make your content editing experience as seamless as possible and we like to look for improvements by talking with our users. We've been talking to big companies as well as individual content creators and most of you made it very clear:
 
 ### _Speedy Previews is what Forestry needs!_
 
@@ -65,7 +65,7 @@ Now, Instant Preview allows you to take advantage of these commands by running y
 
 ### Skip the Queue
 
-It gets even better, Instant Preview allows you to update regardless of what's in the queue. With the regular Preview system you can come into the position of having your preview request backed up in the queue behind other tasks.
+It gets even better, Instant Preview allows you to update regardless of what's in the queue. Regular previews regularly are backed up behind other tasks in the queue causing additional delays.
 
 With Instant Preview this bottleneck is removed, whether or not your previous jobs have been completed, your preview will be updated without delay and delivered as soon as it's ready.
 
