@@ -111,7 +111,7 @@ The data limit might impact users with very media-heavy sites or otherwise large
 
 {{% /tip %}}
 
-For our demo site, Instant Previews **saves us \~80% of waiting time**. Set up Instant Previews and [let us know how much time you're saving](https://twitter.com/forestryio).
+For our demo site, Instant Previews **saves us \~80% of waiting time**. Set up Instant Previews and let us know how much time you're saving.
 
 ***
 
