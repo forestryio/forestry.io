@@ -57,23 +57,23 @@ Using regular Previews, Forestry builds your previews just like your deployments
 
 Most static site generators have a `preview command` that allows for incremental updates. This makes your previews much faster.
 
-Now Instant Previews allows you to take advantage of these commands by running your own development server in our preview environment.
+Now, Instant Preview allows you to take advantage of these commands by running your own development server in the Forestry preview environment.
 
 ### Skip the Queue
 
-It gets even better, Instant Previews allow you to update regardless of what's in the queue. With the regular Preview system you can come into the position of waiting for your preview to be backed up in the queue behind other tasks.
+It gets even better, Instant Preview allows you to update regardless of what's in the queue. With the regular Preview system you can come into the position of having your preview request be backed up in the queue behind other tasks.
 
-With Instant Previews this bottleneck is removed, whether or not your previous jobs have been completed, your preview will be updated without delay and delivered as soon as it's ready.
+With Instant Preview this bottleneck is removed, whether or not your previous jobs have been completed, your preview will be updated without delay and delivered as soon as it's ready.
 
 ### Regular Previews vs Instant Previews
 
-The best way to show off the speed of Instant Previews is by seeing them in action. For this example we used our demo Jekyll site. You can import it [here](https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll).
+The best way to show off the speed of Instant Preview is by seeing it in action. For this example we used our [Belkirk-Jekyll-Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo/) site. You can test and import it [here](https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll).
 
-_Regular Previews (\~14 seconds)_ 👇
+### _Regular Previews (\~14 seconds)_ 👇
 
 {{% screencast "regular-preview" %}}
 
-_Instant Previews_ (\~3 seconds)👇
+### _Instant Previews_ (\~3 seconds)👇
 
 {{% screencast "instant-preview" %}}
 
