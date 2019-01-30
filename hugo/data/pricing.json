@@ -41,7 +41,7 @@
       ]
     },
     {
-      "title": "Business",
+      "title": "Starter",
       "priceAnnually": 0,
       "priceMonthly": 9,
       "description": "Starting at $29/month which includes your first 5 users",
@@ -61,14 +61,35 @@
           "text": "Business support"
         }
       ]
+    },{
+      "title": "Pro",
+      "priceAnnually": "0",
+      "priceMonthly": "99",
+      "description": "",
+      "planIncludes": "Everything in Business plus",
+      "buttonText": "Contact us",
+      "buttonUrl": "/support",
+      "planItems": [
+        {
+          "text": "Priority support"
+        },
+        {
+          "text": "Single Sign-on",
+          "info": "(SAML, OpenID Connect, LDAP, Active Directory, etc)"
+        },
+        {
+          "text": "Access control",
+          "info": "Control who can perform certain actions"
+        }
+      ]
     },
     {
       "title": "enterprise",
       "priceAnnually": "_",
       "priceMonthly": "_",
       "description": "",
-      "planIncludes": "Everything in Business plus",
-      "buttonText": "Get a quote",
+      "planIncludes": "Everything in Pro plus",
+      "buttonText": "Contact us",
       "buttonUrl": "/support",
       "planItems": [
         {
@@ -78,7 +99,7 @@
           "text": "Priority support"
         },
         {
-          "text": "* On-premise installation",
+          "text": "On-premise installation",
           "info": "Run Forestry behind your firewall (optional)"
         },
         {
@@ -86,8 +107,7 @@
           "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
         },
         {
-          "text": "Enterprise user management",
-          "info": "Support for advanced authentication systems (LDAP, Active Directory, etc)"
+          "text": "Custom integrations & workflows"
         }
       ]
     }
