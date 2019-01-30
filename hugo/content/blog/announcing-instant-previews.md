@@ -83,7 +83,7 @@ We believe the best way to show off the speed of Instant Preview is by seeing it
 
 For this example we used our [Belkirk-Jekyll-Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo/) site. You can test and import it [here](https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll).
 
-For our demo site, Instant Previews **saved us \~80% of waiting time**. [Set up Instant Previews](/docs/instant-previews/) and let us know how much time you're saving on [twitter](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20want%20Instant%20Previews%20for%20their%20static%20site%20CMS%3F!%20Forestry%20just%20made%20that%20happen.%20%23gostatic%20%23staticsites%20https%3A%2F%2Fforestry.io%2Fblog%2Fannouncing-instant-previews%2F).
+For our demo site, Instant Previews **saved us \~80% of waiting time**. [Set up Instant Previews](/docs/instant-previews/) and let us know how much time you're saving on [twitter](https://twitter.com/intent/tweet?text=What%3F!%20My%20static%20site%20now%20previews%205%20times%20faster%20in%20%40forestry%20with%20Instant%20Previews!%20%23gostatic%20%23staticsites%20https%3A%2F%2Fforestry.io%2Fblog%2Fannouncing-instant-previews%2F).
 
 ## Setting up Instant Previews
 
@@ -123,7 +123,7 @@ The data limit might impact users with media-heavy sites or otherwise large site
 
 {{% /tip %}}
 
-Help us share the news on [Twitter](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20want%20Instant%20Previews%20for%20their%20static%20site%20CMS%3F!%20Forestry%20just%20made%20that%20happen.%20%23gostatic%20%23staticsites%20https%3A%2F%2Fforestry.io%2Fblog%2Fannouncing-instant-previews%2F)!
+Help us share the news on [Twitter](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20want%20Instant%20Previews%20for%20their%20static%20site%20CMS%3F!%20%40forestry%20just%20made%20that%20happen.%20%23gostatic%20%23staticsites%20https%3A%2F%2Fforestry.io%2Fblog%2Fannouncing-instant-previews%2F)!
 
 ***
 
