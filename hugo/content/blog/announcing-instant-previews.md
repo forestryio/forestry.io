@@ -39,11 +39,11 @@ Here are a couple of reasons why faster previews are necessary, just in case you
 
 Writing an article, content creators need to know what that paragraph, that headline or that image is going to look like in its final state. This usually means a lot of back and forth between editing and regenerating a site preview, any delay here can frustrate and significantly impact time-to-publish.
 
-Moreover, delays are disruptive to staying focused and keeping your thoughts in order. Writing is an inherently creative task, getting into the "zone" is essential to achieve great results. A delayed preview can rip you out of that deep state of mind and risks the loss of that spark of genius or train of thought.
+Moreover, delays are disruptive to staying focused and keeping your thoughts in order. Writing is an inherently creative task, getting into the "zone" is essential to achieve great results. A delayed preview can rip you out of that deep state of mind and risks the loss of that important train of thought.
 
 ### Large Sites
 
-Depending on your static site generator, large sites can take a long time to build, for some sites we've seen build times of more than an hour. If you're using Jekyll, waiting ten minutes for a site to build is not rare. This might (in some cases) be acceptable for deployment but it's not usable for reviewing and editing a post, page or article.
+Depending on your static site generator, large sites can take a long time to build. For some sites we've seen build times of more than an hour. If you're using Jekyll, waiting ten minutes for a site to build is not rare. This might (in some cases) be acceptable for deployment but it's not usable for reviewing and editing a post, page or article.
 
 **In short: Delays... Are... A... Big... Issue...**
 
