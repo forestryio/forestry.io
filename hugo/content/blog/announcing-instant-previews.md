@@ -31,6 +31,8 @@ We strive to make your content editing experience as seamless as possible and fr
 
 _Speedy Previews is what Forestry needs!_
 
+<div class="tenor-gif-embed" data-postid="10384335" data-share-method="host" data-width="100%" data-aspect-ratio="1.3315508021390374"><a href="[https://tenor.com/view/judge-judy-time-hurry-up-gif-10384335](https://tenor.com/view/judge-judy-time-hurry-up-gif-10384335 "https://tenor.com/view/judge-judy-time-hurry-up-gif-10384335")">Judge Judy Time GIF</a> from <a href="[https://tenor.com/search/judgejudy-gifs](https://tenor.com/search/judgejudy-gifs "https://tenor.com/search/judgejudy-gifs")">Judgejudy GIFs</a></div><script type="text/javascript" async src="[https://tenor.com/embed.js](https://tenor.com/embed.js "https://tenor.com/embed.js")"></script>
+
 Here are just two reasons why faster previews were necessary.
 
 ### Better Editing
