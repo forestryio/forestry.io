@@ -58,7 +58,8 @@
           "info": "Assign a role to each member in your organization"
         },
         {
-          "text": "Business support"
+          "text": "Business support",
+          "info": "Messages to our support queue will be responded to within 24 hours"
         }
       ]
     },{
@@ -66,20 +67,21 @@
       "priceAnnually": "0",
       "priceMonthly": "99",
       "description": "",
-      "planIncludes": "Everything in Business plus",
+      "planIncludes": "Everything in Starter plus",
       "buttonText": "Contact us",
       "buttonUrl": "/support",
       "planItems": [
         {
-          "text": "Priority support"
-        },
-        {
           "text": "Single Sign-on",
-          "info": "(SAML, OpenID Connect, LDAP, Active Directory, etc)"
+          "info": "Support for major identity providers (IdP) such as SAML, OpenID Connect, LDAP, etc"
         },
         {
           "text": "Access control",
           "info": "Control who can perform certain actions"
+        },
+        {
+          "text": "Priority support",
+          "info": "Messages to our support queue are given priority and will be responded to within 12 hours"
         }
       ]
     },
@@ -93,21 +95,43 @@
       "buttonUrl": "/support",
       "planItems": [
         {
-          "text": "Flexible user limits"
-        },
-        {
-          "text": "Priority support"
-        },
-        {
           "text": "On-premise installation",
           "info": "Run Forestry behind your firewall (optional)"
+        },
+        {
+          "text": "Access control and custom roles",
+          "info": "Customize unique workflows for your team. Control who can review and publish content."
+        },
+        {
+          "text": "Live support",
+          "info": "Your team will have direct access to our engineers in a dedicated Slack channel"
+        },
+        {
+          "text": "Audit logs",
+          "info": "A ledger of the actions performed by users in your organization"
+        },
+        {
+          "text": "Enterprise-level SLAs",
+          "info": "Guaranteed minimum uptime of 99.5%"
         },
         {
           "text": "Connect to on-premise Git sources",
           "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
         },
         {
-          "text": "Custom integrations & workflows"
+          "text": "Ongoing training",
+          "info": "Training for your editors to help them achieve their content objectives"
+        },
+        {
+          "text": "Dedicated Customer Success Manager",
+          "info": "Ongoing training and support"
+        },
+        {
+          "text": "Architectural advice",
+          "info": "Leverage our experts for setting up deployment, CI/CD, micro-services, etc."
+        },
+        {
+          "text": "Customizations and integrations"
         }
       ]
     }
