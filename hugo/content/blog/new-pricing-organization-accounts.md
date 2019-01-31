@@ -23,7 +23,7 @@ aliases: []
 ---
 We’re excited to announce new pricing!
 
-Now, the [Personal plan](#a-better-personal-plan) supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The [Starter plan](#a-business-plan-for-large-teams) also supports unlimited sites, but is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations with special requirements.
+Now, the [Personal plan](#a-better-personal-plan) supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The [Starter plan](#a-starter-plan-for-large-teams) also supports unlimited sites, but is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations with special requirements.
 
 ![](/uploads/2018/03/forestryio-pricing.png)
 
@@ -47,6 +47,10 @@ If you have a large team, the Starter Plan supports any number of users and a ne
 ![](/uploads/2018/03/business-plan-ui.png)
 
 The new Starter Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Starter plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
+
+## A Pro Plan for Better Collaboration
+
+The Pro plan is for teams that require better collaboration and control over their content with access control, editorial workflows, SSO, etc.  The Pro plan allows for any number of users at $99/month each. 
 
 ## Conclusion
 We're on a mission to help people craft and spread their message online. Whether you're building a small site for your friend's restaurant or a mission-critical site for your company, we feel that our new pricing helps you choose a static approach.  
