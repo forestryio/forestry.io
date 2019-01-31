@@ -153,6 +153,7 @@ pages:
 - hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/block-labels-read-only-docs-and-more.md
+- hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/is-it-time-to-move-on-from-wordpress.md
 - hugo/content/blog/adding-dns-and-edge-functions-to-our-cloudformation-stack.md
 - hugo/content/blog/forestryio-techstars-2016.md
@@ -190,7 +191,6 @@ pages:
 - hugo/content/blog/front-matter-templates.md
 - hugo/content/blog/discontinuing-zip-sites.md
 - hugo/content/blog/search-with-algolia-in-jekyll.md
-- hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/what-s-new-in-jekyll-3-4-0.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/full-stack.md
