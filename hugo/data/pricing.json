@@ -73,7 +73,7 @@
       "planItems": [
         {
           "text": "Single Sign-on",
-          "info": "Support for major identity providers (IdP) such as SAML, OpenID Connect, LDAP, etc."
+          "info": "Support for major identity providers (IdP) such as SAML, OpenID Connect, etc."
         },
         {
           "text": "Access control & custom roles",
@@ -98,12 +98,12 @@
       "buttonUrl": "/support",
       "planItems": [
         {
-          "text": "On-premise installation",
+          "text": "On-premise available",
           "info": "Run Forestry behind your firewall (optional)"
         },
         {
           "text": "Connect to on-premise Git sources",
-          "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
+          "info": "Support for GitHub Enterprise, GitLab, and Bitbucket Server"
         },
         {
           "text": "Live support",
@@ -114,8 +114,7 @@
           "info": "A ledger of the actions performed by users in your organization"
         },
         {
-          "text": "Enterprise-level SLAs",
-          "info": "Guaranteed minimum uptime of 99.5%"
+          "text": "Enterprise-level SLAs"
         },
         {
           "text": "Ongoing training",
@@ -123,7 +122,7 @@
         },
         {
           "text": "Dedicated Customer Success Manager",
-          "info": "Ongoing training and support"
+          "info": "Your single point of contact to help you and your team"
         },
         {
           "text": "Architectural advice",

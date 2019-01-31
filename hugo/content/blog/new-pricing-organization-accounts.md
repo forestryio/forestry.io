@@ -1,7 +1,7 @@
 ---
 title: New Pricing
 description: You can now add up to 3 users per site on a free Personal Plan and the
-  Business Plan allows for larger teams at $9/user/month.
+  Starter Plan allows for larger teams at $9/user/month.
 date: 2018-03-28 12:38:35 +0000
 authors:
 - scott-gallant
@@ -23,7 +23,7 @@ aliases: []
 ---
 We’re excited to announce new pricing!
 
-Now, the [Personal plan](#a-better-personal-plan) supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The [Business plan](#a-business-plan-for-large-teams) also supports unlimited sites, but is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations with special requirements.
+Now, the [Personal plan](#a-better-personal-plan) supports unlimited sites and up to 3 free Guest users per site (a “Guest” is a single-site user with limited permissions, similar to an “editor”).  The [Starter plan](#a-business-plan-for-large-teams) also supports unlimited sites, but is designed for larger teams who need to manage many users across their sites and branches.  Finally, our Enterprise plan is designed for large organizations with special requirements.
 
 ![](/uploads/2018/03/forestryio-pricing.png)
 
@@ -40,13 +40,13 @@ Get up to 3 Guest users per site on all plans. A _Guest_ is a single-site user w
 {{% /tip %}}
 
 
-## A Business Plan for Large Teams
+## A Starter Plan for Large Teams
 
-If you have a large team, the Business Plan supports any number of users and a new _Team_ UI to manage their roles.
+If you have a large team, the Starter Plan supports any number of users and a new _Team_ UI to manage their roles.
 
 ![](/uploads/2018/03/business-plan-ui.png)
 
-The new Business Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Business plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
+The new Starter Plan is designed to grow organically with your team using a per-user fee. Now you can manage your users and their roles across all of your sites (and branches).  The Starter plan starts at $29/month which includes your first 5 users and allows you to add additional users for $9/month each.
 
 ## Conclusion
 We're on a mission to help people craft and spread their message online. Whether you're building a small site for your friend's restaurant or a mission-critical site for your company, we feel that our new pricing helps you choose a static approach.  
