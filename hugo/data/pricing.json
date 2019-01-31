@@ -41,7 +41,7 @@
       ]
     },
     {
-      "title": "Business",
+      "title": "Starter",
       "priceAnnually": 0,
       "priceMonthly": 9,
       "description": "Starting at $29/month which includes your first 5 users",
@@ -54,11 +54,37 @@
           "info": "Manage one group of users across all of your sites and branches"
         },
         {
-          "text": "User permissions",
-          "info": "Assign a role to each member in your organization"
+          "text": "3 user roles",
+          "info": "Assign roles to your team members: admin, developer, or editor"
         },
         {
-          "text": "Business support"
+          "text": "Business support",
+          "info": "Messages to our support queue will be responded to within 24 hours"
+        }
+      ]
+    },{
+      "title": "Pro",
+      "priceAnnually": "0",
+      "priceMonthly": "99",
+      "description": "",
+      "planIncludes": "Everything in Starter plus",
+      "buttonText": "Contact us",
+      "buttonUrl": "/support",
+      "planItems": [
+        {
+          "text": "Single Sign-on",
+          "info": "Support for major identity providers (IdP) such as SAML, OpenID Connect, etc."
+        },
+        {
+          "text": "Access control & custom roles",
+          "info": "Setup custom roles to control who can perform certain actions"
+        },
+        {
+          "text": "Priority support",
+          "info": "Messages to our support queue are given priority and will be responded to within 12 hours"
+        },
+        {
+          "text": "Editorial workflow"
         }
       ]
     },
@@ -67,27 +93,43 @@
       "priceAnnually": "_",
       "priceMonthly": "_",
       "description": "",
-      "planIncludes": "Everything in Business plus",
-      "buttonText": "Get a quote",
+      "planIncludes": "Everything in Pro plus",
+      "buttonText": "Contact us",
       "buttonUrl": "/support",
       "planItems": [
         {
-          "text": "Flexible user limits"
-        },
-        {
-          "text": "Priority support"
-        },
-        {
-          "text": "* On-premise installation",
+          "text": "On-premise available",
           "info": "Run Forestry behind your firewall (optional)"
         },
         {
           "text": "Connect to on-premise Git sources",
-          "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
+          "info": "Support for GitHub Enterprise, GitLab, and Bitbucket Server"
         },
         {
-          "text": "Enterprise user management",
-          "info": "Support for advanced authentication systems (LDAP, Active Directory, etc)"
+          "text": "Live support",
+          "info": "Your team will have direct access to our engineers in a dedicated Slack channel"
+        },
+        {
+          "text": "Audit logs",
+          "info": "A ledger of the actions performed by users in your organization"
+        },
+        {
+          "text": "Enterprise-level SLAs"
+        },
+        {
+          "text": "Ongoing training",
+          "info": "Training for your editors to help them achieve their content objectives"
+        },
+        {
+          "text": "Dedicated Customer Success Manager",
+          "info": "Your single point of contact to help you and your team"
+        },
+        {
+          "text": "Architectural advice",
+          "info": "Leverage our experts for setting up deployment, CI/CD, micro-services, etc."
+        },
+        {
+          "text": "Customizations and integrations"
         }
       ]
     }
