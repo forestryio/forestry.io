@@ -54,8 +54,8 @@
           "info": "Manage one group of users across all of your sites and branches"
         },
         {
-          "text": "User permissions",
-          "info": "Assign a role to each member in your organization"
+          "text": "3 user roles",
+          "info": "Assign roles to your team members: admin, developer, or editor"
         },
         {
           "text": "Business support",
@@ -73,15 +73,18 @@
       "planItems": [
         {
           "text": "Single Sign-on",
-          "info": "Support for major identity providers (IdP) such as SAML, OpenID Connect, LDAP, etc"
+          "info": "Support for major identity providers (IdP) such as SAML, OpenID Connect, LDAP, etc."
         },
         {
-          "text": "Access control",
-          "info": "Control who can perform certain actions"
+          "text": "Access control & custom roles",
+          "info": "Setup custom roles to control who can perform certain actions"
         },
         {
           "text": "Priority support",
           "info": "Messages to our support queue are given priority and will be responded to within 12 hours"
+        },
+        {
+          "text": "Editorial workflow"
         }
       ]
     },
@@ -99,8 +102,8 @@
           "info": "Run Forestry behind your firewall (optional)"
         },
         {
-          "text": "Access control and custom roles",
-          "info": "Customize unique workflows for your team. Control who can review and publish content."
+          "text": "Connect to on-premise Git sources",
+          "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
         },
         {
           "text": "Live support",
@@ -113,10 +116,6 @@
         {
           "text": "Enterprise-level SLAs",
           "info": "Guaranteed minimum uptime of 99.5%"
-        },
-        {
-          "text": "Connect to on-premise Git sources",
-          "info": "Support for GitHub Enterprise, GitLab CE, and Bitbucket Server"
         },
         {
           "text": "Ongoing training",
