@@ -39,6 +39,8 @@ Menu entries linking to existing content on your site will be added to the front
 
 Menu entries with external links will be added to your menus data file located at `/data/menus.yml`.
 
+**NB. The Jekyll Menus plugin is not currently compatible with GitHub Pages as it is [not a listed dependency](https://pages.github.com/versions/).**
+
 ## Managing Menus
 
 The Menu Manager allows you to add, reorganize, and remove menu items from existing menus.
