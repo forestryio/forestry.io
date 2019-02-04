@@ -11,7 +11,7 @@ menu:
   changelog:
     name: 2018/11/27
     parent: Changelog
-    weight: 3
+    weight: 4
 
 ---
 ## Enhancements

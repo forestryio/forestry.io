@@ -25,9 +25,8 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    name: Could not locate Gemfile or .bundle/ directory
     parent: Troubleshooting
-    weight: 4
+    weight: 5
 
 ---
 #### When I view an error log from Forestry I see: `Could not locate Gemfile or .bundle/ directory`

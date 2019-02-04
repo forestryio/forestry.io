@@ -23,7 +23,6 @@ menu:
     weight: 3
 
 ---
-
 Your Forestry site is considered to be **in a subdirectory** if the repo you imported to Forestry contains all of the information pertinent to your static site generator inside of a subdirectory. Depending on the static site generator being used, Forestry may have asked you to enter this subdirectory on import so that it can locate the configuration file for the SSG.
 
 If you're experiencing problems previewing or deploying in Forestry, and your site is in a subdirectory, you may need to make some updates to your build configuration. This is particularly true if, in order to build the site locally, you navigate to this subdirectory before running your build commands.
@@ -60,6 +59,3 @@ build:
   - BUILD_DIR=site
   preview_output_directory: hugo/public
 ```
-
-
-

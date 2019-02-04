@@ -16,8 +16,8 @@ faqs:
     file. No updates required
   headline: What is Forestry Remote?
 - headline: How many sites can I set up
-  textline: You can set up unlimited sites. If you are on the Starter or Pro plan, you will
-    be billed based on number of users in your organization.
+  textline: You can set up unlimited sites. If you are on the Starter or Pro plan,
+    you will be billed based on number of users in your organization.
 - headline: Do I need to configure my project?
   textline: No configuration needed. Forestry will parse your project and automatically
     build your CMS.
@@ -25,9 +25,11 @@ faqs:
   textline: A guest is a single-site user with limited permissions. Guests do not
     get access to support and are often used for clients or external colleagues.
 - headline: What is a User?
-  textline: A _User_ refers to people in your organization who have access to your sites and who are assigned a specific role (only available on paid plans).
+  textline: A _User_ refers to people in your organization who have access to your
+    sites and who are assigned a specific role (only available on paid plans).
 - headline: Do the Starter and Pro plans include Guests?
-  textline: Yes, all sites on the Starter and Pro plans include up to 3 Guest users per site.  
+  textline: Yes, all sites on the Starter and Pro plans include up to 3 Guest users
+    per site.
 headline: ''
 description: ''
 textline: ''

@@ -23,7 +23,7 @@ images:
 menu:
   troubleshooting:
     parent: Troubleshooting
-    weight: 5
+    weight: 6
 
 ---
 For some hosting providers (such as GitHub pages) you will need to place a `CNAME` file in the root of your site.
