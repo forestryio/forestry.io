@@ -12,14 +12,18 @@ draft: true
 ---
 ## Enhancements
 
-* **Build Commands UI:** It is now possible to edit the build commands for publishing and preview your site from inside the CMS. Go to `Settings > Build` to edit your configuration.
-* **Setup Checklist:** In order to help users in setting up their site, we've added a Setup Checklist to the sidebar. This checklist guides users through the basic steps of configuring a site with Forestry.
-* **Help Banner in Settings:** We've added a help banner to the top of the Sidebar, Media, and Deploy tabs in the Settings. These banners provide some context around these tabs purpose and links to the relevant documentation.
-* **Front Matter Field Config:** The form for editing a front matter field has been moved to a modal from the right panel.
-* **Creating Pages:** We've started beta testing (50%) a new flow for creating pages which lets users edit the front matter and body of a page before submission. This new flow addresses several issues:
-  * _Filenames:_ Until now we have assumed that the filename for a new page should be based on its title field. While this is often the case, not all pages have a "title" field. The new flow prompts users to manually enter a filename for a page if a "title" field is not present.
-  * _Form Errors:_ In the old flow it was possible for pages to be created that failed their front matter template's validation. This issue could result in a site failing to build because of invalid data in a new page's front matter. With the new flow it is no longer possible to create an invalid page.
+* **Commit Batching:** Queued commits are now grouped together to improve processing time. Commit messages show all of the authors who contributed to a commit.
+
+## Layout
+
+* **Settings:** Moved build tab contents into the Preview tab and Deploy tab.
+* **Settings:** Settings tabs are now vertical.
 
 ## Bug Fixes
 
-* **Custom Logo in Remote Admin:** Fixed an issue which prevented SVGs custom logs from showing up in the remote admin.
+* **Missing Output Directory:**  Return a helpful error message when your site is missing its output directory.
+* **Remote Admin:** Fixed an issue that would prevent admins from accessing admin-features in the remote admin.
+* **Media:** Fixed an issue where svgs without XML tag wouldn't show up in the media library.
+* **Media:** Fixed an issue where media added to your repo wouldn't immediately import into Forestry.
+* **Blocks:** Fixed drag and drop in nested blocks.
+* **Passwords:** Require password verification for in-app password reset.
