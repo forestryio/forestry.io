@@ -61,9 +61,15 @@ Click the **Add webhook** button to add a new webhook, and insert the webhook UR
 
 Forestry generates a keypair that will allow it to authenticate with your repository and push/pull commits. In order to do this, you need to add the **public key** provided by Forestry to the repository.
 
-### Add Public Key to Github
+{{% tip %}}
+The following GitHub and GitLab instructions will add a **deploy key** to your site's repository, which will give Forestry access to read from and write to the project. If your site requires additional private dependencies, you will instead want to add an SSH key to your user account in order to provide Forestry access to the private submodules.
 
-To add a new key to your Github repo, navigate to `https://github.com/$USERNAME/$REPOSITORY/settings/keys`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
+More info: [Using Private Submodules With Forestry](/docs/troubleshooting/using-private-submodules/)
+{{% /tip %}}
+
+### Add Public Key to GitHub
+
+To add a new key to your GitHub repo, navigate to `https://github.com/$USERNAME/$REPOSITORY/settings/keys`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
 Click the **Add deploy key** button. Enter whatever you want for the **Title**: this will help you identify what the key is for. Under **Key**, paste the private key provided by Forestry.
 
