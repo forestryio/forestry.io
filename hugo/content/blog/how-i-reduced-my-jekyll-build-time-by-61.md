@@ -9,7 +9,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
-- "/uploads/2019/02/jekyll-build-times-graph.png"
+- "/uploads/2019/02/jekyll-build-graph.png"
 categories:
 - Jekyll
 tags: []
