@@ -212,7 +212,6 @@ pages:
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
 - hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
 - hugo/content/careers/hiring-devops-engineer.md
-- hugo/content/test-2.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/test.md
 - hugo/content/blog/what-s-new-in-jekyll-3.8.md
@@ -223,5 +222,4 @@ pages:
 - hugo/content/blog/instant-production-ready-scaffolding-with-create-static-site.md
 - hugo/content/blog/landing-page-create-static-site-copy.md
 - hugo/content/blog/why-we-built-forestry.md
-- hugo/content/test.md
 - hugo/content/terms.md
