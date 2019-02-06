@@ -21,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 At the time of writing, Jekyll’s performance is still actively being worked on by the Core Team for an upcoming version 4 release. One of the main complaints about Jekyll for users is often the [build times of larger websites](https://forestry.io/blog/hugo-vs-jekyll-benchmark/). I want to take this opportunity to see just how much I can expect to improve my current site's build times by using the latest master branch.
