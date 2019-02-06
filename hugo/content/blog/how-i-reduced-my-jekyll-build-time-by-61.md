@@ -1,10 +1,10 @@
 ---
 title: How I reduced my Jekyll build time by 61%
 description: ''
-date: 2019-01-09 00:00:00 +0000
+date: 2019-02-06 02:00:00 -1100
 authors:
 - Colin Garvey
-publishdate: 2017-12-07 04:00:00 +0000
+publishdate: 2019-02-06 02:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -30,7 +30,7 @@ Sound good? Let’s get started.
 
 ## Benchmarking your Jekyll website
 
-First, we need to evaluate the current build status. We can achieve this by using Jekyll’s built in Liquid profiler flag to spot any performance improvement opportunities.
+First, we need to evaluate the current build status. We can achieve this by using Jekyll’s built-in Liquid profiler flag to spot any performance improvement opportunities.
 
     bundle exec jekyll build --profile
 
