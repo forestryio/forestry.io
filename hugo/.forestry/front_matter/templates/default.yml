@@ -222,4 +222,5 @@ pages:
 - hugo/content/blog/instant-production-ready-scaffolding-with-create-static-site.md
 - hugo/content/blog/landing-page-create-static-site-copy.md
 - hugo/content/blog/why-we-built-forestry.md
+- hugo/content/test.md
 - hugo/content/terms.md
