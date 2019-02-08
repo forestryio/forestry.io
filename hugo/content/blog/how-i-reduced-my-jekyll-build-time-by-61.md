@@ -87,7 +87,17 @@ end
 
 Commit URL: [b572c61](https://github.com/desiredpersona/jekyll-test-site/commit/b572c61bf6c8f6adea79185831c82d8e71aa70b4)
 
-We also need to add `.jekyll-cache` to our `.gitignore` file because Jekyll has a new [cache API](https://github.com/jekyll/jekyll/blob/master/docs/_tutorials/cache_api.md).
+Jekyll 4 has a new [cache API](https://github.com/jekyll/jekyll/blob/master/docs/_tutorials/cache_api.md) so we need to exclude `.jekyll-cache` in our `_config.yml` file for now using the `exclude:` option like so;
+
+```
+
+exclude:
+
+  - .jekyll-cache
+
+```
+
+We can also add `.jekyll-cache` to our `.gitignore` file.
 
 Next, update Jekyll with `bundle update` and then once again run a new build command with the Liquid `--profile` flag.
 
