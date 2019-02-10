@@ -78,6 +78,8 @@ export const HocDemo = () => {
 };
 ```
 
+***
+
 **src/components/hoc-demo/UserInfoContainer.tsx**
 
 [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/UserInfoContainer.tsx)
@@ -94,6 +96,8 @@ export const UserInfoContainer = withUser(
   ErrorScreen
 );
 ```
+
+***
 
 **src/components/hoc-demo/withUser.tsx**
 
@@ -222,6 +226,8 @@ export const RenderPropsDemo = () => {
 };
 ```
 
+***
+
 **src/components/render-props-demo/WithUser.tsx**
 
 [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
@@ -314,6 +320,8 @@ export const HooksDemo = () => {
   return <UserInfo user={user.data} logout={logout} />;
 };
 ```
+
+***
 
 **src/components/hooks-demo/useUser.ts**
 
