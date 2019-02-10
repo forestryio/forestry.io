@@ -34,7 +34,7 @@ We have seen these patterns collide with the realities of a rapidly changing cod
 
 ## The Presentation Component
 
-Below is the `UserInfoView`, a simple component that renders a little piece of UI with the users name, email address, and button to logout. A `Sidebar` component needs to render this information, but in order to do so it must first load the user data.
+Below is the `UserInfoView`, a simple component that renders a little piece of UI with the users name, email address, and button to logout. The demo components needs to load and render this information.
 
 **src/components/UserInfo.tsx**
 
@@ -60,6 +60,8 @@ export const UserInfo = ({ user, logout }: Props) => (
 
 **src/components/hoc-demo/index.tsx**
 
+[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/index.tsx)
+
 ```typescript
 import * as React from "react";
 import { UserInfoContainer } from "./UserInfoContainer";
@@ -78,6 +80,8 @@ export const HocDemo = () => {
 
 **src/components/hoc-demo/UserInfoContainer.tsx**
 
+[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/UserInfoContainer.tsx)
+
 ```typescript
 import { withUser } from "./withUser";
 import { UserInfo } from "../UserInfo";
@@ -92,6 +96,8 @@ export const UserInfoContainer = withUser(
 ```
 
 **src/components/hoc-demo/withUser.tsx**
+
+[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/withUser.tsx)
 
 ```typescript
 import React from "react";
@@ -168,21 +174,22 @@ export function withUser<P extends BaseComponentProps = BaseComponentProps>(
 
 Good:
 
-1. The API for `UserInfo` is really simple.
+1. The API for `UserInfo` is really simple. 
 2. `Sidebar` is extremely easy to read.
 
 Bad:
 
- 1. `withUser` does a terrible job of adhering to the Singe Responsibility Principle (SRP).
- 2. We're adding components to the JSX tree to handle data fetching.
- 3. Not only that, but the loading of data is completely coupled to the rendering of _specific_ presentation components. If you need to switch out the `Spinner` component for `UserInfo`, you will need to create _another_ component using `withUser`.
- 4. Every time an existing component needs access to the user, you must create a _new_ component using `withUser`. This means you would have to find all uses of that component, and replace them with calls to a completely different component and start passing in a new prop: "email".
- 5. The props that the `UserInfo` component accepts is the union of both `WithUser` and `UserInfo`'s props.
+ 1. `withUser` in no way adheres to the Singe Responsibility Principle (SRP).
+ 2. We're adding components to the JSX expression to handle data fetching.
+ 3. The constructed component both loads data and renders _specific_ presentation components. If you need to switch out the `Spinner` component for `UserInfo`, you will need to create _another_ component using `withUser`.
+ 4. Any time an existing component needs access to the user, a new component must be created using `withUser`. This means you will have to find all uses of that component, and replace them with calls to a completely different component.
+ 5. The props that the `UserInfoContainer` accepts are the union of both `WithUser`'s props and `UserInfo`'s props.
  6. Getting the types right requires some gymnastics. They are cumbersome, error prone, and hard to read.
- 7. Dynamically defining classes gives me the heebie-jeebies.
- 8. This is a lot of code.
- 9. The test cases for this would be ridiculous.
-10. The type errors for `UserInfoContainer` are horrifying. For example, if you try to add a `cake` prop you will get the following compilation warning:
+ 7. This API would not make it possible to fetch multiple pieces of data in parallel, because the parent must finish loading before the child can start. 
+ 8. Functions that create classes gives me the heebie-jeebies.
+ 9. This is a lot of code, which means there's a big surface area for bugs.
+10. The number and variety of tests required to get this covered is high.
+11. The type errors for `UserInfoContainer` are horrifying. For example, if you try to add an unwanted `cake` prop you will see the following compilation warning:
 
         Type '{ email: string; logout: () => string; cake: string; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<withUser<Props>.WithUser> & Readonly<{ children?: ReactNode; }> & Readonly<WithUserProps>'.
           Property 'cake' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<withUser<Props>.WithUser> & Readonly<{ children?: ReactNode; }> & Readonly<WithUserProps>'.ts(2322)
@@ -190,6 +197,8 @@ Bad:
 ## Render Props/Children
 
 **src/components/render-props-demo/index.tsx**
+
+[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
 
 ```typescript
 import * as React from "react";
@@ -214,6 +223,8 @@ export const RenderPropsDemo = () => {
 ```
 
 **src/components/render-props-demo/WithUser.tsx**
+
+[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
 
 ```typescript
 import * as React from "react";
@@ -269,19 +280,22 @@ Good:
 
 1. `WithUser` does a better job of respecting SRP.
 2. `WithUser` accepts only what it needs in order to load the user (i.e. `email`)
-3. The types are significantly easier to understand and write.
-4. We no longer need to create a new component when we need to start loading the user for a new component.
+3. The types are significantly easier to understand.
+4. We no longer need to create a new component when we need to start loading the user for an existing component.
+5. It is now possible to fetch multiple pieces of information in parallel.
 
 Bad:
 
-1. The loading of data is still coupled to the rendering of data.
-2. There are some complex lambdas in the JSX.
-3. We're still adding Component to the JSX tree to handle data fetching.
-4. `Sidebar` is now nested and requires the use of closures for `logout` to be passed to `UserInfo`.
+1. Data fetching is still happening inside our JSX expression..
+2. We've actually added lambdas to the JSX that conditionally render children.
+3. `RenderProps` is requires the use of closures for `logout` to be passed to `UserInfo`.
+4. Although we could fetch multiple pieces of information in parallel, doing so would require nesting our lambdas and increasing the closure scope. This quickly leads to a pyramid of doom.
 
 ## Hooks
 
 **src/components/hooks-demo/index.tsx**
+
+[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hooks-demo/index.tsx)
 
 ```typescript
 import * as React from "react";
@@ -302,6 +316,8 @@ export const HooksDemo = () => {
 ```
 
 **src/components/hooks-demo/useUser.ts**
+
+[Source]()
 
 ```typescript
 import { useState, useEffect } from "react";
@@ -326,11 +342,11 @@ export function useUser(email: string) {
 
 Good:
 
-1. `useUser` hook has one job
-2. Loading data is still done the `render` body but it's no longer in the JSX expression.
+1. `useUser` hook has one job–load user data.
+2. Loading data is still done the `render` body but it's no longer inside the JSX expression.
 3. The types are almost entirely inferred.
-4. `Sidebar` is now flat and does not require closures to pass `logout` to `UserInfo`
-5. With the user state accessible in the main body of the `Sidebar` we could more easily load multiple pieces of data in parallel and only render a single `Loading` view.
+4. `HooksDemo` is now flat and does not require closures to pass `logout` to `UserInfo`
+5. With the user state accessible in the main body of the `HooksDemo` we could load multiple pieces of data in parallel and render a single `LoadingScreen` without nesting.
 
 Bad:
 
