@@ -78,6 +78,8 @@ export const HocDemo = () => {
 };
 ```
 
+The first impression is a good one. The `UserInfoContainer` has a short and clear API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how much friction there will be when attempting to change or extend it's behaviour.
+
 ***
 
 **src/components/hoc-demo/UserInfoContainer.tsx**
@@ -96,6 +98,10 @@ export const UserInfoContainer = withUser(
   ErrorScreen
 );
 ```
+
+Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. It turns out that `UserInfoContainer` is actually generated dynamically by the `withUser` function. The returned component renders the `LoadingScreen` while the user is loading, then renders either the `UserInfo` or the `ErrorScreen` depending on whether the request is successful or not. Not all HOCs have this API but that's part of the problem. Many HOC APIs have many configuration options, so there's no easy way to be sure of what's happening, without reading the docs or source. We'll see in a second that you better hope the documentation is good. HOCs are often dense and difficult reads.
+
+Aside from their opacity the, HOCs are surprisingly difficult to re-use. Any time you want to pass the user data to an existing component, you must first create a third component that binds them together. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will now be rendered by `A`. The same is true even if you just want swap out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this can make navigating your code base harder, as more and more container-components containing single lines of uninteresting code are added.
 
 ***
 
@@ -176,27 +182,49 @@ export function withUser<P extends BaseComponentProps = BaseComponentProps>(
 }
 ```
 
+Opening up `withUser`, we see that it is dynamically creating a class called `WithUser`, which is handling both data fetching and conditional rendering. This violation of the Single Responsibility Principle is subtle, but is what leads to the unfortunate proliferation of components when `UserInfo` is used in two different locations with different `Loading` components.
+
+There are two odd things about the way these components are rendered. First, `WithUser` references its child components as variables. Second, it actually accessing them through a closure. While this is not necessarily a bad thing, it does add a slight smell to the code. 
+
+Finally, check out those types! Getting the types right requires some unpleasant gymnastics. The types are complex, error prone, and hard to read. Aside from all these things, they are extremely fragile. The most painful part of using Typescript, in my experience, has been the process of switching `withUser(A, B, C)` to `withUser(A as any, B, C)` after a new Typescript version breaks the types for the HOCs. This problem is amplified by the dynamic nature of the types, which makes them error messages cryptic and frightening. For example, if you were to accidentally pass a `cake` prop to `HostingInfoContainer` you would be given the following error:
+
+    Type '{ email: string; logout: () => string; cake: string; }' 
+      is not assignable to type 
+       'IntrinsicAttributes 
+        & IntrinsicClassAttributes<withUser<Props>.WithUser> 
+        & Readonly<{ children?: ReactNode; }> 
+        & Readonly<WithUserProps>'.
+      Property 'cake' does not exist on type 
+      	'IntrinsicAttributes 
+         & IntrinsicClassAttributes<withUser<Props>.WithUser> 
+         & Readonly<{ children?: ReactNode; }> 
+         & Readonly<WithUserProps>'.
+      ts(2322)
+
+While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work. 
+
+I have one last gripe with the way `WithUser` works: it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–that's fine–but it also passes its child anything else that it's given. In this case, `UserInfo` should only be given what it expects, but the difficulty of adding correct types means it doesn't always end up that way. While seemingly inconsequential in this simplified case, it can become a real problem as the app become more complicated. This implicit passing of all parent props greatly increases the difficulty of tracing the flow of props to or from a view. It can be hard to figure out where a piece of data comes from, or where it's going to be used. 
+
+### HOC Pattern Summary
+
 Good:
 
-1. The API for `UserInfo` is really simple. 
-2. `Sidebar` is extremely easy to read.
+1. The API for `UserInfo` is really simple.
+2. `HocDemo` is extremely easy to read.
 
 Bad:
 
  1. `withUser` in no way adheres to the Singe Responsibility Principle (SRP).
  2. We're adding components to the JSX expression to handle data fetching.
- 3. The constructed component both loads data and renders _specific_ presentation components. If you need to switch out the `Spinner` component for `UserInfo`, you will need to create _another_ component using `withUser`.
+ 3. The constructed component both loads data and renders _specific_ presentation components. If you need to switch out the `LoadingScreen` component for `UserInfo`, you will need to create _another_ component using `withUser`.
  4. Any time an existing component needs access to the user, a new component must be created using `withUser`. This means you will have to find all uses of that component, and replace them with calls to a completely different component.
  5. The props that the `UserInfoContainer` accepts are the union of both `WithUser`'s props and `UserInfo`'s props.
  6. Getting the types right requires some gymnastics. They are cumbersome, error prone, and hard to read.
- 7. This API would not make it possible to fetch multiple pieces of data in parallel, because the parent must finish loading before the child can start. 
+ 7. This API would not make it possible to fetch multiple pieces of data in parallel, because the parent must finish loading before the child can start.
  8. Functions that create classes gives me the heebie-jeebies.
  9. This is a lot of code, which means there's a big surface area for bugs.
 10. The number and variety of tests required to get this covered is high.
-11. The type errors for `UserInfoContainer` are horrifying. For example, if you try to add an unwanted `cake` prop you will see the following compilation warning:
-
-        Type '{ email: string; logout: () => string; cake: string; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<withUser<Props>.WithUser> & Readonly<{ children?: ReactNode; }> & Readonly<WithUserProps>'.
-          Property 'cake' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<withUser<Props>.WithUser> & Readonly<{ children?: ReactNode; }> & Readonly<WithUserProps>'.ts(2322)
+11. The type errors for `UserInfoContainer` are horrifying. 
 
 ## Render Props/Children
 
