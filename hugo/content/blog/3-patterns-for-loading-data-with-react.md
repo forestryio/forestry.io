@@ -251,7 +251,7 @@ Finally, dynamically creating classes is magical. And while magic is powerful it
 
 ## Render Props/Children
 
-**TL;DR**
+### TL;DR
 
 Good:
 
@@ -268,7 +268,7 @@ Bad:
 3. `RenderProps` is requires the use of closures for `logout` to be passed to `UserInfo`.
 4. Although we could fetch multiple pieces of information in parallel, doing so would require nesting our lambdas and increasing the closure scope. This quickly leads to a pyramid of doom.
 
-**src/components/render-props-demo/index.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
+### src/components/render-props-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
 
 ```typescript
 import * as React from "react";
@@ -295,6 +295,8 @@ export const RenderPropsDemo = () => {
 This demo component is longer than the `HocDemo`, but it has several improvements over the HOC pattern.
 
 The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. No other props are accepted, so it doesn't pass them through to the child. 
+
+**Concurrent Requests**
 
 This pattern better adheres to the Single Responsibility Principle. The rendering of the `LoadingScreen` is not coupled to the loading of data. Instead, `WithUser` _only_ loads the data and its child decides how to handle that. 
 
@@ -324,13 +326,13 @@ It would now be possible to make multiple requests in parallel. For example:
 </WithNotifications>
 ```
 
+**The Pyramid of Doom**
+
 This takes me to the biggest downside of this approach: complex lambda's in our JSX. Being able to embed javascript expressions is a huge benefit of JSX, but the Render Props pattern really takes that to the extreme. If you're not careful you can end up with a pyramid of doom as the lambdas pile up. 
 
 This is a problem we've noticed particularly with the `react-apollo`.
 
-***
-
-**src/components/render-props-demo/WithUser.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
+### src/components/render-props-demo/WithUser.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
 
 ```typescript
 import * as React from "react";
@@ -382,13 +384,23 @@ export class WithUser extends React.Component<WithUserProps, WithUserState> {
 }
 ```
 
-1. 
-
 ## Hooks
 
-**src/components/hooks-demo/index.tsx**
+### TL;DR
 
-[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hooks-demo/index.tsx)
+Good:
+
+1. `useUser` hook has one job–load user data.
+2. Loading data is still done the `render` body but it's no longer inside the JSX expression.
+3. The types are almost entirely inferred.
+4. `HooksDemo` is now flat and does not require closures to pass `logout` to `UserInfo`
+5. With the user state accessible in the main body of the `HooksDemo` we could load multiple pieces of data in parallel and render a single `LoadingScreen` without nesting.
+
+Bad:
+
+1. hooks API is still new and a bit magical
+
+### src/components/hooks-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hooks-demo/index.tsx)
 
 ```typescript
 import * as React from "react";
@@ -408,11 +420,7 @@ export const HooksDemo = () => {
 };
 ```
 
-***
-
-**src/components/hooks-demo/useUser.ts**
-
-[Source]()
+### src/components/hooks-demo/useUser.ts – [Source]()
 
 ```typescript
 import { useState, useEffect } from "react";
@@ -434,15 +442,3 @@ export function useUser(email: string) {
   return { data, loading, error };
 }
 ```
-
-Good:
-
-1. `useUser` hook has one job–load user data.
-2. Loading data is still done the `render` body but it's no longer inside the JSX expression.
-3. The types are almost entirely inferred.
-4. `HooksDemo` is now flat and does not require closures to pass `logout` to `UserInfo`
-5. With the user state accessible in the main body of the `HooksDemo` we could load multiple pieces of data in parallel and render a single `LoadingScreen` without nesting.
-
-Bad:
-
-1. hooks API is still new and a bit magical
