@@ -58,9 +58,29 @@ Above is `UserInfo`–a simple component that renders the users name, email addr
 
 ## HOCs
 
-**src/components/hoc-demo/index.tsx**
+### **TL;DR:**
 
-[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/index.tsx)
+Good:
+
+1. The API for `UserInfo` is really simple.
+2. `HocDemo` is extremely easy to read.
+
+Bad:
+
+1. The API of HOCs vary a lot so it can be hard to tell what they do
+2. Components count goes up since the generated classes are often difficult to reuse.
+3. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
+4. Dynamic types are difficult, error prone, and fragile.
+5. Compiler errors are obtuse.
+6. This API would make it difficult to fetch multiple pieces of data in parallel.
+7. Dynamically creating classes is magical. Magic is powerful but scary.
+
+One other point I haven't expanded upon:
+
+1. Datafetching is declared by an element in our JSX; hella weird.
+2. This is a lot of code, which means there's a big surface area for bugs, so the number and variety of tests required to get this properly covered is very high.
+
+### src/components/hoc-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/index.tsx)
 
 ```typescript
 import * as React from "react";
@@ -80,11 +100,7 @@ export const HocDemo = () => {
 
 The first impression of this pattern is a good one. The `UserInfoContainer` has a clean and simple API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how difficult making changes can be.
 
-***
-
-**src/components/hoc-demo/UserInfoContainer.tsx**
-
-[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/UserInfoContainer.tsx)
+### **src/components/hoc-demo/UserInfoContainer.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/UserInfoContainer.tsx)
 
 ```typescript
 import { withUser } from "./withUser";
@@ -103,11 +119,7 @@ Unless you're familiar with HOCs already–and maybe even then–looking at the 
 
 Aside from their opacity the, HOCs are surprisingly difficult to re-use. Any time an existing component needs the user, you must first create another component. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will be rendered by `A` now instead. The same applies to swapping out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this proliferation of one-line container components can make navigating your code base difficult.
 
-***
-
-**src/components/hoc-demo/withUser.tsx**
-
-[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/withUser.tsx)
+### **src/components/hoc-demo/withUser.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/withUser.tsx)
 
 ```typescript
 import React from "react";
@@ -186,6 +198,8 @@ Opening up `withUser`, we see that it is dynamically creating a class called `Wi
 
 There are two odd things about the way these components are rendered. First, `WithUser` references its child components as variables. Second, it actually accessing them through a closure. While this is not necessarily a bad thing, it does add a slight smell to the code.
 
+**_Gymnastics in Types_**
+
 And check out those types! Getting the types right requires some unpleasant gymnastics. The types are complex, error prone, and hard to read. Aside from all these things, they are extremely fragile. The most painful part of using Typescript, in my experience, has been the process of switching `withUser(A, B, C)` to `withUser(A as any, B, C)` after a new Typescript version breaks the types for the HOCs. This problem is amplified by the dynamic nature of the types, which makes them error messages cryptic and frightening. For example, if you were to accidentally pass a `cake` prop to `HostingInfoContainer` you would be given the following error:
 
     Type '{ email: string; logout: () => string; cake: string; }' 
@@ -203,7 +217,13 @@ And check out those types! Getting the types right requires some unpleasant gymn
 
 While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work.
 
-Another gripe I have with the way `WithUser` works is that it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–that's fine–but it also passes its child anything else that it's given. In this case, `UserInfo` should only be given what it expects, but the difficulty of adding correct types means it doesn't always end up that way. Am I being nit-picky? Maybe in this simplified case, but this can become a real problem as the app become more complicated. The implicit passing of all parent props greatly increases the difficulty of tracing their flow through the app. It can be hard to figure out where a piece of data comes from, or where it's going to be used.
+**The Flow of Props**
+
+Another gripe I have with the way `WithUser` works is that it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–which is fine–but it _also_ passes everything else that it's given to the wrapped component. The types should prevent `UserInfo` from being given unexpected props, but the challenge of correctly typing HOCs means this doesn't always happen in practice.
+
+Why is this a problem? Experience has shown that implicit passing all parent props makes tracing the flow of props through the app difficult. Determining where a piece of data comes from, or where it will be used, can be a pain. Am I being overly fussy? Maybe for this contrived example; but this friction in tracing data flow can become a real problem as the project grows.
+
+**Problems Compound**
 
 I'm going to take a step back from this particular HOCs to mention that using this kind of composition for data fetching does not scale. Consider what happens when we want to also load a list of notifications to show with the `UserInfo`. Assuming we put that behaviour into a similar HOC as `withUser`, we might try something like this:
 
@@ -229,32 +249,26 @@ Flickering can occur even though both HOCs are being given the same `LoadingScre
 
 Finally, dynamically creating classes is magical. And while magic is powerful it is also dangerous and we tend to have less control over it then we think.
 
-### HOC Pattern Summary
+## Render Props/Children
+
+**TL;DR**
 
 Good:
 
-1. The API for `UserInfo` is really simple.
-2. `HocDemo` is extremely easy to read.
+1. `WithUser` does a better job of respecting SRP.
+2. `WithUser` accepts only what it needs in order to load the user (i.e. `email`)
+3. The types are significantly easier to understand.
+4. We no longer need to create a new component when we need to start loading the user for an existing component.
+5. It is now possible to fetch multiple pieces of information in parallel.
 
 Bad:
 
-1. The API of HOCs vary a lot so it can be hard to tell what they do.
-2. Components count goes up since the generated classes are often difficult to reuse.
-3. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
-4. Dynamic types are difficult, error prone, and fragile.
-5. Compiler errors are obtuse.
-6. This API would make it difficult to fetch multiple pieces of data in parallel.
-7. Dynamically creating classes is magical. Magic is powerful but scary.
+1. Data fetching is still happening inside our JSX expression..
+2. We've actually added lambdas to the JSX that conditionally render children.
+3. `RenderProps` is requires the use of closures for `logout` to be passed to `UserInfo`.
+4. Although we could fetch multiple pieces of information in parallel, doing so would require nesting our lambdas and increasing the closure scope. This quickly leads to a pyramid of doom.
 
-One other point I haven't expanded upon:
-
-1. This is a lot of code, which means there's a big surface area for bugs, so the number and variety of tests required to get this properly covered is very high.
-
-## Render Props/Children
-
-**src/components/render-props-demo/index.tsx**
-
-[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
+**src/components/render-props-demo/index.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
 
 ```typescript
 import * as React from "react";
@@ -278,11 +292,45 @@ export const RenderPropsDemo = () => {
 };
 ```
 
+This demo component is longer than the `HocDemo`, but it has several improvements over the HOC pattern.
+
+The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. No other props are accepted, so it doesn't pass them through to the child. 
+
+This pattern better adheres to the Single Responsibility Principle. The rendering of the `LoadingScreen` is not coupled to the loading of data. Instead, `WithUser` _only_ loads the data and its child decides how to handle that. 
+
+It would now be possible to make multiple requests in parallel. For example:
+
+```typescript
+<WithNotifications>
+  {notifications => (
+    <WithUser email="bob@example.com">
+      {user => {
+        if (user.loading || notifications.loading) {
+          return <LoadingScreen />;
+        }
+        if (user.error || notifications.error) {
+          return <ErrorScreen />;
+        }
+        return (
+          <UserInfo 
+            user={user.data} 
+            notifications={notifications.data} 
+            logout={logout} 
+          />;
+         )
+      }}
+    </WithUser>
+  )}
+</WithNotifications>
+```
+
+This takes me to the biggest downside of this approach: complex lambda's in our JSX. Being able to embed javascript expressions is a huge benefit of JSX, but the Render Props pattern really takes that to the extreme. If you're not careful you can end up with a pyramid of doom as the lambdas pile up. 
+
+This is a problem we've noticed particularly with the `react-apollo`.
+
 ***
 
-**src/components/render-props-demo/WithUser.tsx**
-
-[Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
+**src/components/render-props-demo/WithUser.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
 
 ```typescript
 import * as React from "react";
@@ -334,20 +382,7 @@ export class WithUser extends React.Component<WithUserProps, WithUserState> {
 }
 ```
 
-Good:
-
-1. `WithUser` does a better job of respecting SRP.
-2. `WithUser` accepts only what it needs in order to load the user (i.e. `email`)
-3. The types are significantly easier to understand.
-4. We no longer need to create a new component when we need to start loading the user for an existing component.
-5. It is now possible to fetch multiple pieces of information in parallel.
-
-Bad:
-
-1. Data fetching is still happening inside our JSX expression..
-2. We've actually added lambdas to the JSX that conditionally render children.
-3. `RenderProps` is requires the use of closures for `logout` to be passed to `UserInfo`.
-4. Although we could fetch multiple pieces of information in parallel, doing so would require nesting our lambdas and increasing the closure scope. This quickly leads to a pyramid of doom.
+1. 
 
 ## Hooks
 
