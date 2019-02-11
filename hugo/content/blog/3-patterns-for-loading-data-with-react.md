@@ -22,13 +22,13 @@ menu: []
 draft: true
 
 ---
-For the past 3 years, we have been using Typescript and React at [Forestry.io](http://forestry.io). In that time we have used and abused many of the React community's patterns for extracting common behavior. The three most important patterns–listed chronologically–are:
+For the past 3 years, we have been using Typescript and React at [Forestry.io](http://forestry.io). We have used-and-abused many of the React community's patterns for extracting common behaviour. The three most important patterns–listed chronologically–are:
 
 1. Higher Order Components (HOCs)
 2. Render Props
 3. Hooks
 
-We have seen these patterns collide with the realities of a rapidly changing code base. Each of these patterns has been a significant improvement on it's predecessor. To demonstrate this claim, we'll take a look at how each of these patterns can be used to create a re-useable abstraction for fetching user data and passing it to a component.
+We have seen these patterns collide with the realities of a rapidly changing code base. Each of these patterns has been a significant improvement on its predecessor. In this article we'll demonstrate how each of these patterns can be used for data fetching, and the pros and cons of each approach.
 
 [Browse the source on Github!](https://github.com/forestryio/react-patterns-article)
 
@@ -54,7 +54,7 @@ export const UserInfo = ({ user, logout }: Props) => (
 );
 ```
 
-Above is `UserInfo`, a simple component that renders a little piece of UI with the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
+Above is `UserInfo`–a simple component that renders the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
 
 ## HOCs
 
@@ -78,7 +78,7 @@ export const HocDemo = () => {
 };
 ```
 
-The first impression of this pattern is a good one. The `UserInfoContainer` has a clean and simple API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how much friction there will be when attempting to change or extend it's behaviour.
+The first impression of this pattern is a good one. The `UserInfoContainer` has a clean and simple API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how difficult making changes can be.
 
 ***
 
@@ -184,9 +184,9 @@ export function withUser<P extends BaseComponentProps = BaseComponentProps>(
 
 Opening up `withUser`, we see that it is dynamically creating a class called `WithUser`, which is handling both data fetching and conditional rendering. This violation of the Single Responsibility Principle is subtle, but is what leads to the unfortunate proliferation of components when `UserInfo` is used in two different locations with different `Loading` components.
 
-There are two odd things about the way these components are rendered. First, `WithUser` references its child components as variables. Second, it actually accessing them through a closure. While this is not necessarily a bad thing, it does add a slight smell to the code. 
+There are two odd things about the way these components are rendered. First, `WithUser` references its child components as variables. Second, it actually accessing them through a closure. While this is not necessarily a bad thing, it does add a slight smell to the code.
 
-Finally, check out those types! Getting the types right requires some unpleasant gymnastics. The types are complex, error prone, and hard to read. Aside from all these things, they are extremely fragile. The most painful part of using Typescript, in my experience, has been the process of switching `withUser(A, B, C)` to `withUser(A as any, B, C)` after a new Typescript version breaks the types for the HOCs. This problem is amplified by the dynamic nature of the types, which makes them error messages cryptic and frightening. For example, if you were to accidentally pass a `cake` prop to `HostingInfoContainer` you would be given the following error:
+And check out those types! Getting the types right requires some unpleasant gymnastics. The types are complex, error prone, and hard to read. Aside from all these things, they are extremely fragile. The most painful part of using Typescript, in my experience, has been the process of switching `withUser(A, B, C)` to `withUser(A as any, B, C)` after a new Typescript version breaks the types for the HOCs. This problem is amplified by the dynamic nature of the types, which makes them error messages cryptic and frightening. For example, if you were to accidentally pass a `cake` prop to `HostingInfoContainer` you would be given the following error:
 
     Type '{ email: string; logout: () => string; cake: string; }' 
       is not assignable to type 
@@ -201,9 +201,33 @@ Finally, check out those types! Getting the types right requires some unpleasant
          & Readonly<WithUserProps>'.
       ts(2322)
 
-While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work. 
+While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work.
 
-I have one last gripe with the way `WithUser` works: it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–that's fine–but it also passes its child anything else that it's given. In this case, `UserInfo` should only be given what it expects, but the difficulty of adding correct types means it doesn't always end up that way. While seemingly inconsequential in this simplified case, it can become a real problem as the app become more complicated. This implicit passing of all parent props greatly increases the difficulty of tracing the flow of props to or from a view. It can be hard to figure out where a piece of data comes from, or where it's going to be used. 
+Another gripe I have with the way `WithUser` works is that it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–that's fine–but it also passes its child anything else that it's given. In this case, `UserInfo` should only be given what it expects, but the difficulty of adding correct types means it doesn't always end up that way. Am I being nit-picky? Maybe in this simplified case, but this can become a real problem as the app become more complicated. The implicit passing of all parent props greatly increases the difficulty of tracing their flow through the app. It can be hard to figure out where a piece of data comes from, or where it's going to be used.
+
+I'm going to take a step back from this particular HOCs to mention that using this kind of composition for data fetching does not scale. Consider what happens when we want to also load a list of notifications to show with the `UserInfo`. Assuming we put that behaviour into a similar HOC as `withUser`, we might try something like this:
+
+```typescript
+const UserInfoWithUser = withUser(
+  UserInfo, 
+  LoadingScreen, 
+  ErrorScreen
+);
+
+export const UserInfoContainer = withNotifications(
+  UserInfoWithUser, 
+  LoadingScreen,
+  ErrorScreen
+);
+```
+
+There are two issues with this approach: it is slow and it causes UI flickering. 
+
+The slowdown is because the notifications request must finish before the user request can even begin. Can you get around this? Probably, if you happen to own `withUser`, but it's going to be hard, and the typing issues mentioned earlier will probably get even worse. Besides you probably won't own all of the HOCs you use. This difficulty in designing HOCs that let you make requests in parallel is a serious disadvantage to this pattern. It's not impossible but it's a lot harder than the alternatives (RenderProps and Hooks).
+
+Flickering can occur even though both HOCs are being given the same `LoadingScreen` component. This flickering occurs because a new instance of `LoadingScreen` is created for each request/HOC. The re-mounting will cause the spinner to move back to its original position, resulting in a strange twitch in its spin. Decoupling the rendering of the `LoadingScreen` from the loading of data is the only way I know how to do that, but this would require significant amounts of refactoring. Most likely it would require the addition of a third component between `WithUser` and `UserInfo`.
+
+Finally, dynamically creating classes is magical. And while magic is powerful it is also dangerous and we tend to have less control over it then we think.
 
 ### HOC Pattern Summary
 
@@ -214,17 +238,17 @@ Good:
 
 Bad:
 
- 1. `withUser` in no way adheres to the Singe Responsibility Principle (SRP).
- 2. We're adding components to the JSX expression to handle data fetching.
- 3. The constructed component both loads data and renders _specific_ presentation components. If you need to switch out the `LoadingScreen` component for `UserInfo`, you will need to create _another_ component using `withUser`.
- 4. Any time an existing component needs access to the user, a new component must be created using `withUser`. This means you will have to find all uses of that component, and replace them with calls to a completely different component.
- 5. The props that the `UserInfoContainer` accepts are the union of both `WithUser`'s props and `UserInfo`'s props.
- 6. Getting the types right requires some gymnastics. They are cumbersome, error prone, and hard to read.
- 7. This API would not make it possible to fetch multiple pieces of data in parallel, because the parent must finish loading before the child can start.
- 8. Functions that create classes gives me the heebie-jeebies.
- 9. This is a lot of code, which means there's a big surface area for bugs.
-10. The number and variety of tests required to get this covered is high.
-11. The type errors for `UserInfoContainer` are horrifying. 
+1. The API of HOCs vary a lot so it can be hard to tell what they do.
+2. Components count goes up since the generated classes are often difficult to reuse.
+3. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
+4. Dynamic types are difficult, error prone, and fragile.
+5. Compiler errors are obtuse.
+6. This API would make it difficult to fetch multiple pieces of data in parallel.
+7. Dynamically creating classes is magical. Magic is powerful but scary.
+
+One other point I haven't expanded upon:
+
+1. This is a lot of code, which means there's a big surface area for bugs, so the number and variety of tests required to get this properly covered is very high.
 
 ## Render Props/Children
 
