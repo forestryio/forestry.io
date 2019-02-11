@@ -34,8 +34,6 @@ We have seen these patterns collide with the realities of a rapidly changing cod
 
 ## The Presentation Component
 
-Below is the `UserInfoView`, a simple component that renders a little piece of UI with the users name, email address, and button to logout. The demo components needs to load and render this information.
-
 **src/components/UserInfo.tsx**
 
 ```typescript
@@ -55,6 +53,8 @@ export const UserInfo = ({ user, logout }: Props) => (
   </div>
 );
 ```
+
+Above is `UserInfo`, a simple component that renders a little piece of UI with the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
 
 ## HOCs
 
@@ -78,7 +78,7 @@ export const HocDemo = () => {
 };
 ```
 
-The first impression is a good one. The `UserInfoContainer` has a short and clear API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how much friction there will be when attempting to change or extend it's behaviour.
+The first impression of this pattern is a good one. The `UserInfoContainer` has a clean and simple API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how much friction there will be when attempting to change or extend it's behaviour.
 
 ***
 
@@ -99,9 +99,9 @@ export const UserInfoContainer = withUser(
 );
 ```
 
-Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. It turns out that `UserInfoContainer` is actually generated dynamically by the `withUser` function. The returned component renders the `LoadingScreen` while the user is loading, then renders either the `UserInfo` or the `ErrorScreen` depending on whether the request is successful or not. Not all HOCs have this API but that's part of the problem. Many HOC APIs have many configuration options, so there's no easy way to be sure of what's happening, without reading the docs or source. We'll see in a second that you better hope the documentation is good. HOCs are often dense and difficult reads.
+Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. It turns out that `UserInfoContainer` is actually generated dynamically by the `withUser` function. The returned component renders the `LoadingScreen` while the user is loading, then renders either the `UserInfo` or the `ErrorScreen` depending on whether the request is successful or not. Not all HOCs have this API but that's part of the problem. Most HOC APIs have many configuration options. There is just no way to know what's happening, without reading the docs or source. As we will see shortly, you better hope the documentation is good; HOCs are often dense and difficult reads.
 
-Aside from their opacity the, HOCs are surprisingly difficult to re-use. Any time you want to pass the user data to an existing component, you must first create a third component that binds them together. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will now be rendered by `A`. The same is true even if you just want swap out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this can make navigating your code base harder, as more and more container-components containing single lines of uninteresting code are added.
+Aside from their opacity the, HOCs are surprisingly difficult to re-use. Any time an existing component needs the user, you must first create another component. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will be rendered by `A` now instead. The same applies to swapping out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this proliferation of one-line container components can make navigating your code base difficult.
 
 ***
 
