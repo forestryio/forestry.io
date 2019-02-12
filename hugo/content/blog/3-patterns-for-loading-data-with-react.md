@@ -32,6 +32,10 @@ We have seen these patterns collide with the realities of a rapidly changing cod
 
 [Browse the source on Github!](https://github.com/forestryio/react-patterns-article)
 
+### TL;DR
+
+### 
+
 ## The Presentation Component
 
 **src/components/UserInfo.tsx**
@@ -54,26 +58,28 @@ export const UserInfo = ({ user, logout }: Props) => (
 );
 ```
 
-Above is `UserInfo`–a simple component that renders the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
+Above is `UserInfo`, a simple component that renders the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
 
 ## HOCs
 
-### **TL;DR:**
+We will be begin by looking at an example of the Higher Order Component pattern. If you're unfamiliar with this pattern, the [React docs](https://reactjs.org/docs/higher-order-components.html) provide a great explanation. In short:
+
+> **a higher-order component is a function that takes a component and returns a new component.**
+
+### **TL;DR**
 
 Good:
 
-1. The API for `UserInfo` is really simple.
-2. `HocDemo` is extremely easy to read.
+1. The API for the constructed components is usually quite simple.
 
 Bad:
 
-1. The API of HOCs vary a lot so it can be hard to tell what they do
-2. Components count goes up since the generated classes are often difficult to reuse.
-3. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
-4. Dynamic types are difficult, error prone, and fragile.
-5. Compiler errors are obtuse.
-6. This API would make it difficult to fetch multiple pieces of data in parallel.
-7. Dynamically creating classes is magical. Magic is powerful but scary.
+1. Components count goes up since the generated classes are often difficult to reuse.
+2. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
+3. Dynamic types are difficult, error prone, and fragile.
+4. Compiler errors are obtuse.
+5. This API would make it difficult to fetch multiple pieces of data in parallel.
+6. Dynamically creating classes is magical. Magic is powerful but scary.
 
 One other point I haven't expanded upon:
 
@@ -115,9 +121,9 @@ export const UserInfoContainer = withUser(
 );
 ```
 
-Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. It turns out that `UserInfoContainer` is actually generated dynamically by the `withUser` function. The returned component renders the `LoadingScreen` while the user is loading, then renders either the `UserInfo` or the `ErrorScreen` depending on whether the request is successful or not. Not all HOCs have this API but that's part of the problem. Most HOC APIs have many configuration options. There is just no way to know what's happening, without reading the docs or source. As we will see shortly, you better hope the documentation is good; HOCs are often dense and difficult reads.
+Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. The `UserInfoContainer` component is actually generated dynamically by the `withUser` function. The returned component renders the `LoadingScreen` while the user is loading, then renders either the `UserInfo` or the `ErrorScreen` depending on whether the request is successful or not. Note. that there is not a standard pattern HOCs.
 
-Aside from their opacity the, HOCs are surprisingly difficult to re-use. Any time an existing component needs the user, you must first create another component. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will be rendered by `A` now instead. The same applies to swapping out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this proliferation of one-line container components can make navigating your code base difficult.
+The components returned by HOCs can be surprisingly difficult to re-use. In our example, any time an existing component needs the user, we must first create another component. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will now be rendered by `A` instead. The same applies to swapping out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this proliferation of one-line container components can make navigating your code base tiresome.
 
 ### **src/components/hoc-demo/withUser.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/withUser.tsx)
 
@@ -241,7 +247,7 @@ export const UserInfoContainer = withNotifications(
 );
 ```
 
-There are two issues with this approach: it is slow and it causes UI flickering. 
+There are two issues with this approach: it is slow and it causes UI flickering.
 
 The slowdown is because the notifications request must finish before the user request can even begin. Can you get around this? Probably, if you happen to own `withUser`, but it's going to be hard, and the typing issues mentioned earlier will probably get even worse. Besides you probably won't own all of the HOCs you use. This difficulty in designing HOCs that let you make requests in parallel is a serious disadvantage to this pattern. It's not impossible but it's a lot harder than the alternatives (RenderProps and Hooks).
 
@@ -294,11 +300,11 @@ export const RenderPropsDemo = () => {
 
 This demo component is longer than the `HocDemo`, but it has several improvements over the HOC pattern.
 
-The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. No other props are accepted, so it doesn't pass them through to the child. 
+The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. No other props are accepted, so it doesn't pass them through to the child.
 
 **Concurrent Requests**
 
-This pattern better adheres to the Single Responsibility Principle. The rendering of the `LoadingScreen` is not coupled to the loading of data. Instead, `WithUser` _only_ loads the data and its child decides how to handle that. 
+This pattern better adheres to the Single Responsibility Principle. The rendering of the `LoadingScreen` is not coupled to the loading of data. Instead, `WithUser` _only_ loads the data and its child decides how to handle that.
 
 It would now be possible to make multiple requests in parallel. For example:
 
@@ -328,7 +334,7 @@ It would now be possible to make multiple requests in parallel. For example:
 
 **The Pyramid of Doom**
 
-This takes me to the biggest downside of this approach: complex lambda's in our JSX. Being able to embed javascript expressions is a huge benefit of JSX, but the Render Props pattern really takes that to the extreme. If you're not careful you can end up with a pyramid of doom as the lambdas pile up. 
+This takes me to the biggest downside of this approach: complex lambda's in our JSX. Being able to embed javascript expressions is a huge benefit of JSX, but the Render Props pattern really takes that to the extreme. If you're not careful you can end up with a pyramid of doom as the lambdas pile up.
 
 This is a problem we've noticed particularly with the `react-apollo`.
 
@@ -412,13 +418,15 @@ import { UserInfo } from "../UserInfo";
 export const HooksDemo = () => {
   let logout = () => (window.location.href = "/logout");
 
-  let user = useUser("bob@example.com");
-  if (user.loading) return <LoadingScreen />;
-  if (user.error || !user.data) return <ErrorScreen />;
-
-  return <UserInfo user={user.data} logout={logout} />;
+  let { loading, error, data } = useUser("bob@example.com");
+  
+  if (loading) return <LoadingScreen />;
+  if (error || !data) return <ErrorScreen />;
+  return <UserInfo user={data} logout={logout} />;
 };
 ```
+
+The `HooksDemo` is quite similar to the `RenderPropsDemo` with a few notable improvements. 
 
 ### src/components/hooks-demo/useUser.ts – [Source]()
 
