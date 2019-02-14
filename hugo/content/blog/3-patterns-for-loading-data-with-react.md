@@ -201,7 +201,7 @@ While a helpful bit of text is in the message ("Property 'cake' does not exist")
 
 **The Flow of Props**
 
-Another gripe I have with the way `WithUser` works is that it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–which is fine–but it _also_ passes everything else that it's given to the wrapped component. The types should prevent `UserInfo` from being given unexpected props, but the challenge of correctly typing HOCs means this doesn't always happen in practice.
+Another gripe I have with `WithUser` is that it messes with the flow of props. The whole point of `WithUser(UserInfo)` is to pass new data to it's wrapped component–which is fine–but it _also_ passes everything else that it's given to the wrapped component. The types should prevent `UserInfo` from being given unexpected props, but the challenge of correctly typing HOCs means this doesn't always happen in practice.
 
 Why is this a problem? Experience has shown that implicit passing all parent props makes tracing the flow of props through the app difficult. Determining where a piece of data comes from, or where it will be used, can be a pain. Am I being overly fussy? Maybe for this contrived example; but this friction in tracing data flow can become a real problem as the project grows.
 
