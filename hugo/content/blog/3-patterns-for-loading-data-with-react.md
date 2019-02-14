@@ -233,9 +233,7 @@ Finally, dynamically creating classes is magical. And while magic is powerful it
 
 ## Render Props/Children
 
-### TL;DR
-
-1. 
+// todo: what is the Render Props pattern?
 
 ### src/components/render-props-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
 
