@@ -22,21 +22,19 @@ menu: []
 draft: true
 
 ---
-For the past 3 years, we have been using Typescript and React at [Forestry.io](http://forestry.io). We have used-and-abused many of the React community's patterns for extracting common behaviour. The three most important patterns–listed chronologically–are:
+For the past 3 years, we have been using Typescript and React at [Forestry.io](http://forestry.io). In that time we have used-and-abused many patterns for extracting common behaviour. The three most important patterns used are:
 
 1. Higher Order Components (HOCs)
 2. Render Props
 3. Hooks
 
-We have seen these patterns collide with the realities of a rapidly changing code base. Each of these patterns has been a significant improvement on its predecessor. In this article we'll demonstrate how each of these patterns can be used for data fetching, and the pros and cons of each approach.
+We have seen these patterns collide with the realities of a rapidly changing code base. Each pattern has been a significant improvement on its predecessor. In this article we'll demonstrate how each they can be used for data fetching, and the pros and cons of each approach. 
 
 [Browse the source on Github!](https://github.com/forestryio/react-patterns-article)
 
-### TL;DR
-
-### 
-
 ## The Presentation Component
+
+Below is `UserInfo`, a simple component that renders the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
 
 **src/components/UserInfo.tsx**
 
@@ -58,33 +56,11 @@ export const UserInfo = ({ user, logout }: Props) => (
 );
 ```
 
-Above is `UserInfo`, a simple component that renders the users name, email address, and button to logout. The demo components need to load this information so it can be rendered by `UserInfo`.
-
 ## HOCs
 
 We will be begin by looking at an example of the Higher Order Component pattern. If you're unfamiliar with this pattern, the [React docs](https://reactjs.org/docs/higher-order-components.html) provide a great explanation. In short:
 
 > **a higher-order component is a function that takes a component and returns a new component.**
-
-### **TL;DR**
-
-Good:
-
-1. The API for the constructed components is usually quite simple.
-
-Bad:
-
-1. Components count goes up since the generated classes are often difficult to reuse.
-2. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
-3. Dynamic types are difficult, error prone, and fragile.
-4. Compiler errors are obtuse.
-5. This API would make it difficult to fetch multiple pieces of data in parallel.
-6. Dynamically creating classes is magical. Magic is powerful but scary.
-
-One other point I haven't expanded upon:
-
-1. Datafetching is declared by an element in our JSX; hella weird.
-2. This is a lot of code, which means there's a big surface area for bugs, so the number and variety of tests required to get this properly covered is very high.
 
 ### src/components/hoc-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/index.tsx)
 
@@ -104,7 +80,7 @@ export const HocDemo = () => {
 };
 ```
 
-The first impression of this pattern is a good one. The `UserInfoContainer` has a clean and simple API. Unfortunately the apparently cleanliness of this API is a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is, and how difficult making changes can be.
+This pattern gives a good first impression. The `UserInfoContainer` component has a clean and simple API. Unfortunately the apparently cleanliness of this API is sort of a result of "sweeping dust under the rug". As we dig into the implementation it will be come clear how complex `UserInfoContainer` really is.
 
 ### **src/components/hoc-demo/UserInfoContainer.tsx –** [**Source**](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hoc-demo/UserInfoContainer.tsx)
 
@@ -121,7 +97,7 @@ export const UserInfoContainer = withUser(
 );
 ```
 
-Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. The `UserInfoContainer` component is actually generated dynamically by the `withUser` function. The returned component renders the `LoadingScreen` while the user is loading, then renders either the `UserInfo` or the `ErrorScreen` depending on whether the request is successful or not. Note. that there is not a standard pattern HOCs.
+Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. The `UserInfoContainer` component is actually the component generated  by the `withUser` HOC. The returned component renders the `LoadingScreen` while the user is loading. Once the request has finished, `UserInfoContainer` renders either the `UserInfo` or the `ErrorScreen` depending on the requests result. 
 
 The components returned by HOCs can be surprisingly difficult to re-use. In our example, any time an existing component needs the user, we must first create another component. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will now be rendered by `A` instead. The same applies to swapping out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this proliferation of one-line container components can make navigating your code base tiresome.
 
@@ -200,13 +176,13 @@ export function withUser<P extends BaseComponentProps = BaseComponentProps>(
 }
 ```
 
-Opening up `withUser`, we see that it is dynamically creating a class called `WithUser`, which is handling both data fetching and conditional rendering. This violation of the Single Responsibility Principle is subtle, but is what leads to the unfortunate proliferation of components when `UserInfo` is used in two different locations with different `Loading` components.
+Opening up `withUser`, we see that it dynamically creates a component which handles both data fetching and conditional rendering. This violation of the[ Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) is subtle, but is what leads to the unfortunate proliferation of components when `UserInfo` is used in two different locations with different `Loading` components.
 
-There are two odd things about the way these components are rendered. First, `WithUser` references its child components as variables. Second, it actually accessing them through a closure. While this is not necessarily a bad thing, it does add a slight smell to the code.
+There are two odd things about the way these components are rendered. First, `WithUser` references its child components as variables. Second, it actually accessing them through a closure. While these are not necessarily a bad things, they do add a slight smell to the code.
 
 **_Gymnastics in Types_**
 
-And check out those types! Getting the types right requires some unpleasant gymnastics. The types are complex, error prone, and hard to read. Aside from all these things, they are extremely fragile. The most painful part of using Typescript, in my experience, has been the process of switching `withUser(A, B, C)` to `withUser(A as any, B, C)` after a new Typescript version breaks the types for the HOCs. This problem is amplified by the dynamic nature of the types, which makes them error messages cryptic and frightening. For example, if you were to accidentally pass a `cake` prop to `HostingInfoContainer` you would be given the following error:
+Getting the types right requires some unpleasant gymnastics. The types are complex, error prone, and hard to read. Aside from all these things, they are extremely fragile. The most painful part of using Typescript, in my experience, has been the process of switching `withUser(A, B, C)` to `withUser(A as any, B, C)` after a new Typescript version breaks the types for the HOCs. We recently turned on Typescript's `strict` mode, which caused almost every HOC call in our codebase to be flagged as warning. The dynamic nature of the types makes amplifies the problem by making the error messages cryptic and frightening. For example, if you were to accidentally pass a `cake` prop to `HostingInfoContainer` you would be given the following error:
 
     Type '{ email: string; logout: () => string; cake: string; }' 
       is not assignable to type 
@@ -221,7 +197,7 @@ And check out those types! Getting the types right requires some unpleasant gymn
          & Readonly<WithUserProps>'.
       ts(2322)
 
-While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work.
+While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work. 
 
 **The Flow of Props**
 
@@ -259,20 +235,7 @@ Finally, dynamically creating classes is magical. And while magic is powerful it
 
 ### TL;DR
 
-Good:
-
-1. `WithUser` does a better job of respecting SRP.
-2. `WithUser` accepts only what it needs in order to load the user (i.e. `email`)
-3. The types are significantly easier to understand.
-4. We no longer need to create a new component when we need to start loading the user for an existing component.
-5. It is now possible to fetch multiple pieces of information in parallel.
-
-Bad:
-
-1. Data fetching is still happening inside our JSX expression..
-2. We've actually added lambdas to the JSX that conditionally render children.
-3. `RenderProps` is requires the use of closures for `logout` to be passed to `UserInfo`.
-4. Although we could fetch multiple pieces of information in parallel, doing so would require nesting our lambdas and increasing the closure scope. This quickly leads to a pyramid of doom.
+1. 
 
 ### src/components/render-props-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/index.tsx)
 
@@ -300,7 +263,7 @@ export const RenderPropsDemo = () => {
 
 This demo component is longer than the `HocDemo`, but it has several improvements over the HOC pattern.
 
-The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. No other props are accepted, so it doesn't pass them through to the child.
+The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. The flow of props is no longer obfuscated, as no other props are accepted or passed along. 
 
 **Concurrent Requests**
 
@@ -334,9 +297,7 @@ It would now be possible to make multiple requests in parallel. For example:
 
 **The Pyramid of Doom**
 
-This takes me to the biggest downside of this approach: complex lambda's in our JSX. Being able to embed javascript expressions is a huge benefit of JSX, but the Render Props pattern really takes that to the extreme. If you're not careful you can end up with a pyramid of doom as the lambdas pile up.
-
-This is a problem we've noticed particularly with the `react-apollo`.
+This takes me to the biggest downside of this approach: complex lambda's in our JSX. Being able to embed javascript expressions is a huge benefit of JSX, but the Render Props pattern really takes that to the extreme. If you're not careful you can end up with a [pyramid of doom](https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)) as the lambdas pile up.
 
 ### src/components/render-props-demo/WithUser.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/render-props-demo/WithUser.tsx)
 
@@ -390,21 +351,9 @@ export class WithUser extends React.Component<WithUserProps, WithUserState> {
 }
 ```
 
+todo...
+
 ## Hooks
-
-### TL;DR
-
-Good:
-
-1. `useUser` hook has one job–load user data.
-2. Loading data is still done the `render` body but it's no longer inside the JSX expression.
-3. The types are almost entirely inferred.
-4. `HooksDemo` is now flat and does not require closures to pass `logout` to `UserInfo`
-5. With the user state accessible in the main body of the `HooksDemo` we could load multiple pieces of data in parallel and render a single `LoadingScreen` without nesting.
-
-Bad:
-
-1. hooks API is still new and a bit magical
 
 ### src/components/hooks-demo/index.tsx – [Source](https://github.com/forestryio/react-patterns-article/blob/master/src/components/hooks-demo/index.tsx)
 
@@ -426,7 +375,7 @@ export const HooksDemo = () => {
 };
 ```
 
-The `HooksDemo` is quite similar to the `RenderPropsDemo` with a few notable improvements. 
+todo...
 
 ### src/components/hooks-demo/useUser.ts – [Source]()
 
@@ -450,3 +399,58 @@ export function useUser(email: string) {
   return { data, loading, error };
 }
 ```
+
+todo...
+
+## TL;DR
+
+### HOCs
+
+Good:
+
+1. The API for the constructed components is usually quite simple.
+
+Bad:
+
+1. Components count goes up since the generated classes are often difficult to reuse.
+2. The `withUser` component breaks the Singe Responsibility Principle (SRP) by handling both data fetching and UI rendering.
+3. Dynamic types are difficult, error prone, and fragile.
+4. Compiler errors are obtuse.
+5. This API would make it difficult to fetch multiple pieces of data in parallel.
+6. Dynamically creating classes is magical. Magic is powerful but scary.
+
+Two other points I haven't expanded upon:
+
+1. Datafetching is declared by an element in our JSX; hella weird.
+2. This is a lot of code, which means there's a big surface area for bugs, so the number and variety of tests required to get this properly covered is very high.
+
+### Render Props
+
+Good:
+
+1. `WithUser` does a better job of respecting SRP.
+2. `WithUser` accepts only what it needs in order to load the user (i.e. `email`)
+3. It is now possible to fetch multiple pieces of information in parallel.
+4. The types are significantly easier to understand.
+5. We no longer need to create a new component when we need to start loading the user for an existing component.
+
+Bad:
+
+1. `RenderProps` is requires the use of closures for `logout` to be passed to `UserInfo`
+2. Data fetching is still happening inside our JSX expression.
+3. We've actually added lambdas to the JSX that conditionally render children.
+4. Although we could fetch multiple pieces of information in parallel, doing so would require nesting our lambdas and increasing the closure scope. This quickly leads to a pyramid of doom.
+
+### Hooks
+
+Good:
+
+1. `useUser` hook has one job–load user data.
+2. Loading data is still done the `render` body but it's no longer inside the JSX expression.
+3. The types are almost entirely inferred.
+4. `HooksDemo` is now flat and does not require closures to pass `logout` to `UserInfo`
+5. With the user state accessible in the main body of the `HooksDemo` we could load multiple pieces of data in parallel and render a single `LoadingScreen` without nesting.
+
+Bad:
+
+1. hooks API is still new so it's warts haven't shown
