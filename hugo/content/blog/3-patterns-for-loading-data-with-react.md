@@ -28,7 +28,7 @@ For the past 3 years, we have been using Typescript and React at [Forestry.io](h
 2. Render Props
 3. Hooks
 
-We have seen these patterns collide with the realities of a rapidly changing code base. Each pattern has been a significant improvement on its predecessor. In this article we'll demonstrate how each they can be used for data fetching, and the pros and cons of each approach. 
+We have seen these patterns collide with the realities of a rapidly changing code base. Each pattern has been a significant improvement on its predecessor. In this article we'll demonstrate how each they can be used for data fetching, and the pros and cons of each approach.
 
 [Browse the source on Github!](https://github.com/forestryio/react-patterns-article)
 
@@ -97,7 +97,7 @@ export const UserInfoContainer = withUser(
 );
 ```
 
-Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. The `UserInfoContainer` component is actually the component generated  by the `withUser` HOC. The returned component renders the `LoadingScreen` while the user is loading. Once the request has finished, `UserInfoContainer` renders either the `UserInfo` or the `ErrorScreen` depending on the requests result. 
+Unless you're familiar with HOCs already–and maybe even then–looking at the source of `UserInfoContainer` will probably give you pause. The `UserInfoContainer` component is actually the component generated  by the `withUser` HOC. The returned component renders the `LoadingScreen` while the user is loading. Once the request has finished, `UserInfoContainer` renders either the `UserInfo` or the `ErrorScreen` depending on the requests result.
 
 The components returned by HOCs can be surprisingly difficult to re-use. In our example, any time an existing component needs the user, we must first create another component. If `A` renders `B`, but now you want `B` to be given the user, you must create a third component `withUser(B, ...)` that will now be rendered by `A` instead. The same applies to swapping out the `LoadingScreen` for a simpler spinner–you're going to have to create a new component. Over time this proliferation of one-line container components can make navigating your code base tiresome.
 
@@ -197,7 +197,7 @@ Getting the types right requires some unpleasant gymnastics. The types are compl
          & Readonly<WithUserProps>'.
       ts(2322)
 
-While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work. 
+While a helpful bit of text is in the message ("Property 'cake' does not exist") it still could use some work.
 
 **The Flow of Props**
 
@@ -263,7 +263,7 @@ export const RenderPropsDemo = () => {
 
 This demo component is longer than the `HocDemo`, but it has several improvements over the HOC pattern.
 
-The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. The flow of props is no longer obfuscated, as no other props are accepted or passed along. 
+The `WithUser` component is now addressed explicitly in the demo. This component takes a function as a child, and passes the state of the request to that function. Now it only accepts `email`–the prop needed to load the user. The flow of props is no longer obfuscated, as no other props are accepted or passed along.
 
 **Concurrent Requests**
 
@@ -376,6 +376,25 @@ export const HooksDemo = () => {
 ```
 
 todo...
+
+Conditional rendering with concurrent requests is even cleaner then Render Props
+
+```typescript
+export const HooksDemo = () => {
+  let user = useUser("bob@example.com");
+  let notifications = useNotifications();
+    
+  if (user.loading || notifications.loading) return <LoadingScreen />;
+  if (user.error || notifications.error) return <ErrorScreen />;
+  return (
+    <UserInfo 
+      user={user.data} 
+      logout={logout}
+      notifications={notifications.data} 
+    />
+  );
+};
+```
 
 ### src/components/hooks-demo/useUser.ts – [Source]()
 
