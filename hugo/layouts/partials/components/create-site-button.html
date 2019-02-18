@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type="text/javascript" id="add-site-settings">
     window.addSite = {
         engine: { name: "{{ .engine_name }}", version: "{{ .engine_version }}" },
         source: {
@@ -9,5 +9,27 @@
         configPath: "{{ .config_path }}"
     }
 </script>
-<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
+<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript" id="add-site-script"></script>
 <!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
+
+
+{{ $asbURL := "https://app.forestry.io/quick-start?" }}
+{{ $repoURL := urls.Parse .repo_name }}
+{{ $asbURL := printf "%s%s%s" $asbURL "repo=" (index (split (substr $repoURL.Path 1) ".") 0) }}
+
+{{ if eq $repoURL.Host "gitlab.com" }}
+{{ $asbURL := printf "%s%s" $asbURL "&provider=gitlab"}}
+{{ else if eq $repoURL.Host "bitbucket.org" }}
+{{ $asbURL := printf "%s%s" $asbURL "&provider=bitbucket"}}
+{{ end }}
+
+{{ $asbURL := printf "%s%s%s" $asbURL "&engine=" .engine_name }}
+{{ if and (eq .engine_name "hugo") .engine_version }}
+{{ $asbURL := printf "%s%s%s" $asbURL "&version=" .engine_version }}
+{{ end }}
+
+
+<a target="_blank" href="{{ $asbURL }}">
+    <img class="no-lightbox" alt="" src="https://assets.forestry.io/import-to-forestry.svg" />
+</a>
+

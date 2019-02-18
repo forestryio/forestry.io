@@ -8,6 +8,9 @@ languageCode = "en"
 metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "monokai"
 relativeURLs = false
 title = "Forestry.io"
 [blackfriday]
@@ -16,38 +19,51 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-name = "Settings & Configuration"
-weight = 7
-[[menu.docs]]
-name = "Editing"
-weight = 4
-[[menu.docs]]
-name = "Quick Start"
-weight = 2
-[[menu.docs]]
-name = "Media"
-weight = 6
-[[menu.docs]]
-name = "Other"
-weight = 8
+name = "Git Sync"
+weight = 3
 [[menu.docs]]
 name = "Hosting"
 weight = 5
 [[menu.docs]]
+name = "Editing"
+weight = 4
+[[menu.docs]]
+name = "Media"
+weight = 6
+[[menu.docs]]
+name = "Settings & Configuration"
+weight = 7
+[[menu.docs]]
+name = "Quick Start"
+weight = 2
+[[menu.docs]]
 name = "Welcome"
 weight = 1
 [[menu.docs]]
-name = "Git Sync"
-weight = 3
+name = "Other"
+weight = 9
+[[menu.docs]]
+name = "Developer Guides"
+weight = 8
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
 [[menu.footer]]
-name = "Product"
-weight = 1
+name = "Status"
+parent = "Product"
+url = "https://status.forestry.io"
+weight = 6
 [[menu.footer]]
 name = "Company"
 weight = 2
+[[menu.footer]]
+name = "Product"
+weight = 1
+[[menu.main]]
+identifier = "useraccount"
+name = "My Account"
+url = "https://app.forestry.io/settings"
+weight = 5
 [[menu.main]]
 identifier = "signup"
 name = "Sign up"
@@ -58,11 +74,6 @@ identifier = "userdashboard"
 name = "Dashboard"
 url = "https://app.forestry.io/dashboard"
 weight = 7
-[[menu.main]]
-identifier = "useraccount"
-name = "My Account"
-url = "https://app.forestry.io/settings"
-weight = 5
 [[menu.main]]
 identifier = "login"
 name = "Login"

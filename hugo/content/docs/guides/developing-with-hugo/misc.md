@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/misc/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: Other things you can do with Hugo
 tags: ''
 title: Misc
@@ -11,7 +11,7 @@ weight: 9
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 18
+    weight: 25
 
 ---
 ## Sitemap

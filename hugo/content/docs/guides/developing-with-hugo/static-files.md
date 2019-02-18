@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/static-files/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Static Files
@@ -11,7 +11,7 @@ weight: 4
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 9
+    weight: 15
 
 ---
 In Hugo, any files/folders found in the `static/` directory in the root of your project or the root of your site’s theme will be made available at the root of your built site.

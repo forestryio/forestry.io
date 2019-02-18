@@ -3,16 +3,21 @@ title: Amazon S3
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 layout: single
-menu:
-  docs:
-    parent: Hosting
-    weight: 2
 
 ---
+
+{{% warning "No Longer Recommended" %}}
+The following guide will show you how to configure web hosting directly from an Amazon S3 bucket. However, Amazon [recommends using CloudFront to serve S3 content](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) instead of serving directly from S3. 
+<br /><br />
+If you wish to create a website hosting stack with S3 and CloudFront together, please see our [Static Site Hosting on AWS](https://forestry.io/docs/hosting/s3-cloudfront-stack/) documentation.
+{{% /warning %}}
+
+---
+
 {{% tip "Disclaimer" %}}
 This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
 {{% /tip %}}
@@ -27,20 +32,23 @@ In order for Forestry to deploy your site to Amazon S3, this guide will walk you
 * Pointing your domain to your S3 bucket using Amazon Route 53.
 
 ## Create a Bucket
+
 To get started, you must create an S3 bucket for Forestry to deploy to.
 
 ![Create a bucket](/uploads/2018/01/s3-create-bucket.png)
 
 * Log in to your Amazon AWS account and go to the [S3 Dashboard](https://console.aws.amazon.com/s3/home).
 * From the [S3 Dashboard](https://console.aws.amazon.com/s3/home), click `Create Bucket` to open the set up.
-* Set the name of your bucket to your website domain *(e.g, forestry.io)* , select a region *(e.g, US north)*,  and click `Create`.
+* Set the name of your bucket to your website domain _(e.g, forestry.io)_ , select a region _(e.g, US north)_,  and click `Create`.
 
 **Note:** in order for a website to work correctly with S3, the bucket must be named after the domain.
 
 ## Setting Up The Bucket
+
 In order for your new S3 bucket to work as a website, you must set it up with the correct properties and permissions.
 
 ### Setting Up Properties
+
 Now that your bucket is created, click it in the S3 dashboard and then navigate to the `Properties` tab.
 
 ![Enable static hosting](/uploads/2018/01/s3-static-hosting.png)
@@ -50,21 +58,21 @@ Now that your bucket is created, click it in the S3 dashboard and then navigate 
 * You need to configure your error document. This is usually `404.html`.
 * Click `Save`
 
-
 ### Setting Up Permissions
-Now we need to properly configure the bucket with a *permission policy* that will allow visitors to access your static site.
+
+Now we need to properly configure the bucket with a _permission policy_ that will allow visitors to access your static site.
 
 ![Bucket Policy](/uploads/2018/01/s3-bucket-policy.png)
 
 * Navigate to the `Permissions` tab, and then to `Bucket Policy`.
 * Copy and paste the policy below into the bucket policy editor.
-* Replace `example.com` in the `Resource` field with the name of your bucket *(e.g, forestry.io)*.
+* Replace `example.com` in the `Resource` field with the name of your bucket _(e.g, forestry.io)_.
 * Click `Save`
 
 ```
 {
   "Version": "2012-10-17",
-    "Statement": [
+  "Statement": [
     {
       "Sid": "PublicReadGetObject",
       "Effect": "Allow",
@@ -72,12 +80,12 @@ Now we need to properly configure the bucket with a *permission policy* that wil
       "Action": "s3:GetObject",
       "Resource": "arn:aws:s3:::example.com/*"
     }
-    ]
+  ]
 }
 ```
 
-
 ## Setting Up An IAM User
+
 Amazon AWS uses IAM users to control access to different services. You should setup an IAM user for usage in Forestry that only has access to your website bucket.
 
 ![Add User](/uploads/2018/01/s3-add-user.png)
@@ -87,36 +95,37 @@ Amazon AWS uses IAM users to control access to different services. You should se
 * Click `Next`.
 
 ### Setting Up User Permissions
-Now you must set up a *permission policy* for the new user. This dictates how the user is allowed to interact with the S3 Bucket.
+
+Now you must set up a _permission policy_ for the new user. This dictates how the user is allowed to interact with the S3 Bucket.
 
 ![Add User Policy](/uploads/2018/01/s3-add-user-policy.png)
 
 * Click `Create policy`
 * On the new tab that opens, select `Policy Generator`
-* From the policy generator, you can create *permission statements*. We’re going to create two.
+* From the policy generator, you can create _permission statements_. We’re going to create two.
 
 **Statement 1:**
 
 * Set the `Effect` to `Allow`
 * Set the `AWS Service` to `Amazon S3`
-* From `Actions` enable: 
-   * `s3:PutObject`
-   * `s3:GetObject`
-   * `s3:DeleteObject`
-* Set the `Amazon Resource Name (ARN)` to `arn:aws:s3:::your-bucket-name/*`. *Ensure you change `your-bucket-name` to the name of your bucket*
+* From `Actions` enable:
+  * `s3:PutObject`
+  * `s3:GetObject`
+  * `s3:DeleteObject`
+* Set the `Amazon Resource Name (ARN)` to `arn:aws:s3:::your-bucket-name/*`. _Ensure you change_ `_your-bucket-name_` _to the name of your bucket_
 
 **Statement 2**
 
 * Set the `Effect` to `Allow`
 * Set the `AWS Service` to `Amazon S3`
-* From `Actions` enable: 
-   * `s3:ListBucket`
-   * `s3:GetBucketLocation`
-* Set the `Amazon Resource Name (ARN)` to `arn:aws:s3:::your-bucket-name`. *Ensure you change `your-bucket-name` to the name of your bucket*
-
+* From `Actions` enable:
+  * `s3:ListBucket`
+  * `s3:GetBucketLocation`
+* Set the `Amazon Resource Name (ARN)` to `arn:aws:s3:::your-bucket-name`. _Ensure you change_ `_your-bucket-name_` _to the name of your bucket_
 * Now click `Next`, give your policy a name *(e.g, forestry-policy) *, and then click `Create Policy`
 
 ### Assign The User Policy
+
 Now that you’ve created a policy for your new user, return to the previous tab where you clicked `Create Policy`.
 
 ![Search User Policy](/uploads/2018/01/s3-search-user-policy.png)
@@ -127,14 +136,15 @@ Now that you’ve created a policy for your new user, return to the previous tab
 * Before finishing, click the `Download .csv` button. This will download the user information, including the `Access Key ID` and `Secret Access Key` you’ll need to set up deployment in Forestry.
 
 ## Setup S3 in Forestry
+
 Now that you have an S3 Bucket created with an IAM user that Forestry can use to access it, we can now set up deployment for your site!
 
-![Search User Policy](/uploads/2018/01/s3-forestry-setup.png)
+![](/uploads/2018/09/deployment.png)
 
-* Navigate to the `Settings` page in your site on Forestry, and then click the `Hosting` tab.
+* Navigate to the `Settings` page in your site on Forestry, and then click the `Deployment` tab.
 * From here, set the `Connect` as `Amazon S3`
 * Now you must fill out the connection settings with everything we just set up.
-* Enter your new bucket’s name in `Bucket` *(e.g, forestry.io)*
+* Enter your new bucket’s name in `Bucket` _(e.g, forestry.io)_
 * From the .csv file you downloaded when creating the user, enter the `Access Key ID` in `Access Key`
 * From the .csv file you downloaded when creating the user, enter the `Secret Access Key` in `Secret`
 * You can optionally enable gzip compression, which decreases the size of your site and works fine for most cases
@@ -144,16 +154,18 @@ Now that you have an S3 Bucket created with an IAM user that Forestry can use to
 Now, when you publish any page, we will deploy your site to the S3 bucket. If any errors occur, we will output them in your Site Activity.
 
 ## Pointing Your Domain to Your New Bucket
+
 The final step in setting up your site to deploy to Amazon S3 is setting up your domain to serve the contents of your new S3 Bucket. We’ll do this with [Amazon’s Route 53 DNS Service](https://console.aws.amazon.com/route53/).
 
 ![Setup Domain](/uploads/2017/12/create-hosted-zone-1.png)
 
 * Go to [Route 53](https://console.aws.amazon.com/route53/)
 * Click on `Hosted Zones` and then `Create Hosted Zone`.
-* Set your domain name to be the same as your bucket (*e.g, forestry.io*), and then click `Create`.
+* Set your domain name to be the same as your bucket (_e.g, forestry.io_), and then click `Create`.
 
 ### Create A Records
-You must create an A-record that tells the DNS which S3 bucket to serve. We need to do this for your root domain *(e.g, forestry.io)* and your www. subdomain *(e.g, www.forestry.io)*.
+
+You must create an A-record that tells the DNS which S3 bucket to serve. We need to do this for your root domain _(e.g, forestry.io)_ and your www. subdomain _(e.g, www.forestry.io)_.
 
 **Root Domain**
 
@@ -194,4 +206,5 @@ It may take up to 24 hours for these changes to take effect and your domain to s
 **Note:** When you copy the name servers over, be sure to not include the last dot character.
 
 ## Wrapping Up
+
 Provided everything is set up correctly, your domain should be serving your S3 bucket. From here on, every time you save or publish a page Forestry will build your site and deploy to S3.

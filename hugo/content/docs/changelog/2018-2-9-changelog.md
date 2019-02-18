@@ -21,8 +21,9 @@ weight: ''
 aliases: []
 menu:
   changelog:
+    name: 2018/02/09
     parent: Changelog
-    weight: 3
+    weight: 26
 
 ---
 This week we have a short changelog, but keep an eye out as we prepare to release some improvements from the wood shop! 

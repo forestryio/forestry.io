@@ -60,7 +60,7 @@
     {{- $sizes := .sizes | default $preset.sizes -}}
 
     {{/* Output img */}}
-    {{- template "img" (dict "pg" $page "src" $src "srcset" $srcset "placeholder" $placeholder "sizes" $sizes "alt" .alt "title" .title "useLazySizes" $lazySizes) -}}
+    {{- template "img" (dict "pg" $page "src" $src "srcset" $srcset "placeholder" $placeholder "sizes" $sizes "alt" .alt "title" .title "useLazySizes" $lazySizes "class" .class ) -}}
 {{- end -}}
 {{/* "pg", "src", "srcset", "placeholder", "original", "alt", "title", "useLazySizes" */}}
 {{- define "img" -}}
@@ -71,5 +71,5 @@
   {{- $placeholder := trim (.pg.Site.Params.cloudinary.lazysizes.placeholder | default .placeholder) " " | safeURL | safeHTMLAttr -}}
   {{- $title := trim (.title | default $src) " " | safeHTMLAttr -}}
   {{/* Output image */}}
-  <img{{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }}{{ if $.useLazySizes }} data-sizes{{ else }} sizes{{ end }}="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.useLazySizes }} class="lazyload"{{ end }} />
+  <img{{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }}{{ if $.useLazySizes }} data-sizes{{ else }} sizes{{ end }}="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.useLazySizes }} class="lazyload {{ .class }}"{{ else }} class="{{ .class }}"{{ end }} />
 {{- end -}}

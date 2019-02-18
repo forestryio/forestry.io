@@ -54,10 +54,8 @@ You can use the button below to automatically copy the `ubuild-jekyll` repo to y
 <div id="import-ubuild-theme-button" data-proofer-ignore>
 {{% create_site_button
 repo="https://github.com/forestryio/ubuild-jekyll.git"
-branch="master"
 engineName="jekyll"
 engineVersion="3.6.0"
-forkName="ubuild-jekyll"
 heading="Make it Your Own"
 linkText="Import Jekyll uBuild Now" %}}
 </div>
@@ -141,7 +139,7 @@ That's it for our code! Now any Block can be added simply by using Front Matter.
 As we figured out in the previous section, defining and adding Front Matter is all that is necessary to add and customize Blocks. Since Forestry offers a UI to manage Front Matter, we can use the uBuild theme and any Blocks implementation without having to look at the code. Forestry uses [Front Matter Templates](https://forestry.io/docs/settings/front-matter-templates/), a powerful tool that works like a blueprint for Front Matter of all the different types of content you have across your site.
 
 {{% tip %}}
-Since uBuild is already set up for Forestry, all you need to do to get started is to <a href="#/add-site" data-proofer-ignore>import the theme into your Forestry dashboard.</a>
+Since uBuild is already set up for Forestry, all you need to do to get started is to <a href="https://app.forestry.io/quick-start?repo=forestryio/ubuild-jekyll&engine=jekyll" data-proofer-ignore>import the theme into your Forestry dashboard.</a>
 {{% /tip %}}
 
 Once the layout and styling for a Block is created, it can be added and customized in Forestry. You simply need to create a Front Matter Template for each Block and set the `is Partial` toggle to true.
@@ -174,7 +172,7 @@ We think an open-source theme is a great start but we'd like to know your though
 
 We believe awesome stuff can be built with Blocks, and plan to explore this more in the future. In the meantime, we'd love for you to share with the community what you've built using Forestry Blocks. [Join our community Slack](https://join.slack.com/t/forestry-community/shared_invite/enQtMzgzMjQ1OTk0MDUwLThlYzZmMTQwMWFmMWRhOTU4NjY4MjM4ODdmMmQ0YzI0Y2M5YzViNGE0Y2VhZDY3MDEzYjcxZTMzODE2NDk1ZmI) or tag us on Twitter ([@forestryio](https://twitter.com/forestryio)) to let us know!
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll explore Hugo's new theme inheritance feature.</p><p><strong>Last week:</strong> We looked at ways to <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handle forms on your static site.</a></p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you <a href="https://forestry.io/blog/3-tips-for-mastering-blocks/">some tips for using blocks.</a></p><p><strong>Last week:</strong> We looked at ways to <a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">handle forms on your static site.</a></p></div>
 
 ## Have something to add?
 

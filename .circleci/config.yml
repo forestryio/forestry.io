@@ -31,7 +31,11 @@ jobs:
       - run:
           name: Run build
           command: |
-            npm run build
+            if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+              npm run preDeploy
+            else
+              npm run build
+            fi
 
       - run:
           name: Create Artifacts

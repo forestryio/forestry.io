@@ -1,0 +1,26 @@
+{{- define "json-ld" -}}
+  {{- partial "seo/json-ld/organization" . -}}
+  {{- partial "seo/json-ld/search" . -}}
+  {{- partial "seo/json-ld/index" . -}}
+{{- end -}}
+{{- define "main" -}}
+<div id="root"></div>
+<div id="modal-root"></div>
+  {{- partial "components/hero" .Params.hero }}
+  {{- range .Params.features -}}
+    {{- partial "components/feature" (dict "pg" $ "feature" .) -}}
+  {{- end -}}
+
+  {{- $tweets := first 2 $.Site.Data.testimonials.tweets -}}
+  {{- partial "components/tweets" (dict "pg" $ "tweets" $tweets) -}}
+
+  {{- with .Params.cta -}}
+    {{- partial "components/cta/quick" . -}}
+  {{- end -}}
+
+  {{- with .Params.blocks -}}
+    {{- range . -}}
+        {{- if eq .template "create-site-button-js" -}}{{- partial "components/create-site-button" . -}}{{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- end -}}

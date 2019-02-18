@@ -107,3 +107,20 @@
     background: $color-sinbad;
   }
 }
+
+.post-media {
+  width: 100% !important;
+  margin-left: auto !important;
+  padding: 1.2em;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+  }
+  figcaption {
+    font-size: 0.8em;
+    opacity: 0.8;
+    font-style: italic;
+  }
+}

@@ -3,14 +3,14 @@ title: Config Files
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2018-07-25 04:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Settings & Configuration
-    weight: 4
+    weight: 5
 
 ---
 Forestry stores the settings and configuration of the CMS for each site in a `.forestry/` folder in your site’s source code. This allows developers to create default configurations that can be shared between multiple sites, and to deliver source code with Forestry CMS pre-configured.
@@ -38,12 +38,10 @@ The following is an example of `settings.yml` for a Hugo site.
       create: all
       # Imported pages without a FMT assigned
       # will automatically use "pages"
-      default_front_matter_template: pages
 
     - path: content/posts
       label: Posts
       create: all
-      default_front_matter_template: posts
       # use the "templates" parameter to control
       # which templates can be used for new content
       # in this section. First listed template
@@ -64,150 +62,65 @@ The following is an example of `settings.yml` for a Hugo site.
 
 ### Options
 
-**Admin Path** `admin_path:` `string`
+<h4 id="site-settings-admin-path">Admin Path <code>admin_path: string</code></h4>
 
 Allows you to configure the path where the Remote Admin will be deployed.
 
 ---
 
-**Upload Path** `upload_path:` `string`
+<h4 id="site-settings-upload-path">Upload Path <code>upload_path: string</code></h4>
 
 Allows you to configure the path where media assets are uploaded
 
 ---
 
-**Front Matter File URL Template** `frontmatter_file_url_template:` `string`
+<h4 id="site-settings-front-matter-file-url">Front Matter File URL Template <code>frontmatter_file_url_template: string</code></h4>
 
 Allows you to configure the path that is set when adding images to Front Matter Fields. _Note: this value is set at upload time._
 
 ---
 
-**Body File URL Template** `body_file_url_template:` `string`
+<h4 id="site-settings-body-file-url">Body File URL Template <code>body_file_url_template: string</code></h4>
 
 Allows you to configure the path that is used when adding images to the body of a page. _Note: this value is set at upload time._
 
 ---
 
-**New Page Extension** `new_page_extension:` `md|html`
+<h4 id="site-settings-new-page-extension">New Page Extension <code>new_page_extension: md|html</code></h4>
 
 Allows you to configure whether new pages are created as `.md` or `.html` files.
 
 ---
 
-**Auto Deploy** `auto_deploy:` `boolean`
+<h4 id="site-settings-auto-deploy">Auto Deploy <code>auto_deploy: boolean</code></h4>
 
 Allows you to configure if publishing should be triggered when a commit is made to the source repository.
 
 ---
 
-**Web Hook URL** `webhook_url:` `string`
+<h4 id="site-settings-webhook-url">Webhook URL <code>webhook_url: string</code></h4>
 
-Allows you to provide a [web hook](/docs/hosting/webhooks/) to be triggered when events occur in Forestry.
+Allows you to provide a [webhook](/docs/hosting/webhooks/) to be triggered when events occur in Forestry.
 
 ---
 
-**Version** _(Hugo-only)_ `version:` `string`
+<h4 id="site-settings-version">Version <em style="font-weight: normal;">(Hugo-only)</em> <code>version: string</code></h4>
+
 This allows you to configure the version of Hugo your site uses. This is limited to the latest versions of Hugo [supported by Forestry](https://forestry.io/docs/faq/what-versions-of-hugo-do-you-support/).
 
 ---
 
-**Sections** _(Hugo only)_ `sections:` `Array`
+<h4 id="site-settings-content-sections">Content Sections <code>sections: Array</code></h4>
 
-**Collections** _(Jekyll only)_ `collections:` `Array`
+This setting allows you to tell Forestry which parts of your site contain editable content files.
 
-This setting allows you to control the way users are able to edit your different content sections.
+[View the full Content Section documentation](/docs/settings/content-sections)
 
-{{% warning %}}
-Currently, Hugo sites use the `sections` parameter for this information, and Jekyll sites use `collections`.
-<br /><br />
-As we move toward consistency in configuration and app behavior, these settings will likely converge into a single parameter, but make note of the difference for now.
-{{% /warning %}}
-
-## Section/Collection Options
-
-_Sidebar Order_
-
-Sections/Collections will appear in the sidebar in the same order they are defined in your `sections`/`collections` section.
-
----
-
-**Path**
-
-This option identifies the path to the collection you intend to configure. Note that this should be the full path from the root of your site, so a Hugo section of `posts` for example would have a path of `content/posts`.
-
-{{% tip %}}
-Currently, you can only configure content sections that already exist in your file structure. Defining new sections/collections that do not exist in your project will have no effect.
-{{% /tip %}}
-
-Example:
-
-    collections:
-    - path: _posts
----
-
-**Default Front Matter Template** `default_front_matter_template:` `string`
-
-The Front Matter Template applied to any pages without a Front Matter Template. Set the value to the file name of the Front Matter Template without the file extension, or `none` to remove the current template from the section.
-
-Example:
-
-    sections:
-    - path: content/posts
-      default_front_matter_template: example-template
----
-
-**Label** `label:` `string`
-
-Change the text that appears for this section in the content navigation sidebar.
-
-Example:
-
-    collections:
-    - path: _posts
-      label: News
----
-
-**Hidden** `hidden:` `boolean`
-
-When `true`, this section will not be visible in the content navigation sidebar.
-
-Example:
-
-    sections:
-    - path: content/posts
-      hidden: true
----
-
-**Create** `create:` `all|none`
-
-When this is set to `all`, content can be added normally. When set to `none`, existing content items can be edited, but no new ones can be created.
-
-Example:
-
-    collections:
-    - path: _posts
-      create: all
----
-
-**Templates** `templates:` `Array`
-
-Pass in an array of Front Matter Template slugs (without their extension) to limit the available Front Matter Templates when creating a new content item in this section. The templates will be shown in the dropdown in the same order they are listed here, with the first template being the default selection. If only one template is defined, the template selection dropdown will not appear when adding new content.
-
-Example:
-
-    sections:
-    - path: content/posts
-      templates:
-      - post
-      - newsletter
-
----
+{{% markdownpartial "docs/section-config-attribute-table.md" %}}
 
 ## Front Matter Templates
 
 The configuration files for Front Matter Templates is found in `.forestry/front_matter/templates/`. Each Front Matter Template is stored as a separate file.
-
-When importing a site for the first time in Forestry, these configuration files will take precedence over autogeneration from any Jekyll defaults or Hugo archetypes.
 
 The following is an example of a front matter template configuration file.
 
@@ -236,7 +149,7 @@ The following is an example of a front matter template configuration file.
 
 ### Options
 
-**Pages** `pages:` `array`
+<h4 id="fmt-settings-pages">Pages <code>pages: array</code></h4>
 
 Provide an array of relative page paths that you want the front matter template to apply to.
 
@@ -248,13 +161,13 @@ _Note: if a page is defined in multiple Front Matter Templates, the last Front M
 
 ---
 
-**Hide Body** `hide_body:` `boolean`
+<h4 id="fmt-settings-hide-body">Hide Body <code>hide_body: boolean</code></h4>
 
 Toggle the display of the body editor on or off for this Front Matter Template.
 
 ---
 
-**Fields** `fields:` `array`
+<h4 id="fmt-settings-fields">Fields <code>fields: array</code></h4>
 
 The array of fields in this front matter template. They follow a standard format:
 

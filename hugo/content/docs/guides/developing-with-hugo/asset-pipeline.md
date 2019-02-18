@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/asset-pipeline/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Asset Pipeline
@@ -11,21 +11,25 @@ weight: 5
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 15
+    weight: 22
 
 ---
-If you’re planning on using any preprocessing on your assets (images, CSS, or JS) you’ll need to be careful how you implement this as it effects how Forestry builds your sites.
+Hugo supports pre-procesing CSS files via SCSS, and post-processing via PostCSS.
 
-Hugo provides no built-in support for preprocessing, so you must use a third-party build tool like Gulp or Grunt.
+## Hugo's Built-in Asset Pipeline
+
+Using Hugo's asset pipeline, you can use Sass, SCSS, and PostCSS. You can also bundle and minify assets.
+
+[Hugo docs: Pipes](https://gohugo.io/hugo-pipes/)
+
 
 ## Best Practises for Gulp, Grunt, and Other Build Tools
-Forestry does not currently support external build tools in the build process.
 
-When publishing, previewing, or saving drafts, Forestry will *only* run:
-`hugo build`
+In order to use external build like Gulp, Grunt, or Webpack with Forestry's [previewing][1] and [deployment][2], you should configure them as follows:
 
-If you use Gulp, Grunt or another build tool to process your assets, you *must* commit your final working assets to your repository, otherwise [previewing][1] and [deployment][2] will **not** work.
+1. Use a NodeJS-based tool installable via NPM and configured in `package.json`.
+2. Define the build script(s) as NPM scripts in your `package.json` file.
+3. Use [custom build commands](/docs/settings/build-commands/) to call these NPM scripts.
 
 [1]: /docs/editing/previews
 [2]: /docs/hosting/
-

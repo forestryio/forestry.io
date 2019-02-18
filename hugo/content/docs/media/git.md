@@ -1,14 +1,14 @@
 ---
 title: Storing Media in Git
 weight: 2
-date: 2018-05-25 16:00:00 -0400
+date: 2018-05-25 20:00:00 +0000
 menu:
   docs:
+    name: Git
     parent: Media
     weight: 2
-    name: Git
----
 
+---
 Git-based media storage is the default media storage option in Forestry. With this option, media is committed to your git repo, just like the rest of your content.
 
 ## Media Files Present in Git History

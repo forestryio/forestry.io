@@ -1,4 +1,4 @@
-import gumshoe from "gumshoe"
+import gumshoe from "gumshoejs"
 
 /**
  * Dynamically highlights sidebar table of contents

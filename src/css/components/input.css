@@ -28,6 +28,10 @@ select {
   }
 }
 
+input[type="text"] {
+  height: 2.626rem;
+}
+
 textarea {
   min-height: 1rem;
   height: auto;

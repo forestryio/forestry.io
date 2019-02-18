@@ -1,7 +1,7 @@
 ---
-title: Snipcart Brings E‑Commerce to Your Static Site
+title: 'Snipcart Brings E‑Commerce to Your Static Site '
 description: ''
-date: 2018-05-18 03:36:07 -1100
+date: 2018-05-18 14:36:07 +0000
 authors:
 - DJ Walker
 publishdate: 2018-05-18 04:00:00 +0000
@@ -49,10 +49,8 @@ Accompanying this blog post is a sample Hugo website that integrates Snipcart to
 {{% create_site_button
 repo="https://github.com/dwalkr/snipcart-hugo-demo.git"
 configPath="site"
-branch="master"
 engineName="hugo"
 engineVersion="0.38.1"
-forkName="snipcart-hugo"
 heading="Make it Your Own"
 linkText="Import Our Snipcart Demo" %}}
 </div>
@@ -109,7 +107,7 @@ We're using the `HUGO_ENV` variable to load the testing API key in our developme
 {{% tip %}}
 If you've already imported the demo to Forestry, you will want to log in to the site's dashboard and navigate to the **Site Params** section to add your API key.
 <br /><br />
-<a href="#/add-site" class="create-site-button" data-proofer-ignore>Import Our Snipcart Demo</a>
+<a href="https://app.forestry.io/quick-start?repo=dwalkr/snipcart-hugo-demo&engine=hugo&config=site" class="create-site-button" data-proofer-ignore>Import Our Snipcart Demo</a>
 {{% /tip %}}
 
 ### API Key Security
@@ -265,7 +263,7 @@ For more information, view [Snipcart's "going live" docs](https://docs.snipcart.
 
 In this post, we focused on building a static product catalog with Hugo to integrate with Snipcart. Snipcart has some other nice features like user account dashboards and a customizable shopping cart, and makes integrating these into your site just as easy. Check out [Snipcart's documentation](https://docs.snipcart.com/) or their [guides and tutorials](https://docs.snipcart.com/getting-started/guides-and-tutorials) for inspiration.
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll dig deeper into creating a JSON API with Hugo. </p><p><strong>Last week:</strong> We told you about <a href="https://forestry.io/blog/what-s-new-in-jekyll-3.8/">the latest updates to Jekyll</a>.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll dig deeper into <a href="https://forestry.io/blog/hugo-json-api-part-2/">creating a JSON API with Hugo.</a> </p><p><strong>Last week:</strong> We told you about <a href="https://forestry.io/blog/what-s-new-in-jekyll-3.8/">the latest updates to Jekyll</a>.</p></div>
 
 ## Have something to add?
 

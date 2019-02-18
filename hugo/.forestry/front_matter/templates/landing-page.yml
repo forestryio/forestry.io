@@ -1,4 +1,5 @@
 ---
+label: landing-page
 hide_body: true
 is_partial: false
 fields:
@@ -9,7 +10,6 @@ fields:
   name: blocks
   label: Blocks
   template_types:
-  - create-site-button-js
   - call-to-action
   - feature
   - hero
@@ -19,7 +19,7 @@ fields:
   hidden: true
   default: blocks
 pages:
-- hugo/content/blocks.md
 - hugo/content/test-landing-page.md
+- hugo/content/blocks.md
 - hugo/content/another-landing-page.md
 - hugo/content/landing-page-test.md

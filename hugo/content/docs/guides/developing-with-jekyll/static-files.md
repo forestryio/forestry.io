@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/static-files"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Static Files
@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-static-files
-    weight: 8
+    weight: 14
 
 ---
 In Jekyll, any file in your project that does not have YAML front matter is treated as a static file, and is included in your built site.

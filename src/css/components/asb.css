@@ -1,0 +1,123 @@
+.asb-generator {
+  .asb-url-error {
+    display: none;
+    background-color: $color-error;
+    &,
+    p {
+      color: $color-light-grey;
+    }
+    padding: 1.2em;
+    code {
+      background: transparent;
+      color: $color-copy-dark;
+    }
+  }
+  .asbresults {
+    background-color: $color-medium-dark;
+    padding: 1.2em;
+    h3,
+    p {
+      color: $color-light-grey;
+    }
+    pre,
+    code {
+      display: block;
+      overflow: auto;
+    }
+  }
+  &.has-error {
+    .asb-url-error {
+      display: block;
+    }
+    .asbresults {
+      display: none;
+    }
+  }
+  .asb-preview {
+    text-align: center;
+  }
+}
+.asbparams {
+  background: $color-dark;
+  padding: 1.2em;
+  .asbparams__group {
+    margin-bottom: 1.8em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .asbparams__group > label {
+    color: $color-light-grey;
+    font-size: 0.8em;
+    display: block;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 0.6em;
+  }
+  .asbparams__group > input,
+  .asbparams__group > select {
+    display: block;
+    width: 100%;
+    background-color: $color-white;
+  }
+  .asbparams__button-options {
+    display: flex;
+    justify-content: space-between;
+    > label {
+      cursor: pointer;
+    }
+    img {
+      min-height: 2.4em;
+      margin: 0 5px;
+      opacity: 0.2;
+    }
+    input {
+      display: none;
+    }
+    input:checked + img {
+      opacity: 1;
+    }
+    @media (max-width: 640px) {
+      display: block;
+      > label {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.2em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .asbparams__group--row {
+    display: flex;
+    > .asbparams__group {
+      flex-flow: row;
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+    > .asbparams__group {
+      margin-left: 0.6em;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    > .asbparams__group--hugo-only {
+      flex-grow: 0;
+      width: 6em;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+img[src*="import-to-forestry"] {
+  min-height: 2em;
+}
+
+.vert-level {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}

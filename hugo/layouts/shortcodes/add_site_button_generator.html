@@ -1,0 +1,69 @@
+<aside class="asb-generator" id="ASBGenerator">
+    <div class="asbparams">
+        <div class="asbparams__group">
+            <label for="repoURL">Repository URL</label>
+            <input id="ASBrepoURL" type="text" name="asb_repo" value="https://github.com/forestryio/ubuild-jekyll" placeholder="https://github.com/forestryio/ubuild-jekyll" />
+        </div>
+        <div class="asbparams__group asbparams__group--row">
+            <div class="asbparams__group">
+                <label for="ASBbranch">Branch</label>
+                <input id="ASBbranch" type="text" name="asb_branch" value="master" />
+            </div>
+            <div class="asbparams__group">
+                <label for="ASBconfig">Config Path</label>
+                <input id="ASBconfig" type="text" name="asb_config" value="/" />
+            </div>
+        </div>
+        <div class="asbparams__group asbparams__group--row">
+            <div class="asbparams__group">
+                <label for="ASBengine">Engine</label>
+                <select id="ASBengine" name="asb_engine">
+                    <option value="hugo">Hugo</option>
+                    <option value="jekyll" selected="selected">Jekyll</option>
+                    <option value="vuepress">VuePress</option>
+                </select>
+            </div>
+            <div class="asbparams__group asbparams__group--hugo-only hidden">
+                <label for="ASBversion">
+                    version
+                </label>
+                <input id="ASBversion" type="text" name="asb_version" value="0.49" />
+            </div>
+        </div>
+        <div class="asbparams__group">
+            <label for="ASBbuttonStyle">Button Style</label>
+            <div id="ASBbuttonStyle" class="asbparams__button-options">
+                <label><input checked="checked" type="radio" name="asb_buttonStyle" value="import-to-forestry.svg" /> <img data-lightbox="false" class="no-lightbox" alt="Import button in green" src="https://assets.forestry.io/import-to-forestry.svg" /></label>
+                <label><input type="radio" name="asb_buttonStyle" value="import-to-forestryW.svg" /> <img class="no-lightbox" alt="Import button in white" src="https://assets.forestry.io/import-to-forestryW.svg" /></label>
+                <label><input type="radio" name="asb_buttonStyle" value="import-to-forestryK.svg" /> <img class="no-lightbox" alt="Import button in black" src="https://assets.forestry.io/import-to-forestryK.svg" /></label>
+            </div>
+        </div>
+    </div>
+    <div class="asb-url-error">
+        <h3>Invalid repository URL</h3>
+        <p>
+            That URL doesn't look like something we can import.
+            Please ensure your URL meets the following requirements:
+        </p>
+        <ul>
+            <li>Starts with <code>https://</code></li>
+            <li>Is hosted on <code>github.com</code>, <code>gitlab.com</code>, or <code>bitbucket.org</code></li>
+            <li>Contains the <strong>full path</strong> to your repository index, with or without <code>.git</code></li>
+        </ul>
+        <p>
+            For example, the URL for our <a href="https://github.com/forestryio/ubuild-jekyll">uBuild</a> project is <br /><code>https://github.com/forestryio/ubuild-jekyll</code>
+        </p>
+        <p><strong>Please note that we use heuristics to determine if your URL is valid and you should test your import button to ensure your repository is recognized.</strong></p>
+    </div>
+    <div class="asbresults">
+        <h3>Preview</h3>
+        <div class="asb-preview"></div>
+
+
+        <h3>HTML</h3>
+        <pre><code class="asb-html no-highlight"></code></pre>
+
+        <h3>Markdown</h3>
+        <pre><code class="asb-md no-highlight"></code></pre>
+    </div>
+</aside>

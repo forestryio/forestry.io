@@ -17,7 +17,7 @@ date: 2017-12-31 00:00:00 -0400
 * _Description_ – a human friendly description of what the field does and/or instructions for your editors.
 * _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 * _Required_ – prevent changes from being saved if this field is empty.
-* _Source Type_  – where to source options from. Can be [Custom](/docs/settings/fields/select#custom-source), [Pages](/docs/settings/fields/select#pages-source), or [Data Files](/docs/settings/fields/select#data-source).
+* _Source Type_  – where to source options from. Can be [Custom](/docs/settings/fields/select#custom-source), [Pages](/docs/settings/fields/select#pages-source), or [Document Fields](/docs/settings/fields/select#data-source).
 
 ## Field UI
 ![](/uploads/2018/01/select-preview.png)
@@ -126,11 +126,16 @@ config:
 Omit the `config.section` option to allow selection from all content in the site.
 {{% /tip %}}
 
-## Data Source
+<h2 id="data-source">Document Fields</h2>
 
-Allows developers to source options from a data file. The data structure must be either an array of strings, or a single object where both keys and values are strings. More complex data types, such as an array of objects, are not supported.
+Allows developers to source options from a data file or page front matter. The data structure must be either an array of strings, or a single object where both keys and values are strings. More complex data types, such as an array of objects, are not supported.
 
 When an object is used, the field will store the key from the data file in your front matter.
+
+### Data Files as Source
+
+The **Data Files** source type is deprecated and only available for Jekyll and Hugo projects that have not opted in to the section-based data file handling. All other projects should use the **Document Fields** option for this behavior, and existing projects should plan to upgrade.
+
 
 ## Templating
 You can query for the value in the data file in your templates using the field's `name`:
@@ -185,7 +190,7 @@ hidden: [true|false]
 default: [String]
 config:
     source:
-      type: datafiles
+      type: documents
       file: [String]
       path: [String]
 ```

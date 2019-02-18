@@ -31,11 +31,9 @@ In order to make data that is “machine friendly” like this, we can expose it
 
 <div id="import-snipcart-demo-button" data-proofer-ignore>
 {{% create_site_button
-repo="https://github.com/regisphilibert/hugoGetApi/"
-branch="master"
+repo="https://github.com/regisphilibert/hugoGetApi.git"
 engineName="hugo"
 engineVersion="0.42.2"
-forkName="hugo-json-api"
 heading="Get Started With Hugo JSON API"
 linkText="Import the Hugo Project" %}}
 </div>
@@ -93,15 +91,17 @@ In our content directory, we’ll create a `players` folder and add some players
 
 Our player markdown will look something like this:
 
-    ---
-    title: "Frank J. Robinson"
-    date: 2018-02-05
-    age: 17
-    emergency_contact: +1 (555) 555 5555
-    year: junior
-    ---
-    
-    Frank, our number one second baseman!
+```md
+---
+title: "Frank J. Robinson"
+date: 2018-02-05
+age: 17
+emergency_contact: +1 (555) 555 5555
+year: junior
+---
+
+Frank, our number one second baseman!
+```
 
 ## Output Formats
 
@@ -111,10 +111,12 @@ In our case, all we need to output is a JSON formatted file for each page, secti
 
 The JSON output format is also [built-in](https://gohugo.io/templates/output-formats/#output-formats), all we need is to open our `config.toml` file and tell Hugo where to use it.
 
-    [outputs]
-      page = ["json"] # A player
-      section = ["json"] # All players
-      home = ["json"] # Everything
+```toml
+[outputs]
+    page = ["json"] # A player
+    section = ["json"] # All players
+    home = ["json"] # Everything
+```
 
 Next, we need to create a template for Hugo to build this format. When creating Hugo template files for a custom output format, we need to follow a specific naming convention:
 
@@ -146,9 +148,11 @@ To achieve this, we’ll create the following templates in `/layouts/_default/`:
 
 Our simple `baseof.json`:
 
-    {
-        "data" : {{ block "response" .}}{{ end }}
-    }
+```go-text-template
+{
+    "data" : {{ block "response" .}}{{ end }}
+}
+```
 
 ### item.json.json
 
@@ -156,19 +160,23 @@ The Hugo docs suggest you call this template `li.json`, but for clarity we’ll 
 
 We want the output of a player object to look like this:
 
-    {
-        "name": "Frank J. Robinson",
-        "contact" : "+1 555 555-555",
-        "permalink" : "https://school.api/players/frank-j-robinson/index.json"
-    }
+```json
+{
+    "name": "Frank J. Robinson",
+    "contact" : "+1 555 555-555",
+    "permalink" : "https://school.api/players/frank-j-robinson/index.json"
+}
+```
 
 To achieve this, add the following to `item.json.json`:
 
-    {
-        "name": "{{ .Title }}",
-        "contact" : "{{ .Params.emergency_contact }}",
-        "permalink" : "{{ .Permalink }}"
-    }
+```json
+{
+    "name": "{{ .Title }}",
+    "contact" : "{{ .Params.emergency_contact }}",
+    "permalink" : "{{ .Permalink }}"
+}
+```
 
 That's all there is to it!
 
@@ -176,7 +184,9 @@ That's all there is to it!
 
 We just have to render our `item.json.json` inside our response block.  To do so, add this to `single.json.json`.
 
-    {{ define "response" }} {{ .Render "item" }} {{ end }}
+```go-html-template
+{{ define "response" }} {{ .Render "item" }} {{ end }}
+```
 
 Now you should be able to visit the API endpoint for a single player ([http://localhost:1313/players/frank-j-robinson/index.json](http://localhost:1313/players/frank-j-robinson/index.json)) and get a response.
 
@@ -186,54 +196,62 @@ While developing your API, you will need to run the `hugo serve` command with th
 Also, note that Hugo's built-in webserver can't live reload non-HTML documents, so you will need to manually reload the browser to see your changes.
 {{% /warning %}}
 
-    {
-        "data": {
-            "name": "Frank J. Robinson",
-            "contact": "+1 (555) 555 5555",
-            "permalink": "https://school.api/players/frank-j-robinson/index.json"
-        }
+```json
+{
+    "data": {
+        "name": "Frank J. Robinson",
+        "contact": "+1 (555) 555 5555",
+        "permalink": "https://school.api/players/frank-j-robinson/index.json"
     }
+}
+```
 
 ### list.json.json
 
 For our list template, we need to iterate over the current section’s pages and render our `item.json.json` template for each one inside the response block.
 
-    {{ define "response" }}
-    [
-        {{ range $index, $e := .Data.Pages }}
-        {{ if $index }}, {{ end }}{{ .Render "item" }}
-        {{ end }}
-    ]
+```go-text-template
+{{ define "response" }}
+[
+    {{ range $index, $e := .Data.Pages }}
+    {{ if $index }}, {{ end }}{{ .Render "item" }}
     {{ end }}
+]
+{{ end }}
+```
 
 We're using the `$index` variable here to prevent our template from outputting a comma after the last item in our array, since that would result in invalid JSON.
 
 Now your players API endpoint (http://localhost:1313/players/index.json) should return a list
 
-    {
-        "data": [
-            {
-                "name": "Frank J. Robinson",
-                "contact": "+1 (555) 555 5555",
-                "permalink": "http://localhost:1313/players/frank-j-robinson/index.json"
-            },
-            {
-                "name": "Jody Garland",
-                "contact": "+1 (555) 555 5555",
-                "permalink": "http://localhost:1313/players/jody-garland/index.json"
-            },
-            ...
-        ]
-    }
+```json
+{
+    "data": [
+        {
+            "name": "Frank J. Robinson",
+            "contact": "+1 (555) 555 5555",
+            "permalink": "http://localhost:1313/players/frank-j-robinson/index.json"
+        },
+        {
+            "name": "Jody Garland",
+            "contact": "+1 (555) 555 5555",
+            "permalink": "http://localhost:1313/players/jody-garland/index.json"
+        },
+        ...
+    ]
+}
+```
 
 ### 404.json
 
 If the consumer of our API requests a nonexistent resource, it would be nice if we could return a 404 response with an error message in valid JSON. Let's add a `404.json` in our static directory:
 
-    {
-        "error" : "404",
-        "message" : "page not found"
-    }
+```json
+{
+    "error" : "404",
+    "message" : "page not found"
+}
+```
 
 Then, all you have to do is make sure your server redirect to this file in case of a 404. If you’re not familiar on how to set up a server redirect, check out this [overview](https://gohugo.io/templates/404/) on different ways to go about it.
 
@@ -245,30 +263,36 @@ Great job! You just built a simple but fully functioning API using Hugo’s Outp
 
 A lot of these steps are similar to creating the endpoint for `players`. First, we’ll add a `teams` section to our content directory and add team `.md` files. We’ll create `/content/teams/sly-turtles.md`.
 
-    ---
-    title: Sly Turtles
-    mascot: Turtle Todd
-    ---
-    
-    Sly Turtles were cool before Nemo!
+```md
+---
+title: Sly Turtles
+mascot: Turtle Todd
+---
+
+Sly Turtles were cool before Nemo!
+```
 
 We need a new item object to display a team. All we have to do is create `layouts/teams/item.json.json` for Hugo to pick it up instantly when rendering a page from`teams`.
 
-    {
-        "title": "{{ .Title }}",
-        "mascot": "{{ .Params.mascot }}",
-        "permalink": "{{ .Permalink }}"
-    }
+```go-text-template
+{
+    "title": "{{ .Title }}",
+    "mascot": "{{ .Params.mascot }}",
+    "permalink": "{{ .Permalink }}"
+}
+```
 
 And we have a team: http://localhost:1313/teams/sly-turtles/index.json
 
-    {
-        "data": {
-            "title": "Sly Turtles",
-            "mascot": "Turtle Todd",
-            "permalink": "http://localhost:1313/teams/sly-turtles/index.json"
-        }
+```json
+{
+    "data": {
+        "title": "Sly Turtles",
+        "mascot": "Turtle Todd",
+        "permalink": "http://localhost:1313/teams/sly-turtles/index.json"
     }
+}
+```
 
 ### Improving our response
 
@@ -278,7 +302,7 @@ Now that we have two types of entries, it makes sense to provide some additional
 * The number of results found
 * An array of results
 
-```text
+```go-text-template
 {{ define "response" }}
 {
   {{ with .Section }}
@@ -313,50 +337,56 @@ Adding a sports category into the mix is not that complicated. First, we need to
 
 We can now add `sports` to our players and teams:
 
-    ---
-    title: "Frank J. Robinson"
-    [...]
-    sports: ["soccer", "baseball"]
+```yaml
+---
+title: "Frank J. Robinson"
+[...]
+sports: ["soccer", "baseball"]
+```
 
 In our `list.json.json` template, we could then add the possibility of a taxonomy page and enrich the output by checking if the page is of kind `section` or `taxonomy`.
 
-    {{ with eq .Kind  "section"}}
-        "section" : "{{ $.Section }}",
-    {{ end }}
-    {{ with eq .Kind  "taxonomy"}}
-        "taxonomy" : "{{ $.Data.Singular }}",
-        "term" : "{{ $.Data.Term }}",
-    {{ end }}
+```go-text-template
+{{ with eq .Kind  "section"}}
+    "section" : "{{ $.Section }}",
+{{ end }}
+{{ with eq .Kind  "taxonomy"}}
+    "taxonomy" : "{{ $.Data.Singular }}",
+    "term" : "{{ $.Data.Term }}",
+{{ end }}
+```
 
 We now have a sport index: http://localhost:1313/sports/football/index.json
 
-    {
-        "data": {
-            "taxonomy": "sport",
-            "term": "football",
-            "count": "3",
-            "items": [
-                {
-                    "name": "Jody Garland",
-                    "contact": "+1 (555) 555 5555",
-                    "permalink": "http://localhost:1313/players/jody-garland/index.json",
-                    "year": "freshman"
-                },
-                {
-                    "name": "John Artfield",
-                    "contact": "+1 (555) 555 5555",
-                    "permalink": "http://localhost:1313/players/john-artfield/index.json",
-                    "year": "sophomore"
-                },
-                {
-                    "title": "Sly Turtles",
-                    "type": "teams",
-                    "mascot": "Turtle Todd",
-                    "permalink": "http://localhost:1313/teams/sly-turtles/index.json"
-                }
-            ]
-        }
+```json
+{
+    "data": {
+        "taxonomy": "sport",
+        "term": "football",
+        "count": "3",
+        "items": [
+            {
+                "name": "Jody Garland",
+                "contact": "+1 (555) 555 5555",
+                "permalink": "http://localhost:1313/players/jody-garland/index.json",
+                "year": "freshman"
+            },
+            {
+                "name": "John Artfield",
+                "contact": "+1 (555) 555 5555",
+                "permalink": "http://localhost:1313/players/john-artfield/index.json",
+                "year": "sophomore"
+            },
+            {
+                "title": "Sly Turtles",
+                "type": "teams",
+                "mascot": "Turtle Todd",
+                "permalink": "http://localhost:1313/teams/sly-turtles/index.json"
+            }
+        ]
     }
+}
+```
 
 ### Creating a generic item.json.json
 
@@ -364,13 +394,15 @@ For the sake of simplicity we added `items.json.json` to `layouts/_default`. How
 
 Instead we'll create a more generic `layouts/_default/item.json.json` for all other types of entries.
 
-    {
-      "title": "{{ .Title }}",
-      "date": "{{ .Date }}",
-      "type": "{{ .Type }}",
-      "permalink" : "{{ .Permalink }}",
-      "summary" : "{{ .Summary }}"
-    }
+```go-text-template
+{
+    "title": "{{ .Title }}",
+    "date": "{{ .Date }}",
+    "type": "{{ .Type }}",
+    "permalink" : "{{ .Permalink }}",
+    "summary" : "{{ .Summary }}"
+}
+```
 
 Our API is now Content-type agnostic!
 
@@ -378,11 +410,13 @@ Our API is now Content-type agnostic!
 
 What we built is a stand alone API, but in order to add it as an extra layer to your existing website, all you'll have to do is drop the templates we created today in your project's `layouts` directory and assign the needed output formats to your page kinds, without forgetting to mention the default ones: HTML and for some page kinds, RSS. This way Hugo will output the desired pages in HTML, RSS and JSON:
 
-    [outputs]
-      page = ["HTML", "json"]
-      home = ["HTML", "RSS", "json"]
-      section = ["HTML", "RSS", "json"]
-      ...
+```toml
+[outputs]
+    page = ["HTML", "json"]
+    home = ["HTML", "RSS", "json"]
+    section = ["HTML", "RSS", "json"]
+    ...
+```
 
 Using Hugo's Output Formats we were able to tell Hugo to output our pages in JSON. We now have an out of the box RESTful GET API!
 
@@ -398,7 +432,7 @@ Bootstrapping an API this easily is great, but your content editors might not en
 <br /><br />
 From the content side, our JSON API is no different than a conventional Hugo site. This means that managing our content in Forestry will work the same regardless of whether we plan to output JSON or HTML (or both!)
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We will explore innovative content strategy options within the Forestry CMS</p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday 📅</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We will explore <a href="https://forestry.io/blog/sawmill-layout-composer-for-hugo-and-forestry/">innovative content strategy options within the Forestry CMS</a></p><p><strong>Last week:</strong> We compared the usability and features of Hugo and Jekyll to help you decide <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">which static site generator is right for you</a></p></div>
 
 ## Have something to add?
 

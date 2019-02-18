@@ -4,7 +4,7 @@ weight: 1
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -17,5 +17,6 @@ Static files are files that are not processed by your static site generator. Ins
 
 ## Examples
 
-- **Jekyll**: in Jekyll, this is any file without front matter.
-- **Hugo**: in Hugo, this is any file in the `staticDir`, which defaults to `static/`
+* **Jekyll**: any file without front matter.
+* **Hugo**: static files live in the `staticDir`, which defaults to `static/`
+* **VuePress:** static files live in `.vuepress/public`

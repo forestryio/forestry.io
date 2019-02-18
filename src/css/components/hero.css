@@ -10,7 +10,7 @@
   z-index: 1;
 
   @media screen and (min-width: 48em) {
-    min-height: 100%;
+    min-height: 100vh;
   }
 
   .hero--text-block {
@@ -139,6 +139,22 @@
     top: 45%;
     transform: translate(0, -45%);
     width: 70%;
+  }
+}
+
+.factory-video.jekyll-hero-video {
+  top: 85%;
+
+  @media screen and (min-width: 600px) {
+    top: 70%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    top: 45%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 45%;
   }
 }
 

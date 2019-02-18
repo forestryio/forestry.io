@@ -1,14 +1,14 @@
 ---
 title: Cloud Media Storage With Cloudinary
 weight: 3
-date: 2018-05-25 16:00:00 -0400
+date: 2018-05-25 20:00:00 +0000
 menu:
   docs:
+    name: Cloudinary
     parent: Media
     weight: 3
-    name: Cloudinary
----
 
+---
 Forestry supports storing your media in your own [Cloudinary](https://cloudinary.com/) cloud.
 
 ## Linking Your Cloudinary Account
@@ -29,8 +29,16 @@ Forestry supports storing your media in your own [Cloudinary](https://cloudinary
 
 You will want to adjust your paths in the **Media** section to work with Cloudinary.
 
-- **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `https://res.cloudinary.com/$USERNAME/`.
+- **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`.
 - **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
+
+### Applying transforms to markdown content
+Your markdown content will not have any transforms applied by default. To apply transforms to all of your markdown images, you can use the **public path** and **front matter path** separately.
+
+E.g:
+
+- **Public Path:** `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/c_scale,w_auto:100,dpr_auto/`
+- **Front Matter Path:** `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`
 
 ## Migrating Existing Media
 

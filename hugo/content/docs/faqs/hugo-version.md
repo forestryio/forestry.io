@@ -6,24 +6,26 @@ weight: 1
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2018-08-20 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   faqs:
     parent: FAQs
-    weight: 7
+    weight: 10
 
 ---
-We strive to always supports the previous 3 major versions of Hugo with their latest patch. (e.g, x.3.x, x.2.x, x.1.x).
+Forestry supports all stable releases of Hugo. If your project requires a version that is not available in the version dropdown, please [let us know](/support/) and we can add it.
 
-Backwards compatibility is always available for sites using an older version of Hugo that was supported when the site was added to Forestry.
+## Extensions
 
-**Note:** Forestry does not provide immediate support for Hugo releases.
+### Asset Pipeline
 
-## Other Software
+Forestry supports Hugo's [native Sass processing](https://gohugo.io/hugo-pipes/scss-sass/).
 
-We also support the following software that is supported by Hugo:
+### Content Formats
+
+We also support the following software to enable Hugo's [optional content formats](https://gohugo.io/content-management/formats/#additional-formats-through-external-helpers):
 
 * asciidoc
 * asciidoctor

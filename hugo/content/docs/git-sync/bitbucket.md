@@ -1,27 +1,31 @@
 ---
-title: BitBucket
+title: Bitbucket
 weight: 3
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-04-06 00:00:00 -0400
+date: 2018-08-27 04:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Git Sync
-    weight: 3
+    weight: 4
 
 ---
+{{% warning "Temporarily Unavailable" %}}
+Due to some issues with the Bitbucket API, we are not currently able to offer Quick Setup for Bitbucket projects. Please refer to our [manual setup](/docs/git-sync/manual-setup/) documentation for instructions on setting up your Bitbucket project.
+{{% /warning %}}
+
 {{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [BitBucket account](https://bitbucket.org/account/signup/) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/tour/), which contains guides and resources for building your first static site.
+This guide assumes you already have an existing [Bitbucket account](https://bitbucket.org/account/signup/) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/tour/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
-Forestry's allows you to import your static site through BitBucket repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to BitBucket. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
+Forestry's allows you to import your static site through Bitbucket repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to Bitbucket. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
 
 ## Importing from BitBucket
 
-To import a site with BitBucket, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
+To import a site with Bitbucket, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
 ![](/uploads/2018/04/add-site-flow-choose-generator-2.png)
 
@@ -29,14 +33,14 @@ From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In th
 
 ![](/uploads/2018/04/add-site-flow-select-provider.png)
 
-Now, choose "BitBucket" from the list of options.
+Now, choose "Bitbucket" from the list of options.
 
 ![](/uploads/2018/01/7.png)
 
-This will redirect you to BitBucket and prompt you to enter your login credentials if you are not already logged in.
+This will redirect you to Bitbucket and prompt you to enter your login credentials if you are not already logged in.
 
 {{% warning " " %}}
-In order to import a site from BitBucket, you will need [admin permissions](https://confluence.atlassian.com/bitbucketserver/using-project-permissions-776639801.html) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
+In order to import a site from Bitbucket, you will need [admin permissions](https://confluence.atlassian.com/bitbucketserver/using-project-permissions-776639801.html) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
 {{% /warning %}}
 
 ![](/uploads/2018/04/add-site-flow-choose-repo-not-github.png)

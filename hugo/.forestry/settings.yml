@@ -4,24 +4,75 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- path: hugo/content
+- type: heading
+  label: Content
+- type: directory
+  path: hugo/content
   label: Pages
   create: all
-- path: hugo/content/careers
+  match: "*"
+- type: directory
+  path: hugo/content/careers
   label: Careers
   create: all
-- path: hugo/content/docs
-  label: Docs
-  create: all
-- path: hugo/content/showcase
+  match: "**/*"
+- type: directory
+  path: hugo/content/showcase
   label: Showcase
   create: all
-- path: hugo/content/blog
+  match: "**/*"
+- type: directory
+  path: hugo/content/blog
   label: Blog
   create: all
+  match: "**/*"
+- type: heading
+  label: Documentation
+- type: directory
+  path: hugo/content/docs
+  label: Docs
+  create: all
+  match: "**/*"
+  exclude: "{changelog,sunset}/*"
+- type: directory
+  path: hugo/content/docs/changelog
+  label: Changelog
+  create: all
+  match: "*"
+  templates:
+  - changelog
+- type: directory
+  path: hugo/content/docs/sunset
+  label: Sunset Notices
+  create: all
+  match: "*"
+- type: heading
+  label: Data
+- type: document
+  path: hugo/data/authors.yml
+  label: Authors
+- type: document
+  path: hugo/data/testimonials.yml
+  label: Testimonials
+- type: document
+  path: hugo/data/pricing.json
+  label: Pricing
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
 use_front_matter_path: false
 file_template: ":year:/:month:/:filename:"
-version: 0.42.1
+build:
+  preview_command: npm run forestry:preview
+  publish_command: npm run preDeploy
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.42.2
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.42.2
+  preview_output_directory: dist
+  output_directory: dist
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
+version: 0.42.2

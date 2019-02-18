@@ -22,14 +22,16 @@ aliases: []
 menu:
   faqs:
     name: What are Guests
-    weight: 3
+    weight: 6
     parent: FAQs
 
 ---
 A Guest is a single-site user with limited permissions. Guests do not get access to support and are often used for clients or external colleagues.
 
-A Guest can only access the site that you invite them to, whereas your _team_ (available to those on the [Business Plan](https://forestry.io/pricing/)) can access all of your sites. 
+A Guest can only access the site that you invite them to, whereas your _team_ (available to those on the [Starter or Pro Plans](https://forestry.io/pricing/)) can access all of your sites. 
 
-Each site can have up to 3 Guest accounts. 
+Each site can have up to 3 Guest accounts.
 
-For more information on managing Guests, see [Team Management](/docs/settings/team-management/). 
+![](/uploads/2018/10/guests.png)
+
+For more information on managing Guests, see [Team Management](/docs/settings/team-management/).

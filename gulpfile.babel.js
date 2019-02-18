@@ -48,7 +48,16 @@ gulp.task("generator", cb => build(cb))
  * compiles the static site with Hugo
  */
 gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "generator", "algolia", cb)
+  runsequence(["styles", "scripts", "images", "svg"], "generator", cb)
+})
+
+/**
+ * @task preDeploy
+ * Same as build, but also submits
+ * search index to algolia
+ */
+gulp.task("preDeploy", ["clean"], cb => {
+  runsequence("build", "algolia", cb)
 })
 
 /**

@@ -1,0 +1,12 @@
+{{ if eq (.Get 1) "off" }}
+<div class="featureGate" data-featureName="{{ .Get 0 }}" data-featureState="off">
+    {{ .Inner }}
+</div>
+{{ else }}
+{{ $contentDigest := sha1 .Inner }}
+<div class="featureGate" data-featureName="{{ .Get 0 }}" data-featureState="{{ .Get 1 }}" data-content="{{ $contentDigest }}">
+</div>
+<script>
+    featureFlagContent['{{ $contentDigest }}'] = '{{ safeHTML .Inner }}';
+</script>
+{{ end }}

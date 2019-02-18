@@ -47,15 +47,19 @@ When Forestry saves a Cloudinary image to front matter, it only saves a part of 
 
 For our demo site, I’ve added our base cloudinary URL to the [site params](https://github.com/dwalkr/snipcart-hugo-demo/blob/b45da7ebbe28d4bf95d889a817de150be40be80c/site/config.toml#L44) as `cloudinary_base_url`. We can then reference this in our templates and glue it together with the front matter path to get the full URL to the image. A simple example would look like this:
 
-    <img src="{{ $.Site.Params.cloudinary_base_url }}{{ .Params.image }}" />
+```go-html-template
+<img src="{{ $.Site.Params.cloudinary_base_url }}{{ .Params.image }}" />
+```
 
 To perform a transformation on this image, we just have to insert the transformation parameters in a new URL path between these two variables. Let's say we want to resize this image to a width of 500px. All we have to do is insert `w_500` in our URL path:
 
-    <img src="{{ $.Site.Params.cloudinary_base_url }}/w_500{{ .Params.image }}" />
+```go-html-template
+<img src="{{ $.Site.Params.cloudinary_base_url }}/w_500{{ .Params.image }}" />
+```
 
 Using this strategy, it is easy to perform all kinds of image transformations in your templates. You can even stack transformations by adding multiple paths to a single URL. For example, let's say we wanted to resize the image and then flip it horizontally with the `hflip` option:
 
-```
+```go-html-template
 <img src="{{ $.Site.Params.cloudinary_base_url }}/w_500/a_hflip{{ .Params.image }}" />
 ```
 
@@ -67,9 +71,11 @@ One way we can improve this project is by automatically generating thumbnails fo
 
 To change this, we just have to replace the image in the `data-item-image` parameter in `layouts/partials/buy-button.html`:
 
-    {{ with .Params.image }}
-        data-item-image="{{ $.Site.Params.cloudinary_base_url }}/w_50,h_50,c_fill{{ . }}"
-    {{ end }}
+```go-html-template
+{{ with .Params.image }}
+    data-item-image="{{ $.Site.Params.cloudinary_base_url }}/w_50,h_50,c_fill{{ . }}"
+{{ end }}
+```
 
 In our transformation, we use `w_50` and `h_50` to specify the desired width and height. `c_fill` tells Cloudinary to crop the image to prevent it from being distorted by the resize, and to crop it in a way that fills up the 50x50 square.
 
@@ -79,20 +85,24 @@ The next thing we want to do is provide scaled-down images at smaller resolution
 
 To keep our code organized, I've decided to move these responsive image tags into partials. For the image in the single template (`layouts/products/single.html`,) I've created a partial at `layouts/partials/images/single-product.html`. We will call this partial in our single template and pass it the image, and also grab our base URL from the site settings:
 
-    <div class="product__image column is-half">
-            {{ partial "images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
-    </div>
+```go-html-template
+<div class="product__image column is-half">
+        {{ partial "images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+</div>
+```
 
 In our partial, I've specified four image sizes for different screens:
 
-    <img 
-    srcset="
-    {{ .baseURL }}/w_500{{ .image }} 500w,
-    {{ .baseURL }}/w_710{{ .image }} 710w,
-    {{ .baseURL }}/w_1000{{ .image }} 1000w,
-    {{ .baseURL }}/w_1420{{ .image }} 1420w"
-    src="{{ .baseURL }}/w_500{{ .image }}"
-     />
+```go-html-template
+<img 
+srcset="
+{{ .baseURL }}/w_500{{ .image }} 500w,
+{{ .baseURL }}/w_710{{ .image }} 710w,
+{{ .baseURL }}/w_1000{{ .image }} 1000w,
+{{ .baseURL }}/w_1420{{ .image }} 1420w"
+src="{{ .baseURL }}/w_500{{ .image }}"
+    />
+```
 
 Browsers that don't support `srcset` will fall back to the 500px version specified in the `src` tag.
 
@@ -110,13 +120,17 @@ This is easy to solve with Cloudinary's [aspect ratio cropping](https://cloudina
 
 Let's start by updating our list template to use a partial for the image tag, just like we did in our single template. The product list template is already using the `list-product.html` partial to render each product in list view, so open up `layouts/partials/list-product.html` and update the product image tag to the following:
 
-    <div class="product__image">
-        {{ partial "images/list-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
-    </div>
+```go-html-template
+<div class="product__image">
+    {{ partial "images/list-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+</div>
+```
 
 Then, in `layouts/partials/images/list-product.html`, we can add the following:
 
-    <img src="{{ .baseURL }}/ar_4:3,c_fill/{{ .image }}" />
+```go-html-template
+<img src="{{ .baseURL }}/ar_4:3,c_fill/{{ .image }}" />
+```
 
 The `ar_4:3` parameter tells Cloudinary to crop our image to a 4:3 aspect ratio, and we're using `c_fill` again to ensure we fill the full area of the image. This will give us nice neat lines in our grid.
 
@@ -124,14 +138,16 @@ The `ar_4:3` parameter tells Cloudinary to crop our image to a 4:3 aspect ratio,
 
 We can stack this transformation with a resizing rule for responsive delivery of these cropped images:
 
-    <img 
-    srcset="
-    {{ .baseURL }}/ar_4:3,c_fill/w_500{{ .image }} 500w,
-    {{ .baseURL }}/ar_4:3,c_fill/w_710{{ .image }} 710w,
-    {{ .baseURL }}/ar_4:3,c_fill/w_1000{{ .image }} 1000w,
-    {{ .baseURL }}/ar_4:3,c_fill/w_1420{{ .image }} 1420w"
-    src="{{ .baseURL }}/ar_4:3,c_fill/w_500{{ .image }}"
-     />
+```go-html-template
+<img 
+srcset="
+{{ .baseURL }}/ar_4:3,c_fill/w_500{{ .image }} 500w,
+{{ .baseURL }}/ar_4:3,c_fill/w_710{{ .image }} 710w,
+{{ .baseURL }}/ar_4:3,c_fill/w_1000{{ .image }} 1000w,
+{{ .baseURL }}/ar_4:3,c_fill/w_1420{{ .image }} 1420w"
+src="{{ .baseURL }}/ar_4:3,c_fill/w_500{{ .image }}"
+    />
+```
 
 ### Smart Cropping To Preserve Areas of Interest
 
@@ -139,14 +155,16 @@ We have one more trick up our sleeve for this product layout. Sometimes, croppin
 
 We can add automatic cropping to our original aspect ratio crop by adding the parameter into the URL:
 
-    <img 
-    srcset="
-    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_500{{ .image }} 500w,
-    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_710{{ .image }} 710w,
-    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_1000{{ .image }} 1000w,
-    {{ .baseURL }}/ar_4:3,c_fill,g_auto/w_1420{{ .image }} 1420w"
-    src="{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_500{{ .image }}"
-     />
+```go-html-template
+<img 
+srcset="
+{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_500{{ .image }} 500w,
+{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_710{{ .image }} 710w,
+{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_1000{{ .image }} 1000w,
+{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_1420{{ .image }} 1420w"
+src="{{ .baseURL }}/ar_4:3,c_fill,g_auto/w_500{{ .image }}"
+    />
+```
 
 Notice that the boots in the first image have now shifted toward the center:
 
@@ -160,7 +178,7 @@ You may also be interested in [automating your responsive image sizing](https://
 
 When you're ready to connect your Forestry media library to Cloudinary, check out our [Cloudinary documentation](https://forestry.io/docs/media/cloudinary/) to get started!
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We added some enhancements to our <a href="https://forestry.io/blog/hugo-json-api-part-2/">Hugo JSON API</a>.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll look at <a href="https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/"> the advantages of hosting your static site on a CDN.</a> </p><p><strong>Last week:</strong> We added some enhancements to our <a href="https://forestry.io/blog/hugo-json-api-part-2/">Hugo JSON API</a>.</p></div>
 
 ## Have something to add?
 

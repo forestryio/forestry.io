@@ -1,17 +1,33 @@
-<script type="text/javascript">
-    window.addSite = {
-        engine: { name: "{{ .Get "engineName" }}", version: "{{ .Get "engineVersion" }}" },
-        source: {
-            repo: "{{ .Get "repo" }}",
-            branch: "{{ .Get "branch" }}",
-        },
-        repoName: "{{ .Get "forkName" }}",
-        configPath: "{{ .Get "configPath" }}"
-    }
-</script>
-<script src="{{ "/js/load-add-site-flow.min.js" | relURL }}?{{ readFile "static/js/load-add-site-flow.min.js" | md5 }}" type="text/javascript"></script>
-<!-- <script type="text/javascript" src="http://localhost:3002/static/js/bundle.js"></script> -->
+{{- $asbURL := "https://app.forestry.io/quick-start?" -}}
+{{- $repoURL := urls.Parse (.Get "repo") -}}
+{{- $asbURL := printf "%s%s%s" $asbURL "repo=" (index (split (substr $repoURL.Path 1) ".") 0) -}}
+{{- .Scratch.Set "asbURL" $asbURL -}}
+
+{{- if eq $repoURL.Host "gitlab.com" -}}
+{{- $asbURL := printf "%s%s" $asbURL "&provider=gitlab" -}}
+{{- else if eq $repoURL.Host "bitbucket.org" -}}
+{{- $asbURL := printf "%s%s" $asbURL "&provider=bitbucket" -}}
+{{- .Scratch.Set "asbURL" $asbURL -}}
+{{- end }}
+{{- $asbURL := .Scratch.Get "asbURL" -}}
+
+{{- $asbURL := printf "%s%s%s" $asbURL "&engine=" (.Get "engineName") -}}
+{{- .Scratch.Set "asbURL" $asbURL -}}
+{{- if and (eq (.Get "engineName") "hugo") (.Get "engineVersion") -}}
+{{- $asbURL := .Scratch.Get "asbURL" -}}
+{{- $asbURL := printf "%s%s%s" $asbURL "&version=" (.Get "engineVersion") -}}
+{{- .Scratch.Set "asbURL" $asbURL -}}
+{{- end }}
+{{- $asbURL := .Scratch.Get "asbURL" -}}
+
+{{- if gt (len (.Get "configPath")) 0 -}}
+{{- $asbURL := printf "%s%s%s" $asbURL "&config=" (.Get "configPath") -}}
+{{- .Scratch.Set "asbURL" $asbURL -}}
+{{- end -}}
+{{- $asbURL := .Scratch.Get "asbURL" -}}
+
 <div class="create-site-block">
     <h2>{{ .Get "heading" }}</h2>
-    <a href="#/add-site" class="create-site-button">{{ .Get "linkText" }}</a>
+    <a target="_blank" href="{{ $asbURL }}" class="create-site-button">{{ .Get "linkText" }}</a>
 </div>
+

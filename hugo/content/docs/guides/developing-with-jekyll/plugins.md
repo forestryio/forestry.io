@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/plugins"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Jekyll Plugins
@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-plugins
-    weight: 16
+    weight: 23
 
 ---
 Jekyll allows you to add Gem-based plugins using your `Gemfile`. This allows you to add things like \[CoffeeScript\]\[1\] preprocessing.

@@ -5,21 +5,41 @@ title: Data Files
 weight: 5
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-05-25 16:00:00 -0400
+date: 2018-05-25 20:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Editing
-    weight: 6
+    weight: 5
 
 ---
 Data files are pieces of content that don’t belong to a specific page or piece of content. They are commonly used for managing content like social media handles and links, contact information, and branding (e.g, logo images and site colours).
 
-![](/uploads/2018/01/11.png)
+## Datafile Sections
 
-Forestry allows you to edit existing data files. They can be found under _Data_ in the sidebar.
+You can configure access to data files with [Sidebar Sections](/docs/settings/content-sections/), explicitly adding them to the sidebar like the rest of your content. In this case, your Sidebar Configuration will display the data editing UI for JSON, YAML, and TOML files instead of the default content UI. You can use the `match` and `new_doc_ext` options to configure a sidebar section that operates exclusively on data files.
+
+{{% tip %}}
+For more information on how to configure the sidebar for data files, view our [Sidebar Configuration documentation.](/docs/settings/content-sections/#configuring-data-file-sections)
+{{% /tip %}}
+
+### Existing Jekyll & Hugo Projects
+
+The **Datafile Sections** feature was launched on **September 7, 2018**. Jekyll and Hugo projects that existed in Forestry before this date have the option of opting in to this new behavior. To opt in to this method of handling Data files, go to your project settings, scroll to the bottom of the **General** tab, and activate the toggle labeled **Datafile Sections**.
+
+If you don't opt-in to **Datafile Sections**, Forestry will import data files it finds in the `data` directory of your Hugo project, or the `_data` directory in your Jekyll project. These files will then appear under a **Data** heading in your sidebar.
+
+{{% warning %}}
+Legacy data file handling is now **deprecated** and will be removed in a future update. It is recommended you migrate your existing Jekyll & Hugo projects by opting in to the new data file behavior and configuring access to your data files via the sidebar configuration.
+{{% /warning %}}  
+  
+{{% tip "SELECT FIELDS" %}}
+
+If you're using Data Files as a source for your Select Fields you might have to make a few additional changes. See our Select Field [migration guide](/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/)
+
+{{% /tip %}}
 
 ## Customizing Fields
 
@@ -28,32 +48,6 @@ You can also apply [Front Matter Templates](/docs/settings/front-matter-template
 1. Click the settings button in the top right, next to the "Save" button
 2. Click "Change Template"
 3. Choose the Front Matter Template you want and click "Done"
-
-{{% warning %}}
-
-**Jekyll users:**
-
-In order to use Front Matter Templates with data files, you will need to place all of your fields inside of a [Field Group](/docs/settings/fields/field-group/) with the same name as the name of your data file. 
-
-For example, if you want to create a FMT for a data file named `social.yml`, you will need to place your fields in a Field Group with the name of `social`:
-
-```
-fields:
-- type: field_group
-  name: social
-  label: Social
-  fields:
-  - type: text
-    name: twitter_url
-    label: Twitter URL
-  - type: text
-    name: facebook_url
-    label: Facebook URL
-```
-
-This will be improved in a future update.
-
-{{% /warning %}}
 
 ## Futher Reading
 

@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/project-structure/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Project Structure
@@ -11,7 +11,7 @@ weight: 2
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 5
+    weight: 10
 
 ---
 In Hugo, project structure and naming is fairly rigid other than content structure. You must follow the Hugo guidelines for where content, layouts, data, and static assets must be stored.
@@ -63,14 +63,9 @@ Any files found inside the `_data/` folder are parsed as data files and are disp
 
 Upon initial import, we will parse your site to generate [Front Matter Templates][1]. More details found in the [Front Matter Templates][1] doc.
 
-## Themes
-
-We will also parse the Archetypes of your theme folder when importing your site.
-
 ## Further Reading
 - [Hugo Structure Reference](https://gohugo.io/overview/source-directory/)
 - [Hugo Sections Reference](https://gohugo.io/content/sections/)
 - [Hugo Content Types Reference](https://gohugo.io/content/types/)
-- [Hugo Archetypes Reference](https://gohugo.io/content/archetypes/)
 
 [1]: /docs/settings/front-matter-templates/

@@ -269,7 +269,7 @@ Each of these solutions have different strengths and weaknesses. There is no one
 
 Regardless of which option you choose, these form handlers demonstrate that you can easily add dynamic behavior to your static site. The next time you decide that a static site is a bad choice for your use case, take a moment and consider: should your web frontend be responsible for this feature, or can you use some imagination and technical know-how to get the best of both worlds?
 
-<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> TBD </p><p><strong>Last week:</strong> We discovered <a href="https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/">how a CDN works</a> with your static site.</p></div>
+<div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll show you a <a href="https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/"> modular Jekyll theme</a> built for use with Forestry.  </p><p><strong>Last week:</strong> We discovered <a href="https://forestry.io/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn/">how a CDN works</a> with your static site.</p></div>
 
 
 ## Have something to add?

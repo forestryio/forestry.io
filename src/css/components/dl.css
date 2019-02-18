@@ -1,0 +1,18 @@
+dl.attribute-list dt {
+  font-style: italic;
+}
+dl.attribute-list dt code {
+  font-style: normal;
+}
+@media (max-width: 767px) {
+  dl.attribute-list dd {
+    margin-left: 2.4em;
+  }
+}
+@media (min-width: 768px) {
+  dl.attribute-list {
+    display: grid;
+    grid-template-columns: minmax(0, 50%) auto;
+    margin-bottom: 1.2em;
+  }
+}

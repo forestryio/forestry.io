@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/environments/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Environments
@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-environments
-    weight: 12
+    weight: 18
 
 ---
 There are three unique developer environments when working with a Jekyll site in Forestry:

@@ -1,0 +1,8 @@
+{{- define "main" -}}
+<section class="docs-content">
+    <div class="container md-content">
+      <h1>{{ .Params.headline | default .Title }}</h1>
+      {{ partial "cloudinary/content" (dict "pg" $  "preset" "content") }}
+    </div>
+  </section>
+{{- end -}}

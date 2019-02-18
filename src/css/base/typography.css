@@ -205,7 +205,7 @@ tr:nth-child(odd) td {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
-  img:hover {
+  img:hover:not(.no-lightbox) {
     opacity: 0.8;
     transform: translateY(-0.3rem);
     cursor: pointer;
@@ -213,24 +213,6 @@ tr:nth-child(odd) td {
 
   p img {
     display: inline-block;
-  }
-
-  /* Inline code */
-  code {
-    background: $color-light-grey;
-    color: $color-brand;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.15em 0.5em;
-  }
-
-  pre {
-    margin: 1rem 0;
-  }
-
-  pre code {
-    color: $color-dark;
   }
 
   @media screen and (max-width: 1100px) {

@@ -25,8 +25,8 @@
   {{/* At least one header to link to */}}
   {{- $has_headers := ge (len $headers) 1 -}}
   {{/* A post can explicitly disable Table of Contents with toc: false */}}
-  {{- $show_toc := (eq $.Params.toc false) -}}
-  {{- if $has_headers -}}
+  {{- $show_toc := or (not (isset $.Params "toc")) (eq $.Params.toc true) -}}
+  {{- if (and $show_toc $has_headers) -}}
     <ul class="table-of-contents">
     {{- range $headers -}}
       {{- $header := . -}}
