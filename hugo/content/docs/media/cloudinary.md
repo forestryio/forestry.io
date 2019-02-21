@@ -62,7 +62,7 @@ main_image: img.png
 When using these images in your templates, you should prepend them with the URL to your cloud. We recommend storing this URL in your site's configuration and referencing it via variable in your templates. For example, in a Hugo site you might put the following in `config.toml`:
 
 ```
-cloudinary_url = "https://res.cloudinary.com/demo/image/upload/"
+cloudinary_url = "https://res.cloudinary.com/demo/image/upload"
 ```
 
 You could then use these front matter images in your templates as follows:
