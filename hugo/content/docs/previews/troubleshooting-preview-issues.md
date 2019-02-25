@@ -35,8 +35,6 @@ Either way: if you're encountering one of these two problems, this guide can hel
 
 ## Error Generating Preview
 
-screenshots here!
-
 If Forestry is unable to build your site, check the following:
 
 ### Does your build command look correct?
