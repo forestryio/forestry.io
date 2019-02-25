@@ -1,6 +1,7 @@
 ---
 aliases:
 - "/docs/site-configuration/previewing"
+- /docs/editing/previews
 title: Previews
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
@@ -11,8 +12,9 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    parent: Editing
-    weight: 3
+    parent: Previews
+    name: About Previews
+    weight: 1
 
 ---
 Previews allow content editors to see changes in Forestry before saving or publishing those changes, as well as share the drafted changes before publishing them. You can think of Forestry's previews as your site's staging environment.

@@ -22,17 +22,20 @@ plainIDAnchors = true
 name = "Git Sync"
 weight = 3
 [[menu.docs]]
-name = "Hosting"
-weight = 5
-[[menu.docs]]
 name = "Editing"
 weight = 4
 [[menu.docs]]
 name = "Media"
-weight = 6
+weight = 5
 [[menu.docs]]
 name = "Settings & Configuration"
+weight = 6
+[[menu.docs]]
+name = "Previews"
 weight = 7
+[[menu.docs]]
+name = "Hosting"
+weight = 8
 [[menu.docs]]
 name = "Quick Start"
 weight = 2
@@ -41,10 +44,10 @@ name = "Welcome"
 weight = 1
 [[menu.docs]]
 name = "Other"
-weight = 9
+weight = 10
 [[menu.docs]]
 name = "Developer Guides"
-weight = 8
+weight = 9
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
