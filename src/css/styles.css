@@ -37,6 +37,7 @@
 @import "components/slide-in-cta.css";
 @import "components/dl.css";
 @import "components/code-tabs.css";
+@import "components/toc.css";
 
 /* Pages */
 @import "pages/page-features.css";
