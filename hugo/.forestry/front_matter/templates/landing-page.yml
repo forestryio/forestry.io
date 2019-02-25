@@ -19,7 +19,7 @@ fields:
   hidden: true
   default: blocks
 pages:
-- hugo/content/test-landing-page.md
 - hugo/content/blocks.md
-- hugo/content/another-landing-page.md
+- hugo/content/test-landing-page.md
 - hugo/content/landing-page-test.md
+- hugo/content/another-landing-page.md
