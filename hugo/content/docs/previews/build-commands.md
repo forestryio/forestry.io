@@ -1,5 +1,7 @@
 ---
 title: Build Commands
+aliases: 
+- /docs/settings/build-commands
 weight: 7
 publishdate: 2018-09-19 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -9,8 +11,8 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    parent: Settings & Configuration
-    weight: 8
+    parent: Previews
+    weight: 1
 
 ---
 **Build Commands** allow you to customize how Forestry builds your website when it creates a preview or before it deploys your site.
