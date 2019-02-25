@@ -75,7 +75,7 @@ If your site builds locally, but Forestry still encounters an error when trying 
 * NPM packages
 * Git submodules
 
-To make your project as portable as possible, ensure that you are not relying on external or globally-installed dependencies in order to build your site. For Ruby (Jekyll) projects, this means that your project **must have a** `**Gemfile**`**.** For projects that use NPM modules, **ensure that all packages are tracked in** `**package.json**`**.** For submodules, **ensure that Forestry can install the necessary submodules.**
+To make your project as portable as possible, ensure that you are not relying on external or globally-installed dependencies in order to build your site. For Ruby (Jekyll) projects, this means that your project **must have a Gemfile.** For projects that use NPM modules, **ensure that all packages are tracked in package.json.** For submodules, **ensure that Forestry can install the necessary submodules.**
 
 {{% tip %}}
 Related resources:
