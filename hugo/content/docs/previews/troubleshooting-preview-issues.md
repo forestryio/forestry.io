@@ -35,6 +35,8 @@ Either way: if you're encountering one of these two problems, this guide can hel
 
 ## Error Generating Preview
 
+![](/uploads/2019/02/errorgeneratingpreview.png)
+
 If Forestry is unable to build your site, check the following:
 
 ### Does your build command look correct?
@@ -113,7 +115,7 @@ Even if you can't locate a problem in the output log, if you decide to send us a
 
 ### Ensure you've performed the migration to key-based authentication
 
-If your site was added to forestry before **August 28, 2018**, ensure that you've performed the migration to _key-based authentication_. View the following article for instructions on how to do this: 
+If your site was added to forestry before **August 28, 2018**, ensure that you've performed the migration to _key-based authentication_. View the following article for instructions on how to do this:
 
 [Blog: Migrating to Key-Based Authentication](/blog/migrating-to-key-based-authentication/)
 
