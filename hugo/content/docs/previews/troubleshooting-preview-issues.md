@@ -109,6 +109,8 @@ If your **output directory** does not map to the directory created by your build
 
 If none of the above seem to apply to your situation, see if you can parse the build output to determine if an error occurred. Open your notification panel and, underneath the "Failed to create preview" message, click the button labeled **Failed, show log**. This will display the output from the preview environment.
 
+![](/uploads/2019/02/failedtopreview.png)
+
 This output log can be hard to parse sometimes, and the last line of the log is usually _not_ where the error will be reported. Most of the time, errors will be reported shortly after the line containing the phrase `Executing user command:`. This is where your custom build command is run.
 
 Even if you can't locate a problem in the output log, if you decide to send us a support request, go ahead and include the log in your request.
