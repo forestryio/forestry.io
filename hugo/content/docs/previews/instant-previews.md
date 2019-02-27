@@ -101,7 +101,7 @@ Forestry's live previewing relies on the built-in live browser reloading provide
 
 ## Default Instant Preview Commands
 
-See [default build commands](/docs/settings/build-commands#default-commands) for the default instant preview commands for each supported SSG.
+See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
 
 ## Using The Preview
 
