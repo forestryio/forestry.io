@@ -16,12 +16,9 @@ menu:
 
 ---
 {{% warning %}}
-This feature is currently in private beta.
+This feature is currently in beta.
 {{% /warning %}}
 
----
-
-{{% feature_flag "preview-method" "kubernetes" %}}
 
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
 
@@ -109,5 +106,3 @@ See [default build commands](/docs/settings/build-commands#default-commands) for
 ## Using The Preview
 
 Note that your live preview will initially start on the homepage of your site, regardless of which content you initialize the preview from. 
-
-{{% /feature_flag %}}
