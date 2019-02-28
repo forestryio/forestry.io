@@ -21,7 +21,7 @@ Forestry supports all stable releases of Hugo. If your project requires a versio
 
 ### Asset Pipeline
 
-Forestry supports Hugo's [native Sass processing](https://gohugo.io/hugo-pipes/scss-sass/).
+Forestry supports all [Hugo's pipes](https://gohugo.io/hugo-pipes/) including [Sass compilation](https://gohugo.io/hugo-pipes/scss-sass/), [postCSS](https://gohugo.io/hugo-pipes/postcss/), [minification](https://gohugo.io/hugo-pipes/minification/), [bundling](https://gohugo.io/hugo-pipes/bundling/) and [fingerprinting](https://gohugo.io/hugo-pipes/fingerprint/).
 
 ### Content Formats
 
