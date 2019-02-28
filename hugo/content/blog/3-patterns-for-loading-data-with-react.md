@@ -1,10 +1,10 @@
 ---
 title: 3 Patterns for Loading Data with React
 description: ''
-date: 2019-02-09 17:00:00 -1100
+date: 2019-02-10 04:00:00 +0000
 authors:
 - Nolan Phillips
-publishdate: 2019-02-09 17:00:00 -1100
+publishdate: 2019-02-10 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -28,7 +28,7 @@ For the past 3 years, we have been using Typescript and React at [Forestry.io](h
 2. Render Props
 3. Hooks
 
-We have seen these patterns collide with the realities of a rapidly changing code base. Each pattern has been a significant improvement on its predecessor. In this article we'll demonstrate how each they can be used for data fetching, and the pros and cons of each approach.
+We have seen these patterns collide with the realities of a rapidly changing code base. Each pattern has been a significant improvement on its predecessor. In this article we'll demonstrate how each they can be used for data fetching, and the pros and cons of each approach.d
 
 [Browse the source on Github!](https://github.com/forestryio/react-patterns-article)
 
