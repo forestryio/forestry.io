@@ -8,7 +8,7 @@ description: Forestry.io is a content management system for static websites buil
   all updates are saved as commits in the Git repo for that site.  Our product is
   a Rails application and we are currently seeking a senior Rails developer to join
   the team and help us continue to build out the product.
-date: 2018-12-05 17:00:00 -1100
+date: 2018-12-06 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
@@ -16,8 +16,8 @@ authors:
 - Scott Gallant
 categories: []
 tags: []
-publishdate: 2018-12-05 17:00:00 -1100
-expirydate: 2030-12-05 17:00:00 -1100
+publishdate: 2018-12-06 04:00:00 +0000
+expirydate: 2030-12-06 04:00:00 +0000
 cta:
   headline: ''
   textline: ''
