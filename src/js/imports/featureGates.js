@@ -1,4 +1,4 @@
-import LDClient from "ldclient-js"
+import {LDClient} from "ldclient-js"
 import readCookie from "../utils/cookies"
 
 export default class FeatureGates {
@@ -13,24 +13,28 @@ export default class FeatureGates {
   }
 
   apply() {
-    return new Promise((resolve) => {
-      const client = LDClient.initialize("5beaef624274db30424f398f", {
-        key: this.userEmail
-      })
-      client.on("ready", () => {
-        for (let gate of this.gates) {
-          let featureName = gate.dataset.featurename
-          let featureState = gate.dataset.featurestate
-          if (client.variation(featureName)) {
-            if (this.clientHasVariation(client, featureName, featureState)) {
-              this.activateContent(gate)
-            } else {
-              this.deactivateContent(gate)
+    return new Promise((resolve, reject) => {
+      try {
+        const client = LDClient.initialize("5beaef624274db30424f398f", {
+          key: this.userEmail
+        })
+        client.on("ready", () => {
+          for (let gate of this.gates) {
+            let featureName = gate.dataset.featurename
+            let featureState = gate.dataset.featurestate
+            if (client.variation(featureName)) {
+              if (this.clientHasVariation(client, featureName, featureState)) {
+                this.activateContent(gate)
+              } else {
+                this.deactivateContent(gate)
+              }
             }
           }
-        }
+          resolve()
+        })
+      } catch (e) {
         resolve()
-      })
+      }
     })
   }
 
