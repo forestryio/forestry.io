@@ -7,9 +7,10 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
-draft: true
 
 ---
+We have not been updating our change log recently, but we're getting the habit back. Here are a few of our most recent changes. Keep your eyes out for some fun stuff in the near future!
+
 ## Bug Fixes
 
 * **Sortable Lists Ordering:** Fixed an issue that prevented some users from ordering items in their Sortable List fields.
