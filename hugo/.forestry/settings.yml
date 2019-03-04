@@ -70,6 +70,7 @@ build:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.42.2
   - RUBY_VERSION=2.6.1
+  - BUILD_DIR=hugo
   publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.42.2
