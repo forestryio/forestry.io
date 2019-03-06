@@ -134,6 +134,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/3-patterns-for-loading-data-with-react.md
 - hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/announcing-instant-previews.md
@@ -146,7 +147,6 @@ pages:
 - hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
 - hugo/content/careers/hiring-technical-support.md
 - hugo/content/blog/forestry-git-backed-content-management-for-gatsby.md
-- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/asdd.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/blog/is-it-time-to-move-on-from-wordpress.md
