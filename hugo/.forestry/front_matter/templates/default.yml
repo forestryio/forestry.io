@@ -134,6 +134,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/_index.md
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/3-patterns-for-loading-data-with-react.md
 - hugo/content/blog/new-pricing-organization-accounts.md
@@ -204,7 +205,6 @@ pages:
 - hugo/content/blog/sawmill-layout-composer-for-hugo-and-forestry.md
 - hugo/content/careers/software-engineer.md
 - hugo/content/careers/marketing.md
-- hugo/content/careers/_index.md
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/blog/what-s-new-in-jekyll-3-4-0.md

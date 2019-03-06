@@ -4,6 +4,19 @@ title: Careers
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
+description: Open positions at Forestry, git-based CMS for the JAMstack
+textline: ''
+images: []
+authors: []
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+weight: ''
+aliases: []
 menu:
   footer:
     weight: 4
