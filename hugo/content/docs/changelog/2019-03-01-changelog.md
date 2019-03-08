@@ -2,7 +2,7 @@
 authors:
 - team forestry
 title: 2019/03/01 Changelog
-date: 2019-03-01 09:00:00 -1100
+date: 2019-03-01 20:00:00 +0000
 cta:
   headline: ''
   textline: ''
@@ -15,4 +15,4 @@ We have not been updating our change log recently, but we're getting the habit b
 
 * **Sortable Lists Ordering:** Fixed an issue that prevented some users from ordering items in their Sortable List fields.
 * **Error Modals:** Fixed several areas where we were improperly handling errors from the server.
-* **Document Autosaves:** Fixed a bug which prevented autosaved versions of documents from being properly loaded into the form. 
+* **Document Autosaves:** Fixed a bug which prevented autosaved versions of documents from being properly loaded into the form.
