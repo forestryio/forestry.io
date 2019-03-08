@@ -25,7 +25,7 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
+draft: true
 
 ---
 [Forestry.io](https://forestry.io) is a content management system for static websites built with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around the world are leaving WordPress and Drupal for more secure, performant, static sites and Forestry allows their non-technical teams to manage content.  Forestry takes a Git-based approach to content management. When content is edited in Forestry, all updates are saved as commits in the Git repo for that site.  Our product is a Rails application and we are currently seeking a senior Rails developer to join the team and help us continue to build out the product.

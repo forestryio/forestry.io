@@ -1,7 +1,6 @@
 ---
 label: changelog
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -41,7 +40,8 @@ fields:
   hidden: true
   default: ''
 pages:
-- hugo/content/docs/changelog/2019-04-01-changelog.md
+- hugo/content/docs/changelog/2019-03-08-changelog.md
+- hugo/content/docs/changelog/2019-03-01-changelog.md
 - hugo/content/docs/changelog/2019-01-09-changelog.md
 - hugo/content/docs/changelog/2018-12-18-changelog.md
 - hugo/content/docs/changelog/2018-12-07-changelog.md

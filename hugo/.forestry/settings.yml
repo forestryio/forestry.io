@@ -74,5 +74,5 @@ build:
   preview_output_directory: dist
   output_directory: dist
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+    -d dist
 version: 0.42.2

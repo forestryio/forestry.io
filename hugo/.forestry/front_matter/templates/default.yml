@@ -1,7 +1,6 @@
 ---
 label: default
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: Title
@@ -134,6 +133,8 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/_index.md
+- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/3-patterns-for-loading-data-with-react.md
 - hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/announcing-instant-previews.md
@@ -146,7 +147,6 @@ pages:
 - hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
 - hugo/content/careers/hiring-technical-support.md
 - hugo/content/blog/forestry-git-backed-content-management-for-gatsby.md
-- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/asdd.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/blog/is-it-time-to-move-on-from-wordpress.md
@@ -204,7 +204,6 @@ pages:
 - hugo/content/blog/sawmill-layout-composer-for-hugo-and-forestry.md
 - hugo/content/careers/software-engineer.md
 - hugo/content/careers/marketing.md
-- hugo/content/careers/_index.md
 - hugo/content/careers/full-stack.md
 - hugo/content/careers/devrel.md
 - hugo/content/blog/what-s-new-in-jekyll-3-4-0.md
