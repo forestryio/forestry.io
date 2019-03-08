@@ -1,7 +1,6 @@
 ---
 label: create-site-button-js
 hide_body: false
-is_partial: true
 fields:
 - type: select
   config:

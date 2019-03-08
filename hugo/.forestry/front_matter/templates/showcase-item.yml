@@ -1,7 +1,6 @@
 ---
 label: showcase-item
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: Title
