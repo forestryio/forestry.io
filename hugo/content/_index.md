@@ -1,9 +1,9 @@
 ---
 aliases:
 - "/remote/"
-title: Static CMS for Hugo & Jekyll
-description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to build
-  sites.
+title: Static CMS for Hugo, Jekyll, VuePress and Gatsby.
+description: Static CMS for Hugo, Jekyll, VuePress and Gatsby sites, powered by Git.
+  A better way to edit static sites.
 authors:
 - forestryio
 blocks: 
