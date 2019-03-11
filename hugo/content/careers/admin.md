@@ -53,4 +53,4 @@ Note: this is a part-time position with the possibility of becoming a full-time 
 
 ### How to apply
 
-Please submit a resumé, cover letter as one single PDF to [jobs@forestry.io](mailto:jobs@forestry.io).
+Please submit a resumé, cover letter as one single PDF to [careers@forestry.io](mailto:careers@forestry.io).

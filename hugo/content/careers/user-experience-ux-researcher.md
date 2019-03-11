@@ -63,4 +63,4 @@ User-centric, CMS-loving, product geek.  Your role is to assist our product tea
 * User X has logged almost 200 sessions with our application. Can you schedule a call with that person to find out if they have any suggestions for ways we can improve the product or feature requests?
 * Follow up with every churned user and NPS detractor to understand why they were not satisfied.
 
-Interested candidates, please contact [jobs@forestry.io](mailto:jobs@forestry.io)
+Interested candidates, please contact [careers@forestry.io](mailto:careers@forestry.io)

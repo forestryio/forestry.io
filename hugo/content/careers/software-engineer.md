@@ -75,7 +75,7 @@ We’re taking a developer-centric approach to content management by supporting 
 
 ### How to apply
 
-Please submit a resumé, code samples and responses to the questions below to [jobs@forestry.io](mailto:jobs@forestry.io).
+Please submit a resumé, code samples and responses to the questions below to [careers@forestry.io](mailto:careers@forestry.io).
 
 **Note**
 When submitting code samples, be sure to tell us what code to look at. Don't just send a link to your GitHub profile.

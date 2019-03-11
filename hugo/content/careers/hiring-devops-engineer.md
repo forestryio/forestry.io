@@ -48,4 +48,4 @@ draft: true
 
 We are open to remote candidates.
 
-Interested candidates, please contact [jobs@forestry.io](mailto:jobs@forestry.io)
+Interested candidates, please contact [careers@forestry.io](mailto:careers@forestry.io)
