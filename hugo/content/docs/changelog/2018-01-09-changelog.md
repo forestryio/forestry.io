@@ -24,6 +24,10 @@ images:
 draft: true
 
 ---
-### Bug Fixes
+## Bug Fixes
 
-* **Front matter template:** 
+* **Front matter template:**
+
+## Enhancements
+
+* **Settings Navigation:** Mobile view for Settings removes the tabs in favour of a dropdown field. 
