@@ -31,3 +31,4 @@ draft: true
 ## Enhancements
 
 * **Settings Navigation:** Mobile view for Settings removes the tabs in favour of a dropdown field. 
+* **Preview Errors Notification:** The notification for preview errors now contains a link to our [troubleshooting](https://forestry.io/docs/previews/troubleshooting-preview-issues/ "Troubleshooting Preview Problems") doc.
