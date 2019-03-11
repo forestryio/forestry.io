@@ -133,12 +133,15 @@ fields:
   name: menu
   label: menu
 pages:
-- hugo/content/careers/_index.md
+- hugo/content/careers/user-experience-ux-researcher.md
+- hugo/content/careers/marketing.md
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
+- hugo/content/careers/devrel.md
+- hugo/content/careers/hiring-devops-engineer.md
+- hugo/content/careers/_index.md
 - hugo/content/blog/3-patterns-for-loading-data-with-react.md
 - hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/announcing-instant-previews.md
-- hugo/content/careers/hiring-devops-engineer.md
 - hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
 - hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
@@ -148,7 +151,6 @@ pages:
 - hugo/content/careers/hiring-technical-support.md
 - hugo/content/blog/forestry-git-backed-content-management-for-gatsby.md
 - hugo/content/asdd.md
-- hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/blog/is-it-time-to-move-on-from-wordpress.md
 - hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/spike-test-reset.md
@@ -203,9 +205,7 @@ pages:
 - hugo/content/blog/search-with-algolia-in-hugo.md
 - hugo/content/blog/sawmill-layout-composer-for-hugo-and-forestry.md
 - hugo/content/careers/software-engineer.md
-- hugo/content/careers/marketing.md
 - hugo/content/careers/full-stack.md
-- hugo/content/careers/devrel.md
 - hugo/content/blog/what-s-new-in-jekyll-3-4-0.md
 - hugo/content/blog/search-with-algolia-in-jekyll.md
 - hugo/content/blog/discontinuing-zip-sites.md
