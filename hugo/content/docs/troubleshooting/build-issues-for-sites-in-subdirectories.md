@@ -56,6 +56,6 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.53
-  - BUILD_DIR=site
+  - BUILD_DIR=hugo
   preview_output_directory: hugo/public
 ```

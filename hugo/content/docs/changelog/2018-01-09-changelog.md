@@ -27,8 +27,17 @@ draft: true
 ## Bug Fixes
 
 * **Front matter template:**
+* **Default Values:** Fixed a bug where default values were not being set when creating documents.
 
 ## Enhancements
 
-* **Settings Navigation:** Mobile view for Settings removes the tabs in favour of a dropdown field. 
+* **Settings Navigation:** Mobile view for Settings removes the tabs in favour of a dropdown field.
 * **Preview Errors Notification:** The notification for preview errors now contains a link to our [troubleshooting](https://forestry.io/docs/previews/troubleshooting-preview-issues/ "Troubleshooting Preview Problems") doc.
+* **Document Sorting:** Started to [persist the document sorting method](https://portal.productboard.com/forestry/c/34-sort-section-by-date-by-default "Forestry Roadmap") between visits.
+* **Media View:** Started to persist the media view preference between visits.
+
+## Send your Feedback!
+
+Have ideas about what the Forestry team should build next?
+
+Visit our [ProductBoard Roadmap](https://portal.productboard.com/forestry/tabs/1-under-consideration "Forestry Roadmap") to vote on features and submit your own request.
