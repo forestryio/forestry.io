@@ -11,7 +11,7 @@ menu:
   changelog:
     name: 2018/10/16
     parent: Changelog
-    weight: 6
+    weight: 11
 
 ---
 ## Sunsets

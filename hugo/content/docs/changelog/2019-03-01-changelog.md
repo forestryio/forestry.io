@@ -7,6 +7,11 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
+menu:
+  changelog:
+    parent: Changelog
+    name: 2019/03/01
+    weight: 3
 
 ---
 We have not been updating our change log recently, but we're getting the habit back. Here are a few of our most recent changes. Keep your eyes out for some fun stuff in the near future!

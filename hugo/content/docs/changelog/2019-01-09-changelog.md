@@ -8,6 +8,11 @@ cta:
   textline: ''
   calls_to_action: []
 draft: true
+menu:
+  changelog:
+    parent: Changelog
+    name: 2019/01/09
+    weight: 5
 
 ---
 ## Bug Fixes

@@ -1,7 +1,11 @@
 ---
 title: 2019/03/08 Changelog
 date: 2019-03-07 17:00:00 -1100
-
+menu:
+  changelog:
+    parent: Changelog
+    name: 2019/03/08
+    weight: 2
 ---
 Help us build the right thing by voting for features on our [roadmap](https://portal.productboard.com/forestry/t "Forestry Roadmap")!
 
