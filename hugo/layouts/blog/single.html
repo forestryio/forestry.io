@@ -6,6 +6,9 @@
       {{- range first 1 . -}}
         <div class="post--feature-image">
             {{ partial "cloudinary/image" (dict "pg" $ "image" . "alt" ($.Params.headline | default $.Title) "max_width" "2280") }}
+            {{ with $.Params.photo_credit }}
+            <span class="photo-credit">{{ . }}</span>
+            {{ end }}  
         </div>
       {{- end -}}
     {{- end -}}
