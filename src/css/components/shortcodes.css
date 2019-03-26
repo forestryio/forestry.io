@@ -136,3 +136,17 @@
     height: 100%;
   }
 }
+
+.md-content figure {
+  width: 100%;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    font-size: 0.8em;
+    p {
+      margin-top: 0;
+    }
+  }
+}
