@@ -339,6 +339,5 @@ You can download the entire `gulpfile.js` from [this gist](https://gist.github.c
 
 And with that, all that’s left to say is: *welp, seeya later!*
 
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N_j5tDuakKU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{% youtube "N_j5tDuakKU" %}}
 
