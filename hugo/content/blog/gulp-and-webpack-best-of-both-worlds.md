@@ -31,7 +31,7 @@ Many developers have found creative solutions to this problem, which I learned w
 To help assist in the adoption of instant previews for users who incorporate Webpack or another asset processing tool, I searched for a simple solution that could be applied to a variety of use cases. This shouldn’t be that hard: what’s a good tool that will allow me to orchestrate a series of commands, watch files for changes, and run a development server?
 
 {{% figure 
-    src="https://seeklogo.com/images/G/gulp-logo-415632861B-seeklogo.com.png" 
+    src="/uploads/2019/03/gulp-logo.png" 
     alt="Gulp logo" 
     caption="We meet again, old friend." 
 %}}
