@@ -1,12 +1,12 @@
 ---
 publishDate: 2017-08-09 10:20:51 +0000
-expirydate: 2029-12-31 17:00:00 -1100
+expirydate: 2030-01-01 04:00:00 +0000
 description: We are hiring a User Experience (UX) Researcher to help us build a Content
   Management System for the next generation of websites.
 headline: 'Hiring: User Experience (UX) Researcher'
 title: 'Hiring: User Experience (UX) Researcher'
-date: 2018-12-04 00:20:51 -1100
-publishdate: 2018-12-04 00:20:00 -1100
+date: 2018-12-04 11:20:51 +0000
+publishdate: 2018-12-04 11:20:00 +0000
 textline: ''
 images: []
 authors:
@@ -20,7 +20,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 User-centric, CMS-loving, product geek.  Your role is to assist our product team and help us build the best CMS on the planet.  You want to understand how our users think, what their problems are and how to build an amazing product.
