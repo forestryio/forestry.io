@@ -18,7 +18,7 @@
       <h4>{{ $menuYear }}</h4>
       <ul>
     {{- end -}}
-    <li><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2" }}</a></li>
+    <li><a href="{{ .RelPermalink }}"{{ if eq . $ }} class="active"{{ end }}>{{ .Date.Format "Jan 2" }}</a></li>
     {{ end }}
   {{- else -}}
     {{- range . -}}
