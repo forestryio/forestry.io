@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 6
+    weight: 5
 
 ---
 Menus allow content editors to easily manage existing menus in your site, such as site navigation and sidebars using a simple drag-and-drop interface.

@@ -13,7 +13,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 4
+    weight: 3
 
 ---
 ## What is Front Matter?

@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 8
+    weight: 7
 
 ---
 The Remote Admin allows editors to access and manage your site without leaving your domain.

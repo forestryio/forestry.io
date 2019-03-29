@@ -1,7 +1,7 @@
 ---
 title: Instant Previews
 aliases:
-- /docs/instant-previews
+- "/docs/instant-previews"
 date: 2019-01-05 00:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -12,7 +12,7 @@ layout: single
 menu:
   docs:
     parent: Previews
-    weight: 2
+    weight: 3
 
 ---
 {{% warning %}}
@@ -105,4 +105,4 @@ See [default build commands](/docs/previews/build-commands#default-commands) for
 
 ## Using The Preview
 
-Note that your live preview will initially start on the homepage of your site, regardless of which content you initialize the preview from. 
+Note that your live preview will initially start on the homepage of your site, regardless of which content you initialize the preview from.

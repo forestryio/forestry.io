@@ -2,15 +2,15 @@
 title: 2019/02/04 Changelog
 authors:
 - team forestry
-date: 2019-02-04 01:00:00 -1100
+date: 2019-02-04 12:00:00 +0000
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
 menu:
   changelog:
-    parent: Changelog
     name: 2019/02/04
+    parent: Changelog
     weight: 4
 
 ---

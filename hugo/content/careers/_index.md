@@ -17,10 +17,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu:
-  footer:
-    weight: 4
-    parent: Company
 
 ---
 We’re a Charlottetown-based startup building the world’s best Content Management System. We're looking for exceptional people who want to help build a world-class product.

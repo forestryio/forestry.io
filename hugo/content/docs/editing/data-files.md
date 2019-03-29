@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 5
+    weight: 4
 
 ---
 Data files are pieces of content that don’t belong to a specific page or piece of content. They are commonly used for managing content like social media handles and links, contact information, and branding (e.g, logo images and site colours).

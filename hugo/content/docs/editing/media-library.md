@@ -14,7 +14,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 7
+    weight: 6
 
 ---
 The Media Library allows content editors to easily manage the media for your site. This allows content editors to easily add images, PDFs, and GIFs to their content without having to use Git.

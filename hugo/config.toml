@@ -19,48 +19,48 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
+name = "Developer Guides"
+weight = 9
+[[menu.docs]]
+name = "Other"
+weight = 10
+[[menu.docs]]
+name = "Hosting"
+weight = 8
+[[menu.docs]]
+name = "Previews"
+weight = 7
+[[menu.docs]]
+name = "Settings & Configuration"
+weight = 6
+[[menu.docs]]
+name = "Media"
+weight = 5
+[[menu.docs]]
 name = "Git Sync"
 weight = 3
 [[menu.docs]]
 name = "Editing"
 weight = 4
 [[menu.docs]]
-name = "Media"
-weight = 5
-[[menu.docs]]
-name = "Settings & Configuration"
-weight = 6
-[[menu.docs]]
-name = "Previews"
-weight = 7
-[[menu.docs]]
-name = "Hosting"
-weight = 8
-[[menu.docs]]
 name = "Quick Start"
 weight = 2
 [[menu.docs]]
 name = "Welcome"
 weight = 1
-[[menu.docs]]
-name = "Other"
-weight = 10
-[[menu.docs]]
-name = "Developer Guides"
-weight = 9
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
-[[menu.footer]]
-name = "Status"
-parent = "Product"
-url = "https://status.forestry.io"
-weight = 6
 [[menu.footer]]
 name = "Roadmap"
 parent = "Product"
 url = "https://portal.productboard.com/forestry/"
 weight = 7
+[[menu.footer]]
+name = "Status"
+parent = "Product"
+url = "https://status.forestry.io"
+weight = 6
 [[menu.footer]]
 name = "Company"
 weight = 2

@@ -11,7 +11,7 @@ menu:
   docs:
     name: Troubleshooting 
     parent: Previews
-    weight: 9
+    weight: 4
 
 ---
 As Forestry moves to support more Static Site Generators and workflows, we need to make our preview environment more flexible to support this variety. Unfortunately, this means there are many more opportunities for things to go wrong 🤷.

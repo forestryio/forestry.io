@@ -20,12 +20,10 @@ weight: ''
 aliases: []
 menu:
   troubleshooting:
-    name: Using Private Submodules with Forestry
     weight: 5
     parent: Troubleshooting
 
 ---
-
 If your website uses submodules from private repos, you will need to configure your site to allow Forestry to access these submodules. For sites stored on **GitHub** or **GitLab**, our _quick setup_ flow will not grant the correct permissions. This flow adds a **deploy key** to your GitHub or GitLab repo, which only grants access to a single repository and will not allow Forestry to install private submodules.
 
 To use a site containing private submodules with Forestry, you must [manually import](/docs/git-sync/manual-setup/) the site. If you've already imported the site using the _quick setup_ flow, remove the site and re-import it manually using our [manual setup instructions](/docs/git-sync/manual-setup/). Then, grab the public key from **Settings > Repository** and add it to your GitHub or GitLab user account instead of creating a deploy key in the repository.
