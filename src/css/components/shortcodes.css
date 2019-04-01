@@ -150,3 +150,22 @@
     }
   }
 }
+
+.obnoxious {
+  font-size: 1.4rem;
+  line-height: 1.2;
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 2rem !important;
+    background: $color-brand;
+    color: #fff;
+    padding: 2em;
+    margin: 0;
+    a > svg {
+      display: none;
+    }
+  }
+}
