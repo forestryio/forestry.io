@@ -25,6 +25,7 @@ draft: true
 ---
 {{% obnoxious %}}
 
+![](/uploads/statyc.png)
 
 ## Spend a Weekend Hacking With the Hottest JavaScript Influencers in the Twittersphere.
 
@@ -35,16 +36,16 @@ Attendees of Statyc Festival will have the opportunity to rub elbows with the bi
 <hr />
 
 ## Emperor Package - $25,000
+
 ![](/uploads/2019/04/tentcheese.jpg)
 
 Everyone who purchases our **$25,000 Emperor Package** will receive the following:
 
-- Luxury glamping in our second-hand disaster relief tents
-- A hand-picked mattress from our outdoor Mattress Pile
-- A slice of cheese
+* Luxury glamping in our second-hand disaster relief tents
+* A hand-picked mattress from our outdoor Mattress Pile
+* A slice of cheese
 
 In addition, all attendees will automatically be entered into our **Luggage Treasure Hunt.** Search for your luggage in the back of a semi truck! Great way to make friends and maybe score some new outfits!
-
 
 ## NOTE: Statyc is a cash-free festival. We need your cash ASAP!
 
@@ -52,4 +53,4 @@ In addition, all attendees will automatically be entered into our **Luggage Trea
 
 {{% /obnoxious %}}
 
-*Want to make stupid internet jokes like this, but need a good headless CMS? [Sign up for Forestry](https://app.forestry.io/signup)!*
+_Want to make stupid internet jokes like this, but need a good headless CMS?_ [_Sign up for Forestry_](https://app.forestry.io/signup)_!_
