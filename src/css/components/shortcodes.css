@@ -151,9 +151,14 @@
   }
 }
 
-.obnoxious {
+.md-content .obnoxious {
   font-size: 1.4rem;
   line-height: 1.2;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 
   h1,
   h2,
