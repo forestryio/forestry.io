@@ -1,5 +1,6 @@
 ---
 title: "Statyc: A Three-Day Luxury Hackathon in the Bahamas"
+draft: true
 description: ''
 date: 2019-04-01 00:00:00 +0000
 authors:
