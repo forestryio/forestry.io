@@ -1,6 +1,5 @@
 ---
-title: "Statyc: A Three-Day Luxury Hackathon in the Bahamas"
-draft: true
+title: 'Statyc: A Three-Day Luxury Hackathon in the Bahamas'
 description: ''
 date: 2019-04-01 00:00:00 +0000
 authors:
@@ -10,8 +9,9 @@ expirydate: 2019-04-02 23:59:59 +0000
 headline: ''
 textline: ''
 images:
-categories:
-tags:
+- "/uploads/forestrygreen.png"
+categories: []
+tags: []
 cta:
   headline: ''
   textline: ''
@@ -20,6 +20,7 @@ private: false
 weight: ''
 aliases: []
 menu: []
+draft: true
 
 ---
 {{% obnoxious %}}
