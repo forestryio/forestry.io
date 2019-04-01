@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/statyc-a-luxury-festival-for-hackers.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/careers/marketing.md
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
@@ -223,4 +224,3 @@ pages:
 - hugo/content/blog/test.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
-- hugo/content/blog/statyc-a-luxury-festival-for-hackers.md
