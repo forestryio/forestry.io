@@ -5,7 +5,7 @@ expirydate: 2030-01-01 00:00:00 +0000
 date: 2018-04-23 00:00:00 +0000
 ---
 
-The **Blocks** field type is a repeatable array of field groups. Unlike the [Repeatable Field Group](/docs/settings/fields/repeatable-field-group), however, the field groups within a Blocks field do not all have to be the same. Additionally, the field groups usable by a Blocks field are not defined ad-hoc: they must first be set up as [Partial Front Matter Templates](/docs/settings/front-matter-templates/#partial-templates).
+The **Blocks** field type is a repeatable array of field groups. Unlike the [Repeatable Field Group](/docs/settings/fields/repeatable-field-group), however, the field groups within a Blocks field do not all have to be the same.
 
 ## Options
 ![Blocks field options](/uploads/2018/04/blocks-field-ui.png)
@@ -14,7 +14,7 @@ The **Blocks** field type is a repeatable array of field groups. Unlike the [Rep
 - *Name* &mdash; the key stored in your content's front matter, used to access it in your templates
 - *Description* &mdash; a human-friendly description of what the field does and/or instructions for your editors
 - *Hidden* &mdash; hides the field in the editor; but allows developers to set default values or maintain the field for legacy purposes.
-- *Templates* &mdash; select one or more [Partial Front Matter Templates](/docs/settings/front-matter-templates/#partial-templates) that can be added to the Blocks field.
+- *Templates* &mdash; select one or more [Front Matter Templates](/docs/settings/front-matter-templates/) that can be added to the Blocks field.
 
 ## Field UI
 ![Blocks content interface](/uploads/2018/04/blocks-content-ui.png)
@@ -68,8 +68,8 @@ type: blocks
 name: page_sections
 label: Page Sections
 template_types:
-- example-partial-fmt-1
-- example-partial-fmt-2
+- example-fmt-1
+- example-fmt-2
 ```
 
 ### Example
