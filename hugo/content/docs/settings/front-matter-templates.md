@@ -68,17 +68,13 @@ To edit an FMT, navigate to the _Front Matter_ page in the CMS, and click the FM
 
 ![](/uploads/2018/01/35.png)On the left, you'll see a preview of how your FMT will look in the editors, and on the right you'll see the list of available field types.
 
-### Partial Templates
-
-Turn on the **Is Partial** toggle to designate this FMT as a _Partial Front Matter Template_. Partial FMTs are used with the [Blocks](/docs/settings/fields/blocks) field type.
-
 #### Display Field
 
-When creating a **Partial Front Matter Template**, you have the option of setting the **Display Field**. This field is used when displaying the list of blocks created with a [Blocks](/docs/settings/fields/blocks) field type.
+When creating a **Front Matter Template**, you have the option of setting the **Display Field**. This field is used when displaying the list of blocks created with a [Blocks](/docs/settings/fields/blocks) field type.
 
-![](/uploads/2018/08/partial_template_display_field.png)
+![](/uploads/2019/03/display-field.png)
 
-When you create a new Partial FMT, this dropdown will initially be empty. As you add field definitions to your FMT, these fields will appear as Display Field options.
+When you create a new Front Matter Template, this dropdown will initially be empty. As you add field definitions to your FMT, these fields will appear as Display Field options.
 
 ![](/uploads/2018/08/block_labels.png)
 
