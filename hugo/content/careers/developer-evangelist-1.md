@@ -21,6 +21,19 @@ aliases: []
 menu: []
 
 ---
+### About Forestry.io
+
+_Helping people build a better web._
+
+Forestry.io is creating a Git-backed content management system (CMS) focused on the JAMstack. We’re passionate about the web and value quality engineering and design. Our HQ is located in Canada, and we have a remote-friendly culture with over 50% of our team working from around the world. We're looking for people who want to join us in building a truly world-class company and CMS.
+
+Each job posting has a list of things that we think will help the candidate be successful. You don’t need to be a “rockstar” at everything on day 1. In fact, humility, initiative & positive attitude are more important and we’re willing to help you acquire skills that you may be lacking. Keep that in mind when considering whether to apply.
+
+  
+We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
+
+***
+
 At Forestry we’re _helping people build a better web_. Our JAMstack Expert’s mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
 
 This is a remote role, but preference may be given to candidates located in major North American cities in order to simplify travel.
