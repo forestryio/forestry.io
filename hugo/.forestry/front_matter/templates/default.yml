@@ -133,6 +133,8 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/what-are-instant-previews.md
+- hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/statyc-a-luxury-festival-for-hackers.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/careers/marketing.md
@@ -142,7 +144,6 @@ pages:
 - hugo/content/careers/_index.md
 - hugo/content/blog/3-patterns-for-loading-data-with-react.md
 - hugo/content/blog/new-pricing-organization-accounts.md
-- hugo/content/blog/announcing-instant-previews.md
 - hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
 - hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
@@ -195,7 +196,6 @@ pages:
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
 - hugo/content/blog/forestryio-techstars-2016.md
-- hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/the-new-forestry-io.md
 - hugo/content/blog/march-27th-service-outage.md

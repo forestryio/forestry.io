@@ -1,5 +1,5 @@
 ---
-title: Announcing Instant Previews
+title: What are Instant Previews?
 description: ''
 date: 2019-02-05 17:00:00 +0000
 authors:
@@ -31,8 +31,6 @@ We strive to make your content editing experience as seamless as possible and we
 
 ### _Speedy Previews is what Forestry needs!_
 
-![](/uploads/2019/01/judge-judy.gif)
-
 Here are a couple of reasons why faster previews are necessary, just in case you needed any convincing.
 
 ### Better Editing
@@ -43,7 +41,7 @@ Moreover, delays are disruptive to staying focused and keeping your thoughts in 
 
 ### Large Sites
 
-Depending on your static site generator, large sites can take a long time to build. For some sites we've seen build times of more than an hour. If you're using Jekyll, waiting ten minutes for a site to build is not rare. This might (in some cases) be acceptable for deployment but it's not usable for reviewing and editing a post, page or article.
+Depending on your static site generator, large sites can take a long time to build. For some sites we've seen build times of more than an hour. If you're using Jekyll, waiting a few minutes for a site to build is not rare. This might (in some cases) be acceptable for deployment but it's not usable for reviewing and editing a post, page or article.
 
 **In short: Delays... Are... A... Big... Issue...**
 
