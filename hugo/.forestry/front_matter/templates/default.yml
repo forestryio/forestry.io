@@ -133,6 +133,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/_index.md
 - hugo/content/blog/full-speed-ahead-in-2019.md
 - hugo/content/careers/developer-evangelist.md
 - hugo/content/blog/what-are-instant-previews.md
@@ -143,7 +144,6 @@ pages:
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/hiring-devops-engineer.md
-- hugo/content/careers/_index.md
 - hugo/content/blog/3-patterns-for-loading-data-with-react.md
 - hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
