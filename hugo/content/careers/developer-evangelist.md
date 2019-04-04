@@ -19,7 +19,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 At Forestry we’re _helping people build a better web_. Our Developer Evangelist’s mission is to spread the word among developers about how Forestry and modern JAMstack development can help us achieve this.
