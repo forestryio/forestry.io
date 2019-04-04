@@ -1,10 +1,10 @@
 ---
 title: Full Speed Ahead in 2019
 description: ''
-date: 2019-04-05 01:00:00 -0300
+date: 2019-04-05 04:00:00 +0000
 authors:
 - DJ Walker
-publishdate: 2019-04-05 01:00:00 -0300
+publishdate: 2019-04-05 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -38,7 +38,9 @@ Ready to go fast? Read on…
 
 ## Instant Previews
 
-**Instant Previews** are now available to everyone using Forestry. Instant previews take advantage of your static site generator’s built-in **development server** to generate previews faster and shorten the feedback loop for editors.
+Our preview feature has always been particularly important to us. The ability to preview your changes is an expected feature when using a traditional CMS, but is a significant technical hurdle for a modern Headless CMS. This is because the website code and the management interface can exist so far away from each other.
+
+**Instant Previews** is our next iteration toward powerful and intuitive previewing capability in our CMS. Instant previews take advantage of your static site generator’s built-in **development server** to generate previews faster and shorten the feedback loop for editors.
 
 To learn more about how instant previews work, check out our [blog post](https://forestry.io/blog/what-are-instant-previews).
 
@@ -73,4 +75,3 @@ The hottest static site party of 2019 is happening in New York next week. Forest
 ## We’re Not Done Yet
 
 We’re excited about these updates, and hope you are too, but don’t think for a second that we’re finished! We have plenty more to bring you in 2019, so check back soon!
-
