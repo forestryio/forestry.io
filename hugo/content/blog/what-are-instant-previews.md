@@ -5,9 +5,9 @@ description: People can now have an immediate preview of the website they are ed
 date: 2019-02-05 17:00:00 +0000
 authors:
 - Sebastian Engels
-publishdate: 2019-02-05 17:00:00 +0000
+publishdate: 2019-02-05 13:00:00 -0400
 expirydate: 2030-02-05 04:00:00 +0000
-headline: Get instant feedback on your document changes
+headline: ''
 textline: ''
 images: []
 categories:
