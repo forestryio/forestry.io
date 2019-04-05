@@ -8,7 +8,8 @@ publishdate: 2019-04-05 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/chuttersnap-776317-unsplash.jpg"
 categories:
 - CMS
 tags: []
@@ -27,14 +28,13 @@ We have a big update to share with you today! Today’s release marks the culmin
 
 **We wanna go fast.**
 
-Today, we’re launching: 
+Today, we’re launching:
 
-- **Instant Previews**, which will enable your previews to build faster;
-- **Git LFS** **support for media** which will speed up Git operations on image-heavy sites; and
-- **Gatsby Support**, allowing you to use Forestry with a “*blazing fast”* Gatsby frontend.
+* **Instant Previews**, which will enable your previews to build faster;
+* **Git LFS** **support for media** which will speed up Git operations on image-heavy sites; and
+* **Gatsby Support**, allowing you to use Forestry with a “_blazing fast”_ Gatsby frontend.
 
 Ready to go fast? Read on…
-
 
 ## Instant Previews
 
@@ -42,12 +42,11 @@ Our preview feature has always been particularly important to us. The ability to
 
 **Instant Previews** is our next iteration toward powerful and intuitive previewing capability in our CMS. Instant previews take advantage of your static site generator’s built-in **development server** to generate previews faster and shorten the feedback loop for editors.
 
-To learn more about how instant previews work, check out our [blog post](https://forestry.io/blog/what-are-instant-previews).
+{{% youtube "6HRoIgftMEc" %}}
 
 To set up instant previews on your site, head over to our [instant previews documentation](https://forestry.io/docs/previews/instant-previews/).
 
 Special thanks to all of our beta testers for helping us bring this feature to production!
-
 
 ## Git LFS Media
 
@@ -57,8 +56,9 @@ Git LFS will still keep your media files in the same logical repository and allo
 
 Check out our Git LFS guide to learn how to set it up for your project.
 
-
 ## Gatsby Support
+
+![](/uploads/gatsby.svg)
 
 The Gatsby hype train shows no signs of slowing, and for good reason. Gatsby is a static site generator that builds your content into a React-based Progressive Web App. Gatsby straddles the line between static site generator and application framework for React projects, making it a versatile solution for building frontends.
 
@@ -66,11 +66,11 @@ Gatsby sites that source content from Markdown files can now be used with Forest
 
 If you’re curious about using Gatsby with Forestry but aren’t sure where to start, [check out our demo projec](https://forestryio.github.io/gatsby-starter-forestry/)t and [import it into Forestry](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&branch=master&engine=gatsby)!
 
-
 ## Come see us at JAMstack Conf NYC!
 
-The hottest static site party of 2019 is happening in New York next week. Forestry is proud to be a Gold Sponsor of [jamstack_conf_nyc](https://jamstackconf.com/) this year, and we’ll be traveling to New York to hang out and talk about all things JAMstack. We’d love to see you there — be sure to stop by our booth for high fives and a little swag!
+![](/uploads/jamstackconf.png)
 
+The hottest static site party of 2019 is happening in New York next week. Forestry is proud to be a Gold Sponsor of [jamstack_conf_nyc](https://jamstackconf.com/) this year, and we’ll be traveling to New York to hang out and talk about all things JAMstack. We’d love to see you there — be sure to stop by our booth for high fives and a little swag!
 
 ## We’re Not Done Yet
 
