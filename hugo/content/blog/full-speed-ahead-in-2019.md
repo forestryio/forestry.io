@@ -39,7 +39,7 @@ Ready to go fast? Read on…
 
 ## Instant Previews
 
-Our preview feature has always been particularly important to us. The ability to preview your changes is an expected feature when using a traditional CMS, but is a significant technical hurdle for a modern Headless CMS. This is because the website code and the management interface can exist so far away from each other.
+Our preview feature has always been particularly important to us. The ability to preview your changes is an expected feature when using a traditional CMS, but is a significant technical hurdle with a modern Headless CMS. This is because the website code and the management interface can exist so far away from each other.
 
 **Instant Previews** is our next iteration toward powerful and intuitive previewing capability in our CMS. Instant previews take advantage of your static site generator’s built-in **development server** to generate previews faster and shorten the feedback loop for editors.
 
@@ -57,11 +57,17 @@ Git LFS will still keep your media files in the same logical repository and allo
 
 Check out our Git LFS guide to learn how to set it up for your project.
 
+{{% tip %}}
+
+Looking to use [Netlify Large Media](https://www.netlify.com/blog/2019/02/26/manage-your-code-and-assets-together-with-netlify-large-media/) with Forestry? Expect an integration soon!
+
+{{% /tip %}}
+
 ## Gatsby Support
 
 ![](/uploads/gatsby.svg)
 
-The Gatsby hype train shows no signs of slowing, and for good reason. Gatsby is a static site generator that builds your content into a React-based Progressive Web App. Gatsby straddles the line between static site generator and application framework for React projects, making it a versatile solution for building frontends.
+The Gatsby hype train shows no signs of slowing, and for good reason! Gatsby is a static site generator that builds your content into a React-based Progressive Web App. Gatsby straddles the line between static site generator and application framework for React projects, making it a versatile solution for building frontends.
 
 Gatsby sites that source content from Markdown files can now be used with Forestry. Just select Gatsby as the project type when importing, and you’re good to go!
 
