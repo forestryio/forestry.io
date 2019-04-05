@@ -26,6 +26,12 @@ fields:
   name: images
   label: Images
   description: Used for SEO & Featured Images
+- name: photo_credit
+  type: text
+  config:
+    required: false
+  label: Photo Credit
+  description: Credit to appear with header image
 - type: list
   name: authors
   label: Authors
