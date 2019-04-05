@@ -1,17 +1,22 @@
 ---
 title: What are Instant Previews?
-description: ''
+description: People can now have an immediate preview of the website they are editing
+  in Forestry CMS.
 date: 2019-02-05 17:00:00 +0000
 authors:
 - Sebastian Engels
 publishdate: 2019-02-05 17:00:00 +0000
 expirydate: 2030-02-05 04:00:00 +0000
-headline: ''
+headline: Get instant feedback on your changes
 textline: ''
 images: []
 categories:
 - CMS
-tags: []
+tags:
+- hugo
+- jekyll
+- vuepress
+- gatsby
 cta:
   headline: ''
   textline: ''
@@ -111,7 +116,7 @@ Next, add your preview command and the necessary additional parameters. [Learn M
 
 That's it! You're all set.
 
-To debug your previews we've provided you the log in your `Previews` settings.
+To debug your previews check your logs in your `Previews` settings tab, like you would do locally.
 
 {{% tip %}}
 
