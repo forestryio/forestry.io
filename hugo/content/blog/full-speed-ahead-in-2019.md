@@ -1,10 +1,10 @@
 ---
 title: Full Speed Ahead in 2019
 description: ''
-date: 2019-04-05 04:00:00 +0000
+date: 2019-04-08 01:00:00 -0300
 authors:
 - DJ Walker
-publishdate: 2019-04-05 04:00:00 +0000
+publishdate: 2019-04-08 01:00:00 -0300
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -79,7 +79,7 @@ Once again, we'd like to thank our beta testers who helped us bring Gatsby to Fo
 
 ![](/uploads/jamstackconf.png)
 
-The hottest static site party of 2019 is happening in New York next week. Forestry is proud to be a Gold Sponsor of [jamstack_conf_nyc](https://jamstackconf.com/) this year, and we’ll be traveling to New York to hang out and talk about all things JAMstack. We’d love to see you there — be sure to stop by our booth for high fives and a little swag!
+The hottest static site party of 2019 is happening in New York tomorrow! Forestry is proud to be a Gold Sponsor of [jamstack_conf_nyc](https://jamstackconf.com/) this year, and we’ll be in New York to hang out and talk about all things JAMstack. We’d love to see you there — be sure to stop by our booth for high fives and a little swag!
 
 ## We’re Not Done Yet
 
