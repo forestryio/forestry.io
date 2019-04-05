@@ -108,7 +108,7 @@ Next, add your preview command and the necessary additional parameters. [Learn M
 
 {{% /tab %}}
 
-{{% tab "Gatsby \[beta\]" %}}
+{{% tab "Gatsby (beta)" %}}
 
     gatsby develop -p 8080 -H 0.0.0.0
 
