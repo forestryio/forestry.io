@@ -73,6 +73,8 @@ Gatsby sites that source content from Markdown files can now be used with Forest
 
 If you’re curious about using Gatsby with Forestry but aren’t sure where to start, [check out our demo projec](https://forestryio.github.io/gatsby-starter-forestry/)t and [import it into Forestry](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&branch=master&engine=gatsby)!
 
+Once again, we'd like to thank our beta testers who helped us bring Gatsby to Forestry!
+
 ## Come see us at JAMstack Conf NYC!
 
 ![](/uploads/jamstackconf.png)
