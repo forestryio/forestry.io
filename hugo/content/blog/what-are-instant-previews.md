@@ -7,7 +7,7 @@ authors:
 - Sebastian Engels
 publishdate: 2019-02-05 17:00:00 +0000
 expirydate: 2030-02-05 04:00:00 +0000
-headline: Get instant feedback on your changes
+headline: Get instant feedback on your document changes
 textline: ''
 images: []
 categories:
