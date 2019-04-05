@@ -1,11 +1,11 @@
 ---
 title: Developer Evangelist
 description: ''
-date: 2019-04-04 00:00:00 -0300
+date: 2019-04-04 03:00:00 +0000
 authors:
 - Scott Gallant
-publishdate: 2019-04-03 00:00:00 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2019-04-03 03:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
@@ -24,6 +24,8 @@ menu: []
 At Forestry we’re _helping people build a better web_. Our Developer Evangelist’s mission is to spread the word among developers about how Forestry and modern JAMstack development can help us achieve this.
 
 This is a remote role, but preference may be given to candidates located in major North American cities in order to simplify travel.
+
+We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
 
 ### Responsibilities
 
@@ -61,5 +63,4 @@ Forestry.io is creating a Git-backed content management system (CMS) focused on 
 
 Each job posting has a list of things that we think will help the candidate be successful. You don’t need to be a “rockstar” at everything on day 1. In fact, humility, initiative & positive attitude are more important and we’re willing to help you acquire skills that you may be lacking. Keep that in mind when considering whether to apply.
 
-  
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).

@@ -1,11 +1,11 @@
 ---
 title: JAMstack Expert
 description: ''
-date: 2019-04-04 00:00:00 -0300
+date: 2019-04-04 03:00:00 +0000
 authors:
 - Scott Gallant
-publishdate: 2019-04-03 00:00:00 -0300
-expirydate: 2030-01-01 00:00:00 -0400
+publishdate: 2019-04-03 03:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images: []
@@ -18,12 +18,13 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 
 ---
 At Forestry we’re _helping people build a better web_. Our JAMstack Expert’s mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
 
 This is a remote role, but preference may be given to candidates located in major North American cities in order to simplify travel.
+
+We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
 
 ### Responsibilities
 
@@ -55,5 +56,4 @@ Forestry.io is creating a Git-backed content management system (CMS) focused on 
 
 Each job posting has a list of things that we think will help the candidate be successful. You don’t need to be a “rockstar” at everything on day 1. In fact, humility, initiative & positive attitude are more important and we’re willing to help you acquire skills that you may be lacking. Keep that in mind when considering whether to apply.
 
-  
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
