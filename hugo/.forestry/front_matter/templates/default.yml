@@ -12,6 +12,30 @@ fields:
   name: headline
   label: Page Headline
   description: Optional override for title
+- type: datetime
+  label: Date
+  name: date
+  description: Date is seen by user
+  config:
+    required: true
+  default: now
+- type: datetime
+  name: publishdate
+  label: Publish Date
+  description: Date this page should be made public
+  config:
+    date_format: MMMM DD, YYYY
+    time_format: h:mmA
+    required: true
+  default: now
+- type: datetime
+  name: expirydate
+  label: Expiry Date
+  description: Date this page should be unpublished
+  config:
+    date_format: MMMM DD, YYYY
+    time_format: h:mmA
+  default: 2030-01-01 04:00:00 +0000
 - type: textarea
   name: description
   label: Description
@@ -63,29 +87,6 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-- type: datetime
-  label: Date
-  name: date
-  description: Date is seen by user
-  config:
-    required: true
-- type: datetime
-  name: publishdate
-  label: Publish Date
-  description: Date this page should be made public
-  config:
-    date_format: MMMM DD, YYYY
-    time_format: h:mmA
-    required: true
-  default: 2017-12-07 04:00:00 +0000
-- type: datetime
-  name: expirydate
-  label: Expiry Date
-  description: Date this page should be unpublished
-  config:
-    date_format: MMMM DD, YYYY
-    time_format: h:mmA
-  default: 2030-01-01 04:00:00 +0000
 - type: field_group
   label: Footer Call To Action
   name: cta
