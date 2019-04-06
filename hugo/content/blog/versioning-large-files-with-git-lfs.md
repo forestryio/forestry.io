@@ -1,6 +1,7 @@
 ---
 title: Versioning Large Files with Git LFS
-description: ''
+description: Git-based Forestry CMS works with repositories using Git LFS to version
+  large binary files.
 date: 2019-04-08 04:00:00 +0000
 authors:
 - dj-walker
