@@ -1,15 +1,16 @@
 ---
 title: Versioning Large Files with Git LFS
 description: ''
-date: 2019-04-08 01:00:00 -0300
+date: 2019-04-08 04:00:00 +0000
 authors:
 - dj-walker
-publishdate: 2019-04-08 01:00:00 -0300
+publishdate: 2019-04-08 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
-photo_credit: ''
+images:
+- "/uploads/vineet-nangia-1287371-unsplash.jpg"
+photo_credit: Vineet Nangia / Unsplash
 categories: []
 tags: []
 cta:
@@ -23,7 +24,6 @@ menu: []
 draft: true
 
 ---
-
 I've written before about [the advantages of keeping content in version control](https://forestry.io/blog/why-we-created-a-git-backed-content-manager/). A quick recap of the benefits:
 
 - Content is portable - just `git clone`
