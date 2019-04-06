@@ -34,9 +34,7 @@ While the benefits are signficant, one of the major pain points of this solution
 
 ## Problems With Versioning Binary Files
 
-Git is very good at handling text files efficiently, but not so great with files like images, videos, and other formats that can't be expressed in plaintext. Git records changes to text files line-by-line in a **diff**, but changes to binary files are recorded by storing an entirely new copy of the file. If you update an image in your repository, you can think of it as effectively doubling the size of the image in the repo.
-
-In addition to that, images don't compress as easily as text, and a large image will be orders of magnitude larger than a very long text file.
+Git is very good at handling text files efficiently, but not so great with files like images, videos, and other formats that can't be expressed in plaintext. Images don't compress as easily as text, and a large image will be orders of magnitude larger than a very long text file due to the simple fact that [images are more information dense than text](https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words).
 
 Git is clever, but *it may not be as magic as you think*. Everything you commit to a repository *is in there somewhere*, so if you commit lots of big files, you will end up with a large repo that takes longer to clone and is slower at performing Git operations.
 
