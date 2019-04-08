@@ -1,10 +1,10 @@
 ---
 title: Full Speed Ahead in 2019
 description: ''
-date: 2019-04-08 01:00:00 -0300
+date: 2019-04-08 04:00:00 +0000
 authors:
 - DJ Walker
-publishdate: 2019-04-08 01:00:00 -0300
+publishdate: 2019-04-08 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
@@ -20,9 +20,8 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 photo_credit: chuttersnap / Unsplash
-draft: true
+menu: []
 
 ---
 We have a big update to share with you today! Today’s release marks the culmination of a lot of feature work, with one major goal in mind:
@@ -55,12 +54,14 @@ We believe that there are distinct advantages to storing content in version cont
 
 Git LFS will still keep your media files in the same logical repository and allow you to version them, but won’t cause the same repo bloat and performance degradation that is expected when committing large files to a repository.
 
-Check out our Git LFS guide to learn how to set it up for your project.
+Check out our [Git LFS guide](https://forestry.io/blog/versioning-large-files-with-git-lfs/) to learn how to set it up for your project.
+
+### Netlify Large Media
+
+In addition to supporting Git LFS through GitHub and GitLab cloud providers, you can also use [Netlify Large Media](https://www.netlify.com/blog/2019/02/26/manage-your-code-and-assets-together-with-netlify-large-media/) with Forestry, giving you the benefits of using Git LFS for large files while also enabling you to use Netlify's [image transformations](https://www.netlify.com/docs/image-transformation/).
 
 {{% tip %}}
-
-Looking to use [Netlify Large Media](https://www.netlify.com/blog/2019/02/26/manage-your-code-and-assets-together-with-netlify-large-media/) with Forestry? Expect an integration soon!
-
+To use Netlify Large Media in forestry, change your media settings to **Netlify Large Media** and connect to Netlify from the settings screen.
 {{% /tip %}}
 
 ## Gatsby Support
