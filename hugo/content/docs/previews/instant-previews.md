@@ -15,9 +15,6 @@ menu:
     weight: 3
 
 ---
-{{% warning %}}
-This feature is currently in beta.
-{{% /warning %}}
 
 
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.

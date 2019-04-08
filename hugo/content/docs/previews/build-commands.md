@@ -120,7 +120,6 @@ build:
   publish_env: 
   - HUGO_ENV=production
 ```
-{{% feature_flag "preview-method" "kubernetes" %}}
 ### Instant Previews
 
 As mentioned, your preview command should *not* start a development server, as this will cause the preview to be stuck generaring indefinitely.
@@ -128,7 +127,6 @@ As mentioned, your preview command should *not* start a development server, as t
 However, our **instant previews** feature treats preview generation differently, allowing for you to spin up a development server in our preview environment which will drastically reduce preview times in most cases.
 
 To learn more about how to use instant previews, view the [instant previews documentation](/docs/instant-previews/).
-{{% /feature_flag %}}
 
 ## Default Commands
 
@@ -206,7 +204,6 @@ build:
 {{% /tab %}}
 {{% /code_tabs %}}
 
-{{% feature_flag "preview-method" "kubernetes" %}}
 ### Default Instant Preview Commands
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
@@ -234,7 +231,6 @@ build:
 ```
 {{% /tab %}}
 {{% /code_tabs %}}
-{{% /feature_flag %}}
 
 ## Using NPM Scripts as Build Commands
 
