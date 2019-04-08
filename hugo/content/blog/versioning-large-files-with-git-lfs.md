@@ -22,7 +22,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 I've written before about [the advantages of keeping content in version control](https://forestry.io/blog/why-we-created-a-git-backed-content-manager/). A quick recap of the benefits:
