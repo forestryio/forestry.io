@@ -15,7 +15,7 @@ Forestry provides multiple options for media storage.
 The most basic option for storing media is to commit it to your git repo like the rest of your content. This is the default setting for new projects.
 
 {{% warning %}}
-If your site has a large number of media files, we highly recommend you select a different storage option. Very large git repos are slower to clone and work with and will not present an optimal development experience.
+If your site has a large number of media files, we highly recommend [implementing Git LFS on your repository](https://forestry.io/blog/versioning-large-files-with-git-lfs/). Forestry will be able to handle Git LFS media for repositories hosted on GitHub and GitLab.
 {{% /warning %}}
 
 [Read the full guide on using git for media storage](/docs/media/git)
