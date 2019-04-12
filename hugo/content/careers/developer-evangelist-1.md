@@ -1,7 +1,7 @@
 ---
-title: Developer Evangelist
+title: UX Designer/Developer
 description: ''
-date: 2019-04-04 03:00:00 +0000
+date: 2019-04-13 00:00:00 -0300
 authors:
 - Scott Gallant
 publishdate: 2019-04-03 03:00:00 +0000
@@ -18,6 +18,8 @@ cta:
 private: false
 weight: ''
 aliases: []
+photo_credit: ''
+menu: []
 draft: true
 
 ---
@@ -29,21 +31,11 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 
 ### Responsibilities
 
-* Teach people about Forestry.io and modern web development by:
-  * Speaking at events
-  * Writing blog posts/tutorials for the Forestry blog
-  * Writing blog posts/tutorials for 3rd party publications
-  * Speaking on podcasts/videos
-  * Creating educational code projects (open source or other) to show what you can do with the JAMstack
-* Stay up-to-date with modern web development practices and the needs of developers
-  * Interact with developers in the Forestry.io community and other online communities
-* Work with the product team to help guide the design of new features
-* Create technical docs or assist with the writing of technical docs
+* 
 
 ### We believe a successful candidate will have:
 
 * Strong written and spoken communication skills
-* Willingness to travel and speak publicly (see intro paragraph if you’re not yet comfortable speaking publicly)
 * Enthusiasm and passion for the web and web development
 * Experience in Web development, including:
   * Legacy CMSs (sorry) such as WordPress, Drupal, etc
