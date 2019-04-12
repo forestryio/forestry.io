@@ -20,12 +20,11 @@ weight: ''
 aliases: []
 photo_credit: ''
 menu: []
-draft: true
 
 ---
-At Forestry we’re _helping people build a better web_. As a UX Designer, your mission is to help us design and deliver interfaces that will delight our users.
+At Forestry we’re _helping people build a better web_. As a UX Designer, your mission is to assist us by designing and building interfaces that will delight our users.
 
-This is a remote role and we are prioritizing candidates from under represented groups.
+This is a remote role and we are prioritizing candidates from groups that are under represented in the software industry.
 
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
 
@@ -35,7 +34,7 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 * Create prototypes for testing of designs (Figma, Invision, etc)
 * Build and maintain components in our design system (CSS)
 * Participate in design reviews and user testing sessions
-* 
+* Collaborate with team during product ideation 
 
 ### We believe a successful candidate will have:
 
@@ -43,6 +42,7 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 * Enthusiasm and passion for the web and web development
 * Strong CSS skills
 * Experience with visual design software such as Sketch, Invision, Figma, etc.
+* A strong sense of usability 
 * Experience in Web development, including:
   * Legacy CMSs (sorry) such as WordPress, Drupal, etc
   * JAMstack:
