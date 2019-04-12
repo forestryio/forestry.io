@@ -23,27 +23,32 @@ menu: []
 draft: true
 
 ---
-At Forestry we’re _helping people build a better web_. Our Developer Evangelist’s mission is to spread the word among developers about how Forestry and modern JAMstack development can help us achieve this.
+At Forestry we’re _helping people build a better web_. As a UX Designer, your mission is to help us design and deliver interfaces that will delight our users.
 
-This is a remote role, but preference may be given to candidates located in major North American cities in order to simplify travel.
+This is a remote role and we are prioritizing candidates from under represented groups.
 
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
 
 ### Responsibilities
 
+* Wireframe and/or mock up designs for new features and improvements to existing features
+* Create prototypes for testing of designs (Figma, Invision, etc)
+* Build and maintain components in our design system (CSS)
+* Participate in design reviews and user testing sessions
 * 
 
 ### We believe a successful candidate will have:
 
 * Strong written and spoken communication skills
 * Enthusiasm and passion for the web and web development
+* Strong CSS skills
+* Experience with visual design software such as Sketch, Invision, Figma, etc.
 * Experience in Web development, including:
   * Legacy CMSs (sorry) such as WordPress, Drupal, etc
-  * Frontend and/or backend development
   * JAMstack:
-    * Static site generators such as Gatsby, Hugo, etc.
-    * Git, Continuous Integration, build processes, etc.
-    * Headless CMSs, both Git-backed and API-based
+    * Site generators such as Gatsby, Hugo, etc.
+  * Git.
+* Understanding of and experience with design systems
 
 ***
 
