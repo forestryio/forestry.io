@@ -46,8 +46,8 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 * Experience in Web development, including:
   * Legacy CMSs (sorry) such as WordPress, Drupal, etc
   * JAMstack:
-    * Site generators such as Gatsby, Hugo, etc.
-  * Git.
+    * Site generators such as Gatsby, Hugo, etc
+  * Git
 * Understanding of and experience with design systems
 
 ***
