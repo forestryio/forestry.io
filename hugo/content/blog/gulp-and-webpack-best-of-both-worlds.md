@@ -6,12 +6,12 @@ authors:
 - DJ Walker
 publishdate: 2019-03-25 12:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-categories:
+categories: 
 headline: ''
 textline: ''
-images: 
-- "/uploads/2019/03/box-stacks.jpg"
-photo_credit: Samuel Zeller / Unsplash
+images:
+- "/uploads/buddhabelly.jpg"
+photo_credit: DJ Walker
 tags: []
 cta:
   headline: ''
@@ -20,7 +20,6 @@ cta:
 private: false
 weight: ''
 aliases: []
-menu: []
 draft: true
 
 ---
@@ -343,4 +342,3 @@ You can download the entire `gulpfile.js` from [this gist](https://gist.github.c
 And with that, all that’s left to say is: *welp, seeya later!*
 
 {{% youtube "N_j5tDuakKU" %}}
-
