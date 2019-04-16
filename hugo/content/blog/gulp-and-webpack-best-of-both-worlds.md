@@ -21,14 +21,13 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 [Once upon a time,](https://forestry.io/blog/write-better-javascript-with-webpack/) I told you that Webpack was an excellent tool for managing JavaScript in your web projects. This is because Webpack allows you to write modular JavaScript for the browser, and handles the dependency resolution and file bundling. I contrasted Webpack with Gulp, a stream processor and taskrunner utility that, while it has its place, doesn’t do the sophisticated module bundling that Webpack does. This makes Gulp a less attractive option for packaging your JavaScript files.
 
 One issue with any asset pipeline, though, comes up when using it alongside a static site generator. You have one tool building your JavaScript and CSS, and another tool building your site’s HTML. For the most part this is a pretty minor inconvenience: your deployment script could just run the commands separately, and maybe in your development environment you could run Webpack’s watch command and your SSG’s dev server in separate terminal windows. A slightly inelegant solution, but perfectly serviceable.
 
-Many developers have found creative solutions to this problem, which I learned while we were beta testing our brand new Instant Previews feature. With Instant Previews, Forestry is able to run your static site generator’s development server in our cloud preview environment, drastically reducing the time it takes to rebuild your preview. Unfortunately, some of those *imperfect-but-usable* solutions that have worked in developers’ preview environments don’t work so great with instant previews —  running multiple commands isn’t straightforward, and multiple parallel commands might lead to race conditions.
+Many developers have found creative solutions to this problem, which I learned while we were beta testing our brand new [Instant Previews](https://forestry.io/docs/previews/instant-previews/) feature. With Instant Previews, Forestry is able to run your static site generator’s development server in our cloud preview environment, drastically reducing the time it takes to rebuild your preview. Unfortunately, some of those *imperfect-but-usable* solutions that have worked in developers’ preview environments don’t work so great with instant previews —  running multiple commands isn’t straightforward, and multiple parallel commands might lead to race conditions.
 
 To help assist in the adoption of instant previews for users who incorporate Webpack or another asset processing tool, I searched for a simple solution that could be applied to a variety of use cases. This shouldn’t be that hard: what’s a good tool that will allow me to orchestrate a series of commands, watch files for changes, and run a development server?
 
@@ -40,7 +39,7 @@ To help assist in the adoption of instant previews for users who incorporate Web
 
 Sure enough, Gulp fits the bill perfectly here.
 
-**Before we go any further,** take a deep breath. I kicked off that Webpack article discussing tool fatigue, so I can imagine how you feel right now: *I need **another build tool** to run my build tool?* 
+**Before we go any further,** take a deep breath. I kicked off that Webpack article discussing tool fatigue, so I can imagine how you feel right now: *I need* ***another build tool*** *to run my build tool?* 
 
 This will be **really easy**, I promise.
 
@@ -267,7 +266,7 @@ function serve(cb) {
 Because the `hugo` command will build our site to `./public`, we set that as the document root of our server. If you’re using a different SSG, or building your site to a different directory, you will want to change this.
 
 {{% tip %}}
-We’ve chosen to bind to `0.0.0.0:8080` here for compatibility with Forestry’s \[instant previews\](null).
+We’ve chosen to bind to `0.0.0.0:8080` here for compatibility with Forestry’s [instant previews](https://forestry.io/docs/previews/instant-previews/).
 {{% /tip %}}
 
 Additionally, let’s create a task to reload the server:
