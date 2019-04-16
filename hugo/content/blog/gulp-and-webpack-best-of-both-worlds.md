@@ -1,12 +1,12 @@
 ---
 title: 'Gulp and Webpack: Getting the Best of Both Worlds'
 description: ''
-date: 2019-03-25 12:00:00 +0000
+date: 2019-04-16 09:00:00 -0300
 authors:
 - DJ Walker
-publishdate: 2019-03-25 12:00:00 +0000
+publishdate: 2019-04-16 09:00:00 -0300
 expirydate: 2030-01-01 04:00:00 +0000
-categories: 
+categories: []
 headline: ''
 textline: ''
 images:
@@ -20,6 +20,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+menu: []
 draft: true
 
 ---
@@ -39,7 +40,7 @@ To help assist in the adoption of instant previews for users who incorporate Web
 
 Sure enough, Gulp fits the bill perfectly here.
 
-**Before we go any further,** take a deep breath. I kicked off that Webpack article discussing tool fatigue, so I can imagine how you feel right now: *I need* ***another*** *****build tool*** *to run my build tool?* 
+**Before we go any further,** take a deep breath. I kicked off that Webpack article discussing tool fatigue, so I can imagine how you feel right now: *I need **another build tool** to run my build tool?* 
 
 This will be **really easy**, I promise.
 
