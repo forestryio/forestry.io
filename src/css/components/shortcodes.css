@@ -137,7 +137,8 @@
   }
 }
 
-.md-content figure {
+.md-content figure,
+.pretty-screenshot {
   width: 100%;
   text-align: center;
   img {
@@ -152,6 +153,16 @@
       margin-top: 0;
     }
   }
+}
+
+.pretty-screenshot figcaption {
+  font-style: italic;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.pretty-screenshot img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .md-content .obnoxious {
