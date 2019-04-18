@@ -41,7 +41,7 @@ This URL needs to be added as a webhook that reacts to **push** events on your r
 
 The webhooks for your repo can be accessed at `https://github.com/$USERNAME/$REPOSITORY/settings/hooks`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
-Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**. Set the **Content type** to `application/json`, and select **Just the** `**push**` **event** where it asks you which events should trigger this webhook.
+Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**. Set the **Content type** to `application/json`, and select **Just the `push` event** where it asks you which events should trigger this webhook.
 
 Click the **Add webhook** button to complete the webhook setup.
 

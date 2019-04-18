@@ -44,7 +44,7 @@ In **Jekyll**, these are [content files](/docs/faqs/glossary/content-files/) tha
 [Data files](/docs/editing/data-files/) are special content files that aren't rendered as HTML pages in your built site. They are used for adding rich metadata site-wide, like authors or company information. They appear under _Data_ in the sidebar.
 
 {{% tip %}}
-Learn more about using data files with [Hugo](http://gohugo.io/templates/data-templates/) and [Jekyll](https://jekyllrb.com/docs/datafiles/) in their documentation sites.
+Learn more about using data files with [Hugo](https://gohugo.io/templates/data-templates/) and [Jekyll](https://jekyllrb.com/docs/datafiles/) in their documentation sites.
 {{% /tip %}}
 
 ## Searching Content

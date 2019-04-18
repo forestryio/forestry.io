@@ -51,7 +51,7 @@ The Menu Manager allows you to add, reorganize, and remove menu items from exist
 
 1. Navigate to the _Menus_ section of your site, found in the sidebar
 2. Click the menu you wish to update
-3. Click _Add Item_
+3. Click _Add Link_
 4. Provide a name for the menu item, and choose _Internal_ to select an existing piece of content, or _External_ to create a menu item to a publically accessible URL.
 
 ### Modifying Menu Items

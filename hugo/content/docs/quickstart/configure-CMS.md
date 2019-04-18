@@ -29,13 +29,26 @@ When your team uploads images and other media, you want to ensure they're going 
 
 You should see the following settings which are described below.
 
-![](/uploads/2018/01/file-paths2.png)
+![](/uploads/2019/02/file-paths.png)
 
-### Upload Folder
+### Upload Directory
 
 The folder within your repo to store the uploaded media. If this is set to a directory that doesn't exist, Forestry will create that directory.
 
-### Front Matter File URL
+### Public Path
+
+The path that will **prepend** media files uploaded in the body editor.
+
+This usually has the same value as the `Front Matter Path`, but in some cases you may need these paths to be different. If this value were set to `/uploads` Forestry would write out the following in your Markdown body:
+
+    ## My new post
+
+    The content body URL path is prepended to images
+    uploaded in the document body, like so:
+
+    ![](/uploads/image.jpg)
+
+### Front Matter Path
 
 The path that will **prepend** media files uploaded from Front Matter fields. For example, if this value were set to `/uploads` Forestry would write out the following image value.
 
@@ -46,19 +59,6 @@ date: 2017-12-31 12:00:00 -0400
 image: /uploads/image.jpg
 ---
 ```
-
-### Content Body URL
-
-The path that will **prepend** media files uploaded in the body editor.
-
-This usually has the same value as the `Front Matter File URL`, but in some cases you may need these paths to be different. If this value were set to `/uploads` Forestry would write out the following in your Markdown body:
-
-    ## My new post
-    
-    The content body URL path is prepended to images
-    uploaded in the document body, like so:
-    
-    ![](/uploads/image.jpg)
 
 ***
 
@@ -72,8 +72,8 @@ However, Jekyll supports static assets in your project root.  For this reason, w
 <tr>
 <th></th>
 <th>Upload Directory</th>
-<th>Front Matter File Path</th>
-<th>Body File Path</th>
+<th>Front Matter Path</th>
+<th>Public Path</th>
 </tr>
 <tr>
 <td>Hugo</td>
@@ -103,7 +103,7 @@ Each of these settings supports the following variables at upload time:
 * `:month:`: the current month, formatted `MM`
 * `:day:`: the current day, formatted `DD`
 
-When these variables are used in the _Uploads Folder_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.
+When these variables are used in the _Upload Directory_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.
 
 For this (Hugo) site, we organize media by month, like so:
 

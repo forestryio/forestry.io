@@ -59,7 +59,7 @@ Then select the branch that contains your built static site and click on the Sav
 
 ![](/uploads/2018/01/41.png)
 
-Your site should now be served at `http://username.github.io/repository`.
+Your site should now be served at `https://username.github.io/repository`.
 
 ## Using a Custom Domain
 

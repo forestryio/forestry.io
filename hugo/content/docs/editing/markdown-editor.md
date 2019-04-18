@@ -26,7 +26,7 @@ An editing environment based on markdown allows for fast formatting and a seamle
 The markdown editor works just like any other online WYSIWYG editor. A full toolbar is available at the bottom of the editor for easy formatting. Markdown is supported to allow for fast formatting and a familiar experience for developers.
 
 {{% tip %}}
-The markdown editor is fully [commonmark compatible](http://commonmark.org/help/)! Give markdown a try by typing `## My New Heading!` into the editor to get a level 2 heading!
+The markdown editor is fully [commonmark compatible](https://commonmark.org/help/)! Give markdown a try by typing `## My New Heading!` into the editor to get a level 2 heading!
 {{% /tip %}}
 
 ![](/uploads/2018/01/14-markdown-formatting.png)
@@ -35,7 +35,7 @@ To find all available keyboard and markdown shortcuts, click the keyboard icon i
 
 ### Source editor![](/uploads/2018/01/18.png)
 
-For advanced users, the full markdown source of your content body can be edited by clicking "view source" in the top right corner.
+For advanced users, the full markdown source of your content body can be edited by clicking the more options icon (`...`), and selecting "Raw Editor".
 
 ## Drafting and Publishing Content
 

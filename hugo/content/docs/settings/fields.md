@@ -140,7 +140,7 @@ A list of options displayed in a list. Used for *Front Matter values* that are a
 ```yaml
 ---
 authors:
-    - "scott-gallant:
+    - "scott-gallant"
     - "jordan-patterson"
 ---
 ```
@@ -173,15 +173,15 @@ Gallery of media files. Used for *Front Matter values* that are an array of stri
 
 ```yaml
 ---
-carousel: 
+carousel:
     - "/uploads/2017/12/31/mountains.jpg"
     - "/uploads/2017/12/31/field.jpg"
     - "/uploads/2017/12/31/cabin.jpg"
 
-extra_styles: 
+extra_styles:
     - "/css/extra_styles.css"
 
-extra_scripts: 
+extra_scripts:
     - "/js/extra_script.js"
 ---
 ```

@@ -48,7 +48,7 @@ To provide subdirectory info to your build config, you will need to do the follo
 View the [build commands documentation](/docs/settings/build-commands/) for more information on how to update your build configuration.
 {{% /tip %}}
 
-For example, if you have a Hugo site located in the subdirectory `hugo/`, you will want to add a `BUILD_DIR` environment variable equal to `hugo`, and (assuming you're building the site to `public` as is the Hugo default,) your **output directory** should be set to `hugo/public`. Your build commands settings for previews should then look something like this:
+For example, if you have a Hugo site located in the subdirectory `hugo/`, you will want to add a `BUILD_DIR` environment variable equal to `hugo`, and (assuming you're building the site to `public` as is the Hugo default) your **output directory** should be set to `hugo/public`. Your build commands settings for previews should then look something like this:
 
 ```yaml
 build:
