@@ -26,6 +26,7 @@ An example of Go Templates:
 	<html>
 	<head>
 	    <title>{{ .Params.Title }}</title>
+	</head>
 	<body>
 	<div id="content">
 	    <p>
