@@ -35,7 +35,7 @@ To find all available keyboard and markdown shortcuts, click the keyboard icon i
 
 ### Source editor![](/uploads/2018/01/18.png)
 
-For advanced users, the full markdown source of your content body can be edited by clicking "view source" in the top right corner.
+For advanced users, the full markdown source of your content body can be edited by clicking the more options icon (`...`), and selecting "Raw Editor".
 
 ## Drafting and Publishing Content
 
