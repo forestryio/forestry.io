@@ -14,14 +14,14 @@ menu:
     weight: 12
 
 ---
-Hugo allows users to build layouts and themes using one of multiple templating languages. By default, Hugo uses GoLang’s GoTemplates.
+Hugo allows users to build layouts and themes using one of multiple templating languages. By default, Hugo uses Golang’s Go Templates.
 
 All of the template options are interchangeable, and can be used at the same time.
 
-## GoTemplates
-Go Templates exposes GoLang as a template language for you to build your layouts and themes with.
+## Go Templates
+Go Templates expose Golang as a template language for you to build your layouts and themes with.
 
-An example of GoTemplates:
+An example of Go Templates:
 ```
 	<html>
 	<head>
@@ -40,7 +40,7 @@ Ace templates are inspired by Slim and Jade and will feel very familiar and easi
 
 All templates built with Ace must be prefixed with `.ace` instead of `.html`.
 
-**Note:** Ace templates can be included as a partial inside GoTemplates and vice versa. This cannot be done with Amber.
+**Note:** Ace templates can be included as a partial inside Go Templates and vice versa. This cannot be done with Amber.
 
 An example of Ace:
 ```

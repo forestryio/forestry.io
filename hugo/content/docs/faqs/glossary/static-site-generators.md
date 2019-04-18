@@ -20,5 +20,5 @@ These data formats are generally [content files](/docs/faqs/glossary/content-fil
 ## Examples
 
 * [**Jekyll**](https://jekyllrb.com) is the static site generator written in Ruby and created by [GitHub](https://github.com) founder, Tom Preston Werner.
-* [**Hugo**](https://gohugo.io) is the static site generator written in GoLang and created by Steve Francia.
+* [**Hugo**](https://gohugo.io) is the static site generator written in Golang and created by Steve Francia.
 * [**VuePress**](https://vuepress.vuejs.org/ "VuePress") is the Vue-powered static site generator created by Evan You

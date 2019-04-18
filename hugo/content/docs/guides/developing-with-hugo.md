@@ -32,12 +32,12 @@ Hugo is a *fast* static site generator, with a *lot* of enterprise features. If 
 
 ### Don’t choose Hugo if you:
 
-* Are only experienced with HTML & CSS and have never worked with a programming language like JS, PHP, Ruby, GoLang, etc.
+* Are only experienced with HTML & CSS and have never worked with a programming language like JS, PHP, Ruby, Golang, etc.
 * Are not comfortable learning a completely new language to build your HTML templates with.
 * Are not comfortable implementing complex features like Sitemaps, RSS Feeds, etc.
 
 ## Getting Started
-To get started developing for Hugo, you’ll need a basic understanding of HTML and GoLang, Hugo’s default templating language. You’ll also likely want to [set up your local development environment][1].
+To get started developing for Hugo, you’ll need a basic understanding of HTML and Golang, Hugo’s default templating language. You’ll also likely want to [set up your local development environment][1].
 
 We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables content sync with the CMS, and enables you to use [continuous deployment][3].
 
