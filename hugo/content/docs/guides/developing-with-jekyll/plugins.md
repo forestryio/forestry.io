@@ -15,11 +15,11 @@ menu:
     weight: 23
 
 ---
-Jekyll allows you to add Gem-based plugins using your `Gemfile`. This allows you to add things like \[CoffeeScript\]\[1\] preprocessing.
+Jekyll allows you to add Gem-based plugins using your `Gemfile`. This allows you to add things like [CoffeeScript][1] preprocessing.
 
 ## Installing Plugins
 
-Forestry supports all third-party Jekyll plugins, and installs them in the same manner they are installed in your \[local environment\]\[2\].
+Forestry supports all third-party Jekyll plugins, and installs them in the same manner they are installed in your [local environment][2].
 
 Installation generally has three steps:
 
@@ -44,4 +44,7 @@ Installation generally has three steps:
 ## Further Reading
 
 * [Jekyll Plugins Reference](https://jekyllrb.com/docs/plugins/)
-* [Bundler Gemfile Reference](http://bundler.io/v1.13/gemfile.html)
+* [Bundler Gemfile Reference](https://bundler.io/v1.13/gemfile.html)
+
+[1]: https://coffeescript.org/
+[2]: /docs/guides/developing-with-jekyll/local-development

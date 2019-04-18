@@ -39,4 +39,4 @@ Production environment: "production"
 ```
 
 ## Further Reading
-- [Jekyll Build Command Options](https://jekyllrb.com/docs/configuration/#build-command-options)
+- [Jekyll Build Command Options](https://jekyllrb.com/docs/configuration/options/#build-command-options)

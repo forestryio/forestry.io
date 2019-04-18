@@ -22,6 +22,6 @@ These are files like images, PDFs, CSS, JS, and much more.
 If you use any build tools like Gulp or Grunt with Jekyll, please read our [Asset Pipeline Doc][1].
 
 ## Further Reading
-- [Jekyll Static Files Docs](http://jekyllrb.com/docs/static-files/)
+- [Jekyll Static Files Docs](https://jekyllrb.com/docs/static-files/)
 
 [1]: /docs/guides/developing-with-jekyll/asset-pipeline

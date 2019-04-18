@@ -41,8 +41,8 @@ To get started developing for Jekyll, you’ll need a basic understanding of HTM
 We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync][5] with the CMS, and enables you to use [continuous deployment][6].
 
 ## Further Reading
-- [Jekyll Documentation](http://jekyllrb.com/docs)
-- [Jekyll Quickstart Guide](http://jekyllrb.com/docs/quickstart/)
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [Jekyll Quickstart Guide](https://jekyllrb.com/docs/quickstart/)
 
 [1]: https://github.com
 [2]: https://shopify.github.io/liquid/

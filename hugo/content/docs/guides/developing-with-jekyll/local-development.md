@@ -48,7 +48,7 @@ If you didn’t change any of your content files, then you can choose "Update pr
 If you did change your content files, then you can choose `Update project files & content files` which will update the source code and all of the content in Forestry.
 
 ## Serving your site locally
-Jekyll comes with a local development server built into it’s binary. This will allow you to develop locally on your machine, and will automatically rebuild your site and refresh the browser as you make changes.
+Jekyll comes with a local development server built into its binary. This will allow you to develop locally on your machine, and will automatically rebuild your site and refresh the browser as you make changes.
 
 To run Jekyll with the server, run the command:
 

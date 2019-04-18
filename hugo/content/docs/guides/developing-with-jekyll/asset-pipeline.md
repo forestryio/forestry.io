@@ -15,7 +15,7 @@ menu:
     weight: 20
 
 ---
-If you’re planning on using any preprocessing on your assets (images, CSS, or JS) you’ll need to be careful how you implement this as it effects how Forestry builds your sites. 
+If you’re planning on using any preprocessing on your assets (images, CSS, or JS) you’ll need to be careful how you implement this as it affects how Forestry builds your sites.
 
 ## SASS
 
@@ -25,7 +25,7 @@ Jekyll supports `.sass` and `.scss` processing out of the box. It requires speci
 
 Jekyll also supports preprocessing CoffeeScript with an officially support gem. It requires special configuration, so please see Jekyll’s docs on asset processing in the resources below.
 
-## Best Practises for Gulp, Grunt, and Other Build Tools
+## Best Practices for Gulp, Grunt, and Other Build Tools
 
 In order to use external build like Gulp, Grunt, or Webpack with Forestry's [previewing][1] and [deployment][2], you should configure them as follows:
 
@@ -37,4 +37,4 @@ In order to use external build like Gulp, Grunt, or Webpack with Forestry's [pre
 [2]: /docs/hosting/
 
 ## Further Reading
-- [Jekyll Assets Reference](http://jekyllrb.com/docs/assets/)
+- [Jekyll Assets Reference](https://jekyllrb.com/docs/assets/)
