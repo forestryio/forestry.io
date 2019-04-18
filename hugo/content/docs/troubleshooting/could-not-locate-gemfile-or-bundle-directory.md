@@ -45,9 +45,9 @@ Read more about:
 
 ##### [Jekyll and Gemfiles](https://jekyllrb.com/docs/quickstart/#about-bundler)
 
-##### [Bundler](http://bundler.io/)
+##### [Bundler](https://bundler.io/)
 
-##### [Gemfiles](http://bundler.io/v1.16/man/gemfile.5.html)
+##### [Gemfiles](https://bundler.io/v1.16/man/gemfile.5.html)
 
 ##### [Jekyll-plugins](https://jekyllrb.com/docs/plugins/)
 

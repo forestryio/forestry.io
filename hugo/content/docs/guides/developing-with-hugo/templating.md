@@ -79,8 +79,8 @@ An example of Amber:
 See the [Front Matter Template documentation][1] for examples of how to use Forestry in your templates.
 
 ## Further Reading
-- [Hugo GoTemplates Reference](https://gohugo.io/templates/go-templates/)
-- [Hugo Ace Templates Reference](https://gohugo.io/templates/ace/)
-- [Hugo Amber Templates Reference](https://gohugo.io/templates/amber/)
+- [Hugo Go Templates Reference](https://gohugo.io/templates/introduction/)
+- [Hugo Ace Templates Reference](https://gohugo.io/templates/alternatives/#ace-templates)
+- [Hugo Amber Templates Reference](https://gohugo.io/templates/alternatives/#amber-templates)
 
 [1]: /docs/settings/front-matter-templates/
