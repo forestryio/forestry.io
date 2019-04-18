@@ -35,7 +35,7 @@ menu:
 
 Gemfiles include a list of project dependencies and where to find them.  Bundler is a dependency manager for the Ruby programming language that can read Gemfiles, resolve the dependency graph and install those gems.  Jekyll is a ruby application and can use Bundler to manage your project dependencies.  Forestry requires that your Jekyll projects contain a Gemfile at the root of the repository.
 
-This error message typically means that your Jekyll project doesn't have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
+This error message typically means that your Jekyll project doesn't have a Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.
 
 Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugin dependencies.
 
@@ -69,13 +69,13 @@ If  your site builds and you don't see any errors, your project should also buil
 
 ### Adding a Gemfile to an existing project
 
-In our opinion the easiest way to add a gemfile to a project is to have Jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.  To achieve you'll need to:
+In our opinion the easiest way to add a Gemfile to a project is to have Jekyll generate the Gemfile for you, then commit that file to your project repo and push it to your source provider.  To achieve you'll need to:
 
 * open a command line
 * navigate to the project directory
 * make sure you have a clean working tree
 * execute the `jekyll new` command with the appropriate options
-* install the dependencies with bundler
+* install the dependencies with bundler by running `bundle install`
 * test that the project works the way that you expect it to with bundler
 * commit and push those changes with git
 
@@ -87,37 +87,37 @@ Note that the "#" and everything after are comments to describe what the command
 
 {{% /tip %}}
 
-```  
-cd my-jekyll-project  
- 
-git status 
+```
+cd my-jekyll-project
 
-# you can use "git stash" to set aside any work 
+git status
+
+# you can use "git stash" to set aside any work
 # in progress you might have
 
 # this command will generate a template Gemfile,
-# calculate the dependency graph and install the 
-# dependencies with bundler  
-jekyll new . --force 
+# calculate the dependency graph and install the
+# dependencies with bundler
+jekyll new . --force
 
-# Now you can make  any changes you need to the 
-# Gemfile, the template is well commented  with 
-# regions to comment and uncomment based on common 
-# uses like  gem-based themes and setup for publishing 
+# Now you can make  any changes you need to the
+# Gemfile, the template is well commented  with
+# regions to comment and uncomment based on common
+# uses like  gem-based themes and setup for publishing
 # to github pages.
 
-# this command will test that the gemfile works and 
-# serve your project to localhost:4000  
-bundle exec jekyll serve 
+# this command will test that the gemfile works and
+# serve your project to localhost:4000
+bundle exec jekyll serve
 
-# Open a web browser and go to the url localhost:4000 
+# Open a web browser and go to the url localhost:4000
 # to make sure your website looks as expected
 
 git add Gemfile Gemfile.lock
 git commit -m "Dependency management handling via bundler"
 git push
 
-# If you did stash any work above, reapply it 
+# If you did stash any work above, reapply it
 # now with "git stash pop"
 ```
 

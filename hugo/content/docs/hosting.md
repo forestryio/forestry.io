@@ -3,7 +3,7 @@ aliases:
 - "/docs/deployment-and-management/"
 - "/docs/deployment-and-management/setting-up-deployment/"
 - "/docs/deployment-and-management/deploying-with-github-pages/"
-title: Options
+title: Hosting Options
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -55,13 +55,13 @@ Forestry can build your site and deploy the generated static files to a reposito
 
 Forestry can build your site and deploy the generated static files to an S3 bucket of your choosing.
 
-There are two ways to host a static website with Amazon S3. S3 can be configured to host a website itself, or it can be used as an origin for AWS' CloudFront CDN. Using S3 on its own is the simpler option, but using CloudFront is highly recommended. 
+There are two ways to host a static website with Amazon S3. S3 can be configured to host a website itself, or it can be used as an origin for AWS' CloudFront CDN. Using S3 on its own is the simpler option, but using CloudFront is highly recommended.
 
 {{% tip %}}
 If you'd like to know more about why you should use CloudFront with your S3 Bucket, check out [this blog post from AWS](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/).
 {{% /tip %}}
 
-**Guides:** 
+**Guides:**
 
 [Setup an S3 + CloudFront Stack](/docs/hosting/s3-cloudfront-stack) **(Recommended)**
 
