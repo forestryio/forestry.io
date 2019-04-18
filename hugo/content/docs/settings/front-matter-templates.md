@@ -42,17 +42,15 @@ FMTs can be created from scratch, or can be created using the fields from an exi
 
 ### Creating an FMT from Existing Pages
 
-To create an FMT from an an existing page, navigate to the page you wish to use as the basis for your FMT.
+{{% pretty_screenshot img="/uploads/2019/04/create-fmt-from-page.png" %}}
 
-![](/uploads/2018/01/14-settings-button.png)Next, click the "..." button in the toolbar, then click _Create Template_.
+To create an FMT from an an existing page, navigate to the page you wish to use as the basis for your FMT. Next, click the "..." button in the toolbar, then click _Create Template_.
 
-![](/uploads/2018/01/54.png)
+{{% pretty_screenshot img="/uploads/2019/04/create-fmt-from-page-modal.png" %}}
 
-In the modal that opens, click _Create Template_. This will create the new template and redirect you to the Front Matter Template editor.
+In the modal that opens, enter a name for the template and click _Create Template_. This will create the new template and redirect you to the Front Matter Template editor.
 
-{{% tip %}}
-When creating an FMT from an existing page, the FMT will be named after the page. Make sure you rename it if that's not the name you desire!
-{{% /tip %}}
+{{% pretty_screenshot img="/uploads/2019/04/create-fmt-from-document.png" %}}
 
 Alternatively, you can create a Front Matter Template from an existing page by navigating to the _Front Matter_ page and clicking _Add Template_. Then, select *Create based on existing document* from the modal that appears.
 
@@ -155,13 +153,14 @@ FMTs follow a "no-modification" rule. When applying an FMT to content, Forestry 
 
 ### Applying to Pages
 
-![](/uploads/2018/01/14-settings-button.png)
+{{% pretty_screenshot img="/uploads/2019/04/change-fmt.png" %}}
+
 
 To apply an FMT to an individual page, navigate to the page you want to apply the FMT to and click the _Settings_ button, and then select _Change Template._
 
-![](/uploads/2018/01/38.png)
+{{% pretty_screenshot img="/uploads/2019/04/change-fmt-modal.png" %}}
 
-In the modal that opens, select the FMT you wish to apply to the page from the dropdown, and then click _close_.
+In the modal that opens, select the FMT you wish to apply to the page from the dropdown, and then click _Change_.
 
 ### Applying to Content Types
 
