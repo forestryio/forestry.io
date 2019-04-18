@@ -15,7 +15,7 @@ menu:
     weight: 8
 
 ---
-In Jekyll, project structure and naming is very important. The way you structure and name your project directly effects the organization of your built static site.
+In Jekyll, project structure and naming is very important. The way you structure and name your project directly affects the organization of your built static site.
 
 For example, a Jekyll site may look like this:
 
