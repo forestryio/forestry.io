@@ -44,4 +44,4 @@ Installation generally has three steps:
 ## Further Reading
 
 * [Jekyll Plugins Reference](https://jekyllrb.com/docs/plugins/)
-* [Bundler Gemfile Reference](http://bundler.io/v1.13/gemfile.html)
+* [Bundler Gemfile Reference](https://bundler.io/v1.13/gemfile.html)

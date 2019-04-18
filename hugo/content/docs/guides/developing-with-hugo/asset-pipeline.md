@@ -20,7 +20,7 @@ Hugo supports pre-procesing CSS files via SCSS, and post-processing via PostCSS.
 
 Using Hugo's asset pipeline, you can use Sass, SCSS, and PostCSS. You can also bundle and minify assets.
 
-[Hugo docs: Pipes](https://gohugo.io/hugo-pipes/)
+[Hugo docs: Pipes](https://gohugo.io/hugo-pipes/introduction/)
 
 
 ## Best Practises for Gulp, Grunt, and Other Build Tools

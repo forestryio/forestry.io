@@ -37,4 +37,4 @@ In order to use external build like Gulp, Grunt, or Webpack with Forestry's [pre
 [2]: /docs/hosting/
 
 ## Further Reading
-- [Jekyll Assets Reference](http://jekyllrb.com/docs/assets/)
+- [Jekyll Assets Reference](https://jekyllrb.com/docs/assets/)

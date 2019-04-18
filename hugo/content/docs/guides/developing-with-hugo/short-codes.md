@@ -38,4 +38,4 @@ For a full list of these short codes and how to use them, see the references bel
 Hugo also allows you to build your own short codes. See the Hugo short code documentation in the references below.
 
 ## Further Reading
-- [Hugo Short Code Reference](https://gohugo.io/extras/shortcodes/)
+- [Hugo Short Code Reference](https://gohugo.io/content-management/shortcodes/)
