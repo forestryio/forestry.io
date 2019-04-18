@@ -7,17 +7,23 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 
 ---
-## Options
-![](/uploads/2018/01/sortable-list-options.png)
 
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Text/Select* – toggles the sortable list to allow text input, or to restrict options to a [select field](/docs/settings/fields/select)
-
-## Field UI
 ![](/uploads/2018/01/sortable-list-preview.png)
+
+A list of values with drag & drop reordering.
+
+## Options
+
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Widget**
+  - _Text/Select_ &mdash; toggles the sortable list to allow text input, or to restrict options to a [select field](/docs/settings/fields/select)
+- **Validation**
+  - _Minimum_ &mdash; the lowest number of items that must be added to this field.
+  - _Maximum_ &mdash; the highest number of items that can be added to this field.
 
 ## Templating
 You can access this field in your templates using the field’s `name`:

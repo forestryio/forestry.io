@@ -7,21 +7,25 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
 
 ---
+![](/uploads/2018/01/textarea-preview.png)
+
 ## Options
 
-![](/uploads/2018/01/textarea-options.png)
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Widget**
+  - _Textarea/WYSIWYG_ &mdash; toggle rich-text editing. [See WYSIWYG mode](/docs/settings/fields/textarea/#wysiwyg)
+- **Validation**
+  - _Required_ &mdash; prevent changes from being saved if this field is empty.
+- **Default** &mdash; supply default text.
 
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Required_ – prevent changes from being saved if this field is empty.
-* _WYSIWYG_ – toggle on rich-text editing. [See WYSIWYG mode](/docs/settings/fields/textarea/#WYSIWYG)
-* _File Format_ – determines exported format. `Markdown` for Markdown, `HTML` for HTML, and `Inline HTML` for only inline HTML elements.
 
-## Field UI
-
-![](/uploads/2018/01/textarea-preview.png)
+<!-- 
+_File Format_ – determines exported format. `Markdown` for Markdown, `HTML` for HTML, and `Inline HTML` for only inline HTML elements.
+-->
 
 ## Templating
 

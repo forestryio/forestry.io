@@ -5,22 +5,23 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2018-05-29 00:00:00 -0400
 ---
 
+{{% pretty_screenshot img="/uploads/2018/05/colorpicker-field-ui.png" %}}
+
 The color picker provides an interface for selecting a color and storing the RGB or hex value.
 
 ## Options
 
-![Color picker field options](/uploads/2018/05/colorpicker-field-options.png)
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Format**
+  - _Color Format_ &mdash; Whether to save the RGB or hex value of the selected color.
+- **Validation**
+  - _Required_ – prevent changes from being saved if this field is empty.
+- **Default** &mdash; supply a default color value.
 
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Required_ – prevent changes from being saved if this field is empty.
-* _Color Format_ – Whether to save the RGB or hex value of the selected color.
-
-## Field UI
-
-![Color picker field UI](/uploads/2018/05/colorpicker-field-ui.png)
 
 ## Templating
 

@@ -5,22 +5,26 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 
 ---
+
+![](/uploads/2018/01/number-preview.png)
+
 Text input that only accepts numeric values.
 
 ## Options
-![](/uploads/2018/01/number-options.png)
 
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Minimum_ – the lowest number that may be entered in the field.
-* _Maximum_ – the highest number that may be entered in the field.
-* _Step_ – limits the field to only allow certain increments to be entered into the field.
-* _Required_ – prevent changes from being saved if this field is empty.
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Validation**
+  - _Required_ &mdash; prevent changes from being saved if this field is empty.
+  - _Minimum_ &mdash; the lowest number that may be entered in the field.
+  - _Maximum_ &mdash; the highest number that may be entered in the field.
+  - _Step_ &mdash; limits the field to only allow certain increments to be entered into the field.
+- **Default** &mdash; supply a default number.
 
-## Field UI
-![](/uploads/2018/01/number-preview.png)
+
 
 ## Templating
 You can access this field in your templates using the field’s `name`:

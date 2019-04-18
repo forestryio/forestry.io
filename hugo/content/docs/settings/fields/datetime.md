@@ -7,24 +7,26 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 
 ---
+
+![](/uploads/2018/01/datetime-preview.png)
+
 A date and time picker.
 
 ## Options
 
-![](/uploads/2018/05/date-field-ui.png)
-
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Date Format_ – how the date should be displayed in the editor.
-* _Time Format_ – how the time should be displayed in the editor.
-* _Display UTC_ – activating this option will display the date in UTC regardless of user's locale settings.
-* _Required_ – prevent changes from being saved if this field is empty.
-
-## Field UI
-
-![](/uploads/2018/01/datetime-preview.png)
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Format**
+  - _Date Format_ &mdash; how the date should be displayed in the editor.
+  - _Time Format_ &mdash; how the time should be displayed in the editor.
+  - _Display UTC_ &mdash; activating this option will display the date in UTC regardless of user's locale settings.
+- **Validation**
+  - _Required_ &mdash; prevent changes from being saved if this field is empty.
+- **Default** &mdash; supply a default datetime.
+  - _Use 'Now' As Default_ &mdash; Apply the current date and time as the value for new documents.
 
 ## Templating
 
