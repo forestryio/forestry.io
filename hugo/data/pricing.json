@@ -114,10 +114,6 @@
           "info": "Your team will have direct access to our engineers in a dedicated Slack channel"
         },
         {
-          "text": "Audit logs",
-          "info": "A ledger of the actions performed by users in your organization"
-        },
-        {
           "text": "Enterprise-level SLAs"
         },
         {
