@@ -18,6 +18,7 @@ date: 2017-12-31 04:00:00 +0000
   - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 - **Widget**
   - _Textarea/WYSIWYG_ &mdash; toggle rich-text editing. [See WYSIWYG mode](/docs/settings/fields/textarea/#wysiwyg)
+  - _Format_ &mdash; the format that should be used when writing the content to the file.
 - **Validation**
   - _Required_ &mdash; prevent changes from being saved if this field is empty.
 - **Default** &mdash; supply default text.

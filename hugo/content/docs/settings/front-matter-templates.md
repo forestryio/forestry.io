@@ -63,7 +63,7 @@ To create a Front Matter Template from scratch, navigate to the _Front Matter_ p
 Enter a name for your new FMT, and then select the layout you want to use.
 
 - Select **Fields and big content area** if your pages will contain Front Matter combined with markdown content. This is what you'll want to use most of the time.
-- Select **Fields** if your pages will be composed exclusively of Front Matter (such as if you are building a page using [Blocks](/docs/settings/fields/blocks/)) and you don't want a markdown editor for your pages.
+- Select **Fields** if your pages will be composed exclusively of Front Matter (such as if you are building a page using [Blocks](/docs/settings/fields/blocks/), or using this template for non-markdown data such as JSON or YAML files) and you don't want a markdown editor for your pages.
 
 Click **Create Template** to begin adding fields.
 
@@ -133,7 +133,7 @@ From here, you can change the name of the FMT, switch the layout, delete the FMT
 
 ### Display Field
 
-After you've added some fields to your FMT, you can assign one field to act as the **Display Field**. This field is used when displaying the list of blocks created with a [Blocks](/docs/settings/fields/blocks) field type.
+After you've added some fields to your FMT, you can assign one field to act as the **Display Field**. This field is used when displaying the page in the page listing, and is also used in the list of blocks created with a [Blocks](/docs/settings/fields/blocks) field type.
 
 {{% pretty_screenshot img="/uploads/2018/08/block_labels.png" caption="Example of a block listing" %}}
 
