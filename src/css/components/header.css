@@ -24,7 +24,7 @@ $header-height: 5rem;
 
     .logo {
       backface-visibility: hidden;
-      background-image: url(../img/forestry-full.svg);
+      background-image: url(../img/forestry-pos-full.svg);
       background-position: left center;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -42,7 +42,7 @@ $header-height: 5rem;
     @media screen and (max-width: 700px) {
       width: 1.5rem;
       .logo {
-        background-image: url(../img/forestry-symbol.svg);
+        background-image: url(../img/forestry-pos-symbol.svg);
       }
     }
   }
@@ -318,7 +318,7 @@ $header-height: 5rem;
 
 .mini-nav--logo {
   backface-visibility: hidden;
-  background-image: url(../img/forestry-full.svg);
+  background-image: url(../img/forestry-pos-full.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
