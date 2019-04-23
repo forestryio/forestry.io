@@ -5,23 +5,24 @@ expirydate: 2030-01-01 00:00:00 +0000
 date: 2018-04-23 00:00:00 +0000
 ---
 
+{{% pretty_screenshot img="/uploads/2018/04/blocks-content-ui.png" %}}
+
 The **Blocks** field type is a repeatable array of field groups. Unlike the [Repeatable Field Group](/docs/settings/fields/repeatable-field-group), however, the field groups within a Blocks field do not all have to be the same.
 
+When a user adds a block, they first select which type of block they wish to add. Blocks can be reordered in the UI by dragging and dropping.
+
 ## Options
-![Blocks field options](/uploads/2018/04/blocks-field-ui.png)
 
-- *Label* &mdash; the human-friendly label shown above the input field in the editor
-- *Name* &mdash; the key stored in your content's front matter, used to access it in your templates
-- *Description* &mdash; a human-friendly description of what the field does and/or instructions for your editors
-- *Hidden* &mdash; hides the field in the editor; but allows developers to set default values or maintain the field for legacy purposes.
-- *Templates* &mdash; select one or more [Front Matter Templates](/docs/settings/front-matter-templates/) that can be added to the Blocks field.
-
-## Field UI
-![Blocks content interface](/uploads/2018/04/blocks-content-ui.png)
-
-Before adding a block, the user selects which type of block they wish to add.
-
-Blocks can be reordered in the UI by dragging and dropping.
+- **General**
+  - *Label* &mdash; the human-friendly label shown above the input field in the editor
+  - *Name* &mdash; the key stored in your content's front matter, used to access it in your templates
+  - *Description* &mdash; a human-friendly description of what the field does and/or instructions for your editors
+  - *Hidden* &mdash; hides the field in the editor; but allows developers to set default values or maintain the field for legacy purposes.
+- **Blocks**
+  - *Templates* &mdash; select one or more [Front Matter Templates](/docs/settings/front-matter-templates/) that can be added to the Blocks field.
+- **Validation**
+  - *Minimum* &mdash; The minimum number of blocks that must be added to the field.
+  - *Maxiumum* &mdash; The maximum number of blocks allowed for the field.
 
 ## Templating
 

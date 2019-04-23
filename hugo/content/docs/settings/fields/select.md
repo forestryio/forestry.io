@@ -9,18 +9,21 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 
 ---
-## Options
-![](/uploads/2018/01/select-custom-options.png)
 
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Required_ – prevent changes from being saved if this field is empty.
-* _Source Type_  – where to source options from. Can be [Custom](/docs/settings/fields/select#custom-source), [Pages](/docs/settings/fields/select#pages-source), or [Document Fields](/docs/settings/fields/select#data-source).
-
-## Field UI
 ![](/uploads/2018/01/select-preview.png)
+
+## Options
+
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Options** &mdash; populate the options for the dropdown. Can be [Custom](/docs/settings/fields/select#custom-source), [Document Reference](/docs/settings/fields/select#document-reference-source), or [Document Fields](/docs/settings/fields/select#data-source)
+- **Validation**
+  - _Required_ – prevent changes from being saved if this field is empty.
+- **Default** &mdash; supply a default option.
+
 
 ## Custom Source
 Allows developers to provide options in the Front Matter Template.
@@ -69,7 +72,7 @@ config:
         - "Jordan Patterson"
 ```
 
-## Pages Source
+## Document Reference Source
 Allows developers to source options from all pages, or a specific collection.
 
 The field will store the relative path to the source file in your front matter.

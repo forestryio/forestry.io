@@ -7,20 +7,19 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
 
 ---
+
+![](/uploads/2018/01/toggle-preview.png)
+
 A boolean toggle.
 
 ## Options
 
-![](/uploads/2018/01/toggle-options.png)
-
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-
-## Field UI
-
-![](/uploads/2018/01/toggle-preview.png)
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Default** &mdash; set the default toggle state.
 
 ## Templating
 
