@@ -1,13 +1,12 @@
 ---
 authors:
 - team forestry
-title: Changelog 2019/04/23
+title: 2019/04/23 Changelog
 date: 2019-04-23 04:00:00 -0300
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
-draft: true
 
 ---
 ## Enhancements
