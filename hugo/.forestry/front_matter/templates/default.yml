@@ -140,8 +140,8 @@ fields:
   name: menu
   label: menu
 pages:
-- hugo/content/blog/gulp-and-webpack-best-of-both-worlds.md
 - hugo/content/careers/developer-evangelist-1.md
+- hugo/content/blog/gulp-and-webpack-best-of-both-worlds.md
 - hugo/content/careers/_index.md
 - hugo/content/blog/versioning-large-files-with-git-lfs.md
 - hugo/content/blog/what-are-instant-previews.md

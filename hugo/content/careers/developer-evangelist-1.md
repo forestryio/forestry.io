@@ -1,7 +1,7 @@
 ---
 title: UX Designer/Developer
 description: ''
-date: 2019-04-13 00:00:00 -0300
+date: 2019-04-13 03:00:00 +0000
 authors:
 - Scott Gallant
 publishdate: 2019-04-03 03:00:00 +0000
@@ -34,7 +34,7 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 * Create prototypes for testing of designs (Figma, Invision, etc)
 * Build and maintain components in our design system (CSS)
 * Participate in design reviews and user testing sessions
-* Collaborate with team during ideation and scoping sessions 
+* Collaborate with the development team during project ideation, scoping & development
 
 ### We believe a successful candidate will have:
 
@@ -42,7 +42,7 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 * Enthusiasm and passion for the web and web development
 * Strong CSS skills
 * Experience with visual design software such as Sketch, Invision, Figma, etc.
-* A strong sense of usability and user-friendly design 
+* A strong sense of usability and user-friendly design
 * Experience in Web development, including:
   * Legacy CMSs (sorry) such as WordPress, Drupal, etc
   * JAMstack:
