@@ -22,7 +22,7 @@ photo_credit: ''
 menu: []
 
 ---
-At Forestry we’re _helping people build a better web_. Our Developer Evangelist’s mission is to spread the word among developers about how Forestry and modern JAMstack development can help us achieve this.
+At Forestry we’re _helping people build a better web_. Our **Developer Evangelist’s** mission is to spread the word among developers about how Forestry and modern JAMstack development can help us achieve this. If you love the JAMstack, keep up with modern development practices and are involved in the web development community, this could be the perfect role for you.
 
 This is a **remote** role, but preference may be given to candidates located in major North American cities in order to simplify travel.
 
