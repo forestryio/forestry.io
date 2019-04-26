@@ -27,7 +27,7 @@ At Forestry we’re _helping people build a better web_. Our **Technical Support
 This is a key role at Forestry. We want to improve how we do support and the quality of support we provide. You’ll be on the front lines working with our users and ensuring their success. There is a lot of room for the person in this role to grow and have a major impact at Forestry.
 
 This is a **remote** role.
-<!-- more -->
+<!--more-->
 
 ### What You'll Do
 
