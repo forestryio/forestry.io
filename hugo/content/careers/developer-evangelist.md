@@ -39,7 +39,7 @@ This is a **remote** role, but preference may be given to candidates located in 
 * Work with the product team to help guide the design of new features
 * Create technical docs or assist with the writing of technical docs
 
-### We believe a successful candidate will have:
+### To Be Successful In This Role, You'll Need
 
 * Strong written and spoken communication skills
 * Willingness to travel and speak publicly (see intro paragraph if you’re not yet comfortable speaking publicly)

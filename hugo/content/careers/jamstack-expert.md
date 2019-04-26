@@ -34,7 +34,7 @@ This is a **remote** role, but preference may be given to candidates located in 
 * Document all information regarding training webinars, client communication and recommendations to clients
 * Build customer relationships and become a trusted resource to our clients
 
-### We believe a successful candidate will have:
+### To Be Successful In This Role, You'll Need
 
 * Strong written and spoken communication skills
 * A passion for helping others succeed

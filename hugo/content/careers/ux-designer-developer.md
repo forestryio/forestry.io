@@ -34,7 +34,7 @@ This is a **remote** role.
 * Participate in design reviews and user testing sessions
 * Collaborate with the development team during project ideation, scoping & development
 
-### We believe a successful candidate will have:
+### To Be Successful In This Role, You'll Need
 
 * Strong written and spoken communication skills
 * Enthusiasm and passion for the web and web development
@@ -44,7 +44,7 @@ This is a **remote** role.
 * Experience in Web development, including:
   * Legacy CMSs (sorry) such as WordPress, Drupal, etc
   * JAMstack:
-    * Site generators such as Gatsby, Hugo, etc
+    * Static site generators such as Gatsby, Hugo, etc
   * Git
 * Understanding of and experience with design systems
 

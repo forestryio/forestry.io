@@ -35,11 +35,11 @@ This is a **remote** role.
 * Help ensure the quality of our product by helping with testing, software documentation and providing suggestions for improvements.
 * Use your creativity and resourcefulness to improve how we do support. This may include writing FAQs, setting up bots, making the most of our tools, etc.
 
-### We Believe a Successful Candidate Will
+### To Be Successful In This Role, You'll Need
 
-* Have top-notch communication skills. You're patient. You can keep your cool when things get stressful. You're a great writer.
-* Be a "people person". You're helpful, positive and empathetic. You're not the type of person to get easily frustrated by others and you don't take things personally.
-* Be pretty technical, but maybe not a full on programmer. You’ve probably done some web development, maintained websites and can understand its nuances (how to set up hosting, buy a domain name, etc). Bonus points for familiarity with the JAMstack, static site generators or Git.
+* Top-notch communication skills. You're patient. You can keep your cool when things get stressful. You're a great writer.
+* To be helpful, positive and empathetic. You're not the type of person to get easily frustrated by others and you don't take things personally.
+* Technical skills -but maybe not a full-on programmer. You’ve probably done some web development, maintained websites and can understand its nuances (how to set up hosting, buy a domain name, etc). Bonus points for familiarity with the JAMstack, static site generators or Git.
 
 ***
 
