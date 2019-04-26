@@ -22,7 +22,7 @@ photo_credit: ''
 menu: []
 
 ---
-At Forestry we’re _helping people build a better web_. Our **UX Designer/Developer's** mission is to design and build interfaces and features that delight our users.
+At Forestry we’re _helping people build a better web_. Our **UX Designer/Developer's** mission is to design and build interfaces and features that delight our users. If you obsess over design and user experience, this could be the perfect role for you.
 
 This is a **remote** role.
 
