@@ -17,26 +17,32 @@ The **manual setup** option can be used to set up your project without having to
 
 ## Using Manual Setup
 
-To perform manual setup of a project, disabled the "Quick Setup via OAuth" toggle on the **Select your git provider** screen.
+{{% pretty_screenshot img="/uploads/2019/04/add-site-disable-quick-setup.png" %}}
+
+To perform manual setup of a project, disable the "Quick Setup via OAuth" toggle on the **Select your git provider** screen.
 
 Before you can continue, you must still select the git provider you are using. This is necessary so Forestry can correctly interpret webhook payloads and other communication from the provider.
 
 ## Setting the Repo Location
 
-![](/uploads/2018/08/manual-init.png)
+{{% pretty_screenshot img="/uploads/2019/04/add-site-manual-init.png" %}}
 
-After you click **Next**, you will be prompted to enter the repository URL, the branch you wish to import, and the [config path](/docs/quickstart/setup-site#config-path). The repository URL should be the **SSH URL**, not the HTTPS URL.
+After you click **Next**, you will be prompted to enter the repository URL and the branch you wish to import. The repository URL should be the **SSH URL** used for cloning the project, not the HTTPS URL.
 
 ## Completing the Connection
 
 After you enter your repo information and click **Next**, you will be taken to the **repository settings** screen on your site dashboard. This screen will give you access to the information that needs to be added to your git provider's settings.
 
-![](/uploads/2018/08/ssh-settings.png)
+{{% pretty_screenshot img="/uploads/2018/08/ssh-settings.png"%}}
+
+---
 
 ## Webhook URL
 
 This URL needs to be added as a webhook that reacts to **push** events on your repository.
 
+{{% code_tabs %}}
+{{% tab "Github" %}}
 ### Add Webhook to Github
 
 The webhooks for your repo can be accessed at `https://github.com/$USERNAME/$REPOSITORY/settings/hooks`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
@@ -45,17 +51,43 @@ Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**
 
 Click the **Add webhook** button to complete the webhook setup.
 
+{{% /tab %}}
+{{% tab "GitLab" %}}
+
 ### Add Webhook to GitLab
 
 To add a webhook to your GitLab repository, navigate to `https://gitlab.com/$USERNAME/$REPOSITORY/settings/integrations`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
 Enter the webhook URL provided by Forestry in the **URL** field, and leave the **Secret Token** field empty. Under **Trigger**, ensure that the box labeled **Push events** is checked.
 
+{{% /tab %}}
+{{% tab "Bitbucket" %}}
+
 ### Add Webhook to Bitbucket
 
 To add a webhook to your Bitbucket repository, navigate to `https://bitbucket.org/$USERNAME/$REPOSITORY/admin/addon/admin/bitbucket-webhooks/bb-webhooks-repo-admin`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
 Click the **Add webhook** button to add a new webhook, and insert the webhook URL provided by Forestry in the **URL** field. Under **Triggers**, select **Repository push** and hit the **Save** button.
+
+{{% /tab %}}
+{{% tab "Azure DevOps" %}}
+
+### Add Webhook to Azure DevOps
+
+To add a webhook to your Azure DevOps Repository, navigate to `https://dev.azure.com/$ORGANIZATION/$PROJECT/_settings/serviceHooks`, substituting `$ORGANIZATION` and `$PROJECT` for the name of the Azure DevOps organization and project you want to add hooks for. This will take you to the Service Hooks area of the project settings.
+
+{{% pretty_screenshot img="/uploads/2019/04/az-add-webhook.png" %}}
+
+Click on **Create Subscription**, select **Web Hooks** from the available services, and then click **Next.**
+
+Here you will configure the type of webhook to send. Select **Code pushed** for the trigger, and select the appropriate repository and branch
+
+
+
+{{% /tab %}}
+{{% /code_tabs %}}
+
+---
 
 ## Public Key
 
@@ -67,13 +99,20 @@ The following GitHub and GitLab instructions will add a **deploy key** to your s
 More info: [Using Private Submodules With Forestry](/docs/troubleshooting/using-private-submodules/)
 {{% /tip %}}
 
-### Add Public Key to GitHub
 
-To add a new key to your GitHub repo, navigate to `https://github.com/$USERNAME/$REPOSITORY/settings/keys`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
+{{% code_tabs %}}
+{{% tab "Github" %}}
+
+### Add Public Key to Github
+
+To add a new key to your Github repo, navigate to `https://github.com/$USERNAME/$REPOSITORY/settings/keys`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
 
 Click the **Add deploy key** button. Enter whatever you want for the **Title**: this will help you identify what the key is for. Under **Key**, paste the private key provided by Forestry.
 
 Be sure to check the **Allow write access** box before clicking **Add key** to add this key to your repository.
+
+{{% /tab %}}
+{{% tab "GitLab" %}}
 
 ### Add Public Key to GitLab
 
@@ -83,11 +122,22 @@ Youy may add a label for this deploy key in the **Title** field to identify what
 
 Make sure to check the **Write access allowed** box before clicking the **Add key** button to add this key to your repository.
 
+{{% /tab %}}
+{{% tab "Bitbucket" %}}
+
 ### Add Public Key to Bitbucket
 
 To add a new key to your Bitbucket repo, navigate to `https://bitbucket.org/account/user/$USERNAME/ssh-keys/`, where `$USERNAME` is your Bitbucket username.
 
 Click **Add key** to add a new key. You can use the **Label** field to add an identifier for this key so you will know what it's being used for later on. In the **Key** field, paste in the public key provided by Forestry. Click the **Add key** button to save this key.
+
+{{% /tab %}}
+{{% tab "Azure DevOps" %}}
+
+### Add Public Key to Azure DevOps
+
+{{% /tab %}}
+{{% /code_tabs %}}
 
 ### Generating a New Keypair
 
