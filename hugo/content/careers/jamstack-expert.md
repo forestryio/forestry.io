@@ -24,7 +24,7 @@ At Forestry we’re _helping people build a better web_. Our **JAMstack Expert�
 
 This is a **remote** role, but preference may be given to candidates located in major North American cities in order to simplify travel.
 
-### Responsibilities
+### What You'll Do
 
 * Work with our corporate clients to help them achieve success with the JAMstack
   * Act as an advisor when they’re choosing tools such as static site generators, continuous integration solutions, hosting providers, etc

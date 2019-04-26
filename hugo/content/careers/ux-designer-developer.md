@@ -22,11 +22,11 @@ photo_credit: ''
 menu: []
 
 ---
-At Forestry we’re _helping people build a better web_. As a UX Designer, your mission is to design and build interfaces and features that will delight our users.
+At Forestry we’re _helping people build a better web_. As a **UX Designer/Developer**, your mission is to design and build interfaces and features that will delight our users.
 
 This is a **remote** role.
 
-### Responsibilities
+### What You'll Do
 
 * Wireframe and/or mock up designs for new features and improvements to existing features
 * Create prototypes for testing of designs (Figma, Invision, etc)

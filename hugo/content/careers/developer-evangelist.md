@@ -26,7 +26,7 @@ At Forestry we’re _helping people build a better web_. Our Developer Evangelis
 
 This is a **remote** role, but preference may be given to candidates located in major North American cities in order to simplify travel.
 
-### Responsibilities
+### What You'll Do
 
 * Teach people about Forestry.io and modern web development by:
   * Speaking at events

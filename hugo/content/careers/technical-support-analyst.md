@@ -28,7 +28,7 @@ This is a key role at Forestry. We want to improve how we do support and the qua
 
 This is a **remote** role.
 
-### Responsibilities
+### What You'll Do
 
 * Help our users (primarily via Slack & Intercom) by solving problems, providing workarounds to issues and helping them get setup with our software.
 * Communicate internally with our development and product teams, reporting the issues and concerns of our users.
