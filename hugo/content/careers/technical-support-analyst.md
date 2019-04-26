@@ -24,7 +24,7 @@ menu: []
 ---
 At Forestry we’re _helping people build a better web_. Our Technical Support Analyst’s mission is to help our users have a successful experience using Forestry. If you’ve got a great blend of technical and people skills, love web development and helping people, this could be the perfect role for you.
 
-This is a key role at Forestry as we’re growing and looking to, not only, do support, but improve how we do support. You’ll be on the front lines working with our users and ensuring their success. You’ll also be There is a lot of room for the person in this role to grow and have a major impact at Forestry.
+This is a key role at Forestry. We want to improve how we do support and the quality of support we provide. You’ll be on the front lines working with our users and ensuring their success. There is a lot of room for the person in this role to grow and have a major impact at Forestry.
 
 We are prioritizing candidates from groups that are underrepresented in the software industry.
 
