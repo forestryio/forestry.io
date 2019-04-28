@@ -27,7 +27,7 @@ Before you can continue, you must still select the git provider you are using. T
 
 {{% pretty_screenshot img="/uploads/2019/04/add-site-manual-init.png" %}}
 
-After you click **Next**, you will be prompted to enter the repository URL and the branch you wish to import. The repository URL should be the **SSH URL** used for cloning the project, not the HTTPS URL.
+After you click **Next**, you will be prompted to enter the repository URL, the branch you wish to import, and (if you are importing a Jekyll or Hugo site,) the [config path](/docs/quickstart/setup-site#config-path). The repository URL should be the **SSH URL**, not the HTTPS URL.
 
 ## Completing the Connection
 
@@ -37,65 +37,13 @@ After you enter your repo information and click **Next**, you will be taken to t
 
 ---
 
-## Webhook URL
-
-This URL needs to be added as a webhook that reacts to **push** events on your repository.
-
-{{% code_tabs %}}
-{{% tab "Github" %}}
-### Add Webhook to Github
-
-The webhooks for your repo can be accessed at `https://github.com/$USERNAME/$REPOSITORY/settings/hooks`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
-
-Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**. Set the **Content type** to `application/json`, and select **Just the `push` event** where it asks you which events should trigger this webhook.
-
-Click the **Add webhook** button to complete the webhook setup.
-
-{{% /tab %}}
-{{% tab "GitLab" %}}
-
-### Add Webhook to GitLab
-
-To add a webhook to your GitLab repository, navigate to `https://gitlab.com/$USERNAME/$REPOSITORY/settings/integrations`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
-
-Enter the webhook URL provided by Forestry in the **URL** field, and leave the **Secret Token** field empty. Under **Trigger**, ensure that the box labeled **Push events** is checked.
-
-{{% /tab %}}
-{{% tab "Bitbucket" %}}
-
-### Add Webhook to Bitbucket
-
-To add a webhook to your Bitbucket repository, navigate to `https://bitbucket.org/$USERNAME/$REPOSITORY/admin/addon/admin/bitbucket-webhooks/bb-webhooks-repo-admin`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
-
-Click the **Add webhook** button to add a new webhook, and insert the webhook URL provided by Forestry in the **URL** field. Under **Triggers**, select **Repository push** and hit the **Save** button.
-
-{{% /tab %}}
-{{% tab "Azure DevOps" %}}
-
-### Add Webhook to Azure DevOps
-
-To add a webhook to your Azure DevOps Repository, navigate to `https://dev.azure.com/$ORGANIZATION/$PROJECT/_settings/serviceHooks`, substituting `$ORGANIZATION` and `$PROJECT` for the name of the Azure DevOps organization and project you want to add hooks for. This will take you to the Service Hooks area of the project settings.
-
-{{% pretty_screenshot img="/uploads/2019/04/az-add-webhook.png" %}}
-
-Click on **Create Subscription**, select **Web Hooks** from the available services, and then click **Next.**
-
-Here you will configure the type of webhook to send. Select **Code pushed** for the trigger, and select the appropriate repository and branch
-
-
-
-{{% /tab %}}
-{{% /code_tabs %}}
-
----
-
 ## Public Key
 
 Forestry generates a keypair that will allow it to authenticate with your repository and push/pull commits. In order to do this, you need to add the **public key** provided by Forestry to the repository.
 
 {{% tip %}}
 The following GitHub and GitLab instructions will add a **deploy key** to your site's repository, which will give Forestry access to read from and write to the project. If your site requires additional private dependencies, you will instead want to add an SSH key to your user account in order to provide Forestry access to the private submodules.
-
+<br /><br />
 More info: [Using Private Submodules With Forestry](/docs/troubleshooting/using-private-submodules/)
 {{% /tip %}}
 
@@ -136,6 +84,8 @@ Click **Add key** to add a new key. You can use the **Label** field to add an id
 
 ### Add Public Key to Azure DevOps
 
+{{% markdownpartial "docs/manual-setup/azure-devops-publickey.md" %}}
+
 {{% /tab %}}
 {{% /code_tabs %}}
 
@@ -146,3 +96,47 @@ If you need to generate a new keypair, click the **Generate new key** button. Yo
 {{% warning %}}
 Generating a new keypair will **invalidate** your original keys. The connection to your source provider will not work until you add the new public key.
 {{% /warning %}}
+
+---
+
+## Webhook URL
+
+This URL needs to be added as a webhook that reacts to **push** events on your repository.
+
+{{% code_tabs %}}
+{{% tab "Github" %}}
+### Add Webhook to Github
+
+The webhooks for your repo can be accessed at `https://github.com/$USERNAME/$REPOSITORY/settings/hooks`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
+
+Click on **Add Webhook** and enter Forestry's webhook URL as the **Payload URL**. Set the **Content type** to `application/json`, and select **Just the `push` event** where it asks you which events should trigger this webhook.
+
+Click the **Add webhook** button to complete the webhook setup.
+
+{{% /tab %}}
+{{% tab "GitLab" %}}
+
+### Add Webhook to GitLab
+
+To add a webhook to your GitLab repository, navigate to `https://gitlab.com/$USERNAME/$REPOSITORY/settings/integrations`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
+
+Enter the webhook URL provided by Forestry in the **URL** field, and leave the **Secret Token** field empty. Under **Trigger**, ensure that the box labeled **Push events** is checked.
+
+{{% /tab %}}
+{{% tab "Bitbucket" %}}
+
+### Add Webhook to Bitbucket
+
+To add a webhook to your Bitbucket repository, navigate to `https://bitbucket.org/$USERNAME/$REPOSITORY/admin/addon/admin/bitbucket-webhooks/bb-webhooks-repo-admin`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
+
+Click the **Add webhook** button to add a new webhook, and insert the webhook URL provided by Forestry in the **URL** field. Under **Triggers**, select **Repository push** and hit the **Save** button.
+
+{{% /tab %}}
+{{% tab "Azure DevOps" %}}
+
+### Add Webhook to Azure DevOps
+
+{{% markdownpartial "docs/manual-setup/azure-devops-webhook.md" %}}
+
+{{% /tab %}}
+{{% /code_tabs %}}
