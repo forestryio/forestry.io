@@ -66,9 +66,7 @@ Make sure to check the **Write access allowed** box before clicking the **Add ke
 
 ### Add Public Key to Bitbucket
 
-To add a new key to your Bitbucket repo, navigate to `https://bitbucket.org/account/user/$USERNAME/ssh-keys/`, where `$USERNAME` is your Bitbucket username.
-
-Click **Add key** to add a new key. You can use the **Label** field to add an identifier for this key so you will know what it's being used for later on. In the **Key** field, paste in the public key provided by Forestry. Click the **Add key** button to save this key.
+{{% markdownpartial "docs/manual-setup/bitbucket-publickey.md" %}}
 
 {{% /tab %}}
 {{% tab "Azure DevOps" %}}
@@ -118,9 +116,7 @@ Enter the webhook URL provided by Forestry in the **URL** field, and leave the *
 
 ### Add Webhook to Bitbucket
 
-To add a webhook to your Bitbucket repository, navigate to `https://bitbucket.org/$USERNAME/$REPOSITORY/admin/addon/admin/bitbucket-webhooks/bb-webhooks-repo-admin`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
-
-Click the **Add webhook** button to add a new webhook, and insert the webhook URL provided by Forestry in the **URL** field. Under **Triggers**, select **Repository push** and hit the **Save** button.
+{{% markdownpartial "docs/manual-setup/bitbucket-webhook.md" %}}
 
 {{% /tab %}}
 {{% tab "Azure DevOps" %}}

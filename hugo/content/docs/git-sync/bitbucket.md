@@ -19,5 +19,22 @@ This guide assumes you already have an existing [Bitbucket account](https://bitb
 
 Forestry allows you to import your static site through Bitbucket repositories. This allows Forestry to sync any changes made by editors in Forestry to be comitted back to Bitbucket. This also allows developers to work on your website on their local machine, and have all changes by synced back to Forestry.
 
-## Importing from BitBucket
+Currently, in order to use Bitbucket as a source provider, you must use [Manual Setup](/docs/git-sync/manual-setup) to set up the repository connection.
+
+## Getting Started
+
+To set up a site whose code is hosted on Bitbucket, click the **Add Site** button on your dashboard, and select **Bitbucket** as a source provider. You will notice that the **Quick Setup via OAuth** toggle automatically switches off, because Quick Setup is not available for Bitbucket repos.
+
+{{% markdownpartial "docs/manual-setup/addsite-and-settings.md" %}}
+
+## Setting the Public Key
+
+{{% markdownpartial "docs/manual-setup/bitbucket-publickey.md" %}}
+
+After setting up the key, navigate back to the site settings in Forestry and click **Re-import from Bitbucket**. If the key has been set up correctly, this will initiate an import of your site to Forestry.
+
+## Setting up the Webhook
+
+{{% markdownpartial "docs/manual-setup/bitbucket-webhook.md" %}}
+
 
