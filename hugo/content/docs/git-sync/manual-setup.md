@@ -3,7 +3,7 @@ title: Manual Setup
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-08-27 04:00:00 +0000
+date: 2019-04-29 00:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -17,23 +17,14 @@ The **manual setup** option can be used to set up your project without having to
 
 ## Using Manual Setup
 
+
 {{% pretty_screenshot img="/uploads/2019/04/add-site-disable-quick-setup.png" %}}
 
 To perform manual setup of a project, disable the "Quick Setup via OAuth" toggle on the **Select your git provider** screen.
 
 Before you can continue, you must still select the git provider you are using. This is necessary so Forestry can correctly interpret webhook payloads and other communication from the provider.
 
-## Setting the Repo Location
-
-{{% pretty_screenshot img="/uploads/2019/04/add-site-manual-init.png" %}}
-
-After you click **Next**, you will be prompted to enter the repository URL, the branch you wish to import, and (if you are importing a Jekyll or Hugo site,) the [config path](/docs/quickstart/setup-site#config-path). The repository URL should be the **SSH URL**, not the HTTPS URL.
-
-## Completing the Connection
-
-After you enter your repo information and click **Next**, you will be taken to the **repository settings** screen on your site dashboard. This screen will give you access to the information that needs to be added to your git provider's settings.
-
-{{% pretty_screenshot img="/uploads/2018/08/ssh-settings.png"%}}
+{{% markdownpartial "docs/manual-setup/addsite-and-settings.md" %}}
 
 ---
 
