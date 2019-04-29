@@ -20,9 +20,10 @@ A date and time picker.
   - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
   - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 - **Format**
-  - _Date Format_ &mdash; how the date should be displayed in the editor.
-  - _Time Format_ &mdash; how the time should be displayed in the editor.
+  - _Date Format_ &mdash; how the date should be displayed in the editor. To only show the time picker, leave this field blank.
+  - _Time Format_ &mdash; how the time should be displayed in the editor.  To only show the date picker, leave this field blank.
   - _Display UTC_ &mdash; activating this option will display the date in UTC regardless of user's locale settings.
+  - _Export Format_ &mdash; how the date/time should be exported to the repo.
 - **Validation**
   - _Required_ &mdash; prevent changes from being saved if this field is empty.
 - **Default** &mdash; supply a default datetime.
@@ -69,5 +70,5 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
       display_utc: false
 
 {{% tip %}}
-The `date_format` and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
+The `date_format`, `export_format`, and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
 {{% /tip %}}
