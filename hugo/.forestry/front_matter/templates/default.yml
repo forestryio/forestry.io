@@ -140,6 +140,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/developer-evangelist.md
 - hugo/content/careers/technical-support-analyst.md
 - hugo/content/careers/ux-designer-developer.md
 - hugo/content/blog/gulp-and-webpack-best-of-both-worlds.md
@@ -147,7 +148,6 @@ pages:
 - hugo/content/blog/versioning-large-files-with-git-lfs.md
 - hugo/content/blog/what-are-instant-previews.md
 - hugo/content/blog/full-speed-ahead-in-2019.md
-- hugo/content/careers/developer-evangelist.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/statyc-a-luxury-festival-for-hackers.md
 - hugo/content/careers/user-experience-ux-researcher.md
