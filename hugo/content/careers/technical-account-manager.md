@@ -1,11 +1,11 @@
 ---
-title: JAMstack Expert
+title: Technical Account Manager
 description: ''
-date: 2019-04-04 03:00:00 +0000
+date: 2019-04-04T03:00:00.000+00:00
 authors:
 - Scott Gallant
-publishdate: 2019-04-03 03:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2019-04-03T03:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 headline: ''
 textline: ''
 images: []
@@ -20,7 +20,7 @@ weight: ''
 aliases: []
 
 ---
-At Forestry we’re _helping people build a better web_. Our **JAMstack Expert’s** mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
+At Forestry we’re _helping people build a better web_. Our **Technical Account Manager’s** mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
 
 This is a **remote** role, but preference may be given to candidates located in major North American cities in order to simplify travel.
 <!--more-->
