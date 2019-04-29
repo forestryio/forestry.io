@@ -21,7 +21,6 @@ private: false
 weight: ''
 aliases: []
 menu: []
-draft: true
 
 ---
 **Azure DevOps** is a suite of code collaboration and deployment tools provided by Microsoft. Azure DevOps includes cloud hosting for git repositories, similar to Github, GitLab, and Bitbucket.
