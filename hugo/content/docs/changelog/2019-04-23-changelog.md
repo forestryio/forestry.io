@@ -7,12 +7,11 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
-draft: true
 
 ---
 ## Features
 
-* **Import Azure Devops Repositories:** Torestry is now supports importing from git repsoitories hosted on [Azure Devops](https://forestry.io/docs/git-sync/azure-devops/ "Git Sync: Azure Devops").
+* **Import Azure Devops Repositories:** Forestry is now supports importing from git repositories hosted on [Azure Devops](https://forestry.io/docs/git-sync/azure-devops/ "Git Sync: Azure Devops").
 
 ## Enhancements
 
