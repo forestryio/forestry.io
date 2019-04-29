@@ -23,7 +23,7 @@ A date and time picker.
   - _Date Format_ &mdash; how the date should be displayed in the editor.
   - _Time Format_ &mdash; how the time should be displayed in the editor.
   - _Display UTC_ &mdash; activating this option will display the date in UTC regardless of user's locale settings.
-  - _Export Format_ &mdash; how your date/time should be exported to your repo.
+  - _Export Format_ &mdash; how the date/time should be exported to the repo.
 - **Validation**
   - _Required_ &mdash; prevent changes from being saved if this field is empty.
 - **Default** &mdash; supply a default datetime.
