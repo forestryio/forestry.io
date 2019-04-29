@@ -36,7 +36,7 @@ fields:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
     required: true
-  default: 2017-12-07 04:00:00 +0000
+  default: '2017-12-07T04:00:00.000+00:00'
 - type: text
   name: headline
   label: Page Headline
@@ -72,7 +72,7 @@ fields:
   config:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
-  default: 2030-01-01 04:00:00 +0000
+  default: '2030-01-01T04:00:00.000+00:00'
 - type: field_group
   label: Footer Call To Action
   name: cta
@@ -129,5 +129,5 @@ fields:
   default: single
   hidden: true
 pages:
-- hugo/content/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available.md
 - hugo/content/docs/settings/snippets.md
+- hugo/content/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available.md
