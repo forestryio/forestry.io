@@ -140,6 +140,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/use-forestry-with-azure-devops-repos.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
 - hugo/content/blog/hugo-vs-jekyll-benchmark.md
 - hugo/content/blog/test.md
