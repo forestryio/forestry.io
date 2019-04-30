@@ -73,9 +73,6 @@ rules:
   no-undef: 2
   no-unused-vars: [2, {"args": "none"}]
 
-  # Browser compatibility
-  compat/compat: error
-
 # Global scoped method and vars
 globals:
   __dirname: true
