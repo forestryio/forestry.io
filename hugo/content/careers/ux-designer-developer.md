@@ -1,11 +1,11 @@
 ---
 title: UX Designer/Developer
 description: ''
-date: 2019-04-13 03:00:00 +0000
+date: 2019-04-13T03:00:00.000+00:00
 authors:
 - Scott Gallant
-publishdate: 2019-04-03 03:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2019-04-03T03:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 headline: ''
 textline: ''
 images: []
@@ -22,7 +22,7 @@ photo_credit: ''
 menu: []
 
 ---
-At Forestry we’re _helping people build a better web_. Our **UX Designer/Developer's** mission is to design and build interfaces and features that delight our users. If you obsess over design and user experience, this could be the perfect role for you.
+At Forestry, we’re _helping people build a better web_. Our **UX Designer/Developer's** mission is to design and build interfaces and features that delight our users. If you obsess over design and user experience, this could be the perfect role for you.
 
 This is a **remote** role.
 <!--more-->

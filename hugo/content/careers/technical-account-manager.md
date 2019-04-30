@@ -20,7 +20,7 @@ weight: ''
 aliases: []
 
 ---
-At Forestry we’re _helping people build a better web_. Our **Technical Account Manager’s** mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
+At Forestry, we’re _helping people build a better web_. Our **Technical Account Manager’s** mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
 
 This is a **remote** role, but preference may be given to candidates located in major North American cities in order to simplify travel.
 <!--more-->

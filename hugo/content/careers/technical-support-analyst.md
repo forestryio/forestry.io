@@ -1,9 +1,9 @@
 ---
 title: Technical Support Analyst
 description: ''
-date: 2019-04-26 13:51:22 -0300
-publishdate: 2019-04-26 13:51:22 -0300
-expirydate: 2030-01-01 04:00:00 +0000
+date: 2019-04-26T16:51:22.000+00:00
+publishdate: 2019-04-26T16:51:22.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 authors:
 - Forestry Team
 headline: ''
@@ -22,7 +22,7 @@ aliases: []
 menu: []
 
 ---
-At Forestry we’re _helping people build a better web_. Our **Technical Support Analyst’s** mission is to help our users have a successful experience using Forestry. If you’ve got a great blend of technical and people skills, love web development and helping people, this could be the perfect role for you.
+At Forestry, we’re _helping people build a better web_. Our **Technical Support Analyst’s** mission is to help our users have a successful experience using Forestry. If you’ve got a great blend of technical and people skills, love web development and helping people, this could be the perfect role for you.
 
 This is a key role at Forestry. We want to improve how we do support and the quality of support we provide. You’ll be on the front lines working with our users and ensuring their success. There is a lot of room for the person in this role to grow and have a major impact at Forestry.
 
