@@ -11,7 +11,7 @@ menu:
     parent: FAQs
 
 ---
-Forestry respects the configuration set in your `config` file. The variable you have to set to change the default Front Matter format is called `metaDataFormat`.
+Forestry respects the configuration set in your Hugo `config` file. The variable you have to set to change the default Front Matter format is called `metaDataFormat`.
 
 {{% code_tabs %}} {{% tab "toml" %}}
 
