@@ -26,7 +26,8 @@ import webpackConfig from "./.webpackrc.js"
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
 const generatorEnvVar = gulpConfig.generator.label.toUpperCase() + "_ENV"
-const env = (process.env[generatorEnvVar] || process.env.NODE_ENV || "development")
+const env =
+  process.env[generatorEnvVar] || process.env.NODE_ENV || "development"
 const argsType = process.env.GENERATOR_ARGS || env
 const isProduction = env === "production"
 
@@ -40,116 +41,26 @@ dotenv.config()
  * Runs SSG with environment-based
  * build arguments
  */
-gulp.task("generator", cb => build(cb))
-
-/**
- * @task build
- * Builds all static assets, and then
- * compiles the static site with Hugo
- */
-gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "generator", cb)
-})
-
-/**
- * @task preDeploy
- * Same as build, but also submits
- * search index to algolia
- */
-gulp.task("preDeploy", ["clean"], cb => {
-  runsequence("build", "algolia", cb)
-})
-
-/**
- * @task server
- * Initializes browsersync server and
- * sets up watch tasks to rebuild
- */
-gulp.task("server", ["build"], () => {
-  browserSync.init(browserSyncConfig())
-  gulp.watch(gulpConfig.styles.watch, ["styles"])
-    .on('error', (err) => {
-      log(err, err.toString(), ["Styles"])
-      this.emit(end)
-    })
-  gulp.watch(gulpConfig.scripts.watch, ["scripts"])
-    .on('error', (err) => {
-      log(err, err.toString(), ["Scripts"])
-      this.emit(end)
-    })
-  gulp.watch(gulpConfig.svg.watch, ["svg"])
-    .on('error', (err) => { 
-      log(err, err.toString(), ["SVG"])
-      this.emit(end)
-    })
-  gulp.watch(
-    [
-      gulpConfig.dest + "/**/*",
-      `!${gulpConfig.styles.dest}/**/*`,
-      `!${gulpConfig.scripts.dest}/**/*`
-    ],
-    ["generator"]
-  )
-    .on('error', (err) => {
-      log(err, err.toString(), [gulpConfig.generator.label])
-      this.emit(end)
-    })
-})
-
-/**
- * @task algolia
- * Updates the algolia indexes during production builds
- * Works by finding all algolia.json files in build dir,
- * and pushes to an index matching the parent directory name
- */
-gulp.task("algolia", cb => {
-  if (isProduction) {
-    return gulp.src(gulpConfig.algolia.src).pipe(
-      through.obj({objectMode: true}, (file, enc, done) => {
-        const indexName = basename(dirname(file.path))
-
-        atomicalgolia(indexName, file.path, function(err, res) {
-          if (err) throw err
-
-          var count = res.objectIDs.length
-          var message = `Sent ${count} operations to ${indexName}...`
-
-          log(null, message, "Algolia")
-        })
-        done()
-      })
-    )
-  }
-
-  cb()
-})
-
-/**
- * @task styles
- * Compiles all css
- */
-gulp.task("styles", cb => {
-  runsequence("styles:production", "styles:development", cb)
-})
+gulp.task("generator", (cb) => build(cb))
 
 /**
  * @task styles:production
  * Compiles the production-ready CSS to project folder
  * and streams it if its a production server environment
  */
-gulp.task("styles:production", cb => {
+gulp.task("styles:production", (cb) => {
   const task = gulp
     .src(gulpConfig.styles.src)
-    .pipe(debounce({ wait: 1000 }))
+    .pipe(debounce({wait: 1000}))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(
-      postcss({env: "production"}).on("error", err =>
+      postcss({env: "production"}).on("error", (err) =>
         log(err, err.toString(), "PostCSS")
       )
     )
     .pipe(sourcemaps.write("."))
     .pipe(
-      rename(path => {
+      rename((path) => {
         path.dirname = "/"
 
         if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
@@ -171,15 +82,15 @@ gulp.task("styles:production", cb => {
  * Generates the non-production styles to temp folder
  * and streams it if its a development server environment
  */
-gulp.task("styles:development", cb => {
+gulp.task("styles:development", (cb) => {
   if (isProduction) return cb()
 
   return gulp
     .src(gulpConfig.styles.src)
-    .pipe(debounce({ wait: 1000 }))
-    .pipe(postcss().on("error", err => log(err, err.toString(), "PostCSS")))
+    .pipe(debounce({wait: 1000}))
+    .pipe(postcss().on("error", (err) => log(err, err.toString(), "PostCSS")))
     .pipe(
-      rename(path => {
+      rename((path) => {
         path.dirname = "/"
 
         if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
@@ -192,22 +103,14 @@ gulp.task("styles:development", cb => {
 })
 
 /**
- * @task scripts
- * Compiles all js
- */
-gulp.task("scripts", cb => {
-  runsequence("scripts:production", "scripts:development", cb)
-})
-
-/**
  * @task scripts:production
  * Compiles the production-ready JS to project folder
  * and streams it if its a production server environment
  */
-gulp.task("scripts:production", cb => {
+gulp.task("scripts:production", (cb) => {
   const task = gulp
     .src(gulpConfig.scripts.src)
-    .pipe(debounce({ wait: 1000 }))
+    .pipe(debounce({wait: 1000}))
     .pipe(named())
     .pipe(
       webpack(webpackConfig("production")).on("error", function(err) {
@@ -216,7 +119,7 @@ gulp.task("scripts:production", cb => {
       })
     )
     .pipe(
-      rename(path => {
+      rename((path) => {
         if (path.extname === ".js") path.extname = ".min.js"
 
         return path
@@ -236,12 +139,12 @@ gulp.task("scripts:production", cb => {
  * Generates the non-production styles to temp folder
  * and streams it if its a development server environment
  */
-gulp.task("scripts:development", cb => {
+gulp.task("scripts:development", (cb) => {
   if (isProduction) return cb()
 
   return gulp
     .src(gulpConfig.scripts.src)
-    .pipe(debounce({ wait: 1000 }))
+    .pipe(debounce({wait: 1000}))
     .pipe(named())
     .pipe(
       webpack(webpackConfig()).on("error", function(err) {
@@ -250,7 +153,7 @@ gulp.task("scripts:development", cb => {
       })
     )
     .pipe(
-      rename(path => {
+      rename((path) => {
         if (path.extname === ".js") path.extname = ".min.js"
 
         return path
@@ -261,6 +164,12 @@ gulp.task("scripts:development", cb => {
 })
 
 /**
+ * @task scripts
+ * Compiles all js
+ */
+gulp.task("scripts", gulp.series("scripts:production", "scripts:development"))
+
+/**
  * @task images
  * Optimizes all images
  * and streams it if its a development server environment
@@ -268,7 +177,7 @@ gulp.task("scripts:development", cb => {
 gulp.task("images", () => {
   return gulp
     .src(gulpConfig.images.src)
-    .pipe(debounce({ wait: 1000 }))
+    .pipe(debounce({wait: 1000}))
     .pipe(newer(gulpConfig.images.dest))
     .pipe(imagemin([], {verbose: isProduction ? true : false}))
     .pipe(gulp.dest(gulpConfig.images.dest))
@@ -283,10 +192,10 @@ gulp.task("images", () => {
 gulp.task("svg", () => {
   return gulp
     .src(gulpConfig.svg.src)
-    .pipe(debounce({ wait: 1000 }))
+    .pipe(debounce({wait: 1000}))
     .pipe(newer(gulpConfig.svg.dest))
     .pipe(
-      sprite(gulpConfig.svg.config).on("error", err =>
+      sprite(gulpConfig.svg.config).on("error", (err) =>
         log(err, err.toString(), "SVG Sprite")
       )
     )
@@ -315,22 +224,26 @@ function build(cb) {
   process.env.NODE_ENV = env
   process.env[generatorEnvVar] = env
 
-  const generator = spawn(gulpConfig.generator.command, args, {env: process.env, stdio: "pipe", encoding: "utf-8"})
+  const generator = spawn(gulpConfig.generator.command, args, {
+    env: process.env,
+    stdio: "pipe",
+    encoding: "utf-8"
+  })
 
-  generator.stdout.on("data", data => {
+  generator.stdout.on("data", (data) => {
     log(null, data.toString(), gulpConfig.generator.label)
   })
 
-  generator.stderr.on("data", data => {
+  generator.stderr.on("data", (data) => {
     log(null, data.toString(), gulpConfig.generator.label)
   })
 
-  generator.on("error", err => {
+  generator.on("error", (err) => {
     log(err, err.toString(), gulpConfig.generator.label)
     cb("Build failed")
   })
 
-  generator.on("close", code => {
+  generator.on("close", (code) => {
     browserSync.reload()
     cb()
   })
@@ -349,7 +262,7 @@ function log(err, log, name) {
   const spacer = " ".repeat(name.length + 2) // Indent additional lines
 
   if (err) {
-    console.log('\u0007')
+    console.log("\u0007")
     browserSync.notify(err.message)
   }
 
@@ -361,3 +274,101 @@ function log(err, log, name) {
     }
   })
 }
+
+/**
+ * @task algolia
+ * Updates the algolia indexes during production builds
+ * Works by finding all algolia.json files in build dir,
+ * and pushes to an index matching the parent directory name
+ */
+gulp.task("algolia", (cb) => {
+  if (isProduction) {
+    return gulp.src(gulpConfig.algolia.src).pipe(
+      through.obj({objectMode: true}, (file, enc, done) => {
+        const indexName = basename(dirname(file.path))
+
+        atomicalgolia(indexName, file.path, function(err, res) {
+          if (err) throw err
+
+          var count = res.objectIDs.length
+          var message = `Sent ${count} operations to ${indexName}...`
+
+          log(null, message, "Algolia")
+        })
+        done()
+      })
+    )
+  }
+
+  cb()
+})
+
+/**
+ * @task styles
+ * Compiles all css
+ */
+gulp.task("styles", gulp.series("styles:production", "styles:development"))
+
+/**
+ * @task build
+ * Builds all static assets, and then
+ * compiles the static site with Hugo
+ */
+gulp.task(
+  "build",
+  gulp.series(
+    "clean",
+    gulp.series(
+      gulp.parallel("styles", "scripts", "images", "svg"),
+      "generator"
+    )
+  )
+)
+
+/**
+ * @task preDeploy
+ * Same as build, but also submits
+ * search index to algolia
+ */
+gulp.task("preDeploy", gulp.series("clean", "build", "algolia"))
+
+/**
+ * @task server
+ * Initializes browsersync server and
+ * sets up watch tasks to rebuild
+ */
+gulp.task(
+  "server",
+  gulp.series("build", () => {
+    browserSync.init(browserSyncConfig())
+    gulp
+      .watch(gulpConfig.styles.watch, gulp.series("styles"))
+      .on("error", (err) => {
+        log(err, err.toString(), ["Styles"])
+        this.emit(end)
+      })
+    gulp
+      .watch(gulpConfig.scripts.watch, gulp.series("scripts"))
+      .on("error", (err) => {
+        log(err, err.toString(), ["Scripts"])
+        this.emit(end)
+      })
+    gulp.watch(gulpConfig.svg.watch, gulp.series("svg")).on("error", (err) => {
+      log(err, err.toString(), ["SVG"])
+      this.emit(end)
+    })
+    gulp
+      .watch(
+        [
+          gulpConfig.dest + "/**/*",
+          `!${gulpConfig.styles.dest}/**/*`,
+          `!${gulpConfig.scripts.dest}/**/*`
+        ],
+        gulp.series("generator")
+      )
+      .on("error", (err) => {
+        log(err, err.toString(), [gulpConfig.generator.label])
+        this.emit(end)
+      })
+  })
+)
