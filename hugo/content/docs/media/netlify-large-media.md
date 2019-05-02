@@ -1,7 +1,7 @@
 ---
 title: Storing Uploads With Netlify Large Media
 weight: 5
-date: 2019-05-02 20:00:00 +0000
+date: 2019-05-02 00:00:00 +0000
 menu:
   docs:
     name: Netlify Large Media
