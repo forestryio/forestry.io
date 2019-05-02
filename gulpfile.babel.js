@@ -360,7 +360,7 @@ gulp.task(
     gulp
       .watch(
         [
-          gulpConfig.dest + "/**/*",
+          gulpConfig.dest + "**/*",
           `!${gulpConfig.styles.dest}/**/*`,
           `!${gulpConfig.scripts.dest}/**/*`
         ],
