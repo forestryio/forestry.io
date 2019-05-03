@@ -12,6 +12,7 @@ cta:
 ## Enhancements
 
 * **Accessing Private Git Submodules:** Forestry now exposes the public key for sites that were setup using oauth. Users experiencing issues with private git submodules can copy the public key and set it as a user/organization level key.
+* **Document List Sorting:** It is now possible to switch the sorting methods  between ascending and descending.
 
 ## Bug Fixes
 
