@@ -35,6 +35,13 @@ Beneath the path fields, click the **Connect to Netlify** button to connect Fore
 
 Once you have successfully connected to Netlify, you will see the **Connected** message on the settings page.
 
+### Usage with Instant Previews
+
+If you're using [Instant Previews](https://forestry.io/docs/previews/instant-previews/) with Netlify Large Media, you will need to skip the LFS file download when your preview runs. To do this, add an environment variable to your instant preview environment with the key of `GIT_LFS_SKIP_SMUDGE` and a value of `1`.
+
+{{% pretty_screenshot img="/uploads/2019/05/instant-preview-skip-smudge.png" %}}
+
+
 ## Using Netlify's Image Transformations
 
 Using Netlify Large Media, you can create image transformations by appending parameters to the image URL. For documentation and examples, check out [Netlify's image transformation docs](https://www.netlify.com/docs/image-transformation/).
