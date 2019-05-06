@@ -21,8 +21,7 @@ A date and time picker.
 * **Format**
   * _Date Format_ — how the date should be displayed in the editor. To only show the time picker, leave this field blank.
   * _Time Format_ — how the time should be displayed in the editor.  To only show the date picker, leave this field blank.  
-    {{% tip %}} Note: 24-hour format currently causes unexpected behaviour in the date picker.  
-    E.g: \`kk:mm Z\`  {{% /tip %}}
+    {{% tip %}} Note: 24-hour format in the time_format display currently causes unexpected behaviour in the date picker. E.g: \`kk:mm Z\`  {{% /tip %}}
   * _Display UTC_ — activating this option will display the date in UTC regardless of user's locale settings.
   * _Export Format_ — how the date/time should be exported to the repo.
 * **Validation**
