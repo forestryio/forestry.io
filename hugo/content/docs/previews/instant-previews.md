@@ -98,6 +98,37 @@ Forestry's live previewing relies on the built-in live browser reloading provide
 
 See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
 
-## Using The Preview
+## Instant Preview URLs
 
-Note that your live preview will initially start on the homepage of your site, regardless of which content you initialize the preview from.
+When you click the preview button on a piece of content, Forestry will attempt to determine which URL to open by temporarily inserting a unique preview token in the markdown body. There are two situations where this won't work:
+
+### If the Layout Doesn't Use Markdown Body
+
+You may have some layouts that don't utilize the body of the markdown file. This happens when you instead build the page entirely from front matter data, such as when you use [blocks](/docs/settings/fields/blocks).
+
+For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed.
+
+Be aware that `forestry_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
+
+{{% code_tabs %}}
+{{% tab "Hugo" %}}
+```go-html-template
+{{ with .Params.forestry_preview_id }}
+<!-- {{ . }}  -->
+{{ end }}
+```
+{{% /tab %}}
+{{% tab "Jekyll" %}}
+```liquid
+```
+{{% /tab %}}
+{{% /code_tabs %}}
+
+this value isn't always included; will only be included on the specific page, should use code that checks for the value before using it
+
+### If the SSG Doesn't Write Content to HTML Files in Dev Mode
+
+
+If your static site generator doesn't write content updates to html (such as when using `gatsby develop`,) this won't work and the preview will always open the home page of your site.
+
+Additionally, if you have layouts that don't use the body of markdown documents and are instead built exclusively from front matter (common when building a layout with ,) you can 
