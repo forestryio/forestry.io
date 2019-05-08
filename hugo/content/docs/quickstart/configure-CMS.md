@@ -70,24 +70,23 @@ However, Jekyll supports static assets in your project root.  For this reason, w
 
 <table>
 <tr>
-<th></th>
-<th>Upload Directory</th>
-<th>Front Matter File Path</th>
-<th>Body File Path</th>
+  <th></th>
+  <th>Upload Directory</th>
+  <th>Front Matter File Path</th>
+  <th>Body File Path</th>
 </tr>
 <tr>
-<td>Hugo</td>
-<td><code>/static/uploads</code></td>
-<td><code>/uploads</code></td>
-<td><code>/uploads</code></td>
+  <td>Hugo</td>
+  <td><code>/static/uploads</code></td>
+  <td><code>/uploads</code></td>
+  <td><code>/uploads</code></td>
 </tr>
 <tr>
-<td>Jekyll</td>
-<td><code>/uploads</code></td>
-<td><code>/uploads</code></td>
-<td><code>/uploads</code></td>
-</tr>  
-<td>Jekyll</td> <td><code>/uploads</code></td> <td><code>/uploads</code></td> <td><code>/uploads</code></td> </tr>
+  <td>Jekyll</td>
+  <td><code>/uploads</code></td>
+  <td><code>/uploads</code></td>
+  <td><code>/uploads</code></td>
+</tr>
 </table>
 
 ### Variables
