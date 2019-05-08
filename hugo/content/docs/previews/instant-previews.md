@@ -106,7 +106,7 @@ When you click the preview button on a piece of content, Forestry will attempt t
 
 You may have some layouts that don't utilize the body of the markdown file. This happens when you instead build the page entirely from front matter data, such as when you use [blocks](/docs/settings/fields/blocks).
 
-For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed.
+For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment.
 
 Be aware that `forestry_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
 
@@ -120,6 +120,9 @@ Be aware that `forestry_preview_id` will only be inserted in one file at a time,
 {{% /tab %}}
 {{% tab "Jekyll" %}}
 ```liquid
+{% if page.forestry_preview_id %}
+<!-- {{ page.forestry_preview_id }} -->
+{% end %}
 ```
 {{% /tab %}}
 {{% /code_tabs %}}
@@ -130,5 +133,3 @@ this value isn't always included; will only be included on the specific page, sh
 
 
 If your static site generator doesn't write content updates to html (such as when using `gatsby develop`,) this won't work and the preview will always open the home page of your site.
-
-Additionally, if you have layouts that don't use the body of markdown documents and are instead built exclusively from front matter (common when building a layout with ,) you can 
