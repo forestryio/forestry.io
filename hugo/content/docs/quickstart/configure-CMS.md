@@ -138,7 +138,7 @@ image: /uploads/image.jpg
 
 You'll want to create a template called **Posts** and add the following fields:
 
-![](/uploads/2019/05/field-types-example.png)
+![](/uploads/2019/05/field-types-example.png "Pick up text, date and image fields for example")
 
 This will generate the following UI for your posts content:
 ![](/uploads/2018/01/front-matter-fields-ex1.png)
