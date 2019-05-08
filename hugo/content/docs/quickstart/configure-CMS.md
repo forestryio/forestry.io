@@ -161,9 +161,9 @@ To set default values for your fields, just edit the field value right in the Te
 
 ### Disable the Body Editor
 
-Finally, if you do not need a WYSIWYG editor for this content type, enable the  **Hide Body** toggle.
+If you do not need a WYSIWYG editor for this content type, click on the gear icon to edit the template settings and select "Fields"
 
-![](/uploads/2018/01/hide-body.gif)
+![](/uploads/2019/05/template-settings-no-body.png)
 
 ### Applying a Template to a Page
 
