@@ -14,9 +14,13 @@ draft: true
 
 * **Front Matter Templates:** removing/renaming a template via git will now delete the template from Forestry.
 * **Include Field**
-  * _Validation:_ The FMT editing form now validates that all Include Fields reference front matter template that exist. 
-  * _Display:_ When an Include field references a non-existent FMT a placeholder block will be shown to inform admins/develops of the error. 
+  * _Validation:_ The FMT editing form now validates that all Include Fields reference front matter template that exist.
+  * _Display:_ When an Include field references a non-existent FMT a placeholder block will be shown to inform admins/develops of the error.
 * **Blocks Field**
   * _Validation:_ The FMT editing form now validates that all templates listed in a Block Fields exist.
   * _Adding Blocks:_ The blocks field dropdown disables any invalid template eferences when adding a new block to a page.
   * _Display:_ If a block references a template that does not exist, a placeholder is shown explaining the problem.
+
+## Forestry Roadmap
+
+Do you have ideas about what Forestry should build next? We'd love to hear them! Checkout the our [public roadmap](https://portal.productboard.com/forestry/ "Forestry Roadmap") portal to vote on upcoming features and submit your own request.
