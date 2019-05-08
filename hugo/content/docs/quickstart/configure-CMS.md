@@ -5,7 +5,7 @@ publishdate: 2017-12-07T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
 weight: 2
-date: 2019-05-08T03:00:00-03:00
+date: 2019-05-08T06:00:00.000+00:00
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -70,22 +70,22 @@ However, Jekyll supports static assets in your project root.  For this reason, w
 
 <table>
 <tr>
-  <th></th>
-  <th>Upload Directory</th>
-  <th>Front Matter File Path</th>
-  <th>Body File Path</th>
+<th></th>
+<th>Upload Directory</th>
+<th>Front Matter File Path</th>
+<th>Body File Path</th>
 </tr>
 <tr>
-  <td>Hugo</td>
-  <td><code>/static/uploads</code></td>
-  <td><code>/uploads</code></td>
-  <td><code>/uploads</code></td>
+<td>Hugo</td>
+<td><code>/static/uploads</code></td>
+<td><code>/uploads</code></td>
+<td><code>/uploads</code></td>
 </tr>
 <tr>
-  <td>Jekyll</td>
-  <td><code>/uploads</code></td>
-  <td><code>/uploads</code></td>
-  <td><code>/uploads</code></td>
+<td>Jekyll</td>
+<td><code>/uploads</code></td>
+<td><code>/uploads</code></td>
+<td><code>/uploads</code></td>
 </tr>
 </table>
 
@@ -140,18 +140,23 @@ You'll want to create a template called **Posts** and add the following fields:
 ![](/uploads/2019/05/field-types-example.png "Pick up text, date and image fields for example")
 
 This will generate the following UI for your posts content:
-![](/uploads/2018/01/front-matter-fields-ex1.png)
 
-### Click the settings icon to configure each field
+![](/uploads/2019/05/fields-example.png)
 
-![](/uploads/2018/01/field-settings.png)
+#### Click the settings icon to configure each field
+
+Here is our title text field settings:
+
+![Text field settings](/uploads/2019/05/text-field-settings.png "Text field settings")
 
 Some of the options available are:
 
-* Adding help text
-* Making some fields hidden from editors
 * Setting a human-readable label
 * Setting the name of the `key` to be written out to your Front Matter
+* Adding help text
+* Making some fields hidden from editors
+* Setting a default value
+* Mark a field as required
 * Many more options depending on the field type
 
 {{% tip "Default Values" %}}
