@@ -29,7 +29,7 @@ When your team uploads images and other media, you want to ensure they're going 
 
 You should see the following settings which are described below.
 
-![](/uploads/2019/05/field-types-example.png)
+![](/uploads/2019/02/file-paths.png)
 
 ### Upload Folder
 
@@ -138,7 +138,7 @@ image: /uploads/image.jpg
 
 You'll want to create a template called **Posts** and add the following fields:
 
-![](/uploads/2018/01/forestry-fields-ex.png)
+![](/uploads/2019/05/field-types-example.png)
 
 This will generate the following UI for your posts content:
 ![](/uploads/2018/01/front-matter-fields-ex1.png)
