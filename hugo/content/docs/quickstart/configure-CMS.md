@@ -165,7 +165,7 @@ To set default values for your fields, just edit the field value right in the Te
 
 ### Disable the Body Editor
 
-If you do not need a WYSIWYG editor for this content type, click on the gear icon to edit the template settings and select **Fields**
+If you do not need a WYSIWYG editor for this content type,  edit the template settings and select **Fields**
 
 ![](/uploads/2019/05/template-settings-no-body.png)
 
