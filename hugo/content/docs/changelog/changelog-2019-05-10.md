@@ -21,6 +21,10 @@ draft: true
   * _Adding Blocks:_ The blocks field dropdown disables any invalid template eferences when adding a new block to a page.
   * _Display:_ If a block references a template that does not exist, a placeholder is shown explaining the problem.
 
+## Bug Fixes
+
+* **Creating Documents/FMTs:** We more robustly handle not-yet-comitted files. This fixed an issue where, under _very_ precise timing, newly created documents and FMTs would not be committed to the repository.
+
 ## Forestry Roadmap
 
 Do you have ideas about what Forestry should build next? We'd love to hear them! Checkout the our [public roadmap](https://portal.productboard.com/forestry/ "Forestry Roadmap") portal to vote on upcoming features and submit your own request.
