@@ -68,6 +68,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
       time_format: "HH:MM:SS"
       display_utc: false
 
+
 {{% tip %}}
 The `date_format`, `export_format`, and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
 {{% /tip %}}
