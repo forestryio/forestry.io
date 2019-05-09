@@ -2,9 +2,9 @@
 aliases:
 - "/docs/front-matter-fields/date-field/"
 title: Date Field
-publishdate: 2017-12-31T04:00:00.000+00:00
+publishdate: 2017-12-31T00:00:00-04:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-date: 2017-12-31T04:00:00.000+00:00
+date: 2019-05-06T00:00:00-03:00
 
 ---
 ![](/uploads/2018/01/datetime-preview.png)
