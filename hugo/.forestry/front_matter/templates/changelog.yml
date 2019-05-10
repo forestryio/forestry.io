@@ -40,13 +40,13 @@ fields:
   hidden: true
   default: ''
 pages:
+- hugo/content/docs/changelog/2019-05-10-changelog.md
 - hugo/content/docs/changelog/changelog-2019-05-10.md
 - hugo/content/docs/changelog/2019-05-03-changelog.md
 - hugo/content/docs/changelog/2019-04-05-changelog.md
 - hugo/content/docs/changelog/changelog-2019-04-23.md
 - hugo/content/docs/changelog/2019-03-29-changelog.md
 - hugo/content/docs/changelog/2019-03-08-changelog.md
-- hugo/content/docs/changelog/2019-05-10-changelog.md
 - hugo/content/docs/changelog/2019-01-09-changelog.md
 - hugo/content/docs/changelog/2018-10-11-changelog.md
 - hugo/content/docs/changelog/20181005-changelog.md
