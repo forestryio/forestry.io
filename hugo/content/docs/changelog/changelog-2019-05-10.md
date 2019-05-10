@@ -2,7 +2,7 @@
 authors:
 - team forestry
 title: Changelog 2019/05/10
-date: 2019-05-10T10:00:00-03:00
+date: 2019-05-10T13:00:00.000+00:00
 cta:
   headline: ''
   textline: ''
@@ -24,6 +24,7 @@ draft: true
 ## Bug Fixes
 
 * **Creating Documents/FMTs:** We more robustly handle not-yet-comitted files. This fixed an issue where, under _very_ precise timing, newly created documents and FMTs would not be committed to the repository.
+* **Date Picker fixes:** There were some issues with the datepicker behaving in unexpected ways when using a different export timezone (in general settings) from a user's local timezone. There were also some issues using unexpected display & export date formats.
 
 ## Forestry Roadmap
 
