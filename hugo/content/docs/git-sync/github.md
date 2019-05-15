@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/faq/github-organization-access/"
-title: Github
+title: GitHub
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -19,7 +19,7 @@ menu:
 This guide assumes you already have an existing [GitHub account](https://github.com/signup) and repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/tour/), which contains guides and resources for building your first static site.
 {{% /tip %}}
 
-Forestry's allows you to import your static site through public and private GitHub repositories. This allows Forestry to sync any changes made by editors in Forestry to be committed back to GitHub. This also allows developers to work on your website on their local machine, and have all changes synced back to Forestry.
+Forestry allows you to import your static site through public and private GitHub repositories. This allows Forestry to sync any changes made by editors in Forestry to be committed back to GitHub. This also allows developers to work on your website on their local machine, and have all changes synced back to Forestry.
 
 ## Importing from GitHub
 
@@ -27,7 +27,7 @@ To import a site with GitHub, [login](https://app.forestry.io/login) to Forestry
 
 {{% pretty_screenshot img="/uploads/2019/04/add-site-generator.png" %}}
 
-From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
+From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
 {{% pretty_screenshot img="/uploads/2019/04/add-site-provider.png" %}}
 
@@ -61,11 +61,11 @@ In the final step, you can invite up to 3 Guest users to edit content on your pr
 
 ## Importing from a GitHub organization
 
-GitHub organizations may be set up to restrict access to third-party applications like Forestry without permission from an organizations administrator. In this scenario, if you are not an administrator of your organization, you will need to request access on behalf of Forestry.
+GitHub organizations may be set up to restrict access to third-party applications like Forestry without permission from an organization's administrator. In this scenario, if you are not an administrator of your organization, you will need to request access on behalf of Forestry.
 
 ![](/uploads/2018/01/51.png)
 
-If you are an administrator of your application and have enabled third-party application restrictions, you will need to authorize Forestry to have access to your organizations repositories.
+If you are an administrator of your application and have enabled third-party application restrictions, you will need to authorize Forestry to have access to your organization's repositories.
 
 To do so, go to the _Settings page_ of your organization, and then navigate to the _Third-party access_ tab.
 
@@ -75,4 +75,4 @@ To the right of "Forestry", click the "Edit" button.
 
 ![](/uploads/2018/01/49.png)
 
-Then, click "Grant access" to allow your organizations members to import your sites in Forestry.
+Then, click "Grant access" to allow your organization's members to import your sites in Forestry.
