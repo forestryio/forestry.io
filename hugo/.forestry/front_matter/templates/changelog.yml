@@ -40,6 +40,7 @@ fields:
   hidden: true
   default: ''
 pages:
+- hugo/content/docs/changelog/2019-05-17-changelog.md
 - hugo/content/docs/changelog/2019-05-10-changelog.md
 - hugo/content/docs/changelog/2019-05-03-changelog.md
 - hugo/content/docs/changelog/2019-04-05-changelog.md
