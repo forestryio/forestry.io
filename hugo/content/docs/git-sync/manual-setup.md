@@ -22,7 +22,7 @@ The **manual setup** option can be used to set up your project without having to
 
 To perform manual setup of a project, disable the "Quick Setup via OAuth" toggle on the **Select your git provider** screen.
 
-Before you can continue, you must still select the git provider you are using. This is necessary so Forestry can correctly interpret webhook payloads and other communication from the provider.
+Before you can continue, you must still select the git provider you are using. This is necessary so Forestry can correctly interpret webhook payloads and other communication from the provider. Note that as of early 2019, Forestry does not support private GitLab repositories. 
 
 {{% markdownpartial "docs/manual-setup/addsite-and-settings.md" %}}
 
