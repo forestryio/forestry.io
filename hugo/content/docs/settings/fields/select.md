@@ -168,13 +168,13 @@ In `_data/authors.yml`:
 ---
 authors:
   John:
-    name = "John Doe"
-    image = "/uploads/2017/01/01/john.jpg"
+    name: "John Doe"
+    image: "/uploads/2017/01/01/john.jpg"
 ---
 ```
 
 ```
-{% assign author = site.data.authors[page.author] %}
+{% assign author = site.data.authors.authors[page.author] %}
 {% if author %}
   <img src="{{ author.image }}">
   <p>{{ author.name }}</p>
