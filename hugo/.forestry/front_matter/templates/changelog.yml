@@ -17,7 +17,11 @@ fields:
   label: Date
   type: datetime
   hidden: false
-  default: ''
+  default: now
+  config:
+    date_format: YYYY/MM/DD
+    export_format: YYYY/MM/DD
+    required: true
 - name: cta
   label: Cta
   type: field_group
