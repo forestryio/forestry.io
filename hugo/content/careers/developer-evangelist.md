@@ -71,6 +71,6 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 
 * Resume/CV
 * Cover Letter
-  * Why are you interested in working with Forestry?
+  * Include why you're interested in working specifically with Forestry
 * LinkedIn or other relevant social accounts that describe your professional experience
 * Links to your personal website, blog or portfolios, if available and applicable
