@@ -57,4 +57,10 @@ Each job posting has a list of things that we think will help the candidate be s
 
 We are prioritizing candidates from groups that are underrepresented in the software industry.
 
-We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io).
+We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io) and include your:
+
+* Resume/CV
+* Cover Letter
+  * Why are you interested in working with Forestry?
+* LinkedIn or other relevant social accounts that describe your professional experience
+* Links to your personal website, blog or portfolios, if available and applicable

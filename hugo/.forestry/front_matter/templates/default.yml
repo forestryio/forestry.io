@@ -140,9 +140,9 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/developer-evangelist.md
 - hugo/content/careers/_index.md
 - hugo/content/blog/versioning-large-files-with-git-lfs.md
-- hugo/content/careers/developer-evangelist.md
 - hugo/content/careers/marketing.md
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/careers/hiring-devops-engineer.md
