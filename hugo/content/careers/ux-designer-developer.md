@@ -24,6 +24,8 @@ menu: []
 ---
 At Forestry, we’re _helping people build a better web_. Our **UX Designer/Developer's** mission is to design and build interfaces and features that delight our users. If you obsess over design and user experience, this could be the perfect role for you.
 
+This is an important role as you'll be our second full-time designer and will have a major impact on the design of our products going forward. You'll be part of a small, growing team and have ample opportunity to improve our design practices and systems. There is much room for you to grow along with us in this role.
+
 This is a **remote** role.
 <!--more-->
 
