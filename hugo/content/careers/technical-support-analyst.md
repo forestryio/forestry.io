@@ -55,6 +55,10 @@ Each job posting has a list of things that we think will help the candidate be s
 
 We are prioritizing candidates from groups that are underrepresented in the software industry.
 
+***
+
+### Apply
+
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io) and include your:
 
 * Resume/CV
