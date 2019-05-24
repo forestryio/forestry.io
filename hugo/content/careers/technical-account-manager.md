@@ -57,8 +57,6 @@ Forestry.io is creating a Git-backed content management system (CMS) focused on 
 
 Each job posting has a list of things that we think will help the candidate be successful. You don’t need to be a “rockstar” at everything on day 1. In fact, humility, initiative & positive attitude are more important and we’re willing to help you acquire skills that you may be lacking. Keep that in mind when considering whether to apply.
 
-We are prioritizing candidates from groups that are underrepresented in the software industry.
-
 ***
 
 ### Apply
