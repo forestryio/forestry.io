@@ -15,36 +15,36 @@ menu:
     weight: 7
 
 ---
-Currently collaboration with other users can happen in two ways, as Users and as Guests. Users are managed on a per-organization basis and can be assigned [different roles](#user-roles). Guests on the other hand have a predefined permission level and are assigned on a per-site basis. Any site can have up to 3 Guests.
+Currently collaboration with other users can happen in two ways, as Members and as Collaborators. Members are managed on a per-organization basis and can be assigned [different roles](#user-roles). Collaborators are assigned on a per-site basis. Any site can have up to 3 collaborators on the free plan.
 
-## Managing Guests
+## Managing Collaborators
 
-![](/uploads/2018/03/team-management-add-guest.png)
+<!-- TODO
+Update screenshots in /uploads/2018/03/
+-->
 
-To add Guests to your sites, navigate to the dashboard and select "My sites" or an organization, choose a site and click on the "..." and then click on "Manage Guests". 
+To add collaborators to your sites...
 
-The following screen shows you all the users that are already Guests to this site. 
+The following screen shows you all the users that are already collaborators to this site.
 
-## Inviting Guests
+## Inviting Collaborators
 
-To add a Guest, click _Add Guest_. This will add a new row to the list. Enter the new Guest's email address you can repeat this process and continue adding Guests.
+To add a Collaborator, click _Add Collaborator_. This will add a new row to the list. Enter the new collaborator's email address you can repeat this process and continue adding collaborators.
 
-When you've finished adding all new Guests, click _Save_ to confirm the changes.
+_This will send an email invitation to the new collaborators to join the site._
 
-_This will send an email invitation to the new Guests to join the site._
+## Removing Collaborators
 
-## Removing Guests
-
-To remove a Guest, click the _trash_ icon to the right of their e-mail.
+To remove a Collaborator, click the _trash_ icon to the right of their e-mail.
 
 When you've finished, click _Save_ to confirm the changes.
 
 ## Organizations
 *This is a paid feature*
 
-Unlike Guests, Users can only be managed in Organization Accounts. Organizations are collections of sites assigned to a team. Organizations can have multiple users with different [user roles](/docs/settings/team-management/#user-roles) work across all sites of an organization.
+Unlike Collaborators, Users can only be managed in Organization Accounts. Organizations are collections of sites assigned to a team. Organizations can have multiple users with different [user roles](/docs/settings/team-management/#user-roles) work across all sites of an organization.
 
-You can create an organization on your dashboard by clicking on "Create an Organization" in the left sidebar. 
+You can create an organization on your dashboard by clicking on "Create an Organization" in the left sidebar.
 Once you filled in your information and named the organization you can proceed by clicking on "Create".
 
 The Organization you created will now show up underneath "My sites" in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
@@ -77,13 +77,13 @@ To remove a User, click the _trash_ icon to the right of their user role, make s
 
 In Organizations, Users can be given one of three roles. These affect what the user can do in the CMS.
 
-### Editor (also Guests)
+### Editor (also Collaborators)
 
 The editor role gives a User the ability to manage content across sites within that organization.
 
 {{% tip %}}
-Guests have the ability to manage content for their respective site but don't have access to sites across the organization.
-{{% /tip %}} 
+Collaborators have the ability to manage content for their respective site but don't have access to sites across the organization.
+{{% /tip %}}
 
 *They can:*
 
