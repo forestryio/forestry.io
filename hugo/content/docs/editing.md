@@ -17,7 +17,7 @@ menu:
 ---
 Forestry allows developers and editors to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over their content.
 
-For more information on develope and editor roles see [user roles](/docs/settings/team-management/#user-roles)
+For more information on developer and editor roles see [user roles](/docs/settings/team-management/#user-roles)
 
 ![](/uploads/2018/01/10.png)
 
