@@ -31,7 +31,7 @@ weight = 9
 name = "Previews"
 weight = 8
 [[menu.docs]]
-name = "Collaborators & Teams"
+name = "Organizations"
 weight = 7
 [[menu.docs]]
 name = "Settings & Configuration"
