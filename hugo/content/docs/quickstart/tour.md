@@ -166,7 +166,7 @@ Editors that only have access to one specific site are called Collaborators in F
 
 External collaborators roles are always free, per site you can add up-to 3 of these roles.
 
-For teams that need more advanced team management Forestry provides [Organizations](/docs/settings/team-management#organizations). Organizing editors, developers and admins in [User roles](/docs/settings/team-management#user-roles) makes managing your whole team across multiple sites simple (paid feature).
+For teams that need more advanced team management Forestry provides [Organizations](/docs/settings/team-management#organizations). Organizing editors, developers and admins in [User roles](/docs/settings/team-management#site-access-levels) makes managing your whole team across multiple sites simple (paid feature).
 
 ***
 
