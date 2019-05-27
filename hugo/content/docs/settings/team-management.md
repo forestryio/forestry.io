@@ -15,17 +15,18 @@ menu:
     weight: 7
 
 ---
-Currently collaboration with other users can happen in two ways, as Members and as Collaborators. Members are managed on a per-organization basis and can be assigned [different roles](#user-roles). Collaborators are assigned on a per-site basis. Any site can have up to 3 collaborators on the free plan.
 
-## Managing Collaborators
+Forestry allows you to define how you work as teams or with collaborators. Teams are available from [our starter plan](/pricing).
 
-<!-- TODO
-Update screenshots in /uploads/2018/03/
--->
+## Collaborators on personal sites
 
-To add collaborators to your sites...
+Sites that are not part of an organization are **personal** sites. On those sites you can add up to three collaborators. Each collaborator can be an [admin, developer or editor]((#user-roles)), depending of the permissions you wish to set for each one of them. Upgrade to our starter plan if you need more collaborators.
 
-The following screen shows you all the users that are already collaborators to this site.
+### Managing Collaborators
+
+To add collaborators to your sites, go to your site settings.
+
+![Add Collaborators](/uploads/2019/05/add-collaborator-free-plan.png)
 
 ## Inviting Collaborators
 
@@ -35,21 +36,62 @@ _This will send an email invitation to the new collaborators to join the site._
 
 ## Removing Collaborators
 
-To remove a Collaborator, click the _trash_ icon to the right of their e-mail.
+To remove a Collaborator, click the remove icon.
 
 When you've finished, click _Save_ to confirm the changes.
 
 ## Organizations
+
 *This is a paid feature*
 
-Unlike Collaborators, Users can only be managed in Organization Accounts. Organizations are collections of sites assigned to a team. Organizations can have multiple users with different [user roles](/docs/settings/team-management/#user-roles) work across all sites of an organization.
+Organization can manage their members and add them to teams to define default roles. Those roles can be later overriden on a per-site basis.
 
-You can create an organization on your dashboard by clicking on "Create an Organization" in the left sidebar.
+### Create an Organization
+
+You can create an organization on your dashboard by clicking on "Create Organization" in the left sidebar.
 Once you filled in your information and named the organization you can proceed by clicking on "Create".
 
 The Organization you created will now show up underneath "My sites" in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
 
 Depending on your role in this organization your dashboard may vary, please read more in different [user roles](/docs/settings/team-management/#user-roles) to see what your assigned role allows you to do.
+
+Before managing the sites permissions, you have to pick up owners and members for your organization.
+
+## Add Users to an organization
+
+To add Users, go to your organization settings and click _add User_.
+
+Enter the email, set if this person should be an **owner** or a **member** or the organization.
+
+![Add User to organization](/uploads/2019/05/add-user-to-org.png)
+
+- **Owners** have total access control on the organization
+- **Members** can add sites to the organization
+
+## Teams
+
+Once you have added members to an organization, you can create teams to define default permissions for all team members.
+
+Click on _Add Team_ button to add a new team to an organization, then enter the desired team name and click _Create_.
+
+![Add Team to organization](/uploads/2019/05/add-team.png)
+
+
+Click on a team name to manage its members, you can now pick existing orgnization members and add them to one or more team.
+
+
+## Define permissions per site
+
+## Collaborators on organization sites
+
+Collaboration with other users can happen in two ways: as Members and as Collaborators.
+
+ - Members are managed on a per-organization basis
+ - Collaborators are assigned on a per-site basis.
+
+Any site can have up to 3 external collaborators. Each collabortor can be assigned [different roles](#user-roles).
+
+Users can only be managed in Organization Accounts. Organizations are collections of sites assigned to a team. Organizations can have multiple users with different [user roles](#user-roles) work across all sites of an organization.
 
 ## Managing Users
 
@@ -75,11 +117,12 @@ To remove a User, click the _trash_ icon to the right of their user role, make s
 
 ## User Roles
 
-In Organizations, Users can be given one of three roles. These affect what the user can do in the CMS.
+Users can be given one of three roles.
+These affect what the user can do in the CMS.
 
-### Editor (also Collaborators)
+### Editors
 
-The editor role gives a User the ability to manage content across sites within that organization.
+The editor role gives a User the ability to manage content.
 
 {{% tip %}}
 Collaborators have the ability to manage content for their respective site but don't have access to sites across the organization.
@@ -92,9 +135,7 @@ Collaborators have the ability to manage content for their respective site but d
 
 ### Developer
 
-The developer role gives a User all permissions of an Editor and they can:
-
-*Editor Role and*
+The Developer role gives a User all permissions of an Editor as well as:
 
 1. Edit and manage Front Matter templates
 2. Create and manage sites
@@ -102,9 +143,7 @@ The developer role gives a User all permissions of an Editor and they can:
 
 ### Admin
 
-The admin role gives a User all permissions of a Developer and they can:
-
-*Developer Role and*
+The admin role gives a User all permissions of a Developer as well as:
 
 1. Manage other users
 2. Manage billing for the Organization
