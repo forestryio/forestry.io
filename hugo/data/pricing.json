@@ -54,8 +54,8 @@
           "info": "Manage one group of users across all of your sites and branches"
         },
         {
-          "text": "3 user roles",
-          "info": "Assign roles to your team members: admin, developer, or editor"
+          "text": "Team access controls",
+          "info": "Assign organization members to teams with admin, developer, or editor access roles"
         },
         {
           "text": "Business support",
