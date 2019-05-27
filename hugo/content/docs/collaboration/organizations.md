@@ -24,7 +24,7 @@ Once you filled in your information and named the organization you can proceed b
 
 The Organization you created will now show up underneath _My sites_ in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
 
-Depending on your role in this organization your dashboard may vary, please read more in different [user roles](/docs/settings/team-management/#site-access-levels) to see what your assigned role allows you to do.
+Depending on your role in this organization your dashboard may vary, please read more in different [user roles](/docs/settings/collaborators/#site-access-levels) to see what your assigned role allows you to do.
 
 Before managing the sites permissions, you have to add owners and members to your organization.
 
@@ -56,5 +56,5 @@ Click on a team name to manage its members, you can now pick existing orgnizatio
 
 ### Add Teams to sites
 
-Teams can be added to each site from [within the Site Settings](/docs/settings/team-management/#teams)
+Teams can be added to each site from [within the Site Settings](/docs/settings/collaborators/#teams)
 
