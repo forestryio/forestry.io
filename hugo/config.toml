@@ -20,15 +20,18 @@ latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
 name = "Developer Guides"
-weight = 9
-[[menu.docs]]
-name = "Other"
 weight = 10
 [[menu.docs]]
+name = "Other"
+weight = 11
+[[menu.docs]]
 name = "Hosting"
-weight = 8
+weight = 9
 [[menu.docs]]
 name = "Previews"
+weight = 8
+[[menu.docs]]
+name = "Collaborators & Teams"
 weight = 7
 [[menu.docs]]
 name = "Settings & Configuration"

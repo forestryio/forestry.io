@@ -43,6 +43,7 @@ Collaborators can always [sign up](https://app.forestry.io//signup) to Forestry 
 To remove a Collaborator, click the remove icon on the right.
 Then proceed to the effective removal by clicking "Remove Collaborator" when you're invited to.
 
+
 ## Organizations
 
 *This is a paid feature*
@@ -102,54 +103,5 @@ Each collaborator can be assigned [different roles](#user-roles).
 
 ## Site Access Levels
 
-Users can be given one of three roles.
+Users can be given one of three roles (Editor, Developer, Admin)
 These affect what the user can do in the CMS.
-
-<table>
-<tr>
-<th></th>
-<th>Editor</th>
-<th>Developer</th>
-<th>Admin</th>
-</tr>
-<tr>
-<td>Edit and Publish Content</td>
-<td class="center">✔️</td>
-<td class="center">✔️</td>
-<td class="center">✔️</td>
-</tr>
-<tr>
-<td>Upload and Manage Media Content</td>
-<td class="center">✔️</td>
-<td class="center">✔️</td>
-<td class="center">✔️</td>
-</tr>
-<tr>
-<td>Edit Front Matter Templates</td>
-<td class="center"></td>
-<td class="center">✔️</td>
-<td class="center">✔️</td>
-</tr>
-<tr>
-<td>Edit Site Settings</td>
-<td class="center"></td>
-<td class="center">✔️</td>
-<td class="center">✔️</td>
-</tr>
-<tr>
-<td>Delete Sites</td>
-<td class="center"></td>
-<td class="center"></td>
-<td class="center">✔️</td>
-</tr>
-<tr>
-<td>Manage Collaborators on a Site</td>
-<td class="center"></td>
-<td class="center"></td>
-<td class="center">✔️</td>
-</tr>
-</table>
-
-{{% tip %}}
-Organization owners automatically have admin access on all of the organization's sites.
-{{%/ tip %}}
