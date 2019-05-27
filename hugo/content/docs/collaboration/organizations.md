@@ -1,5 +1,5 @@
 ---
-title: Organizations
+title: About Organizations
 weight: 4
 publishdate: 2019-05-27 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -8,7 +8,7 @@ layout: single
 images:
 menu:
   docs:
-    parent: Collaborators & Teams
+    parent: Organizations
     weight: 1
 
 ---
@@ -39,8 +39,8 @@ Enter the email, set if this person should be an **owner** or a **member** or th
 
 ![Add User to organization](/uploads/2019/05/add-user-to-org.png)
 
-- **Owners** have total access control on the organization
 - **Members** can add sites to the organization
+- **Owners** have total access control on the organization. This includes access billing, adding/removing org members, modifying teams, and deleting the organization. Owners also automatically have admin access-level on all of the organization's sites.
 
 ## Teams
 
