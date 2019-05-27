@@ -149,3 +149,43 @@ The admin role gives a User all permissions of a Developer as well as:
 2. Manage billing for the Organization
 3. Manage the organization & sites settings
 4. Delete the organization & sites (this is irreversible)
+
+
+<table>
+<tr>
+<th></th>
+<th>Editor</th>
+<th>Developer</th>
+<th>Admin</th>
+</tr>
+<tr>
+<td>Edit Content</td>
+<td class="center">✔️</td>
+<td class="center">✔️</td>
+<td class="center">✔️</td>
+</tr>
+<tr>
+<td>Edit Front Matter Templates</td>
+<td class="center"></td>
+<td class="center">✔️</td>
+<td class="center">✔️</td>
+</tr>
+<tr>
+<td>Edit Site Settings</td>
+<td class="center"></td>
+<td class="center">✔️</td>
+<td class="center">✔️</td>
+</tr>
+<tr>
+<td>Delete Sites</td>
+<td class="center"></td>
+<td class="center"></td>
+<td class="center">✔️</td>
+</tr>
+<tr>
+<td>Manage Collaborators on a Site</td>
+<td class="center"></td>
+<td class="center"></td>
+<td class="center">✔️</td>
+</tr>
+</table>
