@@ -24,4 +24,4 @@ You can only transfer sites to Organizations if your role for that Organization 
 
 *If you moved your site from a legacy plan you might need to cancel your old plan. See [How to Cancel a per-site plan?](/docs/faqs/cancel-legacy-plan/)*
 
-*If you would like to learn more about Organizations and our new Collaborators & Teams UI see [Collaborators & Teams](/docs/settings/collaborators-and-teams/)*
+*If you would like to learn more about Organizations and our new Collaborators & Teams UI see [Collaborators & Teams](/docs/settings/collaborators/)*
