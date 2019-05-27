@@ -21,14 +21,11 @@ faqs:
 - headline: Do I need to configure my project?
   textline: No configuration needed. Forestry will parse your project and automatically
     build your CMS.
-- headline: What is a Guest?
-  textline: A guest is a single-site user with limited permissions. Guests do not
-    get access to support and are often used for clients or external colleagues.
 - headline: What is a User?
   textline: A _User_ refers to people in your organization who have access to your
     sites and who are assigned a specific role (only available on paid plans).
-- headline: Do the Starter and Pro plans include Guests?
-  textline: Yes, all sites on the Starter and Pro plans include up to 3 Guest users
+- headline: Do the Starter and Pro plans include Collaborators?
+  textline: Yes, all sites on the Starter and Pro plans include up to 3 collaborators
     per site.
 headline: ''
 description: ''
