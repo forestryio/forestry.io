@@ -20,7 +20,7 @@ Forestry allows you to define how you work as teams or with collaborators. Teams
 
 ## Collaborators on personal sites
 
-Sites that are not part of an organization are **personal** sites. On those sites you can add up to three collaborators. Each collaborator can be an [admin, developer or editor]((#user-roles)), depending of the permissions you wish to set for each one of them. Upgrade to our starter plan if you need more collaborators.
+Sites that are not part of an organization are **personal** sites. On those sites you can add up to three collaborators. Each collaborator can be an [admin, developer or editor](#user-roles), depending of the permissions you wish to set for each one of them. Upgrade to our starter plan if you need more collaborators.
 
 ### Managing Collaborators
 
@@ -32,13 +32,16 @@ To add collaborators to your sites, go to your site settings.
 
 To add a Collaborator, click _Add Collaborator_. This will add a new row to the list. Enter the new collaborator's email address you can repeat this process and continue adding collaborators.
 
-_This will send an email invitation to the new collaborators to join the site._
+This will send an email invitation to the new collaborators to join the site.
 
-## Removing Collaborators
+{{% tip %}}
+Collaborators can always [sign up](https://app.forestry.io//signup) to Forestry and will have access to all the sites and organizations they have been invited to.
+{{%/ tip %}}
 
-To remove a Collaborator, click the remove icon.
+## Removing Collaborators from a site
 
-When you've finished, click _Save_ to confirm the changes.
+To remove a Collaborator, click the remove icon on the right.
+Then proceed to the effective removal by clicking "Remove Collaborator" when you're invited to.
 
 ## Organizations
 
@@ -48,16 +51,19 @@ Organization can manage their members and add them to teams to define default ro
 
 ### Create an Organization
 
-You can create an organization on your dashboard by clicking on "Create Organization" in the left sidebar.
-Once you filled in your information and named the organization you can proceed by clicking on "Create".
+You can create an organization on your dashboard by clicking on _Create Organization_ in the left sidebar.
+Once you filled in your information and named the organization you can proceed by clicking on _Create_.
 
-The Organization you created will now show up underneath "My sites" in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
+The Organization you created will now show up underneath _My sites_ in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
 
 Depending on your role in this organization your dashboard may vary, please read more in different [user roles](/docs/settings/team-management/#user-roles) to see what your assigned role allows you to do.
 
-Before managing the sites permissions, you have to pick up owners and members for your organization.
+Before managing the sites permissions, you have to add owners and members to your organization.
 
-## Add Users to an organization
+Users can only be managed in Organization settings. Organizations are collections of sites assigned to teams and collaborators.
+Organizations can have multiple users with different [user roles](#user-roles) work across all sites of an organization.
+
+### Add Users to an organization
 
 To add Users, go to your organization settings and click _add User_.
 
@@ -68,7 +74,7 @@ Enter the email, set if this person should be an **owner** or a **member** or th
 - **Owners** have total access control on the organization
 - **Members** can add sites to the organization
 
-## Teams
+### Manage Teams
 
 Once you have added members to an organization, you can create teams to define default permissions for all team members.
 
@@ -76,44 +82,23 @@ Click on _Add Team_ button to add a new team to an organization, then enter the 
 
 ![Add Team to organization](/uploads/2019/05/add-team.png)
 
-
 Click on a team name to manage its members, you can now pick existing orgnization members and add them to one or more team.
 
+### Define permissions per site
 
-## Define permissions per site
+Teams and Users added to your organization can then we added to a site's organization in order to define what permissions have those users on that particular website.
 
-## Collaborators on organization sites
+The admins and owners can go to the site settings, and manage permissions from _Collaborators & Teams_ tab.
 
-Collaboration with other users can happen in two ways: as Members and as Collaborators.
+![Add Collaborators and Teams to a site](/uploads/2019/05/collaborators-teams-settings.png)
 
- - Members are managed on a per-organization basis
- - Collaborators are assigned on a per-site basis.
+Pick up the teams you wish to add on the current site. You can override a team member role by adding him as a Collaborator with greater priviledges.
 
-Any site can have up to 3 external collaborators. Each collabortor can be assigned [different roles](#user-roles).
+#### Collaborators on organization sites
 
-Users can only be managed in Organization Accounts. Organizations are collections of sites assigned to a team. Organizations can have multiple users with different [user roles](#user-roles) work across all sites of an organization.
+You can add unlimited organization users as site collaborators, but can have up to 3 **external** collaborators. Nothing prevents you to make an external collaborator a member of your organization.
 
-## Managing Users
-
-![](/uploads/2018/03/team-management-settings.png)
-
-To manage the team for an organization, navigate to the dashboard and select your organization, click on the <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="2"><path d="M7.75 22.149L12 19.48l4.25 2.669a11.029 11.029 0 0 0 4.088-2.973l-1.224-4.865 3.85-3.216a10.933 10.933 0 0 0-1.561-4.807l-5.006-.34-1.87-4.656A11.032 11.032 0 0 0 12 1c-.87 0-1.715.1-2.527.292l-1.87 4.657-5.006.339a10.933 10.933 0 0 0-1.56 4.807l3.85 3.216-1.225 4.865a11.029 11.029 0 0 0 4.087 2.973z"></path><circle cx="12" cy="12" r="3"></circle></g></svg> in the upper right corner, and then click "Users".
-
-## Inviting New Users
-
-To add a new User, click _Add User_. This will add a new row to the list. Enter the new User's email address and desired user role.
-
-When you've finished adding all new Users, click _Add_ to confirm the changes.
-
-_This will send an email invitation to the new Users to join the Organization._
-
-{{% tip %}}
-You can cancel any changes to your Organization's team by clicking _Cancel_ in the bottom right corner.
-{{% /tip %}}
-
-## Removing Users
-
-To remove a User, click the _trash_ icon to the right of their user role, make sure you're removing the right User and then click on "Remove User"
+Each collaborator can be assigned [different roles](#user-roles).
 
 ## User Roles
 
