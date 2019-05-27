@@ -56,5 +56,5 @@ Click on a team name to manage its members, you can now pick existing orgnizatio
 
 ### Add Teams to sites
 
-Teams can be added to each site from [within the Site Settings](/docs/settings/team-management/)
+Teams can be added to each site from [within the Site Settings](/docs/settings/team-management/#teams)
 

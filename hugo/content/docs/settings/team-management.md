@@ -28,7 +28,7 @@ To add collaborators to your sites, go to your site settings.
 
 ![Add Collaborators](/uploads/2019/05/add-collaborator-free-plan.png)
 
-## Inviting Collaborators
+### Inviting Collaborators
 
 To add a Collaborator, click _Add Collaborator_. This will add a new row to the list. Enter the new collaborator's email address you can repeat this process and continue adding collaborators.
 
@@ -38,27 +38,28 @@ This will send an email invitation to the new collaborators to join the site.
 Collaborators can always [sign up](https://app.forestry.io//signup) to Forestry and will have access to all the sites and organizations they have been invited to.
 {{%/ tip %}}
 
-## Removing Collaborators from a site
+### Removing Collaborators from a site
 
 To remove a Collaborator, click the remove icon on the right.
 Then proceed to the effective removal by clicking "Remove Collaborator" when you're invited to.
 
-
-### Define permissions per site
-
-Teams and Users added to your organization can then we added to a site's organization in order to define what permissions have those users on that particular website.
-
-The admins and owners can go to the site settings, and manage permissions from _Collaborators & Teams_ tab.
-
-![Add Collaborators and Teams to a site](/uploads/2019/05/collaborators-teams-settings.png)
-
-Pick up the teams you wish to add on the current site. You can override a team member role by adding him as a Collaborator with greater priviledges.
-
-#### Collaborators on organization sites
+## Collaborators on organization sites
 
 You can add unlimited organization users as site collaborators, but can have up to 3 **external** collaborators. Nothing prevents you to make an external collaborator a member of your organization.
 
 Each collaborator can be assigned [different roles](#site-access-levels).
+
+### Teams
+
+In addition to adding individual collaborators, Organization sites can also add teams with [different roles](#site-access-levels).
+If a user belongs to multiple teams on a site, or is also an individual collaborator on a site, this user's role will be defiend by his/her highest access level. 
+
+#### Adding a team
+
+To add a team to a site, click _Add Team_. Then choose the team from the dropdown and apply its access level.
+
+![Add Collaborators and Teams to a site](/uploads/2019/05/collaborators-teams-settings.png)
+
 
 ## Site Access Levels
 
