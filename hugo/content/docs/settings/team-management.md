@@ -100,41 +100,10 @@ You can add unlimited organization users as site collaborators, but can have up 
 
 Each collaborator can be assigned [different roles](#user-roles).
 
-## User Roles
+## Site Access Levels
 
 Users can be given one of three roles.
 These affect what the user can do in the CMS.
-
-### Editors
-
-The editor role gives a User the ability to manage content.
-
-{{% tip %}}
-Collaborators have the ability to manage content for their respective site but don't have access to sites across the organization.
-{{% /tip %}}
-
-*They can:*
-
-1. Edit and publish content
-2. Upload and manage media content
-
-### Developer
-
-The Developer role gives a User all permissions of an Editor as well as:
-
-1. Edit and manage Front Matter templates
-2. Create and manage sites
-3. Manage site settings
-
-### Admin
-
-The admin role gives a User all permissions of a Developer as well as:
-
-1. Manage other users
-2. Manage billing for the Organization
-3. Manage the organization & sites settings
-4. Delete the organization & sites (this is irreversible)
-
 
 <table>
 <tr>
@@ -144,7 +113,13 @@ The admin role gives a User all permissions of a Developer as well as:
 <th>Admin</th>
 </tr>
 <tr>
-<td>Edit Content</td>
+<td>Edit and Publish Content</td>
+<td class="center">✔️</td>
+<td class="center">✔️</td>
+<td class="center">✔️</td>
+</tr>
+<tr>
+<td>Upload and Manage Media Content</td>
 <td class="center">✔️</td>
 <td class="center">✔️</td>
 <td class="center">✔️</td>
@@ -174,3 +149,7 @@ The admin role gives a User all permissions of a Developer as well as:
 <td class="center">✔️</td>
 </tr>
 </table>
+
+{{% tip %}}
+Organization owners automatically have admin access on all of the organization's sites.
+{{%/ tip %}}
