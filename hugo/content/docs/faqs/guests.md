@@ -31,4 +31,4 @@ Each site can have up to 3 Guest accounts.
 
 ![](/uploads/2018/10/guests.png)
 
-For more information on managing Collaborators, see [Collaborators & Teams](/docs/settings/collaborators-and-teams/).
+For more information on managing Collaborators, see [Collaborators & Teams](/docs/settings/collaborators/).

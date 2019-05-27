@@ -29,7 +29,7 @@ Depending on your role in this organization your dashboard may vary, please read
 Before managing the sites permissions, you have to add owners and members to your organization.
 
 Users can only be managed in Organization settings. Organizations are collections of sites assigned to teams and collaborators.
-Organizations can have multiple users with different [user roles](#site-access-levels) work across all sites of an organization.
+Organizations can have multiple users with different [user roles](/docs/settings/collaborators/#site-access-levels) work across all sites of an organization.
 
 ## Add Users to an organization
 
