@@ -15,9 +15,9 @@ menu:
 
 *This is a paid feature*
 
-Organization can manage their members and add them to teams to define default roles. Those roles can be later overriden on a per-site basis.
+Organizations enable you to manage groups of users across multiple sites. Teams or individuals within an organization can have their access-levels applied on a per-site basis.
 
-### Create an Organization
+## Create an Organization
 
 You can create an organization on your dashboard by clicking on _Create Organization_ in the left sidebar.
 Once you filled in your information and named the organization you can proceed by clicking on _Create_.
@@ -31,7 +31,7 @@ Before managing the sites permissions, you have to add owners and members to you
 Users can only be managed in Organization settings. Organizations are collections of sites assigned to teams and collaborators.
 Organizations can have multiple users with different [user roles](#site-access-levels) work across all sites of an organization.
 
-### Add Users to an organization
+## Add Users to an organization
 
 To add Users, go to your organization settings and click _add User_.
 
@@ -42,12 +42,19 @@ Enter the email, set if this person should be an **owner** or a **member** or th
 - **Owners** have total access control on the organization
 - **Members** can add sites to the organization
 
-### Manage Teams
+## Teams
 
-Once you have added members to an organization, you can create teams to define default permissions for all team members.
+Once you have added members to an organization, you can create teams to define default permissions for team members on each site.
+
+### Create Teams
 
 Click on _Add Team_ button to add a new team to an organization, then enter the desired team name and click _Create_.
 
 ![Add Team to organization](/uploads/2019/05/add-team.png)
 
 Click on a team name to manage its members, you can now pick existing orgnization members and add them to one or more team.
+
+### Add Teams to sites
+
+Teams can be added to each site from [within the Site Settings](/docs/settings/team-management/)
+
