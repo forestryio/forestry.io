@@ -53,7 +53,7 @@ If Forestry can't locate your site's config file inside of the root of your proj
 
 When you're done just click on "Import Site" and let us get your site ready.
 
-To invite collaborators to edit content on your project, see [user roles](/docs/settings/team-management/).
+To invite collaborators to edit content on your project, see [user roles](/docs/settings/collaborators/).
 
 ## Importing from GitLab Groups
 

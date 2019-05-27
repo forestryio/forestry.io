@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/deployment-and-management/managing-users/"
-- "/settings/team-management/"
+- "/settings/collaborators/"
 title: Collaborators & Teams
 weight: 6
 publishdate: 2017-12-31 04:00:00 +0000
