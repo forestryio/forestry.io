@@ -1,6 +1,6 @@
 ---
 title: About Organizations
-weight: 4
+weight: 1
 publishdate: 2019-05-27 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2019-05-27 04:00:00 +0000
@@ -15,36 +15,36 @@ menu:
 
 *This is a paid feature*
 
-Organizations enable you to manage groups of users across multiple sites. Teams or individuals within an organization can have their access-levels applied on a per-site basis.
+Organizations enable you to manage groups of users across multiple sites. Teams or individuals within an organization can have their access levels applied on a per-site basis.
 
 ## Create an Organization
 
 You can create an organization on your dashboard by clicking on _Create Organization_ in the left sidebar.
-Once you filled in your information and named the organization you can proceed by clicking on _Create_.
+Once you have filled in your information and named the organization, you can proceed by clicking _Create_.
 
-The Organization you created will now show up underneath _My sites_ in the left sidebar. You can access the Organization's sites and settings by clicking on the Organization.
+The Organization that you have created will now show up underneath _My sites_ in the left sidebar. You can access the organization's sites and settings by clicking on the Organization.
 
-Depending on your role in this organization your dashboard may vary, please read more in different [user roles](/docs/settings/collaborators/#site-access-levels) to see what your assigned role allows you to do.
-
-Before managing the sites permissions, you have to add owners and members to your organization.
-
-Users can only be managed in Organization settings. Organizations are collections of sites assigned to teams and collaborators.
-Organizations can have multiple users with different [user roles](/docs/settings/collaborators/#site-access-levels) work across all sites of an organization.
+Depending on your role in this organization, your dashboard may vary. Please read more about different [organization roles](#organization-roles) to learn what your assigned role allows you to do.
 
 ## Add Users to an organization
 
-To add Users, go to your organization settings and click _add User_.
+To add Users, go to your organization settings and click _Add User_.
 
 Enter the email, set if this person should be an **owner** or a **member** or the organization.
 
 ![Add User to organization](/uploads/2019/05/add-user-to-org.png)
 
-- **Members** can add sites to the organization
-- **Owners** have total access control on the organization. This includes access billing, adding/removing org members, modifying teams, and deleting the organization. Owners also automatically have admin access-level on all of the organization's sites.
+### Organization Roles
+
+
+Users in an organization can be assigned one of two roles:
+
+- **Members** can add sites within the organization (once they have been assigned as [collaborators](/docs/settings/collaborators/))
+- **Owners** have total access control within the organization. This includes accessing billing, adding/removing org members, modifying teams, and deleting the organization. Owners also automatically have admin access-level on all of the organization's sites.
 
 ## Teams
 
-Once you have added members to an organization, you can create teams to define default permissions for team members on each site.
+Once you have added some members to an organization, you can create teams. These teams can be applied to sites to group team members' permissions.
 
 ### Create Teams
 
