@@ -143,6 +143,7 @@ pages:
 - hugo/content/careers/developer-evangelist.md
 - hugo/content/docs/git-sync
 - hugo/content/docs/_index.md
+- hugo/content/asdd.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/an-introduction-to-theming-in-vuepress.md
 - hugo/content/blog/discontinuing-zip-sites.md
@@ -220,7 +221,6 @@ pages:
 - hugo/content/blog/data-relationships-in-hugo.md
 - hugo/content/blog/a-hugo-update-everyone-should-be-talking-about.md
 - hugo/content/blog/gulp-and-webpack-best-of-both-worlds.md
-- hugo/content/asdd.md
 - hugo/content/blog/better-content-management-for-gatsby.md
 - hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/master-image-delivery-with-cloudinary.md
