@@ -19,9 +19,9 @@ Navigate to a site on your Dashboard (e.g. "My Sites"). Click on the "..." next 
 If you selected "Organization", you'll be able to choose the destination from the dropdown menu, once you made your decision click on "Transfer".
 
 {{% tip ROLES %}}
-You can only transfer sites to Organizations if your role for that Organization permits it. See [user roles](/docs/settings/team-management/#user-roles)
+You can only transfer sites to Organizations if your role for that Organization permits it. See [user roles](/docs/settings/collaborators/#site-access-levels)
 {{% /tip %}}
 
 *If you moved your site from a legacy plan you might need to cancel your old plan. See [How to Cancel a per-site plan?](/docs/faqs/cancel-legacy-plan/)*
 
-*If you would like to learn more about Organizations and our new Team Management UI see [Team Management](/docs/settings/team-management/)*
+*If you would like to learn more about Organizations and our new Collaborators & Teams UI see [Collaborators & Teams](/docs/settings/collaborators/)*

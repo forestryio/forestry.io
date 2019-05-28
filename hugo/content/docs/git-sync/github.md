@@ -57,7 +57,7 @@ If you're importing a Hugo or Jekyll site, Forestry will attempt to locate your 
 
 When you're done just click on "Import Site" and let us get your site ready.
 
-To invite collaborators to edit content on your project, see [user roles](/docs/settings/team-management/). 
+To invite collaborators to edit content on your project, see [user roles](/docs/settings/collaborators/). 
 
 ## Importing from a GitHub organization
 
