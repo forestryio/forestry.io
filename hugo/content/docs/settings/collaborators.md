@@ -19,15 +19,18 @@ menu:
 
 Forestry allows you to define how you work as teams or with collaborators. Teams are available from [our starter plan](/pricing).
 
-## Collaborators on personal sites
+## On personal sites
 
-Sites that are not part of an organization are **personal** sites. On those sites you can add up to three collaborators. Each collaborator can be an [admin, developer or editor](#site-access-levels), depending of the permissions you wish to set for each one of them. Upgrade to [our starter plan](/pricing) if you need more collaborators.
+Sites that are not part of an organization are personal sites. On those sites you can add up to **3** collaborators. Each collaborator can be an [admin, developer or editor](#site-access-levels).
+
+Upgrade to [our starter plan](/pricing) if you need more collaborators.
 
 ### Managing Collaborators
 
-To add collaborators to your sites, go to your site settings.
+Admins and organization owners can manage site collaborators.
+From your site settings, select the _Collaborators & Teams_ tab.
 
-![Add Collaborators](/uploads/2019/05/add-collaborator-free-plan.png)
+{{% pretty_screenshot img="/uploads/2019/05/add-collaborator-free-plan.png" alt="Site Collaborators in Forestry CMS" %}}
 
 ### Inviting Collaborators
 
@@ -44,23 +47,24 @@ Collaborators can always [sign up](https://app.forestry.io//signup) to Forestry 
 To remove a Collaborator, click the remove icon on the right.
 Then confirm the removal by clicking "Remove Collaborator".
 
-## Collaborators on organization sites
+## On organization sites
 
-You can add unlimited organization users as site collaborators, but can only have up to 3 **external** collaborators per site. Nothing prevents you from making an external collaborator a member of your organization.
+You can add unlimited organization users as site collaborators, but can only have up to **3 external collaborators per site**. You can make an an external collaborator a member of your organization anytime.
 
-Each collaborator can be assigned [different access levels](#site-access-levels).
+Each collaborator is assigned [different access levels](#site-access-levels).
 
 ### Teams
 
 In addition to adding individual collaborators, Organization sites can also add teams with [different access levels](#site-access-levels).
-If a user belongs to multiple teams on a site, or is also an individual collaborator on a site, this user's role will be defiend by his/her highest access level. 
+If a user belongs to multiple teams on a site, or is also an individual collaborator on a site, this user's role will be defined by his/her highest access level.
 
 #### Adding a team
 
 To add a team to a site, click _Add Team_. Then choose the team from the dropdown and apply its [access level](#site-access-levels).
 
-![Add Collaborators and Teams to a site](/uploads/2019/05/collaborators-teams-settings.png)
+{{% pretty_screenshot img="/uploads/2019/05/collaborators-teams-settings.png" alt="Collaborator and Teams from the site settings in Forestry" %}}
 
+You can click on a team name to manage its members from the organization settings.
 
 ## Site Access Levels
 

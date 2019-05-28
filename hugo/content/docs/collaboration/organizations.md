@@ -13,7 +13,7 @@ menu:
 
 ---
 
-*This is a paid feature*
+_Organizations are available from our [starter plan](/pricing)._
 
 Organizations enable you to manage groups of users across multiple sites. Teams or individuals within an organization can have their access levels applied on a per-site basis.
 
@@ -24,18 +24,23 @@ Once you have filled in your information and named the organization, you can pro
 
 The Organization that you have created will now show up underneath _My sites_ in the left sidebar. You can access the organization's sites and settings by clicking on the Organization.
 
+{{% pretty_screenshot img="/uploads/2019/05/organization-settings.png" alt="Organization settings" %}}
+
 Depending on your role in this organization, your dashboard may vary. Please read more about different [organization roles](#organization-roles) to learn what your assigned role allows you to do.
 
-## Add Users to an organization
+## Manage Users
 
-To add Users, go to your organization settings and click _Add User_.
+It's in your organization settings, that you add users and define their roles.
 
-Enter the email, set if this person should be an **owner** or a **member** or the organization.
+To add a new user to your organization, click _Add User_, then enter the email, and set if this person should be an **owner** or a **member** or the organization.
 
-![Add User to organization](/uploads/2019/05/add-user-to-org.png)
+{{% pretty_screenshot img="/uploads/2019/05/add-user-to-org.png" alt="Add User to organization" %}}
+
+We will automatically update your plan and billing when you add more than 5 users in your organization.
+
+When you remove users from your organization by clicking on the icon at the upper right, your plan will adjust accordingly.
 
 ### Organization Roles
-
 
 Users in an organization can be assigned one of two roles:
 
@@ -50,11 +55,10 @@ Once you have added some members to an organization, you can create teams. These
 
 Click on _Add Team_ button to add a new team to an organization, then enter the desired team name and click _Create_.
 
-![Add Team to organization](/uploads/2019/05/add-team.png)
+{{% pretty_screenshot img="/uploads/2019/05/add-team.png" alt="Add Team to organization" %}}
 
 Click on a team name to manage its members, you can now pick existing orgnization members and add them to one or more team.
 
 ### Add Teams to sites
 
 Teams can be added to each site from [within the Site Settings](/docs/settings/collaborators/#teams)
-
