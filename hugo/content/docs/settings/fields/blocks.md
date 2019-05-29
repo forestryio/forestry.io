@@ -22,7 +22,7 @@ When a user adds a block, they first select which type of block they wish to add
   - *Templates* &mdash; select one or more [Front Matter Templates](/docs/settings/front-matter-templates/) that can be added to the Blocks field.
 - **Validation**
   - *Minimum* &mdash; The minimum number of blocks that must be added to the field.
-  - *Maxiumum* &mdash; The maximum number of blocks allowed for the field.
+  - *Maximum* &mdash; The maximum number of blocks allowed for the field.
 
 ## Templating
 
