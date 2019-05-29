@@ -2,10 +2,10 @@
 aliases:
 - "/docs/managing-content/editing-content/"
 title: Markdown Editor
-weight: 2
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+weight: "2"
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2017-12-31T04:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -33,7 +33,9 @@ The markdown editor is fully [commonmark compatible](https://commonmark.org/help
 
 To find all available keyboard and markdown shortcuts, click the keyboard icon in the bottom right corner.
 
-### Source editor![](/uploads/2018/01/18.png)
+### Source editor
+
+![](/uploads/2018/01/18.png)
 
 For advanced users, the full markdown source of your content body can be edited by clicking the more options icon (`...`), and selecting "Raw Editor".
 

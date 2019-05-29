@@ -144,6 +144,7 @@ pages:
 - hugo/content/docs/git-sync
 - hugo/content/docs/_index.md
 - hugo/content/asdd.md
+- hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/an-introduction-to-theming-in-vuepress.md
 - hugo/content/blog/discontinuing-zip-sites.md
@@ -167,7 +168,6 @@ pages:
 - hugo/content/docs/troubleshooting
 - hugo/content/blog/3-tips-for-mastering-blocks.md
 - hugo/content/blog/new-improve-media-gallery.md
-- hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/create-in-app-documentation-for-content-editors.md
 - hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
