@@ -19,6 +19,6 @@ fields:
   default: blocks
 pages:
 - hugo/content/landing-page-test.md
-- hugo/content/blocks.md
 - hugo/content/test-landing-page.md
 - hugo/content/another-landing-page.md
+- hugo/content/blocks.md
