@@ -1,19 +1,18 @@
 ---
 title: About Organizations
-weight: 1
-publishdate: 2019-05-27 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2019-05-27 04:00:00 +0000
+weight: "1"
+publishdate: 2019-05-27T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2019-05-27T04:00:00.000+00:00
 layout: single
-images:
+images: 
 menu:
   docs:
     parent: Organizations
     weight: 1
 
 ---
-
-_Organizations are available from our [starter plan](/pricing)._
+_Organizations are available from our_ [_starter plan_](/pricing)_._
 
 Organizations enable you to manage groups of users across multiple sites. Teams or individuals within an organization can have their access levels applied on a per-site basis.
 
@@ -44,8 +43,17 @@ When you remove users from your organization by clicking on the icon at the uppe
 
 Users in an organization can be assigned one of two roles:
 
-- **Members** can add sites within the organization (once they have been assigned as [collaborators](/docs/settings/collaborators/))
-- **Owners** have total access control within the organization. This includes accessing billing, adding/removing org members, modifying teams, and deleting the organization. Owners also automatically have admin access-level on all of the organization's sites.
+* **Members** can add sites within the organization (once they have been assigned as [collaborators](/docs/settings/collaborators/))
+* **Owners** have total access control within the organization. This includes adding/removing organization members, modifying teams, accessing billing and deleting the organization.  
+  Owners also automatically have admin access-level on all of the organization's sites.
+
+|                           | Member | Owner |
+|---------------------------|:------:|:-----:|
+| Create new site           |    ✔️  |   ✔️   |
+| Admin access to all sites |        |   ✔️   |
+| Manage Members and Teams  |        |   ✔️   |
+| Access Billing            |        |   ✔️   |
+| Delete Organization       |        |   ✔️   |
 
 ## Teams
 
