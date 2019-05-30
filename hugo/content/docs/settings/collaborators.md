@@ -37,13 +37,7 @@ To add a Collaborator, click _Add Collaborator_, and enter the new collaborator'
 
 This will send an email invitation to the new collaborators to join the site.
 
-A user can be added to a site as an individual collaborator but they may also belong to a site through [team](#teams) membership or via [organization](/docs/collaboration/organizations/ "About Organizations") ownership. When determining access level for a site, the highest level of all relationships is selected.
-
-For instance an individual contributor that was added as an individual **editor**, but also belongs to a team with the **developer** access level, has **developer** access to the site. If the user is an **owner** of the organization they are automatically an **admin** on the site.
-
-{{% tip %}}
-Collaborators can always [sign up](https://app.forestry.io//signup) to Forestry and will have access to all the sites and organizations they have been invited to.
-{{%/ tip %}}
+All collaborators are marked as **external** on personal sites.
 
 ### Removing Collaborators from a site
 
@@ -68,7 +62,17 @@ To add a team to a site, click _Add Team_. Then choose the team from the dropdow
 
 {{% pretty_screenshot img="/uploads/2019/05/collaborators-teams-settings.png" alt="Collaborator and Teams from the site settings in Forestry" %}}
 
-You can click on a team name to manage its members from the organization settings.
+You can click on a team name to manage its members from the [organization](/docs/collaboration/organizations/ "About Organizations") settings.
+
+#### Determining access level
+
+A user can be added to a site as an individual collaborator but they may also belong to a site through [team](#teams) membership or via [organization](/docs/collaboration/organizations/ "About Organizations") ownership. When determining access level for a site, the highest level of all relationships is selected.
+
+For instance an individual contributor that was added as an individual **editor**, but also belongs to a team with the **developer** access level, has **developer** access to the site. If the user is an **owner** of the organization they are automatically an **admin** on the site.
+
+{{% tip %}}
+Collaborators can always [sign up](https://app.forestry.io//signup) to Forestry and will have access to all the sites and organizations they have been invited to.
+{{%/ tip %}}
 
 ## Site Access Levels
 
