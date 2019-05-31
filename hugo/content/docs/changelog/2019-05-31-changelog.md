@@ -14,3 +14,4 @@ draft: true
 
 * **Media:** Fixed a button where the delete media button was hidden in Safari.
 * **Media:** Fixed an issue where changing the media provider in the settings would be reset after clicking on the page.
+* **Dates:** Fixed an issue where dates in some formats would show up as \[object: object\] after saving a document.
