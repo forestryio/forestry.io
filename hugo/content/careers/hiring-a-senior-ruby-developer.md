@@ -49,7 +49,7 @@ menu: []
 **Extra consideration will be given for candidates that:**
 
 * have experience with static site generators
-* have experience with graphql backends
+* have experience with GraphQL backends
 * have a passion for the solving the needs of our users
 
 We are open to remote candidates.
