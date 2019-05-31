@@ -18,6 +18,7 @@ cta:
 private: false
 weight: ''
 aliases: []
+draft: true
 
 ---
 At Forestry, we’re _helping people build a better web_. Our **Technical Account Manager’s** mission is to work with our corporate clients to help them achieve success with the JAMstack. If you’re used to working with clients as a freelancer and love the JAMstack, this could be the perfect role for you.
