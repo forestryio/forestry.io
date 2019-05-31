@@ -8,7 +8,7 @@ description: Forestry.io is a content management system for static websites buil
   all updates are saved as commits in the Git repo for that site.  Our product is
   a Rails application and we are currently seeking a senior Rails developer to join
   the team and help us continue to build out the product.
-date: 2018-12-06 04:00:00 +0000
+date: 2019-05-31T12:00:00-03:00
 headline: ''
 textline: ''
 images: []
@@ -16,16 +16,17 @@ authors:
 - Scott Gallant
 categories: []
 tags: []
-publishdate: 2018-12-06 04:00:00 +0000
-expirydate: 2030-12-06 04:00:00 +0000
+publishdate: 2019-05-30T00:00:00-03:00
+expirydate: 2030-12-06T00:00:00-04:00
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 
 aliases: []
-draft: true
+photo_credit: ''
+menu: []
 
 ---
 [Forestry.io](https://forestry.io) is a content management system for static websites built with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around the world are leaving WordPress and Drupal for more secure, performant, static sites and Forestry allows their non-technical teams to manage content.  Forestry takes a Git-based approach to content management. When content is edited in Forestry, all updates are saved as commits in the Git repo for that site.  Our product is a Rails application and we are currently seeking a senior Rails developer to join the team and help us continue to build out the product.
@@ -39,7 +40,7 @@ draft: true
 
 **An ideal candidate will:**
 
-* have many years experience building and designing Rails applications
+* have a minimum of 5 years experience building and designing Rails applications
 * be driven by solving hard problems and taking ownership over development tasks
 * take initiative and suggest solutions and improvements
 * understand test driven development

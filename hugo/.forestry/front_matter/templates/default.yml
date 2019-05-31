@@ -145,6 +145,7 @@ pages:
 - hugo/content/docs/_index.md
 - hugo/content/asdd.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
+- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
 - hugo/content/blog/an-introduction-to-theming-in-vuepress.md
 - hugo/content/blog/discontinuing-zip-sites.md
@@ -235,6 +236,5 @@ pages:
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/careers/devrel.md
 - hugo/content/careers/hiring-devops-engineer.md
-- hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/careers/marketing.md
 - hugo/content/careers/_index.md
