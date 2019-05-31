@@ -12,7 +12,6 @@ draft: true
 ---
 ## Enhancements
 
-* **Teams (starter plan)**: Allow organizations to handle teams and collaborators to better define permissions on sites.
 * **Conditional for template fields (alpha)** : Choose to conditionally render a field based on the value of a sibling field. Currently only works with two field types: Bool or Select field.
 
 ## Bug Fixes
