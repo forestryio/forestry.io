@@ -25,7 +25,7 @@ aliases: []
 menu: []
 
 ---
-We are introducing changes to the way you manage collaborators on your sites.
+We are introducing changes to improve the way you manage collaborators on your sites.
 
 Our previous model had a few limitations that we wanted to address:
 
@@ -40,12 +40,12 @@ The access levels for users on a site are now defined on the site-level as oppos
 
 #### Collaborators instead of Guests
 
-Instead of having the notion of "guests" on an individual site, we now refer to these site-users as collaborators. You can add as many "internal collaborators" (users within your site's organization) as you like, and you can add 3 external collaborators (users outside of your site's organization) onto a site. These "external collaborators" (previously known as "guests") can have an editor, developer, or admin access level assigned to them.
+Instead of having the notion of "guests" on an individual site, we now refer to these site-users as [collaborators](/docs/settings/collaborators/). You can add as many "internal collaborators" (users within your site's organization) as you like, and you can add 3 external collaborators (users outside of your site's organization) onto a site. These "external collaborators" (previously known as "guests") can have an editor, developer, or admin access level assigned to them.
 
 #### Teams
 
 You can now create [teams](docs/settings/collaborators/#teams) inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
 
-[Check out our documentation to set up permissions your sites](/docs/settings/collaborators/).
+[**Check out our documentation**](/docs/settings/collaborators/)
 
 We believe these changes are a step forward in making less assumptions about how your team collaborates on sites. We hope you love the new changes, and we can't wait to build on them to continue making our collaboration workflow more flexible!
