@@ -1,6 +1,7 @@
 ---
 title: Introducing Teams
-description: ''
+description: 'We''ve recently introduced some changes to the way that you can manage
+  collaborators on your site. '
 date: 2019-06-03T09:53:59-03:00
 publishdate: 2019-06-03T09:53:59-03:00
 expirydate: 2030-01-01T04:00:00.000+00:00
@@ -31,7 +32,7 @@ Our previous model had a few limitations that we wanted to address:
 * The only way to give users "developer" or "admin" permissions on a site was to make them a "developer" or "admin" across the entire organization.
 * Guests on an individual site were restricted to "editor" permissions (No access to edit front matter templates or site settings)
 
-#### Introducing Teams
+#### Teams
 
 You can now create "Teams" inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
 
