@@ -1,7 +1,7 @@
 ---
 title: Introducing Teams
 description: 'We''ve recently introduced some changes to the way that you can manage
-  collaborators on your site. '
+  collaborators on your sites. '
 date: 2019-06-03T09:53:59-03:00
 publishdate: 2019-06-03T09:53:59-03:00
 expirydate: 2030-01-01T04:00:00.000+00:00
