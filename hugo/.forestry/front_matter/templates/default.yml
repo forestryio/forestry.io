@@ -141,6 +141,7 @@ fields:
   label: menu
 pages:
 - hugo/content/careers/developer-evangelist.md
+- hugo/content/blog/introducing-teams.md
 - hugo/content/docs/git-sync
 - hugo/content/docs/_index.md
 - hugo/content/asdd.md
