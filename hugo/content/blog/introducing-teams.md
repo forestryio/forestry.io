@@ -26,7 +26,7 @@ menu: []
 draft: true
 
 ---
-We've recently introduced some changes to the way that you can manage collaborators on your site.
+We are introducing changes to the way you manage collaborators on your sites.
 
 Our previous model had a few limitations that we wanted to address:
 
@@ -45,8 +45,8 @@ Instead of having the notion of "guests" on an individual site, we now refer to 
 
 #### Teams
 
-You can now create "Teams" inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
+You can now create teams inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
 
-Check out our 
+Check out our documentation to set up permissions your sites.
 
 We believe these changes are a step forward in making less assumptions about how your team collaborates on sites. We hope you love the new changes, and we can't wait to build on them to continue making our collaboration workflow more flexible!
