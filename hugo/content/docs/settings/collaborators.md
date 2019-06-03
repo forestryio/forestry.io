@@ -29,7 +29,7 @@ Upgrade to [our starter plan](/pricing) if you need more collaborators.
 Admins and organization owners can manage site collaborators.
 From your site settings, select the _Collaborators & Teams_ tab.
 
-{{% pretty_screenshot img="/uploads/2019/05/add-collaborator-free-plan.png" alt="Site Collaborators in Forestry CMS" %}}
+![](/uploads/2019/05/add-collaborator-free-plan.png)
 
 ### Inviting Collaborators
 
@@ -60,7 +60,7 @@ If a user belongs to multiple teams on a site, or is also an individual collabor
 
 To add a team to a site, click _Add Team_. Then choose the team from the dropdown and apply its [access level](#site-access-levels).
 
-{{% pretty_screenshot img="/uploads/2019/05/collaborators-teams-settings.png" alt="Collaborator and Teams from the site settings in Forestry" %}}
+![](/uploads/2019/05/collaborators-teams-settings.png)
 
 You can click on a team name to manage its members from the [organization](/docs/collaboration/organizations/ "About Organizations") settings.
 
