@@ -38,7 +38,7 @@ You can now create "Teams" inside of your Forestry organization. Now you can gro
 
 #### "Collaborators" instead of "Guests"
 
-Instead of having the notion of "guests" on an individual site, we now refer to these site-users as collaborators. You can add as many "internal collaborators" (users within your site's organization) as you like, and you can add 3 external collaborators (users outside of your site's organization) onto a site. These "external collaborators" (previously known as "guests") can have an editor, developer, or admin role assigned to them. 
+Instead of having the notion of "guests" on an individual site, we now refer to these site-users as collaborators. You can add as many "internal collaborators" (users within your site's organization) as you like, and you can add 3 external collaborators (users outside of your site's organization) onto a site. These "external collaborators" (previously known as "guests") can have an editor, developer, or admin access level assigned to them. 
 
 #### Site-specific access levels
 
