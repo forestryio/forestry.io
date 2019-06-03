@@ -55,9 +55,9 @@ Once authorized, you will be redirected back to Forestry to choose the repositor
 
 If you're importing a Hugo or Jekyll site, Forestry will attempt to locate your site configuration. If Forestry can't locate the config file inside of the root of your project, you'll be prompted to provide the directory it is located in.
 
-{{% pretty_screenshot img="/uploads/2019/04/add-site-flow-guests.png" %}}
+When you're done just click on "Import Site" and let us get your site ready.
 
-In the final step, you can invite up to 3 Guest users to edit content on your project with you. Learn more about [user roles](/docs/settings/team-management/). When you're done just click on "Import Site" and let us get your site ready.
+To invite collaborators to edit content on your project, see [user roles](/docs/settings/collaborators/). 
 
 ## Importing from a GitHub organization
 

@@ -158,17 +158,15 @@ We recommend using some time to research the different hosting options for stati
 
 ***
 
-## Team and Guest Management
+## Team and Collaborators Management
 
 Invite your clients or team members to allow them to update the site with Forestry.
 
-Editors that only have access to one specific site are called Guests in Forestry. These roles are ideal for non-technical users that maintain a site on a regular basis (e.g. writers, clients or marketers). You can add a Guest to your site in the sidebar by clicking on the _+_ and adding their e-mail address.
+Editors that only have access to one specific site are called Collaborators in Forestry. These roles are ideal for non-technical users that maintain a site on a regular basis (e.g. writers, clients or marketers).
 
-![](/uploads/2018/12/add-guest-quickstart.png)
+External collaborators roles are always free, per site you can add up-to 3 of these roles.
 
-Guest roles are always free, per site you can add up-to 3 of these roles.
-
-For teams that need more advanced team management Forestry provides [Organizations](/docs/settings/team-management#organizations). Organizing editors, developers and admins in [User roles](/docs/settings/team-management#user-roles) makes managing your whole team across multiple sites simple (paid feature).
+For teams that need more advanced collaborators & teams Forestry provides [Organizations](/docs/collaboration/organizations/). Organizing editors, developers and admins in [User roles](/docs/settings/collaborators#site-access-levels) makes managing your whole team across multiple sites simple (paid feature).
 
 ***
 

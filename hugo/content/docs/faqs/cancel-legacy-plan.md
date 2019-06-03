@@ -21,7 +21,7 @@ To cancel a legacy plan (e.g. the _Team Plan_) navigate to your dashboard and cl
 Please read the warning carefully and if you're certain you want take this action please click on "Downgrade".
 
 {{% tip %}}
-Please note that when you downgrade a plan you can't have more than 3 Users on a site unless a site is inside an Organization - see [Team Management](/docs/settings/team-management/)
+Please note that when you downgrade a plan you can't have more than 3 Users on a site unless a site is inside an Organization - see [Team Management](/docs/settings/collaborators/)
 {{% /tip %}}
 
-_If you would like to learn more about Organizations and our new Team Management UI see_ [_Team Management_](/docs/settings/team-management/)
+_If you would like to learn more about Organizations and our new Collaborators & Teams UI see_ [_Collaborators and Teams_](/docs/settings/collaborators/)

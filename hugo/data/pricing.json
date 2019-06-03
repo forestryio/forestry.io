@@ -10,8 +10,8 @@
       "buttonUrl": "https://app.forestry.io/signup",
       "planItems": [
         {
-          "text": "Up to 3 Guests per site",
-          "info": "Single-site users with limited permissions. Used for clients or external colleagues"
+          "text": "Up to 3 collaborators per site",
+          "info": "Single-site users. Used for clients or external colleagues"
         },
         {
           "text": "Unlimited sites"
@@ -54,8 +54,8 @@
           "info": "Manage one group of users across all of your sites and branches"
         },
         {
-          "text": "3 user roles",
-          "info": "Assign roles to your team members: admin, developer, or editor"
+          "text": "Team access controls",
+          "info": "Assign organization members to teams. These teams can be added to sites with admin, developer, or editor access levels"
         },
         {
           "text": "Business support",
