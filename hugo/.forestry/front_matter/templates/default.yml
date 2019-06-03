@@ -144,7 +144,6 @@ pages:
 - hugo/content/blog/introducing-teams.md
 - hugo/content/docs/git-sync
 - hugo/content/docs/_index.md
-- hugo/content/asdd.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
