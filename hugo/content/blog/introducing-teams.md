@@ -44,7 +44,7 @@ Instead of having the notion of "guests" on an individual site, we now refer to 
 
 #### Teams
 
-You can now create [teams](docs/settings/collaborators/#teams) inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
+You can now create [teams](/docs/settings/collaborators/#teams) inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
 
 [**Check out our documentation**](/docs/settings/collaborators/)
 
