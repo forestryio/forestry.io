@@ -46,6 +46,6 @@ Instead of having the notion of "guests" on an individual site, we now refer to 
 
 You can now create teams inside of your Forestry organization. Now you can group your team members into teams, and add these teams onto individual sites.
 
-Check out our documentation to set up permissions your sites.
+[Check out our documentation to set up permissions your sites](/docs/settings/collaborators/).
 
 We believe these changes are a step forward in making less assumptions about how your team collaborates on sites. We hope you love the new changes, and we can't wait to build on them to continue making our collaboration workflow more flexible!
