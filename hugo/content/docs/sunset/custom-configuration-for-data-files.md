@@ -35,4 +35,4 @@ If you’re using Data Files as a source for your Select Fields you might have t
 
 {{% /tip %}}
 
-Visit our [docs](/docs/editing/data-files#existing-jekyll-hugo-projects) to learn more or see our [walkthrough](/blog/custom-configuration-for-data-files/) to migrate your sites now.
+Visit our [docs](/docs/editing/data-files) to learn more or see our [walkthrough](/blog/custom-configuration-for-data-files/) to migrate your sites now.

@@ -27,7 +27,7 @@ We're excited to announce custom configuration for data files.
 
 A little over two months ago we made it possible to customize the sidebar for your content files (i.e. .md and .html). With today's update we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
 
-All new sites will have this feature enabled by default. Existing Jekyll and Hugo sites are not automatically migrating until October 16th, 2018, giving you time to make adjustments, if necessary. Read more in our [docs](/docs/editing/data-files#existing-jekyll-hugo-projects).
+All new sites will have this feature enabled by default. Existing Jekyll and Hugo sites are not automatically migrating until October 16th, 2018, giving you time to make adjustments, if necessary.
 
 Here's a quick walkthrough on how you can set up data file sections on your site.
 
