@@ -125,8 +125,8 @@ fields:
     source:
       type: datafiles
 pages:
-- hugo/content/showcase/developerecosystem.md
-- hugo/content/showcase/yieldmo.md
-- hugo/content/showcase/smallmultiples.md
-- hugo/content/showcase/_index.md
 - hugo/content/showcase/borisfx.md
+- hugo/content/showcase/_index.md
+- hugo/content/showcase/smallmultiples.md
+- hugo/content/showcase/yieldmo.md
+- hugo/content/showcase/developerecosystem.md
