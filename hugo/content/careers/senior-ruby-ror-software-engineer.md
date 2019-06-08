@@ -1,5 +1,5 @@
 ---
-title: Senior Ruby/RoR Software Engineer
+title: Lead Ruby/RoR Software Engineer
 description: Forestry.io is a content management system for static websites built
   with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around
   the world are leaving WordPress and Drupal for more secure, performant, static sites
@@ -26,6 +26,7 @@ private: false
 weight: 
 aliases: []
 photo_credit: ''
+menu: []
 draft: true
 
 ---
@@ -33,6 +34,7 @@ draft: true
 
 **Responsibilities**
 
+* Some leadership tasks like mentorship, code-reviews, etc.
 * Design, build, and maintain efficient, reusable, reliable, and well tested Ruby code
 * Design and build database schemas and improvements
 * Identify bottlenecks and bugs, and suggest and implement solutions to these problems
