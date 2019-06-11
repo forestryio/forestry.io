@@ -1,9 +1,9 @@
 ---
 title: GitHub Pages
-weight: 2
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-12-12 05:00:00 +0000
+weight: "2"
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2018-12-12T05:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -27,7 +27,7 @@ To deploy a static site to GitHub pages using Forestry, you must first set up a 
 
 Once your new branch is created, navigate to the _Settings_ page of your site in Forestry, click the _Deployment_ tab, and set the _Connection_ option to _GitHub Pages_.
 
-![](/uploads/2018/12/shadow-template.png)
+![](/uploads/2019/06/github-pages-settings.png)
 
 Click on "Click here to edit repo & branch" to connect your new _gh-pages_ branch with Forestry.
 
@@ -45,7 +45,7 @@ In order to host a site with GitHub Pages, you will need [admin permissions](htt
 
 Once authorized, you will be redirected back to Forestry.
 
-![](/uploads/2018/12/authorized-settings.png)
+![](/uploads/2019/06/github-pages-connected-settings.png)
 
 Next, choose your repository, select the new `gh-pages` branch, and then click _Save Settings_.
 
