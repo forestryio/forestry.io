@@ -10,3 +10,10 @@ cta:
 draft: true
 
 ---
+## Enhancements
+
+* **Organization Settings**: Updated tabs so that they don't reset where you are on page refresh
+
+## Bug fixes
+
+* **Date field formatting**: Fixed an issue where dates would export at {date: ******} while nested in blocks.
