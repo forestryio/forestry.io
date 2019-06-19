@@ -54,6 +54,9 @@ weight = 1
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
+[[menu.docs]]
+name = "Enterprise"
+weight = 11
 [[menu.footer]]
 name = "Roadmap"
 parent = "Product"
