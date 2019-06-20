@@ -27,13 +27,50 @@ In order to use instant previews, your site must be using **Key-based Authentica
 
 ## Setting up Instant Previews
 
-To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews**. Click the **Instant Previews** toggle to enable this feature.
 
-Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment.
+
+
+To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews**. 
+
+### Configuring the Preview Environment 
+
+Before enabling **Instant Previews** scroll to the **Environment** section to configure the preview server.  A defualt **Preview Environment** will have been chosen based on your static site generator. 
+
+There are four main fields to be configured:
+
+| Basic Field | Description |
+|---|---|
+| Install Dependencies Command (Optional)| The command used to install your projcets dependencies. The results of this command will be cached for faster startup times.  |
+| Build Command | The command that starts your static site generator's dev server.|
+| Output Directory | The directory where your site is output to when previewing. This path must be relative to the root of your repository.|
+| Environment Variables\* | A list of key-value pairs to be added to the preview server's environment. |
+
+{{% warning "Environment Variables are stored in Git *" %}}
+Be careful about which environment variables you add to your previwe server. All environment variables are stored in the `.forestry/settings.yml` of your Git repository.
+{{% /warning %}}
+
+### Advanced Configuration
+
+Certain users will require more control over their preview enviroment. For these cases, the following fields are available.
+
+| Advanced Field | Description |
+|---|---|
+| Docker Image |  Path to a publicly available image on Docker hub. Use this field if you want to use a custom Docker Image. |
+| Mount Path |  The directory inside the docker container where your site should be mounted. |
+| Working Directory (Optional) |  Override the default working directory of the docker image.  |
+
+{{% tip "Is your site in a subdirectory?" %}}
+A common use case for the **Working Directory** field is for site's that live in a subdirectory the Git repository. 
+
+{{% /tip %}}
 
 ![preview settings](/uploads/2019/01/preview_settings.png)
 
-### Server 
+## Turning on the Instant Previews Server 
+
+Once your preview environment is configured, turn it on by clicking the toggle at the top of the page.
+
+After activating the **Instant Previews** toggle, the preview server will begin to boot up.
 
 #### Server Status
 
@@ -63,27 +100,6 @@ The lifecycle of a preview server contains multiple steps. Each step has a **sta
 * **Installin Dependencies:** Runs the  _Install Dependencies Command_ if it was set.
 * **Saving Dependency Cache:** The output of the Install Dependencies step will be cached for future runs.
 * **Building Site:** It is during this step that your build command will be run. 
-
-
-### Configuring the Preview Environment
-
-Fields:
-
-* **Install Dependencies Command (Optional):** The command used to install your projcets dependencies. The results of this command will be cached for faster startup times. 
-* **Build Command:** The command that starts your static site generator's dev server.
-* **Output Directory:** The directory where your site is output to when previewing. This path must be relative to the root of your repository.
-* **Environment Variables:** A list of key-value pairs to be added to the preview server's environment. 
-
-{{% warning "Environment Variables are stored in Git" %}}
-Be careful about which environment variables you add to your previwe server. All environment variables are stored in the `.forestry/settings.yml` of your Git repository.
-
-{{% /warning %}}
-
-Advanced Field
-
-* **Docker Image:** Path to a publicly available image on Docker hub. Use this field if you want to use a custom Docker Image.
-* **Mount Path:** The directory inside the docker container where your site should be mounted.
-* **Working Directory (Optional):** Override the default working directory of the docker image. This command is most often used when your site is in a subdirectory of your Git repository. (TODO: More info on this?)
 
 
 
