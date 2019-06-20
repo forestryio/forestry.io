@@ -1,5 +1,5 @@
 ---
-title: Instant Previews
+title: Configuring Instant Previews
 aliases:
 - "/docs/instant-previews"
 date: 2019-01-05 00:00:00 +0000
@@ -12,10 +12,12 @@ layout: single
 menu:
   docs:
     parent: Previews
-    weight: 3
+    weight: 2
 
 ---
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
+
+To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews** and click the **Use Instant Previews** toggle at the top of the page. Before starting **Instant Previews** server scroll to the **Environment** section to make sure it is configured correctly.
 
 {{% warning "Before You Start" %}}
 
@@ -25,15 +27,11 @@ In order to use instant previews, your site must be using **Key-based Authentica
 
 {{% /warning %}}
 
-## Setting up Instant Previews
-
-To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews** and click the **Use Instant Previews** toggle at the top of the page. Before starting **Instant Previews** server scroll to the **Environment** section to make sure it is configured correctly.
-
-### Selecting a Preview Environment
+## Selecting a Preview Environment
 
 There are  four preconfigured preview environments. If you need you can bring your own custom environment. Check the advanced fields below.
 
-### Configuring the Preview Environment
+## Configuring the Preview Commands
 
 Each preview environment has a set of recommended values. These values are set by default but can be modified to fit your site.
 
@@ -86,39 +84,6 @@ build:
 Your instant preview command will use the same **output directory** and **environment variables** as the standard preview command.
 {{% /tip %}}
 
-## Turning on the Instant Previews Server
-
-**TODO: ADD A PICTURE OF THE SERVER SECTION**
-
-The Instant Preview server may be in one of several states:
-
-| Status | Description |
-|---|---|
-| Disabled | Instant Previews are disabled. Standard Previews will be used instaed. |
-| Stopped| The preview server is stopped. |
-| Starting| The preview server is starting up. |
-| Ready| The preview server is running the Build Command|
-| Stopping| The preview server is shutting down.|
-| Error| The an error occurred while running the preview server. |
-
-Depending on the state of your preview server, several server actions will be available,
-
-| Action | Description |
-|---|---|
-| Start |  Starts the stopped preview server. |
-| Stop |  Stops running preview server. |
-| Restart |  Stops the running server and restarts it immediately. |
-| Clear Cache  & Restart |  Clears the repository and dependency cache before restarting the server. |
-
-The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. Common preview steps include:
-
-| Setup Step | Description |
-|---|---|
-| Loading Repo Files |  TODO |
-| Installing Dependencies |  Runs the  _Install Dependencies Command_ if it was set. |
-| Saving Cache |  Caches the repository and any installed dependencies.  |
-| Building Site |  Executes the _Build Command_ to start serving your preview. |
-
 ## Command Limitations
 
 Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `jekyll serve`.
@@ -159,7 +124,7 @@ gatsby develop -p 8080 -H 0.0.0.0
 
 Forestry's live previewing relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
 
-## Default Instant Preview Commands
+## Default Preview Commands
 
 See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
 
