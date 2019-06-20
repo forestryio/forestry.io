@@ -25,15 +25,67 @@ In order to use instant previews, your site must be using **Key-based Authentica
 
 {{% /warning %}}
 
-## Adding an Instant Preview
+## Setting up Instant Previews
 
-Instant previews are configured just like other [build commands](/docs/settings/build-commands/). To use instant previews, navigate to **Settings** > **Previews**. Activate the **Instant Previews** toggle to enable this feature.
+To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews**. Click the **Instant Previews** toggle to enable this feature.
 
-Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment and you will be able to edit the **Instant Preview Command**.
+Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment.
 
 ![preview settings](/uploads/2019/01/preview_settings.png)
 
-You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
+### Server 
+
+#### Server Status
+
+The Instant Preview server may be in one of several states:
+
+* Disabled
+* Stopped
+* Starting
+* Ready
+* Stopping
+* Error
+
+#### Actions
+
+Depending on the state of your preview server, several server actions will be available, 
+
+* **Start:** Starts the stopped preview server.
+* **Stop:** Stops running preview server.
+* **Restart:** Stops the running server and restarts it immediately.
+* **Restart & Clear Cache:** Clears the repository and dependency cache before restarting the server.
+
+#### Setup Steps
+
+The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. Common preview steps include:
+
+* **Loading Repo Files:** TODO
+* **Installin Dependencies:** Runs the  _Install Dependencies Command_ if it was set.
+* **Saving Dependency Cache:** The output of the Install Dependencies step will be cached for future runs.
+* **Building Site:** It is during this step that your build command will be run. 
+
+
+### Configuring the Preview Environment
+
+Fields:
+
+* **Install Dependencies Command (Optional):** The command used to install your projcets dependencies. The results of this command will be cached for faster startup times. 
+* **Build Command:** The command that starts your static site generator's dev server.
+* **Output Directory:** The directory where your site is output to when previewing. This path must be relative to the root of your repository.
+* **Environment Variables:** A list of key-value pairs to be added to the preview server's environment. 
+
+{{% warning "Environment Variables are stored in Git" %}}
+Be careful about which environment variables you add to your previwe server. All environment variables are stored in the `.forestry/settings.yml` of your Git repository.
+
+{{% /warning %}}
+
+Advanced Field
+
+* **Docker Image:** Path to a publicly available image on Docker hub. Use this field if you want to use a custom Docker Image.
+* **Mount Path:** The directory inside the docker container where your site should be mounted.
+* **Working Directory (Optional):** Override the default working directory of the docker image. This command is most often used when your site is in a subdirectory of your Git repository. (TODO: More info on this?)
+
+
 
 ### Preview Settings In *.forestry/settings.yml*
 Alternatively, you can add your instant preview command directly to your configuration file in `.forestry/settings.yml` by adding a value named `instant_preview_command` under the `build` section. You can activate instant previews by adding `instant_preview: true` to the top-level configuration.
