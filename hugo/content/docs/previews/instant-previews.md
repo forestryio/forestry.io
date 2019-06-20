@@ -27,16 +27,17 @@ In order to use instant previews, your site must be using **Key-based Authentica
 
 ## Setting up Instant Previews
 
+To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews** and click the **Use Instant Previews** toggle at the top of the page. Before starting **Instant Previews** server scroll to the **Environment** section to make sure it is configured correctly.
 
+### Selecting a Preview Environment
 
+There are  four preconfigured preview environments. If you need you can bring your own custom environment. Check the advanced fields below.
 
-To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews**. 
+### Configuring the Preview Environment
 
-### Configuring the Preview Environment 
+Each preview environment has a set of recommended values. These values are set by default but can be modified to fit your site.
 
-Before enabling **Instant Previews** scroll to the **Environment** section to configure the preview server.  A defualt **Preview Environment** will have been chosen based on your static site generator. 
-
-There are four main fields to be configured:
+There are four basic fields to configure:
 
 | Basic Field | Description |
 |---|---|
@@ -60,48 +61,11 @@ Certain users will require more control over their preview enviroment. For these
 | Working Directory (Optional) |  Override the default working directory of the docker image.  |
 
 {{% tip "Is your site in a subdirectory?" %}}
-A common use case for the **Working Directory** field is for site's that live in a subdirectory the Git repository. 
+A common use case for the **Working Directory** field is for site's that live in a subdirectory the Git repository.
 
 {{% /tip %}}
 
 ![preview settings](/uploads/2019/01/preview_settings.png)
-
-## Turning on the Instant Previews Server 
-
-Once your preview environment is configured, turn it on by clicking the toggle at the top of the page.
-
-After activating the **Instant Previews** toggle, the preview server will begin to boot up.
-
-#### Server Status
-
-The Instant Preview server may be in one of several states:
-
-* Disabled
-* Stopped
-* Starting
-* Ready
-* Stopping
-* Error
-
-#### Actions
-
-Depending on the state of your preview server, several server actions will be available, 
-
-* **Start:** Starts the stopped preview server.
-* **Stop:** Stops running preview server.
-* **Restart:** Stops the running server and restarts it immediately.
-* **Restart & Clear Cache:** Clears the repository and dependency cache before restarting the server.
-
-#### Setup Steps
-
-The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. Common preview steps include:
-
-* **Loading Repo Files:** TODO
-* **Installin Dependencies:** Runs the  _Install Dependencies Command_ if it was set.
-* **Saving Dependency Cache:** The output of the Install Dependencies step will be cached for future runs.
-* **Building Site:** It is during this step that your build command will be run. 
-
-
 
 ### Preview Settings In *.forestry/settings.yml*
 Alternatively, you can add your instant preview command directly to your configuration file in `.forestry/settings.yml` by adding a value named `instant_preview_command` under the `build` section. You can activate instant previews by adding `instant_preview: true` to the top-level configuration.
@@ -121,6 +85,39 @@ build:
 {{% tip %}}
 Your instant preview command will use the same **output directory** and **environment variables** as the standard preview command.
 {{% /tip %}}
+
+## Turning on the Instant Previews Server
+
+**TODO: ADD A PICTURE OF THE SERVER SECTION**
+
+The Instant Preview server may be in one of several states:
+
+| Status | Description |
+|---|---|
+| Disabled | Instant Previews are disabled. Standard Previews will be used instaed. |
+| Stopped| The preview server is stopped. |
+| Starting| The preview server is starting up. |
+| Ready| The preview server is running the Build Command|
+| Stopping| The preview server is shutting down.|
+| Error| The an error occurred while running the preview server. |
+
+Depending on the state of your preview server, several server actions will be available,
+
+| Action | Description |
+|---|---|
+| Start |  Starts the stopped preview server. |
+| Stop |  Stops running preview server. |
+| Restart |  Stops the running server and restarts it immediately. |
+| Clear Cache  & Restart |  Clears the repository and dependency cache before restarting the server. |
+
+The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. Common preview steps include:
+
+| Setup Step | Description |
+|---|---|
+| Loading Repo Files |  TODO |
+| Installing Dependencies |  Runs the  _Install Dependencies Command_ if it was set. |
+| Saving Cache |  Caches the repository and any installed dependencies.  |
+| Building Site |  Executes the _Build Command_ to start serving your preview. |
 
 ## Command Limitations
 
