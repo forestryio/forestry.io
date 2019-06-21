@@ -19,17 +19,39 @@ With **instant previews**, you can take advantage of your static site generator'
 
 To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews** and click the **Use Instant Previews** toggle at the top of the page. Before starting **Instant Previews** server scroll to the **Environment** section to make sure it is configured correctly.
 
-{{% warning "Before You Start" %}}
+## Configure the Preview Environment
 
-In order to use instant previews, your site must be using **Key-based Authentication** to access your Git repo. Sites created before **August 28, 2018** may need to perform a manual upgrade in order to work with instant previews.
-<br /><br />
-[Upgrade Guide: Key-Based Authentication](https://forestry.io/blog/migrating-to-key-based-authentication/)
+The first step on the path to *Instant Previews* is to configure the preview environment. To simplify the process we have created several preconfigured environments for you to choose from. These environments are kept slim to help keep your previews running quickly. Should you need something extra, you can bring your own custom preview environment.
 
-{{% /warning %}}
+### Select a Container
 
-## Selecting a Preview Environment
+There are currently four preconfigured preview environments to choose from. An environment will have been chosen for you based on the static site generator you are using.
 
-There are  four preconfigured preview environments. If you need you can bring your own custom environment. Check the advanced fields below.
+TODO: Insert Image of Container Modal
+
+| Image | Description | Default For |
+|---|---|---|
+|Hugo | A bare-bones Linux container with Hugo. Set the `HUGO_VERSION` environment variable to select which version of Hugo to use. | Hugo |
+|Hugo + Node | Hugo + NodeJS 10 + NPM, for Hugo sites that require Node modules. Set the `HUGO_VERSION` environment variable to select the version of Hugo to use. | – |
+|Ruby 2.6 | A container with Ruby 2.6 and bundler, suited for Jekyll sites. | Jekyll |
+|NodeJS 10 | NodeJS 10 + NPM. Will work with any Node-based static site generator defined in your package.json file such as Gatsby, VuePress, Gridsome, or Eleventy. | Gatsby, VuePress |
+|Custom | Bring-your-own environment! Use any publicly available image on Docker Hub to run your preview. See the [Advanced Configuration](#advanced-configuration) section below. | – |
+
+### Advanced Configuration
+To get more control over your preview environment, click the **Advanced Configuration** field below the **Select a Different Environment** button.
+
+TODO: Insert Image of Advanced Configuration Fields
+
+| Field | Description |
+|---|---|
+| Docker Image |  Path to a publicly available image on [Docker Hub](https://hub.docker.com/). Use this field if you want to use a custom Docker Image. |
+| Mount Path |  The directory inside the docker container where your site should be mounted. |
+| Working Directory (Optional) |  Override the default working directory of the docker image. This is where the "Install Dependency" and "Build Command" are run from.  |
+
+{{% tip "Is your site in a subdirectory?" %}}
+A common use case for the **Working Directory** field is for site's that live in a subdirectory the Git repository.
+
+{{% /tip %}}
 
 ## Configuring the Preview Commands
 
@@ -48,21 +70,6 @@ There are four basic fields to configure:
 Be careful about which environment variables you add to your previwe server. All environment variables are stored in the `.forestry/settings.yml` of your Git repository.
 {{% /warning %}}
 
-### Advanced Configuration
-
-Certain users will require more control over their preview enviroment. For these cases, the following fields are available.
-
-| Advanced Field | Description |
-|---|---|
-| Docker Image |  Path to a publicly available image on Docker hub. Use this field if you want to use a custom Docker Image. |
-| Mount Path |  The directory inside the docker container where your site should be mounted. |
-| Working Directory (Optional) |  Override the default working directory of the docker image.  |
-
-{{% tip "Is your site in a subdirectory?" %}}
-A common use case for the **Working Directory** field is for site's that live in a subdirectory the Git repository.
-
-{{% /tip %}}
-
 ![preview settings](/uploads/2019/01/preview_settings.png)
 
 ### Preview Settings In *.forestry/settings.yml*
@@ -74,11 +81,66 @@ Alternatively, you can add your instant preview command directly to your configu
 
 Here's an example of a live preview configuration in a `.forestry/settings.yml` file:
 
+TODO: Double Check that each of these fields have the right name
+{{% code_tabs %}}
+{{% tab "Hugo" %}}
 ```yaml
 instant_preview: true
-build:
-    instant_preview_command: hugo server -D --renderToDisk --port 8080 --bind 0.0.0.0
+build_commands:
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command:
+  instant_preview_command: hugo server --renderToDisk --port 8080 --bind 0.0.0.0
+  preview_output_directory: public
+  preview_env:
+    - HUGO_VERSION=0.52.1
 ```
+{{% /tab %}}
+{{% tab "Jekyll" %}}
+```yaml
+instant_preview: true
+build_commands:
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command: bundle install --path vendor/bundle
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+  output_directory: _site
+  preview_env:
+    - JEKYLL_ENV=staging
+```
+{{% /tab %}}
+{{% tab "VuePress" %}}
+```yaml
+instant_preview: true
+build_commands:
+  preview_docker_image: nodejs:10
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command: npm install
+  instant_preview_command: vuepress dev --port 8080 --host 0.0.0.0
+  output_directory: .vuepress/dist
+  preview_env:
+    - NODE_ENV=development
+```
+{{% /tab %}}
+
+{{% tab "Gatsby [beta]" %}}
+```yaml
+instant_preview: true
+build_commands:
+  preview_docker_image: nodejs:10
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command: npm install
+  instant_preview_command: gatsby develop -p 8080 -H 0.0.0.0
+  output_directory:
+  preview_env:
+    - NODE_ENV=development
+```
+{{% /tab %}}
+{{% /code_tabs %}}
 
 {{% tip %}}
 Your instant preview command will use the same **output directory** and **environment variables** as the standard preview command.
