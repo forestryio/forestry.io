@@ -19,7 +19,6 @@ private: false
 weight: 
 aliases: []
 menu: []
-draft: true
 
 ---
 Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.
