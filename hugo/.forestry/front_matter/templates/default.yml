@@ -140,6 +140,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/about-us.md
 - hugo/content/blog/removing-bitbucket-login.md
 - hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/careers/hiring-a-senior-ruby-developer.md
