@@ -17,9 +17,6 @@ menu:
 ---
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
 
-
-**TODO: Remind people they need to configure their previews.**
-
 **TODO: ADD A PICTURE OF THE SERVER SECTION**
 
 The Instant Preview server may be in one of several states:
