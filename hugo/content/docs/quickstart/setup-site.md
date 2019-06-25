@@ -74,9 +74,14 @@ Go into a post or page, **edit some text** and you will see "Unsaved Changes" at
 
 ## Preview Changes
 
-Click preview to view your changes in a new tab.
+Click preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="1.2"><path d="M12 18c6 0 10-6 10-6s-4-6-10-6-10 6-10 6 4 6 10 6z"></path><circle cx="12" cy="12" r="2"></circle></g></svg> to view your changes in a new tab.
 
 ![](/uploads/2018/01/preview.png)
+
+{{% tip "Having Trouble Previewing your Site?" %}}
+Not all site work with previews out of the box. To learn more about how to
+configure previews for your site, visit the [preview documentation](/docs/previews/about-previews/)
+{{% /tip %}}
 
 ## Make your first commit
 
