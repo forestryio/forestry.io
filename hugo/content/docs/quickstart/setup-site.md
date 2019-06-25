@@ -25,11 +25,11 @@ This doc will walk you through:
 
 [Sign up](https://app.forestry.io/signup/) for a free account with Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you **don't** have a Jekyll, Hugo or VuePress site already, click the link in the bottom of the _setup window_ to launch the demo site.
+If you **don't** have a Jekyll, Hugo, VuePress, or Gatsby site already, click the link in the bottom of the _setup window_ to launch the demo site.
 
 ### Select your Static Site Generator
 
-Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), and [VuePress](https://vuepress.vuejs.org/). In the case of Hugo, you must also specify which _version_ you use.
+Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), and [Gatsby](https://www.gatsbyjs.org/). In the case of Hugo, you must also specify which _version_ you use.
 
 ![](/uploads/2018/02/add-site-flow-choose-generator.png)
 
@@ -47,7 +47,7 @@ Once the authorization is complete, you will be taken to the next screen where y
 
 ### GitHub Repository Permissions
 
-In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.  
+In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.
 {{% /warning %}}
 
 If you use Github, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you want to grant access to Forestry to import your private repositories. You will only have to do this once.
