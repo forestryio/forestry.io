@@ -2,7 +2,7 @@
 title: About us
 description: Forestry Inc. is a Canadian company aiming at helping teams build blazing-fast
   websites.
-date: 2019-06-23T17:42:06-03:00
+date: 2019-06-24T17:42:06-03:00
 publishdate: 2019-06-24T17:42:06-03:00
 expirydate: 2030-01-01T00:00:00-04:00
 authors:
