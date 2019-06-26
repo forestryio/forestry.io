@@ -1,7 +1,7 @@
 ---
 aliases:
 title: Single Sign-on
-weight: 1
+weight: 3
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
@@ -11,7 +11,7 @@ images:
 menu:
   docs:
     parent: Pro
-    weight: 2
+    weight: 3
 ---
 
 ## SAML SSO
