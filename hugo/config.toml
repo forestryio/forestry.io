@@ -19,11 +19,14 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-name = "Developer Guides"
-weight = 10
+name = "Enterprise"
+weight = 12
 [[menu.docs]]
 name = "Other"
 weight = 11
+[[menu.docs]]
+name = "Developer Guides"
+weight = 10
 [[menu.docs]]
 name = "Hosting"
 weight = 9
