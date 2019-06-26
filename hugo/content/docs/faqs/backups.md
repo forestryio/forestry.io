@@ -15,7 +15,7 @@ menu:
     weight: 13
 
 ---
-For developers, backups are inherent due to the Git-backed nature of Forestry. Every change made to your site through Forestry is stored in version control.
+For developers, [backups](https://hosting.review/web-hosting-glossary/#14) are inherent due to the Git-backed nature of Forestry. Every change made to your site through Forestry is stored in version control.
 
 However, a zip backup of your site can be downloaded from the [dashboard](https://app.forestry.io/dashboard) if necessary.
 
