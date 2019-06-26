@@ -62,7 +62,6 @@ public_path: "/uploads"
 front_matter_path: "/uploads"
 use_front_matter_path: false
 file_template: ":year:/:month:/:filename:"
-instant_preview: true
 build:
   preview_command: npm run forestry:preview
   publish_command: npm run preDeploy
@@ -77,6 +76,4 @@ build:
   preview_output_directory: dist
   output_directory: dist
   instant_preview_command: npm start
-  preview_docker_image: forestryio/hugo:node10
-  mount_path: "/srv"
 version: 0.42.2
