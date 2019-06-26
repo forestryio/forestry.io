@@ -13,7 +13,7 @@ menu:
     weight: 1
 ---
 
-Organizations on the Pro Plan have access to certain enterprise features, please [contact us](/support/) if you would like to upgrade your plan.
+Organizations on the Pro Plan have access to certain enterprise features, please [contact us](https://app.hubspot.com/meetings/dan67/forestry-cms) if you would like to upgrade your plan.
 
 ## Subdomains
 
