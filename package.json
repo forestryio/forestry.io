@@ -10,6 +10,7 @@
     "start": "gulp server",
     "preview": "cross-env NODE_ENV=production GENERATOR_ARGS=preview gulp server",
     "forestry:preview": "cross-env NODE_ENV=production GENERATOR_ARGS=development gulp build",
+    "forestry:instant-preview": "cross-env NODE_ENV=production GENERATOR_ARGS=instantPreview gulp server",
     "build": "cross-env NODE_ENV=production gulp build",
     "preDeploy": "cross-env NODE_ENV=production gulp preDeploy",
     "clean": "gulp clean",
