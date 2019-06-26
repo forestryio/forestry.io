@@ -20,7 +20,7 @@ fields:
   default: now
   config:
     date_format: YYYY/MM/DD
-    export_format: YYYY/MM/DD h:mm A ZZ
+    export_format: YYYY/MM/DD h:mm:ss A ZZ
     required: true
 - name: cta
   label: Cta
