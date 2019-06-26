@@ -1,6 +1,5 @@
 ---
 aliases:
-- "/docs/enterprise/features/single-sign-on/"
 title: Single Sign-on
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
@@ -11,7 +10,7 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    parent: Enterprise
+    parent: Pro
     weight: 2
 ---
 
@@ -48,4 +47,4 @@ Debugging mode, useful when configuring a new identity provider, shows extended 
 
 ## VCS Provider Login
 
-When SAML SSO is disabled, users have the option of logging in through a VCS provider (if configured and enabled).
+When SAML SSO is disabled, users have the option of logging in through a Version Control System (VCS) provider (if configured and enabled).

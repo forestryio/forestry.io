@@ -1,6 +1,5 @@
 ---
 aliases:
-- "/docs/enterprise/features/audit-logging/"
 title: Audit Logging
 weight: 3
 publishdate: 2017-12-31 04:00:00 +0000
@@ -10,9 +9,8 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    parent: Enterprise
+    parent: Pro
     weight: 1
-
 ---
 
 Changes to resources are recorded in realtime and exportable in CSV format with headers included.

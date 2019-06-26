@@ -19,7 +19,7 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
-name = "Enterprise"
+name = "Pro"
 weight = 12
 [[menu.docs]]
 name = "Other"
