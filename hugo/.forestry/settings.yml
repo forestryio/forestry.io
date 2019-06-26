@@ -77,6 +77,6 @@ build:
   preview_output_directory: dist
   output_directory: dist
   instant_preview_command: npm start
-  preview_docker_image: forestryio/build:latest
-  mount_path: "/opt/buildhome/repo"
+  preview_docker_image: forestryio/hugo:node10
+  mount_path: "/srv"
 version: 0.42.2
