@@ -2,7 +2,7 @@
 authors:
 - team forestry
 date: 2019/06/24
-title: Changelog 2019/06/24
+title: '2019/06/24 Changelog '
 cta:
   headline: ''
   textline: ''
