@@ -17,5 +17,5 @@ Organizations on the Pro Plan have access to certain enterprise features, please
 
 ## Subdomains
 
-Users apart of a subdomain will access the app through `*organization-subdomain*.forestry.io` instead of `app.forestry.io`. A separate user account will be created for each of a users subdomains.<br /><br />
+Users within a pro organization will access the app through `*organization-subdomain*.forestry.io` instead of `app.forestry.io`. A separate user account will be created for each of a users subdomains.<br /><br />
 For example: If I am an active Forestry.io user, and I am invited to join **Pro Org A**, a separate user account will be created scoped to **Pro Org A**, which I can access through `pro-org-a.forestry.io`.
