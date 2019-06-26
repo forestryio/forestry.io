@@ -114,9 +114,10 @@ Be aware that `forestry_preview_id` will only be inserted in one file at a time,
 {{% tab "Hugo" %}}
 ```go-html-template
 {{ with .Params.forestry_preview_id }}
-<!-- {{ . }}  -->
+  {{- safeHTML (printf "<!-- %s -->" .) -}}
 {{ end }}
 ```
+_HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output to the document._
 {{% /tab %}}
 {{% tab "Jekyll" %}}
 ```liquid
