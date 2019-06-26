@@ -19,7 +19,20 @@ menu:
 ---
 Previews allow content editors to see changes in Forestry before saving or publishing those changes, as well as share the drafted changes before publishing them. You can think of Forestry's previews as your site's staging environment.
 
-## How Previews Work
+There are currently two preview systems in Forestry:
+
+* Standard Previews
+* Instant Previews (Beta)
+
+{{% tip "Which previews should I use?" %}}
+**Instant Previews** were created to make previewing even faster. While the Instant Previews feature
+still in **BETA**, it has alredy proven to be a _much faster and enjoyable user experience then
+the **Standard Previews**.
+
+{{% /tip %}}
+
+
+## How do Standard Previews Work
 
 Previews are generated when an editor clicks the preview button in the top right corner of the [editor](/docs/editing/markdown-editor/). Any unsaved changes on the page being previewed will be included in the preview.
 
@@ -35,6 +48,10 @@ Previews run the same commands that publishing does, which is the default comman
 {{% warning %}}
 If your local development environment uses external build tools like Gulp to generate assets such as CSS, JS, or images, ensure the compiled assets are committed to version control and available to Hugo or Jekyll's built-in build commands.
 {{% /warning %}}
+
+## How Instant Previews Work
+
+TODO
 
 ## How long do previews last?
 
