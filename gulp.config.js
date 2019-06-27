@@ -22,7 +22,8 @@ export default function(env) {
         default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
         development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
         preview: ["-b", "http://localhost:3000"],
-        production: []
+        production: [],
+        instantPreview: ["--buildDrafts", "--buildFuture", "--buildExpired"]
       }
     },
     algolia: {
