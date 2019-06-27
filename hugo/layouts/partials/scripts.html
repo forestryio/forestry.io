@@ -12,6 +12,6 @@
 </script>
 {{/* Main app bundle */}}
 <script src="{{ "/js/scripts.min.js" | relURL }}?{{ readFile "static/js/scripts.min.js" | md5 }}" type="text/javascript"></script>
-{{ with .Params.forestry_preview_id }}
+{{ with .Params.forestry_instant_preview_id }}
   {{- safeHTML (printf "<!-- %s -->" .) -}}
 {{ end }}

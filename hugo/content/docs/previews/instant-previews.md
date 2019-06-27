@@ -106,14 +106,14 @@ When you click the preview button on a piece of content, Forestry will attempt t
 
 You may have some layouts that don't utilize the body of the markdown file. This happens when you instead build the page entirely from front matter data, such as when you use [blocks](/docs/settings/fields/blocks).
 
-For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment.
+For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_instant_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment. If your HTML is being run through a minifier that strips comments, it's fine to insert it differently, such as in a `<meta>` tag.
 
 Be aware that `forestry_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
 ```go-html-template
-{{ with .Params.forestry_preview_id }}
+{{ with .Params.forestry_instant_preview_id }}
   {{- safeHTML (printf "<!-- %s -->" .) -}}
 {{ end }}
 ```
@@ -121,14 +121,12 @@ _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output 
 {{% /tab %}}
 {{% tab "Jekyll" %}}
 ```liquid
-{% if page.forestry_preview_id %}
-<!-- {{ page.forestry_preview_id }} -->
+{% if page.forestry_instant_preview_id %}
+<!-- {{ page.forestry_instant_preview_id }} -->
 {% end %}
 ```
 {{% /tab %}}
 {{% /code_tabs %}}
-
-this value isn't always included; will only be included on the specific page, should use code that checks for the value before using it
 
 ### If the SSG Doesn't Write Content to HTML Files in Dev Mode
 
