@@ -18,7 +18,7 @@ As Forestry moves to support more Static Site Generators and workflows, we need 
 
 If you're having problems previewing your site, this guide is for you! In general, preview problems can be broken down into two broad categories:
 
-* **Forestry can't _build_ your preview**: Something went wrong running your preview [build command](/docs/settings/build-commands), or while setting your site up on our preview hosting server.
+* **Forestry can't _build_ your preview**: Something went wrong running your preview [build command](/docs/previews/instant-previews/#configuring-the-preview-commands), or while setting your site up on our preview hosting server.
 * **Forestry can't _find_ your preview**: The preview site was generated successfully, but our previewing webserver couldn't locate it.
 
 If you're attempting to preview your site and you encounter an error like _failed to build preview_, _error generating preview_, or _failed to create preview_, there was a problem building your preview.
@@ -65,6 +65,8 @@ If you're struggling, the following communities are a good place to seek help fr
 * {{% slack_invite_link "Forestry.io Slack Community" %}}
 * [Hugo Forum](https://discourse.gohugo.io)
 * [Jekyll Forum](https://talk.jekyllrb.com)
+* [VueJS Discord](https://vue-land.js.org/)
+* [Gatsby Discord](https://gatsby.dev/discord)
   {{% /tip %}}
 
 #### Are your project's dependencies being installed correctly?
@@ -85,6 +87,16 @@ Related resources:
 * [Using Private Submodules with Forestry](/docs/troubleshooting/using-private-submodules/)
 * [Using NPM Scripts as Build Commands](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)
   {{% /tip %}}
+
+#### (Jekyll Only) Ensure Jekyll Ignores `vendor/bundle`
+
+We recommend installing gems locally to your project by running `bundle install --path vendor/bundle`. One potential pitfall of this is that Jekyll may try to process the gems stored in `vendor/bundle` as if they are part of your site layout, leading to build errors. To fix this, ensure the `vendor` directory is excluded in your `_config.yml` file:
+
+```yaml
+exclude:
+  - vendor
+```
+
 
 ### Is your site in a subdirectory?
 
