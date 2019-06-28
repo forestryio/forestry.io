@@ -29,7 +29,7 @@ To simplify the process, we have created a few preconfigured images for you to c
 
 There are currently four preconfigured images to choose from. After importing a site into Forestry, one of these images will have been selected already, based on the static site generator you are using.
 
-TODO: Insert Image of Container Modal
+{{% pretty_screenshot img="/uploads/2019/06/preview-image-modal.png" caption="Preview image selector" %}}
 
 | Image | Description | Default For |
 |:---:|---|---|
@@ -42,7 +42,7 @@ TODO: Insert Image of Container Modal
 ### Advanced Configuration
 To get more control over your preview environment, click the **Advanced Configuration** field below the **Select a Different Environment** button.
 
-TODO: Insert Image of Advanced Configuration Fields
+{{% pretty_screenshot img="/uploads/2019/06/preview-advanced-fields.png" caption="Advanced configuration fields" %}}
 
 | Field | Description |
 |---|---|
@@ -72,8 +72,6 @@ There are four basic fields to configure:
 Be careful about which environment variables you add to your preview server. All environment variable values are stored in plaintext in your Git repository.
 {{% /warning %}}
 
-{{% pretty_screenshot img="/uploads/2019/01/preview_settings.png" caption="The preview settings screen" %}}
-
 ### Preview Settings In *.forestry/settings.yml*
 Alternatively, you can add your instant preview command directly to your configuration file in `.forestry/settings.yml` by adding a value named `instant_preview_command` under the `build` section. You can activate instant previews by adding `instant_preview: true` to the top-level configuration.
 
@@ -83,7 +81,6 @@ Alternatively, you can add your instant preview command directly to your configu
 
 Here's an example of a live preview configuration in a `.forestry/settings.yml` file:
 
-TODO: Double Check that each of these fields have the right name
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
 ```yaml
