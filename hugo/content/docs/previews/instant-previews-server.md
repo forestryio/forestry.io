@@ -26,7 +26,7 @@ The Instant Preview server may be in one of several states:
 
 | Status | Description |
 |---|---|
-| Disabled | Instant Previews are disabled. Standard Previews will be used instaed. |
+| Disabled | Instant Previews are disabled. Standard Previews will be used instead. |
 | Stopped| The preview server is stopped. |
 | Starting| The preview server is starting up. |
 | Ready| The preview server is running the Build Command|
@@ -41,7 +41,7 @@ Depending on the state of your preview server, several server actions will be av
 | Start |  Starts the stopped preview server. |
 | Stop |  Stops running preview server. |
 | Restart |  Stops the running server and restarts it immediately. |
-| Clear Cache  & Restart |  Clears the repository and dependency cache before restarting the server. |
+| Clear Cache & Restart |  Clears the repository and dependency cache before restarting the server. |
 
 ## Reading the Server Logs
 
@@ -49,7 +49,7 @@ The lifecycle of a preview server contains multiple steps. Each step has a **sta
 
 | Setup Step | Description |
 |---|---|
-| Loading Repo Files |  TODO |
-| Installing Dependencies |  Runs the  _Install Dependencies Command_ if it was set. |
-| Saving Cache |  Caches the repository and any installed dependencies.  |
+| Loading Repo Files |  Imports the site repository and mounts it to the container. |
+| Installing Dependencies |  Runs the  _Install Dependencies Command_ if it was set. Dependencies will be loaded from cache if it exists. |
+| Saving Preview Cache |  Caches the repository and any installed dependencies.  |
 | Building Site |  Executes the _Build Command_ to start serving your preview. |
