@@ -25,17 +25,17 @@ This doc will walk you through:
 
 [Sign up](https://app.forestry.io/signup/) for a free account with Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you **don't** have a Jekyll, Hugo or VuePress site already, click the link in the bottom of the _setup window_ to launch the demo site.
+If you **don't** have a Jekyll, Hugo, VuePress, or Gatsby site already, click the link in the bottom of the _setup window_ to launch the demo site.
 
 ### Select your Static Site Generator
 
-Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), and [VuePress](https://vuepress.vuejs.org/). In the case of Hugo, you must also specify which _version_ you use.
+Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), and [Gatsby](https://www.gatsbyjs.org/). In the case of Hugo, you must also specify which _version_ you use.
 
 ![](/uploads/2018/02/add-site-flow-choose-generator.png)
 
 ### Select your Git Provider
 
-Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently three Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), and [Bitbucket](https://bitbucket.org/ "Bitbucket").
+Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently three Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
 
 ![](/uploads/2018/02/add-site-flow-choose-provider.png)
 
@@ -47,7 +47,7 @@ Once the authorization is complete, you will be taken to the next screen where y
 
 ### GitHub Repository Permissions
 
-In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.  
+In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.
 {{% /warning %}}
 
 If you use Github, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you want to grant access to Forestry to import your private repositories. You will only have to do this once.
@@ -74,9 +74,14 @@ Go into a post or page, **edit some text** and you will see "Unsaved Changes" at
 
 ## Preview Changes
 
-Click preview to view your changes in a new tab.
+Click preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="currentcolor" stroke-width="1.2"><path d="M12 18c6 0 10-6 10-6s-4-6-10-6-10 6-10 6 4 6 10 6z"></path><circle cx="12" cy="12" r="2"></circle></g></svg> to view your changes in a new tab.
 
 ![](/uploads/2018/01/preview.png)
+
+{{% tip "Having Trouble Previewing your Site?" %}}
+Not all site work with previews out of the box. To learn more about how to
+configure previews for your site, visit the [preview documentation](/docs/previews/about-previews/)
+{{% /tip %}}
 
 ## Make your first commit
 

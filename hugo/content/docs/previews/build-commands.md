@@ -9,10 +9,6 @@ date: 2019-01-16 04:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-menu:
-  docs:
-    parent: Previews
-    weight: 2
 
 ---
 **Build Commands** allow you to customize how Forestry builds your website when it creates a preview or before it deploys your site.
@@ -117,7 +113,7 @@ build:
   #publish
   publish_command: hugo
   output_directory: public
-  publish_env: 
+  publish_env:
   - HUGO_ENV=production
 ```
 ### Instant Previews
@@ -147,7 +143,7 @@ build:
   # publish
   publish_command: hugo -d public
   output_directory: public
-  publish_env: 
+  publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=#{self.site_settings.engine_version}
 ```
@@ -166,7 +162,7 @@ build:
   # publish
   publish_command: bundle exec jekyll build -d _site
   output_directory: _site
-  publish_env: 
+  publish_env:
   - JEKYLL_ENV=production
 ```
 
@@ -183,7 +179,7 @@ build:
   # publish
   publish_command: vuepress build -d .vuepress/dist
   output_directory: .vuepress/dist
-  publish_env: 
+  publish_env:
 ```
 
 {{% /tab %}}
@@ -198,7 +194,7 @@ build:
   # publish
   publish_command: gatsby build
   output_directory: public
-  publish_env: 
+  publish_env:
 
 ```
 {{% /tab %}}
