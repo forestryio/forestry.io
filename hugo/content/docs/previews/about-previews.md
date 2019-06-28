@@ -44,6 +44,10 @@ Instant Previews will use your static site generator's built-in dev server to bu
 
 Once the server is started, clicking the ![preview icon](/uploads/2018/01/preview-small.png) preview button in the top right corner of the [editor](/docs/editing/markdown-editor/) will send the updated content (including any unsaved changes) to the preview server and rebuild your site. While the preview is generating, editors will be presented with a loading screen, and will be redirected to the page being previewed when the preview has finished generating.
 
+## Which One Should I Choose?
+
+Although the feature is still in beta, we highly encourage everyone to use **Instant Previews** where possible. We are continuously improving the Instant Previews experience!
+
 ### More Info
 - [Configuring Your Instant Preview Server](/docs/previews/instant-previews/)
 - [Using the Instant Preview Server](/docs/previews/instant-previews-server/)
