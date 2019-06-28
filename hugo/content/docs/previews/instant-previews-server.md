@@ -18,7 +18,7 @@ menu:
 
 When using Instant Previews, managing the preview server is done independently from previewing content. To access the preview server controls, navigate to **Settings** > **Previews** > **Instant Previews**.
 
-**TODO: ADD A PICTURE OF THE SERVER SECTION**
+{{% pretty_screenshot img="/uploads/2019/06/preview-server-controls.png" caption="Preview server controls" %}}
 
 ## Server Status
 
@@ -45,7 +45,18 @@ Depending on the state of your preview server, several server actions will be av
 
 ## Reading the Server Logs
 
-The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. Common preview steps include:
+<video playsinline autoplay muted loop width="100%" controls>
+    <source src="/video/starting-preview-server.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+
+The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. 
+
+{{% warning %}}
+Don't panic if you don't see any steps in your server controls. They won't appear until you start the server for the first time.
+{{% /warning %}}
+
+Common preview steps include:
 
 | Setup Step | Description |
 |---|---|
