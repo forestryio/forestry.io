@@ -19,44 +19,35 @@ menu:
 ---
 Previews allow content editors to see changes in Forestry before saving or publishing those changes, as well as share the drafted changes before publishing them. You can think of Forestry's previews as your site's staging environment.
 
-There are currently two preview systems in Forestry:
+There are currently two options for previewing in Forestry:
 
-* Standard Previews
-* Instant Previews (Beta)
-
-{{% tip "Which previews should I use?" %}}
-**Instant Previews** were created to make previewing even faster. While the Instant Previews feature
-still in **BETA**, it has alredy proven to be a _much faster and enjoyable user experience then
-the **Standard Previews**.
-
-{{% /tip %}}
+* **Standard Previews**, which builds your site every time a user previews a document, and
+* **Instant Previews**, which can run your SSG's dev server in the cloud, running a much shorter update loop when users preview a document.
 
 
-## How do Standard Previews Work
+## How Standard Previews Work
 
-Previews are generated when an editor clicks the preview button in the top right corner of the [editor](/docs/editing/markdown-editor/). Any unsaved changes on the page being previewed will be included in the preview.
+Previews are generated when an editor clicks the ![preview icon](/uploads/2018/01/preview-small.png) preview button in the top right corner of the [editor](/docs/editing/markdown-editor/). Any unsaved changes on the page being previewed will be included in the preview.
 
 While the preview is generating, editors will be presented with a loading screen, and will be redirected to the page being previewed when the preview has finished generating.
 
-{{% tip %}} Previews will usually take a few seconds to generate. However, depending on the size and complexity of the site, the preview may take anywhere from 15-30+ seconds to generate. {{% /tip %}}
+{{% tip %}} Previews will usually take a few seconds to generate. However, depending on the size and complexity of the site, the preview may take significantly longer to generate. {{% /tip %}}
 
 Previews run the same commands that publishing does, which is the default command for your static site generator of choice:
 
 * For Hugo, this is `$ hugo`
 * For Jekyll this is `$ jekyll build`.
 
-{{% warning %}}
-If your local development environment uses external build tools like Gulp to generate assets such as CSS, JS, or images, ensure the compiled assets are committed to version control and available to Hugo or Jekyll's built-in build commands.
-{{% /warning %}}
-
 ## How Instant Previews Work
 
-TODO
+Instant Previews will use your static site generator's built-in dev server to build the preview. Because the SSG runs continuously in the background, it is typically able to rebuild your site _much_ faster than standard previews. Developers rely on this short feedback loop when building a website, and Instant Previews allows editors to take advantage of this same capability from within the Forestry CMS.
+
+Once the server is started, clicking the ![preview icon](/uploads/2018/01/preview-small.png) preview button in the top right corner of the [editor](/docs/editing/markdown-editor/) will send the updated content (including any unsaved changes) to the preview server and rebuild your site. While the preview is generating, editors will be presented with a loading screen, and will be redirected to the page being previewed when the preview has finished generating.
+
+### More Info
+- [Configuring Your Instant Preview Server](/docs/previews/instant-previews/)
+- [Using the Instant Preview Server](/docs/previews/instant-previews-server/)
 
 ## How long do previews last?
 
-Previews are guaranteed to persist for up to 24 hours, but may persist longer.
-
-All changes that have not been saved or published will be discarded each time a new preview is generated, or when a preview expires.
-
-Previews immediately expire when your site is published.
+Previews are _ephemeral_ -- they are guaranteed to persist while a site is being worked on, but will eventually be removed. You can share your preview URLs with friends and collaborators for demonstration purposes, but do not attempt to host evergreen content from our preview environment.
