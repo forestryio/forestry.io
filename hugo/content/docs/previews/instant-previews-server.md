@@ -15,9 +15,12 @@ menu:
     weight: 3
 
 ---
-With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
+
+When using Instant Previews, managing the preview server is done independently from previewing content. To access the preview server controls, navigate to **Settings** > **Previews** > **Instant Previews**.
 
 **TODO: ADD A PICTURE OF THE SERVER SECTION**
+
+## Server Status
 
 The Instant Preview server may be in one of several states:
 
@@ -30,7 +33,7 @@ The Instant Preview server may be in one of several states:
 | Stopping| The preview server is shutting down.|
 | Error| The an error occurred while running the preview server. |
 
-## Turning on the Instant Previews Server
+## Server Actions
 Depending on the state of your preview server, several server actions will be available,
 
 | Action | Description |
