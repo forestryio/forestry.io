@@ -2,7 +2,7 @@
 title: Using Instant Previews
 aliases:
 - "/docs/instant-previews-server"
-date: 2019-01-05 00:00:00 +0000
+date: 2019-06-28 12:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 publishdate: 2018-01-15 17:00:00 +0000
