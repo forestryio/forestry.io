@@ -31,13 +31,13 @@ If you **don't** have a Jekyll, Hugo, VuePress, or Gatsby site already, click th
 
 Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), and [Gatsby](https://www.gatsbyjs.org/). In the case of Hugo, you must also specify which _version_ you use.
 
-![](/uploads/2018/02/add-site-flow-choose-generator.png)
+{{% pretty_screenshot img="/uploads/2019/07/select-generator.png" %}}
 
 ### Select your Git Provider
 
-Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently three Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
+Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently four Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
 
-![](/uploads/2018/02/add-site-flow-choose-provider.png)
+{{% pretty_screenshot img="/uploads/2019/07/select-provider.png" %}}
 
 ### Choose a Repository and Branch
 
