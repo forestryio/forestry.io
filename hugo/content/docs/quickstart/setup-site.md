@@ -35,7 +35,7 @@ Before choosing your repository, Forestry needs to know which static site genera
 
 ### Select your Git Provider
 
-Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently three Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
+Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently four Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
 
 {{% pretty_screenshot img="/uploads/2019/07/select-provider.png" %}}
 
