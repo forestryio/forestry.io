@@ -67,8 +67,3 @@ If only one SAML provider is configured within Forestry, it will immediately aut
 If multiple identity providers are configured, the user will choose their desired SAML provider<br/>
 
 ![SSO Multiple Providers](/uploads/2019/06/multiple-sso-providers.png)
-
-
-## VCS Provider Login
-
-When SAML SSO is disabled, users have the option of logging in through a Version Control System (VCS) provider (if configured and enabled).
