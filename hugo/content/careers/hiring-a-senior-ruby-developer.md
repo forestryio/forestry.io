@@ -31,16 +31,18 @@ menu: []
 ---
 At Forestry, we’re _helping people build a better web_. Our **Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
 
+We are looking for an engineer who can have an impact across our stack -from our Rails back-end to our React front-end.
+
 We strive to create a workplace that enables mastery, autonomy, and purpose (from [Daniel Pink's work](https://www.youtube.com/watch?v=KgGhSOAtAyQ)).
 
 This is a **remote** role. <!--more-->
 
 ### What You'll Do
 
-* Design, build, and maintain efficient, reusable, reliable, and well tested Ruby and JavaScript/React code
-* Design and build database schemas and improvements
+* Design, build, and maintain efficient, reusable, reliable, and well tested Ruby/Rails and JavaScript/React code
 * Identify bottlenecks and bugs, and suggest and implement solutions to these problems
 * Help maintain code quality, organization and automation
+* Work on a cross-functional team, providing input to and helping out in areas beyond coding (helping define requirements, testing, technical documentation)
 
 ### To Be Successful In This Role, You'll Need
 
