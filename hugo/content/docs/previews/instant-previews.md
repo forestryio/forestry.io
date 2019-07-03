@@ -1,8 +1,8 @@
 ---
-title: Instant Previews
+title: Configuring Instant Previews
 aliases:
 - "/docs/instant-previews"
-date: 2019-01-05 00:00:00 +0000
+date: 2019-06-28 12:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 publishdate: 2018-01-15 17:00:00 +0000
@@ -12,28 +12,65 @@ layout: single
 menu:
   docs:
     parent: Previews
-    weight: 3
+    weight: 2
 
 ---
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
 
-{{% warning "Before You Start" %}}
+To use instant previews, navigate to **Settings** > **Previews** > **Instant Previews** and click the **Use Instant Previews** toggle at the top of the page. Before starting **Instant Previews** server scroll to the **Environment** section to make sure it is configured correctly.
 
-In order to use instant previews, your site must be using **Key-based Authentication** to access your Git repo. Sites created before **August 28, 2018** may need to perform a manual upgrade in order to work with instant previews.
-<br /><br />
-[Upgrade Guide: Key-Based Authentication](https://forestry.io/blog/migrating-to-key-based-authentication/)
+## Configure the Preview Environment
 
+The first step on the path to *Instant Previews* is to configure the preview environment. The primary component of the preview environment is a **Docker Image** in which your commands will be run.
+
+To simplify the process, we have created a few preconfigured images for you to choose from. Our goal is to keep these images as bare-bones as possible, to keep your preview server booting quickly and running smoothly. Should you need something extra, you can select the **custom** option to define your own preview environment (see the [advanced configuration](#advanced-configuration) section for information on how to do this).
+
+### Select an Image
+
+There are currently four preconfigured images to choose from. After importing a site into Forestry, one of these images will have been selected already, based on the static site generator you are using.
+
+{{% pretty_screenshot img="/uploads/2019/06/preview-image-modal.png" caption="Preview image selector" %}}
+
+| Image | Description | Default For |
+|:---:|---|---|
+|Hugo<br />`forestryio/hugo:latest` | A bare-bones Linux container with Hugo. Set the `HUGO_VERSION` environment variable to select which version of Hugo to use. | Hugo |
+|Hugo + Node<br />`forestryio/hugo:node10` | Hugo + NodeJS 10 + NPM, for Hugo sites that require Node modules. Set the `HUGO_VERSION` environment variable to select the version of Hugo to use. | – |
+|Ruby 2.6<br />`forestryio/ruby:2.6` | A container with Ruby 2.6 and bundler, suited for Jekyll sites. | Jekyll |
+|NodeJS 10<br />`node:10` | NodeJS 10 + NPM. Will work with any Node-based static site generator defined in your package.json file such as Gatsby, VuePress, Gridsome, or Eleventy. | Gatsby, VuePress |
+|Custom | Bring-your-own environment! Use any publicly available image on Docker Hub to run your preview. See the [Advanced Configuration](#advanced-configuration) section below. | – |
+
+### Advanced Configuration
+To get more control over your preview environment, click the **Advanced Configuration** field below the **Select a Different Environment** button.
+
+{{% pretty_screenshot img="/uploads/2019/06/preview-advanced-fields.png" caption="Advanced configuration fields" %}}
+
+| Field | Description |
+|---|---|
+| Docker Image |  Path to a publicly available image on [Docker Hub](https://hub.docker.com/). Use this field if you want to use a custom Docker Image. |
+| Mount Path |  The directory inside the docker container where your site should be mounted. |
+| Working Directory (Optional) |  Override the default working directory of the docker image. This is where the "Install Dependency" and "Build Command" are run from.  |
+
+{{% tip "Is your site in a subdirectory?" %}}
+A common use case for the **Working Directory** field is for sites that live in a subdirectory the Git repository.
+
+{{% /tip %}}
+
+## Configuring the Preview Commands
+
+Each preview environment has a set of recommended values. These values are set by default, but can be modified to fit your site.
+
+There are four basic fields to configure:
+
+| Basic Field | Description |
+|---|---|
+| Install Dependencies Command (Optional)| The command used to install your project's dependencies. The results of this command will be cached for faster startup times in the future.  |
+| Build Command | The command that starts your static site generator's dev server.|
+| Output Directory | The directory where your site is output to when previewing. This path must be relative to the root of your repository.|
+| Environment Variables\* | A list of key-value pairs to be added to the preview server's environment. |
+
+{{% warning "Environment Variables are stored in Git *" %}}
+Be careful about which environment variables you add to your preview server. All environment variable values are stored in plaintext in your Git repository.
 {{% /warning %}}
-
-## Adding an Instant Preview
-
-Instant previews are configured just like other [build commands](/docs/settings/build-commands/). To use instant previews, navigate to **Settings** > **Previews**. Activate the **Instant Previews** toggle to enable this feature.
-
-Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment and you will be able to edit the **Instant Preview Command**.
-
-![preview settings](/uploads/2019/01/preview_settings.png)
-
-You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
 
 ### Preview Settings In *.forestry/settings.yml*
 Alternatively, you can add your instant preview command directly to your configuration file in `.forestry/settings.yml` by adding a value named `instant_preview_command` under the `build` section. You can activate instant previews by adding `instant_preview: true` to the top-level configuration.
@@ -44,11 +81,65 @@ Alternatively, you can add your instant preview command directly to your configu
 
 Here's an example of a live preview configuration in a `.forestry/settings.yml` file:
 
+{{% code_tabs %}}
+{{% tab "Hugo" %}}
 ```yaml
 instant_preview: true
-build:
-    instant_preview_command: hugo server -D --renderToDisk --port 8080 --bind 0.0.0.0
+build_commands:
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command:
+  instant_preview_command: hugo server --renderToDisk --port 8080 --bind 0.0.0.0
+  preview_output_directory: public
+  preview_env:
+    - HUGO_VERSION=0.52.1
 ```
+{{% /tab %}}
+{{% tab "Jekyll" %}}
+```yaml
+instant_preview: true
+build_commands:
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command: bundle install --path vendor/bundle
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+  output_directory: _site
+  preview_env:
+    - JEKYLL_ENV=staging
+```
+{{% /tab %}}
+{{% tab "VuePress" %}}
+```yaml
+instant_preview: true
+build_commands:
+  preview_docker_image: nodejs:10
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command: npm install
+  instant_preview_command: vuepress dev --port 8080 --host 0.0.0.0
+  output_directory: .vuepress/dist
+  preview_env:
+    - NODE_ENV=development
+```
+{{% /tab %}}
+
+{{% tab "Gatsby [beta]" %}}
+```yaml
+instant_preview: true
+build_commands:
+  preview_docker_image: nodejs:10
+  mount_path: /srv
+  working_directory:
+  install_dependencies_command: npm install
+  instant_preview_command: gatsby develop -p 8080 -H 0.0.0.0
+  output_directory:
+  preview_env:
+    - NODE_ENV=development
+```
+{{% /tab %}}
+{{% /code_tabs %}}
 
 {{% tip %}}
 Your instant preview command will use the same **output directory** and **environment variables** as the standard preview command.
@@ -56,7 +147,7 @@ Your instant preview command will use the same **output directory** and **enviro
 
 ## Command Limitations
 
-Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `jekyll serve`.
+Your instant preview command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `jekyll serve`.
 
 {{% warning "A Caveat for Hugo users" %}}
 You must include the `--renderToDisk` flag when starting the Hugo server in order for your site to work with our preview system.
@@ -92,11 +183,40 @@ gatsby develop -p 8080 -H 0.0.0.0
 
 ### Live Reloading
 
-Forestry's live previewing relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
+Instant Preview relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
 
-## Default Instant Preview Commands
+## Default Preview Commands
 
-See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
+{{% code_tabs %}}
+{{% tab "Hugo" %}}
+```yaml
+build:
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
+  install_dependencies_command:
+```
+{{% /tab %}}
+{{% tab "Jekyll" %}}
+```yaml
+build:
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+  install_dependencies_command: bundle install --path vendor/bundle
+```
+{{% /tab %}}
+{{% tab "VuePress" %}}
+```yaml
+build:
+  instant_preview_command: vuepress dev -p 8080 -h 0.0.0.0
+  install_dependencies_command: npm install
+```
+{{% /tab %}}
+{{% tab "Gatsby" %}}
+```yaml
+build:
+  instant_preview_command: gatsby develop -H 0.0.0.0 -p 8080
+  install_dependencies_command: npm install
+```
+{{% /tab %}}
+{{% /code_tabs %}}
 
 ## Instant Preview URLs
 
@@ -106,28 +226,27 @@ When you click the preview button on a piece of content, Forestry will attempt t
 
 You may have some layouts that don't utilize the body of the markdown file. This happens when you instead build the page entirely from front matter data, such as when you use [blocks](/docs/settings/fields/blocks).
 
-For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment.
+For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_instant_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment. If your HTML is being run through a minifier that strips comments, it's fine to insert it differently, such as in a `<meta>` tag.
 
 Be aware that `forestry_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
 ```go-html-template
-{{ with .Params.forestry_preview_id }}
-<!-- {{ . }}  -->
+{{ with .Params.forestry_instant_preview_id }}
+  {{- safeHTML (printf "<!-- %s -->" .) -}}
 {{ end }}
 ```
+_HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output to the document._
 {{% /tab %}}
 {{% tab "Jekyll" %}}
 ```liquid
-{% if page.forestry_preview_id %}
-<!-- {{ page.forestry_preview_id }} -->
+{% if page.forestry_instant_preview_id %}
+<!-- {{ page.forestry_instant_preview_id }} -->
 {% end %}
 ```
 {{% /tab %}}
 {{% /code_tabs %}}
-
-this value isn't always included; will only be included on the specific page, should use code that checks for the value before using it
 
 ### If the SSG Doesn't Write Content to HTML Files in Dev Mode
 

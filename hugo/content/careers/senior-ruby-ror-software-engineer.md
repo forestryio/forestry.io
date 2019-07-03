@@ -1,5 +1,5 @@
 ---
-title: Lead Ruby/RoR Software Engineer
+title: Senior Ruby/RoR Software Engineer
 description: Forestry.io is a content management system for static websites built
   with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around
   the world are leaving WordPress and Drupal for more secure, performant, static sites
@@ -29,7 +29,7 @@ photo_credit: ''
 menu: []
 
 ---
-At Forestry, we’re _helping people build a better web_. Our **Lead Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
+At Forestry, we’re _helping people build a better web_. Our **Senior Ruby/RoR Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
 
 We strive to create a workplace that enables mastery, autonomy, and purpose (from [Daniel Pink's work](https://www.youtube.com/watch?v=KgGhSOAtAyQ)).
 
@@ -37,25 +37,25 @@ This is a **remote** role. <!--more-->
 
 ### What You'll Do
 
-* Technical leadership tasks such as mentoring and code reviews
+* Provide technical leadership for our Rails back-end
 * Design, build, and maintain efficient, reusable, reliable, and well tested Ruby code
 * Design and build database schemas and improvements
-* Identify bottlenecks and bugs, and suggest and implement solutions to these problems
-* Help maintain code quality, organization and automatization
+* Mentoring and code reviews
+* Work on a cross-functional team, providing input to and helping out in areas beyond coding (helping define requirements, testing, technical documentation)
 
-### To Be Successful In This Role, You'll
+### To Be Successful In This Role, You'll Need
 
-* have a minimum of 5 years experience building and designing Rails applications
-* be driven by solving hard problems and taking ownership over development tasks
-* take initiative and suggest solutions and improvements
-* understand test driven development
-* be proficient in the English language, both written and verbal
+* A minimum of 5 years experience building and designing Rails applications
+* To be driven by solving hard problems and taking ownership over development tasks
+* To take initiative and suggest solutions and improvements
+* A solid understanding and appreciation for writing good automated tests
+* To be proficient in the English language, both written and verbal
 
-**Extra consideration will be given for candidates that:**
+**Extra consideration will be given to candidates that:**
 
-* have experience with static site generators
-* have experience with GraphQL backends
-* have a passion for the solving the needs of our users
+* Have experience with static site generators
+* Have experience with GraphQL backends
+* Have a passion for the solving the needs of our users
 
 ***
 

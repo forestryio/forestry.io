@@ -16,10 +16,20 @@ menu:
 ---
 You [setup your site](/docs/quickstart/setup-site/ "Setup Your Site") with Forestry and now you're ready to configure your CMS.  This doc will go over:
 
-1. Setting up correct paths for images and other media
-2. Configuring your content model (the fields used on each page, post, etc)
+1. Setting up the content sections that appear in the CMS sidebar
+2. Setting up correct paths for images and other media
+3. Enabling and configuring your site's preview
+4. Configuring your content model (the fields used on each page, post, etc)
 
 ***
+
+## Setting up Sidebar Content Sections
+
+You are able to configure content sections to control what content editors have access to in the CMS. To do this, go to **Settings > Sidebar**. Here, you will be able to add and edit the content sections that appear in the CMS sidebar.
+
+{{% pretty_screenshot img="/uploads/2019/07/sidebar-config-ui.png" %}}
+
+For details on how to set up the sidebar, take a look at our [sidebar configuration guide](/docs/settings/content-sections/).
 
 ## Setting up Image Paths
 
@@ -108,6 +118,10 @@ For this (Hugo) site, we organize media by month, like so:
 For more information on media settings visit the [Media Library doc](/docs/editing/media-library/#configuring-the-media-library).
 
 ***
+
+## Configuring Previews
+
+While editing content in the CMS, users can preview their unsaved changes in an ephemeral copy of your full website. In order to do this, you will need to tell Forestry how to build your site by [configuring the preview environment](/docs/previews/about-previews/).
 
 ## Your Content Model & Front Matter Templates
 

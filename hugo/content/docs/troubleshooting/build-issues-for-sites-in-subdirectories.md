@@ -1,7 +1,7 @@
 ---
 title: Build Issues For Sites in Subdirectories
 description: ''
-date: 2019-01-29 14:36:06 +0000
+date: 2019-06-28 14:36:06 +0000
 authors: []
 publishdate: 2019-01-29 14:36:06 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -33,29 +33,31 @@ If your build log complains of a missing configuration file, or if your preview 
 
 
 
-## Including Subdirectory in Build Config
-
-There are two different times when Forestry will try to build your site: when **creating a preview**, and when **building your site for deployment**. If Forestry doesn't deploy your site, you don't need to worry about updating the deployment build commands.
-
-These commands can be edited by updating your `.forestry/settings.yml` file, or by viewing your site's **Settings** in Forestry.
+## Including Subdirectory in Preview Build Config
 
 To provide subdirectory info to your build config, you will need to do the following:
 
-1. Add a `BUILD_DIR` environment variable with the subdirectory where your site is located
-2. *Prepend* your subdirectory to the **output directory**. This will give Forestry a complete path from the root of your repo files to the location of the generated website. Note that there should be no need to modify the build command itself.
+1. *Prepend* your subdirectory to the **output directory**. This will give Forestry a complete path from the root of your repo files to the location of the generated website. Note that there should be no need to modify the build command itself.
+2. Open the [advanced configuration](/docs/previews/instant-previews/#advanced-configuration) for your preview environment and set the **Working Directory** to the value of your **Mount Path**, with your subdirectory appended to the end of it.
 
 {{% tip %}}
 View the [build commands documentation](/docs/settings/build-commands/) for more information on how to update your build configuration.
 {{% /tip %}}
 
-For example, if you have a Hugo site located in the subdirectory `hugo/`, you will want to add a `BUILD_DIR` environment variable equal to `hugo`, and (assuming you're building the site to `public` as is the Hugo default) your **output directory** should be set to `hugo/public`. Your build commands settings for previews should then look something like this:
+### Example
+Let's say you have a Hugo site in the subdirectory `site/`, and you're using the default Hugo build image. 
+
+1. Assuming your build command builds the site to `public/`, your **Output Directory** should be set to `site/public`. 
+2. Assuming you're using the default **Mount Path** of `/srv`, your **Working Directory** should be set to `/srv/site`.
+
+Your build settings would then look something like this:
 
 ```yaml
 build:
+  preview_docker_image: forestryio/hugo:latest
   preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
-  preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.53
-  - BUILD_DIR=hugo
-  preview_output_directory: hugo/public
+  preview_output_directory: "site/public"
+  mount_path: "/srv"
+  working_dir: "/srv/site"
+  
 ```

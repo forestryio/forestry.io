@@ -23,7 +23,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 ## Getting Started
 
-![](/uploads/2018/12/select-your-ssg.png)
+{{% pretty_screenshot img="/uploads/2019/07/select-generator.png" %}}
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
@@ -189,6 +189,7 @@ Forestry offers many features that provide flexibility to developers:
 
 * Create [Front Matter Templates](/docs/settings/front-matter-templates/) to allow editors to create new content
 * Add [Custom Build Commands](/docs/settings/build-commands/) to add Frontend Asset Pipelines (e.g. Gulp, Webpack etc.)
+* Setup [Instant Previews](/docs/previews/instant-previews) to make previewing content changes lightning fast.
 * Allow editors to access the Content Manager from their site via a [Remote Admin](/docs/editing/remote-admin/)
 * Access outgoing [Webhooks](/docs/hosting/webhooks/) to notify third-party applications
 * Make your Forestry theme available for others to use with the [Import Button](https://forestry.io/docs/import-button/).
