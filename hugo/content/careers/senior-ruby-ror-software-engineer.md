@@ -37,12 +37,11 @@ This is a **remote** role. <!--more-->
 
 ### What You'll Do
 
-* Technical leadership tasks such as mentoring and code reviews
 * Provide technical leadership for our Rails back-end
 * Design, build, and maintain efficient, reusable, reliable, and well tested Ruby code
 * Design and build database schemas and improvements
-* Identify bottlenecks and bugs, and suggest and implement solutions to these problems
-* Help maintain code quality, organization and automation
+* Mentoring and code reviews
+* Work on a cross-functional team, providing input to and helping out in areas beyond coding (helping define requirements, testing, technical documentation)
 
 ### To Be Successful In This Role, You'll Need
 
