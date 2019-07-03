@@ -63,7 +63,7 @@ From the login screen, after you click `Sign in with SAML SSO`, the user will be
 
 ![SSO Login](/uploads/2019/06/sso-login.png)
 
-If only one SAML provider is configured within Forestry, it will immediatly authenticate through SSO.<br/>
+If only one SAML provider is configured within Forestry, it will immediately authenticate through SSO.<br/>
 If multiple identity providers are configured, the user will choose their desired SAML provider<br/>
 
 ![SSO Multiple Providers](/uploads/2019/06/multiple-sso-providers.png)
