@@ -1,10 +1,10 @@
 ---
-aliases:
+aliases: 
 title: Single Sign-on
-weight: 3
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+weight: "3"
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2017-12-31T04:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -12,8 +12,8 @@ menu:
   docs:
     parent: Pro
     weight: 3
----
 
+---
 ## SAML SSO
 
 Foresty supports SAML as a single sign-on solution. Multiple identity providers can be set up and enabled concurrently, allowing for easy certificate rotation.
@@ -63,7 +63,6 @@ From the login screen, after you click `Sign in with SAML SSO`, the user will be
 
 ![SSO Login](/uploads/2019/06/sso-login.png)
 
-If only one SAML provider is configured within Forestry, it will immediately authenticate through SSO.<br/>
-If multiple identity providers are configured, the user will choose their desired SAML provider<br/>
+If only one SAML provider is configured within Forestry, it will immediately authenticate through SSO.<br/> If multiple identity providers are configured, the user will choose their desired SAML provider<br/> 
 
 ![SSO Multiple Providers](/uploads/2019/06/multiple-sso-providers.png)
