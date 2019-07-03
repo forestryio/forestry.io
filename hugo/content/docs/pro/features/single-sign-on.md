@@ -34,8 +34,8 @@ Other identity providers can be configured, however official setup guides are no
 * Email
 * FirstName
 * LastName
-* Teams (for [Cloud Enterprise](/docs/cloud-enterprise/), as a list of TeamIDs)
-* Memberships (for [Private Enterprise](/docs/private-enterprise/), in the format of OrganizationID/TeamID)
+* Teams (for Cloud Enterprise, as a list of TeamIDs)
+* Memberships (for Private Enterprise, in the format of OrganizationID/TeamID)
 
 `Username`, `Name`, and `MemberOf` are not used by Forestry but may still be sent.
 
