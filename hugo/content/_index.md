@@ -68,10 +68,11 @@ features:
     alt: Editor workflow
   direction: vertical
   class: section-sync
-- headline: Deployment made simple
-  textline: When editors publish, Forestry deploys. Send your compiled site to your
-    host or just commit changes back to your repo. Forestry integrates with your deployment
-    process.
+- headline: Own Your Content
+  textline: | 
+    Instead of having your content locked behind your CMS's database, we just commit it to your git repository.
+  
+    We make it easy for you to grab your content and walk away, although we don't think you will ;)
   visual:
     permalink: "/img/deploy-illustration-02.png"
     alt: Simple deployment
