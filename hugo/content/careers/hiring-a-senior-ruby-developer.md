@@ -1,5 +1,5 @@
 ---
-title: Senior Ruby/RoR Software Engineer
+title: Software Engineer
 description: Forestry.io is a content management system for static websites built
   with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around
   the world are leaving WordPress and Drupal for more secure, performant, static sites
@@ -29,7 +29,7 @@ photo_credit: ''
 menu: []
 
 ---
-At Forestry, we’re _helping people build a better web_. Our **Senior Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
+At Forestry, we’re _helping people build a better web_. Our **Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
 
 We strive to create a workplace that enables mastery, autonomy, and purpose (from [Daniel Pink's work](https://www.youtube.com/watch?v=KgGhSOAtAyQ)).
 
@@ -37,24 +37,24 @@ This is a **remote** role. <!--more-->
 
 ### What You'll Do
 
-* Design, build, and maintain efficient, reusable, reliable, and well tested Ruby code
+* Design, build, and maintain efficient, reusable, reliable, and well tested Ruby and JavaScript/React code
 * Design and build database schemas and improvements
 * Identify bottlenecks and bugs, and suggest and implement solutions to these problems
-* Help maintain code quality, organization and automatization
+* Help maintain code quality, organization and automation
 
-### To Be Successful In This Role, You'll
+### To Be Successful In This Role, You'll Need
 
-* have a minimum of 5 years experience building and designing Rails applications
-* be driven by solving hard problems and taking ownership over development tasks
-* take initiative and suggest solutions and improvements
-* understand test driven development
-* be proficient in the English language, both written and verbal
+* A minimum of 5 years experience building and designing web applications
+* To be driven by solving hard problems and taking ownership over development tasks
+* To take initiative and suggest solutions and improvements
+* A solid understanding and appreciation for automated tests
+* To be proficient in the English language, both written and verbal
 
 **Extra consideration will be given for candidates that:**
 
-* have experience with static site generators
-* have experience with GraphQL backends
-* have a passion for the solving the needs of our users
+* Have experience with our technical stack (Ruby/Rails, JavaScript, React, GraphQL, Kubernetes)
+* Have experience with static site generators
+* Have a passion for the solving the needs of our users
 
 ***
 
