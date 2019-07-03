@@ -1,5 +1,5 @@
 ---
-title: Software Engineer
+title: Software Engineer (Rails/React)
 description: Forestry.io is a content management system for static websites built
   with tools like Jekyll, Hugo and Gatsby (static site generators).  Developers around
   the world are leaving WordPress and Drupal for more secure, performant, static sites
@@ -31,7 +31,7 @@ menu: []
 ---
 At Forestry, we’re _helping people build a better web_. Our **Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
 
-We are looking for an engineer who can have an impact across our stack -from our Rails back-end to our React front-end.
+We are looking for an engineer who can have an impact across our stack -from our Rails back-end to our React front-end. In depth experience with both frameworks is not required, but the more experience with these or similar frameworks, the better.
 
 We strive to create a workplace that enables mastery, autonomy, and purpose (from [Daniel Pink's work](https://www.youtube.com/watch?v=KgGhSOAtAyQ)).
 
@@ -47,6 +47,7 @@ This is a **remote** role. <!--more-->
 ### To Be Successful In This Role, You'll Need
 
 * A minimum of 5 years experience building and designing web applications
+* Experience developing with Rails and/or React
 * To be driven by solving hard problems and taking ownership over development tasks
 * To take initiative and suggest solutions and improvements
 * A solid understanding and appreciation for automated tests
