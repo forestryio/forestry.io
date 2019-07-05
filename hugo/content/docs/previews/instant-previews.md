@@ -85,7 +85,7 @@ Here's an example of a live preview configuration in a `.forestry/settings.yml` 
 {{% tab "Hugo" %}}
 ```yaml
 instant_preview: true
-build_commands:
+build:
   preview_docker_image: forestryio/hugo:latest
   mount_path: /srv
   working_directory:
@@ -99,7 +99,7 @@ build_commands:
 {{% tab "Jekyll" %}}
 ```yaml
 instant_preview: true
-build_commands:
+build:
   preview_docker_image: forestryio/ruby:2.6
   mount_path: /srv
   working_directory:
@@ -113,7 +113,7 @@ build_commands:
 {{% tab "VuePress" %}}
 ```yaml
 instant_preview: true
-build_commands:
+build:
   preview_docker_image: nodejs:10
   mount_path: /srv
   working_directory:
@@ -128,7 +128,7 @@ build_commands:
 {{% tab "Gatsby [beta]" %}}
 ```yaml
 instant_preview: true
-build_commands:
+build:
   preview_docker_image: nodejs:10
   mount_path: /srv
   working_directory:
