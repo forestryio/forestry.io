@@ -74,7 +74,7 @@ features:
   
     We make it easy for you to grab your content and walk away, although we don't think you will ;)
   visual:
-    permalink: "/img/deploy-illustration-02.png"
+    permalink: "/img/deploy-illustration-03.png"
     alt: Simple deployment
   direction: ltr
   class: section-automated
