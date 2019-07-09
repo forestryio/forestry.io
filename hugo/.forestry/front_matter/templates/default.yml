@@ -140,7 +140,6 @@ fields:
   name: menu
   label: menu
 pages:
-- hugo/content/blog/test-1.md
 - hugo/content/careers/software-engineer-2019.md
 - hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/about-us.md
