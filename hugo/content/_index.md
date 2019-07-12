@@ -9,8 +9,8 @@ authors:
 blocks: 
 hero:
   headline: A static CMS that **commits**
-  textline: Sync your Jekyll, Hugo or VuePress site. Your editors will love it and
-    won’t realize they’re making commits.
+  textline: Sync your Gatsby, Hugo, Jekyll or VuePress sites. Your editors will love
+    it and won’t realize they’re making commits.
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
