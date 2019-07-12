@@ -1,9 +1,9 @@
 ---
 aliases:
 - "/remote/"
-title: Static CMS for Hugo, Jekyll, VuePress and Gatsby.
-description: Static CMS for Hugo, Jekyll, VuePress and Gatsby sites, powered by Git.
-  A better way to edit static sites.
+title: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty…
+description: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty sites. A simpler
+  way to edit static sites.
 authors:
 - forestryio
 blocks: 
@@ -69,9 +69,9 @@ features:
   direction: vertical
   class: section-sync
 - headline: Own Your Content
-  textline: | 
+  textline: |
     Instead of having your content locked behind your CMS's database, we just commit it to your git repository.
-  
+
     We make it easy for you to grab your content and walk away, although we don't think you will ;)
   visual:
     permalink: "/img/deploy-illustration-03.png"
@@ -80,16 +80,16 @@ features:
   class: section-automated
 - headline: Host where you want
   textline: Your static site can live anywhere you want — including on Amazon S3,
-    Fastly, and GitHub Pages. You can even deploy with plain old FTP.
+    Fastly, and GitHub Pages.
   direction: vertical
   class: section-deploy
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
-date: 2017-12-31 04:00:00 +0000
+date: 2017-12-31T04:00:00.000+00:00
 inspectlet: true
 
 ---
