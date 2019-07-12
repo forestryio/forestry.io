@@ -3,7 +3,7 @@ aliases:
 - "/remote/"
 title: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty…
 description: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty sites. A simpler
-  way to edit static sites.
+  way to edit JAMstack sites.
 authors:
 - forestryio
 blocks: 
