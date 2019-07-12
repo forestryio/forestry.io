@@ -86,10 +86,10 @@ features:
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?
-publishdate: 2017-12-31T04:00:00.000+00:00
+publishdate: 2018-12-31T00:00:00-04:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
-date: 2017-12-31T04:00:00.000+00:00
+date: 2017-12-31T00:00:00-04:00
 inspectlet: true
 
 ---
