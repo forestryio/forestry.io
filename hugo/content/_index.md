@@ -4,8 +4,7 @@ aliases:
 title: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty…
 description: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty sites. A simpler
   way to edit JAMstack sites.
-authors:
-- forestryio
+authors: []
 blocks: 
 hero:
   headline: A static CMS that **commits**
