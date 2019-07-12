@@ -33,6 +33,8 @@ hero:
   logos:
     textline: Built for static site generators
     sources:
+    - permalink: "/uploads/gatsby.svg"
+      alt: Gatsby
     - permalink: img/logos/hugo.svg
       alt: Hugo
     - permalink: img/logos/jekyll.svg
