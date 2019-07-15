@@ -14,7 +14,7 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
-weight: ''
+weight: "2"
 aliases: []
 layout: ''
 
