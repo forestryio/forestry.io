@@ -1,6 +1,6 @@
 ---
-title: Deployments
-description: ''
+title: FTP Deployments
+description: Forestry is removing FTP deployments on September 2019 1st.
 date: 2019-06-30T19:00:00-03:00
 authors: []
 publishdate: 2019-06-30T19:00:00-03:00
@@ -17,7 +17,6 @@ cta:
 weight: ''
 aliases: []
 layout: ''
-draft: true
 
 ---
 Starting today, we're removing support for (S)FTP deployment. All sites newly created in Forestry are already not able to deploy through FTP.
