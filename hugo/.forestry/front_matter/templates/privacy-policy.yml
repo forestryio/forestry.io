@@ -30,5 +30,5 @@ fields:
 - name: type
   label: Type
   type: text
-  hidden: type
+  hidden: true
   default: page
