@@ -140,6 +140,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/_index.md
 - hugo/content/careers/software-engineer-2019.md
 - hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/about-us.md
@@ -148,7 +149,6 @@ pages:
 - hugo/content/blog/introducing-teams.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/careers/developer-evangelist.md
-- hugo/content/careers/_index.md
 - hugo/content/blog/versioning-large-files-with-git-lfs.md
 - hugo/content/careers/marketing.md
 - hugo/content/careers/hiring-devops-engineer.md
