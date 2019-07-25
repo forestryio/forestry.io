@@ -286,8 +286,19 @@ Commands run as NPM scripts will automatically include any installed node module
 
 ### 3. Run the NPM script in your build command
 
-```yaml
-build:
-  preview_command: npm run forestry:preview
-  preview_output_directory: .vuepress/dist
-```
+{{% code_tabs %}}  
+{{% tab "VuePress" %}}
+
+    build:
+      preview_command: npm run forestry:preview
+      preview_output_directory: .vuepress/dist
+
+{{% /tab %}}   
+{{% tab "Gatsby" %}}
+
+    build:
+      preview_command: npm run forestry:preview
+      preview_output_directory: dist
+
+{{% /tab %}}  
+{{% /code_tabs %}}
