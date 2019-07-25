@@ -27,8 +27,6 @@ Instant previews are configured just like other [build commands](/docs/settings/
 
 Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment and you will be able to edit the **Instant Preview Command**.
 
-![preview settings](/uploads/2019/01/preview_settings.png)
-
 You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
 
 ### Preview Settings In _.forestry/settings.yml_
@@ -61,7 +59,7 @@ You must include the `--renderToDisk` flag when starting the Hugo server in orde
 
 ### Network Details
 
-Your preview needs to run on **port 8080 and bind to all network interfaces on `0.0.0.0`**.
+Your preview needs to run on **port 8080 and bind to all network interfaces on** `**0.0.0.0**`.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
