@@ -2,10 +2,10 @@
 title: Build Commands
 aliases:
 - "/docs/settings/build-commands"
-weight: 7
-publishdate: 2018-09-19 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2019-01-16 04:00:00 +0000
+weight: "7"
+publishdate: 2018-09-19T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2019-01-16T04:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -54,11 +54,11 @@ Additionally, you can override the following variables to control the preview en
 
 | Variable | Description | Default |
 | :--- | :--- | :--- |
-| `RUBY_VERSION` | Sets the version of ruby used in your environment. You can use any version installable via rvm. | `2.3.6` |
-| `NODE_VERSION` | Sets the version of nodejs used in your environment. You can use any version installable via nvm. | `8` |
-| `HUGO_VERSION` | Version of Hugo to use | Version selected when importing site |
-| `HUGO_ENV` | Environment used by Hugo | `staging` for previews, `production` for publish. |
-| `JEKYLL_ENV` | Environment used by Jekyll | `staging` for preview, `production` for publish. |
+| RUBY_VERSION | Sets the version of ruby used in your environment. You can use any version installable via rvm. | 2.3.6 |
+| NODE_VERSION | Sets the version of nodejs used in your environment. You can use any version installable via nvm. | 8 |
+| HUGO_VERSION | Version of Hugo to use | Version selected when importing site |
+| HUGO_ENV | Environment used by Hugo | staging for previews, production for publish. |
+| JEKYLL_ENV | Environment used by Jekyll | staging for preview, production for publish. |
 
 ## Defining Custom Build Commands
 
@@ -97,7 +97,7 @@ build:
   output_directory: public
   publish_command: hugo -D -F -E
   publish_env:
-  - HUGO_VERSION=0.42
+  - HUGO_VERSION=0.55.6
 ```
 
 ### Example Config
@@ -116,9 +116,10 @@ build:
   publish_env:
   - HUGO_ENV=production
 ```
+
 ### Instant Previews
 
-As mentioned, your preview command should *not* start a development server, as this will cause the preview to be stuck generaring indefinitely.
+As mentioned, your preview command should _not_ start a development server, as this will cause the preview to be stuck generaring indefinitely.
 
 However, our **instant previews** feature treats preview generation differently, allowing for you to spin up a development server in our preview environment which will drastically reduce preview times in most cases.
 
@@ -182,8 +183,8 @@ build:
   publish_env:
 ```
 
-{{% /tab %}}
-{{% tab "Gatsby [beta]" %}}
+{{% /tab %}} {{% tab "Gatsby" %}}
+
 ```yaml
 build:
   # preview
@@ -195,36 +196,45 @@ build:
   publish_command: gatsby build
   output_directory: public
   publish_env:
-
 ```
+
 {{% /tab %}}
 {{% /code_tabs %}}
 
 ### Default Instant Preview Commands
+
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
+
 ```yaml
 build:
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
 ```
+
 {{% /tab %}}
 {{% tab "Jekyll" %}}
+
 ```yaml
 build:
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
 ```
+
 {{% /tab %}}
 {{% tab "VuePress" %}}
+
 ```yaml
 build:
-  instant_preview_command: vuepress dev -p 8080 -h 0.0.0.0
+  instant_preview_command: npm run forestry:preview
 ```
+
 {{% /tab %}}
 {{% tab "Gatsby" %}}
+
 ```yaml
 build:
-  instant_preview_command: gatsby develop -H 0.0.0.0 -p 8080
+  instant_preview_command: npm run forestry:preview
 ```
+
 {{% /tab %}}
 {{% /code_tabs %}}
 
@@ -232,7 +242,7 @@ build:
 
 Of course, many modern frontend stacks leverage NPM libraries and might have a build process managed by a tool like Gulp or Webpack. Our build environment will automatically install your NPM packages and can run NPM scripts defined in a `package.json` file.
 
-When using custom build tools not already supported by our build environment, using NPM scripts is the recommended way to incorporate these tools into your preview or publish command.
+When using custom build tools not already supported by our build environment, **using NPM scripts is the recommended way** to incorporate these tools into your preview or publish command.
 
 In the following example, we will run our VuePress build as an NPM script:
 
