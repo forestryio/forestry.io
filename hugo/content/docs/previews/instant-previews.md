@@ -27,6 +27,8 @@ Instant previews are configured just like other [build commands](/docs/settings/
 
 Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment and you will be able to edit the **Instant Preview Command**.
 
+![Preview environment started](/uploads/2019/07/instant-preview-started.png)
+
 You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
 
 ### Preview Settings In _.forestry/settings.yml_
