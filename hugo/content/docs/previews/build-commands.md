@@ -244,25 +244,45 @@ Of course, many modern frontend stacks leverage NPM libraries and might have a b
 
 When using custom build tools not already supported by our build environment, **using NPM scripts is the recommended way** to incorporate these tools into your preview or publish command.
 
-In the following example, we will run our VuePress build as an NPM script:
+In the following example, we will run our instant previews as an NPM script:
 
-### 1. Install VuePress in your project
+### 1. Install SSG in your project
 
 This step is important, as you could otherwise run node packages on your local machine by installing them globally, but Forestry won't have these global packages installed.
 
-```bash
-npm install --save vuepress
-```
+{{% code_tabs %}}  
+{{% tab "VuePress" %}}
+
+    npm install --save vuepress
+
+{{% /tab %}}   
+{{% tab "Gatsby" %}}
+
+    npm install --save gatsby-cli
+
+{{% /tab %}}  
+{{% /code_tabs %}}
 
 ### 2. Configure a build script in _package.json_
 
 Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
 
-```json
-"scripts": {
-  "forestry:preview": "vuepress build"
-}
-```
+{{% code_tabs %}}  
+{{% tab "VuePress" %}}
+
+    "scripts": {
+      "forestry:preview": "vuepress dev -p 8080 -h 0.0.0.0"
+    }
+
+{{% /tab %}}   
+{{% tab "Gatsby" %}}
+
+    "scripts": {
+      "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080"
+    }
+
+{{% /tab %}}  
+{{% /code_tabs %}}
 
 ### 3. Run the NPM script in your build command
 
