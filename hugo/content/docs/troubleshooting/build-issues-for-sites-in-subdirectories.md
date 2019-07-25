@@ -32,13 +32,12 @@ If you're experiencing problems previewing or deploying in Forestry, and your si
 If your build log complains of a missing configuration file, or if your preview build succeeds but Forestry can't open your preview, adjusting your build config will likely solve the problem. Additionally, if the build log declares that you are missing a Gemfile, and you've ensured that [your project contains a Gemfile](/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/), adding the subdirectory info to your build config should resolve the issue.
 
 
-
-## Including Subdirectory in Preview Build Config
+## Including Subdirectory in Preview
 
 To provide subdirectory info to your build config, you will need to do the following:
 
 1. *Prepend* your subdirectory to the **output directory**. This will give Forestry a complete path from the root of your repo files to the location of the generated website. Note that there should be no need to modify the build command itself.
-2. Open the [advanced configuration](/docs/previews/instant-previews/#advanced-configuration) for your preview environment and set the **Working Directory** to the value of your **Mount Path**, with your subdirectory appended to the end of it.
+2. Open the [advanced configuration](/docs/previews/instant-previews/) for your preview environment and set the **Working Directory** to the value of your **Mount Path**, with your subdirectory appended to the end of it.
 
 {{% tip %}}
 View the [build commands documentation](/docs/settings/build-commands/) for more information on how to update your build configuration.

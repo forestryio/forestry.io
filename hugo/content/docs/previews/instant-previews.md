@@ -53,15 +53,11 @@ Your instant preview command will use the same **output directory** and **enviro
 
 ## Command Limitations
 
-Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `jekyll serve`.
-
-{{% warning "A Caveat for Hugo users" %}}
-You must include the `--renderToDisk` flag when starting the Hugo server in order for your site to work with our preview system.
-{{% /warning %}}
+Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `npm run develop`.
 
 ### Network Details
 
-Your preview needs to run on **port 8080 and bind to all network interfaces on** `**0.0.0.0**`.
+Your preview needs to run on **port 8080 and bind to all network interfaces on `0.0.0.0`**.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
