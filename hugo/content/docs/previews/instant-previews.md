@@ -61,7 +61,7 @@ You must include the `--renderToDisk` flag when starting the Hugo server in orde
 
 ### Network Details
 
-Your preview needs to run on **port 8080** and bind to all network interfaces (`0.0.0.0`).
+Your preview needs to run on **port 8080 and bind to all network interfaces on `0.0.0.0`**.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
@@ -81,15 +81,15 @@ bundle exec jekyll serve --port 8080 --host 0.0.0.0
 {{% tab "VuePress" %}}
 
 ```bash
-vuepress dev --port 8080 --host 0.0.0.0
+npm run forestry:preview
 ```
 
 {{% /tab %}}
 
-{{% tab "Gatsby \[beta\]" %}}
+{{% tab "Gatsby" %}}
 
 ```bash
-gatsby develop -p 8080 -H 0.0.0.0
+npm run forestry:preview
 ```
 
 {{% /tab %}}
