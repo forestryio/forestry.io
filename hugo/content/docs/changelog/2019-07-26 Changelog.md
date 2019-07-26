@@ -26,5 +26,5 @@ cta:
 
 ### Deprecation
 
-* **FTP Deployments**: New imported sites can not build and publish through FTP anymore, option will be remove in September.  
+* **FTP Deployments**: New imported sites can not build and publish through (S)FTP anymore, option will be removed from all sites in September.  
   [**Read the sunset notice**](/docs/sunset/deployments/)
