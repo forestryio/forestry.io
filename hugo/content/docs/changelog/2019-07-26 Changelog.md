@@ -16,7 +16,7 @@ draft: true
 * **Instant Previews**:
   * Default command for JS-based static site generators should be run as an npm script (`npm run forestry:preview` by default now). As the different cli packages are not installed globally, this will avoid errors when Gatsby or VuePress binaries were not found.
   * Environment variables like `GIT_LFS_SKIP_SMUDGE` are now properly sent to instant previews.
-* **Git LFS**: Fix media path and make sure massive bulk uploads are now properly chunked.
+* **Git LFS**: Fix media path and batch massive media downloads into chunks.
 
 ### Enhancements
 
@@ -24,7 +24,6 @@ draft: true
 * **Instant Previews**:
   * A new `Ruby 2.6 + Node 10` image for people using Jekyll and node packages or plugins like jekyll-assets is available.
   * **Hibernation** (beta): in order to save resources, preview environment will be put to sleep 2 hours after the last activity on a site, and will be automatically put out of sleep on new activity.
-* **Site activity**: Preview restarts are now listed.
 
 ### Deprecation
 
