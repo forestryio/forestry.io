@@ -140,6 +140,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/docs/troubleshooting
 - hugo/content/careers/_index.md
 - hugo/content/careers/software-engineer-2019.md
 - hugo/content/careers/senior-ruby-ror-software-engineer.md
@@ -219,7 +220,6 @@ pages:
 - hugo/content/blog/5-options-for-automating-your-software-deployments.md
 - hugo/content/blog/new-improve-media-gallery.md
 - hugo/content/blog/3-tips-for-mastering-blocks.md
-- hugo/content/docs/troubleshooting
 - hugo/content/docs/faqs
 - hugo/content/blog/why-we-created-a-git-backed-content-manager.md
 - hugo/content/blog/spike-test-reset.md
