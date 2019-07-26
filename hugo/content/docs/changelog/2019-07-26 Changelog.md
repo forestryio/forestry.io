@@ -13,7 +13,7 @@ cta:
 
 * **Folders synchronization**: Renamed, moved and deleted folders outside of Forestry are now properly synched. Content sections will auto update after every import.
 * **Instant Previews**:
-  * [Default command for JS-based static site generators should be run as an npm script](/docs/previews/build-commands/#using-npm-scripts-as-build-commands) (`npm run forestry:preview` by default now). As the different cli packages are not installed globally in the preview environment, this will avoid errors when Gatsby or VuePress binaries were not found.
+  * [**Default command for JS-based static site generators should be run as an npm script**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands) (`npm run forestry:preview` by default now). As the different cli packages are not installed globally in the preview environment, this will avoid errors when Gatsby or VuePress binaries were not found.
   * Environment variables like `GIT_LFS_SKIP_SMUDGE` are now properly sent to instant previews.
 * **Git LFS**: Fix media path and batch massive media downloads into chunks, to make sure all your media are properly showing in the media library.
 
@@ -26,5 +26,5 @@ cta:
 
 ### Deprecation
 
-* **FTP Deployments**: New imported sites can not build and publish through (S)FTP anymore, option will be removed from all sites in September.  
+* **FTP Deployments**: New imported sites can not build and publish through (S)FTP anymore, this deployment option will be removed from all sites in September.  
   [**Read the sunset notice**](/docs/sunset/deployments/)
