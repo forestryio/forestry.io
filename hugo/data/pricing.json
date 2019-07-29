@@ -62,10 +62,11 @@
           "info": "Messages to our support queue will be responded to within 24 hours"
         }
       ]
-    },{
+    },
+    {
       "title": "Pro",
-      "priceAnnually": "0",
-      "priceMonthly": "99",
+      "priceAnnually": 0,
+      "priceMonthly": 99,
       "description": "",
       "planIncludes": "Everything in Starter plus",
       "buttonText": "Contact us",
@@ -86,9 +87,6 @@
         {
           "text": "Audit logs",
           "info": "A ledger of the actions performed by users in your organization"
-        },
-        {
-          "text": "Editorial workflow"
         }
       ]
     },
