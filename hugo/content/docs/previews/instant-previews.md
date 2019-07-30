@@ -85,7 +85,7 @@ npm run forestry:preview
 {{% tab "Gatsby" %}}
 
 ```bash
-npm run forestry:preview
+npm run gatsby develop -p 8080
 ```
 
 {{% /tab %}}
