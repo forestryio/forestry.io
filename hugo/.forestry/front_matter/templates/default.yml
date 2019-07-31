@@ -140,10 +140,10 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/careers/_index.md
 - hugo/content/docs/troubleshooting
 - hugo/content/careers/software-engineer-2019.md
-- hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/about-us.md
 - hugo/content/careers-wip.md
 - hugo/content/blog/removing-bitbucket-login.md
