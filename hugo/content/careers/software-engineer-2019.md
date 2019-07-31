@@ -39,7 +39,7 @@ This is a **remote** role. <!--more-->
 
 ### What You'll Do
 
-* Design, build, and maintain efficient, reusable, reliable, and well tested JavaScript/React and Ruby/Rails code
+* Design, build and maintain features for our CMS using efficient, reusable and reliable JavaScript/React and Ruby/Rails code
 * Identify bottlenecks and bugs, and suggest and implement solutions to these problems
 * Help maintain code quality, organization and automation
 * Work on a cross-functional team, providing input to and helping out in areas beyond coding (helping define requirements, testing, technical documentation)
@@ -48,7 +48,7 @@ This is a **remote** role. <!--more-->
 
 * A minimum of 3 years experience building and designing web applications
 * Experience developing with JavaScript and a front-end framework (React preferred)
-* Experience working on the back-end of a web application or API
+* Experience working on the back-end of a web application
 * To be driven by solving hard problems and taking ownership over development tasks
 * To take initiative and suggest solutions and improvements
 * A solid understanding and appreciation for automated tests
@@ -56,7 +56,7 @@ This is a **remote** role. <!--more-->
 
 **Extra consideration will be given for candidates that:**
 
-* Have more experience across our technical stack (Ruby/Rails, JavaScript/React, GraphQL, Kubernetes)
+* Have experience across more of our technical stack (JavaScript/React, GraphQL, Ruby/Rails, Kubernetes, terraform, AWS)
 * Have experience with static site generators
 * Have a passion for the solving the needs of our users
 
