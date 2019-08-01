@@ -8,8 +8,9 @@ authors:
 - Jordan Patterson
 headline: ''
 textline: ''
-images: []
-photo_credit: ''
+images:
+- "/uploads/2019/08/steven-wright-mq8QogEBy00-unsplash.jpg"
+photo_credit: Photo by Steven Wright on Unsplash
 categories: []
 tags:
 - postgres
