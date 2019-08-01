@@ -141,7 +141,7 @@ This strips the top level keys from a json object and concatenates the values al
 
 ## A Note on Rails
 
-Our main application is built with Ruby on Rails so it is also worth noting that Rails does not support exporting triggers and stored procedures too `schema.rb`. We were already using `structure.sql` anyway so it wasn’t an issue for us. But if you need to switch you can do so in `application.rb` like this.
+Our main application is built with Ruby on Rails so it is also worth noting that Rails does not support exporting triggers and stored procedures to `schema.rb`. We were already using `structure.sql` anyway so it wasn’t an issue for us. But if you need to switch you can do so in `application.rb` like this.
 
 ```ruby
 config.active_record.schema_format = :sql
