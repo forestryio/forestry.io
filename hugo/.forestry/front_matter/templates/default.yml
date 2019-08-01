@@ -140,6 +140,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/full-text-searching-with-postgres.md
 - hugo/content/careers/_index.md
 - hugo/content/careers-wip.md
 - hugo/content/about-us.md
