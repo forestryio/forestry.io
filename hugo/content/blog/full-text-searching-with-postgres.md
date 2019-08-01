@@ -24,10 +24,9 @@ private: false
 weight: 
 aliases: []
 menu: []
-draft: true
 
 ---
-We use Postgres as our primary data store here at Forestry. We recently added better searching to section page lists and I thought I would share what we learned as well as some caveats we ran into while building it.
+At Forestry, we use Postgres as our primary data store. In this article I’ll show you how we used `tsvector`to improve searching for documents in the CMS.
 
 ## The `tsvector` Type
 
