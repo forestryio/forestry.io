@@ -9,7 +9,7 @@ authors:
 headline: ''
 textline: ''
 images:
-- "/uploads/2019/08/steven-wright-mq8QogEBy00-unsplash.jpg"
+- "/uploads/2019/08/steven-wright-mq8QogEBy00-unsplash.png"
 photo_credit: Photo by Steven Wright on Unsplash
 categories:
 - Engineering
