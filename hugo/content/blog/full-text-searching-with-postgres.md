@@ -1,6 +1,6 @@
 ---
 title: Full Text Searching with Postgres
-description: ''
+description: Implementing full text search with postgres tsvector and proper indexes.
 date: 2019-08-01T14:07:06-03:00
 publishdate: 2019-08-01T14:07:06-03:00
 expirydate: 2030-01-01T04:00:00.000+00:00
