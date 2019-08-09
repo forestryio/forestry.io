@@ -2,7 +2,7 @@
 title: Static Site Hosting on AWS
 weight: 4
 publishdate: 2017-09-18 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+expirydate: 2020-01-01 04:00:00 +0000
 date: 2017-09-18 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -14,9 +14,13 @@ menu:
     weight: 2
 
 ---
-{{% tip "Disclaimer" %}}
+{{% warning  %}}
+**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
+We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
+Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+{{% /warning %}}
+
 This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a static site connected to Forestry. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
-{{% /tip %}}
 
 ## Overview
 
@@ -38,11 +42,11 @@ This template will create:
 
 The basic template will create a website on a **.cloudfront.net** domain. You might choose this option if you're just testing things out, don't want to bother with a custom domain, or want to handle all the DNS stuff on your own.
 
-To get started with the **basic template**, click the button below: 
+To get started with the **basic template**, click the button below:
 
-{{% aws_launch_stack 
-title="Launch the basic static site stack" 
-stackName="basic-static-site" 
+{{% aws_launch_stack
+title="Launch the basic static site stack"
+stackName="basic-static-site"
 templateURL="https://s3.amazonaws.com/forestryio-cf-templates/static-site-hosting/basic-s3-cloudfront.yml" %}}
 
 ---
@@ -60,11 +64,11 @@ The complete template is recommended if you already have a custom domain that yo
 Before you get started with the complete template, you will need to create a Hosted Zone for your domain in Route 53. If you purchased your domain through Route 53, this will be created for you. If not, refer to the [AWS Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html)
 {{% /tip %}}
 
-To get started with the **complete template**, click the button below: 
+To get started with the **complete template**, click the button below:
 
-{{% aws_launch_stack 
-title="Launch the complete static site stack" 
-stackName="my-static-site" 
+{{% aws_launch_stack
+title="Launch the complete static site stack"
+stackName="my-static-site"
 templateURL="https://s3.amazonaws.com/forestryio-cf-templates/static-site-hosting/advanced-route53-acm.yml" %}}
 
 ---
@@ -119,7 +123,7 @@ To find the name of your bucket, open the **Resources** pane in your stack detai
 
 Your CloudFormation stack contains an **IAM User** with access to write files to your S3 Bucket. However, the stack does not create access keys for this user automatically.
 
-To create an access key, again refer to the **Resources** pane in your stack details. Locate the resource with the Logical ID of `PublishUser` and click on the Physical ID to be taken to the IAM management page for this user. 
+To create an access key, again refer to the **Resources** pane in your stack details. Locate the resource with the Logical ID of `PublishUser` and click on the Physical ID to be taken to the IAM management page for this user.
 
 ![](/uploads/2018/09/cf-step-5.png)
 
@@ -133,7 +137,7 @@ The secret access key can only be viewed in this modal. Once you dismiss it, you
 
 ![](/uploads/2018/09/cf-step-6.png)
 
-Once you have these credentials, open your website in Forestry and navigate to the **Settings**. Click on the **Deployment** tab, and select **Amazon S3** as your connection. You will be presented with fields to fill in your **Bucket**, **Access Key**, and **Secret**. 
+Once you have these credentials, open your website in Forestry and navigate to the **Settings**. Click on the **Deployment** tab, and select **Amazon S3** as your connection. You will be presented with fields to fill in your **Bucket**, **Access Key**, and **Secret**.
 
 {{% tip %}}
 Under **Advanced options**, do *not* enable Gzip compression (CloudFront will handle this for you,) and leave the path as `/`.

@@ -6,7 +6,7 @@ aliases:
 title: Hosting Options
 weight: 1
 publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+expirydate: 2020-01-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
 layout: single
 images:
@@ -18,6 +18,13 @@ menu:
     weight: 1
 
 ---
+
+{{% warning  %}}
+**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
+We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
+Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+{{% /warning %}}
+
 The Hosting settings allow you to use Forestry to handle deployment of your static site. Forestry can build your site and then deploy the [static files](/docs/faqs/glossary/static-files) to a hosting provider of your choice.
 
 ## Guides
