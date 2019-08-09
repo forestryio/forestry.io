@@ -13,7 +13,7 @@ draft: true
 ### Enhancements
 
 * Better search for pages and in select fields options.   
-  We even wrote a [blog post about how Forestry do search text](/blog/full-text-searching-with-postgres/)
+  We even wrote a [blog post about how Forestry does search](/blog/full-text-searching-with-postgres/)
 
 ### Bug fixes
 
