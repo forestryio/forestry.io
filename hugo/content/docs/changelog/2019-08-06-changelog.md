@@ -12,8 +12,11 @@ draft: true
 ---
 ### Enhancements
 
-* Better search for pages and in select fields options.   
+* Better search for pages and in select fields options.  
   We even wrote a [blog post about how Forestry does search](/blog/full-text-searching-with-postgres/)
+* **Instant Previews hibernation**
+* Display last sign in date for organization users.
+* Added latest [**Hugo 0.56.3**](https://gohugo.io/news/0.56.3-relnotes/)
 
 ### Bug fixes
 
