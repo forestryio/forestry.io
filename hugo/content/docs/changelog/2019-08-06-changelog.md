@@ -12,11 +12,13 @@ draft: true
 ---
 ### Enhancements
 
+* **Generic import: (beta):** you can now import any Git repository containing Markdown, YAML and JSON files.   
+  This means you can import [**Eleventy**](https://www.11ty.io), [**Gridsome**](https://gridsome.org), [**Next**](https://nextjs.org), Nuxt, Hexo, etc. websites. 🎉 
 * Better search for pages and in select fields options.  
   We even wrote a [blog post about how Forestry does search](/blog/full-text-searching-with-postgres/)
 * **Instant Previews hibernation**
 * Display last sign in date for organization users.
-* Added latest [**Hugo 0.56.3**](https://gohugo.io/news/0.56.3-relnotes/)
+* Use latest [**Hugo 0.56.3**](https://gohugo.io/news/0.56.3-relnotes/)
 
 ### Bug fixes
 
