@@ -76,8 +76,8 @@ build:
   - HUGO_VERSION=0.42.2
   preview_output_directory: dist
   output_directory: dist
-  instant_preview_command: npm run forestry:instant-preview
   install_dependencies_command: npm install
   preview_docker_image: forestryio/hugo:node10
   mount_path: "/srv"
+  instant_preview_command: npm run forestry:instant-preview
 version: 0.42.2
