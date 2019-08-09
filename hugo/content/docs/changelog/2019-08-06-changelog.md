@@ -16,8 +16,8 @@ draft: true
   This means you can import [**Eleventy**](https://www.11ty.io), [**Gridsome**](https://gridsome.org), [**Next**](https://nextjs.org), Nuxt, Hexo, etc. websites. 🎉 
 * Better search for pages and in select fields options.  
   We even wrote a [blog post about how Forestry does search](/blog/full-text-searching-with-postgres/) 🔍 
-* **Markdown snippets**: you can now use Markdown inside your [snippets](https://forestry.io/docs/settings/snippets/) files. 
-* **Instant Previews hibernation  🐻**
+* **Markdown snippets**: you can now use Markdown inside your [snippets](https://forestry.io/docs/settings/snippets/) files.
+* **Instant Previews hibernation. 💤** 
 * Display last sign in date for organization users.📅  
 * Use latest [**Hugo 0.56.3**](https://gohugo.io/news/0.56.3-relnotes/)
 
