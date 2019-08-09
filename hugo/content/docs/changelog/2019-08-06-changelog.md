@@ -13,12 +13,12 @@ draft: true
 ### Enhancements
 
 * Better search for pages and in select fields options.   
-  We even wrote a [blog post about how we do search text in Forestry](/blog/full-text-searching-with-postgres/).
+  We even wrote a [blog post about how Forestry do search text](/blog/full-text-searching-with-postgres/)
 
 ### Bug fixes
 
-* Fix a bug preventing to use **Create template from Page** 
-* Sanitize media filenames to **prevent failed media uploads**
+* Fix a bug preventing to use **Create template from Page**.
+* Sanitize media filenames to **prevent failed media uploads.**
 
 ### Deprecation
 
