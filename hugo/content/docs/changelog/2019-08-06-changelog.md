@@ -25,5 +25,7 @@ draft: true
 
 ### Deprecation
 
-* **Deployments:** New sites can no longer be deployed by Forestry. Existing sites have until the end of the year to move to a dedicated CI/CD platform. [Read the sunset notice](https://forestry.io/docs/sunset/deployments/).
-* As a result, **Standard Previews** are also deprecated in favor of [**Instant Previews**](https://forestry.io/docs/previews/instant-previews/) for new sites**.** Existing sites still using standard previews have until the end of the year to make the switch.
+* **Deployments:** New sites can no longer be deployed by Forestry.   
+  Existing sites have until the end of the year to move to a dedicated CI/CD platform. [**Read the sunset notice**](https://forestry.io/docs/sunset/deployments/).
+* As a result, **Standard Previews** are also deprecated in favor of [**Instant Previews**](https://forestry.io/docs/previews/instant-previews/) for new sites.   
+  Existing sites still using standard previews have until the end of the year to make the switch.
