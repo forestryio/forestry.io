@@ -64,20 +64,20 @@ use_front_matter_path: false
 file_template: ":year:/:month:/:filename:"
 instant_preview: true
 build:
-  preview_command: npm run forestry:preview
-  publish_command: npm run preDeploy
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.42.2
   - PREVIEW_IP=0.0.0.0
   - PREVIEW_PORT=8080
-  publish_env:
-  - HUGO_ENV=production
-  - HUGO_VERSION=0.42.2
   preview_output_directory: dist
-  output_directory: dist
   install_dependencies_command: npm install
   preview_docker_image: forestryio/hugo:node10
   mount_path: "/srv"
   instant_preview_command: npm run forestry:instant-preview
+  publish_command: npm run preDeploy
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.42.2
+  output_directory: dist
+  preview_command: npm run forestry:preview
 version: 0.42.2
