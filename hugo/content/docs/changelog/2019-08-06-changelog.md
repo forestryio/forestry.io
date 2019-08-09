@@ -10,14 +10,19 @@ cta:
 draft: true
 
 ---
-### Deprecation
+### Enhancements
 
-* **Deployments:** New sites can no longer be deployed by Forestry. Existing sites have until the end of the year to move to a dedicated CI/CD platform. Read our sunset notice.
-* As a result, **Standard Previews** are also deprecated in favor of **Instant Previews** for new sites**.** Existing sites still using standard previews have until the end of the year to make the switch.
+* Better search for pages and in select fields options.   
+  We even wrote a [blog post about how we do search text in Forestry](/blog/full-text-searching-with-postgres/).
 
 ### Bug fixes
 
 * Fix a bug preventing to use **Create template from Page** 
 * Sanitize media filenames to **prevent failed media uploads**
+
+### Deprecation
+
+* **Deployments:** New sites can no longer be deployed by Forestry. Existing sites have until the end of the year to move to a dedicated CI/CD platform. Read our sunset notice.
+* As a result, **Standard Previews** are also deprecated in favor of **Instant Previews** for new sites**.** Existing sites still using standard previews have until the end of the year to make the switch.
 
 ### 
