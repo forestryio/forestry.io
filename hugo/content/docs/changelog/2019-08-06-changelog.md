@@ -9,7 +9,7 @@ cta:
   calls_to_action: []
 
 ---
-### Enhancements
+### Features
 
 * **Generic import: (beta)** 🎉**:** you can now import any Git repository containing Markdown, YAML and JSON files.   
   This means you can import [**Eleventy**](https://www.11ty.io), [**Gridsome**](https://gridsome.org), [**Next**](https://nextjs.org), Nuxt, Hexo, etc. websites.  
