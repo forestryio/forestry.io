@@ -52,9 +52,9 @@ A simple **.forestry/snippets/table.snippet** file:
 
 | Header | Header | Header  |
 | ------ | ------ | ------- |
-| Cell   | Cell   | Cell    |
-| Cell   | Cell   | Cell    |
-| Cell   | Cell   | Cell    |
+| Cell   | Cell   | Cell   |
+| Cell   | Cell   | Cell   |
+| Cell   | Cell   | Cell   |
 ```
 
 ## Using Snippets
