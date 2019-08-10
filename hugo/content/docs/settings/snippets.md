@@ -3,10 +3,10 @@ title: Snippets
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
-publishdate: 2018-07-20 03:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2018-07-20T03:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-date: 2018-07-20 13:58:59 +0000
+date: '2018-07-20T13:58:59.000+00:00'
 headline: ''
 description: ''
 textline: ''
@@ -17,7 +17,7 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 
 aliases: []
 menu:
   docs:
@@ -25,7 +25,7 @@ menu:
     weight: 6
 
 ---
-**Snippets** in Forestry are pre-defined chunks of text that can be inserted into your content. You can put anything in a snippet that you might normally insert into your content, but they are especially useful in conjunction with [shortcodes](https://gohugo.io/content-management/shortcodes/) in Hugo or certain [Liquid tags](https://jekyllrb.com/docs/plugins/tags/) in Jekyll. 
+**Snippets** in Forestry are pre-defined chunks of text that can be inserted into your content. You can put anything in a snippet that you might normally insert into your content, but they are especially useful in conjunction with [shortcodes](https://gohugo.io/content-management/shortcodes/) in Hugo or certain [Liquid tags](https://jekyllrb.com/docs/plugins/tags/) in Jekyll.
 
 ## Creating Snippets
 
@@ -45,19 +45,17 @@ At this time, there is no specific convention for identifying which parts of you
 
 Our Markdown editor does not [support Markdown tables](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/10-support-tables-in-markdown-editor) yet. So you might want to provide a Markdown table starter to help your editors.
 
-A simple `.forestry/snippets/table.snippet`could be something like:
+A simple **.forestry/snippets/table.snippet** file:
 
 ```md
-### Table
+### Table title
 
-| Header | Header | Header |
+| Header | Header | Header  |
 | ------ | ------ | ------- |
 | Cell   | Cell   | Cell    |
 | Cell   | Cell   | Cell    |
 | Cell   | Cell   | Cell    |
-
 ```
-
 
 ## Using Snippets
 
