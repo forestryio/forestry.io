@@ -2,7 +2,7 @@
 title: Amazon S3
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+expirydate: 2020-01-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -10,17 +10,19 @@ layout: single
 
 ---
 
-{{% warning "No Longer Recommended" %}}
-The following guide will show you how to configure web hosting directly from an Amazon S3 bucket. However, Amazon [recommends using CloudFront to serve S3 content](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) instead of serving directly from S3. 
-<br /><br />
-If you wish to create a website hosting stack with S3 and CloudFront together, please see our [Static Site Hosting on AWS](https://forestry.io/docs/hosting/s3-cloudfront-stack/) documentation.
+{{% warning  %}}
+**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
+We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
+Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
 {{% /warning %}}
 
----
 
-{{% tip "Disclaimer" %}}
+The following guide will show you how to configure web hosting directly from an Amazon S3 bucket. However, Amazon [recommends using CloudFront to serve S3 content](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) instead of serving directly from S3.
+
+If you wish to create a website hosting stack with S3 and CloudFront together, please see our [Static Site Hosting on AWS](https://forestry.io/docs/hosting/s3-cloudfront-stack/) documentation.
+
+
 This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
-{{% /tip %}}
 
 ## Overview
 

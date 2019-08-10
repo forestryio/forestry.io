@@ -2,7 +2,7 @@
 title: FTP/SFTP
 weight: "5"
 publishdate: 2017-12-31T04:00:00.000+00:00
-expirydate: 2030-01-01T04:00:00.000+00:00
+expirydate: 2020-01-01T04:00:00.000+00:00
 date: 2017-12-31T04:00:00.000+00:00
 layout: single
 images:
@@ -13,8 +13,11 @@ menu:
     weight: 4
 
 ---
-{{% tip "Disclaimer" %}} This deployment method is soon to be deprecated in favor of CI integrations. We recommend everyone no to use this method anymore.  
-Please read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/) or try a service like [Netlify](https://netlify.com). {{% /tip %}}
+{{% warning  %}}
+**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
+We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
+Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+{{% /warning %}}
 
 ## Overview
 
