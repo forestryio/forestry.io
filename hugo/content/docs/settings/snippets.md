@@ -31,7 +31,7 @@ menu:
 
 To create a snippet, add a `.snippet` file to the `.forestry/snippets` directory in your repository. This file should contain the content that you wish to be inserted when your snippet is applied in the editor. You can also embed Markdown in your snippets.
 
-### Example
+### Examples
 
 The Forestry.io website has a Hugo shortcode for adding helpful tips to our blog posts and documentation. To make inserting these easier, we have added a [Tip Snippet](https://github.com/forestryio/forestry.io/blob/master/hugo/.forestry/snippets/tip.snippet "Tip Snippet") for inserting that shortcode. Here is the snippet:
 
@@ -42,6 +42,22 @@ The Forestry.io website has a Hugo shortcode for adding helpful tips to our blog
 {{% tip %}}
 At this time, there is no specific convention for identifying which parts of your snippet can be customized when the snippet is applied inside the editor. We recommend simply using descriptive placeholders, such as "Tip Body" in the example above.
 {{% /tip %}}
+
+Our Markdown editor does not [support Markdown tables](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/10-support-tables-in-markdown-editor) yet. So you might want to provide a Markdown table starter to help your editors.
+
+A simple `.forestry/snippets/table.snippet`could be something like:
+
+```md
+### Table
+
+| Header | Header | Header |
+| ------ | ------ | ------- |
+| Cell   | Cell   | Cell    |
+| Cell   | Cell   | Cell    |
+| Cell   | Cell   | Cell    |
+
+```
+
 
 ## Using Snippets
 
