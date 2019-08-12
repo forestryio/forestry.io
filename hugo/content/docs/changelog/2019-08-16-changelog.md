@@ -13,5 +13,5 @@ draft: true
 ### Features
 
 * **Conditional fields:** Developers can now choose to hide specific front matter fields in Forestry based on a true/false toogle or on a select option.
-* Display **Markdown tables** in the editor.
-* Show **webp** files thumbnails in the media library.
+* **Markdown tables** are now displayed in the editor.
+* **webp** files thumbnails are now shown in the media library.
