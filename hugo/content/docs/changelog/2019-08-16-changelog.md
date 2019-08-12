@@ -12,6 +12,7 @@ draft: true
 ---
 ### Features
 
-* **Conditional fields:** Developers can now choose to hide specific front matter fields in Forestry based on a true/false toogle or on a select option.
+* **Conditional fields:**   
+  Developers can now choose to hide front matter fields on document edition given a condition set through another toggle or select field.
 * **Markdown tables** are now displayed in the editor.
-* **webp** files thumbnails are now shown in the media library.
+* [**webp** files](https://caniuse.com/#feat=webp) thumbnails are now shown in the media library.
