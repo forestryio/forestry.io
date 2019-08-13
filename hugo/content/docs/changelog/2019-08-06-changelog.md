@@ -2,12 +2,8 @@
 authors:
 - team forestry
 date: 2019-08-06T09:34:25.000+00:00
-title: 2019/08/06 Changelog
-cta:
-  headline: ''
-  textline: ''
-  calls_to_action: []
-
+title: "2019/08/06 Changelog"
+summary: "Generic import, Markdown snippets, better search, preview hibernation and more."
 ---
 ### Features
 

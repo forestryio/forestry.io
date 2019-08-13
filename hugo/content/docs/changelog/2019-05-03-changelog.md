@@ -7,7 +7,7 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
-
+summary: Access private Git submodules, document list sorting and more.
 ---
 ## Enhancements
 

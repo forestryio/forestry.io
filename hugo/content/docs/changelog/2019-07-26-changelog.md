@@ -7,7 +7,7 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
-
+summary: "Better Git synchronization, Ruby 2.6 + Node preview environment, and more "
 ---
 ### Bug fixes
 

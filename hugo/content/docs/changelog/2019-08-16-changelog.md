@@ -8,8 +8,9 @@ cta:
   textline: ''
   calls_to_action: []
 draft: true
-
+summary: "Markdown Tables, Conditional front matter fields, webp support, and more."
 ---
+
 ### Features
 
 * **Conditional fields:**   
