@@ -1,11 +1,11 @@
 ---
 title: Setup Your Site
 authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2017-12-07T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-weight: 2
-date: 2017-03-23 04:00:00 +0000
+weight: "2"
+date: 2017-03-23T04:00:00.000+00:00
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -54,9 +54,7 @@ If you use Github, you will see a button at the top of the modal with a lock. By
 
 ![](/uploads/2018/02/add-site-flow-choose-repo.png)
 
-{{% tip %}}
-
-### Config Path
+{{% tip "Config path" %}}
 
 If you are using Hugo or Jekyll, Forestry will look in the root of your repository for a configuration file. This will be a file named `config.toml` in Hugo, and `_config.yml` in Jekyll. If this file cannot be located, Forestry will prompt you to enter the path to this file. Enter the path from the root of your project to the directory containing this file.
 <br /><br />
