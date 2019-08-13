@@ -1,13 +1,14 @@
 ---
 authors:
 - team forestry
-date: 2019-07-26 5:28:56  -0300
+date: 2019-07-26T08:28:56.000+00:00
 title: 2019/07/26 Changelog
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
-summary: "Better Git synchronization, Ruby 2.6 + Node preview environment, and more "
+summary: Better Git synchronization, Ruby 2.6 + Node preview environment, and more.
+
 ---
 ### Bug fixes
 
