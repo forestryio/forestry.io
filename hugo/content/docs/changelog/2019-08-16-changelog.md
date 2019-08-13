@@ -17,4 +17,5 @@ draft: true
   Developers can now choose to hide front matter fields on document edition given a condition set through another toggle or select field.
 * **Markdown tables** are now displayed in the editor.
 * [**webp** files](https://caniuse.com/#feat=webp) thumbnails are now shown in the media library.
-* **Ruby 2.6 + Node 10:** a new preview environment for instant previews for projects using Jekyll and Node. Make sure to customize the build command according to your setup.
+* **Ruby 2.6 + Node 10:** a new preview environment for instant previews for projects using Jekyll and Node, needed. if you use the `jekyll-assets` plugin for instance.   
+  Feel free to adapt the build command according to your setup.
