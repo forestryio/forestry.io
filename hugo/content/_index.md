@@ -62,12 +62,12 @@ logos:
     offset: 0
   - permalink: img/ssg-logos/nextjs.svg
     alt: Next.js
-    height: 34
-    offset: 0
+    height: 38
+    offset: -3
   - permalink: img/ssg-logos/nuxtjs.svg
     alt: Nuxt.js
     height: 24
-    offset: 0
+    offset: 1
 features:
 - headline: Your site, your workflow
   textline: |
