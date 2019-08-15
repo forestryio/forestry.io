@@ -13,10 +13,10 @@ hero:
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
-    button: true
+    primary: true
   - permalink: https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll
-    textline: Launch Demo
-    button: false
+    textline: Select a Starter Template
+    primary: false
   video:
     fallbackVisual: "/video/fmt-cms-comparison-generic-1.jpg"
     sources:

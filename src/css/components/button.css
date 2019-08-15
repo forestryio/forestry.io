@@ -33,6 +33,19 @@
     }
   }
 
+  &.black {
+    background-color: $color-black;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark;
+    }
+
+    &:active {
+      background-color: $color-medium-dark;
+    }
+  }
+
   /* Button sizes */
   &.extra-small {
     font-size: 11px;

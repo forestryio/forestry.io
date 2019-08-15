@@ -8,7 +8,7 @@
         <div class="hero--sub">{{ markdownify .textline }}</div>
         <div class="hero-cta">
         {{- range .ctas -}}
-          <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }} data-proofer-ignore>{{ .textline }}</a>
+          <a href="{{ .permalink }}" class="button {{ if .primary }}black{{ end }} big" data-proofer-ignore>{{ .textline }}</a>
         {{- end -}}
         </div>
       </div>

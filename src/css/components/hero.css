@@ -50,43 +50,8 @@
       margin-top: 3rem;
     }
 
-    a:not(.button) {
-      color: $color-medium-dark;
-      cursor: pointer;
-      font-style: italic;
-      font-weight: 500;
-      margin-left: 2rem;
-      position: relative;
-      transition: opacity 0.15s ease;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-
-    .launch-demo {
-      color: $color-medium-dark;
-      cursor: pointer;
-      display: none;
-      font-style: italic;
-      font-weight: 500;
-      margin-left: 2rem;
-      position: relative;
-
-      @media screen and (min-width: 520px) {
-        display: block;
-      }
-    }
-
-    .launch-demo::before {
-      background: #f0f0f0;
-      content: "";
-      height: 3.75rem;
-      left: -1rem;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1px;
+    .button {
+      margin-right: 1rem;
     }
   }
 
