@@ -7,6 +7,7 @@
 <div id="root"></div>
 <div id="modal-root"></div>
   {{- partial "components/hero" .Params.hero }}
+  {{- partial "components/logos" .Params.logos }}
   {{- range .Params.features -}}
     {{- partial "components/feature" (dict "pg" $ "feature" .) -}}
   {{- end -}}

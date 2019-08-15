@@ -31,16 +31,5 @@
 
   </div>
   
-  {{- with .logos -}}
-  <div class="built-for">
-    <span>{{ .textline }}</span>
-    <div class="built-for--logos">
-      {{- range .sources -}}
-      <img src="{{ .permalink }}" class="built-for--logo" width="auto" height="24" alt="{{ .alt | default .permalink }}" />
-      {{- end -}}
-    </div>
-  </div>
-  {{- end -}}
-  
 </section>
 {{- end -}}

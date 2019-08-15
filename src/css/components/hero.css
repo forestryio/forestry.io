@@ -157,24 +157,3 @@
     top: 45%;
   }
 }
-
-.built-for {
-  bottom: 2rem;
-  font-size: 0.65rem;
-  font-weight: 600;
-  left: 8vw;
-  letter-spacing: 0.1em;
-  opacity: 1;
-  position: absolute;
-  text-transform: uppercase;
-}
-
-.built-for--logos {
-  align-items: center;
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.built-for--logo {
-  margin-right: 1rem;
-}

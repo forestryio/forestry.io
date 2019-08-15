@@ -29,17 +29,27 @@ hero:
       type: video/webm
     - permalink: "/video/fmt-cms-comparison-generic-1-sm.mp4"
       type: video/mp4
-  logos:
-    textline: Built for static site generators
-    sources:
-    - permalink: "/uploads/gatsby.svg"
-      alt: Gatsby
-    - permalink: img/logos/hugo.svg
-      alt: Hugo
-    - permalink: img/logos/jekyll.svg
-      alt: Jekyll
-    - permalink: "/uploads/2018/08/vuepress-1.png"
-      alt: Vuepress
+logos:
+  headline: Built for static site generators
+  sources:
+  - permalink: img/ssg-logos/gatsby.svg
+    alt: Gatsby
+  - permalink: img/ssg-logos/hugo.svg
+    alt: Hugo
+  - permalink: img/ssg-logos/gridsome.svg
+    alt: Gridsome
+  - permalink: img/ssg-logos/jekyll.svg
+    alt: Jekyll
+  - permalink: img/ssg-logos/11ty.svg
+    alt: 11ty
+  - permalink: img/ssg-logos/vuepress.svg
+    alt: Vue Press
+  - permalink: img/ssg-logos/hexo.svg
+    alt: Hexo
+  - permalink: img/ssg-logos/nextjs.svg
+    alt: Next.js
+  - permalink: img/ssg-logos/nuxtjs.svg
+    alt: Nuxt.js
 features:
 - headline: Your site, your workflow
   textline: |
