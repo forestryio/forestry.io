@@ -3,7 +3,7 @@
         <span class="logos--title">{{ .headline }}</span>
         <div class="logos--container">
             {{- range .sources -}}
-                <img src="{{ .permalink }}" class="logos--logo" width="auto" height="24" alt="{{ .alt | default .permalink }}" />
+                <img src="{{ .permalink }}" class="logos--logo" width="auto" height="{{ .height }}" style="margin-top:{{ .offset }}px;" alt="{{ .alt | default .permalink }}" />
             {{- end -}}
         </div>    
     </div>

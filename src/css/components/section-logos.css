@@ -1,5 +1,5 @@
 .section-logos {
-  padding: 3.5rem 0 4rem 0;
+  padding: 3.5rem 0;
   background-color: $color-light-grey;
 }
 
@@ -15,10 +15,17 @@
 
 .logos--container {
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin: 0 -0.75rem;
+  @media screen and (min-width: 900px) {
+    justify-content: space-between;
+  }
 }
 
 .logos--logo {
   flex: 0 0 auto;
+  margin: 0 0.75rem 1rem 0.75rem;
 }

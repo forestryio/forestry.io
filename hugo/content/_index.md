@@ -34,22 +34,40 @@ logos:
   sources:
   - permalink: img/ssg-logos/gatsby.svg
     alt: Gatsby
+    height: 28
+    offset: 0
   - permalink: img/ssg-logos/hugo.svg
     alt: Hugo
+    height: 28
+    offset: 0
   - permalink: img/ssg-logos/gridsome.svg
     alt: Gridsome
+    height: 28
+    offset: 0
   - permalink: img/ssg-logos/jekyll.svg
     alt: Jekyll
+    height: 34
+    offset: -4
   - permalink: img/ssg-logos/11ty.svg
     alt: 11ty
+    height: 28
+    offset: 0
   - permalink: img/ssg-logos/vuepress.svg
     alt: Vue Press
+    height: 34
+    offset: -2
   - permalink: img/ssg-logos/hexo.svg
     alt: Hexo
+    height: 34
+    offset: 0
   - permalink: img/ssg-logos/nextjs.svg
     alt: Next.js
+    height: 34
+    offset: 0
   - permalink: img/ssg-logos/nuxtjs.svg
     alt: Nuxt.js
+    height: 24
+    offset: 0
 features:
 - headline: Your site, your workflow
   textline: |
