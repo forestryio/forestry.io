@@ -15,7 +15,9 @@ menu:
     weight: 10
 
 ---
-Forestry supports all stable releases of Hugo. If your project requires a version that is not available in the version dropdown, please [let us know](/support/) and we can add it.
+Forestry supports all latest patched stable releases of Hugo from 0.17 to [latest release](https://github.com/gohugoio/hugo/releases). 
+If your project requires a version that is not available in the version dropdown, please [let us know](/support/) and we can add it.
+
 
 ## Extensions
 
