@@ -1,1 +1,9 @@
+.starters-container {
+  padding-top: 8rem;
+}
 
+.starters-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}

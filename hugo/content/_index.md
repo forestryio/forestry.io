@@ -14,7 +14,7 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
     primary: true
-  - permalink: https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll
+  - permalink: "/starters/"
     textline: Select a Starter Template
     primary: false
   video:

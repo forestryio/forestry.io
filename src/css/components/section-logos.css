@@ -1,10 +1,10 @@
 .section-logos {
-  padding: 3.5rem 0;
   background-color: $color-light-grey;
+  padding: 3.5rem 0;
 }
 
 .logos--title {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   opacity: 1;
@@ -20,6 +20,7 @@
   width: 100%;
   justify-content: flex-start;
   margin: 0 -0.75rem;
+
   @media screen and (min-width: 900px) {
     justify-content: space-between;
   }
