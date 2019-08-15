@@ -15,40 +15,38 @@ menu:
     weight: 2
 
 ---
-{{% warning %}}
-This feature is currently in beta.
-{{% /warning %}}
 
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
 
 ## Adding an Instant Preview
 
-Instant previews are configured just like other [build commands](/docs/settings/build-commands/). To use instant previews, navigate to **Settings** > **Previews**. Activate the **Instant Previews** toggle to enable this feature.
+Instant previews are configured via a [build command](/docs/settings/build-commands/). To use instant previews, navigate to **Settings** > **Previews**.
 
-Once the **Instant Previews** toggle is activated, your dev server will start spinning up in our preview environment and you will be able to edit the **Instant Preview Command**.
+When you click on the **Start Preview** button, your dev server will spin up in our preview environment and you will be able to edit the **Instant Preview Command**.
 
 ![Preview environment started](/uploads/2019/07/instant-preview-started.png)
 
 You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
 
-### Preview Settings In _.forestry/settings.yml_
+### Preview Settings in _.forestry/settings.yml_
 
 Alternatively, you can add your instant preview command directly to your configuration file in `.forestry/settings.yml` by adding a value named `instant_preview_command` under the `build` section. You can activate instant previews by adding `instant_preview: true` to the top-level configuration.
-
-{{% tip %}}
-[More info on build commands](https://forestry.io/docs/settings/build-commands/)
-{{% /tip %}}
 
 Here's an example of a live preview configuration in a `.forestry/settings.yml` file:
 
 ```yaml
-instant_preview: true
 build:
-    instant_preview_command: hugo server -D --renderToDisk --port 8080 --bind 0.0.0.0
+  preview_docker_image: node:10
+  install_dependencies_command: npm install
+  instant_preview_command: npm start
+  mount_path: "/srv"
+  working_dir: "/srv/src"
+  preview_output_directory: "src/dist"
+  preview_env:
+  - ENV=staging
 ```
-
 {{% tip %}}
-Your instant preview command will use the same **output directory** and **environment variables** as the standard preview command.
+[Other examples of build commands](/docs/settings/build-commands/)
 {{% /tip %}}
 
 ## Command Limitations
@@ -77,7 +75,7 @@ bundle exec jekyll serve --port 8080 --host 0.0.0.0
 {{% tab "VuePress" %}}
 
 ```bash
-npm run forestry:preview
+vuepress dev --port 8080 --host 0.0.0.0
 ```
 
 {{% /tab %}}
@@ -85,19 +83,40 @@ npm run forestry:preview
 {{% tab "Gatsby" %}}
 
 ```bash
-npm run forestry:preview
+gatsby develop -p 8080 -H 0.0.0.0
 ```
 
 {{% /tab %}}
+{{% tab "Eleventy" %}}
+```bash
+eleventy --serve --port 8080 --output=dist
+```
+{{% /tab %}}
 {{% /code_tabs %}}
+
+
+{{% tip %}}
+**Eleventy**: to tell BrowserSync to bind to `0.0.0.0`, add the following in your Eleventy configuration file:
+
+```
+/* Forestry instant previews */
+if( process.env.ELEVENTY_ENV == "staging" ) {
+  config.setBrowserSyncConfig({
+    host: "0.0.0.0"
+  });
+}
+```
+
+Don't forget to set `ELEVENTY_ENV` environment variable to `staging` in the preview settings.
+{{% /tip %}}
+
+## Default Instant Preview Commands
+
+See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for most used SSG.
 
 ### Live Reloading
 
 Forestry's live previewing relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
-
-## Default Instant Preview Commands
-
-See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
 
 ## Using The Preview
 
