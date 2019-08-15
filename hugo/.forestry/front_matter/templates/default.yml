@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/software-engineer-2019.md
 - hugo/content/blog/landing-page-create-static-site-copy.md
 - hugo/content/blog/why-we-built-forestry.md
 - hugo/content/terms.md
@@ -232,7 +233,6 @@ pages:
 - hugo/content/about-us.md
 - hugo/content/careers-wip.md
 - hugo/content/careers/_index.md
-- hugo/content/careers/software-engineer-2019.md
 - hugo/content/blog/full-text-searching-with-postgres.md
 - hugo/content/blog/removing-bitbucket-login.md
 - hugo/content/docs/troubleshooting

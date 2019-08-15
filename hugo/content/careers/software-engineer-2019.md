@@ -46,7 +46,7 @@ This is a **remote** role. <!--more-->
 
 ### To Be Successful In This Role, You'll Need
 
-* A minimum of 3 years experience building and designing web applications
+* A minimum of 2 years experience building and designing web applications
 * Experience developing with JavaScript and a front-end framework (React preferred)
 * Experience working on the back-end of a web application
 * To be driven by solving hard problems and taking ownership over development tasks
