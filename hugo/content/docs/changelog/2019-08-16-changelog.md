@@ -24,7 +24,14 @@ draft: true
 
 * Rubygems was updated in our Ruby preview environment to [prevent bundler version conflicts](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html) leading Instant Previews build to fail.
 
+{{% warning "Database maintenance scheduled" %}}
+
+[Keep an eye on our status notice](https://status.forestry.io/incidents/v3b82vxh6yb5).
+
+{{% /warning %}}
+
 ### Known issues
 
-* Gridsome 0.6.x users have to add `GRAPHQL_ENDPOINT` to `/___graphql`, set host to "0.0.0.0" in their Gridsome config file and make sure to run `gridsome develop`in a npm script for Instant Previews to work.
+* Gridsome 0.6.x users have to add `GRAPHQL_ENDPOINT` to `/___graphql`, set host to "0.0.0.0" in their Gridsome config file and make sure to run `gridsome develop` in a npm script for Instant Previews to work.
 * Hugo introduced modules in v0.56.0, we're not supporting them yet.
+
