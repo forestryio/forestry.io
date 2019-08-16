@@ -24,9 +24,9 @@ draft: true
 
 * Rubygems was updated in our Ruby preview environment to [prevent bundler version conflicts](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html) leading Instant Previews build to fail.
 
-{{% warning "Database maintenance scheduled" %}}
+{{% warning "Database maintenance scheduled this week-end" %}}
 
-[Keep an eye on our status notice](https://status.forestry.io/incidents/v3b82vxh6yb5).
+[Read our status notice](https://status.forestry.io/incidents/v3b82vxh6yb5).
 
 {{% /warning %}}
 
