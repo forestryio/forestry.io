@@ -1,7 +1,7 @@
 ---
 authors:
 - team forestry
-date: 2019-08-16T14:11:11.000+00:00
+date: 2019-08-16
 title: 2019/08/16 Changelog
 cta:
   headline: ''
