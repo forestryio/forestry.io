@@ -7,8 +7,7 @@ cta:
   headline: ''
   textline: ''
   calls_to_action: []
-summary: Markdown Tables, Conditional front matter fields, webp support, and more.
-draft: true
+summary: Ruby 2.6 + Node, Conditional front matter fields, webp support, and more.
 
 ---
 ### Features
