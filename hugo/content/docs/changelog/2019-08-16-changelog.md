@@ -17,7 +17,7 @@ summary: Ruby 2.6 + Node, Conditional front matter fields, webp support, and mor
 * [**webp** files](https://caniuse.com/#feat=webp) thumbnails are now shown in the media library. Please note that Safari does not support webp for now.
 * **Ruby 2.6 + Node 10:** a new preview environment for instant previews for projects using Jekyll and Node, needed. if you use the `jekyll-assets` plugin for instance.  
   Feel free to adapt the build command according to your setup.
-* Latest **Hugo** `**0.57.1**` with cascading front matter support is already available on import.
+* Latest **Hugo** **0.57.1** with cascading front matter support is already available on import.
 
 ### Bug Fixes
 
