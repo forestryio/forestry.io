@@ -118,6 +118,52 @@ See [default build commands](/docs/previews/build-commands#default-commands) for
 
 Forestry's live previewing relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
 
-## Using The Preview
+## Default Instant Preview Commands
 
-Note that your live preview will initially start on the homepage of your site, regardless of which content you initialize the preview from.
+See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
+
+## Instant Preview URLs
+
+When you click the preview button on a piece of content, Forestry will attempt to determine which URL to open by temporarily inserting a unique preview token in the markdown body. There are two situations where this won't work:
+
+### If the Layout Doesn't Use Markdown Body
+
+You may have some layouts that don't utilize the body of the markdown file. This happens when you instead build the page entirely from front matter data, such as when you use [blocks](/docs/settings/fields/blocks).
+
+For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_instant_preview_id` front matter key in your layout, Forestry will be able to identified the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment. If your HTML is being run through a minifier that strips comments, it's fine to insert it differently, such as in a `<meta>` tag.
+
+Be aware that `forestry_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
+
+{{% code_tabs %}}
+{{% tab "Hugo" %}}
+```go-html-template
+{{ with .Params.forestry_instant_preview_id }}
+  {{- safeHTML (printf "<!-- %s -->" .) -}}
+{{ end }}
+
+or
+
+{{ with .Params.forestry_instant_preview_id }}
+  {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
+{{ end -}}
+```
+_HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output to the document._
+{{% /tab %}}
+{{% tab "Jekyll" %}}
+```liquid
+{% if page.forestry_instant_preview_id %}
+<!-- {{ page.forestry_instant_preview_id }} -->
+{% end %}
+
+or 
+
+{% if page.forestry_instant_preview_id %}
+<meta property="forestry_instant_preview_id" content="{{ page.forestry_instant_preview_id }}">
+{% end %}
+```
+{{% /tab %}}
+{{% /code_tabs %}}
+
+### If the SSG Doesn't Write Content to HTML Files in Dev Mode
+
+If your static site generator doesn't write content updates to HT%M (such as when using `gatsby develop`,) this won't work and the preview will always open the home page of your site.
