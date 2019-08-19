@@ -1,1 +1,54 @@
+.starter-card {
+  border-radius: 0.3rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
 
+.starter-card--image-container {
+  overflow: hidden;
+}
+.starter-card--image {
+  width: 100%;
+  height: auto;
+}
+.starter-card--preview-link {
+  position: absolute;
+  border-radius: 0.3rem;
+  top: 1rem;
+  right: 1rem;
+  color: #1d92ff;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  background: $color-white;
+}
+
+.starter-card--info {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 3.5rem;
+  grid-template-areas:
+    "pills cta"
+    "title cta";
+}
+.starter-card--pills {
+  padding-bottom: 0.75rem;
+  grid-area: pills;
+}
+.starter-card--title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  grid-area: title;
+}
+.starter-card--cta {
+  grid-area: cta;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  background-color: $color-black;
+  color: $color-white;
+}

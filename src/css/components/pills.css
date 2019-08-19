@@ -1,0 +1,12 @@
+.pill {
+  background-color: $color-grey;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}

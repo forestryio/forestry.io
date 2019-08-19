@@ -32,8 +32,10 @@
 @import "components/section-sss.css";
 @import "components/section-testmonials.css";
 @import "components/section-cta.css";
+@import "components/starter-card.css";
 @import "components/footer.css";
 @import "components/lightbox.css";
+@import "components/pills.css";
 @import "components/create-site-block.css";
 @import "components/slide-in-cta.css";
 @import "components/dl.css";

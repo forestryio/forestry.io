@@ -1,6 +1,12 @@
 ---
 starters:
 - name: Novela
-  engine: Gatsby
-  thumb: ''
-  previewUrl: ''
+  thumb: 'https://source.unsplash.com/random/320x220'
+  preview: ''
+  versions:
+  - name: Gridsome
+    link: ''
+  - name: 11ty
+    link: ''
+  - name: Hugo
+    link: ''

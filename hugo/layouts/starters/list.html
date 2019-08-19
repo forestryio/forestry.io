@@ -4,8 +4,11 @@
           <section class="starters-header">
             <h2 class="starters-title">{{ .Params.headline }}</h2>
           </section>
-          <section class="section section-starters-list">
-
+          <section class="starter-grid">
+            {{- $starters := $.Site.Data.starters.starters -}}
+            {{ range $starters }}
+              {{ partial "components/starter-card.html" . }}
+            {{ end }}
           </section>
         </div>
     </main>

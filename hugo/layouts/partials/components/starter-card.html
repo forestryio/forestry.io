@@ -1,11 +1,15 @@
 <div class="starter-card">
-    <div class="starter-card--image">
-        <a href="#" class="starter-card--preview-link">Preview</a>
-        <img src="#" alt="">
+    <div class="starter-card--image-container">
+        <a href="{{ .preview }}" class="starter-card--preview-link">Preview</a>
+        <img src="{{ .thumb }}" alt="{{ .name }} - Preview Image" class="starter-card--image">
     </div>
     <div class="starter-card--info">
-        <div class="starter-card--pills"></div>
-        <div class="starter-card--title"></div>
+        <div class="starter-card--pills">
+            {{ range .versions }}
+              {{ partial "components/pill.html" . }}
+            {{ end }}
+        </div>
+        <div class="starter-card--title">{{ .name }}</div>
         <a href="#" class="starter-card--cta"></a>
     </div>
 </div>
