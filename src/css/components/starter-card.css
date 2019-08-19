@@ -5,11 +5,19 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  overflow: hidden;
+  margin: 0 auto;
+  z-index: 0;
+  background-color: $color-white;
+
+  &.open {
+    z-index: 500;
+  }
 }
 
 .starter-card--image-container {
   overflow: hidden;
+  border-radius: 0.3rem 0.3rem 0 0;
+  display: block;
 }
 .starter-card--image {
   width: 100%;
@@ -22,16 +30,17 @@
   right: 1rem;
   color: #1d92ff;
   text-decoration: none;
-  padding: 0.25rem 1rem;
-  background: $color-white;
+  padding: 0.2rem 0.75rem;
+  background-color: $color-white;
   transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+  border: 1px solid $color-grey;
 
   &:hover {
-    background: $color-light-grey;
+    background-color: $color-light-grey;
   }
 
   &:active {
-    background: $color-grey;
+    background-color: $color-grey;
   }
 }
 .preview-link--icon {
@@ -56,10 +65,10 @@
   font-size: 1.35rem;
   font-weight: 700;
   grid-area: title;
+  color: $color-black;
 }
 .starter-card--cta {
   grid-area: cta;
-  display: block;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 100%;
@@ -67,11 +76,117 @@
   color: $color-white;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  .starter-card.open.reverse & {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  &:active {
+    background-color: $color-medium-dark;
+  }
 }
+
+@keyframes cta {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(3.5rem, 0, 0);
+  }
+  51% {
+    transform: translate3d(-3.5rem, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .cta--icon {
   fill: white;
+  flex: 0 0 auto;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+
+  .starter-card:hover & {
+    animation-name: cta;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes starter-menu {
+  0% {
+    opacity: 0;
+    transform: translate3d(1rem, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+.starter-card--menu {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  z-index: 500;
+  padding: 0;
+  border: 1px solid $color-grey;
+  overflow: hidden;
+  transform: translate3d(0, -50%, 0);
+
+  animation-name: starter-menu;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
+
+  .starter-card & {
+    display: none;
+  }
+
+  &.closed {
+    transition: all 0.15s cubic-bezier(0.694, 0, 0.335, 1);
+    opacity: 0;
+    transform: translate3d(1rem, -50%, 0);
+  }
+}
+.starter-card--menu-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-grey;
+  }
+}
+.starter-card--menu-link {
+  display: block;
+  background-color: $color-white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0.75rem 1.5rem;
+  min-width: 10rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  &:hover {
+    background-color: $color-light-grey;
+  }
+
+  &:active {
+    background-color: $color-grey;
+  }
 }

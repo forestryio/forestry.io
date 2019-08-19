@@ -4,11 +4,31 @@
           <section class="starters-header">
             <h2 class="starters-title">{{ .Params.headline }}</h2>
           </section>
-          <section class="starter-grid">
-            {{- $starters := $.Site.Data.starters.starters -}}
-            {{ range $starters }}
-              {{ partial "components/starter-card.html" . }}
-            {{ end }}
+          <nav class="starters-nav">
+            <ul class="starters-filter-list">
+              <li class="starters-filter-option">
+                <button class="starter-filter starters-filter-button pill black" data-filter="">All</button>
+              </li>
+              <li class="starters-filter-option">
+                <button class="starter-filter starters-filter-button pill" data-filter="11ty">11ty</button>
+              </li>
+              <li class="starters-filter-option">
+                <button class="starter-filter starters-filter-button pill" data-filter="Hugo">Hugo</button>
+              </li>
+              <li class="starters-filter-option">
+                <button class="starter-filter starters-filter-button pill" data-filter="Gridsome">Gridsome</button>
+              </li>
+            </ul>
+          </nav>
+          <section class="section-starter-grid">
+            <div class="starter-grid">
+              {{- $starters := $.Site.Data.starters.starters -}}
+              {{ range $starters }}
+                <div class="starter-grid--item" data-groups="{{ range .versions }}{{ .name }},{{ end }}">
+                  {{ partial "components/starter-card.html" . }}
+                </div>
+              {{ end }}
+            </div>
           </section>
         </div>
     </main>

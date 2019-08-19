@@ -1,24 +1,26 @@
 ---
 starters:
 - name: Novela
-  thumb: 'https://source.unsplash.com/random/320x220'
+  thumb: 'https://source.unsplash.com/WLUHO9A_xik/320x220'
   preview: ''
   versions:
   - name: Gridsome
-    link: ''
-  - name: 11ty
     link: ''
   - name: Hugo
     link: ''
 - name: Portfolio
-  thumb: 'https://source.unsplash.com/random/320x220'
+  thumb: 'https://source.unsplash.com/WLUHO9A_xik/320x220'
   preview: ''
   versions:
   - name: Gridsome
     link: ''
+  - name: 11ty
+    link: ''
 - name: Hylia
-  thumb: 'https://source.unsplash.com/random/320x220'
+  thumb: 'https://source.unsplash.com/WLUHO9A_xik/320x220'
   preview: ''
   versions:
   - name: 11ty
+    link: ''
+  - name: Hugo
     link: ''
