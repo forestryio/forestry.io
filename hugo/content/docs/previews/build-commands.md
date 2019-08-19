@@ -14,7 +14,7 @@ images:
 
 **Instant previews**  allow for you to spin up a development server in our preview environment which will drastically reduce preview times in most cases.
 
-To help you get started, we provide default commands. You can then tailor preview settings to your needs, if your website source lives in a subdirectory for example or if you use a different script to run your preview.
+To help you get started, we provide [default commands](#default-commands). You can then tailor preview settings to your needs, if your website source lives in a subdirectory for example or if you use a different script to run your preview.
 
 [How to use instant previews](/docs/instant-previews/).
 
@@ -100,7 +100,7 @@ build:
   working_dir: "/srv"
   preview_output_directory: "public"
   preview_env:
-  - HUGO_VERSION=0.56.3
+  - HUGO_VERSION=0.57.2
   - HUGO_ENV=staging
 ```
 
@@ -139,6 +139,14 @@ build:
 ```
 
 {{% /tab %}}
+{{% tab "Gatsby" %}}
+
+```yaml
+build:
+  instant_preview_command: npm run forestry:preview
+```
+
+{{% /tab %}}
 {{% tab "VuePress" %}}
 
 ```yaml
@@ -147,7 +155,7 @@ build:
 ```
 
 {{% /tab %}}
-{{% tab "Gatsby" %}}
+{{% tab "Generic" %}}
 
 ```yaml
 build:
@@ -175,11 +183,6 @@ This step is important, as you could otherwise run node packages on your local m
     npm install --save gatsby-cli
 
 {{% /tab %}}
-{{% tab "VuePress" %}}
-
-    npm install --save vuepress
-
-{{% /tab %}}
 {{% tab "Eleventy" %}}
 
     npm install --save @11ty/eleventy
@@ -190,12 +193,17 @@ This step is important, as you could otherwise run node packages on your local m
     npm install --save @gridsome/cli
 
 {{% /tab %}}
-{{% tab "Next" %}}
+{{% tab "VuePress" %}}
+
+    npm install --save vuepress
+
+{{% /tab %}}
+<!-- {{% tab "Next" %}}
 
     npm install --save next react react-dom
 
 {{% /tab %}}
-{{% /code_tabs %}}
+{{% /code_tabs %}} -->
 
 
 ### 2. Configure a build script in _package.json_
@@ -207,13 +215,6 @@ Commands run as NPM scripts will automatically include any installed node module
 
     "scripts": {
       "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080"
-    }
-
-{{% /tab %}}
-{{% tab "VuePress" %}}
-
-    "scripts": {
-      "forestry:preview": "vuepress dev -p 8080 -h 0.0.0.0"
     }
 
 {{% /tab %}}
@@ -232,6 +233,13 @@ Commands run as NPM scripts will automatically include any installed node module
 
 
 {{% /tab %}}
+{{% tab "VuePress" %}}
+
+    "scripts": {
+      "forestry:preview": "vuepress dev -p 8080 -h 0.0.0.0"
+    }
+
+{{% /tab %}}
 {{% /code_tabs %}}
 
 ### 3. Run the NPM script in your build command
@@ -244,18 +252,25 @@ Commands run as NPM scripts will automatically include any installed node module
       preview_output_directory: dist
 
 {{% /tab %}}
-{{% tab "VuePress" %}}
-
-    build:
-      preview_command: npm run forestry:preview
-      preview_output_directory: .vuepress/dist
-
-{{% /tab %}}
 {{% tab "Eleventy" %}}
 
     build:
       preview_command: npm run forestry:preview
       preview_output_directory: _site
+
+{{% /tab %}}
+{{% tab "Gridsome" %}}
+
+    build:
+      preview_command: npm run forestry:preview
+      preview_output_directory: dist
+
+{{% /tab %}}
+{{% tab "VuePress" %}}
+
+    build:
+      preview_command: npm run forestry:preview
+      preview_output_directory: .vuepress/dist
 
 {{% /tab %}}
 {{% /code_tabs %}}

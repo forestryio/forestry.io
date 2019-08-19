@@ -35,9 +35,9 @@ This includes:
 There are only a couple exceptions to this rule:
 
 * Deploy Settings
-  * Your deployment settings include sensitive information. Forestry will never store sensitive information in your Git repository.
+* Your deployment settings include sensitive information. Forestry will never store sensitive information in your Git repository.
 * Invited collaborators
-  * Collaborators will need to be re-invited to the new site.
+* Collaborators will need to be re-invited to the new site.
 
 {{% warning %}}
 

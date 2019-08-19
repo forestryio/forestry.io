@@ -22,6 +22,12 @@ With **instant previews**, you can take advantage of your static site generator'
 
 Instant previews are configured via a [build command](/docs/settings/build-commands/). To use instant previews, navigate to **Settings** > **Previews**.
 
+It should be as easy as 1,2,3:
+
+1. Pick up a preview environment matching your project stack.
+2. Customize your settings (build command, paths)
+3. Start the preview
+
 When you click on the **Start Preview** button, your dev server will spin up in our preview environment and you will be able to edit the **Instant Preview Command**.
 
 ![Preview environment started](/uploads/2019/07/instant-preview-started.png)
@@ -30,23 +36,23 @@ You can edit the command used to run your dev server by editing the **Instant Pr
 
 ### Preview Settings in _.forestry/settings.yml_
 
-Alternatively, you can add your instant preview command directly to your configuration file in `.forestry/settings.yml` by adding a value named `instant_preview_command` under the `build` section. You can activate instant previews by adding `instant_preview: true` to the top-level configuration.
+Alternatively, you can setup your instant previews directly from your configuration file in `.forestry/settings.yml` in the `build` section.
 
-Here's an example of a live preview configuration in a `.forestry/settings.yml` file:
+Here's an example of a build section in the `.forestry/settings.yml` file:
 
 ```yaml
 build:
-  preview_docker_image: node:10
-  install_dependencies_command: npm install
-  instant_preview_command: npm start
-  mount_path: "/srv"
-  working_dir: "/srv/src"
-  preview_output_directory: "src/dist"
+  preview_docker_image: node:10 # Our project use a node-based SSG
+  install_dependencies_command: npm install # We manage dependencies through NPM
+  instant_preview_command: npm start # Our preview script is aliased to npm start script in our package.json
+  mount_path: "/srv" # Don't touch this unless you use a custom Docker image
+  working_dir: "/srv/src" # Our project lives in a `src` subfolder
+  preview_output_directory: "src/dist" # we build our site in `dist` folder
   preview_env:
-  - ENV=staging
+  - ENV=staging # we don't want to optimize for production
 ```
 {{% tip %}}
-[Other examples of build commands](/docs/settings/build-commands/)
+[See other examples of build commands](/docs/settings/build-commands/#examples)
 {{% /tip %}}
 
 ## Command Limitations
@@ -55,7 +61,11 @@ Your instant previewing command needs to be a "watch" style command that will st
 
 ### Network Details
 
-Your preview needs to run on **port 8080 and bind to all network interfaces on `0.0.0.0`**.
+{{% warning %}}
+Your preview needs to run on **port 8080** and bind to all network interfaces on **0.0.0.0**.
+{{% /warning %}}
+
+The default command for any NodeJS-based static site generator should be [added as an npm script in the `package.json`](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
@@ -110,17 +120,13 @@ if( process.env.ELEVENTY_ENV == "staging" ) {
 Don't forget to set `ELEVENTY_ENV` environment variable to `staging` in the preview settings.
 {{% /tip %}}
 
-## Default Instant Preview Commands
-
-See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for most used SSG.
-
 ### Live Reloading
 
 Forestry's live previewing relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
 
 ## Default Instant Preview Commands
 
-See [default build commands](/docs/previews/build-commands#default-commands) for the default instant preview commands for each supported SSG.
+When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands). 
 
 ## Instant Preview URLs
 
@@ -141,7 +147,7 @@ Be aware that `forestry_preview_id` will only be inserted in one file at a time,
   {{- safeHTML (printf "<!-- %s -->" .) -}}
 {{ end }}
 
-or
+or as a meta
 
 {{ with .Params.forestry_instant_preview_id }}
   {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
@@ -155,7 +161,7 @@ _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output 
 <!-- {{ page.forestry_instant_preview_id }} -->
 {% end %}
 
-or 
+or as a meta
 
 {% if page.forestry_instant_preview_id %}
 <meta property="forestry_instant_preview_id" content="{{ page.forestry_instant_preview_id }}">

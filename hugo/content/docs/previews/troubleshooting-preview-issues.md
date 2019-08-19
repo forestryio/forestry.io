@@ -35,13 +35,11 @@ Either way: if you're encountering one of these two problems, this guide can hel
 
 ## Error Generating Preview
 
-![](/uploads/2019/02/errorgeneratingpreview.png)
-
 If Forestry is unable to build your site, check the following:
 
 ### Does your build command look correct?
 
-Head to **Settings** > **Previews** to check your preview build command and ensure it looks correct.
+Head to **Settings** > **Previews** and check that your server is up and running.
 
 {{% tip %}}
 For more information on build commands, consult the following resources:
@@ -98,10 +96,9 @@ exclude:
   - vendor/bundle
 ```
 
-
 ### Is your site in a subdirectory?
 
-If your site is located in a subdirectory of your Git repo, you need to provide some special configuration to your build command.
+If your site is located in a subdirectory of your Git repo, you need to provide some special configuration to your preview settings.
 
 [Troubleshooting guide: build issues for sites in subdirectories](/docs/troubleshooting/build-issues-for-sites-in-subdirectories/)
 
