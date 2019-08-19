@@ -24,6 +24,20 @@
   text-decoration: none;
   padding: 0.25rem 1rem;
   background: $color-white;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  &:hover {
+    background: $color-light-grey;
+  }
+
+  &:active {
+    background: $color-grey;
+  }
+}
+.preview-link--icon {
+  fill: #1d92ff;
+  position: relative;
+  height: 11px;
 }
 
 .starter-card--info {
@@ -51,4 +65,13 @@
   border-radius: 100%;
   background-color: $color-black;
   color: $color-white;
+  position: relative;
+  overflow: hidden;
+}
+.cta--icon {
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
