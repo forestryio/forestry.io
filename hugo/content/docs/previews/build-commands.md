@@ -206,6 +206,7 @@ This step is important, as you could otherwise run node packages on your local m
 {{% /code_tabs %}} -->
 
 
+
 ### 2. Configure a build script in _package.json_
 
 Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
@@ -263,7 +264,7 @@ Commands run as NPM scripts will automatically include any installed node module
 
     build:
       preview_command: npm run forestry:preview
-      preview_output_directory: dist
+      preview_output_directory: _site
 
 {{% /tab %}}
 {{% tab "VuePress" %}}

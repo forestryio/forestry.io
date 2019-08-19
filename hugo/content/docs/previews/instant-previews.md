@@ -126,7 +126,7 @@ Forestry's live previewing relies on the built-in live browser reloading provide
 
 ## Default Instant Preview Commands
 
-When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands). 
+When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands).
 
 ## Instant Preview URLs
 
