@@ -16,7 +16,7 @@ menu:
 
 ---
 
-When using Instant Previews, managing the preview server is done independently from previewing content. To access the preview server controls, navigate to **Settings** > **Previews** > **Instant Previews**.
+When using Instant Previews, managing the preview server is done independently from previewing content. To access the preview server controls, navigate to **Settings** > **Previews**.
 
 {{% pretty_screenshot img="/uploads/2019/06/preview-server-controls.png" caption="Preview server controls" %}}
 
@@ -31,6 +31,7 @@ The Instant Preview server may be in one of several states:
 | Starting| The preview server is starting up. |
 | Ready| The preview server is running the Build Command|
 | Stopping| The preview server is shutting down.|
+| Hibernating| The preview server is going into hibernation.|
 | Error| The an error occurred while running the preview server. |
 
 ## Server Actions
@@ -46,15 +47,11 @@ Depending on the state of your preview server, several server actions will be av
 ## Reading the Server Logs
 
 <video playsinline autoplay muted loop width="100%" controls>
-    <source src="/video/starting-preview-server.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
+  <source src="/video/starting-preview-server.mp4" type="video/mp4">
+  <a href="/video/starting-preview-server.mp4">Watch video</a>.
+</video>
 
-The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**. 
-
-{{% warning %}}
-Don't panic if you don't see any steps in your server controls. They won't appear until you start the server for the first time.
-{{% /warning %}}
+The lifecycle of a preview server contains multiple steps. Each step has a **status indicator**, **name**, and some **logs**.
 
 Common preview steps include:
 

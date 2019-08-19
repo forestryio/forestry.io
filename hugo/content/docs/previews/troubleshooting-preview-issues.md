@@ -35,13 +35,11 @@ Either way: if you're encountering one of these two problems, this guide can hel
 
 ## Error Generating Preview
 
-![](/uploads/2019/02/errorgeneratingpreview.png)
-
 If Forestry is unable to build your site, check the following:
 
 ### Does your build command look correct?
 
-Head to **Settings** > **Previews** to check your preview build command and ensure it looks correct.
+Head to **Settings** > **Previews** and check that your server is up and running.
 
 {{% tip %}}
 For more information on build commands, consult the following resources:
@@ -67,6 +65,7 @@ If you're struggling, the following communities are a good place to seek help fr
 * [Jekyll Forum](https://talk.jekyllrb.com)
 * [VueJS Discord](https://vue-land.js.org/)
 * [Gatsby Discord](https://gatsby.dev/discord)
+* [Gridsome Discord](https://discord.gg/daeay6n)
   {{% /tip %}}
 
 #### Are your project's dependencies being installed correctly?
@@ -88,19 +87,18 @@ Related resources:
 * [Using NPM Scripts as Build Commands](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)
   {{% /tip %}}
 
-#### (Jekyll Only) Ensure Jekyll Ignores `vendor/bundle`
+#### Ensure Jekyll Ignores `vendor/bundle` (only Jekyll < v4.0)
 
 We recommend installing gems locally to your project by running `bundle install --path vendor/bundle`. One potential pitfall of this is that Jekyll may try to process the gems stored in `vendor/bundle` as if they are part of your site layout, leading to build errors. To fix this, ensure the `vendor` directory is excluded in your `_config.yml` file:
 
 ```yaml
 exclude:
-  - vendor
+  - vendor/bundle
 ```
-
 
 ### Is your site in a subdirectory?
 
-If your site is located in a subdirectory of your Git repo, you need to provide some special configuration to your build command.
+If your site is located in a subdirectory of your Git repo, you need to provide some special configuration to your preview settings.
 
 [Troubleshooting guide: build issues for sites in subdirectories](/docs/troubleshooting/build-issues-for-sites-in-subdirectories/)
 
@@ -141,7 +139,15 @@ If your preview builds successfully, but you're faced with an error page proclai
 
 ### Check the URL
 
-When you click the preview button, Forestry attempts to open your preview site at the page you're currently editing. To do this, we make an educated guess on what the URL for that specific content is. However, your SSG conventions and configuration may cause your URLs to look different than we're expecting, and we guess wrong. In this case, try navigating to the homepage of your preview. If the homepage works, the preview is working, but we aren't able to determine the correct URL for your content. Unfortunately, there's nothing further you can do here. You will have to manually correct the URLs in your browser's URL bar, or navigate to the content from the homepage.
+When you click the preview button, Forestry attempts to open your preview site
+at the page you're currently editing. To do this, we make an educated guess on
+what the URL for that specific content is. However, your SSG conventions and
+configuration may cause your URLs to look different than we're expecting, and we
+guess wrong. In this case, try navigating to the homepage of your preview. If
+the homepage works, the preview is working, but we aren't able to determine the
+correct URL for your content. Unfortunately, there's nothing further you can do
+here. You will have to manually correct the URLs in your browser's URL bar, or
+navigate to the content from the homepage.
 
 ### Check your output directory
 
