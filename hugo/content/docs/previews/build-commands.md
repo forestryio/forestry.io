@@ -198,18 +198,18 @@ This step is important, as you could otherwise run node packages on your local m
     npm install --save vuepress
 
 {{% /tab %}}
-<!-- {{% tab "Next" %}}
+{{% tab "Next" %}}
 
     npm install --save next react react-dom
 
 {{% /tab %}}
-{{% /code_tabs %}} -->
-
+{{% /code_tabs %}}
 
 
 ### 2. Configure a build script in _package.json_
 
-Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
+Commands run as NPM scripts will automatically include any installed node modules in your **PATH**. 
+Adapt those commands if you site source lives in a subfolder.
 
 {{% code_tabs %}}
 {{% tab "Gatsby" %}}
@@ -238,6 +238,13 @@ Commands run as NPM scripts will automatically include any installed node module
 
     "scripts": {
       "forestry:preview": "vuepress dev -p 8080 -h 0.0.0.0"
+    }
+
+{{% /tab %}}
+{{% tab "Next" %}}
+
+    "scripts": {
+      "forestry:preview": "next -p 8080 -H 0.0.0.0"
     }
 
 {{% /tab %}}
@@ -274,4 +281,12 @@ Commands run as NPM scripts will automatically include any installed node module
       preview_output_directory: .vuepress/dist
 
 {{% /tab %}}
+{{% tab "Next" %}}
+
+    build:
+      preview_command: npm run forestry:preview
+      preview_output_directory: .next
+
+{{% /tab %}}
+
 {{% /code_tabs %}}

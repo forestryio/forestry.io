@@ -52,7 +52,7 @@ build:
   - ENV=staging # we don't want to optimize for production
 ```
 {{% tip %}}
-[See other examples of build commands](/docs/settings/build-commands/#examples)
+[See other examples of build commands](/docs/settings/build-commands/)
 {{% /tip %}}
 
 ## Command Limitations
