@@ -97,7 +97,7 @@ contentLoaded().then(() => {
       const mainWrapper = document.querySelector(".starter-list-wrapper")
       const cta = starter.querySelector(".starter-card--cta")
       const ctaBounding = cta.getBoundingClientRect()
-      const menuBounding = menuNode.getBoundingClientRect()
+      const starterBounding = starter.getBoundingClientRect()
       const scrollLeft =
         window.pageXOffset || document.documentElement.scrollLeft
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -106,10 +106,22 @@ contentLoaded().then(() => {
 
       mainWrapper.appendChild(menuNode)
       menuNode.classList.add("open")
-      menuNode.style.top =
-        ctaBounding.top + scrollTop + ctaBounding.height / 2 + "px"
-      menuNode.style.left =
-        ctaBounding.left + scrollLeft + ctaBounding.width + 16 + "px"
+      starter.classList.add("open")
+
+      if (starterBounding.right + starterBounding.width > window.innerWidth) {
+        starter.classList.add("menu-position-bottom")
+        menuNode.classList.add("position-bottom")
+        menuNode.style.top =
+          ctaBounding.top + scrollTop + ctaBounding.height * 1.25 + "px"
+        menuNode.style.left =
+          ctaBounding.left + scrollLeft + ctaBounding.width + "px"
+      } else {
+        starter.classList.remove("menu-position-bottom")
+        menuNode.style.top =
+          ctaBounding.top + scrollTop + ctaBounding.height / 2 + "px"
+        menuNode.style.left =
+          ctaBounding.left + scrollLeft + ctaBounding.width + 16 + "px"
+      }
 
       menuNode.addEventListener("click", function(event) {
         event.stopPropagation()
@@ -123,6 +135,13 @@ contentLoaded().then(() => {
       const openMenus = [
         ...document.querySelectorAll(".starter-card--menu.open")
       ]
+      const openStarterCards = [
+        ...document.querySelectorAll(".starter-card.open")
+      ]
+
+      openStarterCards.forEach(function(starter) {
+        starter.classList.remove("open")
+      })
 
       openMenus.forEach(function(menu) {
         menu.classList.add("closed")

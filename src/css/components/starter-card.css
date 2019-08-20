@@ -98,8 +98,8 @@
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
 
-  .starter-card.open.reverse & {
-    transform: rotate(180deg);
+  .starter-card.open.menu-position-bottom & {
+    transform: rotate(90deg);
   }
 
   &:hover {
@@ -152,6 +152,17 @@
   }
 }
 
+@keyframes starter-menu--bottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 1rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
 .starter-card--menu {
   display: flex;
   flex-direction: column;
@@ -176,10 +187,19 @@
     display: none;
   }
 
+  &.position-bottom {
+    transform: translate3d(-100%, 0, 0);
+    animation-name: starter-menu--bottom;
+  }
+
   &.closed {
     transition: all 0.15s cubic-bezier(0.694, 0, 0.335, 1);
     opacity: 0;
     transform: translate3d(1rem, -50%, 0);
+
+    &.position-bottom {
+      transform: translate3d(-100%, 1rem, 0);
+    }
   }
 }
 .starter-card--menu-item {
