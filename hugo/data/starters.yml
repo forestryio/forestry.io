@@ -45,3 +45,10 @@ starters:
   - name: Gridsome
     repo: itsnwa/darkfolio
     engine: other
+filters:
+  - name: Gatsby
+  - name: Hugo
+  - name: Gridsome
+  - name: Next
+  - name: Nuxt
+  - name: Eleventy

@@ -1,35 +1,33 @@
 {{- define "main" -}}
-    <main class="starter-list-wrapper">
-        <div class="container starters-container">
-          <section class="starters-header">
-            <h2 class="starters-title">{{ .Params.headline }}</h2>
-          </section>
-          <nav class="starters-nav">
-            <ul class="starters-filter-list">
+{{- $starters := $.Site.Data.starters.starters -}}
+{{- $filters := $.Site.Data.starters.filters -}}
+
+  <main class="starter-list-wrapper">
+      <div class="container starters-container">
+        <section class="starters-header">
+          <h2 class="starters-title">{{ .Params.headline }}</h2>
+        </section>
+        <nav class="starters-nav">
+          <ul class="starters-filter-list">
+            <li class="starters-filter-option">
+              <button class="starter-filter starters-filter-button pill black" data-filter="">All</button>
+            </li>
+            {{ range $filters }}
               <li class="starters-filter-option">
-                <button class="starter-filter starters-filter-button pill black" data-filter="">All</button>
+                <button class="starter-filter starters-filter-button pill" data-filter="{{ .name }}">{{ .name }}</button>
               </li>
-              <li class="starters-filter-option">
-                <button class="starter-filter starters-filter-button pill" data-filter="Eleventy">11ty</button>
-              </li>
-              <li class="starters-filter-option">
-                <button class="starter-filter starters-filter-button pill" data-filter="Hugo">Hugo</button>
-              </li>
-              <li class="starters-filter-option">
-                <button class="starter-filter starters-filter-button pill" data-filter="Gridsome">Gridsome</button>
-              </li>
-            </ul>
-          </nav>
-          <section class="section-starter-grid">
-            <div class="starter-grid">
-              {{- $starters := $.Site.Data.starters.starters -}}
-              {{ range $starters }}
-                <div class="starter-grid--item" data-groups="{{ range .versions }}{{ .name }},{{ end }}">
-                  {{ partial "components/starter-card.html" . }}
-                </div>
-              {{ end }}
-            </div>
-          </section>
-        </div>
-    </main>
+            {{ end }}
+          </ul>
+        </nav>
+        <section class="section-starter-grid">
+          <div class="starter-grid">
+            {{ range $starters }}
+              <div class="starter-grid--item" data-groups="{{ range .versions }}{{ .name }},{{ end }}">
+                {{ partial "components/starter-card.html" . }}
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      </div>
+  </main>
 {{- end -}}
