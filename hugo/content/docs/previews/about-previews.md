@@ -3,10 +3,10 @@ aliases:
 - "/docs/site-configuration/previewing"
 - "/docs/editing/previews"
 title: Previews
-weight: 4
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2019-06-28 12:00:00 +0000
+weight: "4"
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2019-06-28T12:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -17,10 +17,9 @@ menu:
     weight: 1
 
 ---
-
 Previews allow content editors to see changes in Forestry before saving or publishing those changes, as well as share the drafted changes before publishing them. You can think of Forestry's previews as your site's staging environment.
 
-**[Instant Previews](/docs/previews/instant-previews/)** provide a short update loop when users preview a document.
+[**Instant Previews**](/docs/previews/instant-previews/) provide a short update loop when users preview a document.
 
 ## How Previews Work
 
@@ -32,10 +31,11 @@ Previews will usually take a few seconds to generate. However, depending on the 
 
 ### How to use previews?
 
-- [Configuring Your Instant Previews](/docs/previews/instant-previews/)
-- [Using the Instant Previews](/docs/previews/instant-previews-server/)
+* [Configuring Your Instant Previews](/docs/previews/instant-previews/)
+* [Using the Instant Previews](/docs/previews/instant-previews-server/)
 
 ## How long do previews last?
 
-Previews are _ephemeral_ — they are guaranteed to persist while a site is being worked on, but will go into hibernation after a few hours of inactivity.
+Previews are _ephemeral_ — they are guaranteed to persist while a site is being worked on, but will go into hibernation after a few hours of inactivity.  
+As a result the first user to login back to a site will have to wait for the preview server to restart and get into ready state.   
 You can share your preview URLs with friends and collaborators for demonstration purposes, but do not attempt to host evergreen content from our preview environment.
