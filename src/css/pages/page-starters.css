@@ -18,7 +18,7 @@
   display: inline-block;
 }
 .section-starter-grid {
-  padding: 4rem 0;
+  padding: 2.5rem 0 1.5rem 0;
 }
 .starter-grid {
   position: relative;
@@ -31,7 +31,7 @@
 .starter-grid--item {
   width: 100%;
   float: left;
-  padding: 1.5rem;
+  padding: 2.5rem 2rem;
 
   @media screen and (min-width: 700px) {
     width: 50%;

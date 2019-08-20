@@ -1,13 +1,13 @@
 .starter-card {
   border-radius: 0.3rem;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 0;
+  padding-bottom: 95%;
   position: relative;
   margin: 0 auto;
   z-index: 0;
   background-color: $color-white;
+  position: relative;
 
   &.open {
     z-index: 500;
@@ -18,6 +18,11 @@
   overflow: hidden;
   border-radius: 0.3rem 0.3rem 0 0;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .starter-card--image {
   width: 100%;
@@ -50,12 +55,18 @@
 }
 
 .starter-card--info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr 3.5rem;
   grid-template-areas:
     "pills cta"
     "title cta";
+  background-color: $color-white;
+  border-radius: 0 0 0.3rem 0.3rem;
 }
 .starter-card--pills {
   padding-bottom: 0.75rem;
@@ -72,6 +83,8 @@
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 100%;
+  border: none;
+  outline: none;
   background-color: $color-black;
   color: $color-white;
   position: relative;
@@ -80,6 +93,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  align-self: end;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
 
