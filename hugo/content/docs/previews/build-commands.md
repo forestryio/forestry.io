@@ -256,35 +256,35 @@ Adapt those commands if you site source lives in a subfolder.
 {{% tab "Gatsby" %}}
 
     build:
-      preview_command: npm run forestry:preview
+      instant_preview_command: npm run forestry:preview
       preview_output_directory: dist
 
 {{% /tab %}}
 {{% tab "Eleventy" %}}
 
     build:
-      preview_command: npm run forestry:preview
+      instant_preview_command: npm run forestry:preview
       preview_output_directory: _site
 
 {{% /tab %}}
 {{% tab "Gridsome" %}}
 
     build:
-      preview_command: npm run forestry:preview
+      instant_preview_command: npm run forestry:preview
       preview_output_directory: _site
 
 {{% /tab %}}
 {{% tab "VuePress" %}}
 
     build:
-      preview_command: npm run forestry:preview
+      instant_preview_command: npm run forestry:preview
       preview_output_directory: .vuepress/dist
 
 {{% /tab %}}
 {{% tab "Next" %}}
 
     build:
-      preview_command: npm run forestry:preview
+      instant_preview_command: npm run forestry:preview
       preview_output_directory: .next
 
 {{% /tab %}}
