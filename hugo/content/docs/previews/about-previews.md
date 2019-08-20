@@ -25,7 +25,11 @@ Previews allow content editors to see changes in Forestry before saving or publi
 
 Instant Previews will use your static site generator's built-in dev server to build the preview. Because the SSG runs continuously in the background watching for modified files, it is typically able to rebuild your site very fast. Developers rely on this short feedback loop when building a website, and Instant Previews allows editors to take advantage of this same capability from within the Forestry CMS.
 
-Once the server is started, clicking the ![preview icon](/uploads/2018/01/preview-small.png) preview button in the top right corner of the [editor](/docs/editing/markdown-editor/) will send the updated content (including any unsaved changes) to the preview server and rebuild your site. While the preview is generating, editors will be presented with a loading screen, and will be get redirected to the page being previewed when the preview has finished generating.
+Once the server is started, clicking the preview button in the top right corner of the [editor](/docs/editing/markdown-editor/) will send the updated content (including any unsaved changes) to the preview server and rebuild your site. 
+
+![](/uploads/2019/08/preview-started.png)
+
+While the preview is generating, editors will be presented with a loading screen, and will be get redirected to the page being previewed when the preview has finished generating.
 
 Previews will usually take a few seconds to generate. However, depending on the size and complexity of the site, the preview may take significantly longer to generate.
 
@@ -37,5 +41,7 @@ Previews will usually take a few seconds to generate. However, depending on the 
 ## How long do previews last?
 
 Previews are _ephemeral_ — they are guaranteed to persist while a site is being worked on, but will go into hibernation after a few hours of inactivity.  
-As a result the first user to login back to a site will have to wait for the preview server to restart and get into ready state.   
-You can share your preview URLs with friends and collaborators for demonstration purposes, but do not attempt to host evergreen content from our preview environment.
+As a result the first user to login back to a site will have to wait for the preview server to restart and get into ready state. 
+
+![](/uploads/2019/08/preview-starting.png)  
+You can share your public preview URLs with friends and collaborators for demonstration purposes, but do not attempt to host evergreen content from our preview environment.
