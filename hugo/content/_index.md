@@ -15,9 +15,11 @@ hero:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
     primary: true
+    button: false
   - permalink: "/starters/"
     textline: Select a Starter Template
     primary: false
+    button: false
   video:
     fallbackVisual: "/video/fmt-cms-comparison-generic-1.jpg"
     sources:
@@ -35,40 +37,40 @@ logos:
   sources:
   - permalink: img/ssg-logos/gatsby.svg
     alt: Gatsby
-    height: "28"
-    offset: "0"
+    height: '28'
+    offset: '0'
   - permalink: img/ssg-logos/hugo.svg
     alt: Hugo
-    height: "28"
-    offset: "0"
+    height: '28'
+    offset: '0'
   - permalink: img/ssg-logos/gridsome.svg
     alt: Gridsome
-    height: "28"
-    offset: "0"
+    height: '28'
+    offset: '0'
   - permalink: img/ssg-logos/jekyll.svg
     alt: Jekyll
-    height: "34"
+    height: '34'
     offset: "-4"
   - permalink: img/ssg-logos/11ty.svg
     alt: 11ty
-    height: "28"
-    offset: "0"
+    height: '28'
+    offset: '0'
   - permalink: img/ssg-logos/vuepress.svg
     alt: Vue Press
-    height: "34"
+    height: '34'
     offset: "-2"
   - permalink: img/ssg-logos/hexo.svg
     alt: Hexo
-    height: "34"
-    offset: "0"
+    height: '34'
+    offset: '0'
   - permalink: img/ssg-logos/nextjs.svg
     alt: Next.js
-    height: "38"
+    height: '38'
     offset: "-3"
   - permalink: img/ssg-logos/nuxtjs.svg
     alt: Nuxt.js
-    height: "24"
-    offset: "1"
+    height: '24'
+    offset: '1'
 features:
 - headline: Your site, your workflow
   textline: |
@@ -116,10 +118,14 @@ features:
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?
+  calls_to_action: []
 publishdate: 2018-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
-date: 2017-12-31T04:00:00.000+00:00
+date: '2017-12-31T04:00:00.000+00:00'
 inspectlet: true
+images: []
+private: false
+weight: 
 
 ---
