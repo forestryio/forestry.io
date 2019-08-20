@@ -43,7 +43,7 @@ Your instant previewing command needs to be a "watch" style command that will st
 Your preview needs to run on **port 8080** and bind to all network interfaces on **0.0.0.0**.
 {{% /warning %}}
 
-The default command for any NodeJS-based static site generator should be [added as an npm script in the ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`[package.json](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`.
+The default command for any NodeJS-based static site generator should be [added as an npm script in the ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)[`package.json`](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
