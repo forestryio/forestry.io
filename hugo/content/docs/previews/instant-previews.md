@@ -74,6 +74,11 @@ vuepress dev --port 8080 --host 0.0.0.0
 gatsby develop -p 8080 -H 0.0.0.0
 ```
 
+{{% /tab %}}  
+{{% tab "Gridsome" %}}
+
+    gridsome develop
+
 {{% /tab %}}
 {{% tab "Eleventy" %}}
 
