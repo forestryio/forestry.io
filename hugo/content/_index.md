@@ -1,15 +1,17 @@
 ---
 aliases:
 - "/remote/"
-title: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty…
-description: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty sites. A simpler
-  way to edit JAMstack sites.
+title: Git-backed CMS for Gatsby, Gridsome, Eleventy, Hugo, VuePress, Jekyll, etc.
+description: Git-backed headless CMS to easily edit all markdown based static sites
+  generated with Gatsby, Gridsome, Next, Next, Eleventy, Hugo, Jekyll, VuePress, Hexo,
+  etc.
 authors: []
 blocks: 
 hero:
   headline: A static CMS that **commits**
-  textline: Sync your Gatsby, Hugo, Jekyll or VuePress sites. Your editors will love
-    it and won’t realize they’re making commits.
+  textline: |-
+    Create and edit Markdown-based content with ease.
+    Let Forestry synch with your git repository.
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
@@ -34,40 +36,40 @@ logos:
   sources:
   - permalink: img/ssg-logos/gatsby.svg
     alt: Gatsby
-    height: 28
-    offset: 0
+    height: "28"
+    offset: "0"
   - permalink: img/ssg-logos/hugo.svg
     alt: Hugo
-    height: 28
-    offset: 0
+    height: "28"
+    offset: "0"
   - permalink: img/ssg-logos/gridsome.svg
     alt: Gridsome
-    height: 28
-    offset: 0
+    height: "28"
+    offset: "0"
   - permalink: img/ssg-logos/jekyll.svg
     alt: Jekyll
-    height: 34
-    offset: -4
+    height: "34"
+    offset: "-4"
   - permalink: img/ssg-logos/11ty.svg
     alt: 11ty
-    height: 28
-    offset: 0
+    height: "28"
+    offset: "0"
   - permalink: img/ssg-logos/vuepress.svg
     alt: Vue Press
-    height: 34
-    offset: -2
+    height: "34"
+    offset: "-2"
   - permalink: img/ssg-logos/hexo.svg
     alt: Hexo
-    height: 34
-    offset: 0
+    height: "34"
+    offset: "0"
   - permalink: img/ssg-logos/nextjs.svg
     alt: Next.js
-    height: 38
-    offset: -3
+    height: "38"
+    offset: "-3"
   - permalink: img/ssg-logos/nuxtjs.svg
     alt: Nuxt.js
-    height: 24
-    offset: 1
+    height: "24"
+    offset: "1"
 features:
 - headline: Your site, your workflow
   textline: |

@@ -1,6 +1,7 @@
 ---
-title: Starters
+title: Get started with Forestry CMS
 headline: Select a starter template to launch a demo
+description: Pre-configured templates to easily get started with Forestry CMS.
 date: 2019-08-15 00:00:00 +0000
 weight: 3
 date: 2019-08-15 00:00:00 +0000

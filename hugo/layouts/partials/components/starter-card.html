@@ -15,7 +15,9 @@
     </div>
     <ul class="starter-card--menu">
         {{ range .versions }}
-            <li class="starter-card--menu-item"><a href="{{ .link }}" class="starter-card--menu-link">{{ .name }}</a></li>
+          {{- $branch := .branch | default "master" }}
+          {{ $engine := .engine | default .name -}}
+          <li class="starter-card--menu-item"><a href="https://app.forestry.io/quick-start?repo={{  .repo }}&branch={{ $branch }}&engine={{ lower $engine }}" class="starter-card--menu-link">{{ .name }}</a></li>
         {{ end }}
     </ul>
 </div>
