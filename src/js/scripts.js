@@ -147,7 +147,9 @@ contentLoaded().then(() => {
         menu.classList.add("closed")
 
         setTimeout(function() {
-          menu.parentNode.removeChild(menu)
+          if (menu.parentNode) {
+            menu.parentNode.removeChild(menu)
+          }
         }, 1000)
       })
     }
