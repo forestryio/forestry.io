@@ -9,9 +9,8 @@ authors: []
 blocks: 
 hero:
   headline: A static CMS that **commits**
-  textline: |-
-    Create and edit Markdown-based content with ease.
-    Let Forestry synch with your git repository.
+  textline: 'Give your editors the power of Git. Create and edit Markdown-based content
+    with ease. '
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
