@@ -1,6 +1,7 @@
 ---
 starters:
 - name: Novela
+  textline: Blog
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://novela.narative.co
   versions:
@@ -14,6 +15,7 @@ starters:
     repo: itsnwa/gridsome-forestry-starter
     engine: other
 - name: Brevifolia
+  textline: Blog
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://gridsome-forestry.netlify.com
   versions:
@@ -31,6 +33,7 @@ starters:
     repo: kendallstrautman/brevifolia-nuxt-forestry
     engine: other
 - name: Hylia
+  textline: Blog
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://hylia-forestry.netlify.com
   versions:
@@ -39,6 +42,7 @@ starters:
     branch: forestry
     engine: other
 - name: Darkfolio
+  textline: Portfolio
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://darkfolio.netlify.com
   versions:
