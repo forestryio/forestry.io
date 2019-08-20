@@ -15,7 +15,6 @@ menu:
     weight: 2
 
 ---
-
 With **instant previews**, you can take advantage of your static site generator's built-in "watch" or incrementally-updating mode to dramatically reduce the time it takes to refresh a Forestry preview, providing a shorter feedback cycle for editors working on your site.
 
 ## Adding an Instant Preview
@@ -34,27 +33,6 @@ When you click on the **Start Preview** button, your dev server will spin up in 
 
 You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
 
-### Preview Settings in _.forestry/settings.yml_
-
-Alternatively, you can setup your instant previews directly from your configuration file in `.forestry/settings.yml` in the `build` section.
-
-Here's an example of a build section in the `.forestry/settings.yml` file:
-
-```yaml
-build:
-  preview_docker_image: node:10 # Our project use a node-based SSG
-  install_dependencies_command: npm install # We manage dependencies through NPM
-  instant_preview_command: npm start # Our preview script is aliased to npm start script in our package.json
-  mount_path: "/srv" # Don't touch this unless you use a custom Docker image
-  working_dir: "/srv/src" # Our project lives in a `src` subfolder
-  preview_output_directory: "src/dist" # we build our site in `dist` folder
-  preview_env:
-  - ENV=staging # we don't want to optimize for production
-```
-{{% tip %}}
-[See other examples of build commands](/docs/settings/build-commands/)
-{{% /tip %}}
-
 ## Command Limitations
 
 Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `npm run develop`.
@@ -65,7 +43,7 @@ Your instant previewing command needs to be a "watch" style command that will st
 Your preview needs to run on **port 8080** and bind to all network interfaces on **0.0.0.0**.
 {{% /warning %}}
 
-The default command for any NodeJS-based static site generator should be [added as an npm script in the `package.json`](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
+The default command for any NodeJS-based static site generator should be [added as an npm script in the ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`[package.json](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
@@ -98,24 +76,23 @@ gatsby develop -p 8080 -H 0.0.0.0
 
 {{% /tab %}}
 {{% tab "Eleventy" %}}
+
 ```bash
 eleventy --serve --port 8080 --output=dist
 ```
+
 {{% /tab %}}
 {{% /code_tabs %}}
-
 
 {{% tip %}}
 **Eleventy**: to tell BrowserSync to bind to `0.0.0.0`, add the following in your Eleventy configuration file:
 
-```
-/* Forestry instant previews */
-if( process.env.ELEVENTY_ENV == "staging" ) {
-  config.setBrowserSyncConfig({
-    host: "0.0.0.0"
-  });
-}
-```
+    /* Forestry instant previews */
+    if( process.env.ELEVENTY_ENV == "staging" ) {
+      config.setBrowserSyncConfig({
+        host: "0.0.0.0"
+      });
+    }
 
 Don't forget to set `ELEVENTY_ENV` environment variable to `staging` in the preview settings.
 {{% /tip %}}
@@ -123,6 +100,24 @@ Don't forget to set `ELEVENTY_ENV` environment variable to `staging` in the prev
 ### Live Reloading
 
 Forestry's live previewing relies on the built-in live browser reloading provided by your preview process. Instant previews have been tested and confirmed working with [Browsersync](https://browsersync.io/) and [LiveReload](http://livereload.com/).
+
+### Preview Settings in _.forestry/settings.yml_
+
+Alternatively, you can setup your instant previews directly from your configuration file in `.forestry/settings.yml` in the `build` section.
+
+Here's an example of a build section in the `.forestry/settings.yml` file:
+
+    build:
+      preview_docker_image: node:10 # Our project use a node-based SSG
+      install_dependencies_command: npm install # We manage dependencies through NPM
+      instant_preview_command: npm start # Our preview script is aliased to npm start script in our package.json
+      mount_path: "/srv" # Don't touch this unless you use a custom Docker image
+      working_dir: "/srv/src" # Our project lives in a `src` subfolder
+      preview_output_directory: "src/dist" # we build our site in `dist` folder
+      preview_env:
+      - ENV=staging # we don't want to optimize for production
+
+{{% tip %}} [See other examples of build commands](/docs/settings/build-commands/) {{% /tip %}}
 
 ## Default Instant Preview Commands
 
@@ -142,6 +137,7 @@ Be aware that `forestry_preview_id` will only be inserted in one file at a time,
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
+
 ```go-html-template
 {{ with .Params.forestry_instant_preview_id }}
   {{- safeHTML (printf "<!-- %s -->" .) -}}
@@ -153,9 +149,11 @@ or as a meta
   {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
 {{ end -}}
 ```
+
 _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output to the document._
 {{% /tab %}}
 {{% tab "Jekyll" %}}
+
 ```liquid
 {% if page.forestry_instant_preview_id %}
 <!-- {{ page.forestry_instant_preview_id }} -->
@@ -167,6 +165,7 @@ or as a meta
 <meta property="forestry_instant_preview_id" content="{{ page.forestry_instant_preview_id }}">
 {% end %}
 ```
+
 {{% /tab %}}
 {{% /code_tabs %}}
 
