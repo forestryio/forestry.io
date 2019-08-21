@@ -21,7 +21,7 @@ starters:
 - name: Brevifolia
   textline: Blog
   preview: https://brevifolia-gridsome-forestry.netlify.com/
-  image: "img/starters/"
+  image: "img/starters/brevifolia.png"
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
@@ -35,14 +35,6 @@ starters:
     repo: kendallstrautman/brevifolia-hugo-forestry
     branch: ''
     engine: ''
-  - name: Next
-    repo: kendallstrautman/brevifolia-next-forestry
-    engine: other
-    branch: ''
-  - name: Nuxt
-    repo: kendallstrautman/brevifolia-nuxt-forestry
-    engine: other
-    branch: ''
 - name: Hylia
   textline: Blog
   preview: https://hylia-forestry.netlify.com
