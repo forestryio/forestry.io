@@ -13,9 +13,7 @@ fields:
     name: textline
     label: Textline
   - name: image
-    type: file
-    config:
-      maxSize: 250
+    type: text
     label: Image
   - type: text
     name: preview
