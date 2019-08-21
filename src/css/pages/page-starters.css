@@ -56,3 +56,10 @@
     width: calc(100% / 3);
   }
 }
+.starters-footer {
+  padding-top: 4rem;
+  text-align: center;
+  .starters-title {
+    margin-bottom: 2rem;
+  }
+}

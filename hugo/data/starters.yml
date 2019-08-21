@@ -20,7 +20,7 @@ starters:
   textline: ''
 - name: Brevifolia
   textline: Blog
-  preview: https://gridsome-forestry.netlify.com
+  preview: https://brevifolia-gridsome-forestry.netlify.com/
   image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
   versions:
   - name: Gatsby
