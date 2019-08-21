@@ -1,4 +1,4 @@
-baseurl = "https://forestry.io"
+baseurl = "http://ofjhrceewlqecq.instant.forestry.io/"
 copyright = ""
 defaultContentLanguage = "en"
 destination = "../dist/"
