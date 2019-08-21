@@ -1,0 +1,37 @@
+---
+label: starters
+hide_body: true
+fields:
+- type: field_group_list
+  name: starters
+  label: starters
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: textline
+    label: textline
+  - type: text
+    name: thumb
+    label: thumb
+  - type: text
+    name: preview
+    label: preview
+  - type: field_group_list
+    name: versions
+    label: versions
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: repo
+      label: repo
+- type: field_group_list
+  name: filters
+  label: filters
+  fields:
+  - type: text
+    name: name
+    label: name
