@@ -3,7 +3,7 @@ starters:
 - name: Novela
   textline: Blog
   preview: https://novela.narative.co
-  image: "/static/img/starters/novela.png"
+  image: "img/starters/novela.png"
   versions:
   - name: Gatsby
     repo: narative/gatsby-theme-novela
@@ -11,7 +11,7 @@ starters:
     engine: ''
 - name: Portfolio
   preview: https://gridsome-forestry.netlify.com
-  image: "/static/img/starters/portfolio.png"
+  image: "img/starters/portfolio.png"
   versions:
   - name: Gridsome
     repo: itsnwa/gridsome-forestry-starter
@@ -21,7 +21,7 @@ starters:
 - name: Brevifolia
   textline: Blog
   preview: https://brevifolia-gridsome-forestry.netlify.com/
-  image: "/static/img/starters/"
+  image: "img/starters/"
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
@@ -46,7 +46,7 @@ starters:
 - name: Hylia
   textline: Blog
   preview: https://hylia-forestry.netlify.com
-  image: "/static/img/starters/hylia.png"
+  image: "img/starters/hylia.png"
   versions:
   - name: Eleventy
     repo: DirtyF/hylia
@@ -55,7 +55,7 @@ starters:
 - name: Darkfolio
   textline: Portfolio
   preview: https://darkfolio.netlify.com
-  image: "/static/img/starters/darkfolio.png"
+  image: "img/starters/darkfolio.png"
   versions:
   - name: Gridsome
     repo: itsnwa/darkfolio
