@@ -8,6 +8,7 @@
   z-index: 0;
   background-color: $color-white;
   position: relative;
+  cursor: pointer;
 
   &.open {
     z-index: 500;
@@ -77,6 +78,17 @@
   font-weight: 700;
   grid-area: title;
   color: $color-black;
+}
+.starter-card--subtitle {
+  &:before {
+    content: "–";
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+    font-size: 1.35rem;
+  }
+  color: $color-medium-dark;
+  font-weight: 400;
 }
 .starter-card--cta {
   grid-area: cta;

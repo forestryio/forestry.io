@@ -125,6 +125,7 @@ vars = ["date", "description", "dir", "path", "expirydate", "fuzzywordcount", "k
 [params.cloudinary]
 cloud_name = "forestry-demo"
 use_upload = false
+baseurl = "https://res.cloudinary.com/forestry-demo/image/fetch"
 [params.cloudinary.lazysizes]
 enabled = true
 [params.cloudinary.presets.content]

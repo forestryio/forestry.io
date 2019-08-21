@@ -23,7 +23,7 @@
           <div class="starter-grid">
             {{ range $starters }}
               <div class="starter-grid--item" data-groups="{{ range .versions }}{{ .name }},{{ end }}">
-                {{ partial "components/starter-card.html" . }}
+                {{ partial "components/starter-card.html" (dict "starter" . "ctx" $) }}
               </div>
             {{ end }}
           </div>

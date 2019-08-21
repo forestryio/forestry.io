@@ -2,28 +2,26 @@
 starters:
 - name: Novela
   textline: Blog
-  thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://novela.narative.co
+  image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
   versions:
   - name: Gatsby
     repo: narative/gatsby-theme-novela
     branch: ''
     engine: ''
-  image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
 - name: Portfolio
-  thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://gridsome-forestry.netlify.com
+  image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
   versions:
   - name: Gridsome
     repo: itsnwa/gridsome-forestry-starter
     engine: other
     branch: ''
   textline: ''
-  image: ''
 - name: Brevifolia
   textline: Blog
-  thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://gridsome-forestry.netlify.com
+  image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
@@ -45,27 +43,24 @@ starters:
     repo: kendallstrautman/brevifolia-nuxt-forestry
     engine: other
     branch: ''
-  image: ''
 - name: Hylia
   textline: Blog
-  thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://hylia-forestry.netlify.com
+  image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
   versions:
   - name: Eleventy
     repo: DirtyF/hylia
     branch: forestry
     engine: other
-  image: ''
 - name: Darkfolio
   textline: Portfolio
-  thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://darkfolio.netlify.com
+  image: "/uploads/2019/08/Screen Shot 2019-08-21 at 9.41.47 AM.png"
   versions:
   - name: Gridsome
     repo: itsnwa/darkfolio
     engine: other
     branch: ''
-  image: ''
 filters:
 - name: Gatsby
 - name: Hugo
