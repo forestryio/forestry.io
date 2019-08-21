@@ -2,7 +2,7 @@
     <div class="starter-card--image-container">
         <a href="{{ .starter.preview }}" target="_blank" class="starter-card--preview-link">{{ partial "svg" (dict "id" "eye" "class" "preview-link--icon" "width" "24" "height" "24") }}
             Preview</a>
-        <img src="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_jpg/{{ .ctx.Site.BaseURL }}{{ .starter.image }}" alt="{{ .starter.name }} - Preview Image" class="starter-card--image">
+        <img src="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_jpg/{{ .ctx.Site.BaseURL }}/{{ .starter.image }}" alt="{{ .starter.name }} - Preview Image" class="starter-card--image">
     </div>
     <div class="starter-card--info">
         <div class="starter-card--pills">
@@ -21,7 +21,7 @@
         {{ range .starter.versions }}
           {{- $branch := .branch | default "master" }}
           {{ $engine := .engine | default .name -}}
-          <li class="starter-card--menu-item"><a href="https://app.forestry.io/quick-start?repo={{  .repo }}&branch={{ $branch }}&engine={{ lower $engine }}&preview={{ $.ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_jpg/{{ $.ctx.Site.BaseURL }}{{ safeURL $.starter.image }}" class="starter-card--menu-link">{{ .name }}</a></li>
+          <li class="starter-card--menu-item"><a href="https://app.forestry.io/quick-start?repo={{  .repo }}&branch={{ $branch }}&engine={{ lower $engine }}&preview={{ safeURL $.ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_jpg/{{ safeURL $.ctx.Site.BaseURL }}/{{ safeURL $.starter.image }}" class="starter-card--menu-link">{{ .name }}</a></li>
         {{ end }}
     </ul>
 </div>
