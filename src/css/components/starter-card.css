@@ -68,6 +68,7 @@
     "title cta";
   background-color: $color-white;
   border-radius: 0 0 0.3rem 0.3rem;
+  border-top: 1px solid $color-grey;
 }
 .starter-card--pills {
   padding-bottom: 0.25rem;
