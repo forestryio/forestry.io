@@ -6,34 +6,49 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
+  line-height: 1.25;
 }
 .starters-nav {
   padding-top: 3rem;
 }
 .starters-filter-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .starters-filter-option {
   display: inline-block;
 }
 .section-starter-grid {
-  padding: 2.5rem 0 1.5rem 0;
+  padding: 1.5rem 0;
+
+  @media screen and (min-width: 700px) {
+    padding: 2.5rem 0 1.5rem 0;
+  }
 }
 .starter-grid {
   position: relative;
   z-index: 1;
   display: block;
-  width: 100%;
+  width: calc(100% + 4rem);
   overflow: hidden;
   clear: both;
+  margin-left: -2rem;
+  margin-right: -2rem;
+
+  @media screen and (min-width: 700px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .starter-grid--item {
   width: 100%;
   float: left;
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 2rem;
 
   @media screen and (min-width: 700px) {
+    padding: 2.5rem 2rem;
     width: 50%;
   }
 
