@@ -9,7 +9,7 @@ authors: []
 blocks: 
 hero:
   headline: A static CMS that **commits**
-  textline: "Give your editors the power of Git. \nCreate and edit Markdown-based
+  textline: "Give your editors the power of Git.  \nCreate and edit Markdown-based
     content with ease. "
   ctas:
   - permalink: https://app.forestry.io/signup
