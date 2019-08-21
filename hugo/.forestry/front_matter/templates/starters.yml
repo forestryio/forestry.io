@@ -8,30 +8,45 @@ fields:
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
   - type: text
     name: textline
-    label: textline
-  - type: text
-    name: thumb
-    label: thumb
+    label: Textline
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
   - type: text
     name: preview
-    label: preview
+    label: Preview Link
   - type: field_group_list
     name: versions
-    label: versions
+    label: Versions
     fields:
     - type: text
       name: name
-      label: name
+      label: Name
     - type: text
       name: repo
-      label: repo
+      label: Repo
+    - name: branch
+      type: text
+      config:
+        required: false
+      label: Branch
+      default: master
+    - name: engine
+      type: text
+      config:
+        required: false
+      label: Engine
 - type: field_group_list
   name: filters
-  label: filters
+  label: Filters
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
+pages:
+- hugo/data/starters.yml

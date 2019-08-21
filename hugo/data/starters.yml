@@ -7,6 +7,9 @@ starters:
   versions:
   - name: Gatsby
     repo: narative/gatsby-theme-novela
+    branch: ''
+    engine: ''
+  image: ''
 - name: Portfolio
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
   preview: https://gridsome-forestry.netlify.com
@@ -14,6 +17,9 @@ starters:
   - name: Gridsome
     repo: itsnwa/gridsome-forestry-starter
     engine: other
+    branch: ''
+  textline: ''
+  image: ''
 - name: Brevifolia
   textline: Blog
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
@@ -21,17 +27,25 @@ starters:
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
+    branch: ''
+    engine: ''
   - name: Gridsome
     repo: kendallstrautman/brevifolia-gridsome-forestry
     engine: other
+    branch: ''
   - name: Hugo
     repo: kendallstrautman/brevifolia-hugo-forestry
+    branch: ''
+    engine: ''
   - name: Next
     repo: kendallstrautman/brevifolia-next-forestry
     engine: other
+    branch: ''
   - name: Nuxt
     repo: kendallstrautman/brevifolia-nuxt-forestry
     engine: other
+    branch: ''
+  image: ''
 - name: Hylia
   textline: Blog
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
@@ -41,6 +55,7 @@ starters:
     repo: DirtyF/hylia
     branch: forestry
     engine: other
+  image: ''
 - name: Darkfolio
   textline: Portfolio
   thumb: https://source.unsplash.com/WLUHO9A_xik/320x220
@@ -49,10 +64,12 @@ starters:
   - name: Gridsome
     repo: itsnwa/darkfolio
     engine: other
+    branch: ''
+  image: ''
 filters:
-  - name: Gatsby
-  - name: Hugo
-  - name: Gridsome
-  - name: Next
-  - name: Nuxt
-  - name: Eleventy
+- name: Gatsby
+- name: Hugo
+- name: Gridsome
+- name: Next
+- name: Nuxt
+- name: Eleventy
