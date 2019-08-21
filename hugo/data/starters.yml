@@ -21,7 +21,7 @@ starters:
 - name: Brevifolia
   textline: Blog
   preview: https://brevifolia-gridsome-forestry.netlify.com/
-  image: "img/starters/brevifolia.png"
+  image: "img/starters/brevifolia.jpg"
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
