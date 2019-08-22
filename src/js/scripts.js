@@ -90,7 +90,7 @@ contentLoaded().then(() => {
     const starterFilters = [...document.querySelectorAll(".starter-filter")]
     const starters = [...document.querySelectorAll(".starter-card")]
 
-    const openMenu = function(starter) {
+    const openMenu = (starter) => {
       const menuNode = starter
         .querySelector(".starter-card--menu")
         .cloneNode(true)
@@ -109,6 +109,7 @@ contentLoaded().then(() => {
       starter.classList.add("open")
 
       if (starterBounding.right + starterBounding.width > window.innerWidth) {
+        /* If there's not enough room to the right of the card, open the menu to the bottom */
         starter.classList.add("menu-position-bottom")
         menuNode.classList.add("position-bottom")
         menuNode.style.top =
@@ -116,6 +117,7 @@ contentLoaded().then(() => {
         menuNode.style.left =
           ctaBounding.left + scrollLeft + ctaBounding.width + "px"
       } else {
+        /* If there's enough room, open the menu to the right of the card */
         starter.classList.remove("menu-position-bottom")
         menuNode.style.top =
           ctaBounding.top + scrollTop + ctaBounding.height / 2 + "px"
@@ -131,7 +133,7 @@ contentLoaded().then(() => {
       })
     }
 
-    const closeMenu = function(menu) {
+    const closeMenu = (menu) => {
       const openMenus = [
         ...document.querySelectorAll(".starter-card--menu.open")
       ]
@@ -147,6 +149,7 @@ contentLoaded().then(() => {
         menu.classList.add("closed")
 
         setTimeout(function() {
+          /* Wait until the closing animation is finished before removing */
           if (menu.parentNode) {
             menu.parentNode.removeChild(menu)
           }
@@ -166,8 +169,6 @@ contentLoaded().then(() => {
     })
 
     starters.forEach(function(starter) {
-      starter.cta = starter.querySelector(".starter-card--cta")
-      starter.menu = starter.querySelector(".starter-card--menu")
       starter.preview = starter.querySelector(".starter-card--preview-link")
 
       starter.preview.addEventListener("click", function(event) {
