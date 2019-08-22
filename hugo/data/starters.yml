@@ -3,15 +3,15 @@ starters:
 - name: Novela
   textline: Blog
   preview: https://novela.narative.co
-  image: "img/starters/novela.png"
+  image: img/starters/novela.jpg
   versions:
   - name: Gatsby
     repo: narative/gatsby-theme-novela
     branch: ''
     engine: ''
-- name: Portfolio
+- name: Unstad
   preview: https://gridsome-forestry.netlify.com
-  image: "img/starters/portfolio.png"
+  image: img/starters/unstad.png
   versions:
   - name: Gridsome
     repo: itsnwa/gridsome-forestry-starter
@@ -21,7 +21,7 @@ starters:
 - name: Brevifolia
   textline: Blog
   preview: https://brevifolia-gridsome-forestry.netlify.com/
-  image: "img/starters/brevifolia.jpg"
+  image: img/starters/brevifolia.jpg
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
@@ -35,10 +35,19 @@ starters:
     repo: kendallstrautman/brevifolia-hugo-forestry
     branch: ''
     engine: ''
+- name: Jæren
+  textline: ''
+  image: img/starters/joeren.jpg
+  preview: https://vuepress-portfolio.netlify.com
+  versions:
+  - name: VuePress
+    repo: forestryio/portfolio-vuepress
+    branch: master
+    engine: vuepress
 - name: Hylia
   textline: Blog
   preview: https://hylia-forestry.netlify.com
-  image: "img/starters/hylia.png"
+  image: img/starters/hylia.png
   versions:
   - name: Eleventy
     repo: DirtyF/hylia
@@ -47,7 +56,7 @@ starters:
 - name: Darkfolio
   textline: Portfolio
   preview: https://darkfolio.netlify.com
-  image: "img/starters/darkfolio.png"
+  image: img/starters/darkfolio.jpg
   versions:
   - name: Gridsome
     repo: itsnwa/darkfolio
@@ -60,3 +69,4 @@ filters:
 - name: Next
 - name: Nuxt
 - name: Eleventy
+- name: VuePress
