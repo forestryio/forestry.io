@@ -22,7 +22,7 @@
 .section-starter-grid {
   padding: 1.5rem 0;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 900px) {
     padding: 2.5rem 0 1.5rem 0;
   }
 }
@@ -37,9 +37,15 @@
   margin-right: -2rem;
 
   @media screen and (min-width: 700px) {
-    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: calc(100% - 4rem);
+  }
+
+  @media screen and (min-width: 900px) {
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
   }
 }
 .starter-grid--item {
@@ -47,7 +53,7 @@
   float: left;
   padding: 1.5rem 2rem;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 900px) {
     padding: 2.5rem 2rem;
     width: 50%;
   }
