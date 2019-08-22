@@ -1,14 +1,5 @@
 ---
 starters:
-- name: Novela
-  textline: Blog
-  preview: https://novela.narative.co
-  image: img/starters/novela.jpg
-  versions:
-  - name: Gatsby
-    repo: narative/gatsby-theme-novela
-    branch: ''
-    engine: ''
 - name: Unstad
   preview: https://gridsome-forestry.netlify.com
   image: img/starters/unstad.png
@@ -37,7 +28,7 @@ starters:
     engine: ''
 - name: Jæren
   textline: Portfolio
-  image: img/starters/joeren.jpg
+  image: img/starters/joeren.png
   preview: https://vuepress-portfolio.netlify.com
   versions:
   - name: VuePress
@@ -62,6 +53,15 @@ starters:
     repo: itsnwa/darkfolio
     engine: other
     branch: ''
+- name: Belkirk
+  textline: Site
+  preview: https://forestryio-templates.github.io/belkirk-jekyll-demo/
+  image: img/starters/belkirk.png
+  versions:
+  - name: Jekyll
+    repo: forestryio-templates/belkirk-jekyll-demo
+    branch: ''
+    engine: jekyll
 filters:
 - name: Gatsby
 - name: Hugo
