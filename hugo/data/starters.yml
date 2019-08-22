@@ -17,7 +17,7 @@ starters:
     repo: itsnwa/gridsome-forestry-starter
     engine: other
     branch: ''
-  textline: ''
+  textline: Portfolio
 - name: Brevifolia
   textline: Blog
   preview: https://brevifolia-gridsome-forestry.netlify.com/
@@ -36,7 +36,7 @@ starters:
     branch: ''
     engine: ''
 - name: Jæren
-  textline: ''
+  textline: Portfolio
   image: img/starters/joeren.jpg
   preview: https://vuepress-portfolio.netlify.com
   versions:
