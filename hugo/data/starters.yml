@@ -1,14 +1,5 @@
 ---
 starters:
-- name: Novela
-  textline: Blog
-  preview: https://novela.narative.co
-  image: img/starters/novela.jpg
-  versions:
-  - name: Gatsby
-    repo: narative/gatsby-theme-novela
-    branch: ''
-    engine: ''
 - name: Unstad
   preview: https://gridsome-forestry.netlify.com
   image: img/starters/unstad.png
