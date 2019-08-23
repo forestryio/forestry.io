@@ -18,6 +18,9 @@
 }
 .starters-filter-option {
   display: inline-block;
+  &:first-child:last-child {
+    display: none;
+  }
 }
 .section-starter-grid {
   padding: 1.5rem 0;

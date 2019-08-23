@@ -47,7 +47,7 @@ starters:
 - name: Darkfolio
   textline: Portfolio
   preview: https://darkfolio.netlify.com
-  image: img/starters/darkfolio.jpg
+  image: img/starters/darkfolio.png
   versions:
   - name: Gridsome
     repo: itsnwa/darkfolio

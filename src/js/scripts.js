@@ -87,7 +87,6 @@ contentLoaded().then(() => {
       itemSelector: ".starter-grid--item",
       delimiter: ","
     })
-    const starterFilters = [...document.querySelectorAll(".starter-filter")]
     const starters = [...document.querySelectorAll(".starter-card")]
 
     const openMenu = (starter) => {
@@ -157,6 +156,7 @@ contentLoaded().then(() => {
       })
     }
 
+    const starterFilters = [...document.querySelectorAll(".starter-filter")]
     starterFilters.forEach(function(filter) {
       const type = filter.dataset.filter
       filter.addEventListener("click", function(event) {
