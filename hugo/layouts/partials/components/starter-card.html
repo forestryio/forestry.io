@@ -2,7 +2,11 @@
     <div class="starter-card--image-container">
         <a href="{{ .starter.preview }}" target="_blank" class="starter-card--preview-link">{{ partial "svg" (dict "id" "eye" "class" "preview-link--icon" "width" "24" "height" "24") }}
             Preview</a>
-        <img src="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_jpg/{{ .ctx.Site.BaseURL }}/{{ .starter.image }}" alt="{{ .starter.name }} - Preview Image" class="starter-card--image">
+        <img
+            src="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_auto/{{ .ctx.Site.BaseURL }}/{{ .starter.image }}"
+            srcset="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_auto/{{ .ctx.Site.BaseURL }}/{{ .starter.image }} 1x,
+            {{ .ctx.Site.Params.cloudinary.baseurl }}/w_800,h_600,c_fill,f_auto/{{ .ctx.Site.BaseURL }}/{{ .starter.image }} 2x"
+            alt="{{ .starter.name }} - Preview Image">
     </div>
     <div class="starter-card--info">
         <div class="starter-card--pills">
