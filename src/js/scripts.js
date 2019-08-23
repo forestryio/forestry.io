@@ -7,6 +7,7 @@ import LightBox from "./imports/lightbox"
 import Nav from "./imports/nav"
 import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
+import Shuffle from "shufflejs"
 import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
 import ASBGenerator from "./imports/asbButtonGenerator"
@@ -22,6 +23,7 @@ contentLoaded().then(() => {
   const isDocs = document.body.classList.contains("section-docs")
   const isBlog = document.body.classList.contains("section-blog")
   const isPricing = document.body.classList.contains("type-pricing")
+  const isStarter = document.body.classList.contains("type-starters")
 
   /**
    * Enable navbar logic
@@ -58,6 +60,7 @@ contentLoaded().then(() => {
 
   if (isPricing) {
     const info = [...document.querySelectorAll(".plan--item__tooltip-toggle")]
+
     info.forEach(function(item) {
       item.addEventListener("click", function(event) {
         item.nextElementSibling.classList.add("active")
@@ -75,6 +78,119 @@ contentLoaded().then(() => {
         item.nextElementSibling.classList.remove("active")
         event.stopPropagation()
       })
+    })
+  }
+
+  if (isStarter) {
+    const starterGridElement = document.querySelector(".starter-grid")
+    const starterGrid = new Shuffle(starterGridElement, {
+      itemSelector: ".starter-grid--item",
+      delimiter: ","
+    })
+    const starterFilters = [...document.querySelectorAll(".starter-filter")]
+    const starters = [...document.querySelectorAll(".starter-card")]
+
+    const openMenu = (starter) => {
+      const menuNode = starter
+        .querySelector(".starter-card--menu")
+        .cloneNode(true)
+      const mainWrapper = document.querySelector(".starter-list-wrapper")
+      const cta = starter.querySelector(".starter-card--cta")
+      const ctaBounding = cta.getBoundingClientRect()
+      const starterBounding = starter.getBoundingClientRect()
+      const scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+      closeMenu()
+
+      mainWrapper.appendChild(menuNode)
+      menuNode.classList.add("open")
+      starter.classList.add("open")
+
+      if (starterBounding.right + starterBounding.width > window.innerWidth) {
+        /* If there's not enough room to the right of the card, open the menu to the bottom */
+        starter.classList.add("menu-position-bottom")
+        menuNode.classList.add("position-bottom")
+        menuNode.style.top =
+          ctaBounding.top + scrollTop + ctaBounding.height * 1.25 + "px"
+        menuNode.style.left =
+          ctaBounding.left + scrollLeft + ctaBounding.width + "px"
+      } else {
+        /* If there's enough room, open the menu to the right of the card */
+        starter.classList.remove("menu-position-bottom")
+        menuNode.style.top =
+          ctaBounding.top + scrollTop + ctaBounding.height / 2 + "px"
+        menuNode.style.left =
+          ctaBounding.left + scrollLeft + ctaBounding.width + 16 + "px"
+      }
+
+      menuNode.addEventListener("click", function(event) {
+        event.stopPropagation()
+      })
+      menuNode.addEventListener("touchstart", function(event) {
+        event.stopPropagation()
+      })
+    }
+
+    const closeMenu = (menu) => {
+      const openMenus = [
+        ...document.querySelectorAll(".starter-card--menu.open")
+      ]
+      const openStarterCards = [
+        ...document.querySelectorAll(".starter-card.open")
+      ]
+
+      openStarterCards.forEach(function(starter) {
+        starter.classList.remove("open")
+      })
+
+      openMenus.forEach(function(menu) {
+        menu.classList.add("closed")
+
+        setTimeout(function() {
+          /* Wait until the closing animation is finished before removing */
+          if (menu.parentNode) {
+            menu.parentNode.removeChild(menu)
+          }
+        }, 1000)
+      })
+    }
+
+    starterFilters.forEach(function(filter) {
+      const type = filter.dataset.filter
+      filter.addEventListener("click", function(event) {
+        starterFilters.forEach(function(filter) {
+          filter.classList.remove("black")
+        })
+        filter.classList.add("black")
+        starterGrid.filter(type)
+      })
+    })
+
+    starters.forEach(function(starter) {
+      starter.preview = starter.querySelector(".starter-card--preview-link")
+
+      starter.preview.addEventListener("click", function(event) {
+        event.stopPropagation()
+      })
+      starter.addEventListener("click", function(event) {
+        openMenu(starter)
+        event.stopPropagation()
+      })
+      starter.addEventListener("touchstart", function(event) {
+        openMenu(starter)
+        event.stopPropagation()
+      })
+    })
+
+    document.body.addEventListener("click", function(event) {
+      closeMenu()
+      event.stopPropagation()
+    })
+    document.body.addEventListener("touchstart", function(event) {
+      closeMenu()
+      event.stopPropagation()
     })
   }
 

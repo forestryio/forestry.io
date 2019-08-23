@@ -1,21 +1,24 @@
 ---
 aliases:
 - "/remote/"
-title: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty…
-description: Git-backed CMS for Gatsby, Hugo, Jekyll, VuePress, 11ty sites. A simpler
-  way to edit JAMstack sites.
+title: Git-backed CMS for Gatsby, Gridsome, Eleventy, Hugo, VuePress, Jekyll, etc.
+description: Git-backed headless CMS to easily edit all markdown based static sites
+  generated with Gatsby, Gridsome, Next, Next, Eleventy, Hugo, Jekyll, VuePress, Hexo,
+  etc.
 authors: []
 blocks: 
 hero:
   headline: A static CMS that **commits**
-  textline: Sync your Gatsby, Hugo, Jekyll or VuePress sites. Your editors will love
-    it and won’t realize they’re making commits.
+  textline: "Give your editors the power of Git.  \nCreate and edit Markdown-based
+    content with ease. "
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
-    button: true
-  - permalink: https://app.forestry.io/quick-start?repo=forestryio-templates/belkirk-jekyll-demo&provider=github&engine=jekyll
-    textline: Launch Demo
+    primary: true
+    button: false
+  - permalink: "/starters/"
+    textline: Select a Starter Template
+    primary: false
     button: false
   video:
     fallbackVisual: "/video/fmt-cms-comparison-generic-1.jpg"
@@ -29,17 +32,45 @@ hero:
       type: video/webm
     - permalink: "/video/fmt-cms-comparison-generic-1-sm.mp4"
       type: video/mp4
-  logos:
-    textline: Built for static site generators
-    sources:
-    - permalink: "/uploads/gatsby.svg"
-      alt: Gatsby
-    - permalink: img/logos/hugo.svg
-      alt: Hugo
-    - permalink: img/logos/jekyll.svg
-      alt: Jekyll
-    - permalink: "/uploads/2018/08/vuepress-1.png"
-      alt: Vuepress
+logos:
+  headline: Built for static site generators
+  sources:
+  - permalink: img/ssg-logos/gatsby.svg
+    alt: Gatsby
+    height: '28'
+    offset: '0'
+  - permalink: img/ssg-logos/hugo.svg
+    alt: Hugo
+    height: '28'
+    offset: '0'
+  - permalink: img/ssg-logos/gridsome.svg
+    alt: Gridsome
+    height: '28'
+    offset: '0'
+  - permalink: img/ssg-logos/jekyll.svg
+    alt: Jekyll
+    height: '34'
+    offset: "-4"
+  - permalink: img/ssg-logos/11ty.svg
+    alt: 11ty
+    height: '28'
+    offset: '0'
+  - permalink: img/ssg-logos/vuepress.svg
+    alt: Vue Press
+    height: '34'
+    offset: "-2"
+  - permalink: img/ssg-logos/hexo.svg
+    alt: Hexo
+    height: '34'
+    offset: '0'
+  - permalink: img/ssg-logos/nextjs.svg
+    alt: Next.js
+    height: '38'
+    offset: "-3"
+  - permalink: img/ssg-logos/nuxtjs.svg
+    alt: Nuxt.js
+    height: '24'
+    offset: '1'
 features:
 - headline: Your site, your workflow
   textline: |
@@ -87,10 +118,14 @@ features:
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Ready to try Forestry?
+  calls_to_action: []
 publishdate: 2018-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
-date: 2017-12-31T04:00:00.000+00:00
+date: '2017-12-31T04:00:00.000+00:00'
 inspectlet: true
+images: []
+private: false
+weight: 
 
 ---

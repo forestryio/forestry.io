@@ -1,0 +1,240 @@
+.starter-card {
+  border-radius: 0.3rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  height: 0;
+  padding-bottom: 95%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+  background-color: $color-white;
+  position: relative;
+  cursor: pointer;
+
+  &.open {
+    z-index: 500;
+  }
+}
+
+.starter-card--image-container {
+  overflow: hidden;
+  border-radius: 0.3rem 0.3rem 0 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.starter-card--image {
+  width: 100%;
+  height: auto;
+}
+.starter-card--preview-link {
+  position: absolute;
+  border-radius: 0.3rem;
+  top: 1rem;
+  right: 1rem;
+  color: #1d92ff;
+  text-decoration: none;
+  padding: 0.2rem 0.75rem;
+  background-color: $color-white;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+  border: 1px solid $color-grey;
+
+  &:hover {
+    background-color: $color-light-grey;
+  }
+
+  &:active {
+    background-color: $color-grey;
+  }
+}
+.preview-link--icon {
+  fill: #1d92ff;
+  position: relative;
+  height: 11px;
+}
+
+.starter-card--info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 3.5rem;
+  grid-template-areas:
+    "pills cta"
+    "title cta";
+  background-color: $color-white;
+  border-radius: 0 0 0.3rem 0.3rem;
+  border-top: 1px solid $color-grey;
+}
+.starter-card--pills {
+  padding-bottom: 0.25rem;
+  grid-area: pills;
+}
+.starter-card--title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  grid-area: title;
+  color: $color-black;
+}
+.starter-card--subtitle {
+  &:before {
+    content: "–";
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+    font-size: 1.35rem;
+  }
+  color: $color-medium-dark;
+  font-weight: 400;
+}
+.starter-card--cta {
+  grid-area: cta;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  background-color: $color-black;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: end;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  .starter-card.open.menu-position-bottom & {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  &:active {
+    background-color: $color-medium-dark;
+  }
+}
+
+@keyframes cta {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(3.5rem, 0, 0);
+  }
+  51% {
+    transform: translate3d(-3.5rem, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.cta--icon {
+  fill: white;
+  flex: 0 0 auto;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+
+  .starter-card:hover & {
+    animation-name: cta;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes starter-menu {
+  0% {
+    opacity: 0;
+    transform: translate3d(1rem, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes starter-menu--bottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 1rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.starter-card--menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  z-index: 500;
+  padding: 0;
+  border: 1px solid $color-grey;
+  overflow: hidden;
+  transform: translate3d(0, -50%, 0);
+
+  animation-name: starter-menu;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
+
+  .starter-card & {
+    display: none;
+  }
+
+  &.position-bottom {
+    transform: translate3d(-100%, 0, 0);
+    animation-name: starter-menu--bottom;
+  }
+
+  &.closed {
+    transition: all 0.15s cubic-bezier(0.694, 0, 0.335, 1);
+    opacity: 0;
+    transform: translate3d(1rem, -50%, 0);
+
+    &.position-bottom {
+      transform: translate3d(-100%, 1rem, 0);
+    }
+  }
+}
+.starter-card--menu-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-grey;
+  }
+}
+.starter-card--menu-link {
+  display: block;
+  background-color: $color-white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0.75rem 1.5rem;
+  min-width: 10rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+
+  &:hover {
+    background-color: $color-light-grey;
+  }
+
+  &:active {
+    background-color: $color-grey;
+  }
+}

@@ -1,0 +1,10 @@
+<section id="{{- .headline | urlize -}}" class="section section-logos">
+    <div class="container">
+        <span class="logos--title">{{ .headline }}</span>
+        <div class="logos--container">
+            {{- range .sources -}}
+                <img src="{{ .permalink }}" class="logos--logo" width="auto" height="{{ .height }}" style="margin-top:{{ .offset }}px;" alt="{{ .alt | default .permalink }}" />
+            {{- end -}}
+        </div>    
+    </div>
+</section>

@@ -13,6 +13,14 @@
   text-align: center;
   transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
 
+  &:hover {
+    background-color: $color-light-grey;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+  }
+
   /* Style */
   &.primary {
     background-color: $color-brand;
@@ -30,6 +38,19 @@
     &:hover {
       background-color: $color-brand;
       color: $color-white;
+    }
+  }
+
+  &.black {
+    background-color: $color-black;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark;
+    }
+
+    &:active {
+      background-color: $color-medium-dark;
     }
   }
 

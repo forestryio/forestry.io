@@ -49,6 +49,9 @@ sections:
 - type: heading
   label: Data
 - type: document
+  path: hugo/data/starters.yml
+  label: Starters
+- type: document
   path: hugo/data/authors.yml
   label: Authors
 - type: document
@@ -62,7 +65,6 @@ public_path: "/uploads"
 front_matter_path: "/uploads"
 use_front_matter_path: false
 file_template: ":year:/:month:/:filename:"
-instant_preview: true
 build:
   preview_env:
   - HUGO_ENV=staging
@@ -75,10 +77,4 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm run forestry:instant-preview
-  publish_command: hugo -d public
-  publish_env:
-  - HUGO_ENV=production
-  - HUGO_VERSION=0.42.2
-  output_directory: public
-  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
 version: 0.42.2
