@@ -68,3 +68,4 @@ filters:
 - name: Gridsome
 - name: Eleventy
 - name: VuePress
+- name: Jekyll
