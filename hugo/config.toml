@@ -1,4 +1,4 @@
-baseurl = "http://ofjhrceewlqecq.instant.forestry.io"
+baseurl = "https://forestry.io"
 copyright = ""
 defaultContentLanguage = "en"
 destination = "../dist/"
@@ -112,7 +112,7 @@ notAlternative = true
 home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
 [params]
 dateformat = "January 2, 2006"
-description = "A content management system for sites built with static site generators. Get the speed, security, and reliability of static and the power of a Headless CMS."
+description = "Content management system for sites built with static site generators. Get the speed, security, and reliability of static and the power of a Headless CMS."
 ghrepo = "https://github.com/forestryio/forestry.io"
 ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
