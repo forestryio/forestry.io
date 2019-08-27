@@ -25,11 +25,13 @@ This doc will walk you through:
 
 [Sign up](https://app.forestry.io/signup/) for a free account with Forestry.io then add a new site from your [dashboard](https://app.forestry.io/dashboard).
 
-If you **don't** have a Jekyll, Hugo, VuePress, or Gatsby site already, click the link in the bottom of the _setup window_ to launch the demo site.
+If you don't have a static site, you can [pick one of our starters](/starters/)
 
 ### Select your Static Site Generator
 
-Before choosing your repository, Forestry needs to know which static site generator is used to build your site. Forestry supports [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), and [Gatsby](https://www.gatsbyjs.org/). In the case of Hugo, you must also specify which _version_ you use.
+Before choosing your repository, Forestry would like to know which static site generator is used to build your site. Forestry supports many static site generators and can provide default settings for [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), or [Gatsby](https://www.gatsbyjs.org/). As Forestry is able to edit content stored in Markdown, YAML and JSON,  you can use it with all kinds of SSG: Eleventy, Gridsome, Next, Nuxt, etc.
+
+In the case of Hugo, you must also specify which _version_ you use.
 
 {{% pretty_screenshot img="/uploads/2019/07/select-generator.png" %}}
 
