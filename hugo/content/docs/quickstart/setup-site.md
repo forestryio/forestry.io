@@ -33,7 +33,7 @@ Before choosing your repository, Forestry would like to know which static site g
 
 In the case of Hugo, you must also specify which _version_ you use.
 
-{{% pretty_screenshot img="/uploads/2019/07/select-generator.png" %}}
+{{% pretty_screenshot img="/uploads/2019/08/select-generator.png" %}}
 
 ### Select your Git Provider
 
@@ -54,7 +54,7 @@ In order to watch for changes from Github, Forestry needs to be able to create a
 
 If you use Github, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you want to grant access to Forestry to import your private repositories. You will only have to do this once.
 
-![](/uploads/2018/02/add-site-flow-choose-repo.png)
+{{% pretty_screenshot img="/uploads/2018/02/add-site-flow-choose-repo.png" %}}
 
 {{% tip "Config path" %}}
 
