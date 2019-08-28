@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/versioning-large-files-with-git-lfs.md
 - hugo/content/careers/software-engineer-2019.md
 - hugo/content/blog/landing-page-create-static-site-copy.md
 - hugo/content/blog/why-we-built-forestry.md
@@ -197,7 +198,6 @@ pages:
 - hugo/content/blog/instant-production-ready-scaffolding-with-create-static-site.md
 - hugo/content/careers/user-experience-ux-researcher.md
 - hugo/content/careers/hiring-devops-engineer.md
-- hugo/content/blog/versioning-large-files-with-git-lfs.md
 - hugo/content/blog/layout-improvements.md
 - hugo/content/blog/big-improvements-to-front-matter-templates.md
 - hugo/content/blog/build-a-json-api-with-hugo.md
