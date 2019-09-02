@@ -31,13 +31,13 @@ This tour will walk you through setting up your first site in Forestry. It demon
 2. Select your Git Provider from the list of options. _BitBucket users need to select their SSG first and then copy the repository URL_.
 3. A window will open asking you to give Forestry access to your repositories. _If you are not already logged in, your provider will prompt you for login credentials first._
 4. Click "Authorize application" and wait a few seconds for the window to close.
-5. Give the new repository a name, or keep the default: `forestry-demo`
-6. Click "Create Site"
-7. After a moment you will be redirected to the Forestry Content Manager (CMS)
+5. Give the new repository a name, or keep the default.
+6. Click "Create Site".
+7. After this initial import, you will be redirected to the Forestry CMS user interface.
 
 Congrats, your first site is being created!
 
-This process may take a couple minutes. Forestry will create a new repository with your git provider, push a copy of our [Belkirk Jekyll Demo](https://github.com/forestryio-templates/belkirk-jekyll-demo "Belkirk Jekyll Demo Repo") site, and then start the import process. Once the import is complete, the CMS will load in all of your content and you can move on to the next section.
+This process may take a couple minutes. Forestry will create a new repository with your git provider, push a copy of the starter site, and then start the import process. Once the import is complete, the CMS will load in all of your content and you can move on to the next section.
 
 {{% tip %}}
 
