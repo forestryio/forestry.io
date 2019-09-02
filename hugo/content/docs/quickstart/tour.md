@@ -3,10 +3,10 @@ aliases:
 - "/docs/quickstart/"
 title: Product Tour
 authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-weight: 4
-date: 2018-12-12 04:00:00 +0000
+publishdate: 2017-12-07T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+weight: "4"
+date: 2018-12-12T04:00:00.000+00:00
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -23,7 +23,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 ## Getting Started
 
-{{% pretty_screenshot img="/uploads/2019/07/select-generator.png" %}}
+{{% pretty_screenshot img="/uploads/2019/08/select-generator.png" %}}
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
