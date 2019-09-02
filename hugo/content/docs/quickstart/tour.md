@@ -27,7 +27,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
-1. Click "Try our on of our starter templates"
+1. Click "Try one of our starters!"
 2. Select your Git Provider from the list of options. _BitBucket users need to select their SSG first and then copy the repository URL_.
 3. A window will open asking you to give Forestry access to your repositories. _If you are not already logged in, your provider will prompt you for login credentials first._
 4. Click "Authorize application" and wait a few seconds for the window to close.
