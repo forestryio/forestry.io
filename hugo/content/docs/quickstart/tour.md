@@ -27,7 +27,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 [Sign up](https://app.forestry.io/signup) for a Forestry account, and then navigate to the [dashboard](https://app.forestry.io/dashboard).
 
-1. Click "Try one of our starters!"
+1. Click [Try one of our starters](/starters)
 2. Select your Git Provider from the list of options. _BitBucket users need to select their SSG first and then copy the repository URL_.
 3. A window will open asking you to give Forestry access to your repositories. _If you are not already logged in, your provider will prompt you for login credentials first._
 4. Click "Authorize application" and wait a few seconds for the window to close.
@@ -42,8 +42,6 @@ This process may take a couple minutes. Forestry will create a new repository wi
 {{% tip %}}
 
 To see where your site is stored you can navigate to your Git Provider ([GitHub](https://github.com), [Gitlab](https://gitlab.com) or [Bitbucket](https://bitbucket.org)) and select the relevant repository (e.g. "forestry-demo"). For example with GitHub your address would look like this https://<span></span>github.com/USERNAME/REPOSITORY.
-
-![](/uploads/2018/12/github-forestry-demo.png)
 
 {{% /tip %}}
 
@@ -81,7 +79,7 @@ Make your first edit by updating the post's title, and then click <svg xmlns="ht
 
 Next, set the post as published so that it will be included when the site is deployed. In the top-right corner turn _Draft_ to _OFF_. You'll see the _Save Draft_ button now only says _Save_.
 
-Click the _Save_ button to deploy your site. By default Forestry saves your changes back to your repository. You can [set up deployment](#deployment) to build and send your site to GitHub Pages, (S)FTP Servers, AWS S3 and [other hosting options](/docs/hosting/).
+Click the _Save_ button to deploy your site. By default Forestry saves your changes back to your repository.
 
 **Additional resources:**
 
@@ -141,17 +139,10 @@ Feel free to hit _Save_ to deploy your changes.
 
 When you hit the Save button, Forestry will create a commit and push it back to your source repo. If you already have an automated build and deploy process connected to your repository, your site will deploy when content is updated.
 
-Alternatively, Forestry can handle this process for you. In your deployment settings, you can configure a deployment target that uses SFTP, Amazon S3, or GitHub Pages. Forestry will then build and deploy your site when you hit the Save button.
-
-Under _Site_ click on _Settings_ and choose _Deployment_. You'll see a dropdown with all of your [deployment options](/docs/hosting/) that can currently be handled by Forestry. See _Additional Resources_ below to find specific guides for selected deployment methods.
-
-![](/uploads/2018/12/deployment-quickstart.png)
-
-We recommend using some time to research the different hosting options for static sites to find the one that fits your needs best (e.g. [GitHub Pages](/docs/hosting/github-pages/), [AWS S3](/docs/hosting/s3-cloudfront-stack/), Zeit or Netlify).
+We recommend using some time to research the different hosting options for static sites to find the one that fits your needs best (e.g. [Netlify](https://netlify.com), [Circle CI](https://circleci.com), [GitHub Pages](https://pages.github.com/), [Zeit](https://zeit.co/) or [AWS S3](/docs/hosting/s3-cloudfront-stack/)).
 
 **Additional Resources:**
 
-* Our [guide](/docs/hosting/github-pages/) to set up free hosting with Github Pages
 * Set up a static site hosting stack on [AWS with CloudFormation](/docs/hosting/s3-cloudfront-stack/)
 * Integrate Forestry with other providers via [Webhooks](/docs/hosting/webhooks/)
 * Customize your [Build Commands](https://forestry.io/docs/settings/build-commands/) for custom build processes
