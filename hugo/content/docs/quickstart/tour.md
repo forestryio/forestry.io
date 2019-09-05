@@ -143,6 +143,7 @@ We recommend using some time to research the different hosting options for stati
 
 **Additional Resources:**
 
+* Automate deployment with [Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
 * Set up a static site hosting stack on [AWS with CloudFormation](/docs/hosting/s3-cloudfront-stack/)
 * Integrate Forestry with other providers via [Webhooks](/docs/hosting/webhooks/)
 * Customize your [Build Commands](https://forestry.io/docs/settings/build-commands/) for custom build processes
