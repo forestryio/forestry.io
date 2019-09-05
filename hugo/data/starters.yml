@@ -3,6 +3,7 @@ starters:
 - name: Unstad
   preview: https://gridsome-forestry.netlify.com
   image: img/starters/unstad.png
+  author: Nichlas W. Andersen
   versions:
   - name: Gridsome
     repo: itsnwa/gridsome-forestry-starter
@@ -13,6 +14,7 @@ starters:
   textline: Blog
   preview: https://brevifolia-gridsome-forestry.netlify.com/
   image: img/starters/brevifolia.jpg
+  author: Kendall Strautman
   versions:
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
@@ -30,6 +32,7 @@ starters:
   textline: Portfolio
   image: img/starters/joeren.png
   preview: https://vuepress-portfolio.netlify.com
+  author: Nichlas W. Andersen
   versions:
   - name: VuePress
     repo: forestryio/portfolio-vuepress
@@ -39,6 +42,7 @@ starters:
   textline: Blog
   preview: https://hylia-forestry.netlify.com
   image: img/starters/hylia.png
+  author: Andy Bell
   versions:
   - name: Eleventy
     repo: DirtyF/hylia
@@ -48,6 +52,7 @@ starters:
   textline: Portfolio
   preview: https://darkfolio.netlify.com
   image: img/starters/darkfolio.png
+  author: Nichlas W. Andersen
   versions:
   - name: Gridsome
     repo: itsnwa/darkfolio
@@ -57,6 +62,7 @@ starters:
   textline: Site
   preview: https://forestryio-templates.github.io/belkirk-jekyll-demo/
   image: img/starters/belkirk.png
+  author: Forestry
   versions:
   - name: Jekyll
     repo: forestryio-templates/belkirk-jekyll-demo

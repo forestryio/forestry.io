@@ -20,6 +20,7 @@
                 <span class="starter-card--subtitle">{{ .starter.textline }}</span>
             {{ end }}
         </div>
+        by {{ .starter.author }}
         <button class="starter-card--cta">{{ partial "svg" (dict "id" "arrow" "class" "cta--icon" "width" "18" "height" "18") }}</button>
     </div>
     <ul class="starter-card--menu">
