@@ -85,7 +85,7 @@ Click the _Save_ button to deploy your site. By default Forestry saves your chan
 
 * Create great content with the powerful [Markdown Editor](/docs/editing/markdown-editor)
 * Configure [Front Matter Templates ](/docs/settings/front-matter-templates/)for new content
-* Customize your Preview by adding [Custom Preview Commands](https://forestry.io/docs/settings/build-commands/)
+* Customize your Preview by adding [Custom Preview Commands](/docs/previews/build-commands/)
 * Allow Editors to add custom code [Snippets](/docs/settings/snippets/)
 * Create Modular Content with [Blocks](/docs/settings/fields/blocks/) (also known as Advanced Custom Fields or Matrix Fields)
 
@@ -146,7 +146,6 @@ We recommend using some time to research the different hosting options for stati
 * Automate deployment with [Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
 * Set up a static site hosting stack on [AWS with CloudFormation](/docs/hosting/s3-cloudfront-stack/)
 * Integrate Forestry with other providers via [Webhooks](/docs/hosting/webhooks/)
-* Customize your [Build Commands](https://forestry.io/docs/settings/build-commands/) for custom build processes
 
 ***
 
