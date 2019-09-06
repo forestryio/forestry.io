@@ -29,6 +29,7 @@ If you're a theme developer and that yo have a nice working theme setup ready fo
 * Don't force capitalization on front matter keys (allow camelCase)
 * Fix listing organizations sites for external editors
 * Show last user sign in for organizations using SSO
+* Fix cloning public submodules in previews
 * Increased timeout on pre-sign AWS URLs for Instant Previews
 
 That's it for this week, we have plenty of things coming next, you can [follow what's coming next on our product roadmap](https://portal.productboard.com/forestry/1-forestry-io-roadmap/tabs/4-development).
