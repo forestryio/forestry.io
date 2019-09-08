@@ -100,7 +100,7 @@ To display alternate translation options for each post, I created a file at `_in
             <li><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{page.lang}}">{{ page.lang }}</a></li>
             {% endfor %}
             </ul>
-        </div>
+        </footer>
         {% endif %}
     {% endif %}
 
