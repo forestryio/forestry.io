@@ -1,5 +1,5 @@
 ---
-name: starter
+name: Starter
 about: Submit a new Forestry starter
 title: New starter submission
 labels: starter
@@ -17,16 +17,20 @@ We'll review your submission, and consider adding it to our starter page.
 ```
 name: # name of your starter 
 preview:# URL of your starter live preview 
-  image: # Thumbnail 
+image: # Thumbnail URL
+author: # name of the starter's author
   versions:
   - name: # SSG name (Gatsby, Gridsome, Hugo, Jekyll, VuePress, Next, Nuxt, etc.)
-    repo: # public repo URL
-    branch: (optional)
-  textline: # Short description (blog, landing page, documentation, portfolio)
+    repo: # public repo URL (https://github.com/username/repo
+    branch: (optional) # e.g. forestry
+  textline: # short description (blog, landing page, documentation, portfolio)
 ```
 
 ### Submission checklist 
-- [ ] Import is complete
+
+Make sure to setup up things in Forestry:
+
+- [ ] Import is complete 
 - [ ] Sidebar sections are visible 
 - [ ] Media upload folder and public path are defined
 - [ ] Instant Previews are working
