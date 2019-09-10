@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/careers/developer-evangelist.md
 - hugo/content/blog/versioning-large-files-with-git-lfs.md
 - hugo/content/careers/software-engineer-2019.md
@@ -171,7 +172,6 @@ pages:
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/automate-your-static-hosting-environment-with-aws-cloudformation.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
-- hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md
 - hugo/content/blog/migrating-to-key-based-authentication.md
 - hugo/content/blog/for-static-sites-theres-no-excuse-not-to-use-a-cdn.md
