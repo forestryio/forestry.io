@@ -1,5 +1,5 @@
 ---
-title: Get started with Forestry CMS
+title: Get started
 headline: Select a starter template to launch a demo
 baseline: Already have a static site?
 description: Pre-configured templates to easily get started with Forestry CMS.
