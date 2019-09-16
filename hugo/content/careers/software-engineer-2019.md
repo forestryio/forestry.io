@@ -31,7 +31,7 @@ menu: []
 ---
 At Forestry, we’re _helping people build a better web_. Our **Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
 
-We are looking for an engineer who can have an impact across our stack -from our React front-end to our Rails back-end, with more emphasis on the front-end. In depth experience with both frameworks is not required, but the more experience with these or similar frameworks, the better.
+We are looking for an engineer who can have an impact across our stack -from our React front-end to our Rails back-end, **with more emphasis on the front-end**. In depth experience with both frameworks is not required, but the more experience with these or similar frameworks, the better.
 
 We strive to create a workplace that enables mastery, autonomy, and purpose (from [Daniel Pink's work](https://www.youtube.com/watch?v=KgGhSOAtAyQ)).
 
@@ -42,7 +42,7 @@ We prefer candidates within GMT -7 and GMT +2 (inclusive) and will not likely co
 ### What You'll Do
 
 * Design, build and maintain features for our CMS using efficient, reusable and reliable JavaScript/React and Ruby/Rails code
-* Identify bottlenecks and bugs, and suggest and implement solutions to these problems
+* Identify problems with the application and code base on your own and suggest/provide solutions
 * Help maintain code quality, organization and automation
 * Work on a cross-functional team, providing input to and helping out in areas beyond coding (helping define requirements, testing, technical documentation)
 
