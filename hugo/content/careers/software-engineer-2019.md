@@ -37,6 +37,8 @@ We strive to create a workplace that enables mastery, autonomy, and purpose (fro
 
 This is a **remote** role. <!--more-->
 
+We prefer candidates within GMT -7 and GMT +2 (inclusive) and will not likely consider applicants outside of these bounds unless it's a very strong-looking candidate who is willing to shift their hours to provide some overlap with the rest of our team.
+
 ### What You'll Do
 
 * Design, build and maintain features for our CMS using efficient, reusable and reliable JavaScript/React and Ruby/Rails code
