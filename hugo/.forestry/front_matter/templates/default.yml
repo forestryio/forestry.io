@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/forestry-io-at-jamstack-conf-san-francisco-oct-16-18.md
 - hugo/content/careers/software-engineer-2019.md
 - hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/careers/developer-evangelist.md
