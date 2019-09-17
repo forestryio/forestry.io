@@ -71,6 +71,29 @@ logos:
     alt: Nuxt.js
     height: '24'
     offset: '1'
+brand_logos:
+  headline: Trusted By
+  sources:
+  - permalink: img/brand-logos/mastercard.svg
+    alt: Mastercard
+    height: '50'
+    offset: '0'
+  - permalink: img/brand-logos/spotify.png
+    alt: Spotify
+    height: '48'
+    offset: '1'
+  - permalink: img/brand-logos/sketch.png
+    alt: Sketch
+    height: '50'
+    offset: '0'
+  - permalink: img/brand-logos/uga.png
+    alt: University of Georgia
+    height: '50'
+    offset: '0'
+  - permalink: img/brand-logos/IDEO.png
+    alt: IDEO
+    height: '40'
+    offset: '5'
 features:
 - headline: Your site, your workflow
   textline: |

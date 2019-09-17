@@ -8,8 +8,11 @@
 <div id="modal-root"></div>
   {{- partial "components/hero" .Params.hero }}
   {{- partial "components/logos" .Params.logos }}
-  {{- range .Params.features -}}
+  {{- range $index, $element := .Params.features -}}
     {{- partial "components/feature" (dict "pg" $ "feature" .) -}}
+    {{ if eq $index 0 }}
+      {{ partial "components/brand-logos" $.Params.brand_logos }}
+    {{ end }}
   {{- end -}}
 
   {{- $tweets := first 2 $.Site.Data.testimonials.tweets -}}
