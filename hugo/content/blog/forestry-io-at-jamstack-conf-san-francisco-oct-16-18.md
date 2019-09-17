@@ -27,10 +27,6 @@ I'm excited to be speaking at [JAMstack Conf](https://jamstackconf.com/sf) in Sa
 
 The inaugural event was a blast last year and it sounds like they're taking it to the next level this year.  
 
-![](/uploads/2019/09/MVIMG_20190409_191048-(1).jpg)
-
-_👆All-star team at JAMstack Conf NYC 2019 :)_
-
 ![](/uploads/2019/09/D_L_KrZWkAA_guS-1.jpg)
 
 If you're attending this year, make sure you pop by our booth and say hi!  I hope to see you there!
