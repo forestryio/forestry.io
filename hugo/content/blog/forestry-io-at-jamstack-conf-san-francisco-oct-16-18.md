@@ -8,7 +8,8 @@ authors:
 - Scott Gallant
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2019/09/MVIMG_20190409_191048-(1).jpg"
 photo_credit: ''
 categories: []
 tags: []
@@ -22,7 +23,7 @@ aliases: []
 menu: []
 
 ---
-I'm excited to be speaking at [JAMstack Conf](https://jamstackconf.com/sf) in San Francisco on Oct 16th.   I'll be announcing an open-source project that we're really excited about.  
+I'm excited to be speaking at [JAMstack Conf](https://jamstackconf.com/sf) in San Francisco on Oct 16th.   I'll be announcing an open-source project that we're really excited about.   
 
 The inaugural event was a blast last year and it sounds like they're taking it to the next level this year.  
 
