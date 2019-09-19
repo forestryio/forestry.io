@@ -33,6 +33,11 @@ The markdown editor is fully [commonmark compatible](https://commonmark.org/help
 
 To find all available keyboard and markdown shortcuts, click the keyboard icon in the bottom right corner.
 
+{{% warning "Current limitations" %}}
+Commonmark specification does not support Tables or Footnotes. Neither will the WYSIWYG editor recognize your SSG custom tags to create internal links. We'll need to extend the editor to tackle those issues.
+{{% /warning %}}
+
+
 ### Source editor
 
 ![](/uploads/2018/01/18.png)
