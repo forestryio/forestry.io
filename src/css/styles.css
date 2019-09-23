@@ -43,6 +43,7 @@
 @import "components/toc.css";
 
 /* Pages */
+@import "pages/page-about.css";
 @import "pages/page-features.css";
 @import "pages/page-pricing.css";
 @import "pages/page-docs.css";

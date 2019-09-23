@@ -1,0 +1,41 @@
+.about__wrapper {
+  padding-top: 5rem;
+}
+
+.about-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  &--centered {
+    justify-content: center;
+    .about__content {
+      max-width: 800px;
+    }
+  }
+  &--gray {
+    background-color: #f8f9fa;
+  }
+}
+
+.about__image {
+  flex: 0 0 37.5%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__content {
+  display: flex;
+  padding: 6rem;
+}
+
+.about__title {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-right: 2.5rem;
+}
+
+.about__text {
+}
