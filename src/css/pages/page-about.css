@@ -70,4 +70,8 @@
   &--mission {
     font-size: 1.3rem;
   }
+
+  .link-text {
+    margin-top: 2rem;
+  }
 }
