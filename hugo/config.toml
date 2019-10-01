@@ -166,7 +166,7 @@ pattern = "2006"
 weight = 10
 [social]
 email = "support@forestry.io"
-slack = "https://t.co/OANAJYol8Y"
+slack = "https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk"
 twitter = "forestryio"
 [taxonomies]
 author = "authors"
