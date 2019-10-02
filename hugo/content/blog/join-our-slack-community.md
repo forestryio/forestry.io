@@ -29,7 +29,7 @@ menu: []
 Want to chat with the Forestry.io community about static sites, best-practices, features, and more? Join the slack community here (we'll get back to you ASAP).
 
 Sign up here:
-<span style="text-decoration-style: initial; text-decoration-color: initial;"><u><a href="https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LWUyYTk3NDY2ZDNiMjFhNmVlMjExM2FjYzFhNjJhNjU2NTc2ODVjZTdlYjJiODhhZDgwYTVhYjY0ZGU3ZWFmYzM">Forestry.io Community</a></u></span>
+<span style="text-decoration-style: initial; text-decoration-color: initial;"><u><a href="https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk">Forestry.io Community</a></u></span>
 <!--
 <form action="https://formspree.io/scott@forestry.io" method="POST" style="position:relative;">
 <label for="_replyto" style="position: relative;
