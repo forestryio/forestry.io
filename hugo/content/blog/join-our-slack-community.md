@@ -2,8 +2,8 @@
 aliases:
 - "/blog/post/join-our-slack-community"
 title: Join our Slack community
-publishdate: 2017-10-20 10:41:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2017-10-20T10:41:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 authors:
 - chris-macrae
 excerpt: Chat with the Forestry.io community about static sites, best-practices, features,
@@ -12,7 +12,7 @@ images:
 - "/uploads/2017/12/slack.png"
 categories:
 - company
-date: 2017-10-20 10:41:00 +0000
+date: 2017-10-20T10:41:00.000+00:00
 headline: ''
 description: ''
 textline: ''
@@ -22,7 +22,8 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 
+photo_credit: ''
 menu: []
 
 ---
@@ -30,6 +31,7 @@ Want to chat with the Forestry.io community about static sites, best-practices, 
 
 Sign up here:
 <span style="text-decoration-style: initial; text-decoration-color: initial;"><u><a href="https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk">Forestry.io Community</a></u></span>
+
 <!--
 <form action="https://formspree.io/scott@forestry.io" method="POST" style="position:relative;">
 <label for="_replyto" style="position: relative;

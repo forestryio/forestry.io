@@ -141,8 +141,10 @@ fields:
   name: menu
   label: menu
 pages:
-- hugo/content/blog/forestry-io-at-jamstack-conf-san-francisco-oct-16-18.md
+- hugo/content/blog/join-our-slack-community.md
+- hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/careers/software-engineer-2019.md
+- hugo/content/blog/forestry-io-at-jamstack-conf-san-francisco-oct-16-18.md
 - hugo/content/blog/creating-a-multilingual-blog-with-jekyll.md
 - hugo/content/careers/developer-evangelist.md
 - hugo/content/blog/versioning-large-files-with-git-lfs.md
@@ -170,7 +172,6 @@ pages:
 - hugo/content/blog/forestry-git-backed-content-management-for-gatsby.md
 - hugo/content/blog/hugo-support-sorting-for-pages-and-more.md
 - hugo/content/blog/demystifying-hugo-conditionals.md
-- hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/automate-your-static-hosting-environment-with-aws-cloudformation.md
 - hugo/content/blog/customize-sidebar-and-assign-front-matter-templates.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md
@@ -215,7 +216,6 @@ pages:
 - hugo/content/blog/improved-collaboration-and-more.md
 - hugo/content/blog/introducing-forestry-config-files.md
 - hugo/content/blog/introducing-media-management.md
-- hugo/content/blog/join-our-slack-community.md
 - hugo/content/blog/the-new-forestry-io.md
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
 - hugo/content/blog/wysiwyg-formatting-in-front-matter.md
