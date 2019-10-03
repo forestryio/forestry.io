@@ -5,7 +5,7 @@ title: Join our Slack community
 publishdate: 2017-10-20T10:41:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 authors:
-- chris-macrae
+- Forestry Team
 excerpt: Chat with the Forestry.io community about static sites, best-practices, features,
   and more
 images:
