@@ -78,10 +78,10 @@ brand_logos:
     alt: Sketch
     height: '60'
     offset: '-1'
-  - permalink: img/brand-logos/spotify.png
+  - permalink: img/brand-logos/spotify_partner.png
     alt: Spotify
-    height: '48'
-    offset: '1'
+    height: '60'
+    offset: '0'
   - permalink: img/brand-logos/mastercard.svg
     alt: Mastercard
     height: '50'
