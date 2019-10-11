@@ -26,7 +26,7 @@ private: false
 weight: 
 aliases: []
 photo_credit: ''
-menu: []
+draft: true
 
 ---
 At Forestry, we’re _helping people build a better web_. Our **Software Engineer's** mission is to help build a CMS for the next era of the web. If you're aligned with our mission, enjoy solving complex problems, and like shipping features with a cross-functional team, this could be the perfect role for you.
