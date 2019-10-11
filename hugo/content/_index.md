@@ -86,10 +86,6 @@ brand_logos:
     alt: Mastercard
     height: '50'
     offset: '0'
-  - permalink: img/brand-logos/IDEO.png
-    alt: IDEO
-    height: '40'
-    offset: '2'
   - permalink: img/brand-logos/uga.png
     alt: University of Georgia
     height: '50'
