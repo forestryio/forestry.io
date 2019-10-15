@@ -43,7 +43,7 @@ Your instant previewing command needs to be a "watch" style command that will st
 Your preview needs to run on **port 8080** and bind to all network interfaces on **0.0.0.0**.
 {{% /warning %}}
 
-The default command for any NodeJS-based static site generator should be [added as an npm script in the ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)[`package.json`](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
+The default command for any NodeJS-based static site generator should be [added as an npm script in the ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`[package.json](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
@@ -145,12 +145,6 @@ Be aware that `forestry_preview_id` will only be inserted in one file at a time,
 
 ```go-html-template
 {{ with .Params.forestry_instant_preview_id }}
-  {{- safeHTML (printf "<!-- %s -->" .) -}}
-{{ end }}
-
-or as a meta
-
-{{ with .Params.forestry_instant_preview_id }}
   {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
 {{ end -}}
 ```
@@ -160,13 +154,7 @@ _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output 
 {{% tab "Jekyll" %}}
 
 ```liquid
-{% if page.forestry_instant_preview_id %}
-<!-- {{ page.forestry_instant_preview_id }} -->
-{% end %}
-
-or as a meta
-
-{% if page.forestry_instant_preview_id %}
+{% if page.forestry_instant_preview_id != "" %}
 <meta property="forestry_instant_preview_id" content="{{ page.forestry_instant_preview_id }}">
 {% end %}
 ```
