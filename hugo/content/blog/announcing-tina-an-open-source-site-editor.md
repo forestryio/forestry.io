@@ -1,10 +1,12 @@
 ---
 title: 'Announcing Tina: an open-source site-editor'
-description: ''
-date: 2019-10-16T12:12:45-03:00
-publishdate: 2019-10-16T12:12:45-03:00
-expirydate: 2030-01-01T04:00:00.000+00:00
-authors: []
+description: Tina is an open-source site editing toolkit for React-based frameworks
+  — Gatsby & Next.js. Build real-time editing into your site.
+date: 2019-10-16T15:00:00-03:00
+publishdate: 2019-10-16T15:00:00-03:00
+expirydate: 2030-01-01T00:00:00-04:00
+authors:
+- Scott Gallant
 headline: ''
 textline: ''
 images:
