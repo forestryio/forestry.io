@@ -20,7 +20,6 @@ private: false
 weight: 
 aliases: []
 menu: []
-draft: true
 
 ---
 Our mission at Forestry is to _help people build a better web_ but I often cringe when I watch someone log into their CMS for the first time. There’s a mental leap as they try to map their CMS (a collection of forms) to their site (a collection of well-designed-pages). Using a CMS feels more like filing your taxes and less like editing a website.
