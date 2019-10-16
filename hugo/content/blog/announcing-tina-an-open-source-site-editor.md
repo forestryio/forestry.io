@@ -27,6 +27,8 @@ Our mission at Forestry is to [_help people build a better web _](#)but I often 
 
 With our mission in mind, some people from our team have started a side-project that we’re excited to make public today, [TinaCMS](http://tinacms.org).
 
+<div class=""><video autoplay="" loop="" muted="" playsinline="" poster="https://res.cloudinary.com/forestry-demo/video/upload/so_0/v1571159974/tina-hero-demo.jpg"><source src="https://res.cloudinary.com/forestry-demo/video/upload/q_100/v1571159974/tina-hero-demo.webm" type="video/webm"><source src="https://res.cloudinary.com/forestry-demo/video/upload/v1571159974/tina-hero-demo.mp4" type="video/mp4"></video></div>
+
 Tina is not a CMS, in that, it’s not a separate system for managing content. Instead, it’s a simple Javascript UI that lives on your site and gives you editing capabilities as you browse. It’s _in-context_ editing.
 
 If you’re logged into a site using Tina, you’ll see a floating _edit_ icon as you browse. Click that icon to pop open the sidebar, edit content and see updates in real-time.
