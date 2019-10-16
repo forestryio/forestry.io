@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/blog/announcing-tina-an-open-source-site-editor.md
 - hugo/content/careers/software-engineer-2019.md
 - hugo/content/blog/join-our-slack-community.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
