@@ -144,7 +144,6 @@ pages:
 - hugo/content/docs/git-sync
 - hugo/content/blog/full-text-searching-with-postgres.md
 - hugo/content/careers/developer-evangelist.md
-- hugo/content/blog/announcing-tina-an-open-source-site-editor.md
 - hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/blog/introducing-teams.md
 - hugo/content/blog/ftp-an-outdated-deployment-method-for-static-sites.md
@@ -178,6 +177,7 @@ pages:
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/docs/troubleshooting
+- hugo/content/blog/announcing-tina-an-open-source-site-editor.md
 - hugo/content/blog/test.md
 - hugo/content/blog/landing-page-create-static-site-copy.md
 - hugo/content/blog/why-we-built-forestry.md

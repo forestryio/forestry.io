@@ -2,15 +2,15 @@
 title: 'Announcing Tina: an open-source site-editor'
 description: Tina is an open-source site editing toolkit for React-based frameworks
   — Gatsby & Next.js. Build real-time editing into your site.
-date: 2019-10-16T15:00:00-03:00
-publishdate: 2019-10-16T15:00:00-03:00
-expirydate: 2030-01-01T00:00:00-04:00
+date: 2019-10-16T18:00:00.000+00:00
+publishdate: 2019-10-16T18:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 authors:
 - Scott Gallant
 headline: ''
 textline: ''
 images:
-- "/uploads/2019/10/tina-facebook-share.png"
+- "/uploads/2019/10/tina-banner.png"
 photo_credit: ''
 categories: []
 tags: []
@@ -26,7 +26,7 @@ menu: []
 ---
 Our mission at Forestry is to _help people build a better web_ but I often cringe when I watch someone log into their CMS for the first time. There’s a mental leap as they try to map their CMS (a collection of forms) to their site (a collection of well-designed-pages). Using a CMS feels more like filing your taxes and less like editing a website.
 
-With our mission in mind, some people from our team have started a side-project that we’re excited to make public today, [TinaCMS](http://tinacms.org).
+With our mission in mind, some people from our team have started a side-project that we’re excited to make public today, [TinaCMS](https://github.com/tinacms/tinacms).
 
 <div class=""><video autoplay="" loop="" muted="" playsinline="" poster="https://res.cloudinary.com/forestry-demo/video/upload/so_0/v1571159974/tina-hero-demo.jpg"><source src="https://res.cloudinary.com/forestry-demo/video/upload/q_100/v1571159974/tina-hero-demo.webm" type="video/webm"><source src="https://res.cloudinary.com/forestry-demo/video/upload/v1571159974/tina-hero-demo.mp4" type="video/mp4"></video></div>
 
