@@ -1,28 +1,49 @@
 ---
 label: Pricing page
 hide_body: true
+display_field: title
 fields:
 - type: text
   name: title
   label: title
-- type: list
-  name: aliases
-  label: aliases
+- type: text
+  name: description
+  label: description
 - type: text
   name: type
   label: type
-- type: text
-  name: weight
+  default: pricing
+- type: list
+  name: aliases
+  label: aliases
+- name: weight
+  type: number
   label: weight
-- type: datetime
-  name: publishdate
-  label: publishdate
-- type: datetime
-  name: expirydate
-  label: expirydate
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
+- type: datetime
+  name: publishdate
+  label: publishdate
+  config:
+    date_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
+- type: datetime
+  name: expirydate
+  label: expirydate
+  config:
+    date_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
 - type: field_group_list
   name: faqs
   label: faqs
@@ -36,9 +57,6 @@ fields:
 - type: text
   name: headline
   label: headline
-- type: text
-  name: description
-  label: description
 - type: text
   name: textline
   label: textline
@@ -70,3 +88,5 @@ fields:
 - type: boolean
   name: private
   label: private
+pages:
+- hugo/content/pricing.md
