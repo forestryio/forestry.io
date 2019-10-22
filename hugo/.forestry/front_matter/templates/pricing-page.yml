@@ -1,0 +1,72 @@
+---
+label: Pricing page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: list
+  name: aliases
+  label: aliases
+- type: text
+  name: type
+  label: type
+- type: text
+  name: weight
+  label: weight
+- type: datetime
+  name: publishdate
+  label: publishdate
+- type: datetime
+  name: expirydate
+  label: expirydate
+- type: datetime
+  name: date
+  label: date
+- type: field_group_list
+  name: faqs
+  label: faqs
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: text
+    name: textline
+    label: textline
+- type: text
+  name: headline
+  label: headline
+- type: text
+  name: description
+  label: description
+- type: text
+  name: textline
+  label: textline
+- type: list
+  name: images
+  label: images
+- type: list
+  name: authors
+  label: authors
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: field_group
+  name: cta
+  label: cta
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: text
+    name: textline
+    label: textline
+  - type: list
+    name: calls_to_action
+    label: calls_to_action
+- type: boolean
+  name: private
+  label: private
