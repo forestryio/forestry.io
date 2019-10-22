@@ -10,7 +10,7 @@ authors:
 headline: ''
 textline: ''
 images:
-- "/uploads/2019/10/tina-banner.png"
+- "/uploads/2019/10/tinacms.png"
 photo_credit: ''
 categories: []
 tags: []
