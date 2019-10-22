@@ -36,7 +36,7 @@ If you’re logged into a site using Tina, you’ll see a floating _edit_ icon a
 
 ### Why did we do this?
 
-The CMS editing experience hasn’t changed much in the last decade. Essentially, every CMS is a customizable collection of web forms. On the other hand, the editing experiences of DIY tools like Squarespace, Medium, Webflow, and Cargo have become much more sophisticated. Tina is our way of laying the foundation of what will be the future of content editing. Our goal is to build a community and watch this grow. If it meets our expectations, we’ll likely build it into the roadmap of Forestry.io and someday you may have the option to edit your Forestry site with Tina.
+The CMS editing experience hasn’t changed much in the last decade. Essentially, every CMS is a customizable collection of web forms. On the other hand, the editing experiences of DIY tools like Squarespace, Medium, Webflow, and Cargo have become much more sophisticated. Tina is our way of laying the foundation of what will be the future of content editing. Our goal with Tina is to launch early, gauge interest, and watch the community grow. If it meets our expectations, we’ll likely build it into the roadmap of Forestry.io and someday you may have the option to edit your Forestry site with Tina.
 
 Tina currently works with React-based static sites (Gatsby, Next.js, etc). However, we have plans to grow beyond those tools.
 
