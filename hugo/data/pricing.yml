@@ -57,7 +57,7 @@ plans:
     info: A ledger of the actions performed by users in your organization
   - text: Priority support
     info: Median time to close issues under 8 hours
-- title: enterprise
+- title: Enterprise
   priceAnnually: _
   priceMonthly: _
   description: ''
