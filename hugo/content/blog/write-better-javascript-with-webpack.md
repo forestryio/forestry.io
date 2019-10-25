@@ -172,8 +172,8 @@ The default `package.json` comes with one script called `test` that just returns
     ...
     "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/webpack-cli/bin/webpack.js",
-    "watch": "./node_modules/webpack-cli/bin/webpack.js --watch"
+    "build": "webpack",
+    "watch": "webpack --watch"
     },
     ...
 }
