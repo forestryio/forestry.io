@@ -15,7 +15,7 @@ The **Blocks** field type is a repeatable array of field groups. Unlike the [Rep
 * _Name_ — the key stored in your content's front matter, used to access it in your templates
 * _Description_ — a human-friendly description of what the field does and/or instructions for your editors
 * _Hidden_ — hides the field in the editor; but allows developers to set default values or maintain the field for legacy purposes.
-* _Templates_ — select one or more [Partial Front Matter Templates](/docs/settings/front-matter-templates/#partial-templates) that can be added to the Blocks field.
+* _Templates_ — select one or more [Partial Front Matter Templates](/docs/settings/front-matter-templates/) that can be added to the Blocks field.
 
 ## Field UI
 

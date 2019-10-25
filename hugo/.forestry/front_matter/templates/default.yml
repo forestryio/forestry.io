@@ -177,7 +177,6 @@ pages:
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/docs/troubleshooting
-- hugo/content/blog/announcing-tina-an-open-source-site-editor.md
 - hugo/content/blog/test.md
 - hugo/content/blog/landing-page-create-static-site-copy.md
 - hugo/content/blog/why-we-built-forestry.md
@@ -189,6 +188,7 @@ pages:
 - hugo/content/blog/_index.md
 - hugo/content/blog/discontinuing-wysiwyg-editor-new-focus-on-markdown.md
 - hugo/content/blog/march-27th-service-outage.md
+- hugo/content/blog/announcing-tina-an-open-source-site-editor.md
 - hugo/content/blog/spike-test-reset.md
 - hugo/content/blog/why-we-created-a-git-backed-content-manager.md
 - hugo/content/docs/faqs
