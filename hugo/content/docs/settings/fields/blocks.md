@@ -9,7 +9,7 @@ The **Blocks** field type is a repeatable array of field groups. Unlike the [Rep
 
 ## Options
 
-![Blocks field options](/uploads/2018/04/blocks-field-ui.png)
+![Blocks field options](/uploads/2019/10/blocks-field-ui.png)
 
 * _Label_ — the human-friendly label shown above the input field in the editor
 * _Name_ — the key stored in your content's front matter, used to access it in your templates
