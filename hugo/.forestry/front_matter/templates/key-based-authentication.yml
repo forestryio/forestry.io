@@ -1,7 +1,6 @@
 ---
 label: Sunset Notices
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -27,12 +26,12 @@ fields:
   label: Publishdate
   type: datetime
   hidden: false
-  default: ''
+  default: now
 - name: expirydate
   label: Expirydate
   type: datetime
   hidden: false
-  default: ''
+  default: '2030-07-13T19:00:00-03:00'
 - name: headline
   label: Headline
   type: text
@@ -92,7 +91,8 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: single
 pages:
+- hugo/content/docs/sunset/deployments.md
 - hugo/content/docs/sunset/custom-configuration-for-data-files.md

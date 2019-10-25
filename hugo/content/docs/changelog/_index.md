@@ -12,6 +12,6 @@ menu:
     weight: 4
   docs:
     parent: Other
-    weight: 4
+    weight: 3
 
 ---

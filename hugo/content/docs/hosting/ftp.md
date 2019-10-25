@@ -1,9 +1,9 @@
 ---
 title: FTP/SFTP
-weight: 5
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+weight: "5"
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2020-01-01T04:00:00.000+00:00
+date: 2017-12-31T04:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -13,9 +13,11 @@ menu:
     weight: 4
 
 ---
-{{% tip "Disclaimer" %}}
-This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), a webserver with FTP access, and a repository with a Jekyll or Hugo project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
-{{% /tip %}}
+{{% warning  %}}
+**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
+We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
+Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+{{% /warning %}}
 
 ## Overview
 

@@ -1,0 +1,77 @@
+---
+starters:
+- name: Unstad
+  preview: https://gridsome-forestry.netlify.com
+  image: img/starters/unstad.png
+  author: Nichlas W. Andersen
+  versions:
+  - name: Gridsome
+    repo: itsnwa/gridsome-forestry-starter
+    engine: other
+    branch: ''
+  textline: Portfolio
+- name: Brevifolia
+  textline: Blog
+  preview: https://brevifolia-gridsome-forestry.netlify.com/
+  image: img/starters/brevifolia.jpg
+  author: Kendall Strautman
+  versions:
+  - name: Gatsby
+    repo: kendallstrautman/brevifolia-gatsby-forestry
+    branch: ''
+    engine: ''
+  - name: Gridsome
+    repo: kendallstrautman/brevifolia-gridsome-forestry
+    engine: other
+    branch: ''
+  - name: Hugo
+    repo: kendallstrautman/brevifolia-hugo-forestry
+    branch: ''
+    engine: ''
+- name: Jæren
+  textline: Portfolio
+  image: img/starters/joeren.png
+  preview: https://vuepress-portfolio.netlify.com
+  author: Nichlas W. Andersen
+  versions:
+  - name: VuePress
+    repo: forestryio/portfolio-vuepress
+    branch: master
+    engine: vuepress
+- name: Hylia
+  textline: Blog
+  preview: https://hylia-forestry.netlify.com
+  image: img/starters/hylia.png
+  author: Andy Bell
+  versions:
+  - name: Eleventy
+    repo: DirtyF/hylia
+    branch: forestry
+    engine: other
+- name: Darkfolio
+  textline: Portfolio
+  preview: https://darkfolio.netlify.com
+  image: img/starters/darkfolio.png
+  author: Nichlas W. Andersen
+  versions:
+  - name: Gridsome
+    repo: itsnwa/darkfolio
+    engine: other
+    branch: ''
+- name: Belkirk
+  textline: Site
+  preview: https://forestryio-templates.github.io/belkirk-jekyll-demo/
+  image: img/starters/belkirk.png
+  author: Forestry
+  versions:
+  - name: Jekyll
+    repo: forestryio-templates/belkirk-jekyll-demo
+    branch: ''
+    engine: jekyll
+filters:
+- name: Gatsby
+- name: Hugo
+- name: Gridsome
+- name: Eleventy
+- name: VuePress
+- name: Jekyll

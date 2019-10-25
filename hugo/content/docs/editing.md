@@ -15,9 +15,9 @@ menu:
     weight: 1
 
 ---
-Forestry allows editors and guests to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over their content. 
+Forestry allows developers and editors to manage their website in a variety of different ways. This enables developers to build powerful, static sites while empowering editors to take full control over their content.
 
-For more information on guest and editor roles see [user roles](/docs/settings/team-management/#user-roles)
+For more information on developer and editor roles see [user roles](/docs/settings/collaborators/#site-access-levels)
 
 ![](/uploads/2018/01/10.png)
 
@@ -44,7 +44,7 @@ In **Jekyll**, these are [content files](/docs/faqs/glossary/content-files/) tha
 [Data files](/docs/editing/data-files/) are special content files that aren't rendered as HTML pages in your built site. They are used for adding rich metadata site-wide, like authors or company information. They appear under _Data_ in the sidebar.
 
 {{% tip %}}
-Learn more about using data files with [Hugo](http://gohugo.io/templates/data-templates/) and [Jekyll](https://jekyllrb.com/docs/datafiles/) in their documentation sites.
+Learn more about using data files with [Hugo](https://gohugo.io/templates/data-templates/) and [Jekyll](https://jekyllrb.com/docs/datafiles/) in their documentation sites.
 {{% /tip %}}
 
 ## Searching Content

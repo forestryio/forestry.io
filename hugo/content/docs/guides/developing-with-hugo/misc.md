@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/misc/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: Other things you can do with Hugo
 tags: ''
 title: Misc
@@ -11,7 +11,7 @@ weight: 9
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 18
+    weight: 25
 
 ---
 ## Sitemap
@@ -51,8 +51,8 @@ In order to include RSS feeds, you must include it in the `<head>` of your pages
 If you wish to create Atom Feeds or other types of documents, please see the Hugo documentation on [Output Formats][1].
 
 ## Further Reading
-- [Hugo Sitemap Reference](https://gohugo.io/templates/sitemap/)
+- [Hugo Sitemap Reference](https://gohugo.io/templates/sitemap-template/)
 - [Hugo RSS Reference](https://gohugo.io/templates/rss/)
-- [Hugo Output Format Reference](https://gohugo.io/extras/output-formats/)
+- [Hugo Output Format Reference](https://gohugo.io/templates/output-formats/)
 
 [1]: https://gohugo.io/extras/output-formats/

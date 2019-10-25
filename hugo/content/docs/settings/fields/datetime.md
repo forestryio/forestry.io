@@ -2,43 +2,44 @@
 aliases:
 - "/docs/front-matter-fields/date-field/"
 title: Date Field
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+publishdate: 2017-12-31T00:00:00-04:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2019-05-06T00:00:00-03:00
 
 ---
+![](/uploads/2018/01/datetime-preview.png)
+
 A date and time picker.
 
 ## Options
 
-![](/uploads/2018/05/date-field-ui.png)
-
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Date Format_ – how the date should be displayed in the editor.
-* _Time Format_ – how the time should be displayed in the editor.
-* _Display UTC_ – activating this option will display the date in UTC regardless of user's locale settings.
-* _Required_ – prevent changes from being saved if this field is empty.
-
-## Field UI
-
-![](/uploads/2018/01/datetime-preview.png)
+* **General**
+  * _Label_ — the human-friendly label shown above the input field in the editor.
+  * _Name_ — the key stored in your content’s front matter, used to access it in your templates.
+  * _Description_ — a human friendly description of what the field does and/or instructions for your editors.
+  * _Hidden_ — hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+* **Format**
+  * _Date Format_ — how the date should be displayed in the editor. To only show the time picker, leave this field blank.
+  * _Time Format_ — how the time should be displayed in the editor.  To only show the date picker, leave this field blank.  
+    {{% tip %}} Note: 24-hour format in the time_format display currently causes unexpected behaviour in the date picker. E.g: \`kk:mm Z\`  {{% /tip %}}
+  * _Display UTC_ — activating this option will display the date in UTC regardless of user's locale settings.
+  * _Export Format_ — how the date/time should be exported to the repo.
+* **Validation**
+  * _Required_ — prevent changes from being saved if this field is empty.
+* **Default** — supply a default datetime.
+  * _Use 'Now' As Default_ — Apply the current date and time as the value for new documents.
 
 ## Templating
 
 If you have a text field in your template, you can access it in your templates using the field’s `name`:
 
 ### Hugo
-```
-<time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
-```
+
+    <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
 
 ### Jekyll
-```
-<time datetime="{{ page.date }}">{{ page.date | date: "%B, %-d, %Y" }}</time>
-```
+
+    <time datetime="{{ page.date }}">{{ page.date | date: "%B, %-d, %Y" }}</time>
 
 ## Config Files
 
@@ -56,6 +57,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
       display_utc: [true|false]
 
 ### Example
+
     type: datetime
     name: date
     label: Date
@@ -66,6 +68,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
       time_format: "HH:MM:SS"
       display_utc: false
 
+
 {{% tip %}}
-The `date_format` and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
+The `date_format`, `export_format`, and `time_format` fields can be configured using [Moment.js tokens](https://momentjs.com/docs/#year-month-and-day-tokens).
 {{% /tip %}}

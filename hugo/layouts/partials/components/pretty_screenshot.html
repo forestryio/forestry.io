@@ -1,0 +1,6 @@
+<figure class="pretty-screenshot">
+    <img src="{{ .Img }}" {{if (.Alt)}}alt="{{ .Alt }}"{{ end }} />
+    {{ with (.Caption) }}
+    <figcaption>{{ . }}</figcaption>
+    {{ end }}
+</figure>

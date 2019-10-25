@@ -38,7 +38,7 @@ The salary range for this position is $55,000 - $70,000 CAD depending on experie
 
 ### How to apply
 
-Please submit a resumé, cover letter and response to the questions below as one single PDF to [jobs@forestry.io](mailto:jobs@forestry.io).
+Please submit a resumé, cover letter and response to the questions below as one single PDF to [careers@forestry.io](mailto:careers@forestry.io).
 
 Included in your application's PDF, please answer the following questions in 500 words or less (total):
 

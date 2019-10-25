@@ -20,7 +20,7 @@ Forestry supports storing your media in your own [Cloudinary](https://cloudinary
 3. Click the **Security** tab and scroll to the bottom to see your API credentials.
 4. Open up your site's dashboard in Forestry and navigate to the **Settings** section, and select the **Media** tab.
 5. Under **Media Management**, select **Cloudinary**. You should see fields appear for **Cloud name**, **API key**, and **API secret**.
-6. Enter your Cloudinary info int these fields and click the **Save Settings** button.
+6. Enter your Cloudinary info into these fields and click the **Save Settings** button.
 7. Navigate to the **Media** section in the Forestry dashboard. If you see the Cloudinary sample image in your library, you are successfully connected!
 
 ![Cloudinary sample image in media library](/uploads/2018/05/media-library-cloudinary.png)
@@ -62,7 +62,7 @@ main_image: img.png
 When using these images in your templates, you should prepend them with the URL to your cloud. We recommend storing this URL in your site's configuration and referencing it via variable in your templates. For example, in a Hugo site you might put the following in `config.toml`:
 
 ```
-cloudinary_url = "https://res.cloudinary.com/demo/image/upload/"
+cloudinary_url = "https://res.cloudinary.com/demo/image/upload"
 ```
 
 You could then use these front matter images in your templates as follows:

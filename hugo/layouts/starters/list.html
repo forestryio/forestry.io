@@ -1,0 +1,38 @@
+{{- define "main" -}}
+{{- $starters := $.Site.Data.starters.starters -}}
+{{- $filters := $.Site.Data.starters.filters -}}
+
+  <main class="starter-list-wrapper">
+      <div class="container starters-container">
+        <section class="starters-header">
+          <h2 class="starters-title">{{ .Params.headline }}</h2>
+        </section>
+        <nav class="starters-nav">
+          <ul class="starters-filter-list">
+            <li class="starters-filter-option">
+              <button class="starter-filter starters-filter-button pill black" data-filter="">All</button>
+            </li>
+            {{ range $filters }}
+              <li class="starters-filter-option">
+                <button class="starter-filter starters-filter-button pill" data-filter="{{ .name }}">{{ .name }}</button>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+        <section class="section-starter-grid">
+          <div class="starter-grid">
+            {{ range $starters }}
+              <div class="starter-grid--item" data-groups="{{ range .versions }}{{ .name }},{{ end }}">
+                {{ partial "components/starter-card.html" (dict "starter" . "ctx" $) }}
+              </div>
+            {{ end }}
+          </div>
+        </section>
+        <div class="center"><a href="https://github.com/forestryio/forestry.io/issues/new?assignees=DirtyF&labels=starter&template=starter.md&title=New+starter+submission">Submit your starter</a></div>
+        <section class="starters-footer">
+          <h2 class="starters-title">{{ .Params.baseline }}</h2>
+          <a href="https://app.forestry.io/signup" class="button big black" data-proofer-ignore>Import Your Site Now</a>
+        </section>
+      </div>
+  </main>
+{{- end -}}

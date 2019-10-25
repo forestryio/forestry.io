@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Other
-    weight: 3
+    weight: 2
   faqs:
     name: FAQs
     identifier: faqs

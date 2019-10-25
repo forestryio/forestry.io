@@ -1,7 +1,6 @@
 ---
 label: pricing
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: Title
@@ -63,7 +62,7 @@ fields:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
     required: true
-  default: 2017-12-07 04:00:00 +0000
+  default: '2017-12-07T04:00:00.000+00:00'
 - type: datetime
   name: expirydate
   label: Expiry Date
@@ -71,7 +70,7 @@ fields:
   config:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
-  default: 2030-01-01 04:00:00 +0000
+  default: '2030-01-01T04:00:00.000+00:00'
 - type: field_group
   label: Footer Call To Action
   name: cta

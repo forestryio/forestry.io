@@ -1,7 +1,6 @@
 ---
 label: changelog
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -18,46 +17,52 @@ fields:
   label: Date
   type: datetime
   hidden: false
+  default: now
+  config:
+    date_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
+    required: true
+- name: summary
+  type: textarea
   default: ''
-- name: cta
-  label: Cta
-  type: field_group
-  fields:
-  - name: headline
-    label: Headline
-    type: text
-    hidden: false
-    default: ''
-  - name: textline
-    label: Textline
-    type: text
-    hidden: false
-    default: ''
-  - name: calls_to_action
-    label: Calls to action
-    type: list
-    hidden: false
-    default: ''
-  hidden: true
-  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Summary
 pages:
-- hugo/content/docs/changelog/2018-10-30-changelog.md
-- hugo/content/docs/changelog/2018-10-18-changelog.md
+- hugo/content/docs/changelog/2019-08-06-changelog.md
+- hugo/content/docs/changelog/2019-03-01-changelog.md
+- hugo/content/docs/changelog/2019-01-09-changelog.md
 - hugo/content/docs/changelog/2018-10-16-changelog.md
-- hugo/content/docs/changelog/2018-10-11-changelog.md
-- hugo/content/docs/changelog/20181005-changelog.md
-- hugo/content/docs/changelog/20181001-changelog.md
-- hugo/content/docs/changelog/20180928-changelog.md
-- hugo/content/docs/changelog/20180919-Changelog.md
 - hugo/content/docs/changelog/2018-09-14-changelog.md
 - hugo/content/docs/changelog/2018-09-12-changelog.md
-- hugo/content/docs/changelog/2018-09-10-changelog.md
-- hugo/content/docs/changelog/2018-09-07-changelog.md
-- hugo/content/docs/changelog/2018-08-10-changelog.md
-- hugo/content/docs/changelog/2018-08-08-changelog.md
-- hugo/content/docs/changelog/2018-08-06-changelog.md
-- hugo/content/docs/changelog/2018-08-17-changelog.md
-- hugo/content/docs/changelog/2018-08-30-changelog.md
 - hugo/content/docs/changelog/2018-08-29-changelog.md
-- hugo/content/docs/changelog/2018-08-28-changelog.md
 - hugo/content/docs/changelog/2018-08-15-changelog.md
+- hugo/content/docs/changelog/2018-08-08-changelog.md
+- hugo/content/docs/changelog/2019-06-07-changelog.md
+- hugo/content/docs/changelog/2019-06-28-changelog.md
+- hugo/content/docs/changelog/2019-08-16-changelog.md
+- hugo/content/docs/changelog/2019-09-06-changelog.md
+- hugo/content/docs/changelog/2019-09-13-changelog.md
+- hugo/content/docs/changelog/2019-04-29-changelog.md
+- hugo/content/docs/changelog/2018-08-06-changelog.md
+- hugo/content/docs/changelog/2018-08-30-changelog.md
+- hugo/content/docs/changelog/2018-10-30-changelog.md
+- hugo/content/docs/changelog/2018-12-18-changelog.md
+- hugo/content/docs/changelog/2018-12-07-changelog.md
+- hugo/content/docs/changelog/2019-03-08-changelog.md
+- hugo/content/docs/changelog/2018-11-27-changelog.md
+- hugo/content/docs/changelog/2018-09-10-changelog.md
+- hugo/content/docs/changelog/2018-08-28-changelog.md
+- hugo/content/docs/changelog/2018-08-17-changelog.md
+- hugo/content/docs/changelog/2018-08-10-changelog.md
+- hugo/content/docs/changelog/2018-09-07-changelog.md
+- hugo/content/docs/changelog/2018-10-18-changelog.md
+- hugo/content/docs/changelog/2018-10-11-changelog.md
+- hugo/content/docs/changelog/2019-04-05-changelog.md
+- hugo/content/docs/changelog/2019-05-03-changelog.md
+- hugo/content/docs/changelog/2019-03-29-changelog.md
+- hugo/content/docs/changelog/2019-05-10-changelog.md
+- hugo/content/docs/changelog/2019-05-17-changelog.md

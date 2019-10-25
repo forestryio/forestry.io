@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/misc/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Misc
@@ -12,7 +12,7 @@ menu:
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-misc
-    weight: 19
+    weight: 26
 
 ---
 ## Sitemaps/Feeds

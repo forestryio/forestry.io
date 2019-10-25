@@ -12,7 +12,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 6
+    weight: 5
 
 ---
 Menus allow content editors to easily manage existing menus in your site, such as site navigation and sidebars using a simple drag-and-drop interface.
@@ -39,6 +39,8 @@ Menu entries linking to existing content on your site will be added to the front
 
 Menu entries with external links will be added to your menus data file located at `/data/menus.yml`.
 
+**NB. The Jekyll Menus plugin is not currently compatible with GitHub Pages as it is [not a listed dependency](https://pages.github.com/versions/).**
+
 ## Managing Menus
 
 The Menu Manager allows you to add, reorganize, and remove menu items from existing menus.
@@ -49,7 +51,7 @@ The Menu Manager allows you to add, reorganize, and remove menu items from exist
 
 1. Navigate to the _Menus_ section of your site, found in the sidebar
 2. Click the menu you wish to update
-3. Click _Add Item_
+3. Click _Add Link_
 4. Provide a name for the menu item, and choose _Internal_ to select an existing piece of content, or _External_ to create a menu item to a publically accessible URL.
 
 ### Modifying Menu Items

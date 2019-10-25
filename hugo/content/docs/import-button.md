@@ -9,7 +9,7 @@ images:
 menu:
   docs:
     parent: Other
-    weight: 6
+    weight: 5
 
 ---
 The import button lets users create their own copy of your project and import it into Forestry in one fell swoop.

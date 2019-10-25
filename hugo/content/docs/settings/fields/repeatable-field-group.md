@@ -7,19 +7,24 @@ expirydate: 2030-01-01 04:00:00 +0000
 date: 2017-12-31 00:00:00 -0400
 
 ---
+
+![](/uploads/2018/01/repeatable-field-group-preview.png)
+
 A repeatable array of fields.
 
 ## Options
-![](/uploads/2018/01/repeatable-field-group-options.png)
 
-* _Label_ – the human-friendly label shown above the input field in the editor.
-* _Name_ – the key stored in your content’s front matter, used to access it in your templates.
-* _Description_ – a human friendly description of what the field does and/or instructions for your editors.
-* _Hidden_ – hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-* _Repeatable Group Field Label_ – label each group with the value from of one of its fields.
+- **General**
+  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
+  - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
+  - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
+  - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
+- **Display**
+  - _Item Label_ &mdash; select a field from the group to serve as the label for each item.
+- **Validation**
+  - _Minimum_ &mdash; the lowest number of items that must be added to this field.
+  - _Maximum_ &mdash; the highest number of items that can be added to this field.
 
-## Field UI
-![](/uploads/2018/01/repeatable-field-group-preview.png)
 
 ## Templating
 You can access this field in your templates using the field’s `name`:

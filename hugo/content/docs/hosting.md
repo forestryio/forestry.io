@@ -3,21 +3,25 @@ aliases:
 - "/docs/deployment-and-management/"
 - "/docs/deployment-and-management/setting-up-deployment/"
 - "/docs/deployment-and-management/deploying-with-github-pages/"
-title: Options
-weight: 1
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+title: Hosting Options
+weight: "1"
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2020-01-01T04:00:00.000+00:00
+date: 2017-12-31T04:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    name: Hosting Options
     parent: Hosting
     weight: 1
 
 ---
+{{% warning  %}}
+**Forestry will stop building and deploying sites on January 1st, 2020**. **New sites created after August 1st, 2019 won't offer deploy options.** <br/> We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
+Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+{{% /warning %}}
+
 The Hosting settings allow you to use Forestry to handle deployment of your static site. Forestry can build your site and then deploy the [static files](/docs/faqs/glossary/static-files) to a hosting provider of your choice.
 
 ## Guides
@@ -32,7 +36,7 @@ Enabling "commit to source repo only" will enable Forestry to only commit change
 Looking to deploy your site using a [CI/CD](/docs/faqs/glossary/ci-cd) tool like GitLab CI or BitBucket Pipelines? Use _Commit to source repo only_. This will trigger any CI/CD tool when a change is saved or published in Forestry.
 {{% /tip %}}
 
----
+***
 
 ### GitHub Pages
 
@@ -40,39 +44,41 @@ Forestry can build your site and deploy the generated static files to a branch o
 
 [Read the guide](/docs/hosting/github-pages)
 
----
+***
+
 <!--
+
 ### BitBucket Pages
 
 Forestry can build your site and deploy the generated static files to a repository on BitBucket configured to use BitBucket pages.
 
 [Read the guide](/docs/hosting/bitbucket-pages)
 
----
--->
+***
+
+\-->
 
 ### Amazon S3
 
 Forestry can build your site and deploy the generated static files to an S3 bucket of your choosing.
 
-There are two ways to host a static website with Amazon S3. S3 can be configured to host a website itself, or it can be used as an origin for AWS' CloudFront CDN. Using S3 on its own is the simpler option, but using CloudFront is highly recommended. 
+There are two ways to host a static website with Amazon S3. S3 can be configured to host a website itself, or it can be used as an origin for AWS' CloudFront CDN. Using S3 on its own is the simpler option, but using CloudFront is highly recommended.
 
 {{% tip %}}
 If you'd like to know more about why you should use CloudFront with your S3 Bucket, check out [this blog post from AWS](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/).
 {{% /tip %}}
 
-**Guides:** 
+**Guides:**
 
 [Setup an S3 + CloudFront Stack](/docs/hosting/s3-cloudfront-stack) **(Recommended)**
 
 [Setup an S3 Bucket for Webhosting](/docs/hosting/amazon-s3)
 
-
 **Resources:**
 
-[Amazon S3 + Amazon CloudFront: A Match Made in the Cloud](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) *(aws.amazon.com)*
+[Amazon S3 + Amazon CloudFront: A Match Made in the Cloud](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) _(aws.amazon.com)_
 
----
+***
 
 ### FTP/SFTP
 
@@ -96,7 +102,7 @@ If you are using Jekyll as your static site generator, GitHub pages can handle b
 * [Hugo Example Project](https://gitlab.com/pages/hugo)
 * [Jekyll Example Project](https://gitlab.com/groups/pages)
 
----
+***
 
 ### GitLab Pages & GitLab CI
 
@@ -109,7 +115,7 @@ GitLab provides a free CI tool for triggering build and deployment scripts when 
 * [GitLab.com: Hugo Example Project](https://gitlab.com/pages/hugo)
 * [GitLab.com: Jekyll Example Project](https://gitlab.com/groups/pages)
 
----
+***
 
 ### BitBucket Pipelines
 
@@ -120,7 +126,7 @@ BitBucket provides a CI tool for triggering build and deployment scripts when co
 * [BitBucket Pipelines Documentation](https://bitbucket.org/product/features/pipelines)
 * [Bitquobit.com: Automating Hugo Deployments with BitBucket Pipelines](https://bitquabit.com/post/automating-hugo-deployments/)
 
----
+***
 
 ### Webhooks
 

@@ -1,7 +1,6 @@
 ---
 label: call-to-action
 hide_body: false
-is_partial: true
 fields:
 - type: text
   name: headline

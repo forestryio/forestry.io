@@ -8,6 +8,9 @@ languageCode = "en"
 metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "monokai"
 relativeURLs = false
 title = "Forestry.io"
 [blackfriday]
@@ -16,35 +19,49 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 [[menu.docs]]
+name = "Pro"
+weight = 12
+[[menu.docs]]
+name = "Other"
+weight = 11
+[[menu.docs]]
+name = "Developer Guides"
+weight = 10
+[[menu.docs]]
+name = "Hosting"
+weight = 9
+[[menu.docs]]
+name = "Previews"
+weight = 8
+[[menu.docs]]
+name = "Organizations"
+weight = 7
+[[menu.docs]]
+name = "Settings & Configuration"
+weight = 6
+[[menu.docs]]
+name = "Media"
+weight = 5
+[[menu.docs]]
 name = "Git Sync"
 weight = 3
 [[menu.docs]]
-name = "Hosting"
-weight = 5
-[[menu.docs]]
 name = "Editing"
 weight = 4
-[[menu.docs]]
-name = "Media"
-weight = 6
-[[menu.docs]]
-name = "Settings & Configuration"
-weight = 7
 [[menu.docs]]
 name = "Quick Start"
 weight = 2
 [[menu.docs]]
 name = "Welcome"
 weight = 1
-[[menu.docs]]
-name = "Developer Guides"
-weight = 8
-[[menu.docs]]
-name = "Other"
-weight = 9
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
+[[menu.footer]]
+name = "Roadmap"
+parent = "Product"
+url = "https://portal.productboard.com/forestry/"
+weight = 7
 [[menu.footer]]
 name = "Status"
 parent = "Product"
@@ -95,7 +112,7 @@ notAlternative = true
 home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
 [params]
 dateformat = "January 2, 2006"
-description = "A content management system for static sites built with Hugo and Jekyll. Get the speed, security, and reliability of static and the power of a Headless CMS."
+description = "Content management system for sites built with static site generators. Get the speed, security, and reliability of static and the power of a Headless CMS."
 ghrepo = "https://github.com/forestryio/forestry.io"
 ghrepo_edit = "https://github.com/forestryio/forestry.io/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/forestryio/forestry.io/issues/new"
@@ -106,8 +123,9 @@ mixpanelid = "8aaf5d792dd5bf875adae0b2adac8900"
 params = ["tags", "categories", "authors"]
 vars = ["date", "description", "dir", "path", "expirydate", "fuzzywordcount", "keywords", "kind", "lang", "lastmod", "permalink", "publishdate", "readingtime", "relpermalink", "summary", "title", "type", "url", "weight", "wordcount", "section"]
 [params.cloudinary]
-cloud_name = "forestry-demo"
+cloud_name = "forestry-io"
 use_upload = false
+baseurl = "https://res.cloudinary.com/forestry-io/image/fetch"
 [params.cloudinary.lazysizes]
 enabled = true
 [params.cloudinary.presets.content]
@@ -148,7 +166,7 @@ pattern = "2006"
 weight = 10
 [social]
 email = "support@forestry.io"
-slack = "https://t.co/OANAJYol8Y"
+slack = "https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk"
 twitter = "forestryio"
 [taxonomies]
 author = "authors"

@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/templating/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Templating
@@ -11,21 +11,22 @@ weight: 3
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 6
+    weight: 12
 
 ---
-Hugo allows users to build layouts and themes using one of multiple templating languages. By default, Hugo uses GoLang’s GoTemplates.
+Hugo allows users to build layouts and themes using one of multiple templating languages. By default, Hugo uses Golang’s Go Templates.
 
 All of the template options are interchangeable, and can be used at the same time.
 
-## GoTemplates
-Go Templates exposes GoLang as a template language for you to build your layouts and themes with.
+## Go Templates
+Go Templates expose Golang as a template language for you to build your layouts and themes with.
 
-An example of GoTemplates:
+An example of Go Templates:
 ```
 	<html>
 	<head>
 	    <title>{{ .Params.Title }}</title>
+	</head>
 	<body>
 	<div id="content">
 	    <p>
@@ -40,7 +41,7 @@ Ace templates are inspired by Slim and Jade and will feel very familiar and easi
 
 All templates built with Ace must be prefixed with `.ace` instead of `.html`.
 
-**Note:** Ace templates can be included as a partial inside GoTemplates and vice versa. This cannot be done with Amber.
+**Note:** Ace templates can be included as a partial inside Go Templates and vice versa. This cannot be done with Amber.
 
 An example of Ace:
 ```
@@ -79,8 +80,8 @@ An example of Amber:
 See the [Front Matter Template documentation][1] for examples of how to use Forestry in your templates.
 
 ## Further Reading
-- [Hugo GoTemplates Reference](https://gohugo.io/templates/go-templates/)
-- [Hugo Ace Templates Reference](https://gohugo.io/templates/ace/)
-- [Hugo Amber Templates Reference](https://gohugo.io/templates/amber/)
+- [Hugo Go Templates Reference](https://gohugo.io/templates/introduction/)
+- [Hugo Ace Templates Reference](https://gohugo.io/templates/alternatives/#ace-templates)
+- [Hugo Amber Templates Reference](https://gohugo.io/templates/alternatives/#amber-templates)
 
 [1]: /docs/settings/front-matter-templates/

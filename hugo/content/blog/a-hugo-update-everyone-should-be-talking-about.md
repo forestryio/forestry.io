@@ -36,7 +36,9 @@ Instead of using categories or tags to manage this relationship, you can just ne
 On top of nested sections, Hugo 0.22 has upgraded the `.Site.GetPage` template function to get any regular page, which means you can now fetch any page by filename.
 
 *For example:*
-`{{ .Site.GetPage "page" "post" "example-post.md" }}`
+```go-text-template
+{{ .Site.GetPage "page" "post" "example-post.md" }}
+```
 
 On top of this, performance improvements were made to page fetching to make it even faster.
 
@@ -46,7 +48,7 @@ In Hugo 0.24 Archetypes received a huge update. They can now be formatted as GoT
 
 For example:
 
-```
+```go-text-template
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 publishDate: {{ .Date }}

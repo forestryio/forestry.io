@@ -17,7 +17,7 @@
     padding: 9rem 0 0;
     text-align: left;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
       padding: 80px 0 100px;
     }
   }
@@ -50,47 +50,12 @@
       margin-top: 3rem;
     }
 
-    a:not(.button) {
-      color: $color-medium-dark;
-      cursor: pointer;
-      font-style: italic;
-      font-weight: 500;
-      margin-left: 2rem;
-      position: relative;
-      transition: opacity 0.15s ease;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-
-    .launch-demo {
-      color: $color-medium-dark;
-      cursor: pointer;
-      display: none;
-      font-style: italic;
-      font-weight: 500;
-      margin-left: 2rem;
-      position: relative;
-
-      @media screen and (min-width: 520px) {
-        display: block;
-      }
-    }
-
-    .launch-demo::before {
-      background: #f0f0f0;
-      content: "";
-      height: 3.75rem;
-      left: -1rem;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1px;
+    .button {
+      margin-right: 1rem;
     }
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
@@ -115,22 +80,22 @@
 
   @media screen and (min-width: 600px) {
     left: 50%;
-    top: 50%;
+    top: 80%;
     width: 100%;
   }
 
   @media screen and (min-width: 820px) {
     left: 50%;
-    top: 20%;
+    top: 50%;
     width: 100%;
   }
 
   @media screen and (min-width: 1000px) {
-    left: auto;
-    right: -60px;
     top: 45%;
-    transform: translate(0, -45%);
-    width: 70%;
+  }
+
+  @media screen and (min-width: 1100px) {
+    top: 40%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -138,6 +103,14 @@
     right: 0;
     top: 45%;
     transform: translate(0, -45%);
+    width: 60%;
+  }
+
+  @media screen and (min-width: 1300px) {
+    width: 65%;
+  }
+
+  @media screen and (min-width: 1400px) {
     width: 70%;
   }
 }
@@ -149,32 +122,11 @@
     top: 70%;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     top: 45%;
   }
 
   @media screen and (min-width: 1200px) {
     top: 45%;
   }
-}
-
-.built-for {
-  bottom: 2rem;
-  font-size: 0.65rem;
-  font-weight: 600;
-  left: 8vw;
-  letter-spacing: 0.1em;
-  opacity: 1;
-  position: absolute;
-  text-transform: uppercase;
-}
-
-.built-for--logos {
-  align-items: center;
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.built-for--logo {
-  margin-right: 1rem;
 }

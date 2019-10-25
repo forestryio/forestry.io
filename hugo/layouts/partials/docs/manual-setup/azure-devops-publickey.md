@@ -1,0 +1,3 @@
+To add a new key to Azure DevOps, navigate to `https://dev.azure.com/$USERNAME/_usersSettings/keys`, where `$USERNAME` is your username in Azure DevOps.
+
+Click **Add** to add a new key. You can use the **Description** field to add an identifier for this key so you will know what it's being used for later on. In the **Key Data** field, paste in the public key provided by Forestry. Click the **Save** button to save this key.

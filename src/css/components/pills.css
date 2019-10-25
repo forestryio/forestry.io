@@ -1,0 +1,37 @@
+.pill {
+  float: left;
+  background-color: $color-grey;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  margin: 0 0.5rem 0.5rem 0;
+
+  &.black {
+    background-color: $color-black;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark;
+    }
+
+    &:active {
+      background-color: $color-medium-dark;
+    }
+  }
+}
+
+button.pill,
+a.pill {
+  cursor: pointer;
+  &:hover {
+    background-color: $color-medium-light;
+  }
+  &:active {
+    background-color: $color-medium-dark;
+  }
+}

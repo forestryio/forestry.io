@@ -14,7 +14,7 @@ images:
 menu:
   docs:
     parent: Editing
-    weight: 7
+    weight: 6
 
 ---
 The Media Library allows content editors to easily manage the media for your site. This allows content editors to easily add images, PDFs, and GIFs to their content without having to use Git.
@@ -29,7 +29,7 @@ The Media Library allows you to upload and delete media files. It also allows ed
 
 To upload media files to the Media Library, navigate to the _Media Library_ page in Forestry, and follow these instructions:
 
-1. Click the "+" thumbnail
+1. Click the "Upload" button
 2. Select a media file to upload from your local machine
 3. A loading spinner will be displayed while the media file uploads
 
@@ -42,12 +42,12 @@ You can also upload media files by dragging them from your desktop onto the Medi
 To delete media files, navigate to the _Media Library_ page in the CMS, and follow these instructions:
 
 1. Click "Select" on the thumbnail of each upload you'd like to delete
-2. Click the trash icon in the top right corner of the page
+2. Click the "Delete" button at the bottom of the page
 3. You can confirm that each upload is being deleted by checking _Site Activity_ in the top right of the sidebar
 
 ## Configuring the Media Library
 
-You can configure the paths used for your media files in the **Media Paths** section of your site settings.
+You can configure the paths used for your media files in the **Media** section of your site settings.
 
 ![Media Path Settings](/uploads/2018/05/media-paths-settings.png)
 
@@ -57,7 +57,7 @@ The directory where media uploads should be saved, relative to the root of your 
 
 ### Public Path
 
-The *URL path* that maps to your upload directory. For example, a Hugo website might use `static/uploads` as the **upload directory**, and `/uploads` as the **public path** since Hugo copies files placed in `static` directly into the root of the published website. 
+The *URL path* that maps to your upload directory. For example, a Hugo website might use `static/uploads` as the **upload directory**, and `/uploads` as the **public path** since Hugo copies files placed in `static` directly into the root of the published website.
 
 ### File Path
 

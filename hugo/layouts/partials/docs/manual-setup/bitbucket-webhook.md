@@ -1,0 +1,3 @@
+To add a webhook to your Bitbucket repository, navigate to `https://bitbucket.org/$USERNAME/$REPOSITORY/admin/addon/admin/bitbucket-webhooks/bb-webhooks-repo-admin`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository.
+
+Click the **Add webhook** button to add a new webhook, and insert the webhook URL provided by Forestry in the **URL** field. Under **Triggers**, select **Repository push** and hit the **Save** button.

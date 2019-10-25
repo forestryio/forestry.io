@@ -10,19 +10,23 @@ dotenv.config()
 
 export default function(env) {
   const gulpConfig = GulpConfig()
-  const isProduction = (env === "production") || (process.env.NODE_ENV === "production")
+  const isProduction =
+    env === "production" || process.env.NODE_ENV === "production"
+  const host = process.env.PREVIEW_IP || null
+  const port = process.env.PREVIEW_PORT || 3000
 
   return {
-    "server": {
-      "baseDir": [gulpConfig.tmp, gulpConfig.build],
-      "middleware": isProduction ? [require("compression")()] : []
+    server: {
+      baseDir: [gulpConfig.tmp, gulpConfig.build],
+      middleware: isProduction ? [require("compression")()] : []
     },
-    "https": false,
-    "injectChanges": true,
-    "notify": true,
-    "open": false,
-    "port": 3000,
-    "reloadThrottle": 300,
-    "reloadDelay": 300
+    https: false,
+    injectChanges: true,
+    notify: true,
+    open: false,
+    port: port,
+    host: host,
+    reloadThrottle: 300,
+    reloadDelay: 300
   }
 }

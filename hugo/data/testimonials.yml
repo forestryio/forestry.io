@@ -1,18 +1,18 @@
 ---
 tweets:
 - row:
-  - name: "Michael Lee \U0001F355"
-    username: "@michaelsoolee"
-    avatar: "/img/nInv8bTI_bigger.jpg"
-    permalink: https://twitter.com/michaelsoolee/status/915960076745265152
-    textline: "@scottgallant & his team over @forestryio are doing really thoughtful
-      work for static sites. Balancing for both tech/non-tech folks"
   - name: Richard Gazdik
     username: "@richardgazdik"
     avatar: "/img/jQzQqqjp_bigger.jpg"
     permalink: https://twitter.com/richardgazdik/status/877074505377644545
     textline: ‏Jekyll + Github + Forestryio (@forestryio) is a killer combo. It lightspeeds
       and makes CMS developement "baby easy".
+  - name: "Michael Lee \U0001F355"
+    username: "@michaelsoolee"
+    avatar: "/img/nInv8bTI_bigger.jpg"
+    permalink: https://twitter.com/michaelsoolee/status/915960076745265152
+    textline: "@scottgallant & his team over @forestryio are doing really thoughtful
+      work for static sites. Balancing for both tech/non-tech folks"
   - name: John Puddephatt‏‏
     username: "@johnpuddephatt"
     avatar: "/img/FHM-Q8qU_bigger.jpg"
@@ -38,16 +38,16 @@ tweets:
     textline: Really enjoying using @forestryio - superb product that integrates brilliantly
       with git resulting in a hugely robust, version controlled, content store for
       "static sites". Paired with @Netlify, it becomes even more awesome. Great work.
-  - name: Ryan Underwood‏
-    username: "@takenot_es"
-    avatar: "/img/Xv8LFxjY.jpg"
-    permalink: https://twitter.com/takenot_es/status/946258078533672960
-    textline: forestryio I love you. That's all.
   - name: GoHugo.io
     username: "@GoHugoIO"
     avatar: "/img/hugo-twitter.jpg"
     permalink: https://twitter.com/GoHugoIO/status/954743024260648968
     textline: 'In the end, we chose Hugo on @Netlify, with @forestryio as our CMS... '
+  - name: Ryan Underwood‏
+    username: "@takenot_es"
+    avatar: "/img/Xv8LFxjY.jpg"
+    permalink: https://twitter.com/takenot_es/status/946258078533672960
+    textline: forestryio I love you. That's all.
   - name: Christian Nolte
     username: "@drlogout"
     avatar: "/img/dQuwRPh1_bigger.jpg"

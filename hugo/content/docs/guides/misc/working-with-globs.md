@@ -7,9 +7,9 @@ weight: 5
 menu:
   guides:
     parent: Miscellaneous
-    weight: 15
----
+    weight: 21
 
+---
 Certain configuration values in Forestry, such as the [sidebar `match` and `exclude` parameters,](/docs/settings/content-sections/) accept what is known as a _glob_. A glob is a string of characters that follows a special syntax, used to match paths in a file tree.
 
 ## Basic Syntax
@@ -41,7 +41,7 @@ The following are examples of some patterns you might use in your sidebar config
 | <span style="white-space:nowrap;"> `/data/*.json` </span> | All JSON files in the `data` directory |
 | <span style="white-space:nowrap;"> `/data/**/*.json` </span> | All JSON files in the `data` directory and any subdirectories |
 | <span style="white-space:nowrap;"> `**/*.{yaml,yml,json,toml}` </span> | All JSON, YAML, or TOML files in the entire project |
-| <span style="white-space:nowrap;"> `{/foo.json, /data/bar.toml}` </span> | Only `/foo.json` and `/data/bar.toml`  |
+| <span style="white-space:nowrap;"> `{/foo.json,/data/bar.toml}` </span> | Only `/foo.json` and `/data/bar.toml`  |
 
 ## Further Reading
 

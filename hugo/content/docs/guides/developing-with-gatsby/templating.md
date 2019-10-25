@@ -1,11 +1,12 @@
 ---
 title: Templating in Gatsby
 date: 2018-11-20 00:00:00 +0000
-draft: true
 menu:
   guides:
-    parent: Developing with Gatsby
     name: Templating
+    parent: Developing with Gatsby
     identifier: gatsby-templating
-    weight: 5
+    weight: 9
+draft: true
+
 ---

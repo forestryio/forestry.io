@@ -5,16 +5,33 @@
 {{- $menu := cond (not (eq $currentSectionMenu "nil")) $currentSectionMenu $sectionMenu -}}
 {{- with $menu -}}
 <div class="docs-nav-items">
-  {{- range . -}}
-  <h3>{{ .Pre }}{{ .Name }}{{ .Post }}</h3>
-  <ul>
-  {{- range .Children -}}
-    <li>{{ .Pre }}<a href="{{ .URL | relURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a>{{ .Post }}</li>
-    {{- if $.IsMenuCurrent .Menu . -}}
-      {{- template "toc" $currentPage -}}
+  {{- if eq $currentSection "changelog" -}}
+    {{- /* changelog menu should just list all changelog items newest first */ -}}
+    <h3>Changelog</h3>
+    {{- $menuYear := "" -}}
+    {{ range (where $.Site.RegularPages "Dir" $.Page.Dir) }}
+    {{- if ne $menuYear (.Date.Format "2006") -}}
+      {{- if ne $menuYear "" -}}
+        </ul>
+      {{- end -}}
+      {{- $menuYear = .Date.Format "2006" -}}
+      <h4>{{ $menuYear }}</h4>
+      <ul>
     {{- end -}}
-  {{- end -}}
-  </ul>
+    <li><a href="{{ .RelPermalink }}"{{ if eq . $ }} class="active"{{ end }}>{{ .Date.Format "Jan 2" }}</a></li>
+    {{ end }}
+  {{- else -}}
+    {{- range . -}}
+    <h3>{{ .Pre }}{{ .Name }}{{ .Post }}</h3>
+    <ul>
+    {{- range .Children -}}
+      <li>{{ .Pre }}<a href="{{ .URL | relURL }}"{{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }} class="active"{{ end }}>{{ .Name }}</a>{{ .Post }}</li>
+      {{- if $.IsMenuCurrent .Menu . -}}
+        {{- template "toc" $currentPage -}}
+      {{- end -}}
+    {{- end -}}
+    </ul>
+    {{- end -}}
   {{- end -}}
 </div>
 {{- end -}}

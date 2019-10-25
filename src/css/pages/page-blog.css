@@ -68,7 +68,8 @@
     padding: 0 0 0 4rem;
   }
 
-  .blog-post {
+  .blog-post,
+  .doc {
     margin-bottom: 6rem;
     max-width: 600px;
   }
@@ -77,25 +78,29 @@
     text-decoration: none;
   }
 
-  .post-title {
+  .post-title,
+  .doc-title {
     font-size: 2.5rem;
     line-height: 1.25;
     margin-bottom: 0.5rem;
     margin-top: 0;
   }
 
-  .post-meta {
+  .post-meta,
+  .doc-meta {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
-  .post-date {
+  .post-date,
+  .doc-date {
     color: $color-medium-dark;
     font-weight: 600;
   }
 
-  .post-category {
+  .post-category,
+  .doc-category {
     font-weight: 600;
     margin-left: 0.5rem;
   }

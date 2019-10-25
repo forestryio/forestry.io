@@ -11,8 +11,12 @@ menu:
     weight: 4
 
 ---
-You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file.
+You can point Forestry to any folder containing Markdown, JSON, YAML or TOML files. You can not edit any other type of file.
+You can also choose to point a section directly to a data file. You are free to define as many sections as you need. If you have many sections, you might prefer to define them all at once through the `.forestry/settings.yml` configuration file stored in your repository.
 
+You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file and/or through the user interface in your site settings in the `section`
+ tab given you have admin rights.
+ 
 A content section in Forestry is primarily defined by the path to the folder containing content files, and a [glob](/docs/guides/misc/working-with-globs/) to match against the contents of that folder.
 
 ## Options

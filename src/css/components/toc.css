@@ -1,0 +1,21 @@
+#TableOfContents li {
+  margin-bottom: 0.5em;
+}
+#TableOfContents > ul {
+  margin-left: 0;
+}
+#TableOfContents > ul > li {
+  list-style: none;
+}
+#TableOfContents > ul ul {
+  margin-left: 1.5rem;
+}
+#TableOfContents > ul > li > ul > li {
+  list-style-type: decimal;
+}
+#TableOfContents > ul > li > ul > li > ul > li {
+  list-style-type: lower-alpha;
+}
+#TableOfContents > ul > li > ul > li > ul > li > ul > li {
+  list-style-type: disc;
+}

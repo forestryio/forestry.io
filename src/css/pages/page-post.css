@@ -19,6 +19,16 @@
       max-width: 100%;
       width: 760px;
     }
+
+    .photo-credit {
+      font-size: 0.8rem;
+      font-style: italic;
+      display: block;
+      text-align: right;
+      max-width: 760px;
+      margin: 0 auto;
+      margin-top: -0.5rem;
+    }
   }
 
   > .container:first-child .post--title {
@@ -143,20 +153,6 @@
 
   img {
     max-width: 100%;
-  }
-
-  /* Inline code */
-  code {
-    background: $color-light-grey;
-    color: $color-brand;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.15em 0.5em;
-  }
-
-  pre code {
-    color: $color-dark;
   }
 
   p.tip {

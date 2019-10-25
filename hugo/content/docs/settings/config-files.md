@@ -62,54 +62,55 @@ The following is an example of `settings.yml` for a Hugo site.
 
 ### Options
 
-**Admin Path** `admin_path:` `string`
+<h4 id="site-settings-admin-path">Admin Path <code>admin_path: string</code></h4>
 
 Allows you to configure the path where the Remote Admin will be deployed.
 
 ---
 
-**Upload Path** `upload_path:` `string`
+<h4 id="site-settings-upload-path">Upload Path <code>upload_path: string</code></h4>
 
 Allows you to configure the path where media assets are uploaded
 
 ---
 
-**Front Matter File URL Template** `frontmatter_file_url_template:` `string`
+<h4 id="site-settings-front-matter-file-url">Front Matter File URL Template <code>frontmatter_file_url_template: string</code></h4>
 
 Allows you to configure the path that is set when adding images to Front Matter Fields. _Note: this value is set at upload time._
 
 ---
 
-**Body File URL Template** `body_file_url_template:` `string`
+<h4 id="site-settings-body-file-url">Body File URL Template <code>body_file_url_template: string</code></h4>
 
 Allows you to configure the path that is used when adding images to the body of a page. _Note: this value is set at upload time._
 
 ---
 
-**New Page Extension** `new_page_extension:` `md|html`
+<h4 id="site-settings-new-page-extension">New Page Extension <code>new_page_extension: md|html</code></h4>
 
 Allows you to configure whether new pages are created as `.md` or `.html` files.
 
 ---
 
-**Auto Deploy** `auto_deploy:` `boolean`
+<h4 id="site-settings-auto-deploy">Auto Deploy <code>auto_deploy: boolean</code></h4>
 
 Allows you to configure if publishing should be triggered when a commit is made to the source repository.
 
 ---
 
-**Web Hook URL** `webhook_url:` `string`
+<h4 id="site-settings-webhook-url">Webhook URL <code>webhook_url: string</code></h4>
 
-Allows you to provide a [web hook](/docs/hosting/webhooks/) to be triggered when events occur in Forestry.
+Allows you to provide a [webhook](/docs/hosting/webhooks/) to be triggered when events occur in Forestry.
 
 ---
 
-**Version** _(Hugo-only)_ `version:` `string`
+<h4 id="site-settings-version">Version <em style="font-weight: normal;">(Hugo-only)</em> <code>version: string</code></h4>
+
 This allows you to configure the version of Hugo your site uses. This is limited to the latest versions of Hugo [supported by Forestry](https://forestry.io/docs/faq/what-versions-of-hugo-do-you-support/).
 
 ---
 
-**Content Sections** `sections:` `Array`
+<h4 id="site-settings-content-sections">Content Sections <code>sections: Array</code></h4>
 
 This setting allows you to tell Forestry which parts of your site contain editable content files.
 
@@ -148,7 +149,7 @@ The following is an example of a front matter template configuration file.
 
 ### Options
 
-**Pages** `pages:` `array`
+<h4 id="fmt-settings-pages">Pages <code>pages: array</code></h4>
 
 Provide an array of relative page paths that you want the front matter template to apply to.
 
@@ -160,13 +161,13 @@ _Note: if a page is defined in multiple Front Matter Templates, the last Front M
 
 ---
 
-**Hide Body** `hide_body:` `boolean`
+<h4 id="fmt-settings-hide-body">Hide Body <code>hide_body: boolean</code></h4>
 
 Toggle the display of the body editor on or off for this Front Matter Template.
 
 ---
 
-**Fields** `fields:` `array`
+<h4 id="fmt-settings-fields">Fields <code>fields: array</code></h4>
 
 The array of fields in this front matter template. They follow a standard format:
 

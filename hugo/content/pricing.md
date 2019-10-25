@@ -4,35 +4,30 @@ aliases:
 - "/plans/"
 type: pricing
 weight: 1
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: 2019-10-21T00:00:00-03:00
 faqs:
-- headline: What is Automatic build & deploy?
-  textline: Forestry will watch your repo and automatically deploy your site whenever
-    you commit an update (this is optional).
+- headline: Can I use the free plan for commercial use?
+  textline: Yes, we only bill based on number of users contributing to a site.
+- headline: Do you have free plans for non-profit organizations?
+  textline: If you are a small non-profit org, our free plan should be enough, else
+    please <a href="/support/" title="">contact us</a>.
+- headline: How many sites can I set up?
+  textline: You can set up unlimited sites on the Starter or Pro plan,     you will
+    be billed based on number of users in your organization.
+- headline: Do I need to configure my project?
+  textline: Import your repository, point to your content and you'll get a custom
+    CMS.
+- headline: What is a User?
+  textline: A _User_ refers to people in your organization who have access to your
+    sites and who are assigned a specific role (only available on paid plans).
 - textline: <a href="/docs/editing/remote-admin/" title="">Forestry Remote</a> allows
     you to install the Forestry CMS on your site (mysite.com/admin) via a single html
     file. No updates required
   headline: What is Forestry Remote?
-- headline: How many sites can I set up
-  textline: You can set up unlimited sites. If you are on the Business plan, you will
-    be billed based on number of users in your organization.
-- headline: Do I need to configure my project?
-  textline: No configuration needed. Forestry will parse your project and automatically
-    build your CMS.
-- headline: What is a Guest?
-  textline: A guest is a single-site user with limited permissions. Guests do not
-    get access to support and are often used for clients or external colleagues.
-- headline: What is a User?
-  textline: On the Business plan, you can invite any  number of users to your organization.
-    Unlike Guests, users can access many sites and can be assigned a role (developer,
-    editor, etc).
-- headline: Does the Business plan include Guests?
-  textline: Yes, the Business plan includes as many team members as you require ($9/month
-    each) and also includes up to 3 Guest users per site.
 headline: ''
-description: ''
+description: From free to Enterprise, pick up the plan that fits your needs.
 textline: ''
 images: []
 authors: []

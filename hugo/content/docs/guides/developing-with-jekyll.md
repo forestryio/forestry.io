@@ -10,15 +10,15 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 weight: 1
 menu:
+  docs:
+    name: Jekyll
+    parent: Developer Guides
+    identifier: developing-with-jekyll
+    weight: 2
   guides:
     parent: Developing with Jekyll
     identifier: _jekyll-intro
-    weight: 3
-  docs:
-    parent: Developer Guides
-    name: Jekyll
-    identifier: developing-with-jekyll
-    weight: 2
+    weight: 6
 
 ---
 Jekyll is one of the oldest static site generators available. Built by [GitHub][1], it has tons of community support and is very stable. Additional features can be added onto Jekyll through the use of plugins. It also uses the templating language [Liquid][2], which feels very familiar to developers and is also used by Shopify and other large-scale applications. 
@@ -41,8 +41,8 @@ To get started developing for Jekyll, you’ll need a basic understanding of HTM
 We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync][5] with the CMS, and enables you to use [continuous deployment][6].
 
 ## Further Reading
-- [Jekyll Documentation](http://jekyllrb.com/docs)
-- [Jekyll Quickstart Guide](http://jekyllrb.com/docs/quickstart/)
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [Jekyll Quickstart Guide](https://jekyllrb.com/docs/quickstart/)
 
 [1]: https://github.com
 [2]: https://shopify.github.io/liquid/

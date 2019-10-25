@@ -77,11 +77,12 @@ $sidebar-width: 320px;
       color: $color-copy-dark;
       font-weight: 400;
       text-decoration: none;
+    }
 
-      &.active {
-        color: $color-brand;
-        font-weight: 600;
-      }
+    &.active a,
+    & a.active {
+      color: $color-brand;
+      font-weight: 600;
     }
   }
 }

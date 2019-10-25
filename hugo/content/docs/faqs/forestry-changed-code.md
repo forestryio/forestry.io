@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 4
+    weight: 7
 
 ---
 As devs, we hate when people mess with our code. So we try to do this as little as possible but sometimes it is unavoidable.
@@ -20,7 +20,7 @@ As devs, we hate when people mess with our code. So we try to do this as little 
 ## Front Matter
 Forestry will remove comments and other formatting from front matter, and will also reorder your fields alphabetically. This is unfortunately unavoidable, as comments and order are not respected in the `YAML` or `TOML` specifications.
 
-## Newlines
+## New Lines
 New lines will be normalized so that all line endings are the same. This can make it look like your content was changed when all you did was edit your front matter.
 
 ## Menus

@@ -67,22 +67,23 @@ Our theme component will define the default schema in its `json_schema.yml` data
 
 Our default schema looks like this:
 
-
-    default:
-      list:
-        fields:
-        - key: title
-          field: title
-        - key: date
-          field: date
-      single:
-        fields:
-        - key: title
-          field: title
-        - key: date
-          field: date
-        - key: content
-          field: $PAGECONTENT
+```yaml
+default:
+  list:
+    fields:
+    - key: title
+      field: title
+    - key: date
+      field: date
+  single:
+    fields:
+    - key: title
+      field: title
+    - key: date
+      field: date
+    - key: content
+      field: $PAGECONTENT
+```
 
 The top-level key represents which content section this schema applies to, and the second-level denotes whether the configuration is for the list view or single view. There is one special field I’ve defined here called `$PAGECONTENT`, which we will deal with later.
 
@@ -98,18 +99,19 @@ As mentioned, we’re going to use [Hugo’s `.Scratch` feature](https://gohugo.
 
 To get a feel for how to use `.Scratch`, let’s start building `list.json.json`:
 
-
-    {{- .Scratch.Set "items" slice -}}
-    {{- range .Pages -}}
-        <!-- 
-        ...
-        Load the page's data into "item" 
-        ...
-        -->
-        {{- $.Scratch.Add "items" ($.Scratch.Get "item") -}}
-        {{- $.Scratch.Delete "item" -}}
-    {{- end -}}
-    {{- .Scratch.Get "items" | jsonify -}}
+```go-html-template
+{{- .Scratch.Set "items" slice -}}
+{{- range .Pages -}}
+    <!-- 
+    ...
+    Load the page's data into "item" 
+    ...
+    -->
+    {{- $.Scratch.Add "items" ($.Scratch.Get "item") -}}
+    {{- $.Scratch.Delete "item" -}}
+{{- end -}}
+{{- .Scratch.Get "items" | jsonify -}}
+```
 
 Using `.Scratch.Set` and `.Scratch.Get`, we can set and retrieve values on the `Scratch` object. `.Scratch.Add` adds a value to a slice. In this case, we’re iterating over all of the pages in our list, adding the page’s data into a `.Scratch` value called `item`, and then adding that value to the `items` slice. This slice is then output as JSON.
 
@@ -119,8 +121,9 @@ Alright, here comes the tricky part: parsing the schema from the `json_schema.ym
 If you need more help, I've previously discussed [using `dict` to pass more context into partials](https://forestry.io/blog/3-tips-for-mastering-blocks/#pass-page-context-to-your-hugo-block-layouts).
 {{% /tip %}}
 
-
-    {{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "list") -}}
+```go-text-template
+{{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "list") -}}
+```
 
 We’re passing the current page in our loop as `currentPage`, the root context as `Root`, and another one called `SchemaType`. Since we’re planning to use this same partial for the single layout as well, we need some way for the `schema_item.tmpl` template to know whether we’re in a single or list context, so we create a variable called `SchemaType` and pass it the value of `list`.
 
@@ -128,31 +131,35 @@ The way we've set up our code, we are expecting the `schema_item.tmpl` file to p
 
 The first thing we need to do is locate a compatible schema configuration. We will initially look for a schema defined for the current content section, falling back to `default` if it isn’t found. For example, when rendering the list view for posts, we will check for configuration at `posts.list`, falling back to `default.list` if that doesn’t exist.
 
-
-    {{- if and (isset $.Root.Site.Data.json_schema .currentPage.Section) (isset (index $.Root.Site.Data.json_schema .currentPage.Section) .SchemaType) -}}
-        {{- $.Root.Scratch.Set "schema" (index (index $.Root.Site.Data.json_schema .currentPage.Section) .SchemaType) -}}
-    {{- else -}}
-        {{- $.Root.Scratch.Set "schema" (index $.Root.Site.Data.json_schema.default .SchemaType) -}}
-    {{- end -}}
+```go-text-template
+{{- if and (isset $.Root.Site.Data.json_schema .currentPage.Section) (isset (index $.Root.Site.Data.json_schema .currentPage.Section) .SchemaType) -}}
+    {{- $.Root.Scratch.Set "schema" (index (index $.Root.Site.Data.json_schema .currentPage.Section) .SchemaType) -}}
+{{- else -}}
+    {{- $.Root.Scratch.Set "schema" (index $.Root.Site.Data.json_schema.default .SchemaType) -}}
+{{- end -}}
+```
 
 We’re using `.Scratch` again to temporarily store the schema configuration we’re going to use. This will make it easier to reference it in the subsequent code.
 
 The next thing we’re going to do is set the `uri` value of our data item. This is one value that I decided should always be set in an item's JSON. It's useful not only to locate the single item URL for an item in a list, but also to serve as a unique identifier for the item. We can use `.Scratch.SetInMap` to add the 'uri' key to our 'item' object.
 
-    {{- $.Root.Scratch.SetInMap "item" "uri" ($.currentPage.OutputFormats.Get "json").Permalink -}}
+```go-text-template
+{{- $.Root.Scratch.SetInMap "item" "uri" ($.currentPage.OutputFormats.Get "json").Permalink -}}
+```
 
 `(.OutputFormats.Get` `"``json``"``).Permalink` returns the URL of the item for the JSON output format.
 
 Now that that’s done, all that’s left is to loop over the fields defined in our schema and add each one to the `.Scratch` object. At this point we need to check for any special fields in our schema, like `$PAGECONTENT`. The `$PAGECONTENT` field is just a placeholder for the HTML content of the page. The rest can be accessed via `.Params`.
 
-
-    {{- range ($.Root.Scratch.Get "schema").fields -}}
-        {{- if eq .field "$PAGECONTENT" -}}
-        {{- $.Root.Scratch.SetInMap "item" (default "content" .key) (index $.currentPage.Content) -}}
-        {{- else -}}
-            {{- $.Root.Scratch.SetInMap "item" (default .field .key) (index $.currentPage.Params .field) -}}
-        {{- end -}}
+```go-text-template
+{{- range ($.Root.Scratch.Get "schema").fields -}}
+    {{- if eq .field "$PAGECONTENT" -}}
+    {{- $.Root.Scratch.SetInMap "item" (default "content" .key) (index $.currentPage.Content) -}}
+    {{- else -}}
+        {{- $.Root.Scratch.SetInMap "item" (default .field .key) (index $.currentPage.Params .field) -}}
     {{- end -}}
+{{- end -}}
+```
 
 {{% tip %}}
 Using the `default` function, we make the `key` parameter optional when defining a schema. It will default to the name of the front matter field.
@@ -162,9 +169,10 @@ That’s all we have to do for our `schema_item.tmpl` partial! Deciding to let t
 
 Here’s the cool part: since we made the `schema_item.tmpl` partial do all the work, our `single.json.json` layout code is only two lines!
 
-
-    {{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "single") -}}
-    {{- .Scratch.Get "item" | jsonify -}}
+```go-text-template
+{{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "single") -}}
+{{- .Scratch.Get "item" | jsonify -}}
+```
 
 We just need to load the `schema_item.tmpl` partial and tell it we’re using the `single` schema, and then output the results (stored in `.Scratch`  as `item` again) with the `jsonify` function. Isn’t it great when it’s easy?
 
@@ -184,25 +192,25 @@ To demonstrate this, I've created a demo site that uses the [Paper theme](https:
 
 We can install the theme component with the following command:
 
-```
+```bash
 git submodule add https://github.com/dwalkr/hugo-json-api-component themes/json-api
 ```
 
 Then, we just have to open up `config.toml` and change the following line:
 
-```
+```toml
 theme = "paper"
 ```
 
 to this:
 
-```
+```toml
 theme = ["paper","json-api"]
 ```
 
 Finally, to enable the JSON output format for our list and single views, we need to specify it in the `outputs` section of our `config.toml` file:
 
-```
+```toml
 [outputs]
     page = ["html","json"]
     section = ["html","json"]
@@ -215,7 +223,7 @@ Once this is done, restart your Hugo server and you should be able to access the
 
 The default schema works pretty well for our content in `posts`, but the cars that we added to the `garage` section have additional front matter that I want to expose in the JSON. Since the JSON API component lets us customize the JSON schema by section, this is really easy to do! Just add a file at `data/json_schema.yml` and configure it like this:
 
-```
+```yaml
 garage:
   list:
     fields:

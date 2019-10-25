@@ -2,28 +2,22 @@
 title: Developing with Gatsby
 date: 2018-11-20 00:00:00 +0000
 toc: false
-description: Gatsby is a highly flexible static site generator that uses ReactJS under the hood. This guide will explain how Gatsby works, and help you get the most out of your Gatsby site in the Forestry CMS.
+description: Gatsby is a highly flexible static site generator that uses ReactJS under
+  the hood. This guide will explain how Gatsby works, and help you get the most out
+  of your Gatsby site in the Forestry CMS.
 menu:
+  docs:
+    name: Gatsby
+    parent: Developer Guides
+    identifier: developing-with-gatsby
+    weight: 3
   guides:
-    parent: Developing with Gatsby
     name: Introduction
+    parent: Developing with Gatsby
     identifier: gatsby-intro
     weight: 1
-  docs:
-    parent: Developer Guides
-    name: Gatsby
-    identifier: developing-with-gatsby
-    weight: 999
+
 ---
-
-{{% feature_flag "gatsby-support" "on" %}}
-{{% warning "Beta Feature" %}}
-
-Gatsby support is currently in beta. Please direct any issues you encounter to the **gatsby-beta** channel in our community Slack.
-
-{{% /warning %}}
-{{% /feature_flag %}}
-
 Gatsby is a highly flexible static site generator that uses ReactJS under the hood. Pages are implemented as React components and the whole site is bundled as a single page app (SPA), but also uses a static site build process to render a static HTML version of the site. The result is a static site that is SEO friendly, but whose UI is hydrated into a React SPA once a page is loaded.
 
 ## Gatsby is a Departure From Convention-based SSGs
@@ -50,16 +44,6 @@ It should be noted that Gatsby users typically experience slower build times com
 - Have a site with a large number of pages and want fast build times
 - Don't want to work with React or GraphQL
 - Want a website that runs little to no JavaScript on the client side
-
-{{% feature_flag "gatsby-support" "off" %}}
-
-## Currently in Beta
-
-Support for Gatsby in Forestry is currently in closed beta, but you can [follow us on Twitter](https://twitter.com/forestryio/) or [join our community Slack](/blog/join-our-slack-community/) to be the first to know when Gatsby support becomes available for everyone!
-
-{{% /feature_flag %}}
-
-{{% feature_flag "gatsby-support" "on" %}}
 
 ## Getting Started
 
@@ -120,7 +104,3 @@ Here are some options for getting around this:
 
 - Store and reference images from the `static/` directory (this is the solution currently used by our [blog starter](https://github.com/forestryio/gatsby-starter-blog/blob/forestry/.forestry/settings.yml#L20)). This will not allow you to transform images via GraphQL queries.
 - Use [gatsby-remark-normalize-paths](https://www.gatsbyjs.org/packages/gatsby-remark-normalize-paths/) to convert project-relative absolute paths to relative paths.
-
-
-
-{{% /feature_flag %}}

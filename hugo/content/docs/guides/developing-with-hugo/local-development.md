@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/local-development/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 related: ''
 tags: ''
@@ -12,7 +12,7 @@ weight: 7
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 11
+    weight: 17
 
 ---
 Hugo allows you to work on your site in a local environment on your computer. It requires you to install the Hugo binary on your local machine.
@@ -24,11 +24,11 @@ If you set up and imported your site with Git, local development becomes much ea
 
 To get started, clone your repository to your desktop. For example:
 
-	$ git clone https://github.com/forestryio/jekyll-demo.git
+	$ git clone https://github.com/forestryio/hugo-demo.git
 
 Now you can begin working on your site. Any changes made to your site can be committed in Git, and will automatically be synced with your Forestry CMS.
 
-## Working with a Zip-based site
+<!-- ## Working with a Zip-based site
 If you set up and imported your site with a  zip file, local development becomes more challenging.
 
 Any changes made to your site must be rezipped and reimported into your Forestry CMS.
@@ -41,7 +41,7 @@ If you didn’t change any of your content files, then you can choose "Update pr
 
 **IF YOU UPDATED CONTENT FILES**
 
-If you did change your content files, then you can choose `Update project files & content files` which will update the source code and all of the content in Forestry.
+If you did change your content files, then you can choose `Update project files & content files` which will update the source code and all of the content in Forestry.-->
 
 ## Serving your site locally
 Hugo comes with a `livereload` local development server built into it’s binary. This will allow you to develop locally on your machine, and will automatically rebuild your site and refresh the browser as you make changes.

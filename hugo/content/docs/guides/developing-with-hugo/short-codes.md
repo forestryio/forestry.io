@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/short-codes/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: What Hugo short codes are and how they work
 tags: ''
 title: Hugo Shortcodes
@@ -11,7 +11,7 @@ weight: 8
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 17
+    weight: 24
 
 ---
 You can extend the functionality of markdown in Hugo with short codes. Short codes are special templates that are called when a short code is used inside the content body.
@@ -38,4 +38,4 @@ For a full list of these short codes and how to use them, see the references bel
 Hugo also allows you to build your own short codes. See the Hugo short code documentation in the references below.
 
 ## Further Reading
-- [Hugo Short Code Reference](https://gohugo.io/extras/shortcodes/)
+- [Hugo Short Code Reference](https://gohugo.io/content-management/shortcodes/)

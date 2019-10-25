@@ -1,0 +1,11 @@
+<div class="code-tabs">
+<div class="tabcontent">
+    {{ .Inner }}
+</div>
+<div class="tab-labels">
+{{- range $.Page.Scratch.Get "tablabels" -}}
+<span class="tab-label" data-for="{{ urlize . }}" onclick="javascript:setCodeTabs('{{ urlize . }}')">{{ . }}</span>
+{{- end -}}
+</div>
+</div>
+{{ $.Page.Scratch.Set "tablabels" slice }}

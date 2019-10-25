@@ -1,7 +1,6 @@
 ---
 label: landing-page
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: title
@@ -20,6 +19,3 @@ fields:
   default: blocks
 pages:
 - hugo/content/blocks.md
-- hugo/content/test-landing-page.md
-- hugo/content/landing-page-test.md
-- hugo/content/another-landing-page.md

@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/asset-pipeline/"
-date: 2013-07-24 00:00:00 +0000
+date: 2017-07-24 00:00:00 +0000
 description: ''
 tags: ''
 title: Asset Pipeline
@@ -11,19 +11,19 @@ weight: 5
 menu:
   guides:
     parent: Developing with Hugo
-    weight: 15
+    weight: 22
 
 ---
-Hugo supports pre-procesing CSS files via SCSS, and post-processing via PostCSS.
+Hugo supports pre-processing CSS files via SCSS, and post-processing via PostCSS.
 
 ## Hugo's Built-in Asset Pipeline
 
 Using Hugo's asset pipeline, you can use Sass, SCSS, and PostCSS. You can also bundle and minify assets.
 
-[Hugo docs: Pipes](https://gohugo.io/hugo-pipes/)
+[Hugo docs: Pipes](https://gohugo.io/hugo-pipes/introduction/)
 
 
-## Best Practises for Gulp, Grunt, and Other Build Tools
+## Best Practices for Gulp, Grunt, and Other Build Tools
 
 In order to use external build like Gulp, Grunt, or Webpack with Forestry's [previewing][1] and [deployment][2], you should configure them as follows:
 
