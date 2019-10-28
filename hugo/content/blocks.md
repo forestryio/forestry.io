@@ -40,7 +40,7 @@ blocks:
     Forestry UI.
   headline: Add and Compose Blocks
   visual:
-    permalink: "/uploads/2018/04/block-rearrange-1.gif"
+    permalink: "/uploads/2019/10/block-rearrange.gif"
     alt: Arrange and Compose Blocks in the UI
 - template: feature
   textline: The code inside Block Templates is always left unchanged making code maintenance

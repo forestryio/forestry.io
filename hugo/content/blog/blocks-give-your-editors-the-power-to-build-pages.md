@@ -33,7 +33,7 @@ This feature was inspired by CraftCMS' [Matrix fields](https://craftcms.com/feat
 
 Blocks is a Field Type that is made up of multiple templates, so-called _Block Templates_. These templates are repeatable layouts that can be used without having to touch any code.
 
-![](/uploads/2018/04/block-compose.gif)
+![](/uploads/2019/10/block-rearrange.gif)
 
 Using Blocks, Editors can compose and reorganize entire pages without the support of a developer.
 
