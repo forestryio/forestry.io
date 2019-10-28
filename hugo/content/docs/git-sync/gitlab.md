@@ -23,11 +23,11 @@ Forestry's allows you to import your static site through public and private GitL
 
 To import a site with GitLab, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
-{{% pretty_screenshot img="/uploads/2019/04/add-site-generator.png" %}}
+{{% pretty_screenshot img="/uploads/2019/07/select-generator.png" %}}
 
 From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose Choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
-{{% pretty_screenshot img="/uploads/2019/04/add-site-provider.png" %}}
+{{% pretty_screenshot img="/uploads/2019/07/select-provider.png" %}}
 
 Now, choose "GitLab" from the list of options.
 

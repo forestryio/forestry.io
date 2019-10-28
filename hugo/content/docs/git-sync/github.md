@@ -25,11 +25,11 @@ Forestry allows you to import your static site through public and private GitHub
 
 To import a site with GitHub, [login](https://app.forestry.io/login) to Forestry and follow these instructions:
 
-{{% pretty_screenshot img="/uploads/2019/04/add-site-generator.png" %}}
+{{% pretty_screenshot img="/uploads/2019/08/select-generator.png" %}}
 
 From the [dashboard](https://app.forestry.io/dashboard), click "Add Site". In the modal that opens, choose the static site generator your site is built with from the dropdown menu, and then press "Next".
 
-{{% pretty_screenshot img="/uploads/2019/04/add-site-provider.png" %}}
+{{% pretty_screenshot img="/uploads/2019/07/select-provider.png" %}}
 
 Now, choose "GitHub" from the list of options.
 
@@ -57,7 +57,7 @@ If you're importing a Hugo or Jekyll site, Forestry will attempt to locate your 
 
 When you're done just click on "Import Site" and let us get your site ready.
 
-To invite collaborators to edit content on your project, see [user roles](/docs/settings/collaborators/). 
+To invite collaborators to edit content on your project, see [user roles](/docs/settings/collaborators/).
 
 ## Importing from a GitHub organization
 
@@ -69,7 +69,7 @@ If you are an administrator of your application and have enabled third-party app
 
 To do so, go to the _Settings page_ of your organization, and then navigate to the _Third-party access_ tab.
 
-![](/uploads/2018/01/49-1.png)
+![](/uploads/2018/01/50.png)
 
 To the right of "Forestry", click the "Edit" button.
 

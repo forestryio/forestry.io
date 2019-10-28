@@ -108,7 +108,7 @@ The `nav` option enables you to configure the navigation bar at the top of the p
     module.exports = {
         themeConfig: {
             nav: [
-                { text: 'Docs', 
+                { text: 'Docs',
                   items: [
                       { text: 'Home', link: '/' },
                       { text: 'Usage', link: '/docs/usage.html' },
@@ -133,7 +133,7 @@ Checkout the [VuePress deployment docs](https://vuepress.vuejs.org/guide/deploy.
 
 By the way, you can totally edit your VuePress site in Forestry now! 🎉
 
-![](/uploads/2018/08/add-site-vuepress.png)
+![](/uploads/2019/07/select-generator.png)
 
 To do so, import a new site and select **VuePress** as the engine. After the site imports, you will need to configure your content sections. Navigate to the **Settings** section and click the **Sidebar** tab. Follow the instructions in the [sidebar documentation](https://forestry.io/docs/settings/content-sections/) to tell Forestry which content files you want to be able to edit.
 

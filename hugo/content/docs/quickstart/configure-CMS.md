@@ -33,7 +33,7 @@ For details on how to set up the sidebar, take a look at our [sidebar configurat
 
 ## Setting up Image Paths
 
-When your team uploads images and other media, you want to ensure they're going to the right directory. Set this up by going to **Settings > File Paths**.
+When your team uploads images and other media, you want to ensure they're going to the right directory. Set this up by going to **Settings > Media**.
 
 ![](/uploads/2018/01/settings.png)
 
@@ -41,13 +41,13 @@ You should see the following settings which are described below.
 
 ![](/uploads/2019/02/file-paths.png)
 
-### Upload Folder
+### Upload Directory
 
 The folder within your repo to store the uploaded media. If this is set to a directory that doesn't exist, Forestry will create that directory.
 
-### Front Matter File URL
+### Public Path
 
-The path that will **prepend** media files uploaded from Front Matter fields. For example, if this value were set to `/uploads` Forestry would write out the following image value.
+The path that will **prepend** media files uploaded from Front Matter fields. For example, if this value was set to `/uploads` Forestry would write out the following image value.
 
 ```yaml
 ---
@@ -57,47 +57,28 @@ image: /uploads/image.jpg
 ---
 ```
 
-### Content Body URL
+### Front Matter Path
 
-The path that will **prepend** media files uploaded in the body editor.
-
-This usually has the same value as the `Front Matter File URL`, but in some cases you may need these paths to be different. If this value were set to `/uploads` Forestry would write out the following in your Markdown body:
-
-    ## My new post
-    
-    The content body URL path is prepended to images
-    uploaded in the document body, like so:
-    
-    ![](/uploads/image.jpg)
+This usually has the same value as the `Public Path`, but in some cases you may need these paths to be different.
 
 ***
 
-### Example Media Settings
+### Media Settings examples
 
-With Hugo, all static assets belong in your `/static` directory which then get outputted in the root of your built site.
+With Hugo, all [static assets](https://gohugo.io/content-management/static-files/) belong in your `/static` directory which then get outputted in the root of your built site.
 
-However, Jekyll supports static assets in your project root.  For this reason, we often see the following File Path settings in Forestry:
+Gatsby will store your assets in [`static` folder](https://www.gatsbyjs.org/docs/static-folder/).
 
-<table>
-<tr>
-<th></th>
-<th>Upload Directory</th>
-<th>Front Matter File Path</th>
-<th>Body File Path</th>
-</tr>
-<tr>
-<td>Hugo</td>
-<td><code>/static/uploads</code></td>
-<td><code>/uploads</code></td>
-<td><code>/uploads</code></td>
-</tr>
-<tr>
-<td>Jekyll</td>
-<td><code>/uploads</code></td>
-<td><code>/uploads</code></td>
-<td><code>/uploads</code></td>
-</tr>
-</table>
+Eleventy is very flexible and do no respond to a single convention, you often see projects [store images](https://www.11ty.io/docs/copy/) in a `/src/images/` folder.
+
+Jekyll supports static assets in your project root. Many gem-based themes store images in `/assets/images`.
+
+|          | Upload Directory | Front Matter File Path | Body File Path |
+|----------|------------------|------------------------|----------------|
+| Hugo     | /static/uploads  | /uploads               | /uploads       |
+| Gatsby   | /static/images   | /images                | /images        |
+| Eleventy | /src/images      | /images                | /images        |
+| Jekyll   | /assets/images   | /assets/images         | /assets/images |
 
 ### Variables
 
@@ -109,11 +90,13 @@ Each of these settings supports the following variables at upload time:
 
 When these variables are used in the _Uploads Folder_ setting, Forestry will create the necessary folders if they don't exist when a file is uploaded.
 
-For this (Hugo) site, we organize media by month, like so:
+For this (Hugo) site, we organize media like so:
 
-    upload_path: /hugo/static/uploads/:year:/:month:
-    frontmatter_file_url_template: /uploads/:year:/:month:
-    body_file_url_template: /uploads/:year:/:month:
+```yaml
+upload_dir: "static/uploads"
+public_path: "/uploads"
+file_template: ":year:/:month:/:filename:"
+```
 
 For more information on media settings visit the [Media Library doc](/docs/editing/media-library/#configuring-the-media-library).
 
