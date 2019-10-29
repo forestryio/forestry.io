@@ -74,7 +74,8 @@ In our opinion the easiest way to add a Gemfile to a project is to have Jekyll g
 * open a command line
 * navigate to the project directory
 * make sure you have a clean working tree
-* execute the `jekyll new` command with the appropriate options
+* generate a Gemfile with `bundle init`
+* add project's dependencies by manually editing the `Gemfile` or using `bundle add`command.
 * install the dependencies with bundler by running `bundle install`
 * test that the project works the way that you expect it to with bundler
 * commit and push those changes with git
@@ -98,13 +99,11 @@ git status
 # this command will generate a template Gemfile,
 # calculate the dependency graph and install the
 # dependencies with bundler
-jekyll new . --force
+bundle init
 
-# Now you can make  any changes you need to the
-# Gemfile, the template is well commented  with
-# regions to comment and uncomment based on common
-# uses like  gem-based themes and setup for publishing
-# to github pages.
+# Now you can make any changes you need to the
+# Gemfile. See https://jekyllrb.com/docs/ruby-101/#gemfile 
+# for a basic example
 
 # this command will test that the gemfile works and
 # serve your project to localhost:4000
