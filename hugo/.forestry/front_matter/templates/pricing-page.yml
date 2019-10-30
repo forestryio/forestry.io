@@ -21,8 +21,8 @@ fields:
   label: weight
   description: ''
   default: 0
-  required: true
   config:
+    required: true
     min: 
     max: 
     step: 
