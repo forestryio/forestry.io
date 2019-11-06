@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/careers/_index.md
 - hugo/content/about-us.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/new-pricing-organization-accounts.md
@@ -234,7 +235,6 @@ pages:
 - hugo/content/blog/introducing-teams.md
 - hugo/content/careers/senior-ruby-ror-software-engineer.md
 - hugo/content/careers-wip.md
-- hugo/content/careers/_index.md
 - hugo/content/blog/full-text-searching-with-postgres.md
 - hugo/content/blog/removing-bitbucket-login.md
 - hugo/content/docs/troubleshooting

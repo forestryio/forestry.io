@@ -24,7 +24,7 @@ menu:
     parent: Company
 
 ---
-We’re a small, growing team, headquartered in Canada with roughly half our staff working remotely from North America and Europe. We take our time hiring, and we hire for the person, not simply for the role. We’re a diverse team that values collaboration, respect and empathy. We strive to reflect those values in our hiring process.  
+We’re a small, growing team, headquartered in Canada with roughly half our staff working remotely. We take our time hiring, and we hire for the person, not simply for the role. We’re a diverse team that values collaboration, respect and empathy. We strive to reflect those values in our hiring process.  
 <br/>
 
 ### Our Hiring Process
