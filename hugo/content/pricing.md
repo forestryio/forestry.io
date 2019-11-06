@@ -6,13 +6,12 @@ type: pricing
 weight: 1
 publishdate: 2017-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-date: 2019-10-21T00:00:00-03:00
+date: 2019-10-21T03:00:00.000+00:00
 faqs:
 - headline: Can I use the free plan for commercial use?
   textline: Yes, we only bill based on number of users contributing to a site.
-- headline: Do you have free plans for non-profit organizations?
-  textline: If you are a small non-profit org, our free plan should be enough, else
-    please <a href="/support/" title="">contact us</a>.
+- headline: Do you offer non-profit discounts?
+  textline: 'Yes, please contact us here: <a href="/support/" title="">contact us</a>.'
 - headline: How many sites can I set up?
   textline: You can set up unlimited sites on the Starter or Pro plan,     you will
     be billed based on number of users in your organization.
