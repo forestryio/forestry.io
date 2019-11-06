@@ -12,9 +12,6 @@ faqs:
   textline: Yes, we only bill based on number of users contributing to a site.
 - headline: Do you offer non-profit discounts?
   textline: 'Yes, please contact us here: <a href="/support/" title="">contact us</a>.'
-- headline: How many sites can I set up?
-  textline: You can set up unlimited sites on the Starter or Pro plan,     you will
-    be billed based on number of users in your organization.
 - headline: Do I need to configure my project?
   textline: Import your repository, point to your content and you'll get a custom
     CMS.
