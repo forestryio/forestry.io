@@ -1,6 +1,6 @@
 ---
 headline: Work at Forestry.io
-title: Careers
+title: Job Openings
 publishdate: 2017-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 date: 2017-12-31T04:00:00.000+00:00
@@ -18,11 +18,6 @@ private: false
 weight: 
 aliases: []
 photo_credit: ''
-menu:
-  footer:
-    weight: 1
-    parent: Company
-
 ---
 We’re a small, growing team, headquartered in Canada with roughly half our staff working remotely. We take our time hiring, and we hire for the person, not simply for the role. We’re a diverse team that values collaboration, respect and empathy. We strive to reflect those values in our hiring process.  
 <br/>
