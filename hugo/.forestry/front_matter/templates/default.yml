@@ -25,7 +25,7 @@ fields:
   description: Date this page should be made public
   config:
     date_format: MMMM DD, YYYY
-    time_format: h:mmA
+    time_format: h:mm A
     required: true
   default: now
 - type: datetime
