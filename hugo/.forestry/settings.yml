@@ -12,8 +12,8 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: hugo/content/careers
-  label: Careers
+  path: hugo/content/job-openings
+  label: Job Openings
   create: all
   match: "**/*"
 - type: directory
