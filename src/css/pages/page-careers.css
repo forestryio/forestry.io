@@ -2,6 +2,37 @@
   padding-top: 5rem;
 }
 
+.careers__wrapper h3 {
+  margin-top: 0;
+}
+
 .careers-section {
-  /* needs more codez */
+  padding: 6rem 0;
+}
+
+.careers-section:nth-child(2n) {
+  background-color: #f8f9fa;
+}
+
+.careers-section .container > *:last-child {
+  margin-bottom: 0;
+}
+
+.careers-columns {
+  margin-top: 1rem;
+}
+
+.careers-columns div {
+  display: block;
+  break-inside: avoid-column;
+}
+
+.careers-columns div h3 {
+  margin-top: 0;
+}
+
+@media (min-width: 760px) {
+  .careers-columns {
+    columns: 2;
+  }
 }
