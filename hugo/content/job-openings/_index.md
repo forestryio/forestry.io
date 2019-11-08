@@ -20,12 +20,13 @@ aliases: []
 photo_credit: ''
 ---
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io) and include your:
-<br/>
-<br/>
 
-- - Resume/CV
-- - Cover Letter
-- - LinkedIn, GitHub or other relevant social accounts that describe your professional experience
-- - Links to your personal website, blog or portfolios, if available and applicable  
+\
+\
+
+* – Resume/CV
+* – Cover Letter
+* – LinkedIn, GitHub or other relevant social accounts that describe your professional experience
+* – Links to your personal website, blog or portfolios, if available and applicable  
 
 <!--more-->
