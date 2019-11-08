@@ -2,12 +2,36 @@
   padding-top: 5rem;
 }
 
-.careers__wrapper h3 {
-  margin-top: 0;
+.careers__wrapper .careers-section h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0.75em;
 }
 
-.careers-section {
+.careers__wrapper .careers-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75em;
+}
+
+.careers__wrapper .careers-section {
   padding: 6rem 0;
+}
+
+.careers__wrapper .center {
+  text-align: center;
+}
+
+.careers__wrapper .careers-section p {
+  padding: 0;
+}
+
+.careers__wrapper .careers-section p.big {
+  font-size: 1.25rem;
+}
+
+.careers__wrapper .careers-section p:not(:last-child) {
+  margin-bottom: 2em;
 }
 
 .careers-section:nth-child(2n) {
@@ -19,20 +43,40 @@
 }
 
 .careers-columns {
-  margin-top: 1rem;
+  padding: 2rem 0 0 0;
+  column-gap: 2.5rem;
+  border: 1px solid rgb(241, 243, 245);
+  padding: 2.5rem;
 }
 
 .careers-columns div {
   display: block;
   break-inside: avoid-column;
+  margin-bottom: 2.5rem;
 }
 
 .careers-columns div h3 {
+  font-size: 1.25rem;
   margin-top: 0;
 }
 
 @media (min-width: 760px) {
   .careers-columns {
     columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .careers-columns {
+    margin: 0 -6rem;
+    width: calc(100% + 12rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .careers-columns {
+    columns: 3;
+    margin: 0 -14rem;
+    width: calc(100% + 28rem);
   }
 }
