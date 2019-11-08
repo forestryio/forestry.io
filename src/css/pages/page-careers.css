@@ -31,7 +31,7 @@
 }
 
 .careers__wrapper .careers-section p:not(:last-child) {
-  margin-bottom: 1.75em;
+  margin-bottom: 2rem;
 }
 
 .careers-section:nth-child(2n) {
