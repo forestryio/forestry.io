@@ -1,11 +1,11 @@
 ---
-title: Back-end Software Engineer (NodeJS)
+title: 'Hiring: Back-end Software Engineer (NodeJS)'
 description: ''
 date: 2019-11-12T21:34:45.000+00:00
 publishdate: 2019-11-12T21:34:45.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 authors: []
-headline: 'Hiring: Back-end Software Engineer (NodeJS)'
+headline: ''
 textline: ''
 images: []
 photo_credit: ''
