@@ -87,6 +87,13 @@ eleventy --serve --port 8080 --output=dist
 ```
 
 {{% /tab %}}
+{{% tab "Hexo" %}}
+
+```bash
+hexo server -p 8080
+```
+
+{{% /tab %}}
 {{% /code_tabs %}}
 
 {{% tip %}}
