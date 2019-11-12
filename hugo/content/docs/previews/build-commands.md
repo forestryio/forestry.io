@@ -11,7 +11,6 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 
 ---
-
 **Instant previews**  allow for you to spin up a development server in our preview environment which will drastically reduce preview times in most cases.
 
 To help you get started, we provide [default commands](#default-commands). You can then tailor preview settings to your needs, if your website source lives in a subdirectory for example or if you use a different script to run your preview.
@@ -118,6 +117,20 @@ build:
   preview_output_directory: "_site"
   preview_env:
   - JEKYLL_ENV=staging
+```
+
+### Hexo example
+
+Provided you added an npm script to run Hexo server on `0.0.0.0:8080`, `.forestry/settings.yml` for an Hexo site could look like:
+
+```yaml
+build:
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run forestry:preview
 ```
 
 ### Default commands
