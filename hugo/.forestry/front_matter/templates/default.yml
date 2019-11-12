@@ -141,6 +141,7 @@ fields:
   name: menu
   label: menu
 pages:
+- hugo/content/job-openings/hiring-back-end-software-engineer-nodejs.md
 - hugo/content/blog/vuepress-brings-your-documentation-to-life.md
 - hugo/content/blog/new-pricing-organization-accounts.md
 - hugo/content/blog/announcing-tina-an-open-source-site-editor.md
