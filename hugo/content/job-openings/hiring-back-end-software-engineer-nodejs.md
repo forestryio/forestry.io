@@ -24,7 +24,7 @@ draft: true
 ---
 We’re looking for a software engineer to help us build [TinaCMS Teams](https://tinacms.org/teams "TinaCMS Teams"), our pro back-end for the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). You’ll work on building and scaling our NodeJS back-end: the API, databases, infrastructure and integrations with 3rd party services. You’ll also work on the open source project TinaCMS. The person in this role will have a lot of autonomy on a small team with the goal of bringing the best editing experience (TinaCMS) to larger teams.
 
-* We are looking for a full-time employee to fill this role.
+* This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -2). We are open to extending our range to UTC +1 for the right candidate.
 
 ### Techs You'll Work With
@@ -32,8 +32,6 @@ We’re looking for a software engineer to help us build [TinaCMS Teams](https:/
 * JavaScript, TypeScript, NodeJS (KOA), Postgres, AWS, Google Cloud, Kubernetes & more.
 
 ### To Be Successful in this Role, You'll Need
-
-In addition to the characteristics we look for candidates for all roles:
 
 * To be strong with JavaScript, TypeScript and the JS ecosystem.
 * Previous experience building and scaling a back-end system in the cloud (bonus points for working with NodeJS -KOA or Express).
@@ -45,7 +43,7 @@ Forestry.io is on a mission to help people build a better web. We’re building 
 
 We’re a small, growing team, headquartered in PEI, Canada with roughly half our staff working remotely. We take our time hiring, and we hire for the person, not simply for the role. We value collaboration, respect and empathy and we strive to reflect those values in our hiring process.
 
-[Read more about our culture, values, hiring process and perks here](https://forestry.io/careers/).
+Read more about our [culture, values, hiring process and perks](https://forestry.io/careers).
 
 ### Apply
 
