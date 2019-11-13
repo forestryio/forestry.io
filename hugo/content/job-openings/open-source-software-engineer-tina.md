@@ -34,8 +34,9 @@ We’re looking for a software engineer to help us build the recently open-sourc
 
 ### Job Requirements
 
-* To be strong with JavaScript and/or TypeScript.
+* Strong with JavaScript and/or TypeScript.
 * The desire and ability to build an inclusive, helpful and friendly environment for contributors.
+* Top-notch communication skills.
 
 ### An Ideal Candidate Will Have
 
