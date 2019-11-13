@@ -1,5 +1,5 @@
 ---
-title: 'Hiring: Back-end Software Engineer (NodeJS) - Tina Teams'
+title: 'Hiring: Open Source Software Engineer (JavaScript/TypeScript) - TinaCMS'
 description: ''
 date: 2019-11-12T21:34:45.000+00:00
 publishdate: 2019-11-12T21:34:45.000+00:00
@@ -21,23 +21,26 @@ aliases: []
 menu: []
 
 ---
-We’re looking for a software engineer to help us build [Tina Teams](https://tinacms.org/teams "Tina Teams"), our pro back-end for the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). You’ll work on building and scaling our NodeJS back-end: the API, databases, infrastructure and integrations with 3rd party services. You’ll also work on the open source project TinaCMS. The person in this role will have a lot of autonomy on a small team with the goal of bringing the best editing experience (TinaCMS) to larger teams.
+We’re looking for a software engineer to help us build the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). We believe TinaCMS can be a game-changer for content management on the web you'll be at the heart of its development. You’ll work on developing core features on [the Tina roadmap](https://github.com/tinacms/tinacms/blob/master/ROADMAP.md) as well as helping ensure the open source project is great for contributors.
 
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).
 
 ### Techs You'll Work With
 
-* JavaScript, TypeScript, NodeJS (Koa), Postgres, Google Cloud, Docker, Kubernetes & more.
+* JavaScript, TypeScript, React.
+* We have plans to integrate Tina with other frameworks in the JS ecosystem, so you may end up working with things like NextJS, Vue, Nuxt, etc.
 
 ### Job Requirements
 
-* To be strong with JavaScript & TypeScript.
-* Previous experience building and scaling a back-end system (API, database, infrastructure) in the cloud.
+* To be strong with JavaScript and/or TypeScript.
+* Previous experience contributing to open source.
+* The desire and ability to build an inclusive, helpful and friendly environment for contributors.
 
 ### An Ideal Candidate Will Have
 
-* Experience working with the tech stack mentioned above, specifically NodeJS, Docker & Kubernetes.
+* Previous experience building CMSs or rich text editors. 
+* Previous experience leading an open source project.
 
 ## About Forestry.io
 
