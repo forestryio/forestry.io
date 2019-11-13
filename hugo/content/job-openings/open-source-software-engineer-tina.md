@@ -1,5 +1,5 @@
 ---
-title: 'Hiring: Open Source Software Engineer (JavaScript/TypeScript) - TinaCMS'
+title: 'Hiring: Open Source Software Engineer (JavaScript/TypeScript) - Tina CMS'
 description: ''
 date: 2019-11-12T21:34:45.000+00:00
 publishdate: 2019-11-12T21:34:45.000+00:00
