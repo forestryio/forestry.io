@@ -1,5 +1,5 @@
 ---
-title: 'Hiring: Back-end Software Engineer (NodeJS) - Tina Teams'
+title: 'Hiring: Back-end Software Engineer (Rails) - Forestry CMS'
 description: ''
 date: 2019-11-12T21:34:45.000+00:00
 publishdate: 2019-11-12T21:34:45.000+00:00
@@ -21,19 +21,20 @@ aliases: []
 menu: []
 
 ---
-We’re looking for a software engineer to help us build [TinaCMS Teams](https://tinacms.org/teams "TinaCMS Teams"), our pro back-end for the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). You’ll work on building and scaling our NodeJS back-end: the API, databases, infrastructure and integrations with 3rd party services. You’ll also work on the open source project TinaCMS. The person in this role will have a lot of autonomy on a small team with the goal of bringing the best editing experience (TinaCMS) to larger teams.
+We’re looking for a software engineer to help us build [Forestry CMS](https://forestry.io/docs/welcome/ "Forestry CMS Docs"), our flagship product -a Git-backed CMS for the JAMstack. This will include work on the API (Rails), databases (Postgres), infrastructure (Terraform, AWS, Kubernetes) and integrations with 3rd party servcies. The person in this role will have a lot of autonomy on a small team focused on building the best CMS for the JAMstack.
 
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -2). We are open to extending our range to UTC +1 for the right candidate.
 
 ### Techs You'll Work With
 
-* JavaScript, TypeScript, NodeJS (KOA), Postgres, AWS, Google Cloud, Kubernetes & more.
+* Ruby/Rails, JavaScript, Postgres, AWS, Docker, Kubernetes & more.
+* There will be opportunities to dive into React and some front-end development as well, but this is secondary.
 
 ### To Be Successful in this Role, You'll Need
 
-* To be strong with JavaScript, TypeScript and the JS ecosystem.
-* Previous experience building and scaling a back-end system in the cloud (bonus points for working with NodeJS -KOA or Express).
+* To be strong with Rails or similar framework (with the ability and interest to ramp up on Rails quickly).
+* Previous experience working with databases and cloud infrastructure.
 * Familiarity with Docker and container orchestration systems like Kubernetes.
 
 ## About Forestry.io
