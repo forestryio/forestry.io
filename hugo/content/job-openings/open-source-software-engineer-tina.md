@@ -35,13 +35,12 @@ We’re looking for a software engineer to help us build the recently open-sourc
 ### Job Requirements
 
 * To be strong with JavaScript and/or TypeScript.
-* Previous experience contributing to open source.
 * The desire and ability to build an inclusive, helpful and friendly environment for contributors.
 
 ### An Ideal Candidate Will Have
 
 * Previous experience building CMSs or rich text editors. 
-* Previous experience leading an open source project.
+* Previous experience maintaining or contributing to an open source project.
 
 ## About Forestry.io
 
