@@ -27,7 +27,7 @@ We’re looking for a software engineer to help us build [Tina Teams](https://ti
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).
 
-### Techs You'll Work With
+### Tech You'll Work With
 
 * JavaScript, TypeScript, NodeJS (Koa), Postgres, Google Cloud, Docker, Kubernetes & more.
 

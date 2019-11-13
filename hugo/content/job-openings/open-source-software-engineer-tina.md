@@ -27,7 +27,7 @@ We’re looking for a software engineer to help us build the recently open-sourc
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).
 
-### Techs You'll Work With
+### Tech You'll Work With
 
 * JavaScript, TypeScript, React.
 * We have plans to integrate Tina with other frameworks in the JS ecosystem, so you may end up working with things like NextJS, Vue, Nuxt, etc.

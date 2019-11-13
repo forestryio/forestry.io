@@ -27,9 +27,9 @@ We’re looking for a software engineer to help us build [Forestry CMS](https://
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).
 
-### Techs You'll Work With
+### Tech You'll Work With
 
-* Ruby/Rails, JavaScript, Postgres, AWS, Terraform, Docker, Kubernetes & more.
+* Ruby/Rails, JavaScript, Postgres, AWS, GCP, Terraform, Docker, Kubernetes & more.
 
 ### Job Requirements
 
@@ -41,7 +41,7 @@ We’re looking for a software engineer to help us build [Forestry CMS](https://
 ### An Ideal Candidate Will Have
 
 * Experience working with the tech stack mentioned above, specifically Rails, Kubernetes & AWS.
-* Someone width a breadth of experience on the back-end and can move between various back-end technologies at ease.
+* Someone with a breadth of experience on the back-end and can move between various back-end technologies at ease.
 
 ## About Forestry.io
 
