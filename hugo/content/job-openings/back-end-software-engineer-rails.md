@@ -22,6 +22,7 @@ menu: []
 
 ---
 We’re looking for a software engineer to help us build [Forestry CMS](https://forestry.io/docs/welcome/ "Forestry CMS Docs"), our flagship product -a Git-backed CMS for the JAMstack. You’ll work on building and scaling our Rails back-end: the API, databases, infrastructure and integrations with 3rd party services. The person in this role will have a lot of autonomy on a small team focused on building the best CMS for the JAMstack.
+<!--more-->
 
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).

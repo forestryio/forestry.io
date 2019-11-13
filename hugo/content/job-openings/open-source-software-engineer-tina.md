@@ -22,6 +22,7 @@ menu: []
 
 ---
 We’re looking for a software engineer to help us build the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). We believe TinaCMS can be a game-changer for content management on the web you'll be at the heart of its development. You’ll work on developing core features on [the Tina roadmap](https://github.com/tinacms/tinacms/blob/master/ROADMAP.md) as well as helping ensure the open source project is great for contributors.
+<!--more-->
 
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).

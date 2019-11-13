@@ -22,6 +22,7 @@ menu: []
 
 ---
 We’re looking for a software engineer to help us build [Tina Teams](https://tinacms.org/teams "Tina Teams"), our pro back-end for the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). You’ll work on building and scaling our NodeJS back-end: the API, databases, infrastructure and integrations with 3rd party services. You’ll also work on the open source project TinaCMS. The person in this role will have a lot of autonomy on a small team with the goal of bringing the best editing experience (TinaCMS) to larger teams.
+<!--more-->
 
 * This position is for a full-time employee.
 * This is a remote role (UTC -8 to UTC -3).
