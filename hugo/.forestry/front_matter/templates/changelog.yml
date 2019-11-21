@@ -32,6 +32,7 @@ fields:
       format: markdown
   label: Summary
 pages:
+- hugo/content/docs/changelog/2019-11-22-changelog.md
 - hugo/content/docs/changelog/2019-09-13-changelog.md
 - hugo/content/docs/changelog/2019-09-06-changelog.md
 - hugo/content/docs/changelog/2019-08-16-changelog.md
