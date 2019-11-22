@@ -41,7 +41,7 @@ The **Command** is a shell command that will be run inside the build environment
 
 ### _Output Directory_
 
-You will use the **Output Directory** setting to tell Forestry where to find the generated HTML of your site after the build runs. For example, if your set your command to `npm run develop`, and that your site will be generated into a folder named `dist`, you should set your **Output Directory** to `dist`.
+You will use the **Output Directory** setting to tell Forestry where to find the generated HTML of your site after the build runs. For example, if you set your command to `npm run develop`, and that your site will be generated into a folder named `dist`, you should set your **Output Directory** to `dist`.
 
 {{% tip "Why do I need to set the output directory in two places?" %}}
 When we build your site, we treat your build command as a black box. In the above example, Forestry doesn't know that the HTML is being generated in the `dist` folder. We use the **output directory** setting to tell Forestry to look in the `dist/` directory to host the preview .
