@@ -25,7 +25,7 @@ We’re looking for a software engineer to help us build [Tina Teams](https://ti
 <!--more-->
 
 * This position is for a full-time employee.
-* This is a remote role (UTC -8 to UTC -3).
+* This is a remote role (UTC -8 to UTC -3). We do not offer Visa sponsorship or help with relocation at this time.
 
 ### Tech You'll Work With
 
@@ -50,9 +50,7 @@ Read more about our [culture, values, hiring process and perks](https://forestry
 
 ## Apply
 
-Each job posting has a list of things that we believe will help you be successful. You don’t need to be a “rockstar” at everything on day 1. We're also looking for the interest and initiative to learn, and we're willing to help you acquire skills you may be lacking.
-
-We value diversity on our team and strongly encourage applicants from under-represented groups in the software industry to apply.
+We value diversity of all kinds and strongly encourage applicants from under-represented groups in the software industry to apply.
 
 We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io) and include your:
 

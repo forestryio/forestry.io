@@ -4,7 +4,7 @@ title: Job Openings at Forestry.io
 publishdate: 2017-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 date: 2017-12-31T04:00:00.000+00:00
-description: Looking for a job where you can be creative, have autonomy, and do your best work while working with a bunch of smart, fun and nice people? Look no further!
+description: Looking for a job with creative freedom, autonomy, challenging work and great peers? Look no further!
 textline: ''
 images: []
 authors: []
