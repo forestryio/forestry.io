@@ -29,7 +29,7 @@ Every approach is a compromise between flexibility and ease-of-use. Even if a de
 
 ![Sawmill logo](/uploads/2018/04/sawmill-full.svg)
 
-[Sawmill](https://dwalkr.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in Sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. 
+[Sawmill](https://forestryio.github.io/sawmill/) is a Hugo theme that utilizes a modular layout strategy. Pages in Sawmill are composed by stacking together page sections. These sections are self-contained components whose style and information can be configured with front matter, empowering your content creators to create exciting, dynamic layouts. 
 
 To make it easy to manage these sections, Sawmill was created to work with Forestry's CMS straight out of the box via its included Forestry configuration files. This theme is being released in tandem with Forestry's new [Blocks](https://forestry.io/blog/content-blocks-give-your-editors-the-power-to-built-pages/) feature and takes full advantage of this new field type for its page builder.
 
@@ -128,11 +128,11 @@ When defining a **Blocks** field, you can assign it one or more **front matter p
 
 ## Improving Sawmill
 
-Sawmill is ready for use but, at the time of writing, its features are limited. Adding new components is easy, so [post an issue](https://github.com/dwalkr/sawmill/issues) or [submit a PR](https://github.com/dwalkr/sawmill/pulls) with your suggestions!
+Sawmill is ready for use but, at the time of writing, its features are limited. Adding new components is easy, so [post an issue](https://github.com/forestryio/sawmill/issues) or [submit a PR](https://github.com/forestryio/sawmill/pulls) with your suggestions!
 
 ## Get Started With Sawmill
 
-Sawmill is available as a [theme](https://github.com/dwalkr/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
+Sawmill is available as a [theme](https://github.com/forestryio/sawmill) if you want to try it with an existing Hugo site, or as a [starter site](https://github.com/dwalkr/sawmill-starter) if you want to get up and running quickly.
 
 <div style="text-align: center; padding: 1em;">
 <a href="https://app.forestry.io/quick-start?repo=dwalkr/sawmill-starter&engine=hugo" class="create-site-button" data-proofer-ignore>Create a New Sawmill Site in Forestry</a>
