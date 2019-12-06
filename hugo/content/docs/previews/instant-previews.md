@@ -26,7 +26,7 @@ To use instant previews, navigate to **Settings** > **Previews**.
 
 Most of the time, you shouldn't have to change the defaults.  When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands). We will set a matching [preview environment](/docs/previews/build-commands/#preview-environment) for you, but your can always pick up a different one or bring your own custom Docker image.
 
-![](/uploads/2019/12/preview-environments.png)
+![Forestry default preview environements](/uploads/2019/12/preview-environments.png "Forestry default preview environements")
 
 ## Customize your settings
 
