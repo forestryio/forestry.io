@@ -19,44 +19,41 @@ With **instant previews**, you can take advantage of your static site generator'
 
 ## Adding an Instant Preview
 
-Instant previews are configured via a [build command](/docs/settings/build-commands/). To use instant previews, navigate to **Settings** > **Previews**.
+Instant previews are configured via a [build command](/docs/settings/build-commands/).   
+To use instant previews, navigate to **Settings** > **Previews**.
 
-It should be as easy as 1,2,3:
+### Default Instant Preview Commands
 
-1. Pick up a preview environment matching your project stack.
-2. Customize your settings (build command, paths)
-3. Start the preview
+Most of the time, you shouldn't have to change the defaults.  When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands).
 
-When you click on the **Start Preview** button, your dev server will spin up in our preview environment and you will be able to edit the **Instant Preview Command**.
+We will set a matching [preview environment](/docs/previews/build-commands/#preview-environment) for you, but your can always pick up a different one or bring your own custom Docker image.
 
-![Preview environment started](/uploads/2019/07/instant-preview-started.png)
+## Customize your settings
 
 You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
 
-## Command Limitations
-
 Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `npm run develop`.
 
-### Network Details
+**The preview command for any NodeJS-based static site generator needs to be** [**set as an npm script in your**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands) `[**package.json**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`**.**
 
-{{% warning %}}
-Your preview needs to run on **port 8080** and bind to all network interfaces on **0.0.0.0**.
-{{% /warning %}}
+If your site lives in a subfolder, 
 
-The default command for any NodeJS-based static site generator should be [added as an npm script in the `package.json`](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
+#### Defaults commands
+
+{{% warning %}} Your preview needs to run on **0000:8080** {{% /warning %}}
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
 
 ```bash
-hugo server --renderToDisk --port 8080 --bind 0.0.0.0
+hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
 ```
 
 {{% /tab %}}
 {{% tab "Jekyll" %}}
 
 ```bash
-bundle exec jekyll serve --port 8080 --host 0.0.0.0
+bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
 ```
 
 {{% /tab %}}
@@ -97,17 +94,25 @@ hexo server -p 8080
 {{% /code_tabs %}}
 
 {{% tip %}}
-**Eleventy**: to tell BrowserSync to bind to `0.0.0.0`, add the following in your Eleventy configuration file:
+**Eleventy**: to tell BrowserSync to bind to `0.0.0.0`,  amend your Eleventy configuration file with something like:
 
-    /* Forestry instant previews */
+    /* Run serve on 0.0.0.0 on staging */
     if( process.env.ELEVENTY_ENV == "staging" ) {
-      config.setBrowserSyncConfig({
+      eleventyConfig.setBrowserSyncConfig({
         host: "0.0.0.0"
       });
     }
 
 Don't forget to set `ELEVENTY_ENV` environment variable to `staging` in the preview settings.
 {{% /tip %}}
+
+### Start the preview
+
+When you click on the **Start Preview** button, your preview will spin up.
+
+![Preview environment started](/uploads/2019/07/instant-preview-started.png)
+
+Once your preview environment is running fine, your editors will be able to click to preview icon button, that will open a preview of your website in a new browser tab.
 
 ### Live Reloading
 
@@ -130,10 +135,6 @@ Here's an example of a build section in the `.forestry/settings.yml` file:
       - ENV=staging # we don't want to optimize for production
 
 {{% tip %}} [See other examples of build commands](/docs/settings/build-commands/) {{% /tip %}}
-
-## Default Instant Preview Commands
-
-When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands).
 
 ## Instant Preview URLs
 
