@@ -34,13 +34,17 @@ You can edit the command used to run your dev server by editing the **Instant Pr
 
 Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `npm run develop`.
 
-**The preview command for any NodeJS-based static site generator needs to be** [**set as an npm script in your**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands) `[**package.json**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`**.**
+{{% warning %}} 
 
-If your site lives in a subfolder, you need to [setup working directory and output path accordingly](https://forestry.io/docs/troubleshooting/build-issues-for-sites-in-subdirectories/#including-subdirectory-in-preview).
+1. Your preview needs to run on **0000:8080** network interface
+2. Commands for any NodeJS-based static site generator needs to be [set as an npm script in your ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`[package.json](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`.
+3. If your site lives in a subfolder, you need to [setup working directory and output path accordingly](https://forestry.io/docs/troubleshooting/build-issues-for-sites-in-subdirectories/#including-subdirectory-in-preview).
+
+Preview still not running? See our [troubleshooting section](/docs/previews/troubleshooting-preview-issues/) to do some checks.
+
+{{% /warning %}}
 
 #### Defaults commands
-
-{{% warning %}} Your preview needs to run on **0000:8080** {{% /warning %}}
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
