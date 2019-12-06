@@ -46,7 +46,7 @@ Preview still not running? See our [troubleshooting section](/docs/previews/trou
 
 {{% /warning %}}
 
-#### Defaults commands
+#### Defaults server commands
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
