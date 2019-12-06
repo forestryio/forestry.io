@@ -30,7 +30,7 @@ Most of the time, you shouldn't have to change the defaults.  When you pick up a
 
 ## Customize your settings
 
-You can edit the command used to run your preview by editing the **Instant Preview Command** field.
+You can edit the command used to run your preview by editing the **build command** field.
 
 ![Preview settings example for a Gatsby site](/uploads/2019/12/preview-settings-example.png "Example of preview configuration for a Gatsby site")
 
