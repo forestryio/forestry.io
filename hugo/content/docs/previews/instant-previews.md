@@ -37,7 +37,7 @@ Your instant previewing command needs to be a "watch" style command that will st
 {{% warning %}} 
 
 1. Your preview needs to run on **0000:8080** network interface
-2. Commands for any NodeJS-based static site generator needs to be [set as an npm script in your ](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`[package.json](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`.
+2. Commands for any NodeJS-based static site generator needs to be [run as an npm script](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
 3. If your site lives in a subfolder, you need to [setup working directory and output path accordingly](https://forestry.io/docs/troubleshooting/build-issues-for-sites-in-subdirectories/#including-subdirectory-in-preview).
 
 Preview still not running? See our [troubleshooting section](/docs/previews/troubleshooting-preview-issues/) to do some checks.
