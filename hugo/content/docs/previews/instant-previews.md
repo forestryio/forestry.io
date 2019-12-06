@@ -42,8 +42,6 @@ Your instant previewing command needs to be a "watch" style command that will st
 2. Commands for any NodeJS-based static site generator needs to be [run as an npm script](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
 3. If your site lives in a subfolder, you need to [setup working directory and output path accordingly](https://forestry.io/docs/troubleshooting/build-issues-for-sites-in-subdirectories/#including-subdirectory-in-preview).
 
-Preview still not running? See our [troubleshooting section](/docs/previews/troubleshooting-preview-issues/) to do some checks.
-
 {{% /warning %}}
 
 #### Defaults server commands
@@ -114,11 +112,13 @@ Don't forget to set `ELEVENTY_ENV` environment variable to `staging` in the prev
 
 ### Start the preview
 
-When you click on the **Start Preview** button, your preview will spin up.
+When you click on the **Start Preview** button, your preview will spin up. Build time will mostly depend on your stack and your content. It can go from a few seconds on Hugo or Eleventy to several minutes on a large Jekyll or Gatsby site.
 
 ![Preview environment started](/uploads/2019/07/instant-preview-started.png)
 
 Once your preview environment is running fine, your editors will be able to click to preview icon button, that will open a preview of your website in a new browser tab.
+
+Preview still not running? See our [troubleshooting section](/docs/previews/troubleshooting-preview-issues/) to do some checks.
 
 ### Live Reloading
 
