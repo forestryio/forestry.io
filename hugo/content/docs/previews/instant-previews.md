@@ -36,7 +36,7 @@ Your instant previewing command needs to be a "watch" style command that will st
 
 **The preview command for any NodeJS-based static site generator needs to be** [**set as an npm script in your**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands) `[**package.json**](/docs/previews/build-commands/#using-npm-scripts-as-build-commands)`**.**
 
-If your site lives in a subfolder, 
+If your site lives in a subfolder, you need to [setup working directory and output path accordingly](https://forestry.io/docs/troubleshooting/build-issues-for-sites-in-subdirectories/#including-subdirectory-in-preview).
 
 #### Defaults commands
 
