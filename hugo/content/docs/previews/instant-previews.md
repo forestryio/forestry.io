@@ -19,22 +19,24 @@ With **instant previews**, you can take advantage of your static site generator'
 
 ## Adding an Instant Preview
 
-Instant previews are configured via a [build command](/docs/settings/build-commands/).   
+Instant previews are configured via a [build command](/docs/settings/build-commands/).  
 To use instant previews, navigate to **Settings** > **Previews**.
 
-### Default Instant Preview Commands
+### Default Instant Preview Settings
 
-Most of the time, you shouldn't have to change the defaults.  When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands).
+Most of the time, you shouldn't have to change the defaults.  When you pick up an SSG on import, we automatically add a [default build commands](/docs/previews/build-commands#default-commands). We will set a matching [preview environment](/docs/previews/build-commands/#preview-environment) for you, but your can always pick up a different one or bring your own custom Docker image.
 
-We will set a matching [preview environment](/docs/previews/build-commands/#preview-environment) for you, but your can always pick up a different one or bring your own custom Docker image.
+![](/uploads/2019/12/preview-environments.png)
 
 ## Customize your settings
 
-You can edit the command used to run your dev server by editing the **Instant Preview Command** field.
+You can edit the command used to run your preview by editing the **Instant Preview Command** field.
+
+![Preview settings example for a Gatsby site](/uploads/2019/12/preview-settings-example.png "Example of preview configuration for a Gatsby site")
 
 Your instant previewing command needs to be a "watch" style command that will start a process to watch for changes to your files, and rebuild your site automatically. This will most likely be the command that a developer would run in their local environment when working on the site, such as `hugo server` or `npm run develop`.
 
-{{% warning %}} 
+{{% warning %}}
 
 1. Your preview needs to run on **0000:8080** network interface
 2. Commands for any NodeJS-based static site generator needs to be [run as an npm script](/docs/previews/build-commands/#using-npm-scripts-as-build-commands).
