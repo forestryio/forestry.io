@@ -1,5 +1,15 @@
 ---
 starters:
+- name: Novela
+  preview: https://hugo-novela-forestry.netlify.com
+  image: img/starters/novela.png
+  author: Narrative
+  versions:
+  - name: Hugo
+    repo: forestryio/novela-hugo-forestry
+    engine: hugo
+    branch: ''
+  textline: Blog
 - name: Unstad
   preview: https://gridsome-forestry.netlify.com
   image: img/starters/unstad.png
