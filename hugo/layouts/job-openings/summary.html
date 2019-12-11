@@ -1,0 +1,10 @@
+<article class="blog-post">
+  <a href="{{ .RelPermalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
+  <p class="post-excerpt">
+    {{- if .Summary -}}
+      {{ plainify (htmlUnescape (markdownify .Summary)) }}
+    {{ else  }}
+      {{ .Content | safeHTML | truncate 140 }}
+    {{- end -}}
+  </p>
+</article>
