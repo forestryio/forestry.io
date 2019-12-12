@@ -14,6 +14,7 @@ draft: true
 * [Limit characters on text and textarea fields](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/81-characters-limit-on-text-and-textarea-fields) is useful to enforce SEO best pratices for instance.
 * **Less verbose commits**: we now force the sorting in your front matter templates, to minimize diffs and ease content reviews.
 * We now [check for the front template filename](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/84-prevent-overriding-front-matter-templates) to prevent overrides.
+* **Track rejected pushes:** sometimes Forestry can't commit to your repository, because the branch is protected or you don't have proper rights. Forestry will now warn you if a commit gets rejected.
 * All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.56.0 you are now be able to [use Hugo modules](https://gohugo.io/hugo-modules/use-modules/).
 
 ### Starters
