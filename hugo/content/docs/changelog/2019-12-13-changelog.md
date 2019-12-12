@@ -14,7 +14,7 @@ draft: true
 * [Limit characters on text and textarea fields](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/81-characters-limit-on-text-and-textarea-fields) is useful to enforce SEO best pratices for instance.
 * **Less verbose commits**: we now force the sorting in your front matter templates, to minimize diffs and ease content reviews.
 * We now [check for the front template filename](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/84-prevent-overriding-front-matter-templates) to prevent overrides.
-* All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.58.0 you are now be able to [use Hugo modules](https://gohugo.io/hugo-modules/use-modules/).
+* All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.56.0 you are now be able to [use Hugo modules](https://gohugo.io/hugo-modules/use-modules/).
 
 ### Starters
 
@@ -29,8 +29,8 @@ Our team will be busy fixing a bunch of stuff in the next weeks, thanks for all 
 
 ## Community
 
-Special thanks to Steve Polito for showing [how to use Blocks ](https://stevepolito.design/blog/forestry-cms-blocks-field-demo/), it's great to see developers sharing knowledge.
+Special thanks to Steve Polito for showing [how to use Blocks ](https://stevepolito.design/blog/forestry-cms-blocks-field-demo/), it's great to see developers sharing knowledge about Forestry.
 
-In other news, our team released a new Gatsby starter for [Tina CMS](https://tinacms.org). our open source effort to bring a better editing experience on the JAMstack.
+In other news, our team released a new Gatsby starter for [Tina CMS](https://tinacms.org). our open source effort to bring a better editing experience to the JAMstack.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">✨ Introducing Tina Grande – A <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> starter with full TinaCMS integration ✨<br><br>🏗️ – Blocks based page & form builder<br>🎨 – Full theme customization through Tina<br>🌙 – Dark mode<br>💅 – Styled Components<br><br>Check it out / clone it – <a href="https://t.co/9qlPlTdMNM">https://t.co/9qlPlTdMNM</a> <a href="https://t.co/ybH5hcEiYt">pic.twitter.com/ybH5hcEiYt</a></p>— TinaCMS (@tina_cms) <a href="https://twitter.com/tina_cms/status/1197224944083460096?ref_src=twsrc%5Etfw">November 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
