@@ -23,15 +23,19 @@ draft: true
 * Our [VuePress portfolio template](https://github.com/forestryio/portfolio-vuepress) has been updated to use version 1.2.0 to fix an issue with Instant Previews.
 * [Gridsome Forestry starter](https://github.com/itsnwa/gridsome-forestry-starter) has been updated to use version 0.7 to fix an issue with Instant Previews.
 
-Our team will be busy fixing a bunch of stuff in the next weeks, thanks for all the helpful feedback to make Forestry better 🙏
+Thanks for all the helpful feedback to make Forestry better 🙏
 
-* [See our Roadmap](https://portal.productboard.com/forestry)
+## Stay up to date
+
+* [Check  our Roadmap](https://portal.productboard.com/forestry)
 * [Join our Slack community Channel](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk)
 
 ## Community
 
 Special thanks to Steve Polito for showing [how to use Blocks ](https://stevepolito.design/blog/forestry-cms-blocks-field-demo/), it's great to see developers sharing knowledge about Forestry.
 
-In other news, our team released a new Gatsby starter for [Tina CMS](https://tinacms.org). our open source effort to bring a better editing experience to the JAMstack.
+Looking to move away from WordPress to the JAMstack? Try our brand new [**WordPress exporter plugin**](https://github.com/tinacms/wp-gatsby-exporter) to lock your content out of a database and transform it in Markdown files. ✨ 
+
+Our team recently released _Grande_, a Gatsby starter for [Tina CMS](https://tinacms.org). our open source effort to bring a better editing experience to the JAMstack.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">✨ Introducing Tina Grande – A <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> starter with full TinaCMS integration ✨<br><br>🏗️ – Blocks based page & form builder<br>🎨 – Full theme customization through Tina<br>🌙 – Dark mode<br>💅 – Styled Components<br><br>Check it out / clone it – <a href="https://t.co/9qlPlTdMNM">https://t.co/9qlPlTdMNM</a> <a href="https://t.co/ybH5hcEiYt">pic.twitter.com/ybH5hcEiYt</a></p>— TinaCMS (@tina_cms) <a href="https://twitter.com/tina_cms/status/1197224944083460096?ref_src=twsrc%5Etfw">November 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
