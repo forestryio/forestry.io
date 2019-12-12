@@ -94,5 +94,5 @@ fields:
   hidden: true
   default: single
 pages:
-- hugo/content/docs/sunset/deployments.md
 - hugo/content/docs/sunset/custom-configuration-for-data-files.md
+- hugo/content/docs/sunset/deployments.md
