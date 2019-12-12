@@ -10,16 +10,16 @@ draft: true
 ---
 ## Enhancements
 
-* [Breadcrumbs for directory sections](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/83-improve-navigation-within-sections) ease the navigation between deep nested folders.
-* [Limit characters on text and textarea fields](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/81-characters-limit-on-text-and-textarea-fields) is useful to enforce SEO best pratices for instance.
-* **Less verbose commits**: we now force the sorting in your front matter templates, to minimize diffs and ease content reviews.
+* [**Breadcrumbs for directory sections**](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/83-improve-navigation-within-sections) ease the navigation between deep nested folders.
+* [**Limit characters on text and textarea fields**](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/81-characters-limit-on-text-and-textarea-fields) is useful to enforce SEO best practices for instance.
+* **Less verbose commits**: we now force the pages sorting in your front matter templates, to minimize diffs and ease content reviews.
 * We now [check for the front template filename](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/84-prevent-overriding-front-matter-templates) to prevent overrides.
-* **Track rejected pushes:** sometimes Forestry can't commit to your repository, because the branch is protected or you don't have proper rights. Forestry will now warn you if a commit gets rejected.
-* All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.56.0 you are now be able to [use Hugo modules](https://gohugo.io/hugo-modules/use-modules/).
+* **Track rejected pushes**: sometimes Forestry can't commit to your repository, because your branch is protected or you don't have proper rights. Forestry will now warn you if a commit gets rejected.
+* All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.56.0 you are now able to [use **Hugo modules**](https://gohugo.io/hugo-modules/use-modules/)**.**
 
 ### Starters
 
-* Novela : a [beautiful new Hugo starter](https://github.com/forestryio/novela-hugo-starter) adapted from Narative ([preview](https://hugo-novela-forestry.netlify.com/))
+* **Novela**: a [beautiful new Hugo starter](https://github.com/forestryio/novela-hugo-starter) adapted from Narative ([preview](https://hugo-novela-forestry.netlify.com/))
 * Our [VuePress portfolio template](https://github.com/forestryio/portfolio-vuepress) has been updated to use version 1.2.0 to fix an issue with Instant Previews.
 * [Gridsome Forestry starter](https://github.com/itsnwa/gridsome-forestry-starter) has been updated to use version 0.7 to fix an issue with Instant Previews.
 
