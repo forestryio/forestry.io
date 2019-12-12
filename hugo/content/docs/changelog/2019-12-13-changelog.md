@@ -12,6 +12,7 @@ draft: true
 
 * [Breadcrumbs for directory sections](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/83-improve-navigation-within-sections) ease the navigation between deep nested folders.
 * [Limit characters on text and textarea fields](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/81-characters-limit-on-text-and-textarea-fields) is useful to enforce SEO best pratices for instance.
+* **Less verbose commits**: we know force the sorting in your front matter templates, to minimize diffs and ease content reviews.
 * We now [check for the front template filename](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/84-prevent-overriding-front-matter-templates) to prevent overrides.
 * All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.58.0 you should now be able to [use Hugo modules](https://gohugo.io/hugo-modules/use-modules/).
 
