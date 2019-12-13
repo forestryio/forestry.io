@@ -10,11 +10,10 @@ draft: true
 ---
 ## Enhancements
 
-* [**Breadcrumbs for directory sections**](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/83-improve-navigation-within-sections) ease the navigation between deep nested folders.
+* [**Breadcrumbs for directory sections**](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/83-improve-navigation-within-sections) ease the navigation between deep nested folders. (known issue: flat default Jekyll Pages section)
 * [**Limit characters on text and textarea fields**](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/81-characters-limit-on-text-and-textarea-fields) is useful to enforce SEO best practices for instance.
-* **Less verbose commits**: we now force the pages sorting in your front matter templates, to minimize diffs and ease content reviews.
+* **Less verbose commits**: we now force the pages sorting in your front matter templates, to minimize diffs and ease content reviews. 👓
 * We now [check for the front template filename](https://portal.productboard.com/forestry/1-forestry-io-roadmap/c/84-prevent-overriding-front-matter-templates) to prevent overrides.
-* **Track rejected pushes**: sometimes Forestry can't commit to your repository, because your branch is protected or you don't have proper rights. Forestry will now warn you if a commit gets rejected.
 * All Hugo images are now running Go 1.13, it means if you're using Hugo > 0.56.0 you are now able to [use **Hugo modules**](https://gohugo.io/hugo-modules/use-modules/)**.**
 
 ### Starters
@@ -34,7 +33,7 @@ Thanks for all the helpful feedback to make Forestry better 🙏
 
 Special thanks to Steve Polito for showing [how to use Blocks ](https://stevepolito.design/blog/forestry-cms-blocks-field-demo/), it's great to see developers sharing knowledge about Forestry.
 
-Looking to move away from WordPress to the JAMstack? Try our brand new [**WordPress exporter plugin**](https://github.com/tinacms/wp-gatsby-exporter) to lock your content out of a database and transform it in Markdown files. ✨ 
+Looking to move away from WordPress to the JAMstack? Try our brand new [**WordPress exporter plugin**](https://github.com/tinacms/wp-gatsby-exporter) to lock your content out of a database and transform it in Markdown files. ✨
 
 Our team recently released _Grande_, a Gatsby starter for [Tina CMS](https://tinacms.org). our open source effort to bring a better editing experience to the JAMstack.
 
