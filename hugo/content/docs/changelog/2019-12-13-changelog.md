@@ -5,7 +5,6 @@ date: 2019-12-13
 title: 2019/12/13 Changelog
 summary: "Breadcrumbs for directory sections, chars limit on text fields, less verbose
   commits for templates, new Hugo starter and more… \U0001F389 "
-draft: true
 
 ---
 ## Enhancements
