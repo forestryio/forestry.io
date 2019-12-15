@@ -33,7 +33,9 @@ sections:
   label: Docs
   create: all
   match: "**/*"
-  exclude: "{changelog,sunset}/*"
+  exclude: "{changelog,sunset,faqs}/*"
+  templates:
+  - doc
 - type: directory
   path: hugo/content/docs/changelog
   label: Changelog
@@ -46,6 +48,13 @@ sections:
   label: Sunset Notices
   create: all
   match: "*"
+- type: directory
+  path: hugo/content/docs/faqs
+  label: FAQ
+  create: all
+  match: "**/*"
+  templates:
+  - doc
 - type: heading
   label: Data
 - type: document
