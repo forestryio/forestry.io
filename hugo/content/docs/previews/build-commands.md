@@ -242,7 +242,7 @@ Adapt those commands if you site source lives in a subfolder.
 {{% tab "Gridsome" %}}
 
     "scripts": {
-      "forestry:preview": "gridsome develop -H 0.0.0.0 -p 8080"
+      "forestry:preview": "gridsome develop -h 0.0.0.0 -p 8080"
     }
 
 
