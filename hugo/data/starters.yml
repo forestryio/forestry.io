@@ -6,7 +6,7 @@ starters:
   author: Narrative
   versions:
   - name: Hugo
-    repo: forestryio/novela-hugo-forestry
+    repo: forestryio/novela-hugo-starter
     engine: hugo
     branch: ''
   textline: Blog
