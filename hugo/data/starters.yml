@@ -3,10 +3,10 @@ starters:
 - name: Novela
   preview: https://hugo-novela-forestry.netlify.com
   image: img/starters/novela.png
-  author: Narrative
+  author: Narative
   versions:
   - name: Hugo
-    repo: forestryio/novela-hugo-forestry
+    repo: forestryio/novela-hugo-starter
     engine: hugo
     branch: ''
   textline: Blog

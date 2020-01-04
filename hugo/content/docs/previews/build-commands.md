@@ -242,7 +242,7 @@ Adapt those commands if you site source lives in a subfolder.
 {{% tab "Gridsome" %}}
 
     "scripts": {
-      "forestry:preview": "gridsome develop -h 0.0.0.0 -p 8080"
+      "forestry:preview": "gridsome develop"
     }
 
 
@@ -250,7 +250,7 @@ Adapt those commands if you site source lives in a subfolder.
 {{% tab "VuePress" %}}
 
     "scripts": {
-      "forestry:preview": "vuepress dev -p 8080 -h 0.0.0.0"
+      "forestry:preview": "vuepress dev"
     }
 
 {{% /tab %}}
