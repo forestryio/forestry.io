@@ -48,6 +48,16 @@ starters:
     repo: forestryio/portfolio-vuepress
     branch: master
     engine: vuepress
+- name: Jamdocs
+  preview: https://jamdocs.netlify.com
+  image: img/starters/jamdocs.png
+  author: Samuel Horn
+  versions:
+  - name: Gridsome
+    repo: forestryio/jamdocs
+    engine: other
+    branch: ''
+  textline: Documentation
 - name: Hylia
   textline: Blog
   preview: https://hylia-forestry.netlify.com
