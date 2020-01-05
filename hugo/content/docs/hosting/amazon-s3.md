@@ -2,7 +2,7 @@
 title: Amazon S3
 weight: 4
 publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2020-01-01 04:00:00 +0000
+expirydate: 2020-07-01 04:00:00 +0000
 date: 2017-12-31 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -12,8 +12,7 @@ layout: single
 
 {{% warning  %}}
 **Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
-We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
-Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+[Read the deployment sunset notice](/docs/sunset/deployments/).
 {{% /warning %}}
 
 
