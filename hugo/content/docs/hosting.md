@@ -4,10 +4,10 @@ aliases:
 - "/docs/deployment-and-management/setting-up-deployment/"
 - "/docs/deployment-and-management/deploying-with-github-pages/"
 title: Hosting Options
-weight: "1"
+weight: '1'
 publishdate: 2017-12-31T04:00:00.000+00:00
-expirydate: 2020-01-01T04:00:00.000+00:00
-date: 2017-12-31T04:00:00.000+00:00
+expirydate: 
+date: '2017-12-31T04:00:00.000+00:00'
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -18,8 +18,7 @@ menu:
 
 ---
 {{% warning  %}}
-**Forestry will stop building and deploying sites on January 1st, 2020**. **New sites created after August 1st, 2019 won't offer deploy options.** <br/> We recommend to use a dedicated CI/CD platform like [Netlify](https://netlify.com).<br/>
-Read our docs on [how to deploy with Circle CI](/blog/automate-deploy-w-circle-ci/).
+**Forestry will stop building and deploying sites on January 1st, 2020**. <br/> [Read sunset notice](/docs/sunset/deployments/)
 {{% /warning %}}
 
 The Hosting settings allow you to use Forestry to handle deployment of your static site. Forestry can build your site and then deploy the [static files](/docs/faqs/glossary/static-files) to a hosting provider of your choice.
