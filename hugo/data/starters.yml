@@ -54,7 +54,7 @@ starters:
   author: Samuel Horn
   versions:
   - name: Gridsome
-    repo: forestryio/jamdocs
+    repo: samuelhorn/jamdocs
     engine: other
     branch: ''
   textline: Documentation
