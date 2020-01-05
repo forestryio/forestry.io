@@ -39,7 +39,7 @@ An example of Go Templates:
 ## Ace
 Ace templates are inspired by Slim and Jade and will feel very familiar and easier to use if you’re comfortable with either.
 
-All templates built with Ace must be prefixed with `.ace` instead of `.html`.
+All templates built with Ace must have the file extention `.ace` instead of `.html`.
 
 **Note:** Ace templates can be included as a partial inside Go Templates and vice versa. This cannot be done with Amber.
 
@@ -61,7 +61,7 @@ An example of Ace:
 ## Amber
 Amber templates are inspired by HAML and Jade, and will feel very familiar and easier to use if you’re comfortable with either.
 
-All templates built with Amber must be prefixed with `.amber` instead of `.html`
+All templates built with Amber must have the file extention `.amber` instead of `.html`
 
 An example of Amber:
 ```
