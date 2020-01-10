@@ -1,6 +1,6 @@
 ---
 title: Pharmaseal
-description:
+description: Pharmaseal is built with Hugo and Forestry.
 featured: false
 images:
 - "/uploads/showcase/pharmaseal.jpg"

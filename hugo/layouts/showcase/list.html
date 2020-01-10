@@ -11,9 +11,9 @@
       <div class="showcase-items">
       {{- $len := len (where .Data.Pages "Params.featured" "eq" false) -}}
       {{- range $key, $value := where .Data.Pages "Params.featured" "eq" false -}}
-        {{- if and (eq $key 5) (gt $len 10) -}}
+        <!-- {{- if and (eq $key 5) (gt $len 10) -}}
           {{- partial "components/cta/basic" .Params.cta -}}
-        {{- end -}}
+        {{- end -}} -->
         {{- .Render "summary" -}}
       {{- end -}}
       </div>
