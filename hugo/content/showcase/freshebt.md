@@ -8,4 +8,4 @@ images:
 permalink: https://www.freshebt.com
 ---
 
-Side developed by [The New Dynamic](thenewdynamic.com)
+Side developed by [The New Dynamic](https://thenewdynamic.com)
