@@ -21,6 +21,8 @@ sections:
   label: Showcase
   create: all
   match: "**/*"
+  templates:
+  - showcase
 - type: directory
   path: hugo/content/blog
   label: Blog
