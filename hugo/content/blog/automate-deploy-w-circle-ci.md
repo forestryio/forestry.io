@@ -36,13 +36,13 @@ This tutorial was updated on **April 3, 2018** to use [bep/s3deploy](https://git
 
 *This article is part of our on-going [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag") modern web development series*
 
-Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular and practical choice for developers. One major disadvantage these tools have, however, is the need to regenerate and redeploy their files every time there is new content to publish. 
+Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular and practical choice for developers. One major disadvantage these tools have, however, is the need to regenerate and redeploy their files every time there is new content to publish.
 
 Automating this process will go a long way toward making your static site feel like a dynamic CMS. It will also save you time and improve the reliability of your deployments, as the exact same steps will run every time you deploy. For this reason, automated deployment is a cornerstone of modern web development.
 
 Our favorite deployment tool is CircleCI, we're using it at Forestry.io every day to deploy our Hugo site. For our tutorial today we'll be using CircleCI to deploy a Hugo site but you can use CircleCI for any static site that needs automated deployment.
 
-# Continuous Integration Vs Continuous Deployment 
+# Continuous Integration Vs Continuous Deployment
 
 **Continuous Integration (CI) and Continuous Deployment (CD)** describe practices for automating the release of software. The two terms are semantically different, but go hand in hand. You will often see them referenced together or used interchangeably.
 
@@ -195,7 +195,7 @@ Things are pretty straightforward from here. This is a multi-line command so we 
 
 ## Deploy Continuously
 
-At this point, we’re all done! Your project should now build, test, and deploy successfully whenever code is pushed to the GitHub repo. 
+At this point, we’re all done! Your project should now build, test, and deploy successfully whenever code is pushed to the GitHub repo.
 
 ## The Final Config File
 
@@ -231,15 +231,13 @@ For static sites, automated deployment is essential to providing a seamless publ
 
 Next week DJ is going to look into other best practices of modern web development with static websites.
 
-<div style="padding: 20px 40px;background: #f7f7f7;">  
-<h2>Join us every Friday 📅</h2>  
-<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We will look at Webpack and how it can make you write better JavaScript.</a></p>  
-<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)</a>.</p>  
+<div style="padding: 20px 40px;background: #f7f7f7;">
+<h2>Join us every Friday 📅</h2>
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+<p><strong>Next week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We will look at Webpack and how it can make you write better JavaScript.</a></p>
+<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running With Hugo, Part 2: Setting up GitHub & Forestry (CI & CD)</a>.</p>
 </div>
 
 ## Have something to add?
 
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16658610">Discuss on Hacker News</a> 
-
-[Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!

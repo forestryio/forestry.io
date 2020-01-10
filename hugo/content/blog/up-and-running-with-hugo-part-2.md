@@ -221,15 +221,13 @@ We recommend you head over to the [Forestry docs](https://forestry.io/docs) to l
 This concludes our Hugo + Git + Forestry.io Introduction. Next week DJ is diving deeper into Continuous Integration and Continuous Delivery using CircleCI - a technology we at Forestry.io are using every day.
 
 
-<div style="padding: 20px 40px;background: #f7f7f7;">  
-<h2>Join us every Friday 📅</h2>  
-<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> We'll look into Continuous Integration and Continuous Delivery: <a href="https://forestry.io/blog/automate-deploy-w-circle-ci/">Automate Your Static Site Deployment with CircleCI</a></p>  
-<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo/">Up & Running With Hugo Part I: Building Your First Site</a>.</p>  
+<div style="padding: 20px 40px;background: #f7f7f7;">
+<h2>Join us every Friday 📅</h2>
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+<p><strong>Next week:</strong> We'll look into Continuous Integration and Continuous Delivery: <a href="https://forestry.io/blog/automate-deploy-w-circle-ci/">Automate Your Static Site Deployment with CircleCI</a></p>
+<p><strong>Last week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo/">Up & Running With Hugo Part I: Building Your First Site</a>.</p>
 </div>
 
 ## Have something to add?
 
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16600724">Discuss on Hacker News</a>
-
-[Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!

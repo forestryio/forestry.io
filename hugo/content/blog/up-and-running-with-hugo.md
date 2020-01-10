@@ -60,8 +60,8 @@ Hugo generates a project structure for you automatically. In the boilerplate pro
     .
     ├── hugo/                  // The Hugo project; content, data and static files
     |   ├── .forestry/         // Contains Forestry.io configuration files
-    |   ├── content/           // Where all site content is stored 
-    |   ├── data/              // TOML, YAML or JSON files containing site data 
+    |   ├── content/           // Where all site content is stored
+    |   ├── data/              // TOML, YAML or JSON files containing site data
     |   ├── layouts/           // Your site's layouts
     |   |   ├── partials/      // Your site's partials
     |   |   ├── shortcodes/    // Your site's shortcodes
@@ -105,26 +105,26 @@ To start, let's update the example post shipped with the _Hugo Boilerplate_. Ope
     title:  "Welcome to Hugo!"
     ---
     You’ll find this post in your `content/posts` directory.
-    
+
     To add new posts, simply add a file in the `content/posts` directory that follows the convention `name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea of how it works.
-    
+
     Hugo also offers powerful support for code snippets:
-    
+
     {{< highlight go >}}
     package main
     import "fmt"
     func print_hi(name string) {
       fmt.Println("Hi, ", name)
     }
-    
+
     func main() {
       print_hi("Tom")
     }
     //=> prints 'Hi, Tom' to STDOUT.
     {{< /highlight >}}
-    
+
     Check out the [Hugo docs][hugo-docs] for more info on how to get the most out of Hugo. File all bugs/feature requests at [Hugo’s GitHub repo][hugo-gh]. If you have questions, you can ask them on [Hugo Community][hugo-community].
-    
+
     [hugo-docs]: https://gohugo.io/documentation/
     [hugo-gh]:   https://github.com/gohugoio/hugo
     [hugo-community]: https://discourse.gohugo.io/
@@ -189,7 +189,7 @@ Open `hugo/config.toml` in your favorite text editor, and replace the contents w
     copyright = "All rights reserved - 2018"
     theme = "hugo-theme-casper"
     disableKinds = ["taxonomy", "taxonomyTerm"]
-    
+
     [params]
       description = "Welcome to my website"
       metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
@@ -307,18 +307,16 @@ Check out the following further reading to learn more about Hugo:
 
 Next week we'll be releasing a post on setting up version control with Git to facilitate continuous integration and continuous deployment to various hosting providers using [_Forestry_](https://forestry.io)_,_ the CMS for static sites built with Hugo and Jekyll.
 
-<div style="padding: 20px 40px;background: #f7f7f7;">  
-<h2>Join us every Friday 📅</h2>  
-<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>  
-<p><strong>Next week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running with Hugo Part II: Continuous Integration & Continuous Deployments</a></p>  
-<p><strong>Last week:</strong> We looked at integrating a performant search into your static site: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Static search with Hugo + Algolia </a>.</p>  
+<div style="padding: 20px 40px;background: #f7f7f7;">
+<h2>Join us every Friday 📅</h2>
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.  </p>
+<p><strong>Next week:</strong> <a href="https://forestry.io/blog/up-and-running-with-hugo-part-2/">Up & Running with Hugo Part II: Continuous Integration & Continuous Deployments</a></p>
+<p><strong>Last week:</strong> We looked at integrating a performant search into your static site: <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">Static search with Hugo + Algolia </a>.</p>
 </div>
 
 ## Have something to add?
 
 <a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16552437">Discuss on Hacker News</a>
-
-[Subscribe to our newsletter](#footer-cta) to get updated when the next article is released!
 
 <!--### Last Week
 
