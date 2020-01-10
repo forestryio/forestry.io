@@ -1,8 +1,8 @@
 ---
 title: Developer Ecosystem
-featured: true
+featured: false
 images:
-- "/uploads/develoeprecosystemdotcom.png"
+- "/uploads/showcase/develoeprecosystemdotcom.png"
 permalink: https://developerecosystem.com
 private: true
 publishdate: 2017-12-31 04:00:00 +0000

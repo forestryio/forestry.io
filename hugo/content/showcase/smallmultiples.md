@@ -1,8 +1,8 @@
 ---
 title: Small Multiples - Data Visualization Specialists
-featured: true
+featured: false
 images:
-- "/uploads/smallmultiplesdotcomdotau.png"
+- "/uploads/showcase/smallmultiplesdotcomdotau.png"
 permalink: https://smallmultiples.com.au
 private: true
 publishdate: 2017-12-31 04:00:00 +0000
