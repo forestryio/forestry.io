@@ -1,14 +1,14 @@
 <section class="section section-cta center" id="footer-cta">
   <div class="container">
     <h2 class="section--title">{{ .headline | default "Build amazing sites" }}</h2>
-    <p class="section--sub is-center">{{ .textline | default "We have the tools to manage your content. Ready to try Forestry?" }}</p>
+    <p class="section--sub is-center">{{ .textline | default "We have the tools for editors to manage your content." }}</p>
     <br><br>
     {{- with .ctas -}}
       {{- range . -}}
       <a href="{{ .RelPermalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
       {{- end -}}
     {{- else -}}
-      <a href="https://app.forestry.io/signup" class="button primary">Get started for free</a>
+      <a href="https://app.forestry.io/starters" class="button primary">Get started for free</a>
       <!-- <a href="/docs/quickstart/tour/">Launch Demo</a> -->
     {{- end -}}
   </div>
