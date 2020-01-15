@@ -170,7 +170,7 @@ _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output 
 ```liquid
 {% if page.forestry_instant_preview_id != "" %}
 <meta property="forestry_instant_preview_id" content="{{ page.forestry_instant_preview_id }}">
-{% end %}
+{% endif %}
 ```
 
 {{% /tab %}}
