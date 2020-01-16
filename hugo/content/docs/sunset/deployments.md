@@ -29,14 +29,18 @@ menu:
 
 We started removing support for deployments (FTP, GitHub Pages, Amazon S3) on all newly created sites back in August.
 
-Deployments will continue to work for existing sites until January 1st, 2020; we encourage people to move to other best-of-breed deployment services like [Netlify](https://netlify.com) or [Circle CI](https://circleci.com).
+Deployments will continue to work for existing sites until January 1st, 2020; we encourage people to move to dedicated deployment services like [Netlify](https://netlify.com), [Buddy Works](https://buddy.works),[Zeit now](https://zeit.co) or [Circle CI](https://circleci.com).
 
-Why this change? Only a small percentage of our users make use of Forestry deployments. For those users, we spend a lot of effort ensuring build and deployments work. We prefer to focus on our core features like content modelling and the editing experience. Plus, services like [Netlify](https://netlify.com), [Circle CI](https://circleci.com), and [Zeit](https://zeit.co/) are doing a far better job at deployment; we think our users will be better off using those services.   
+### Why this change? 
+
+Only a small percentage of our users make use of Forestry deployments. For those users, we spend a lot of effort ensuring build and deployments work. We prefer to focus on our core features like content modelling and the editing experience. Plus, dedicated services are doing a far better job at deployment and allow for scheduled jobs for instance; we think our users will be better off using those services.   
   
 Even if the current option has served you well until now, we think it's a smart move for everyone.
 
-[Continuous deployment with Netlify](https://www.netlify.com/docs/continuous-deployment/)
+[Deploy with Buddy Works](https://buddy.works/docs/deployments)
 
-[How to automate your deployments with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
+[Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
 
-[Introduction to Zeit Now](https://zeit.co/docs/v2/introduction/)
+[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
+
+[Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
