@@ -29,7 +29,7 @@ menu:
 
 We started removing support for deployments (FTP, GitHub Pages, Amazon S3) on all newly created sites back in August.
 
-Deployments will continue to work for existing sites until January 1st, 2020; we encourage people to move to dedicated deployment services like [Netlify](https://netlify.com), [Buddy Works](https://buddy.works),[Zeit now](https://zeit.co) or [Circle CI](https://circleci.com).
+Deployments will continue to work for existing sites until January 1st, 2020; we encourage people to move to dedicated deployment services like [Netlify](https://netlify.com), [Buddy Works](https://buddy.works), [Zeit now](https://zeit.co) or [Circle CI](https://circleci.com).
 
 ### Why this change? 
 
