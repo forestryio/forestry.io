@@ -25,11 +25,23 @@ menu:
 
 ---
 
-**Forestry will no longer do deployments after January 31st, 2020**
+⚠️ **Forestry will no longer perform deployments after January 31st, 2020**
 
-We started removing support for deployments (FTP, GitHub Pages, Amazon S3) on all newly created sites back in August.
+Back in August, we started removing support for deployments (FTP, GitHub Pages, Amazon S3) on all newly created sites.
 
-Deployments will continue to work for existing sites until January 31st, 2020; we strongly encourage people to move to dedicated deployment services like [Netlify](https://netlify.com), [Buddy Works](https://buddy.works), [Zeit now](https://zeit.co) or [Circle CI](https://circleci.com).
+Deployments will continue to work for existing sites until January 31st, 2020; _we strongly encourage people still relying on this feature to move to dedicated deployment services as soon as possible_. 
+
+There are plenty of choices, amongst them: 
+
+[Deploy with Buddy Works](https://buddy.works/docs/deployments)
+
+[Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
+
+[Deploy with GitHub Actions](https://github.com/features/actions)
+
+[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
+
+[Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
 
 ### Why this change? 
 
@@ -37,10 +49,3 @@ Only a small percentage of our users made use of Forestry deployments. For those
   
 Even if the current option has served you well until now, we think it's a smart move for everyone.
 
-[Deploy with Buddy Works](https://buddy.works/docs/deployments)
-
-[Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
-
-[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
-
-[Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
