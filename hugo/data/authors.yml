@@ -83,6 +83,8 @@ authors:
   twitter: ''
   title: Developer
   lastName: Duffy
+  bio: ''
+  shortBio: ''
 - avatar: "/uploads/2018/03/Sebastian.jpg"
   bio: ''
   firstName: Sebastian
@@ -107,6 +109,7 @@ authors:
   twitter: regisphilibert
   title: Hugo Evangelist
   lastName: Philibert
+  bio: ''
 - avatar: "/uploads/2018/07/jdzielak.jpg"
   firstName: Josh
   lastName: Dzielak
@@ -115,3 +118,4 @@ authors:
     Formerly Algolia and Keen IO. American living in Paris.
   twitter: dzello
   title: Community Writer
+  bio: ''
