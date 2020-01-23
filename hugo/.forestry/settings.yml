@@ -92,6 +92,6 @@ build:
   publish_command: hugo -d public
   publish_env:
   - HUGO_ENV=production
-  - HUGO_VERSION=0.42.2
+  - HUGO_VERSION=0.56.3
   output_directory: public
   preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
