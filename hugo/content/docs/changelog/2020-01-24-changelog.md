@@ -3,8 +3,7 @@ authors:
 - team forestry
 date: 2020-01-24
 title: 2020/01/24 Changelog
-summary: "Faster section loading and fixes on blocks and templates \U0001F389 "
-draft: true
+summary: "Faster section loading and fixes on blocks and included templates \U0001F389 "
 
 ---
 ### Enhancements
