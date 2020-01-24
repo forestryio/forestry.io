@@ -13,7 +13,7 @@ draft: true
 
   Thanks to **Andrej Simeonov** for providing a testing repository with section containing more than 3000 documents!
 
-  _⚠ Current limitation: lazy-loading is not supported on Safari 12. Upgrade or use another browser if you experience any issue._
+  _⚠️ Current limitation: lazy-loading is not supported on Safari 12. Upgrade or use another browser if you experience any issue._
 * Enhance readability in select fields pointing to document references with long names.
 * Enhance contrast on links in the WYSIWYM editor.
 
