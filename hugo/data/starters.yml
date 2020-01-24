@@ -40,7 +40,7 @@ starters:
     engine: ''
 - name: Jæren
   textline: Portfolio
-  image: img/starters/joeren.png
+  image: img/starters/joeren.jpg
   preview: https://vuepress-portfolio.netlify.com
   author: Nichlas W. Andersen
   versions:
@@ -78,10 +78,20 @@ starters:
     repo: itsnwa/darkfolio
     engine: other
     branch: ''
+- name: Casper
+  preview: https://hugocasper3-demo.jonathanjanssens.com
+  image: img/starters/capser.jpg
+  author: Jonathan Janssens
+  versions:
+  - name: Hugo
+    repo: forestryio/casper3-hugo-starter
+    engine: hugo
+    branch: ''
+  textline: Blog
 - name: Belkirk
   textline: Site
   preview: https://forestryio-templates.github.io/belkirk-jekyll-demo/
-  image: img/starters/belkirk.png
+  image: img/starters/belkirk.jpg
   author: Forestry
   versions:
   - name: Jekyll
