@@ -10,6 +10,12 @@ menu:
 
 ---
 
+{{% warning "Known limitations" %}}
+
+Images stored in GitLab and Bitbucket private repositories will not be shown in Forestry due to current limitations: [https://gitlab.com/gitlab-org/gitlab-ce/issues/45149](https://gitlab.com/gitlab-org/gitlab-ce/issues/45149 "https://gitlab.com/gitlab-org/gitlab-ce/issues/45149")
+
+{{% /warning %}}
+
 Forestry can integrate with [Netlify Large Media](https://www.netlify.com/docs/large-media/) for storing your uploads. Netlify Large Media is a Git LFS target, enabling you to seamlessly incorporate large media files in your repository without the performance penalty that this usually requires.
 
 For more information on Git LFS, view our blog post: [Versioning Large Files with Git LFS](https://forestry.io/blog/versioning-large-files-with-git-lfs/).
