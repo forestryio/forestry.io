@@ -11,8 +11,8 @@ authors: []
 categories: []
 tags: []
 cta:
-  headline: Don't see a job description that matches you perfectly?
-  textline: If you'd still like to express interest in working with us,
+  headline: Unfortunately, we don't currently have any job openings.
+  textline: But if you'd still like to express interest in working with us,
   ctas:
     - RelPermalink: "mailto:careers@forestry.io"
       textline: "Shoot us a note"

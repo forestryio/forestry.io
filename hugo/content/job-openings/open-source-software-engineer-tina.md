@@ -19,6 +19,7 @@ private: false
 weight: 
 aliases: []
 menu: []
+draft: true
 
 ---
 We’re looking for a software engineer to help us build the recently open-sourced [TinaCMS](https://tinacms.org "TinaCMS"). We believe TinaCMS can be a game-changer for content management on the web you'll be at the heart of its development. You’ll work on developing core features on [the Tina roadmap](https://github.com/tinacms/tinacms/blob/master/ROADMAP.md) as well as helping ensure the open source project is great for contributors.
