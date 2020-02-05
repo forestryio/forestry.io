@@ -80,7 +80,7 @@ starters:
     branch: ''
 - name: Casper
   preview: https://hugocasper3-demo.jonathanjanssens.com
-  image: img/starters/casper3.jpg
+  image: img/starters/casper.jpg
   author: Jonathan Janssens
   versions:
   - name: Hugo
