@@ -5,11 +5,11 @@ description: Tools like Hugo, Jekyll, and Gatsby have made building static sites
   have, however, is the need to regenerate and redeploy their files every time there
   is new content to publish. Automating this process will go a long way toward making
   your static site feel like a dynamic CMS.
-date: 2018-03-23 12:38:35 +0000
+date: 2018-03-23T12:38:35.000+00:00
 authors:
 - dj-walker
-publishdate: 2018-03-23 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2018-03-23T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 headline: ''
 textline: ''
 images:
@@ -30,11 +30,11 @@ aliases: []
 ---
 {{% tip %}}
 
-This tutorial was updated on **April 3, 2018** to use [bep/s3deploy](https://github.com/bep/s3deploy) in place of [aws/aws-cli](https://github.com/aws/aws-cli).
+This tutorial was updated on **February 5, 2020** to use  `apt` in place of `apk` to install git.
 
 {{% /tip %}}
 
-*This article is part of our on-going [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag") modern web development series*
+_This article is part of our on-going_ [_Frontend Friday_](/categories/frontend-friday/ "frontend friday tag") modern web development series
 
 Tools like Hugo, Jekyll, and Gatsby have made building static sites a popular and practical choice for developers. One major disadvantage these tools have, however, is the need to regenerate and redeploy their files every time there is new content to publish.
 
@@ -98,7 +98,6 @@ CircleCI uses Docker to provide disposable environments to build and test your c
 
 We are going to use the `cibuilds/hugo` image as the base for our Docker container. It has Hugo pre-installed, which we will need in order to build our Hugo app. We will need a few other dependencies, but we can install them during our build process.
 
-
     version: 2
     jobs:
       build:
@@ -115,7 +114,7 @@ The `steps` section is where we add a list of commands needed to build, test, an
 
 #### 1. Install Git and checkout the repository
 
-          - run: apk update && apk add git
+          - run: apt-get update && apt-get install -y --no-install-recommends git
           - checkout
 
 `run` and `checkout` are CircleCI commands — they are the interface through which we can send instructions to the build environment. We will be using `run` heavily: it allows us to specify commands to be run in the build environment. `checkout` is a special step that CircleCI provides to simplify checking out the project into your build environment’s `working_directory`.
@@ -129,6 +128,7 @@ Our `cibuilds/hugo` image is built on Alpine Linux, so we use the `apk` command 
 If you’re using Git submodules to manage any third party dependencies, you will need to run this step to install them.
 
 #### 3. Install `s3deploy`
+
 [aws-cli](https://github.com/aws/aws-cli) is Amazon's first-party utility for interacting with AWS services, including S3. However, it is not well-suited to our use case. `aws-cli`'s s3 deployment strategy uses timestamps to determine which files need to be overwritten. This is not optimal for us: we're using a static site generator, and **all of the files** that we want to deploy from our CI environment will have a newer timestamp than the files that are already in s3.
 
 Instead, we're going to use [bep/s3deploy](https://github.com/bep/s3deploy) to send our files to S3. This library was optimized for deploying static sites and uses a hash of the file contents to determine if a file was changed.
@@ -159,7 +159,6 @@ After passing our tests, the code is now ready to deploy. Before we run the depl
 
 In order to deploy to S3, we will need to create an IAM user that can write to our bucket. The following security policy will allow CircleCI to send files to the bucket:
 
-
     {
         "Version": "2012-10-17",
         "Statement": [
@@ -180,7 +179,6 @@ Make note of the **Access Key ID** and **Secret Access Key** of this user. To pr
 
 We will use CircleCI’s `deploy` command to ship the code. `deploy` works just like the `run` command, but should be used instead of `run` for deploying code. CircleCI can be configured to run some steps in parallel, but any `deploy` steps will wait for parallel execution to finish and ensure that all tasks have completed successfully before running. Because of this, `deploy` should always be used when it’s time to move code out of the build environment.
 
-
           - deploy:
               name: deploy
               command: |
@@ -189,7 +187,6 @@ We will use CircleCI’s `deploy` command to ship the code. `deploy` works just 
                 else
                   echo "Not master branch, dry run only"
                 fi
-
 
 Things are pretty straightforward from here. This is a multi-line command so we have to use the `|` character to indicate this. We’re using a conditional to check the `CIRCLE_BRANCH` environment variable and only deploy if we’re building the master branch. Using this strategy, our configuration will continue to build and test code pushed to other branches, but will not deploy them to our production environment.
 
@@ -208,7 +205,7 @@ At this point, we’re all done! Your project should now build, test, and deploy
         environment:
           HUGO_BUILD_DIR: ~/hugo/public
         steps:
-          - run: apk update && apk add git
+          - run: apt-get update && apt-get install -y --no-install-recommends git
           - checkout
           - run: git submodule sync && git submodule update --init
           - run: curl -L https://github.com/bep/s3deploy/releases/download/v2.0.1/s3deploy_2.0.1_Linux-64bit.tar.gz | tar xvz
@@ -240,4 +237,4 @@ Next week DJ is going to look into other best practices of modern web developmen
 
 ## Have something to add?
 
-<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16658610">Discuss on Hacker News</a> 
+<a style="background: #F60; display: inline-block; border-radius: 5px; color: white; padding: 2px 9px; font-size: 14px;" href="https://news.ycombinator.com/item?id=16658610">Discuss on Hacker News</a>
