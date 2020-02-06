@@ -18,117 +18,22 @@ menu:
 
 ---
 {{% warning  %}}
-**Forestry will stop building and deploying sites on January 1st, 2020**. <br/> [Read sunset notice](/docs/sunset/deployments/)
+**Forestry has stop building and deploying sites on January 31st, 2020**. <br/> [Read sunset notice](/docs/sunset/deployments/)
 {{% /warning %}}
 
-The Hosting settings allow you to use Forestry to handle deployment of your static site. Forestry can build your site and then deploy the [static files](/docs/faqs/glossary/static-files) to a hosting provider of your choice.
+If you're looking for a way to automate your deployments, please consider on the following dedicated service:
 
-## Guides
+[Deploy with Buddy Works](https://buddy.works/docs/deployments)
 
-Forestry has a selection of built-in hosting options that make hosting your static site easy.
+[Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
 
-### Commit to source repo only
+[Deploy with GitHub Actions](https://github.com/features/actions)
 
-Enabling "commit to source repo only" will enable Forestry to only commit changes made in the CMS back to the branch and repository your site was imported from.
+[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/): 
 
-{{% tip "Continuous Integration" %}}
-Looking to deploy your site using a [CI/CD](/docs/faqs/glossary/ci-cd) tool like GitLab CI or BitBucket Pipelines? Use _Commit to source repo only_. This will trigger any CI/CD tool when a change is saved or published in Forestry.
-{{% /tip %}}
+[Deploy with Render](https://render.com/docs): [Jekyll](https://render.com/docs/deploy-jekyll), [Hugo](https://render.com/docs/deploy-hugo), [Gatsby](https://render.com/docs/deploy-gatsby)
 
-***
+[Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
 
-### GitHub Pages
 
-Forestry can build your site and deploy the generated static files to a branch of a GitHub repository for use with [GitHub Pages](https://pages.github.com/).
 
-[Read the guide](/docs/hosting/github-pages)
-
-***
-
-<!--
-
-### BitBucket Pages
-
-Forestry can build your site and deploy the generated static files to a repository on BitBucket configured to use BitBucket pages.
-
-[Read the guide](/docs/hosting/bitbucket-pages)
-
-***
-
-\-->
-
-### Amazon S3
-
-Forestry can build your site and deploy the generated static files to an S3 bucket of your choosing.
-
-There are two ways to host a static website with Amazon S3. S3 can be configured to host a website itself, or it can be used as an origin for AWS' CloudFront CDN. Using S3 on its own is the simpler option, but using CloudFront is highly recommended.
-
-{{% tip %}}
-If you'd like to know more about why you should use CloudFront with your S3 Bucket, check out [this blog post from AWS](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/).
-{{% /tip %}}
-
-**Guides:**
-
-[Setup an S3 + CloudFront Stack](/docs/hosting/s3-cloudfront-stack) **(Recommended)**
-
-[Setup an S3 Bucket for Webhosting](/docs/hosting/amazon-s3)
-
-**Resources:**
-
-[Amazon S3 + Amazon CloudFront: A Match Made in the Cloud](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) _(aws.amazon.com)_
-
-***
-
-### FTP/SFTP
-
-Forestry can build your site and deploy the generated static files to any FTP/SFTP enabled web-server of your choosing.
-
-[Read the guide](/docs/hosting/ftp)
-
-## Other Options
-
-In addition to the built-in hosting provider options provided by Forestry, we provide tutorials for using third-party services with Forestry.
-
-### GitHub Pages Jekyll Integration
-
-If you are using Jekyll as your static site generator, GitHub pages can handle building your static site without the support of Forestry or a CI tool.
-
-[Read the guide](/docs/guides/hosting/github-pages-jekyll)
-
-#### Resources
-
-* [GitLab Pages](https://about.gitlab.com/features/pages/)
-* [Hugo Example Project](https://gitlab.com/pages/hugo)
-* [Jekyll Example Project](https://gitlab.com/groups/pages)
-
-***
-
-### GitLab Pages & GitLab CI
-
-GitLab provides a free CI tool for triggering build and deployment scripts when commits are made to your repository, and has example projects for both Hugo and Jekyll.
-
-#### Resources
-
-* [GitLab Pages](https://about.gitlab.com/features/pages/)
-* [GoHugo.io: Host on GitLab](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
-* [GitLab.com: Hugo Example Project](https://gitlab.com/pages/hugo)
-* [GitLab.com: Jekyll Example Project](https://gitlab.com/groups/pages)
-
-***
-
-### BitBucket Pipelines
-
-BitBucket provides a CI tool for triggering build and deployment scripts when commits are made to your repository.
-
-#### Resources
-
-* [BitBucket Pipelines Documentation](https://bitbucket.org/product/features/pipelines)
-* [Bitquobit.com: Automating Hugo Deployments with BitBucket Pipelines](https://bitquabit.com/post/automating-hugo-deployments/)
-
-***
-
-### Webhooks
-
-Forestry has [outgoing webhooks](/docs/hosting/webhooks/) that can be used to trigger custom build scripts.
-
-[GitHub](https://developer.github.com/webhooks/), [BitBucket](https://confluence.atlassian.com/bitbucket/manage-webhooks-735643732.html), and [GitLab](https://docs.gitlab.com/ce/user/project/integrations/webhooks.html) also provide support for outgoing webhooks to trigger a custom build script.
