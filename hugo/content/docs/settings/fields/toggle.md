@@ -33,9 +33,9 @@ You can access this field in your templates using the field’s `name`:
 
 #### Jekyll
 
-    {{ if page.is_featured }}
+    {% if page.is_featured %}
         // Do something special!
-    {{ end }}
+    {% endif %}
 
 #### VuePress
 
