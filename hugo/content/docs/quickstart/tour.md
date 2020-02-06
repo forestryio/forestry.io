@@ -137,14 +137,11 @@ Feel free to hit _Save_ to deploy your changes.
 
 ## Deployment
 
-When you hit the Save button, Forestry will create a commit and push it back to your source repo. If you already have an automated build and deploy process connected to your repository, your site will deploy when content is updated.
-
-We recommend using some time to research the different hosting options for static sites to find the one that fits your needs best (e.g. [Netlify](https://netlify.com), [Circle CI](https://circleci.com), [GitHub Pages](https://pages.github.com/), [Zeit](https://zeit.co/) or [AWS S3](/docs/hosting/s3-cloudfront-stack/)).
+We recommend using some time to research the different [hosting options](/docs/hosting/) for static sites to find the one that fits your needs best.
 
 **Additional Resources:**
 
 * Automate deployment with [Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
-* Set up a static site hosting stack on [AWS with CloudFormation](/docs/hosting/s3-cloudfront-stack/)
 * Integrate Forestry with other providers via [Webhooks](/docs/hosting/webhooks/)
 
 ***

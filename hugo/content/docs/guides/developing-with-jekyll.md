@@ -21,7 +21,7 @@ menu:
     weight: 6
 
 ---
-Jekyll is one of the oldest static site generators available. Built by [GitHub][1], it has tons of community support and is very stable. Additional features can be added onto Jekyll through the use of plugins. It also uses the templating language [Liquid][2], which feels very familiar to developers and is also used by Shopify and other large-scale applications. 
+Jekyll is one of the oldest static site generators available. Built by [GitHub][1], it has tons of community support and is very stable. Additional features can be added onto Jekyll through the use of plugins. It also uses the templating language [Liquid][2], which feels very familiar to developers and is also used by Shopify and other large-scale applications.
 
 ### Choose Jekyll if you:
 
@@ -38,7 +38,7 @@ Jekyll is one of the oldest static site generators available. Built by [GitHub][
 ## Getting Started
 To get started developing for Jekyll, you’ll need a basic understanding of HTML and [Liquid][2], Jekyll's templating language. You’ll also likely want to [set up your local development environment][3].
 
-We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync][5] with the CMS, and enables you to use [continuous deployment][6].
+We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync][5] with the CMS, and enables you to use continuous deployment.
 
 ## Further Reading
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
@@ -48,4 +48,3 @@ We also recommend that you set up a Git repository to manage development of your
 [2]: https://shopify.github.io/liquid/
 [3]: /docs/guides/developing-with-jekyll/local-development
 [5]: /docs/git-sync/
-[6]: /docs/settings/#deployment

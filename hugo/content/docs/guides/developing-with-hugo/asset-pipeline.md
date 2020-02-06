@@ -25,11 +25,10 @@ Using Hugo's asset pipeline, you can use Sass, SCSS, and PostCSS. You can also b
 
 ## Best Practices for Gulp, Grunt, and Other Build Tools
 
-In order to use external build like Gulp, Grunt, or Webpack with Forestry's [previewing][1] and [deployment][2], you should configure them as follows:
+In order to use external build like Gulp, Grunt, or Webpack with Forestry's [previewing][1], you should configure them as follows:
 
 1. Use a NodeJS-based tool installable via NPM and configured in `package.json`.
 2. Define the build script(s) as NPM scripts in your `package.json` file.
 3. Use [custom build commands](/docs/settings/build-commands/) to call these NPM scripts.
 
 [1]: /docs/editing/previews
-[2]: /docs/hosting/

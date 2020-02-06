@@ -49,7 +49,7 @@ It should be noted that Gatsby users typically experience slower build times com
 
 To get started with Gatsby, you will want to have a rudimentary understanding of [React](https://reactjs.org/) and [GraphQL](https://graphql.org/), and have [NPM](https://www.npmjs.com/) installed on your system.
 
-We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync](/docs/git-sync/) with the CMS, and enables you to use [continuous deployment](/docs/settings/#deployment).
+We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables [content sync](/docs/git-sync/) with the CMS, and enables you to use continuous deployment.
 
 You can create a new Gatsby site by running the following commands in your terminal:
 

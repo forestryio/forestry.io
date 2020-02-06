@@ -102,7 +102,7 @@ If your site is located in a subdirectory of your Git repo, you need to provide 
 
 [Troubleshooting guide: build issues for sites in subdirectories](/docs/troubleshooting/build-issues-for-sites-in-subdirectories/)
 
-### Ensure that the _output directory_ correlates to your build command
+### Ensure that the output directory correlates to your build command
 
 The **output directory** in your preview settings is where Forestry will look for your preview website after it's generated. Your **build command** is what determines the directory that your site will be generated in. If your **output directory** doesn't match up with your **build command**, your preview will not work.
 
@@ -151,7 +151,7 @@ navigate to the content from the homepage.
 
 ### Check your output directory
 
-If your preview **output directory** is misconfigured, but maps to an existing directory in your project, your build will appear successful but you will receive this error when trying to access the preview. View the [output directory instructions](#ensure-that-the-output-directory-correlates-to-your-build-command) located above for help in resolving this.
+If your preview **output directory** is misconfigured, but maps to an existing directory in your project, your build will appear successful but you will receive this error when trying to access the preview. View the _output directory_ instructions above for help in resolving this.
 
 ## Still Need Help?
 

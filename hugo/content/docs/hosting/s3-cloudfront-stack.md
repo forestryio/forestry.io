@@ -1,22 +1,19 @@
 ---
 title: Static Site Hosting on AWS
-weight: 4
 publishdate: 2017-09-18 04:00:00 +0000
-expirydate: 2020-07-01 04:00:00 +0000
+expirydate: 2020-01-31 04:00:00 +0000
 date: 2017-09-18 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 layout: single
-menu:
-  docs:
-    name: AWS
-    parent: Hosting
-    weight: 2
 
 ---
-{{% warning  %}}
+
+{{% warning %}}
+
 **Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
 [Read the deployment sunset notice](/docs/sunset/deployments/).
+
 {{% /warning %}}
 
 This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [Amazon AWS Account](https://aws.amazon.com/free/), and a static site connected to Forestry. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.

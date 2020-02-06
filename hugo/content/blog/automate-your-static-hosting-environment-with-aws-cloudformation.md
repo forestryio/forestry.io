@@ -195,7 +195,7 @@ If we want to programmatically push code to our S3 Bucket, however, we’ll need
                 Statement:
                 - Action: 's3:*'
                   Effect: Allow
-                  Resource: 
+                  Resource:
                   - !Sub 'arn:aws:s3:::${S3Bucket}'
                   - !Sub 'arn:aws:s3:::${S3Bucket}/*'
       PublishCredentials:

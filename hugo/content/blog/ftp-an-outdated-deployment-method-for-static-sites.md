@@ -25,7 +25,7 @@ draft: true
 ---
 {{% warning %}}
 
-Current users of the FTP deployment method are able to continue to use FTP for the foreseeable future. However, we won't add any additional features or output and we truly believe that you should switch to a more secure deployment method such as SFTP (SSH-based deployment).
+FTP deployments have now been deprecated.
 
 {{% /warning %}}
 

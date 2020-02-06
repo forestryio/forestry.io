@@ -1,24 +1,18 @@
 ---
 title: GitHub Pages
-weight: "2"
 publishdate: 2017-12-31T04:00:00.000+00:00
-expirydate: 2020-07-01T04:00:00.000+00:00
+expirydate: 2020-01-31T04:00:00.000+00:00
 date: 2018-12-12T05:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-menu:
-  docs:
-    parent: Hosting
-    weight: 3
 
 ---
 
 {{% warning  %}}
-**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
+**Deploymentd options are deprecated since January 1st, 2020**.<br/>
 [Read the deployment sunset notice](/docs/sunset/deployments/).
 {{% /warning %}}
-
 
 This guide assumes you already have an existing [Forestry Account](https://app.forestry.io/signup), [GitHub account](https://github.com/signup), and a repository with a project. If you don't have an existing project, check out our [Quick start guide](/docs/quickstart/), which contains guides and resources for building your first static site.
 

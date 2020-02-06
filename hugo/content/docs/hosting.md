@@ -1,12 +1,8 @@
 ---
-aliases:
-- "/docs/deployment-and-management/"
-- "/docs/deployment-and-management/setting-up-deployment/"
-- "/docs/deployment-and-management/deploying-with-github-pages/"
 title: Hosting Options
 weight: '1'
 publishdate: 2017-12-31T04:00:00.000+00:00
-expirydate: 
+expirydate: 2030-12-31T04:00:00.000+00:00
 date: '2017-12-31T04:00:00.000+00:00'
 layout: single
 images:
@@ -15,13 +11,16 @@ menu:
   docs:
     parent: Hosting
     weight: 1
-
 ---
-{{% warning  %}}
-**Forestry has stop building and deploying sites on January 31st, 2020**. <br/> [Read sunset notice](/docs/sunset/deployments/)
-{{% /warning %}}
 
-If you're looking for a way to automate your deployments, please consider on the following dedicated service:
+{{< warning >}}
+
+**Forestry deprecated deployment options since January 31st, 2020.** \
+[Read deployment sunset notice](/docs/sunset/deployments/)
+
+{{</ warning >}}
+
+To automate your deployments, there are plenty of dedicated services that will do the job for you:
 
 [Deploy with Buddy Works](https://buddy.works/docs/deployments)
 
@@ -29,11 +28,8 @@ If you're looking for a way to automate your deployments, please consider on the
 
 [Deploy with GitHub Actions](https://github.com/features/actions)
 
-[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/): 
+[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/):
 
 [Deploy with Render](https://render.com/docs): [Jekyll](https://render.com/docs/deploy-jekyll), [Hugo](https://render.com/docs/deploy-hugo), [Gatsby](https://render.com/docs/deploy-gatsby)
 
 [Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
-
-
-

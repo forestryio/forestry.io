@@ -30,10 +30,6 @@ menu:
 
 ![](/uploads/2018/01/settings-timezone.png)The timezone setting allows you to configure what timezone should be used when saving dates, previewing, and publishing. This setting effects the output of the [date field](/docs/settings/fields/datetime)
 
-## Deployment
-
-![](/uploads/2018/01/settings-deployment.png)The deployment settings allow you to configure the behaviour of the CMS related to your [hosting](/docs/hosting/) settings.
-
 ### Options
 
 * _Deploy on Git Push_: when enabled, Forestry will automatically publish your site when changes are pushed to your Git repository.
@@ -54,7 +50,7 @@ The File Paths settings allow you to configure how the Media Library operates. S
 
 ## Hugo Version
 
-Hugo Version allows you to configure which Hugo version Forestry uses to build your Hugo site.
+Hugo Version allows you to configure which Hugo version Forestry uses to build your Hugo site. You can still update HUGO_VERSION in your preview settings later if needed.
 
 {{% tip %}}
 [Look here](/docs/faqs/jekyll-version/) for information on how to configure which version of _Jekyll_ Forestry uses to build your site.
@@ -74,4 +70,6 @@ Hugo Version allows you to configure which Hugo version Forestry uses to build y
 
 ## Webhook URL
 
-![](/uploads/2018/01/settings-webhook.png)The Webhook URL setting allows you to configure an outgoing webhook to trigger third-party applications when events occur in Forestry. Learn more in the [Webhooks documentation](/docs/hosting/webhooks/).
+![](/uploads/2018/01/settings-webhook.png)
+
+The Webhook URL setting allows you to configure an outgoing webhook to trigger third-party applications when events occur in Forestry. Learn more in the [Webhooks documentation](/docs/hosting/webhooks/).

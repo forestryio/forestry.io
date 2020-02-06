@@ -208,7 +208,7 @@ Now, Forestry will be able to find and import your site. If you don’t already 
 
 Go to your Forestry Dashboard located at [https://app.forestry.io/dashboard/](https://app.forestry.io/dashboard/). Click the “Add Site” button and a modal dialog will appear.
 
-![](/uploads/2018/07/add-site-modal.png)
+![](/uploads/2019/08/select-generator.png)
 
 Choose Hugo and then click Next. Select your git provider on the next screen and click Next. Now it’s time to choose the git repository. Type “programming-quotes” into the dropdown box and you should see the repository you just created.
 
@@ -227,7 +227,7 @@ You should now see the dual-pane Forestry editor. On the left side is the data f
 You will see that Forestry has added a horizontal line automatically, which is a handy visual separator for your slides. Below the line, add the following markdown.
 
 ```markdown
-> “To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.” -- Grace Hopper 
+> “To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.” -- Grace Hopper
 ```
 
 In the top-right hand corner of the screen to the left of the green Save button is an eye icon. This icon lets you preview your changes by building a full copy of your site at a unique URL. It’s very handy to double-check that things look right before you cause any commits back to your git repo.

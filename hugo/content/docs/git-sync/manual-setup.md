@@ -17,7 +17,6 @@ The **manual setup** option can be used to set up your project without having to
 
 ## Using Manual Setup
 
-
 {{% pretty_screenshot img="/uploads/2019/04/add-site-disable-quick-setup.png" %}}
 
 To perform manual setup of a project, disable the "Quick Setup via OAuth" toggle on the **Select your git provider** screen.

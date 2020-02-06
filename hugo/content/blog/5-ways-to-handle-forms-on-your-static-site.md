@@ -32,19 +32,19 @@ JAMStack is not about sacrificing features for the sake of a performant, easy to
 
 In this post I will explore five options for handling form submissions with your static site:
 
-1. [Google Forms](#google-forms-https-www-google-com-forms-about)
-2. [FormKeep](#formkeep-https-formkeep-com)
-3. [Netlify Forms](#netlify-forms-https-www-netlify-com-docs-form-handling)
-4. [Formspree](#formspree-https-formspree-io)
-5. [FormPlug](#formplug-https-danielireson-github-io-formplug-serverless)
+1. [Google Forms](#google-forms)
+2. [FormKeep](#formkeep)
+3. [Netlify Forms](#netlify-forms)
+4. [Formspree](#formspree)
+5. [FormPlug](#formplug)
 
 The options presented here range from fully-managed solutions for lean teams, all the way up to self-hosted alternatives for those who want full control.
 
-## [Google Forms](https://www.google.com/forms/about/)
+## Google Forms
 
 ![](/uploads/2018/06/googleforms.png)
 
-Google Forms provides a clean, intuitive form builder UI for creating forms. These forms can then be embedded on your website in an `iframe` tag. Submissions are visible in the form dashboard under the **Responses** tab.
+[Google Forms](https://www.google.com/forms/about/) provides a clean, intuitive form builder UI for creating forms. These forms can then be embedded on your website in an `iframe` tag. Submissions are visible in the form dashboard under the **Responses** tab.
 
 **Best Feature:** Easy-to-use form builder.
 
@@ -62,11 +62,11 @@ Google has a healthy library of add-ons for forms, and also lets you add functio
 
 Navigate to the [Google Forms dashboard](https://docs.google.com/forms/) and select a form at the top to create a new form. Use the UI to create your form. When your form is finished, click the **Send** button and navigate to the `<>` tab to view the embed code. Copy this code and paste it anywhere in your document that you want the form to appear.
 
-## [FormKeep](https://formkeep.com/)
+## FormKeep
 
 ![](/uploads/2018/06/formkeep.png)
 
-FormKeep is another SaaS offering to handle your form submissions. FormKeep integrates easily with your existing forms, only requiring you to change the `action` attribute in the form HTML. You can view each form’s submissions in your FormKeep dashboard.
+[FormKeep](https://formkeep.com/) is another SaaS offering to handle your form submissions. FormKeep integrates easily with your existing forms, only requiring you to change the `action` attribute in the form HTML. You can view each form’s submissions in your FormKeep dashboard.
 
 **Best Feature:** Lots of integration options.
 
@@ -100,11 +100,11 @@ After:
       </label>
     </form>
 
-## [Netlify Forms](https://www.netlify.com/docs/form-handling/)
+## Netlify Forms
 
 ![](/uploads/2018/06/netlifyforms.png)
 
-Netlify offers a unique approach for integrating forms into your site. There is no JavaScript required, and your form does not post to a different domain: you simply add a `netlify` attribute to your `<form>` tag, and you can start receiving submissions in your Netlify dashboard. This is possible because Netlify parses your site’s HTML at deploy time, so they can identify your forms and ensure the necessary form handling code is present in the site’s hosting environment. The downside of this is that this feature is only available if you are using Netlify’s platform to deploy and host your static site.
+[Netlify Forms](https://docs.netlify.com/forms/setup/) offers a unique approach for integrating forms into your site. There is no JavaScript required, and your form does not post to a different domain: you simply add a `netlify` attribute to your `<form>` tag, and you can start receiving submissions in your Netlify dashboard. This is possible because Netlify parses your site’s HTML at deploy time, so they can identify your forms and ensure the necessary form handling code is present in the site’s hosting environment. The downside of this is that this feature is only available if you are using Netlify’s platform to deploy and host your static site.
 
 **Best Feature:** Easy integration and highly extensible
 
@@ -144,17 +144,17 @@ After:
         <textarea name="comments"></textarea>
       </label>
     </form>
-    
+
     // style.css
     .hpot {
       display: none;
     }
 
-## [Formspree](https://formspree.io/)
+## Formspree
 
 ![](/uploads/2018/06/formspree.png)
 
-Of all the options presented here, Formspree provides the shortest path to adding submission handling to an existing form. Formspree works by receiving submissions at `https://formspree.io/$YOUR_EMAIL` and will forward the submission data to the email address specified in that URL. Unfortunately, this means that the only way to view submissions is through your email inbox, though users who register and upgrade to the Gold plan can view their submissions in Formspree’s dashboard.
+Of all the options presented here, [Formspree](https://formspree.io/) provides the shortest path to adding submission handling to an existing form. Formspree works by receiving submissions at `https://formspree.io/$YOUR_EMAIL` and will forward the submission data to the email address specified in that URL. Unfortunately, this means that the only way to view submissions is through your email inbox, though users who register and upgrade to the Gold plan can view their submissions in Formspree’s dashboard.
 
 Formspree is also an open source project ([view on Github](https://github.com/formspree/formspree),) and they provide instructions on how to run your own instance of Formspree on Heroku.
 
@@ -198,17 +198,17 @@ After:
         <textarea name="comments"></textarea>
       </label>
     </form>
-    
+
     // style.css
     .hpot {
       display: none;
     }
 
-## [FormPlug](https://danielireson.github.io/formplug-serverless/)
+## FormPlug
 
 [![](/uploads/2018/06/formplug.png)](https://github.com/danielireson/formplug-serverless)
 
-FormPlug is an option for power users who want full control over the code that handles their submissions. FormPlug is an open source project built with the [Serverless Framework](https://serverless.com/). The code runs on AWS Lambda and uses Amazon SES to send emails.
+[FormPlug](https://danielireson.github.io/formplug-serverless/) is an option for power users who want full control over the code that handles their submissions. FormPlug is an open source project built with the [Serverless Framework](https://serverless.com/). The code runs on AWS Lambda and uses Amazon SES to send emails.
 
 **Best Features:** Free and open source. Uses Serverless Framework so it’s relatively easy to install on your AWS environment.
 
@@ -251,7 +251,7 @@ After:
         <textarea name="comments"></textarea>
       </label>
     </form>
-    
+
     // style.css
     .hpot {
       display: none;

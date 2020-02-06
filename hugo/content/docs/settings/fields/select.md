@@ -19,7 +19,7 @@ date: 2017-12-31 00:00:00 -0400
   - _Name_ &mdash; the key stored in your content’s front matter, used to access it in your templates.
   - _Description_ &mdash; a human friendly description of what the field does and/or instructions for your editors.
   - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
-- **Options** &mdash; populate the options for the dropdown. Can be [Custom](/docs/settings/fields/select#custom-source), [Document Reference](/docs/settings/fields/select#document-reference-source), or [Document Fields](/docs/settings/fields/select#data-source)
+- **Options** &mdash; populate the options for the dropdown. Can be [Custom](/docs/settings/fields/select#custom-source), [Document Reference](/docs/settings/fields/select#document-reference-source), or [Document Fields](/docs/settings/fields/select#document-fields)
 - **Validation**
   - _Required_ – prevent changes from being saved if this field is empty.
 - **Default** &mdash; supply a default option.
@@ -48,7 +48,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
 type: select
 name: [String]
 label: [String]
-description: [String] 
+description: [String]
 hidden: [true|false]
 default: [String]
 config:
@@ -103,7 +103,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
 type: select
 name: [String]
 label: [String]
-description: [String] 
+description: [String]
 hidden: [true|false]
 default: [String]
 config:
@@ -129,7 +129,7 @@ config:
 Omit the `config.section` option to allow selection from all content in the site.
 {{% /tip %}}
 
-<h2 id="data-source">Document Fields</h2>
+## Document Fields
 
 Allows developers to source options from a data file or page front matter. The data structure must be either an array of strings, or a single object where both keys and values are strings. More complex data types, such as an array of objects, are not supported.
 
@@ -188,7 +188,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
 type: select
 name: [String]
 label: [String]
-description: [String] 
+description: [String]
 hidden: [true|false]
 default: [String]
 config:
@@ -209,5 +209,5 @@ config:
     source:
       type: datafiles
       file: characters-toml
-      path: 
+      path:
 ```

@@ -38,7 +38,7 @@ Your browser does not support the video tag.
 
 To migrate your **Github or GitLab** project to key-based authentication, all you need to do is open your site in Forestry, navigate to the **Repository** tab in your **Settings**, and click the **Test Connection** button. You should see a message indicating the connection failed, and an option to reconnect. Click the **Reconnect** button, and if you see that you have reconnected successfully, you are finished migrating to key-based authentication.
 
-**Bitbucket users:** Unfortunately, the Bitbucket API does not currently allow us to automatically set up SSH keys. To migrate your Bitbucket project, you will want to follow the **"completing the connection"** steps from our [manual project setup](/docs/git-sync/manual-setup#completing-the-connection) guide.
+**Bitbucket users:** Unfortunately, the Bitbucket API does not currently allow us to automatically set up SSH keys. To migrate your Bitbucket project, you will want to follow the **"completing the connection"** steps from our [manual project setup](/docs/git-sync/manual-setup) guide.
 
 ### Creating New Projects
 

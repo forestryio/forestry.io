@@ -7,6 +7,6 @@
   {{- with $title -}}
   <h4>{{ . }}</h4>
   {{- end -}}
-  {{ safeHTML .Inner }}
+  {{ safeHTML .Inner | markdownify }}
 </div>
 {{- end -}}

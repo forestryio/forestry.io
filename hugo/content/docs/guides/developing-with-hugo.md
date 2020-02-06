@@ -26,7 +26,7 @@ Hugo is a *fast* static site generator, with a *lot* of enterprise features. If 
 ### Choose Hugo if you:
 
 * Are building a site that requires a lot of enterprise features, such customizable as RSS Feeds, Sitemaps, AMP (Accelerated Mobile Pages), etc.
-* Have a site with more than 500 pages, as Hugo is blazingly fast 
+* Have a site with more than 500 pages, as Hugo is blazingly fast
 * Feel learning a new language to build your theme templates isn’t a challenge for you.
 * Know building a custom theme is something you’re interested in.
 
@@ -39,9 +39,8 @@ Hugo is a *fast* static site generator, with a *lot* of enterprise features. If 
 ## Getting Started
 To get started developing for Hugo, you’ll need a basic understanding of HTML and Golang, Hugo’s default templating language. You’ll also likely want to [set up your local development environment][1].
 
-We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables content sync with the CMS, and enables you to use [continuous deployment][3].
+We also recommend that you set up a Git repository to manage development of your site. Doing so offers you free backups, enables content sync with the CMS, and enables you to use continuous deployment.
 
-<!-- Once you’re ready, feel free to use our [Hugo starter site](), which walks you through Forestry’s core features and provides a great starting point for your own website. -->
+Once you’re ready, feel free to use a [Hugo starter site](/starters/), which walks you through Forestry’s core features and provides a great starting point for your own website.
 
 [1]:	/docs/guides/developing-with-hugo/local-development
-[3]:	/docs/settings/#deployment

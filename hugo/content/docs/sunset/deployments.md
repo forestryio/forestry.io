@@ -1,6 +1,6 @@
 ---
 title: Deployments
-description: Deployment options will be removed on Janury 31st, 2020
+description: Forestry deprecated deployment options since January 31st, 2020.
 date: 2019-08-07T13:00:00.000+00:00
 publishdate: 2019-06-30T13:00:00.000+00:00
 expirydate: 2020-03-01T22:00:00.000+00:00
@@ -25,13 +25,13 @@ menu:
 
 ---
 
-⚠️ **Forestry will no longer perform deployments after January 31st, 2020**
+{{<warning>}}
+**Forestry deprecated deployment options since January 31st, 2020**
+{{</warning>}}
 
-Back in August, we started removing support for deployments (FTP, GitHub Pages, Amazon S3) on all newly created sites.
+Deployment options are not available within Forestry anymore.
 
-Deployments will continue to work for existing sites until January 31st, 2020; _we strongly encourage people still relying on this feature to move to dedicated deployment services as soon as possible_. 
-
-There are plenty of choices, amongst them: 
+Here is our list of recommended alternatives:
 
 [Deploy with Buddy Works](https://buddy.works/docs/deployments)
 
@@ -43,9 +43,8 @@ There are plenty of choices, amongst them:
 
 [Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
 
-### Why this change? 
+### Why this change?
 
-Only a small percentage of our users made use of Forestry deployments. For those users, we spend a lot of effort ensuring build and deployments work. We now prefer to focus on our core features like content modeling, performance, stability, editing experience, etc. Plus, dedicated services are doing a far better job at deployment and allow for scheduled jobs for instance; we think our users will be better off using those services.   
-  
+Only a small percentage of our users made use of Forestry deployments. For those users, we spent a lot of effort ensuring build and deployments work. We now prefer to focus on our core features like content modeling, performance, stability, editing experience, etc. Plus, dedicated services are doing a far better job at deployment and allow for scheduled jobs for instance; we think our customers will be better off using those services.
+
 Even if the current option has served you well until now, we think it's a smart move for everyone.
-

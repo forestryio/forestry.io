@@ -33,8 +33,6 @@ Next, head over to the *Settings* page of your repository in GitHub, and scroll 
 Note the URL listed at the top of the GitHub Pages settings. This is the URL that your GitHub Pages site will be served from.
 {{% /tip %}}
 
-Lastly, in Forestry navigate to the *Settings* page, click the *Hosting* tab, and set the *Connection* option to *Commit to source repo only*.
-
 Your Jekyll site will now be re-built by GitHub each time a commit is pushed to your repository.
 
 {{% tip Troubleshooting %}}
