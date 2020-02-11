@@ -6,6 +6,7 @@ featured: false
 images:
 - "/uploads/showcase/repoweraustralia.jpg"
 permalink: https://www.repoweraustralia.org.au/
+weight: 8
 ---
 
 Developed by [Code Nation](https://www.codenation.com/)

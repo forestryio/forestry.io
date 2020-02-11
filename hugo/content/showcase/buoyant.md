@@ -6,4 +6,5 @@ featured: false
 images:
 - "/uploads/showcase/buoyant.png"
 permalink: https://buoyant.io
+weight: 5
 ---

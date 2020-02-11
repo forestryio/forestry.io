@@ -6,4 +6,5 @@ featured: false
 images:
 - "/uploads/showcase/redweb.png"
 permalink: https://www.redweb.com
+weight: 7
 ---

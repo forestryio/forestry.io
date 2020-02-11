@@ -6,4 +6,5 @@ featured: true
 images:
 - "/uploads/showcase/chartio.png"
 permalink: https://chartio.com
+weight: 3
 ---

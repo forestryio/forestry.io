@@ -6,6 +6,6 @@ featured: true
 images:
 - "/uploads/showcase/freshebt.png"
 permalink: https://www.freshebt.com
-
+weight: 4
 ---
 Site developed by [The New Dynamic](https://thenewdynamic.com)

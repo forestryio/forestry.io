@@ -6,6 +6,7 @@ featured: false
 images:
 - "/uploads/showcase/iconinteractive.png"
 permalink: https://iconinteractive.com
+weight: 6
 ---
 
 [Read more about Icon Interactive site relaunch](https://iconinteractive.com/news/icon-interactive-site-relaunch).
