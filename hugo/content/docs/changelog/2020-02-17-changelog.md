@@ -17,3 +17,8 @@ summary: "Revamped Media Pagination \U0001F680 "
 * Support **Oauth for GitLab**
 * Support for **Gitlab private repositories**
 * Remove link to starters from import
+
+### Sunset
+
+* **Deployments**, as formerly announced are now deprecated: you can no longer deploy through Forestry. 😥  
+  Don't be sad, our [recommended hosting solutions](/docs/hosting/) do an even better job at it!
