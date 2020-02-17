@@ -38,6 +38,16 @@ starters:
     repo: kendallstrautman/brevifolia-hugo-forestry
     branch: ''
     engine: ''
+- name: Kross
+  preview: http://demo.themefisher.com/kross-hugo/
+  image: img/starters/kross.png
+  author: Themefisher
+  versions:
+  - name: Hugo
+    repo: forestryio/kross-hugo-starter
+    engine: hugo
+    branch: ''
+  textline: Portfolio
 - name: Jæren
   textline: Portfolio
   image: img/starters/joeren.jpg
@@ -48,16 +58,6 @@ starters:
     repo: forestryio/portfolio-vuepress
     branch: master
     engine: vuepress
-- name: Jamdocs
-  preview: https://jamdocs.netlify.com
-  image: img/starters/jamdocs.png
-  author: Samuel Horn
-  versions:
-  - name: Gridsome
-    repo: samuelhorn/jamdocs
-    engine: other
-    branch: ''
-  textline: Documentation
 - name: Hylia
   textline: Blog
   preview: https://hylia-forestry.netlify.com
@@ -68,16 +68,6 @@ starters:
     repo: DirtyF/hylia
     branch: forestry
     engine: other
-- name: Darkfolio
-  textline: Portfolio
-  preview: https://darkfolio.netlify.com
-  image: img/starters/darkfolio.png
-  author: Nichlas W. Andersen
-  versions:
-  - name: Gridsome
-    repo: itsnwa/darkfolio
-    engine: other
-    branch: ''
 - name: Casper
   preview: https://hugocasper3-demo.jonathanjanssens.com
   image: img/starters/casper.jpg
@@ -88,6 +78,26 @@ starters:
     engine: hugo
     branch: ''
   textline: Blog
+- name: Darkfolio
+  textline: Portfolio
+  preview: https://darkfolio.netlify.com
+  image: img/starters/darkfolio.jpg
+  author: Nichlas W. Andersen
+  versions:
+  - name: Gridsome
+    repo: itsnwa/darkfolio
+    engine: other
+    branch: ''
+- name: Jamdocs
+  preview: https://jamdocs.netlify.com
+  image: img/starters/jamdocs.png
+  author: Samuel Horn
+  versions:
+  - name: Gridsome
+    repo: samuelhorn/jamdocs
+    engine: other
+    branch: ''
+  textline: Documentation
 - name: Belkirk
   textline: Site
   preview: https://forestryio-templates.github.io/belkirk-jekyll-demo/
