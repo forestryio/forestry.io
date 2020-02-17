@@ -28,7 +28,7 @@ To automate your deployments, there are plenty of dedicated services that will d
 
 [Deploy with GitHub Actions](https://github.com/features/actions)
 
-[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/):
+[Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
 
 [Deploy with Render](https://render.com/docs): [Jekyll](https://render.com/docs/deploy-jekyll), [Hugo](https://render.com/docs/deploy-hugo), [Gatsby](https://render.com/docs/deploy-gatsby)
 
