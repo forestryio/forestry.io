@@ -4,7 +4,6 @@ authors:
 date: 2020-02-17
 title: 2020/02/17 Changelog
 summary: "Revamped Media Pagination \U0001F680 "
-draft: true
 
 ---
 ### Enhancements
