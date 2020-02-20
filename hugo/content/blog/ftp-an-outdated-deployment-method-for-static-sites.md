@@ -51,9 +51,9 @@ We put together a few tips and providers to make it easier for you to get starte
 
 ### Git-based deployment methods
 
-In recent years providers such as Netlify, Github Pages or Zeit have caused quite a bit of a wave. These providers offer a very generous free plan, which is more than enough for most personal, non-profit or semi-commercial sites. Another benefit is certainly the ease-of-use, you can set up a hosted site within only a few minutes.
+In recent years providers such as Netlify, Github Pages or ZEIT have caused quite a bit of a wave. These providers offer a very generous free plan, which is more than enough for most personal, non-profit or semi-commercial sites. Another benefit is certainly the ease-of-use, you can set up a hosted site within only a few minutes.
 
-Github Pages and Zeit simply take your repository and host it for you. This is more than enough and can easily be configured with Forestry. You'll use the deployment method "Github Pages" (limited to Github as a storage provider at the moment). Read our [quick guide](https://forestry.io/docs/hosting/github-pages/) on how to set up Github Pages (or Zeit) with Forestry.
+Github Pages and ZEIT simply take your repository and host it for you. This is more than enough and can easily be configured with Forestry. You'll use the deployment method "Github Pages" (limited to Github as a storage provider at the moment). Read our [quick guide](https://forestry.io/docs/hosting/github-pages/) on how to set up Github Pages (or Zeit) with Forestry.
 
 Netlify can also be used with Gitlab or Bitbucket and they offer some additional tooling. You can have them use a custom build command to build your site, run functions or add authentication. To use Netlify with Forestry you simply need use the default deployment setting "Commit to source repo only".
 

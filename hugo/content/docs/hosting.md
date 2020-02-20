@@ -32,4 +32,4 @@ To automate your deployments, there are plenty of dedicated services that will d
 
 [Deploy with Render](https://render.com/docs): [Jekyll](https://render.com/docs/deploy-jekyll), [Hugo](https://render.com/docs/deploy-hugo), [Gatsby](https://render.com/docs/deploy-gatsby)
 
-[Deploy with Zeit Now](https://zeit.co/docs/v2/introduction/)
+[Deploy with ZEIT Now](https://zeit.co/docs/v2/introduction/)

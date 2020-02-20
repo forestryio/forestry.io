@@ -1,6 +1,6 @@
 ---
 title: "Bejamas"
-description: "Bejamas.io is built with Gatsby, Forestry and deployed on Zeit."
+description: "Bejamas.io is built with Gatsby, Forestry and deployed on ZEIT."
 featured: true
 date: "2020-01-10T10:40:55+01:00"
 images:
