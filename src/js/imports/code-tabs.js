@@ -20,9 +20,9 @@ function setActiveTab(tabGroup, tabName) {
   var matchedLabel = tabGroup.querySelector(`.tab-label[data-for="${tabName}"]`)
 
   /*
-    *  Only change active tab if the tab is present in this group.
-    *  This allows tab switching to apply to all tabs on the page without causing issues 
-    */
+   *  Only change active tab if the tab is present in this group.
+   *  This allows tab switching to apply to all tabs on the page without causing issues
+   */
   if (matchedTab && matchedLabel) {
     deactivateTabs(tabGroup)
     matchedTab.classList.add("active")

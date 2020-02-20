@@ -1,9 +1,7 @@
 <div class="search-result" data-id="{{ objectID }}">
   <div class="search-result--meta">
     <span class="search-result--date">
-      {{ #FormatDate }}
-        {{ date }}
-      {{ /FormatDate }}
+      {{ #FormatDate }} {{ date }} {{ /FormatDate }}
     </span>
     <span class="search-result--category" data-category="{{ section }}">{{ section }}</span>
   </div>

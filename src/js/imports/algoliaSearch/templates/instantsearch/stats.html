@@ -1,11 +1,9 @@
 {{#hasManyResults}}
-  <h2>Showing Results for "{{ query }}"</h2>
-  <small>Page {{ page }} of {{ nbPages }} · {{ nbHits }} results</small>
-{{/hasManyResults}}
-{{#hasOneResult}}
-  <h2>Showing results for "{{ query }}"</h2>
-  <small>Page {{ page }} of {{ nbPages }} · {{ nbHits }} results</small>
-{{/hasOneResult}}
-{{#hasNoResults}}
-  <h2>No results for "{{ query }}"</h2>
+<h2>Showing Results for "{{ query }}"</h2>
+<small>Page {{ page }} of {{ nbPages }} · {{ nbHits }} results</small>
+{{/hasManyResults}} {{#hasOneResult}}
+<h2>Showing results for "{{ query }}"</h2>
+<small>Page {{ page }} of {{ nbPages }} · {{ nbHits }} results</small>
+{{/hasOneResult}} {{#hasNoResults}}
+<h2>No results for "{{ query }}"</h2>
 {{/hasNoResults}}
