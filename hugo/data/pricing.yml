@@ -3,12 +3,11 @@ plans:
 - title: Personal
   priceAnnually: "0"
   priceMonthly: "0"
-  description: Forever free plan.
-  planIncludes: 3 first users
+  description: Invite up to 3 users per website.
+  planIncludes: Up to 3 sites.
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
-  - text: 3 sites
   - text: Git sync
   - text: Instant Previews
     info: Quickly preview changes before publishing
@@ -16,7 +15,7 @@ plans:
     info: Install the Forestry CMS on your site (mysite.com/admin)
   - text: Jekyll custom plugins support
   - text: Host anywhere
-    info: AWS, Netlify, GitHub, it's up to you.
+    info: Netlify, Zeit, AWS, GitHub, GitLab, Render, Buddy Works, it's up to you.
   - text: Community support
     info: No priority support, response time may vary
 - title: Starter
@@ -34,7 +33,7 @@ plans:
     info: Assign organization members to teams. These teams can be added to sites
       with admin, developer, or editor access levels
   - text: Business support
-    info: Median first response time under 8 hours
+    info: Median first response time under 2 hours
 - title: Pro
   priceAnnually: "0"
   priceMonthly: "749"
