@@ -90,6 +90,9 @@ brand_logos:
     alt: University of Georgia
     height: '50'
     offset: '0'
+  cta:
+    - permalink: /showcase
+      textline: View Showcase
 features:
 - headline: Your site, your workflow
   textline: |

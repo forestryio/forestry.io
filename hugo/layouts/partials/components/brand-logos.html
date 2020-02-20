@@ -5,6 +5,11 @@
             {{- range .sources -}}
                 <img src="{{ .permalink }}" class="logos--logo" width="auto" height="{{ .height }}" style="margin-top:{{ .offset }}px;" alt="{{ .alt | default .permalink }}" />
             {{- end -}}
-        </div>    
+        </div>
+        <div class="center">
+          {{- range .cta }}
+          <a href="{{ .permalink }}" class="button big black">{{ .textline }}</a>
+          {{ end -}}
+        </div>
     </div>
 </section>

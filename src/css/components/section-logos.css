@@ -19,7 +19,7 @@
   align-content: flex-start;
   width: 100%;
   justify-content: flex-start;
-  margin: 0 -0.75rem;
+  margin: 0 -0.75rem 1rem;
 
   @media screen and (min-width: 900px) {
     justify-content: space-between;
