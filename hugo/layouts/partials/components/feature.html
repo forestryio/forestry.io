@@ -15,7 +15,7 @@
           <div class="section--sub{{ if or (eq .direction "vertical") (eq .direction "tab") }} is-center{{ end }}">
             {{ markdownify .textline }}
           </div>
-        </div>        
+        </div>
         {{- if eq .direction "tab" -}}
         {{- with .tabs -}}
         <div class="feature-block--container">
@@ -64,9 +64,9 @@
                 {{- end -}}
               </div>
             </div>
-        {{- end -}}  
+        {{- end -}}
         </div>
-        </div>{{- end -}} 
+        </div>{{- end -}}
         <script>
 
         function switchTab(tab) {
@@ -114,6 +114,9 @@
     {{- if eq .class "section-deploy" -}}
       <div class="hosting-logos">
         <div class="container">
+          <div class="hosting-logo">
+            {{- partial "svg" (dict "id" "logos--zeit" "height" "24") -}}
+          </div>
           <div class="hosting-logo">
             {{- partial "svg" (dict "id" "logos--aws" "height" "30") -}}
           </div>
