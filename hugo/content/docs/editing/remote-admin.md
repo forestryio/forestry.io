@@ -33,8 +33,9 @@ The Remote Admin is deployed as a static HTML page, so be sure you deploy it to 
 
 ### Examples
 
-* In Hugo, this is `/static/admin`
-* In Jekyll, this is `/admin/`
+* In Hugo and Gatsby or Gridsome, this is `/static/admin`
+* In Jekyll, this is `/admin/` by default (depends on your source folder).
+* Eleventy is more flexible, add the directory you wish to copy with [`addPassthroughCopy`](https://www.11ty.dev/docs/copy/)
 
 ## Deploying the Remote Admin
 
