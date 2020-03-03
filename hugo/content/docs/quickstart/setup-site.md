@@ -58,7 +58,7 @@ If you use Github, you will see a button at the top of the modal with a lock. By
 
 {{% tip "Config path" %}}
 
-If you are using Hugo or Jekyll, Forestry will look in the root of your repository for a configuration file. This will be a file named `config.toml` in Hugo, and `_config.yml` in Jekyll. If this file cannot be located, Forestry will prompt you to enter the path to this file. Enter the path from the root of your project to the directory containing this file.
+If you are using Hugo or Jekyll, Forestry will look in the root of your repository for a configuration file. This will be a file named `config.toml` in Hugo, and `_config.yml` in Jekyll. If this file cannot be located, Forestry will prompt you to enter the path to this file. Enter the path from the root of your project to the directory containing this file. If you use config-based folders in Hugo, then add an empty `config.toml` file at root to bypass the check :blush: .
 <br /><br />
 For example, if you have a repository containing a Hugo site in a subfolder named `hugo/`, your `config.toml` file will be located at `hugo/config.toml`. When you import your site into Forestry, it will prompt you to enter the config path, and you should enter `hugo` in this field.
 
