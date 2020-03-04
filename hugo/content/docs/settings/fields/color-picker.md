@@ -56,6 +56,8 @@ config:
     color_format: [Hex|RGB]
 ```
 
+The color format is required.
+
 ### Example
 
 ```
@@ -65,4 +67,5 @@ label: Background Color
 description: The background color of the element.
 config:
     color_format: Hex
+default: "#9B9B9B"
 ```
