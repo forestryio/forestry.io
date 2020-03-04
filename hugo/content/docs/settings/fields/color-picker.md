@@ -56,7 +56,7 @@ config:
     color_format: [Hex|RGB]
 ```
 
-The color format is required.
+The color format is required, and defaults to Hex when you create a color field through the user interface.
 
 ### Example
 
