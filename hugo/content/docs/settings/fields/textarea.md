@@ -75,7 +75,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     config:
       wysiwyg: [true|false]
       schema:
-        format: [markdown|html|inline_html]
+        format: [markdown|html|html-blocks]
 
 ## Example
 
