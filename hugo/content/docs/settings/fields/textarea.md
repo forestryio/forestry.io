@@ -75,7 +75,7 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     config:
       wysiwyg: [true|false]
       schema:
-        format: [markdown|html|html-blocks]
+        format: [markdown|html-blocks|html]
 
 ## Example
 
@@ -96,9 +96,9 @@ Enables a rich text editor.
 
 This field appears when _WYSIWYG_ is enabled. Select which format should be output to your front matter:
 
-* **Markdown**
-* **HTML**
-* **Inline HTML** (only inline elements allowed)
+* **Markdown** _(markdown)_
+* **HTML** _(html-blocks)_
+* **Inline HTML** (only inline elements allowed) _(html)_
 
 ### Example
 
