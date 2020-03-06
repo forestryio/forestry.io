@@ -27,5 +27,4 @@ summary: Better Git synchronization, Ruby 2.6 + Node preview environment, and mo
 
 ### Deprecation
 
-* **FTP Deployments**: New imported sites can not build and publish through (S)FTP anymore, this deployment option will be removed from all sites in September.  
-  [**Read the sunset notice**](/docs/sunset/deployments/)
+* **FTP Deployments**: New imported sites can not build and publish through (S)FTP anymore.
