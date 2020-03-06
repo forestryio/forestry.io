@@ -1,6 +1,6 @@
 ---
 title: Hosting Options
-weight: '1'
+weight: 1
 publishdate: 2017-12-31T04:00:00.000+00:00
 expirydate: 2030-12-31T04:00:00.000+00:00
 date: '2017-12-31T04:00:00.000+00:00'
@@ -13,14 +13,11 @@ menu:
     weight: 1
 ---
 
-{{< warning >}}
+**Deployment options are deprecated since January 31st, 2020.**
 
-**Forestry deprecated deployment options since January 31st, 2020.** \
 [Read deployment sunset notice](/docs/sunset/deployments/)
 
-{{</ warning >}}
-
-To automate your deployments, there are plenty of dedicated services that will do the job for you:
+To automate your deployments, there are plenty of dedicated services that will happily do the job for you:
 
 [Deploy with Buddy Works](https://buddy.works/docs/deployments)
 
