@@ -15,8 +15,6 @@ menu:
 
 **Deployment options are deprecated since January 31st, 2020.**
 
-[Read deployment sunset notice](/docs/sunset/deployments/)
-
 To automate your deployments, there are plenty of dedicated services that will happily do the job for you:
 
 [Deploy with Buddy Works](https://buddy.works/docs/deployments)
