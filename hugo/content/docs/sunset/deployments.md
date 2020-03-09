@@ -3,7 +3,7 @@ title: Deployments
 description: Forestry deprecated deployment options since January 31st, 2020.
 date: 2019-08-07T13:00:00.000+00:00
 publishdate: 2019-06-30T13:00:00.000+00:00
-expirydate: 2020-03-01T22:00:00.000+00:00
+expirydate: 2020-12-31T22:00:00+00:00
 authors:
 - team forestry
 headline: ''
@@ -24,7 +24,6 @@ menu:
     parent: Sunset Notices
 
 ---
-
 {{<warning>}}
 **Forestry deprecated deployment options since January 31st, 2020**
 {{</warning>}}
