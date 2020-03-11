@@ -19,7 +19,7 @@ menu:
 {{% warning "Known limitations" %}}
 Menus are only supported with Hugo and Jekyll and don't support multi-nested levels or linking to Hugo page bundles at the moment.
 Menus won't show if you're using Gatsby, Gridsome, Eleventy, VuePress, etc.
-{{% warning %}}
+{{% /warning %}}
 
 Menus allow content editors to easily manage existing menus in your site, such as site navigation and sidebars using a simple drag-and-drop interface.
 
