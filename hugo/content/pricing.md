@@ -11,7 +11,10 @@ faqs:
 - headline: Can I use the free plan for commercial use?
   textline: Yes, we only bill based on number of users contributing to a site.
 - headline: Do you offer non-profit discounts?
-  textline: 'Yes, please contact us here: <a href="/support/" title="">contact us</a>.'
+  textline: Our free plan should be enough for small non-profits. If you need more
+    than 3 collaborators, and if you're part of a 501(c)(3) non-profit Organization,
+    <a href="dan@forestry.io">email us</a> your paperwork and we'll verify your status,
+    before considering putting you on a custom plan.
 - headline: Do I need to configure my project?
   textline: Import your repository, point to your content and you'll get a custom
     CMS.
