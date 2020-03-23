@@ -6,7 +6,7 @@ type: pricing
 weight: 1
 publishdate: 2017-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-date: 2019-10-21T03:00:00.000+00:00
+date: 2020-03-23
 faqs:
 - headline: Can I use the free plan for commercial use?
   textline: Yes, we only bill based on number of users contributing to a site, you
@@ -18,7 +18,8 @@ faqs:
     before considering putting you on a custom plan.
 - headline: Do I need to configure my project?
   textline: Import your repository, point to your content and you'll get a custom
-    CMS.
+    CMS. Define your custom sections and your front matter templates and you're good
+    to go!
 - headline: What is a User?
   textline: A _User_ refers to people in your organization who have access to your
     sites and who are assigned a specific role (only available on paid plans).
