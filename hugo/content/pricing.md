@@ -16,9 +16,9 @@ faqs:
     get 3 collaborators for free.
 - headline: Do you offer non-profit discounts?
   textline: Our free plan should be enough for small non-profits. If you need more
-    than 3 collaborators, and if you're part of a 501(c)(3) non-profit Organization,
-    <a href="dan@forestry.io">email us</a> your paperwork and we'll verify your status,
-    before considering putting you on a custom plan.
+    than three collaborators, and you’re part of a 501©(3) non-profit organization,
+    please <a href="mailto:dan@forestry.io">email us</a> your paperwork, and we’ll
+    verify your status before reaching out about any custom plans.
 - headline: Do I need to configure my project?
   textline: Import your repository, point to your content and you'll get a custom
     CMS. Define your custom sections and your front matter templates and you're good
