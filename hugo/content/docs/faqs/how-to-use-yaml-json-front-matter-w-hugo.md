@@ -25,4 +25,4 @@ Forestry respects the configuration set in your Hugo `config` file. The variable
 
 {{% /tab %}} {{% /code_tabs %}}
 
-This option has now been deprecated in Hugo. Front matter format is now based on the front matter of your archetypes.
+This option has now been deprecated in recent Hugo versions. The format is now based on the front matter used in your [archetypes](https://gohugo.io/content-management/archetypes/).
