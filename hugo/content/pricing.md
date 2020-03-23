@@ -9,7 +9,8 @@ expirydate: 2030-01-01T04:00:00.000+00:00
 date: 2019-10-21T03:00:00.000+00:00
 faqs:
 - headline: Can I use the free plan for commercial use?
-  textline: Yes, we only bill based on number of users contributing to a site.
+  textline: Yes, we only bill based on number of users contributing to a site, you
+    get 3 collaborators for free.
 - headline: Do you offer non-profit discounts?
   textline: Our free plan should be enough for small non-profits. If you need more
     than 3 collaborators, and if you're part of a 501(c)(3) non-profit Organization,
