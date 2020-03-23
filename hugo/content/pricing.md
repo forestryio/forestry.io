@@ -20,10 +20,10 @@ faqs:
     please <a href="mailto:dan@forestry.io">email us</a> your paperwork, and we’ll
     verify your status before reaching out about any custom plans.
 - headline: Do I need to configure my project?
-  textline: Import your repository, point to your content and you'll get a custom
-    CMS. Define your <a href="/docs/settings/content-sections/">custom sections</a>
-    and your <a href="/docs/settings/front-matter-templates/">front matter templates</a>
-    and you're good to go!
+  textline: You can use a pre-configured starter or import your repository, point
+    to your content and you'll get a custom CMS. Define your <a href="/docs/settings/content-sections/">custom
+    sections</a> and your <a href="/docs/settings/front-matter-templates/">front matter
+    templates</a> and you're good to go!
 - headline: What is a User?
   textline: A _User_ refers to people in your Organization who have access to your
     sites and who are assigned a specific role (only available on paid plans).
