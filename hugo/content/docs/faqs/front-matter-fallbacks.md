@@ -50,7 +50,7 @@ Inside `layouts/default/single.html`
 ```
 
 ## Fallback/Hidden Values in Jekyll
-To set a fallback or hidden value for front matter in Hugo, you can use [Front Matter Defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults).
+To set a fallback or hidden value for front matter in Jekyll, you can use [Front Matter Defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults).
 
 This allows you to specify default values for files based on a scope. For example, if you wanted to set a default author for all posts in the `_posts` collection:
 
