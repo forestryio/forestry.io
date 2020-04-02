@@ -1,9 +1,9 @@
 ---
 title: GitLab
 weight: 2
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-04-06 04:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2017-04-06T04:00:00.000+00:00'
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -39,13 +39,12 @@ This will redirect you to GitLab, and prompt you to enter your login credentials
 
 Give Forestry access to your GitLab repositories by clicking "Authorize". You can also request access to any [GitLab Groups](#importing-from-gitlab-groups) you are a member of.
 
-{{% warning " " %}}
-In order to import a site from GitLab, you will need [master permissions](https://gitlab.com/help/user/permissions) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
+{{% warning " " %}} In order to import a site from GitLab, you will need [maintainer or owner permissions](https://gitlab.com/help/user/permissions) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
 {{% /warning %}}
 
 ![](/uploads/2018/04/add-site-flow-choose-repo-not-github.png)
 
-Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. From the dropdowns, choose your repository and the branch you would like to import, and then press "Next".
+Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. Use [manual setup](/docs/git-sync/manual-setup/) if you need to access private repositories. From the dropdown, choose your repository and the branch you would like to import, and then press "Next".
 
 ![](/uploads/2018/04/add-site-flow-config-file.png)
 
@@ -57,8 +56,6 @@ To invite collaborators to edit content on your project, see [user roles](/docs/
 
 ## Importing from GitLab Groups
 
-If you are trying to import a repository from a GitLab Group you are a member of, you will need master permissions on the actual repository you are trying to import.
+If you are trying to import a repository from a GitLab Group you are a member of, you will need maintainer permissions on the actual repository you are trying to import.
 
-{{% warning %}}
-Applying master permissions to a group does not effect its members when importing. Members **must** be given master access on a per-repository basis.
-{{% /warning %}}
+{{% warning %}} Applying maintainer permissions to a group does not effect its members when importing. Members **must** be given maintainer access on a per-repository basis. {{% /warning %}}
