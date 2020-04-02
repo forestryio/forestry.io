@@ -44,13 +44,15 @@ Give Forestry access to your GitLab repositories by clicking "Authorize". You ca
 
 ![](/uploads/2018/04/add-site-flow-choose-repo-not-github.png)
 
-Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. Use [manual setup](/docs/git-sync/manual-setup/) if you need to access private repositories. From the dropdown, choose your repository and the branch you would like to import, and then press "Next".
+Once authorized, you will be redirected back to Forestry to choose the repository you wish to import. Use [manual setup](/docs/git-sync/manual-setup/) if you need to access **private repositories**. 
+
+From the dropdown, choose your repository and the branch you would like to import, and then press "Next".
 
 ![](/uploads/2018/04/add-site-flow-config-file.png)
 
 If Forestry can't locate your site's config file inside of the root of your project, you'll be prompted to provide the directory it is located in.
 
-When you're done just click on "Import Site" and let us get your site ready.
+When you're done click on "Import Site" and let us get your site ready.
 
 To invite collaborators to edit content on your project, see [user roles](/docs/settings/collaborators/).
 
