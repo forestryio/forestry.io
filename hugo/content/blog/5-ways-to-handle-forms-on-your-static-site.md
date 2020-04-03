@@ -40,6 +40,17 @@ In this post I will explore five options for handling form submissions with your
 
 The options presented here range from fully-managed solutions for lean teams, all the way up to self-hosted alternatives for those who want full control.
 
+{{% tip %}}
+
+**Update**: While those options remain viable, other forms services were created since. Check also:
+
+- [StaticKit](https://statickit.com/)
+- [Formik](https://formik.com)
+- [Other Forms services](https://serverless.css-tricks.com/services/forms)
+
+{{% /tip %}}
+
+
 ## Google Forms
 
 ![](/uploads/2018/06/googleforms.png)
