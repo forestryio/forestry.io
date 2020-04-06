@@ -22,9 +22,9 @@ menu: []
 draft: false
 
 ---
-We’re looking for a highly technical, customer-focused Solutions Engineer to interface between our customers and our product teams. This key role will both support the adoption of Forestry products (Tina CMS & Forestry CMS) in new organizations and help our product team understand the needs of our customers.
+We’re looking for a highly technical, customer-focused Solutions Engineer to interface between our customers and our product teams. This key role will support the adoption of Forestry products (Tina CMS & Forestry CMS) in new organizations and help our product team understand the needs of our customers.
 
-As the first hire of its kind at Forestry, there will be a lot of opportunity for impact and growth. We want to help our clients implement high-quality, successful JAMstack solutions, and this role will be front and center in that effort. Our first Solutions Engineer will help set the high standards by which we do this going forward.
+As the first hire of its kind at Forestry, there will be a lot of opportunities for impact and growth. We want to help our clients implement high-quality, successful JAMstack solutions, and this role will be front and center in that effort. Our first Solutions Engineer will help set the high standards by which we do this going forward.
 <!--more-->
 
 * This position is for a full-time employee.
