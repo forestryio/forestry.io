@@ -11,8 +11,8 @@ authors: []
 categories: []
 tags: []
 cta:
-  headline: Unfortunately, we don't currently have any job openings.
-  textline: But if you'd still like to express interest in working with us,
+  headline: Don't see a job that matches your profile?
+  textline: If you'd still like to express interest in working with us,
   ctas:
     - RelPermalink: "mailto:careers@forestry.io"
       textline: "Shoot us a note"
@@ -37,8 +37,11 @@ We invite interested candidates to contact [careers@forestry.io](mailto:careers@
 \
 
 * – Resume/CV
-* – Cover Letter
+* – Cover letter
 * – LinkedIn, GitHub or other relevant social accounts that describe your professional experience
 * – Links to your personal website, blog or portfolios, if available and applicable
 
 <!--more-->
+
+<!-- Unfortunately, we don't currently have any job openings. >
+<!-- Don't see a job that matches your profile? >
