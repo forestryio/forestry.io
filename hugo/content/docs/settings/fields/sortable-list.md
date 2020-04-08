@@ -77,6 +77,8 @@ default:
 - [String]
 config:
   use_select: [true|false]
+  min: [int]
+  max: [int]
 ```
 
 ### Example
@@ -89,7 +91,9 @@ hidden: false
 default:
 - 1 cup water
 config:
-    use_select: [false]
+    use_select: false
+    min: 1
+    max:
 ```
 
 {{% tip %}}
