@@ -80,16 +80,22 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     label: [String]
     description: [String]
     hidden: [true|false]
-    default: 
+    default:
         - [String]
 
 ### Example
 
-    type: tag_list
-    name: tags
-    label: Tags
-    description: Provide tags for this post
-    hidden: [false]
-    default:
-        - hugo
-        - jeykll
+```
+type: tag_list
+name: ssg
+label: Static Site Generator
+description: Pickup your tool
+default:
+- Eleventy
+- Gatsby
+- Gridsome
+- Hugo
+- Jekyll
+- NextJS
+- NuxtJS
+```

@@ -43,7 +43,7 @@ Easily display a comma delimited string using the `delimit` filter
 {{ range .Params.ingredients }}
   <li>{{ . }}</li>
 {{ end }}
-</ul> 
+</ul>
 ```
 
 #### Jekyll
@@ -83,7 +83,7 @@ config:
 
 ### Example
 ```
-type: select
+type: list
 name: ingredients
 label: Ingredients
 description: Provide ingredients for this recipe
@@ -96,6 +96,29 @@ config:
     max:
 ```
 
+```
+type: list
+name: members
+label: Team members
+description: Pick up some members
+config:
+  use_select: true
+  min: 1
+  max: 5
+  source:
+    type: simple
+  options:
+  - Dan
+  - DJ
+  - Frank
+  - James
+  - Jeff
+  - Jordan
+  - Mitch
+  - Nolan
+  - Scott
+
+```
 {{% tip %}}
 See the [select field](/docs/settings/fields/select) documentation for configuring the select when `config.use_select` is set to `true`
 {{% /tip %}}

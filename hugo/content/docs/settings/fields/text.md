@@ -53,13 +53,20 @@ You can configure this field in _Front Matter Template_ [Config Files](/docs/set
     default: [String]
     config:
       required: [true|false]
+      min: [Int]
+      max: [Int]
 
 ### Example
 
-    type: text
-    name: title
-    label: Title
-    hidden: false
-    default: ""
-    config:
-      required: true
+A required description field limited between 30 and 180 characters:
+
+```yaml
+- name: description
+  label: Description
+  type: text
+  description: Human-friendly summary to be displayed in SERP
+  config:
+    required: true
+    min: 30
+    max: 180
+```

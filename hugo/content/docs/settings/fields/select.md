@@ -192,22 +192,27 @@ description: [String]
 hidden: [true|false]
 default: [String]
 config:
-    source:
-      type: documents
+   required: [true|false]
+   source:
+      type: [pages|documents]
+      section: [String]
       file: [String]
       path: [String]
 ```
 
 ### Example
+
 ```
+label: Author
 type: select
 name: author
-label: Author
-description: Select the page's author
-hidden: false
+default: ''
 config:
-    source:
-      type: datafiles
-      file: characters-toml
-      path:
+  required: true
+  options: []
+  source:
+    type: pages
+    section: authors
+    file: _data/autors.yaml
+    path:
 ```

@@ -76,14 +76,14 @@ config:
 
 ### Example
 ```
-type: number
-name: weight
-label: Weight
-description: Set the page's sort order
-default: -99
-hidden: false
-config:
-  min: 0
-  max: 99
-  step: 1
+- name: weight
+  type: number
+  label: Weight
+  description: Set the page's sort order
+  default: -99
+  config:
+    required: true
+    min: 0
+    max: 99
+    step: 1
 ```
