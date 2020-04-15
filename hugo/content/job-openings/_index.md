@@ -31,15 +31,11 @@ Read more about [working at Forestry.io](https://forestry.io/careers).
 
 <br/>
 
-We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io) and include your:
+To apply, please follow the instructions on the job posting page.
 
-\
-\
+<br/>
 
-* – Resume/CV
-* – Cover letter
-* – LinkedIn, GitHub or other relevant social accounts that describe your professional experience
-* – Links to your personal website, blog or portfolios, if available and applicable
+If you don't see a role that fits, but still want to get in touch, feel free to email us at [careers@forestry.io](mailto:careers@forestry.io) and let us know. 
 
 <!--more-->
 
