@@ -64,13 +64,16 @@ We’re a growing team, headquartered in PEI, Canada with roughly half our staff
 
 Read more about our [culture, values, hiring process and perks](https://forestry.io/careers).
 
+<hr/>
+
 ## Apply
 
 We value diversity of all kinds and strongly encourage applicants from under-represented groups in the software industry to apply.
 
-We invite interested candidates to contact [careers@forestry.io](mailto:careers@forestry.io) and include your:
-
-* Resume/CV
-* Cover letter
-* LinkedIn or other relevant social accounts that describe your professional experience
-* Links to your personal website, blog or portfolios (if available and applicable).
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "1893561",
+	formId: "46d0bc74-76f1-437b-abda-16a0ca25d774"
+});
+</script>
