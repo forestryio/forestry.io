@@ -16,7 +16,7 @@ You can also choose to point a section directly to a data file. You are free to 
 
 You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file and/or through the user interface in your site settings in the `section`
  tab given you have admin rights.
- 
+
 A content section in Forestry is primarily defined by the path to the folder containing content files, and a [glob](/docs/guides/misc/working-with-globs/) to match against the contents of that folder.
 
 ## Options
@@ -106,7 +106,7 @@ For a `jekyll-pages` section, Forestry will use the value of the `exclude` param
 
 ![By default, users can create both files and directories](/uploads/2018/10/create-directory-ui.png)
 
-The `create` parameter allows you to specify whether new files can be created for the section. 
+The `create` parameter allows you to specify whether new files can be created for the section.
 
 - `all`: Users can create new files and folders
 - `documents`: Users can create new files, but not new folders
@@ -124,26 +124,46 @@ The `new_doc_ext` parameter lets you specify the extension to be used for new fi
 
 The `read_only` setting only applies to `document` sections. This will prevent the document from being editable in Forestry, only showing the contents of the document on the page. When used with a markdown document, the markdown will be converted to HTML and rendered appropriately. Read-only document sections are a great way to include documentation for your editors that can be accessed directly from the Forestry sidebar.
 
+### Shortcuts
+
+![Shortcuts appear directly under the section label](/uploads/2020/04/sidebar-shortcut.png)
+
+A shortcut is a way of providing a direct link to a folder inside a section. This is useful for when your section has deeply nested folders which you frequently access. Note that the slug path of your shortcut may be different than the path you see
+in your filesystem. To set up a shortcut it's often easier to navigate directly to the path you want for the shortcut and copy the url from the base of your section content directory.
+
+{{% tip "Some Sections can be replaced with shortcuts" %}}
+You might find that you have multiple sections with very similar logic, the only difference being what their root folder and `matches` options are different. Shortcuts allow you to keep all of that in one section while still allowing you to navigate between folders easily.
+{{% /tip %}}
+
+{{% tip "Some Sections can be replaced with shortcuts" %}}
+You might find that you have multiple sections with very similar logic, the only difference being what their root folder and `matches` options are different. Shortcuts allow you to keep all of that in one section while still allowing you to navigate between folders easily.
+{{% /tip %}}
+
+{{% warning %}}
+Shortcuts are not configurable from `.forestry/settings.yml` - they are an in-app setting only.
+{{% /warning %}}
+
+
 ## Examples
 
 Jekyll site with pages, posts, and a custom collection:
 
     sections:
-    
+
     - type: document
       label: Help
       path: README.md
       read_only: true
-    
+
     - type: heading
       label: Content
-    
+
     - type: jekyll-pages
       label: Pages
-    
+
     - type: jekyll-posts
       label: Posts
-    
+
     - type: directory
       path: _events
       label: Events
@@ -153,19 +173,19 @@ Jekyll site with pages, posts, and a custom collection:
 Multilingual Hugo Blog:
 
     sections:
-    
+
     - type: heading
       label: English
-    
+
     - type: directory
       path: "content/posts"
       match: "**/*.en.md"
       label: Posts
       new_doc_ext: ".en.md"
-    
+
     - type: heading
       label: Français
-    
+
     - type: directory
       path: "content/posts"
       match: "**/*.fr.md"
