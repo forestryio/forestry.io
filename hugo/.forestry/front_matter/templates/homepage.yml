@@ -28,6 +28,9 @@ fields:
     label: Textline
     config:
       required: true
+      wysiwyg: true
+      schema:
+        format: html
   - type: field_group_list
     label: Calls To Action
     name: ctas
