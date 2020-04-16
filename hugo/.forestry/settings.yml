@@ -14,7 +14,6 @@ sections:
   snippets:
   - figure.snippet
   - code_tabs.snippet
-  - join_us_every_friday.snippet
 - type: directory
   path: hugo/content/job-openings
   label: Job Openings
