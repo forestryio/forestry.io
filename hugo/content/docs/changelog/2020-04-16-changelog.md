@@ -24,8 +24,8 @@ draft: true
 
 ## Fixes
 
-* Correctly write number fields as numbers 🔢 (Thanks @Nick
-* Correctly write default date to now in group fields.
+* Correctly write number fields as numbers 🔢 (Thanks to [Nicholas Grazilla](https://github.com/nicfits) for the complete test suite)
+* Correctly write default date to now in group fields 📅
 * VuePress should now write **YAML** by default 😅
 * Add host key verification to all Instant Preview images 🔑: people using **Stackbit Themes** like [Ghost Casper Theme for VuePress](https://github.com/alexander-heimbuch/vuepress-theme-casper) can now run Instant Previews with the `forestryio/node:10` or `forestryio/node:12` images. 👀
 * Properly erase users and sites. This allows former deleted accounts to recreate an account if needed.
