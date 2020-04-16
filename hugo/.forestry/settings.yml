@@ -11,6 +11,8 @@ sections:
   label: Pages
   create: all
   match: "*"
+  templates:
+  - homepage
 - type: directory
   path: hugo/content/job-openings
   label: Job Openings
