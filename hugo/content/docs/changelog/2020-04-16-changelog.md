@@ -15,11 +15,10 @@ summary: "Markdown in template's field description, Instant Previews upgrade, an
 
 * **Upgrade our Instant Previews** images, new defaults are:
   * [Node 12](https://hub.docker.com/r/forestryio/node "Our node image on Docker Hub")
-  * [Hugo + Node 12](https://hub.docker.com/r/forestryio/hugo "Our Hugo Image on Docker Hub") 
+  * [Hugo + Node 12](https://hub.docker.com/r/forestryio/hugo "Our Hugo Image on Docker Hub")
   * Ruby 2.6 + Node 12,
-  * [Ruby 2.6.6 and Ruby 2.7.1](https://hub.docker.com/r/forestryio/ruby "Our Ruby image on Docker Hub") 
-
-  Previous Node 10 version is still available, a **manual opt-in is required** if you want to use those latest versions.
+  * [Ruby 2.6.6 and Ruby 2.7.1](https://hub.docker.com/r/forestryio/ruby "Our Ruby image on Docker Hub")
+  * Previous Node 10 version is still available, a **manual opt-in is required** if you want to use those latest versions.
 * Set default **Hugo** version up to **0.69.0** on new site import. You can always set `HUGO_VERSION` to whatever version you need in your site previews settings.
 
 ## Fixes
