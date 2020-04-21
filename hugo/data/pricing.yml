@@ -21,12 +21,12 @@ plans:
 - title: Starter
   priceAnnually: "0"
   priceMonthly: "29"
-  description: Includes your first 5 users, then $9 per additional user.
+  description: Up to 5 users per site, then $9 per additional user.
   planIncludes: Everything in Personal plus
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
-  - text: 5 sites ($9 per additional site)
+  - text: 10 sites (then $9 per additional site)
   - text: Organization account
     info: Manage one group of users across all of your sites and branches
   - text: Team access controls
