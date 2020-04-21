@@ -17,6 +17,9 @@ menu:
 ---
 ## Overview
 
+Forestry connects to your Git repository and help your edit Markdown, Front Matter and data files (YAML, JSON or TOML).
+Our CMS also offers a free preview environment to check your modifications before you save your changes.
+
 This tour will walk you through setting up your first site in Forestry. It demonstrates the primary features and editing functionality of the CMS.
 
 ***
@@ -37,7 +40,7 @@ This tour will walk you through setting up your first site in Forestry. It demon
 
 Congrats, your first site is being created!
 
-This process may take a couple minutes. Forestry will create a new repository with your git provider, push a copy of the starter site, and then start the import process. Once the import is complete, the CMS will load in all of your content and you can move on to the next section.
+This process may take a couple minutes. Forestry will create a new repository with your Git provider, push a copy of the starter site, and then start the import process. Once the import is complete, the CMS will load in all of your content and you can move on to the next section.
 
 {{% tip %}}
 
