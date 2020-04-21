@@ -6,7 +6,7 @@ authors: []
 publishdate: 2017-12-07T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 weight: "4"
-date: 2018-09-12T04:00:00.000+00:00
+date: 2020-02-12T04:00:00.000+00:00
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -137,7 +137,7 @@ Feel free to hit _Save_ to deploy your changes.
 
 ## Deployment
 
-We recommend using some time to research the different [hosting options](/docs/hosting/) for static sites to find the one that fits your needs best.
+We recommend using some time to research the different [hosting options](/docs/hosting/) for static sites to find the one that fits your needs best: [ZEIT Now](https://zeit.co/home), [Netlify](https://netlify.com), [GitHub Actions](https://github.com/features/actions), etc.
 
 **Additional Resources:**
 
@@ -160,16 +160,15 @@ For teams that need more advanced collaborators & teams Forestry provides [Organ
 
 ## Next Steps
 
-This tour only covers the basics of what Forestry offers. Now that you've set up your first site in Forestry, you can begin exploring all of Forestry's features at your own pace through this documentation:
+This tour only covers the basics of what Forestry offers. Now that you've set up your first site in Forestry, you can begin exploring all of Forestry's features at your own pace through this documentation.
 
 ### Editing
 
 Forestry has many more features for content editors:
 
+* Add structured metadata with [Front Matter](/docs/editing/front-matter)
 * Create great content with the powerful [Markdown Editor](/docs/editing/markdown-editor) and with [Data Files](/docs/editing/data-files)
 * Learn more about the [Media Library](/docs/editing/media-library)
-* Learn how to create [Menus](/docs/editing/menus) for navigation and site links
-* Add structured metadata with [Front Matter](/docs/editing/front-matter)
 
 ### Developing
 
