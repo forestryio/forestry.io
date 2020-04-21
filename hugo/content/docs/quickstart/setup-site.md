@@ -29,7 +29,7 @@ If you don't have a static site, you can [pick one of our starters](/starters/)
 
 ### Select your Static Site Generator
 
-Before choosing your repository, Forestry would like to know which static site generator is used to build your site. Forestry supports many static site generators and can provide default settings for [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), or [Gatsby](https://www.gatsbyjs.org/). As Forestry is able to edit content stored in Markdown, YAML and JSON,  you can use it with all kinds of SSG: Eleventy, Gridsome, Next, Nuxt, etc.
+Before choosing your repository, Forestry would like to know which static site generator is used to build your site. Forestry supports many static site generators and can provide default settings for [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [VuePress](https://vuepress.vuejs.org/), or [Gatsby](https://www.gatsbyjs.org/). As Forestry is able to edit any content stored in Markdown, YAML and JSON,  you can use it with all kinds of SSG: Eleventy, Gridsome, Hexo, Next, Nuxt, etc.
 
 In the case of Hugo, you must also specify which _version_ you use.
 
@@ -37,7 +37,7 @@ In the case of Hugo, you must also specify which _version_ you use.
 
 ### Select your Git Provider
 
-Forestry works by synchronizing content changes with a git repository. In order to import your site, access to your git provider is required. There are currently four Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
+Forestry works by synchronizing content changes with a Git repository. In order to import your site, access to your Git provider is required. There are currently four Git providers supported by Forestry: [GitHub](https://github.com/ "GitHub"), [GitLab](https://gitlab.com/ "GitLab"), [Bitbucket](https://bitbucket.org/ "Bitbucket"), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/ "Azure DevOps").
 
 {{% pretty_screenshot img="/uploads/2019/07/select-provider.png" %}}
 
@@ -49,10 +49,10 @@ Once the authorization is complete, you will be taken to the next screen where y
 
 ### GitHub Repository Permissions
 
-In order to watch for changes from Github, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.
+In order to watch for changes from GitHub, Forestry needs to be able to create a webhook for your repository. Because of this, you must have admin level permissions for any repository you wish to import. Repositories which you do not have admin access to will be visible in the dropdown, but cannot be selected.
 {{% /warning %}}
 
-If you use Github, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you want to grant access to Forestry to import your private repositories. You will only have to do this once.
+If you use GitHub, you will see a button at the top of the modal with a lock. By default, Forestry only requests access to your public repositories. Click this button if you want to grant access to Forestry to import your private repositories. You will only have to do this once.
 
 {{% pretty_screenshot img="/uploads/2018/02/add-site-flow-choose-repo.png" %}}
 
