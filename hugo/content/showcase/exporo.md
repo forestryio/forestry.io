@@ -6,7 +6,7 @@ featured: false
 images:
 - "/uploads/showcase/exporo.jpg"
 permalink: https://exporo.com
-weight:
+weight: 5
 ---
 
 Multilingual website developed with Hugo and Forestry.

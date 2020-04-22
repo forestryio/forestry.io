@@ -6,5 +6,6 @@ featured: false
 images:
 - "/uploads/showcase/tradeguys.png"
 permalink: https://tradeguys.csis.org/
+weight: 7
 ---
 Developed by Dracopolous iDeas Lab at [CSIS.org](https://csis.org)

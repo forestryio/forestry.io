@@ -6,7 +6,7 @@ featured: false
 images:
 - "/uploads/showcase/podigee.jpg"
 permalink: https://www.podigee.com/
-weight: 5
+weight: 1
 ---
 
 A multilingual site developed with Hugo and Forestry.

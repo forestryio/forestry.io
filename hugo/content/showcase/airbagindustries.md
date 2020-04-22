@@ -6,6 +6,7 @@ featured: false
 images:
 - "/uploads/showcase/airbagindustries.jpg"
 permalink: https://airbagindustries.com
+weight: 6
 ---
 
 [How we moved to a better publishing stack](https://plasticmind.com/projects/airbag-industries/ "The story of the migration from Movable Type to Hugo")
