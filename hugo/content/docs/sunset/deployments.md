@@ -40,7 +40,7 @@ Here is our list of recommended alternatives:
 
 [Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
 
-[Deploy with ZEIT Now](https://zeit.co/docs/v2/introduction/)
+[Deploy with Vercel](https://vercel.com/docs/v2/introduction/)
 
 ### Why this change?
 

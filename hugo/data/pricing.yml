@@ -15,7 +15,7 @@ plans:
     info: Install the Forestry CMS on your site (mysite.com/admin)
   - text: Jekyll custom plugins support
   - text: Host anywhere
-    info: Netlify, Zeit, AWS, GitHub, GitLab, Render, Buddy Works, it's up to you.
+    info: Netlify, Vercel, AWS, GitHub, GitLab, Render, Buddy Works, it's up to you.
   - text: Community support
     info: No priority support, response time may vary
 - title: Starter

@@ -133,7 +133,7 @@ features:
   direction: ltr
   class: section-automated
 - headline: Host where you want
-  textline: Your static site can live anywhere you want — including on Amazon S3, GitHub Pages, Netlify or ZEIT.
+  textline: Your static site can live anywhere you want — including on Amazon S3, GitHub Pages, Netlify or Vercel.
   direction: vertical
   class: section-deploy
 cta:

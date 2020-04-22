@@ -17,9 +17,14 @@ menu:
 
 To automate your deployments, there are plenty of dedicated services that will happily do the job for you:
 
-👉 [Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)  
-👉 [Deploy with ZEIT Now](https://zeit.co/docs/v2/introduction/): see guides for [Hugo](https://zeit.co/guides/deploying-hugo-with-now "Deploy  hugo with ZEIT Now"), [Eleventy](https://zeit.co/guides/deploying-eleventy-with-zeit-now "Deploy Eleventy with ZEIT Now"), [Gatsby](https://zeit.co/guides/deploying-gatsby-with-now "Deploy Gatsby with ZEIT Now"), [Gridsome](https://zeit.co/guides/deploying-gridsome-with-zeit-now "Deploy Gridsome with ZEIT Now"), [VuePress](https://zeit.co/guides/deploying-vuepress-to-now "Deploy VuePress with ZEIT Now"), [Hexo](https://zeit.co/guides/deploying-hexo-with-zeit-now "Deploy Hexo with ZEIT Now")  
-👉 [Deploy with GitHub Actions](https://github.com/features/actions)  
-👉 [Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)  
-👉 [Deploy with Buddy Works](https://buddy.works/docs/deployments)  
+👉 [Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
+
+👉 [Deploy with Vercel](https://vercel.com/docs/v2/introduction/): see guides for [Hugo](https://vercel.com/guides/deploying-hugo-with-vercel "Deploy  hugo with Vercel"), [Eleventy](https://vercel.com/guides/deploying-eleventy-with-vercel "Deploy Eleventy with Vercel"), [Gatsby](https://vercel.com/guides/deploying-gatsby-with-vercel "Deploy Gatsby with Vercel"), [Gridsome](https://vercel.com/guides/deploying-gridsome-with-vercel "Deploy Gridsome with Vercel"), [VuePress](https://vercel.com/guides/deploying-vuepress-to-vercel "Deploy VuePress with Vercel"), [Hexo](https://vercel.com/guides/deploying-hexo-with-vercel "Deploy Hexo with Vercel")
+
+👉 [Deploy with GitHub Actions](https://github.com/features/actions)
+
+👉 [Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
+
+👉 [Deploy with Buddy Works](https://buddy.works/docs/deployments)
+
 👉 [Deploy with Render](https://render.com/docs): [Jekyll](https://render.com/docs/deploy-jekyll), [Hugo](https://render.com/docs/deploy-hugo), [Gatsby](https://render.com/docs/deploy-gatsby)

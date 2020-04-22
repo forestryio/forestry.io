@@ -140,7 +140,7 @@ Feel free to hit _Save_ to deploy your changes.
 
 ## Deployment
 
-We recommend using some time to research the different [hosting options](/docs/hosting/) for static sites to find the one that fits your needs best: [ZEIT Now](https://zeit.co/home), [Netlify](https://netlify.com), [GitHub Actions](https://github.com/features/actions), etc.
+We recommend using some time to research the different [hosting options](/docs/hosting/) for static sites to find the one that fits your needs best: [Vercel](https://vercel.com/home), [Netlify](https://netlify.com), [GitHub Actions](https://github.com/features/actions), etc.
 
 **Additional Resources:**
 
