@@ -178,4 +178,4 @@ _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output 
 
 ### If the SSG Doesn't Write Content to HTML Files in Dev Mode
 
-If your static site generator doesn't write content updates to HT%M (such as when using `gatsby develop`,) this won't work and the preview will always open the home page of your site.
+If your static site generator doesn't write content updates to HTML (such as when using `gatsby develop`), this won't work and the preview will always open the home page of your site.
