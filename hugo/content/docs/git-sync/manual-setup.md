@@ -54,7 +54,7 @@ Be sure to check the **Allow write access** box before clicking **Add key** to a
 
 ### Add Public Key to GitLab
 
-To add a new key to your GitLab repo, navigate to `https://gitlab.com/$USERNAME/$REPOSITORY/settings/repository`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository, and expand the **Deploy Keys** section.
+To add a new key to your GitLab repo, navigate to `https://gitlab.com/$USERNAME/$REPOSITORY/settings/ci_cd`, substituting `$USERNAME` and `$REPOSITORY` for the path to your repository, and expand the **Deploy Keys** section.
 
 Youy may add a label for this deploy key in the **Title** field to identify what this key is for. Paste the public key provided by Forestry in the **Key** field.
 
