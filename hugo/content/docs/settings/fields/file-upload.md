@@ -1,17 +1,17 @@
 ---
 aliases:
 - "/docs/front-matter-fields/image-file-upload-field/"
-title: File Upload Field
+title: Image Upload Field
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 00:00:00 -0400
+date: 2020-04-27 00:00:00 -0400
 
 ---
 
 ![](/uploads/2018/01/file-preview.png)
 
 ## Options
-![](/uploads/2018/01/file-options.png)
+![](/uploads/2020/04/image-settings.png)
 
 - **General**
  - _Label_ &mdash; the human-friendly label shown above the input field in the editor.
@@ -54,7 +54,7 @@ description: [String]
 hidden: [true|false]
 default: [String]
 config:
-  maxSize: [Number] 
+  maxSize: [Number]
 ```
 
 ### Example
@@ -66,5 +66,5 @@ description: Provide a banner image for this post
 hidden: false
 default "/uploads/2017/12/31/placeholder.jpg"
 config:
-  maxSize: 10
+  maxSize: 2
 ```
