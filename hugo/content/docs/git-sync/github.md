@@ -41,7 +41,7 @@ This will redirect you to GitHub, and prompt you to enter your login credentials
 
 Give Forestry access to your GitHub repositories by clicking "Authorize application". You can also request access to any [GitHub organizations](#importing-from-a-github-organization) you are a member of.
 
-{{% warning " " %}}
+{{% warning %}}
 In order to import a site from GitHub, you will need [admin permissions](https://help.github.com/articles/repository-permission-levels-for-an-organization/) for the repository. This is because Forestry needs to add a webhook to your repository in order to watch for changes.
 {{% /warning %}}
 
@@ -76,3 +76,9 @@ To the right of "Forestry", click the "Edit" button.
 ![](/uploads/2018/01/49.png)
 
 Then, click "Grant access" to allow your organization's members to import your sites in Forestry.
+
+{{% warning %}}
+
+When you add a new GitHub organization, make sure to [grant access to the Forestry OAuth App](https://github.com/settings/connections/applications/90bd642392676c051364).
+
+{{% /warning %}}
