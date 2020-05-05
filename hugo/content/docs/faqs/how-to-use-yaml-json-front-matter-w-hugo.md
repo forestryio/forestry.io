@@ -26,5 +26,5 @@ Forestry respects the configuration set in your Hugo `config` file. The variable
 {{% /tab %}} {{% /code_tabs %}}
 
 {{% warning %}}
-This option has been deprecated in recent Hugo versions but **Forestry still relies on this option so keep it in your config file**. In recent Hugo versions, the format is now based on the front matter format used in your [archetypes], (https://gohugo.io/content-management/archetypes/).it's useful to know if you use Hugo to create new content from the command line.
+This option has been deprecated in recent Hugo versions but **Forestry still relies on this option so keep it in your config file**. In recent Hugo versions, the format is now based on the front matter format used in your [archetypes](https://gohugo.io/content-management/archetypes/). It's useful to know if you use Hugo to create new content from the command line.
 {{% /warning %}}
