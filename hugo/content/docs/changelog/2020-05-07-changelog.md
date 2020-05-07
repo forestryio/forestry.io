@@ -4,7 +4,6 @@ authors:
 date: 2020-05-06
 title: 2020/05/07 Changelog
 summary: Kubernetes, grouped branches and a lot of fixes!
-draft: true
 
 ---
 Our team has been quite busy in the latest weeks with major architectural changes that will help our application better scale, and face our growing number of users. 💗
@@ -25,3 +24,7 @@ Our team has been quite busy in the latest weeks with major architectural change
 * **Hugo:** Invite you to add an empty `config.toml` file at the root for projects using directory-based folders to bypass config check on import.
 * **Netlify Large Media:** Swap netlify.com with new netlify.app domain
 * Yahoo! users are now able to use to get invitations mail.
+
+Thanks to all users that reported issues, our team plan a bug squash week soon to make Forestry always more easy to use.
+
+Stay safe!
