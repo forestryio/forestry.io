@@ -2,7 +2,7 @@
 aliases:
 - "/docs/faq/what-changes-will-forestry-make-to-my-repository/"
 title: Why did Forestry edit my files?
-weight: 1
+weight: 2
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 7
+    weight: 2
 
 ---
 As devs, we hate when people mess with our code. So we try to do this as little as possible but sometimes it is unavoidable.

@@ -1,6 +1,6 @@
 ---
 title: Forestry Isn't Using My Timezone Setting!
-weight: 1
+weight: 7
 layout: single
 publishdate: 2018-10-24 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -10,7 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 3
+    weight: 7
 
 ---
 ![You may see a different timezone in your commit than you see in the Forestry UI.](/uploads/2018/10/forestry-timezones.png)

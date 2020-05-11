@@ -1,6 +1,6 @@
 ---
 title: How do I set fallback/hidden values for Front Matter?
-weight: 1
+weight: 7
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -10,7 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 11
+    weight: 7
 
 ---
 
@@ -36,7 +36,7 @@ Inside `config.toml`
 ```toml
 [params]
 social_image = "/uploads/2018/01/26/og_image.jpg"
-``` 
+```
 
 Inside `content/posts/example-post.md`
 ```toml
@@ -74,10 +74,10 @@ defaults:
 
 Inside `_layouts/post.html`:
 ```
-<div class="author">{{ page.author }}</div> 
+<div class="author">{{ page.author }}</div>
 ```
 
 {{% tip %}}
-If you use Jekyll on the command line check the [`jekyl-compose` plugin](https://github.com/jekyll/jekyll-compose) to create 
+If you use Jekyll on the command line check the [`jekyl-compose` plugin](https://github.com/jekyll/jekyll-compose) to create
 new documents with your defaults settings.
 {{% /tip %}}

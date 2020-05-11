@@ -2,7 +2,7 @@
 aliases:
 - "/docs/faq/what-versions-of-hugo-do-you-support/"
 title: What versions of Hugo do you support?
-weight: 1
+weight: 5
 layout: single
 publishdate: 2017-12-31T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
@@ -12,7 +12,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 10
+    weight: 5
 
 ---
 Forestry supports all latest patched stable releases of Hugo from 0.17 to [latest release](https://github.com/gohugoio/hugo/releases).

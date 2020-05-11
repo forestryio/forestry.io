@@ -8,17 +8,10 @@ layout: single
 title: Can I edit CSS files?
 categories:
 - CMS
-headline: ''
-description: ''
-textline: ''
-tags: []
-cta:
-  headline: ''
-  textline: ''
-  calls_to_action: []
-private: false
-weight: 
-aliases: []
+menu:
+  faqs:
+    parent: FAQs
+    weight: 8
 
 ---
 Forestry offers a friendly user interface to edit Markdown, JSON, YAML and TOML files.

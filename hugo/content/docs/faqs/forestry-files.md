@@ -11,15 +11,11 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 9
+    weight: 1
 
 ---
-## Why did you add a `.forestryio` file?
-We add a file called `.forestryio` to the root of your project. 
-
-This file notifies Forestry that you have previously published to this location and that it is safe to publish to this location again.
 
 ## Why did you add a `.forestry` folder?
-We add a folder called `.forestry` to the root of your project with the [code configuration](/docs/settings/config-files/) of your site. 
+We add a folder called `.forestry` to the root of your project with the [code configuration](/docs/settings/config-files/) of your site.
 
 This enables developers to edit the configuration of the CMS in their local environment, and keep changes to the configuration in version control.

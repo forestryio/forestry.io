@@ -1,13 +1,13 @@
 ---
 title: How to use YAML or JSON for Front Matter with Hugo?
-weight: 2
+weight: 8
 layout: single
 publishdate: 2019-01-15T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 date: '2019-01-15T04:00:00.000+00:00'
 menu:
   faqs:
-    weight: 2
+    weight: 8
     parent: FAQs
 
 ---
