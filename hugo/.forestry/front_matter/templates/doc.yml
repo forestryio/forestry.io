@@ -130,6 +130,6 @@ fields:
   hidden: true
 pages:
 - hugo/content/docs/faqs/can-i-edit-css-files.md
-- hugo/content/docs/faqs/how-do-i-manage-git-branches-in-forestry.md
+- hugo/content/docs/faqs/how-to-manage-git-branches-in-forestry.md
 - hugo/content/docs/settings/snippets.md
 - hugo/content/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available.md

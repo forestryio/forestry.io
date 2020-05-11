@@ -5,7 +5,7 @@ publishdate: 2020-05-09T22:00:00+00:00
 authors: []
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-title: How do I manage Git branches in Forestry?
+title: How to manage Git branches in Forestry?
 categories:
 - CMS
 headline: ''
@@ -22,11 +22,13 @@ aliases: []
 draft: true
 
 ---
-You can import as many branches as you want in Forestry,
+You can import as many branches as you want in Forestry, and you can set your teams permissions on each branch if you need to on our **starter plan**.
+
+{{% pretty_screenshot img="/uploads/2020/05/git-branches-dashoard.png" alt="A site in Forestry dashboard with multiple branch imported" caption="A site with multiple branch imported in Forestry" %}}
 
 ### How do I import a new branch?
 
-Click on "Add Site" button to connect to your Git provider and pick up the branch you want to import. If this branch is a fork of another branch already configured for Forestry, given we store your settings in the repository, you won't have to reconfigure your sections, your templates, or your preview. The only thing is that you have to reconnect to your external media provider if you use one.
+Click on the "Add Site" button to connect to your Git provider and pick up the branch you want to import. If this branch is a fork of another branch already configured for Forestry, given we store your settings in the repository, you won't have to reconfigure your sections, your templates, or your preview. The only thing is that you have to reconnect to your external media provider if you use one.
 
 ### How do I remove a branch?
 
@@ -40,5 +42,5 @@ You can't create new branches from within Forestry, those have to be created fro
 
 ### Can I submit a pull-request?
 
-Forestry only writes commits on the branch currently selected.   
+Forestry only writes commits on the branch currently selected.  
 Pull Requests have to be created from your Git provider.
