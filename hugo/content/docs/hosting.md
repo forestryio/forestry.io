@@ -21,7 +21,7 @@ To automate your deployments, there are plenty of dedicated services that will h
 
 👉 [Deploy with Vercel](https://vercel.com/docs/v2/introduction/): see guides for [Hugo](https://vercel.com/guides/deploying-hugo-with-vercel "Deploy  hugo with Vercel"), [Eleventy](https://vercel.com/guides/deploying-eleventy-with-vercel "Deploy Eleventy with Vercel"), [Gatsby](https://vercel.com/guides/deploying-gatsby-with-vercel "Deploy Gatsby with Vercel"), [Gridsome](https://vercel.com/guides/deploying-gridsome-with-vercel "Deploy Gridsome with Vercel"), [VuePress](https://vercel.com/guides/deploying-vuepress-to-vercel "Deploy VuePress with Vercel"), [Hexo](https://vercel.com/guides/deploying-hexo-with-vercel "Deploy Hexo with Vercel")
 
-👉 [Deploy with GitHub Actions](https://github.com/features/actions)
+👉 [Deploy with GitHub Actions](https://github.com/features/actions): [Jekyll](https://github.com/marketplace/actions/jekyll-actions), [Hugo](https://github.com/marketplace/actions/hugo-setup), [Eleventy](https://github.com/marketplace/actions/eleventy-action), [AWS S3 Synch](https://github.com/marketplace/actions/s3-sync) and many more.
 
 👉 [Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
 
