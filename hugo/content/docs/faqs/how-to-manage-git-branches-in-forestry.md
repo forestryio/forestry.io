@@ -19,7 +19,6 @@ cta:
 private: false
 weight: 10
 aliases: []
-draft: true
 
 ---
 You can import as many branches as you want in Forestry, and you can set your teams permissions on each branch if you need to on our **starter plan**.
