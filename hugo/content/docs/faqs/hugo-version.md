@@ -23,11 +23,3 @@ If your project requires a version that is not available in the version dropdown
 ### Asset Pipeline
 
 Forestry supports all [Hugo's pipes](https://gohugo.io/hugo-pipes/) including [Sass compilation](https://gohugo.io/hugo-pipes/scss-sass/), [postCSS](https://gohugo.io/hugo-pipes/postcss/), [minification](https://gohugo.io/hugo-pipes/minification/), [bundling](https://gohugo.io/hugo-pipes/bundling/) and [fingerprinting](https://gohugo.io/hugo-pipes/fingerprint/).
-
-### Content Formats
-
-We also support the following software to enable Hugo's [optional content formats](https://gohugo.io/content-management/formats/#additional-formats-through-external-helpers):
-
-* asciidoc
-* asciidoctor
-* pandoc
