@@ -2,7 +2,8 @@
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 publishdate: 2020-05-09T22:00:00+00:00
-authors: []
+authors:
+- Forestry Team
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
 title: How to manage Git branches in Forestry?
@@ -17,7 +18,7 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: 10
+weight: 2
 aliases: []
 
 ---
