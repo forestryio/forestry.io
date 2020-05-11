@@ -23,7 +23,7 @@ aliases: []
 ---
 You can import as many branches as you want in Forestry, and you can set your teams permissions on each branch if you need to on our **starter plan**.
 
-{{% pretty_screenshot img="/uploads/2020/05/git-branches-dashoard.png" alt="A site in Forestry dashboard with multiple branch imported" caption="A site with multiple branch imported in Forestry" %}}
+{{% pretty_screenshot img="/uploads/2020/05/git-branches-dashoard.png" alt="A site in Forestry dashboard with multiple branch imported" caption="A site with multiple branches imported in Forestry" %}}
 
 ### How do I import a new branch?
 
