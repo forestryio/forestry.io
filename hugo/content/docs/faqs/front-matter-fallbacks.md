@@ -4,7 +4,7 @@ weight: 1
 layout: single
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+date: 2020-05-10 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -13,6 +13,10 @@ menu:
     weight: 11
 
 ---
+
+You can easily set defaults thanks to Forestry's [front matter templates](/docs/settings/front-matter-templates/).
+It's also possible to do it from the command line.
+
 Adding [Front Matter](/docs/editing/front-matter) to your content allows you to add variables and configuration to your pages that can be used in your templates.
 
 Often times, you will find that you are repeating the same front matter values across many files. For example, setting the same layout, or adding the same author across many posts.
@@ -49,6 +53,8 @@ Inside `layouts/default/single.html`
 </head>
 ```
 
+Hugo now has also [Cascade Front Matter](https://gohugo.io/content-management/front-matter/#front-matter-cascade)
+
 ## Fallback/Hidden Values in Jekyll
 To set a fallback or hidden value for front matter in Jekyll, you can use [Front Matter Defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults).
 
@@ -70,3 +76,8 @@ Inside `_layouts/post.html`:
 ```
 <div class="author">{{ page.author }}</div> 
 ```
+
+{{% tip %}}
+If you use Jekyll on the command line check the [`jekyl-compose` plugin](https://github.com/jekyll/jekyll-compose) to create 
+new documents with your defaults settings.
+{{% /tip %}}
