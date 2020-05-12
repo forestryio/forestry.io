@@ -26,10 +26,14 @@ starters:
   image: img/starters/brevifolia.jpg
   author: Kendall Strautman
   versions:
+  - name: NextJS
+    repo: kendallstrautman/brevifolia-nextjs
+    branch: ''
+    engine: other
   - name: Gatsby
     repo: kendallstrautman/brevifolia-gatsby-forestry
     branch: ''
-    engine: ''
+    engine: gatsby
   - name: Gridsome
     repo: kendallstrautman/brevifolia-gridsome-forestry
     engine: other
@@ -109,9 +113,10 @@ starters:
     branch: ''
     engine: jekyll
 filters:
-- name: Gatsby
 - name: Hugo
+- name: NextJS
+- name: Gatsby
 - name: Gridsome
-- name: Eleventy
 - name: VuePress
+- name: Eleventy
 - name: Jekyll
