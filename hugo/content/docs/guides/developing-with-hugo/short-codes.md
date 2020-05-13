@@ -2,7 +2,7 @@
 aliases:
 - "/docs/developing-with-hugo/short-codes/"
 date: 2017-07-24 00:00:00 +0000
-description: What Hugo shortcodes are and how they work
+description: How to work with Hugo shortcodes in Forestry
 tags: ''
 title: Hugo Shortcodes
 images:
@@ -20,10 +20,6 @@ You can extend the functionality of Markdown in Hugo with shortcodes. Shortcodes
 They can be used to add custom markup, format text, generate HTML elements, or pull in data from external sources.
 
 ## Using Shortcodes in Forestry
-
-Forestry provides no interface for using shortcodes in the editor, but does support using Hugo shortcodes.
-
-Users must enter the shortcodes in the format Hugo requires them in the content file.
 
 You can use Forestry [Snippets](/docs/settings/snippets/) to configure shortcodes in the editor. You can also use Hugo shortcodes directly, in the format Hugo requires them in the content file.
 
