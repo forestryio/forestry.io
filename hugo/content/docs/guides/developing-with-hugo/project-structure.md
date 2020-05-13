@@ -57,7 +57,7 @@ Any content in a subfolder will be added to a content type with the same name as
 
 ## Data Files
 
-Any files found inside the `_data/` folder are parsed as data files and are displayed individually in the CMS under the "Data" section.
+Any files found inside the `data/` folder are parsed as data files and are displayed individually in the CMS under the "Data" section.
 
 ## Front Matter Templates
 
