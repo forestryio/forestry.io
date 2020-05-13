@@ -2,7 +2,7 @@
 aliases:
 - "/docs/developing-with-hugo/short-codes/"
 date: 2017-07-24 00:00:00 +0000
-description: What Hugo short codes are and how they work
+description: What Hugo shortcodes are and how they work
 tags: ''
 title: Hugo Shortcodes
 images:
@@ -14,28 +14,28 @@ menu:
     weight: 24
 
 ---
-You can extend the functionality of markdown in Hugo with short codes. Short codes are special templates that are called when a short code is used inside the content body.
+You can extend the functionality of markdown in Hugo with shortcodes. Shortcodes are special templates that are called when a short code is used inside the content body.
 
 They can be used to add custom markup, format text, generate HTML elements, or pull in data from external sources.
 
-## Using Short Codes in Forestry
-Forestry provides no interface for using short codes in the editor, but does support using Hugo short codes.
+## Using Shortcodes in Forestry
+Forestry provides no interface for using shortcodes in the editor, but does support using Hugo shortcodes.
 
-Users must enter the short codes in the format Hugo requires them in the content file.
+Users must enter the shortcodes in the format Hugo requires them in the content file.
 
-For example, using Hugo’s built-in figure short code, a user must enter the following into the content body:
+For example, using Hugo’s built-in figure shortcode, a user must enter the following into the content body:
 
 ```
 {{</* figure src="/example.jpg" title="Example Image" */>}}
 ```
 
-## Built-in Short Codes
-Hugo ships with a collection of built-in short codes for modifying the output of your content body.
+## Built-in Shortcodes
+Hugo ships with a collection of built-in shortcodes for modifying the output of your content body.
 
-For a full list of these short codes and how to use them, see the references below.
+For a full list of these shortcodes and how to use them, see the references below.
 
-## Custom Short Codes
-Hugo also allows you to build your own short codes. See the Hugo short code documentation in the references below.
+## Custom Shortcodes
+Hugo also allows you to build your own shortcodes. See the Hugo shortcode documentation in the references below.
 
 ## Further Reading
-- [Hugo Short Code Reference](https://gohugo.io/content-management/shortcodes/)
+- [Hugo Shortcode Reference](https://gohugo.io/content-management/shortcodes/)
