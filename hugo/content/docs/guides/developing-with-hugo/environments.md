@@ -19,7 +19,7 @@ There are three unique developer environments when working with a Hugo site in F
 
 * **Staging environment** this is the environment Forestry creates when we generate a preview for you. See [Previews](/docs/editing/previews) for more info.
 
-* **Production environment** this is the environment Forestry publishes your site to. See [Hosting Options](/docs/hosting) for more info.
+* **Production environment** this is the environment your site is published to. See [Hosting Options](/docs/hosting) for more info.
 
 In order to make development easier, Forestry sets the environment variable `HUGO_ENV` based on the environment you’re in.
 
