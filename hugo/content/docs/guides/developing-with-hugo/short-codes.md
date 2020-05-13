@@ -19,15 +19,14 @@ You can extend the functionality of markdown in Hugo with short codes. Short cod
 They can be used to add custom markup, format text, generate HTML elements, or pull in data from external sources.
 
 ## Using Short Codes in Forestry
-Forestry provides no interface for using short codes in the editor, but does support using Hugo short codes.
+You can use Forestry [Snippets](/docs/settings/snippets/) to configure shortcodes in the editor.  You can also use Hugo shortcodes directly, in the format Hugo requires them in the content file.
 
-Users must enter the short codes in the format Hugo requires them in the content file.
-
-For example, using Hugo’s built-in figure short code, a user must enter the following into the content body:
+For example, using Hugo’s built-in figure short code, a user may enter the following into the content body:
 
 ```
 {{</* figure src="/example.jpg" title="Example Image" */>}}
 ```
+This could be configured as a Forestry Snippet for ease of use. 
 
 ## Built-in Short Codes
 Hugo ships with a collection of built-in short codes for modifying the output of your content body.
