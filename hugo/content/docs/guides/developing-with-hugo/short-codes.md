@@ -2,7 +2,7 @@
 aliases:
 - "/docs/developing-with-hugo/short-codes/"
 date: 2017-07-24 00:00:00 +0000
-description: What Hugo short codes are and how they work
+description: How to work with Hugo shortcodes in Forestry
 tags: ''
 title: Hugo Shortcodes
 images:
@@ -14,6 +14,7 @@ menu:
     weight: 24
 
 ---
+
 You can extend the functionality of Markdown in Hugo with shortcodes. Shortcodes are special templates that are called when a shortcode is used inside the content body.
 
 They can be used to add custom markup, format text, generate HTML elements, or pull in data from external sources.
@@ -27,6 +28,7 @@ For example, using Hugo’s built-in figure shortcode, a user may enter the foll
 ```
 {{</* figure src="/example.jpg" title="Example Image" */>}}
 ```
+
 This could be configured as a Forestry snippet for ease of use. 
 
 ## Built-in Shortcodes
@@ -38,4 +40,5 @@ Hugo ships with a collection of [built-in shortcodes](https://gohugo.io/content-
 Hugo also allows you to build your own shortcodes.
 
 ## Further Reading
-- [Hugo Short Code Reference](https://gohugo.io/content-management/shortcodes/)
+
+- [Hugo Shortcode Reference](https://gohugo.io/content-management/shortcodes/)
