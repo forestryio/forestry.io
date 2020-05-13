@@ -14,28 +14,35 @@ menu:
     weight: 24
 
 ---
-You can extend the functionality of markdown in Hugo with shortcodes. Shortcodes are special templates that are called when a short code is used inside the content body.
+
+You can extend the functionality of Markdown in Hugo with shortcodes. Shortcodes are special templates that are called when a shortcode is used inside the content body.
 
 They can be used to add custom markup, format text, generate HTML elements, or pull in data from external sources.
 
 ## Using Shortcodes in Forestry
+
 Forestry provides no interface for using shortcodes in the editor, but does support using Hugo shortcodes.
 
 Users must enter the shortcodes in the format Hugo requires them in the content file.
 
-For example, using Hugo’s built-in figure shortcode, a user must enter the following into the content body:
+You can use Forestry [Snippets](/docs/settings/snippets/) to configure shortcodes in the editor. You can also use Hugo shortcodes directly, in the format Hugo requires them in the content file.
+
+For example, using Hugo’s built-in figure shortcode, a user may enter the following into the content body:
 
 ```
 {{</* figure src="/example.jpg" title="Example Image" */>}}
 ```
 
-## Built-in Shortcodes
-Hugo ships with a collection of built-in shortcodes for modifying the output of your content body.
+This could be configured as a Forestry snippet for ease of use. 
 
-For a full list of these shortcodes and how to use them, see the references below.
+## Built-in Shortcodes
+
+Hugo ships with a collection of [built-in shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) for modifying the output of your content body.
 
 ## Custom Shortcodes
-Hugo also allows you to build your own shortcodes. See the Hugo shortcode documentation in the references below.
+
+Hugo also allows you to build your own shortcodes.
 
 ## Further Reading
+
 - [Hugo Shortcode Reference](https://gohugo.io/content-management/shortcodes/)
