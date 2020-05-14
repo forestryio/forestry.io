@@ -8,5 +8,3 @@ images:
 permalink: https://www.highereducation.com
 weight:
 ---
-
-Developed by

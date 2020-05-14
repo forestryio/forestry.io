@@ -8,5 +8,3 @@ images:
 permalink: https://navibanxmedia.com
 weight:
 ---
-
-Developed by
