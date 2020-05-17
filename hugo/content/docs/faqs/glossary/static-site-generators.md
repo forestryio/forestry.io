@@ -20,7 +20,7 @@ These data formats are generally [content files](/docs/faqs/glossary/content-fil
 ## Popular SSGs
 
 * [**Gatsby**](https://www.gatsbyjs.org/) is a web application framework based on react created by Kyle Mathews.
-* [**NextJS**](https://nextjs.org/)is a react framework with static export options developed by [Vercel](https://vercel.com/)
+* [**NextJS**](https://nextjs.org/) is a react framework with static export options developed by [Vercel](https://vercel.com/)
 * [**Jekyll**](https://jekyllrb.com) is the static site generator written in Ruby and created by [GitHub](https://github.com) founder, Tom Preston Werner.
 * [**Hugo**](https://gohugo.io) is the static site generator written in Golang and created by Steve Francia and developed by Bjørn Erik Pedersen.
 * [**NuxtJS**](https://nuxtjs.org/), a VueJS application framework created by Sébastien Chopin.
@@ -30,4 +30,4 @@ These data formats are generally [content files](/docs/faqs/glossary/content-fil
 
 **Forestry allow you to edit Markdown, YAML, JSON files, no matter the SSG used.**
 
-For a complete list of static site generators, head over [StaticGen](https://www.staticgen.com/).
+For a complete list of static site generators, head over to [StaticGen](https://www.staticgen.com/).
