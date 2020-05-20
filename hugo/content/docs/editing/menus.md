@@ -17,7 +17,7 @@ menu:
 ---
 
 {{% warning "Known limitations" %}}
-Menus are only supported with Hugo and Jekyll and don't support multi-nested levels or linking to Hugo page bundles at the moment.
+Menus are only supported with Hugo and Jekyll and don't supportlinking to Hugo page bundles at the moment.
 Menus won't show if you're using Gatsby, Gridsome, Eleventy, VuePress, etc.
 {{% /warning %}}
 
