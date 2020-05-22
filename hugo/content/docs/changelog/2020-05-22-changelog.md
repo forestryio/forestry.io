@@ -19,5 +19,9 @@ A bunch of improvements and fixes this week to make your experience in Forestry 
 
 ## Fixes
 
+* **Menus:** fix display of deeply nested menu items for Jekyll and Hugo
+
+![Multi-level menus in Forestry](/uploads/2020/05/menus-cloudconformity.png "A deeply nested menu ")
+
 * Start instant previews from remote admin 👀
 * Upload images when the media path contains periods 🌁
