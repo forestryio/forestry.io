@@ -1,5 +1,5 @@
 ---
-title: Support for VuePress [Beta]
+title: Support for VuePress
 description: "Support for Static Site Generators (SSGs), beyond Jekyll and Hugo, was
   on our roadmap for a while. Now, VuePress support is here! \U0001F389\U0001F389\U0001F389 "
 date: 2018-08-10 08:36:10 +0000
@@ -46,12 +46,6 @@ linkText="Add Forestry's VuePress Portfolio Theme" %}}
 See the repo [here](https://github.com/forestryio/portfolio-vuepress)
 
 ![](/uploads/2018/08/portfolio-screenshot.png)
-
-{{% warning %}}
-
-Please note that the VuePress support is currently still in beta. Certain features such as previews are not available at this point.
-
-{{% /warning %}}
 
 ***
 
