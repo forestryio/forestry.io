@@ -11,16 +11,11 @@ sections:
   label: Pages
   create: all
   match: "*"
-  snippets:
-  - figure.snippet
-  - code_tabs.snippet
 - type: directory
   path: hugo/content/job-openings
   label: Job Openings
   create: all
   match: "**/*"
-  snippets:
-  - figure.snippet
 - type: directory
   path: hugo/content/showcase
   label: Showcase
