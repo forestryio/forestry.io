@@ -31,7 +31,7 @@ Read more about [working at Forestry.io](https://forestry.io/careers).
 
 <br/>
 
-To apply, please follow the instructions on the job posting page.
+To apply to a specific job, please follow the instructions on the job posting page.
 
 <br/>
 

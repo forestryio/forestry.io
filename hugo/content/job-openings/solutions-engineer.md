@@ -19,7 +19,7 @@ private: false
 weight: 
 aliases: []
 menu: []
-draft: false
+draft: true
 
 ---
 We’re looking for a highly technical, customer-focused Solutions Engineer to interface between our customers and our product teams. This key role will support the adoption of Forestry products (Tina CMS & Forestry CMS) in new organizations and help our product team understand the needs of our customers.
