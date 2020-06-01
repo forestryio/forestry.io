@@ -52,6 +52,15 @@ starters:
     engine: hugo
     branch: ''
   textline: Portfolio
+- name: Mediumish
+  textline: Blog
+  image: img/starters/mediumish.jpg
+  preview: https://wowthemesnet.github.io/vuepress-theme-mediumish/
+  author: Wow Themes
+  versions:
+  - name: VuePress
+    repo: DirtyF/mediumish-vuepress-blog-theme
+    engine: vuepress
 - name: Jæren
   textline: Portfolio
   image: img/starters/joeren.jpg
