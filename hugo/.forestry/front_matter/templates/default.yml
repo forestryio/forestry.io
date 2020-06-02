@@ -202,7 +202,6 @@ pages:
 - hugo/content/blog/migrating-to-key-based-authentication.md
 - hugo/content/blog/new-improve-media-gallery.md
 - hugo/content/blog/new-pricing-organization-accounts.md
-- hugo/content/blog/removing-bitbucket-login.md
 - hugo/content/blog/renaming-files-and-improving-team-editing.md
 - hugo/content/blog/sawmill-layout-composer-for-hugo-and-forestry.md
 - hugo/content/blog/search-with-algolia-in-hugo.md

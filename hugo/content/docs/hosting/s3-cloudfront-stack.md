@@ -1,18 +1,17 @@
 ---
 title: Static Site Hosting on AWS
-publishdate: 2017-09-18 04:00:00 +0000
-expirydate: 2020-01-31 04:00:00 +0000
-date: 2017-09-18 04:00:00 +0000
+publishdate: 2017-09-18T04:00:00.000+00:00
+expirydate: 2020-01-31T04:00:00.000+00:00
+date: '2017-09-18T04:00:00.000+00:00'
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 layout: single
 
 ---
-
 {{% warning %}}
 
-**Forestry will stop building and deploying sites on January 1st, 2020**.<br/>
-[Read the deployment sunset notice](/docs/sunset/deployments/).
+**Forestry stopped building and deploying sites on January 1st, 2020**.    
+See [how to deploy to host your site](/docs/hosting/)
 
 {{% /warning %}}
 
@@ -26,15 +25,16 @@ For more info on how CloudFormation works, as well as how we built our stack, ch
 
 In this guide, you have the option of using one of two CloudFormation templates.
 
----
+***
 
 ### Basic Template
+
 This template will create:
 
-- An **S3 bucket** to store your files
-- A **CloudFront distribution** to cache and serve your files to the public
-- A **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default
-- An **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.
+* An **S3 bucket** to store your files
+* A **CloudFront distribution** to cache and serve your files to the public
+* A **Lambda@Edge** function to provide some expected behavior that is not available from CloudFront by default
+* An **IAM User** with write access to the bucket. This user is how Forestry will deploy your website.
 
 The basic template will create a website on a **.cloudfront.net** domain. You might choose this option if you're just testing things out, don't want to bother with a custom domain, or want to handle all the DNS stuff on your own.
 
@@ -45,14 +45,15 @@ title="Launch the basic static site stack"
 stackName="basic-static-site"
 templateURL="https://s3.amazonaws.com/forestryio-cf-templates/static-site-hosting/basic-s3-cloudfront.yml" %}}
 
----
+***
 
 ### Complete Template
+
 This template will do everything the basic template does, but will also:
 
-- Create a **DNS Record** in **Route 53** to route a custom domain to your CloudFront distribution
-- Configure the CloudFront distribution to work with this custom domain
-- Create a **TLS Certificate** to serve your site over HTTPS
+* Create a **DNS Record** in **Route 53** to route a custom domain to your CloudFront distribution
+* Configure the CloudFront distribution to work with this custom domain
+* Create a **TLS Certificate** to serve your site over HTTPS
 
 The complete template is recommended if you already have a custom domain that you want routed to your site.
 
@@ -67,7 +68,7 @@ title="Launch the complete static site stack"
 stackName="my-static-site"
 templateURL="https://s3.amazonaws.com/forestryio-cf-templates/static-site-hosting/advanced-route53-acm.yml" %}}
 
----
+***
 
 ## Running the CloudFormation Template
 
@@ -97,7 +98,7 @@ View your stack details and open the **Resources** pane to see all of the resour
 
 ### Validating the Certificate
 
-If you are running the **complete** template and chose to have it create a TLS Certificate for you, you must perform a manual step to enable certificate validation. ***Until this step is completed, your template will not finish running.***
+If you are running the **complete** template and chose to have it create a TLS Certificate for you, you must perform a manual step to enable certificate validation. **_Until this step is completed, your template will not finish running._**
 
 Navigate to the **Certificate Manager** Console by searching for it in the services navigation or navigating to [https://console.aws.amazon.com/acm](https://console.aws.amazon.com/acm). You should see a certificate request for your domain with a status of **Pending validation**.
 
@@ -136,5 +137,5 @@ The secret access key can only be viewed in this modal. Once you dismiss it, you
 Once you have these credentials, open your website in Forestry and navigate to the **Settings**. Click on the **Deployment** tab, and select **Amazon S3** as your connection. You will be presented with fields to fill in your **Bucket**, **Access Key**, and **Secret**.
 
 {{% tip %}}
-Under **Advanced options**, do *not* enable Gzip compression (CloudFront will handle this for you,) and leave the path as `/`.
+Under **Advanced options**, do _not_ enable Gzip compression (CloudFront will handle this for you,) and leave the path as `/`.
 {{% /tip %}}
