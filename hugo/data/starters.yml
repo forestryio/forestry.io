@@ -101,6 +101,16 @@ starters:
     repo: itsnwa/darkfolio
     engine: other
     branch: ''
+- name: Docusaurus
+  textline: Documentation
+  preview: https://v2.docusaurus.io/
+  image: img/starters/docusaurus.png
+  author: Facebook
+  versions:
+  - name: Docusaurus
+    repo: DirtyF/docusaurus-forestry-starter
+    branch: ''
+    engine: other
 - name: Jamdocs
   preview: https://jamdocs.netlify.com
   image: img/starters/jamdocs.png
@@ -127,5 +137,6 @@ filters:
 - name: Gatsby
 - name: Gridsome
 - name: VuePress
+- name: Docusaurus
 - name: Eleventy
 - name: Jekyll
