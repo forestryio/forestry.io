@@ -34,6 +34,10 @@ starters:
     repo: kendallstrautman/brevifolia-gatsby-forestry
     branch: ''
     engine: gatsby
+  - name: NuxtJS
+    repo: kendallstrautman/brevifolia-nuxt-forestry
+    branch: ''
+    engine: other
   - name: Gridsome
     repo: kendallstrautman/brevifolia-gridsome-forestry
     engine: other
@@ -135,6 +139,7 @@ filters:
 - name: Hugo
 - name: NextJS
 - name: Gatsby
+- name: NuxtJS
 - name: Gridsome
 - name: VuePress
 - name: Docusaurus
