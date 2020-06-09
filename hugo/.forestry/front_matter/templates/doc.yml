@@ -36,7 +36,7 @@ fields:
     date_format: MMMM DD, YYYY
     time_format: h:mmA
     required: true
-  default: '2017-12-07T04:00:00.000+00:00'
+  default: now
 - type: text
   name: headline
   label: Page Headline

@@ -1,7 +1,7 @@
 ---
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-publishdate: 2017-12-07T04:00:00.000+00:00
+publishdate: 2020-06-09T07:00:00+00:00
 authors: []
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
@@ -20,7 +20,6 @@ cta:
 private: false
 weight: 
 aliases: []
-draft: true
 
 ---
 If you are using the **personal** plan and have some sites and branches that are **inactive for more than three months**, we will automatically archive those to save some resources on our servers.
