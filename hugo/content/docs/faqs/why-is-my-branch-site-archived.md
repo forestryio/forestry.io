@@ -9,8 +9,8 @@ title: Why is my branch/site archived?
 categories:
 - CMS
 headline: ''
-description: Forestry will automatically archive sites that have not been edited for
-  3 months.
+description: Forestry will automatically archive personal sites that have not been
+  edited for 3 months.
 textline: ''
 tags: []
 cta:
@@ -27,13 +27,13 @@ If you are using the **personal** plan and have some sites and branches that are
 
 Don't worry you can always **restore** an archived branch whenever you came back to edit your site.
 
-If some sites are marked as archived in your dashboard:
-
 ![Forestry Dashboard with archived sites](/uploads/2020/06/archived-sites.png)
 
 Click on the site or branch marked as _archived_ and click on the **Restore now** button.![Restore archived site dialog](/uploads/2020/06/restore-modal.png)
 
 Your branch or site is now active again. 😀
+
+***
 
 {{% tip "Upgrade" %}}
 
