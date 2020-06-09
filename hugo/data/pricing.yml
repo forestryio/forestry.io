@@ -32,6 +32,7 @@ plans:
   - text: Team access controls
     info: Assign organization members to teams. These teams can be added to sites
       with admin, developer, or editor access levels
+  - text: Sites always active
   - text: Business support
     info: Median first response time under 2 hours
 - title: Pro
