@@ -131,5 +131,6 @@ fields:
 pages:
 - hugo/content/docs/faqs/can-i-edit-css-files.md
 - hugo/content/docs/faqs/how-to-manage-git-branches-in-forestry.md
+- hugo/content/docs/faqs/why-is-my-branch-site-archived.md
 - hugo/content/docs/settings/snippets.md
 - hugo/content/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available.md
