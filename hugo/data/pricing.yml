@@ -11,11 +11,9 @@ plans:
   - text: Git sync
   - text: Instant Previews
     info: Quickly preview changes before publishing
-  - text: Forestry Remote
+  - text: Remote admin from your domain
     info: Install the Forestry CMS on your site (mysite.com/admin)
-  - text: Jekyll custom plugins support
-  - text: Host anywhere
-    info: Netlify, Vercel, AWS, GitHub, GitLab, Render, Buddy Works, it's up to you.
+  - text: Archived after 3 months of inactivity
   - text: Community support
     info: No priority support, response time may vary
 - title: Starter
