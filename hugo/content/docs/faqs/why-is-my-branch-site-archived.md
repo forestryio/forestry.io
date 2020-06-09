@@ -25,7 +25,7 @@ draft: true
 ---
 If you are using the **personal** plan and have some sites and branches that are **inactive for more than three months**, we will automatically archive those to save some resources on our servers.
 
-Don't worry you can always **restore** an archived branch whenever you came back to edit your site.
+Don't worry you can always **restore** an archived branch whenever you come back to edit your site.
 
 ![Forestry Dashboard with archived sites](/uploads/2020/06/archived-sites.png)
 
@@ -37,6 +37,6 @@ Your branch or site is now active again. 😀
 
 {{% tip "Upgrade" %}}
 
-[Get a starter plan](/pricing) if you want your sites to stay always active.
+[Get a starter plan](https://app.forestry.io/dashboard/#organizations/new) if you want your sites to stay always active.
 
 {{% /tip %}}
