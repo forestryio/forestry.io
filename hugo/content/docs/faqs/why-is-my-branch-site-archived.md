@@ -23,3 +23,14 @@ aliases: []
 draft: true
 
 ---
+If you are using the **personal** plan and have some sites and branches that are **inactive for more than three months**, we will automatically archive those to save some resources on our servers.
+
+Don't worry you can always **restore** an archived branch whenever you came back to edit your site.
+
+If some sites are marked as archived in your dashboard:
+
+![Forestry Dashboard with archived sites](/uploads/2020/06/archived-sites.png)
+
+Click on the site or branch marked as _archived_ and click on the **Restore now** button.![Restore archived site dialog](/uploads/2020/06/restore-modal.png)
+
+Your branch or site is now active again. 😀
