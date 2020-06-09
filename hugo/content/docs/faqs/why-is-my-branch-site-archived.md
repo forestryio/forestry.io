@@ -34,3 +34,9 @@ If some sites are marked as archived in your dashboard:
 Click on the site or branch marked as _archived_ and click on the **Restore now** button.![Restore archived site dialog](/uploads/2020/06/restore-modal.png)
 
 Your branch or site is now active again. 😀
+
+{{% tip "Upgrade" %}}
+
+[Get a starter plan](/pricing) if you want your sites to stay always active.
+
+{{% /tip %}}
