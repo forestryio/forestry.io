@@ -8,7 +8,8 @@ publishdate: 2017-12-07 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 categories: []
 tags: []
 cta:
@@ -48,6 +49,6 @@ During the _Spike,_ refactoring is our learning tool. By extracting functions, r
 
 Writing tests here can still be tricky. Do not mock or stub any of the functions or classes we have extracted. The tests using those mocks/stubs will be fragile, and will definitely break once we reset. With our tests in place, it's time to reset.
 
-Why is resetting so important? The goal is to get the old code under test so we can  safely refactor. The changes we make in the _Spike_ are made for the sake of getting a better understanding of the code. Resetting is the point at which we confirm that understanding. If the tests fail after we reset, then we know we made a mistake. 
+Why is resetting so important? The goal is to get the old code under test so we can  safely refactor. The changes we make in the _Spike_ are made for the sake of getting a better understanding of the code. Resetting is the point at which we confirm that understanding. If the tests fail after we reset, then we know we made a mistake.
 
-The _Spike-Test-Reset_ strategy is way to push forward even when we're lost. We reduce the risk of doing so not by writing tests first but by resetting changes after. While I would not often recommend this approach, it is another useful tool to add to your toolbox. 
+The _Spike-Test-Reset_ strategy is way to push forward even when we're lost. We reduce the risk of doing so not by writing tests first but by resetting changes after. While I would not often recommend this approach, it is another useful tool to add to your toolbox.

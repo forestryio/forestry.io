@@ -8,7 +8,8 @@ title: Use Forestry With Azure DevOps Repos
 headline: ''
 description: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 photo_credit: ''
 categories:
 - CMS

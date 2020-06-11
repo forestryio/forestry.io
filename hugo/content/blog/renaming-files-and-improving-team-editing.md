@@ -20,12 +20,11 @@ cta:
 private: false
 weight: ''
 aliases: []
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu: []
 
 ---
-It’s a cloudy day ☁️ here on Prince Edward Island, the perfect opportunity to announce some new features.
-
 Over the past couple weeks, we were hard at work to improve the editor experience for our Git-backed content manager. Renaming files is just one of those updates. We also needed to improve notifications and indicators to make working in a team on Forestry easier.
 
 ---

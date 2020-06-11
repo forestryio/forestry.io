@@ -5,7 +5,8 @@ publishdate: 2019-05-27T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 date: 2019-05-27T04:00:00.000+00:00
 layout: single
-images: 
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
     parent: Organizations
@@ -44,7 +45,7 @@ When you remove users from your organization by clicking on the icon at the uppe
 Users in an organization can be assigned one of two roles:
 
 * **Members** can add sites within the organization (once they have been assigned as [collaborators](/docs/settings/collaborators/))
-* **Owners** have total access control within the organization. This includes adding/removing organization members, modifying teams, accessing billing and deleting the organization.  
+* **Owners** have total access control within the organization. This includes adding/removing organization members, modifying teams, accessing billing and deleting the organization.
   Owners also automatically have admin access-level on all of the organization's sites.
 
 |                           | Member | Owner |

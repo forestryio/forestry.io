@@ -17,7 +17,6 @@ cta:
   textline: ''
   calls_to_action: []
 weight: ''
-images: []
 menu:
   changelog:
     name: 2018/05/28

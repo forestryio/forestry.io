@@ -12,7 +12,8 @@ categories:
 headline: ''
 description: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 tags: []
 cta:
   headline: ''

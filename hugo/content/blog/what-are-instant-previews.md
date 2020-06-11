@@ -9,7 +9,8 @@ publishdate: 2019-02-05 13:00:00 -0400
 expirydate: 2030-02-05 04:00:00 +0000
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 categories:
 - CMS
 tags:

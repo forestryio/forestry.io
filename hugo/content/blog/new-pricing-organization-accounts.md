@@ -17,9 +17,10 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: 
+weight:
 aliases: []
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 photo_credit: ''
 menu: []
 

@@ -8,7 +8,8 @@ authors:
 - team forestry
 headline: ''
 textline: ''
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 categories: []
 tags: []
 cta:

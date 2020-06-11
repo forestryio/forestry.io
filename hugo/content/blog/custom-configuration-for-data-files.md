@@ -19,7 +19,8 @@ cta:
 private: false
 weight: ''
 aliases: []
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu: []
 
 ---
@@ -31,8 +32,8 @@ All new sites will have this feature enabled by default. Existing Jekyll and Hug
 
 Here's a quick walkthrough on how you can set up data file sections on your site.
 
-You can allow Forestry to migrate Data files for you or choose to make this configuration yourself.  
-  
+You can allow Forestry to migrate Data files for you or choose to make this configuration yourself.
+
 **Automatic Migration of Data Files** ⭐
 
 _This option is only available for a limited time_
