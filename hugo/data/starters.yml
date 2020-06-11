@@ -125,6 +125,16 @@ starters:
     engine: other
     branch: ''
   textline: Documentation
+- name: Minimal Mistakes
+  textline: Site
+  preview: https://jekyll-minimal-mistakes-forestry.now.sh/
+  image: img/starters/minimal-mistakes.png
+  author: Michael Rose
+  versions:
+  - name: Jekyll
+    repo: DirtyF/jekyll-minimal-mistakes-forestry
+    branch: ''
+    engine: jekyll
 - name: Belkirk
   textline: Site
   preview: https://forestryio-templates.github.io/belkirk-jekyll-demo/
