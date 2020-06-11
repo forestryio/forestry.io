@@ -6,7 +6,7 @@ description: Git-backed headless CMS to easily edit all markdown based static si
   generated with Gatsby, Gridsome, Next, Next, Eleventy, Hugo, Jekyll, VuePress, Hexo,
   etc.
 authors: []
-blocks:
+blocks: 
 hero:
   headline: A static CMS that **commits**
   textline: "Give your editors the power of Git.  \nCreate and edit Markdown-based
@@ -77,7 +77,7 @@ brand_logos:
   - permalink: img/brand-logos/sketch.png
     alt: Sketch
     height: '60'
-    offset: '-1'
+    offset: "-1"
   - permalink: img/brand-logos/spotify_partner.png
     alt: Spotify
     height: '60'
@@ -91,8 +91,8 @@ brand_logos:
     height: '50'
     offset: '0'
   cta:
-    - permalink: /showcase
-      textline: View Showcase
+  - permalink: "/showcase"
+    textline: View Showcase
 features:
 - headline: Your site, your workflow
   textline: |
@@ -133,20 +133,22 @@ features:
   direction: ltr
   class: section-automated
 - headline: Host where you want
-  textline: Your static site can live anywhere you want — including on Amazon S3, GitHub Pages, Netlify or Vercel.
+  textline: Your static site can live anywhere you want — including on Amazon S3,
+    GitHub Pages, Netlify or Vercel.
   direction: vertical
   class: section-deploy
 cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Import it to Forestry.
   calls_to_action: []
-publishdate: 2018-12-31T04:00:00.000+00:00
+publishdate: 2020-06-10T03:00:00+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
 date: '2017-12-31T04:00:00.000+00:00'
 inspectlet: true
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-3x.jpg"
 private: false
-weight:
+weight: 
 
 ---
