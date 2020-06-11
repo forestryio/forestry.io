@@ -144,9 +144,9 @@ When you click the preview button on a piece of content, Forestry will attempt t
 
 You may have some layouts that don't utilize the body of the markdown file. This happens when you instead build the page entirely from front matter data, such as when you use [blocks](/docs/settings/fields/blocks).
 
-For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_instant_preview_id` front mattr key ourlayout, Forestry will beable to identify the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML, and it is recommended to add it as an HTML comment. If your HTML is being run through a minifier that strips comments, it's fine to insert it differently, such as in a `<meta>` tag.
+For these layouts, Forestry also inserts a special front matter value that you can include in these layouts to improve Forestry's preview URL behavior. By outputting the contents of the `forestry_instant_preview_id` frot matter key our layout, Forestry will be able to identify the content being previewed. You can output this value anywhere between the opening and closing `<body>` tags of your HTML. It is recommended to add it as an HTML comment. If your HTML is being run through a minifier that strips comments, it's fine to insert it differently, such as in a `<meta>` tag.
 
-Be aware that `forestry_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
+Be aware that `forestry_instant_preview_id` will only be inserted in one file at a time, and won't be guaranteed to be there, so your code should check for it before outputting its value.
 
 {{% code_tabs %}}
 {{% tab "Hugo" %}}
@@ -172,4 +172,4 @@ _HTML comments in Hugo must be filtered with_ `safeHTML` _in order to be output 
 
 ### If the SSG Doesn't Write Content to HTML Files in Dev Mode
 
-If your static site generator doesn't write content updates to HTML (such as when using `gatsby develop`), this won't work and the preview will always open the home page of your site.
+If your static site generator doesn't write content updates to HTML (such as when using `gatsby develop`), the preview will always open the home page of your site except if you opt-out of the reload preview tab option to take advantage of your SSG's Hot Module Reloading feature.
