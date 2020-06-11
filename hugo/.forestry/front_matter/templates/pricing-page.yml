@@ -60,8 +60,9 @@ fields:
 - type: text
   name: textline
   label: textline
-- type: list
-  name: images
+- name: images
+  type: image_gallery
+  config: {}
   label: images
 - type: list
   name: authors

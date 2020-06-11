@@ -34,7 +34,8 @@ faqs:
 headline: ''
 description: From free to Enterprise, pick up the plan that fits your needs.
 textline: ''
-images: []
+images:
+- "/uploads/2018/01/OGimage-01-3x.jpg"
 authors: []
 categories: []
 tags: []
