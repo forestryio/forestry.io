@@ -3,10 +3,23 @@ title: Showcase
 headline: Built with Forestry.io
 textline: Some of the best websites and products built with Forestry
 weight: 2
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2017-12-31 04:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2017-12-31T04:00:00.000+00:00'
+description: Websites managed with Forestry.io
+images: []
+button: false
+authors: []
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+private: false
+aliases: []
 menu:
   main:
     weight: 2
+
 ---
