@@ -6,7 +6,7 @@ description: Git-backed headless CMS to easily edit all markdown based static si
   generated with Gatsby, Gridsome, Next, Next, Eleventy, Hugo, Jekyll, VuePress, Hexo,
   etc.
 authors: []
-blocks: 
+blocks:
 hero:
   headline: A static CMS that **commits**
   textline: "Give your editors the power of Git.  \nCreate and edit Markdown-based
@@ -146,9 +146,7 @@ expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
 date: '2017-12-31T04:00:00.000+00:00'
 inspectlet: true
-images:
-- "/uploads/2018/01/OGimage-01-3x.jpg"
 private: false
-weight: 
+weight:
 
 ---
