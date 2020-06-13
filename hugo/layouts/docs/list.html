@@ -12,11 +12,17 @@
     </div>
     <section class="section section-docs-list">
       <div class="container">
+
         {{- range .Paginator.Pages -}}
           {{- .Render "summary" }}
         {{- end -}}
-        
+
         {{- partial "components/pagination/paginator" . -}}
+
+        {{- with  .OutputFormats.Get "RSS" -}}
+        <hr />
+        <p><a href="{{ .RelPermalink }}">Subscribe to the feed</a></p>
+        {{- end }}
       </div>
     </section>
   </main>

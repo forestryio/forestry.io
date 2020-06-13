@@ -1,11 +1,9 @@
 ---
-aliases:
-- "/jekyll/"
 title: Static CMS for Jekyll
 description: Forestry
 authors:
 - forestryio
-blocks: 
+blocks:
 hero:
   headline: A Jekyll CMS that **commits**
   textline: Forestry takes Git-powered Content Management to Jekyll Sites. Easily
@@ -160,6 +158,5 @@ cta:
 type: landing-page
 layout: landing-page
 date: 2018-11-09 04:00:00 +0000
-inspectlet: true
 
 ---

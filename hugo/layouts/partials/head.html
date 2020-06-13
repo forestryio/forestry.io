@@ -21,7 +21,7 @@
 {{- partial "seo/googleNews" . -}}
 {{- partial "seo/schema" . -}}
 {{- partial "seo/twitterCards" . -}}
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 <link rel="stylesheet" href="{{ "css/styles.min.css" | relURL }}?{{ readFile "static/css/styles.min.css" | md5 }}" type="text/css" />
 {{- if .IsHome -}}
 {{- range .Site.AllPages -}}
@@ -36,9 +36,9 @@
 <link rel="icon" type="image/png" href="{{ "/favicons/favicon-32x32.png" | relURL }}" sizes="32x32" />
 <link rel="icon" type="image/png" href="{{ "/favicons/favicon-16x16.png" | relURL }}" sizes="16x16" />
 <link rel="mask-icon" href="{{ "/favicons/safari-pinned-tab.svg" | relURL }}" color="#00c7b7" />
-{{- if .RSSLink -}}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
-  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
+{{- with .OutputFormats.Get "RSS" -}}
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
+  <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
 {{- end -}}
 {{/* TODO: canonical + multilingual meta */}}
 {{- with $.Site.Params.gtmid -}}
@@ -49,7 +49,7 @@
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
 })(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-KL5HP9Q':true});
-</script> 
+</script>
 <!-- End Page Hiding Snippet -->
 <!-- Google Tag Manager -->
 <script>

@@ -18,7 +18,7 @@ We strive to provide the best support possible for our customers! Our [docs](/do
 
 ## What is my support coverage?
 
-|  | Free | Team | Enterprise |
+|  | Free | Starter | Enterprise |
 | --- | --- | --- | --- |
 | Community | ✓ | ✓ | ✓ |
 | Email | As available | ✓ | ✓ |

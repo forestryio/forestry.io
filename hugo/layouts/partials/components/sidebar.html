@@ -9,7 +9,7 @@
     {{- /* changelog menu should just list all changelog items newest first */ -}}
     <h3>Changelog</h3>
     {{- $menuYear := "" -}}
-    {{ range (where $.Site.RegularPages "Dir" $.Page.Dir) }}
+    {{ range (where $.Site.RegularPages "Dir" $.Page.File.Dir) }}
     {{- if ne $menuYear (.Date.Format "2006") -}}
       {{- if ne $menuYear "" -}}
         </ul>
