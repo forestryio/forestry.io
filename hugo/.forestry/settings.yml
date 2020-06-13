@@ -80,6 +80,8 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.72.0
+  - PREVIEW_IP=0.0.0.0
+  - PREVIEW_PORT=8080
   preview_output_directory: dist
   install_dependencies_command: npm install
   preview_docker_image: forestryio/hugo:node12
