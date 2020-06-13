@@ -115,6 +115,16 @@ starters:
     repo: DirtyF/docusaurus-forestry-starter
     branch: ''
     engine: other
+- name: Parsa
+  preview: https://hugo-parsa-forestry.netlify.app/
+  image: img/starters/parsa.jpg
+  author: Themefisher
+  versions:
+  - name: Hugo
+    repo: forestryio/parsa-hugo-forestry
+    engine: hugo
+    branch: ''
+  textline: Blog
 - name: Jamdocs
   preview: https://jamdocs.netlify.com
   image: img/starters/jamdocs.png
