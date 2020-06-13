@@ -8,16 +8,19 @@ languageCode = "en"
 metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
-pygmentsCodefences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsStyle = "monokai"
 relativeURLs = false
 title = "Forestry.io"
-[blackfriday]
+[markup]
+defaultMarkdownHandler = "blackfriday"
+[markup.blackFriday]
 angledQuotes = false
 hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+style = "monokai"
 [[menu.docs]]
 name = "Pro"
 weight = 12
