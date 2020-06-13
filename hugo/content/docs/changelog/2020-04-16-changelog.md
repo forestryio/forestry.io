@@ -1,7 +1,7 @@
 ---
 authors:
 - team forestry
-date: 2020-04-15
+date: 2020-04-16
 title: 2020/04/16 Changelog
 summary: "Markdown in template's field description, Instant Previews upgrade, and
   a lot of fixes \U0001F389 "
