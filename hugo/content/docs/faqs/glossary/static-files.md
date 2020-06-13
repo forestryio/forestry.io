@@ -17,6 +17,11 @@ Static files are files that are not processed by your static site generator. Ins
 
 ## Examples
 
+* **Hugo**: static files live in the `staticDir`, which defaults to `/static`.
+* **Gatsby**: static files lives in the [`static` folder](https://www.gatsbyjs.org/docs/static-folder/).
+* **NextJS**: static lives in the [`/public` folder](https://nextjs.org/docs/basic-features/static-file-serving).
+* **Gridsome**: static directory is `/static`.
+* **NuxtJS**: static files live in `/static` folder.
+* **VuePress:**: static files live in `.vuepress/public`.
 * **Jekyll**: any file without front matter.
-* **Hugo**: static files live in the `staticDir`, which defaults to `static/`
-* **VuePress:** static files live in `.vuepress/public`
+* **Eleventy**: anything passed to the [`addPassthroughCopy`](https://www.11ty.dev/docs/copy/) function in your config file.
