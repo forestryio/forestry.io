@@ -76,11 +76,11 @@ If you’re curious about using Gatsby with Forestry but aren’t sure where to 
 
 Once again, we'd like to thank our beta testers who helped us bring Gatsby to Forestry!
 
-## Come see us at JAMstack Conf NYC!
+## Come see us at Jamstack Conf NYC!
 
 ![](/uploads/jamstackconf.png)
 
-The hottest static site party of 2019 is happening in New York tomorrow! Forestry is proud to be a Gold Sponsor of [jamstack_conf_nyc](https://jamstackconf.com/) this year, and we’ll be in New York to hang out and talk about all things JAMstack. We’d love to see you there — be sure to stop by our booth for high fives and a little swag!
+The hottest static site party of 2019 is happening in New York tomorrow! Forestry is proud to be a Gold Sponsor of [jamstack_conf_nyc](https://jamstackconf.com/) this year, and we’ll be in New York to hang out and talk about all things Jamstack. We’d love to see you there — be sure to stop by our booth for high fives and a little swag!
 
 ## We’re Not Done Yet
 

@@ -10,7 +10,7 @@ menu:
 draft: true
 
 ---
-most of this is just convention
+Most of this is convention
 
 src
 src/pages

@@ -1,5 +1,5 @@
 ---
-title: Forestry.io at JAMstack Conf - San Francisco, Oct 16-18
+title: Forestry.io at Jamstack Conf - San Francisco, Oct 16-18
 description: ''
 date: 2019-09-17T15:41:14-03:00
 publishdate: 2019-09-17T15:41:14-03:00
@@ -18,14 +18,14 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: 
+weight:
 aliases: []
 menu: []
 
 ---
-I'm excited to be speaking at [JAMstack Conf](https://jamstackconf.com/sf) in San Francisco on Oct 16th.   I'll be speaking about the future of content management and announcing an open-source project that we're really excited about.  
+I'm excited to be speaking at [Jamstack Conf](https://jamstackconf.com/sf) in San Francisco on Oct 16th.   I'll be speaking about the future of content management and announcing an open-source project that we're really excited about.
 
-The inaugural event was a blast last year and it sounds like they're taking it to the next level this year.  
+The inaugural event was a blast last year and it sounds like they're taking it to the next level this year.
 
 ![](/uploads/2019/09/D_L_KrZWkAA_guS-1.jpg)
 
