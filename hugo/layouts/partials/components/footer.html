@@ -35,13 +35,13 @@
       <div class="contact">
         <ul>
           {{- if .Site.Social.twitter -}}
-          <li><a href="https://twitter.com/{{ .Site.Social.twitter }}" target="_blank"><img src="/img/logos/twitter.svg" height="16" alt="Twitter"></a></li>
+          <li><a href="https://twitter.com/{{ .Site.Social.twitter }}" title="Follow us on Twitter" target="_blank"><img src="/img/logos/twitter.svg" height="16" alt="Twitter"></a></li>
           {{- end -}}
           {{- if .Site.Social.slack -}}
-          <li><a href="{{ .Site.Social.slack }}" target="_blank"><img src="/img/logos/slack-symbol.svg" height="16" alt="Slack"></a></li>
+          <li><a href="{{ .Site.Social.slack }}" title="Join our community Slack" target="_blank"><img src="/img/logos/slack-symbol.svg" height="16" alt="Slack"></a></li>
           {{- end -}}
           {{- if .Site.Social.email -}}
-          <li><a href="mailto:{{ .Site.Social.email }}"><img src="/img/email.svg" height="12" alt="Email"></a></li>
+          <li><a href="mailto:{{ .Site.Social.email }}" title="Send us an email"><img src="/img/email.svg" height="12" alt="Email"></a></li>
           {{- end -}}
       </div>
     </div>
