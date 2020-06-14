@@ -20,7 +20,7 @@ plainIDAnchors = true
 [markup.highlight]
 codeFences = true
 guessSyntax = true
-style = "monokai"
+style = "monokailight"
 [[menu.docs]]
 name = "Pro"
 weight = 12
