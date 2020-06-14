@@ -9,6 +9,9 @@ fields:
     options:
     - hugo
     - jekyll
+    - vuepress
+    - gatsby
+    - other
     required: true
   label: Engine Name
   name: engine_name
