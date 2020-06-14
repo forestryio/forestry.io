@@ -20,10 +20,10 @@ export default function(env) {
       command: hugo,
       args: {
         default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
-        development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture", "--buildExpired"],
+        development: ["-b", "http://localhost:3000", "--buildDrafts", "--buildFuture"],
         preview: ["-b", "http://localhost:3000"],
         production: [],
-        instantPreview: ["--buildDrafts", "--buildFuture", "--buildExpired"]
+        instantPreview: ["--buildDrafts", "--buildFuture"]
       }
     },
     algolia: {
