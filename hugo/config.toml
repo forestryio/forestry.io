@@ -60,22 +60,24 @@ weight = 1
 [[menu.faqs]]
 name = "Glossary"
 weight = 2
+
 [[menu.footer]]
 name = "Roadmap"
 parent = "Product"
 url = "https://portal.productboard.com/forestry/"
-weight = 7
+weight = 6
 [[menu.footer]]
 name = "Status"
 parent = "Product"
 url = "https://status.forestry.io"
-weight = 6
+weight = 7
 [[menu.footer]]
 name = "Company"
 weight = 2
 [[menu.footer]]
 name = "Product"
 weight = 1
+
 [[menu.main]]
 identifier = "useraccount"
 name = "My Account"
