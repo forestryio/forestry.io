@@ -29,10 +29,10 @@ rules:
   # https://github.com/eslint/eslint/tree/master/docs/rules#best-practices
   no-fallthrough: 2
   no-redeclare: 2
-  
+
   # Browser compatibility
   compat/compat: error
-  
+
   # Webpack import support
   import/default: 0
 
@@ -50,7 +50,7 @@ rules:
   no-trailing-spaces: 2
   object-curly-spacing: [2, "never"]
   quotes: [2, "double", "avoid-escape"]
-  semi: never
+  semi: [1, "never"]
   space-before-blocks: [2, "always"]
   space-before-function-paren: [2, "never"]
   space-in-parens: [2, "never"]
