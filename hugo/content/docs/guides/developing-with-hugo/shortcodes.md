@@ -1,5 +1,6 @@
 ---
 aliases:
+- - "/docs/developing-with-hugo/shortcodes/"
 - "/docs/developing-with-hugo/short-codes/"
 date: 2017-07-24 00:00:00 +0000
 description: How to work with Hugo shortcodes in Forestry
@@ -25,11 +26,11 @@ You can use Forestry [Snippets](/docs/settings/snippets/) to configure shortcode
 
 For example, using Hugo’s built-in figure shortcode, a user may enter the following into the content body:
 
-```
-{{</* figure src="/example.jpg" title="Example Image" */>}}
+```go-html-template
+{{< figure src="/example.jpg" title="Example Image" >}}
 ```
 
-This could be configured as a Forestry snippet for ease of use. 
+This could be configured as a Forestry snippet for ease of use.
 
 ## Built-in Shortcodes
 

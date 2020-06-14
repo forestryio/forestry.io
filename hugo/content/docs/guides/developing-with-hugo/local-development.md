@@ -24,7 +24,9 @@ If you set up and imported your site with Git, local development becomes much ea
 
 To get started, clone your repository to your desktop. For example:
 
-	$ git clone https://github.com/forestryio/hugo-demo.git
+```sh
+git clone https://github.com/forestryio/hugo-demo.git
+```
 
 Now you can begin working on your site. Any changes made to your site can be committed in Git, and will automatically be synced with your Forestry CMS.
 
@@ -33,7 +35,9 @@ Hugo comes with a `livereload` local development server built into it’s binary
 
 To run Hugo with the server, run the command:
 
-	$ hugo server
+```sh
+hugo server
+```
 
 This will spin up a local development server with live reload at the port `1313`, which is accessible from `http://localhost:1313`.
 

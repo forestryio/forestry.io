@@ -14,15 +14,19 @@ menu:
     weight: 25
 
 ---
+
 ## Sitemap
+
 Hugo comes with support for XML Sitemaps built-in.
 
 Hugo will export a sitemap.xml file with all of your content using a standard XML template to the root of your built site. You can configure this in your `config.yml`.
 
-	[sitemap]
-	  changefreq: "monthly"
-	  priority: 0.5
-	  filename: "sitemap.xml"
+```yaml
+sitemap:
+  changefreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
+```
 
 ## RSS Feeds
 
@@ -34,19 +38,25 @@ Hugo will also generate an RSS feed in the following locations:
 
 You can configure parts of the output of the RSS feeds in your `config.yml`.
 
-	languageCode: "en-us"
-	copyright: "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
-	
-	[author]
-	    name: "My Name Here"
-	    email: "sample@domain.tld"
+```yaml
+languageCode: "en-us"
+copyright: "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+```
+
+```yaml
+author:
+  name: "My Name Here"
+  email: "sample@domain.tld"
+```
 
 In order to include RSS feeds, you must include it in the `<head>` of your pages.
 
-	{{ if .RSSLink }}
-	  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-	  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-	{{ end }}
+```go-html-template
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
+```
 
 If you wish to create Atom Feeds or other types of documents, please see the Hugo documentation on [Output Formats][1].
 

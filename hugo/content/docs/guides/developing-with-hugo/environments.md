@@ -27,14 +27,14 @@ This allows you to set up conditional code in your layouts in order to handle pa
 
 This variable is accessible in your templates with the `getenv` function:
 
-`{{ getenv "HUGO_ENV" }}`
+```go-html-template
+{{ getenv "HUGO_ENV" }}
+```
 
 The values are:
 
-```
-Local environment: undefined
-Staging environment: "staging"
-Production environment: "production"
-``` 
+- Local environment: development
+- Staging environment: "staging"
+- Production environment: "production"
 
-**Note:** in Hugo the local environment variable is undefined because Hugo does not set this environment variable by default.
+**Note:** in Hugo the local environment variable is undefined because Hugo does not set this environment variable by default. You can also use [`hugo.Environment` and `hugo.IsProduction`](https://gohugo.io/functions/hugo/) in your templates.
