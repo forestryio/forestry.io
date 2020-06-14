@@ -96,12 +96,12 @@ export default class ASBGenerator {
     const sanitizedHTML = buttonHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;")
     const markdown = this.getMarkdown(addsiteUrl, imageUrl)
     this.HTMLContainer.innerHTML = sanitizedHTML
-    this.HTMLContainer.nextSibling.setAttribute(
+    this.HTMLContainer.setAttribute(
       "data-clipboard-text",
       buttonHTML
     )
     this.markdownContainer.innerHTML = markdown
-    this.markdownContainer.nextSibling.setAttribute(
+    this.markdownContainer.setAttribute(
       "data-clipboard-text",
       markdown
     )
