@@ -134,13 +134,13 @@ You'll want to create a template called **Posts** and add the following fields:
 
 ![Select a fied type to model your content type](/uploads/2019/05/field-types-example.png "Pick up text, date and image fields for example")
 
-This will generate the following user interface for your posts content:
+This will generate the following user interface for the front matter template:
 
 ![](/uploads/2019/05/fields-example.png)
 
 #### Click the settings icon to configure each field
 
-Here is our title text field settings:
+Here are our title text field settings:
 
 ![Text field settings](/uploads/2019/05/text-field-settings.png "Text field settings")
 
@@ -174,14 +174,7 @@ Select your newly created template and save your changes.
 
 Congrats! Now you should have fields set up for your different content types. For more information on Front Matter Templates, read the full doc [here](/docs/settings/front-matter-templates/)
 
-{{% tip "Configuration Files" %}}
-You probably noticed Forestry committed a .forestry folder to your repository. This stores all of your sites configuration (FMTs, image settings, etc). If you prefer working in a text file, you can set all of your site's configuration by [editing these files](/docs/settings/config-files/).
+{{% tip "Configuration Files" %}} You probably noticed Forestry committed a `.forestry` folder to your repository. This stores all of your site configuration (FMTs, image settings, etc). If you prefer working in a text file, you can set all of your site's configuration by [editing these files](/docs/settings/config-files/).
 
 ![](/uploads/2018/01/configuration-files.png)
 {{% /tip %}}
-
-<!--
-
-## Invite Collaborators
-
-## Configure Deployment -->
