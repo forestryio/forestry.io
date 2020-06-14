@@ -4,6 +4,7 @@
 <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+{{ hugo.Generator }}
 <meta name="apple-mobile-web-app-title" content="{{ $title }}" />
 <meta name="application-name" content="{{ $title }}" />
 <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
@@ -20,8 +21,7 @@
 {{- partial "seo/opengraph" . -}}
 {{- partial "seo/googleNews" . -}}
 {{- partial "seo/schema" . -}}
-{{- partial "seo/twitterCards" . -}}
-{{ hugo.Generator }}
+{{- partial "seo/twitterCards" . }}
 <link rel="stylesheet" href="{{ "css/styles.min.css" | relURL }}?{{ readFile "static/css/styles.min.css" | md5 }}" type="text/css" />
 {{- if .IsHome -}}
 {{- range .Site.AllPages -}}
