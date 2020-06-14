@@ -23,7 +23,7 @@ All sites are built in a Linux container and have access by default to the follo
 
 * Ruby / Bundler for Jekyll websites
 * Go / Hugo
-* NodeJS, NPM, Yarn for NodeJS based SSG like Gatsby, Gridsome, Nuxt, Eleventy, etc.
+* NodeJS, NPM, Yarn for NodeJS based SSG like Gatsby, NextJS, Gridsome, NuxtJS, Eleventy, etc.
 
 Hugo and Jekyll users relying on node modules for their asset pipeline can also use a preview environment embedding NodeJS.
 
@@ -74,7 +74,7 @@ For a JS-based static site generator build from a `src` subfolder and aliasing `
 
 ```yaml
 build:
-  preview_docker_image: node:10
+  preview_docker_image: node:12
   install_dependencies_command: npm install
   instant_preview_command: npm start
   mount_path: "/srv"
@@ -94,12 +94,12 @@ For a Hugo website, `.forestry/settings.yml` will default to:
 build:
   preview_docker_image: forestryio/hugo:latest
   install_dependencies_command:
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
   mount_path: "/srv"
   working_dir: "/srv"
   preview_output_directory: "public"
   preview_env:
-  - HUGO_VERSION=0.57.2
+  - HUGO_VERSION=0.72.0
   - HUGO_ENV=staging
 ```
 
@@ -111,7 +111,7 @@ For a Jekyll website, `.forestry/settings.yml` will default to:
 build:
   preview_docker_image: forestryio/ruby:2.6
   install_dependencies_command: bundle install --path vendor/bundle
-  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future -d _site
   mount_path: "/srv"
   working_dir: "/srv"
   preview_output_directory: "_site"
@@ -119,18 +119,18 @@ build:
   - JEKYLL_ENV=staging
 ```
 
-### Hexo example
+### JS-based SSG
 
-Provided you added an npm script to run Hexo server on `0.0.0.0:8080`, `.forestry/settings.yml` for an Hexo site could look like:
+A basic `.forestry/settings.yml` for an JS-based static site generator could look like:
 
 ```yaml
 build:
   preview_output_directory: public
   install_dependencies_command: npm install
-  preview_docker_image: node:10
+  preview_docker_image: node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: npm run develop
 ```
 
 ### Default commands
@@ -140,7 +140,7 @@ build:
 
 ```yaml
 build:
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
 ```
 
 {{% /tab %}}
@@ -148,7 +148,7 @@ build:
 
 ```yaml
 build:
-  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future -d _site
 ```
 
 {{% /tab %}}
@@ -156,7 +156,7 @@ build:
 
 ```yaml
 build:
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: npm run develop
 ```
 
 {{% /tab %}}
@@ -164,7 +164,7 @@ build:
 
 ```yaml
 build:
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: npm run develop
 ```
 
 {{% /tab %}}
@@ -172,7 +172,7 @@ build:
 
 ```yaml
 build:
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: npm run develop
 ```
 
 {{% /tab %}}
@@ -221,28 +221,28 @@ This step is important, as you could otherwise run node packages on your local m
 
 ### 2. Configure a build script in _package.json_
 
-Commands run as NPM scripts will automatically include any installed node modules in your **PATH**. 
+Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
 Adapt those commands if you site source lives in a subfolder.
 
 {{% code_tabs %}}
 {{% tab "Gatsby" %}}
 
     "scripts": {
-      "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080"
+      "develop": "gatsby develop"
     }
 
 {{% /tab %}}
 {{% tab "Eleventy" %}}
 
     "scripts": {
-      "forestry:preview": "eleventy --serve"
+      "develop": "eleventy --serve"
     }
 
 {{% /tab %}}
 {{% tab "Gridsome" %}}
 
     "scripts": {
-      "forestry:preview": "gridsome develop"
+      "develop": "gridsome develop"
     }
 
 
@@ -250,14 +250,14 @@ Adapt those commands if you site source lives in a subfolder.
 {{% tab "VuePress" %}}
 
     "scripts": {
-      "forestry:preview": "vuepress dev"
+      "develop": "vuepress dev"
     }
 
 {{% /tab %}}
 {{% tab "Next" %}}
 
     "scripts": {
-      "forestry:preview": "next -p 8080 -H 0.0.0.0"
+      "develop": "next"
     }
 
 {{% /tab %}}
@@ -269,35 +269,35 @@ Adapt those commands if you site source lives in a subfolder.
 {{% tab "Gatsby" %}}
 
     build:
-      instant_preview_command: npm run forestry:preview
+      instant_preview_command: npm run develop
       preview_output_directory: dist
 
 {{% /tab %}}
 {{% tab "Eleventy" %}}
 
     build:
-      instant_preview_command: npm run forestry:preview
+      instant_preview_command: npm run develop
       preview_output_directory: _site
 
 {{% /tab %}}
 {{% tab "Gridsome" %}}
 
     build:
-      instant_preview_command: npm run forestry:preview
-      preview_output_directory: _site
+      instant_preview_command: npm run develop
+      preview_output_directory: dist
 
 {{% /tab %}}
 {{% tab "VuePress" %}}
 
     build:
-      instant_preview_command: npm run forestry:preview
+      instant_preview_command: npm run develop
       preview_output_directory: .vuepress/dist
 
 {{% /tab %}}
 {{% tab "Next" %}}
 
     build:
-      instant_preview_command: npm run forestry:preview
+      instant_preview_command: npm run develop
       preview_output_directory: .next
 
 {{% /tab %}}

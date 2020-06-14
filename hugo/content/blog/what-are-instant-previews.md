@@ -97,21 +97,21 @@ Next, add your preview command and the necessary additional parameters. [Learn M
 
 {{% code_tabs %}} {{% tab "Hugo" %}}
 
-    hugo server --renderToDisk --port 8080 --bind 0.0.0.0
+    hugo server --buildDrafts --renderToDisk
 
 {{% /tab %}} {{% tab "Jekyll" %}}
 
-    bundle exec jekyll serve --port 8080 --host 0.0.0.0
+    bundle exec jekyll serve --drafts
 
 {{% /tab %}} {{% tab "VuePress" %}}
 
-    vuepress dev --port 8080 --host 0.0.0.0
+    vuepress dev
 
 {{% /tab %}}
 
 {{% tab "Gatsby (beta)" %}}
 
-    gatsby develop -p 8080 -H 0.0.0.0
+    gatsby develop
 
 {{% /tab %}} {{% /code_tabs %}}
 
