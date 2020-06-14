@@ -26,6 +26,7 @@ Or you may want to provide a default value for optional fields.
 In this scenario, it's possible to provide a fallback or hidden value.
 
 ## Fallback/Hidden Values in Hugo
+
 To set a fallback or hidden value for front matter in Hugo, you can use the [`.Param` template function](https://gohugo.io/functions/param/).
 
 This will look for the value inside the current page, and if not found, will look for the value in your Site Params, stored in your config file.
@@ -33,12 +34,14 @@ This will look for the value inside the current page, and if not found, will loo
 For example, setting up a social image:
 
 Inside `config.toml`
+
 ```toml
 [params]
 social_image = "/uploads/2018/01/26/og_image.jpg"
 ```
 
 Inside `content/posts/example-post.md`
+
 ```toml
 +++
 social_image = "/uploads/2018/01/31/og_image_example-post.jpg"
@@ -46,9 +49,10 @@ social_image = "/uploads/2018/01/31/og_image_example-post.jpg"
 ```
 
 Inside `layouts/default/single.html`
-```
+
+```html
 <head>
-  <meta property="og:image" content="{{ .Param "social_image }}" />
+  <meta property="og:image" content="{{ .Param "social_image" }}" />
   ...
 </head>
 ```
@@ -56,11 +60,13 @@ Inside `layouts/default/single.html`
 Hugo now has also [Cascade Front Matter](https://gohugo.io/content-management/front-matter/#front-matter-cascade)
 
 ## Fallback/Hidden Values in Jekyll
+
 To set a fallback or hidden value for front matter in Jekyll, you can use [Front Matter Defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults).
 
 This allows you to specify default values for files based on a scope. For example, if you wanted to set a default author for all posts in the `_posts` collection:
 
 In `_config.yml`
+
 ```yaml
 defaults:
   -
@@ -73,7 +79,8 @@ defaults:
 ```
 
 Inside `_layouts/post.html`:
-```
+
+```html
 <div class="author">{{ page.author }}</div>
 ```
 

@@ -21,28 +21,36 @@ For detailed instructions on installing Ruby for your operating system, see the 
 
 Once `Ruby` and `RubyGems` are installed, you can install `Bundler` by running:
 
-	$ gem install bundler
+```sh
+gem install bundler
+```
 
 ## Working with Git
+
 If you set up and imported your site with Git, local development becomes much easier. We recommend you do this.
 
 To get started, clone your repository to your desktop. For example:
 
-	git clone https://github.com/forestryio/jekyll-demo.git
+```sh
+git clone https://github.com/forestryio/jekyll-demo.git
+```
 
 Now you can begin working on your site. Any changes made to your site can be committed in Git, and will automatically be synced with your Forestry CMS.
 
 ## Serving your site locally
+
 Jekyll comes with a local development server built into its binary. This will allow you to develop locally on your machine, and will automatically rebuild your site and refresh the browser as you make changes.
 
 To run Jekyll with the server, run the command:
 
-	$ jekyll serve
+```sh
+jekyll serve
+```
 
 This will spin up a local development server with live reload at the port `4000`, which is accessible from `http://localhost:4000`.
 
 ## Further Reading
 - [Jekyll Usage Guide](https://jekyllrb.com/docs/usage/)
 
-[1]:	https://www.ruby-lang.org/en/documentation/installation/
-[2]:	https://app.forestry.io/dashboard
+[1]: https://www.ruby-lang.org/en/documentation/installation/
+[2]: https://app.forestry.io/dashboard

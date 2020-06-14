@@ -42,16 +42,18 @@ We have provided three SVG buttons for your use:
 ### Brand Color
 
 <div class="vert-level">
-  <img style="min-height: 2em;" class="no-lightbox" src="https://assets.forestry.io/import-to-forestry.svg" /> 
+  <img style="min-height: 2em;" class="no-lightbox" src="https://assets.forestry.io/import-to-forestry.svg" />
   <code>https://assets.forestry.io/import-to-forestry.svg</code>
 </div>
 
 ### Light
+
 <div class="vert-level">
   <img style="min-height: 2em;" class="no-lightbox" src="https://assets.forestry.io/import-to-forestryW.svg" /> <code>https://assets.forestry.io/import-to-forestryW.svg</code>
 </div>
 
 ### Dark
+
 <div class="vert-level">
   <img style="min-height: 2em;" class="no-lightbox" src="https://assets.forestry.io/import-to-forestryK.svg" /> <code>https://assets.forestry.io/import-to-forestryK.svg</code>
 </div>

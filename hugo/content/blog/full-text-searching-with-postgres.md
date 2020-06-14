@@ -118,7 +118,7 @@ From the Postgres docs:
 Since we are indexing a column with composite values, a gin index is what we want.
 
 ```sql
-CREATE INDEX index_pages_on_tsv ON pages USING gin (tsv);`
+CREATE INDEX index_pages_on_tsv ON pages USING gin (tsv);
 ```
 
 ## Working with JSON
