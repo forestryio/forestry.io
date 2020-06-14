@@ -56,7 +56,7 @@ When you're editing a Markdown file, set Draft to ON or OFF.
 
 {{% warning %}}
 This option is only available for Jekyll and Hugo sites.
-You can always use a [Toggle field]({{ relref "docs/settings/fields/#toggle" }}) in your front matter template to add a `draft` field.
+You can always use a [Toggle field](/docs/settings/fields/#toggle) in your front matter template to add a `draft` field.
 {{% /warning %}}
 
 ## New File Format
