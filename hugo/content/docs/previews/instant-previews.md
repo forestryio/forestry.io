@@ -19,7 +19,7 @@ With **instant previews**, you can take advantage of your static site generator'
 
 ## Set up Instant Preview
 
-Instant previews are configured via a [build command](/docs/settings/build-commands/).  
+Instant previews are configured via a [build command](/docs/settings/build-commands/).
 To use instant previews, navigate to **Settings** > **Previews**.
 
 ### Default Instant Preview Settings
@@ -74,7 +74,7 @@ vuepress dev
 gatsby develop
 ```
 
-{{% /tab %}}  
+{{% /tab %}}
 {{% tab "Gridsome" %}}
 
     gridsome develop

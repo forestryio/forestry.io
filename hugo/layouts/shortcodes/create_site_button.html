@@ -1,3 +1,5 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
 {{- $asbURL := "https://app.forestry.io/quick-start?" -}}
 {{- $repoURL := urls.Parse (.Get "repo") -}}
 {{- $asbURL := printf "%s%s%s" $asbURL "repo=" (index (split (substr $repoURL.Path 1) ".") 0) -}}
@@ -30,4 +32,3 @@
     <h2>{{ .Get "heading" }}</h2>
     <a target="_blank" href="{{ $asbURL }}" class="create-site-button">{{ .Get "linkText" }}</a>
 </div>
-
