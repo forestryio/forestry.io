@@ -52,7 +52,7 @@ The path that will **prepend** media files uploaded from Front Matter fields. Fo
 ```yaml
 ---
 title: My new post
-date: 2017-12-31 12:00:00 -0400
+date: 2020-06-11 12:00:00 -0400
 image: /uploads/image.jpg
 ---
 ```
@@ -127,7 +127,7 @@ If the Front Matter for your blog posts looks like this:
 ```yaml
 ---
 title: My new post
-date: 2017-12-31 12:00:00 -0400
+date: 2020-06-11 12:00:00 -0400
 image: /uploads/image.jpg
 ---
 ```

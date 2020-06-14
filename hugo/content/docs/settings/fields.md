@@ -1,9 +1,9 @@
 ---
 title: Fields
 weight: "3"
-publishdate: 2017-12-31T04:00:00.000+00:00
+publishdate: 2020-06-11T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-date: 2017-04-23T04:00:00.000+00:00
+date: 2020-06-11T04:00:00.000+00:00
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -99,8 +99,8 @@ Date and time picker. Used for _Front Matter values_ that are valid date strings
 
 ```yaml
 ---
-date: 2017-12-31T12:00:00+00:00
-publish_date: 2018-01-07T12:00:00+00:00
+date: 2020-06-08T12:00:00+00:00
+publish_date: 2020-06-10T12:00:00+00:00
 ---
 ```
 
@@ -182,9 +182,9 @@ Gallery of media files. Used for _Front Matter values_ that are an array of stri
 ```yaml
 ---
 carousel:
-    - "/uploads/2017/12/31/mountains.jpg"
-    - "/uploads/2017/12/31/field.jpg"
-    - "/uploads/2017/12/31/cabin.jpg"
+    - "/uploads/2019/12/31/mountains.jpg"
+    - "/uploads/2019/12/31/field.jpg"
+    - "/uploads/2019/12/31/cabin.jpg"
 
 extra_styles:
     - "/css/extra_styles.css"
@@ -207,7 +207,7 @@ Group of _Front Matter Fields_. Used for _Front Matter values_ that are an objec
 ```yaml
 ---
 footer:
-    copyright: "© 2017 Acme Inc."
+    copyright: "© 2020 Acme Inc."
     privacy_policy: "/privacy.md"
     terms_of_service: "/terms.md"
 ---

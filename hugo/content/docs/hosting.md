@@ -2,7 +2,7 @@
 title: Deploy and host your site
 description: "Automate your deployments and host your static site where you want: GitHub, Netlify, Vercel, AWS, Azure, etc. "
 weight: 1
-publishdate: 2017-12-31T04:00:00.000+00:00
+publishdate: 2020-06-11T04:00:00.000+00:00
 expirydate: 2030-12-31T04:00:00.000+00:00
 date: '2020-05-21T04:00:00.000+00:00'
 layout: single
@@ -28,7 +28,7 @@ Here are some services that will happily do the job for you, most offer generous
 
 👉 [Deploy with AWS Amplify Console](https://console.aws.amazon.com/amplify/home)
 
-👉 [Deploy with Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/): see guides for [Hugo](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-hugo "Publish from Hugo"), [NextJS](https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs "Publish from NextJS"), [Gatsby](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-gatsby "Publish from Gatsby"), [VuePress](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-vuepress "Publish from VuePress"), [NuxtJS](https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-nuxtjs "Publish from NuxtJS"), 
+👉 [Deploy with Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/): see guides for [Hugo](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-hugo "Publish from Hugo"), [NextJS](https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs "Publish from NextJS"), [Gatsby](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-gatsby "Publish from Gatsby"), [VuePress](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-vuepress "Publish from VuePress"), [NuxtJS](https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-nuxtjs "Publish from NuxtJS"),
 
 👉 [Deploy with Circle CI](https://forestry.io/blog/automate-deploy-w-circle-ci/)
 

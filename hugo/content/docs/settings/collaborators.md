@@ -4,7 +4,7 @@ aliases:
 - "/settings/collaborators/"
 title: Collaborators & Teams
 weight: "6"
-publishdate: 2017-12-31T04:00:00.000+00:00
+publishdate: 2020-06-11T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 date: 2017-03-28T04:00:00.000+00:00
 layout: single
