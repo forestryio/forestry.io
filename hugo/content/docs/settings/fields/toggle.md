@@ -27,76 +27,92 @@ You can access this field in your templates using the field’s `name`:
 
 #### Hugo
 
-    {{ if .Params.is_featured }}
-        // Do something special!
-    {{ end }}
+```go-html-template
+{{ if .Params.is_featured }}
+    // Do something special!
+{{ end }}
+```
 
-#### Jekyll
+### Jekyll
 
-    {% if page.is_featured %}
-        // Do something special!
-    {% endif %}
+```twig
+{% if page.is_featured %}
+    // Do something special!
+{% endif %}
+```
 
 #### VuePress
 
-    <div v-if="$page.frontmatter.is_featured">
-        // Do something special!
-    </div>
+```html
+<div v-if="$page.frontmatter.is_featured">
+  // Do something special!
+</div>
+```
 
 Use a toggle to filter pages in a loop:
 
 ### Hugo
 
-    {{ range where .Data.Pages ".Params.is_featured" "eq" true }}
-        <h2>{{ .Title }}</h2>
-        <p>{{ .Description }}</p>
-    {{ end }}
+```go-html-template
+{{ range where .Data.Pages ".Params.is_featured" "eq" true }}
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Description }}</p>
+{{ end }}
+```
 
 ### Jekyll
 
-    {% for post in site.posts | where:"is_featured", "true" %}
-        <h2>{{ page.title }}</h2>
-        <p>{{ page.description }}</p>
-    {% endif %}
+```twig
+{% for post in site.posts | where:"is_featured", "true" %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+{% endif %}
+```
 
 ### VuePress
 
-    <template>
-      <div class="featured-posts">
-        <div v-for="post in featuredPosts" class="featured-post">
-          <h2>{{ post.frontmatter.title }}</h2>
-          <p>{{ post.frontmatter.description }}</p>
-        </div>
-      </div>
-    </template>
-    <script>
-       export default {
-        computed: {
-          featuredPosts() {
-            return this.$site.pages
-              .filter(page => page.path.startsWith("/posts/")
-              .filter(page => page.frontmatter.is_featured)
-          }
-        }
+```html
+<template>
+  <div class="featured-posts">
+    <div v-for="post in featuredPosts" class="featured-post">
+      <h2>{{ post.frontmatter.title }}</h2>
+      <p>{{ post.frontmatter.description }}</p>
+    </div>
+  </div>
+</template>
+<script>
+   export default {
+    computed: {
+      featuredPosts() {
+        return this.$site.pages
+          .filter(page => page.path.startsWith("/posts/")
+          .filter(page => page.frontmatter.is_featured)
       }
-    </script>
+    }
+  }
+</script>
+```
 
 ## Config Files
 
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-    type: boolean
-    name: [String]
-    label: [String]
-    description: [String]
-    default: [true|false]
-    hidden: [true|false]
+```yaml
+type: boolean
+name: [String]
+label: [String]
+description: [String]
+default: [true|false]
+hidden: [true|false]
+```
 
 ### Example
 
-    type: boolean
-    name: is_featured
-    label: Is Featured?
-    description: Mark this page as featured
-    default: true
-    hidden: false
+```yaml
+type: boolean
+name: is_featured
+label: Is Featured?
+description: Mark this page as featured
+default: true
+hidden: false
+```

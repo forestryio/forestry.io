@@ -26,18 +26,20 @@ A list of values with drag & drop reordering.
   - _Maximum_ &mdash; the highest number of items that can be added to this field.
 
 ## Templating
+
 You can access this field in your templates using the field’s `name`:
 
-#### Hugo
-```
+### Hugo
+
+```go-html-template
 <p>{{ delimit .Params.ingredients ", " }}</p>
 ```
 
 {{% tip %}}
-Easily display a comma delimited string using the `delimit` filter
+Display a comma delimited string using the `delimit` filter.
 {{% /tip %}}
 
-```
+```go-html-template
 <h2>Ingredients:</h2>
 <ul>
 {{ range .Params.ingredients }}
@@ -46,16 +48,17 @@ Easily display a comma delimited string using the `delimit` filter
 </ul>
 ```
 
-#### Jekyll
-```
+### Jekyll
+
+```twig
 <p>{{ page.ingredients | array_to_sentence_string }}</p>
 ```
 
 {{% tip %}}
-Easily display a comma delimited string using the `array_to_sentence_string` filter
+Display a comma delimited string using the `array_to_sentence_string` filter
 {{% /tip %}}
 
-```
+```twig
 <h2>Ingredients:</h2>
 <ul>
   {% for ingredient in page.ingredients %}
@@ -65,9 +68,10 @@ Easily display a comma delimited string using the `array_to_sentence_string` fil
 ```
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: list
 name: [String]
 label: [String]
@@ -82,7 +86,8 @@ config:
 ```
 
 ### Example
-```
+
+```yaml
 type: list
 name: ingredients
 label: Ingredients
@@ -91,12 +96,12 @@ hidden: false
 default:
 - 1 cup water
 config:
-    use_select: false
-    min: 1
-    max:
+  use_select: false
+  min: 1
+  max:
 ```
 
-```
+```yaml
 type: list
 name: members
 label: Team members

@@ -20,7 +20,7 @@ A date and time picker.
   * _Hidden_ — hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 * **Format**
   * _Date Format_ — how the date should be displayed in the editor. To only show the time picker, leave this field blank.
-  * _Time Format_ — how the time should be displayed in the editor.  To only show the date picker, leave this field blank.  
+  * _Time Format_ — how the time should be displayed in the editor.  To only show the date picker, leave this field blank.
     {{% warning %}} 24-hour format in the time_format display currently causes unexpected behaviour in the date picker. Hours can only be set from 00 to 12.{{% /warning %}}
   * _Display UTC_ — activating this option will display the date in UTC regardless of user's locale settings.
   * _Export Format_ — how the date/time should be exported to the repo.
@@ -35,27 +35,33 @@ If you have a text field in your template, you can access it in your templates u
 
 ### Hugo
 
-    <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+```go-html-template
+<time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+```
 
 ### Jekyll
 
-    <time datetime="{{ page.date }}">{{ page.date | date: "%B, %-d, %Y" }}</time>
+```twig
+<time datetime="{{ page.date }}">{{ page.date | date: "%B, %-d, %Y" }}</time>
+```
 
 ## Config Files
 
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-    type: datetime
-    name: [String]
-    label: [String]
-    description: [String] 
-    default: [String]
-    hidden: [true|false]
-    config:
-      date_format: [String]
-      time_format: [String]
-      display_utc: [true|false]
-      export_format: [String]
+```yaml
+type: datetime
+name: [String]
+label: [String]
+description: [String]
+default: [String]
+hidden: [true|false]
+config:
+  date_format: [String]
+  time_format: [String]
+  display_utc: [true|false]
+  export_format: [String]
+```
 
 {{% tip %}}
 The `date_format`, `export_format`, and `time_format` fields can be configured using [Moment.js display format](https://momentjs.com/docs/#/displaying/format/).
@@ -63,14 +69,15 @@ The `date_format`, `export_format`, and `time_format` fields can be configured u
 
 ### Example
 
-    type: datetime
-    name: date
-    label: Date
-    description: The creation date for this page 
-    hidden: false
-    config:
-      date_format: MM/DD/YYYY
-      time_format: h:mm A Z
-      display_utc: false
-      export_format: YYYY-MM-DDThh:mm:ssZ
-
+```yaml
+type: datetime
+name: date
+label: Date
+description: The creation date for this page
+hidden: false
+config:
+  date_format: MM/DD/YYYY
+  time_format: h:mm A Z
+  display_utc: false
+  export_format: YYYY-MM-DDThh:mm:ssZ
+```

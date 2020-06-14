@@ -25,12 +25,13 @@ A repeatable array of fields.
   - _Minimum_ &mdash; the lowest number of items that must be added to this field.
   - _Maximum_ &mdash; the highest number of items that can be added to this field.
 
-
 ## Templating
+
 You can access this field in your templates using the field’s `name`:
 
-#### Hugo
-```
+### Hugo
+
+```go-html-template
 {{ range .Params.authors }}
 <div class="author">
   <h2>{{ .name }}</h2>
@@ -40,21 +41,22 @@ You can access this field in your templates using the field’s `name`:
 {{ end }}
 ```
 
-#### Jekyll
-```
+### Jekyll
+
+```twig
 {% for author in page.authors %}
 <div class="author">
   <h2>{{ author.name }}</h2>
   <small>{{ author.bio }}</small>
   <img src="{{ author.image }}" alt="Photo of {{ author.name }}">
 </div>
-{% endfor %} 
+{% endfor %}
 ```
 
 ## Config Files
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: field_group_list
 name: [String]
 label: [String]
@@ -67,7 +69,8 @@ config:
 ```
 
 ### Example
-```
+
+```yaml
 type: field_group_list
 name: authors
 label: Authors
@@ -76,12 +79,12 @@ hidden: false
 fields:
 - type: text
   name: name
-  label: Author's Name
+  label: "Author's Name"
   config:
     required: true
 - type: textarea
   name: bio
-  label: Author's Bio 
+  label: "Author's Bio"
     config:
     required: true
 config:

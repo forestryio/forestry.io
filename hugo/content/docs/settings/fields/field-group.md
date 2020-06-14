@@ -20,10 +20,12 @@ date: 2020-06-11 00:00:00 -0400
 
 
 ## Templating
+
 If you have a text field in your template, you can access it in your templates using the field’s `name`:
 
-#### Hugo
-```
+### Hugo
+
+```go-html-template
 {{ with .Params.author }}
 <div class="author">
   <h2>{{ .name }}</h2>
@@ -33,21 +35,23 @@ If you have a text field in your template, you can access it in your templates u
 {{ end }}
 ```
 
-#### Jekyll
-```
+### Jekyll
+
+```twig
 {% if page.author %}
 <div class="author">
   <h2>{{ page.author.name }}</h2>
   <small>{{ page.author.bio }}</small>
   <img src="{{ page.author.image }}" alt="Photo of {{ page.author.name }}">
 </div>
-{% endif %} 
+{% endif %}
 ```
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: field_group
 name: [String]
 label: [String]
@@ -58,7 +62,8 @@ fields:
 ```
 
 ### Example
-```
+
+```yaml
 type: field_group
 name: authors
 label: Authors
@@ -72,7 +77,7 @@ fields:
     required: true
 - type: textarea
   name: bio
-  label: Author's Bio 
+  label: Author's Bio
     config:
     required: true
 ```

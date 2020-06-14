@@ -19,10 +19,12 @@ date: 2020-06-11 00:00:00 -0400
   - _Hidden_ &mdash; hides the field in the editor, but allows developers to set default values or maintain the field for legacy purposes.
 
 ## Templating
+
 If you have a text field in your template, you can access it in your templates using the field’s `name`:
 
-#### Hugo
-```
+### Hugo
+
+```go-html-template
 <ul>
   {{ range .Params.gallery }}
     <li><img src="{{ . | relURL }}"></li>
@@ -31,11 +33,12 @@ If you have a text field in your template, you can access it in your templates u
 ```
 
 {{% tip %}}
-Use the `relURL` filter to automatically append your site's `baseURL`
+Use the `relURL` filter to automatically append your site's `baseURL`.
 {{% /tip %}}
 
-#### Jekyll
-```
+### Jekyll
+
+```twig
 <ul>
   {% for image in page.gallery %}
     <li><img src="{{ image | relative_url }}"></li>
@@ -44,13 +47,14 @@ Use the `relURL` filter to automatically append your site's `baseURL`
 ```
 
 {{% tip %}}
-Use the `relative_url` filter to automatically append your site's `url` and `baseURL`
+Use the `relative_url` filter to automatically append your site's `baseURL`.
 {{% /tip %}}
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: image_gallery
 name: [String]
 label: [String]
@@ -60,7 +64,8 @@ default:
 ```
 
 ### Example
-```
+
+```yaml
 type: image_gallery
 name: gallery
 label: Gallery

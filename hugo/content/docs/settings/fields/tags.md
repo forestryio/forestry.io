@@ -23,69 +23,83 @@ date: 2020-06-11 04:00:00 +0000
 
 You can access this field in your templates using the field’s `name`:
 
-#### Hugo
+### Hugo
 
-    <p>{{ delimit .Params.tags ", " }}</p>
-
-{{% tip %}}
-Easily display a comma delimited string using the `delimit` filter
-{{% /tip %}}
-
-    <h2>Tags:</h2>
-    <ul>
-    {{ range .Params.tags }}
-      <li>{{ . }}</li>
-    {{ end }}
-    </ul> 
-
-#### Jekyll
-
-    <p>{{ page.tags | array_to_sentence_string }}</p>
+```go-html-template
+<p>{{ delimit .Params.tags ", " }}</p>
+```
 
 {{% tip %}}
-Easily display a comma delimited string using the `array_to_sentence_string` filter
+Display a comma delimited string using the `delimit` filter.
 {{% /tip %}}
 
-    <h2>Tags:</h2>
-    <ul>
-      {% for tag in page.tags %}
-        <li>{{ tag }}</li>
-      {% endfor %}
-    </ul>
+```go-html-template
+<h2>Tags:</h2>
+<ul>
+{{ range .Params.tags }}
+  <li>{{ . }}</li>
+{{ end }}
+</ul>
+```
 
-#### VuePress
+### Jekyll
 
-    <template>
-      <p>{{ $page.frontmatter.categories.join(', ') }}</p>
-    </template>
+```twig
+<p>{{ page.tags | array_to_sentence_string }}</p>
+```
 
-{{% tip %}}  
-Easily display a comma delimited string using the `v-for` and `v-text` attributes.  
-{{% /tip %}} 
+{{% tip %}}
+Display a comma delimited string using the `array_to_sentence_string` filter
+{{% /tip %}}
 
-    <template>
-      <h2>Tags:</h2>
-      <ul>
-    	<li v-for="category in $page.frontmatter.categories" 
-        	v-text="category" />
-      </ul>
-    </template
+```twig
+<h2>Tags:</h2>
+<ul>
+  {% for tag in page.tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+```
+
+### VuePress
+
+```html
+<template>
+  <p>{{ $page.frontmatter.categories.join(', ') }}</p>
+</template>
+```
+
+{{% tip %}}
+Display a comma delimited string using the `v-for` and `v-text` attributes.
+{{% /tip %}}
+
+```html
+<template>
+  <h2>Tags:</h2>
+  <ul>
+	<li v-for="category in $page.frontmatter.categories"
+    	v-text="category" />
+  </ul>
+</template>
+```
 
 ## Config Files
 
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-    type: tag_list
-    name: [String]
-    label: [String]
-    description: [String]
-    hidden: [true|false]
-    default:
-        - [String]
+```yaml
+type: tag_list
+name: [String]
+label: [String]
+description: [String]
+hidden: [true|false]
+default:
+  - [String]
+```
 
 ### Example
 
-```
+```yaml
 type: tag_list
 name: ssg
 label: Static Site Generator
@@ -94,8 +108,10 @@ default:
 - Eleventy
 - Gatsby
 - Gridsome
+- Hexo
 - Hugo
 - Jekyll
 - NextJS
 - NuxtJS
+- Sapper
 ```

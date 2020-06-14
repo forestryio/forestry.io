@@ -27,15 +27,19 @@ You can access this field in your templates using the field’s `name`:
 
 ### Hugo
 
-    <h1>{{ .Title }}</h1> 
+```go-html-template
+<h1>{{ .Title }}</h1>
+```
 
 ### Jekyll
 
-    <h1>{{ page.title }}</h1>
+```html
+<h1>{{ page.title }}</h1>
+```
 
 ### VuePress
 
-```vue
+```html
 <template>
   <h1>{{ $page.frontmatter.title }}</h1>
 </template>
@@ -45,16 +49,18 @@ You can access this field in your templates using the field’s `name`:
 
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-    type: text
-    name: [String]
-    label: [String]
-    description: [String]
-    hidden: [true|false]
-    default: [String]
-    config:
-      required: [true|false]
-      min: [Int]
-      max: [Int]
+```yaml
+type: text
+name: [String]
+label: [String]
+description: [String]
+hidden: [true|false]
+default: [String]
+config:
+  required: [true|false]
+  min: [Int]
+  max: [Int]
+```
 
 ### Example
 

@@ -24,7 +24,7 @@ date: 2020-06-11 04:00:00 +0000
 - **Default** &mdash; supply default text.
 
 
-<!-- 
+<!--
 _File Format_ – determines exported format. `Markdown` for Markdown, `HTML` for HTML, and `Inline HTML` for only inline HTML elements.
 -->
 
@@ -34,31 +34,37 @@ You can access this field in your templates using the field’s `name`:
 
 ### Hugo
 
-    <!-- Plain Text or HTML -->
-    <p>{{ .Params.description }}</p> 
-    
-    <!-- Markdown -->
-    {{ .Params.description | markdownify }}
+```go-html-template
+<!-- Plain Text or HTML -->
+<p>{{ .Params.description }}</p>
+
+<!-- Markdown -->
+{{ .Params.description | markdownify }}
+```
 
 ### Jekyll
 
-    <!-- Plain Text or HTML -->
-    <p>{{ page.description }}</p> 
-    
-    <!-- Markdown -->
-    {{ page.description | markdownify }}
+```twig
+<!-- Plain Text or HTML -->
+<p>{{ page.description }}</p>
+
+<!-- Markdown -->
+{{ page.description | markdownify }}
+```
 
 ### VuePress
 
-    <template>
-      <!--- Description is Plain Text -->
-      <div>
-        <p v-text="$page.frontmatter.description" />
-      </div>
-      
-      <!--- Description Contains HTML -->
-      <div v-html="$page.frontmatter.description" />
-    </template>
+```html
+<template>
+  <!--- Description is Plain Text -->
+  <div>
+    <p v-text="$page.frontmatter.description" />
+  </div>
+
+  <!--- Description Contains HTML -->
+  <div v-html="$page.frontmatter.description" />
+</template>
+```
 
 {{% tip "Storing Markdown VuePress Front Matter " %}} VuePress does not have a built-in `markdownify` like function in Hugo or Jekyll, but you could always write your own [filter](https://vuejs.org/v2/guide/filters.html "Vue Filters")! {{% /tip %}}
 
@@ -66,27 +72,31 @@ You can access this field in your templates using the field’s `name`:
 
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-    type: textarea
-    name: [String]
-    label: [String]
-    description: [String]
-    hidden: [true|false]
-    default: [String]
-    config:
-      wysiwyg: [true|false]
-      schema:
-        format: [markdown|html-blocks|html]
+```yaml
+type: textarea
+name: [String]
+label: [String]
+description: [String]
+hidden: [true|false]
+default: [String]
+config:
+  wysiwyg: [true|false]
+  schema:
+    format: [markdown|html-blocks|html]
+```
 
 ## Example
 
-    type: textarea
-    name: description
-    label: Description
-    description: Short description of the page
-    hidden: false
-    default: ""
-    config:
-      wysiwyg: false
+```yaml
+type: textarea
+name: description
+label: Description
+description: Short description of the page
+hidden: false
+default: ""
+config:
+  wysiwyg: false
+```
 
 ## WYSIWYG
 
@@ -102,16 +112,18 @@ This field appears when _WYSIWYG_ is enabled. Select which format should be outp
 
 ### Example
 
-    type: textarea
-    name: description
-    label: Description
-    description: Short description of the page
-    hidden: false
-    default: ""
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
+```yaml
+type: textarea
+name: description
+label: Description
+description: Short description of the page
+hidden: false
+default: ""
+config:
+  wysiwyg: true
+  schema:
+    format: markdown
+```
 
 ## Field UI
 
@@ -123,11 +135,15 @@ If you have a text field in your template, you can access it in your templates u
 
 ### Hugo
 
-    <p>{{ .Params.description }}</p> 
+```go-html-template
+<p>{{ .Params.description }}</p>
+```
 
 ### Jekyll
 
-    <p>{{ page.description }}</p> 
+```html
+<p>{{ page.description }}</p>
+```
 
 {{% tip %}}
 Use the `markdownify` filters in Hugo or Jekyll to automatically format your HTML with paragraph tags and other formatting.
@@ -135,21 +151,27 @@ Use the `markdownify` filters in Hugo or Jekyll to automatically format your HTM
 
 ### Hugo
 
-    {{ .Params.description | markdownify }}
+```go-html-template
+{{ .Params.description | markdownify }}
+```
 
 ### Jekyll
 
-    {{ page.description | markdownify }}
+```twig
+{{ page.description | markdownify }}
+```
 
 ## Config Files
 
 ### Example
 
-    type: textarea
-    name: description
-    label: Description
-    description: Short description of the page
-    hidden: false
-    default: ""
-    config:
-      wysiwyg: true
+```yaml
+type: textarea
+name: description
+label: Description
+description: Short description of the page
+hidden: false
+default: ""
+config:
+  wysiwyg: true
+```

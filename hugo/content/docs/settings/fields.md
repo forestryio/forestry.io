@@ -34,9 +34,11 @@ title: "My New Page Title!"
 
 Multi-line text input. Displayed for _Front Matter values_ that are long strings. For example, a page description.
 
-    ---
-    description: "Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your RSS feed's site description."
-    ---
+```yaml
+---
+description: "Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your RSS feed's site description."
+---
+```
 
 [See detailed documentation](/docs/settings/fields/textarea)
 

@@ -23,10 +23,12 @@ date: 2020-04-27 00:00:00 -0400
 - **Default** &mdash; supply a default image.
 
 ## Templating
+
 If you have a text field in your template, you can access it in your templates using the field’s `name`:
 
-#### Hugo
-```
+### Hugo
+
+```go-html-template
 <img src="{{ .Params.banner | relURL }}">
 ```
 
@@ -34,19 +36,21 @@ If you have a text field in your template, you can access it in your templates u
 Use the `relURL` filter to automatically append your site's `baseURL`
 {{% /tip %}}
 
-#### Jekyll
-```
+### Jekyll
+
+```twig
 <img src="{{ page.banner | relative_url }}">
 ```
 
 {{% tip %}}
-Use the `relative_url` filter to automatically append your site's `url` and `baseURL`
+Use the `relative_url` filter to automatically append your site's `baseURL`
 {{% /tip %}}
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: file
 name: [String]
 label: [String]
@@ -58,7 +62,8 @@ config:
 ```
 
 ### Example
-```
+
+```yaml
 type: file
 name: banner
 label: Banner

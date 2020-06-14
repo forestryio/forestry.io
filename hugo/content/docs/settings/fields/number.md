@@ -24,48 +24,51 @@ Text input that only accepts numeric values.
   - _Step_ &mdash; limits the field to only allow certain increments to be entered into the field.
 - **Default** &mdash; supply a default number.
 
-
-
 ## Templating
+
 You can access this field in your templates using the field’s `name`:
 
-#### Hugo
-```
-<p>The page's weight is: {{ .Params.weight }}</p> 
+### Hugo
+
+```go-html-template
+<p>The page's weight is: {{ .Params.weight }}</p>
 ```
 
-#### Jekyll
-```
-<p>The page's weight is: {{ page.weight }}</p> 
-```
+### Jekyll
 
+```html
+<p>The page's weight is: {{ page.weight }}</p>
+```
 
 Use number fields to sort pages in a loop:
 
 ### Hugo
-```
+
+```go-html-template
 {{ range sort .Data.Pages ".Params.weight" "desc" }}
-    <h2>{{ .Title }}</h2>
-    <p>{{ .Description }}</p>
+  <h2>{{ .Title }}</h2>
+  <p>{{ .Description }}</p>
 {{ end }}
 ```
 
 ### Jekyll
-```
+
+```twig
 {% for post in site.posts | sort:"weight" %}
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.description }}</p>
+  <h2>{{ page.title }}</h2>
+  <p>{{ page.description }}</p>
 {% endif %}
 ```
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: number
 name: [String]
 label: [String]
-description: [String] 
+description: [String]
 hidden: [true|false]
 default: [Number]
 config:
@@ -75,7 +78,8 @@ config:
 ```
 
 ### Example
-```
+
+```yaml
 - name: weight
   type: number
   label: Weight

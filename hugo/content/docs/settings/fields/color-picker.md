@@ -29,7 +29,7 @@ The color picker provides an interface for selecting a color and storing the RGB
 
 Use `safeHTMLAttr` when inserting values into HTML attributes.
 
-```
+```go-html-template
 <div style="{{ safeHTMLAttr (printf "background-color: %s" .Params.color) }}">
     <!-- ... -->
 </div>
@@ -37,7 +37,7 @@ Use `safeHTMLAttr` when inserting values into HTML attributes.
 
 ### Jekyll
 
-```
+```html
 <div style="background-color: {{ page.color }}">
     <!-- ... -->
 </div>
@@ -47,25 +47,25 @@ Use `safeHTMLAttr` when inserting values into HTML attributes.
 
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: color
 name: [String]
 label: [String]
 description: [String]
 config:
-    color_format: [Hex|RGB]
+  color_format: [Hex|RGB]
 ```
 
 The color format is required, and defaults to Hex when you create a color field through the user interface.
 
 ### Example
 
-```
+```yaml
 type: color
 name: background_color
 label: Background Color
 description: The background color of the element.
 config:
-    color_format: Hex
+  color_format: Hex
 default: "#9B9B9B"
 ```

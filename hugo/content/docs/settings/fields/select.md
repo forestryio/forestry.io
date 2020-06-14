@@ -26,25 +26,30 @@ date: 2020-06-11 00:00:00 -0400
 
 
 ## Custom Source
+
 Allows developers to provide options in the Front Matter Template.
 
 ## Templating
+
 You can access this field in your templates using the field’s `name`:
 
 #### Hugo
-```
+
+```go-html-template
 <p>The page author is {{ .Params.author }}</p>
 ```
 
-#### Jekyll
-```
+### Jekyll
+
+```html
 <p>The page author is {{ page.author }}</p>
 ```
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: select
 name: [String]
 label: [String]
@@ -58,7 +63,8 @@ config:
 ```
 
 ### Example
-```
+
+```yaml
 type: select
 name: category
 label: Category
@@ -73,23 +79,27 @@ config:
 ```
 
 ## Document Reference Source
+
 Allows developers to source options from all pages, or a specific collection.
 
 The field will store the relative path to the source file in your front matter.
 
 ## Templating
+
 You can query for the page in your templates using the field’s `name`:
 
-#### Hugo
-```
+### Hugo
+
+```go-html-template
 {{ with .Site.GetPages "page" .Params.related_page }}
   <h2>{{ .Title }}</h2>
   <p>{{ .Summary }}</p>
 {{ end }}
 ```
 
-#### Jekyll
-```
+### Jekyll
+
+```twig
 {% for related_page in site.pages | where:"path", page.related_page %}
   <h2>{{ related_page.title }}</h2>
   <p>{{ related_page.excerpt }}</p>
@@ -97,9 +107,10 @@ You can query for the page in your templates using the field’s `name`:
 ```
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: select
 name: [String]
 label: [String]
@@ -107,22 +118,23 @@ description: [String]
 hidden: [true|false]
 default: [String]
 config:
-    source:
-      type: custom
-      section: [String]
+  source:
+    type: custom
+    section: [String]
 ```
 
 ### Example
-```
+
+```yaml
 type: select
 name: related_page
 label: Related Page
 description: Select a related page
 hidden: false
 config:
-    source:
-      type: pages
-      section: pages
+  source:
+    type: pages
+    section: pages
 ```
 
 {{% tip %}}
@@ -139,13 +151,15 @@ When an object is used, the field will store the key from the data file in your 
 
 The **Data Files** source type is deprecated and only available for Jekyll and Hugo projects that have not opted in to the section-based data file handling. All other projects should use the **Document Fields** option for this behavior, and existing projects should plan to upgrade.
 
-
 ## Templating
+
 You can query for the value in the data file in your templates using the field's `name`:
 
-#### Hugo
+### Hugo
+
 In `data/authors.yml`
-```
+
+```yaml
 ---
 authors:
   John:
@@ -154,7 +168,7 @@ authors:
 ---
 ```
 
-```
+```go-html-template
 {{ $author := index .Site.Data.authors .Params.author }}
 {{ if $author }}
   <img src="{{ $author.image }}">
@@ -162,9 +176,11 @@ authors:
 {{ end }}
 ```
 
-#### Jekyll
+### Jekyll
+
 In `_data/authors.yml`:
-```
+
+```yaml
 ---
 authors:
   John:
@@ -173,7 +189,7 @@ authors:
 ---
 ```
 
-```
+```twig
 {% assign author = site.data.authors.authors[page.author] %}
 {% if author %}
   <img src="{{ author.image }}">
@@ -182,9 +198,10 @@ authors:
 ```
 
 ## Config Files
+
 You can configure this field in _Front Matter Template_ [Config Files](/docs/settings/config-files/) as follows:
 
-```
+```yaml
 type: select
 name: [String]
 label: [String]
@@ -192,17 +209,17 @@ description: [String]
 hidden: [true|false]
 default: [String]
 config:
-   required: [true|false]
-   source:
-      type: [pages|documents]
-      section: [String]
-      file: [String]
-      path: [String]
+  required: [true|false]
+  source:
+    type: [pages|documents]
+    section: [String]
+    file: [String]
+    path: [String]
 ```
 
 ### Example
 
-```
+```yaml
 label: Author
 type: select
 name: author

@@ -31,32 +31,36 @@ Items in the Blocks array will contain a `template` parameter that corresponds t
 
 The intended use is to iterate over the elements in your Blocks field and render different templates based on the value of the `template` field.
 
-#### Hugo
+### Hugo
 
 Hugo's `partial` function includes a file from the `layout/partials` directory and allows us to pass a context. Passing `.` from inside the loop will pass all of the individual block's front matter into the partial template.
 
-    {{ range .Params.page_sections }}
-        {{ if eq "hero-section" .template }}
-            {{ partial "blocks/hero" . }}
-        {{ end }}
-        {{ if eq "call-to-action" .template }}
-            {{ partial "blocks/cta" . }}
-        {{ end }}
-    {{ end }}
+```go-html-template
+{{ range .Params.page_sections }}
+  {{ if eq "hero-section" .template }}
+    {{ partial "blocks/hero" . }}
+  {{ end }}
+  {{ if eq "call-to-action" .template }}
+    {{ partial "blocks/cta" . }}
+  {{ end }}
+{{ end }}
+```
 
-#### Jekyll
+### Jekyll
 
 In this Jekyll example, the individual block's front matter will be available to the included template via the `block` variable.
 
-    {% for block in page.page_sections %}
-        {% assign template = block.template %}
-        {% case template %}
-        {% when 'hero-section' %}
-            {% include blocks/hero.html %}
-        {% when 'call-to-action' %}
-            {% include blocks/cta.html %}
-        {% endcase %}
-    {% endfor %}
+```twig
+{% for block in page.page_sections %}
+  {% assign template = block.template %}
+  {% case template %}
+  {% when 'hero-section' %}
+    {% include blocks/hero.html %}
+  {% when 'call-to-action' %}
+    {% include blocks/cta.html %}
+  {% endcase %}
+{% endfor %}
+```
 
 ## Config Files
 
@@ -75,11 +79,11 @@ template_types:
 
 ```yaml
 page_sections:
-    - template: hero-section
-      title: Hello
-      subtitle: World
-    - template: call-to-action
-      heading: Get Started
-      button_url: https://forestry.io/signup
-      button_text: Sign up for Forestry
+  - template: hero-section
+    title: Hello
+    subtitle: World
+  - template: call-to-action
+    heading: Get Started
+    button_url: https://forestry.io/signup
+    button_text: Sign up for Forestry
 ```
