@@ -208,3 +208,9 @@ $sidebar-width: 320px;
     margin-left: 0.5rem;
   }
 }
+
+.subscribe-feed {
+  a:hover {
+    opacity: 0.6;
+  }
+}

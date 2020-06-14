@@ -21,7 +21,7 @@
 
         {{- with  .OutputFormats.Get "RSS" -}}
         <hr />
-        <p><a href="{{ .RelPermalink }}">Subscribe to the feed</a></p>
+        <p class="subscribe-feed"><a href="{{ .RelPermalink }}" title="Subscribe to the feed"><img src="{{ "/img/feed.svg" | relURL }}" height="16" alt="Feed"></a></p>
         {{- end }}
       </div>
     </section>
