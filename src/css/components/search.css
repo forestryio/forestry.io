@@ -1,5 +1,4 @@
 .search-results {
-  transform: scale(0);
   background: $color-white;
   bottom: 0;
   left: 0;
@@ -7,6 +6,7 @@
   position: fixed;
   right: 0;
   top: 0;
+  transform: scale(0);
   visibility: hidden;
   z-index: -99;
 }

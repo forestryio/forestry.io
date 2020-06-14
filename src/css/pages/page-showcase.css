@@ -55,17 +55,17 @@
     position: relative;
 
     p {
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     img,
     .showcase-item--hover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
       bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .showcase-item--hover {
@@ -82,7 +82,7 @@
       pointer-events: all;
     }
 
-    .showcase-item--hover:before {
+    .showcase-item--hover::before {
       content: "";
       display: inline-block;
       height: 100%;
@@ -98,8 +98,5 @@
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
       vertical-align: middle;
     }
-  }
-
-  .showcase-item--title {
   }
 }

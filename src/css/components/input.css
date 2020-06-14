@@ -19,9 +19,9 @@ select {
 }
 
 select {
-  padding: 0 1rem !important;
   height: 2.626rem;
   overflow: visible;
+  padding: 0 1rem !important;
 
   option {
     color: $color-dark;
@@ -33,6 +33,6 @@ input[type="text"] {
 }
 
 textarea {
-  min-height: 1rem;
   height: auto;
+  min-height: 1rem;
 }

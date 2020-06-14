@@ -43,15 +43,15 @@
 }
 
 .careers-columns {
-  padding: 2rem 0 0 0;
-  column-gap: 2.5rem;
   border: 1px solid rgb(241, 243, 245);
+  column-gap: 2.5rem;
+  padding: 2rem 0 0;
   padding: 2.5rem;
 }
 
 .careers-columns div {
-  display: block;
   break-inside: avoid-column;
+  display: block;
   margin-bottom: 2.5rem;
 }
 

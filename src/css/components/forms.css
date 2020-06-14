@@ -50,32 +50,36 @@
   opacity: 0.5;
   position: relative;
 }
-.form--submitting:after {
+
+.form--submitting::after {
+  animation: rotateCW 0.5s linear infinite;
+  border: 5px solid $color-brand;
+  border-radius: 50%;
+  border-right-color: transparent;
   content: "";
   display: block;
-  width: 30px;
   height: 30px;
-  border-radius: 50%;
-  border: 5px solid $color-brand;
-  border-right-color: transparent;
-  animation: rotateCW 0.5s linear infinite;
+  left: calc(40% - 15px);
   position: absolute;
   top: calc(40% - 15px);
-  left: calc(40% - 15px);
+  width: 30px;
 }
-.form--submit-fail:before {
+
+.form--submit-fail::before {
+  color: $color-error;
   content: attr(data-error);
   display: block;
   margin: 5px 0;
-  color: $color-error;
 }
+
 .form--submit-success * {
   display: none !important;
 }
-.form--submit-success:before {
-  display: block !important;
-  content: attr(data-message);
-  margin: 10px 0;
+
+.form--submit-success::before {
   color: $color-brand;
+  content: attr(data-message);
+  display: block !important;
   font-size: 1.4em;
+  margin: 10px 0;
 }

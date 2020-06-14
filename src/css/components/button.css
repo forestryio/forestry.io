@@ -25,6 +25,7 @@
   &.primary {
     background-color: $color-brand;
     color: $color-white;
+
     &:hover {
       background-color: color($color-brand w(+25%) s(+10%));
     }
@@ -58,6 +59,7 @@
   &.extra-small {
     font-size: 11px;
     padding: 0.25rem;
+
     &.rounded {
       border-radius: 1rem;
     }
@@ -66,6 +68,7 @@
   &.small {
     font-size: 14px;
     padding: 0.5rem 1.25rem;
+
     &.rounded {
       border-radius: 1.5rem;
     }
@@ -73,6 +76,7 @@
 
   &.big {
     padding: 1.25rem 2rem;
+
     &.rounded {
       border-radius: 1.5rem;
     }

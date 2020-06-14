@@ -24,7 +24,7 @@ $header-height: 5rem;
 
     .logo {
       backface-visibility: hidden;
-      background-image: url(../img/forestry-pos-full.svg);
+      background-image: url("/img/forestry-pos-full.svg");
       background-position: left center;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -41,8 +41,9 @@ $header-height: 5rem;
 
     @media screen and (max-width: 700px) {
       width: 1.5rem;
+
       .logo {
-        background-image: url(../img/forestry-pos-symbol.svg);
+        background-image: url("/img/forestry-pos-symbol.svg");
       }
     }
   }
@@ -82,11 +83,12 @@ $header-height: 5rem;
   color: $color-white;
 
   .logo {
-    background-image: url("../img/forestry-neg-full.svg");
+    background-image: url("/img/forestry-neg-full.svg");
   }
 
   .nav {
     color: $color-white;
+
     &.expanded {
       color: $color-dark;
     }
@@ -98,7 +100,7 @@ $header-height: 5rem;
 
   @media screen and (max-width: 700px) {
     .logo {
-      background-image: url(../img/forestry-neg-symbol.svg);
+      background-image: url("/img/forestry-neg-symbol.svg");
     }
   }
 }
@@ -273,6 +275,7 @@ $header-height: 5rem;
     &:hover {
       color: $color-brand;
     }
+
     &.active {
       color: $color-brand;
     }
@@ -298,6 +301,7 @@ $header-height: 5rem;
   .toggle-open {
     display: block;
   }
+
   .toggle-close {
     display: none;
   }
@@ -311,6 +315,7 @@ $header-height: 5rem;
   .toggle-open {
     display: none;
   }
+
   .toggle-close {
     display: block;
   }
@@ -318,7 +323,7 @@ $header-height: 5rem;
 
 .mini-nav--logo {
   backface-visibility: hidden;
-  background-image: url(../img/forestry-pos-full.svg);
+  background-image: url("/img/forestry-pos-full.svg");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 100% 100%;

@@ -12,7 +12,7 @@
   z-index: -1;
 }
 
-.deploying-animation:before {
+.deploying-animation::before {
   background: $color-grey;
   content: "";
   height: 2px;
@@ -26,7 +26,7 @@
   }
 }
 
-.deploying-animation:after {
+.deploying-animation::after {
   animation: deploying-motion 6s infinite;
   background: $color-brand;
   content: "";
@@ -59,9 +59,9 @@
     flex: 0 0 50%;
     height: 8rem;
     margin: -1px;
+    overflow: hidden;
     padding: 1rem;
     position: relative;
-    overflow: hidden;
 
     @media screen and (min-width: 790px) {
       flex: 0 0 25%;

@@ -1,14 +1,14 @@
 .starter-card {
+  background-color: $color-white;
   border-radius: 0.3rem;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
   height: 0;
+  margin: 0 auto;
   padding-bottom: 95%;
   position: relative;
-  margin: 0 auto;
-  z-index: 0;
-  background-color: $color-white;
   position: relative;
-  cursor: pointer;
+  z-index: 0;
 
   &.open {
     z-index: 500;
@@ -16,30 +16,32 @@
 }
 
 .starter-card--image-container {
-  overflow: hidden;
   border-radius: 0.3rem 0.3rem 0 0;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
-}
-.starter-card--image {
-  width: 100%;
-  height: auto;
-}
-.starter-card--preview-link {
+  display: block;
+  left: 0;
+  overflow: hidden;
   position: absolute;
-  border-radius: 0.3rem;
-  top: 1rem;
-  right: 1rem;
-  color: #1d92ff;
-  text-decoration: none;
-  padding: 0.2rem 0.75rem;
+  right: 0;
+  top: 0;
+}
+
+.starter-card--image {
+  height: auto;
+  width: 100%;
+}
+
+.starter-card--preview-link {
   background-color: $color-white;
-  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
   border: 1px solid $color-grey;
+  border-radius: 0.3rem;
+  color: #1d92ff;
+  padding: 0.2rem 0.75rem;
+  position: absolute;
+  right: 1rem;
+  text-decoration: none;
+  top: 1rem;
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
 
   &:hover {
     background-color: $color-light-grey;
@@ -49,67 +51,73 @@
     background-color: $color-grey;
   }
 }
+
 .preview-link--icon {
   fill: #1d92ff;
-  position: relative;
   height: 11px;
+  position: relative;
 }
 
 .starter-card--info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 1.5rem 1.75rem;
-  display: grid;
-  grid-template-columns: 1fr 3.5rem;
-  grid-template-areas:
-    "pills cta"
-    "title cta";
   background-color: $color-white;
   border-radius: 0 0 0.3rem 0.3rem;
   border-top: 1px solid $color-grey;
+  bottom: 0;
+  display: grid;
+  grid-template-areas:
+    "pills cta"
+    "title cta";
+  grid-template-columns: 1fr 3.5rem;
+  left: 0;
+  padding: 1.5rem 1.75rem;
+  position: absolute;
+  width: 100%;
 }
+
 .starter-card--pills {
-  padding-bottom: 0.25rem;
   grid-area: pills;
+  padding-bottom: 0.25rem;
 }
+
 .starter-card--title {
+  color: $color-black;
   font-size: 1.35rem;
   font-weight: 700;
   grid-area: title;
-  color: $color-black;
 }
+
 .starter-card--subtitle {
-  &:before {
+  &::before {
     content: "–";
     display: inline-block;
-    margin-right: 0.5rem;
-    margin-left: 0.25rem;
     font-size: 1.35rem;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
   }
+
   color: $color-medium-dark;
   font-weight: 400;
 }
+
 .starter-card--cta {
-  grid-area: cta;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 100%;
-  border: none;
-  outline: none;
-  background-color: $color-black;
-  color: $color-white;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   align-content: center;
+  align-items: center;
   align-self: end;
-  margin-bottom: 0.25rem;
+  background-color: $color-black;
+  border: none;
+  border-radius: 100%;
+  color: $color-white;
   cursor: pointer;
+  display: flex;
+  grid-area: cta;
+  height: 3.5rem;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  outline: none;
+  overflow: hidden;
+  position: relative;
   transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+  width: 3.5rem;
 
   .starter-card.open.menu-position-bottom & {
     transform: rotate(90deg);
@@ -128,29 +136,32 @@
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   50% {
     transform: translate3d(3.5rem, 0, 0);
   }
+
   51% {
     transform: translate3d(-3.5rem, 0, 0);
   }
+
   100% {
     transform: translate3d(0, 0, 0);
   }
 }
 
 .cta--icon {
+  display: inline-block;
   fill: white;
   flex: 0 0 auto;
-  display: inline-block;
   transform: translate3d(0, 0, 0);
 
   .starter-card:hover & {
-    animation-name: cta;
     animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: cta;
+    animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
   }
 }
 
@@ -159,6 +170,7 @@
     opacity: 0;
     transform: translate3d(1rem, -50%, 0);
   }
+
   100% {
     opacity: 1;
     transform: translate3d(0, -50%, 0);
@@ -170,6 +182,7 @@
     opacity: 0;
     transform: translate3d(-100%, 1rem, 0);
   }
+
   100% {
     opacity: 1;
     transform: translate3d(-100%, 0, 0);
@@ -177,57 +190,58 @@
 }
 
 .starter-card--menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  border-radius: 0.3rem;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
-  z-index: 500;
-  padding: 0;
-  border: 1px solid $color-grey;
-  overflow: hidden;
-  transform: translate3d(0, -50%, 0);
-
-  animation-name: starter-menu;
   animation-duration: 0.2s;
   animation-iteration-count: 1;
+  animation-name: starter-menu;
   animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
+  background-color: white;
+  border: 1px solid $color-grey;
+  border-radius: 0.3rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  transform: translate3d(0, -50%, 0);
+  z-index: 500;
 
   .starter-card & {
     display: none;
   }
 
   &.position-bottom {
-    transform: translate3d(-100%, 0, 0);
     animation-name: starter-menu--bottom;
+    transform: translate3d(-100%, 0, 0);
   }
 
   &.closed {
-    transition: all 0.15s cubic-bezier(0.694, 0, 0.335, 1);
     opacity: 0;
     transform: translate3d(1rem, -50%, 0);
+    transition: all 0.15s cubic-bezier(0.694, 0, 0.335, 1);
 
     &.position-bottom {
       transform: translate3d(-100%, 1rem, 0);
     }
   }
 }
+
 .starter-card--menu-item {
   &:not(:last-child) {
     border-bottom: 1px solid $color-grey;
   }
 }
+
 .starter-card--menu-link {
-  display: block;
   background-color: $color-white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  padding: 0.75rem 1.5rem;
-  min-width: 10rem;
   cursor: pointer;
+  display: block;
+  font-size: 1.3rem;
+  min-width: 10rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
   transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
 
   &:hover {

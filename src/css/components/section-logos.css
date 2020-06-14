@@ -4,22 +4,22 @@
 }
 
 .logos--title {
+  display: block;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
+  margin-bottom: 2rem;
   opacity: 1;
   text-transform: uppercase;
-  display: block;
-  margin-bottom: 2rem;
 }
 
 .logos--container {
+  align-content: flex-start;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  width: 100%;
   justify-content: flex-start;
   margin: 0 -0.75rem 2rem;
+  width: 100%;
 
   @media screen and (min-width: 900px) {
     justify-content: space-between;
@@ -28,5 +28,5 @@
 
 .logos--logo {
   flex: 0 0 auto;
-  margin: 0 0.75rem 1rem 0.75rem;
+  margin: 0 0.75rem 1rem;
 }

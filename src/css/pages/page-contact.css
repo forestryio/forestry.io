@@ -19,7 +19,7 @@
   }
 
   @media screen and (min-width: 700px) {
-    padding: 0 0 4rem 0;
+    padding: 0 0 4rem;
 
     .contact-header--sticky {
       position: sticky;
@@ -31,14 +31,14 @@
 .section-contact {
   flex: 0 0 60%;
   order: 1;
-  padding-top: 0;
-  padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 
   &.single-post {
-    min-height: auto;
     margin-bottom: 4rem;
+    min-height: auto;
   }
 
   @media screen and (min-width: 800px) {

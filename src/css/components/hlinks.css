@@ -1,5 +1,5 @@
 [data-hlink] {
-  &:before {
+  &::before {
     content: "";
     display: block;
     height: calc($header-height + 1rem);

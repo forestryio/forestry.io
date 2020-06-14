@@ -35,18 +35,22 @@
     background: $color-brand;
     transform: scale(1);
   }
+
   19% {
     background: $color-brand;
     transform: scale(1);
   }
+
   21% {
     background: $color-brand-light;
     transform: scale(1.2);
   }
+
   23% {
     background: $color-brand;
     transform: scale(1);
   }
+
   100% {
     background: $color-brand;
     transform: scale(1);

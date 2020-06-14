@@ -1,37 +1,42 @@
 .code-tabs {
   display: flex;
   flex-direction: column-reverse;
+
   .tab {
     display: none;
+
     &.active {
       display: block;
     }
   }
+
   .tab-labels {
-    color: $color-medium-light;
     border-bottom: 2px solid $color-medium-light;
+    color: $color-medium-light;
     margin-bottom: 0.5em;
   }
+
   .tab-label {
-    font-weight: bold;
     cursor: pointer;
     display: inline-block;
-    padding: 0.2em;
-    margin-left: 0.5em;
     font-size: 0.8em;
-    text-transform: uppercase;
+    font-weight: bold;
     letter-spacing: 0.05em;
-    &:first-child {
-      margin-left: 0;
-    }
-    &.active {
-      color: $color-black;
-      border-bottom: 2px solid $color-brand;
-      margin-bottom: -2px;
-    }
+    margin-left: 0.5em;
+    padding: 0.2em;
+    text-transform: uppercase;
     -webkit-user-select: none; /* Chrome all / Safari all */
     -moz-user-select: none; /* Firefox all */
     -ms-user-select: none; /* IE 10+ */
     user-select: none; /* Likely future */
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.active {
+      border-bottom: 2px solid $color-brand;
+      color: $color-black;
+      margin-bottom: -2px;
+    }
   }
 }

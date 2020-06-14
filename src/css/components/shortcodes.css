@@ -21,7 +21,7 @@
     margin: 0 !important;
   }
 
-  & p:last-of-type {
+  p:last-of-type {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
@@ -30,7 +30,8 @@
   p:empty + & {
     margin-top: -2rem;
   }
-  & + p:empty {
+
+  + p:empty {
     margin-bottom: -2rem;
   }
 
@@ -44,7 +45,7 @@
     padding-top: 1rem;
   }
 
-  &:before {
+  &::before {
     /* Set the circle size here */
     $circle-size: 1.5rem;
 
@@ -54,7 +55,7 @@
     content: "ℹ︎";
     font-weight: 600;
     height: $circle-size;
-    left: -calc($circle-size / 2);
+    left: calc(-$circle-size / 2);
     line-height: $circle-size;
     position: absolute;
     text-align: center;
@@ -63,7 +64,7 @@
     z-index: 5;
   }
 
-  &:after {
+  &::after {
     background: $color-brand;
     content: "";
     height: 100%;
@@ -76,79 +77,85 @@
 }
 
 .shortcode-warning {
-  &:before {
-    background: color($color-merino saturation(+ 50%) w(- 50%));
+  &::before {
+    background-color: color($color-merino saturation(+50%) w(-50%));
     content: "!";
   }
 
-  &:after {
-    background: color($color-merino saturation(+ 50%) w(- 50%));
+  &::after {
+    background: color($color-merino saturation(+50%) w(-50%));
   }
 }
 
 .shortcode-error {
-  &:before {
-    background: $color-error;
+  &::before {
+    background-color: $color-error;
     content: "!";
   }
 
-  &:after {
+  &::after {
     background: $color-error;
   }
 }
 
 .shortcode-disclaimer {
-  &:before {
-    background: $color-sinbad;
+  &::before {
+    background-color: $color-sinbad;
     content: "?";
   }
 
-  &:after {
-    background: $color-sinbad;
+  &::after {
+    background-color: $color-sinbad;
   }
 }
 
 .post-media {
-  width: 100% !important;
+  background: rgba(0, 0, 0, 0.1);
   margin-left: auto !important;
   padding: 1.2em;
-  background: rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100% !important;
+
   img {
-    max-width: 100%;
     margin-bottom: 0.5em;
+    max-width: 100%;
   }
+
   figcaption {
     font-size: 0.8em;
-    opacity: 0.8;
     font-style: italic;
+    opacity: 0.8;
   }
 }
 
 .youtube-embed--wrapper {
-  width: 100%;
-  height: 0px;
+  height: 0;
   padding-bottom: 56.25%; /* 16:9 */
   position: relative;
+  width: 100%;
+
   > .youtube-embed {
+    height: 100%;
     position: absolute;
     width: 100%;
-    height: 100%;
   }
 }
 
-.md-content figure,
-.pretty-screenshot {
-  width: 100%;
+.pretty-screenshot,
+.md-content figure {
   text-align: center;
+  width: 100%;
+
   img {
-    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
   }
+
   figcaption {
     font-size: 0.8em;
+
     p {
       margin-top: 0;
     }
@@ -157,8 +164,8 @@
 
 .pretty-screenshot figcaption {
   font-style: italic;
-  margin-top: 1.2em;
   margin-bottom: 1.2em;
+  margin-top: 1.2em;
 }
 
 .pretty-screenshot img {
@@ -177,12 +184,13 @@
   h1,
   h2,
   h3 {
-    text-align: center;
-    font-size: 2rem !important;
     background: $color-brand;
-    color: #fff;
-    padding: 2em;
+    color: #ffffff;
+    font-size: 2rem !important;
     margin: 0;
+    padding: 2em;
+    text-align: center;
+
     a > svg {
       display: none;
     }

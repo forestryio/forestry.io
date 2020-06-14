@@ -26,8 +26,8 @@ $sidebar-width: 320px;
   }
 
   a {
-    text-decoration: none;
     font-weight: inherit;
+    text-decoration: none;
     transition: opacity 0.15s ease;
 
     &:hover {
@@ -89,8 +89,8 @@ $sidebar-width: 320px;
 
 .docs-nav-items .table-of-contents {
   border-left: 2px solid $color-grey;
-  margin-left: 0;
   margin-bottom: 1rem;
+  margin-left: 0;
   padding-left: 1rem;
 
   .level-3 {
@@ -122,8 +122,8 @@ $sidebar-width: 320px;
   }
 
   @media screen and (min-width: 1100px) {
-    margin: 0 auto;
     left: calc($sidebar-width / 4 * -1);
+    margin: 0 auto;
   }
 }
 
@@ -142,7 +142,7 @@ $sidebar-width: 320px;
     position: relative;
   }
 
-  span:before {
+  span::before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -162,7 +162,7 @@ $sidebar-width: 320px;
     padding-left: 1.5rem;
   }
 
-  .prev-doc:before {
+  .prev-doc::before {
     background-image: url("/img/chevron-left.svg");
     left: 0;
   }
@@ -171,7 +171,7 @@ $sidebar-width: 320px;
     padding-right: 1.5rem;
   }
 
-  .next-doc:before {
+  .next-doc::before {
     background-image: url("/img/chevron-right.svg");
     right: 0;
   }
