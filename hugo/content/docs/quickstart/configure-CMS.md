@@ -5,7 +5,7 @@ publishdate: 2017-12-07T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
 weight: 2
-date: 2019-05-08T06:00:00.000+00:00
+date: '2019-05-08T06:00:00.000+00:00'
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -73,12 +73,12 @@ Eleventy is very flexible and do no respond to a single convention, you often se
 
 Jekyll supports static assets in your project root. Many gem-based themes store images in `/assets/images`.
 
-|          | Upload Directory | Front Matter File Path | Body File Path |
-|----------|------------------|------------------------|----------------|
-| Hugo     | /static/uploads  | /uploads               | /uploads       |
-| Gatsby   | /static/images   | /images                | /images        |
-| Eleventy | /src/images      | /images                | /images        |
-| Jekyll   | /assets/images   | /assets/images         | /assets/images |
+|  | Upload Directory | Front Matter File Path | Body File Path |
+| --- | --- | --- | --- |
+| Hugo | /static/uploads | /uploads | /uploads |
+| Gatsby | /static/images | /images | /images |
+| Eleventy | /src/images | /images | /images |
+| Jekyll | /assets/images | /assets/images | /assets/images |
 
 ### Variables
 
@@ -106,9 +106,9 @@ For more information on media settings visit the [Media Library doc](/docs/editi
 
 While editing content in the CMS, users can preview their unsaved changes in an ephemeral copy of your full website. In order to do this, you will need to tell Forestry how to build your site by [configuring the preview environment](/docs/previews/about-previews/).
 
-## Your Content Model & Front Matter Templates
+## Content Modeling
 
-### In this section we will configure your content model. This determines which fields are displayed for your pages, posts, etc.
+### In this section, we will configure your content model. This determines which fields are displayed for your pages, posts, etc.
 
 When you sync a new site with Forestry, all data found in the Front Matter for your pages will be displayed as UI fields.
 
@@ -118,9 +118,7 @@ However, if you want to configure how these fields are displayed for your editor
 
 This is where we'll create a UI that's tailored to our Front Matter data.
 
-{{% tip "Create template from an existing page" %}}
-If you just want to add fields that match an existing piece of content, navigate to that page and click the settings drop down. From there, you can choose "Create Template" which will create a Front Matter Template based off that page's front matter data.
-{{% /tip %}}
+{{% tip "Create template from an existing page" %}} If you just want to add fields that match an existing piece of content, navigate to that page and click the settings dropdown. From there, you can choose "Create Template" which will create a Front Matter Template based on that page's front matter data. {{% /tip %}}
 
 If the Front Matter for your blog posts looks like this:
 
