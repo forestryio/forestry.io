@@ -23,9 +23,9 @@ This is great for large businesses or white-label solutions where you don’t wa
 
 ## Setting up the Remote Admin
 
-To set up the Remote Admin, go to the Settings page for your site, found under “Site” in the sidebar of your CMS.
+To set up the Remote Admin, go to the Settings page for your site, found under _Settings_ in the sidebar of your CMS.
 
-Select the General tab, and find the Project Paths option. From here you provide the path you want users to go to in order to access the CMS under "Admin Path".
+Select the _General_ tab, and find the Project Paths option. From here you provide the path you want users to go to in order to access the CMS under "Admin Path".
 
 ![](/uploads/2018/01/settings-projectpaths.png)
 
@@ -33,7 +33,7 @@ The Remote Admin is deployed as a static HTML page, so be sure you deploy it to 
 
 ### Examples
 
-* In Hugo and Gatsby or Gridsome, this is `/static/admin`
+* In Hugo, Gatsby, NuxtJS or Gridsome, this is `/static/admin`
 * In Jekyll, this is `/admin/` by default (depends on your source folder).
 * Eleventy is more flexible, add the directory you wish to copy with [`addPassthroughCopy`](https://www.11ty.dev/docs/copy/)
 
