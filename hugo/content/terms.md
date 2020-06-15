@@ -8,17 +8,8 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 description: ''
 textline: ''
-images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-authors: []
-categories: []
-tags: []
-cta:
-  headline: ''
-  textline: ''
-  calls_to_action: []
-private: false
-aliases: []
+authors:
+  - Forestry.io
 menu:
   footer:
     parent: Company
