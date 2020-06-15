@@ -1,29 +1,29 @@
 ---
 title: VuePress Brings Your Documentation to Life
-description: ''
+description: ""
 date: 2018-08-10 15:48:09 +0000
 authors:
-- DJ Walker
+  - DJ Walker
 publishdate: 2018-08-10 15:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-headline: ''
-textline: ''
+headline: ""
+textline: ""
 images:
-- "/uploads/2018/08/books.jpg"
+  - "/uploads/2018/08/books.jpg"
 categories:
-- VuePress
-- Frontend-Friday
+  - VuePress
+  - Frontend-Friday
 tags: []
 cta:
-  headline: ''
-  textline: ''
+  headline: ""
+  textline: ""
   calls_to_action: []
 private: false
-weight: ''
+weight: ""
 aliases: []
 menu: []
-
 ---
+
 VuePress is a static site generator based on Vue JavaScript framework. With the first release appearing back in April and the current version being `0.14.1`, VuePress is a young project that shows a lot of promise.
 
 VuePress has the flexibility to build any static site, but it particularly excels at working with documentation. In this article, I’ll show you how to adapt your docs to VuePress for documentation that survives on Github, but thrives on its own.
@@ -79,10 +79,12 @@ You can then add VuePress as a dev dependency:
 
 Once VuePress is installed, open your `package.json` file and add the following scripts:
 
-    "scripts": {
-      "docs:build": "vuepress build",
-      "docs:dev": "vuepress dev"
-    }
+```json
+"scripts": {
+  "docs:build": "vuepress build",
+  "docs:dev": "vuepress dev"
+}
+```
 
 To start up a development server with your documentation site, just run `yarn docs:dev`. When you’re ready to build the production site, run `yarn docs:build`. The site will be generated in the `.vuepress/dist` directory.
 
@@ -92,12 +94,14 @@ VuePress’ default theme exposes several configuration options. A couple you wi
 
 To configure VuePress, add a `config.js` file inside of the `.vuepress` directory (go ahead and create the `.vuepress` directory if it doesn’t exist yet.) Insert the following code into the file:
 
-    module.exports = {
-      themeConfig: {
-        sidebar: 'auto',
-        nav: []
-      }
-    }
+```js
+module.exports = {
+  themeConfig: {
+    sidebar: "auto",
+    nav: [],
+  },
+}
+```
 
 The `auto` setting for the sidebar automatically generates anchor links based on the headings in your document. This is a handy default for building useful documentation!
 
@@ -105,25 +109,31 @@ The `auto` setting for the sidebar automatically generates anchor links based on
 
 The `nav` option enables you to configure the navigation bar at the top of the page. This option takes an array of objects with a `text` and `link` attribute. You can generate multi-tiered navigation by including an `items` attribute instead of a `link`, and pass in an array of navigation items. Here’s what I added for my documentation nav:
 
-    module.exports = {
-        themeConfig: {
-            nav: [
-                { text: 'Docs',
-                  items: [
-                      { text: 'Home', link: '/' },
-                      { text: 'Usage', link: '/docs/usage.html' },
-                      { text: 'Development', link: '/docs/development.html' },
-                  ]
-                },
-                { text: 'Github', link: 'https://github.com/dwalkr/serverless-autopublish' }
-            ],
-            sidebar: 'auto'
-        }
-    }
+```js
+module.exports = {
+  themeConfig: {
+    nav: [
+      {
+        text: "Docs",
+        items: [
+          {text: "Home", link: "/"},
+          {text: "Usage", link: "/docs/usage.html"},
+          {text: "Development", link: "/docs/development.html"},
+        ],
+      },
+      {
+        text: "Github",
+        link: "https://github.com/dwalkr/serverless-autopublish",
+      },
+    ],
+    sidebar: "auto",
+  },
+}
+```
 
 ### Deploying to Netlify
 
-Deploying the documentation site with Netlify is easy as usual. After adding the site to Netlify, we just need to set the **build command** to `yarn docs:build` and the **publish directory** to `.vuepress/dist`.
+Deploying the documentation site with Netlify should be easy. After adding the site to Netlify, we need to set the **build command** to `yarn docs:build` and the **publish directory** to `.vuepress/dist`.
 
 {{% tip %}}
 Checkout the [VuePress deployment docs](https://vuepress.vuejs.org/guide/deploy.html) if you want to deploy your site to Github Pages.
@@ -133,14 +143,22 @@ Checkout the [VuePress deployment docs](https://vuepress.vuejs.org/guide/deploy.
 
 By the way, you can totally edit your VuePress site in Forestry now! 🎉
 
-![](/uploads/2019/07/select-generator.png)
+{{% tip %}}
+
+**Get started right away**
+
+Explore VuePress and the Forestry CMS with one of our VuePress Starters.
+
+<a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
+<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry.io Account</a>
+{{% /tip %}}
 
 To do so, import a new site and select **VuePress** as the engine. After the site imports, you will need to configure your content sections. Navigate to the **Settings** section and click the **Sidebar** tab. Follow the instructions in the [sidebar documentation](https://forestry.io/docs/settings/content-sections/) to tell Forestry which content files you want to be able to edit.
 
 For my project, I’ve elected to keep all the documentation in a `docs/` folder while still using the `README.md` file at the root of the project to provide a project overview. To configure this in Forestry, I’m going to create two sections:
 
-* A `document` section for the `README.md` file. I label this section “Home” since it serves as the project homepage.
-* A `directory` section for the `docs` folder to edit the documentation files.
+- A `document` section for the `README.md` file. I label this section “Home” since it serves as the project homepage.
+- A `directory` section for the `docs` folder to edit the documentation files.
 
 VuePress support is a new feature in Forestry and currently comes with some constraints. You can’t preview your pages, and Forestry can’t build and deploy the site for you. This is why I’ve elected to use Netlify to handle the deployment and hosting.
 

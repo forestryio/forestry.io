@@ -1,33 +1,32 @@
 ---
 title: Why We Created a Git-Backed Content Manager
-description: ''
+description: ""
 date: 2018-07-27 14:31:20 +0000
 authors:
-- DJ Walker
+  - DJ Walker
 publishdate: 2018-07-27 03:00:00 -1100
 expirydate: 2030-01-01 04:00:00 +0000
-headline: ''
-textline: ''
+headline: ""
+textline: ""
 images:
-- "/uploads/2018/07/hdd.jpg"
+  - "/uploads/2018/07/hdd.jpg"
 categories:
-- Company
-- Frontend-Friday
+  - Company
+  - Frontend-Friday
 tags: []
 cta:
-  headline: ''
-  textline: ''
+  headline: ""
+  textline: ""
   calls_to_action: []
 private: false
-weight: ''
+weight: ""
 aliases: []
 menu: []
-
 ---
+
 Software developers have long used Version Control Systems for tracking changes to code. Any code project will benefit greatly from using version control, and any developer worth her salt should be wary of a codebase that does not use version control. Version control makes it easy to monitor changes to code, track down bugs, and manage releases.
 
 Forestry’s content manager is supported by Git, one of the most popular version control systems available today. Forestry saves changes to your content by **committing these changes into your Git repository**. This is what we mean when we say Forestry is a **Git-backed content manager**. In this article, I will explore why using version control to manage your content can offer many of the same benefits as using it for your code.
- 
 
 ## An Evolutionary History of Static Sites
 
@@ -37,13 +36,14 @@ To better understand how we arrived at the idea of creating a Git-backed content
 
 It doesn’t take much to build a website. You just need a document written in **HTML**, and a webserver to send this document out to any internet users who ask for it.
 
-
-    <!doctype html>
-    <html>
-      <body>
-        <h1>Hello, World!</h1>
-      </body>
-    </html>
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
 
 Every website since the early days of the web has relied on HTML. Browsers decode the HTML that is sent to them to construct the web pages that you see.
 
@@ -51,13 +51,15 @@ Every website since the early days of the web has relied on HTML. Browsers decod
 
 It didn’t take long before clever people realized that you could write a program that runs on the webserver which can generate HTML markup on-the-fly:
 
-
-    <?php
-    echo "<!doctype html><html><body>";
-    echo "<h1>";
-    echo "Hello, " . get_username() . "!";
-    echo "</h1>";
-    echo "</body></html>";
+```php
+<?php
+echo "<!doctype html><html><body>";
+echo "<h1>";
+echo "Hello, " . get_username() . "!";
+echo "</h1>";
+echo "</body></html>";
+?>
+```
 
 Using this approach, you can create dynamic web pages that do things like display a user’s name on the page if they’re logged in. This is a powerful idea, and it was the hallmark of the [“Web 2.0”](https://en.wikipedia.org/wiki/Web_2.0) era.
 
@@ -68,7 +70,6 @@ From a content management perspective, dynamically generating HTML greatly simpl
 While dynamically-generated web pages offer a lot of benefits, they are generally slower than a static HTML equivalent. This is because each request to the website needs to retrieve content from a database and run some server-side code to build the page.
 
 A common strategy for optimizing a dynamic, content-driven website is to implement some kind of **server-side cache**. The dynamically-generated HTML for these pages can be saved on the server and retrieved the next time the page is requested, instead of running the code to re-generate the HTML.
-
 
 ### Generate all the HTML Beforehand
 
@@ -88,7 +89,6 @@ A traditional CMS will store content in a database, or in files on the webserver
 
 Storing a site's content in Git makes it easy to copy and share with everyone who needs access to it. It's also easy to merge changes from multiple users &mdash; something that can not easily be done with multiple copies of a database or un-versioned files.
 
-
 ### Access Full Content History and Recover Changes
 
 With Git, every change is tracked and can be examined by viewing the **commit history**. This is great for seeing the changes to your content over time, and will even let you see which user made a given change.
@@ -98,7 +98,7 @@ Since all changes are recorded in the commit history, it’s also possible to re
 {{% tip "Time Traveling With Git" %}}
 When the entire site is stored in the same Git repo, it is easy to see what the site looked like at any point in time. The following commands will clone this website's repository and roll it back to the way it looked 6 months ago:
 
-```
+```sh
 git clone https://github.com/forestryio/forestry.io.git forestry-timewarp
 cd forestry-timewarp
 git checkout fd0a4a87afa9954b3ce31ccecdde9328d8bf37bd
@@ -117,20 +117,17 @@ Forestry offers a content management interface that will feel familiar to users 
 
 Forestry doesn't require you to make compromises about how your content is managed, or which tools you use. Our aim is to assist users with creating and editing content by providing rich and intuitive UI options. By integrating Git into the content management workflow, we gain all the benefits of version control applied to a site's content while also making it easy to include other options for updating content. Whether you have users who prefer to update markdown files with a standard text editor, or you have an automated system that contributes machine-generated content to your repository, Forestry can work alongside any of these options.
 
-
-
 ## Developer Tip: Filter Out Forestry Commits From Git Log
 
 One thing that developers may not like about having content in version control is that content updates can clutter up the commit history. A solution I've found to filter out commits from Forestry is to use `git log`'s `--invert-grep` flag to filter out commits that have Forestry's commit message:
 
-```
+```sh
 git log --invert-grep --grep="Update from Forestry.io"
 ```
 
-I recommend aliasing this command to something shorter, like `devlog`, if you plan to use it frequently.
+I recommend aliasing this command to something shorter, like `devlog`, if you plan to use it frequently
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at <a href="https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/">setting up multilingual sites with Forestry.</a> </p><p><strong>Last week:</strong> We showed you how to use Forestry's Blocks feature to <a href="https://forestry.io/blog/form-builder-with-formspree-forestry-blocks/">create a form builder.</a></p></div>
-
 
 ## Have something to add?
 
