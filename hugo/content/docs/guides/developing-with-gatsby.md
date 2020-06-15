@@ -1,6 +1,6 @@
 ---
 title: Developing with Gatsby
-date: 2018-11-20 00:00:00 +0000
+date: 2019-09-26 00:00:00 +0000
 toc: false
 description: Gatsby is a highly flexible static site generator that uses ReactJS under
   the hood. This guide will explain how Gatsby works, and help you get the most out
@@ -72,17 +72,16 @@ This will start a live-reloading development server and your site will appear at
 Because Gatsby's behavior is highly configurable, many different **starter projects** have been created. These projects wire up Gatsby to work for various use cases. You can take a look at the [full list of starters](https://www.gatsbyjs.org/starters/?v=2) or, if you're planning to use your Gatsby site with Forestry, [try one of the markdown starters](https://www.gatsbyjs.org/starters/?c=Markdown&v=2) as your starting point.
 
 
-*Forestry's Gatsby Starter*<br />
-We are working on a blog starter that will make it easy to get started with Forestry. For the time being, [we've forked a blog starter from Gatsby](https://github.com/forestryio/gatsby-starter-blog) and pre-configured some Forestry settings. Use the `forestry` branch when importing this project into Forestry.
+#### Forestry's Gatsby Starter
 
 <div>
 {{% create_site_button
-repo="https://github.com/forestryio/gatsby-starter-blog"
+repo="https://github.com/kendallstrautman/brevifolia-gatsby-forestry"
 engineName="gatsby"
-branch="forestry"
+branch="master"
 linkText="Import Gatsby Starter to Forestry"
- %}}
- </div>
+%}}
+</div>
 
 
 {{% tip %}}
@@ -102,6 +101,6 @@ Depending on how you're querying images from your Gatsby site, you may have issu
 
 Here are some options for getting around this:
 
-- Store and reference images from the `static/` directory (this is the solution currently used by our [blog starter](https://github.com/forestryio/gatsby-starter-blog/blob/forestry/.forestry/settings.yml#L20)). This will not allow you to transform images via GraphQL queries.
-- Use [gatsby-remark-relative-images](https://github.com/danielmahon/gatsby-remark-relative-images#readme) 
+- Store and reference images from the `static/` directory (this is the solution currently used by our [blog starter](https://github.com/kendallstrautman/brevifolia-gatsby-forestry/blob/master/.forestry/settings.yml#L28)). This will not allow you to transform images via GraphQL queries.
+- Use [gatsby-remark-relative-images](https://github.com/danielmahon/gatsby-remark-relative-images#readme)
 - Use [gatsby-remark-normalize-paths](https://www.gatsbyjs.org/packages/gatsby-remark-normalize-paths/) to convert project-relative absolute paths to relative paths.
