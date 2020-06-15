@@ -39,13 +39,13 @@ Started by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of th
 
 Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
 
-It’s the most popular SSG (static site generator) in the space right now with over 33k stars on GitHub, largely due to its tight integration with GitHub pages.
+It’s one of the most popular SSG (static site generator) in the space right now with over 40k stars on GitHub, largely due to its simplicity and its tight integration with GitHub pages.
 
 The value Jekyll offers is that it allows you to take the static HTML from any existing website and quickly turn it into a working static site with its simple templating library.
 
 {{% tip %}}
 
-**Want to get started right away?**
+**Get started right away**
 
 Explore Jekyll and the Forestry CMS with our Jekyll Starter Template.
 
@@ -69,13 +69,15 @@ The simplest form of content in Jekyll is stored in the root of your project as 
 
 _Front matter fields_ can be added to these files, allowing you to define data that can then be used inside your templates.
 
-    ---
-    title: Homepage
-    date: 2017-01-30
-    tags: [hello, world]
-    ---
-    ## Hello world
-    This is my page's content!
+```md
+---
+title: Homepage
+date: 2017-01-30
+tags: [hello, world]
+---
+## Hello world
+This is my page's content!
+```
 
 Jekyll supports chronological content (like blogs) stored in the `_posts` folder, with a naming convention of `yyyy-mm-dd-title-of-the-post.md`.
 
@@ -89,21 +91,23 @@ Themes can easily be installed either by downloading and adding them to your Jek
 
 Jekyll’s themes are built using Shopify’s **Liquid templating engine**. Liquid is a _safe templating engine_ which is made to run untrusted code on their servers. This means that it’s built to do mostly everything you need without running custom code.
 
-    <div class=“container”>
-    {% for post in site.posts %}
-        <div class="article">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-        {% for tag in post.tags %}
-            <span>{{ tag }}</span>
-        {% endfor %}
-        </div>
-    {% endfor %}
-    </div>
+```twig
+<div class=“container”>
+{% for post in site.posts %}
+  <div class="article">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.content }}</p>
+  {% for tag in post.tags %}
+    <span>{{ tag }}</span>
+  {% endfor %}
+  </div>
+{% endfor %}
+</div>
+```
 
 This is great for beginners and developers looking to create clean, simple, and functional templates.
 
-However, it does mean you have to extend liquid with custom helpers using Jekyll plugins if you need extra functionality.
+However, it does mean you have to extend Liquid with custom helpers using Jekyll plugins if you need extra functionality.
 
 For developers coming from traditional Content Management System’s like Wordpress, Liquid should feel fairly familiar.
 
@@ -121,9 +125,11 @@ Jekyll also comes with a very simple asset pipeline built-in, made for handling 
 
 Any `.scss`, `.sass` or `.coffee` file with YAML front matter will be processed by Jekyll and turned into corresponding `.css` and `.js` files.
 
-    ---
-    ---
-    alert "Hello world!
+```yaml
+---
+---
+alert "Hello world!
+```
 
 Due to the need of adding YAML front matter to each file, a lot of larger production Jekyll sites opt to forgo the built-in asset pipeline for a modern build tool like Gulp or [Webpack](/blog/write-better-javascript-with-webpack/).
 
@@ -189,11 +195,21 @@ Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll
 
 Hugo is a static site generator written in Go. Hugo is created by Steve Francia and Bjørn Erik Pedersen. The development is currently lead by the Norwegian.
 
-Started in 2013, Hugo has quickly grown to become the second most popular SSG with over 24k stars on GitHub
+Started in 2013, Hugo has quickly grown to become one pf the most popular SSG with over 44k stars on GitHub.
 
 Hugo has a clear advantage over other SSGs: it's **fast.**
 
 It also has one of the most (if not _the_ most) thriving communities for an SSG.
+
+{{% tip %}}
+
+**Get started right away**
+
+Explore Hugo and the Forestry CMS with one or our Hugo Starters.
+
+<a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
+<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry.io Account</a>
+{{% /tip %}}
 
 ### Set up
 
@@ -207,19 +223,22 @@ Hugo has [in-depth documentation](https://gohugo.io/getting-started/installing/)
 
 Similar to Jekyll, all of your content is stored in text files in your project.
 
-In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown (Blackfriday or Mmark), Org Mode,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
+In Hugo’s case, all content intended to be generated is stored inside the `content` folder in your project. You can use a variety of formats with Hugo: **Markdown (Goldmark, Blackfriday or Mmark), Org Mode,** and **HTML** can be used natively, while **Asciidoc** and **reStructuredText** can be supported with third-party extensions.
 
 Hugo also supports **TOML, YAML, and JSON** for front matter where Jekyll only supports YAML.
 
-    +++
-    title = "Homepage"
-    date = "2017-01-30"
-    tags = ["hello", "world"]
-    +++
-    ## Hello world
-    This is an example of TOML front matter
+```md
++++
+title = "Homepage"
+date = "2017-01-30"
+tags = ["hello", "world"]
++++
+## Hello world
+This is an example of TOML front matter
+```
 
-Hugo also supports external data, which can be stored in the `/data` folder of your project, or pulled from third-party sources like REST APIs. It supports both JSON and CSV sources.
+Hugo also supports external data, which can be
+stored in the `/data` folder of your project, or pulled from third-party sources like REST APIs. It supports both JSON and CSV sources.
 
 ### Themes & Templates
 
@@ -229,23 +248,23 @@ If you’re using the CLI (Command Line Interface), [installing themes from the 
 
 Hugo uses Go’s [template package](https://golang.org/pkg/html/template/) out of the box. This is similar to Liquid in that it allows limited logic in your templates.
 
-    <div class=“container”>
-    {{ range .Site.Pages}
-        <div class="article">
-        <h2>{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
-        {{ range .Tags }}
-            <span>{{ . }}</span>
-        {{ end }}
-        </div>
+```go-html-template
+<div class=“container”>
+{{ range .Site.Pages }}
+    <div class="article">
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Content }}</p>
+    {{ range .Tags }}
+      <span>{{ . }}</span>
     {{ end }}
     </div>
+{{ end }}
+</div>
+```
 
 Again, this is great for beginners but will require you to extend the template engine with shortcodes to get additional functionality.
 
 Unfortunately, the template package’s syntax is not as straightforward for beginners as Liquid, and will not feel as familiar.
-
-However, support for both the [Amber](https://github.com/eknkc/amber) and [Ace](https://github.com/yosssi/ace) templating engines is available. These may feel more familiar to developers coming from traditional Content Management Systems like Wordpress.
 
 ### Development Workflow
 
@@ -257,11 +276,11 @@ This will allow you to access your site from a local IP address. As you make cha
 
 #### Asset Pipeline
 
-Hugo takes a bare-bones approach to its asset pipeline: it simply copies any files stored in the `/static` directory to your build directory as-is.
+Hugo comes with an [asset pipeline](https://gohugo.io/hugo-pipes/introduction/) that will compile your Sass file. It can also preprocess and postprocess your CSS to optimize it for production.
 
-If you’re used to using Sass, CoffeeScript or any other kind of preprocessing or asset management, you’ll have to look to external asset management pipeline tools like Gulp or [Webpack](/blog/write-better-javascript-with-webpack/). This also means you’ll likely want to include Hugo in your external build process, which can be troublesome for beginners.
+Hugo can also [transpile your JavaScript files](https://gohugo.io/hugo-pipes/babel/) with Babel.
 
-A more sophisticated asset pipeline is [in the works](https://github.com/gohugoio/hugo/issues/4446), but at the time of writing has not yet been integrated into the core.
+This removes the need for an external asset management pipeline tools like Gulp or [Webpack](/blog/write-better-javascript-with-webpack/).
 
 ### Useful Features
 
@@ -312,7 +331,6 @@ Now that we’ve gone through all of the core areas of Hugo, let’s take a step
 
 * **No extensions.** Hugo doesn’t have plugin support, so adding highly custom functionality isn’t possible.
 * **Confusing template syntax.** While the template engine for Hugo is versatile, it’s fairly non-standard and confusing for beginners.
-* **No asset pipeline.** Hugo doesn’t have any asset processing at all, so you need to use third-party tools.
 
 {{% tip %}}
 
@@ -337,11 +355,11 @@ Whether you prefer Jekyll or Hugo, Forestry.io provides a rich CMS backend for y
 
 {{% /tip %}}
 
-<div style="padding: 20px 40px;background: #f7f7f7;">  
-<h2>Join us every Friday 📅</h2>  
-<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>  
-<p><strong>Next week:</strong> <a href="https://forestry.io/blog/build-a-json-api-with-hugo/">We are going to build a RESTful API with Hugo's Custom Output Formats.</a></p>  
-<p><strong>Last week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We looked at Webpack and how it can make you write better JavaScript.</a></p>  
+<div style="padding: 20px 40px;background: #f7f7f7;">
+<h2>Join us every Friday 📅</h2>
+<p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p>
+<p><strong>Next week:</strong> <a href="https://forestry.io/blog/build-a-json-api-with-hugo/">We are going to build a RESTful API with Hugo's Custom Output Formats.</a></p>
+<p><strong>Last week:</strong> <a href="https://forestry.io/blog/write-better-javascript-with-webpack/">We looked at Webpack and how it can make you write better JavaScript.</a></p>
 </div>
 
 ## Have something to add?
