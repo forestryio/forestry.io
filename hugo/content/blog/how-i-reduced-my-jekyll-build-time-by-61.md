@@ -37,7 +37,7 @@ Output:
 
     Filename                         | Count |    Bytes |  Time
     ---------------------------------+-------+----------+------
-    
+
     _layouts/post.html               |   277 | 3978.62K | 3.137
     _layouts/default.html            |   308 | 5580.10K | 2.943
     _layouts/archive.html            |    88 | 1629.61K | 1.732
@@ -55,9 +55,9 @@ Output:
     _includes/disqus_comments.html   |   277 |  155.65K | 0.349
     sitemap.xml                      |     1 |   42.99K | 0.218
     feed.xml                         |     1 |   58.57K | 0.038
-    
+
     ...
-    
+
     done in 16.114 seconds.
 
 As you can see above, Jekyll 3.8.5 manages to build my website which has **277** posts and **30** pages in **16.114** seconds.
@@ -89,12 +89,9 @@ Commit URL: [b572c61](https://github.com/desiredpersona/jekyll-test-site/commit/
 
 Jekyll 4 has a new [cache API](https://github.com/jekyll/jekyll/blob/master/docs/_tutorials/cache_api.md) so we need to exclude `.jekyll-cache` in our `_config.yml` file for now using the `exclude:` option like so;
 
-```
-
+```yaml
 exclude:
-
   - .jekyll-cache
-
 ```
 
 We can also add `.jekyll-cache` to our `.gitignore` file.
@@ -110,11 +107,11 @@ Jekyll builds my site in **8.55** seconds, which is already a decrease of **46.9
 We will take advantage of the Shopify [liquid-c gem](https://github.com/Shopify/liquid-c) written in C to speed up Liquid parsing. For this to work we simply need to update our `Gemfile`.
 
 ```diff
-gem "jekyll", github: "jekyll/jekyll" 
+gem "jekyll", github: "jekyll/jekyll"
 + gem "liquid-c"
 
 group :jekyll_plugins do
-  gem "jekyll-archives" 
+  gem "jekyll-archives"
   gem "jekyll-feed"
   gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
@@ -139,7 +136,7 @@ gem "jekyll", github: "jekyll/jekyll"
 gem "liquid-c"
 
 group :jekyll_plugins do
-  gem "jekyll-archives" 
+  gem "jekyll-archives"
 +  gem "jekyll-commonmark"
   gem "jekyll-feed"
   gem "jekyll-remote-theme"
@@ -218,7 +215,7 @@ We can now make use of [jekyll-include-cache](https://github.com/benbalter/jekyl
 Update your `Gemfile`.
 
 ```diff
-gem "jekyll", github: "jekyll/jekyll" 
+gem "jekyll", github: "jekyll/jekyll"
 gem "liquid-c"
 
 group :jekyll_plugins do
@@ -234,7 +231,7 @@ end
 
 Update the plugins in your sites `_config.yml` file.
 
-```diff  
+```diff
 plugins:
   - jekyll-archives
   - jekyll-commonmark

@@ -66,13 +66,17 @@ Most people would call it a day here but Jekyll 3.8 now makes it super easy to a
 
 ### US ordinal dates
 
-    {{ page.date | date_to_long_string: "ordinal", "US" }} will output April 24th, 2018.
-    {{ page.date | date_to_string: "ordinal", "US" }} will output Apr 24th, 2018.
+```twig
+{{ page.date | date_to_long_string: "ordinal", "US" }} will output April 24th, 2018.
+{{ page.date | date_to_string: "ordinal", "US" }} will output Apr 24th, 2018.
+```  |  
 
 ### UK ordinal dates
 
-    {{ page.date | date_to_long_string: "ordinal" }} will output 24th April 2018.
-    {{ page.date | date_to_string: "ordinal" }} will output 24th Apr 2018.
+```twig
+{{ page.date | date_to_long_string: "ordinal" }} will output 24th April 2018.
+{{ page.date | date_to_string: "ordinal" }} will output 24th Apr 2018.
+```
 
 ## Detection of non-existent variables and filters
 
@@ -80,10 +84,12 @@ Jekyll can now detect non-existent variables and filters specified in a template
 
 To set this up add the following to your sites `config.yml` file.
 
-    liquid:
-    	error_mode:       warn
-    	strict_filters:   true
-    	strict_variables: true
+```yaml
+liquid:
+  error_mode:       warn
+  strict_filters:   true
+  strict_variables: true
+```
 
 Liquid’s response to errors has three settings which can be configured by setting `error_mode` to `lax` , `warn` or `strict`.
 
@@ -126,8 +132,8 @@ If you would like to get involved with the project check out Jekyll’s [contrib
 
 Please share if you found this post helpful and let us know if you’d like to see more of these updates.
 
-Until next time. Jekyll FTW  
-  
+Until next time. Jekyll FTW
+
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We look at <a href="https://forestry.io/blog/snipcart-brings-ecommerce-static-site/">using Snipcart and Forestry</a> to make your static site ready for e-Commerce.</p><p><strong>Last week:</strong> We looked at how to <a href="https://forestry.io/blog/automatically-publish-scheduled-posts-for-static-site/">automatically publish scheduled posts</a> for your static site.</p></div>
 
 ## Have something to add?
