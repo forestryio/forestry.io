@@ -63,6 +63,7 @@ Additionally, you can override the following variables to control the preview en
 You can add custom options, e.g.:
 
 | Variable | Description |
+| :--- | :--- |
 | GATSBY_HOT_LOADER | Enable [fast-refresh](https://github.com/gatsbyjs/gatsby/pull/21534)|
 
 ### Customizing the Preview Command
