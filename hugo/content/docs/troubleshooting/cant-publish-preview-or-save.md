@@ -1,5 +1,5 @@
 ---
-title: Can't publish, preview, or save
+title: Can't preview, or save
 authors: []
 publishdate: 2020-06-11 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
@@ -25,10 +25,11 @@ menu:
     weight: 8
 
 ---
-When publishing, previewing, or saving a draft, there are a multitude of reasons why your site may fail to import. Generally, they boil down to 3 reasons:
+When previewing, or saving a draft, there are a multitude of reasons why your site may fail to import. Generally, they boil down to 3 reasons:
 
 * Your content files are improperly formatted.
 * Your layout files are improperly formatted or have a build error.
+* Your permissions on the repository have changed
 * Our service messed up. Our bad.
 
 We output the error the caused the import to fail and allow you to view it in order to help you debug.
@@ -36,3 +37,5 @@ We output the error the caused the import to fail and allow you to view it in or
 To find this error, look for the failure message in your `Site Activity`, located in the sidebar beside the logo.
 
 Inside the failure message you will see a `Failed, Show Log` button. Clicking this button will open new page with the error that caused the action to fail.
+As a site admin your can check the preview logs to get more information about the error and what file is triggering it.
+If you're an editor, reach out to your site admin.
