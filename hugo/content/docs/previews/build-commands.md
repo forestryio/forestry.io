@@ -280,7 +280,7 @@ Commands run as NPM scripts will automatically include any installed node module
     }
 
 {{% /tab %}}
-{{% tab "Next" %}}
+{{% tab "Nuxt" %}}
 
     "scripts": {
       "develop": "nuxt"
