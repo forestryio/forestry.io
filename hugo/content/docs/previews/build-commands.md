@@ -246,45 +246,56 @@ Commands run as NPM scripts will automatically include any installed node module
 {{% code_tabs %}}
 {{% tab "Gatsby" %}}
 
-    "scripts": {
-      "develop": "gatsby develop"
-    }
+```json
+"scripts": {
+  "develop": "gatsby develop"
+}
+```
 
 {{% /tab %}}
 {{% tab "Eleventy" %}}
 
-    "scripts": {
-      "develop": "eleventy --serve"
-    }
+```json
+"scripts": {
+  "develop": "eleventy --serve"
+}
+```
 
 {{% /tab %}}
 {{% tab "Gridsome" %}}
 
-    "scripts": {
-      "develop": "gridsome develop"
-    }
-
+```json
+"scripts": {
+  "develop": "gridsome develop"
+}
+```
 
 {{% /tab %}}
 {{% tab "VuePress" %}}
 
-    "scripts": {
-      "develop": "vuepress dev"
-    }
+```json
+"scripts": {
+  "develop": "vuepress dev"
+}
+```
 
 {{% /tab %}}
 {{% tab "Next" %}}
 
-    "scripts": {
-      "develop": "next"
-    }
+```json
+"scripts": {
+  "develop": "next"
+}
+```
 
 {{% /tab %}}
 {{% tab "Nuxt" %}}
 
-    "scripts": {
-      "develop": "nuxt"
-    }
+```json
+"scripts": {
+  "develop": "nuxt"
+}
+```
 
 {{% /tab %}}
 {{% /code_tabs %}}
@@ -297,44 +308,56 @@ Most of the time, it will be `npm run develop`, but you can point to another scr
 {{% code_tabs %}}
 {{% tab "Gatsby" %}}
 
-    build:
-      instant_preview_command: npm run develop
-      preview_output_directory: dist
+```yaml
+build:
+  instant_preview_command: npm run develop
+  preview_output_directory: dist
+```
 
 {{% /tab %}}
 {{% tab "Gridsome" %}}
 
-    build:
-      instant_preview_command: npm run develop
-      preview_output_directory: dist
+```yaml
+build:
+  instant_preview_command: npm run develop
+  preview_output_directory: dist
+```
 
 {{% /tab %}}
 {{% tab "VuePress" %}}
 
-    build:
-      instant_preview_command: npm run develop
-      preview_output_directory: .vuepress/dist
+```yaml
+build:
+  instant_preview_command: npm run develop
+  preview_output_directory: .vuepress/dist
+```
 
 {{% /tab %}}
 {{% tab "Eleventy" %}}
 
-    build:
-      instant_preview_command: npm run develop
-      preview_output_directory: _site
+```yaml
+build:
+  instant_preview_command: npm run develop
+  preview_output_directory: _site
+```
 
 {{% /tab %}}
 {{% tab "Next" %}}
 
-    build:
-      instant_preview_command: npm run develop
-      preview_output_directory: .next
+```yaml
+build:
+  instant_preview_command: npm run develop
+  preview_output_directory: .next
+```
 
 {{% /tab %}}
 {{% tab "Nuxt" %}}
 
-    build:
-      instant_preview_command: npm run dev
-      preview_output_directory: dist
+```yaml
+build:
+  instant_preview_command: npm run dev
+  preview_output_directory: dist
+```
 
 {{% /tab %}}
 {{% /code_tabs %}}
