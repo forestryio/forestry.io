@@ -57,8 +57,13 @@ Additionally, you can override the following variables to control the preview en
 | Variable | Description | Default |
 | :--- | :--- | :--- |
 | HUGO_VERSION | Version of Hugo to use | Version selected when importing site |
-| HUGO_ENV | Environment used by Hugo | staging for previews |
+| HUGO_ENV | Environment used by Hugo | staging for preview |
 | JEKYLL_ENV | Environment used by Jekyll | staging for preview |
+
+You can add custom options, e.g.:
+
+| Variable | Description |
+| GATSBY_HOT_LOADER | Enable [fast-refresh](https://github.com/gatsbyjs/gatsby/pull/21534)|
 
 ### Customizing the Preview Command
 
@@ -68,7 +73,7 @@ Alternatively, you can configure preview commands directory in your `.forestryio
 
 ### Examples
 
-#### JS-based static site generators: Gatsby, Gridsome, Eleventy, Next, etc.
+#### JS-based static site generators: Gatsby, Gridsome, Eleventy, Next, Nuxt, etc.
 
 For a JS-based static site generator build from a `src` subfolder and aliasing `npm start` to the development command in the `package.json`, you would write:
 
@@ -168,7 +173,16 @@ build:
 ```
 
 {{% /tab %}}
-{{% tab "Generic" %}}
+{{% tab "Eleventy" %}}
+
+```yaml
+build:
+  instant_preview_command: npx eleventy --serve
+```
+
+{{% /tab %}}
+
+{{% tab "Other" %}}
 
 ```yaml
 build:
@@ -216,13 +230,17 @@ This step is important, as you could otherwise run node packages on your local m
     npm install --save next react react-dom
 
 {{% /tab %}}
+{{% tab "Nuxt" %}}
+
+    npm install --save nuxt
+
+{{% /tab %}}
 {{% /code_tabs %}}
 
 
 ### 2. Configure a build script in _package.json_
 
 Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
-Adapt those commands if you site source lives in a subfolder.
 
 {{% code_tabs %}}
 {{% tab "Gatsby" %}}
@@ -261,9 +279,19 @@ Adapt those commands if you site source lives in a subfolder.
     }
 
 {{% /tab %}}
+{{% tab "Next" %}}
+
+    "scripts": {
+      "develop": "nuxt"
+    }
+
+{{% /tab %}}
 {{% /code_tabs %}}
 
 ### 3. Run the NPM script in your build command
+
+As your project's dependencies are installed locally and are not available globally, you need to run your preview command from a NPM script.
+Most of the time, it will be `npm run develop`, but you can point to another script of yours.
 
 {{% code_tabs %}}
 {{% tab "Gatsby" %}}
@@ -271,13 +299,6 @@ Adapt those commands if you site source lives in a subfolder.
     build:
       instant_preview_command: npm run develop
       preview_output_directory: dist
-
-{{% /tab %}}
-{{% tab "Eleventy" %}}
-
-    build:
-      instant_preview_command: npm run develop
-      preview_output_directory: _site
 
 {{% /tab %}}
 {{% tab "Gridsome" %}}
@@ -294,6 +315,13 @@ Adapt those commands if you site source lives in a subfolder.
       preview_output_directory: .vuepress/dist
 
 {{% /tab %}}
+{{% tab "Eleventy" %}}
+
+    build:
+      instant_preview_command: npm run develop
+      preview_output_directory: _site
+
+{{% /tab %}}
 {{% tab "Next" %}}
 
     build:
@@ -301,5 +329,11 @@ Adapt those commands if you site source lives in a subfolder.
       preview_output_directory: .next
 
 {{% /tab %}}
+{{% tab "Nuxt" %}}
 
+    build:
+      instant_preview_command: npm run dev
+      preview_output_directory: dist
+
+{{% /tab %}}
 {{% /code_tabs %}}
