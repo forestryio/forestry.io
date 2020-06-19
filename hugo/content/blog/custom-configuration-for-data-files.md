@@ -4,10 +4,10 @@ description: |-
   A little over two months ago we made it possible to customize the sidebar for your content files (i.e. .md and .html). With today's update we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
 
   Here's a quick walkthrough on how you can set up data file sections on your site.
-date: 2018-09-13 13:36:32 +0000
+date: 2018-09-13T13:36:32.000+00:00
 authors: []
-publishdate: 2018-09-13 09:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2018-09-13T09:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 headline: ''
 textline: ''
 categories: []
@@ -17,16 +17,17 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 
 aliases: []
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+photo_credit: ''
 menu: []
 
 ---
 We're excited to announce custom configuration for data files.
 
-A little over two months ago we made it possible to customize the sidebar for your content files (i.e. .md and .html). With today's update we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
+A little over two months ago we made it possible to customize the sidebar for your content files (i.e. .md and .html). With today's update, we expand that capability to data files. You can now use the sidebar settings to import other file formats (e.g. .json, .toml, .yml) and choose how they are displayed.
 
 All new sites will have this feature enabled by default. Existing Jekyll and Hugo sites are not automatically migrating until October 16th, 2018, giving you time to make adjustments, if necessary.
 
@@ -58,7 +59,7 @@ Before we start you might have to manually opt-in to use the new data file secti
 
 Next you can select the _Sidebar_ tab to add new sections. We first want to add a new heading to keep our data and content files separate. To do so click on _Add Section_, select _Heading_ and give the section a _Label_. We chose "Data Files" for this example.
 
-![](/uploads/2018/09/add_section-1.png)
+![Sidebar settings](/uploads/2020/06/add-section.png "Add a new section in Forestry")
 
 ***
 
