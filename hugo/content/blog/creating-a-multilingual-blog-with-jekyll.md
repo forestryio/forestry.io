@@ -1,11 +1,11 @@
 ---
 title: Creating a Multilingual Blog With Jekyll
 description: ''
-date: 2018-08-03 03:25:21 -1100
+date: 2018-08-03T03:25:21.000-11:00
 authors:
 - DJ Walker
-publishdate: 2018-08-02 17:00:00 -1100
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2018-08-02T17:00:00.000-11:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 headline: ''
 textline: ''
 images:
@@ -19,8 +19,9 @@ cta:
   textline: ''
   calls_to_action: []
 private: false
-weight: ''
+weight: 
 aliases: []
+photo_credit: ''
 menu: []
 
 ---
@@ -30,9 +31,9 @@ In this post, I will explore how to set up a Jekyll site to support multiple lan
 
 ## Simple i18n in Jekyll
 
-Jekyll doesn’t have support for multi-language sites baked in, but there are many solutions out there that can make it happen. For this post, I wanted to find a solution that was simple to understand and didn’t require any plugins. My favorite solution came from [this blog post](http://chocanto.me/2016/04/16/jekyll-multilingual.html) by Anthony Granger. His strategy involves having a separate path for each language’s content, and using a couple front matter values to tie things together.
+Jekyll doesn’t have support for multi-language sites baked in, but there are many solutions out there that can make it happen. For this post, I wanted to find a solution that was simple to understand and didn’t require any plugins. My favorite solution came from [this blog post](http://chocanto.me/2016/04/16/jekyll-multilingual.html) by Anthony Granger. His strategy involves having a separate path for each language’s content and using a couple of front matter values to tie things together.
 
-The example site I created for this post uses the popular Hyde theme, and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications. Check out the demo [here](https://condescending-bose-e6c590.netlify.com/en/) and view the source code on [Github](https://github.com/dwalkr/jekyll-multilingual)
+The example site I created for this post uses the popular Hyde theme and demonstrates a site with a couple of posts and pages in both English and Spanish. In order to make the Hyde theme fit my multilingual strategy, I only had to make a few modifications. Check out the demo [here](https://condescending-bose-e6c590.netlify.com/en/) and view the source code on [Github](https://github.com/dwalkr/jekyll-multilingual)
 
 {{% tip %}}
 I used Google Translate for the Spanish content. <em title="Don’t hate me.">No me odies.</em>
@@ -55,7 +56,7 @@ Content for each language exists in its own folder based on the **language code*
     public/
     _config.yml
 
-Anthony’s example kept the English content at the top level of the project, but I decided to place it in its own `en` directory. I find this makes it easier to keep content organized, but the downside is that we will have to build a new homepage, since the user now needs to navigate to `/en/` to see the English content (more on that in a moment.)
+Anthony’s example kept the English content at the top level of the project, but I decided to place it in its own `en` directory. I find this makes it easier to keep content organized, but the downside is that we will have to build a new homepage since the user now needs to navigate to `/en/` to see the English content (more on that in a moment.)
 
 ### Use Front Matter To Identify Languages and Link Posts
 
@@ -104,7 +105,7 @@ To display alternate translation options for each post, I created a file at `_in
         {% endif %}
     {% endif %}
 
-This code runs on single posts and pages, and searches for all content with a matching `lang-ref` attribute. If it finds more than one match (one match would be the current translation,) it will display all of the language options:
+This code runs on single posts and pages and searches for all content with a matching `lang-ref` attribute. If it finds more than one match (one match would be the current translation,) it will display all of the language options:
 
 ![](/uploads/2018/08/translation-options.png)
 
@@ -203,7 +204,7 @@ It’s worth noting that I’ve also adapted Hyde’s original `index.html` home
 
 ### Replace Homepage
 
-Since we put all of our english content inside of `/en/`, when a user visits the homepage, the site doesn’t know which language to display. We can address this by adding a splash page to the homepage where a user can select their language.
+Since we put all of our English content inside of `/en/`, when a user visits the homepage, the site doesn’t know which language to display. We can address this by adding a splash page to the homepage where a user can select their language.
 
 The splash page loops over the languages defined in `_data/languages.yml` and displays a link to the section.
 
@@ -226,15 +227,15 @@ After first importing our site, we are faced with a default configuration for ou
 
 Once the existing sections are removed, we can click **Add Section** to open the section creation modal. All of our sections will be of type **directory**. For our English posts, we can use a label of **English - Posts**. Under **path**, we will enter the path to our content. In this case, we will enter `en/_posts` to only display content located in that directory.
 
-The **match** option takes a glob which can be used to filter which files and subdirectories are identified as content. For our purposes the default of `**/*` will work fine to match everything in this directory.
+The **match** option takes a glob that can be used to filter which files and subdirectories are identified as content. For our purposes the default of `**/*` will work fine to match everything in this directory.
 
-We can use the default values for **create**, **new file extension**, and **available templates**. Check out the [documentation on sidebar configuration](https://forestry.io/docs/settings/content-sections/) to learn more about what these do.
+We can use the default values for **creating**, **new file extension**, and **available templates**. Check out the [documentation on the sidebar configuration](https://forestry.io/docs/settings/content-sections/) to learn more about what these do.
 
 Once our English section is created, we can do the same for Spanish. Create a new section and set the **path** to `es/_posts` and the label to **Español - Posts**.
 
-Once your sections are configured, hit the **Save** button and then re-import your site from the **Repository** tab. You should now see the two content sections you just configured in your sidebar:
+Once your sections are configured, hit the **Save** button, this will trigger an automatic re-import. You should now see the two content sections you just configured in your sidebar:
 
-![](/uploads/2018/08/sections-ui.png)
+![Sidebar sections for each language in Forestry](/uploads/2020/06/section-ui.png "Sidebar sections for each language in Forestry")
 
 We now have a customized editing experience for editors and translators!
 
@@ -243,7 +244,6 @@ We now have a customized editing experience for editors and translators!
 Creating an effective multilingual site can be challenging, but using static sites and Forestry's UI can go a long way to making the translation process as streamlined as possible. I highly recommend you experiment with what's possible using custom paths and Forestry's configurable content sections!
 
 <div style="margin-top: 2em; padding: 20px 40px;background: #f7f7f7;"><h2>Join us every Friday :date:</h2><p><a href="/categories/frontend-friday/">Frontend Friday</a> is a weekly series where we write in-depth posts about modern web development.</p><p><strong>Next week:</strong> We'll take a look at <a href="https://forestry.io/blog/vuepress-brings-your-documentation-to-life/">VuePress, a static site generator built with Vue.</a></p><p><strong>Last week:</strong> We discussed <a href="https://forestry.io/blog/why-we-created-a-git-backed-content-manager/">why we like storing content in Git.</a></p></div>
-
 
 ## Have something to add?
 
