@@ -24,9 +24,14 @@ menu:
     parent: Troubleshooting
 
 ---
-If your website uses submodules from private repos, you will need to configure your site to allow Forestry to access these submodules. For sites stored on **Github** or **GitLab**, our _quick setup_ flow will not grant the correct permissions. This flow adds a **deploy key** to your GitHub or GitLab repo, which only grants access to a single repository and will not allow Forestry to install private submodules.
 
-To use a site containing private submodules with Forestry, you will need to change the way Forestry authenticates with Github/GitLab by removing this deploy key and instead adding your site's public key as a **user-level** key (assuming your user has access to these private submodules.) In your Forestry site, head to **Settings** > **Repository** and copy the public key to add it to your Github or GitLab user account.
+If your website uses submodules from private repos, you will need to configure your site to allow Forestry to access these submodules. For sites stored on **Github** or **GitLab**, our _quick setup_ flow will not grant the correct permissions. This flow adds a **deploy key** to your GitHub or GitLab repo, which only grants access to a _single repository and will not allow Forestry to install private submodules_.
+
+To use a site containing private submodules with Forestry, you will need to change the way Forestry authenticates with Github/GitLab:
+
+1. Remove Forestry.io **deploy key** from the repository settings, e.g. (`https://github.com/$username/$repository/settings/keys`)
+2. In your Forestry site, head to **Settings** > **Repository** and copy the public key
+2. Add your site's public key as a **user-level** key ([GitHub](https://github.com/settings/keys)/[GitLab](https://gitlab.com/profile/keys)). _This user must have access to these private submodules_.
 
 {{% pretty_screenshot img="/uploads/2019/05/oauth-public-key.png" %}}
 
@@ -35,5 +40,5 @@ To use a site containing private submodules with Forestry, you will need to chan
 {{% /warning %}}
 
 {{% tip %}}
-Note that this is typically not an issue for projects stored on Bitbucket or Azure DevOps because you must add Forestry's public key to your user account (Azure Devops doesn't have deploy keys, and deploy keys are always read-only for Bitbucket repos.) If you're having trouble installing private submodules in Bitbucket or Azure DevOps, ensure your user has access to all of the necessary repositories.
+This is typically not an issue for projects stored on Bitbucket or Azure DevOps because you must add Forestry's public key to your user account (Azure Devops doesn't have deploy keys, and deploy keys are always read-only for Bitbucket repos.) If you're having trouble installing private submodules in Bitbucket or Azure DevOps, ensure your user has access to all of the necessary repositories.
 {{% /tip %}}
