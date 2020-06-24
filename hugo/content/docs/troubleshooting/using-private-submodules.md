@@ -27,13 +27,12 @@ menu:
 
 If your website uses submodules from private repos, you will need to configure your site to allow Forestry to access these submodules. For sites stored on **Github** or **GitLab**, our _quick setup_ flow will not grant the correct permissions. This flow adds a **deploy key** to your GitHub or GitLab repo, which only grants access to a _single repository and will not allow Forestry to install private submodules_.
 
-To use a site containing private submodules with Forestry, you will need to change the way Forestry authenticates with Github/GitLab:
+To use a site containing private submodules with Forestry, you will need to change the way Forestry authenticates with Github/GitLab.
 
-1. Remove Forestry.io **deploy key** from the repository settings, e.g. (`https://github.com/$username/$repository/settings/keys`)
-2. In your Forestry site, head to **Settings** > **Repository** and copy the public key
-2. Add your site's public key as a **user-level** key ([GitHub](https://github.com/settings/keys)/[GitLab](https://gitlab.com/profile/keys)). _This user must have access to these private submodules_.
-
-{{% pretty_screenshot img="/uploads/2019/05/oauth-public-key.png" %}}
+1. Use the [manual setup](/docs/git-sync/manual-setup/) to connect to GitHub/GitLab
+2. Remove Forestry.io **deploy key** from the repository settings, e.g. (`https://github.com/$username/$repository/settings/keys`)
+3. In your Forestry site, head to **Settings** > **Repository** and copy the public key
+4. Add your site's public key as a **user-level** key ([GitHub](https://github.com/settings/keys)/[GitLab](https://gitlab.com/profile/keys)). _This user must have access to these private submodules_.
 
 {{% warning %}}
 **This will give Forestry access to all of your user's repos.** If you would prefer not to do that, just create a new Github/GitLab user with access to all of the necessary repositories and add the key to their account.
