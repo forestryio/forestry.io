@@ -3,12 +3,12 @@ plans:
 - title: Personal
   priceAnnually: "0"
   priceMonthly: "0"
-  description: Invite up to 3 users per website.
-  planIncludes: Up to 3 sites.
+  description: Free plan for personal projects.
+  planIncludes: Up to 3 editors per site.
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
-  - text: Git sync
+  - text: Up to 3 sites
   - text: Instant Previews
     info: Quickly preview changes before publishing
   - text: Remote admin from your domain
