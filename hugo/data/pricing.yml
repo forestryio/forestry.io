@@ -24,7 +24,7 @@ plans:
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
-  - text: 10 sites (then $9 per additional site)
+  - text: 10 sites
   - text: Organization account
     info: Manage one group of users across all of your sites and branches
   - text: Team access controls
