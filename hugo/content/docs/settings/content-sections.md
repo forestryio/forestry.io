@@ -180,6 +180,49 @@ sections:
   new_doc_ext: ".fr.md"
 ```
 
+Gridsome blog starter:
+
+```yaml
+sections:
+- type: directory
+  path: content/posts
+  label: Posts
+  create: documents
+  match: "*.md"
+```
+
+Gastby blog starter with data files:
+
+```yaml
+sections:
+- type: heading
+  label: Content
+
+- type: directory
+  path: content/posts
+  label: Blog Posts
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+
+- type: document
+  path: content/data/authors.yaml
+  label: Author List
+
+- type: document
+  path: content/data/info.json
+  label: Info Page
+
+- type: heading
+  label: General Config
+
+- type: document
+  path: config.json
+  label: Site Info
+```
+
 ## Configuring Data File Sections
 
 When using the [Datafile Sections](/docs/editing/data-files/#datafile-sections) behavior, Forestry will include data files when collecting content in a sidebar section. The `directory` type can be used with the `match` and `new_doc_ext` options to create a section that allows to creation and management of data files similar to the behavior of markdown content.
