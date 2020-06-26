@@ -11,11 +11,15 @@ menu:
     weight: 4
 
 ---
+
+The sidebar is where *you* decide what content types and files you want to be able to edit in Forestry. Only admin and developers roles can access to the site sidebar settings, editors can't.
+
+If you import a site developed with Hugo or Jekyll, Forestry will add default sections based on those static site generators conventions. If you're using NextJS, Gatsby, NuxtJS or Gridsome or any other static site generator, you have to define your sections manually.
+
 You can point Forestry to any folder containing Markdown, JSON, YAML or TOML files. You can not edit any other type of file.
 You can also choose to point a section directly to a data file. You are free to define as many sections as you need. If you have many sections, you might prefer to define them all at once through the `.forestry/settings.yml` configuration file stored in your repository.
 
-You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file and/or through the user interface in your site settings in the `section`
- tab given you have admin rights.
+You can define which areas (folders) of your site contain editable content files via the `sections` parameter in your `.forestry/settings.yml` configuration file and/or through the user interface in your site settings in the `section` tab given you have admin rights.
  
 A content section in Forestry is primarily defined by the path to the folder containing content files, and a [glob](/docs/guides/misc/working-with-globs/) to match against the contents of that folder.
 
@@ -128,49 +132,53 @@ The `read_only` setting only applies to `document` sections. This will prevent t
 
 Jekyll site with pages, posts, and a custom collection:
 
-    sections:
+```yaml
+sections:
     
-    - type: document
-      label: Help
-      path: README.md
-      read_only: true
-    
-    - type: heading
-      label: Content
-    
-    - type: jekyll-pages
-      label: Pages
-    
-    - type: jekyll-posts
-      label: Posts
-    
-    - type: directory
-      path: _events
-      label: Events
-      templates:
-      - event
+- type: document
+  label: Help
+  path: README.md
+  read_only: true
+
+- type: heading
+  label: Content
+
+- type: jekyll-pages
+  label: Pages
+
+- type: jekyll-posts
+  label: Posts
+
+- type: directory
+  path: _events
+  label: Events
+  templates:
+  - event
+```
 
 Multilingual Hugo Blog:
 
-    sections:
-    
-    - type: heading
-      label: English
-    
-    - type: directory
-      path: "content/posts"
-      match: "**/*.en.md"
-      label: Posts
-      new_doc_ext: ".en.md"
-    
-    - type: heading
-      label: Français
-    
-    - type: directory
-      path: "content/posts"
-      match: "**/*.fr.md"
-      label: Posts
-      new_doc_ext: ".fr.md"
+```yaml
+sections:
+
+- type: heading
+  label: English
+
+- type: directory
+  path: "content/posts"
+  match: "**/*.en.md"
+  label: Posts
+  new_doc_ext: ".en.md"
+
+- type: heading
+  label: Français
+
+- type: directory
+  path: "content/posts"
+  match: "**/*.fr.md"
+  label: Posts
+  new_doc_ext: ".fr.md"
+```
 
 ## Configuring Data File Sections
 
@@ -180,7 +188,7 @@ When using the [Datafile Sections](/docs/editing/data-files/#datafile-sections) 
 
 Access an entire directory of data files:
 
-```
+```yaml
 sections:
 - type: directory
   label: Data
@@ -192,7 +200,7 @@ sections:
 
 Access a specific data file:
 
-```
+```yaml
 sections:
 - type: document
   label: Authors
