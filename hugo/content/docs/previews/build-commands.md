@@ -5,13 +5,13 @@ aliases:
 weight: "7"
 publishdate: 2018-09-19T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-date: 2019-08-07T04:00:00.000+00:00
+date: 2020-06-07T04:00:00.000+00:00
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 
 ---
-**Instant previews**  allow for you to spin up a development server in our preview environment which will drastically reduce preview times in most cases.
+**Instant previews**  allow for you to spin up a development server in our preview environment which will drastically reduce preview times.
 
 To help you get started, we provide [default commands](#default-commands). You can then tailor preview settings to your needs, if your website source lives in a subdirectory for example or if you use a different script to run your preview.
 
@@ -27,7 +27,7 @@ All sites are built in a Linux container and have access by default to the follo
 
 Hugo and Jekyll users relying on node modules for their asset pipeline can also use a preview environment embedding NodeJS.
 
-If your project has a `package.json` file, your `node_modules` will be installed automatically. **You should use NPM or Yarn scripts in your build commands**.
+If your project has a `package.json` file, your `node_modules` will be installed automatically. **You must use NPM or Yarn scripts in your build commands**.
 
 In the advanced settings, you can also provide any custom Docker image hosted on [https://hub.docker.com](https://hub.docker.com) if your project has specific dependencies.
 
@@ -65,6 +65,14 @@ You can add custom options, e.g.:
 | Variable | Description |
 | :--- | :--- |
 | GATSBY_HOT_LOADER | Enable [fast-refresh](https://github.com/gatsbyjs/gatsby/pull/21534)|
+
+{{% warning %}}
+
+Careful, those variables are stored as plain text in Forestry configuration file versioned in your repository. 
+Don't store any personal or sensitive information in there. We recommend using something like [`dotenv`](https://www.npmjs.com/package/dotenv) to store credentials and API Keys.
+
+{{% /warning %}}
+
 
 ### Customizing the Preview Command
 
