@@ -18,6 +18,10 @@ GitHub can handle building your Jekyll site without the need of Forestry or a CI
 ### Limitations
 When using GitHub to build your GitHub Pages site, you are restricted to using the [white-listed GitHub Pages Jekyll version and plugins](https://pages.github.com/versions/).
 
+{{% tip %}}
+To build your site with no limitations, and use any plugin, [use GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/).
+{{% /tip %}}
+
 ## Getting Started
 This requires the GitHub pages gem. Enable it by adding the following line to your `Gemfile`:
 
