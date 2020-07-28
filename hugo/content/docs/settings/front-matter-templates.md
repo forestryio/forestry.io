@@ -34,7 +34,7 @@ Front Matter Templates work by allowing developers to define which _Fields_ are 
 You can create content templates right from within the CMS, or through YAML in [Forestry config Files](/docs/settings/config-files).
 
 {{% warning %}}
-Editors don't have access to the templates user interface in Forestry, you need to be _developer_, _admin_ or _site owner_. See [roles](docs/settings/collaborators/#site-access-levels)
+Editors don't have access to the templates user interface in Forestry, you need to be _developer_, _admin_ or _site owner_. See [roles](/docs/settings/collaborators/#site-access-levels)
 {{% /warning %}}
 
 ## Creating a front matter template
@@ -131,7 +131,7 @@ Some field types will have additional **validation** options, and additional tab
 
 To access template-wide settings,  click the gear icon in the top right corner of the template editing screen.
 
-From here, you can change the name of the template, switch the layout, set the **Display Field**., or delete the template,  
+From here, you can change the name of the template, switch the layout, set the **Display Field**., or delete the template,
 
 ### Display Field
 

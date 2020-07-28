@@ -27,7 +27,7 @@ For more information on how to configure the sidebar for data files, view our [S
 
 ## Customizing Fields
 
-You can also apply [Front Matter Templates](/docs/settings/front-matter-templates/#applying-fmts-to-content) to your data files, allowing configuration of the fields that are displayed in the CMS. To do so, navigate to the Data File you want to customize:
+You can also apply [Front Matter Templates](/docs/settings/front-matter-templates/#apply-a-template-to-content) to your data files, allowing configuration of the fields that are displayed in the CMS. To do so, navigate to the Data File you want to customize:
 
 1. Click the settings button in the top right, next to the "Save" button
 2. Click "Change Template"
