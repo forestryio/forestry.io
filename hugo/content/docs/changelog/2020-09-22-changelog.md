@@ -3,16 +3,16 @@ authors:
 - team forestry
 date: 2020-06-12
 title: 2020/06/12 Changelog
-description: Hot module reloading 🔥 and zero-config instant previews.
+description: Hot Module Replacement 🔥 and zero-config instant previews.
 summary: >
-  Hot module reloading 🔥, zero-config [instant previews](/docs/instant-previews), new starters and archive unactive personal sites.
+  Hot module Replacement 🔥, zero-config [instant previews](/docs/instant-previews), new starters and archive unactive personal sites.
 
 ---
 Forestry CMS never felt so fast to use, while instant previews really deserve their naming.
 
 ## Enhancements
 
-* **Hot Module Reloading 🚀:** You can now decide if Instant Previews should do a full refresh or if you prefer to [rely on your static site generator Hot Module Reloading capability](https://forestry.io/docs/previews/instant-previews/#hot-module-reloading "How to opt in for HMR Previews in Forestry").
+* **Hot Module Replacement 🚀:** You can now decide if Instant Previews should do a full refresh or if you prefer to [rely on your static site generator Hot Module Replacement capability](https://forestry.io/docs/previews/instant-previews/#hot-module-replacement "How to opt in for HMR Previews in Forestry").
   For Gatsby, Gridsome, NuxtJS or NextJS sites it will also ensure [the preview stays on the currently edited page](https://www.loom.com/share/aaccc79de8b240d78c4f3739798f1708 "HMR Preview with a Gatsby Site on Forestry").
 * **Zero config instant previews ✨:** For static site generators using a default port other than `8080`, you don't need to pass any more options to your preview command: the default `develop` command should do. Forestry will do all the network binding behind the scene. People importing Gatsby themes from [Stackbit](https://app.stackbit.com/create?cms=forestry "Import a Stackbit theme to Forestry") can now use previews right away.
 * **New starters**: [Parsa](https://github.com/forestryio/hugo-parsa-forestry) (Hugo), [Minimal Mistakes](https://github.com/DirtyF/jekyll-minimal-mistakes-forestry) (Jekyll).

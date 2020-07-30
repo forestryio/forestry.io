@@ -106,13 +106,13 @@ Once your preview environment is running fine, your editors will be able to clic
 
 Preview still not running? See our [troubleshooting section](/docs/previews/troubleshooting-preview-issues/) to do some checks.
 
-### Hot Module Reloading
+### Hot Module Replacement
 
 If your static site generator supports HMR you can prevent to force a refresh on preview to take advantage of this capability.
 
 Opt-out of the "Reload Preview Tab" option and click save. You do not need to restart the preview server.
 
-![The reload preview option in Instant Preview settings](/uploads/2020/06/new-hmr-option.png "Opt-out to take advantage of Hot Module Reloading")
+![The reload preview option in Instant Preview settings](/uploads/2020/06/new-hmr-option.png "Opt-out to take advantage of Hot Module Replacement")
 
 ### Live Reloading
 
