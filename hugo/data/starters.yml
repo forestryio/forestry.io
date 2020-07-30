@@ -121,7 +121,7 @@ starters:
   author: Themefisher
   versions:
   - name: Hugo
-    repo: forestryio/parsa-hugo-forestry
+    repo: forestryio/hugo-parsa-forestry
     engine: hugo
     branch: ''
   textline: Blog
