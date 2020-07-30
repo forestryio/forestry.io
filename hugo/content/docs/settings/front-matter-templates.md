@@ -45,7 +45,7 @@ FMTs can be created from scratch, or can be created using the fields from an exi
 
 {{% pretty_screenshot img="/uploads/2019/04/create-fmt-from-page.png" %}}
 
-To create a front matter template from an an existing document, navigate to the dpcument you wish to use as the basis for your template. Next, click on the options menu "..." button in the toolbar, then click _Create Template_.
+To create a front matter template from an an existing document, navigate to the document you wish to use as the basis for your template. Next, click on the options menu "..." button in the toolbar, then click _Create Template_.
 
 {{% pretty_screenshot img="/uploads/2019/04/create-fmt-from-page-modal.png" %}}
 
