@@ -72,6 +72,7 @@ description: [String]
 hidden: [true|false]
 default: [Number]
 config:
+  required: [true|false]
   min: [Number]
   max: [Number]
   step: [Number]
