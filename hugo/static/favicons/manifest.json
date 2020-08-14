@@ -1,18 +1,20 @@
 {
     "name": "Forestry.io",
+    "short_name": "Forestry",
     "icons": [
         {
-            "src": "/img/favicon/android-chrome-192x192.png",
+            "src": "/favicons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/img/favicon/android-chrome-512x512.png",
+            "src": "/favicons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "theme_color": "#20c997",
     "background_color": "#ffffff",
+    "start_url": "https://forestry.io",
     "display": "standalone"
 }
