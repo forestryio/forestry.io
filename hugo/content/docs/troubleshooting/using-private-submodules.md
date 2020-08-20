@@ -1,11 +1,11 @@
 ---
-title: Using Private Submodules with Forestry
+title: Using Private Git Submodules with Forestry
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
-publishdate: 2019-02-04 12:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2019-02-04T12:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-date: 2019-05-02 00:00:00 +0000
+date: '2019-05-02T00:00:00.000+00:00'
 headline: ''
 description: ''
 textline: ''
@@ -24,7 +24,6 @@ menu:
     parent: Troubleshooting
 
 ---
-
 If your website uses submodules from private repos, you will need to configure your site to allow Forestry to access these submodules. For sites stored on **GitHub** or **GitLab**, our _quick setup_ flow will not grant the correct permissions. This flow adds a **deploy key** to your GitHub or GitLab repo, which only grants access to a _single repository and will not allow Forestry to install private submodules_.
 
 To use a site containing private submodules with Forestry, you will need to change the way Forestry authenticates with Github/GitLab.

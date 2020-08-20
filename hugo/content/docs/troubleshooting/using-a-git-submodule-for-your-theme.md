@@ -3,10 +3,10 @@ title: Using a Git Submodule for Your Theme
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2017-12-07T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-date: 2018-02-01 10:37:36 +0000
+date: '2018-02-01T10:37:36.000+00:00'
 headline: ''
 description: ''
 textline: ''
@@ -28,6 +28,9 @@ menu:
 ---
 If you have a repository for your Jekyll or Hugo project and you want use a different repository for your theme, you should set up your theme repo as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
+{{% tip "Hugo modules" %}} Hugo has also [its own module management system](https://gohugo.io/hugo-modules/), it's fast and offers more possibilities. Here's [a tutorial to get started with Hugo modules](https://dev.to/craftsmandigital/hugo-modules-for-dummies-42j9).  
+{{% /tip %}}
+
 To add a theme as a Git Submodule, run the following command from the root of your project:
 
     git submodule add https://github.com/spf13/hyde.git themes/hyde
@@ -40,9 +43,7 @@ Once you create the submodule, you'll notice a `.gitmodules` file in the root of
 
 If you need to make a change to this theme, the changes should be pushed to the original repository you created the submodule from. You can then update the submodule on your site with the following command:
 
-```
-git submodule update --remote
-```
+    git submodule update --remote
 
 This is also how you update a third-party theme that you have installed as a submodule.
 
