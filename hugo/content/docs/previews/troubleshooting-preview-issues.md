@@ -19,7 +19,7 @@ As Forestry moves to support more Static Site Generators and workflows, we need 
 If you're having problems previewing your site, this guide is for you! In general, preview problems can be broken down into two broad categories:
 
 * **Forestry can't _build_ your preview**: Something went wrong running your preview [build command](/docs/previews/build-commands/#default-commands), or while setting your site up on our preview hosting server.
-* **Forestry can't _find_ your prview**: The preview site was generated successfully, but our previewing webserver couldn't locate it.
+* **Forestry can't _find_ your preview**: The preview site was generated successfully, but our previewing webserver couldn't locate it.
 
 If you're attempting to preview your site and you encounter an error like _failed to build preview_, _error generating preview_, or _failed to create preview_, there was a problem building your preview.
 
