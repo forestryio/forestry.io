@@ -5,14 +5,14 @@
 {{- $currentSectionMenu := index $.Site.Menus $currentSection -}}
 {{- $menu := cond (not (eq $currentSectionMenu "nil")) $currentSectionMenu $sectionMenu -}}
 {{- with $menu -}}
-<nav class="pagination"> 
+<nav class="pagination">
 {{- range . -}}
     {{- range $i, $item := .Children -}}
         {{- $last := $.Scratch.Get "last" -}}
-        {{- if eq .URL $currentPage.URL -}}
+        {{- if eq .URL $currentPage.Permalink -}}
             {{- $.Scratch.Set "prev" ($.Scratch.Get "last") -}}
             {{- $.Scratch.Set "isNext" true -}}
-        {{- else if eq $currentPage.URL $last.URL -}}
+        {{- else if eq $currentPage.Permalink $last.URL -}}
             {{ $.Scratch.Set "next" $item -}}
         {{- end -}}
         {{- $.Scratch.Set "last" $item -}}
