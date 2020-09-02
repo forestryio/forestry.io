@@ -135,6 +135,15 @@ starters:
     engine: other
     branch: ''
   textline: Documentation
+- name: Ananke
+  preview: https://gohugo-ananke-theme-demo.netlify.app/
+  author: The New Dynamic
+  image: img/starters/ananke.jpg
+  versions:
+  - name: Hugo
+    repo: forestryio/hugo-ananke-forestry
+    engine: hugo
+    branch: ''
 - name: Minimal Mistakes
   textline: Site
   preview: https://jekyll-minimal-mistakes-forestry.now.sh/
