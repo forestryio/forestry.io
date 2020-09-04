@@ -3,6 +3,7 @@
         <a href="{{ .starter.preview }}" target="_blank" class="starter-card--preview-link">{{ partial "svg" (dict "id" "eye" "class" "preview-link--icon" "width" "24" "height" "24") }}
             Preview</a>
         <img
+            loading="lazy"
             src="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_280,h_210,c_fill,f_auto,q_40,e_blur:200/{{ .ctx.Site.BaseURL }}/{{ .starter.image }}"
             data-src="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_auto/{{ .ctx.Site.BaseURL }}/{{ .starter.image }}"
             data-srcset="{{ .ctx.Site.Params.cloudinary.baseurl }}/w_400,h_300,c_fill,f_auto/{{ .ctx.Site.BaseURL }}/{{ .starter.image }} 1x,

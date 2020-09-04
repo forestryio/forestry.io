@@ -3,6 +3,7 @@ import contentLoaded from "content-loaded"
 import EQCSS from "eqcss"
 import HeadingLinks from "./imports/headingLinks"
 import LazySizes from "lazysizes"
+import "lazysizes/plugins/native-loading/ls.native-loading"
 import LightBox from "./imports/lightbox"
 import Nav from "./imports/nav"
 import Search from "./imports/algoliaSearch/instantSearch"
@@ -12,6 +13,13 @@ import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
 import ASBGenerator from "./imports/asbButtonGenerator"
 import {setCodeTabs, initCodeTabs} from "./imports/code-tabs"
+
+LazySizes.cfg.nativeLoading = {
+  setLoadingAttribute: true,
+  disableListeners: {
+    scroll: true
+  },
+}
 
 window.setCodeTabs = setCodeTabs
 /**
@@ -47,7 +55,6 @@ contentLoaded().then(() => {
         "docs"
       )
     } else if (isBlog) {
-      console.log(isBlog)
       new Search(
         process.env.ALGOLIA_APP_ID,
         process.env.ALGOLIA_SEARCH_KEY,
