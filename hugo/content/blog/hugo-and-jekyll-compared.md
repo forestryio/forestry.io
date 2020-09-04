@@ -39,7 +39,7 @@ Started by GitHub’s founder Tom Preston-Werner, Jekyll is the root cause of th
 
 Started in 2008, Jekyll is touted as “a simple, blog-aware, static site generator.”
 
-It’s one of the most popular SSG (static site generator) in the space right now with over 40k stars on GitHub, largely due to its simplicity and its tight integration with GitHub pages.
+It’s one of the most popular SSG (static site generator) in the space right now with over 41k stars on GitHub, largely due to its simplicity and its tight integration with GitHub pages.
 
 The value Jekyll offers is that it allows you to take the static HTML from any existing website and quickly turn it into a working static site with its simple templating library.
 
@@ -50,7 +50,7 @@ The value Jekyll offers is that it allows you to take the static HTML from any e
 Explore Jekyll and the Forestry CMS with our Jekyll Starter Template.
 
 <a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
-<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry.io Account</a>
+<a href="https://app.forestry.io/signup" class="button small primary">Get started with Forestry.io</a>
 {{% /tip %}}
 
 ### Set up
@@ -193,13 +193,13 @@ Check out our [Developing with Jekyll guide](/docs/guides/developing-with-jekyll
 
 ## Hugo
 
-Hugo is a static site generator written in Go. Hugo is created by Steve Francia and Bjørn Erik Pedersen. The development is currently lead by the Norwegian.
+Hugo is a static site generator written in Go. Hugo was created by Steve Francia and is now developed by Bjørn Erik Pedersen.
 
-Started in 2013, Hugo has quickly grown to become one of the most popular SSG with over 44k stars on GitHub.
+Started in 2013, Hugo has quickly grown to become one of the most popular SSG with over 46k stars on GitHub.
 
-Hugo has a clear advantage over other SSGs: it's **fast.**
+Hugo has a clear advantage over other SSGs: it's **blazing fast.**
 
-It also has one of the most (if not _the_ most) thriving communities for an SSG.
+It also has one of the most thriving communities for an SSG.
 
 {{% tip %}}
 
@@ -208,7 +208,7 @@ It also has one of the most (if not _the_ most) thriving communities for an SSG.
 Explore Hugo and the Forestry CMS with one or our Hugo Starters.
 
 <a href="/docs/quickstart/tour/" class="button small secondary">Getting Started Guide</a>
-<a href="https://app.forestry.io/signup" class="button small primary">Create Your Forestry.io Account</a>
+<a href="https://app.forestry.io/signup" class="button small primary">Get started on Forestry.io</a>
 {{% /tip %}}
 
 ### Set up
@@ -295,12 +295,15 @@ For example, with Hugo’s custom output formats feature, you can generate your 
 Here’s a summary of some of Hugo’s best features:
 
 * Menus
+* Multilingual/il8n
+* Custom Output Formats
+* Themes componants via Hugo modules
+* Image resizing
 * XML Sitemap Generation
 * RSS/Atom Feed Generation
 * Analytics (via Google Analytics)
 * Comments (via Disqus)
-* Multilingual/il8n
-* Custom Output Formats
+
 
 {{% tip %}}
 
