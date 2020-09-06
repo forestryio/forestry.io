@@ -21,13 +21,13 @@
 
     {{/* Generate the img src */}}
     {{- $src := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
-    
+
     {{/* Generate the img placeholder */}}
     {{- $quality := index ($page.Scratch.Get "url") "quality" -}}
     {{- $page.Scratch.SetInMap "url" "quality" "10" -}}
     {{- $placeholder := partial "cloudinary/url.html" ($page.Scratch.Get "url") -}}
     {{- $page.Scratch.SetInMap "url" "quality" $quality -}}
-    
+
     {{/* Generate srcset */}}
     {{- $min_width := (int .min_width) | default (int $preset.min_width) -}}
     {{- $max_width := (int .max_width) | default (int $preset.max_width) -}}
@@ -71,5 +71,5 @@
   {{- $placeholder := trim (.pg.Site.Params.cloudinary.lazysizes.placeholder | default .placeholder) " " | safeURL | safeHTMLAttr -}}
   {{- $title := trim (.title | default $src) " " | safeHTMLAttr -}}
   {{/* Output image */}}
-  <img{{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }}{{ if $.useLazySizes }} data-sizes{{ else }} sizes{{ end }}="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.useLazySizes }} class="lazyload {{ .class }}"{{ else }} class="{{ .class }}"{{ end }} />
+  <img loading="lazy" {{ if $.useLazySizes }} src="{{ $placeholder }}"{{ end }}{{ if $.useLazySizes }} data-src{{ else }} src{{ end }}="{{ $src }}"{{ if $srcset }}{{ if $.useLazySizes }} {{ printf "data-srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ else }} {{ printf "srcset=\"%s\"" $srcset | safeHTMLAttr }}{{ end }}{{ end }}{{ with .sizes }}{{ if $.useLazySizes }} data-sizes{{ else }} sizes{{ end }}="{{ . }}"{{ end }} alt="{{ trim (.alt | default $src) " "}}" title="{{ $title }}"{{ if $.useLazySizes }} class="lazyload {{ .class }}"{{ else }} class="{{ .class }}"{{ end }} />
 {{- end -}}
