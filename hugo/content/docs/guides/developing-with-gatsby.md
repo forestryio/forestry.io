@@ -97,10 +97,7 @@ If you're not using the Forestry starter, be sure to review the following docume
 The following are some acknowledged bugs or practical limitations of using Gatsby with Forestry:
 
 ### Forestry doesn't like relative image URLs; Gatsby Prefers Them
-Depending on how you're querying images from your Gatsby site, you may have issues with Forestry. If you want to do any transformations on your images, Gatsby will want you to use the **file path** to your image instead of a URL. This is typically accomplished by inserting a **relative path** to the image in markdown files. Unfortunately, keeping track of your relative position in the file system and inserting an accurate relative path is tricky for any CMS, and Forestry won't do it. Additionally, Gatsby interprets absolute files paths **relative to the system root** and not the project root, so a solution based on absolute paths will not work across different environments.
-
+Depending on how you're querying images from your Gatsby site, you may have issues with Forestry. If you want to do any transformations on your images, Gatsby will want you to use the **file path** to your image instead of a URL. This is typically accomplished by inserting a **relative path** to the image in markdown files.
 Here are some options for getting around this:
 
-- Store and reference images from the `static/` directory (this is the solution currently used by our [blog starter](https://github.com/kendallstrautman/brevifolia-gatsby-forestry/blob/master/.forestry/settings.yml#L28)). This will not allow you to transform images via GraphQL queries.
-- Use [gatsby-remark-relative-images](https://github.com/danielmahon/gatsby-remark-relative-images#readme)
 - Use [gatsby-remark-normalize-paths](https://www.gatsbyjs.org/packages/gatsby-remark-normalize-paths/) to convert project-relative absolute paths to relative paths.
