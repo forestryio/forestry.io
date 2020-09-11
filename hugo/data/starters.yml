@@ -1,5 +1,15 @@
 ---
 starters:
+- name: Twenty-Twenty
+  preview: https://hugo-twenty-twenty-forestry.vercel.app
+  image: img/starters/twenty-twenty.png
+  author: WordPress.org
+  versions:
+  - name: Hugo
+    repo: DirtyF/hugo-twenty-twenty-forestry
+    engine: hugo
+    branch: ''
+  textline: Blog
 - name: Novela
   preview: https://hugo-novela-forestry.netlify.com
   image: img/starters/novela.png
