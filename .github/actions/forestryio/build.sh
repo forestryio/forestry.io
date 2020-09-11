@@ -1,0 +1,1 @@
+git clone https://github.com/forestryio/forestry.io.git && cd forestry.io && npm install && npm run build && tar -zcvf dist.tar.gz ./dist && htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --allow-hash-href --file_ignore=./dist/admin/index.html,./dist/404.html

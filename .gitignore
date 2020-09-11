@@ -12,6 +12,7 @@ public/
 hugo/public/
 dist/
 .tmp/
+dist.tar.gz
 
 # Don't add files that are created in the build process
 hugo/static/css/styles.css.map
