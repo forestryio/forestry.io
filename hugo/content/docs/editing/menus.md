@@ -3,9 +3,9 @@ aliases:
 - "/docs/managing-content/menus/"
 title: Menus
 weight: 7
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2020-09-11 09:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2020-09-11T09:00:00.000+00:00'
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -15,12 +15,9 @@ menu:
     weight: 5
 
 ---
-
-{{% warning "Known limitations" %}}
-Menus are only supported with Hugo and Jekyll and don't support linking to Hugo page bundles at the moment.
-Menus section won't be displayed if you're using another SSG like Gatsby, Gridsome, Eleventy, VuePress, etc.
-Use [data files](/docs/editing/data-files/) to managee any type of data stored in JSON, YAML or TOML files.
-{{% /warning %}}
+{{% warning "Known limitations" %}} Menus are only supported with Hugo and Jekyll and don't support linking to Hugo page bundles.   
+The Menus section won't be displayed if you're using another generator.   
+Tip: use [data files](/docs/editing/data-files/) to manage any type of data stored in JSON, YAML, or TOML. {{% /warning %}}
 
 Menus allow content editors to easily manage existing menus in your site, such as site navigation and sidebars using a simple drag-and-drop interface.
 
@@ -46,7 +43,7 @@ Menu entries linking to existing content on your site will be added to the front
 
 Menu entries with external links will be added to your menus data file located at `/data/menus.yml`.
 
-**NB. The Jekyll Menus plugin is not currently compatible with GitHub Pages as it is [not a listed dependency](https://pages.github.com/versions/).**
+**NB. The Jekyll Menus plugin is not currently compatible with GitHub Pages as it is** [**not a listed dependency**](https://pages.github.com/versions/)**.**
 
 ## Managing Menus
 
