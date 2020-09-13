@@ -5,7 +5,7 @@ title: Menus
 weight: 7
 publishdate: 2017-12-31 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2020-06-11 04:00:00 +0000
+date: 2020-09-11 09:00:00 +0000
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
@@ -19,6 +19,7 @@ menu:
 {{% warning "Known limitations" %}}
 Menus are only supported with Hugo and Jekyll and don't support linking to Hugo page bundles at the moment.
 Menus section won't be displayed if you're using another SSG like Gatsby, Gridsome, Eleventy, VuePress, etc.
+Use [data files](/docs/editing/data-files/) to managee any type of data stored in JSON, YAML or TOML files.
 {{% /warning %}}
 
 Menus allow content editors to easily manage existing menus in your site, such as site navigation and sidebars using a simple drag-and-drop interface.
