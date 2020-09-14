@@ -69,7 +69,7 @@ jobs:
             done
 
       - name: Invalidate Cache
-        # if: github.ref == 'refs/heads/master's
+        # if: github.ref == 'refs/heads/master'
         env:
             AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
