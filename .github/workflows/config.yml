@@ -20,15 +20,15 @@ jobs:
         run: npm install
 
       - name: Run build in master
-        if: github.ref == 'refs/heads/master'
+        # if: github.ref == 'refs/heads/master'
         run: |
           npm run preDeploy
           tar -zcvf dist.tar.gz ./dist
 
-      - name: Run build
-        run: |
-          npm run build
-          tar -zcvf dist.tar.gz ./dist
+      # - name: Run build
+      #   run: |
+      #     npm run build
+      #     tar -zcvf dist.tar.gz ./dist
 
       - name: Test html
         run: |
@@ -68,7 +68,14 @@ jobs:
               aws s3 cp s3://${{ secrets.AWS_S3_BUCKET }}${from} s3://${{ secrets.AWS_S3_BUCKET }}${from} --website-redirect ${to} --metadata-directive REPLACE
             done
 
-
+      - name: Invalidate Cache
+        # if: github.ref == 'refs/heads/master's
+        env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION: us-east-2
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          
       # - name: Login to AWS ECR
       #   env:
       #     AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
