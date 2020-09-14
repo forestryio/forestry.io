@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/forestryio/forestry.io.svg?style=svg)](https://circleci.com/gh/forestryio/forestry.io)
+![Build forestry.io](https://github.com/forestryio/forestry.io/workflows/Build%20forestry.io/badge.svg)
 
 # Forestry Website
 This site wraps [Hugo](gohugo.io) with [Gulp](https://gulpjs.com/) as your asset pipeline.
