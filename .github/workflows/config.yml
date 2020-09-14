@@ -1,0 +1,81 @@
+name: Build forestry.io
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: node-dependencies-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install node dependencies
+        run: npm install
+
+      - name: Run build in master
+        if: github.ref == 'refs/heads/master'
+        env:
+            ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+            ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+            ALGOLIA_SEARCH_KEY: ${{ secrets.ALGOLIA_SEARCH_KEY }}
+        run: |
+          npm run preDeploy
+          tar -zcvf dist.tar.gz ./dist
+
+      - name: Run build
+        run: |
+          npm run build
+          tar -zcvf dist.tar.gz ./dist
+
+      - name: Test html
+        run: |
+          sudo gem install html-proofer
+          htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --allow-hash-href --file_ignore=./dist/admin/index.html,./dist/404
+
+      - name: "Deploy website to AWS S3"
+        if: github.ref == 'refs/heads/master'
+        env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION: us-east-2
+        run: aws s3 sync ./dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
+
+      - name: Update redirects
+        env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION: us-east-2
+        run: |
+            path_join() {
+                part1=$1
+                part2=$2
+                if [ "${part1: -1}" == "/" ]; then
+                    part1=${part1}${part2}
+                else
+                    part1=${part1}/${part2}
+                fi
+                echo $part1
+                }
+            for redirect in $(cat ./dist/redirects.json | jq -c '.[]'); do
+              from=$(echo $redirect | jq '. | .Condition.KeyPrefixEquals' | cut -d "\"" -f 2)
+              to=$(echo $redirect | jq '. | .Redirect.ReplaceKeyPrefixWith' | cut -d "\"" -f 2)
+
+              from=$(path_join $from "index.html")
+
+              aws s3 cp s3://${{ secrets.AWS_S3_BUCKET }}${from} s3://${{ secrets.AWS_S3_BUCKET }}${from} --website-redirect ${to} --metadata-directive REPLACE
+            done
+
+      - name: Invalidate Cache
+        if: github.ref == 'refs/heads/master'
+        env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION: us-east-2
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
