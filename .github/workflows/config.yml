@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Run build in master
-        # if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master'
         env:
             ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
             ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
@@ -29,10 +29,10 @@ jobs:
           npm run preDeploy
           tar -zcvf dist.tar.gz ./dist
 
-      # - name: Run build
-      #   run: |
-      #     npm run build
-      #     tar -zcvf dist.tar.gz ./dist
+      - name: Run build
+        run: |
+          npm run build
+          tar -zcvf dist.tar.gz ./dist
 
       - name: Test html
         run: |
@@ -40,7 +40,7 @@ jobs:
           htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --allow-hash-href --file_ignore=./dist/admin/index.html,./dist/404
 
       - name: "Deploy website to AWS S3"
-        # if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master'
         env:
             AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
@@ -73,26 +73,9 @@ jobs:
             done
 
       - name: Invalidate Cache
-        # if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master'
         env:
             AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
             AWS_DEFAULT_REGION: us-east-2
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
-          
-      # - name: Login to AWS ECR
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
-      #     AWS_DEFAULT_REGION: us-east-2
-      #   run: |
-      #     export ECR_PASS=$(aws ecr get-login-password)
-      #     echo $ECR_PASS | docker login -u AWS 973488992509.dkr.ecr.us-east-2.amazonaws.com --password-stdin
-      #     docker pull 973488992509.dkr.ecr.us-east-2.amazonaws.com/forestryio/build-images:forestry-io
-
-      # - name: Run the docker image
-      #   run: |
-      #     docker run --detach 973488992509.dkr.ecr.us-east-2.amazonaws.com/forestryio/build-images:forestry-io
-
-      # - name: Forestry io build
-      #   uses: ./.github/actions/forestryio
