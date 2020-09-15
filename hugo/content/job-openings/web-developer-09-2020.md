@@ -22,7 +22,7 @@ menu: []
 draft: false
 
 ---
-We’re looking for a technical, customer-facing Web Developer to interface between our customers and our product teams. This key role will support the adoption of Forestry products (Tina CMS & Forestry CMS) in new organizations and help our product team understand the needs of our customers.
+We’re looking for a technical, customer-facing Web Developer to work on our customer team, interfacing between our customers and our product teams. This key role will support the adoption of Forestry products (Tina CMS & Forestry CMS) in new organizations and help our product team understand the needs of our customers.
 
 As the second hire of its kind at Forestry, there will be a lot of opportunities for impact and growth. We want to help our clients implement high-quality, successful JAMstack solutions, and this role will be front and center in that effort.
 <!--more-->
@@ -41,8 +41,8 @@ As the second hire of its kind at Forestry, there will be a lot of opportunities
 ### Who you are
 
 * You have familiarity with JAMstack technologies and CMSs.
-* You have 2+ years of hands-on experience building with modern JavaScript tools and practices (ES6+, bundlers, React/Vue).
-* You've spent at least 4 years (combined) in a sales engineering, development, or technical consulting role.
+* You have 2+ years of hands-on experience building with modern JavaScript tools and practices (ES6+, bundlers, typescript, React/Vue/Angular).
+* You've spent at least 4 years (combined) in a sales engineering, development, or technical consulting role. Equivalent experience will be accepted on a case-by-case basis.
 * You love to learn about new technology and you’re curious about how things work under the hood.
 * You enjoy teaching and coaching others on technical solutions.
 * You’ve effectively communicated with highly technical customers before.
