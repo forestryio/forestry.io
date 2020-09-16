@@ -62,13 +62,12 @@ export default function(env) {
       new webpack.optimize.UglifyJsPlugin({
         sourceMap: true
       }),
-      new webpack.EnvironmentPlugin({
+      new webpack.DefinePlugin({
         // Provide enviroment variable defaults
         // from .env.js
-        ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
-        ALGOLIA_SEARCH_KEY: process.env.ALGOLIA_SEARCH_KEY
+        ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
+        ALGOLIA_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_SEARCH_KEY)
       })
     ]
   }
 }
-
