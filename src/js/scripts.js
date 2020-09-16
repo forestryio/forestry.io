@@ -42,25 +42,17 @@ contentLoaded().then(() => {
    * Enable search
    */
   try {
-    if (isHome) {
-      new Search(
-        process.env.ALGOLIA_APP_ID,
-        process.env.ALGOLIA_SEARCH_KEY,
-        "dist"
-      )
-    } else if (isDocs) {
-      new Search(
-        process.env.ALGOLIA_APP_ID,
-        process.env.ALGOLIA_SEARCH_KEY,
-        "docs"
-      )
-    } else if (isBlog) {
-      new Search(
-        process.env.ALGOLIA_APP_ID,
-        process.env.ALGOLIA_SEARCH_KEY,
-        "blog"
-      )
-    }
+
+    let searchIndex = "dist"
+
+    if (isDocs) searchIndex = "docs"
+    else if (isBlog) searchIndex = "blog"
+
+    new Search(
+      ALGOLIA_APP_ID,
+      ALGOLIA_SEARCH_KEY,
+      searchIndex
+    )
   } catch (err) {
     console.warn(err)
   }
