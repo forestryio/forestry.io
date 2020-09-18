@@ -135,6 +135,16 @@ starters:
     engine: hugo
     branch: ''
   textline: Blog
+- name: Mundana
+  textline: Blog
+  preview: https://forestryio.github.io/jekyll-mundana-forestry/
+  image: img/starters/mundana.jpg
+  author: Wowthemes
+  versions:
+  - name: Jekyll
+    repo: forestryio/jekyll-mundana-forestry
+    branch: ''
+    engine: jekyll
 - name: Jamdocs
   preview: https://jamdocs.netlify.com
   image: img/starters/jamdocs.png
