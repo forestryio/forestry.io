@@ -155,6 +155,16 @@ starters:
     engine: other
     branch: ''
   textline: Documentation
+- name: Northendlab
+  preview:
+  image: img/starters/northendlab.png
+  author: Themefisher
+  versions:
+  - name: Hugo
+    repo: forestryio/hugo-northendlab-forestry
+    engine: hugo
+    branch: ''
+  textline: Blog
 - name: Ananke
   preview: https://gohugo-ananke-theme-demo.netlify.app/
   author: The New Dynamic
