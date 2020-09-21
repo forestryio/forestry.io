@@ -39,7 +39,7 @@ plans:
   description: Include your first 10 users, then $49 per additional user
   planIncludes: Everything in Starter plus
   buttonText: Contact us
-  buttonUrl: https://app.hubspot.com/meetings/dan67/forestry-cms
+  buttonUrl: "/support/"
   planItems:
   - text: Unlimited sites
   - text: Custom subdomain
@@ -61,7 +61,7 @@ plans:
   description: ''
   planIncludes: Everything in Pro plus
   buttonText: Contact us
-  buttonUrl: https://app.hubspot.com/meetings/dan67/forestry-cms
+  buttonUrl: "/support/"
   planItems:
   - text: On-premise available
     info: Run Forestry behind your firewall (optional)
