@@ -12,7 +12,7 @@ expirydate: 2030-01-01 04:00:00 +0000
 headline: ''
 textline: ''
 images:
-- "/uploads/2018/06/theme-2"
+- "/uploads/2018/06/theme-2.png"
 categories:
 - Jekyll
 - Hugo

@@ -184,6 +184,20 @@ starters:
     repo: forestryio/hugo-ananke-forestry
     engine: hugo
     branch: ''
+- name: uBuild
+  textline: Single Page
+  preview: https://forestryio.github.io/ubuild-jekyll/
+  image: img/starters/ubuild.png
+  author: Forestry
+  versions:
+  - name: Jekyll
+    repo: forestryio/ubuild-jekyll
+    branch: ''
+    engine: jekyll
+  - name: Hugo
+    repo: forestryio/ubuild-hugo-starter
+    branch: ''
+    engine: hugo
 - name: Minimal Mistakes
   textline: Site
   preview: https://jekyll-minimal-mistakes-forestry.now.sh/
