@@ -1,7 +1,7 @@
 ---
 title: Snippets
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors: []
 publishdate: 2018-07-20T03:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00

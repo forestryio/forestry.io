@@ -7,7 +7,7 @@ layout: single
 weight: "2"
 date: 2017-03-23T04:00:00.000+00:00
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 menu:
   docs:
     parent: Quick Start

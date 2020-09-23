@@ -1,7 +1,7 @@
 ---
 title: Could not locate Gemfile or .bundle/ directory
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors:
 - Forestry Team
 publishdate: 2017-12-07 04:00:00 +0000

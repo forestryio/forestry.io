@@ -8,7 +8,7 @@ expirydate: 2030-01-01T04:00:00.000+00:00
 date: 2019-05-29T04:00:00-03:00
 layout: single
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 menu:
   docs:
     parent: Editing

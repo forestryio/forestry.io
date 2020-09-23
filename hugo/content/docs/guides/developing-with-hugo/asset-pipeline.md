@@ -6,7 +6,7 @@ description: ''
 tags: ''
 title: Asset Pipeline
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 weight: 5
 menu:
   guides:

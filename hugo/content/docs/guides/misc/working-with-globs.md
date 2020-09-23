@@ -2,7 +2,7 @@
 title: Working with Globs
 date: 2018-11-13 00:00:00 +0000
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 weight: 5
 menu:
   guides:

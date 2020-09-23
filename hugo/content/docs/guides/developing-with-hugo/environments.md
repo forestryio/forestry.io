@@ -5,7 +5,7 @@ date: 2017-07-24 20:03:09 +0000
 description: ''
 title: Environments
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 weight: 6
 menu:
   guides:

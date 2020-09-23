@@ -1,7 +1,7 @@
 ---
 title: Key-Based Authentication
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors:
 - team forestry
 publishdate: 2017-12-07 04:00:00 +0000

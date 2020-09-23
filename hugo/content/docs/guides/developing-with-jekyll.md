@@ -7,7 +7,7 @@ description: ''
 tags: ''
 title: Introduction
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 weight: 1
 menu:
   docs:

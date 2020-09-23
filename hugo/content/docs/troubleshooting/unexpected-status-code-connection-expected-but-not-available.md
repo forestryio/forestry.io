@@ -1,7 +1,7 @@
 ---
 title: Unexpected Status Code / Connection Expected but not Available
 images:
-- "/uploads/2018/01/OGimage-01-docs-3x.jpg"
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors: []
 publishdate: 2018-06-28 08:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
