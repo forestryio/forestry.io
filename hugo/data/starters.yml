@@ -11,7 +11,7 @@ starters:
     branch: ''
   textline: Blog
 - name: Novela
-  preview: https://hugo-novela-forestry.netlify.com
+  preview: https://hugo-novela-forestry.netlify.app
   image: img/starters/novela.png
   author: Narative
   versions:
@@ -21,7 +21,7 @@ starters:
     branch: ''
   textline: Blog
 - name: Unstad
-  preview: https://gridsome-forestry.netlify.com
+  preview: https://gridsome-forestry.netlify.app
   image: img/starters/unstad.png
   author: Nichlas W. Andersen
   versions:
@@ -32,7 +32,7 @@ starters:
   textline: Portfolio
 - name: Brevifolia
   textline: Blog
-  preview: https://brevifolia-gridsome-forestry.netlify.com/
+  preview: https://brevifolia-gridsome-forestry.netlify.app
   image: img/starters/brevifolia.jpg
   author: Kendall Strautman
   versions:
@@ -78,7 +78,7 @@ starters:
 - name: Jæren
   textline: Portfolio
   image: img/starters/joeren.jpg
-  preview: https://vuepress-portfolio.netlify.com
+  preview: https://vuepress-portfolio.netlify.app
   author: Nichlas W. Andersen
   versions:
   - name: VuePress
@@ -87,7 +87,7 @@ starters:
     engine: vuepress
 - name: Hylia
   textline: Blog
-  preview: https://hylia-forestry.netlify.com
+  preview: https://hylia-forestry.netlify.app
   image: img/starters/hylia.png
   author: Andy Bell
   versions:
@@ -107,7 +107,7 @@ starters:
   textline: Blog
 - name: Darkfolio
   textline: Portfolio
-  preview: https://darkfolio.netlify.com
+  preview: https://darkfolio.netlify.app
   image: img/starters/darkfolio.jpg
   author: Nichlas W. Andersen
   versions:
@@ -146,7 +146,7 @@ starters:
     branch: ''
     engine: jekyll
 - name: Jamdocs
-  preview: https://jamdocs.netlify.com
+  preview: https://jamdocs.netlify.app
   image: img/starters/jamdocs.png
   author: Samuel Horn
   versions:
@@ -176,7 +176,7 @@ starters:
     branch: ''
     engine: jekyll
 - name: Ananke
-  preview: https://gohugo-ananke-theme-demo.netlify.app/
+  preview: https://gohugo-ananke-theme-demo.netlify.app
   author: The New Dynamic
   image: img/starters/ananke.jpg
   versions:
