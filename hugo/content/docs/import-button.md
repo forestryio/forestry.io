@@ -3,7 +3,7 @@ title: Import Button
 weight: 99
 publishdate: 2018-10-02 04:00:00 +0000
 expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-10-02 04:00:00 +0000
+date: 2019-10-02 04:00:00 +0000
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
@@ -14,7 +14,7 @@ menu:
 ---
 The import button lets users create their own copy of your project and import it into Forestry in one fell swoop.
 
-If you have a static site project &mdash; like a theme or starter site &mdash; that is optimized for use with Forestry and you want to share it, adding an import button to your readme or website will make it easy for users to get started using your project with Forestry.
+If you have a static site project &mdash; like a theme or [starter](/starters) site &mdash; that is optimized for use with Forestry and you want to share it, adding an import button to your README or website will make it easy for users to get started using your project with Forestry.
 
 ## The Add Site URL
 
@@ -24,7 +24,7 @@ Your import button will use our *quick start* flow to clone the project into the
 | --- | --- | --- | --- |
 | `repo` | Path to repository, of the format `$group/$project` | String | None |
 | `provider` | Which git provider your repository is hosted from | `github`, `gitlab`, or `bitbucket` | `github` |
-| `engine` | The static site generator used by your project. | `hugo`, `jekyll`, or `vuepress` | None |
+| `engine` | The static site generator used by your project. | `hugo`, `jekyll`, `vuepress` or `other` | None |
 | `version` | The Hugo version to use (only applies when engine is `hugo`) | Decimal | Latest |
 | `branch` | The repository branch to import | String | `master` |
 | `config` | Relative path to your source files | String | `/` |
