@@ -62,7 +62,7 @@ Anthony’s example kept the English content at the top level of the project, bu
 
 The key to this strategy lies in the use of front matter. We are using the `lang` key to identify the language that this post is in, and another key called `lang-ref`. `lang-ref` will store a string that uniquely identifies this post. When we create a translation of a post, we should use the same value for `lang-ref` so that we can link both translations together. The `lang-ref` value will identify the two translations as having the same content.
 
-_en/_posts/2018-08-03-welcome-to-my-blog.md_
+Inside the file `en/_posts/2018-08-03-welcome-to-my-blog.md`, put
 
     ---
     layout: post
@@ -73,7 +73,7 @@ _en/_posts/2018-08-03-welcome-to-my-blog.md_
     
     Welcome to my blog!
 
-_es/_posts/2018-08-03-bienvenido-a-mi-blog.md_
+Inside the file `es/_posts/2018-08-03-bienvenido-a-mi-blog.md`, put
 
     ---
     title: ¡Bienvenido a mi blog!
