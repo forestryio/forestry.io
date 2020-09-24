@@ -98,7 +98,7 @@ To display alternate translation options for each post, I created a file at `_in
             <em>Read this page in a different language:</em>
             <ul>
             {% for post in posts %}
-            <li><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{post.lang}}">{{ post.lang }}</a></li>
+            <li><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">{{ post.lang }}</a></li>
             {% endfor %}
             </ul>
         </footer>
