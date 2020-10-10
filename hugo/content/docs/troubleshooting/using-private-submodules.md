@@ -29,7 +29,7 @@ If your website uses submodules from private repos, you will need to configure y
 To use a site containing private submodules with Forestry, you will need to change the way Forestry authenticates with Github/GitLab.
 
 1. Remove Forestry.io **deploy key** from the repository settings, e.g. (`https://github.com/$username/$repository/settings/keys`)
-2. In your Forestry site, head to **Settings** > **Repository**, show andcopy the public key
+2. In your Forestry site, head to **Settings** > **Repository**, show and copy the public key
 3. Add your site's public key as a **user-level** key ([GitHub](https://github.com/settings/keys)/[GitLab](https://gitlab.com/profile/keys)). _This user must have access to these private submodules_.
 
 {{% warning %}}
