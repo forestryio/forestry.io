@@ -1,6 +1,6 @@
 ---
 title: "Autopilot"
-description: "Autopilot is built with Hugo and edited in Forestry"
+description: "Autopilot website is built with Hugo and edited in Forestry"
 date: "2020-04-22T12:27:10+02:00"
 featured: false
 images:

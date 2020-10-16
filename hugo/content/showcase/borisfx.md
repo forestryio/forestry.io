@@ -1,6 +1,6 @@
 ---
 title: Boris FX
-description: "BorisFX.com is built with Hugo and Forestry."
+description: "BorisFX.com website is built with Hugo and Forestry."
 featured: false
 images:
 - "/uploads/showcase/borisfx.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Sketch"
-description: "Sketch is built with Jekyll and Forestry."
+description: "Sketch.com is built with Jekyll and Forestry."
 featured: true
 date: "2020-01-10T08:40:55+01:00"
 images:

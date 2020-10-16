@@ -1,6 +1,6 @@
 ---
 title: "Lingvist"
-description: "Lingvist is built with Jekyll and edited in Forestry"
+description: "Lingvist website is built with Jekyll and edited in Forestry"
 date: "2018-05-14T16:29:57+02:00"
 featured: false
 images:

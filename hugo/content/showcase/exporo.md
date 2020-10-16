@@ -1,6 +1,6 @@
 ---
 title: "Exporo"
-description: "Exporo is built with Hugo and edited in Forestry"
+description: "Exporo website is built with Hugo and edited in Forestry"
 date: "2020-04-21T10:09:37+02:00"
 featured: false
 images:

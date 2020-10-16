@@ -1,6 +1,6 @@
 ---
 title: "Podigee"
-description: "Podigee is built with Hugo and edited in Forestry"
+description: "Podigee website is built with Hugo and edited in Forestry"
 date: "2020-04-08T16:45:10+02:00"
 featured: false
 images:

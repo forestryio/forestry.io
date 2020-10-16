@@ -1,6 +1,6 @@
 ---
 title: "Better Agency"
-description: "Better Agency is built with Hugo and Forestry"
+description: "Better Agency website is built with Hugo and Forestry"
 date: "2020-01-07T11:00:07+01:00"
 featured: false
 images:

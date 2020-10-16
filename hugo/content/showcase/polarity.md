@@ -6,5 +6,5 @@ featured: false
 images:
 - "/uploads/showcase/polarity.jpg"
 permalink: https://polarity.io
-weight: 5
+weight: 8
 ---

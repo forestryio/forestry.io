@@ -1,6 +1,6 @@
 ---
 title: "ICON Interactive"
-description: "ICON Interactive is built with Gridsome and Forestry"
+description: "ICON Interactive website is built with Gridsome and Forestry"
 date: "2020-01-08T15:00:07+01:00"
 featured: false
 images:

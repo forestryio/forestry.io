@@ -1,6 +1,6 @@
 ---
 title: "Especes en danger"
-description: "Especes en danger is built with Gatsby and edited in Forestry"
+description: "Especes en danger website is built with Gatsby and edited in Forestry"
 date: "2020-04-02T13:57:25+02:00"
 featured: false
 images:
