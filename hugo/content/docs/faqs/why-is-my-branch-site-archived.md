@@ -22,9 +22,9 @@ weight:
 aliases: []
 
 ---
-If you are using the **personal** plan and have some sites and branches that are **inactive for more than three months**, we will automatically archive those to save some resources on our servers.
+If you are using the **personal** plan and **didn't edit your site branch for more than three months**, we will automatically archive it in order to save some precious resources on our servers.
 
-Don't worry you can always **restore** an archived branch whenever you come back to edit your site.
+Don't worry site admins can always **restore** an archived branch in two clicks the next time your try to access it.
 
 ![Forestry Dashboard with archived sites](/uploads/2020/06/archived-sites.png)
 
