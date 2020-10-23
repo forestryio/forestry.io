@@ -13,7 +13,7 @@ plans:
     info: Quickly preview changes before publishing
   - text: Remote admin from your domain
     info: Install the Forestry CMS on your site (mysite.com/admin)
-  - text: Sites archived after 3 months of inactivity
+  - text: Sites archived after 3 months of inactivity (no edit)
   - text: Community support
     info: No priority support, response time may vary
 - title: Starter
@@ -39,7 +39,7 @@ plans:
   description: Include your first 10 users, then $49 per additional user
   planIncludes: Everything in Starter plus
   buttonText: Contact us
-  buttonUrl: /support/
+  buttonUrl: "/support/"
   planItems:
   - text: Unlimited sites
   - text: Custom subdomain
@@ -61,7 +61,7 @@ plans:
   description: ''
   planIncludes: Everything in Pro plus
   buttonText: Contact us
-  buttonUrl: /support/
+  buttonUrl: "/support/"
   planItems:
   - text: On-premise available
     info: Run Forestry behind your firewall (optional)
