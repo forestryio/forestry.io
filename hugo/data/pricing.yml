@@ -13,7 +13,7 @@ plans:
     info: Quickly preview changes before publishing
   - text: Remote admin from your domain
     info: Install the Forestry CMS on your site (mysite.com/admin)
-  - text: Sites archived after 3 months of inactivity (no edit)
+  - text: Sites frozen after 3 months of inactivity (no edit)
   - text: Community support
     info: No priority support, response time may vary
 - title: Starter
