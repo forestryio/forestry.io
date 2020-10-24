@@ -25,4 +25,6 @@ If you upload a lot of media to your site, storing it all in your repo can cause
 
 Images stored in GitLab and Bitbucket private repositories will not be shown in Forestry due to current limitations: [https://gitlab.com/gitlab-org/gitlab-ce/issues/45149](https://gitlab.com/gitlab-org/gitlab-ce/issues/45149 "Deploy Tokens API")
 
+Although GitHub supports LFS, GitHub pages does not. Tracking images with LFS will cause GitHub pages to generate empty files. 
+
 {{% /warning %}}
