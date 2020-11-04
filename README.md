@@ -1,7 +1,7 @@
 ![Build forestry.io](https://github.com/forestryio/forestry.io/workflows/Build%20forestry.io/badge.svg)
 
 # Forestry Website
-This site wraps [Hugo](gohugo.io) with [Gulp](https://gulpjs.com/) as your asset pipeline.
+This site wraps [Hugo](https://gohugo.io) with [Gulp](https://gulpjs.com/) as your asset pipeline.
 
 [PostCSS](http://postcss.org/) and [Webpack](https://webpack.js.org/) + [Babel](https://babeljs.io/) are used for CSS and JS compiling & transpiling.
 
