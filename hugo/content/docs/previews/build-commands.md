@@ -98,7 +98,7 @@ build:
   - ENV=staging
 ```
 
-Here the preview environment will launch the NodeJS 10 official Docker image, install dependencies with NPM, build the site from the `src`subfolder with the `npm start` command and output the site in `src/site`. We also pass a global ENV variable here to avoid production optimizations.
+Here the preview environment will launch the NodeJS 12 official Docker image, install dependencies with NPM, build the site from the `src`subfolder with the `npm start` command and output the site in `src/dist`. We also pass a global ENV variable here to avoid production optimizations.
 
 #### Hugo example
 
