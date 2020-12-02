@@ -71,7 +71,7 @@ vuepress dev
 {{% tab "Gatsby" %}}
 
 ```bash
-gatsby develop
+gatsby develop -p 8080
 ```
 
 {{% /tab %}}
