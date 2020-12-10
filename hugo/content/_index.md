@@ -1,15 +1,16 @@
 ---
 aliases:
 - "/remote/"
-title: Git-backed CMS for Gatsby, Gridsome, Eleventy, Hugo, VuePress, Jekyll, etc.
-description: Headless CMS to easily edit Markdown-based static sites generated with
-  Hugo, Gatsby, Jekyll, NextJS, Gridsome,  NuxtJS, Eleventy, VuePress, Hexo, etc.
+title: Git-based CMS for Hugo, Next.js, Nuxt.js, Gatsby, Eleventy, Jekyll, Gridsome,
+  Docusaurus and more.
+description: Headless CMS UI to edit Markdown-based static sites generated with Hugo,
+  Next.js, Nuxt.js, Gatsby, Eleventy, Docusaurus, Jekyll, etc.
 authors: []
-blocks:
+blocks: 
 hero:
-  headline: A static CMS that **commits**
-  textline: "Give your editors the power of Git.  \nCreate and edit Markdown-based
-    content with ease. "
+  headline: Headless CMS that **commits**
+  textline: "Give your editors the power of Git.  \nCreate, edit, and instant preview
+    Markdown-based sites."
   ctas:
   - permalink: https://app.forestry.io/signup
     textline: Import Your Site Now
@@ -140,12 +141,12 @@ cta:
   headline: Build amazing sites
   textline: We have the tools to manage your content. Import it to Forestry.
   calls_to_action: []
-publishdate: 2020-06-10T03:00:00.000+00:00
+publishdate: 2020-12-01T04:00:00+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
 date: '2017-12-31T04:00:00.000+00:00'
 inspectlet: true
 private: false
-weight:
+weight: 
 
 ---
