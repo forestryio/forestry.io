@@ -6,6 +6,5 @@ featured: true
 images:
 - "/uploads/showcase/highereducation.png"
 permalink: https://www.highereducation.com
-weight: 6
-
+weight: 7
 ---
