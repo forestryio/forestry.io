@@ -16,7 +16,7 @@ menu:
 
 Pick up your favorite continuous delivery service to publish your static website.
 
-As a headless CMS, Forestry's responsability is to provide a user-interface for editors and developers working with static sites hosted in a Git repository. When it comes to automate your deployments and host your static website on a CDN, it's the responsability of a continuous deployment and hosting service.
+As a headless CMS, Forestry's responsibility is to provide a user-interface for editors and developers working with static sites hosted in a Git repository. When it comes to automate your deployments and host your static website on a CDN, it's the responsibility of a continuous deployment and hosting service.
 
 Here are some services that will happily do the job for you, most offer generous free plans.
 
