@@ -1,7 +1,7 @@
 ---
 title: Storing Media Files
 weight: 1
-date: '2018-05-25T20:00:00.000+00:00'
+date: '2020-12-20T10:00:00.000+00:00'
 publishdate: 2019-04-14T22:00:00+00:00
 menu:
   docs:
