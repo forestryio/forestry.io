@@ -4,7 +4,7 @@ description: "Automate your deployments and host your static site where you want
 weight: 1
 publishdate: 2020-06-11T04:00:00.000+00:00
 expirydate: 2030-12-31T04:00:00.000+00:00
-date: '2020-05-21T04:00:00.000+00:00'
+date: '2021-01-08T04:00:00.000+00:00'
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
@@ -37,3 +37,5 @@ Here are some services that will happily do the job for you, most offer generous
 👉 [Deploy with Buddy Works](https://buddy.works/docs/deployments)
 
 👉 [Deploy with Render](https://render.com/docs): [Jekyll](https://render.com/docs/deploy-jekyll), [Hugo](https://render.com/docs/deploy-hugo), [Gatsby](https://render.com/docs/deploy-gatsby)
+
+👉 [Deploy with Stormkit.io](https://www.stormkit.io/docs/deployments/): [Next.js](https://www.stormkit.io/docs/deployments/configuration/next), [Nuxt.js](https://www.stormkit.io/docs/deployments/configuration/nuxt)
