@@ -22,20 +22,24 @@ weight:
 aliases: []
 
 ---
-If you are using the **personal** plan and **didn't edit your site branch for more than three months**, we will automatically archive it in order to save some precious resources on our servers.
 
-Don't worry site admins can always **restore** an archived branch in two clicks the next time your try to access it.
+If you are on the **personal** plan and you **didn't edit a site in Forestry for more than three months**, we will automatically archive your custom CMS admin UI in order to save some precious resources on our production servers.
+
+Don't worry site admins can always **restore** an archived admin UI in two clicks the next time you need to access your CMS admin.
+As Forestry is completely decoupled from your Git repository and your hosting provider, your public website is not affected.
 
 ![Forestry Dashboard with archived sites](/uploads/2020/06/archived-sites.png)
 
+### How to restore your admin?
+
 Click on the site or branch marked as _archived_ and click on the **Restore now** button.![Restore archived site dialog](/uploads/2020/06/restore-modal.png)
 
-Your branch or site is now active again. 😀
+Your branch or site imported in Forestry is now active again.
 
 ***
 
 {{% tip "Upgrade" %}}
 
-[Get a starter plan](https://app.forestry.io/dashboard/#organizations/new) if you want your sites to stay always active.
+[Get a starter plan](https://app.forestry.io/dashboard/#organizations/new) for your sites to stay always active, no matter how often you do edits.
 
 {{% /tip %}}
