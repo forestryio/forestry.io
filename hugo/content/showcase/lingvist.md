@@ -5,7 +5,7 @@ date: "2018-05-14T16:29:57+02:00"
 featured: false
 images:
 - "/uploads/showcase/lingvist.png"
-permalink: https://lingvist.com/
+permalink: https://lingvist.com
 weight:
 ---
 

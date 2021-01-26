@@ -5,7 +5,7 @@ date: 2020-10-06T14:55:27+02:00
 featured: false
 images:
 - "/uploads/showcase/smtperformances.jpg"
-permalink: https://smtperformances.fr/
+permalink: https://smtperformances.fr
 weight: 7
 ---
 

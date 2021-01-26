@@ -5,7 +5,7 @@ date: 2020-10-21T09:33:35+02:00
 featured: false
 images:
 - "/uploads/showcase/vigilant.jpg"
-permalink: https://vigilantnow.com/
+permalink: https://vigilantnow.com
 weight: 13
 ---
 

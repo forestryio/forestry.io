@@ -5,7 +5,7 @@ date: 2020-10-21T09:18:10+02:00
 featured: false
 images:
 - "/uploads/showcase/todaypgh.jpg"
-permalink: https://www.todaypgh.com/
+permalink: https://www.todaypgh.com
 weight: 12
 ---
 

@@ -5,7 +5,7 @@ date: "2020-04-02T13:57:25+02:00"
 featured: false
 images:
 - "/uploads/showcase/especes-en-danger.jpg"
-permalink: https://especes-en-danger.com/
+permalink: https://especes-en-danger.com
 weight: 
 ---
 

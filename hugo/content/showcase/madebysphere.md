@@ -5,7 +5,7 @@ date: "2020-05-01T15:43:29+02:00"
 featured: false
 images:
 - "/uploads/showcase/madebysphere.png"
-permalink: https://madebysphere.com/
+permalink: https://madebysphere.com
 weight:
 ---
 
