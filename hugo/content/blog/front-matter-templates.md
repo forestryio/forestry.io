@@ -101,15 +101,11 @@ For example, change type from a list of tags to an image gallery. [See full list
 
 ## What's Next?
 
-This is just the beginning. Soon we'll be adding more field types and more customizability.
-
-### Coming soon: image resizing and cropping
-
-![/blog/images/image-upload-4.gif](/uploads/2017/12/image-upload-4.gif)
+This is just the beginning. Soon we'll be adding more field types and more customizability
 
 ### Coming soon: advanced UI fields
 
-Like color pickers, google map location picker, etc.
+Like color pickers, etc.
 
 ![/blog/images/color-picker-forestry.png](/uploads/2017/12/color-picker-forestry.png)
 
