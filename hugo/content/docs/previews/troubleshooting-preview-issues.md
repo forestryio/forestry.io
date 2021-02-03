@@ -9,7 +9,7 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 menu:
   docs:
-    name: Troubleshooting 
+    name: Troubleshooting 
     parent: Previews
     weight: 4
 
@@ -153,6 +153,43 @@ the homepage works, the preview is working, but we aren't able to determine the
 correct URL for your content. Unfortunately, there's nothing further you can do
 here. You will have to manually correct the URLs in your browser's URL bar, or
 navigate to the content from the homepage.
+
+### Check baseurl is set to root on staging
+
+Our preview environment will serve your site from the root, if you setup a `baseurl` for instance with Jekyll or Hugo, you have to use a dedicated config file to override your `baseurl` for staging environment.
+
+### Override Jekyll's baseurl
+
+Create a dedidcated config file `_config_staging.yml`that contains at least an empty value for `baseurl`:
+
+```yaml
+baseurl: ""
+```
+
+Commit this file to your repository.
+
+Then [pass multiple config files to Jekyll with the `--config`  option](https://jekyllrb.com/docs/configuration/options/#build-command-options)
+
+Go to your preview settings and update your build command to:
+
+```sh
+bundle exec jekyll serve --config _config.yml,_config_staging.yml --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
+```
+
+Restart the preview server.
+
+
+### Override Hugo baseurl
+
+Set your baseurl to `\` in your main config file or in a [`config/staging/config.toml`](https://gohugo.io/getting-started/configuration/#configuration-directory) file.
+
+Go to your preview settings, and update your build command to:
+```
+hugo server --environment staging -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public
+```
+
+Restart the preview server.
+
 
 ### Check your output directory
 
