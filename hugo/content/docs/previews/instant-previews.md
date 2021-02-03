@@ -138,6 +138,8 @@ Here's an example of a build section in the `.forestry/settings.yml` file:
 
 ## Instant Preview URLs
 
+{{% tip %}} [Check your baseurl is set to root for staging](/docs/previews/troubleshooting-preview-issues/#check-baseurl-is-set-to-root-on-staging) {{% /tip %}}
+
 When you click the preview button on a piece of content, Forestry will attempt to determine which URL to open by temporarily inserting a unique preview token in the markdown body. There are two situations where this won't work:
 
 ### If the Layout Doesn't Use Markdown Body
