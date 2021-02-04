@@ -1,10 +1,10 @@
 ---
 title: "Lingvist"
 description: "Lingvist website is built with Jekyll and edited in Forestry"
-date: "2018-05-14T16:29:57+02:00"
+date: "2020-05-14T16:29:57+02:00"
 featured: false
 images:
-- "/uploads/showcase/lingvist.png"
+- "/uploads/showcase/lingvist-2021-02.png"
 permalink: https://lingvist.com
 weight:
 ---
