@@ -6,15 +6,14 @@ publishdate: 2017-10-20T10:41:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 authors:
 - Forestry Team
-excerpt: Chat with the Forestry.io community about static sites, best-practices, features,
-  and more
+excerpt: Join the Forestry community on Slack
 images:
 - "/uploads/2017/12/slack.png"
 categories:
 - company
 date: 2017-10-20T10:41:00.000+00:00
 headline: ''
-description: ''
+description: 'Join the Forestry community on Slack to learn about tips and best practices'
 textline: ''
 tags: []
 cta:
@@ -27,12 +26,11 @@ photo_credit: ''
 menu: []
 
 ---
-Come and join Forestry community to talk about static site generators, best-practices and more.
+You are invited to join the Forestry community to learn about best-practices and pro tips from our users.
 
-[**Join Forestry.io community on Slack**](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk "Join Forestry Slack")
+[**Join Forestry.io Community on Slack**](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk "Join Forestry Slack")
 
-We now moved the features requests over our product portal.
+Struggling to get your job done?
+[**Share insights on our product portal**](http://portal.productboard.com/forestry)**.**
 
-[**Vote and suggest features on our public roadmap**](http://portal.productboard.com/forestry)**.**
-
-See you!
+Welcome aboard!
