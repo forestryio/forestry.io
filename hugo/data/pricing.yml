@@ -24,15 +24,15 @@ plans:
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
-  - text: Unlimited sites
   - text: Organization account
     info: Manage one group of users across all of your sites and branches
   - text: Team access controls
     info: Assign organization members to teams. These teams can be added to sites
       with admin, developer, or editor access levels
-  - text: Sites always active
-  - text: Business support
+  - text: Premium Support
     info: Median first response time under 2 hours
+  - text: Unlimited sites
+  - text: Sites always active
 - title: Pro
   priceAnnually: "0"
   priceMonthly: "749"
