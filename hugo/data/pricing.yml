@@ -36,23 +36,23 @@ plans:
 - title: Pro
   priceAnnually: "0"
   priceMonthly: "749"
-  description: Include your first 10 users, then $49 per additional user
+  description: Up to 10 users per site, then $49 per additional user
   planIncludes: Everything in Starter plus
   buttonText: Contact us
   buttonUrl: "/support/"
   planItems:
-  - text: Unlimited sites
   - text: Custom subdomain
     info: Access your cloud instance through yourdomain.forestryio
   - text: Single Sign-on
     info: Support for major identity providers (IdP) such as SAML, OpenID Connect,
       etc.
-  - text: SLA
-  - text: Custom session timeout
   - text: Password Protected Previews
     info: Only allowed members will be able to access instant previews
+  - text: SLA
+  - text: Custom session timeout
   - text: Audit logs
     info: A ledger of the actions performed by users in your organization
+  - text: Unlimited sites
   - text: Priority support
     info: Median time to close issues under 8 hours
 - title: Enterprise
@@ -67,13 +67,13 @@ plans:
     info: Run Forestry behind your firewall (optional)
   - text: Connect to on-premise Git sources
     info: Support for GitHub Enterprise, GitLab, and Bitbucket Server
-  - text: Live support
-    info: Dedicated Private Slack channel with our engineering team
   - text: Enterprise-level SLAs
-  - text: Ongoing training
-    info: Training for your editors to help them achieve their content objectives
   - text: Dedicated Customer Success Manager
     info: Your single point of contact to help you and your team
+  - text: Live support
+    info: Dedicated Private Slack channel with our engineering team
+  - text: Ongoing training
+    info: Training for your editors to help them achieve their content objectives
   - text: Architectural advice
     info: Leverage our experts for setting up deployment, CI/CD, micro-services, etc.
   - text: Customizations and integrations
