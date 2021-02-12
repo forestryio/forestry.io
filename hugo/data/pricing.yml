@@ -9,9 +9,9 @@ plans:
   buttonUrl: https://app.forestry.io/signup
   planItems:
   - text: Up to 3 sites
-  - text: Instant Previews
+  - text: Instant Site Preview before publishing
     info: Quickly preview changes before publishing
-  - text: Remote admin from your domain
+  - text: CMS admin on your domain
     info: Install the Forestry CMS on your site (mysite.com/admin)
   - text: 'Site admin frozen after 3 months of inactivity '
   - text: Slack Community support
