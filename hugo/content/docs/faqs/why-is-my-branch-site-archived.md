@@ -8,19 +8,12 @@ layout: single
 title: Why is my branch/site archived?
 categories:
 - CMS
-headline: ''
 description: Forestry will automatically archive personal sites that have not been
   edited for 3 months.
-textline: ''
-tags: []
-cta:
-  headline: ''
-  textline: ''
-  calls_to_action: []
-private: false
-weight: 
-aliases: []
-
+menu:
+  faqs:
+    parent: FAQs
+    weight: 1
 ---
 
 If you are on the **personal** plan and you **didn't edit a site in Forestry for more than three months**, we will automatically archive your custom CMS admin UI in order to save some precious resources on our production servers.

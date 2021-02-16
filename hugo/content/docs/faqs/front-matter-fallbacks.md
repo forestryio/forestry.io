@@ -10,7 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 7
+    weight: 11
 
 ---
 

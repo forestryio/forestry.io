@@ -11,7 +11,7 @@ categories:
 menu:
   faqs:
     parent: FAQs
-    weight: 8
+    weight: 10
 
 ---
 Forestry offers a friendly user interface to edit Markdown, JSON, YAML and TOML files.
