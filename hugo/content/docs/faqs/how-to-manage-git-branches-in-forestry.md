@@ -1,7 +1,7 @@
 ---
 images:
   - "/uploads/2018/01/OGimage-01-docs-3x.png"
-publishdate: 2021-02-16T22:00:00+00:00
+publishdate: 2021-02-16T04:00:00+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
 title: How to manage Git branches in Forestry?
@@ -18,6 +18,7 @@ menu:
 A site is a branch with settings and permissions. 
 You can import as many branches as you want in Forestry. 
 You can set teams permissions for each branch on our **starter plan**.
+
 ### How do I import a new branch?
 
 Click on the "Add Site" button to connect to your Git provider and pick up the branch you want to import. If this branch is a fork of another branch already configured for Forestry, given we store your settings in the repository, you won't have to reconfigure your sections, your templates, or your preview. The only thing is that you might need to do is to reconnect to your external media provider if you use one.
