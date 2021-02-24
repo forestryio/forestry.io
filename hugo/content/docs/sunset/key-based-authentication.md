@@ -4,9 +4,9 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors:
 - team forestry
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-10-05 10:37:36 +0000
+publishdate: 2017-12-07T04:00:00.000+00:00
+expirydate: 2020-12-07T04:00:00+00:00
+date: 2018-10-05T10:37:36.000+00:00
 menu:
   sunset:
     weight: 3
