@@ -2,9 +2,22 @@
 title: Custom Configuration for Data Files
 authors:
 - team forestry
-date: 2018-10-05 15:07:34 +0000
-publishdate: 2018-09-11 22:00:00 +0000
-expirydate: 2029-12-31 23:00:00 +0000
+date: 2018-10-05T15:07:34.000+00:00
+publishdate: 2018-09-11T22:00:00.000+00:00
+expirydate: 2020-09-11T22:00:00+00:00
+description: ''
+headline: ''
+textline: ''
+images: []
+categories: []
+tags: []
+cta:
+  headline: ''
+  textline: ''
+  calls_to_action: []
+weight: ''
+aliases: []
+layout: ''
 menu:
   sunset:
     weight: 2
