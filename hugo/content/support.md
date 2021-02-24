@@ -14,13 +14,17 @@ menu:
     weight: 2
 
 ---
-We strive to provide the best support possible for our customers. Our [docs](/docs/) are a great place to start looking for an answer. If you can't find your answer there, feel free to jump into our [Slack Community](https://forestry.io/blog/post/join-our-slack-community/).
+* Our [docs](/docs/) are a great place to start if you have questions.
+* Not able to get your job done? You can [share your insights](http://portal.productboard.com/forestry) by providing context and the struggle you're facing.
+* Free plans are encouraged to join our [Slack Community](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk).
 
-## What is my support coverage?
+## Support coverage
+
+We strive to provide the best support possible for customers on a [starter plan](/pricing/) with a median time to close under a day.
 
 |  | Free | Starter | Enterprise |
 | --- | --- | --- | --- |
 | Community | ✓ | ✓ | ✓ |
 | Email | x | ✓ | ✓ |
-| In-app | x | ✓ | ✓ |
-| Phone | ⅹ | ⅹ | ✓ |
+| Real-time | x | ✓ | ✓ |
+| Solution Engineer | ⅹ | ⅹ | ✓ |
