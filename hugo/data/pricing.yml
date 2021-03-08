@@ -1,87 +1,84 @@
 ---
 plans:
-  - title: Personal
-    priceAnnually: "0"
-    priceMonthly: "0"
-    description: Free plan for personal projects.
-    planIncludes: Up to 3 users per site
-    buttonText: Get started
-    buttonUrl: https://app.forestry.io/signup
-    planItems:
-      - text: Up to 3 sites
-        info: 3 repositories, unlimited branch import
-      - text: Instant Site Preview before publishing
-        info: Preview as you edit before saving
-      - text: CMS admin on your domain
-        info: Host Forestry CMS on your site (mysite.com/admin)
-      - text: Inactive sites archived after 3 months
-        info: An admin will have to restore an archived site
-      - text: Slack Community support
-        info: No customer support included
-
-  - title: Starter
-    priceAnnually: "0"
-    priceMonthly: "29"
-    description: Everything in personal plan
-    planIncludes: 8+ users per site
-    buttonText: Get started
-    buttonUrl: https://app.forestry.io/signup
-    planItems:
-      - text: Up to 20 sites
-        info: Import up to 20 repositories, unlmited branch import
-      - text: Organization and members
-        info: Manage one group of users across all of your sites
-      - text: Teams
-        info:
-          Assign organization members to teams. These teams can be added to sites
-          with admin, developer, or editor access levels
-      - text: Sites always active
-        info: All your sites are always accessible
-      - text: Premium Support
-        info: Median first response time under 2 hours
-  - title: Pro
-    priceAnnually: "0"
-    priceMonthly: "749"
-    description: Everything in Starter plus
-    planIncludes: 15+ users per site
-    buttonText: Contact us
-    buttonUrl: "/support/"
-    planItems:
-      - text: Unlimited sites
-      - text: Custom subdomain
-        info: Access your cloud instance through yourdomain.forestryio
-      - text: Single Sign-on
-        info:
-          Support for major identity providers such as SAML, OpenID Connect, Okta
-          etc.
-      - text: Password Protected Previews
-        info: Only allowed members will be able to access instant previews
-      - text: Service Level Agreement
-      - text: Custom session timeout
-      - text: Audit logs
-        info: A ledger of the actions performed by users in your organization
-      - text: Priority support
-        info: Median time to close issues under 8 hours
-  - title: Enterprise
-    priceAnnually: _
-    priceMonthly: _
-    description: Securely host Forestry on your infrastructure
-    planIncludes: Everything in Pro plus
-    buttonText: Contact us
-    buttonUrl: "/support/"
-    planItems:
-      - text: On-premise available
-        info: Run Forestry behind your firewall (optional)
-      - text: Connect to on-premise Git sources
-        info: Support for GitHub Enterprise, GitLab, and Bitbucket Server
-      - text: Enterprise-level SLAs
-      - text: Dedicated Customer Success Manager
-        info: Your single point of contact to help you and your team
-      - text: Live support
-        info: Dedicated Private Slack channel with our engineering team
-      - text: Ongoing training
-        info: Training for your editors to help them achieve their content objectives
-      - text: Architectural advice
-        info: Leverage our experts for setting up deployment, CI/CD, micro-services, etc.
-      - text: Customizations and integrations
-      - text: Custom Legal terms
+- title: Personal
+  priceAnnually: "0"
+  priceMonthly: "0"
+  description: Free plan for personal projects.
+  planIncludes: Up to 3 users per site
+  buttonText: Get started
+  buttonUrl: https://app.forestry.io/signup
+  planItems:
+  - text: Up to 3 sites
+    info: 3 repositories, unlimited branch import
+  - text: Instant Site Preview before publishing
+    info: Preview as you edit before saving
+  - text: CMS admin on your domain
+    info: Host Forestry CMS on your site (mysite.com/admin)
+  - text: Inactive sites archived after 3 months
+    info: An admin will have to restore an archived site
+  - text: Slack Community support
+    info: No customer support included
+- title: Starter
+  priceAnnually: "0"
+  priceMonthly: "29"
+  description: Everything in personal plan
+  planIncludes: 5+ org members + 3 external collabotators
+  buttonText: Get started
+  buttonUrl: https://app.forestry.io/signup
+  planItems:
+  - text: Up to 20 sites
+    info: Import up to 20 repositories, unlmited branch import
+  - text: Organization and members
+    info: Manage one group of users across all of your sites
+  - text: Teams
+    info: Assign organization members to teams. These teams can be added to sites
+      with admin, developer, or editor access levels
+  - text: Sites always active
+    info: All your sites are always accessible
+  - text: Premium Support
+    info: Median first response time under 2 hours
+- title: Pro
+  priceAnnually: "0"
+  priceMonthly: "749"
+  description: Everything in Starter plus
+  planIncludes: 15+ users per site
+  buttonText: Contact us
+  buttonUrl: "/support/"
+  planItems:
+  - text: Unlimited sites
+  - text: Custom subdomain
+    info: Access your cloud instance through yourdomain.forestryio
+  - text: Single Sign-on
+    info: Support for major identity providers such as SAML, OpenID Connect, Okta
+      etc.
+  - text: Password Protected Previews
+    info: Only allowed members will be able to access instant previews
+  - text: Service Level Agreement
+  - text: Custom session timeout
+  - text: Audit logs
+    info: A ledger of the actions performed by users in your organization
+  - text: Priority support
+    info: Median time to close issues under 8 hours
+- title: Enterprise
+  priceAnnually: _
+  priceMonthly: _
+  description: Securely host Forestry on your infrastructure
+  planIncludes: Everything in Pro plus
+  buttonText: Contact us
+  buttonUrl: "/support/"
+  planItems:
+  - text: On-premise available
+    info: Run Forestry behind your firewall (optional)
+  - text: Connect to on-premise Git sources
+    info: Support for GitHub Enterprise, GitLab, and Bitbucket Server
+  - text: Enterprise-level SLAs
+  - text: Dedicated Customer Success Manager
+    info: Your single point of contact to help you and your team
+  - text: Live support
+    info: Dedicated Private Slack channel with our engineering team
+  - text: Ongoing training
+    info: Training for your editors to help them achieve their content objectives
+  - text: Architectural advice
+    info: Leverage our experts for setting up deployment, CI/CD, micro-services, etc.
+  - text: Customizations and integrations
+  - text: Custom Legal terms
