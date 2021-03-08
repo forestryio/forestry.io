@@ -19,25 +19,25 @@ plans:
 - title: Starter
   priceAnnually: "0"
   priceMonthly: "29"
-  description: 5 organization members, then $9 per additional member.
-  planIncludes: Up to 8 users per site
+  description: Everything in personal plan
+  planIncludes: 8+ users per site
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
-  - text: Organization account
+  - text: Organization and members
     info: Manage one group of users across all of your sites and branches
-  - text: Team access controls
+  - text: Teams
     info: Assign organization members to teams. These teams can be added to sites
       with admin, developer, or editor access levels
+  - text: up to 20 sites
+  - text: Sites always active
   - text: Premium Support
     info: Median first response time under 2 hours
-  - text: 20 sites
-  - text: Sites always active
 - title: Pro
   priceAnnually: "0"
   priceMonthly: "749"
-  description: Up to 10 users per site, then $49 per additional user
-  planIncludes: Everything in Starter plus
+  description: Everything in Starter plus
+  planIncludes: 12+ users per site, then $49 per additional user
   buttonText: Contact us
   buttonUrl: "/support/"
   planItems:
