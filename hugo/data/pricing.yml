@@ -58,7 +58,7 @@ plans:
 - title: Enterprise
   priceAnnually: _
   priceMonthly: _
-  description: ''
+  description: Securely host Forestry on your infrastructure
   planIncludes: Everything in Pro plus
   buttonText: Contact us
   buttonUrl: "/support/"
