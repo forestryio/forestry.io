@@ -11,15 +11,15 @@ plans:
   - text: Up to 3 sites
   - text: Instant Site Preview before publishing
     info: Quickly preview changes before publishing
+  - text: CMS admin archived after 3 months of inactivity
   - text: CMS admin on your domain
     info: Install the Forestry CMS on your site (mysite.com/admin)
-  - text: 'Site admin frozen after 3 months of inactivity '
   - text: Slack Community support
     info: No priority support, response time may vary
 - title: Starter
   priceAnnually: "0"
   priceMonthly: "29"
-  description: Up to 5 users per site, then $9 per additional user.
+  description: 5 organization members, then $9 per additional member.
   planIncludes: Everything in Personal plus
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
