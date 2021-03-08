@@ -4,7 +4,7 @@ plans:
   priceAnnually: "0"
   priceMonthly: "0"
   description: Free plan for personal projects.
-  planIncludes: Up to 3 editors per site.
+  planIncludes: Up to 3 users per site
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
@@ -20,7 +20,7 @@ plans:
   priceAnnually: "0"
   priceMonthly: "29"
   description: 5 organization members, then $9 per additional member.
-  planIncludes: Everything in Personal plus
+  planIncludes: Up to 8 users per site
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
@@ -31,7 +31,7 @@ plans:
       with admin, developer, or editor access levels
   - text: Premium Support
     info: Median first response time under 2 hours
-  - text: Unlimited sites
+  - text: 20 sites
   - text: Sites always active
 - title: Pro
   priceAnnually: "0"
