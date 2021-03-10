@@ -10,8 +10,8 @@ expirydate: 2022-12-31T04:00:00.000+00:00
 date: 2020-06-11T04:00:00.000+00:00
 menu:
   footer:
-    parent: Company
-    weight: 2
+    parent: Product
+    weight: 4
 
 ---
 * Not able to get your job done? [Share your insights](http://portal.productboard.com/forestry) by providing context and the struggle you're facing.

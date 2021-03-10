@@ -1,10 +1,8 @@
 ---
 aliases:
 - "/remote/"
-title: Git-based CMS for Hugo, Next.js, Nuxt.js, Gatsby, Eleventy, Jekyll, Gridsome,
-  Docusaurus and more.
-description: Headless CMS UI to edit Markdown-based static sites generated with Hugo,
-  Next.js, Nuxt.js, Gatsby, Eleventy, Docusaurus, Jekyll, etc.
+title: Git-based CMS for Hugo, Next.js, Gatsby, Jekyll, Nuxt.js, Hexo, Eleventy, Docusaurus, Gridsome and more.
+description: Headless CMS UI to edit Markdown-based static sites generated with Hugo, Next.js, Gatsby, Jekyll, Nuxt.js, Eleventy, Docusaurus etc.
 authors: []
 blocks: 
 hero:
@@ -35,42 +33,42 @@ hero:
 logos:
   headline: Built for static site generators
   sources:
-  - permalink: img/ssg-logos/gatsby.svg
-    alt: Gatsby
-    height: '28'
-    offset: '0'
   - permalink: img/ssg-logos/hugo.svg
     alt: Hugo
     height: '28'
     offset: '0'
-  - permalink: img/ssg-logos/gridsome.svg
-    alt: Gridsome
+  - permalink: img/ssg-logos/nextjs.svg
+    alt: Next.js
+    height: '38'
+    offset: "-3"
+  - permalink: img/ssg-logos/gatsby.svg
+    alt: Gatsby
     height: '28'
     offset: '0'
   - permalink: img/ssg-logos/jekyll.svg
     alt: Jekyll
     height: '34'
     offset: "-4"
-  - permalink: img/ssg-logos/11ty.svg
-    alt: 11ty
-    height: '28'
+  - permalink: img/ssg-logos/nuxtjs.svg
+    alt: Nuxt.js
+    height: '24'
+    offset: '1'
+  - permalink: img/ssg-logos/hexo.svg
+    alt: Hexo
+    height: '34'
     offset: '0'
   - permalink: img/ssg-logos/vuepress.svg
     alt: Vue Press
     height: '34'
     offset: "-2"
-  - permalink: img/ssg-logos/hexo.svg
-    alt: Hexo
-    height: '34'
+  - permalink: img/ssg-logos/11ty.svg
+    alt: 11ty
+    height: '28'
     offset: '0'
-  - permalink: img/ssg-logos/nextjs.svg
-    alt: Next.js
-    height: '38'
-    offset: "-3"
-  - permalink: img/ssg-logos/nuxtjs.svg
-    alt: Nuxt.js
-    height: '24'
-    offset: '1'
+  - permalink: img/ssg-logos/gridsome.svg
+    alt: Gridsome
+    height: '28'
+    offset: '0'
 brand_logos:
   headline: Trusted By
   sources:
@@ -96,9 +94,9 @@ brand_logos:
 features:
 - headline: Your site, your workflow
   textline: |
-    Write front-end code with Gatsby, Hugo, Jekyll  or Vuepress and push to your Git repo. Forestry will pull in your commits and update the CMS.
+    Write front-end code with Next.js, Hugo, Gatsby or your favorite static site generator and push to your Git repo. Forestry will pull in your commits and update the CMS.
 
-    Invite your team to create content in a rich UI. Their updates get committed back without merge conflicts.
+    Invite your team to create content in a friendly user interface. Their updates get committed back without merge conflicts.
   visual:
     permalink: "/img/dev-illustration-02.png"
     alt: Dev workflow
@@ -106,7 +104,7 @@ features:
   class: section-roots
 - headline: Empower your editors
   textline: |
-    Your editing team deserves a powerful admin interface. Customize each page with Forestry's rich editing fields.
+    Your editing team deserves a modern yet simple to use CMS. Customize each page with Forestry's rich editing fields.
 
     Login from your **yoursite.com/admin**. With Forestry Remote, your site will transcend static.
   visual:
@@ -114,9 +112,8 @@ features:
     alt: Editor friendly interface
   direction: rtl
   class: section-sync
-- headline: Your entire team will be making commits
-  textline: Your editing team won't even realize they're writing Markdown and committing
-    to your repo.
+- headline: Your entire team is now making commits
+  textline: Let your editoral team focus on writing content, while Forestry stores in Markdown, YAML or JSON and commits to your repository.
   visual:
     permalink: "/img/commits-illustration.png"
     alt: Editor workflow
@@ -124,9 +121,9 @@ features:
   class: section-sync
 - headline: Own Your Content
   textline: |
-    Instead of having your content locked behind your CMS's database, we just commit it to your git repository.
-
-    We make it easy for you to grab your content and walk away, although we don't think you will ;)
+    Don't lock your content in a CMS database, just commit it to *your* Git repository.
+    
+    We support public and private repositories on GitHub, GitLab and BitBucket.
   visual:
     permalink: "/img/deploy-illustration-03.png"
     alt: Simple deployment
@@ -139,7 +136,7 @@ features:
   class: section-deploy
 cta:
   headline: Build amazing sites
-  textline: Import your repository and edit within seconds.
+  textline: Import your Git repository and edit within seconds.
   calls_to_action: []
 publishdate: 2020-12-01T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
