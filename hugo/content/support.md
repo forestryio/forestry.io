@@ -1,12 +1,12 @@
 ---
 aliases:
-- "/support/"
-title: Contact
+- "/contact/"
+title: Support
 headline: Get in touch
 type: contact
 weight: "1"
 publishdate: 2020-06-11T04:00:00.000+00:00
-expirydate: 2030-01-01T04:00:00.000+00:00
+expirydate: 2022-12-31T04:00:00.000+00:00
 date: 2020-06-11T04:00:00.000+00:00
 menu:
   footer:
