@@ -9,9 +9,6 @@ images:
 description: Forestry CMS latest changes.
 summary: Forestry CMS latest changes.
 menu:
-  footer:
-    parent: Product
-    weight: 4
   docs:
     parent: Other
     weight: 3

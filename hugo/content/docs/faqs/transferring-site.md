@@ -10,8 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 8
-
+    weight: 10
 ---
 
 Forestry allows you to move your imported Git branches from your sites to an organization and vice-versa.

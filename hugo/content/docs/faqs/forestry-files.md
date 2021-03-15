@@ -1,5 +1,4 @@
 ---
-aliases: ''
 title: Why did Forestry add files to my repo?
 weight: 1
 layout: single
@@ -11,7 +10,7 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 1
+    weight: 8
 
 ---
 

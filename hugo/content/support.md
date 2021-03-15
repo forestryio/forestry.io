@@ -2,25 +2,28 @@
 aliases:
 - "/contact/"
 title: Support
-headline: Got a question about using Forestry.io?
+headline: Get in touch
 type: contact
-weight: 1
-publishdate: 2020-06-11 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2020-06-11 04:00:00 +0000
+weight: "1"
+publishdate: 2020-06-11T04:00:00.000+00:00
+expirydate: 2022-12-31T04:00:00.000+00:00
+date: 2020-06-11T04:00:00.000+00:00
 menu:
   footer:
-    parent: Company
-    weight: 2
+    parent: Product
+    weight: 4
 
 ---
-We strive to provide the best support possible for our customers! Our [docs](/docs/) are a great place to start looking for an answer. If you can't find your answer there, feel free to jump into our [Slack Community](https://forestry.io/blog/post/join-our-slack-community/) or reach out to us here.
+* Not able to get your job done? [Share your insights](http://portal.productboard.com/forestry) by providing context and the struggle you're facing.
+* Join our [Slack Community](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk) to learn how people are using Forestry.
 
-## What is my support coverage?
+## Support
+
+We provide the best support possible for customers [on a plan](/pricing/) with a median time to close under a day.
 
 |  | Free | Starter | Enterprise |
 | --- | --- | --- | --- |
 | Community | ✓ | ✓ | ✓ |
-| Email | As available | ✓ | ✓ |
-| In-app | As available | ✓ | ✓ |
-| Phone | ⅹ | ⅹ | ✓ |
+| Email | x | ✓ | ✓ |
+| Real-time | x | ✓ | ✓ |
+| Solution Engineer | ⅹ | ⅹ | ✓ |

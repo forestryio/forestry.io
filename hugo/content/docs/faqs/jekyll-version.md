@@ -13,12 +13,14 @@ images:
 menu:
   faqs:
     parent: FAQs
-    weight: 6
+    weight: 7
 
 ---
 
-Forestry will use whatever version of Jekyll is specified in your `Gemfile`.
+Forestry uses whatever version of Jekyll is specified in your [`Gemfile`](https://jekyllrb.com/docs/ruby-101/).
 
-If you don't have a `Gemfile`, you'll have to run `bundle init` on your machine then `bundle add jekyll` to use latest Jekyll.
+If you don't have a `Gemfile`, run `bundle init` on your machine, then `bundle add jekyll` to use latest Jekyll.
 
-GiHub Pages currently run Jekyll 3.8.6, but you can [use Jekyll 4.x on GitHub Pages with GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/).
+[GiHub Pages currently runs Jekyll 3.9.0](https://pages.github.com/versions/). 
+
+You can [use Jekyll 4.x on GitHub Pages with GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/).

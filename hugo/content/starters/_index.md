@@ -11,5 +11,5 @@ type: starters
 menu:
   footer:
     parent: Product
-    weight: 2
+    weight: 1
 ---
