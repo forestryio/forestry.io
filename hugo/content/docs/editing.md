@@ -19,7 +19,7 @@ Forestry allows developers and editors to manage their website in a variety of d
 
 Forestry set defaults for Hugo and Jekyll, other static site generators have to be configure content sections manually in the sidebar settings.
 
-A draft toggle is displayed by default for Hugo and Jekyll sites, other static site generators can add a toogle field to their front matter template to mimick this feature.
+A draft toggle is displayed by default for Hugo and Jekyll sites, other static site generators can add a toggle field to their front matter template to mimick this feature.
 
 ![](/uploads/2018/01/10.png)
 
