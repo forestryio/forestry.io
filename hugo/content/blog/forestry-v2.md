@@ -32,8 +32,14 @@ This migration will also involve switching out the Forestry Admin UI with the [T
 
 ![](https://res.cloudinary.com/forestry-demo/image/upload/v1619023278/tina-cms-visual-editing.gif)
 
-Note: we have developed a TinaCMS proof-of-concept that uses a more traditional CMS UI, similar to Forestry, but with full-screen editing fields instead of a split-plan with live preview.  Our research is in early phases but TinaCMS is very flexible and we're optimistic about what it can support. 
+We have developed a number of TinaCMS proof-of-concepts that could work for Forestry sites. One uses a more traditional CMS UI with full-screen editing fields instead of a split-plan/live-preview layout (similar to Forestry). Another PoC uses an iframe to load your static site in the right preview pane.   Our research is in a very early phase but with the open-source architecture and flexibility of TinaCMS, we're optimistic about what it can do. 
 
-A unique approach we're taking with the TinaCMS editing UI is that it's backend-agnostic and can connect to any content storage solution (including the GitHub API if you do not want to use Tina Cloud).
+Finally, a unique approach we've taken with the TinaCMS editing UI is that it's backend-agnostic and can connect to any content storage solution. That way, you're not locked into Tina Cloud and could connect directly to the GitHub API if you choose.
 
-Most people in our company, myself included, run forestry sites so we’re very motivated to ensure that Tina will be a good home to all Jamstack sites. Ultimately, we’re excited about the value that TinaCMS and Tina Cloud will unlock for people: visual editing, open-source and pluggable architecture, multi-branch workflows, and more.
+## Conclusion
+
+Most people in our company, myself included run forestry sites. So rest assured that Tina will be a good home to these sites in the future. 
+
+We believe that content management can be so much better and we intend to show the world what’s possible. To get there, we’re leaning into visual editing and Git-backed content.  We’re excited about the value that TinaCMS and Tina Cloud will unlock for people: visual editing, open-source and pluggable architecture, multi-branch workflows, and more.
+
+We'll continue to share our progress with you in the coming months.
