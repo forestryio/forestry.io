@@ -214,6 +214,16 @@ In the following example, we will run our instant previews as an NPM script:
 This step is important, as you could otherwise run node packages on your local machine by installing them globally, but Forestry won't have these global packages installed.
 
 {{% code_tabs %}}
+{{% tab "Next" %}}
+
+    npm install --save next react react-dom
+
+{{% /tab %}}
+{{% tab "Nuxt" %}}
+
+    npm install --save nuxt
+
+{{% /tab %}}
 {{% tab "Gatsby" %}}
 
     npm install --save gatsby-cli
@@ -234,16 +244,6 @@ This step is important, as you could otherwise run node packages on your local m
     npm install --save vuepress
 
 {{% /tab %}}
-{{% tab "Next" %}}
-
-    npm install --save next react react-dom
-
-{{% /tab %}}
-{{% tab "Nuxt" %}}
-
-    npm install --save nuxt
-
-{{% /tab %}}
 {{% /code_tabs %}}
 
 
@@ -252,6 +252,24 @@ This step is important, as you could otherwise run node packages on your local m
 Commands run as NPM scripts will automatically include any installed node modules in your **PATH**.
 
 {{% code_tabs %}}
+{{% tab "Next" %}}
+
+```json
+"scripts": {
+  "develop": "next"
+}
+```
+
+{{% /tab %}}
+{{% tab "Nuxt" %}}
+
+```json
+"scripts": {
+  "develop": "nuxt"
+}
+```
+
+{{% /tab %}}
 {{% tab "Gatsby" %}}
 
 ```json
@@ -288,24 +306,6 @@ Commands run as NPM scripts will automatically include any installed node module
 ```
 
 {{% /tab %}}
-{{% tab "Next" %}}
-
-```json
-"scripts": {
-  "develop": "next"
-}
-```
-
-{{% /tab %}}
-{{% tab "Nuxt" %}}
-
-```json
-"scripts": {
-  "develop": "nuxt"
-}
-```
-
-{{% /tab %}}
 {{% /code_tabs %}}
 
 ### 3. Run the NPM script in your build command
@@ -314,6 +314,24 @@ As your project's dependencies are installed locally and are not available globa
 Most of the time, it will be `npm run develop`, but you can point to another script of yours.
 
 {{% code_tabs %}}
+{{% tab "Next" %}}
+
+```yaml
+build:
+  instant_preview_command: npm run develop
+  preview_output_directory: .next
+```
+
+{{% /tab %}}
+{{% tab "Nuxt" %}}
+
+```yaml
+build:
+  instant_preview_command: npm run dev
+  preview_output_directory: dist
+```
+
+{{% /tab %}}
 {{% tab "Gatsby" %}}
 
 ```yaml
@@ -347,24 +365,6 @@ build:
 build:
   instant_preview_command: npm run develop
   preview_output_directory: _site
-```
-
-{{% /tab %}}
-{{% tab "Next" %}}
-
-```yaml
-build:
-  instant_preview_command: npm run develop
-  preview_output_directory: .next
-```
-
-{{% /tab %}}
-{{% tab "Nuxt" %}}
-
-```yaml
-build:
-  instant_preview_command: npm run dev
-  preview_output_directory: dist
 ```
 
 {{% /tab %}}
