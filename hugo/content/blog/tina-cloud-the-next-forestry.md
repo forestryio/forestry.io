@@ -39,7 +39,7 @@ We will eventually make Tina Cloud compatible with Forestry sites (including non
 
 This migration will also involve switching out the Forestry Admin UI with [TinaCMS](http://tina.io/) UI. TinaCMS is our open-source front-end editor and is similar to the Forestry [Remote Admin](https://forestry.io/docs/editing/remote-admin/) but includes a live preview next to your editing fields.
 
-![](https://res.cloudinary.com/forestry-demo/image/upload/v1619023278/tina-cms-visual-editing.gif)
+![Real-time editing in TinaCMS](https://res.cloudinary.com/forestry-demo/image/upload/v1619023278/tina-cms-visual-editing.gif)
 
 We have developed a number of TinaCMS proof-of-concepts that could work for Forestry sites. One uses a more traditional CMS UI with full-screen editing fields instead of a split-plane layout (seen above). Another PoC uses an iframe to load your static site in the right preview pane. Our research is in a very early phase but with the open-source architecture and flexibility of TinaCMS, we're optimistic about what it can do.
 
