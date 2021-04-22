@@ -11,7 +11,7 @@ description: 'Tina Cloud is our new headless API backed by Git, built on top on 
   for non-react websites will come later. '
 textline: ''
 images:
-- "/uploads/2021/04/tina-iteration-of-forestry-og.png"
+- "/uploads/2021/04/next-iteration-of-forestry.png"
 photo_credit: ''
 categories:
 - CMS
