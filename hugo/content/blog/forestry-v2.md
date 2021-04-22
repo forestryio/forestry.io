@@ -2,14 +2,19 @@
 date: 2021-04-21T21:34:28+00:00
 publishdate: 2021-04-21T21:34:28+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-authors: []
+authors:
+- Scott Gallant
 title: Tina.io, the next iteration of Forestry
 headline: ''
-description: ''
+description: 'Tina Cloud is our new headless API backed by Git, built on top on our
+  open source visual editor TinaCMS. For now it only supports Next.js sites, support
+  for non-react websites will come later. '
 textline: ''
 images: []
 photo_credit: ''
-categories: []
+categories:
+- CMS
+- Company
 tags: []
 cta:
   headline: ''
