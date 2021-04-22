@@ -175,7 +175,6 @@ pages:
 - hugo/content/blog/forestry-git-backed-content-management-for-gatsby.md
 - hugo/content/blog/forestry-gitlab.md
 - hugo/content/blog/forestry-io-at-jamstack-conf-san-francisco-oct-16-18.md
-- hugo/content/blog/forestry-v2.md
 - hugo/content/blog/forestryio-techstars-2016.md
 - hugo/content/blog/form-builder-with-formspree-forestry-blocks.md
 - hugo/content/blog/front-matter-templates.md
@@ -212,6 +211,7 @@ pages:
 - hugo/content/blog/statyc-a-luxury-festival-for-hackers.md
 - hugo/content/blog/test.md
 - hugo/content/blog/the-new-forestry-io.md
+- hugo/content/blog/tina-cloud-the-next-forestry.md
 - hugo/content/blog/ubuild-a-new-theme-for-static-sites-using-blocks.md
 - hugo/content/blog/up-and-running-with-hugo-part-2.md
 - hugo/content/blog/up-and-running-with-hugo.md
