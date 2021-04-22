@@ -32,11 +32,11 @@ Over the past 14 months, we’ve been hard at work building the next iteration o
 
 ## Tina Cloud
 
-Tina Cloud is a headless API backend that talks to your Git repository, much like Forestry but with an open source GraphQL API.  We used concepts that we developed for Forestry like content modeling via Front Matter Templates and we will eventually make Tina Cloud compatible with Forestry sites (including non-React sites). 
+Tina Cloud is a headless API backend that talks to your Git repository, much like Forestry but with an open-source GraphQL API. Unlike Forestry, Tina Cloud does not include the content editing UI. This is because we’ve taken a decoupled approach and the editing happens in TinaCMS, our open-source editor. Also, we used many concepts that we developed for Forestry such as content modeling via Front Matter Templates when building Tina Cloud so there are a lot of similarities in workflows. 
 
 ## Forestry Compatibility
 
-We will continue to support both Forestry CMS and Tina Cloud until Tina Cloud is at feature parity with Forestry (targeting Dec 2021). At that point, we’ll have a generous migration window to help our existing Forestry users migrate to Tina Cloud before we officially sunset Forestry CMS.
+We will eventually make Tina Cloud compatible with Forestry sites (including non-React sites). We will continue to support both Forestry CMS and Tina Cloud until Tina Cloud is at feature parity with Forestry (targeting Dec 2021). At that point, we’ll have a generous migration window to help our existing Forestry users migrate to Tina Cloud before we officially sunset Forestry CMS.
 
 This migration will also involve switching out the Forestry Admin UI with [TinaCMS](http://tina.io/) UI. TinaCMS is our open-source front-end editor and is similar to the Forestry [Remote Admin](https://forestry.io/docs/editing/remote-admin/) but includes a live preview next to your editing fields.
 
