@@ -2,21 +2,21 @@
 title: Storing Media Files
 weight: 1
 date: '2020-12-20T10:00:00.000+00:00'
-publishdate: 2019-04-14T22:00:00+00:00
+publishdate: 2019-04-14T22:00:00.000+00:00
 menu:
   docs:
     parent: Media
     weight: 1
 
 ---
-Forestry provides multiple options for media storage.
+Forestry provides multiple options for storing images — audio and video files are not supported.
 
 ## Git
 
-The most basic option for storing media is to commit it to your git repo like the rest of your content. This is the default setting for new projects.
+The most basic option for storing media is to commit it to your Git repository like the rest of your content. This is the default setting for new projects.
 
 {{% warning %}}
-If your site has a large number of media files, we highly recommend [implementing Git LFS on your repository](https://forestry.io/blog/versioning-large-files-with-git-lfs/). Forestry will be able to handle Git LFS media for repositories hosted on GitHub and GitLab.
+If your site has a large number of media files, we highly recommend [implementing Git LFS on your repository](https://forestry.io/blog/versioning-large-files-with-git-lfs/). Forestry will be able to handle Git LFS media for repositories hosted on GitHub.   
 {{% /warning %}}
 
 [Read the full guide on using Git for media storage](/docs/media/git/)
@@ -29,7 +29,7 @@ Forestry can use [Cloudinary](https://cloudinary.com/) to store your media files
 
 ## AWS S3
 
-Forestry can use an [AWS S3 Bucket](/docs/media/s3/) to store your media files. With AWS S3, you can completely customize your image storage, image processing, and handling. 
+Forestry can use an [AWS S3 Bucket](/docs/media/s3/) to store your media files. With AWS S3, you can completely customize your image storage, image processing, and handling.
 
 [Read the full guide on using AWS S3 for media storage](/docs/media/s3/)
 
