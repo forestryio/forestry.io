@@ -1,7 +1,10 @@
 ---
 title: Cloud Media Storage With Cloudinary
 weight: 3
-date: 2018-05-25 20:00:00 +0000
+date: '2018-05-25T20:00:00.000+00:00'
+publishdate: 2019-02-28T23:00:00+00:00
+authors:
+- Forestry Team
 menu:
   docs:
     name: Cloudinary
@@ -9,7 +12,9 @@ menu:
     weight: 3
 
 ---
-Forestry supports storing your media in your own [Cloudinary](https://cloudinary.com/) cloud.
+Forestry supports storing your **images** in your own [Cloudinary](https://cloudinary.com/) cloud.
+
+{{% warning %}} Cloudinary is considered beta as we don't support uploading and inserting video files in your content. {{% /warning %}}
 
 ## Linking Your Cloudinary Account
 
@@ -29,16 +34,17 @@ Forestry supports storing your media in your own [Cloudinary](https://cloudinary
 
 You will want to adjust your paths in the **Media** section to work with Cloudinary.
 
-- **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`.
-- **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
+* **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`.
+* **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
 
 ### Applying transforms to markdown content
+
 Your markdown content will not have any transforms applied by default. To apply transforms to all of your markdown images, you can use the **public path** and **front matter path** separately.
 
 E.g:
 
-- **Public Path:** `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/c_scale,w_auto:100,dpr_auto/`
-- **Front Matter Path:** `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`
+* **Public Path:** `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/c_scale,w_auto:100,dpr_auto/`
+* **Front Matter Path:** `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`
 
 ## Migrating Existing Media
 
@@ -52,30 +58,22 @@ Cloudinary supports a vast array of image manipulation options that can be imple
 
 When adding a Cloudinary image to a front matter field, Forestry will only save the base filename in the page's front matter, like this:
 
-```
----
-main_image: img.png
-#...
----
-```
+    ---
+    main_image: img.png
+    #...
+    ---
 
 When using these images in your templates, you should prepend them with the URL to your cloud. We recommend storing this URL in your site's configuration and referencing it via variable in your templates. For example, in a Hugo site you might put the following in `config.toml`:
 
-```
-cloudinary_url = "https://res.cloudinary.com/demo/image/upload"
-```
+    cloudinary_url = "https://res.cloudinary.com/demo/image/upload"
 
 You could then use these front matter images in your templates as follows:
 
-```
-<img src="{{ .Site.cloudinary_url }}/{{ .Params.main_image }}" />
-```
+    <img src="{{ .Site.cloudinary_url }}/{{ .Params.main_image }}" />
 
 Using this approach, adding in one or more transformations is easy and transparent:
 
-```
-<img src="{{ .Site.cloudinary_url }}/w_250,h_250,c_fill/{{ .Params.main_image }}">
-```
+    <img src="{{ .Site.cloudinary_url }}/w_250,h_250,c_fill/{{ .Params.main_image }}">
 
 {{% tip %}}
 View Cloudinary's [image transformations documentation](https://cloudinary.com/documentation/image_transformations) to check out the wide array of things you can do with Cloudinary!
