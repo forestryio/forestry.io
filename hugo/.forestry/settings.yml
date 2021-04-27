@@ -74,7 +74,7 @@ file_template: ":year:/:month:/:filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.75.1
+  - HUGO_VERSION=0.82.1
   - PREVIEW_IP=0.0.0.0
   - PREVIEW_PORT=8080
   preview_output_directory: dist
