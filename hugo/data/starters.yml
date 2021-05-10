@@ -97,7 +97,7 @@ starters:
     branch: forestry
     engine: other
 - name: Casper
-  preview: https://hugocasper3-demo.jonathanjanssens.com
+  preview: https://hugocasper3-demo.jonathanjanssens.com/
   image: img/starters/casper.jpg
   author: Jonathan Janssens
   versions:
