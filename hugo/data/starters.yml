@@ -57,7 +57,7 @@ starters:
     branch: ''
     engine: ''
 - name: Kross
-  preview: http://demo.themefisher.com/kross-hugo/
+  preview: https://themes.gohugo.io/theme/kross-hugo-portfolio-template/
   image: img/starters/kross.png
   author: Themefisher
   versions:
@@ -75,6 +75,7 @@ starters:
   - name: VuePress
     repo: DirtyF/mediumish-vuepress-blog-theme
     engine: vuepress
+    branch: ''
 - name: Jæren
   textline: Portfolio
   image: img/starters/joeren.jpg
@@ -156,7 +157,7 @@ starters:
     branch: ''
   textline: Documentation
 - name: Northendlab
-  preview:
+  preview: ''
   image: img/starters/northendlab.png
   author: Themefisher
   versions:
@@ -184,6 +185,7 @@ starters:
     repo: forestryio/hugo-ananke-forestry
     engine: hugo
     branch: ''
+  textline: ''
 - name: uBuild
   textline: Single Page
   preview: https://forestryio.github.io/ubuild-jekyll/
