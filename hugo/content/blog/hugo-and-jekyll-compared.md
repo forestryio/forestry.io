@@ -295,7 +295,7 @@ For example, with Hugo’s custom output formats feature, you can generate your 
 Here’s a summary of some of Hugo’s best features:
 
 * Menus
-* Multilingual/il8n
+* Multilingual/i18n
 * Custom Output Formats
 * Themes componants via Hugo modules
 * Image resizing
