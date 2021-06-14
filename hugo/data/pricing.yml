@@ -15,7 +15,7 @@ plans:
   - text: CMS admin on your domain
     info: Host Forestry CMS on your site (mysite.com/admin)
   - text: Inactive sites archived after 3 months
-    info: An admin will have to restore an archived site
+    info: A site admin can restore an archived site anytime
   - text: Slack Community support
     info: No customer support included
 - title: Starter
