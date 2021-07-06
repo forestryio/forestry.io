@@ -86,7 +86,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
-    "browserslist": "^4.12.0",
+    "browserslist": "^4.16.5",
     "caniuse-lite": "^1.0.30001197",
     "eslint": "^4.19.1",
     "eslint-plugin-compat": "^2.7.0",
