@@ -40,7 +40,7 @@ jobs:
 
       - name: Test html
         run: |
-          sudo gem install html-proofer
+          sudo gem install html-proofer -v 3.19.1
           htmlproofer ./dist --check_html --check_opengraph --check_favicon --disable_external --allow-hash-href --file_ignore=./dist/admin/index.html,./dist/404
 
       - name: "Deploy website to AWS S3"
