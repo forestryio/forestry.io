@@ -59,7 +59,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
     "gumshoejs": "^5.1.2",
-    "highlight.js": "^9.18.5",
+    "highlight.js": "^10.4.1",
     "html-loader": "^0.5.5",
     "hugo-bin": "^0.69.0",
     "laggard": "^2.0.1",
