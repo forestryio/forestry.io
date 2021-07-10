@@ -101,6 +101,5 @@ Depending on how you're querying images from your Gatsby site, you may have issu
 
 Here are some options for getting around this:
 
-- Store and reference images from the `static/` directory (this is the solution currently used by our [blog starter](https://github.com/kendallstrautman/brevifolia-gatsby-forestry/blob/master/.forestry/settings.yml#L28)). This will not allow you to transform images via GraphQL queries.
-- Use [gatsby-remark-relative-images](https://github.com/danielmahon/gatsby-remark-relative-images#readme)
+- Store and reference images from the `static/` directory. This will not allow you to transform images via GraphQL queries.
 - Use [gatsby-remark-normalize-paths](https://www.gatsbyjs.org/packages/gatsby-remark-normalize-paths/) to convert project-relative absolute paths to relative paths.
