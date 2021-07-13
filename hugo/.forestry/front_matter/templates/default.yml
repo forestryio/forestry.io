@@ -183,6 +183,7 @@ pages:
 - hugo/content/blog/full-text-searching-with-postgres.md
 - hugo/content/blog/gulp-and-webpack-best-of-both-worlds.md
 - hugo/content/blog/harness-the-power-of-static-to-create-presentations.md
+- hugo/content/blog/hello.md
 - hugo/content/blog/how-i-reduced-my-jekyll-build-time-by-61.md
 - hugo/content/blog/how-to-use-hugo-s-image-processing-with-forestry.md
 - hugo/content/blog/hugo-and-jekyll-compared.md
