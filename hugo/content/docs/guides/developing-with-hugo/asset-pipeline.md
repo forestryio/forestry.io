@@ -29,6 +29,6 @@ In order to use external build like Gulp, Grunt, or Webpack with Forestry's [ins
 1. Use a Node.js-based tool installable via npm and configured in `package.json`.
 2. Use our Hugo + Node.js environment.
 3. Define npm scripts in your `package.json` file to build and serve your site.
-4. Use your npm serve script a your [custom build command](/docs/settings/build-commands/).
+4. Use your npm serve script with your [custom build command](/docs/settings/build-commands/).
 
 [1]: /docs/editing/previews
