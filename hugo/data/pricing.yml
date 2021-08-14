@@ -22,7 +22,7 @@ plans:
   priceAnnually: "0"
   priceMonthly: "29"
   description: Everything in personal plan
-  planIncludes: 5+ org members + 3 external collabotators
+  planIncludes: 5+ org members + 3 external collaborators
   buttonText: Get started
   buttonUrl: https://app.forestry.io/signup
   planItems:
