@@ -30,7 +30,7 @@ I've written before about [the advantages of keeping content in version control]
 * Full content history is available; can rollback changes and recover earlier revisions
 * Content updates can take advantage of the same workflows popular with code: _pull request→review→merge_
 
-While the benefits are signficant, one of the major pain points of this solution arises when large non-text files are introduced to your content. Given that interesting content is often media-heavy, this can be a real problem. Enter [Git LFS](https://git-lfs.github.com/).
+While the benefits are significant, one of the major pain points of this solution arises when large non-text files are introduced to your content. Given that interesting content is often media-heavy, this can be a real problem. Enter [Git LFS](https://git-lfs.github.com/).
 
 ## Problems With Versioning Binary Files
 
