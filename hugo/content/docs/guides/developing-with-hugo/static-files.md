@@ -42,6 +42,6 @@ Will be built as:
 If you use any build tools like Gulp or Grunt with Jekyll, please read our [Asset Pipeline Doc][1].
 
 ## Further Reading
-- [Hugo Static Files Reference](https://gohugo.io/themes/creating/#static)
+- [Hugo Static Files Reference](https://gohugo.io/hugo-modules/theme-components/)
 
 [1]:	/docs/guides/developing-with-hugo/asset-pipeline
