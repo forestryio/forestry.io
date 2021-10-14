@@ -57,7 +57,7 @@ starters:
     branch: ''
     engine: ''
 - name: Kross
-  preview: https://themes.gohugo.io/theme/kross-hugo-portfolio-template/
+  preview: https://themes.gohugo.io/themes/kross-hugo-portfolio-template/
   image: img/starters/kross.png
   author: Themefisher
   versions:
