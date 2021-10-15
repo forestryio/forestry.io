@@ -69,4 +69,4 @@ When we first introduced VuePress support, previewing was not possible for VuePr
 
 We want our users to get the most out of Forestry. With **custom preview commands**, we aim to support your workflow so you can use everything we have to offer.
 
-_To review all changes, please visit our_ [_changelog_](/docs/changelog/)_, or visit our_ [_sunset notices_](/docs/sunset/) _to see if any features are going to be replaced or removed._
+_To review all changes, please visit our_ [_changelog_](/docs/changelog/) _to see if any features are going to be replaced or removed._
