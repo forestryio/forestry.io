@@ -89,4 +89,4 @@ That's it! You can now add as many sections as you like and you can even put con
 
 We're excited to hear from you. Let us know if you come across any bugs or have any improvement suggestions.
 
-To review all changes please visit our [changelog](/docs/changelog/) or visit our [sunset notices](/docs/sunset/) to see if any features are going to be replaced or removed.
+To review all changes please visit our [changelog](/docs/changelog/) to see if any features are going to be replaced or removed.
