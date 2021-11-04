@@ -27,7 +27,7 @@ Here are some services that do a great job for you, most offer generous free pla
   See actions for [Jekyll](https://github.com/marketplace/actions/jekyll-actions), [Hugo](https://github.com/marketplace/actions/hugo-setup), [Eleventy](https://github.com/marketplace/actions/eleventy-action), [AWS S3 Sync](https://github.com/marketplace/actions/s3-sync) and more.
 * [Deploy with GitLab CI](https://about.gitlab.com/blog/2016/04/07/gitlab-pages-setup/).   
   See guides for [Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/), [Jekyll](https://about.gitlab.com/blog/2016/04/07/gitlab-pages-setup/#option-b-gitlab-ci-for-jekyll-websites), and more.
-* [Deploy with Vercel](https://vercel.com/docs/v2/introduction/).   
+* [Deploy with Vercel](https://vercel.com/docs/concepts#).   
   See guides for [Hugo](https://vercel.com/guides/deploying-hugo-with-vercel "Deploy  hugo with Vercel"), [Eleventy](https://vercel.com/guides/deploying-eleventy-with-vercel "Deploy Eleventy with Vercel"), [Gatsby](https://vercel.com/guides/deploying-gatsby-with-vercel "Deploy Gatsby with Vercel"), [Gridsome](https://vercel.com/guides/deploying-gridsome-with-vercel "Deploy Gridsome with Vercel"), [VuePress](https://vercel.com/guides/deploying-vuepress-to-vercel "Deploy VuePress with Vercel"), [Hexo](https://vercel.com/guides/deploying-hexo-with-vercel "Deploy Hexo with Vercel") and more.
 * [Deploy with Netlify](https://www.netlify.com/docs/continuous-deployment/)
 * [Deploy with Cloudflare Pages](https://pages.cloudflare.com/).   
