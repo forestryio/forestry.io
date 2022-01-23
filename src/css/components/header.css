@@ -9,7 +9,8 @@ $header-height: 5rem;
   height: $header-height;
   justify-content: space-between;
   padding: 0 2rem;
-  position: fixed;
+  /* position: fixed; */
+  position: relative;
   width: 100%;
   z-index: 20;
 
