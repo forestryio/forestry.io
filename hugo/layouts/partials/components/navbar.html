@@ -2,6 +2,7 @@
 {{- $isDocs := (eq .Section "docs") -}}
 {{- $isBlog := (eq .Section "blog") -}}
 {{- $isPricing := (eq .Section "pricing") -}}
+{{ partial "components/banner" }}
 <header class="header container{{ if $isDocs }} docs{{ end }}{{ if $isPricing }} dark{{ end }}">
   <div class="left-block">
     <a href="{{ .Site.BaseURL | relURL }}" title="Go to homepage" class="logo"></a>
