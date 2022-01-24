@@ -38,6 +38,9 @@ jobs:
           npm run build
           tar -zcvf dist.tar.gz ./dist
       
+      - uses: ruby/setup-ruby
+        with:
+          ruby-version: 2.x
       - name: Test html
         run: |
           sudo gem install html-proofer -v 3.19.1
