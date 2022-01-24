@@ -40,7 +40,7 @@ jobs:
       
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.x
+          ruby-version: 2.6
       - name: Test html
         run: |
           sudo gem install html-proofer -v 3.19.1
