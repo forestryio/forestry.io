@@ -14,7 +14,7 @@ menu:
     weight: 4
 
 ---
-* hi
+
 * Not able to get your job done? [Share your insights](http://portal.productboard.com/forestry) by providing context and the struggle you're facing.
 * Join our [Slack Community](https://join.slack.com/t/forestry-community/shared_invite/enQtNDAxMTU5NzcwMzA3LTY1MzM2YTZhN2Q2ZjkyMjk2ZmNhM2Y2ODIwYmU5YWRiNDYwMWRjNzhlOWJiMTg2NDc2ZWNlNjljOTNiNDZiZDk) to learn how people are using Forestry.
 
