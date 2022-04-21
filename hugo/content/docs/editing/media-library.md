@@ -5,9 +5,9 @@ aliases:
 - "/docs/faq/where-do-uploaded-images-get-saved/"
 title: Media Library
 weight: 6
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-05-25 20:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2018-05-25T20:00:00.000+00:00'
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"

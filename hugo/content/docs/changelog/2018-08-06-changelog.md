@@ -1,6 +1,6 @@
 ---
 title: 2018/08/06 Changelog
-date: 2018-08-06 19:07:22 +0000
+date: 2018-08-06T19:07:22.000+00:00
 publishdate: ''
 aliases: []
 type: ''
@@ -21,7 +21,7 @@ weight: ''
 menu:
   changelog:
     name: 2018/08/06
-    weight: 28
+    weight: 27
     parent: Changelog
 
 ---

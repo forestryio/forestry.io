@@ -2,7 +2,7 @@
 title: Storing Media in Git
 weight: 2
 date: '2018-05-25T20:00:00.000+00:00'
-publishdate: 2017-12-31T23:00:00+00:00
+publishdate: 2017-12-31T23:00:00.000+00:00
 menu:
   docs:
     name: Git

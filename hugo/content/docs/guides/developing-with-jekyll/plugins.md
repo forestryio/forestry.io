@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-jekyll/plugins"
-date: 2017-07-24 00:00:00 +0000
+date: '2017-07-24T00:00:00.000+00:00'
 description: ''
 tags: ''
 title: Jekyll Plugins

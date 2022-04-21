@@ -2,7 +2,7 @@
 authors:
 - team forestry
 title: 2019/03/22
-date: 2019-03-22 03:00:00 +0000
+date: 2019-03-22T03:00:00.000+00:00
 cta:
   headline: ''
   textline: ''

@@ -2,7 +2,7 @@
 authors:
 - team forestry
 title: 2019/03/01 Changelog
-date: 2019-03-01 20:00:00 +0000
+date: 2019-03-01T20:00:00.000+00:00
 cta:
   headline: ''
   textline: ''

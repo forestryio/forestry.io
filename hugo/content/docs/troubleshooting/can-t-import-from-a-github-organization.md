@@ -1,10 +1,10 @@
 ---
 title: Can't Import from a GitHub Organization
 description: ''
-date: 2018-01-02 14:36:06 +0000
+date: '2018-01-02T14:36:06.000+00:00'
 authors: []
-publishdate: 2017-08-23 12:17:43 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2017-08-23T12:17:43.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 aliases:
 - "/troubleshooting/authorizing-github-organizations"
 headline: ''

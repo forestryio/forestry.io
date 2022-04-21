@@ -3,10 +3,10 @@ title: Unexpected Status Code / Connection Expected but not Available
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors: []
-publishdate: 2018-06-28 08:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2018-06-28T08:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-date: 2018-06-28 14:08:09 +0000
+date: '2018-06-28T14:08:09.000+00:00'
 headline: ''
 description: ''
 textline: ''

@@ -1,9 +1,9 @@
 ---
 title: 2018/04/09 Changelog
-date: 2018-04-19 12:00:00 +0000
+date: 2018-04-19T12:00:00.000+00:00
 authors:
 - Forestry Team
-publishdate: 2018-04-09 04:00:00 +0000
+publishdate: '2018-04-09T04:00:00.000+00:00'
 layout: single
 categories:
 - CMS
@@ -23,7 +23,7 @@ menu:
   changelog:
     name: 2018/04/09
     parent: Changelog
-    weight: 30
+    weight: 29
 
 ---
 ### Hugo Support for v0.38.1

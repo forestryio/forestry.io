@@ -4,10 +4,10 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors:
 - Forestry Team
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2017-12-07T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-date: 2018-02-22 11:56:06 +0000
+date: '2018-02-22T11:56:06.000+00:00'
 description: Describes a common error for Jekyll users of Forestry.io and includes
   step-by-step instructions for solving the underlying error and testing that the
   issue is resolved locally.

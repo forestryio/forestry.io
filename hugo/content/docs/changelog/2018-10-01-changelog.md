@@ -2,7 +2,7 @@
 title: 2018/10/01 Changelog
 authors:
 - team forestry
-date: 2018-10-01 17:25:01 +0000
+date: 2018-10-01T17:25:01.000+00:00
 cta:
   headline: ''
   textline: ''
@@ -11,7 +11,7 @@ menu:
   changelog:
     name: 2018/10/01
     parent: Changelog
-    weight: 11
+    weight: 10
 
 ---
 ## Bug Fixes

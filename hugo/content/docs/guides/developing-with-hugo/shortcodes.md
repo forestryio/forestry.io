@@ -2,7 +2,7 @@
 aliases:
 - - "/docs/developing-with-hugo/shortcodes/"
 - "/docs/developing-with-hugo/short-codes/"
-date: 2017-07-24 00:00:00 +0000
+date: '2017-07-24T00:00:00.000+00:00'
 description: How to work with Hugo shortcodes in Forestry
 tags: ''
 title: Hugo Shortcodes
@@ -15,7 +15,6 @@ menu:
     weight: 24
 
 ---
-
 You can extend the functionality of Markdown in Hugo with shortcodes. Shortcodes are special templates that are called when a shortcode is used inside the content body.
 
 They can be used to add custom markup, format text, generate HTML elements, or pull in data from external sources.

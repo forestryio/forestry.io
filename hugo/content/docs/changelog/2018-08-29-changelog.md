@@ -2,7 +2,7 @@
 title: 2018/08/29 Changelog
 authors:
 - team forestry
-date: 2018-08-29 14:34:09 +0000
+date: 2018-08-29T14:34:09.000+00:00
 cta:
   headline: ''
   textline: ''
@@ -10,7 +10,7 @@ cta:
 menu:
   changelog:
     name: 2018/08/29
-    weight: 22
+    weight: 21
     parent: Changelog
 
 ---

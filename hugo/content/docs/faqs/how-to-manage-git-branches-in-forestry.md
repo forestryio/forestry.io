@@ -1,20 +1,20 @@
 ---
 images:
-  - "/uploads/2018/01/OGimage-01-docs-3x.png"
-publishdate: 2021-02-16T04:00:00+00:00
+- "/uploads/2018/01/OGimage-01-docs-3x.png"
+publishdate: 2021-02-16T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
 title: How to manage Git branches in Forestry?
 categories:
-  - CMS
-headline: ""
+- CMS
+headline: ''
 description: Forestry CMS allows unlimited Git branch import.
 menu:
   faqs:
     parent: FAQs
     weight: 2
----
 
+---
 A site is a branch with settings and permissions. 
 You can import as many branches as you want in Forestry. 
 You can set teams permissions for each branch on our **starter plan**.

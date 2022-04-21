@@ -1,9 +1,9 @@
 ---
 title: Sidebar Configuration
 weight: 1
-publishdate: 2018-07-24 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-10-24 04:00:00 +0000
+publishdate: 2018-07-24T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2018-10-24T04:00:00.000+00:00'
 layout: single
 menu:
   docs:
@@ -11,7 +11,6 @@ menu:
     weight: 4
 
 ---
-
 The sidebar is where *you* decide what content types and files you want to be able to edit in Forestry. Only admin and developers roles can access to the site sidebar settings, editors can't.
 
 If you import a site developed with Hugo or Jekyll, Forestry will add default sections based on those static site generators conventions. If you're using NextJS, Gatsby, NuxtJS or Gridsome or any other static site generator, you have to define your sections manually.

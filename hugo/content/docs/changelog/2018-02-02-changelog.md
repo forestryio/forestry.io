@@ -3,8 +3,8 @@ title: 2018/02/02 Changelog
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors: []
-publishdate: 2017-12-07 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: '2017-12-07T04:00:00.000+00:00'
+expirydate: '2030-01-01T04:00:00.000+00:00'
 layout: single
 date: 2018/02/02 17:02:01 +0000
 headline: ''
@@ -23,7 +23,7 @@ menu:
   changelog:
     name: 2018/02/02
     parent: Changelog
-    weight: 32
+    weight: 31
 
 ---
 ### Bug Fixes

@@ -3,10 +3,10 @@ title: Migrate Select Fields to New Data File Sections
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 authors: []
-publishdate: 2018-09-13 03:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+publishdate: 2018-09-13T03:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
-date: 2018-09-13 09:37:36 +0000
+date: '2018-09-13T09:37:36.000+00:00'
 headline: ''
 description: ''
 textline: ''

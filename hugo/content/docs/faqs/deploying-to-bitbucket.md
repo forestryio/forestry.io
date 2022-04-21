@@ -2,13 +2,13 @@
 title: Why Can't I Deploy to a Bitbucket Branch?
 weight: 12
 layout: single
-publishdate: 2018-11-09 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2018-11-09 04:00:00 +0000
+publishdate: 2018-11-09T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2018-11-09T04:00:00.000+00:00'
 menu:
   faqs:
     parent: FAQs
-    weight: 12
+    weight: 14
 
 ---
 Bitbucket allows you to [host a website](https://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html) by pushing static HTML to a branch in your Bitbucket repo, much like GitHub Pages. Previously, users with a Bitbucket repo could configure their site to be deployed back to Bitbucket.

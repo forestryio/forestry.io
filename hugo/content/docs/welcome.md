@@ -4,9 +4,9 @@ aliases:
 - "/docs/"
 weight: 1
 layout: single
-publishdate: 2020-06-11 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2020-06-11 04:00:00 +0000
+publishdate: 2020-06-11T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2020-06-11T04:00:00.000+00:00'
 authors:
 - Forestry Team
 headline: ''
@@ -25,9 +25,9 @@ menu:
   footer:
     name: Docs
     parent: Product
-    weight: 3
+    weight: 4
   docs:
-    parent: Welcome
+    parent: Welcome!
     weight: 1
   main:
     name: Docs

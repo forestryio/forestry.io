@@ -2,12 +2,12 @@
 title: 2018/09/28 Changelog
 authors:
 - team forestry
-date: 2018-09-28 14:19:04 +0000
+date: 2018-09-28T14:19:04.000+00:00
 menu:
   changelog:
     name: 2018/09/28
     parent: Changelog
-    weight: 13
+    weight: 12
 
 ---
 ## Bug Fixes

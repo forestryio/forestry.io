@@ -1,6 +1,6 @@
 ---
 title: Developing with Gatsby
-date: 2019-09-26 00:00:00 +0000
+date: '2019-09-26T00:00:00.000+00:00'
 toc: false
 description: Gatsby is a highly flexible static site generator that uses ReactJS under
   the hood. This guide will explain how Gatsby works, and help you get the most out

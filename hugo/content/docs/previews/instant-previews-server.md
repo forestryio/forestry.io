@@ -2,12 +2,12 @@
 title: Using Instant Previews
 aliases:
 - "/docs/instant-previews-server"
-date: 2019-06-28 12:00:00 +0000
+date: '2019-06-28T12:00:00.000+00:00'
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
-publishdate: 2018-01-15 17:00:00 +0000
+publishdate: 2018-01-15T17:00:00.000+00:00
 authors: []
-expirydate: 2030-01-01 04:00:00 +0000
+expirydate: 2030-01-01T04:00:00.000+00:00
 layout: single
 menu:
   docs:
@@ -15,7 +15,6 @@ menu:
     weight: 3
 
 ---
-
 When using Instant Previews, managing the preview server is done independently from previewing content. To access the preview server controls, navigate to **Settings** > **Previews**.
 
 {{% pretty_screenshot img="/uploads/2019/06/preview-server-controls.png" caption="Preview server controls" %}}

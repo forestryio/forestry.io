@@ -1,10 +1,10 @@
 ---
 title: 2018/01/29 Changelog
-date: 2018-01-29 14:40:49 +0000
+date: 2018-01-29T14:40:49.000+00:00
 authors:
 - Forestry Team
-publishdate: 2018-01-29 04:00:00 +0000
-expirydate: 2030-03-01 04:00:00 +0000
+publishdate: '2018-01-29T04:00:00.000+00:00'
+expirydate: '2030-03-01T04:00:00.000+00:00'
 layout: single
 categories:
 - CMS
@@ -24,7 +24,7 @@ menu:
   changelog:
     name: 2018/01/29
     parent: Changelog
-    weight: 33
+    weight: 32
 
 ---
 ### Bug Fixes

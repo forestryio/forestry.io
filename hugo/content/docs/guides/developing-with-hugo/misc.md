@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/misc/"
-date: 2017-07-24 00:00:00 +0000
+date: '2017-07-24T00:00:00.000+00:00'
 description: Other things you can do with Hugo
 tags: ''
 title: Misc
@@ -14,7 +14,6 @@ menu:
     weight: 25
 
 ---
-
 ## Sitemap
 
 Hugo comes with support for XML Sitemaps built-in.

@@ -2,18 +2,17 @@
 title: How do I set fallback/hidden values for Front Matter?
 weight: 7
 layout: single
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2020-05-10 04:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2020-05-10T04:00:00.000+00:00'
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 menu:
   faqs:
     parent: FAQs
-    weight: 11
+    weight: 13
 
 ---
-
 You can easily set defaults thanks to Forestry's [front matter templates](/docs/settings/front-matter-templates/).
 It's also possible to do it from the command line.
 

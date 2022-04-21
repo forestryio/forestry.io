@@ -4,7 +4,7 @@ description: 'Automate your deployments and host your static site where you want
   GitHub, Netlify, Vercel, Cloudflare, AWS, Azure, etc. '
 weight: 1
 publishdate: 2020-06-11T04:00:00.000+00:00
-expirydate: 2030-12-31T04:00:00+00:00
+expirydate: 2030-12-31T04:00:00.000+00:00
 date: '2021-01-08T04:00:00.000+00:00'
 layout: single
 images:

@@ -2,7 +2,7 @@
 aliases:
 - "/docs/developing-with-hugo/"
 - "/docs/developing-with-hugo/intro/"
-date: 2013-07-24 00:00:00 +0000
+date: '2013-07-24T00:00:00.000+00:00'
 description: ''
 related: []
 tags: ''

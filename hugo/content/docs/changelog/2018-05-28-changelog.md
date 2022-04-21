@@ -1,7 +1,7 @@
 ---
 title: 2018/05/28 Changelog
-date: 2018-05-28 17:24:44 +0000
-publishdate: 2018-05-28 03:00:00 +0000
+date: 2018-05-28T17:24:44.000+00:00
+publishdate: '2018-05-28T03:00:00.000+00:00'
 layout: single
 aliases: []
 authors:
@@ -20,7 +20,7 @@ weight: ''
 menu:
   changelog:
     name: 2018/05/28
-    weight: 29
+    weight: 28
     parent: Changelog
 
 ---

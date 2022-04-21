@@ -11,7 +11,7 @@ date: 2020-06-11T04:00:00.000+00:00
 menu:
   footer:
     parent: Product
-    weight: 4
+    weight: 5
 
 ---
 

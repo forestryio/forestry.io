@@ -1,7 +1,7 @@
 ---
 title: 2018/12/07 Changelog
 authors: []
-date: 2018-12-07 04:00:00 +0000
+date: 2018-12-07T04:00:00.000+00:00
 cta:
   headline: ''
   textline: ''
@@ -10,7 +10,7 @@ menu:
   changelog:
     name: 2018/12/07
     parent: Changelog
-    weight: 7
+    weight: 6
 
 ---
 ## Enhancements

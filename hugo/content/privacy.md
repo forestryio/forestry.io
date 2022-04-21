@@ -1,9 +1,9 @@
 ---
 title: Privacy Policy
-date: 2018-07-17 00:00:00 +0000
-weight: 3
-publishdate: 2020-06-11 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
+date: 2018-07-17T00:00:00.000+00:00
+weight: "3"
+publishdate: 2020-06-11T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
 type: page
 menu:
   footer:

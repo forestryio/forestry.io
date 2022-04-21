@@ -2,7 +2,7 @@
 title: 2018/10/16 Changelog
 authors:
 - team forestry
-date: 2018-10-16 15:02:43 +0000
+date: 2018-10-16T15:02:43.000+00:00
 cta:
   headline: ''
   textline: ''
@@ -11,7 +11,7 @@ menu:
   changelog:
     name: 2018/10/16
     parent: Changelog
-    weight: 14
+    weight: 13
 
 ---
 ## Sunsets

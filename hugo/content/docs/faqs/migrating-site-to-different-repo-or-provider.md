@@ -2,13 +2,13 @@
 title: How to Migrate a Site to a Different Repo or Git Provider
 weight: 10
 layout: single
-publishdate: 2019-01-15 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2019-01-15 04:00:00 +0000
+publishdate: 2019-01-15T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2019-01-15T04:00:00.000+00:00'
 menu:
   faqs:
     parent: FAQs
-    weight: 10
+    weight: 12
 
 ---
 If you consider switching to a different provider or there is an issue with your current import of your repository in Forestry, you might consider deleting your current import of your repository and importing it as a new site.

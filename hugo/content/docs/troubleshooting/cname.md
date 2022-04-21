@@ -2,7 +2,7 @@
 title: How do I add a CNAME to my site?
 authors: []
 publishdate: 2020-06-11T04:00:00.000+00:00
-expirydate: 2020-01-01T04:00:00+00:00
+expirydate: 2020-01-01T04:00:00.000+00:00
 layout: single
 date: '2018-01-02T15:23:56.000+00:00'
 headline: ''

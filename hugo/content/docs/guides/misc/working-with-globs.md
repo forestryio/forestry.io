@@ -1,6 +1,6 @@
 ---
 title: Working with Globs
-date: 2018-11-13 00:00:00 +0000
+date: '2018-11-13T00:00:00.000+00:00'
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 weight: 5

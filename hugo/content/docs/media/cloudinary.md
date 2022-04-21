@@ -2,7 +2,7 @@
 title: Cloud Media Storage With Cloudinary
 weight: 3
 date: '2018-05-25T20:00:00.000+00:00'
-publishdate: 2019-02-28T23:00:00+00:00
+publishdate: 2019-02-28T23:00:00.000+00:00
 authors:
 - Forestry Team
 menu:

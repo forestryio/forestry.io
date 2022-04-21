@@ -2,7 +2,7 @@
 title: 2018/09/12 Changelog
 authors:
 - team forestry
-date: 2018-09-12 14:19:59 +0000
+date: 2018-09-12T14:19:59.000+00:00
 cta:
   headline: ''
   textline: ''
@@ -11,7 +11,7 @@ menu:
   changelog:
     name: 2018/09/12
     parent: Changelog
-    weight: 18
+    weight: 17
 
 ---
 ## Enhancements

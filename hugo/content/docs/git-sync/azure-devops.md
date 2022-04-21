@@ -1,19 +1,18 @@
 ---
 title: Azure DevOps
 weight: 4
-publishdate: 2019-04-29 00:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2019-04-29 00:00:00 +0000
+publishdate: 2019-04-29T00:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2019-04-29T00:00:00.000+00:00'
 layout: single
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 menu:
   docs:
     parent: Git Sync
-    weight: 5
+    weight: 6
 
 ---
-
 Forestry supports syncing with static sites stored in Azure DevOps repos.
 
 Currently, in order to use Azure DevOps as a source provider, you must use [Manual Setup](/docs/git-sync/manual-setup) to set up the repository connection.
@@ -33,5 +32,3 @@ After setting up the key, navigate back to the site settings in Forestry and cli
 ## Setting up the Webhook
 
 {{% markdownpartial "docs/manual-setup/azure-devops-webhook.md" %}}
-
-

@@ -1,10 +1,10 @@
 ---
 title: 2018/08/08 Changelog
-date: 2018-08-08 16:25:47 +0000
+date: 2018-08-08T16:25:47.000+00:00
 aliases: []
 type: ''
 authors: []
-publishdate: 2018-08-08 17:00:00 +0000
+publishdate: '2018-08-08T17:00:00.000+00:00'
 expirydate: ''
 layout: ''
 categories: []
@@ -20,7 +20,7 @@ weight: ''
 menu:
   changelog:
     name: 2018/08/08
-    weight: 27
+    weight: 26
     parent: Changelog
 
 ---

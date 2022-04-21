@@ -5,9 +5,9 @@ aliases:
 title: What versions of Jekyll do you support?
 weight: 6
 layout: single
-publishdate: 2017-12-31 04:00:00 +0000
-expirydate: 2030-01-01 04:00:00 +0000
-date: 2020-06-11 04:00:00 +0000
+publishdate: 2017-12-31T04:00:00.000+00:00
+expirydate: 2030-01-01T04:00:00.000+00:00
+date: '2020-06-11T04:00:00.000+00:00'
 images:
 - "/uploads/2018/01/OGimage-01-docs-3x.png"
 menu:
@@ -16,7 +16,6 @@ menu:
     weight: 7
 
 ---
-
 Forestry uses whatever version of Jekyll is specified in your [`Gemfile`](https://jekyllrb.com/docs/ruby-101/).
 
 If you don't have a `Gemfile`, run `bundle init` on your machine, then `bundle add jekyll` to use latest Jekyll.

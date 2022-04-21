@@ -1,7 +1,7 @@
 ---
 aliases:
 - "/docs/developing-with-hugo/environments/"
-date: 2017-07-24 20:03:09 +0000
+date: '2017-07-24T20:03:09.000+00:00'
 description: ''
 title: Environments
 images:

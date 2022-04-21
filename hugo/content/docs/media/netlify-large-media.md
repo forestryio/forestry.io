@@ -1,7 +1,7 @@
 ---
 title: Storing Uploads With Netlify Large Media
 weight: 5
-date: 2020-05-02 00:00:00 +0000
+date: '2020-05-02T00:00:00.000+00:00'
 menu:
   docs:
     name: Netlify Large Media
@@ -9,7 +9,6 @@ menu:
     weight: 5
 
 ---
-
 {{% warning "Known limitations" %}}
 
 Images stored in GitLab and Bitbucket private repositories will not be shown in Forestry due to current limitations: [https://gitlab.com/gitlab-org/gitlab-ce/issues/45149](https://gitlab.com/gitlab-org/gitlab-ce/issues/45149 "https://gitlab.com/gitlab-org/gitlab-ce/issues/45149")
@@ -54,4 +53,3 @@ If you're using [Instant Previews](https://forestry.io/docs/previews/instant-pre
 
 Using Netlify Large Media, you can create image transformations for PNG, JPG and GIF files by appending parameters to the image URL.
 For documentation and examples, check out [Netlify's image transformation docs](https://www.netlify.com/docs/image-transformation/).
-
