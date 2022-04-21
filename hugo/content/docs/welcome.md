@@ -27,7 +27,7 @@ menu:
     parent: Product
     weight: 4
   docs:
-    parent: Welcome!
+    parent: Welcome
     weight: 1
   main:
     name: Docs

@@ -22,7 +22,7 @@ codeFences = true
 guessSyntax = true
 style = "monokailight"
 [[menu.docs]]
-name = "Welcome!"
+name = "Welcome"
 weight = 1
 [[menu.docs]]
 name = "Quick Start"
