@@ -37,6 +37,13 @@ You will want to adjust your paths in the **Media** section to work with Cloudin
 * **Public Path**: You will want to enter the full URL to your Cloudinary cloud. This will look something like `https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload/`.
 * **Front Matter Path:** Activate the toggle in this section to use a different **public path** when inserting an image into front matter, and leave the value empty. This will allow you to easily insert URL transformations ([see below](#using-cloudinary-images)).
 
+### For Jekyll users
+Your media directory is:
+* **Public Path:** `/image/upload/c_scale,w_auto:100,dpr_auto/`
+* **Front Matter Path:** `/image/upload/`
+
+Note: `image/upload` is your own directory (manually created) in Cloudinary.
+
 ### Applying transforms to markdown content
 
 Your markdown content will not have any transforms applied by default. To apply transforms to all of your markdown images, you can use the **public path** and **front matter path** separately.
