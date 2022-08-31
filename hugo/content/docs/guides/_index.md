@@ -13,9 +13,9 @@ menu:
     weight: 3
 
 ---
-Forestry help you edit any website whose content is stored in Markdown, MDX JSON, YAML or TOML files.
+Forestry helps you edit any website whose content is stored in Markdown, MDX, JSON, YAML or TOML files.
 
-Our developing guides offer a brief overview of generic principles on some [popular static site generators](https://www.staticgen.com/), they don't intend to replace the official docs of your favorite SSG:
+Our developing guides offer a brief overview of generic principles on some [popular static site generators](https://www.staticgen.com/). They aren't intended to replace the official docs of your favorite SSG:
 
 - [NextJS](https://nextjs.org/)
 - [Gatsby](http://gatsbyjs.org/)
