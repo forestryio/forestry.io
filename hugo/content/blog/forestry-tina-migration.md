@@ -9,24 +9,21 @@ authors:
 publishdate: 2022-12-09T04:00:00.000+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 headline: ''
-description: 'TinaCMS is our successor to Forestry CMS. Here's what you need to know about migrating.'
 textline: ''
 images:
 - "/uploads/2021/04/next-iteration-of-forestry.png"
-photo_credit: ''
 categories:
 - CMS
 - Company
+categories: []
 tags: []
 cta:
   headline: ''
   textline: ''
   calls_to_action: []
 private: false
-weight: 
+weight: ''
 aliases: []
-menu: []
-
 ---
 
 
