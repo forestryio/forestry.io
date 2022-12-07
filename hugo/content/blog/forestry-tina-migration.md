@@ -66,7 +66,6 @@ Keep in mind, TinaCMS's frontend is open source, so we are open to community add
 |          |PDF support|Support planned        |
 |          |Multi-image field|Considering support        |
 |**Content Modeling:**          |UI for defining Front Matter Templates ("collections")    |Support not planned        |
-|          |Hidden fields        |Support planned
 |          |Include template field       |Supported (by nature of JS-based templates)
 |          |Ability to setup references to lists in a document       |Considering Support
 |          |Ability to change a document's template through UI      |Support not planned
