@@ -52,12 +52,11 @@ Keep in mind, TinaCMS's frontend is open source, so we are open to community add
 |          |Insertable Hugo shortcodes |Considering Support        |
 |**Jekyll Features**          |Jekyll Menus |Support not planned        |
 |**Sections/Collections**          |Globs in sidebar definition      |Considering Support        |
-|          |Customizable headers in sidebar      |Support not planned        |
-|          |Readonly Documents      |Support not planned        |
+|          |Customizable headers in sidebar      |Considering Support        |
+|          |Readonly Documents      |Supported (with custom readonly field)        |
 |          |Configurable section icons in sidebar      |Support planned        |
 |          |Single Document modeling:  "Data files"      |Support planned        |
 |**Organization Features:**          |"Sub-Teams"      |Considering Support        |
-|          |Permissions per section per team|Support planned        |
 |          |SSO|Support planned        |
 |          |Audit Logs|Support planned        |
 |**Media**          |Netlify Large Media|Support not planned        |
@@ -75,7 +74,6 @@ Keep in mind, TinaCMS's frontend is open source, so we are open to community add
 |          |Ability to rename documents      |Support planned
 |          |Persisting unsaved changes in a document      |Support planned
 |          |Multi-user document-locking       |Support planned (in some capacity)
-|          |Ability to create folders in the UI       |Considering support
 |          |UI around creating a document that can have multiple templates       |Support planned
 |          |Ability to create folders in the UI       |Considering support
 |          |Previews (for non-react based sites)       |Support not planned
