@@ -27,7 +27,7 @@ This message was sent to all admins of Forestry.io sites last month. I'm sharing
 
 We will be discontinuing Forestry.io on March 22nd, 2023. At that time, your public site will not be impacted but you will lose the ability to edit your site's content with Forestry.io.
 
-Our new product, [TinaCMS](https://tina.io "Markdown CMS: TinaCMS"), came out of beta last month and now supports all frameworks. We would be happy if you chose it as your new CMS and we will release a migration tool in January if you want to test TinaCMS on your site.
+Our new product, [TinaCMS](https://tina.io?utm_source=forestry&utm_medium=banner&utm_campaign=forestryio-eol-post&utm_id=1 "Markdown CMS: TinaCMS"), came out of beta last month and now supports all frameworks. We would be happy if you chose it as your new CMS and we will release a migration tool in January if you want to test TinaCMS on your site.
 
 We made this pivot to Tina to innovate with visual editing, Git-backed content. We‘re bringing a drag and drop, visual editing experience to a developer-controlled, open-source, Git-backed CMS. And I’m very encouraged by the sites and CMS experiences I’m seeing from our users.
 
