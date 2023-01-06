@@ -19,10 +19,11 @@ private: false
 weight: 
 aliases: []
 menu: []
-draft: true
 
 ---
-I sent a message out to all admins of Forestry.io sites last month about Forestry's end of life.  I'm sharing the message here too incase some have missed the email. 
+This message was sent to all admins of Forestry.io sites last month. I'm sharing it here too incase some people missed the email.
+
+***
 
 We will be discontinuing Forestry.io on March 22nd, 2023. At that time, your public site will not be impacted but you will lose the ability to edit your site's content with Forestry.io.
 
@@ -38,6 +39,6 @@ Tina and Forestry have many similarities but they are _different_ products and I
 2. [Tina's pricing](https://forestry.us20.list-manage.com/track/click?u=1fea337bee20e7270d025ea8a&id=7ba07f4f34&e=d5d22ea185) is different from Forestry's and is designed to make our business more sustainable. Those of you who would not be within the limits of Tina’s free plan and do not wish to pay for Tina might benefit from our upcoming [self-hosted solution](https://forestry.us20.list-manage.com/track/click?u=1fea337bee20e7270d025ea8a&id=93644d3ede&e=d5d22ea185) (Q1 2023).
 3. Tina will likely only support GitHub repositories on March 22. Although, technically savvy users could build a custom integration for GitLab, BitBucket, etc, with our upcoming [self-hosted solution](https://forestry.us20.list-manage.com/track/click?u=1fea337bee20e7270d025ea8a&id=824bbc6cad&e=d5d22ea185).
 
-For those who wish to migrate, we're excited about the future and would love to see you on Tina. I'll send message in January when our migration tool is available but if you are eager to explore Tina now, you can follow this [migration guide](https://forestry.us20.list-manage.com/track/click?u=1fea337bee20e7270d025ea8a&id=e910d45dcd&e=d5d22ea185) (developer required). Note, we'll be adding more missing features to Tina in the coming months.  
-  
+For those who wish to migrate, we're excited about the future and would love to see you on Tina. I'll send message in January when our migration tool is available but if you are eager to explore Tina now, you can follow this [migration guide](https://forestry.us20.list-manage.com/track/click?u=1fea337bee20e7270d025ea8a&id=e910d45dcd&e=d5d22ea185) (developer required). Note, we'll be adding more missing features to Tina in the coming months.
+
 Thank you for being patient as we built the next iteration of our vision.
