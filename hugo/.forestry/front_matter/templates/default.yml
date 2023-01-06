@@ -229,4 +229,5 @@ pages:
 - hugo/content/docs/faqs
 - hugo/content/docs/git-sync
 - hugo/content/docs/troubleshooting
+- hugo/content/forestry.io-end-of-life.md
 - hugo/content/terms.md
