@@ -4,6 +4,7 @@ publishdate: 2023-01-06T15:11:41+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
 authors: []
 title: 'Forestry.io End of Life '
+summary: 'This message was sent to all admins of Forestry.io sites last month. I’m sharing it here too incase some people missed the email.'
 headline: ''
 description: ''
 textline: ''
