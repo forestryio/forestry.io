@@ -34,14 +34,11 @@ If you haven't chosen a new CMS yet, we would be thrilled to see you switch to o
 
 ## Migrating to TinaCMS
 
-Most Forestry features are now supported in Tina and we’re continuing to pour our hearts into making it a great CMS.  Tina supports all frameworks (Hugo, Jekyll, Next, Gatsby, etc) and just released a significant update to our CLI migration tool.  To use the tool, we recommend you create a new branch and run this command: `npx @tinacms/cli@latest init`. When it asks you if you want to migrate your forestry folder please answer `y` for yes. 
+Most Forestry features are now supported in Tina and we’re continuing to pour our hearts into making it a great CMS.  Tina supports all frameworks (Hugo, Jekyll, Next, Gatsby, etc) and we just released a significant update to our CLI migration tool.  
 
-The full migration guide can be found [here](https://tina.io/docs/forestry/overview/): 
+To use the migration tool, we recommend you run the following command on a new branch: `npx @tinacms/cli@latest init`. When it asks you if you want to migrate your forestry folder please answer `y` for yes. See the [full migration guide](https://tina.io/docs/forestry/overview/) for more details.
 
-Here is a video walkthrough of the migration process: 
-
-{{< youtube zRkeKSZjlyw >}}
-
-If you would like assistance migrating your site, please contact [info@forestry.io](mailto:info@forestry.io) for a quote.  Also, if you're interested in general development services, we have a team of experts and often help companies with projects of all sizes. 
+## Development Services
+If you would like assistance migrating your site or if your company needs help developing another web project, we have a team of experts and would be happy to help. Please contact [info@forestry.io](mailto:info@forestry.io) for a quote.  
 
 Again, thank you for your patience as we built the next iteration of our vision.
