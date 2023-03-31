@@ -42,7 +42,9 @@ When it asks you if you want to migrate your forestry folder please answer `y` f
 
 See the [full migration guide](https://tina.io/docs/forestry/overview/) for more details.
 
+Feel free to hop into Tina’s [Discord Community](https://discord.com/invite/zumN63Ybpf) if you have any questions.
+
 ## Development Services
-If you would like assistance migrating your site or if your company needs help developing another development project, we have a team of experts and would be happy to help. Please contact [info@forestry.io](mailto:info@forestry.io) for a quote.  
+If you would like assistance migrating your site or if your company needs help developing another unrelated development project, we have a team of experts and would be happy to help. Please contact [info@forestry.io](mailto:info@forestry.io) for a quote.  
 
 Again, thank you for your patience as we built the next iteration of our vision.
