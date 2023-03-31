@@ -2,7 +2,7 @@
 date: 2023-03-30T15:11:41+00:00
 publishdate: 2023-03-30T15:11:41+00:00
 expirydate: 2030-01-01T04:00:00.000+00:00
-summary: 'This is a reminder that Forestry will be discontinued on the morning of April 22, 2023. For details about migrating to our new product, Tina.io, read the full post. '
+summary: 'This is a reminder that Forestry will be discontinued on April 21, 2023. For details about migrating to our new product, Tina.io, read the full post. '
 authors: []
 title: 'TinaCMS Migration'
 headline: ''
