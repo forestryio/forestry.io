@@ -30,8 +30,6 @@ If you haven't chosen a new CMS yet, we would be thrilled to see you switch to o
 
 {{< youtube zRkeKSZjlyw >}}
 
- https://www.youtube.com/watch?v=zRkeKSZjlyw 
-
 ## Migrating to TinaCMS
 
 Most Forestry features are now supported in Tina and we’re continuing to pour our hearts into making it a great CMS.  Tina supports all frameworks (Hugo, Jekyll, Next, Gatsby, etc) and we just released a significant update to our CLI migration tool.  
