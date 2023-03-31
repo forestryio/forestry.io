@@ -22,7 +22,7 @@ aliases: []
 menu: []
 
 ---
-This is a reminder that Forestry will be permanently discontinued on the morning of April 22, 2023.
+This is a reminder that Forestry will be permanently discontinued on April 21, 2023.
 
 At that time, your site will not be impacted (it will not “go down”). However, you will lose the ability to edit your site’s content  using Forestry.io.
 
