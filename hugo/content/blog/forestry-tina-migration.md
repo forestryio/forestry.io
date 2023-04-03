@@ -40,7 +40,7 @@ npx @tinacms/cli@latest init
 ```
 When it asks you if you want to migrate your forestry folder please answer `y` for yes. 
 
-See the [full migration guide](https://tina.io/docs/forestry/overview/) for more details.  Also, here's a walkthrough video of the Migration process. 
+See the [full migration guide](https://tina.io/docs/forestry/overview/) for more details.  Also, here is a walkthrough video of the Migration process. 
 {{< youtube OHY8PyeLK1g >}}
 
 Feel free to hop into Tina’s [Discord Community](https://discord.com/invite/zumN63Ybpf) if you have any questions.
