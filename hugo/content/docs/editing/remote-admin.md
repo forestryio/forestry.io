@@ -29,7 +29,7 @@ Select the _General_ tab, and find the Project Paths option. From here you provi
 
 ![](/uploads/2018/01/settings-projectpaths.png)
 
-The Remote Admin is deployed as a static HTML page, so be sure you deploy it to a path that will be treated as a [static file](/docs/faqs/glossary/static-files/) by your static site generator.
+Forestry will install a static HTML file that powers the Remote Admin at the Admin Path, so be sure to set it to a path that will be treated as a [static file](/docs/faqs/glossary/static-files/) by your static site generator.
 
 ### Examples
 
