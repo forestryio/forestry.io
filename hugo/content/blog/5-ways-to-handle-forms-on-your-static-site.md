@@ -44,7 +44,7 @@ The options presented here range from fully-managed solutions for lean teams, al
 
 **Update**: While those options remain viable, other forms services were created since. Check also:
 
-- [StaticKit](https://statickit.com/)
+- [Web3Forms](https://web3forms.com/)
 - [Formik](https://formik.com)
 - [Other Forms services](https://serverless.css-tricks.com/services/forms)
 
