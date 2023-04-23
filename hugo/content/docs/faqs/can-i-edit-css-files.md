@@ -18,4 +18,4 @@ Forestry offers a friendly user interface to edit Markdown, JSON, YAML and TOML 
 
 Forestry is primarily meant for editors, not developers, stylesheets (CSS, Sass, Less, Stylus, etc.) and layouts are still edited through your usual developer workflow, usually locally in your favorite IDE and then pushed to your Git repository.
 
-Forestry will automatically synch with your Git repository and restart your preview environment, so any change to layouts and styles will be reflected after you push your changes.
+Forestry will automatically sync with your Git repository and restart your preview environment, so any change to layouts and styles will be reflected after you push your changes.
