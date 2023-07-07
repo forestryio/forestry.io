@@ -96,7 +96,7 @@
     "imports-loader": "^0.8.0",
     "lint-staged": "^10.2.10",
     "prettier": "^2.0.5",
-    "stylelint": "^13.6.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-sass-guidelines": "^ 7.0.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
